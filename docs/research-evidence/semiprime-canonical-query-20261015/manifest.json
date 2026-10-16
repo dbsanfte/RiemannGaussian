@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-15",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "progress: new classical arithmetic obstruction for prescribed sparse seed-index catalogs and zero-augmentation endpoint stencils; no new nearlinear evaluator or factoring exponent improvement",
+  "model_authorization": "user requested Sol 6.1 parallel agents; all three investigators used gpt-6.1-sol",
+  "main_bound": "O(K_* B_* M^5)=O(M^5.990), with K_*=O(M^.020), B_*=O(M^.970); direct union with frozen softO(M^5.994)",
+  "scope": "For each prescribed per-tag library fixed as N varies at fixed m,j; retained counterfamily may depend on library. Input-dependent indices and unrestricted scalar algorithms excluded.",
+  "native_status": "Canonical full-seed coverage and global-leaf factor-sum recovery already compiled in SemiprimeSeedSumAcquisition. No new Lean source or build in this continuation.",
+  "primary_source": {
+    "title": "Matrices with displacement structure: a deterministic approach for linear systems and nullspace bases",
+    "url": "https://arxiv.org/pdf/2603.02425",
+    "retrieved": "2026-10-15",
+    "path": "primary/khichane-neiger-2026.pdf.gz",
+    "inspected": "Theorem 1 field/dimension complexity; Algorithm 5 disjoint repetition-free Cauchy input lists"
+  },
+  "historical_archive": {
+    "path": "docs/research-evidence/research-checkpoint-20261012/index.json",
+    "sha256": "aff82272488c438e01237cee3317176247cb354cf4f123afee7751b0d89c40dc",
+    "restored_byte_verified": [
+      "sources/full-euclid-all-hit-obstruction.md",
+      "sources/charged-skipped-ray-obstruction.md"
+    ],
+    "scope": "Relevant proof/source identities and selector menu verified; historical analytic prime supply inherited, full prior closure not rebuilt"
+  },
+  "journal_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "heading": "2026-10-15 \u2014 Actual sparse catalogs and signed endpoint cancellations fail",
+    "sha256": "ea67ba0b288b864b54e38739ee39227beca50a1f4c3960f79e944244a0a59675",
+    "bytes": 5309
+  },
+  "validation": {
+    "artifact_sha256": "PASS",
+    "source_map_entries": 23,
+    "native_source_pins_verified": 16,
+    "independent_reviews": "PASS; two final catalog reviews, endpoint base/extension reviews, integration and journal reviewed hashes match",
+    "readme_relative_links": "PASS",
+    "prior_bundle_and_prior_journal_entry": "unchanged; full file hashes and exact historical entry prefix verified",
+    "git_diff_check": "PASS",
+    "lean_build": "not run; research-only change; no new code",
+    "examples_or_benchmarks": "none"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "bca6a159c627cd7d228f59744a4227aff042ad9aba3dd53d148faddc47aa02be",
+      "bytes": 9526
+    },
+    {
+      "path": "primary/khichane-neiger-2026.pdf.gz",
+      "sha256": "13c30dc5fa94a15dc4a7d7e6574d62c9842f523336e4d074e6201b8a7dbe271d",
+      "bytes": 511730,
+      "uncompressed_sha256": "6f8256f25eeb11c1dc3b67e8f91bd1c58b8c3f40f2261c5c268738fb7e51b4bf",
+      "uncompressed_bytes": 645998
+    },
+    {
+      "path": "primary/khichane-neiger-2026.txt.gz",
+      "sha256": "72539177329a6827599f1f9f6690e179342edca90a2003af3d0a2636a4d9faab",
+      "bytes": 33155,
+      "uncompressed_sha256": "e817066548ec24611937c23b9c0945960706ffcd0d20b5e416926c7e47f78fbd",
+      "uncompressed_bytes": 119507
+    },
+    {
+      "path": "reports/canonical-coverage-and-recovery.md",
+      "sha256": "2e5015278da165b55d4f92f51b39ba1fb3262d51c42201bf2bada91d2304bb22",
+      "bytes": 8471
+    },
+    {
+      "path": "reports/endpoint-band-counterfamily.md",
+      "sha256": "882bbf2500add5deec9f90e0e46630b55a8c0a3f8e5ad72e8bc7bd68d4e2269e",
+      "bytes": 10881
+    },
+    {
+      "path": "reports/prescribed-tag-catalog-obstruction.md",
+      "sha256": "f3352537846c716c36f4ad3e191be857c484993f986f887fc770eba3e6ccfca4",
+      "bytes": 7704
+    },
+    {
+      "path": "reports/routing-cost-status.md",
+      "sha256": "83aff2cb8558710aced6e4ad5c3e5e8a0672eb26cf032aad24e3805e08e73b50",
+      "bytes": 5816
+    },
+    {
+      "path": "reports/signed-shift-interface.md",
+      "sha256": "b004461d88b37ecc2ac0ddfdfa6ef79da17ec532341a5d3c933b62de0d6f9f5d",
+      "bytes": 7001
+    },
+    {
+      "path": "reports/structured-query.md",
+      "sha256": "29d79b3e23b986bdd73ffa2d0df3c204c02cc09d4a0133660cfee517e4b315e2",
+      "bytes": 11460
+    },
+    {
+      "path": "reviews/canonical-seed-review.md",
+      "sha256": "9ceabb496835bd9003167cebf7d2ac16016fb9d5baf6251bfbe36ce4612a8cad",
+      "bytes": 5463
+    },
+    {
+      "path": "reviews/catalog-review-a.md",
+      "sha256": "68794a64821b1c9bea88a7aa34830dc2feba56fa45a23a106feb310260b78853",
+      "bytes": 5618
+    },
+    {
+      "path": "reviews/catalog-review-b.md",
+      "sha256": "35eb80c1c58aa941e2f5b3e205dae9aa672582aeb3e04f041f908a2d33c32d73",
+      "bytes": 7373
+    },
+    {
+      "path": "reviews/endpoint-length-review.md",
+      "sha256": "4f993efe7bd56ef26a94e7f1d544f2bfed943174cea6a0b0ec072d2e5fa01a09",
+      "bytes": 857
+    },
+    {
+      "path": "reviews/endpoint-review-a.md",
+      "sha256": "3e753f146d1b574cd679fbf8b51efc10e8c5dfd8be8ab8047198fcddb610a3a8",
+      "bytes": 7711
+    },
+    {
+      "path": "reviews/endpoint-review-b.md",
+      "sha256": "228a928ca58227ccda4a465a4824bb3c39a1d6389c66ed513dc9b5b55767a545",
+      "bytes": 5123
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "sha256": "5ad0e7f7854e3b9bf816607a2e1caf28e7f81785c24d712cee4dbfc0a893fc7e",
+      "bytes": 4251
+    },
+    {
+      "path": "reviews/journal-review.md",
+      "sha256": "2dee0c1e13763a2598d154d72d2f33d343e2c889a9062d1298435c84b94822e5",
+      "bytes": 1974
+    },
+    {
+      "path": "reviews/signed-shift-review.md",
+      "sha256": "e8d01635c9f1b92f8ac76434d6c2297ed7f11bdf5cf0e989c56cd4761b240470",
+      "bytes": 4036
+    },
+    {
+      "path": "reviews/structured-and-signed-review.md",
+      "sha256": "5de9b7b8856772261eafefdfa832623777dea326e4d388eb892ea005cb16107e",
+      "bytes": 6685
+    },
+    {
+      "path": "source-map.json",
+      "sha256": "9b1e16c7d513986e6bb285ad260922f68b4f3fb2a06b74c6f8ef1e23c5623c4b",
+      "bytes": 6523
+    },
+    {
+      "path": "sources/charged-skipped-ray-obstruction.md",
+      "sha256": "ca92ab638d96409cc0dadb822ce3fcf31ac77d637b37020f81a19e1462568fae",
+      "bytes": 11430
+    },
+    {
+      "path": "sources/endpoint-band-source-pins.json",
+      "sha256": "e18f27dce2da1c427c7b5c741f2b0b9a4cbe45e0c38f2f679b31d6896feca2e2",
+      "bytes": 735
+    },
+    {
+      "path": "sources/full-euclid-all-hit-obstruction.md",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "bytes": 24354
+    },
+    {
+      "path": "sources/native-pins.json",
+      "sha256": "271d4c0eaa1b1a9f50a41aa98282ced0cf6ea1207698630d5f8e06ca7ea9f2c6",
+      "bytes": 2388
+    },
+    {
+      "path": "sources/structured-primary-manifest.json",
+      "sha256": "b9cf6afdcb76a34a39e1027923f30c8813b143e846b05c4c63b5fc7da5138b55",
+      "bytes": 1320
+    }
+  ]
+}

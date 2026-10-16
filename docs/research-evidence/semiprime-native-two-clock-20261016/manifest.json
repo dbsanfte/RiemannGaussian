@@ -1,0 +1,316 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "Paid native two-clock rectangle and sparse direct-query scalar/matrix rigidity, with actual original-source witnesses",
+  "previous_goal_turn": "Progress: arbitrary-single-clock original transition and private-unit-prefix representation obstruction",
+  "model_authorization": "Existing user-authorized gpt-6.1-sol agents reused for parallel literature and arithmetic investigations and independent reviews",
+  "whole_family_soft_linear_query_acquired": false,
+  "direct_query": "A(X)=product_j(1-g^(-N-delta_j)X),U_n=product_(i<n)A(q^i),q=g^(m^2),L=2m^2+2",
+  "rectangle": {
+    "bounds": "Dg<d=m^2,dT+Dg<256m^4<globalorderg",
+    "output": "Properfactor OR g^a q^b!=1 inBOTHhiddenfields fornonzero|a|<=Dg,|b|<=T",
+    "cost": "softO(Dg+1+sqrt((Dg+1)T))ringops andcorrespondingresiduebitcost; nearsixthbudgetifDgsoft<=m,(Dg+1)Tsoft<=m^2",
+    "proof": "InheritedgenericpolygeometricproductofH(q^b),unit-onlychirps,intervalgcdlocalization andbabyproducttree; globallysaturatedleafwouldhavepositiveannihilatorbelowglobalorder",
+    "credit": "Genericdegree-h/length-Tproductprimitive inherited,notanew generalqueryalgorithm"
+  },
+  "transition": {
+    "coefficients": "R(k,g^k,q^k)/S(k,g^k,q^k),multidegrees(Dk,Dg,Dq),regularactualS",
+    "exclusion": "Dq<J,T=J+Dq,(Dk+1)(Dg+1)(J+Dq+1)<=L,char0orchar>Dk",
+    "scope": "AllinputfactorORcertificatebranch,noU-prefixdivisionorprimelocalorderassumption"
+  },
+  "prefix": {
+    "coefficients": "Sum_t<=r P_t(k,g^k,q^k)U_(k+t),formalPt notallzero,nonzeroUthroughL",
+    "exclusion": "Dq<J,T=Jr+Dq,(Dk+1)(Dg+1)(Jr+Dq+1)<=L-r+1,char0orchar>Dk",
+    "proof": "Sparseconfluentindependence atstart0 givesformalidentity;degreeJt vsDq<J separateshighestshift; no initialloss or extendednominalrange",
+    "scope": "Explicitnonzeroprefixonly; originalsourceprivateTheta(m)unitrestrictionnotacquired"
+  },
+  "matrix": "s-dimensional rationalM(k,g^k,q^k)/B,commontridegreesdeltak,deltag,deltaq,regularactualtransitions;clearedrows/minorsscalarizetonominalr=s,D*=s^2delta*,formallynonzero;singularmatricesallowedandseparatedenominator/affinechargesretained",
+  "actual_source": {
+    "supply": "Originalqualifiedprime-local-orderOmega(M^6/log^2M)supply intersectedwithinheritedunitrowdensityandalloldlosses",
+    "extra_loss": "Otilde(M^(5.969+rho+gamma))forr<=M^rho,Dg<=M^gamma,rho+gamma<.031;fixedpolylogloss5.969",
+    "samples": "DqANY<J,ordinaryDk<=M^kappa fitswhenkappa+rho+gamma<1",
+    "example": "s,eachcommondelta<=m^.005 yieldsloss5.989,sample1.035,screen.510;allwithinstrictmargins",
+    "credit": "Explicitapplicationoftheoldergeneralshortexponentcatalogcount,nothypotheticalnewanalyticinput"
+  },
+  "novelty": "OldG15alreadyactualq-clockdirectprefixrigidity;densebetarewritehasdegreedJ~m^3 andfailsavailableprefixbudget. Newpaidsparsefinite-rectanglecompositionhandlesBOTHretainedcommensurateclocks,notarbitrarytwoclocksorabsolutepriority.",
+  "general_query_bound": "ExistingsoftO(J+sqrt(JL))=softO(m^(3/2)),unchanged",
+  "limits": "No wholequeryacquisition,operation/circuitlowerbound orLeancompletion. Arbitrarymultipleclocks,sparsehighdegree,nonlinearstate,selectedoutput/jumpanddirectnorm/factorwitnessmethodsremainoutside.",
+  "verification_scope": "MainindependentlyreviewedB/C;sourceindependentlyreviewedA/C;authorattributionsandintegrationexplicit. No nativeedit,numericalexamples,broadbuild,commit orpush.",
+  "review_target_checks": [
+    {
+      "review": "reviews/main-review-B.md",
+      "target": "reports/native-two-clock-obstruction.md",
+      "target_bytes": 19460,
+      "target_sha256": "e6c98aabf00cd77fcb319b75850914cf601474b721826b20f91e31806bae0ee9"
+    },
+    {
+      "review": "reviews/main-review-B.md",
+      "target": "sources/source-pins.json",
+      "target_bytes": 2016,
+      "target_sha256": "9b3d96d5986fe968313b66c17a90a3d22c49dadfb5899c7af482978a61609811"
+    },
+    {
+      "review": "reviews/independent-review-C.md",
+      "target": "reports/native-two-clock-obstruction.md",
+      "target_bytes": 19460,
+      "target_sha256": "e6c98aabf00cd77fcb319b75850914cf601474b721826b20f91e31806bae0ee9"
+    },
+    {
+      "review": "reviews/independent-review-C.md",
+      "target": "reports/source-survival-and-novelty.md",
+      "target_bytes": 14019,
+      "target_sha256": "f541f4a18e49d8ffe804c081c3ce33cc851350f126486dc553b87df32c330b09"
+    },
+    {
+      "review": "reviews/independent-review-C.md",
+      "target": "sources/source-pins.json",
+      "target_bytes": 2016,
+      "target_sha256": "9b3d96d5986fe968313b66c17a90a3d22c49dadfb5899c7af482978a61609811"
+    },
+    {
+      "review": "reviews/independent-review-C.md",
+      "target": "sources/survival-source-pins.json",
+      "target_bytes": 1713,
+      "target_sha256": "b9f3542a82b063f12ed26438393b5a6d4accbfac25e99ebfaa5590d55595bef0"
+    },
+    {
+      "review": "reviews/source-and-integration-review-A.md",
+      "target": "README.md",
+      "target_bytes": 5210,
+      "target_sha256": "8c4d955bcf80e97924eba64bfe6737628abcadbd791712b462fed2667b3e5246"
+    },
+    {
+      "review": "reviews/source-and-integration-review-A.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 4663,
+      "target_sha256": "e88d1418877749dc152bf4bb2403a9e6e2929fe3c1a03768a1050cd46d61854c"
+    },
+    {
+      "review": "reviews/source-and-integration-review-A.md",
+      "target": "reports/native-two-clock-obstruction.md",
+      "target_bytes": 19460,
+      "target_sha256": "e6c98aabf00cd77fcb319b75850914cf601474b721826b20f91e31806bae0ee9"
+    },
+    {
+      "review": "reviews/source-and-integration-review-A.md",
+      "target": "reports/source-survival-and-novelty.md",
+      "target_bytes": 14019,
+      "target_sha256": "f541f4a18e49d8ffe804c081c3ce33cc851350f126486dc553b87df32c330b09"
+    },
+    {
+      "review": "reviews/source-and-integration-review-A.md",
+      "target": "sources/source-pins.json",
+      "target_bytes": 2016,
+      "target_sha256": "9b3d96d5986fe968313b66c17a90a3d22c49dadfb5899c7af482978a61609811"
+    },
+    {
+      "review": "reviews/source-and-integration-review-A.md",
+      "target": "sources/survival-source-pins.json",
+      "target_bytes": 1713,
+      "target_sha256": "b9f3542a82b063f12ed26438393b5a6d4accbfac25e99ebfaa5590d55595bef0"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/manifest.json",
+      "bytes": 11885,
+      "sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-boundary-20261016/manifest.json",
+      "bytes": 13388,
+      "sha256": "14df1782fab8a4427ae73167175a290b62a4af370cee8d051b1fa29541345a1b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-high-digit-query-20261016/manifest.json",
+      "bytes": 9387,
+      "sha256": "05cb25cae8e0639707c38ca0841ab23e6ace6f1f1f224a0396904436b37203c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-reindexed-query-20261016/manifest.json",
+      "bytes": 10286,
+      "sha256": "4e7c96174f2f8cc199c858aa6efe1665787cd0268286cf3652259a2508331d8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-spectral-source-20261016/manifest.json",
+      "bytes": 11092,
+      "sha256": "39dc9c21e01770310c33d384e49a592d5cb80825540d32d427543a3f03f9b38b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-channel-acquisition-20261016/manifest.json",
+      "bytes": 8428,
+      "sha256": "c860df18ab59c69fc70fb3d18fdfaf7b99db657f3faf8827701d0e4a60ebd101"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/manifest.json",
+      "bytes": 10176,
+      "sha256": "f4aa02dd10a2a2baec95fcf427c1c822619d7efeb4f59133f8ebb494a1e1d0ed"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-center-20261016/manifest.json",
+      "bytes": 9534,
+      "sha256": "2f1373b2ff2abd21881945b63f32f3c895f7b68b22bdbafc82ff3d0f7488e09b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-frontier-20261016/manifest.json",
+      "bytes": 10074,
+      "sha256": "fadf463d83f2881df841ff41da22da41c3dbc40a689011439b13a87dfab63d6a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-small-multiple-20261016/manifest.json",
+      "bytes": 10620,
+      "sha256": "c8d1d6e6041650fe17347b6471ed71183481ab3e9bc103b097706c91ba3a4b98"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-representative-carrier-20261016/manifest.json",
+      "bytes": 9946,
+      "sha256": "8c8f35c1ecc9df7b75b2e0a66b78c335e40ce44c21d49bcfebb9487512621aba"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-wide-annihilator-20261016/manifest.json",
+      "bytes": 13813,
+      "sha256": "5cd39e19d0e670f8c903ffa243eae862258f7e6198f8235471da0e19f604fcaf"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-bounded-offset-20261016/manifest.json",
+      "bytes": 13963,
+      "sha256": "de34e9b5a4efbc304b712eb7ad7983a74f2d11b6047c0a4961d4bd0b59150717"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/manifest.json",
+      "bytes": 11875,
+      "sha256": "669c3357f264136ea0745cf3de3775d7c1f59a5e5d73ebe66be3ebc27c1740a8"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-pade-obstruction-20261016/manifest.json",
+      "bytes": 12231,
+      "sha256": "187da324aed884db8e35b3a0288b9a5ae3970dea838b61f62ee8d8c3db2600e6"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-arbitrary-base-ratio-20261016/manifest.json",
+      "bytes": 12085,
+      "sha256": "9b20f38d7d3389454e4b8aa1c716647767c39f27c16a5567046976750b6bac10"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-matrix-clock-obstruction-20261016/manifest.json",
+      "bytes": 12649,
+      "sha256": "44c0daa007451633e5cd3229b50546410e79100185e8dbca3f8df851ccb6c04a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-update-clock-20261016/manifest.json",
+      "bytes": 12919,
+      "sha256": "a086a29c9576ce7b9851cebed6e903c5b5463b29cc4fa2140e4d733a7e69f6f9"
+    }
+  ],
+  "prior_listed_files_unchanged": 586,
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1617313,
+    "sha256": "565afba2c43410764b424e63df032114978650b272231ebb283eee485ea57d17"
+  },
+  "entry_bytes": 4663,
+  "entry_sha256": "e88d1418877749dc152bf4bb2403a9e6e2929fe3c1a03768a1050cd46d61854c",
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5210,
+      "sha256": "8c4d955bcf80e97924eba64bfe6737628abcadbd791712b462fed2667b3e5246"
+    },
+    {
+      "path": "reports/native-two-clock-obstruction.md",
+      "bytes": 19460,
+      "sha256": "e6c98aabf00cd77fcb319b75850914cf601474b721826b20f91e31806bae0ee9"
+    },
+    {
+      "path": "reports/source-survival-and-novelty.md",
+      "bytes": 14019,
+      "sha256": "f541f4a18e49d8ffe804c081c3ce33cc851350f126486dc553b87df32c330b09"
+    },
+    {
+      "path": "reviews/independent-review-C.md",
+      "bytes": 6023,
+      "sha256": "b41de183b10c7ad39d43ba528745f11720fd30573b21d60741719c78ddc9825d"
+    },
+    {
+      "path": "reviews/main-review-B.md",
+      "bytes": 9317,
+      "sha256": "922472a9addb238982bc23a8ba0d9e22cae98e4f2642ab2a06bee9bf227979cf"
+    },
+    {
+      "path": "reviews/source-and-integration-review-A.md",
+      "bytes": 6835,
+      "sha256": "57f36914b06e155c4419324dba467cbb7e5d3a955a8685c6fc13a32570adb8bf"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 11936,
+      "sha256": "4569bf08f8bbe013427f25238cf8b1f34b2d948bbe5aaae18da6b75421d9fb63"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 4663,
+      "sha256": "e88d1418877749dc152bf4bb2403a9e6e2929fe3c1a03768a1050cd46d61854c"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 5940,
+      "sha256": "7863cee60740d93f2bdeada4865d7925ce2cce1bd6543df96cc5a036f01b9d5b"
+    },
+    {
+      "path": "sources/source-pins.json",
+      "bytes": 2016,
+      "sha256": "9b3d96d5986fe968313b66c17a90a3d22c49dadfb5899c7af482978a61609811"
+    },
+    {
+      "path": "sources/survival-source-pins.json",
+      "bytes": 1713,
+      "sha256": "b9f3542a82b063f12ed26438393b5a6d4accbfac25e99ebfaa5590d55595bef0"
+    }
+  ]
+}

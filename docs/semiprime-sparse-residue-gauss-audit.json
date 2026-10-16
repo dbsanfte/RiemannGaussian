@@ -1,0 +1,232 @@
+{
+  "schema": "semiprime-constructive-sparse-residue-gauss-v1",
+  "date_utc": "2026-10-16",
+  "baseline_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "verdict": "PASS for explicit catalog/setup promises; universal acquisition and full Lean bit theorem remain OPEN",
+  "previous_goal_turn": "progress: executable Fermat-quotient branch and compiled zero-quotient arithmetic",
+  "current_positive_result": {
+    "catalog_contract": "Explicit J-residue catalog modulo 1<=n<=N^(1/3), covering either factor, with all acquisition and metadata costs charged",
+    "inherited_setup": "N=P*Q distinct odd primes; N<=w^6; w=Theta(N^(1/6)); P,Q>16w²; alpha unit with both local orders odd and >16w²; setup factors or supplies this public base",
+    "derived_bit_bound": "soft O(w+J+N^(1/5)*(J/n)^(3/5)), plus reading/normalizing redundant input descriptions",
+    "weaker_sufficient_target": "soft O(N^(1/6)) explicit candidates modulo N^(2/9) suffice at sixth-root budget",
+    "gauss_domain": "72<H, H³<=N, gcd(H,N)=1, unit residue s, X>=1, HX<=2floor(sqrtN)",
+    "exact_row_certificate": "H²c-sHb+s²a=0 modN; a!=0; c²+X²b²+X⁴a² <=(5/2)N X²/H",
+    "collision_radius": "|sigma|<6sqrt(N/H³); signed rows and cap 8ceil(sqrt(N/H³))",
+    "shared_acquisition": "G signed rows share K+1 indices in one compressed common-baby construction; soft O(G+sqrt(GK)) residue work including exact final block",
+    "global_saturation": "Prefix unit screen precedes integer-trivial quadratic filtering; remaining saturated leaf supplies nonzero public annihilator, consumed by actual implemented dyadic/Burgess extractor",
+    "concrete_public_class": "Auxiliary prime r=Theta(N^(1/18)), explicit constant/polylog Fermat-quotient menu and reciprocal closure modulo r²; optional public equal-quotient class; all such covered inputs factor in soft O(w)",
+    "scope_limit": "No all-input sparse residue catalog has been acquired; no density/success-frequency or measured scaling assertion"
+  },
+  "source_pins": [
+    {
+      "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+      "bytes": 28139,
+      "sha256": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+      "bytes": 2782,
+      "sha256": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+      "bytes": 1220,
+      "sha256": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "scripts/probe_semiprime_long_period.py",
+      "bytes": 27138,
+      "sha256": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f"
+    },
+    {
+      "path": "scripts/probe_semiprime_quadratic_extraction.py",
+      "bytes": 18493,
+      "sha256": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb"
+    },
+    {
+      "path": "scripts/probe_semiprime_single_extraction.py",
+      "bytes": 16419,
+      "sha256": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34"
+    },
+    {
+      "path": "scripts/probe_semiprime_weighted_batch.py",
+      "bytes": 11127,
+      "sha256": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053"
+    },
+    {
+      "path": "/tmp/semiprime-fermat-quotient-catalog-20261016/constructive-catalog.md",
+      "bytes": 9056,
+      "sha256": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2"
+    },
+    {
+      "path": "/tmp/semiprime-direct-frontier-20261016/lifted/previous-gaofenghupan.txt",
+      "bytes": 115381,
+      "sha256": "85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+      "bytes": 5679,
+      "sha256": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+      "bytes": 2782,
+      "sha256": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+      "bytes": 1220,
+      "sha256": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114"
+    }
+  ],
+  "durable_source_resolution": [
+    {
+      "temporary_path": "/tmp/semiprime-direct-frontier-20261016/lifted/previous-gaofenghupan.txt",
+      "durable_stored_pin": {
+        "path": "docs/research-evidence/research-checkpoint-20261012/objects/85/85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0.gz",
+        "bytes": 31024,
+        "sha256": "50c9e30597c112271debced24e34dd16b6f1bba039a0a545291a8213fee67216"
+      },
+      "gzip_uncompressed_bytes": 115381,
+      "gzip_uncompressed_sha256": "85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0",
+      "primary_url": "https://arxiv.org/html/2512.19076v1"
+    },
+    {
+      "temporary_path": "/tmp/semiprime-fermat-quotient-catalog-20261016/constructive-catalog.md",
+      "durable_container_pin": {
+        "path": "docs/semiprime-fermat-quotient-catalog-audit.json",
+        "bytes": 22200,
+        "sha256": "52778b1ba3f144ad362a5601c9be6ba8a493a7b0694adc65290d0fca0ecaabd2"
+      },
+      "json_field": "derivation.text"
+    }
+  ],
+  "derivation": {
+    "pin": {
+      "path": "/tmp/semiprime-sparse-residue-gauss-20261016/derivation.md",
+      "bytes": 14435,
+      "sha256": "4602ecfde03947a60badf2818f411084bb64e8a2cdb9d8285b8179c61d32c8e7"
+    },
+    "text": "# A constructive sparse-residue factor algorithm via an exact rank-two quotient\n\n## Positive contract\n\nLet N=P Q be a product of distinct odd primes. Use the existing paid all-input preprocessing at scale w=Theta(N^(1/6)) with N≤w⁶: it either factors N, or provides a unit alpha whose two local orders are odd and greater than 16w², together with P,Q>16w². Its nonzero global-annihilator consumer factors N in soft O(w) bit work when supplied any nonzero integer K of polylogarithmic bit length with alpha^K=1 mod N. These are inherited constructive prerequisites, not oracles for factors or local orders.\n\nSuppose a public integer n, 1≤n≤N^(1/3), and an explicitly acquired set S of J≥1 reduced residues modulo n are supplied, and at least one factor's residue belongs to S. Include the reciprocal closure {N s^(-1) mod n:s∈S}, if needed, to cover the smaller P; its size is at most 2J. Compute gcd(N,n) first, returning a proper factor if nonunit, and discard residues nonunit modulo n. Input acquisition and normalization must be charged; no hidden-factor residue is supplied for free.\n\nThere is then a deterministic factor algorithm of bit cost\n\n    soft O(w + J + N^(1/5)(J/n)^(3/5)),                 (1)\n\nincluding residue lifting, exact fixed-rank lattice arithmetic, common-baby collision acquisition, and global saturation. The soft notation hides polylogarithms in N and input integers. In particular this is a positive covered-family theorem, not a claim that an all-input sparse residue catalog is known. No new Lean theorem or complete native factoring bit theorem is asserted here.\n\nThe main new construction below replaces the fragile second-LLL-vector assertion in Gao–Feng–Hu–Pan by a two-dimensional quotient and exact Gauss reduction. It permits the larger range H³≤N, rather than their H<N^(1/4)/2. Their first-order lattice/BSGS architecture and the ordinary product/remainder-tree backend remain prior arithmetic.\n\n## 1. Public lift and dyadic bins\n\nChoose a public integer M≥1 coprime to n, put H=Mn, and require\n\n    H>72,    H³≤N,    gcd(H,N)=1.                    (2)\n\nFor every unit residue s∈S modulo n and every unit j modulo M, construct by the ordinary CRT the residue z∈[0,H) with z≡s mod n and z≡j mod M. For M=1 this simply means z=s modulo H; there is one unit class. Thus the lifted catalog has J_H≤J phi(M)≤JM elements and all are units modulo H. A covered P contributes exactly its z=P mod H. No unknown factor is used to generate the lifts.\n\nThe prefix promise and H≤N^(1/3) imply P>H. Therefore x0=(P−z)/H is a positive integer. Enumerate dyadic positive integer bounds X such that every possible x0≤sqrt(N)/H lies in some [X/2,X], and each enumerated bin satisfies HX≤2sqrt(N). For example use X=1,2,4,... through the smallest power of two at least floor(sqrt(N)/H). There are O(log N) bins. All bins and residues will share the SAME baby sequence; only their giant metadata differ.\n\n## 2. Exact quotient-lattice construction and Hermite bound\n\nFix any public lifted z and bin X. The rank-three polynomial coefficient condition is\n\n    H²c−zHb+z²a ≡ 0 mod N.                          (3)\n\nPut u=Hc−zb and kappa=z² H^(-1) mod N. The quotient lattice is\n\n    Lambda={(u,a)∈Z²:u+kappa a≡0 mod N},\n    det Lambda=N,   D=z²+H²X²,\n    F(u,a)=u²+X²D a².                               (4)\n\nIts explicit basis is (N,0), (−kappa,1). Apply exact two-dimensional Gauss reduction using the integer inner product with Gram matrix diag(1,X²D). Every dot product, nearest quotient and norm comparison is rational/integer; no irrational numerical oracle is used. Classical Gauss reduction returns a shortest nonzero vector and uses polynomially many bit operations in the input bit length. Here all input integers have O(log N) bits.\n\nFor completeness the needed two-dimensional Hermite estimate is elementary. In a Gauss-reduced basis v1,v2 for the Euclidean image (u,a)→(u,X sqrt(D)a), one has ||v1||≤||v2|| and |<v1,v2>|≤||v1||²/2. Consequently its area squared is at least 3||v1||⁴/4. Its area is N X sqrt(D), hence\n\n    F(u,a)≤(2/sqrt(3)) N X sqrt(D)≤2 N X sqrt(D).    (5)\n\nThis proof concerns the bound; the algorithm uses the exact integer form. Standard fixed-dimensional Gauss arithmetic, including nearest-integer divisions and unimodular updates, has polynomial bit cost; quasilinear cost in the number of rows only needs this polylogarithmic per-row bound.\n\nThe selected vector necessarily has a≠0. Otherwise u is a nonzero multiple of N and F≥N². But z<H, X≥1 and HX≤2sqrt(N) give\n\n    D≤2H²X²,    2Xsqrt(D)≤8sqrt(2)N/H<N,\n\ncontradicting (5) when H>72. This is the nontrivial quadratic coefficient guarantee; it does not depend on which vector a rank-three LLL implementation calls its second vector.\n\n## 3. Exact nearest-plane lift and constant baby bound\n\nBecause gcd(H,z)=1, use Bezout to obtain any integer solution Hc−zb=u. All solutions are (c+tz,b+tH), t∈Z. Choose t nearest to\n\n    −(zc+HX²b)/D.\n\nCompleting the square gives, for this lifted vector,\n\n    c²+X²b²+X⁴a² ≤ X²F(u,a)/D +D/4\n                     ≤ 2NX²/H +H²X²/2\n                     ≤ (5/2)NX²/H.                (6)\n\nThe last inequality uses H³≤N. The nearest integer is computed by exact rational division, including ties. Changing c,b in this manner preserves u and (3).\n\nLet g(x)=a x²+b x+c. If z=P mod H and x0=(P−z)/H is in the bin, (3) and gcd(P,H)=1 imply P|g(x0). Write g(x0)=sigma P, with sigma signed. By Cauchy–Schwarz, x0≤X and P≥HX/2,\n\n    |sigma|≤sqrt(3)*sqrt((5/2)NX²/H)/P\n           ≤sqrt(30)*sqrt(N/H³)<6sqrt(N/H³).         (7)\n\nTake the public integer cap Kcap=8 ceil(sqrt(N/H³)); one can compute the ceiling as ceil_sqrt(ceil(N/H³)) with exact integer arithmetic. It covers |sigma| for every bin and every possible correct residue. The conservative constant 32 also works. All coefficients and giant exponents below have O(log N) bits: (6) bounds coefficients by O(N), and H≤N^(1/3).\n\n## 4. Common babies, signed anchors and integer-trivial preprocessing\n\nFor each row (z,X), include both signs of (a,b,c). This doubles only the row count, preserves a≠0, and makes the correct sigma nonnegative. For a signed row define the PUBLIC integer\n\n    E=cH²+bH(1−z)+a(1−z)²,\n    q0=alpha^(H²),       giant=alpha^E.              (8)\n\nNegative exponents use the known unit alpha inverse modulo N. If this is the correct row, then P|g(x0) and Hx0=P−z≡1−z mod(P−1), so\n\n    alpha^E = q0^sigma mod P,    0≤sigma≤Kcap.       (9)\n\nEvery row and every bin has exactly the same q0 and baby interval. There are G≤2J_H O(log N)=soft O(JM) giant rows, constructed in soft O(JM) bit work. Ordinary fixed-rank integer arithmetic and powering are paid here, not treated as factor-specific advice.\n\nFIRST acquire a paid unit-prefix certificate for q0^i−1, 1≤i≤Kcap. Let h=ceil(sqrt(Kcap)), build babies q0^a for 0≤a<h, and evaluate their monic root polynomial at giants q0^(hj), 1≤j≤h. The tested exponents hj−a cover 1,…,h². Monic multipoint/product-tree recovery costs soft O(h) and requires no inverse node differences. A proper gcd ends with a factor. A saturated individual leaf gives q0^t=1 modulo N for a positive t≤h², hence the NONZERO public annihilator H²t of alpha; the inherited wide consumer factors immediately. Otherwise all tested differences are units, certifying BOTH local orders of q0 exceed h²≥Kcap. This classical monic BSGS screen is a paid prerequisite, not an assumed local-order oracle. Its soft O(sqrt(Kcap)) charge is dominated by the final direct batch bound.\n\nONLY AFTER this screen, handle any row for which E=H²i as an INTEGER with 0≤i≤Kcap. Solve the explicit integer quadratic\n\n    a(Z−z)²+bH(Z−z)+cH²−iH² Z=0.                  (10)\n\nCheck its integer roots as proper divisors of N. This is polynomial bit work per row and a≠0 makes it a genuine quadratic. If none factors N, discard this row. Such a discarded row cannot be the correct witness: its true sigma and i both lie in [0,Kcap], and (9) plus E=H²i give q0^sigma=q0^i modulo P. The paid unit-prefix certificate forces sigma=i, so (10) has root P. Without that certificate this deletion would be invalid, because sigma could alias i modulo the local order. This is only integer-trivial preprocessing; it neither enumerates nor assumes acquisition of arbitrary modular global matches.\n\nFor any remaining saturated collision alpha^E=q0^i modulo N, the public integer E−H²i is NONZERO and has O(log N) bits. The inherited wide-annihilator extractor therefore factors N in soft O(w). This is the key to avoiding repeated removal of possibly many false global collisions.\n\n## 5. Paid collision acquisition and recovery\n\nBuild the monic giant polynomial A(T)=prod_rows(T−alpha^E) over Z/NZ and evaluate it at the common geometric babies q0^i, 0≤i≤Kcap, by ordinary monic multipoint evaluation. Its cost is soft O(G+Kcap) ring operations/words and soft O((G+Kcap)log N) bit work. All powers can be generated successively; no denominator or distinct-node promise is needed. This direct construction suffices at the optimized balance below; compressed geometric-product variants are optional and not needed for (1).\n\nCoverage (9) implies a nonunit aggregate unless preprocessing already factored N. Scan the baby-row gcds. A proper gcd factors immediately. At a saturated baby value use the giant product tree to descend to a nonunit individual difference, evaluating child polynomials at this baby. Its cost is O(G) ring work along one balanced path. Return any proper gcd encountered. A saturated individual difference gives exactly the nonzero global annihilator from Section 4, which the inherited consumer factors. Consequently only ONE saturated individual leaf needs the annihilator consumer, at cost soft O(w). This is ONE call overall: a prefix-screen annihilator already ends the algorithm, and the later batch is reached only after a unit screen. Repeated baby nodes or mixing the two hidden factors in an aggregate cause no failure. No global-order search or local discrete logarithm is used.\n\nThus for prescribed H=Mn the constructive cost is\n\n    soft O(w + JM + sqrt(N)/(Mn)^(3/2)),             (11)\n\nwith the O(log N) bins, signed rows, and dominated soft O(sqrt(Kcap)) prefix screen included. Storage is soft O(JM+Kcap) residues/metadata, with O(log N)-bit integers per item. Acquisition of the initial catalog is additional if not already explicit.\n\n## 6. Optimization and genuine covered-family enlargement\n\nIgnoring polylogarithms set\n\n    M*=N^(1/5) J^(−2/5) n^(−3/5).\n\nChoose M=1 when M* is bounded by a polylogarithm. Otherwise choose a coprime M within a polylogarithmic factor below M*, using gcd trials; the standard Jacobsthal bound guarantees such an M near M*, and costs only polylogarithmically many trials. This is the same elementary modulus-selection issue explicitly charged in GFHP's extra-modulus construction; alternatively any supplied suitable M suffices for (11). Since n≤N^(1/3) and J≥1,\n\n    M*n=N^(1/5)(n/J)^(2/5)≤N^(1/3).\n\nTaking M below M* preserves H³≤N. For sufficiently large N the chosen H exceeds 72; the finitely many remaining inputs may be handled by trial division. When M*≥1 the two terms in (11) balance at N^(1/5)(J/n)^(3/5). When M*<1, M=1 makes Kcap=O(J+1), so the explicit +J in (1) is necessary and sufficient. These choices prove (1), up to the stated polylogarithms. Catalog entries and repeated quotient descriptions are not free input: read/normalize them before measuring J.\n\nFor a CONCRETE new positive family, let r be an auxiliary prime of scale N^(1/18), distinct from the setup scale w. For any explicit constant/polylogarithmic quotient set A modulo r, use the constructive residues j^r(1−r tau) modulo n=r² and their N-reciprocals. Then J=soft O(r|A|). For constant |A|, M*=Theta(N^(1/9)), H=Theta(N^(2/9)), G=soft O(N^(1/6)), and Kcap=O(N^(1/6)). Thus the entire either-factor supplied Fermat-quotient class is factored in soft O(w), even though r is far smaller than the prior direct-grid scale. Add the public quotient q_r(N)/2 to cover equal factor quotients at the same cost. These catalogs are explicitly constructible at soft O(r|A|), not supplied factor advice.\n\nFor growing menus the complete cost (1), explicit J≤soft O(w), and (2) must all be checked. No unpriced assertion that arbitrary larger quotient menus fit the budget is made. Neither this class enlargement nor the theorem provides a sparse residue cover for ALL semiprimes.\n\n## 7. Sources, corrected anchors and formal boundary\n\nPrimary GFHP source: https://arxiv.org/html/2512.19076v1 (equivalent paper linked at https://eprint.iacr.org/2025/1004.pdf; the eprint endpoint returned HTTP403 in this review). Algorithm5.1's displayed CRT assignment interchanges the modulus coefficients: use the actual conditions z≡s mod n,z≡j mod M, equivalently z=s M M^(-1)modn+j n n^(-1)modM modulo H. Its displayed giant formula must likewise use this lifted z in 1−z, not the residue index j. Equations (3),(8),(9) derive the intended corrected construction directly. We do not rely on those printed lines literally or on the second-vector coefficient assertion.\n\nThe existing GFHP rank-three architecture, known-residue algorithms, classical Gauss reduction and monic multipoint backend receive their ordinary credit. The positive change here is the exact quotient-lattice construction over the wider H³≤N range, the common-baby sparse-catalog batch and its saturation closure using the newly paid annihilator extractor. It is not a universal factoring claim or a new polynomial-multiplication primitive.\n\nExisting SemiprimeFermatQuotientCatalog.lean proves public ZERO-quotient arithmetic coverage and bounded proper gcd leaves for the earlier direct grid. A separate new Lean core has compiled four arithmetic identities/certificate implications for the quotient construction; it does not formalize Gauss termination, the Hermite or sigma-radius bounds, the full algorithm, or its bit complexity. The enlarged range, optimized bit bound, nonzero/equal quotient cases and lattice collision consumer remain paper-level mathematics. Executable implementation is separate evidence and does not substitute for these arguments. No mutable investigation journal is pinned.\n"
+  },
+  "independent_proof_review": {
+    "pin": {
+      "path": "/tmp/semiprime-sparse-residue-gauss-20261016/final-proof-review-a.md",
+      "bytes": 3174,
+      "sha256": "e15040ac387b37bbb9289731e0675cb126451709436a4ad8b2f7a4238ba5284a"
+    },
+    "text": "# Independent exact-file review\n\nReviewed derivation.md: 14258 bytes, SHA256 4c06f44c22f0c1a9d7c845817a390c848344781b8e5422f44144ba90bd97904e.\nSource-pins.json: 2166 bytes, SHA256 aa7d5598bca6e049b8b1083a5b6d5f890455c2e441788c548868127f9aa80410; all nine listed source files match raw bytes and hashes.\n\nVerdict: mathematical argument passes after one minor explicit scale qualification: Positive contract should state N≤w⁶, as the inherited setup does. Merely w=Theta(N^(1/6)) does not justify Section1's P>H from P>16w² and H≤N^(1/3). This is a missing statement normalization, not a new algorithmic assumption or gap in the imported setup.\n\nThe previously supplied outline review is preserved separately. I independently rechecked the final order of operations. The prefix certificate now precedes integer-trivial deletion and is essential: a witness with E=H²i has q0^σ=q0^i moduloP and |σ−i|≤Kcap, so the certificate forces σ=i. The explicit quadratic then has rootP, ensuring that deleting a row after unsuccessful exact quadratic root tests cannot remove the witness. A saturated prefix leaf has positive annihilator H²t; a later saturated surviving row has nonzero E−H²i. Either ends through one inherited wide-extractor call. The proof no longer discards a possibly aliased row before screening.\n\nExact Gauss certificates give 3F1²≤4N²X²D, hence the stated weaker first-vector bound. a=0 contradicts the H>72 norm estimate. Bezout lifting and nearest-line rounding preserve the quotient lattice and give (5/2)NX²/H. At the correct dyadic bin Cauchy gives the safe sqrt30 quotient radius. The signed anchor identity and lattice divisibility agree with the independently compiled arithmetic core. All candidate exponents have logarithmic bit length; negative exponents use the certified unit base.\n\nThe direct common-baby batch is monic and ring safe, with no node-difference inversion. Scanning Kcap+1 gcds and one product-tree localization cost softly linear in the explicit row/baby count. The prefix costs softsqrt(Kcap), dominated by the batch. Exact two-dimensional integer Gauss needs only polynomial bit work per logarithmic-size row, absorbed into soft notation. No free lattice vector, factor residue, or local order is used.\n\nOptimization balances JM and sqrtN/(Mn)^(3/2), yielding M*=N^(1/5)J^(-2/5)n^(-3/5) and soft[w+J+N^(1/5)(J/n)^(3/5)]. A coprime integer choice below M* within polylogarithmic ratio uses the stated classical Jacobsthal bound; this review does not independently audit a particular modulus-search implementation. For n=r²,J=soft r,r=N^(1/18), exponents are M=N^(1/9),H=N^(2/9),rows and babies=N^(1/6), as claimed. Explicit source catalog coverage is inherited from the constructive Fermat-quotient report, not assumed for every input.\n\nScope: independent mathematics and source-file hash review. No code execution or fresh independent primary-PDF closure is claimed. Earlier source-text credit and the wider H³≤N quotient construction are distinguished; no universal sparse catalog, full Lean bit theorem, or all-semiprime acquisition result is established. No repository file was changed by this review.\n",
+    "resolved_qualification": "The final report now states N<=w^6 explicitly; see independent implementation review addendum."
+  },
+  "independent_implementation_review": {
+    "pin": {
+      "path": "/tmp/semiprime-sparse-residue-gauss-20261016/implementation-review.md",
+      "bytes": 4955,
+      "sha256": "2d4b0842c6b7fcc7ddcb8fdefb30091eb418b485f8842aa9f5f43e84bfd8ad7f"
+    },
+    "text": "# Independent final implementation and complexity review\n\nTarget: scripts/probe_semiprime_sparse_residue_gauss.py, 28139 bytes, SHA256 537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3.\nReviewed by source inspection only; no additional examples or tests were run. Earlier independent mathematics review and outline are preserved. Verdict: PASS under the script's explicit semiprime, coverage, prepared-alpha and scale promises. This is a probe implementation, not a proof of those promises or of the all-input goal.\n\nThe integer Gauss loop uses the exact weighted form on (a,u), exact nearest division, and certificates for determinant ±N, ordered norms, reduced dot product, the Gram-derived bound, a≠0, and lattice congruence. The Bezout signs give Hc−sb=u. Exact rounding checks the squared completed-square inequality. No floating-point or second-LLL-vector assumption is present.\n\nfirst_power_collision scans full blocks in increasing positive exponent order. Within a block it descends RIGHT first; subtracting the left polynomial degree from the offset yields the smaller exponents correctly even for unbalanced product trees. The last block uses babies[width−tail:] and a corresponding offset correction, so it tests only exponents through cap. Consequently a saturated FIRST leaf certifies equality of both local orders on the semiprime input, as required by the literal annihilator consumer. Repeated roots and nonunit differences are handled by monic products and gcds, not inverses.\n\nfactor_sparse_catalog performs the q-prefix screen BEFORE constructing/filtering integer-trivial rows. Proper prefix gcds terminate; a saturated positive leaf supplies the nonzero exponent H²t to the actual factor_annihilator routine. A no-hit screen certifies both local q-orders exceed cap. Only then does exact E/H² in [0,cap] trigger the quadratic test/deletion. This repairs the previously identified alias gap: an actual witness forces σ=i before deletion. The nonzero quadratic coefficient is certified.\n\n_shared_collision uses inverse q^width to shift each anchor, covers consecutive blocks including the exact short tail, and separates at most two tail lengths. Baby index recovery plus block offset gives the actual index i. Saturated retained leaves supply E−H²i; the zero case is defensively rechecked, while nonzero exponents are verified by factor_annihilator before use. Its explicit Jacobi scan, first-order separators, correct dyadic bins and genuine trial-division fallback match the inherited conditional extractor. The fallback can be slow outside promises or on bounded small inputs; it is not an oracle. No hidden factors/orders enter production function arguments.\n\nWith G rows and count=cap+1, width=min(count,ceil√(G count)) gives O(G+√(G count)) total anchors and babies, up to logarithms. At most two product/remainder batches plus a single tree descent have this bound. Prefix cost is soft√cap. I also inspected the imported MonicBatch: monic reversed divisors have constant1, Newton reciprocal uses no nonunit inversion, and integer-packed convolution supplies the non-naive multiplication backend. This supports the advertised compressed cost and the report's weaker direct-batch bound. A wide-annihilator call terminates the overall path, so there is no uncharged repeated extraction loop.\n\nCatalog inputs are normalized by deterministic sorting and adjacent deduplication. Local quotient construction applies the explicit Teich formula and reciprocal closure modulo public r²; auxiliary primality remains an explicit premise, since probable-prime rejection is not a deterministic certificate. CRT generation loops over unit j and existing s, verifying the paired congruence z mod r²=s directly. There is no linear catalog-membership search inside that loop: construction costs soft O(MJ), including enumerating unit j and sorting the resulting list. Automatic multiplier selection may return outside-contract in a finite inadmissible regime, as documented; it does not claim a false coverage certificate.\n\nAll inverse operations are on checked units: alpha, q, H moduloN and public CRT/Teich residues modulo known integers. Explicit input reading and large integer bit lengths must still be charged. Prepared alpha/order promises and smaller-factor residue coverage are explicitly NOT certified by this standalone probe. The supplied report describes the separately proved setup; the executable requires its output. No native Lean bit-complexity theorem follows from this review.\n\n## Scale-fix addendum to the earlier mathematics review\n\nThe amended derivation.md is 14435 bytes, SHA256 4602ecfde03947a60badf2818f411084bb64e8a2cdb9d8285b8179c61d32c8e7. Its positive contract now explicitly states N≤w⁶. This resolves the sole normalization issue in final-proof-review-a.md: P>16w² and H³≤N now imply P>H. The original review remains unchanged. No new mathematical blocker was found.\n",
+    "reviewer": "implicit_norm_literature_615, Sol 6.1"
+  },
+  "formal_scope": {
+    "namespace": "RiemannGaussian.SemiprimeSparseResidueGauss",
+    "source_theorems": [
+      "weighted_gauss_certificate",
+      "quotient_lattice_hit",
+      "anchor_identity",
+      "anchor_divisibility"
+    ],
+    "exact_meaning": "finite reduced-basis certificate inequality, hidden-factor divisibility and exact exponent factorization only",
+    "not_proved_in_Lean": [
+      "Gauss algorithm termination",
+      "complete quotient-radius proof",
+      "full controller",
+      "Burgess/annihilator recovery",
+      "whole bit complexity",
+      "all-input sparse residue acquisition",
+      "guaranteed all-semiprime one-sixth theorem"
+    ]
+  },
+  "verification": {
+    "root_leaf": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+      "exit_code": 0
+    },
+    "root_checker": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/CheckSemiprimeSparseResidueGauss.lean",
+      "exit_code": 0,
+      "linters": 15,
+      "explicit_declarations": 4,
+      "generated_declarations": 2,
+      "all_local_declarations": 6,
+      "all_local_theorems": 6,
+      "allowed_transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "root_python": {
+      "command": "../.venv/bin/python -B scripts/probe_semiprime_sparse_residue_gauss.py --self-test",
+      "exit_code": 0,
+      "checks": 287,
+      "interpretation": "exact implementation regressions, not family coverage proof or empirical exponent"
+    },
+    "agent_cli_and_syntax": {
+      "status": "PASS",
+      "finite_fallback_exercised": true,
+      "positive_saturation_and_nonzero_negative_annihilator_exercised": true
+    },
+    "root_whitespace": {
+      "command": "git diff --check",
+      "exit_code": 0
+    },
+    "root_review_repairs": [
+      "unit prefix before integer-trivial deletion prevents lost aliased witnesses",
+      "paired CRT residue certificate removes O(MJ²) membership loop",
+      "deterministic sorted deduplication replaces input-dependent integer hash tables"
+    ]
+  },
+  "lean_agent_audit": {
+    "scope": "Only exact arithmetic core; no basis construction, full algorithm, or bit bound theorem",
+    "files": [
+      {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+        "bytes": 2782,
+        "sha256": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227"
+      },
+      {
+        "path": "/home/dbsanfte/riemann/formal/scripts/CheckSemiprimeSparseResidueGauss.lean",
+        "bytes": 1220,
+        "sha256": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114"
+      }
+    ],
+    "focused_compile": "passed with -DwarningAsError=true",
+    "linters": 15,
+    "declarations": 6,
+    "theorems": 6,
+    "axioms": "only propext, Classical.choice, Quot.sound permitted by all-local module-provenance audit"
+  },
+  "preservation": {
+    "prior_journal_bytes": 1628452,
+    "prior_journal_sha256": "a0b3f9bf4c3eda5c28165194058230b8100bca8d3a5dafbce17c1d0f944c5322",
+    "removing_only_this_new_entry_restores_exact_prior_journal": true,
+    "previous_positive_script_and_audit_hashes_verified": true,
+    "all_29_prior_evidence_packets_untouched": true,
+    "root_registration_changed": false,
+    "public_metadata_changed": false,
+    "broad_build_run": false,
+    "commit_or_push_performed": false
+  },
+  "credit": "GFHP lattice/BSGS architecture, classical exact Gauss reduction and monic multipoint arithmetic are reused. Quotient construction, extended modulus domain, catalog sharing and inherited annihilator integration are derived explicitly; no absolute priority claim.",
+  "remaining_main_goal": "Acquire sufficient residue information or another informative query for EVERY semiprime in soft N^(1/6), then prove complete construction, control, bit time and memory in Lean."
+}

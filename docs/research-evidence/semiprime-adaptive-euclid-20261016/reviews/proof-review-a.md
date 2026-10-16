@@ -1,0 +1,34 @@
+# Final independent review: hyperbolic catalog and full-ray trimming
+
+2026-10-16. Reviewer q_product_literature_615. Verdict: PASS for BOTH exact final reports. No corrections requested. No experiments, examples, builds or report mutations.
+
+Final targets and pins:
+
+* `report.md`: 14077 bytes, SHA256 242dbe88a63b516da5b659983f4dccf9c7b13cb805b5053cf7fc6e580cb62ca7.
+* `source-pins.json`: 1277 bytes, SHA256 cf8528861d5d6537fa29dab869c8c82f67675820d5a62987b34aaf06e9a31f43.
+* `full-ray-trimming.md`: 7771 bytes, SHA256 52684f92a92b2b037d687d99708ff3a3473c5b22502990686d308a9fdc902b23.
+* `full-ray-source-pins.json`: 636 bytes, SHA256 afce9896d4405c1b80dc87f6213ca087c7bd6594354a709f02aaaee962462cc6.
+
+All eight source-pin entries independently match their exact bytes/hashes (including report.md as a source of the full-ray corollary). The original 14017-byte report remains preserved as `report-v1-reviewed.md`, SHA256 b7654d123cc40085532411af75194c9553a978580ca102597208ae563d7bc3f5. Original `review-a.md` remains unchanged and pins that old version.
+
+## Addendum for final hyperbolic report
+
+Compared the complete diff to the earlier reviewed report. Only native-threshold wording changes: publicRow is identified at its actual fixed square-root threshold, and other outputs are qualified as nonzero outputs at another admissible positive threshold. This removes possible overreading of an arbitrary zero-threshold output. It changes no proof, formula, cost or source premise. All mathematical checks in the original review therefore apply to the final bytes: the determinant-coordinate 81-bin bound, explicit hyperbola/root-lookup constructor, weighted-color cone energy, high-digit raw count, global order/phase separation, one-origin-per-entry range, native determinant-frame inclusion, source accounting and cover constants remain valid. Given gamma, soft O(m*ell²) bit setup is the correct conservative ordinary-powering charge; gamma setup and long products remain separate.
+
+## Full-read review of the complete native intermediate-family corollary
+
+1. Source budget and low-digit dependence. Read native publicPairs/euclidPairs, residuePackets/publicPackets and publicPackets_length_le. Public pairs depend only on quotientSlope modulo m and hence on m,n,j. Every pair emits two center packets, so deduplicated triple count <=8mL_m² is a conservative consequence of the compiled total packet count. It is not a mistaken use of a universal coordinate-set count. Deduplicating identical triples is important for the later fixed-(j,t) representative bound. Every tag has a row because the nonzero initial quotientSlope produces the first current pair.
+
+2. Light tags. Occupancy greater than B_m=64L_m⁴ gives at most |F|/B_m<=m/(8L_m²) heavy tags. For odd m>=5 this leaves at least 2m/3 light tags. Their identities and catalog rows are fixed before the higher digit and factor advice. This is deterministic proof-side trimming, not a claim that collisions survive at light tags.
+
+3. Native coordinate bounds. The current frame m=r0*y+r*x with r0>r>0 and y>0 is preserved by the native update. For proper intermediate k, a_abs=r0-kr>0, t=x+ky and m=r*t+a_abs*y. Therefore t<m and 0<a_abs<r0<=m. Current r,y are also below m. The signed modular relation is the compiled pair contract. Thus all light entries meet exactly the three hypotheses used by the color and high-digit parts of the first report. Primitivity and the hyperbolic product bound are unnecessary AFTER a per-tag occupancy bound has been obtained; the corollary does not improperly reuse the hyperbolic occupancy proof for all intermediates.
+
+4. Raw count. At most B_m colors give weighted cone energy <=4B_m⁴m^(5/2), including repeated field points across colors. With three triples fixed, integer t4 and low delta c are fixed; 1<=t4<m makes the tag quadratic nonzero even for c=0. There are at most two possible tags and two signed a representatives, hence four fourth triples. Nonzero signed high-digit slope permits one h; zero slope is a weighted cone additive quadruple. This proves raw sum <=8B_m⁴m^(7/2) without a product/primitivity assumption. Markov and the same varying-selector boxes give the asserted absolute O(K_*M⁶/lambda) loss. The count dominates all later adaptive selections simultaneously, since selection is made only after the universal low-digit light catalog has been fixed.
+
+5. Global targets and FULL covers. The inherited Euler replacement N≡P+Q-1 modulo the literal projected global order and the same no-wrap/dominance inequalities transfer the light raw bound. Multiplicity <=two selected tags follows from equal integer t and low delta via the quadratic. Hence a one-row-at-EACH-tag policy has a light witness set of size at least m/3 and bounded energy. Every cover of the COMPLETE selected target set must cover this witness. Every cover of the complete unselected union likewise covers any selected witness. Crucially the report DOES NOT claim bounded energy for the full heavy-tag union, nor does it silently discard its energy contributions. The logically sufficient subset-cover argument is correct.
+
+6. Advice and origins. Full-input/factor-advised row choices and covers are quantified after the universal raw count. One origin per source entry is permitted under the explicit range-H inequalities of the first report, and a common huge origin cancels. Native publicShift/reflectedShift are explicitly NOT automatically covered: their relative spans may be larger. Multiple differently shifted copies need an additional multiplicity budget. Tiny tag selections, which might evade the light-witness cardinality, are also explicitly outside the full-tag conclusion.
+
+7. Actual supply, clock and constants. The same original prime-pair supply, selector telescope and projected gamma qualify this proof; no independently thin families are intersected. Subpower historical losses and any separately charged negligible parameterized losses may be unioned as stated. Polylog menu/lambda choices give soft Omega(m^(3/2)) cover tradeoff, while the polynomial menu m^.04 choice yields M^5.980 deletion and m^1.46/(162B_m⁴). The constant162 follows from J>=m/3 and J⁴/(2E); the containing-carrier constant81 is likewise correct. Native total emissions plus ordinary Euclidean steps, deduplication and sorting justify soft-linear public operations, with the separately stated soft O(m*ell²) bit setup. None of these counts is a long-query evaluator or a new native bit-time theorem.
+
+The genuine added scope is the full literal current/intermediate source with adaptive row choices, using deterministic light-tag witnesses for the cover obstruction. It does not authorize trimming a factor query, assert coverage for arbitrary policies, handle unrestricted native centers, or prove an operation lower bound. Both reports preserve those distinctions and leave the main acquisition/exponent goal unfinished.

@@ -1,0 +1,109 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/README.md",
+      "bytes": 2822,
+      "sha256": "607cf3959a73a5ae0538a49fb121152de238873a9564b6ce69c95a47fd3b991b",
+      "gzip": false,
+      "role": "New classical strengthening, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/reports/representative-and-local-carriers.md",
+      "bytes": 13420,
+      "sha256": "46fb300723e61dff975421a4bba537598a230b4800a217a7b1f4cb6daef4b7b9",
+      "gzip": false,
+      "role": "New classical strengthening, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/sources/journal-entry.md",
+      "bytes": 3257,
+      "sha256": "ddb84e8979bb128ae0e9537ad5c39b3e5eafe8c35ec58f2e3c716c778e403d48",
+      "gzip": false,
+      "role": "New classical strengthening, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/sources/pre-entry-baseline.json",
+      "bytes": 4252,
+      "sha256": "b6df0599401b92896f667ab75d21abbcbb98df377f2f0f86ea605d5d9489a292",
+      "gzip": false,
+      "role": "New classical strengthening, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/sources/source-pins.json",
+      "bytes": 1213,
+      "sha256": "f7bb869cf6df864170146b2da4697514224e1c29edce13e7f74406f291e19026",
+      "gzip": false,
+      "role": "New classical strengthening, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/reviews/proof-review-a.md",
+      "bytes": 3511,
+      "sha256": "924238b1f0b3124b49e6e7f192789e72f541107920ecc2a22b75888138f4b0c4",
+      "gzip": false,
+      "role": "New classical strengthening, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/reviews/proof-review-b.md",
+      "bytes": 5948,
+      "sha256": "b6dc8feaf42cf85f628ad21bb15a6796408c9c507606f27de775bfba906f8839",
+      "gzip": false,
+      "role": "New classical strengthening, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/reviews/integration-review.md",
+      "bytes": 3817,
+      "sha256": "8fcb363c7010d509211a4630d643e9d47c5c91519847ff276553e994220b8d16",
+      "gzip": false,
+      "role": "New classical strengthening, independent review or metadata"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-small-multiple-20261016/reports/low-digit-plan.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reports/low-digit-plan.md",
+      "bytes": 10259,
+      "sha256": "fba419dd09a21bf10fdf3a7015d02136d36a02a006a2779376e142484a9aabde",
+      "gzip": false,
+      "role": "Unchanged native source, prior carrier/energy proof or archived exponent-catalog theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-native-center-20261016/reports/native-centers-and-origin-span.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/reports/native-centers-and-origin-span.md",
+      "bytes": 15784,
+      "sha256": "2e9eef8c4ba33e53fc5ae822483a2d6d524dfb8d46ff02eeb73209f2a88aea1d",
+      "gzip": false,
+      "role": "Unchanged native source, prior carrier/energy proof or archived exponent-catalog theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "Unchanged native source, prior carrier/energy proof or archived exponent-catalog theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "bytes": 19002,
+      "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+      "gzip": false,
+      "role": "Unchanged native source, prior carrier/energy proof or archived exponent-catalog theorem"
+    },
+    {
+      "original_path": "/tmp/semiprime-representative-carrier-20261016/prior-cyclic-norm.md",
+      "resolved_path": "docs/research-evidence/research-checkpoint-20261012/objects/26/264fca0018ff33277a172ea0e93f6273311a0178a038b127bca8978f8d315b4f.gz",
+      "bytes": 11565,
+      "sha256": "264fca0018ff33277a172ea0e93f6273311a0178a038b127bca8978f8d315b4f",
+      "gzip": true,
+      "role": "Unchanged native source, prior carrier/energy proof or archived exponent-catalog theorem"
+    }
+  ]
+}

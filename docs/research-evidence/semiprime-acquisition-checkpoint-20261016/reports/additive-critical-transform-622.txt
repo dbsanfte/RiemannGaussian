@@ -1,0 +1,76 @@
+Arithmetic compression 622: constructive status, 2026-10-16
+
+Result: no guaranteed acquisition algorithm below the current native
+soft-O(m^(3/2)) clock was obtained. This does not change the integrated
+soft-O(m^(6/5)) all-input factoring baseline. No repository files changed.
+
+The most concrete remaining candidate is a carry-preserving finite
+stationary-phase transform followed by a multiplicative determinant.
+The exact additive transform below is proved, but it does not yet perform
+the required long multiplicative query.
+
+Let M=m^2, [u]_M denote the least nonnegative residue, and let B be an
+arbitrary unit in any commutative ring. Define
+
+  G = sum_(u=0)^(m-1) B^(mu),
+  S_a = sum_(x mod M, m does not divide x) B^[ax+N/x]_M,
+  E_(a,j) = [aj+N/j]_M,
+  r_(a,j) = E_(a,j) mod m,
+  C_a = {j in {1,...,m-1}: a j^2 = N mod m},
+  K_a = sum_(j=1)^(m-1) B^r_(a,j).
+
+Then, without setting B^M=1,
+
+  S_a = G K_a
+        + sum_(j in C_a) (m B^E_(a,j) - G B^r_(a,j)).       (1)
+
+Proof: x=j+mt gives
+
+  ax+N/x = E_(a,j)+mt(a-N/j^2) mod M.
+
+If the derivative is nonzero mod m, these m terms visit each exponent
+having residue r_(a,j) mod m once. If it is zero, all terms have the same
+least residue E_(a,j). This proves (1) as an identity of integer
+polynomials in B, hence over every commutative coefficient ring.
+
+All K_a can be formed in soft-O(m) ring operations: if chi is the
+quadratic character mod m, the number of nonzero j with
+aj+N/j=r mod m is 1+chi(r^2-4aN). Therefore K_a is a cyclic convolution
+of chi with the vector H_s=sum_(r^2=s mod m) B^r, plus a common sum.
+This uses polynomial multiplication modulo T^m-1; it does not require
+roots of unity or division by m in the target ring.
+
+For the actual a_j, E_(a_j,j)=-ell_j mod M. Consequently the remaining
+terms of (1) are precisely the critical-value data already present in
+the native rows. Computing S_a through (1) is soft-O(m), but it has
+not acquired a multiplicative collision product; one must not count
+this additive transform as an acquisition improvement.
+
+The reflection j -> m-j gives ell_j+ell_(m-j)=k_j M. After shifting the
+second interval by the known bounded integer k_j, only O(m) boundary
+factors differ from paired rows with roots
+
+  X_a = B^(N+a+ell_j),
+  X'_a = B^(N+a-ell_j),
+  T_a = X_a+X'_a,
+  C_a^* = X_a X'_a = B^(2N+2a).
+
+With q=B^M the paired long query becomes, up to known unit factors and
+those boundary factors,
+
+  R = product_(a in N*(F_m^*)^2)
+      product_(i=0)^(L-1) (q^(2i)-T_a q^i+B^(2N+2a)).      (2)
+
+The promising extra structure is that the constant coefficients of
+these quadratics lie on one geometric progression B^(2N)(B^2)^a.
+The unresolved exact step is a determinant/norm identity evaluating
+(2), or producing a guaranteed nonunit factor of it, in soft-O(m)
+or in a genuinely useful improved total budget while retaining the
+critical values T_a. A mere additive transform of T_a, a q=1 Fourier
+specialization, or a supplied long q-factorial evaluator does not
+provide this step.
+
+Coefficient-level verification: direct enumerations of both sides of
+(1) agree for m=3,5,7,11, every nonzero N mod m with 1<=N<2m^2, and
+every 1<=a<m. This checks the carry convention; the proof above is
+the justification for arbitrary m and target modulus.

@@ -1,0 +1,30 @@
+{
+  "report": {
+    "path": "report.md",
+    "bytes": 9446,
+    "sha256": "b9362413654b889c5a74d947f7c216ad6194ca57fad463cac14d09e5ded4a84b"
+  },
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "bytes": 6713,
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb"
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+      "bytes": 1767,
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c"
+    },
+    {
+      "path": "/tmp/semiprime-rational-query-20261015/rational/report.md",
+      "bytes": 9866,
+      "sha256": "fae3439b4f7380ec1c819ce03d0f818c2f2b036e8777aca8686c4d17945342eb"
+    }
+  ],
+  "external_theorem_used": false
+}

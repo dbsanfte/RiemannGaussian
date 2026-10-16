@@ -1,0 +1,34 @@
+{
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "bytes": 26720,
+      "sha256": "87b14d8c90e43d824c228a110179037586b548c986ae15f93bbcbc0bb1df05a9"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/tmp/semiprime-extraction-20261016/commutator/actual-qshift-power-defect.md",
+      "bytes": 6120,
+      "sha256": "5e88b2b6b26310e535d959b6a4c3320adb25993c5e878fff8577708076007e5a"
+    },
+    {
+      "path": "/tmp/semiprime-extraction-20261016/diagonal/normalized-operator-note.md",
+      "bytes": 2266,
+      "sha256": "78aa80b4b3d157ed48cf2d2858fb8e0d7a93f6df74ff542e0ab87d594b6ae21a"
+    }
+  ]
+}

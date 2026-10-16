@@ -1,0 +1,36 @@
+{
+  "report": {
+    "path": "report.md",
+    "bytes": 8629,
+    "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70"
+  },
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "bytes": 6713,
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb"
+    },
+    {
+      "path": "/tmp/semiprime-input-dependent-20261015/implicit/positive-adjoint-interface.md",
+      "bytes": 6464,
+      "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7"
+    },
+    {
+      "path": "/tmp/semiprime-decimation-query-20261015/decimation/report.md",
+      "bytes": 10005,
+      "sha256": "65a5c827a64b5c035d3d0a7bed445c6970910f9f92749309878d1e1520e5c4fd"
+    },
+    {
+      "path": "/tmp/semiprime-decimation-query-20261015/decimation/manifest.json",
+      "bytes": 1663,
+      "sha256": "c27e7096d3afe5d1691ec8c8c71af8325bb9b758f2709fef5c742141e77dd86b"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    }
+  ],
+  "new_result": "formal block matvec/transpose and one-binomial remainder; fraction-free one-point decimation vector at ANY scalar",
+  "whole_query_solved": false
+}

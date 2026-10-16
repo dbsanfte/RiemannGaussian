@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/common-channel-collision-locator.md",
+      "bytes": 4385,
+      "sha256": "6dfc707ebe2896d7eb2ff78b6324d4df78b3db7ca6bc6a3e67e7b4adf4c737ff"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-compressed-query-20261015/reports/sparse-intersection-interface.md",
+      "bytes": 6971,
+      "sha256": "c1dc0818bd08a335efd3bf9ce02655f3c425e3727fa1ce9365aa5a0d6fe41ee3"
+    }
+  ],
+  "primary_urls": {
+    "primary/simpade2016.pdf": "https://cs.uwaterloo.ca/~astorjoh/issac16.pdf",
+    "primary/spi2018.pdf": "https://arxiv.org/pdf/1612.07854"
+  }
+}

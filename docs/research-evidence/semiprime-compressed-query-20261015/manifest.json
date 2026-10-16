@@ -1,0 +1,523 @@
+{
+  "date": "2026-10-15",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "progress: actual exclusive-own-row counterfamily and universal single-prefix-stream representation obstruction; no nearlinear actual query or factoring exponent improvement",
+  "model_authorization": "User authorized Sol 6.1 parallel investigations; all three agents used gpt-6.1-sol.",
+  "new_arithmetic": {
+    "cross_hit_input_loss": "O(K_* M^5.969)=O(M^5.989), K_*=O(M^.020)",
+    "same_tag_loss": "O(K_*M^5), already frozen, elementary proof restated",
+    "conclusion": "At every candidate and all 2m\u00b2+2<=L<=4m\u00b2, distinct private own rows have gcdsP andQ respectively",
+    "supply": "same inherited original qualified balanced bin ratio<=3/2, Omega(M6/log\u00b2M); direct union with frozen losses",
+    "count_is_runtime": false,
+    "key_step": "Own-partner constraint gives monic j\u00b2-(2Q+kR)j+Q=0: <=2 tags/multiplier; full lift gives unique partner/width-m\u00b2box."
+  },
+  "representation_theorem": "One forward prefix stream with unit selected denominators has nested prime-divisibility supports; cannotrepresentboth P-onlyandQ-only rows through row-specific units. Same counterfamily for ALLstreams/indexassignments, fullN/adaptive/privateadvice/hugesharedtop included.",
+  "scope": "Single selected stream value times unit per row. Sums, severalvalues/streams, nonunit polynomialspecialization, directnorms andfactor-only algorithms outside. Fulltagproductis0modN onthisfamily, so a saturatedfullgcdaloneisnotfactoracquisition.",
+  "secondary_scopes": "Ordinary rowmoments haveOmega(m)poles/rank atunitrows, nothitcount. B=D(Xrho) boundeds supportscheapscalaraggregation butactualqblockfullunitsupportexcludesdirectstride. Controlleruseonlyrow/BLOCKtime, leafandwithinblockrecoveryunpaid. Genericaffineentrydetdegreebarrier NOT actualfamilycircuitLB; generic sparseGCD NP-hardness NOTtransferred.",
+  "status": "CurrentgeneralquerysoftO(m^1.5); restrictionstablesoftO(m)acquisition andfullLean bit/memory/routing/controller proofremainopen. Newclassicalproofs, noLean/code/examples/build.",
+  "source_pin_resolutions": [
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCarries.lean",
+      "sha256": "db087a256343323e857186154e74506380d9a8f49dc9f76ee0f498897a362f2e",
+      "resolved_path": "RiemannGaussian/SemiprimeDenseRowCarries.lean",
+      "role": "unchanged tracked native source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "sha256": "5c481ee4df760a453ab1453065d083ec343407ad2f8936cb7fafeabc9ab99440",
+      "resolved_path": "RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "role": "unchanged tracked native source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "role": "unchanged tracked native source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "role": "unchanged tracked native source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+      "resolved_path": "RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "role": "unchanged tracked native source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/reports/prescribed-tag-catalog-obstruction.md",
+      "sha256": "f3352537846c716c36f4ad3e191be857c484993f986f887fc770eba3e6ccfca4",
+      "resolved_path": "sources/inherited-prescribed-tag-catalog-obstruction.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/high-digit-folding-obstruction.md",
+      "sha256": "df7e67583b43d3daff78a581ca86f5d10a68cd9e3c922ed5e95d7f95042db3f7",
+      "resolved_path": "sources/inherited-high-digit-folding-obstruction.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/transform-interface.md",
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae",
+      "resolved_path": "sources/inherited-transform-interface.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/charged-skipped-ray-obstruction.md",
+      "sha256": "ca92ab638d96409cc0dadb822ce3fcf31ac77d637b37020f81a19e1462568fae",
+      "resolved_path": "sources/inherited-charged-skipped-ray-obstruction.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "resolved_path": "sources/inherited-full-euclid-all-hit-obstruction.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb",
+      "resolved_path": "sources/inherited-selected-qbinomial-primitive.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "resolved_path": "sources/inherited-actual-row-density-adjoint-obstruction.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/tmp/semiprime-input-dependent-20261015/implicit/positive-adjoint-interface.md",
+      "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7",
+      "resolved_path": "sources/inherited-positive-adjoint-interface.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/tmp/semiprime-input-dependent-20261015/implicit/transform-interface.md",
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae",
+      "resolved_path": "sources/inherited-transform-interface.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/tmp/semiprime-long-query-20261015/norms/report.md",
+      "sha256": "fc473d52c916ba1741e09a6c2be4879365abb76123d9340e0a988c54158cb8dc",
+      "resolved_path": "sources/inherited-report.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/tmp/semiprime-weighted-query-20261015/source/actual-row-density-adjoint-obstruction.md",
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "resolved_path": "sources/inherited-actual-row-density-adjoint-obstruction.md",
+      "role": "bundled inherited source"
+    },
+    {
+      "original_path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c",
+      "resolved_path": "sources/inherited-density-source-pins.json",
+      "role": "bundled inherited source"
+    }
+  ],
+  "historical_archive": {
+    "path": "docs/research-evidence/research-checkpoint-20261012/index.json",
+    "sha256": "aff82272488c438e01237cee3317176247cb354cf4f123afee7751b0d89c40dc",
+    "two_historical_report_objects_verified": true,
+    "all_inherited_nonnative_pins_match_frozen_prior_artifacts": true
+  },
+  "journal_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "heading": "2026-10-15 \u2014 Exclusive own rows defeat every single common prefix-stream conversion",
+    "includes_markdown_heading_prefix": true,
+    "bytes": 5512,
+    "sha256": "14cfd0e40480294da5f8ad06ccd080cd035772bd42a72c00987d1266101faaa0"
+  },
+  "review_targets": [
+    {
+      "review": "reviews/exclusive-own-review-a.md",
+      "target": "reports/exclusive-own-rows-prefix-obstruction.md",
+      "target_sha256": "cb296cf1aec86329a0ee80225cdbd0f762406d735b6e86509d6855e78e1f69ed"
+    },
+    {
+      "review": "reviews/exclusive-own-review-a.md",
+      "target": "sources/exclusive-source-pins.json",
+      "target_sha256": "9d1193d6ec3598859a995bcd7329ed9edd3c7abdfe7b8db8e5bd8fc529677893"
+    },
+    {
+      "review": "reviews/exclusive-own-review-b.md",
+      "target": "reports/exclusive-own-rows-prefix-obstruction.md",
+      "target_sha256": "cb296cf1aec86329a0ee80225cdbd0f762406d735b6e86509d6855e78e1f69ed"
+    },
+    {
+      "review": "reviews/exclusive-own-review-b.md",
+      "target": "sources/exclusive-source-pins.json",
+      "target_sha256": "9d1193d6ec3598859a995bcd7329ed9edd3c7abdfe7b8db8e5bd8fc529677893"
+    },
+    {
+      "review": "reviews/secondary-mathematical-review.md",
+      "target": "reports/sparse-intersection-interface.md",
+      "target_sha256": "c1dc0818bd08a335efd3bf9ce02655f3c425e3727fa1ce9365aa5a0d6fe41ee3"
+    },
+    {
+      "review": "reviews/secondary-mathematical-review.md",
+      "target": "reports/duality-audit.md",
+      "target_sha256": "b4dcf765ae8863ff1146e1f01753ec0a78d43fad803dec1fbdfa10cabb1a0167"
+    },
+    {
+      "review": "reviews/secondary-mathematical-review.md",
+      "target": "reports/compressed-block-aggregation.md",
+      "target_sha256": "f705f561af0657bf4c7a58e48883a65183a67524caf34bc1cd81c83517af5f69"
+    },
+    {
+      "review": "reviews/integration-journal-review.md",
+      "target": "README.md",
+      "target_sha256": "98d2be944fd7090e1fecb22eb4153422a8161e7d4ffe9abcdacc8defec6074ac"
+    },
+    {
+      "review": "reviews/integration-journal-review.md",
+      "target": "sources/journal-entry.md",
+      "target_sha256": "14cfd0e40480294da5f8ad06ccd080cd035772bd42a72c00987d1266101faaa0"
+    }
+  ],
+  "primary_sources": [
+    {
+      "path": "primary/sparse-gcd-2026.pdf.gz",
+      "url": "https://arxiv.org/pdf/2609.08074",
+      "inspection": "investigator checked source premises; not a premise of main arithmetic theorem"
+    },
+    {
+      "path": "primary/sparse-gcd-hardness-2026.pdf.gz",
+      "url": "https://arxiv.org/pdf/2606.12144",
+      "inspection": "investigator checked source premises; not a premise of main arithmetic theorem"
+    },
+    {
+      "path": "primary/blackbox-sparse-gcd.pdf.gz",
+      "url": "https://www.texmacs.org/joris/sparserat/sparserat.pdf",
+      "inspection": "investigator checked source premises; not a premise of main arithmetic theorem"
+    },
+    {
+      "path": "primary/direct-images-2026.pdf.gz",
+      "url": "https://arxiv.org/abs/2602.14657",
+      "inspection": "direct images/invertible Gaussian pivot; no nearlinear queryclock"
+    },
+    {
+      "path": "primary/sparse-resultants-slp-2018.pdf.gz",
+      "url": "https://ri.conicet.gov.ar/bitstream/handle/11336/89011/CONICET_Digital_Nro.9f5a9366-0db2-455c-8733-7fb11571421e_A.pdf?sequence=2",
+      "inspection": "probabilistic Q-arithmetic bound polynomial in resultantdegree"
+    },
+    {
+      "path": "primary/qrotations-2014.pdf.gz",
+      "url": "https://arxiv.org/abs/1408.5292",
+      "inspection": "integer q-grid duality or changing rowparameter"
+    },
+    {
+      "path": "primary/multivariate-qkrawtchouk-2015.pdf.gz",
+      "url": "https://arxiv.org/abs/1508.07770",
+      "inspection": "qrotation factorization; no commonstream phase conversion acquired"
+    }
+  ],
+  "duality_caveat_resolution": "Older exploratory duality audit leaves hugecommonTOPopen; main theorem closes it only for singlelookup/unitdenominatorcontract, no horizoninflationclaim.",
+  "validation": {
+    "artifact_sha256": "PASS",
+    "source_map_entries": 38,
+    "external_pins_verified": 17,
+    "native_pins_verified": 5,
+    "independent_main_reviews": "two final-byte PASS",
+    "secondary_math_review": "root PASS; background papers investigator-inspected, no exhaustive independent closure claimed",
+    "readme_relative_links_verified": 4,
+    "prior_bundles": [
+      {
+        "path": "docs/research-evidence/semiprime-long-query-20261015",
+        "manifest_sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c",
+        "files_verified": 22,
+        "exact_journal_entry_prefix_verified": {
+          "path": "docs/semiprime-factorisation-investigation.md",
+          "heading": "2026-10-15 \u2014 Long-query literature audit and source-specific compression obstructions",
+          "sha256": "cb5559328819642e1c6bb5dd5403ce6ccdc9ad42c879bf2f4715b7e11b250548",
+          "bytes": 3979
+        }
+      },
+      {
+        "path": "docs/research-evidence/semiprime-canonical-query-20261015",
+        "manifest_sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06",
+        "files_verified": 25,
+        "exact_journal_entry_prefix_verified": {
+          "path": "docs/semiprime-factorisation-investigation.md",
+          "heading": "2026-10-15 \u2014 Actual sparse catalogs and signed endpoint cancellations fail",
+          "sha256": "ea67ba0b288b864b54e38739ee39227beca50a1f4c3960f79e944244a0a59675",
+          "bytes": 5309
+        }
+      },
+      {
+        "path": "docs/research-evidence/semiprime-input-dependent-20261015",
+        "manifest_sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874",
+        "files_verified": 28,
+        "exact_journal_entry_prefix_verified": {
+          "path": "docs/semiprime-factorisation-investigation.md",
+          "heading": "2026-10-15 \u2014 Full-input digit folding fails; a formal weighted-sum route is sufficient",
+          "includes_markdown_heading_prefix": true,
+          "sha256": "29c4f0a16fd32c9dd16a16311330312d9a40e896466fd4520e3694834a834467",
+          "bytes": 5500
+        }
+      },
+      {
+        "path": "docs/research-evidence/semiprime-weighted-query-20261015",
+        "manifest_sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302",
+        "files_verified": 32,
+        "exact_journal_entry_prefix_verified": {
+          "path": "docs/semiprime-factorisation-investigation.md",
+          "heading": "2026-10-15 \u2014 Full-row collision sparsity and actual adjoint-sector obstruction",
+          "includes_markdown_heading_prefix": true,
+          "bytes": 5452,
+          "sha256": "ac49d9e419a98f5bc4086d29fdda091cc0ea329e83f75ba154d07846ec699067"
+        }
+      },
+      {
+        "path": "docs/research-evidence/semiprime-rational-query-20261015",
+        "manifest_sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e",
+        "files_verified": 40,
+        "exact_journal_entry_prefix_verified": {
+          "path": "docs/semiprime-factorisation-investigation.md",
+          "heading": "2026-10-15 \u2014 Rational adjoint solvability equals the row zero test",
+          "includes_markdown_heading_prefix": true,
+          "bytes": 5135,
+          "sha256": "1c12b8e71cfb7379487371afc0af6f1032aef1bf4960f5857f67b6ed47b30162"
+        }
+      }
+    ],
+    "journal_change_is_exact_insertions": "PASS against historicalpre-entrygzip",
+    "git_diff_check": "PASS",
+    "lean_build": "notrun; researchonly",
+    "examples_or_benchmarks": "none"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "98d2be944fd7090e1fecb22eb4153422a8161e7d4ffe9abcdacc8defec6074ac",
+      "bytes": 6473
+    },
+    {
+      "path": "primary/blackbox-sparse-gcd.pdf.gz",
+      "sha256": "18544a0f56a6835c30064d13e129a66589b6bd90e025b7ec2cee7547c1797c27",
+      "bytes": 151423,
+      "uncompressed_sha256": "5ac338c927864badbfbb74b4b80b5240943deefe2e578c6ce8d34ab9c129acaf",
+      "uncompressed_bytes": 184865
+    },
+    {
+      "path": "primary/blackbox-sparse-gcd.txt.gz",
+      "sha256": "746d769523c22e85b1bf3cae1ad60ce1655f199291d10f2e0f7c192feac1abcf",
+      "bytes": 12851,
+      "uncompressed_sha256": "63e5975fbe99dadf83d29e2fe26d72d3d16d3cccd099754132c23e61c83f59c3",
+      "uncompressed_bytes": 42212
+    },
+    {
+      "path": "primary/direct-images-2026.pdf.gz",
+      "sha256": "812759d802491c3a46781e09a7427c0ff2458cdf5ba9b3cb8040547aec40610a",
+      "bytes": 555556,
+      "uncompressed_sha256": "925b07d1def066ac5a6c0ab06b5ee788a05d456a47fc920957b0ec7aa0722315",
+      "uncompressed_bytes": 642733
+    },
+    {
+      "path": "primary/direct-images-2026.txt.gz",
+      "sha256": "8e31be55cdf85c97238680792197e0f6a2f080465dde984178b71f177b0b1c80",
+      "bytes": 31830,
+      "uncompressed_sha256": "5566115b5ebecf0166bd84354f0d0ad6c1233336ce593f93dbbf9265780cb02f",
+      "uncompressed_bytes": 131338
+    },
+    {
+      "path": "primary/multivariate-qkrawtchouk-2015.pdf.gz",
+      "sha256": "cf0f8c336f37b58443b26a84e10331d270b05ec8a8f551a8e4bd7b0bc839271e",
+      "bytes": 184614,
+      "uncompressed_sha256": "196df6719b1f4c940d0141a5b060a19cdd32cb5d41660a8c00780ed6a836bf76",
+      "uncompressed_bytes": 239505
+    },
+    {
+      "path": "primary/multivariate-qkrawtchouk-2015.txt.gz",
+      "sha256": "e739af86adf787ea00ce79d5453f2df7e94d3caeb6b4a139e80ffcb33afc6614",
+      "bytes": 20140,
+      "uncompressed_sha256": "4e8ef3feded50261095bb4ccaf8e8c4b18f3cdad1b2e5a74210c46545e3dc9a4",
+      "uncompressed_bytes": 105378
+    },
+    {
+      "path": "primary/qrotations-2014.pdf.gz",
+      "sha256": "efd067a620267c21e74d6e99d0fa686f9de3b3277c74a80cd3f669c282278848",
+      "bytes": 143159,
+      "uncompressed_sha256": "2b7e727e253f02c51d68f9278207bdc1439b74a7afbc0a792441e64eb0bd11d9",
+      "uncompressed_bytes": 196297
+    },
+    {
+      "path": "primary/qrotations-2014.txt.gz",
+      "sha256": "cba3c3cd2ee845bcf5c8e8187843612fccc86ff27368b45be67a6a26129f5feb",
+      "bytes": 15876,
+      "uncompressed_sha256": "d064ac44cea72dcdf8710d368924b3b25680c45ff508b760883e2a2f40b02e56",
+      "uncompressed_bytes": 76254
+    },
+    {
+      "path": "primary/sparse-gcd-2026.pdf.gz",
+      "sha256": "2e3422246de43ea66ff8e1095c430507a51e9d56e9a2e016d16f1f2dabb6dd89",
+      "bytes": 852371,
+      "uncompressed_sha256": "740a7a3d98bfba9e1c00cb37c8b22d2b6252e1862345c89caeaaef8c766b7ae7",
+      "uncompressed_bytes": 996200
+    },
+    {
+      "path": "primary/sparse-gcd-2026.txt.gz",
+      "sha256": "b49702378bb4ad9471abee7f69301398c2e26fa7450e6dd6aa96a66ba26bcc6f",
+      "bytes": 79689,
+      "uncompressed_sha256": "84b4f594a08a54227ec9608c263a89e336fc82a11ff44a77414486574d06444b",
+      "uncompressed_bytes": 341062
+    },
+    {
+      "path": "primary/sparse-gcd-hardness-2026.pdf.gz",
+      "sha256": "1ce12d47fd7883b67f61f06c1f026c74add1acd085d1a6439dc9798d993dfcff",
+      "bytes": 228792,
+      "uncompressed_sha256": "785bb276b825b37cbc5b7a32c504b806cdbf3da99037936cd03e9a4a0c87824e",
+      "uncompressed_bytes": 277798
+    },
+    {
+      "path": "primary/sparse-gcd-hardness-2026.txt.gz",
+      "sha256": "ec769ff913fe0e664fe5a07c12cdc7ee26ed5fe50e0ada00a9dbf8603e6f2780",
+      "bytes": 19313,
+      "uncompressed_sha256": "74f1eb2ff1142bfe11baff6347027ff44e65a5d0a6ce3a201fbbc72944504346",
+      "uncompressed_bytes": 69404
+    },
+    {
+      "path": "primary/sparse-resultants-slp-2018.pdf.gz",
+      "sha256": "5b539787947e6446cdcd9d75030b70dab08533a0142484e514897e67ca1c33c8",
+      "bytes": 355362,
+      "uncompressed_sha256": "4da370b1fe3b3e07809431f6bfe2553c8e73e4b42908d896d4dceaff27aabcb4",
+      "uncompressed_bytes": 407207
+    },
+    {
+      "path": "primary/sparse-resultants-slp-2018.txt.gz",
+      "sha256": "162fbcd5207ee041041d7da851720429cdd2eb0550ff513cd81c811e964e32e7",
+      "bytes": 18257,
+      "uncompressed_sha256": "38d1594e41feb96f0bb029ece71fbb10e80341ec6a431ab622b6fa3530a7c101",
+      "uncompressed_bytes": 59305
+    },
+    {
+      "path": "reports/compressed-block-aggregation.md",
+      "sha256": "f705f561af0657bf4c7a58e48883a65183a67524caf34bc1cd81c83517af5f69",
+      "bytes": 8718
+    },
+    {
+      "path": "reports/duality-audit.md",
+      "sha256": "b4dcf765ae8863ff1146e1f01753ec0a78d43fad803dec1fbdfa10cabb1a0167",
+      "bytes": 8385
+    },
+    {
+      "path": "reports/exclusive-own-rows-prefix-obstruction.md",
+      "sha256": "cb296cf1aec86329a0ee80225cdbd0f762406d735b6e86509d6855e78e1f69ed",
+      "bytes": 9878
+    },
+    {
+      "path": "reports/sparse-intersection-interface.md",
+      "sha256": "c1dc0818bd08a335efd3bf9ce02655f3c425e3727fa1ce9365aa5a0d6fe41ee3",
+      "bytes": 6971
+    },
+    {
+      "path": "reviews/exclusive-own-review-a.md",
+      "sha256": "7ba611eb6476d4174edda820470ea2b6939b76a0cd60d4d46dfdbb3466d44bdc",
+      "bytes": 5494
+    },
+    {
+      "path": "reviews/exclusive-own-review-b.md",
+      "sha256": "20e841f2b2048b717d0fad8967212f0b95233b72cd3f5916b8f79cbc2217dbe3",
+      "bytes": 5027
+    },
+    {
+      "path": "reviews/integration-journal-review.md",
+      "sha256": "2c7b632ca20d0f15941b5974f2a9f326897f563067e924a7a91413f7f9ed04ca",
+      "bytes": 4333
+    },
+    {
+      "path": "reviews/secondary-mathematical-review.md",
+      "sha256": "acfdcc834c39b642ea4e22a9e250d361f6f9be485288d9fe234ebd7f8cedee53",
+      "bytes": 3472
+    },
+    {
+      "path": "source-map.json",
+      "sha256": "7ed30522ab88273674554a2c27533de93e217fe01822c40a10eb854b17f59bb1",
+      "bytes": 12597
+    },
+    {
+      "path": "sources/aggregate-manifest.json",
+      "sha256": "965387688d262d5ae92d87b44c60c6d094641ff7bab7bebe32abe4c482713735",
+      "bytes": 2135
+    },
+    {
+      "path": "sources/collision-primary-pins.json",
+      "sha256": "2400bdd6f9882a3ffdfb285d11db03a1dce77b3db5881b63a40f3ac5b2b3bcb5",
+      "bytes": 1316
+    },
+    {
+      "path": "sources/collision-source-pins.json",
+      "sha256": "6a26f8aee0cdf60c40af441e5d595ad6c77fd020eeb1811969d5f1378d481142",
+      "bytes": 370
+    },
+    {
+      "path": "sources/exclusive-source-pins.json",
+      "sha256": "9d1193d6ec3598859a995bcd7329ed9edd3c7abdfe7b8db8e5bd8fc529677893",
+      "bytes": 1781
+    },
+    {
+      "path": "sources/inherited-actual-row-density-adjoint-obstruction.md",
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "bytes": 8621
+    },
+    {
+      "path": "sources/inherited-charged-skipped-ray-obstruction.md",
+      "sha256": "ca92ab638d96409cc0dadb822ce3fcf31ac77d637b37020f81a19e1462568fae",
+      "bytes": 11430
+    },
+    {
+      "path": "sources/inherited-density-source-pins.json",
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c",
+      "bytes": 1767
+    },
+    {
+      "path": "sources/inherited-full-euclid-all-hit-obstruction.md",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "bytes": 24354
+    },
+    {
+      "path": "sources/inherited-high-digit-folding-obstruction.md",
+      "sha256": "df7e67583b43d3daff78a581ca86f5d10a68cd9e3c922ed5e95d7f95042db3f7",
+      "bytes": 9623
+    },
+    {
+      "path": "sources/inherited-positive-adjoint-interface.md",
+      "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7",
+      "bytes": 6464
+    },
+    {
+      "path": "sources/inherited-prescribed-tag-catalog-obstruction.md",
+      "sha256": "f3352537846c716c36f4ad3e191be857c484993f986f887fc770eba3e6ccfca4",
+      "bytes": 7704
+    },
+    {
+      "path": "sources/inherited-report.md",
+      "sha256": "fc473d52c916ba1741e09a6c2be4879365abb76123d9340e0a988c54158cb8dc",
+      "bytes": 13674
+    },
+    {
+      "path": "sources/inherited-selected-qbinomial-primitive.md",
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb",
+      "bytes": 6713
+    },
+    {
+      "path": "sources/inherited-transform-interface.md",
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae",
+      "bytes": 8901
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "sha256": "14cfd0e40480294da5f8ad06ccd080cd035772bd42a72c00987d1266101faaa0",
+      "bytes": 5512
+    },
+    {
+      "path": "sources/stream-manifest.json",
+      "sha256": "c227ec5d589eae3c98bc087542e41380f5a6be4198c68cb92a617a5ed6ae4947",
+      "bytes": 846
+    }
+  ]
+}

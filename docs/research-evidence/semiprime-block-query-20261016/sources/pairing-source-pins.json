@@ -1,0 +1,40 @@
+{
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "premise": "centered, liftRow, quotientSlope/publicInverse"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "premise": "seedOffset, bounds, low-digit quadratic"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "bytes": 26720,
+      "sha256": "87b14d8c90e43d824c228a110179037586b548c986ae15f93bbcbc0bb1df05a9",
+      "premise": "old exact lift balance and second-input-digit transport"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeIsolatedRowAcquisitionObstruction.lean",
+      "bytes": 14449,
+      "sha256": "f5c5a10d02017f60755ad8230302a34ef3d6427ac4152d5c9fb1310dbf10af6f",
+      "premise": "old prescribed-gap carry uniqueness; not claimed new"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "premise": "E5--E7 actual local prime-order supply"
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/canonical/partner-query-status.md",
+      "bytes": 3217,
+      "sha256": "da5c40cfe6f3ec9c4b920669aad0e3bf37ba828a10521b94edf9af7287029bd3",
+      "premise": "prior antipodal and hyperbola investigation, unchanged unpaid query"
+    }
+  ]
+}

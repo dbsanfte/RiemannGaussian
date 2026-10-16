@@ -1,0 +1,61 @@
+{
+  "audit_date": "2026-10-15",
+  "primary_sources": [
+    {
+      "url": "https://www.texmacs.org/joris/fftcomp/fftcomp.pdf",
+      "local": "norms/spiroids.pdf",
+      "verified": "Theorem 1 page 1: arbitrary Z/rZ; D^(5/sqrt(log D))*softO(D log r); manuscript date 2026-08-12. Section 1.2 credits KU composite-ring extensions."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jco.2026.102073",
+      "note": "DOI resolver web tool inaccessible; publication date 2026-10-01 independently listed by author institutional research portal."
+    },
+    {
+      "url": "https://researchportal.ip-paris.fr/en/publications/fast-modular-composition-using-spiroids/",
+      "verified": "Journal of Complexity 96, article 102073, published 1 October 2026."
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.jco.2026.102073",
+      "local": "norms/crossref-spiroids.json",
+      "verified": "Publisher-deposited DOI metadata: published-print October 2026; created 2026-08-07; Journal of Complexity 96 article 102073."
+    }
+  ],
+  "review": "Both qproducts files independently reviewed for algebraic correctness and appropriately scoped non-universal obstructions.",
+  "files": [
+    {
+      "path": "norms/spiroids.pdf",
+      "sha256": "3fef0f8c6851f45dc9e876ae178c46d73264546e9bbcde6a9d1204b69d600ecc",
+      "bytes": 378515
+    },
+    {
+      "path": "norms/spiroids.txt",
+      "sha256": "9107cf618606ee994b207930467f073731acc407187c86de096e4b501f133a17",
+      "bytes": 103431
+    },
+    {
+      "path": "norms/spiroids-page1.png",
+      "sha256": "f853fde1375bf54246ec3933a5db9be479a66cb9114cc91984e8615415ba6075",
+      "bytes": 281129
+    },
+    {
+      "path": "norms/report.md",
+      "sha256": "fc473d52c916ba1741e09a6c2be4879365abb76123d9340e0a988c54158cb8dc",
+      "bytes": 13674
+    },
+    {
+      "path": "qproducts/findings.md",
+      "sha256": "a42152b65fa0a9e4beaba3959826c01977aad0ae309127c7d109e98836e3ed83",
+      "bytes": 7017
+    },
+    {
+      "path": "qproducts/formal-log-obstruction.md",
+      "sha256": "ddad3eed6caa962507d435892110cc952c64f93876326514e57d7725d2fb138a",
+      "bytes": 6715
+    },
+    {
+      "path": "norms/crossref-spiroids.json",
+      "sha256": "1b54a464b53f962ff66b9e0f88032504b9e907e9ae6ed70681336dd592832cc0",
+      "bytes": 11282
+    }
+  ]
+}

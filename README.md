@@ -99,10 +99,10 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Operator source audits and the OpenAI 7/8 baseline published.** In the original near-one strip, the all-jet carry source detector is closed. Native Kummer, divisor-exchange and Gaussian cofactor audits identify scoped failed estimates while preserving exact masks. OpenAI's pinned 7/8 proof discharges the restricted frozen Riesz endpoint after the Lean 4.34.1 migration.
-The remaining all-height strip is 1/2 < Re(rho) <= 7/8. An independent source-sensitive signed arithmetic estimate remains open; the new audits do not prove RH or a further zero-free region.
+**Semiprime checkpoint and portable certificate source links.** Registers three semiprime arithmetic proof modules with explicit hypotheses, archives the research evidence, and makes historical certificate source links independent of locally installed toolchains. The guaranteed sixth-rate factorization algorithm remains unproved.
+The semiprime research goal is paused. Universal cheap acquisition and the complete Lean bit-complexity proof remain open; the RH arithmetic obligation is unchanged.
 [Current checked endpoint](RiemannGaussian/SuzukiLaplaceCompensator.lean#L246)
-· [Proof details](docs/arithmetic-operator-research.md).
+· [Proof details](docs/semiprime-factorisation-investigation.md#2026-10-16-publication-checkpoint).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

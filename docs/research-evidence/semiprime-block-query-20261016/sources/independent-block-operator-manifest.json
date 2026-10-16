@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "path": "block-operator.md",
+      "bytes": 5924,
+      "sha256": "8b1bdc2b92d0738375a98d1c8d513cfe81060f3474b9e7272eb3ac42d55b0318"
+    },
+    {
+      "path": "tellegen.pdf",
+      "bytes": 259351,
+      "sha256": "c179b22688abc2ccf2deadc1fb5398ef9916e49f10688edc7a2a4b20a412e269"
+    },
+    {
+      "path": "tellegen.txt",
+      "bytes": 69299,
+      "sha256": "85648d6d44abcf1e3e86c62a017dbd0f3f0456ad403bbcf11789e0fc8e214257"
+    },
+    {
+      "path": "displacement2017.pdf",
+      "bytes": 758372,
+      "sha256": "466d9112461876577fd631808b37f3fab3150d621ba7518b29aef85f1075ee3b"
+    },
+    {
+      "path": "displacement2017.txt",
+      "bytes": 166080,
+      "sha256": "ade7cfb8d55d37f4b967ec406ec0145a956f25e993eef6276455b68850ca78e5"
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "bytes": 6713,
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schema": "semiprime-gauss-radius-validation-v1",
+  "date_utc": "2026-10-16",
+  "baseline_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "verdict": "PASS: formal certificate-to-radius and public-cap validation; no acquisition or complexity advance",
+  "previous_goal_turn": "No acquisition scaling progress. Exact weighted divisor boundary reduction and source review changed the next investigation; no all-input acquisition was supplied.",
+  "new_formal_scope": {
+    "namespace": "RiemannGaussian.SemiprimeSparseResidueGaussRadius",
+    "assumptions": [
+      "Positive real N,H; X>=1; 0<=s<H; H³<=N.",
+      "Exact reduced-Gram certificate, norm order and half-inner-product reduction inequality.",
+      "Exact nearest-line lift inequality for the three coefficient norm.",
+      "Evaluation identity g(x)=sigma*P, 0<=x<=X and HX<=2P."
+    ],
+    "conclusions": [
+      "2H*(c²+X²b²+X⁴a²)<=5N X²",
+      "H³*sigma²<=30N",
+      "abs(sigma)<6sqrt(N/H³)"
+    ],
+    "public_cap": {
+      "definition": "publicRadius N H = Nat.sqrt (((N+H³-1)/H³)-1)+1",
+      "assumptions": "Natural N,H positive; integer sigma satisfies the squared radius bound.",
+      "conclusions": [
+        "publicRadius>=1",
+        "N<=H³*publicRadius²",
+        "abs(sigma)<=8*publicRadius"
+      ]
+    },
+    "scope_boundary": "Field certificate/radius theorem and integer cap are separate formal statements. No reduced basis constructor, nonzero leading coefficient producer, entire quotient-to-controller composition, acquisition evaluator or bit-complexity theorem is newly formalized."
+  },
+  "source_pins": [
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+      "bytes": 8065,
+      "sha256": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+      "bytes": 1237,
+      "sha256": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb"
+    },
+    {
+      "path": "docs/semiprime-sparse-residue-gauss-audit.json",
+      "bytes": 33419,
+      "sha256": "92c7ac8748ee2ad3af3e98549b366bd0be00fa29ed8dd9bce95013a37586cc4e"
+    },
+    {
+      "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+      "bytes": 28139,
+      "sha256": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+      "bytes": 2782,
+      "sha256": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+      "bytes": 1220,
+      "sha256": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "scripts/probe_semiprime_long_period.py",
+      "bytes": 27138,
+      "sha256": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f"
+    },
+    {
+      "path": "scripts/probe_semiprime_quadratic_extraction.py",
+      "bytes": 18493,
+      "sha256": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb"
+    },
+    {
+      "path": "scripts/probe_semiprime_single_extraction.py",
+      "bytes": 16419,
+      "sha256": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34"
+    },
+    {
+      "path": "scripts/probe_semiprime_weighted_batch.py",
+      "bytes": 11127,
+      "sha256": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053"
+    },
+    {
+      "path": "/tmp/semiprime-fermat-quotient-catalog-20261016/constructive-catalog.md",
+      "bytes": 9056,
+      "sha256": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2"
+    },
+    {
+      "path": "/tmp/semiprime-direct-frontier-20261016/lifted/previous-gaofenghupan.txt",
+      "bytes": 115381,
+      "sha256": "85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+      "bytes": 5679,
+      "sha256": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+      "bytes": 2782,
+      "sha256": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+      "bytes": 1220,
+      "sha256": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114"
+    }
+  ],
+  "independent_review": {
+    "verdict": "PASS",
+    "reviewed_final_sources": [
+      {
+        "path": "RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+        "bytes": 8065,
+        "sha256": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d"
+      },
+      {
+        "path": "scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+        "bytes": 1237,
+        "sha256": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb"
+      },
+      {
+        "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+        "bytes": 2782,
+        "sha256": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227"
+      }
+    ],
+    "mathematical_checks": [
+      "Reduced Gram assumptions imply 3 F² <= 4 N² W; the target bound is a conclusion, not a premise.",
+      "Nearest-lift certificate, D>=H²X², D<=2H²X², and H³<=N give HF<=2ND and HD<=2NX², hence 2HT<=5NX². No target norm/radius is assumed.",
+      "Three-term Cauchy bound and 0<=x<=X imply evaluation²<=3 weighted norm. HX<=2P then gives H³ sigma²<=30N.",
+      "N,H positive make 30<36 yield strict real radius 6 sqrt(N/H³).",
+      "publicRadius is floor_sqrt(ceil(N/H³)-1)+1, using natural-number division/truncation exactly as the executable integer formula; positivity holds even without input promises because one is added.",
+      "For positive N,H, t=ceil(N/H³)>=1 and N<=H³t. Nat.lt_succ_sqrt on t-1 implies t<=(floor_sqrt(t-1)+1)², giving the required public ceiling certificate.",
+      "public_integer_cap transports Nat positivity and coverage into integers by exact casts and invokes the previously reviewed integer_cap. It does not assume the final interval bound."
+    ],
+    "scope": "The final leaf now constructs and proves coverage of the explicit public ceiling radius; this supersedes only the earlier review statement that the caller must construct that ceiling witness. Reduced-basis production, arithmetic quotient construction, source acquisition, algorithmic complexity, and whole factoring correctness remain outside this leaf. The unchanged module-provenance checker covers newly added declarations when executed; root is responsible for rerunning the focused gates.",
+    "issues": [],
+    "external_review_pin": {
+      "path": "/tmp/semiprime-weighted-boundary-acquisition-20261016/moving/radius-review.json",
+      "bytes": 3920,
+      "sha256": "0999da99d789a7b8c0684a1e72e473555481231fe471783e13024c2cc63991bf"
+    }
+  },
+  "verification": {
+    "root_exact_source": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true -o .lake/build/lib/lean/RiemannGaussian/SemiprimeSparseResidueGaussRadius.olean RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+      "exit_code": 0
+    },
+    "root_checker": {
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+      "exit_code": 0,
+      "linters": 15,
+      "explicit_declarations": 11,
+      "generated_declarations": 4,
+      "all_local_declarations": 15,
+      "all_local_theorems": 14,
+      "allowed_transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "prior_source_pins_verified": 14,
+    "runtime_tests": "No new executable algorithm or measurement claim; earlier 287-check probe unchanged and hash verified."
+  },
+  "agent_audit": {
+    "scope": "Formal validation only: exact reduced-Gram and nearest-lift certificates imply norm and strict quotient radius. No basis constructor, acquisition or bit-complexity theorem.",
+    "files": [
+      {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+        "bytes": 8065,
+        "sha256": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d"
+      },
+      {
+        "path": "/home/dbsanfte/riemann/formal/scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+        "bytes": 1237,
+        "sha256": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb"
+      }
+    ],
+    "theorems": [
+      "gram_bound",
+      "lifted_norm_bound",
+      "evaluation_bound",
+      "quotient_radius_squared",
+      "radius_of_squared",
+      "quotient_radius",
+      "integer_cap",
+      "publicRadius_pos",
+      "publicRadius_covers",
+      "public_integer_cap"
+    ],
+    "results": {
+      "norm": "2*H*(c^2+X^2*b^2+X^4*a^2) <= 5*N*X^2",
+      "squared_radius": "H^3*sigma^2 <= 30*N",
+      "strict_radius": "abs(sigma) < 6*sqrt(N/H^3)",
+      "integer_cap": "For integer H>0,R>=1, H^3*sigma^2<=30*N and N<=H^3*R^2 imply abs(sigma)<=8*R",
+      "public_cap": "R=Nat.sqrt(((N+H^3-1)/H^3)-1)+1 is computable; R>=1,N<=H^3R^2 for positiveN,H; squared radius implies abs(sigma)<=8R"
+    },
+    "validation": {
+      "warning_as_error_leaf": "pass",
+      "warning_as_error_checker": "pass",
+      "linters": 15,
+      "declarations": 15,
+      "theorems": 14,
+      "axioms": "all-local module-provenance audit permits only propext, Classical.choice, Quot.sound"
+    },
+    "limitation": "Optional nonzero quadratic coefficient proof not added; existing core/engine supplies it separately.",
+    "computable_definitions": [
+      "publicRadius"
+    ]
+  },
+  "preservation": {
+    "prior_journal_bytes": 1633656,
+    "prior_journal_sha256": "e606fa7859eae45b718f09a07f322e2ba92ec7c6f39503810b1e7d8bd19de25f",
+    "new_entry_sha256": "85388f9d22aa2e3c1a1132d56b5acc198cf459a288f316814fd542b630e145be",
+    "removing_only_new_entry_restores_prior_journal": true,
+    "no_historical_payload_written": true,
+    "no_root_registration_or_public_metadata_change": true,
+    "no_broad_build": true,
+    "no_staging_commit_or_push": true
+  },
+  "remaining_main_goal": "Acquire sufficient factor residue data or the original whole-family collision query in soft N^(1/6), and complete the Lean construction/controller and full bit-complexity proof. Goal remains active."
+}

@@ -1,0 +1,258 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "finite literal-source all-scalar spectral counterproof; asymptotic actual short-row cone/carrier obstruction; opposite-tag finite reflection constraint; no whole-query improvement",
+  "model_authorization": "User authorized parallel Sol 6.1 research; three existing gpt-6.1-sol agents reused.",
+  "whole_family_soft_linear_query_acquired": false,
+  "general_query_bound": "Existing long-query soft O(m^(3/2)) bound unchanged",
+  "spectral_counterexample": "m43,P69263,Q70163,N4859699869 with literal least-prime selector and projected base2 gamma3896048378. Actual canonical collisions in BOTH fields and full norm zero, but phi(x) unit for EVERY scalar modulo N.",
+  "proof_mechanism": "Actual degree42 companion-pencil determinant, certified by 43 direct field determinants each; explicit Frobenius remainders and full Bezout identities gcd(phi_p,X^p-X)=1 in both certified prime fields. Independent source/identity reconstruction and byte-identical certificate regeneration.",
+  "finite_scope": "ONE actual counterexample refutes universal finite-input forcing for THIS phi. Not an infinite avoidance family, asymptotic operation bound, or refutation of an expressly sufficiently-large-only theorem. Other determinants/operators remain possible.",
+  "shortrow_theorem": "Actual fixed low-digit-dependent per-tag short pairs form a cap on u^2=n*a*t. Elementary projective incidence gives energy<=4m^(5/2), high-digit raw sum<=6m^(7/2), selector loss O(K_*M^6/lambda). Polylog menus retain actual majority with GLOBAL k^2T=soft Omega(m^(3/2)).",
+  "shortrow_scope": "One native low-digit-dependent selected row per tag, signed a preserved; not all intermediate rays or high-digit-adaptive choices. Global no-wrap only. Representation bound, not operation lower bound or query acquisition.",
+  "reflection_scope": "Exact opposite-tag carry and finite reflection identities; on stated global branch reflected multiplier cannot be q^k with |k|<=ell/2 for common intervals ell>=m^2. Only the single short-endpoint correction recipe excluded.",
+  "verification_scope": "Three exact stdlib generators in clean directory plus independent portable checker. No new Lean declaration/build or overall factoring exponent.",
+  "missing_work": "Restriction-stable soft O(m) sufficient factor query; full bit/controller and Lean sixth-rate composition.",
+  "review_target_checks": [
+    {
+      "review": "reviews/actual-spectral-review-a.md",
+      "target": "actual/report.md",
+      "target_bytes": 9527,
+      "target_sha256": "ab4ce6e96436ac4b02249ec2d0adb3f409821371033edf8f4a1fdbd4cf640b0c"
+    },
+    {
+      "review": "reviews/actual-spectral-review-b.md",
+      "target": "actual/report.md",
+      "target_bytes": 9527,
+      "target_sha256": "ab4ce6e96436ac4b02249ec2d0adb3f409821371033edf8f4a1fdbd4cf640b0c"
+    },
+    {
+      "review": "reviews/actual-spectral-review-a.md",
+      "target": "reviews/independent-spectral-check.py",
+      "target_bytes": 4933,
+      "target_sha256": "41f6e663962d311657d7caf7ab7db74137fe283421d197c8f937038607eba5ec"
+    },
+    {
+      "review": "reviews/shortrow-review.md",
+      "target": "reports/shortrow-cone-energy.md",
+      "target_bytes": 7633,
+      "target_sha256": "c41354a285a57ec510f4a289515525f72e663687b7870bcc0ffb85d33d0f65bb"
+    },
+    {
+      "review": "reviews/opposite-tag-reflection-review-b.md",
+      "target": "reports/opposite-tag-reflection.md",
+      "target_bytes": 6354,
+      "target_sha256": "7a51be4d162041762170eae52aac64f93255caba7768612207a99123a70af48a"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "README.md",
+      "target_bytes": 5825,
+      "target_sha256": "b067b4637ae893d0d281f8010f48c385e56bc19d2bc52c55b8e5ad9a14a45cc6"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 4273,
+      "target_sha256": "5297fb13fd39cf87784b6e93952d91228767748a2497710ead70e3ebbca64848"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/manifest.json",
+      "bytes": 11885,
+      "sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-boundary-20261016/manifest.json",
+      "bytes": 13388,
+      "sha256": "14df1782fab8a4427ae73167175a290b62a4af370cee8d051b1fa29541345a1b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-high-digit-query-20261016/manifest.json",
+      "bytes": 9387,
+      "sha256": "05cb25cae8e0639707c38ca0841ab23e6ace6f1f1f224a0396904436b37203c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-reindexed-query-20261016/manifest.json",
+      "bytes": 10286,
+      "sha256": "4e7c96174f2f8cc199c858aa6efe1665787cd0268286cf3652259a2508331d8a"
+    }
+  ],
+  "prior_listed_files_unchanged": 385,
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1567340,
+    "sha256": "0c4db7bd9affaeaca9eba7c1fb8018dc57e993f579e176191c418dd49b92ad1e"
+  },
+  "entry_sha256": "5297fb13fd39cf87784b6e93952d91228767748a2497710ead70e3ebbca64848",
+  "entry_bytes": 4273,
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5825,
+      "sha256": "b067b4637ae893d0d281f8010f48c385e56bc19d2bc52c55b8e5ad9a14a45cc6"
+    },
+    {
+      "path": "actual/certificate.json",
+      "bytes": 4007,
+      "sha256": "4956ee63a417867643193bc1e07b7ce9b4d6918dab304a9286b025ef3557547c"
+    },
+    {
+      "path": "actual/orbit-certificate.json",
+      "bytes": 5649,
+      "sha256": "8179fcef510e6b677c32ff10b5dafaca26c342b993a5f6ff2acd361bf0b94f57"
+    },
+    {
+      "path": "actual/orbit.py",
+      "bytes": 2775,
+      "sha256": "824df476523e67c030ef472a46d95d45d2bd1978043e043688fff3a7048fd571"
+    },
+    {
+      "path": "actual/report.md",
+      "bytes": 9527,
+      "sha256": "ab4ce6e96436ac4b02249ec2d0adb3f409821371033edf8f4a1fdbd4cf640b0c"
+    },
+    {
+      "path": "actual/scalar-certificate.json",
+      "bytes": 4698,
+      "sha256": "f0dcc51c184a29deca79e9822dbfd84c92617f455d33977655a14ad77cd2da46"
+    },
+    {
+      "path": "actual/scalar.py",
+      "bytes": 716,
+      "sha256": "72ec71dfdc51b7d0041319f9890e34b86227c87a123510ff316a4cda977e621a"
+    },
+    {
+      "path": "actual/source-pins.json",
+      "bytes": 1173,
+      "sha256": "bf9a50dc340a7756d7890e472b24b4b6e1beb01cf85a963e30c135e995891b59"
+    },
+    {
+      "path": "actual/verify.py",
+      "bytes": 3283,
+      "sha256": "4f59405c99de435e67aed0d9b0de4b3f69926bb9bd81a67e2c1978fd8be117ec"
+    },
+    {
+      "path": "reports/opposite-tag-reflection.md",
+      "bytes": 6354,
+      "sha256": "7a51be4d162041762170eae52aac64f93255caba7768612207a99123a70af48a"
+    },
+    {
+      "path": "reports/shortrow-cone-energy.md",
+      "bytes": 7633,
+      "sha256": "c41354a285a57ec510f4a289515525f72e663687b7870bcc0ffb85d33d0f65bb"
+    },
+    {
+      "path": "reviews/actual-spectral-review-a.md",
+      "bytes": 6605,
+      "sha256": "f0aa6c013995c6a445f72d505bf35ad3a39ec15e673f7eb884c9fc67f09f58df"
+    },
+    {
+      "path": "reviews/actual-spectral-review-b.md",
+      "bytes": 7800,
+      "sha256": "f4bede15507ab923ae700b179e48ca22c9f90030d1005e234538cbe10e6ae440"
+    },
+    {
+      "path": "reviews/independent-spectral-check.py",
+      "bytes": 4933,
+      "sha256": "41f6e663962d311657d7caf7ab7db74137fe283421d197c8f937038607eba5ec"
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "bytes": 4579,
+      "sha256": "ce8b868001211b75c6cb97120b24da6e97eb46c741f9a9b48cabc7ca199cf55b"
+    },
+    {
+      "path": "reviews/opposite-tag-reflection-review-b.md",
+      "bytes": 2525,
+      "sha256": "3dbca1af97bba916e9d0b2eea7e3eeff9aaf123a981eb5830d5cd605f5b5d129"
+    },
+    {
+      "path": "reviews/shortrow-review.md",
+      "bytes": 4770,
+      "sha256": "72c2de890386e29702d8dea0fa589db139c48de88154bd28079d72f44a3ca0ee"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 12913,
+      "sha256": "0b1d047d4c9ae3db31de251ec6def5497de0c3357d78052eb2b82fd4478ff2d2"
+    },
+    {
+      "path": "sources/actual-manifest.json",
+      "bytes": 1211,
+      "sha256": "fee63e2edf4c04e0e4eee87bac2834796591fbf28a12b3324c180cb16d203ed2"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 4273,
+      "sha256": "5297fb13fd39cf87784b6e93952d91228767748a2497710ead70e3ebbca64848"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 2924,
+      "sha256": "bca093562100771ae7ea0cf2e22aeac2facd42799373043fc211510717056972"
+    },
+    {
+      "path": "sources/reflection-source-pins.json",
+      "bytes": 1151,
+      "sha256": "60db3ac25ee9d754d022290175bf55906e5b21a23143df46f830f53386449cfb"
+    },
+    {
+      "path": "sources/shortrow-source-pins.json",
+      "bytes": 1023,
+      "sha256": "01a4b3807047894e9de3b1e5f44ca11d61b36a1d14e592aa107ac22f46dcb1eb"
+    },
+    {
+      "path": "verification/root-replay-log.json",
+      "bytes": 1466,
+      "sha256": "844f8a9e94b4766b35706d78f27c1123e2bb391197ddee1c60fb343c0d85307e"
+    }
+  ]
+}

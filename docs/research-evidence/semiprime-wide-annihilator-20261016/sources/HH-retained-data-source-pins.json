@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "path": "/tmp/semiprime-order-acquisition-20261016/harvey-hittmeir.pdf",
+      "bytes": 412025,
+      "sha256": "0e957bacebc0b74f363436ab09b70085f4ad83c45dee93bda8aef19fbfdcbff0"
+    },
+    {
+      "path": "/tmp/semiprime-order-acquisition-20261016/harvey-hittmeir.txt",
+      "bytes": 46216,
+      "sha256": "2d4b8fc6eb1ba0b20c0b057fa02317f982a93fe319099dbd453a531e16c57d24"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLongPowerRouting.lean",
+      "bytes": 46451,
+      "sha256": "e4e3d0385e600eb5b8d229135a301d874bb527e6353e3c5f32d646df430fc784"
+    }
+  ]
+}

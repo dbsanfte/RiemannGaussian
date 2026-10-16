@@ -1,0 +1,31 @@
+{
+  "report": {
+    "path": "report.md",
+    "bytes": 7714,
+    "sha256": "d1f346a636acedf975fb3584bab87b4b9803ade4622c20a90185303ea2803b84"
+  },
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/common-channel-collision-locator.md",
+      "bytes": 4385,
+      "sha256": "6dfc707ebe2896d7eb2ff78b6324d4df78b3db7ca6bc6a3e67e7b4adf4c737ff"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    }
+  ],
+  "global_query_acquired": false,
+  "scope": "local content and blind random powered-node gcd probes only"
+}

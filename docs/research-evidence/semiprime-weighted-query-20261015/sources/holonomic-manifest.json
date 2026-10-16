@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-15",
+  "status": "No improved evaluator; concrete order/explicit-operator/adjoint-sector results",
+  "primary_urls": [
+    "https://www.risc.jku.at/publications/download/risc_3437/main.pdf",
+    "https://arxiv.org/abs/2606.07061"
+  ],
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/transform-interface.md",
+      "role": "existing transform contract",
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae",
+      "bytes": 8901
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/positive-adjoint-interface.md",
+      "role": "formal reverse-AD sufficient interface",
+      "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7",
+      "bytes": 6464
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "role": "seedOffset definition/bounds",
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "bytes": 31743
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "role": "public inverse and quotientSlope_modEq",
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "bytes": 30477
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "role": "representative definition",
+      "sha256": "5c481ee4df760a453ab1453065d083ec343407ad2f8936cb7fafeabc9ab99440",
+      "bytes": 20679
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCarries.lean",
+      "role": "original t=1 seedRow",
+      "sha256": "db087a256343323e857186154e74506380d9a8f49dc9f76ee0f498897a362f2e",
+      "bytes": 23960
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "role": "inherited actual projected local-order supply",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "bytes": 24354
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "polynomial-reduction-2026.pdf",
+      "sha256": "0fac298246672cc41c67795df940a4e7516239349a7c3bde0cf4f2008e515319",
+      "bytes": 299921
+    },
+    {
+      "path": "polynomial-reduction-2026.txt",
+      "sha256": "cd396cac630dcdbff012a93a9c0b96de3606a0f1a906c527e47808bac9900f0f",
+      "bytes": 54740
+    },
+    {
+      "path": "q-holonomic-closure.pdf",
+      "sha256": "1c2c4de562de796817b5fdeca2ca43c191f039f6a5e302c76f5e633c4f710cae",
+      "bytes": 195727
+    },
+    {
+      "path": "q-holonomic-closure.txt",
+      "sha256": "93cd2eef37b014af8b028516c37d17d7e5992a901dfb98785bc22fa551c40b99",
+      "bytes": 47019
+    },
+    {
+      "path": "report.md",
+      "sha256": "c424a84a41c4390a4ce55ea26278f5e0da87ad86e979aec02a795675a02d5334",
+      "bytes": 11357
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "path": "/tmp/semiprime-wide-annihilator-20261016/uniform-preprocessing.md",
+      "bytes": 8770,
+      "sha256": "375460025deb024f03c3bc3415fc7990ca9a50b16cc9e272a19b17dd08d2e4fd"
+    },
+    {
+      "path": "/tmp/semiprime-wide-annihilator-20261016/short-annihilator-extractor.md",
+      "bytes": 10375,
+      "sha256": "433d10d8c413ad8cbe7ecb09bbafe0794559afa8b2b535e3667b9491950c1131"
+    },
+    {
+      "path": "/tmp/semiprime-wide-annihilator-20261016/small-order-separator.md",
+      "bytes": 5679,
+      "sha256": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOrderSeparation.lean",
+      "bytes": 15300,
+      "sha256": "877b827b378e604be3896d5572b8c4dea882b69c96103a8d56d957a3666a9563"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLocalOrderRouting.lean",
+      "bytes": 24094,
+      "sha256": "dad3763538913f0621bf98ecc291a6c9c04b1a9f837ff035ced0c20a66ca3a28"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeKernelDescent.lean",
+      "bytes": 16598,
+      "sha256": "8ca2a9150bc45cc8adba170d91bd86652bd636de89571750fd5d7f61e88e8aef"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "path": "/tmp/semiprime-unbalanced-annihilator-20261016/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeWideWrapCoverage.lean",
+      "bytes": 22298,
+      "sha256": "7bd39ec0bff02d72e8fa0ca22dc7b0e210b125fec55a95fdc3f5ea466e4e65f7"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "bytes": 29680,
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOrderSeparation.lean",
+      "bytes": 15300,
+      "sha256": "877b827b378e604be3896d5572b8c4dea882b69c96103a8d56d957a3666a9563"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/uniform-preprocessing.md",
+      "bytes": 8770,
+      "sha256": "375460025deb024f03c3bc3415fc7990ca9a50b16cc9e272a19b17dd08d2e4fd"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/coprime-refinement.md",
+      "bytes": 9447,
+      "sha256": "d4477d8a27050922f50354ca89f075b9d246adfc608eb9b486f01be4b4a74c76"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+      "bytes": 5679,
+      "sha256": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+
+
+## 2026-10-16: a paid sparse-frequency certificate closes the two-native-clock escape
+
+Evidence: [two native clocks and direct-query rigidity](research-evidence/semiprime-native-two-clock-20261016/README.md). The previous goal turn was progress: it proved arbitrary-single-clock rigidity for the original transition and private unit-prefix queries. This entry closes a different explicitly retained escape, coefficients depending on BOTH g^k and q^k, q=g^(m²), optionally with ordinary k. No faster full collision query is acquired.
+
+The all-semiprime setup already supplies coprime large odd local orders and global g-order>256m⁴. Given D_g<m² and m²T+D_g<256m⁴, a new composed screen factors or certifies g^a q^b!=1 in both fields for every nonzero pair with |a|<=D_g,|b|<=T. Build H(X)=product_(a=-D_g)^D_g(X-g^a). The INHERITED generic geometric-product primitive acquires product_(b=1)^T H(q^b) in soft O(D_g+sqrt((D_g+1)T)) work, with the normal residue-bit cost. A unit gcd certifies the whole box. A saturated gcd is bisected by seed intervals and then by H's root tree; a globally saturated leaf would give the impossible positive annihilator m²b-a<ord_N(g). Localization remains within the same soft clock. No full relation matrix is materialized and no q-difference is inverted.
+
+On the certified branch, sparse frequencies g^v q^u in the rectangle are distinct. Confluent Vandermonde therefore converts sufficiently many native samples into a ZERO FORMAL POLYNOMIAL in index Z and clocks G,Q, despite q=g^(m²). This prevents the dense beta-clock rewrite from losing a factor m² in its degree/sample count.
+
+For A(X)=product_j(1-g^(-N-delta_j)X), degree J, a rational transition description in(k,g^k,q^k), coefficient multidegrees(D_k,D_g,D_q), D_q<J, is impossible when the expanded rectangle fits L=2m²+2 samples. This statement never divides U_(k+1) by a zero prefix and applies to the full canonical targets after the paid all-input factor-or-certificate screen.
+
+For a NONZERO prefix U_n=product_(i<n)A(q^i), a nominal-order-r polynomial recurrence of those multidegrees is impossible if
+
+ D_q<J, (D_k+1)(D_g+1)(Jr+D_q+1)<=L-r+1,
+
+under characteristic zero or>D_k, using T=Jr+D_q. The cleared update polynomials B_t(Q)=product_(i<t)A(q^iQ) have degree Jt. The highest effective shift cannot cancel when its coefficient Q-degree is below J. The certificate removes coefficient-trajectory vacuity directly, so no regular-start shift or sample loss is needed. Three-variable cleared-row minors extend the obstruction to rational matrices with scalar bounds(s²delta_k,s²delta_g,s²delta_q); denominator and nominal-window costs remain explicit.
+
+The inherited catalog-divisor count supplies actual surviving ORIGINAL prime-order instances. With r=O(M^rho),D_g=O(M^gamma), every required short exponent lies in a uniform catalog of total logarithmic size soft O(M^(1+rho+gamma)); additional exceptions are soft O(M^(5.969+rho+gamma)), negligible if rho+gamma<.031. Intersecting the old density and all previous losses on the SAME original supply preserves Omega(M⁶/log²M) inputs and private Theta(m)-row BOTH-field unit prefixes. D_q may be any value<J. With ordinary degree O(M^kappa), the sample budget holds if kappa+rho+gamma<1. Matrix dimension and each common coefficient degree<=m^.005 give loss5.989, sample exponent1.035 and paid screen exponent.510. The unit-row subset is a proof witness, not a publicly selected subset; this density is not extended to the new arbitrary-composite-order base or saturated full prefixes.
+
+Old G15's actual-q-clock rigidity, geometric-product acceleration, the general catalog count, Hermite/Vandermonde algebra and minor scalarization are credited. G15 rewritten in the beta clock would require degree m²J~m³ and more samples than available. The new composition uses the finite paid rectangle and sparse count; a three-frequency device in an older chirped-stream proof did not already permit two geometric coefficient variables. Independent exact-byte mathematical/source and integration reviews accompany these claims; no absolute priority is asserted.
+
+This is a rigorous obstruction to the specified compact native-clock representation route, not a general operation/circuit lower bound or a whole-family query bound. Arbitrary multiple clocks, sparse high-degree, selected-output/jump, nonlinear and direct norm/factor-witness methods remain open. The general soft-O(m^(3/2)) acquisition bound and complete Lean bit-complexity gap are unchanged. No native edit, Lean declaration, examples, broad build, commit or push is added; every prior evidence file and journal entry is retained.

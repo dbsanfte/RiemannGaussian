@@ -1,0 +1,22 @@
+{
+  "goal_achieved": false,
+  "whole_family_soft_m_acquisition": false,
+  "new_factoring_exponent": false,
+  "repository_files_changed": false,
+  "journal_sha256": "4774f2bc3b9f8cd233b20062a241f23e6c96723c52a8b4f5c7e3253e4885995b",
+  "coindex_candidate": {
+    "report": "constructor627/verdict.md",
+    "proved": "Public CF anchors provide individual local-order divisible differences",
+    "cost": "O(m^(4/3)) anchors for an O(m)-length common interval on a balanced window",
+    "unresolved": "No soft-m constructor or coverage-preserving anchor selection; safe coindices a=b=2 still require the larger family",
+    "novelty": "No improvement over known exponent-one-fifth methods claimed"
+  },
+  "real_quadratic_candidate": {
+    "report_directory": "real632",
+    "parameter_inequality": "min(sqrt(h),R)^3 <= h*R",
+    "missing_algorithm": "Class equality and principalization data independent of the regulator-sized circle",
+    "known_charge": "Class search retains a sqrt(R) overhead, approximately sqrt(h*R), not sqrt(h)",
+    "primary_source": "https://numdam.org/articles/10.5802/jtnb.558/"
+  },
+  "result": "No acquisition improvement. Do not promote the arithmetic parameter inequality to a runtime theorem, or the supplied-cover consumer to an acquired cover."
+}

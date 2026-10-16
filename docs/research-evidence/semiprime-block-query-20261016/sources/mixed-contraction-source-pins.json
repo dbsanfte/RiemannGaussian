@@ -1,0 +1,24 @@
+{
+  "source_pins": [
+    {
+      "path": "/tmp/semiprime-decimation-query-20261015/q_integral/block-operator.md",
+      "bytes": 5924,
+      "sha256": "8b1bdc2b92d0738375a98d1c8d513cfe81060f3474b9e7272eb3ac42d55b0318"
+    },
+    {
+      "path": "/tmp/semiprime-decimation-query-20261015/block_transform/report.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70"
+    },
+    {
+      "path": "/tmp/semiprime-decimation-query-20261015/one-channel-query-interface.md",
+      "bytes": 6227,
+      "sha256": "35770ef9ef864103ecf6ddea449a18698d3481d1473cea56da348a9548a921a7"
+    },
+    {
+      "path": "/tmp/semiprime-decimation-query-20261015/decimation/report.md",
+      "bytes": 10005,
+      "sha256": "65a5c827a64b5c035d3d0a7bed445c6970910f9f92749309878d1e1520e5c4fd"
+    }
+  ]
+}

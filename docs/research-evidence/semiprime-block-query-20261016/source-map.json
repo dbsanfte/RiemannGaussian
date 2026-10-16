@@ -1,0 +1,478 @@
+{
+  "path_base": "repository",
+  "repository_root": "/home/dbsanfte/riemann/formal",
+  "entries": [
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/README.md",
+      "bytes": 6857,
+      "sha256": "394b2630102009c8f4f95ca3e4981fd370627c6f2e9ae61540bb5efaf45a23a7",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/journal-entry.md",
+      "bytes": 4963,
+      "sha256": "7d49c9dc27e853d85f52beda8f43fc1b44d6cc392d8da8e991f1e6bb4f5cc22a",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/block_transform/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/source_additive/common-channel-collision-locator.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/common-channel-collision-locator.md",
+      "bytes": 4385,
+      "sha256": "6dfc707ebe2896d7eb2ff78b6324d4df78b3db7ca6bc6a3e67e7b4adf4c737ff",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/fast-mixed-matrix-interface.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/fast-mixed-matrix-interface.md",
+      "bytes": 5661,
+      "sha256": "4959b0f33989570507b15eb82e8b93c2020449032ad1612b4d4e92b74f1d5767",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/one-channel-query-interface.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/one-channel-query-interface.md",
+      "bytes": 6227,
+      "sha256": "35770ef9ef864103ecf6ddea449a18698d3481d1473cea56da348a9548a921a7",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/decimation/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/decimation.md",
+      "bytes": 10005,
+      "sha256": "65a5c827a64b5c035d3d0a7bed445c6970910f9f92749309878d1e1520e5c4fd",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/q-integration.md",
+      "bytes": 7642,
+      "sha256": "8730123eb2f217b69776e4091b1eaf9077e50ba0f520e78fb07be69b1109095f",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/source_additive/low-phase-pairing.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/low-phase-pairing.md",
+      "bytes": 6843,
+      "sha256": "6fa93147cba648db524c5e95258a134a635b2d0c4876f16c83de9359619f0ab6",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/source_additive/mixed-contraction-classification.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/mixed-contraction-classification.md",
+      "bytes": 6705,
+      "sha256": "ad33d26baea13d0d6f0ea968c1f8373042f7911049255c48d45e8c2118cde73f",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/mixed-diagonal-primary-note.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/notes/mixed-diagonal-primary-note.md",
+      "bytes": 3885,
+      "sha256": "a070bd91d0c00ddf2be5545d46cc93e0306acdf444ab420cbea6d289600cfef4",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/channel-gcd-primary-check.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/notes/channel-gcd-primary-check.md",
+      "bytes": 5403,
+      "sha256": "dd51f055467b1d81664f9a683de9dfbfbeb0b6433d04120dd3f0c9a8c3f4c473",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/block-operator.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/independent-block-operator.md",
+      "bytes": 5924,
+      "sha256": "8b1bdc2b92d0738375a98d1c8d513cfe81060f3474b9e7272eb3ac42d55b0318",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/block_transform/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/block-transform-manifest.json",
+      "bytes": 1476,
+      "sha256": "9384a43ac616cbe07cf032db385c984b74e9b56088a7adfee680ed128abcf90f",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/decimation/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/decimation-manifest.json",
+      "bytes": 1663,
+      "sha256": "c27e7096d3afe5d1691ec8c8c71af8325bb9b758f2709fef5c742141e77dd86b",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/q-integration-manifest.json",
+      "bytes": 1717,
+      "sha256": "ada2bde638639f8e30cd3e9a46896b2d5dc9823eaded5dab6f256512b802ff17",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/block-operator-manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/independent-block-operator-manifest.json",
+      "bytes": 1067,
+      "sha256": "93a700b1372adfb3049f4f21d7482cdf5db885da8a103df66b8ec659950f0377",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/mixed-diagonal-manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/mixed-diagonal-manifest.json",
+      "bytes": 591,
+      "sha256": "c17f533afba7753d5797bdc75ff7576bfd4d179e86157e35b07cf7badf0526e5",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/channel-gcd-manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/channel-gcd-manifest.json",
+      "bytes": 806,
+      "sha256": "631c0691fb60c5e403beb29d01d1aabb44a7931b635653977b3d5e797e1712f4",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/source_additive/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/pairing-source-pins.json",
+      "bytes": 1796,
+      "sha256": "5a2b75a88e42dce54e376a2288b5a06050cb87cebcc5154b9a321de6edbc8c7d",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/source_additive/mixed-contraction-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/sources/mixed-contraction-source-pins.json",
+      "bytes": 834,
+      "sha256": "4315647df0ec8299663a00061059c2ac15fab901034a36079f73247a9fb89f2d",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/block-transform-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/block-transform-review-a.md",
+      "bytes": 3746,
+      "sha256": "800c54f93cc19517c56677138a4136db8636e431cb670d7a371618c9f2d6dd3f",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/block-transform-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/block-transform-review-b.md",
+      "bytes": 5898,
+      "sha256": "4dcd9e677ee81f75d5c779782b4b0e1252e12e674f38fdabd21badf050475df4",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/common-channel-locator-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/common-channel-locator-review-a.md",
+      "bytes": 4443,
+      "sha256": "1de54369d163dbe34a64350111063d1dbe246702aef2bdbca4b8fedc751b1150",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/common-channel-locator-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/common-channel-locator-review-b.md",
+      "bytes": 2795,
+      "sha256": "57f779f414b3685ea05b90ede71a61313da363d80a68310a0ce8f17b4b3d953a",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/decimation-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/decimation-review.md",
+      "bytes": 4169,
+      "sha256": "df43383abce00e2c4f84e81c94d21a76e12f0b94d90de0248f125d49044da6e8",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/fast-mixed-matrix-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/fast-mixed-matrix-review.md",
+      "bytes": 5255,
+      "sha256": "a1a4487f38686e9050761da89245c2178fb95a123ade609852038417a2552099",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/mixed-classification-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/mixed-classification-review.md",
+      "bytes": 3641,
+      "sha256": "70879c13eedaa91525f522f1337eaba8b818dbf6a4ccf03730e72365f6b67b3a",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/one-channel-interface-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/one-channel-interface-review.md",
+      "bytes": 4703,
+      "sha256": "510fdefc06500be028a6f036b967ccd0d04fec353bba2b632777965a4a3a2991",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/q-integral-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/q-integral-review.md",
+      "bytes": 3822,
+      "sha256": "dd6d2b3a98145e7cd3126c1ff684e7e313412f29556c04ea7270b2f5f83e6864",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/source-pairing-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/source-pairing-review.md",
+      "bytes": 3416,
+      "sha256": "1cc7d3d898e89598f697c6b0c48afc6b7e5e323babedb933f3d350f0a7602783",
+      "gzip": false,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/decimation/bostan-mori.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/bostan-mori.pdf.gz",
+      "bytes": 538442,
+      "sha256": "43aed49115a79b8ad0ac9b19972125fa05571021c3dbf1995cdc87d1a28d4b5a",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/decimation/bostan-mori.txt",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/bostan-mori.txt.gz",
+      "bytes": 85792,
+      "sha256": "e78bfb59831c21603948179edd8b72f38d5d8a2f76e9ded276280c01c9183099",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/blackbox-gcd1990.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/blackbox-gcd1990.pdf.gz",
+      "bytes": 199515,
+      "sha256": "118f646ad35440379b3b4dce5c440e3ed848ca30f116987aad356082c4de5f1e",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/blackbox-gcd1990.txt",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/blackbox-gcd1990.txt.gz",
+      "bytes": 68238,
+      "sha256": "a5ddd9834b0bf813d2f5a1bdc3e9124e706299e43a3394c4a5ee8d3144d1bf95",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/displacement2017.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/displacement2017.pdf.gz",
+      "bytes": 758372,
+      "sha256": "466d9112461876577fd631808b37f3fab3150d621ba7518b29aef85f1075ee3b",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/displacement2017.txt",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/displacement2017.txt.gz",
+      "bytes": 166080,
+      "sha256": "ade7cfb8d55d37f4b967ec406ec0145a956f25e993eef6276455b68850ca78e5",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/gessel-lagrange.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/gessel-lagrange.pdf.gz",
+      "bytes": 592157,
+      "sha256": "d233acf41264be0f67db15d883be22c94c26f835bfdde342a01684fc403c8b7e",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/gessel-lagrange.txt",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/gessel-lagrange.txt.gz",
+      "bytes": 124849,
+      "sha256": "ca8dd6a01f19f658905009dcdc776d22bd8c4715070d176d8d5d6e1048df1ba5",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/sparse-gcd2026.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-compressed-query-20261015/primary/sparse-gcd-2026.pdf.gz",
+      "bytes": 996200,
+      "sha256": "740a7a3d98bfba9e1c00cb37c8b22d2b6252e1862345c89caeaaef8c766b7ae7",
+      "gzip": true,
+      "role": "reused byte-verified prerequisite/primary"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/sparse-gcd2026.txt",
+      "resolved_path": "docs/research-evidence/semiprime-compressed-query-20261015/primary/sparse-gcd-2026.txt.gz",
+      "bytes": 341062,
+      "sha256": "84b4f594a08a54227ec9608c263a89e336fc82a11ff44a77414486574d06444b",
+      "gzip": true,
+      "role": "reused byte-verified prerequisite/primary"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/stanton-q-lagrange.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/stanton-q-lagrange.pdf.gz",
+      "bytes": 129284,
+      "sha256": "49985ec0bf44b7be47d4ab3c54fa0cc5d419dbdc17b8a13b31681014f3a2d011",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/stanton-q-lagrange.txt",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/stanton-q-lagrange.txt.gz",
+      "bytes": 33072,
+      "sha256": "d1fb00a17a7146f3cb856b5a98e983fe04898fa587242dbfe8668e1f160ee7d2",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/tellegen.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/tellegen.pdf.gz",
+      "bytes": 259351,
+      "sha256": "c179b22688abc2ccf2deadc1fb5398ef9916e49f10688edc7a2a4b20a412e269",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/tellegen.txt",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/tellegen.txt.gz",
+      "bytes": 69299,
+      "sha256": "85648d6d44abcf1e3e86c62a017dbd0f3f0456ad403bbcf11789e0fc8e214257",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/trummer-diagonal.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/trummer-diagonal.pdf.gz",
+      "bytes": 253845,
+      "sha256": "b9dcb9e86c33491fd17bb7e9aa6d3327a2d291f41708d6ae42c934699779efba",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/q_integral/trummer-diagonal.txt",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/primary/trummer-diagonal.txt.gz",
+      "bytes": 88051,
+      "sha256": "ae9570447c1d4129e1e32862c85c7ca1cc9c592e14e6f19112b277ab475a5a8d",
+      "gzip": true,
+      "role": "new preserved investigator artifact"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "resolved_path": "docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "bytes": 6713,
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/tmp/semiprime-input-dependent-20261015/implicit/positive-adjoint-interface.md",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/reports/positive-adjoint-interface.md",
+      "bytes": 6464,
+      "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-multistream-query-20261015/reports/selected-determinant.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reports/selected-determinant.md",
+      "bytes": 8628,
+      "sha256": "ab9fb757fed120e5329885eb9eb6400b87bd9dbd967a7c608816ea781b9009c6",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/sources/density-source-pins.json",
+      "bytes": 1767,
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "bytes": 26720,
+      "sha256": "87b14d8c90e43d824c228a110179037586b548c986ae15f93bbcbc0bb1df05a9",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeIsolatedRowAcquisitionObstruction.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeIsolatedRowAcquisitionObstruction.lean",
+      "bytes": 14449,
+      "sha256": "f5c5a10d02017f60755ad8230302a34ef3d6427ac4152d5c9fb1310dbf10af6f",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/tmp/semiprime-weighted-query-20261015/canonical/partner-query-status.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/partner-query-status.md",
+      "bytes": 3217,
+      "sha256": "da5c40cfe6f3ec9c4b920669aad0e3bf37ba828a10521b94edf9af7287029bd3",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/tmp/semiprime-decimation-query-20261015/reviews/integration-journal-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reviews/integration-journal-review.md",
+      "bytes": 4737,
+      "sha256": "04d3e741f8efff8a0dd515a793223f7119c100df2009b92fc28f09e4f0a49f68",
+      "gzip": false,
+      "role": "new preserved final integration review"
+    }
+  ]
+}

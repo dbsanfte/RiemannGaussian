@@ -1,0 +1,55 @@
+{
+  "files": [
+    {
+      "path": "elliptic-butterflies.pdf",
+      "bytes": 1265688,
+      "sha256": "eb2f5b0613cb70f04333ff8567b2d261ca51018863a3cf255dbd91531a58e624"
+    },
+    {
+      "path": "elliptic-butterflies.txt",
+      "bytes": 110164,
+      "sha256": "d08833ddf84735fb03181c48c7d6ab6bd8bd724e91ac9090c8bb7ce20ccd93fb"
+    },
+    {
+      "path": "linearized-ore.pdf",
+      "bytes": 318726,
+      "sha256": "329b258df2c4610f54627851999f51efcd227410d57a8266668cc2d08c1d87dc"
+    },
+    {
+      "path": "linearized-ore.txt",
+      "bytes": 99721,
+      "sha256": "d558735ffc80c9b56b32c7e9a2796b64dce5aab7f1e7e0e3fcd98f49ed363ea7"
+    },
+    {
+      "path": "rational-preprocessing2026.pdf",
+      "bytes": 1469592,
+      "sha256": "fa5db152b8d5f7c73c544624cd2986255c6bf3850f1deb45854c6cd786e6784e"
+    },
+    {
+      "path": "rational-preprocessing2026.txt",
+      "bytes": 604374,
+      "sha256": "be2e34704257d0c1d2758f60fb7d6a57ed6f76194ae45a912952a154a403b0df"
+    },
+    {
+      "path": "report.md",
+      "bytes": 8317,
+      "sha256": "d061b65e80fb82481b5585e2be126496714aca0fc8acee067ef88d058c2c35b9"
+    },
+    {
+      "path": "truncated-resultant.pdf",
+      "bytes": 235158,
+      "sha256": "160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709"
+    },
+    {
+      "path": "truncated-resultant.txt",
+      "bytes": 73260,
+      "sha256": "756ffa9bb76cc004fa7b6b3b44f1d5379bdbb6b7b0832a17380d27d97a3b8da3"
+    }
+  ],
+  "prerequisite_bundle": {
+    "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+    "bytes": 10804,
+    "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+  },
+  "scope": "primary theorem/model inspection; no paid mixed contraction found"
+}

@@ -1,0 +1,275 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "partial structural progress: paid q-pencil and square coefficient-block inverse/determinant; actual rank obstructions to two cancellation routes; whole-family acquisition remains open",
+  "model_authorization": "User authorized Sol 6.1 parallel research; three gpt-6.1-sol agents reused.",
+  "whole_family_soft_linear_query_acquired": false,
+  "overall_generic_query_bound": "soft O(m^(3/2)) unchanged",
+  "new_constructive_primitives": [
+    "paid rank-two block q-pencil",
+    "actual-source square C0 inverse and inverse transpose in soft O(J+sqrt L)",
+    "C0 determinant in soft O(J+sqrt L)",
+    "unit-boundary conditional normalized right operator with paid rank-at-most-two quasiseparable coefficient representation; uniqueness and mixed output unproved"
+  ],
+  "new_obstruction_scope": [
+    "actual powered-node interpolation q-defect rank Omega(m), not rank of YS-SY",
+    "actual canonical mask coefficientwise separation rank Omega(m), fixed-F syzygies excluded from claim",
+    "actual full-rank square block kernel excludes short ordinary separable sum",
+    "local common-content and blind uniform constant gcd probes only"
+  ],
+  "scope": "classical proofs under stated hypotheses; not all native inputs/restrictions, circuit lower bound, new Lean theorem, benchmark, or complete bit-complexity/controller composition",
+  "review_target_checks": [
+    {
+      "review": "reviews/q-pencil-review.md",
+      "target": "reports/paid-q-pencil.md",
+      "target_bytes": 6653,
+      "target_sha256": "ef999aa2cfbea33c29192035900542808532e906b70a95f55a8c7a30a3819433"
+    },
+    {
+      "review": "reviews/coefficient-block-inverse-review.md",
+      "target": "reports/coefficient-block-inverse.md",
+      "target_bytes": 9041,
+      "target_sha256": "73685f5580b92375b7d3a9f09265c245125ebee6edf048243a4558b6d5f4e3a2"
+    },
+    {
+      "review": "reviews/qshift-power-defect-review.md",
+      "target": "reports/qshift-power-defect.md",
+      "target_bytes": 6120,
+      "target_sha256": "5e88b2b6b26310e535d959b6a4c3320adb25993c5e878fff8577708076007e5a"
+    },
+    {
+      "review": "reviews/mask-separation-review.md",
+      "target": "reports/mask-separation.md",
+      "target_bytes": 7060,
+      "target_sha256": "2077495ac4885bd7251e05b3a7828f096ff3e2879b13ee815fab8f09bbc42a22"
+    },
+    {
+      "review": "reviews/channel-gcd-review.md",
+      "target": "reports/local-channel-content.md",
+      "target_bytes": 7714,
+      "target_sha256": "d1f346a636acedf975fb3584bab87b4b9803ade4622c20a90185303ea2803b84"
+    },
+    {
+      "review": "reviews/normalized-operator-review.md",
+      "target": "notes/normalized-operator.md",
+      "target_bytes": 2266,
+      "target_sha256": "78aa80b4b3d157ed48cf2d2858fb8e0d7a93f6df74ff542e0ab87d594b6ae21a"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "README.md",
+      "target_bytes": 5773,
+      "target_sha256": "0e51ec8d28721c4aecfec1572adbfbbccb6fd2f698c534d209308bf96b9fd394"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 4671,
+      "target_sha256": "47d39431fd6daac5ba190c1b78ca9373a2447dfb025bf3c33acf3235c911a5ce"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    }
+  ],
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1543640,
+    "sha256": "046312501e28916020e99b0b510afb1599bb8fb0d6a18455e32748ece7b02ace"
+  },
+  "entry_sha256": "47d39431fd6daac5ba190c1b78ca9373a2447dfb025bf3c33acf3235c911a5ce",
+  "entry_bytes": 4671,
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5773,
+      "sha256": "0e51ec8d28721c4aecfec1572adbfbbccb6fd2f698c534d209308bf96b9fd394"
+    },
+    {
+      "path": "notes/normalized-operator.md",
+      "bytes": 2266,
+      "sha256": "78aa80b4b3d157ed48cf2d2858fb8e0d7a93f6df74ff542e0ab87d594b6ae21a"
+    },
+    {
+      "path": "notes/structured-determinant-primary-note.md",
+      "bytes": 2000,
+      "sha256": "9159b70bbdc126766ade5a756d89fbf8b56508c9552af2f9c08fd0e2b7ef826a"
+    },
+    {
+      "path": "primary/determinant-calculus.pdf.gz",
+      "bytes": 451975,
+      "sha256": "d3b02c0accda73f086e6d78edd60066baf29aef269da05ef7a3fdab8f7cbc610",
+      "uncompressed_bytes": 565748,
+      "uncompressed_sha256": "ca5e7d38360b4ba477db2f214f226660d59d9b1e5ad02da0e0c34a6d15733ae4"
+    },
+    {
+      "path": "primary/determinant-calculus.txt.gz",
+      "bytes": 69402,
+      "sha256": "30114a45f13b0488a0bb59ff4dd96515636ab22d04277a7bf7c6cc7e51b2459a",
+      "uncompressed_bytes": 260203,
+      "uncompressed_sha256": "34507f53d52fb3d7b258e6d164dd493f79602f0ed9a5933e7283815a424d09f4"
+    },
+    {
+      "path": "primary/kpsv21.pdf.gz",
+      "bytes": 1012857,
+      "sha256": "5ad8298288e896f1ff33fe201035c728243c93ad5ded7cc94a22bb34f3321807",
+      "uncompressed_bytes": 1072234,
+      "uncompressed_sha256": "62af4a860d1353083dc13ba5d7b2dcb7b9e2aa70f5c323b5f18ff2300f89540e"
+    },
+    {
+      "path": "primary/kpsv21.txt.gz",
+      "bytes": 19235,
+      "sha256": "ee44ae231a496c13e0c9857015d06b0e6cc16b92b4e739844abd899b010e80e6",
+      "uncompressed_bytes": 85139,
+      "uncompressed_sha256": "652b091edada4a87e76ea0795c6f569ceed074733dce6fe06c18ca624bdc7d7c"
+    },
+    {
+      "path": "primary/recurrence-width.pdf.gz",
+      "bytes": 591917,
+      "sha256": "8374023927cdfcd723b146066e5103938de00c44e157ad3b906c2bc3e0cc5d8e",
+      "uncompressed_bytes": 748851,
+      "uncompressed_sha256": "3b93d08ac7d900af790fb2d835cec1ee1e56583aa43b96c1e28702a3627a860d"
+    },
+    {
+      "path": "primary/recurrence-width.txt.gz",
+      "bytes": 74516,
+      "sha256": "4ffc11b71cd7d7fc300134c54ef90699fed0e268ba44e12906d6c80f903dfda0",
+      "uncompressed_bytes": 286936,
+      "uncompressed_sha256": "e1d4b97233956284ec433118b0bd40338775b8acfde4b0b955c7d9dc98144845"
+    },
+    {
+      "path": "reports/coefficient-block-inverse.md",
+      "bytes": 9041,
+      "sha256": "73685f5580b92375b7d3a9f09265c245125ebee6edf048243a4558b6d5f4e3a2"
+    },
+    {
+      "path": "reports/local-channel-content.md",
+      "bytes": 7714,
+      "sha256": "d1f346a636acedf975fb3584bab87b4b9803ade4622c20a90185303ea2803b84"
+    },
+    {
+      "path": "reports/mask-separation.md",
+      "bytes": 7060,
+      "sha256": "2077495ac4885bd7251e05b3a7828f096ff3e2879b13ee815fab8f09bbc42a22"
+    },
+    {
+      "path": "reports/paid-q-pencil.md",
+      "bytes": 6653,
+      "sha256": "ef999aa2cfbea33c29192035900542808532e906b70a95f55a8c7a30a3819433"
+    },
+    {
+      "path": "reports/qshift-power-defect.md",
+      "bytes": 6120,
+      "sha256": "5e88b2b6b26310e535d959b6a4c3320adb25993c5e878fff8577708076007e5a"
+    },
+    {
+      "path": "reviews/channel-gcd-review.md",
+      "bytes": 3997,
+      "sha256": "63d309decaa6a3de82c50c3284591e6f5e6150aed4af9491bd8853441e45731a"
+    },
+    {
+      "path": "reviews/coefficient-block-inverse-review.md",
+      "bytes": 4838,
+      "sha256": "168c1adddbcda3f2d0cebcd2aa7ea23b3c1f3d4db9828cdff08870410dd182fc"
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "bytes": 7271,
+      "sha256": "207e6bd1fdd9c83f5f01bb4c95efd980da35232f95021cd16adeffe26d6a72fe"
+    },
+    {
+      "path": "reviews/mask-separation-review.md",
+      "bytes": 4482,
+      "sha256": "a04e41a5e49b47834df8e01a0fd83b4f3de76fc60f24e9d3bec43c5d75f699fa"
+    },
+    {
+      "path": "reviews/normalized-operator-review.md",
+      "bytes": 3245,
+      "sha256": "24f32dd154ed31967a28f153047dd42655e0b51c1c87cdcfd3f54ffacbaeee4b"
+    },
+    {
+      "path": "reviews/q-pencil-review.md",
+      "bytes": 4112,
+      "sha256": "8d18997ee6f0a013151f15a3731ab2a93aec7e1f25701fca4a39489ec4546436"
+    },
+    {
+      "path": "reviews/qshift-power-defect-review.md",
+      "bytes": 2788,
+      "sha256": "bd56ce4910fd3471a810d0e77ca448b2a2f07afd196ce804bb1d11778b510094"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 14935,
+      "sha256": "26a606efcd76800414c1059c289ddc20d86d1edabff18fd80079cbfc881ff6a3"
+    },
+    {
+      "path": "sources/channel-content-manifest.json",
+      "bytes": 1289,
+      "sha256": "4d66775c5cd7a609dfd2265b45848ab29bd9163395eba9f4796ab902b524f29d"
+    },
+    {
+      "path": "sources/coefficient-block-manifest.json",
+      "bytes": 1602,
+      "sha256": "c12667a713bf12aacb58c2262a6a6d5e35e645825e20500cb0707daa8e328a88"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 4671,
+      "sha256": "47d39431fd6daac5ba190c1b78ca9373a2447dfb025bf3c33acf3235c911a5ce"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 1860,
+      "sha256": "45cdb07ee750fe8af55439156712086e819bc2da92e8b4c4a8ac1056ba6cd1a1"
+    },
+    {
+      "path": "sources/q-pencil-manifest.json",
+      "bytes": 933,
+      "sha256": "0885b4fd08383319bb482c8efdeae73b4efa04017d6a41d4e9492fceb1d444c1"
+    },
+    {
+      "path": "sources/qshift-source-pins.json",
+      "bytes": 1136,
+      "sha256": "6c38563ef7b07f90c8caadcac075b1a2bb4c6d49d3c038280f50722c7c5caffb"
+    }
+  ]
+}

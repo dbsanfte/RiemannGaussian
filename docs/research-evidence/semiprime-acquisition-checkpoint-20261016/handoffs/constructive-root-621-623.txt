@@ -1,0 +1,38 @@
+Constructive acquisition round, 2026-10-16
+
+User steering: the goal is a solution, not accumulating obstruction results.
+No new whole-family acquisition bound was proved in this round. Do not label
+the following reductions or exact identities as a sixth-rate advance.
+No repository files were edited by this round; existing journal/evidence and
+Lean checks remain as previously recorded. No commit, stage, push or build.
+
+621: cover621/explicit-lehman-product.md gives explicit classical Lehman
+starts c_uv=uN+v-ceil(2sqrt(uvN)), uv<=m^2, and babies 0<=i<m. After the
+soft-m small-factor search, Lehman's lemma supplies an individual local-order
+hit; c_uv-i=(P-1)(uQ-v)>0. Actual giant volume is soft m^2. A new soft-m
+restricted-product evaluator/localizer is missing. This is a known
+square-root-speedup question, not a new acquisition theorem. Smooth
+projection and the small-coindex branch were already paid in prior rounds.
+
+622: rows622/stationary-carry-status.txt gives an exact polynomial
+stationary-phase identity for arbitrary B, retaining carries, plus the
+paired norm with geometric constant coefficients. Root reviewed the
+polynomial identity by splitting x=j+mt; the root-count formula
+n_ar=1+chi(r^2-4aN) gives a genuine cyclic convolution. Additive evaluation
+does not compute the multiplicative collision query. Any multiplicative
+lifting must be cross-multiplied before using nonunit factors; dense
+q-factorials and witness localization still require a paid algorithm.
+
+623: trace623/handoff.txt records finite-depth digit operators
+B_j(q^n)=binom(n,r^j)q^n, j<=17. Their formal existence and divided-
+congruence finiteness do not give a soft-r^3 implementation. The ordinary
+Ramanujan derivation determines the first digit but leaves the canonical
+q-coordinate/higher digit operators uncomputed. No new trace acquisition.
+
+Continue constructive work only on an explicit algorithm with a guaranteed
+hit and fully charged cost; do not repeat generic q-holonomic bounds,
+smooth-order cases, or finite-dimensional existence as fresh progress.
+The previously reviewed long-annihilator QRH decoder and supplied-GAP
+consumer remain conditional positive tools. Their missing constructors
+were not supplied in this round. The Lean all-input sixth-rate goal stays
+active and unachieved.

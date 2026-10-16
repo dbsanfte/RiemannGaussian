@@ -1,0 +1,26 @@
+# Independent integration and dated-journal review — 2026-10-15
+
+Verdict: **PASS**. Read-only mathematical integration review; no repository edits/builds.
+
+README: `/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/README.md`
+
+SHA-256: `f6c2dbb28ea3e9655f815450c6e6b986a10c34a48ad457bf59c91b0c1f50a69f`
+
+Journal: `/home/dbsanfte/riemann/formal/docs/semiprime-factorisation-investigation.md`, exact entry beginning `## 2026-10-15 — Full-row collision sparsity and actual adjoint-sector obstruction` and ending immediately before `## Recording future progress`. Exact bytes: 5,452; SHA-256: `ac49d9e419a98f5bc4086d29fdda091cc0ea329e83f75ba154d07846ec699067`. Both supplied target hashes independently verified.
+
+## Checked integration claims
+
+* The full-row incidence count O(K_*M^6.969) and Markov deletion at M^.997 yielding O(M^5.992) are correct and consistently described as incidence/input-exception counts, not acquisition time. Fixed-k lift subtraction remains valid with varying i because m²Delta i vanishes modulo m². No extra tag, long-index, cofactor or second menu factor is introduced. The both-field union leaves m-o(m) unit row products while permitting the known forced collision. The older centered q=1 target-PAIR mass is accurately distinguished from this full first-current row-hit observable.
+* The actual finite-ring adjoint argument correctly uses finite-supported q-binomial coefficients, including the essential boundary equations at k=-1 and k=L. Its functional value at each source monomial is the exact row product. The residue grading is formal in x, so finite numerical order of the coefficient gamma does not destroy the direct-sum decomposition. The two-tag-per-sector bound and the new unit-row majority give Omega(m) actual nonzero formal-weight sectors.
+* The finite-Laurent endpoint-certificate obstruction is not overstated as a computational lower bound. The integration expressly permits jointly evaluating all surviving sectors at softly linear cost, rational singular certificates, another operator, or a norm-only method. Polynomial degree and state size are separated from algorithmic acquisition time.
+* I read the full source short-shift report used by the integration. Its prescribed non-q-stride shift sets, nonzero O(M⁴) divisor enumeration, O(V) possible first factors and O(M²(G_m+1)) partner count yield O(K_*VH_*M⁵)=O(M^5.993). Fixed sets may support adaptive selection, but do not grant N-dependent sets or every source-pair difference. Coprimality gives reduced degree L; the stronger whole-subgroup rational-function statement is valid under R_P>4L by the root-count/cross-multiplication argument. The integration correctly leaves selected-point identities and fast implicit evaluation open.
+* I read the full norm-doubling report. In each odd-order hidden subgroup, -1 lies outside, so every complementary 1+zq^i is a unit. The division-free sign identity therefore preserves the whole-query gcd without acquiring the complement. It preserves J,L and all subset/interval restrictions; it is a genuine positive zero-support transform, not an exact scalar equality or a query-cost improvement.
+* The explicit time-branch packet count uses the actual global order to turn short exponent equality into integer equality, then the two-tag low-digit cap gives at least JT/2 distinct global nodes. The squaring map remains injective on the odd-order global subgroup. Materializing T~m packets has Omega(m²) residue words, but the integration explicitly limits the floor to this output contract and permits compressed scalar methods.
+* The common weight-independent scalar recurrence order bound is explicitly regular-at-start and actual-field, not a claim for singular-start or arbitrary weighted/nonlinear methods. The order-J construction has a known-unit leading coefficient; its natural explicit quadratic coefficient array does not imply an implicit-propagation lower bound. These match the corrected holonomic report.
+* The reverse-differentiation positive interface remains conditional on a FORMAL division-free weighted program. The bound 5T+J-1 is valid; the fast program has not been supplied. Existing canonical coverage/global-leaf recovery are correctly attributed to compiled SemiprimeSeedSumAcquisition, while the new density/adjoint and short-shift arguments are classical reviewed results. No new coverage, Lean endpoint, exponent improvement or fast acquisition is claimed.
+
+## Final status and packaging boundary
+
+The desired restriction-stable softly linear weighted/scalar query and full routing/kernel/controller bit-memory composition remain explicitly unpaid. The union of new exception sets with the historical soft O(M^5.994) losses is still negligible versus the inherited Omega(M⁶/log²M) supply. No integration blocker found.
+
+This review covers the exact README and dated entry, checked against their full report sources in the temporary workspace. Final packaged-file inventory, gzip payloads, manifest/source mappings and relative-link existence await the separately requested packaging audit; some package report destinations were still being populated during this review. No claim of completed package validation is made here.

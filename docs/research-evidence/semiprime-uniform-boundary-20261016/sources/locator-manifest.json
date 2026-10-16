@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "path": "constant-depth-gcd2025.pdf",
+      "bytes": 425110,
+      "sha256": "8f15ab9b077eccbe6344a98b12546adcf1690b19137921c79bc7abec376eb2b3"
+    },
+    {
+      "path": "constant-depth-gcd2025.txt",
+      "bytes": 78702,
+      "sha256": "4a141103c20a443047666902d7679bc7d3c45ffa05bd00cfe511d2cc5717fe40"
+    },
+    {
+      "path": "directed-evaluation.pdf",
+      "bytes": 530557,
+      "sha256": "20b6959dd71e3bd16e0c072f300b07a0c3714d013a28b1b0ea03955083df5da1"
+    },
+    {
+      "path": "directed-evaluation.txt",
+      "bytes": 192829,
+      "sha256": "dbf4e983e4731e6b652fed2283950c975712d75aa8f569263ecd152c6c2030d7"
+    },
+    {
+      "path": "eccc-tr25-171.html",
+      "bytes": 23405,
+      "sha256": "702608314aea0e53368ae20c3a9341f140f1c49ca8361d5e405504373e4c7e10"
+    },
+    {
+      "path": "eccc-tr25-171.txt",
+      "bytes": 6541,
+      "sha256": "5cd88bd08552752e0c422de702a93aeabcb648ebd8778e79bd270434d24ff0b2"
+    },
+    {
+      "path": "report.md",
+      "bytes": 9067,
+      "sha256": "a72bb78d44efd4a638f33e6730cb457639db3e93e819e66693ec865628c119bf"
+    },
+    {
+      "path": "single-factor1987.pdf",
+      "bytes": 95643,
+      "sha256": "56ea27444f536253f8e7bbbbb08c675c7dfc8c811b2f34ce5851e9f8c7e05257"
+    },
+    {
+      "path": "single-factor1987.txt",
+      "bytes": 43375,
+      "sha256": "338b879051f5863e7058c1f992a650b9d882d20dfb7b9add00dac65bd5f9e03b"
+    },
+    {
+      "path": "single-seed2026.pdf",
+      "bytes": 512667,
+      "sha256": "776ee75768b0c096b84ae856c878fa755e71406be23ce551510364ae998566b1"
+    },
+    {
+      "path": "single-seed2026.txt",
+      "bytes": 70757,
+      "sha256": "e2307a0cb0e1db3f8738843fc04accab587beb0be60dc31666d5f52f28e9227c"
+    },
+    {
+      "path": "slp-gcd1988.pdf",
+      "bytes": 2595083,
+      "sha256": "36f8c6e9e1c184ea9d6dd2270aa24843ebbd26c78881c7e69b69b75904d15731"
+    },
+    {
+      "path": "slp-gcd1988.txt",
+      "bytes": 110191,
+      "sha256": "54176e6146d6c8c578aea774d8f1b4bb1103fb95c331ea00c7ce2b7e3beb230b"
+    }
+  ],
+  "claim": "No uniform nearlinear direct locator extraction theorem identified; exact differential identities only",
+  "used_prior_results": "Paid channel vector SLP and squarefree common-channel locator from frozen block-query bundle; no new use of old generic evaluation-box or sparse-GCD audits",
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/common-channel-collision-locator.md",
+      "bytes": 4385,
+      "sha256": "6dfc707ebe2896d7eb2ff78b6324d4df78b3db7ca6bc6a3e67e7b4adf4c737ff"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Independent weighted-descent review
+
+2026-10-16. PASS; no mathematical or scope correction requested. Read-only independent review.
+
+Exact final target: `/tmp/semiprime-syzygy-query-20261016/spectral/weighted-descent.md`, 10054 bytes, SHA256 `e748e766c37f3caa81cce1d41ee1a16419565f1e02219c04beeb8ef28eafd7bb`.
+Exact source-pins JSON: 1416 bytes, SHA256 `8a9872041910bbd4ad095441b8c3a523955fb5f67b54ca73fb56f2b309e08e1d`.
+Recomputed all six source hashes/lengths: all match. No new external primary theorem is imported by this proof, and no independent rebuilding of the inherited analytic supply is claimed.
+
+Descent criterion: with B regular and invertible modulo H, changing a representative by Hg changes the weighted shift by A*H(qt)*g(qt)/B. Taking g=1 proves necessity, and divisibility proves sufficiency, for H|A H(qt). A removable displayed pole must first be canceled; a genuine pole changes the contract. This does not invalidate the always-defined interpolation operator on canonical representatives.
+
+Actual arithmetic: delta=N(j^-2-2j^-1) modulo the auxiliary prime m has at most two tags per residue. The exponent difference for qz_i=z_j is delta_i-delta_j-d, whose absolute value is at most5d<R_local. Thus adjacency is the exact integer condition, identical in both fields. Every edge lies in a two-element low-digit fiber; no fiber has a three-node chain and a pair has at most one directed edge. At least ceil(J/2) deduplicated nodes are dangling. Their H(qz_i) values are units modulo N, while matched-node values are zero in both fields. A nonzero field numerator A must vanish at every dangling node, giving degree at least that count. The distinction for a numerator that becomes the zero polynomial in one hidden field is correctly explicit.
+
+Defect rank: evaluations of degree<J polynomials g at the distinct qz_i form an invertible Vandermonde map. Multiplying by the diagonal w(z_i)H(qz_i) therefore gives exactly the number of nonzero diagonal entries as field rank. Intersecting the dangling set with J-o(J) original unit rows leaves J/2-o(J) nodes. A zero-support-preserving multiplier must be nonzero at these unit rows, so its defect has Omega(J) rank. A descending weight instead erases them. This is an arbitrary-representative linear-data bound, not an operation bound or a statement that the particular quotient forcing is dense.
+
+Jets: H^s|A H(qt)^s is the same ideal-descent criterion. At each dangling node the shifted H is a unit, forcing A's vanishing order at least s. Hence the weight kills the whole s-jet of every regular shifted payload there, and degree is at least s times the dangling count for a nonzero field numerator. The exclusions for pole payloads and inhomogeneous/global reconstruction are necessary and retained.
+
+For numerator1-t and finite q-order R>J, induced graph components can only be chains or full R-cycles; the latter cannot fit. Every terminal node must be1, so there is exactly one chain {1,q^-1,...,q^(-(J-1))}. Conversely that chain descends. The actual two-element fibers exclude it for J>2. For the normalized degree-one numerator this proves actual descent failure at J>=3 on the stated denominator-unit branch.
+
+Gauge scope is precise. If G is a unit at original and shifted nodes, no support change repairs the defect. If G is only unit at original nodes, zeros at dangling successors CAN repair descent. For an original unit F-row, F(1)=0 implies z_i!=1; the normalized denominator-unit branch supplies1-a z_i!=0. Thus F(qz_i)=(1-a z_i)F(z_i)/(1-z_i) is nonzero. A gauge zero at qz_i then gives a genuine pole of F/G at the SHIFTED point, not the original node. The report does not prohibit cheap succinct treatment of these poles or all gauges.
+
+The final actual boundary equation and sign are correct: writing F=r+HG yields (I-U_H)f=w(z_i)H(qz_i)G(qz_i). The determinant formula det(I-U_H)=h_0*prod_(s=0)^(J-1)(q^L-q^s)/delta follows from the companion pencil with the given row/column transpose convention. For J<=L, each exponent L-s is in[1,L], so the numerator is a unit; delta is assumed unit. Thus I-U_H is invertible. Since actual unit rows make f nonzero, its forcing cannot vanish identically, although no density of its particular entries is inferred. A cheap inverse alone does not acquire that forcing.
+
+The proof genuinely closes regular, low-degree, support-preserving fixed-carrier weighted descent on this actual source. It leaves canonical compression, special fixed-input q-syzygies, charged rational/finite-part gauges and general acquisition algorithms outside its negative scope. It neither supplies the whole query nor asserts a generic computational lower bound.

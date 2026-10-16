@@ -1,0 +1,272 @@
+{
+  "repository_root": "/home/dbsanfte/riemann/formal",
+  "path_base": "repository",
+  "entries": [
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/README.md",
+      "sha256": "db0ebec1a4ff22e545c9dff26fcd69250537533c574314c9050b1ccbbb0a543e",
+      "bytes": 5562,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/sources/journal-entry.md",
+      "sha256": "b7a36cca9f2094389707c3dc5b33cf09a54256687d261f46477251940ada7788",
+      "bytes": 4888,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/polynomial-top-bands-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reports/polynomial-top-bands-obstruction.md",
+      "sha256": "dee33d006e429a82c5f918946b3995d9bd6fa69ab630dda95d8e22e34c48170e",
+      "bytes": 8494,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/polynomial-top-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/sources/polynomial-top-source-pins.json",
+      "sha256": "55e1cfe2eabf799d1e0791b2f089fe8e83e68bbbdb7c2aa1054d7d671e062e71",
+      "bytes": 1560,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/finite_grid/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reports/finite-grid-jets.md",
+      "sha256": "b9362413654b889c5a74d947f7c216ad6194ca57fad463cac14d09e5ded4a84b",
+      "bytes": 9446,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/finite_grid/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/sources/finite-grid-manifest.json",
+      "sha256": "070448c898f080e879a3b783901417357810ac703ba40841074d3ecdc190b510",
+      "bytes": 1084,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/selected_determinant/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reports/selected-determinant.md",
+      "sha256": "ab9fb757fed120e5329885eb9eb6400b87bd9dbd967a7c608816ea781b9009c6",
+      "bytes": 8628,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/selected_determinant/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/sources/selected-determinant-manifest.json",
+      "sha256": "ef0528903e0fb5c6e9574ba789cbd6c7db76051ad1b50dedbb404a6dda5099ea",
+      "bytes": 1788,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/selected_determinant/primary-retrieval-note.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/primary/supersymmetric-schur-retrieval-note.md",
+      "sha256": "b0e093987155b93ffa7854551abfb63b15da0fc0b1ab16953ebd5f3a0d5ad6da",
+      "bytes": 419,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/projector/public-power-reversal-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reports/public-power-reversal.md",
+      "sha256": "6674ad16216617d189ac979ed2b636215ecf25ff0a77d91db7fa57794cf4d135",
+      "bytes": 8022,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/projector/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/sources/public-power-source-pins.json",
+      "sha256": "0c0d56b40c3aa768dbd90cd6a0ee917b4c8ce8cd6f920ab04a95c3d130fdc310",
+      "bytes": 718,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/two_streams/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reports/two-streams.md",
+      "sha256": "23592400c1a5693041426f01c6a60b46e32c5006fc91a5f5d4d62342d11a30fe",
+      "bytes": 7128,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/two_streams/sources.json",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/sources/two-streams-primary-pins.json",
+      "sha256": "92605b0af7bf3f2f2a674b3efd56f67f87db4ac4c3934f255105893b6105e8b4",
+      "bytes": 795,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/primary/nist-formula-retrieval.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/primary/nist-formula-retrieval.md",
+      "sha256": "4acb3ca6d2251a76772e96f87271ad9add9d77a84c9b609f84ba0957343a0e2a",
+      "bytes": 883,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/reviews/finite-grid-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reviews/finite-grid-review.md",
+      "sha256": "f7cc922efbd6f0712a5e8bed9b3931a67af4b2404924e13bb73be902d28f8d9a",
+      "bytes": 6988,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/reviews/polynomial-tops-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reviews/polynomial-tops-review-a.md",
+      "sha256": "004614ae7b41e0b67f935114d5f2dbee01b2ddc3e3cc6391c1ba975caafa37ee",
+      "bytes": 3729,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/reviews/polynomial-tops-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reviews/polynomial-tops-review-b.md",
+      "sha256": "c6ba65dd66c8fab8ad9daea8680e18025a861c5d08fe4942ff7e4633e8617d10",
+      "bytes": 5143,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/reviews/projector-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reviews/projector-review.md",
+      "sha256": "d62ccb9ba12986d1d557177f619cc61f932cc239cba559328cadbc598e842236",
+      "bytes": 3274,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/reviews/selected-determinant-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reviews/selected-determinant-review.md",
+      "sha256": "a584755b70c81cb7408e9b4b971fc305627b2a761400b430ba87c6ea37554f10",
+      "bytes": 3367,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/reviews/two-streams-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reviews/two-streams-review.md",
+      "sha256": "54f31290fcab737d89593db549fcb932b9b203f97b45f6a581f2c41ca0c859f7",
+      "bytes": 3480,
+      "gzip": false
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/two_streams/bibasic-heine.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/primary/bibasic-heine.pdf.gz",
+      "sha256": "f9cf106c8bf4fa9d4927fc2595219436f4a51a07de6fb8a940a7bca38a8838ee",
+      "bytes": 283690,
+      "gzip": true
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/two_streams/bibasic-heine.txt",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/primary/bibasic-heine.txt.gz",
+      "sha256": "28e60715e7b52928847e3aa97f262e9e05af6ae8f93651a72f49a84e061510f0",
+      "bytes": 86241,
+      "gzip": true
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/two_streams/q-binomial-identities-finder.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/primary/q-binomial-identities-finder.pdf.gz",
+      "sha256": "f6951b3dd692b40e2a1ceacfda570469011a1f92eddbc04736901d2fce16fb8f",
+      "bytes": 484286,
+      "gzip": true
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/two_streams/q-binomial-identities-finder.txt",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/primary/q-binomial-identities-finder.txt.gz",
+      "sha256": "128c1c621ae0e23f5473839e196bb93a205ab2392d058ce0e7091c9905c03a8d",
+      "bytes": 64623,
+      "gzip": true
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/selected_determinant/primary-bibliography.html",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/primary/supersymmetric-schur-bibliography.html.gz",
+      "sha256": "46a81cb34eb1496f922ddbaeb0e5c16a6a60e817f97cd110f96db368bd1bb73f",
+      "bytes": 26083,
+      "gzip": true
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "resolved_path": "docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb",
+      "bytes": 6713,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/tmp/semiprime-weighted-query-20261015/source/actual-row-density-adjoint-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "bytes": 8621,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/sources/density-source-pins.json",
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c",
+      "bytes": 1767,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/tmp/semiprime-rational-query-20261015/rational/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-rational-query-20261015/reports/rational-trace-criterion.md",
+      "sha256": "fae3439b4f7380ec1c819ce03d0f818c2f2b036e8777aca8686c4d17945342eb",
+      "bytes": 9866,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/tmp/semiprime-input-dependent-20261015/implicit/transform-interface.md",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/reports/transform-interface.md",
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae",
+      "bytes": 8901,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-compressed-query-20261015/reports/exclusive-own-rows-prefix-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-compressed-query-20261015/reports/exclusive-own-rows-prefix-obstruction.md",
+      "sha256": "cb296cf1aec86329a0ee80225cdbd0f762406d735b6e86509d6855e78e1f69ed",
+      "bytes": 9878,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-compressed-query-20261015/sources/exclusive-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-compressed-query-20261015/sources/exclusive-source-pins.json",
+      "sha256": "9d1193d6ec3598859a995bcd7329ed9edd3c7abdfe7b8db8e5bd8fc529677893",
+      "bytes": 1781,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "bytes": 8621,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "bytes": 24354,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "bytes": 31743,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+      "bytes": 29680,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeStagedSeed.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeStagedSeed.lean",
+      "sha256": "91aa6a761aa4c5266cddde71091a8411ac1ed56ee1217954947b721f41bec4e6",
+      "bytes": 17853,
+      "role": "unchanged prerequisite in repository"
+    },
+    {
+      "original_path": "/tmp/semiprime-multistream-query-20261015/reviews/integration-journal-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/reviews/integration-journal-review.md",
+      "sha256": "3022f75375dac6f77c8cd2d3780d40eef3b62c2fec9f5909934bd22ff69d95d0",
+      "bytes": 3943,
+      "gzip": false
+    }
+  ]
+}

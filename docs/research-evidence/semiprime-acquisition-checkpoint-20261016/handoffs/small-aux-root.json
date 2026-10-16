@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-16",
+  "goal_status": "active; full all-input sixth-root algorithm and Lean complexity proof not achieved",
+  "previous_turn": "progress: implemented sparse-residue consumer and Lean arithmetic core",
+  "this_pass": "No improved acquisition bound; new reductions and source screening are not a substantive scaling advance.",
+  "exact_candidate_query": {
+    "inputs": "N=P*Q, distinct odd primes P<Q, public prime r>3 of scale N^(1/18), gcd(N,r)=1",
+    "weight": "w(d)=d+N*d^(-1) in F_r for r not dividing d; w(d)=0 otherwise",
+    "boundary": "Delta(d)=floor(N/d)-floor((N-1)/d)",
+    "query": "B_r(N)=sum_{1<=d<=floor(sqrt(N))} w(d)*Delta(d) mod r",
+    "identity": "B_r(N)=sigma(N)=(P+1)*(Q+1) mod r",
+    "proof": [
+      "Delta(d) is the divisibility indicator of d|N.",
+      "The only divisors <=sqrt(N) are 1,P.",
+      "At a divisor, N*d^(-1) mod r equals N/d mod r.",
+      "The two nonzero weights sum to 1+N+P+Q=sigma(N)."
+    ],
+    "sufficient_gate": "An exact deterministic evaluator in soft O(r^3) bits for every semiprime would meet acquisition budget.",
+    "recovery": [
+      "t=B_r(N)-N-1 mod r equals P+Q mod r.",
+      "Find all roots x^2-t*x+N=0 mod r by an O(r) public scan. At most 2 roots, including P mod r; repeated discriminant gives one root.",
+      "Existing consumer with n=r,J<=2 costs soft O(N^(1/6)+N^(1/5)*(2/r)^(3/5))=soft O(N^(1/6)).",
+      "Equivalent scalar gate: phi(N) mod r, because phi(N)=2*(N+1)-sigma(N)."
+    ],
+    "status": "Reduction only; evaluator unacquired. No new Lean theorem, all-input factoring theorem or bit-bound claim."
+  },
+  "route_decisions": [
+    {
+      "route": "small auxiliary APR",
+      "primary": "https://pub.math.leidenuniv.nl/~lenstrahw/PUBLICATIONS/1984a/art.pdf",
+      "result": "Full-ring degree now affordable, but failed tests may give only compositeness. No factor/catalog guarantee for those cases."
+    },
+    {
+      "route": "higher degree quotient lattice",
+      "result": "Even degree d clock N^((d+2)/(4*(d+3)))*(J/n)^((d+1)/(d+3)) does not improve d=2 at required density. Must use saturated monic-root lattice; literal Hx+s basis has extra H determinant factors. No new packet."
+    },
+    {
+      "route": "hyperbolic sieve",
+      "primary": "https://arxiv.org/html/2606.13018",
+      "result": "Public auxiliary-field images do not supply required hidden factor catalog."
+    },
+    {
+      "route": "summatory divisor",
+      "primary": "https://arxiv.org/html/2609.29949",
+      "result": "Expected N^(9/28+o(1)) unweighted sum does not implement weighted boundary query. d(N)=4 already known, so do not claim unweighted target circularity. Weighted/twisted boundary correction remains unpaid."
+    },
+    {
+      "route": "UW divisor cover",
+      "primary": "https://arxiv.org/html/2511.10851v1",
+      "result": "No constructive high-rank cover found. Actual integer theorem uses gcd(s-t,N); saturation gives N|(s-t), not annihilator. Adapted group-order cover is separate. Current long-K extraction costs soft O(N^(31/192)+L*N^(5/48)), only target-compatible for L<=soft N^(1/16), not L~N^(1/6). No prefactorization requirement removed."
+    },
+    {
+      "route": "OpenAI/math",
+      "primary": "https://github.com/openai/math",
+      "result": "Known prime characteristic algorithms do not acquire hidden residue or composite-index coefficient; no constructive cover found."
+    }
+  ],
+  "scratch_reports": [
+    "/tmp/semiprime-small-aux-acquisition-20261016/literature/report.md",
+    "/tmp/semiprime-higher-power-recovery-20261016/consumer.md"
+  ],
+  "preservation": "Prior script hash verified. No new repo files or edits, packets, staging, commit, push, broad gates or root/public metadata changes.",
+  "next_action": "Investigate exact periodic-weight boundary acquisition and source-specific divisor cancellations; do not substitute a prime-index algorithm or smoothed sum for composite-index exact acquisition."
+}

@@ -1,3 +1,21 @@
 # Preserve the exact upstream compatibility patches checked by source hashes.
 # Whitespace inside a diff is part of its payload, not project formatting.
 vendor/openai-quasi-rh/patches/*.patch -whitespace
+
+# Preserve the pinned bytes of these historical evidence snapshots, including
+# their original final blank lines. Other whitespace checks remain enabled.
+docs/research-evidence/semiprime-adaptive-euclid-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-block-query-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-channel-acquisition-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-compressed-query-20261015/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-descent-query-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-extraction-query-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-high-digit-query-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-long-query-20261015/baselines/q-factorial-upper-bound.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-multistream-query-20261015/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-native-center-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-rational-query-20261015/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-reindexed-query-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-spectral-source-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-uniform-boundary-20261016/sources/journal-entry.md whitespace=-blank-at-eof
+docs/research-evidence/semiprime-weighted-query-20261015/sources/journal-entry.md whitespace=-blank-at-eof

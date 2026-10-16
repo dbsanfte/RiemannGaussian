@@ -1,0 +1,226 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "Classical strengthening via one prescribed nonzero relation; local four-digit and nearlinear-total-relative-encoding carrier obstruction",
+  "model_authorization": "User authorized parallel Sol 6.1 research; three existing gpt-6.1-sol agents reused.",
+  "previous_goal_turn": "Progress: low-digit carrier-plan obstruction and conditional extraction from supplied small order multiple.",
+  "whole_family_soft_linear_query_acquired": false,
+  "general_query_bound": "Existing soft O(J+sqrt(JL)), hence soft O(m^(3/2)), unchanged",
+  "representative_step": "All fixed pair/triple relations annihilate the relevant local/global base on a successful cover; choose one first nonzero relation per (m,h,plan). All-zero lists contradict inherited raw labeled energy. Counting no longer unions over O(m) candidates.",
+  "local_success_count": "For h=N mod m^r, r>=2 fixed: soft O(B*(M^4.969+M^(r+1.969))). One local-order divisor chooses P via its cofactor; h leaves O(M^(3-r)+1) Q lifts.",
+  "global_success_count": "soft O(B*M^(r+1.969)); both distinct local prime orders divide the representative, so fixing P cofactor leaves at most one Q cofactor.",
+  "strengthened_cases": [
+    {
+      "scope": "GLOBAL",
+      "residue_power": 2,
+      "plan_library": "B<=M^2"
+    },
+    {
+      "scope": "LOCAL in either hidden field",
+      "residue_power": 3,
+      "plan_library": "B<=M"
+    },
+    {
+      "scope": "LOCAL in either hidden field",
+      "residue_power": 4,
+      "plan_library": "B polylogarithmic"
+    }
+  ],
+  "success_loss": "soft O(M^5.969) for every listed case, negligible against same original Omega(M^6/log^2 M) supply",
+  "encoding_extension": "Total explicit relative-origin list bit budget soft O(m); trim only a proof witness, leaving >=m/2 light labels. Arbitrary full-N common origin cancels; relative list/positions/assignments stay prescribed by residue and plan.",
+  "source_and_energy_scope": "Energy holds at CURRENT candidates only. Counting all comparable m is an overestimate. Existing cyclic-norm exponent count and published prime inputs inherited, not new credit.",
+  "limits": "No query acquisition, generic operation lower bound, collision coverage after trimming or all-input factorization theorem. Full-input-dependent relative origins/positions and other implicit queries remain open.",
+  "verification_scope": "Classical proof with two independent mathematical/source reviews and integration review; no new Lean theorem, native edit, examples or broad build.",
+  "missing_work": "Restriction-stable soft O(m) sufficient factor query, all-input and full bit/controller proof, Lean sixth-rate composition",
+  "review_target_checks": [
+    {
+      "review": "reviews/proof-review-a.md",
+      "target": "reports/representative-and-local-carriers.md",
+      "target_bytes": 13420,
+      "target_sha256": "46fb300723e61dff975421a4bba537598a230b4800a217a7b1f4cb6daef4b7b9"
+    },
+    {
+      "review": "reviews/proof-review-a.md",
+      "target": "sources/source-pins.json",
+      "target_bytes": 1213,
+      "target_sha256": "f7bb869cf6df864170146b2da4697514224e1c29edce13e7f74406f291e19026"
+    },
+    {
+      "review": "reviews/proof-review-b.md",
+      "target": "reports/representative-and-local-carriers.md",
+      "target_bytes": 13420,
+      "target_sha256": "46fb300723e61dff975421a4bba537598a230b4800a217a7b1f4cb6daef4b7b9"
+    },
+    {
+      "review": "reviews/proof-review-b.md",
+      "target": "sources/source-pins.json",
+      "target_bytes": 1213,
+      "target_sha256": "f7bb869cf6df864170146b2da4697514224e1c29edce13e7f74406f291e19026"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "README.md",
+      "target_bytes": 2822,
+      "target_sha256": "607cf3959a73a5ae0538a49fb121152de238873a9564b6ce69c95a47fd3b991b"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 3257,
+      "target_sha256": "ddb84e8979bb128ae0e9537ad5c39b3e5eafe8c35ec58f2e3c716c778e403d48"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/manifest.json",
+      "bytes": 11885,
+      "sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-boundary-20261016/manifest.json",
+      "bytes": 13388,
+      "sha256": "14df1782fab8a4427ae73167175a290b62a4af370cee8d051b1fa29541345a1b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-high-digit-query-20261016/manifest.json",
+      "bytes": 9387,
+      "sha256": "05cb25cae8e0639707c38ca0841ab23e6ace6f1f1f224a0396904436b37203c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-reindexed-query-20261016/manifest.json",
+      "bytes": 10286,
+      "sha256": "4e7c96174f2f8cc199c858aa6efe1665787cd0268286cf3652259a2508331d8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-spectral-source-20261016/manifest.json",
+      "bytes": 11092,
+      "sha256": "39dc9c21e01770310c33d384e49a592d5cb80825540d32d427543a3f03f9b38b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-channel-acquisition-20261016/manifest.json",
+      "bytes": 8428,
+      "sha256": "c860df18ab59c69fc70fb3d18fdfaf7b99db657f3faf8827701d0e4a60ebd101"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/manifest.json",
+      "bytes": 10176,
+      "sha256": "f4aa02dd10a2a2baec95fcf427c1c822619d7efeb4f59133f8ebb494a1e1d0ed"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-center-20261016/manifest.json",
+      "bytes": 9534,
+      "sha256": "2f1373b2ff2abd21881945b63f32f3c895f7b68b22bdbafc82ff3d0f7488e09b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-frontier-20261016/manifest.json",
+      "bytes": 10074,
+      "sha256": "fadf463d83f2881df841ff41da22da41c3dbc40a689011439b13a87dfab63d6a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-small-multiple-20261016/manifest.json",
+      "bytes": 10620,
+      "sha256": "c8d1d6e6041650fe17347b6471ed71183481ab3e9bc103b097706c91ba3a4b98"
+    }
+  ],
+  "prior_listed_files_unchanged": 483,
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1584817,
+    "sha256": "e2949c1fa5ca759f98a772f433472db24807edab2f8948cf02de103fd6d57d18"
+  },
+  "entry_bytes": 3257,
+  "entry_sha256": "ddb84e8979bb128ae0e9537ad5c39b3e5eafe8c35ec58f2e3c716c778e403d48",
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2822,
+      "sha256": "607cf3959a73a5ae0538a49fb121152de238873a9564b6ce69c95a47fd3b991b"
+    },
+    {
+      "path": "reports/representative-and-local-carriers.md",
+      "bytes": 13420,
+      "sha256": "46fb300723e61dff975421a4bba537598a230b4800a217a7b1f4cb6daef4b7b9"
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "bytes": 3817,
+      "sha256": "8fcb363c7010d509211a4630d643e9d47c5c91519847ff276553e994220b8d16"
+    },
+    {
+      "path": "reviews/proof-review-a.md",
+      "bytes": 3511,
+      "sha256": "924238b1f0b3124b49e6e7f192789e72f541107920ecc2a22b75888138f4b0c4"
+    },
+    {
+      "path": "reviews/proof-review-b.md",
+      "bytes": 5948,
+      "sha256": "b6dc8feaf42cf85f628ad21bb15a6796408c9c507606f27de775bfba906f8839"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 5890,
+      "sha256": "30ed2afaa17a20dea649e554baafaea107bb1568ddc4a6bea6c49b19cf5b7317"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 3257,
+      "sha256": "ddb84e8979bb128ae0e9537ad5c39b3e5eafe8c35ec58f2e3c716c778e403d48"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 4252,
+      "sha256": "b6df0599401b92896f667ab75d21abbcbb98df377f2f0f86ea605d5d9489a292"
+    },
+    {
+      "path": "sources/source-pins.json",
+      "bytes": 1213,
+      "sha256": "f7bb869cf6df864170146b2da4697514224e1c29edce13e7f74406f291e19026"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "Unsuccessful channel acquisition research pass; inherited moment obstruction transferred, not a new scaling or acquisition result",
+  "model_authorization": "User authorized parallel Sol 6.1 research; three existing gpt-6.1-sol agents reused.",
+  "whole_family_soft_linear_query_acquired": false,
+  "substantive_acquisition_advance": false,
+  "general_query_bound": "Existing soft O(J+sqrt(JL)), hence soft O(m^(3/2)), unchanged",
+  "report_scope": "Natural proper channel series have known nonhit denominator D_B/H and recurrence J-h. Ordinary independent-numerator Pade constraints at precision<=J-h are vacuous. Coupled/transformed methods remain open.",
+  "review_correction": "Full zeroth-moment Vandermonde inversion requires B>=J; B<J gives a rectangular vector. Proper-part acquisition remains unpaid.",
+  "primary_scope": "Inspected explicit polynomial-input SimPade2016 and supplied syndrome/partial-inverse SPI2018 contracts; no additive SLP-size-plus-degree constructor obtained.",
+  "verification_scope": "Classical algebra and independent mathematical/primary-interface reviews; no new numerical examples, Lean source changes, declarations or builds.",
+  "missing_work": "Constructed restriction-stable soft O(m) sufficient factor query, all-input and bit/controller costs, Lean sixth-rate composition.",
+  "review_target_checks": [
+    {
+      "review": "reviews/pade-review-a.md",
+      "target": "reports/channel-pade.md",
+      "target_bytes": 9688,
+      "target_sha256": "b22dfebe61a0117c66ed43b79c87b8671306363795e1e1f07350032ec958c181"
+    },
+    {
+      "review": "reviews/pade-review-b.md",
+      "target": "reports/channel-pade.md",
+      "target_bytes": 9688,
+      "target_sha256": "b22dfebe61a0117c66ed43b79c87b8671306363795e1e1f07350032ec958c181"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "README.md",
+      "target_bytes": 4379,
+      "target_sha256": "640b23ec7b90a7a101d1f88187e1d1647f247ad513332a6c3d380a12561cc9fd"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 2389,
+      "target_sha256": "400075f10f9c4ce194691a540cc4f1f2942a2ebd3635c83d555dd11cc3b6230e"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/manifest.json",
+      "bytes": 11885,
+      "sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-boundary-20261016/manifest.json",
+      "bytes": 13388,
+      "sha256": "14df1782fab8a4427ae73167175a290b62a4af370cee8d051b1fa29541345a1b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-high-digit-query-20261016/manifest.json",
+      "bytes": 9387,
+      "sha256": "05cb25cae8e0639707c38ca0841ab23e6ace6f1f1f224a0396904436b37203c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-reindexed-query-20261016/manifest.json",
+      "bytes": 10286,
+      "sha256": "4e7c96174f2f8cc199c858aa6efe1665787cd0268286cf3652259a2508331d8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-spectral-source-20261016/manifest.json",
+      "bytes": 11092,
+      "sha256": "39dc9c21e01770310c33d384e49a592d5cb80825540d32d427543a3f03f9b38b"
+    }
+  ],
+  "prior_listed_files_unchanged": 409,
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1571613,
+    "sha256": "b17355ca56244657fce52ab2194cae033efe1962f010545e0afc2f0e775f22fa"
+  },
+  "entry_bytes": 2389,
+  "entry_sha256": "400075f10f9c4ce194691a540cc4f1f2942a2ebd3635c83d555dd11cc3b6230e",
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4379,
+      "sha256": "640b23ec7b90a7a101d1f88187e1d1647f247ad513332a6c3d380a12561cc9fd"
+    },
+    {
+      "path": "primary/simpade2016.pdf.gz",
+      "bytes": 636567,
+      "sha256": "032a919648c47574aa800be0f8b82cdbd46fb85796d9caccc0cd534343662247",
+      "uncompressed_bytes": 656794,
+      "uncompressed_sha256": "0a0c4c85d3c70e475a87d2f10eeb044b2df20452d3a5c5a55dd57521efb781f6"
+    },
+    {
+      "path": "primary/simpade2016.txt.gz",
+      "bytes": 18482,
+      "sha256": "c1b58e0d9afe57309fdfef29d7e212a0e21675115656a9a740af1a98f6e09bae",
+      "uncompressed_bytes": 75953,
+      "uncompressed_sha256": "db0d53a544038793677dfd1d2b9b874581b5ef93c2a4079b140f369761d0906f"
+    },
+    {
+      "path": "primary/spi2018.pdf.gz",
+      "bytes": 401180,
+      "sha256": "cb0470feea97eee5a1e46edb24e27f441b943230721c176c82056bb146560187",
+      "uncompressed_bytes": 589441,
+      "uncompressed_sha256": "fbd4046981d9fdbd9322460f83ddb9fe4dbdf2cabd00f53134f57893404bffe0"
+    },
+    {
+      "path": "primary/spi2018.txt.gz",
+      "bytes": 31692,
+      "sha256": "2d4346b3600ef62d6dfa4b4cba0263dc5e8f32abb3c02bc3f6a8521986a8058e",
+      "uncompressed_bytes": 153669,
+      "uncompressed_sha256": "13e939aa1a81fd739aab2eedf44493538cb0d6a528921fa3f2d9fb3871c4b46a"
+    },
+    {
+      "path": "reports/channel-pade.md",
+      "bytes": 9688,
+      "sha256": "b22dfebe61a0117c66ed43b79c87b8671306363795e1e1f07350032ec958c181"
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "bytes": 2820,
+      "sha256": "458b211a9145dad36f1c65499f860a51e491de7d4a3216eba0ff40a2edef3de0"
+    },
+    {
+      "path": "reviews/pade-review-a.md",
+      "bytes": 2176,
+      "sha256": "5ba658a16854deaec05321ebd93a4419ffb6467fc818d7b4bd07de58f323ad28"
+    },
+    {
+      "path": "reviews/pade-review-b.md",
+      "bytes": 6508,
+      "sha256": "eb09a409c20a2867eac5f47dd88ae37b81a24756b7d010a12bfec297b9401843"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 7835,
+      "sha256": "5fc1059288ba8a26e91179b4439c87d76b4b054e57f4523d6deb543f0b938442"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 2389,
+      "sha256": "400075f10f9c4ce194691a540cc4f1f2942a2ebd3635c83d555dd11cc3b6230e"
+    },
+    {
+      "path": "sources/pade-author-manifest.json",
+      "bytes": 1192,
+      "sha256": "4908f0a8d85c99fe3744c3077652f9ae3c731a74436dec0e68744d3f8650e729"
+    },
+    {
+      "path": "sources/pade-source-pins.json",
+      "bytes": 1231,
+      "sha256": "d4b52cdb8b8a97ac7d97c76548c734bf80e8c4d5cf129bf14f2a0654c06c09fa"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 3218,
+      "sha256": "9d939894fff4a3916e497960d90f52e13b4bb281f4879c4cba929aefc0487cab"
+    }
+  ]
+}

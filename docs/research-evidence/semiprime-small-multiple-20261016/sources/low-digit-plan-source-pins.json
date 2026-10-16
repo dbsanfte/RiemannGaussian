@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "path": "/tmp/semiprime-origin-query-20261016/report.md",
+      "bytes": 15784,
+      "sha256": "2e9eef8c4ba33e53fc5ae822483a2d6d524dfb8d46ff02eeb73209f2a88aea1d"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "bytes": 19002,
+      "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    }
+  ]
+}

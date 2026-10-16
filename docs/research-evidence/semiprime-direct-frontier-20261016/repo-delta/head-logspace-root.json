@@ -1,0 +1,318 @@
+{
+  "sha": "a56a002fe91dd3361f596ec31498a29601d83df0",
+  "tree": [
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1940a3ea399ab756cc02cbf5b2d1121f6607e8c",
+      "size": 101241,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/c1940a3ea399ab756cc02cbf5b2d1121f6607e8c",
+      "path": "AffineSampling.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d499358fc1414430382c0450442cab7656d3500a",
+      "size": 15379,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/d499358fc1414430382c0450442cab7656d3500a",
+      "path": "AllocationPrograms.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7269725a78029eff0104f088551b3c4bcfce6770",
+      "size": 10373,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/7269725a78029eff0104f088551b3c4bcfce6770",
+      "path": "Amplification.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "286d8e5aea3ee1cf749a4b6efb1967b84fdd2a98",
+      "size": 31210,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/286d8e5aea3ee1cf749a4b6efb1967b84fdd2a98",
+      "path": "BoundedTours.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47305cc3fe9aadc3f59e667ce8aa6527196d2b73",
+      "size": 33525,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/47305cc3fe9aadc3f59e667ce8aa6527196d2b73",
+      "path": "CatalyticComparison.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b5129e9be98a0dc2246e638244385f673cec55d",
+      "size": 58223,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/8b5129e9be98a0dc2246e638244385f673cec55d",
+      "path": "CompressionBounds.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4738b869c9ce53b1f9f45bd6338a5bf1c5b10d8",
+      "size": 44443,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/c4738b869c9ce53b1f9f45bd6338a5bf1c5b10d8",
+      "path": "CompressionEvaluation.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1f32f84a15d4247d5f0da83c3de035c4da6cc19",
+      "size": 42560,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/b1f32f84a15d4247d5f0da83c3de035c4da6cc19",
+      "path": "CompressionPrograms.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd77e88be048235a46ed08b96b8c06d569896ab0",
+      "size": 40751,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/fd77e88be048235a46ed08b96b8c06d569896ab0",
+      "path": "ConfigurationEvaluation.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18af42512f90ea300761ea8a8576054531bbfe6e",
+      "size": 32058,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/18af42512f90ea300761ea8a8576054531bbfe6e",
+      "path": "ConfigurationGraph.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27a8de5f228b3daf3a4cff54842039ea83dbc6ed",
+      "size": 43935,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/27a8de5f228b3daf3a4cff54842039ea83dbc6ed",
+      "path": "ContourPrograms.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acd41cb8bbb66280776f4c4c0bd946774dc25e91",
+      "size": 50140,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/acd41cb8bbb66280776f4c4c0bd946774dc25e91",
+      "path": "ContourTraversal.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e42b9ab7cc356d1507c18acc7078973217db8ad",
+      "size": 50099,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/1e42b9ab7cc356d1507c18acc7078973217db8ad",
+      "path": "CounterPrograms.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca35b7665ff47fddaaadc8fa0390c9cdf8dcebb1",
+      "size": 22624,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/ca35b7665ff47fddaaadc8fa0390c9cdf8dcebb1",
+      "path": "Deterministic.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ea0f3824d981151e069c3367d67d0f5f7a1f487",
+      "size": 121933,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/5ea0f3824d981151e069c3367d67d0f5f7a1f487",
+      "path": "DiagonalEvaluation.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "671467bca2227101783b5981e2ea086f9b502322",
+      "size": 57302,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/671467bca2227101783b5981e2ea086f9b502322",
+      "path": "DyadicArithmetic.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5397fc4cc54b4aefd0898108746b1f301c5c2ce7",
+      "size": 4386,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/5397fc4cc54b4aefd0898108746b1f301c5c2ce7",
+      "path": "Equality.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d35e26192802e4c3f8501ebf541eb3b1c7576e8c",
+      "size": 106587,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/d35e26192802e4c3f8501ebf541eb3b1c7576e8c",
+      "path": "EstimatorBounds.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5d71c0623754cea6004507e475b5451be9beb81",
+      "size": 53411,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/f5d71c0623754cea6004507e475b5451be9beb81",
+      "path": "EstimatorInstructions.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "746b359034f3aa22e112b338e7aa8384a2ff5691",
+      "size": 50051,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/746b359034f3aa22e112b338e7aa8384a2ff5691",
+      "path": "EstimatorInterfaces.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b7a51b55c27caa833eb44f697dee861b6b970bf",
+      "size": 61928,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/8b7a51b55c27caa833eb44f697dee861b6b970bf",
+      "path": "EstimatorMachine.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64fb16b67ed8e921d019363ceadaf0d3b92d6bcf",
+      "size": 60811,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/64fb16b67ed8e921d019363ceadaf0d3b92d6bcf",
+      "path": "EstimatorOperations.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fab7f6f97b16aabc70614944788242a8532c4e28",
+      "size": 8972,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/fab7f6f97b16aabc70614944788242a8532c4e28",
+      "path": "EstimatorParameters.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5a12507be5e4cbacbaf1add7fb32fc4f3a8f5ec",
+      "size": 43009,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/d5a12507be5e4cbacbaf1add7fb32fc4f3a8f5ec",
+      "path": "FiniteFieldPrograms.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19c92f2e9630179e30bd01dbb42f5d37dcafe67c",
+      "size": 106737,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/19c92f2e9630179e30bd01dbb42f5d37dcafe67c",
+      "path": "HierarchicalEstimator.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "965e065d3467d421c9e8ff35ca38438d1d46e40e",
+      "size": 131113,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/965e065d3467d421c9e8ff35ca38438d1d46e40e",
+      "path": "HierarchyEvaluation.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58fec09ae2f0998e2dc52c15bd3dba8eb2dcf822",
+      "size": 12010,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/58fec09ae2f0998e2dc52c15bd3dba8eb2dcf822",
+      "path": "IterationSchedule.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "863075051244ccc25e0fe8be80568a60b7ea8821",
+      "size": 44855,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/863075051244ccc25e0fe8be80568a60b7ea8821",
+      "path": "ProbabilityAtoms.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d782df34c74794561bfdf5b5c070990671a7a3ab",
+      "size": 13342,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/d782df34c74794561bfdf5b5c070990671a7a3ab",
+      "path": "ProbabilityDecision.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a4c77573575f7ef042e63b16a8bfe2c049d9093",
+      "size": 50783,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/6a4c77573575f7ef042e63b16a8bfe2c049d9093",
+      "path": "ProbabilityHierarchy.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "032bb9168338a449c69ac11d4c49bde6c030df31",
+      "size": 20986,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/032bb9168338a449c69ac11d4c49bde6c030df31",
+      "path": "QueryCombinators.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8acf7ad95a3050d08905385824daf0db5e1cf1f",
+      "size": 65958,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/d8acf7ad95a3050d08905385824daf0db5e1cf1f",
+      "path": "QueryPrograms.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c64e489622f863d67e317d1a1645beec4379db87",
+      "size": 54508,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/c64e489622f863d67e317d1a1645beec4379db87",
+      "path": "RecursivePrograms.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e63814f50b7df727bb383eb29bf89b58645f439",
+      "size": 53130,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/5e63814f50b7df727bb383eb29bf89b58645f439",
+      "path": "RowEvaluation.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d01ce038d9450539224ad300be121735ad84aee8",
+      "size": 24976,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/d01ce038d9450539224ad300be121735ad84aee8",
+      "path": "SparseRows.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d78d1bc134970cd91f621ea00b02a9bdff73b7f",
+      "size": 51811,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/3d78d1bc134970cd91f621ea00b02a9bdff73b7f",
+      "path": "TerminalEvaluation.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ad96e02efca6beb20884d86721a8c6f7a547da3",
+      "size": 30847,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/4ad96e02efca6beb20884d86721a8c6f7a547da3",
+      "path": "TransitionEvaluation.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "270ae6ffd678e6cbc10a023f45b21eeca646138a",
+      "size": 6257,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/270ae6ffd678e6cbc10a023f45b21eeca646138a",
+      "path": "TransitionTables.lean"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe83b96d5b8634583f92761b31c84ff23cc11576",
+      "size": 34249,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/fe83b96d5b8634583f92761b31c84ff23cc11576",
+      "path": "UniformEstimator.lean"
+    }
+  ],
+  "truncated": false
+}

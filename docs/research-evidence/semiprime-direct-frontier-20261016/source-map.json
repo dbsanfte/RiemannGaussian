@@ -1,0 +1,205 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/README.md",
+      "bytes": 1783,
+      "sha256": "d4bf352c6b7ec40c4a887d86c323f859982501c84df7a7925e186dd37846e598",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/frontier.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/reports/direct-frontier.md",
+      "bytes": 6234,
+      "sha256": "eba769360060996c82fc354bb2e4f3c819d0e90a2b5b9d6779f9c8e9a1fcfcb5",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/sources/journal-entry.md",
+      "bytes": 2067,
+      "sha256": "29f55aa83287e1da15d676e86ad6882a2d32f49780911e43dc95b7f8595b3402",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/sources/pre-entry-baseline.json",
+      "bytes": 3839,
+      "sha256": "5c161e1e1efac8807e3a39246f53b8ada8f2534d160906793b38ffc0c0ffd42c",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/primary-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/sources/primary-pins.json",
+      "bytes": 1068,
+      "sha256": "d7cefccf53ed966db416915e368600082635785e65a106624b01fcf78706ffcb",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/delta-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/reviews/delta-review.md",
+      "bytes": 1698,
+      "sha256": "9f4b0841e6139f29940736767c1fe529baf95ac871f83b0a857557b93f26e3b2",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/Deterministic.lean",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/Deterministic.lean",
+      "bytes": 22624,
+      "sha256": "f51289517dc00b6f843e6f408f393c1bcac7d25e78eb162c0c629618875d252b",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/Equality.lean",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/Equality.lean",
+      "bytes": 4386,
+      "sha256": "4e04bb9a264ff32042267832d47423079a0d72b9880994b5e84957d672d5fbe9",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/base-commit.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/base-commit.json",
+      "bytes": 822,
+      "sha256": "2b6a00b5d314d099df6b0eb0fd38a86a103f76cda99548d638585efc0317d514",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/base-lean-root.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/base-lean-root.json",
+      "bytes": 2697,
+      "sha256": "0db7538ceadfdbdd985dd3395aeacbd4231cccc9e46437da49ff4bf4773d2a83",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/base-oai-root.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/base-oai-root.json",
+      "bytes": 4851,
+      "sha256": "52dfce40dc367c3fd5c266bf559f6b4b928e0d77c4215b987ed70ac0613e2195",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/base-preprints-tree.json.gz",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/base-preprints-tree.json.gz",
+      "bytes": 553341,
+      "sha256": "0086463e41b1fc29e00dbc41427c7f5e7805e50655591dfd691a06533361a3a4",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/base-root.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/base-root.json",
+      "bytes": 1852,
+      "sha256": "282785c45382e7478af985d206d8d5ecec3a2301b8a229a8c6fef14343c67dee",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/certificate.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/certificate.json",
+      "bytes": 13342,
+      "sha256": "59801bafe3be03ef9d08a9fd58f625dace053d89dd30e47049baa7b89533f452",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/check.py",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/check.py",
+      "bytes": 4530,
+      "sha256": "132271a381414a15c648a01aeee9f6bc69772071b89cce1a8a54d922d6409a3e",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/commits.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/commits.json",
+      "bytes": 977,
+      "sha256": "26991b35eaced8ac75b75fdf195b85837d34e992d50c750645b9d4d2cc9616a2",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/head-commit.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/head-commit.json",
+      "bytes": 2602,
+      "sha256": "7f4e6d22ccd7a8bc8f7938f3d84e3b83090791835a119a0140d821dc686cca6c",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/head-computability-root.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/head-computability-root.json",
+      "bytes": 8240,
+      "sha256": "7733536ab4ffbfa0aace2649c971ceae2944ca7eac07240831e891c68af4918f",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/head-lean-root.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/head-lean-root.json",
+      "bytes": 2697,
+      "sha256": "94a586d0ec310f482ae1f0f917d09c69f32a4c62b440fcbb6063cfd1c86c85d7",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/head-logspace-root.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/head-logspace-root.json",
+      "bytes": 11163,
+      "sha256": "c3de6efffb1a01dde89045ae972d6a72e77967c71f5aae4fb438984de07cbf66",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/head-oai-root.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/head-oai-root.json",
+      "bytes": 4851,
+      "sha256": "584e1513957e4cf66e5d547b208b7af46712e24a5448dcb78c5dcad8224ffaec",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/head-preprints-tree.json.gz",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/head-preprints-tree.json.gz",
+      "bytes": 561768,
+      "sha256": "e86c3ebe60cb530a989d6e4c4cdc90333e26b64c082d7320bb4b730bd8593e3e",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/head-root.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/head-root.json",
+      "bytes": 2263,
+      "sha256": "0647109fae7a95edaf248f71fe58ee38d0500d18deae25636a3f24ba6f624745",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/history.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/history.md",
+      "bytes": 2281,
+      "sha256": "41c2a2d470014b3628695c7aabf5fd0c93f6f687621fca172062f22b59ed6a1e",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/repo/portable-delta/logspace-scope.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/repo-delta/logspace-scope.md",
+      "bytes": 1739,
+      "sha256": "c30217d377d082871543dc37646e4ddc214e22d3a1a2c6fd906a3a4572f5573b",
+      "gzip": false,
+      "role": "New targeted source/applicability audit or saved external snapshot; no acquisition advance"
+    }
+  ]
+}

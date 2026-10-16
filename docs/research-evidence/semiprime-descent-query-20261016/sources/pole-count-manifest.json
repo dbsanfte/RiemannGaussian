@@ -1,0 +1,32 @@
+{
+  "report": {
+    "path": "pole-count.md",
+    "bytes": 7738,
+    "sha256": "3ed29741ff7c06d962ef68e36d35c78c5145505e3743dade3daa87f185a63457"
+  },
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-extraction-query-20261016/reports/coefficient-block-inverse.md",
+      "bytes": 9041,
+      "sha256": "73685f5580b92375b7d3a9f09265c245125ebee6edf048243a4558b6d5f4e3a2"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/decimation.md",
+      "bytes": 10005,
+      "sha256": "65a5c827a64b5c035d3d0a7bed445c6970910f9f92749309878d1e1520e5c4fd"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "bytes": 29680,
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e"
+    }
+  ],
+  "new_result": "at least ceil((J-1)/2) genuine poles of canonical mask index function in each actual hidden field",
+  "whole_query_acquired": false,
+  "external_theorem_imported": false
+}

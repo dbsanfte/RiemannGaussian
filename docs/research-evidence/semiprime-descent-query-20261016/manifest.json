@@ -1,0 +1,291 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "actual fixed-carrier weighted-descent obstruction; paid spectral uniqueness checks and normalized boundary inverse; canonical pole-count theorem; no whole-query improvement",
+  "model_authorization": "User authorized parallel Sol 6.1 research; three existing gpt-6.1-sol agents reused.",
+  "whole_family_soft_linear_query_acquired": false,
+  "general_query_bound": "soft O(m^(3/2)), unchanged",
+  "actual_obstruction": "Regular representative-independent weighted q-descent requires zeros at at least ceil(J/2) actual dangling nodes, killing Omega(J) unit rows; normalized degree-one weight fails J>=3. Jet and gauge scopes explicit.",
+  "new_paid_operations": [
+    "full spectral determinant and all complete-block unit/factor/uniqueness diagnostics in soft O(J+L/J)",
+    "normalized I-U_H inverse and inverse transpose in soft O(J) on stated unit branch"
+  ],
+  "pole_count": "at least ceil((J-1)/2) genuine canonical rational-index poles in each hidden field; O(J)-size representation and other q-Ore/sample representatives remain possible",
+  "promise_avoidance_scope": "Abstract subgroup promise-level hit with all spectral values unit; NOT the literal quadratic tag catalog and NOT an actual-source counterfamily.",
+  "missing_work": "Restriction-stable soft O(m) acquisition of quotient forcing, channel remainder, exact collision locator or sufficient factor query; complete bit/controller and Lean theorem.",
+  "scope": "Classical proofs under stated actual-family/unit assumptions; no operation lower bound, all-input branch handling, new Lean theorem or benchmark.",
+  "review_target_checks": [
+    {
+      "review": "reviews/weighted-descent-review.md",
+      "target": "reports/weighted-descent.md",
+      "target_bytes": 10054,
+      "target_sha256": "e748e766c37f3caa81cce1d41ee1a16419565f1e02219c04beeb8ef28eafd7bb"
+    },
+    {
+      "review": "reviews/boundary-inverse-review.md",
+      "target": "reports/boundary-inverse.md",
+      "target_bytes": 2671,
+      "target_sha256": "9a2a076613d2363f64e116a98568361da85e7a37e9a1ca01fd7564148240f7c9"
+    },
+    {
+      "review": "reviews/spectral-review.md",
+      "target": "reports/spectral-check.md",
+      "target_bytes": 6193,
+      "target_sha256": "79ba8ad3917cf974d94219fac29aca074eb57ee90a35150bcd9407d8d3249413"
+    },
+    {
+      "review": "reviews/spectral-review.md",
+      "target": "reports/promise-level-spectral-avoidance.md",
+      "target_bytes": 5584,
+      "target_sha256": "db0e10b8ea49db24a436bba8c4716017e75248afe74e50ca3dc47d7ecda053e9"
+    },
+    {
+      "review": "reviews/pole-count-review-a.md",
+      "target": "reports/pole-count.md",
+      "target_bytes": 7738,
+      "target_sha256": "3ed29741ff7c06d962ef68e36d35c78c5145505e3743dade3daa87f185a63457"
+    },
+    {
+      "review": "reviews/pole-count-review-b.md",
+      "target": "reports/pole-count.md",
+      "target_bytes": 7738,
+      "target_sha256": "3ed29741ff7c06d962ef68e36d35c78c5145505e3743dade3daa87f185a63457"
+    },
+    {
+      "review": "reviews/literature-review.md",
+      "target": "reports/literature-audit.md",
+      "target_bytes": 8317,
+      "target_sha256": "d061b65e80fb82481b5585e2be126496714aca0fc8acee067ef88d058c2c35b9"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "README.md",
+      "target_bytes": 7279,
+      "target_sha256": "acb13fa65535adc6dc3632adc03c95f9faff0d460640a327e037671a84d63979"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 4805,
+      "target_sha256": "c338287e37126684938937fba1d7f08996aaa7d47960526240a50d7e17303bc6"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    }
+  ],
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1548311,
+    "sha256": "7b1bd90eaa8b279912c92b5a09c1ece2bf8d6153f372aec1e59d8184803f6c0d"
+  },
+  "entry_sha256": "c338287e37126684938937fba1d7f08996aaa7d47960526240a50d7e17303bc6",
+  "entry_bytes": 4805,
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7279,
+      "sha256": "acb13fa65535adc6dc3632adc03c95f9faff0d460640a327e037671a84d63979"
+    },
+    {
+      "path": "primary/elliptic-butterflies.pdf.gz",
+      "bytes": 1169025,
+      "sha256": "796dcbb66b18b65f13b04e8e491d93c856f33f9d38054c3bb152871eaf54dbfc",
+      "uncompressed_bytes": 1265688,
+      "uncompressed_sha256": "eb2f5b0613cb70f04333ff8567b2d261ca51018863a3cf255dbd91531a58e624"
+    },
+    {
+      "path": "primary/elliptic-butterflies.txt.gz",
+      "bytes": 28705,
+      "sha256": "0a3d3fd9c631dcdd50c3565ddbb00f4798962f1ae8b2e2dd242ed86a0a26510f",
+      "uncompressed_bytes": 110164,
+      "uncompressed_sha256": "d08833ddf84735fb03181c48c7d6ab6bd8bd724e91ac9090c8bb7ce20ccd93fb"
+    },
+    {
+      "path": "primary/linearized-ore.pdf.gz",
+      "bytes": 231620,
+      "sha256": "777e5d7182854388604fb46479aaa21a10599612cdaa95bdf08db6d5b8caba63",
+      "uncompressed_bytes": 318726,
+      "uncompressed_sha256": "329b258df2c4610f54627851999f51efcd227410d57a8266668cc2d08c1d87dc"
+    },
+    {
+      "path": "primary/linearized-ore.txt.gz",
+      "bytes": 24608,
+      "sha256": "c2ef05865541839669eefe8847c4fcae8f06a5ee0a6f301f6c6da58bc31a4cb1",
+      "uncompressed_bytes": 99721,
+      "uncompressed_sha256": "d558735ffc80c9b56b32c7e9a2796b64dce5aab7f1e7e0e3fcd98f49ed363ea7"
+    },
+    {
+      "path": "primary/rational-preprocessing2026.pdf.gz",
+      "bytes": 1437767,
+      "sha256": "4be8372b43246ad26b3185cc2f3f2f817a0733d79538d110589211d82e9a8d6f",
+      "uncompressed_bytes": 1469592,
+      "uncompressed_sha256": "fa5db152b8d5f7c73c544624cd2986255c6bf3850f1deb45854c6cd786e6784e"
+    },
+    {
+      "path": "primary/rational-preprocessing2026.txt.gz",
+      "bytes": 179665,
+      "sha256": "cdef9e80aff007c311c3550f826508b11241f74f28a8108ad2c50591444550e9",
+      "uncompressed_bytes": 604374,
+      "uncompressed_sha256": "be2e34704257d0c1d2758f60fb7d6a57ed6f76194ae45a912952a154a403b0df"
+    },
+    {
+      "path": "primary/truncated-resultant.pdf.gz",
+      "bytes": 199977,
+      "sha256": "41cb0a4b88e9966834ea3b18416e6c30062f5046791bd97b1b47572cd884d15a",
+      "uncompressed_bytes": 235158,
+      "uncompressed_sha256": "160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709"
+    },
+    {
+      "path": "primary/truncated-resultant.txt.gz",
+      "bytes": 19449,
+      "sha256": "770d9017b59074722186b3a79a4df5d86e138e68c9dbce091673329cf7979b00",
+      "uncompressed_bytes": 73260,
+      "uncompressed_sha256": "756ffa9bb76cc004fa7b6b3b44f1d5379bdbb6b7b0832a17380d27d97a3b8da3"
+    },
+    {
+      "path": "reports/boundary-inverse.md",
+      "bytes": 2671,
+      "sha256": "9a2a076613d2363f64e116a98568361da85e7a37e9a1ca01fd7564148240f7c9"
+    },
+    {
+      "path": "reports/literature-audit.md",
+      "bytes": 8317,
+      "sha256": "d061b65e80fb82481b5585e2be126496714aca0fc8acee067ef88d058c2c35b9"
+    },
+    {
+      "path": "reports/pole-count.md",
+      "bytes": 7738,
+      "sha256": "3ed29741ff7c06d962ef68e36d35c78c5145505e3743dade3daa87f185a63457"
+    },
+    {
+      "path": "reports/promise-level-spectral-avoidance.md",
+      "bytes": 5584,
+      "sha256": "db0e10b8ea49db24a436bba8c4716017e75248afe74e50ca3dc47d7ecda053e9"
+    },
+    {
+      "path": "reports/spectral-check.md",
+      "bytes": 6193,
+      "sha256": "79ba8ad3917cf974d94219fac29aca074eb57ee90a35150bcd9407d8d3249413"
+    },
+    {
+      "path": "reports/weighted-descent.md",
+      "bytes": 10054,
+      "sha256": "e748e766c37f3caa81cce1d41ee1a16419565f1e02219c04beeb8ef28eafd7bb"
+    },
+    {
+      "path": "reviews/boundary-inverse-review.md",
+      "bytes": 2960,
+      "sha256": "df3083d31618db35fe2153ed1967618406ecbabc63a0af4d47bd3a6665f35da1"
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "bytes": 3938,
+      "sha256": "db3acde82221e66952e859681b957b0221c97e80df1d4a818cac05c64c10ab34"
+    },
+    {
+      "path": "reviews/literature-review.md",
+      "bytes": 6005,
+      "sha256": "6525352b295ec26863907dfda8ce5ce0aaa407cb57b7957af343b37bff0e62f4"
+    },
+    {
+      "path": "reviews/pole-count-review-a.md",
+      "bytes": 3830,
+      "sha256": "c2bc476d8949a09fb273555a04e9aef813ee400773be66d310e2cfc839549f7c"
+    },
+    {
+      "path": "reviews/pole-count-review-b.md",
+      "bytes": 4871,
+      "sha256": "fe56842f70cc80b625c6a5c340b1ba17039319426e7bafef923baae8f5b198f3"
+    },
+    {
+      "path": "reviews/spectral-review.md",
+      "bytes": 4269,
+      "sha256": "7ce46648e82c56c2f6254fb7250d395b789ff65f37ad7117440473c7f505f5a0"
+    },
+    {
+      "path": "reviews/weighted-descent-review.md",
+      "bytes": 4669,
+      "sha256": "fb7ffcdb1153658f2633962b31dc5d5e6756f1e4f284ee68f03df1438bf03328"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 15657,
+      "sha256": "1862fe2c94ac5cc9abde176b7e1e7fb784a9ecbfd98367f9df94e66a554d91b2"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 4805,
+      "sha256": "c338287e37126684938937fba1d7f08996aaa7d47960526240a50d7e17303bc6"
+    },
+    {
+      "path": "sources/literature-manifest.json",
+      "bytes": 1781,
+      "sha256": "e9877a7ed543f0436d08c48be34b5b502f0fb756f1f68758ef7685a0aaeb12a0"
+    },
+    {
+      "path": "sources/pole-count-manifest.json",
+      "bytes": 1343,
+      "sha256": "cfdbee72073d8649d0d121cc7116f02cd77d67570757bd85f5d601ace391dd6f"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 2068,
+      "sha256": "28ad1e0243ead3c907346025c7696d7d31873572f3b03fefce49666e6f73426d"
+    },
+    {
+      "path": "sources/spectral-source-pins.json",
+      "bytes": 1095,
+      "sha256": "2ea22bc0f055dfab5a9df7f8660c2f5e2286de379e9adc2efe9d39565f155c03"
+    },
+    {
+      "path": "sources/weighted-descent-source-pins.json",
+      "bytes": 1416,
+      "sha256": "8a9872041910bbd4ad095441b8c3a523955fb5f67b54ca73fb56f2b309e08e1d"
+    }
+  ]
+}

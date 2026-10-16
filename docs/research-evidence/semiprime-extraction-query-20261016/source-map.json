@@ -1,0 +1,296 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/README.md",
+      "bytes": 5773,
+      "sha256": "0e51ec8d28721c4aecfec1572adbfbbccb6fd2f698c534d209308bf96b9fd394",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/sources/journal-entry.md",
+      "bytes": 4671,
+      "sha256": "47d39431fd6daac5ba190c1b78ca9373a2447dfb025bf3c33acf3235c911a5ce",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/sources/pre-entry-baseline.json",
+      "bytes": 1860,
+      "sha256": "45cdb07ee750fe8af55439156712086e819bc2da92e8b4c4a8ac1056ba6cd1a1",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/paid-q-pencil.md",
+      "bytes": 6653,
+      "sha256": "ef999aa2cfbea33c29192035900542808532e906b70a95f55a8c7a30a3819433",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/diagonal-followup.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/coefficient-block-inverse.md",
+      "bytes": 9041,
+      "sha256": "73685f5580b92375b7d3a9f09265c245125ebee6edf048243a4558b6d5f4e3a2",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/commutator/actual-qshift-power-defect.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/qshift-power-defect.md",
+      "bytes": 6120,
+      "sha256": "5e88b2b6b26310e535d959b6a4c3320adb25993c5e878fff8577708076007e5a",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/mask-separation-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/mask-separation.md",
+      "bytes": 7060,
+      "sha256": "2077495ac4885bd7251e05b3a7828f096ff3e2879b13ee815fab8f09bbc42a22",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/channel_gcd/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/local-channel-content.md",
+      "bytes": 7714,
+      "sha256": "d1f346a636acedf975fb3584bab87b4b9803ade4622c20a90185303ea2803b84",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/structured-determinant-primary-note.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/notes/structured-determinant-primary-note.md",
+      "bytes": 2000,
+      "sha256": "9159b70bbdc126766ade5a756d89fbf8b56508c9552af2f9c08fd0e2b7ef826a",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/normalized-operator-note.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/notes/normalized-operator.md",
+      "bytes": 2266,
+      "sha256": "78aa80b4b3d157ed48cf2d2858fb8e0d7a93f6df74ff542e0ab87d594b6ae21a",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/sources/q-pencil-manifest.json",
+      "bytes": 933,
+      "sha256": "0885b4fd08383319bb482c8efdeae73b4efa04017d6a41d4e9492fceb1d444c1",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/followup-manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/sources/coefficient-block-manifest.json",
+      "bytes": 1602,
+      "sha256": "c12667a713bf12aacb58c2262a6a6d5e35e645825e20500cb0707daa8e328a88",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/commutator/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/sources/qshift-source-pins.json",
+      "bytes": 1136,
+      "sha256": "6c38563ef7b07f90c8caadcac075b1a2bb4c6d49d3c038280f50722c7c5caffb",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/channel_gcd/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/sources/channel-content-manifest.json",
+      "bytes": 1289,
+      "sha256": "4d66775c5cd7a609dfd2265b45848ab29bd9163395eba9f4796ab902b524f29d",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/commutator/diagonal-independent-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reviews/q-pencil-review.md",
+      "bytes": 4112,
+      "sha256": "8d18997ee6f0a013151f15a3731ab2a93aec7e1f25701fca4a39489ec4546436",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/reviews/coefficient-block-inverse-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reviews/coefficient-block-inverse-review.md",
+      "bytes": 4838,
+      "sha256": "168c1adddbcda3f2d0cebcd2aa7ea23b3c1f3d4db9828cdff08870410dd182fc",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/reviews/qshift-power-defect-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reviews/qshift-power-defect-review.md",
+      "bytes": 2788,
+      "sha256": "bd56ce4910fd3471a810d0e77ca448b2a2f07afd196ce804bb1d11778b510094",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/reviews/mask-separation-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reviews/mask-separation-review.md",
+      "bytes": 4482,
+      "sha256": "a04e41a5e49b47834df8e01a0fd83b4f3de76fc60f24e9d3bec43c5d75f699fa",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/reviews/channel-gcd-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reviews/channel-gcd-review.md",
+      "bytes": 3997,
+      "sha256": "63d309decaa6a3de82c50c3284591e6f5e6150aed4af9491bd8853441e45731a",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/reviews/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reviews/integration-review.md",
+      "bytes": 7271,
+      "sha256": "207e6bd1fdd9c83f5f01bb4c95efd980da35232f95021cd16adeffe26d6a72fe",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/reviews/normalized-operator-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reviews/normalized-operator-review.md",
+      "bytes": 3245,
+      "sha256": "24f32dd154ed31967a28f153047dd42655e0b51c1c87cdcfd3f54ffacbaeee4b",
+      "gzip": false,
+      "role": "new investigator or review artifact"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/primary/kpsv21.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/primary/kpsv21.pdf.gz",
+      "bytes": 1072234,
+      "sha256": "62af4a860d1353083dc13ba5d7b2dcb7b9e2aa70f5c323b5f18ff2300f89540e",
+      "gzip": true,
+      "role": "fresh primary PDF or layout text",
+      "url": "https://perso.ens-lyon.fr/gilles.villard/BIBLIOGRAPHIE/PDF/kpsv21.pdf"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/primary/kpsv21.txt",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/primary/kpsv21.txt.gz",
+      "bytes": 85139,
+      "sha256": "652b091edada4a87e76ea0795c6f569ceed074733dce6fe06c18ca624bdc7d7c",
+      "gzip": true,
+      "role": "fresh primary PDF or layout text"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/recurrence-width.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/primary/recurrence-width.pdf.gz",
+      "bytes": 748851,
+      "sha256": "3b93d08ac7d900af790fb2d835cec1ee1e56583aa43b96c1e28702a3627a860d",
+      "gzip": true,
+      "role": "fresh primary PDF or layout text",
+      "url": "https://arxiv.org/pdf/1611.01569"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/recurrence-width.txt",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/primary/recurrence-width.txt.gz",
+      "bytes": 286936,
+      "sha256": "e1d4b97233956284ec433118b0bd40338775b8acfde4b0b955c7d9dc98144845",
+      "gzip": true,
+      "role": "fresh primary PDF or layout text"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/determinant-calculus.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/primary/determinant-calculus.pdf.gz",
+      "bytes": 565748,
+      "sha256": "ca5e7d38360b4ba477db2f214f226660d59d9b1e5ad02da0e0c34a6d15733ae4",
+      "gzip": true,
+      "role": "fresh primary PDF or layout text",
+      "url": "https://www.mat.univie.ac.at/~slc/s/s42kratt.pdf"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/determinant-calculus.txt",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/primary/determinant-calculus.txt.gz",
+      "bytes": 260203,
+      "sha256": "34507f53d52fb3d7b258e6d164dd493f79602f0ed9a5933e7283815a424d09f4",
+      "gzip": true,
+      "role": "fresh primary PDF or layout text"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/fast-mixed-matrix-interface.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/fast-mixed-matrix-interface.md",
+      "bytes": 5661,
+      "sha256": "4959b0f33989570507b15eb82e8b93c2020449032ad1612b4d4e92b74f1d5767",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "resolved_path": "docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "bytes": 6713,
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "bytes": 26720,
+      "sha256": "87b14d8c90e43d824c228a110179037586b548c986ae15f93bbcbc0bb1df05a9",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/common-channel-collision-locator.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/common-channel-collision-locator.md",
+      "bytes": 4385,
+      "sha256": "6dfc707ebe2896d7eb2ff78b6324d4df78b3db7ca6bc6a3e67e7b4adf4c737ff",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "gzip": false,
+      "role": "unchanged inherited prerequisite"
+    }
+  ]
+}

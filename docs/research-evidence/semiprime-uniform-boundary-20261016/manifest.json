@@ -1,0 +1,313 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "actual all-stride quadratic-carrier boundary theorem; narrow gauge representation obstructions; focused circuit-locator applicability audit; no whole-query improvement",
+  "model_authorization": "User authorized parallel Sol 6.1 research; three existing gpt-6.1-sol agents reused.",
+  "whole_family_soft_linear_query_acquired": false,
+  "general_query_bound": "soft O(m^(3/2)), unchanged",
+  "main_theorem": "For literal offsets and local gamma order R>8m^2, every fieldwise nonidentity scalar shift leaves at least ceil((m-1)/4) dangling deduplicated nodes. All shifts simultaneous, including advised choices; no new deletion.",
+  "arithmetic_reason": "Exact low image N(Squares-1) and quadratic-character identity |S minus (S+h)|=(m+1-chi(h)-chi(-h))/4; two-node fibers for nonzero shifts divisible by m.",
+  "descent_scope": "Regular representative-independent homogeneous fixed-carrier descent must zero the boundary; higher jets and powered-node compatibility consequences explicit. Not an operation lower bound.",
+  "gauge_scope": "Matched-base contiguous product gauges need linearly many blocks; minimal q-gauge has unpaid residue payload and nilpotent homogeneous operator. Sums, unmatched bases and nearlinear sharing remain possible.",
+  "actual_nonvacuity": "Canonical fixed-length two-endpoint-unit branch coexists with density and exclusive residues by union of bad-input counts against the same original majority supply.",
+  "literature_scope": "Inspected primary theorem interfaces do not provide uniform soft O(s+d) vector-SLP locator acquisition. ECCC primary gap notice respected. No exhaustive or generic impossibility claimed.",
+  "missing_work": "Restriction-stable soft O(m) acquisition of quotient forcing, channel remainder, exact collision locator or sufficient factor query; full bit/controller and Lean composition.",
+  "verification_scope": "Classical proofs and final-byte independent reviews. No new native Lean declaration, build or benchmark.",
+  "review_target_checks": [
+    {
+      "review": "reviews/uniform-shift-review-a.md",
+      "target": "reports/uniform-shift-boundary.md",
+      "target_bytes": 9832,
+      "target_sha256": "028d106682957fe8f12c39b4045b9b0347851648b08bc8bd6380db22d24ce0ed"
+    },
+    {
+      "review": "reviews/uniform-shift-review-b.md",
+      "target": "reports/uniform-shift-boundary.md",
+      "target_bytes": 9832,
+      "target_sha256": "028d106682957fe8f12c39b4045b9b0347851648b08bc8bd6380db22d24ce0ed"
+    },
+    {
+      "review": "reviews/minimal-gauge-review.md",
+      "target": "reports/minimal-gauge-and-prefix-obstruction.md",
+      "target_bytes": 9210,
+      "target_sha256": "2f91066fa23e45baf4fa7eea1f39c67b1c1922c943df2af71627c40df543b162"
+    },
+    {
+      "review": "reviews/all-stride-gauge-review.md",
+      "target": "reports/all-stride-gauge-corollary.md",
+      "target_bytes": 3697,
+      "target_sha256": "1b46c311abe2d03c4f23afd6503cc6071772e0a8b389e716cc4ec281203ea984"
+    },
+    {
+      "review": "reviews/locator-forcing-review.md",
+      "target": "reports/forcing-attempt.md",
+      "target_bytes": 4720,
+      "target_sha256": "1199ecd4b40fd9cd22194cf116dcdfe5d9d05e79107d8b333a2b7bd2e68806f2"
+    },
+    {
+      "review": "reviews/locator-forcing-review.md",
+      "target": "reports/locator-audit.md",
+      "target_bytes": 9067,
+      "target_sha256": "a72bb78d44efd4a638f33e6730cb457639db3e93e819e66693ec865628c119bf"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "README.md",
+      "target_bytes": 6521,
+      "target_sha256": "7a50e3139ef1157d590c9d2dd03f2ca6d094379e6d4275a5dbd4fdd677139610"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 5217,
+      "target_sha256": "a8afd04b6fd94f4a4f4306b10a6b4e0b3c0b8906ec731e78837bf4b047b12d17"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/manifest.json",
+      "bytes": 11885,
+      "sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636"
+    }
+  ],
+  "prior_listed_files_unchanged": 318,
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1553116,
+    "sha256": "260d3c3a07752d3be6f79ec261718e747cccc3da0e85f8acfba7e75f68fc5909"
+  },
+  "entry_sha256": "a8afd04b6fd94f4a4f4306b10a6b4e0b3c0b8906ec731e78837bf4b047b12d17",
+  "entry_bytes": 5217,
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6521,
+      "sha256": "7a50e3139ef1157d590c9d2dd03f2ca6d094379e6d4275a5dbd4fdd677139610"
+    },
+    {
+      "path": "primary/constant-depth-gcd2025.pdf.gz",
+      "bytes": 353885,
+      "sha256": "f73a4337a96058d8bc57f4630ceed354d235c3df818a8f6e5f3075894798de3a",
+      "uncompressed_bytes": 425110,
+      "uncompressed_sha256": "8f15ab9b077eccbe6344a98b12546adcf1690b19137921c79bc7abec376eb2b3"
+    },
+    {
+      "path": "primary/constant-depth-gcd2025.txt.gz",
+      "bytes": 20189,
+      "sha256": "4b66fabf1aeddb043dc230fad9f2476de9e989a33a51659812b7422508850d42",
+      "uncompressed_bytes": 78702,
+      "uncompressed_sha256": "4a141103c20a443047666902d7679bc7d3c45ffa05bd00cfe511d2cc5717fe40"
+    },
+    {
+      "path": "primary/directed-evaluation.pdf.gz",
+      "bytes": 411580,
+      "sha256": "5478e0c64150f8f6f1244adafc968fa44bd5b90d44db8c0cf20ea116f87cba90",
+      "uncompressed_bytes": 530557,
+      "uncompressed_sha256": "20b6959dd71e3bd16e0c072f300b07a0c3714d013a28b1b0ea03955083df5da1"
+    },
+    {
+      "path": "primary/directed-evaluation.txt.gz",
+      "bytes": 51154,
+      "sha256": "43d6f5311ba48493397729a967fb7f065bbdf9eedf1bce0a76727640b0fd9785",
+      "uncompressed_bytes": 192829,
+      "uncompressed_sha256": "dbf4e983e4731e6b652fed2283950c975712d75aa8f569263ecd152c6c2030d7"
+    },
+    {
+      "path": "primary/eccc-tr25-171.html.gz",
+      "bytes": 7748,
+      "sha256": "34e40c40c0b51a2f90829a7af525e9afe7601efc44b9b15fcbeab9497c425816",
+      "uncompressed_bytes": 23405,
+      "uncompressed_sha256": "702608314aea0e53368ae20c3a9341f140f1c49ca8361d5e405504373e4c7e10"
+    },
+    {
+      "path": "primary/eccc-tr25-171.txt.gz",
+      "bytes": 1845,
+      "sha256": "be35db0075ad2161661098716052c87705378969cdefe0bb7b0fda833a1232cd",
+      "uncompressed_bytes": 6541,
+      "uncompressed_sha256": "5cd88bd08552752e0c422de702a93aeabcb648ebd8778e79bd270434d24ff0b2"
+    },
+    {
+      "path": "primary/single-factor1987.pdf.gz",
+      "bytes": 77443,
+      "sha256": "996207cc1039428c1494f2bc8ad7fab42b350c4e0f4279e0bc89d01152f60a6e",
+      "uncompressed_bytes": 95643,
+      "uncompressed_sha256": "56ea27444f536253f8e7bbbbb08c675c7dfc8c811b2f34ce5851e9f8c7e05257"
+    },
+    {
+      "path": "primary/single-factor1987.txt.gz",
+      "bytes": 13107,
+      "sha256": "61334a649e7deb25256694889e0e63140882fc4edfb38314bbcca9933246fda5",
+      "uncompressed_bytes": 43375,
+      "uncompressed_sha256": "338b879051f5863e7058c1f992a650b9d882d20dfb7b9add00dac65bd5f9e03b"
+    },
+    {
+      "path": "primary/single-seed2026.pdf.gz",
+      "bytes": 424698,
+      "sha256": "ec9d581969d00ed6c6d999ef7dc383dc7fc0faf4e32ca0e8120e5d3900ba7aaa",
+      "uncompressed_bytes": 512667,
+      "uncompressed_sha256": "776ee75768b0c096b84ae856c878fa755e71406be23ce551510364ae998566b1"
+    },
+    {
+      "path": "primary/single-seed2026.txt.gz",
+      "bytes": 21754,
+      "sha256": "6459d28d24608a85f009a3403729ed2b0a1ce4f119a793e4f836fbc48fc96797",
+      "uncompressed_bytes": 70757,
+      "uncompressed_sha256": "e2307a0cb0e1db3f8738843fc04accab587beb0be60dc31666d5f52f28e9227c"
+    },
+    {
+      "path": "primary/slp-gcd1988.pdf.gz",
+      "bytes": 2258893,
+      "sha256": "ee6255bd7e4a236a041a8f1f03852884c8bc1104b4bb9bbc91859813ef1f9549",
+      "uncompressed_bytes": 2595083,
+      "uncompressed_sha256": "36f8c6e9e1c184ea9d6dd2270aa24843ebbd26c78881c7e69b69b75904d15731"
+    },
+    {
+      "path": "primary/slp-gcd1988.txt.gz",
+      "bytes": 36916,
+      "sha256": "a5a15dc6b3ec75ceb1fb7c6030847a718b4b181ca3569407204f8e43d76f5976",
+      "uncompressed_bytes": 110191,
+      "uncompressed_sha256": "54176e6146d6c8c578aea774d8f1b4bb1103fb95c331ea00c7ce2b7e3beb230b"
+    },
+    {
+      "path": "reports/all-stride-gauge-corollary.md",
+      "bytes": 3697,
+      "sha256": "1b46c311abe2d03c4f23afd6503cc6071772e0a8b389e716cc4ec281203ea984"
+    },
+    {
+      "path": "reports/forcing-attempt.md",
+      "bytes": 4720,
+      "sha256": "1199ecd4b40fd9cd22194cf116dcdfe5d9d05e79107d8b333a2b7bd2e68806f2"
+    },
+    {
+      "path": "reports/locator-audit.md",
+      "bytes": 9067,
+      "sha256": "a72bb78d44efd4a638f33e6730cb457639db3e93e819e66693ec865628c119bf"
+    },
+    {
+      "path": "reports/minimal-gauge-and-prefix-obstruction.md",
+      "bytes": 9210,
+      "sha256": "2f91066fa23e45baf4fa7eea1f39c67b1c1922c943df2af71627c40df543b162"
+    },
+    {
+      "path": "reports/uniform-shift-boundary.md",
+      "bytes": 9832,
+      "sha256": "028d106682957fe8f12c39b4045b9b0347851648b08bc8bd6380db22d24ce0ed"
+    },
+    {
+      "path": "reviews/all-stride-gauge-review.md",
+      "bytes": 3922,
+      "sha256": "3d0f3da74a43b367e8d171cbb32ec3f72993d0a4d337b009430a0003149a7cd4"
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "bytes": 6529,
+      "sha256": "b3f1ffb32c1f5209a0ca82d0ec1618b99489b55b8a5d4e015e161311c5263620"
+    },
+    {
+      "path": "reviews/locator-forcing-review.md",
+      "bytes": 6404,
+      "sha256": "d97f52876965c9fc1e066e14bd205afd65f6232ef23bb8d7bd233bb151177230"
+    },
+    {
+      "path": "reviews/minimal-gauge-review.md",
+      "bytes": 4966,
+      "sha256": "3e6205994f3bc61ce0de6f27ba9e4025c6eb5a18335ca95c0318daf31e9da1c7"
+    },
+    {
+      "path": "reviews/uniform-shift-review-a.md",
+      "bytes": 4277,
+      "sha256": "996514f990868862d15fb7be486673f3d7030b37e6a36533752c21aca1b64f7e"
+    },
+    {
+      "path": "reviews/uniform-shift-review-b.md",
+      "bytes": 4141,
+      "sha256": "6df124945aae931f01f12f36ab4c8861a3fed0c5e14b84c8ea6e5d06bff3cbf7"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 17655,
+      "sha256": "99e8a90ca2e44a890984c4ef81b40ae2bc010af5decbdf5edf2e79b91801c3b0"
+    },
+    {
+      "path": "sources/all-stride-source-pins.json",
+      "bytes": 1251,
+      "sha256": "fd89dedaf2175d0338626610b1ece03a3b2999a8825b3ed91dcba11e4a846681"
+    },
+    {
+      "path": "sources/forcing-sources.json",
+      "bytes": 692,
+      "sha256": "9d2a93b062b1bd87f63781ad32976ab9d22cdbd5dc35ee82df9bfb0db488164c"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 5217,
+      "sha256": "a8afd04b6fd94f4a4f4306b10a6b4e0b3c0b8906ec731e78837bf4b047b12d17"
+    },
+    {
+      "path": "sources/locator-manifest.json",
+      "bytes": 2875,
+      "sha256": "fdc378be2079a6dc495a5e61099d8e8b9815a5edecc0d1ca2cad3fc39bf6f0c5"
+    },
+    {
+      "path": "sources/minimal-gauge-source-pins.json",
+      "bytes": 1199,
+      "sha256": "0235d42b237365cc7226e0162c6183a346d8eda839b75277d64f0ef5749b2c80"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 2302,
+      "sha256": "d9ab976a89a4a6b3ca976b72752d04046a6d7e667e24c16d10e5821117025c7a"
+    },
+    {
+      "path": "sources/uniform-shift-source-pins.json",
+      "bytes": 1337,
+      "sha256": "209c45721ac48425029afe13d65a05229f0f62df022d436dfce7eed9e72dd545"
+    }
+  ]
+}

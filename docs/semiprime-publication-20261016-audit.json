@@ -1,0 +1,338 @@
+{
+  "schema": "semiprime-publication-20261016-audit-v1",
+  "recorded_date": "2026-10-16",
+  "checkpoint_status": "Local validation complete; tracked commit hook and remote publication pending",
+  "goal_status": "paused",
+  "user_authorized_publication": true,
+  "scope": "Publication and preservation of accumulated work; no research resumed and no new mathematical result claimed.",
+  "claims": {
+    "universal_acquisition_obtained": false,
+    "guaranteed_all_input_sixth_rate_algorithm_proved": false,
+    "complete_lean_sixth_rate_bit_complexity_proved": false,
+    "new_research_for_publication": false,
+    "positive_scope": "Conditional public catalog arithmetic, sparse-residue Gauss identities and certified quotient-radius/public-cap closure. Supplied-data consumers do not prove all-input acquisition."
+  },
+  "ordinary_proof_modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeFermatQuotientCatalog",
+      "root_registered": true,
+      "family": "semiprime",
+      "direct_warning_as_error": {
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/SemiprimeFermatQuotientCatalog.lean",
+        "status": "PASS",
+        "exit_code": 0
+      },
+      "existing_checker": {
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/CheckSemiprimeFermatQuotientCatalog.lean",
+        "status": "PASS",
+        "exit_code": 0,
+        "namespace_linters": 15,
+        "authored_declarations": 24,
+        "generated_declarations": 9,
+        "module_provenance_all_declarations": 33,
+        "module_provenance_all_theorems": 28,
+        "project_defined_axioms": 0,
+        "nonstandard_transitive_axioms": []
+      }
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSparseResidueGauss",
+      "root_registered": true,
+      "family": "semiprime",
+      "direct_warning_as_error": {
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+        "status": "PASS",
+        "exit_code": 0
+      },
+      "existing_checker": {
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/CheckSemiprimeSparseResidueGauss.lean",
+        "status": "PASS",
+        "exit_code": 0,
+        "namespace_linters": 15,
+        "authored_declarations": 4,
+        "generated_declarations": 2,
+        "module_provenance_all_declarations": 6,
+        "module_provenance_all_theorems": 6,
+        "project_defined_axioms": 0,
+        "nonstandard_transitive_axioms": []
+      }
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSparseResidueGaussRadius",
+      "root_registered": true,
+      "family": "semiprime",
+      "direct_warning_as_error": {
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+        "status": "PASS",
+        "exit_code": 0
+      },
+      "existing_checker": {
+        "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+        "status": "PASS",
+        "exit_code": 0,
+        "namespace_linters": 15,
+        "authored_declarations": 11,
+        "generated_declarations": 4,
+        "module_provenance_all_declarations": 15,
+        "module_provenance_all_theorems": 14,
+        "project_defined_axioms": 0,
+        "nonstandard_transitive_axioms": []
+      }
+    }
+  ],
+  "module_validation_totals": {
+    "modules": 3,
+    "authored_declarations": 39,
+    "generated_declarations": 15,
+    "all_module_declarations": 54,
+    "all_module_theorems": 48,
+    "linters_per_namespace": 15,
+    "all_namespace_linters_passed": true,
+    "all_local_module_provenance_axiom_checks_passed": true,
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "completed_checks": {
+    "targeted_lake_build": {
+      "status": "PASS",
+      "exit_code": 0,
+      "command": "/home/dbsanfte/.elan/bin/lake build RiemannGaussian.SemiprimeFermatQuotientCatalog RiemannGaussian.SemiprimeSparseResidueGauss RiemannGaussian.SemiprimeSparseResidueGaussRadius --wfail"
+    },
+    "full_ordinary_build": {
+      "status": "PASS",
+      "target": "RiemannGaussian ordinary root",
+      "evidence": "Parent publication build log ends: Built RiemannGaussian (42s); Build completed successfully (15053 jobs).",
+      "captured_log": "/tmp/semiprime-publication-full-build.log",
+      "exhaustive_optional_numerical_certificate_rerun": false
+    },
+    "fermat_catalog_probe": {
+      "status": "PASS",
+      "exit_code": 0,
+      "command": "../.venv/bin/python -B scripts/probe_semiprime_fermat_quotient_catalog.py --self-test",
+      "test_groups": 18
+    },
+    "sparse_residue_gauss_probe": {
+      "status": "PASS",
+      "exit_code": 0,
+      "command": "../.venv/bin/python -B scripts/probe_semiprime_sparse_residue_gauss.py --self-test",
+      "checks": 287
+    },
+    "probe_scope": "Existing implementation regression replays; not formal coverage or empirical complexity evidence.",
+    "original_source_and_audit_digest_recheck": {
+      "status": "PASS",
+      "files": 11,
+      "pin_records": 58,
+      "catalog_records": 14,
+      "gauss_records": 21,
+      "radius_records": 23,
+      "missing": 0,
+      "mismatches": 0,
+      "portable_report": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/source-and-pin-recheck.json"
+    },
+    "existing_archived_evidence": {
+      "status": "PASS",
+      "exit_code": 0,
+      "command": "python3 -B docs/research-evidence/semiprime-acquisition-checkpoint-20261016/audit_existing.py",
+      "historical_packets": 29,
+      "manifest_payloads": 603,
+      "files_including_manifests": 632,
+      "bytes": 29541129,
+      "manifest_errors": 0,
+      "source_map_errors": 0,
+      "broken_markdown_links": 0,
+      "unresolved_tmp_references": 0,
+      "oversized_files": 0,
+      "generated_or_secret_candidates": 0,
+      "historical_current_file_drift": 0,
+      "historical_context_links_resolved": 30,
+      "interpretation": "Read-only integrity and publication hygiene audit, not mathematical re-review."
+    },
+    "new_checkpoint_archival_verifier": {
+      "status": "PASS",
+      "exit_code": 0,
+      "command": "python3 -B docs/research-evidence/semiprime-acquisition-checkpoint-20261016/verify_checkpoint.py",
+      "pinned_payloads": 51,
+      "portable_original_or_alias_resolutions": 47,
+      "original_bytes_unchanged_when_present": true,
+      "reviewed_gap_target_pin_valid": true,
+      "readme_links_valid": true
+    },
+    "frozen_certificate_checkpoint_regressions": {
+      "status": "PASS",
+      "exit_code": 0,
+      "command": "python3 -B scripts/test_numerical_certificate_checkpoint.py",
+      "tests": 4,
+      "meaningful_cold_toolchain_regression": "Uses an empty ELAN_HOME, compares cold and warm generated assets, verifies exact versioned source URLs for every Init/Lean/Std source-bearing node in the frozen graph, and requires at least one such node.",
+      "exhaustive_optional_numerical_certificate_rerun": false
+    },
+    "taxonomy": {
+      "status": "PASS",
+      "rule": "Existing Semiprime module prefix assigns all three modules to semiprime; no explicit overrides required."
+    },
+    "explorer_regeneration": {
+      "status": "PASS",
+      "ordinary_graph": {
+        "declarations": 25905,
+        "exported_endpoints": 812
+      },
+      "rh_graph": {
+        "declarations": 32874,
+        "exported_endpoints": 1496,
+        "displayed_endpoints": 200,
+        "displayed_paths": 290780
+      },
+      "frozen_certificate_graph": {
+        "declarations": 2680,
+        "displayed_endpoints": 3,
+        "displayed_paths": 959
+      },
+      "optional_proof_refreshed": false,
+      "rh_screenshot_freshness_check": "PASS"
+    },
+    "local_browser_checks": {
+      "theorem_explorer": "PASS",
+      "frozen_certificate_explorer": "PASS",
+      "rh_proof_explorer": "PASS: desktop/mobile interactions and actual preview refresh",
+      "live_github_readme_renderer": "PASS"
+    },
+    "comparison_plot_builders": {
+      "zero_free": "PASS",
+      "numerical_certificate": "PASS",
+      "lean_exporters": "PASS"
+    },
+    "final_staged_snapshot": {
+      "status": "PASS",
+      "changed_files": 716,
+      "staged_whitespace": "PASS",
+      "publication_source_pins": 19,
+      "all_publication_source_pins_match": true
+    }
+  },
+  "historical_ci_failure_and_local_repair": {
+    "parent_run_id": 38303371077,
+    "url": "https://github.com/dbsanfte/RiemannGaussian/actions/runs/38303371077",
+    "conclusion": "failure",
+    "reported_failure": "Stale certificate explorer asset: data.js",
+    "cause": "Historical compiler source URLs depended on the locally installed toolchain/source tree.",
+    "local_repair": "Resolve Init/Lean/Std source URLs from recorded Lean version and module path, independently of installed toolchains. Upstream compiler URLs use /src/, matching the GitHub source tree; pinned Init, Lean and Std locations were verified through the GitHub contents API.",
+    "local_regression_status": "PASS",
+    "remote_repair_verification": "PENDING"
+  },
+  "pending_checks": {
+    "tracked_pre_commit_hook": "PENDING",
+    "commit_and_push": "PENDING",
+    "publication_exact_sha_ci": "PENDING",
+    "pages_deployment_and_published_checks": "PENDING"
+  },
+  "preservation": {
+    "historical_json_pins_rewritten": false,
+    "original_source_files_changed_for_this_audit": false,
+    "archived_historical_active_goal_labels": "Preserved as historical bytes; current checkpoint goal is paused.",
+    "research_goal_after_publication": "paused",
+    "local_log_paths": "Context for completed validations only; portable leaf-validation records are in the archived checkpoint packet.",
+    "historical_final_blank_lines": "Fifteen exact archived paths retain their pinned final blank lines; .gitattributes disables only blank-at-eof checks for those paths."
+  },
+  "source_pins": [
+    {
+      "path": "RiemannGaussian/SemiprimeFermatQuotientCatalog.lean",
+      "bytes": 10921,
+      "sha256": "283c92aad93ab1129b8cf271a17443ba7ce02f67112bafd94adbeb9cdecf7fa2"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+      "bytes": 2782,
+      "sha256": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+      "bytes": 8065,
+      "sha256": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d"
+    },
+    {
+      "path": "scripts/CheckSemiprimeFermatQuotientCatalog.lean",
+      "bytes": 1207,
+      "sha256": "da351d0fe8d26b229e14856391a14f3da61ec8697b4b324677b3a2ad017a1297"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+      "bytes": 1220,
+      "sha256": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+      "bytes": 1237,
+      "sha256": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb"
+    },
+    {
+      "path": "scripts/probe_semiprime_fermat_quotient_catalog.py",
+      "bytes": 12975,
+      "sha256": "1fdf9ecf97193b33cd32a90650ff7928a10785e2e8916eec6051ebc6a822c98e"
+    },
+    {
+      "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+      "bytes": 28139,
+      "sha256": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3"
+    },
+    {
+      "path": "docs/semiprime-fermat-quotient-catalog-audit.json",
+      "bytes": 22200,
+      "sha256": "52778b1ba3f144ad362a5601c9be6ba8a493a7b0694adc65290d0fca0ecaabd2"
+    },
+    {
+      "path": "docs/semiprime-sparse-residue-gauss-audit.json",
+      "bytes": 33419,
+      "sha256": "92c7ac8748ee2ad3af3e98549b366bd0be00fa29ed8dd9bce95013a37586cc4e"
+    },
+    {
+      "path": "docs/semiprime-sparse-residue-gauss-radius-audit.json",
+      "bytes": 10879,
+      "sha256": "fe42f8f3b83f09ff0d44b6ab21d39f17584b8fe6ec160cb8d1b07f80802ba94c"
+    }
+  ],
+  "publication_infrastructure_pins": [
+    {
+      "path": "scripts/build_theorem_explorer.py",
+      "bytes": 23069,
+      "sha256": "9c0d415e60001f7c60e9f2d1d98c9a7a5ba34c114fc8fbb289c429652072520c"
+    },
+    {
+      "path": "scripts/test_numerical_certificate_checkpoint.py",
+      "bytes": 2874,
+      "sha256": "970cd02a6ac05996a0fc4fbd024eb350906b4b334090c72ed0f88435e19bb1f5"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/manifest.json",
+      "bytes": 20690,
+      "sha256": "544ce5a945fbf17a714ca06e9c961bbdd7f478d0c49819a1d4d927b287e8a722"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/source-map.json",
+      "bytes": 23554,
+      "sha256": "c067dc03308e1ae0bb9e4df49654cc23578df1356ac00e0f88f63f2b5b79bab2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/verify_checkpoint.py",
+      "bytes": 2147,
+      "sha256": "fbb637870521c1c6e9ae78e1e180c1cc1ab09ea008596f67a3ba51505d8c07c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/audit_existing.py",
+      "bytes": 6537,
+      "sha256": "2d6a653f5562019ab136cee56d5d4074e370e680eb76d78cc6cb27849071bce2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/existing-packets-audit.json",
+      "bytes": 21270,
+      "sha256": "54e3dd85e378726c34897dab6b4c63a305c8f200a6c85eeee1a2a3b012e7369e"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 1986,
+      "sha256": "40079d74dfec6a0129f734f818bed38b840651dade46dad1dc6d596544c30020"
+    }
+  ],
+  "audit_boundary": "This audit records completed checks at publication preparation. The tracked hook is required for the commit; exact-SHA CI, Pages and published checks are verified after push outside this snapshot. No self hash or prospective commit SHA is included."
+}

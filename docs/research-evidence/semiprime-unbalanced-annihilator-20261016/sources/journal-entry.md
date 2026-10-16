@@ -1,0 +1,21 @@
+
+
+## 2026-10-16: balance removed from the short-annihilator extractor and paid setup
+
+Evidence: [unbalanced extractor and all-semiprime query interface](research-evidence/semiprime-unbalanced-annihilator-20261016/README.md). This is new classical arithmetic and bit-complexity progress, independently reviewed; the long collision query is still unacquired. The preceding goal turn was progress: it proved the chirped finite-segment recurrence obstruction and acquired the smaller uniform square-alias screen. This entry does not turn that smaller query into the original one.
+
+For N=P Q with distinct odd primes, m=Theta(N^(1/6)), N<=m^6 and B=16m², suppose a supplied gamma has odd local orders above B and a supplied nonzero global annihilator K has polylogarithmic binary length. The new extractor factors in soft O(N^(31/192)) bits WITHOUT balance or either individual index bound. The earlier short-annihilator theorem assumed both indices below m. The separator and the Burgess character theorem are inherited; the dyadic composition and its unbalanced clock are new.
+
+The universal first-nonunit separator needs only ONE bounded local order to guarantee a hit; its saturated earliest leaf still proves an exact common local order. Let P be the smaller prime and choose the public dyadic bin X<=P<2X. Its index is below 2X/B. Odd powering by the odd part of K kills this large odd gamma order while preserving all two-primary trial orders. A single cheaply found Jacobi-minus base either factors in the correct bin or establishes unequal two-adic valuations. A nonresidue at the prime with the larger valuation, now bounded by N/X, then forces a proper factor. Wrong bins can be skipped safely. The worst phase costs
+
+ soft O((N/X)^(5/32) sqrt(X/B)) <= soft O(N^(31/192)),
+
+and the initial N^(5/32) Jacobi scan, all powers/gcds, input reads, rounded cutoffs and logarithmically many bins fit the budget. Strict Burgess exponent slack gives eventual uniform success; explicit trial division makes the algorithm total on the remaining finite promised inputs. There is no numerical effective threshold claim. K is supplied, not acquired.
+
+The setup now also loses its balance premise. In its common-full-order branch a COMPUTED order r>16m² divides both P-1 and Q-1. Since r³>4096N and P+Q<=r+1+N/(r+1)<r², the known residue (N+1) mod r² is the exact factor sum. The N-1 projection still gives coprime local orders by the OLD compiled arithmetic. If both projected orders are one, the explicit K=N-1 annihilates the ORIGINAL gamma and the NEW unbalanced extractor closes that branch at the charged cost. Subsequent q-order detection is paid as before.
+
+Thus, for every semiprime, parity/square checks followed by soft-O(m) setup return a factor or beta with both odd local orders above16m², coprime local orders, global order above256m⁴, and both q=beta^(m²) local orders above16m². Prime selection, when needed for the row source, is charged. No small-index or prime-local-order conclusion is invented on unbalanced inputs.
+
+The original canonical first-current coverage is now explicitly justified for the NEW beta. Native seed_index_bounds only needs P>=m² and N<=m^6 to place the own-factor index in[0,2m²+2); the setup already supplies the prefix. The quotient-row/Fermat identity works for an arbitrary unit. Integer-offset deduplication gives unit target differences in both fields. A bounded GLOBAL leaf recovers P+Q=1+m²i-delta using the retained global-order margin and P+Q<16m²+1+m⁴/16. Coverage and leaf recovery are inherited native arithmetic, not newly compiled controller statements.
+
+The report specifies the remaining sufficient query precisely: for any row subset and common seed subinterval, return a proper factor or the exact product of all target/seed differences. Soft-O(m) bit cost per restricted call would suffice, with O(logm) gcd/bisection calls handling saturation and recovering one leaf. The existing general soft-O(J+sqrt(JL))=soft-O(m^(3/2)) bound is unchanged. Scalar zero alone does not supply the localization contract. Full acquisition, compiled beta routing and the complete Lean sixth-rate bit theorem remain open. No native edit, new Lean declaration, examples, broad build, commit or push is included; every prior evidence packet is preserved.

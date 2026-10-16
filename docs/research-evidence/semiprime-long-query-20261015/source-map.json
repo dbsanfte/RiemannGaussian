@@ -1,0 +1,131 @@
+[
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/qproducts/findings.md",
+    "path": "reports/q-product-literature.md",
+    "sha256": "a42152b65fa0a9e4beaba3959826c01977aad0ae309127c7d109e98836e3ed83",
+    "bytes": 7017
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/qproducts/formal-log-obstruction.md",
+    "path": "reports/formal-log-obstruction.md",
+    "sha256": "ddad3eed6caa962507d435892110cc952c64f93876326514e57d7725d2fb138a",
+    "bytes": 6715
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/qproducts/nogneng-schost-check.md",
+    "path": "reports/nogneng-schost-check.md",
+    "sha256": "727b6940c3d5adcbd919cab2761b15786c07ac94d09ad61db58d707468aaf9a4",
+    "bytes": 4819
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/norms/report.md",
+    "path": "reports/implicit-norm-literature.md",
+    "sha256": "fc473d52c916ba1741e09a6c2be4879365abb76123d9340e0a988c54158cb8dc",
+    "bytes": 13674
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/norms/primary-manifest.json",
+    "path": "reports/norm-primary-manifest.json",
+    "sha256": "ed0b661f68e7f112e8929807d6333a6bb44e3b17948cd5fe78cd931b8cb7aadd",
+    "bytes": 2309
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/moving/source-moving-carrier.md",
+    "path": "reports/moving-carrier.md",
+    "sha256": "65652b39359356e94bdd32d2c5086dea616afcc18facd1105d686fea95e2c83f",
+    "bytes": 5822
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/moving/gauss-product-next-target.md",
+    "path": "reports/gauss-product-next-target.md",
+    "sha256": "b95c10ecb5bc730f6818b4c7976f0a54ba4190efbff292e3d2036a5498915c00",
+    "bytes": 2017
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/moving/independent-review.md",
+    "path": "reviews/algebra-independent-review.md",
+    "sha256": "196cf579a24292de234c7addc70b0b9d77b705e7336679781337652e904a0c17",
+    "bytes": 3443
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/moving/lcm-shortcut-independent-review.md",
+    "path": "reviews/lcm-shortcut-independent-review.md",
+    "sha256": "b634df85cdd97b76a561029bf98128b2ad7d39e4ef78fc59166abd2f54b20936",
+    "bytes": 5008
+  },
+  {
+    "original_path": "/tmp/semiprime-implicit-followup-20261008/review/q-factorial-upper-bound.md",
+    "path": "baselines/q-factorial-upper-bound.md",
+    "sha256": "21aa5ab9f214ff04921a06063f1ba322aa7e60639a5735afce2326e5ffd2db07",
+    "bytes": 5808,
+    "historical_archive_path": "docs/research-evidence/research-checkpoint-20261012/objects/21/21aa5ab9f214ff04921a06063f1ba322aa7e60639a5735afce2326e5ffd2db07.gz"
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/norms/crossref-spiroids.json",
+    "path": "primary/norms-crossref-spiroids.json.gz",
+    "sha256": "208cdc12df985a9166df3026f98d74f406c56d86e871f27b7c653f988bd6cae4",
+    "bytes": 3003,
+    "uncompressed_sha256": "1b54a464b53f962ff66b9e0f88032504b9e907e9ae6ed70681336dd592832cc0",
+    "uncompressed_bytes": 11282
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/norms/spiroids.pdf",
+    "path": "primary/norms-spiroids.pdf.gz",
+    "sha256": "7e79d28fb958cf29e75d1e20929c18856c81cde1066eb4744d2bd1f409d64fc6",
+    "bytes": 307330,
+    "uncompressed_sha256": "3fef0f8c6851f45dc9e876ae178c46d73264546e9bbcde6a9d1204b69d600ecc",
+    "uncompressed_bytes": 378515
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/norms/spiroids.txt",
+    "path": "primary/norms-spiroids.txt.gz",
+    "sha256": "9303b4dc796707b3307765304576f6294832adda05ecf5b02347c2e1c424dc22",
+    "bytes": 24442,
+    "uncompressed_sha256": "9107cf618606ee994b207930467f073731acc407187c86de096e4b501f133a17",
+    "uncompressed_bytes": 103431
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/qproducts/by.pdf",
+    "path": "primary/qproducts-by.pdf.gz",
+    "sha256": "fb407530f83eb83df60633879c29f005d58a774efd9eab089cfe1461e70220be",
+    "bytes": 370577,
+    "uncompressed_sha256": "f3d617af2e9c899b41d5f4d9120412c78857ebc19009b69fe99e74d97f0d9b09",
+    "uncompressed_bytes": 499386
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/qproducts/by.txt",
+    "path": "primary/qproducts-by.txt.gz",
+    "sha256": "a8d0a53318c748057dbf56b17b99eed39b56721f8cc330f70ab528ef1efb9661",
+    "bytes": 37461,
+    "uncompressed_sha256": "ae779c48d317414bc0223e381d6bc40296c5c9630903b4959e715e6b14d63c83",
+    "uncompressed_bytes": 121716
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/qproducts/nogneng-schost.pdf",
+    "path": "primary/qproducts-nogneng-schost.pdf.gz",
+    "sha256": "cd3cd126502448e6282679c70d3b132d3ca4872612b51fb144179885895d4b25",
+    "bytes": 298394,
+    "uncompressed_sha256": "a642a3371d2b3ce12563ed743d5f42c87c37f122b0cb7df8662f1a4efe55eb64",
+    "uncompressed_bytes": 301337
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/qproducts/nogneng-schost.txt",
+    "path": "primary/qproducts-nogneng-schost.txt.gz",
+    "sha256": "4b190a39944b0a26571be02e2df374e0608a085d0fc99d7442e8df4542888b6a",
+    "bytes": 12006,
+    "uncompressed_sha256": "b9964c3076f11257028d0fb52fdacece58316a637fd58e6f56c2ee24c9444cd3",
+    "uncompressed_bytes": 37923
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/norms/integration-review.md",
+    "path": "reviews/integration-independent-review.md",
+    "sha256": "5559872a4fbf681fa3070a6d630d6827535c405c44d9894b1000d89ac9774650",
+    "bytes": 3378
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/qproducts/journal-review.md",
+    "path": "reviews/journal-independent-review.md",
+    "sha256": "a38ddd4f60ed45b5dae28be580078548d5390ce4d2e5f624efe4e6ed1c265035",
+    "bytes": 2137
+  }
+]

@@ -1,0 +1,15 @@
+# Independent constant-carry normalization review
+
+2026-10-16. PASS for the final qualified unit-branch contract. Full report read; one restriction-scope clarification was requested and incorporated before final pinning. No reviewed report was edited by this reviewer.
+
+Final report norm/report.md: 5429 bytes, SHA256 `51720a3c545040d9a833ad6f5778cbcba9e4719d33195426944b061f774aa70f`. Manifest: 164 bytes, SHA256 `6efc245d7d4b8a8dfc7f37afcecd27e0bf60b66e73ffd5caf136fc037e30baf6`; its sole listed report entry matches. Both inherited native/endpoint source byte counts and hashes match their explicit pins.
+
+Euclidean division of delta in [-3d,d] indeed gives 0<=r<d and kappa in {-3,-2,-1,0,1}, including delta=d and delta=-3d. Therefore z=w q^(-kappa), with w=gamma^(-N-r). Constructing carries, powers and all normalization factors costs soft O(J) ring work with the stated logarithmic public exponent/bit costs; no row values or hidden orders are assumed.
+
+Both finite product identities are exact after cross multiplication, including ell=0 and ell<|k|. The integer intervals then overlap but their labeled-factor multiplicities agree; no illegal division or assumption of nonzero factors is used. At most six endpoint factors per row suffice for the actual carries. Multiplicities for repeated targets survive. The unit-ratio implementation uses only acquired endpoint factors and one batch inversion, and does not require distinct target nodes or inverse node differences.
+
+For kappa>=0, converting w back to z moves the denominator endpoints to original indices ell,...,ell+kappa-1 and numerator endpoints to 0,...,kappa-1. For kappa=-h, the denominator endpoints become -h,...,-1 and numerator endpoints ell-h,...,ell-1. Thus the existing constant-width two-sided endpoint theorem supplies all needed units for the FULL canonical rectangle. Width six is conservative. The same argument applies to its one prescribed padded-length family if that family is fixed as required; no free union over length rules is asserted.
+
+For subsets and common intervals, the algebraic identities and O(J) setup remain valid, but arbitrary interior endpoints need not be units on the canonical endpoint counterfamily. The final report now explicitly requires endpoint-unit checks for arbitrary restrictions and qualifies the fast extension to that branch. Proper gcds already factor; gcd=N is saturation and cannot be inverted or treated as a proper factor. The unmultiplied identities remain true but do not supply free saturation recovery. The canonical native leaf-recovery reference remains restricted to its valid range.
+
+The normalized residues r_j retain the ACTUAL high input digit modulo m². This is a paid preprocessing simplification, not an algorithm for the residue-graph norm, a replacement by a low quadratic or a root-of-unity relation. The report states no new exponent, all-input controller, operation lower bound or Lean result. No build or new literature audit was performed for this review.

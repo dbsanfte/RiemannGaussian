@@ -1,0 +1,44 @@
+2026-10-16 constructive follow-up. Previous goal turn: no acquisition
+advance. This turn also proves no new whole-family acquisition bound.
+No repository files changed. The journal SHA remains
+4774f2bc3b9f8cd233b20062a241f23e6c96723c52a8b4f5c7e3253e4885995b.
+
+624: paired_norm_recurrence_624 derived the ordinary quadratic-algebra
+transfer product and checked Askey-Wilson duality. The recurrence is a
+standard supplied-data consumer; no shared evaluator exploiting the
+critical values was found. Do not formalize or count it as new progress.
+Normalization changes both the evaluation point beta^ell_a and the
+parameter beta^(-N-a), so the geometric constant term alone does not
+put all rows on the fixed-parameter duality grid.
+
+625: torsion625/research-report.txt checks a constructive alternate route.
+Existence of an E/F_P with order divisible by t~m is insufficient: a
+pointwise rational kernel and useful base point must be acquired over
+Z/N without P. X0 supplies a stable kernel with arbitrary Frobenius
+eigenvalue; it does not supply rational torsion. Known prescribed-
+subgroup constructions use known P and cost t*sqrt(P)^(1+o(1)). The new
+prime-field factorization manuscript has an enormous fixed polynomial
+degree and known-characteristic identities, not a soft-linear ring
+constructor. These checks are scratch research, not new formal no-gos.
+
+626: trace626/handoff.txt found a genuinely new primary source absent
+from the repository journal: Stanica--Mulder--Hittmeir,
+https://arxiv.org/html/2606.13018v2, revised 5 October 2026.
+Root independently read its full relevant statements. Proposition 6.1
+constructs unions of H_a(N;l) in O(|A|*l) field operations. The output
+covers linear forms aP+Q, not a sparse menu for P itself. The Schoof
+trace determines union sizes, not P+Q modulo l. The paper explicitly
+does not prove a faster factoring algorithm. Multi-target CRT savings
+are a possible ingredient for a new shared consumer, not the needed
+constant-power density. Restricted r-th-power images require the power
+divisor promise; artificial powering of N does not supply free factor
+residues or a new factoring bound.
+
+Root also checked Hales, Divisors in Residue Classes Revisited,
+https://arxiv.org/abs/2410.05030 (published version DOI
+10.1016/j.jnt.2026.03.014). This generalizes the known residue-supplied
+consumer to Euclidean rings; it does not acquire a factor residue.
+
+No Lean changes, new tests, timing claims, evidence packet, journal
+entry, commit or push. Do not repeat these supplied-consumer reductions
+as prospective acquisitions. The active sixth-rate goal is unachieved.

@@ -6,7 +6,7 @@
 
 Modular factor-location identities, coverage conditions, exact root products and side-investigation limits; numerical probes are optional.
 
-**138 modules.** Source links open the definitions, hypotheses and proofs.
+**141 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [SemiprimeAdaptiveSeedAcquisitionObstruction](../../RiemannGaussian/SemiprimeAdaptiveSeedAcquisitionObstruction.lean)
 - [SemiprimeAffinePointAreas](../../RiemannGaussian/SemiprimeAffinePointAreas.lean)
@@ -58,6 +58,7 @@ Modular factor-location identities, coverage conditions, exact root products and
 - [SemiprimeEuclidRowBudget](../../RiemannGaussian/SemiprimeEuclidRowBudget.lean)
 - [SemiprimeEuclidRowFamily](../../RiemannGaussian/SemiprimeEuclidRowFamily.lean)
 - [SemiprimeFastDickson](../../RiemannGaussian/SemiprimeFastDickson.lean)
+- [SemiprimeFermatQuotientCatalog](../../RiemannGaussian/SemiprimeFermatQuotientCatalog.lean)
 - [SemiprimeFirstNorm](../../RiemannGaussian/SemiprimeFirstNorm.lean)
 - [SemiprimeForcedRowSeparation](../../RiemannGaussian/SemiprimeForcedRowSeparation.lean)
 - [SemiprimeFullEuclidAcquisitionObstruction](../../RiemannGaussian/SemiprimeFullEuclidAcquisitionObstruction.lean)
@@ -131,6 +132,8 @@ Modular factor-location identities, coverage conditions, exact root products and
 - [SemiprimeSignedMomentAcquisitionObstruction](../../RiemannGaussian/SemiprimeSignedMomentAcquisitionObstruction.lean)
 - [SemiprimeSourceHead](../../RiemannGaussian/SemiprimeSourceHead.lean)
 - [SemiprimeSparseBlockPeriodObstruction](../../RiemannGaussian/SemiprimeSparseBlockPeriodObstruction.lean)
+- [SemiprimeSparseResidueGauss](../../RiemannGaussian/SemiprimeSparseResidueGauss.lean)
+- [SemiprimeSparseResidueGaussRadius](../../RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean)
 - [SemiprimeSquareProductCover](../../RiemannGaussian/SemiprimeSquareProductCover.lean)
 - [SemiprimeStagedSeed](../../RiemannGaussian/SemiprimeStagedSeed.lean)
 - [SemiprimeStrassenPrefix](../../RiemannGaussian/SemiprimeStrassenPrefix.lean)

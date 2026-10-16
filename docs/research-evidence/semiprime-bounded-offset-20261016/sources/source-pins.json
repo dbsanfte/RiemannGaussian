@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/coprime-refinement.md",
+      "bytes": 9447,
+      "sha256": "d4477d8a27050922f50354ca89f075b9d246adfc608eb9b486f01be4b4a74c76"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/transform-interface.md",
+      "bytes": 8901,
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/research-checkpoint-20261012/objects/26/264fca0018ff33277a172ea0e93f6273311a0178a038b127bca8978f8d315b4f.gz",
+      "bytes": 5168,
+      "sha256": "a01e83bbdf892639bfb3518ba11a75e030ead2494489dfc73202ed0f482829ac",
+      "gzip": true,
+      "uncompressed_bytes": 11565,
+      "uncompressed_sha256": "264fca0018ff33277a172ea0e93f6273311a0178a038b127bca8978f8d315b4f"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/research-checkpoint-20261012/objects/d8/d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591.gz",
+      "bytes": 5303,
+      "sha256": "e7dca2a5bb92bea0ebef416546649265b94c771f0a068c999012933b36537c27",
+      "gzip": true,
+      "uncompressed_bytes": 12559,
+      "uncompressed_sha256": "d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-long-query-20261015/primary/qproducts-by.pdf.gz",
+      "bytes": 370577,
+      "sha256": "fb407530f83eb83df60633879c29f005d58a774efd9eab089cfe1461e70220be",
+      "gzip": true,
+      "uncompressed_bytes": 499386,
+      "uncompressed_sha256": "f3d617af2e9c899b41d5f4d9120412c78857ebc19009b69fe99e74d97f0d9b09"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOrderSeparation.lean",
+      "bytes": 15300,
+      "sha256": "877b827b378e604be3896d5572b8c4dea882b69c96103a8d56d957a3666a9563"
+    }
+  ]
+}

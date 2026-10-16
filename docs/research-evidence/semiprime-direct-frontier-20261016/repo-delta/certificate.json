@@ -1,0 +1,175 @@
+{
+  "provenance": "Saved official api.github.com/openai/math responses, 2026-10-16. Git object hashes check internal consistency; no claim of signed remote attestation. No acquisition advance.",
+  "base": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "head": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "unchanged_families": {
+    "The-Quasi-Riemann-Hypothesis": {
+      "The-Quasi-Riemann-Hypothesis-October-5-2026/README.md": "ab74e085f6b1aaa0ea1ec03095ae77bb65322b15",
+      "The-Quasi-Riemann-Hypothesis-October-5-2026/build/paper2.tex": "2000faddbbebac5de0ecfe0b962534ea61a852d5",
+      "The-Quasi-Riemann-Hypothesis-October-5-2026/paper2.pdf": "3ea94d87ffdee8db02c6ef1e563e6d166021ad2f",
+      "The-Quasi-Riemann-Hypothesis-September-30-2026/README.md": "05daa0838d60781c338ac22a9b06e6990f970981",
+      "The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex": "268c4e3206d460c617d3d2129742a72b831b3def",
+      "The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf": "8132b77eeb270a70b25df8d6609f008e83e65d91"
+    },
+    "Deterministic-Polynomial-Factorization": {
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/Deterministic-Polynomial-Factorization-over-Prime-Fields.pdf": "473cfb01c2dc52d82c2cebbd9aaaf6e15521dc61",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/README.md": "f349f9884fe90a4cd5f52dffde2140b1d4044165",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/main.tex": "992ac9672bfa27aeceab4e33c9042e22a579c18e",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/references.tex": "ed441487f299ef0ef46a1bdf4db526877b874a04",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/00-introduction.tex": "24bb00b878eac7882bfb3cbb862acf1903cf2693",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/01-table.tex": "d7d4be3c1fe9d0d0043568ffcdfaa70fb52ff5ab",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex": "714682cbb142309e1fb8d7dc119cb5f48d7cf72b",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex": "21f557c10d6785f752de2aecebabddc66500553f",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/04-divisors.tex": "09b891a6ed0c01bd6b78b88e90e84b548731009e",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/05-geometry.tex": "31ef37eace1600670063ed7cfa47aaf6538ae4d6",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/06-division.tex": "fd1f330029c44c0f98dcc92872e95d746d1b82ba",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/07-odd-split.tex": "395cc0430fd71cf06f24ae1e5f58c80bc8d40734",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/08-driver.tex": "4e5bbd81999a603d8ce4488d8b84a93b2602b5c0",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/09-complexity.tex": "193697981fd7ee57af1398992eb04fd7462f9df7",
+      "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/10-analytic.tex": "21081c288d68760167d2d94a34247ba61240dddf"
+    },
+    "Primitive-roots": {
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/README.md": "c97336dae8abeecc46f39e13bb51211779ddb058",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/main.tex": "d33302d7dc15e0b564ae1fee2ecff014d252217f",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/references.tex": "a5ae613858b131e24ec8d3696c4cb74f07848803",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/00-abstract.tex": "92009a09fe55023715d1fe1e156f3e358a8273ca",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/01-introduction.tex": "d3ed0c86e7524058a601145a4863acdb89d576e7",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/01a-reduction.tex": "260e5612b0f4e3b70a870d7dc28001abb24a16ee",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/02-arithmetic.tex": "f867118933bcbca858a62a3d7b495d894d7a40be",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/02a-coefficient-family.tex": "f2c84a0da5e4bf302633d3b77ca109bd39ae35d2",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/03-theta.tex": "d1fb734792b74e137d10b68624949ff75dc4d0c9",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/04-reflection.tex": "c02dfdd3c0b4f10595e1a1668f01d79815da79ce",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/05-poisson.tex": "c8526f74b281d37fda034c17195c4bb5afd5f79b",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/06-zero-free.tex": "589df3a177b3961e83ff3b8f6fadcba6ebb2f64a",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/07-splitting.tex": "ee9b3eac0decd351991b6b3f8d2b237b5df2970d",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/08-type-ii.tex": "42684fbb88a94407b4021f747635c1e50df64e7b",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/10-whittaker-calculation.tex": "7cf22626db2038f10ecb065e45500df966411422",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/11-sieve.tex": "dd08bb85f3651081d361f5b4843dd5de76d340a4",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/12-construction.tex": "4d5e0aa7c9b5329de0d19e36b01448a27d16bb01",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/vendor/texmf/tex/plain/rsfs/scrload.tex": "db1bf9349ffe8951e536d99d19f97bc3709ac3a4",
+      "Primitive-roots-for-every-admissible-integer-base-October-4-2026/primitive-roots-all-integer-bases.pdf": "dc2342d776f280e81d73ffa5a8eaf7b8f51745df"
+    },
+    "Exact-quantum-factoring": {
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/README.md": "733fe39d6a7a09f2d080d5805d8e9f978111ef4c",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/figures/same-history-events.tex": "e32ce4ff037ecfb0260159785992b2b3b7f6ebf2",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/main.tex": "7fb700c0133a62ad8642bb83d69994fe9da79f14",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/01-introduction.tex": "7e52b19b68edc10d53cedf0c7eca6acc0ca47c22",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/02-model.tex": "1cf37f77ba553eb694790b55b8cb66a89653932a",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/03-order-transform.tex": "ced3a09b6a4dd27c3f5b2e64190e0c280a3dbe22",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/04-dyadic-order.tex": "ba22ab4c80bd7eb9d5736adb1aee2d6c74572500",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/05-factor-process.tex": "a20e24942b59050af5123e3e7ba31988839f20b8",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex": "eedbbcc43857109a3d65057190beb4bcd1357255",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/appendix-primality.tex": "1789259f1b874aa3a0a5f4bbc3856dffe686a526",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/bibliography.tex": "d44cdb2028ec56a922b36caecaa5c77c8f994dd3",
+      "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/main.pdf": "f8baea5be59913635b20b901b169103db9fb43c0"
+    },
+    "Simultaneous-primitive-roots": {
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/README.md": "60f386cae4deeece94bf5fdb701f3b348bcbdde9",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/paper.tex": "b22ce32ab33cdb17216d21cb6dd85d25ed2ec252",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/references.tex": "171ac1f15863613346b033b3ce3c2db0bb353fa7",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/00-abstract.tex": "21a41892d897b70d734630d231c48a6dc63e07d3",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/01-introduction.tex": "437e7a0c606b619d2ad33e5d2998514c8bc8c996",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex": "9043fc44667a3d66b4a8d2d6f4728e9317edd889",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/03-splitting.tex": "a4fa53f648a9f53ba0fd1e97731c03d72c86b90f",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/04-marked-family.tex": "95f25ad53f7a5fa4331d35833d79754044e24386",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/05-prime-reservoir.tex": "c134e6a2c762327f006532b659f128d401db7103",
+      "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/simultaneous-primitive-roots-conditional-lower-bound-prime-bases.pdf": "5ec52e9d5a8b6c50490d3c28baef2dbe2e609b02"
+    }
+  },
+  "unchanged_oai_subtrees": {
+    "NumberTheory": "bd483de1f2aabba45a8fed73ad80fc7edcec6515",
+    "Algebra": "70b23ffb2bbb977e5c6d623962fe436e372ce7cd",
+    "LinearAlgebra": "7b267fd75dd170c2d21469a0907a061afd056735",
+    "RingTheory": "c73c85500fa22b4c68dec7248b3b2ce96344b238"
+  },
+  "plain_tree_hashes": {
+    "base": "9b377c4863646ac9aab5c9eb4dbdd96db07378bd13e778407bd225b7b45dafc5",
+    "head": "8acf8c8ebedb69ec74b64332644552450d87aa180f6fdad88badae13d92e2a01"
+  },
+  "files": {
+    "Deterministic.lean": {
+      "bytes": 22624,
+      "sha256": "f51289517dc00b6f843e6f408f393c1bcac7d25e78eb162c0c629618875d252b"
+    },
+    "Equality.lean": {
+      "bytes": 4386,
+      "sha256": "4e04bb9a264ff32042267832d47423079a0d72b9880994b5e84957d672d5fbe9"
+    },
+    "base-oai-root.json": {
+      "bytes": 4851,
+      "sha256": "52dfce40dc367c3fd5c266bf559f6b4b928e0d77c4215b987ed70ac0613e2195"
+    },
+    "check.py": {
+      "bytes": 4530,
+      "sha256": "132271a381414a15c648a01aeee9f6bc69772071b89cce1a8a54d922d6409a3e"
+    },
+    "commits.json": {
+      "bytes": 977,
+      "sha256": "26991b35eaced8ac75b75fdf195b85837d34e992d50c750645b9d4d2cc9616a2"
+    },
+    "head-oai-root.json": {
+      "bytes": 4851,
+      "sha256": "584e1513957e4cf66e5d547b208b7af46712e24a5448dcb78c5dcad8224ffaec"
+    },
+    "head-preprints-tree.json.gz": {
+      "bytes": 561768,
+      "sha256": "e86c3ebe60cb530a989d6e4c4cdc90333e26b64c082d7320bb4b730bd8593e3e"
+    },
+    "history.md": {
+      "bytes": 2281,
+      "sha256": "41c2a2d470014b3628695c7aabf5fd0c93f6f687621fca172062f22b59ed6a1e"
+    },
+    "base-preprints-tree.json.gz": {
+      "bytes": 553341,
+      "sha256": "0086463e41b1fc29e00dbc41427c7f5e7805e50655591dfd691a06533361a3a4"
+    },
+    "base-root.json": {
+      "bytes": 1852,
+      "sha256": "282785c45382e7478af985d206d8d5ecec3a2301b8a229a8c6fef14343c67dee"
+    },
+    "base-lean-root.json": {
+      "bytes": 2697,
+      "sha256": "0db7538ceadfdbdd985dd3395aeacbd4231cccc9e46437da49ff4bf4773d2a83"
+    },
+    "head-root.json": {
+      "bytes": 2263,
+      "sha256": "0647109fae7a95edaf248f71fe58ee38d0500d18deae25636a3f24ba6f624745"
+    },
+    "logspace-scope.md": {
+      "bytes": 1739,
+      "sha256": "c30217d377d082871543dc37646e4ddc214e22d3a1a2c6fd906a3a4572f5573b"
+    },
+    "head-lean-root.json": {
+      "bytes": 2697,
+      "sha256": "94a586d0ec310f482ae1f0f917d09c69f32a4c62b440fcbb6063cfd1c86c85d7"
+    },
+    "head-commit.json": {
+      "bytes": 2602,
+      "sha256": "7f4e6d22ccd7a8bc8f7938f3d84e3b83090791835a119a0140d821dc686cca6c"
+    },
+    "base-commit.json": {
+      "bytes": 822,
+      "sha256": "2b6a00b5d314d099df6b0eb0fd38a86a103f76cda99548d638585efc0317d514"
+    },
+    "head-computability-root.json": {
+      "bytes": 8240,
+      "sha256": "7733536ab4ffbfa0aace2649c971ceae2944ca7eac07240831e891c68af4918f"
+    },
+    "head-logspace-root.json": {
+      "bytes": 11163,
+      "sha256": "c3de6efffb1a01dde89045ae972d6a72e77967c71f5aae4fb438984de07cbf66"
+    }
+  },
+  "repository_roots": {
+    "base": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "head": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+  },
+  "preprint_roots": {
+    "base": "272ca94583c1dca3188bbc3a1caa068cb7af4b55",
+    "head": "df0564b2deaab87e07854b6344d8c2f037682e77"
+  },
+  "computed_repository_tree_roots": {
+    "base": "a8e3481a92772ee311cdc9dd6409cd7b927a3fc1",
+    "head": "45074722c918576d65b4c8be9686c76f508ba696"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "primary_url": "https://cm.episciences.org/17491/pdf",
+  "doi": "10.46298/cm.16723",
+  "inspected": "Eq7; Thm4.2; Thm4.3 Eq44; Thm4.6 Eqs47-48",
+  "scope": "Locally inspected PDF/text fingerprints only; full sources not copied into repository.",
+  "files": [
+    {
+      "local_inspected_path": "/tmp/semiprime-pade-obstruction-20261016/primary/Lopez2026.pdf",
+      "bytes": 306023,
+      "sha256": "cc1d9592f914b4333367a2a2225ec6b3bc07efb8e71a13ee7337bb4945f25a64",
+      "derived": "primary publisher PDF"
+    },
+    {
+      "local_inspected_path": "/tmp/semiprime-pade-obstruction-20261016/primary/Lopez2026.txt",
+      "bytes": 130678,
+      "sha256": "2491890dcd8d286685c72d3ab4af6b12364c8a5a39d97d1126e233275a3d9239",
+      "derived": "pdftotext -layout of pinned PDF"
+    }
+  ]
+}

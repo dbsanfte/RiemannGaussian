@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-16",
+  "goal": "Guaranteed classical deterministic N^(1/6) semiprime factorization, proved in Lean",
+  "goal_achieved": false,
+  "previous_turn_classification": "no progress on acquisition; operator attempt equivalent to existing query",
+  "head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "journal_sha256": "4774f2bc3b9f8cd233b20062a241f23e6c96723c52a8b4f5c7e3253e4885995b",
+  "new_constructor": false,
+  "repository_files_changed_this_turn": false,
+  "investigations": [
+    {
+      "topic": "Eisenstein or representation-number coefficient modulo r",
+      "finding": "Inspected general coefficient algorithms explicitly require factorization of the coefficient index; prime-input Frobenius algorithms do not acquire the desired composite coefficient.",
+      "source": "https://arxiv.org/pdf/math/0605244",
+      "agent": "trace_modular_constructor_631"
+    },
+    {
+      "topic": "Kronecker-Hurwitz class-number sum",
+      "identity": "For distinct primes P<Q and N=P Q, sum_{t^2<=4N} H(4N-t^2)=2N+2Q with standard H.",
+      "finding": "Alternative observable only. Known literal evaluation still has Theta(sqrt N) terms; no soft(r^3) acquisition.",
+      "source": "https://link.springer.com/article/10.1007/s00209-020-02572-y",
+      "agent": "trace_modular_constructor_631"
+    },
+    {
+      "topic": "Recent QRH applications",
+      "finding": "Frei-Sofos-Widmer v2 supplies conditional effective Chebotarev and torsion/field-generator bounds. No algorithm for the required composite-index coefficient or unknown-factor residue was found. Do not confuse their small field generators with a computed class group.",
+      "source": "https://arxiv.org/html/2610.18491v2"
+    }
+  ],
+  "remaining_requirement": "An explicit all-input acquisition algorithm with proof and charged soft(N^(1/6)) bit complexity; then complete Lean verification.",
+  "avoid_repeating": "Do not count a supplied-data consumer, an equivalent coefficient/class-number expression, or a prime-index coefficient theorem as acquired composite data."
+}

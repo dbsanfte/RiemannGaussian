@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-direct-update-clock-20261016/reports/direct-update-clock.md",
+      "bytes": 11654,
+      "sha256": "f07353444c81c063877bf68c6107edb62ffec547a231340e8f79e2d963572d62"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-direct-update-clock-20261016/reports/direct-prefix-recurrence.md",
+      "bytes": 10819,
+      "sha256": "598a3041a90f761744811df206d9ab11ea8452ec8263db35afd984ed0999fb59"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-matrix-clock-obstruction-20261016/reports/mixed-index-clock-obstruction.md",
+      "bytes": 12194,
+      "sha256": "55da629133046fc1cf162e8f130ce141b8516213dac9b77de3e4871a52fa7073"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/research-checkpoint-20261012/objects/d8/d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591.gz",
+      "bytes": 5303,
+      "sha256": "e7dca2a5bb92bea0ebef416546649265b94c771f0a068c999012933b36537c27",
+      "gzip": true,
+      "uncompressed_bytes": 12559,
+      "uncompressed_sha256": "d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591"
+    },
+    {
+      "path": "/tmp/semiprime-native-two-clock-20261016/source-survival-and-novelty.md",
+      "bytes": 14019,
+      "sha256": "f541f4a18e49d8ffe804c081c3ce33cc851350f126486dc553b87df32c330b09"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/README.md",
+      "bytes": 4000,
+      "sha256": "d0034961e8e6cfa862e5604b7bc16f2910be002b2623f9ea84aeca7c17d95322",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/direct-update-clock.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/reports/direct-update-clock.md",
+      "bytes": 11654,
+      "sha256": "f07353444c81c063877bf68c6107edb62ffec547a231340e8f79e2d963572d62",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/direct-prefix-recurrence.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/reports/direct-prefix-recurrence.md",
+      "bytes": 10819,
+      "sha256": "598a3041a90f761744811df206d9ab11ea8452ec8263db35afd984ed0999fb59",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/prefix-review-A.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/reviews/prefix-review-A.md",
+      "bytes": 6513,
+      "sha256": "29d5edda1e138238e566589b57af0729d355e6676b6705706615d21bb7070b83",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/independent-review-B.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/reviews/independent-review-B.md",
+      "bytes": 7232,
+      "sha256": "351f2eb49866946bd81487b1c920b6286db519355a0ecfaf3d49568910280346",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/reviews/integration-review.md",
+      "bytes": 3785,
+      "sha256": "805b6f54a9d364d1a716695ce31be5274880a97131162c09f5f5e90a7abdf9fc",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/sources/source-pins.json",
+      "bytes": 1015,
+      "sha256": "6e33dac5ee8c8a148d11df9b97ab6c1f8c3a075e39a33834dee704ba71baf670",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/prefix-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/sources/prefix-source-pins.json",
+      "bytes": 1034,
+      "sha256": "82678e677b5a7cb02e1d8833985a2700c67489613ade0f2fff17aa5668799bca",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/sources/journal-entry.md",
+      "bytes": 4053,
+      "sha256": "72e067d1759b1f3ce4bc3aeb5c74a9fe4d927a198eb4141ebbdf44b73b94a023",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/sources/pre-entry-baseline.json",
+      "bytes": 5729,
+      "sha256": "45cc825c698c5fe5869c2c17593f186bc3d4ee767c4fffe2085a59c5bda66953",
+      "gzip": false,
+      "role": "New direct-query representation proof, exact review or integration metadata"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+      "gzip": false,
+      "role": "Unchanged paid setup, original unit-row source, matrix scalarization, old degree-rigidity credit or resolved new companion"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "gzip": false,
+      "role": "Unchanged paid setup, original unit-row source, matrix scalarization, old degree-rigidity credit or resolved new companion"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/research-checkpoint-20261012/objects/d8/d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591.gz",
+      "resolved_path": "docs/research-evidence/research-checkpoint-20261012/objects/d8/d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591.gz",
+      "bytes": 5303,
+      "sha256": "e7dca2a5bb92bea0ebef416546649265b94c771f0a068c999012933b36537c27",
+      "gzip": true,
+      "role": "Unchanged paid setup, original unit-row source, matrix scalarization, old degree-rigidity credit or resolved new companion",
+      "uncompressed_bytes": 12559,
+      "uncompressed_sha256": "d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-update-clock-20261016/direct-update-clock.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/reports/direct-update-clock.md",
+      "bytes": 11654,
+      "sha256": "f07353444c81c063877bf68c6107edb62ffec547a231340e8f79e2d963572d62",
+      "gzip": false,
+      "role": "Unchanged paid setup, original unit-row source, matrix scalarization, old degree-rigidity credit or resolved new companion"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "gzip": false,
+      "role": "Unchanged paid setup, original unit-row source, matrix scalarization, old degree-rigidity credit or resolved new companion"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-matrix-clock-obstruction-20261016/reports/mixed-index-clock-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-matrix-clock-obstruction-20261016/reports/mixed-index-clock-obstruction.md",
+      "bytes": 12194,
+      "sha256": "55da629133046fc1cf162e8f130ce141b8516213dac9b77de3e4871a52fa7073",
+      "gzip": false,
+      "role": "Unchanged paid setup, original unit-row source, matrix scalarization, old degree-rigidity credit or resolved new companion"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "Unchanged paid setup, original unit-row source, matrix scalarization, old degree-rigidity credit or resolved new companion"
+    }
+  ],
+  "pin_semantics": "bytes/sha256 always identify stored bytes; gzip flags compression, with uncompressed pins separately supplied",
+  "scope": "Self-contained classical proofs and exact inherited prerequisites; no new external result or paper copy"
+}

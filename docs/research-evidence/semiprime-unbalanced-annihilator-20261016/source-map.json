@@ -1,0 +1,225 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/README.md",
+      "bytes": 3765,
+      "sha256": "0d408f3310b0951f70e352d30988cef1972ba9b8d3114bfa6a1458acd9293c0c",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/unbalanced-extractor.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/uniform-setup-and-query-interface.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/unbalanced-extractor-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reviews/unbalanced-extractor-A.md",
+      "bytes": 3784,
+      "sha256": "8c5b6f983dfda556ecddcf4a64692cee1375ebee533da1254a8577bbb715387c",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/uniform-setup-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reviews/uniform-setup-A.md",
+      "bytes": 6517,
+      "sha256": "b6712c767b66837dc954267358ee447f48dd2fc9f004d5123f4cc5f668fff4e6",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reviews/proof-review-B.md",
+      "bytes": 4521,
+      "sha256": "77e87ee47bee32ddd8f6c99da4994e8a29c7b60336211750b82984f799cd65be",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reviews/integration.md",
+      "bytes": 3519,
+      "sha256": "1cdb2a9e898fc3108df1cc3cb76fab4d6de05618ec645fb372fb50b5c8079396",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/sources/source-pins.json",
+      "bytes": 1749,
+      "sha256": "7c6cd53d7348a12ea34ea48eb539dfa7199292d5429e0b1513a853e3f2895553",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/setup-query-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/sources/setup-query-source-pins.json",
+      "bytes": 2056,
+      "sha256": "2c790a49f7aabb174ee19fd82a935c3ea0144ae8e988ed0d9b93280c21d6e225",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/sources/journal-entry.md",
+      "bytes": 4305,
+      "sha256": "b71e8125b6461b6bc34bf95257723a2eac351c911db3dfada3f6c91527a44350",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/sources/pre-entry-baseline.json",
+      "bytes": 4879,
+      "sha256": "92dc1f9a5b3669bea3ed749a81cef9ba945db7da943b8d9d6d2a69fa33590a2e",
+      "gzip": false,
+      "role": "New all-semiprime conditional extraction/setup proof, independent exact review or metadata"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+      "resolved_path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+      "bytes": 5679,
+      "sha256": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/short-annihilator-extractor.md",
+      "resolved_path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/short-annihilator-extractor.md",
+      "bytes": 10375,
+      "sha256": "433d10d8c413ad8cbe7ecb09bbafe0794559afa8b2b535e3667b9491950c1131",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/sources/primary-fingerprints.json",
+      "resolved_path": "docs/research-evidence/semiprime-wide-annihilator-20261016/sources/primary-fingerprints.json",
+      "bytes": 1815,
+      "sha256": "a1e1b635d632a1c1acd047be0ecd5c982c7a843d33d0fabb7081cdaed3ab903b",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/tmp/semiprime-unbalanced-annihilator-20261016/unbalanced-extractor.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeWideWrapCoverage.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeWideWrapCoverage.lean",
+      "bytes": 22298,
+      "sha256": "7bd39ec0bff02d72e8fa0ca22dc7b0e210b125fec55a95fdc3f5ea466e4e65f7",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "bytes": 29680,
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOrderSeparation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeOrderSeparation.lean",
+      "bytes": 15300,
+      "sha256": "877b827b378e604be3896d5572b8c4dea882b69c96103a8d56d957a3666a9563",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/uniform-preprocessing.md",
+      "resolved_path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/uniform-preprocessing.md",
+      "bytes": 8770,
+      "sha256": "375460025deb024f03c3bc3415fc7990ca9a50b16cc9e272a19b17dd08d2e4fd",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/coprime-refinement.md",
+      "resolved_path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/coprime-refinement.md",
+      "bytes": 9447,
+      "sha256": "d4477d8a27050922f50354ca89f075b9d246adfc608eb9b486f01be4b4a74c76",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+      "resolved_path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+      "bytes": 5679,
+      "sha256": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109",
+      "gzip": false,
+      "role": "Exact unchanged prerequisite or reviewed new companion proof"
+    }
+  ],
+  "external_primary_fingerprints": [
+    {
+      "key": "LauWu-primary-pdf",
+      "url": "https://hkumath.hku.hk/~imr/IMRPreprintSeries/2007/IMR2007-4.pdf",
+      "bytes": 221207,
+      "sha256": "4cc9dba73064795de434d6b42baca0743347313b6a242f5439c9ed979ddd4368",
+      "local_inspected_path": "/tmp/semiprime-wide-annihilator-20261016/primary/LauWu2007.pdf",
+      "inspected_sections": "Theorem1 printedp2; composite-modulus proof Section2 printedpp4-6"
+    },
+    {
+      "key": "LauWu-primary-layout-text",
+      "url": "https://hkumath.hku.hk/~imr/IMRPreprintSeries/2007/IMR2007-4.pdf",
+      "derived": "pdftotext layout text of pinned primary PDF",
+      "bytes": 53442,
+      "sha256": "99d222b33b06d55c1ac00637eb67db393417439e8305e1493bab58e40df5a8d5",
+      "local_inspected_path": "/tmp/semiprime-wide-annihilator-20261016/primary/LauWu2007.txt"
+    },
+    {
+      "key": "HH-v2-pdf",
+      "url": "https://arxiv.org/pdf/2601.11131v2",
+      "version": "arXiv2601.11131v2, 2026-06-05",
+      "bytes": 412025,
+      "sha256": "0e957bacebc0b74f363436ab09b70085f4ad83c45dee93bda8aef19fbfdcbff0",
+      "local_inspected_path": "/tmp/semiprime-order-acquisition-20261016/harvey-hittmeir.pdf",
+      "inspected_sections": "Theorem1.1, bit model, Lemmas2.1-2.3 and Algorithm3.1"
+    },
+    {
+      "key": "HH-v2-layout-text",
+      "url": "https://arxiv.org/pdf/2601.11131v2",
+      "derived": "pdftotext layout text of pinned primary PDF",
+      "bytes": 46216,
+      "sha256": "2d4b8fc6eb1ba0b20c0b057fa02317f982a93fe319099dbd453a531e16c57d24",
+      "local_inspected_path": "/tmp/semiprime-order-acquisition-20261016/harvey-hittmeir.txt"
+    }
+  ],
+  "external_scope": "Existing locally inspected primary fingerprints only; full papers are not copied. Fingerprints are not independent arithmetic verification."
+}

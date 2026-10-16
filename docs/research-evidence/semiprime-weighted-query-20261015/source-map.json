@@ -1,0 +1,201 @@
+[
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/source/actual-row-density-adjoint-obstruction.md",
+    "path": "reports/actual-row-density-adjoint-obstruction.md",
+    "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+    "bytes": 8621
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/source/actual-short-shift-nonoverlap.md",
+    "path": "reports/actual-short-shift-nonoverlap.md",
+    "sha256": "2f0d7c10fe5b15c80961e37ca0b878006b663993ec924df7f9747fcaf03dbe60",
+    "bytes": 6978
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/holonomic/report.md",
+    "path": "reports/holonomic-interface.md",
+    "sha256": "c424a84a41c4390a4ce55ea26278f5e0da87ad86e979aec02a795675a02d5334",
+    "bytes": 11357
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/norm/norm-doubling-audit.md",
+    "path": "reports/norm-doubling-audit.md",
+    "sha256": "2e9dd71c2bb5e0da0e5e2ef9772d7c85375e265b8686b9ad8e6c0ad16447ac2d",
+    "bytes": 8839
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/canonical/partner-query-status.md",
+    "path": "reports/partner-query-status.md",
+    "sha256": "da5c40cfe6f3ec9c4b920669aad0e3bf37ba828a10521b94edf9af7287029bd3",
+    "bytes": 3217
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/source/source-pins.json",
+    "path": "sources/short-shift-source-pins.json",
+    "sha256": "37956a2c9caf54976d47c80f54bc01a764a6f2bf4ad48bfeb27cb4cf5d40da00",
+    "bytes": 1115
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+    "path": "sources/density-source-pins.json",
+    "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c",
+    "bytes": 1767
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/holonomic/manifest.json",
+    "path": "sources/holonomic-manifest.json",
+    "sha256": "72c9bab6d9c4308963457f46e9d1821e73b575fb94b4572acd7c21e74751adaf",
+    "bytes": 3068
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/norm/manifest.json",
+    "path": "sources/norm-manifest.json",
+    "sha256": "3f84acac659055c94e8adf69d107d22f715129ddb68e675ecd21e4c78769c60d",
+    "bytes": 358
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/canonical/short-shift-independent-review.md",
+    "path": "reviews/short-shift-review-a.md",
+    "sha256": "2fa08c9b7c8839148c930c7d5422c18d3acbe2de9996be416095310e05f7585a",
+    "bytes": 5796
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/norm/short-shift-independent-review.md",
+    "path": "reviews/short-shift-review-b.md",
+    "sha256": "2e47f9e174aed55cb9f5b41154f74915cfed06598532160ab61ddd39a4b493a5",
+    "bytes": 3567
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/holonomic/density-adjoint-independent-review.md",
+    "path": "reviews/density-adjoint-review-a.md",
+    "sha256": "bc6f1fa262b3229918536fba9a60689bd57da24d1cd1a2d99020b84741cd6a2e",
+    "bytes": 5436
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/norm/density-adjoint-independent-review.md",
+    "path": "reviews/density-adjoint-review-b.md",
+    "sha256": "e708a2348af89eeac1ccfeec538cb1ba5e75011546564f5617ff28c7af1b2d1c",
+    "bytes": 5450
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/norm/full-row-hit-count-review.md",
+    "path": "reviews/full-row-hit-count-review.md",
+    "sha256": "a3d4d1248a0d30e4d062f0c6db1430a9509e8450b0624e34ab85ded2118da2c6",
+    "bytes": 7415
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/canonical/norm-independent-review.md",
+    "path": "reviews/norm-review.md",
+    "sha256": "bcbb7204f40d694e9bc16501745710e04fab75cd83c9343f5b33d469393a9266",
+    "bytes": 6017
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/canonical/holonomic-independent-review.md",
+    "path": "reviews/holonomic-review.md",
+    "sha256": "9d93c2e86a361b7ad6cd7dbdb9e51c99fac2688da43f08843607a94ccb8c567e",
+    "bytes": 6727
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/high-digit-folding-obstruction.md",
+    "path": "sources/high-digit-folding-obstruction.md",
+    "sha256": "df7e67583b43d3daff78a581ca86f5d10a68cd9e3c922ed5e95d7f95042db3f7",
+    "bytes": 9623,
+    "role": "frozen inherited source; copied bytes unchanged"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/transform-interface.md",
+    "path": "sources/transform-interface.md",
+    "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae",
+    "bytes": 8901,
+    "role": "frozen inherited source; copied bytes unchanged"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/positive-adjoint-interface.md",
+    "path": "sources/positive-adjoint-interface.md",
+    "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7",
+    "bytes": 6464,
+    "role": "frozen inherited source; copied bytes unchanged"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+    "path": "sources/full-euclid-all-hit-obstruction.md",
+    "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+    "bytes": 24354,
+    "role": "frozen inherited source; copied bytes unchanged"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/charged-skipped-ray-obstruction.md",
+    "path": "sources/charged-skipped-ray-obstruction.md",
+    "sha256": "ca92ab638d96409cc0dadb822ce3fcf31ac77d637b37020f81a19e1462568fae",
+    "bytes": 11430,
+    "role": "frozen inherited source; copied bytes unchanged"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/reports/prescribed-tag-catalog-obstruction.md",
+    "path": "sources/prescribed-tag-catalog-obstruction.md",
+    "sha256": "f3352537846c716c36f4ad3e191be857c484993f986f887fc770eba3e6ccfca4",
+    "bytes": 7704,
+    "role": "frozen inherited source; copied bytes unchanged"
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/norm/bernstein-norm-2023.pdf",
+    "path": "primary/bernstein-norm-2023.pdf.gz",
+    "sha256": "75aae494db7ecc7fb590426736bffde01de475ec6f7158ad17b61fe42c86e600",
+    "bytes": 988181,
+    "uncompressed_sha256": "4c63a950c3934bfa59dfa7317d45eb4962b7894e579c75a36c13447cd7be7d6b",
+    "uncompressed_bytes": 1313645
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/norm/bernstein-norm-2023.txt",
+    "path": "primary/bernstein-norm-2023.txt.gz",
+    "sha256": "0f1a93709a66b2c363c3a208981ac7477f9623a305044f8804806b88b1cb3b54",
+    "bytes": 75037,
+    "uncompressed_sha256": "86868954e9f8d0aec070b248131df8c8239ff2055e391fa37c333db2498bc2c1",
+    "uncompressed_bytes": 273603
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/holonomic/polynomial-reduction-2026.pdf",
+    "path": "primary/polynomial-reduction-2026.pdf.gz",
+    "sha256": "edd5c5ee5016e07f30375bfe54a71b15812bcb887872cfef922177c1f1db1533",
+    "bytes": 248312,
+    "uncompressed_sha256": "0fac298246672cc41c67795df940a4e7516239349a7c3bde0cf4f2008e515319",
+    "uncompressed_bytes": 299921
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/holonomic/polynomial-reduction-2026.txt",
+    "path": "primary/polynomial-reduction-2026.txt.gz",
+    "sha256": "87c5a2459aef94177c3e72535ab6f0067da487b1582ebe8fc69415761607c1ee",
+    "bytes": 14113,
+    "uncompressed_sha256": "cd396cac630dcdbff012a93a9c0b96de3606a0f1a906c527e47808bac9900f0f",
+    "uncompressed_bytes": 54740
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/holonomic/q-holonomic-closure.pdf",
+    "path": "primary/q-holonomic-closure.pdf.gz",
+    "sha256": "c50974c1e2078634c3c2024d20e76d611c73c1dbae5af62a0f6b7dffd269d21f",
+    "bytes": 166257,
+    "uncompressed_sha256": "1c2c4de562de796817b5fdeca2ca43c191f039f6a5e302c76f5e633c4f710cae",
+    "uncompressed_bytes": 195727
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/holonomic/q-holonomic-closure.txt",
+    "path": "primary/q-holonomic-closure.txt.gz",
+    "sha256": "a1c640b799a526c3e591f75007e9a4aa1b6a9e42c8936dcfe15b0536ed388bcb",
+    "bytes": 11689,
+    "uncompressed_sha256": "93cd2eef37b014af8b028516c37d17d7e5992a901dfb98785bc22fa551c40b99",
+    "uncompressed_bytes": 47019
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/source/journal-entry-exact.md",
+    "path": "sources/journal-entry.md",
+    "sha256": "ac49d9e419a98f5bc4086d29fdda091cc0ea329e83f75ba154d07846ec699067",
+    "bytes": 5452,
+    "role": "exact new journal entry including Markdown heading and trailing blanks"
+  },
+  {
+    "original_path": "/tmp/semiprime-weighted-query-20261015/holonomic/integration-journal-review.md",
+    "path": "reviews/integration-journal-review.md",
+    "sha256": "8e8661bd428abbf16cc0d2bd43985579c0f35a4f7fd4de47f17de27bf63befca",
+    "bytes": 5259
+  }
+]

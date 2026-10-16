@@ -1,0 +1,79 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-cyclotomic-row-cancellation-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-cyclotomic-row-cancellation-20261016/README.md",
+      "bytes": 6042,
+      "sha256": "992e31ea5ece408e448dba91771a1616228b4629668552960c15311c9aafad6e",
+      "gzip": false,
+      "role": "New exact selector-failure proof, independent review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-cyclotomic-row-cancellation-20261016/independent-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-cyclotomic-row-cancellation-20261016/reviews/independent-review.md",
+      "bytes": 3942,
+      "sha256": "317ac7793223533936089f613c528e4643153a4d3680c4b537c5036cdbe277af",
+      "gzip": false,
+      "role": "New exact selector-failure proof, independent review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-cyclotomic-row-cancellation-20261016/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-cyclotomic-row-cancellation-20261016/sources/source-pins.json",
+      "bytes": 934,
+      "sha256": "bc19c6a67ffdb9f1f0d6c9e4e3f216fb05dd4d981337199e07df15113709860d",
+      "gzip": false,
+      "role": "New exact selector-failure proof, independent review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-cyclotomic-row-cancellation-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-cyclotomic-row-cancellation-20261016/sources/journal-entry.md",
+      "bytes": 2488,
+      "sha256": "a9142fe51d5e8be4929e68a31ab9d5ae8746746325112923433ab00d42cf0b9e",
+      "gzip": false,
+      "role": "New exact selector-failure proof, independent review or integration metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-cyclotomic-row-cancellation-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-cyclotomic-row-cancellation-20261016/sources/pre-entry-baseline.json",
+      "bytes": 6148,
+      "sha256": "4040a73b96a52732a36a7af22cc2528fca9b334c8553950a10292198ac938a0a",
+      "gzip": false,
+      "role": "New exact selector-failure proof, independent review or integration metadata"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "gzip": false,
+      "role": "Unchanged native row/coverage definition or historical scalar probe"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "gzip": false,
+      "role": "Unchanged native row/coverage definition or historical scalar probe"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+      "gzip": false,
+      "role": "Unchanged native row/coverage definition or historical scalar probe"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/scripts/probe_semiprime_single_extraction.py",
+      "resolved_path": "scripts/probe_semiprime_single_extraction.py",
+      "bytes": 16419,
+      "sha256": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+      "gzip": false,
+      "role": "Unchanged native row/coverage definition or historical scalar probe"
+    }
+  ],
+  "pin_semantics": "bytes/sha256 identify stored bytes; optional uncompressed pins are separate",
+  "scope": "Self-contained algebraic identity and native source contracts; no new external theorem"
+}

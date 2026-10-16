@@ -1,0 +1,253 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/README.md",
+      "bytes": 5825,
+      "sha256": "b067b4637ae893d0d281f8010f48c385e56bc19d2bc52c55b8e5ad9a14a45cc6",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/sources/journal-entry.md",
+      "bytes": 4273,
+      "sha256": "5297fb13fd39cf87784b6e93952d91228767748a2497710ead70e3ebbca64848",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/sources/pre-entry-baseline.json",
+      "bytes": 2924,
+      "sha256": "bca093562100771ae7ea0cf2e22aeac2facd42799373043fc211510717056972",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/actual/report.md",
+      "bytes": 9527,
+      "sha256": "ab4ce6e96436ac4b02249ec2d0adb3f409821371033edf8f4a1fdbd4cf640b0c",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/verify.py",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/actual/verify.py",
+      "bytes": 3283,
+      "sha256": "4f59405c99de435e67aed0d9b0de4b3f69926bb9bd81a67e2c1978fd8be117ec",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/certificate.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/actual/certificate.json",
+      "bytes": 4007,
+      "sha256": "4956ee63a417867643193bc1e07b7ce9b4d6918dab304a9286b025ef3557547c",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/orbit.py",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/actual/orbit.py",
+      "bytes": 2775,
+      "sha256": "824df476523e67c030ef472a46d95d45d2bd1978043e043688fff3a7048fd571",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/orbit-certificate.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/actual/orbit-certificate.json",
+      "bytes": 5649,
+      "sha256": "8179fcef510e6b677c32ff10b5dafaca26c342b993a5f6ff2acd361bf0b94f57",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/scalar.py",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/actual/scalar.py",
+      "bytes": 716,
+      "sha256": "72ec71dfdc51b7d0041319f9890e34b86227c87a123510ff316a4cda977e621a",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/scalar-certificate.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/actual/scalar-certificate.json",
+      "bytes": 4698,
+      "sha256": "f0dcc51c184a29deca79e9822dbfd84c92617f455d33977655a14ad77cd2da46",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/actual/source-pins.json",
+      "bytes": 1173,
+      "sha256": "bf9a50dc340a7756d7890e472b24b4b6e1beb01cf85a963e30c135e995891b59",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/actual/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/sources/actual-manifest.json",
+      "bytes": 1211,
+      "sha256": "fee63e2edf4c04e0e4eee87bac2834796591fbf28a12b3324c180cb16d203ed2",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/shortrows/cone-energy-carrier-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reports/shortrow-cone-energy.md",
+      "bytes": 7633,
+      "sha256": "c41354a285a57ec510f4a289515525f72e663687b7870bcc0ffb85d33d0f65bb",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/shortrows/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/sources/shortrow-source-pins.json",
+      "bytes": 1023,
+      "sha256": "01a4b3807047894e9de3b1e5f44ca11d61b36a1d14e592aa107ac22f46dcb1eb",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/identities/opposite-tag-reflection.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reports/opposite-tag-reflection.md",
+      "bytes": 6354,
+      "sha256": "7a51be4d162041762170eae52aac64f93255caba7768612207a99123a70af48a",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/identities/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/sources/reflection-source-pins.json",
+      "bytes": 1151,
+      "sha256": "60db3ac25ee9d754d022290175bf55906e5b21a23143df46f830f53386449cfb",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/reviews/actual-spectral-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reviews/actual-spectral-review-a.md",
+      "bytes": 6605,
+      "sha256": "f0aa6c013995c6a445f72d505bf35ad3a39ec15e673f7eb884c9fc67f09f58df",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/reviews/actual-spectral-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reviews/actual-spectral-review-b.md",
+      "bytes": 7800,
+      "sha256": "f4bede15507ab923ae700b179e48ca22c9f90030d1005e234538cbe10e6ae440",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/reviews/shortrow-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reviews/shortrow-review.md",
+      "bytes": 4770,
+      "sha256": "72c2de890386e29702d8dea0fa589db139c48de88154bd28079d72f44a3ca0ee",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/reviews/opposite-tag-reflection-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reviews/opposite-tag-reflection-review-b.md",
+      "bytes": 2525,
+      "sha256": "3dbca1af97bba916e9d0b2eea7e3eeff9aaf123a981eb5830d5cd605f5b5d129",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/reviews/independent-spectral-check.py",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reviews/independent-spectral-check.py",
+      "bytes": 4933,
+      "sha256": "41f6e663962d311657d7caf7ab7db74137fe283421d197c8f937038607eba5ec",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/root-final-replay/replay-log.json",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/verification/root-replay-log.json",
+      "bytes": 1466,
+      "sha256": "844f8a9e94b4766b35706d78f27c1123e2bb391197ddee1c60fb343c0d85307e",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-spectral-source-20261016/reviews/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reviews/integration-review.md",
+      "bytes": 4579,
+      "sha256": "ce8b868001211b75c6cb97120b24da6e97eb46c741f9a9b48cabc7ca199cf55b",
+      "gzip": false,
+      "role": "new proof, exact certificate, verification or metadata"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-descent-query-20261016/reports/spectral-check.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/spectral-check.md",
+      "bytes": 6193,
+      "sha256": "79ba8ad3917cf974d94219fac29aca074eb57ee90a35150bcd9407d8d3249413",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "bytes": 20679,
+      "sha256": "5c481ee4df760a453ab1453065d083ec343407ad2f8936cb7fafeabc9ab99440",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "bytes": 10881,
+      "sha256": "882bbf2500add5deec9f90e0e46630b55a8c0a3f8e5ad72e8bc7bd68d4e2269e",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "bytes": 9861,
+      "sha256": "720e5546858fc02091052e759919fb0d9b5b1dfec97bd83792621eb7e86e7eb7",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCauchyAcquisitionObstruction.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeCauchyAcquisitionObstruction.lean",
+      "bytes": 12790,
+      "sha256": "19603c0dbe16cf6bcc1af0251426214959a1b453b50bd9e37bdfce8fc2c387b3",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    }
+  ]
+}

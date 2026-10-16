@@ -1,0 +1,163 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/README.md",
+      "bytes": 2587,
+      "sha256": "1b0037a7b841ee4f1a974f3b667865b8e8dcbffbcf172a9ed90bc56cd7cba7cc",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/low-digit-plan.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reports/low-digit-plan.md",
+      "bytes": 10259,
+      "sha256": "fba419dd09a21bf10fdf3a7015d02136d36a02a006a2779376e142484a9aabde",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/carrier-certificate.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reports/carrier-certificate.md",
+      "bytes": 4971,
+      "sha256": "db46725ab3d0f4cbe286f971ab0d3d1381407bd1b812ccbc9831f5142802375a",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reports/small-order-multiple.md",
+      "bytes": 5614,
+      "sha256": "f02155f64b57db5d0ad18026b8cfa3ffc675f6f117be3d53ee199e8b3cdd4f4c",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/sources/journal-entry.md",
+      "bytes": 2833,
+      "sha256": "541f8f38fa4d3a5f44b3041e4810c2c6e1161d8b6f759c6a595c6a10a09de80b",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/sources/pre-entry-baseline.json",
+      "bytes": 4046,
+      "sha256": "5501f44e0b566eba4db3fa67798b6946c6b8f465d1dc7a31990dc1345b7fabf0",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/low-digit-plan-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/sources/low-digit-plan-source-pins.json",
+      "bytes": 889,
+      "sha256": "f53379cd58a3893413e28a41e8fadd055268f4fcb3881fc4d1d17613b676dd8d",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/sources/factorial-source-pins.json",
+      "bytes": 629,
+      "sha256": "391f2513ed2598523a4f291fa4b06b57f5d00844fe2ba2f6b920f01f9638e7cb",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reviews/proof-review-a.md",
+      "bytes": 3846,
+      "sha256": "a3bdd9b94c5382e01f8514da089a831d14246669a560f7c9e8d2f93931b55212",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reviews/proof-review-b.md",
+      "bytes": 5064,
+      "sha256": "f58a128c7a2afd107aad206453e66ef93644d42491df8420a51abe1cc1681d2f",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/review-c.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reviews/bridge-review-c.md",
+      "bytes": 6022,
+      "sha256": "531a5becbd468cf286d4ecf084c74f217ebcdf92b76b48994a7ff169830625d9",
+      "gzip": false,
+      "role": "New arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/reports/native-centers-and-origin-span.md",
+      "bytes": 15784,
+      "sha256": "2e9eef8c4ba33e53fc5ae822483a2d6d524dfb8d46ff02eeb73209f2a88aea1d",
+      "gzip": false,
+      "role": "Unchanged native source or inherited classical proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "gzip": false,
+      "role": "Unchanged native source or inherited classical proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "bytes": 19002,
+      "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+      "gzip": false,
+      "role": "Unchanged native source or inherited classical proof"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "Unchanged native source or inherited classical proof"
+    }
+  ],
+  "external_primary_references": [
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/BoGaSc04.txt",
+      "url": "https://mathexp.eu/bostan/publications/BoGaSc04.pdf",
+      "artifact": "BoGaSc04.txt",
+      "bytes": 57529,
+      "sha256": "7855f8d58fba85b9a8f897033ad7d7aec738a571137ceb20f2ef70099a132439",
+      "payload_included": false,
+      "role": "External primary PDF or locally extracted text fingerprint; linked, not reproduced"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/NSSV24.txt",
+      "url": "https://cs.uwaterloo.ca/~eschost/publications/NSSV24.pdf",
+      "artifact": "NSSV24.txt",
+      "bytes": 441396,
+      "sha256": "16501895c6a19787efb52dfb0b53a75eb9834785041b9c93fd882a8f5c7532a8",
+      "payload_included": false,
+      "role": "External primary PDF or locally extracted text fingerprint; linked, not reproduced"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/NSSV24.pdf",
+      "url": "https://cs.uwaterloo.ca/~eschost/publications/NSSV24.pdf",
+      "artifact": "NSSV24.pdf",
+      "bytes": 1104549,
+      "sha256": "d2d08a45c2b75247ebeb0841610ab6d7569122c81cb20c06214cb21f3a6d03a1",
+      "payload_included": false,
+      "role": "External primary PDF or locally extracted text fingerprint; linked, not reproduced"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-multiple-20261016/BoGaSc04.pdf",
+      "url": "https://mathexp.eu/bostan/publications/BoGaSc04.pdf",
+      "artifact": "BoGaSc04.pdf",
+      "bytes": 292139,
+      "sha256": "fd5b809b1a2ed0d3c3175fb9a43616cdc582e31df1908c9e798d2f6887b4bd15",
+      "payload_included": false,
+      "role": "External primary PDF or locally extracted text fingerprint; linked, not reproduced"
+    }
+  ]
+}

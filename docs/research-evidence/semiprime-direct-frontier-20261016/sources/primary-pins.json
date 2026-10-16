@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/2601.17422v2",
+      "inspected_on": "2026-10-16",
+      "bytes": 619101,
+      "sha256": "65c955c35d82b77ef013a03537f782a3b515e1625ce19a1aa8c96557c8cd7095",
+      "copy_included": false,
+      "scope": "Statements and relevant input/algorithm sections inspected; no full proof certification"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2602.08027v2",
+      "inspected_on": "2026-10-16",
+      "bytes": 637454,
+      "sha256": "fb6f26a9a11884e02b9c3ff92bf5b4231cd5844255745de9a17f4b00425b0d16",
+      "copy_included": false,
+      "scope": "Statements and relevant input/algorithm sections inspected; no full proof certification"
+    },
+    {
+      "url": "https://eccc.weizmann.ac.il/report/2026/211/download/",
+      "inspected_on": "2026-10-16",
+      "bytes": 1309585,
+      "sha256": "c57d1e54cd67d2f7430d220f5454884c15800e04487081edd122eb3b0057621c",
+      "copy_included": false,
+      "scope": "Statements and relevant input/algorithm sections inspected; no full proof certification"
+    }
+  ]
+}

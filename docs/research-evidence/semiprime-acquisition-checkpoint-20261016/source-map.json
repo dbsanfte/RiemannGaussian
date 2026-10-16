@@ -1,0 +1,383 @@
+{
+  "recorded_date": "2026-10-16",
+  "path_base": "repository root",
+  "pin_semantics": "Original files and historical statuses are preserved byte for byte. Current goal is paused; old active statuses and journal hashes are historical.",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-first-jet-acquisition-20261016/fresh/qrh-wide-annihilator-extension.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/qrh-wide-annihilator-extension.md",
+      "bytes": 9560,
+      "sha256": "4396c2559d62e260003aae498da68b4f85423f3abb35e1946e67a66107fa4c4d",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-first-jet-acquisition-20261016/fresh/qrh-wide-annihilator-review-independent-616.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reviews/qrh-wide-annihilator-independent-616.md",
+      "bytes": 6832,
+      "sha256": "376ba6ed9c00820c12032a3ccb34158d3181cbf78cc2548555a551f475d46fe3",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-first-jet-acquisition-20261016/fresh/primary-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/qrh-primary-source-pins.json",
+      "bytes": 1412,
+      "sha256": "19ddb322992af9ade0c7fb9e85d49f4383b927b16f9e5a6e9140d6c016f98e10",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-first-jet-acquisition-20261016/fresh/two-point-unit-correlation.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/two-point-unit-correlation.md",
+      "bytes": 2267,
+      "sha256": "5adddd0acc5fb6046a8158acadf272ccc67cad21859ac13dd182b5f60f5b7606",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-first-jet-acquisition-20261016/literature/report.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/first-jet-literature.json",
+      "bytes": 11828,
+      "sha256": "3b70f94420236a9d8fbd558a59a1c1220ce0772b7b16b61c827b6668b01d4f70",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-annihilator-cover-20261016/cover/group-gap-criterion.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/group-gap-criterion.md",
+      "bytes": 9731,
+      "sha256": "6fb196a7d87a81a53e1169810044fa5a946f85f683f79b25f2498e648929a5c9",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-annihilator-cover-20261016/cover/paid-cover-transfer.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/paid-cover-transfer.md",
+      "bytes": 6177,
+      "sha256": "782c39a8e1eaa5a32b03cfcf2f6f61561aa3595d20c2dbd9cc7deb0ee856f644",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-annihilator-cover-20261016/cover/paid-cover-independent-review-617.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reviews/paid-cover-independent-617.md",
+      "bytes": 5336,
+      "sha256": "6feaf5ac4a515adfaf8af5189bef62a16569ef601964801b554b3426d9e018d3",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-annihilator-cover-20261016/cover/group-gap-criterion-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/group-gap-criterion-pins.json",
+      "bytes": 672,
+      "sha256": "5958a112cbf3afd2335ed5036a5f544302f08aa3a81d52ba3b92270c4e7eaa8f",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-annihilator-cover-20261016/factorial/status.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/factorial-status.md",
+      "bytes": 1531,
+      "sha256": "6f3556d3e7d2f7f6e0c831e1a1e62188452e7a26034ecd1f377962d3a625f513",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-aux-acquisition-20261016/literature/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/small-aux-literature.md",
+      "bytes": 11045,
+      "sha256": "ac52bd7c80d733bd162b80d395464d46bcb3f5ff69d6d65fd527bc4c28a3543f",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-aux-acquisition-20261016/literature/check_reductions.py",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/diagnostics/check_reductions.py",
+      "bytes": 2158,
+      "sha256": "e6128935e26d51b0b556688ae97a3aae1e39bf6bcfc796963336814cfac47e06",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-small-aux-acquisition-20261016/root-handoff.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/handoffs/small-aux-root.json",
+      "bytes": 3954,
+      "sha256": "1d4b789bae24d1f926321a796e404d98e95677073d6e16f8682f86e9d351c5e2",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-constructive-round-20261016/cover621/explicit-lehman-product.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/explicit-lehman-product-621.md",
+      "bytes": 3680,
+      "sha256": "04d8c47b010d5096c7cc9cee859ce2fda66578c5df6933f2af15b5b8cd346a2c",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-constructive-round-20261016/rows622/stationary-carry-status.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/additive-critical-transform-622.txt",
+      "bytes": 3252,
+      "sha256": "a9c7ce11d60aa97c872cac0d007f4b594cf49bdd2b65774e97ea31b33da110fd",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-constructive-round-20261016/trace623/handoff.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/handoffs/trace-623.txt",
+      "bytes": 4260,
+      "sha256": "a724de6d1aedd7376310b0b5e1d0fd88fd47ba3a9b1b84ef7118fd12923dbb44",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-constructive-round-20261016/root-handoff.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/handoffs/constructive-root-621-623.txt",
+      "bytes": 2296,
+      "sha256": "5e7fd4dcaf40c00558af7b5e5b15d298d95fe928fa2d377c97c72986f2731cc2",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-recurrence-20261016/torsion625/research-report.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/torsion-625.txt",
+      "bytes": 7973,
+      "sha256": "ea3e0f6b8ebeaafad122987393c4bdf115acdc9ecee94d631c8771c7bf54ffff",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-recurrence-20261016/torsion625/sources.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/torsion-625.json",
+      "bytes": 931,
+      "sha256": "2226f0599c7b26cbd7681efd1d49f305d3124d826685d76f7164cfe3534961ea",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-recurrence-20261016/torsion625/check_x0_gap.py",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/diagnostics/check_x0_gap.py",
+      "bytes": 1121,
+      "sha256": "3eec6041409e5d2f33cd71cc42173ca5ad05ba1818c037d5aa4277f334396307",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-recurrence-20261016/trace626/handoff.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/handoffs/trace-626.txt",
+      "bytes": 3648,
+      "sha256": "009b4bb3f77d64060abdce95e62413ca6b4d306b5d3a918118e6a8e15c1e22b9",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-recurrence-20261016/root-handoff.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/handoffs/norm-root-624-626.txt",
+      "bytes": 2612,
+      "sha256": "7baf62875907cf225f9ddff6b398100806b6312d6798b4a00d668eabd6d3f143",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-order-cover-20261016/constructor627/secondary-order-constructor.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/secondary-order-constructor-627.md",
+      "bytes": 3065,
+      "sha256": "38de49ff5b087271a186c1bda851076331e45e31f236a72639ebdc040f347fa0",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-order-cover-20261016/multitarget628/shared-construction-status.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/shared-construction-628.txt",
+      "bytes": 5726,
+      "sha256": "86d798f0cc08910b546ea5d30829c7b7496f2abe32156dfa222117a6b76a1e69",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-order-cover-20261016/multitarget628/verification.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/diagnostics/shared-menu-verification-628.txt",
+      "bytes": 1522,
+      "sha256": "0d37a9e87fea79810045addb8d03c331335c3771e61918170370b90d263c8180",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-order-cover-20261016/multitarget628/verify_shared_menu.py",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/diagnostics/verify_shared_menu.py",
+      "bytes": 1362,
+      "sha256": "b7862347912363e303947dcb054eb89bbeec1f7b75a71a66d12f6448c25d47e7",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-order-cover-20261016/analytic629/handoff.txt",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/handoffs/analytic-629.txt",
+      "bytes": 5637,
+      "sha256": "8e0f7939e385c5f9e242f4db5705d2e60a0bf54e4e952c2dae7ee857dcd83b80",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-order-cover-20261016/analytic629/divisor_blocks.py",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/diagnostics/divisor_blocks.py",
+      "bytes": 2275,
+      "sha256": "ea767e2cce36f84423086b4819339dcfd1652efddcccb2ba83e08ea4c839ed71",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-order-cover-20261016/constructive-frontier-index.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/constructive-frontier-index.json",
+      "bytes": 5703,
+      "sha256": "9885d687eb030009277d8de7079d5d172a89a1632c277cb6d0aadc82b393bc3a",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-coindex-construction-20261016/constructor627/verdict.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/coindex-constructor-verdict.md",
+      "bytes": 3081,
+      "sha256": "b7e5929bd1eb415914575cffca654d754d7bec262eecb51b609fed9a6f4dbd12",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-coindex-construction-20261016/root-status.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/handoffs/coindex-real-root-through-632.json",
+      "bytes": 1277,
+      "sha256": "b2e5199ea6fccba226a0ae2d7f8ac22854e0cb129c6eb2ad5db3d01b1d5b383d",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-trace-construction-20261016/root-status.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/handoffs/trace-modular-root-631.json",
+      "bytes": 2057,
+      "sha256": "44896708b98262841ebb0af8906ba6df475457acd26123eba73ee2903a460da5",
+      "gzip": false,
+      "role": "Preserved original research report, review, diagnostic, source pins or root handoff; not rerun or rewritten for publication"
+    },
+    {
+      "original_path": "/tmp/semiprime-direct-frontier-20261016/norm/qholonomic.txt",
+      "resolved_path": "docs/research-evidence/semiprime-long-query-20261015/primary/qproducts-by.txt.gz",
+      "bytes": 121716,
+      "sha256": "ae779c48d317414bc0223e381d6bc40296c5c9630903b4959e715e6b14d63c83",
+      "gzip": true,
+      "role": "Supplemental portable alias for unchanged historical prose; original packet left intact"
+    },
+    {
+      "original_path": "/tmp/semiprime-query-followup-20261015/restored-endpoint/tmp/semiprime-next-covered-acquisition-20261008/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "Supplemental portable alias for unchanged historical prose; original packet left intact"
+    },
+    {
+      "original_path": "/tmp/semiprime-query-followup-20261015/restored-endpoint/tmp/semiprime-long-norm-frontier-20261008/charged-skipped-ray-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/charged-skipped-ray-obstruction.md",
+      "bytes": 11430,
+      "sha256": "ca92ab638d96409cc0dadb822ce3fcf31ac77d637b37020f81a19e1462568fae",
+      "gzip": false,
+      "role": "Supplemental portable alias for unchanged historical prose; original packet left intact"
+    },
+    {
+      "original_path": "/tmp/semiprime-mask-acquisition-20261007/cyclic-norm-obstruction.md",
+      "resolved_path": "docs/research-evidence/research-checkpoint-20261012/objects/26/264fca0018ff33277a172ea0e93f6273311a0178a038b127bca8978f8d315b4f.gz",
+      "bytes": 11565,
+      "sha256": "264fca0018ff33277a172ea0e93f6273311a0178a038b127bca8978f8d315b4f",
+      "gzip": true,
+      "role": "Supplemental portable alias for unchanged historical prose; original packet left intact"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/check-FermatQuotientCatalog.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/check-FermatQuotientCatalog.log",
+      "bytes": 1104,
+      "sha256": "4531173c9753b3797da103ac67387b04680e2f982d038a096633cafa67fa5b92",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/check-SparseResidueGauss.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/check-SparseResidueGauss.log",
+      "bytes": 1095,
+      "sha256": "3f39c9b6de61101e50a1df29c8650af47ab0401364f4edde258c19aaf35df8a6",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/check-SparseResidueGaussRadius.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/check-SparseResidueGaussRadius.log",
+      "bytes": 1110,
+      "sha256": "d44b28d7f8d0fd135b7867cd758a338e8ca43a7a7c8ef42af2983aad50bf81b1",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/direct-FermatQuotientCatalog.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/direct-FermatQuotientCatalog.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/direct-SparseResidueGauss.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/direct-SparseResidueGauss.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/direct-SparseResidueGaussRadius.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/direct-SparseResidueGaussRadius.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/fermat-python-self-test.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/fermat-python-self-test.log",
+      "bytes": 322,
+      "sha256": "d8321b32200e4a28808eda9670bd5b2bc76ddc6ddda51328a7857234a300c36a",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/gauss-python-self-test.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/gauss-python-self-test.log",
+      "bytes": 34,
+      "sha256": "b3b0aaa30e8a166b2893022bca3a7a4845d56603c2eb054749ce64d43b0babf5",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/leaf-build.log",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/leaf-build.log",
+      "bytes": 268,
+      "sha256": "4852c6d3b9e888ac3c9a8c5e3f8903a72ce4093d38f57d0d1aca82a0345c9607",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/source-and-pin-recheck.json",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/source-and-pin-recheck.json",
+      "bytes": 20965,
+      "sha256": "5a40835f0017b2231e6d1ea5cf2690699b17012a86a0d25848b5429876f4496a",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    },
+    {
+      "original_path": "/tmp/semiprime-publication-20261016/constructor627/validation.md",
+      "resolved_path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/validation/validation.md",
+      "bytes": 5572,
+      "sha256": "9fe42bada3b540c7dc786000103c7bdcf2e74bf6592dc27daaf302dba4d900b3",
+      "gzip": false,
+      "role": "Original completed publication validation and concise command log; no research resumed"
+    }
+  ]
+}

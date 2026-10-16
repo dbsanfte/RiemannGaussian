@@ -1,0 +1,17 @@
+# Independent final proof review A
+
+Verdict: PASS. No correction requested. This reviews the mathematical argument and exact source closure, without a build or formal proof certification.
+
+Reviewed final targets:
+- `report.md`: 13420 bytes; SHA256 `46fb300723e61dff975421a4bba537598a230b4800a217a7b1f4cb6daef4b7b9`.
+- `source-pins.json`: 1213 bytes; SHA256 `f7bb869cf6df864170146b2da4697514224e1c29edce13e7f74406f291e19026`.
+
+All five pinned prerequisite files match their stated bytes and SHA256. The native-center theorem bounds the ENTIRE labeled light catalog. Restricting it to the first currents t=1 cancels the tS term and supplies the raw delta congruence bound; this is not an invalid converse from integer energy to modular energy. Its simultaneous qualification is correctly limited to CURRENT candidates. All comparable moduli are used only as a counting overestimate.
+
+For prescribed metadata at (m,h), delta, light tags, all anchors and relation ordering are fixed. All-zero candidate relations force rational-affine exponent dependence inside each carrier, including repeated indices, constant groups and repeated target values. Weighted pair-sum Cauchy--Schwarz and Holder contradict the allowed carrier budget on the retained family. The first nonzero integer relation can therefore be selected once per plan. Every successful local realization annihilates that same representative, irrespective of advised seeds/ratios or their subgroup membership. Selecting one representative rather than unioning over all O(m) candidates removes the stated M factor without introducing full-input dependence.
+
+For LOCAL-P, each representative has polylogarithmically many possible large prime order divisors. Each order gives O(M^.969) P values, and the fixed product residue determines Q modulo m^r, leaving O(M^(3-r)+1) integer lifts. Summing O(M) comparable m and O(M^r) residues gives exactly soft B(M^4.969+M^(r+1.969)). The opposite field is a constant-factor union. For GLOBAL, two prime order divisors and the same product residue determine w modulo m^r after fixing v; its shorter range leaves at most one w. This gives soft B M^(r+1.969). Source unit conditions are sufficient; no prime distribution in progressions or global K_* modulus list is invoked. All listed r/library specializations are arithmetically correct and negligible relative to the original supply.
+
+Section 7 correctly fixes the RELATIVE origin vector by (m,h,plan), while the arbitrary full-input common origin is absorbed into carrier seeds. The explicit total bit budget removes at most C m/log²m labels at the chosen threshold, leaving at least m/2 light labels eventually. The trimmed witness is still fixed by metadata, its raw energy is bounded by the full light count, and every remaining origin and hence the single relation has polylog bit length. A full successful cover contains this witness; no collision coverage after trimming is asserted. The corollary does not charge acquisition of the common offset, and excludes succinct encodings with uncharged expanded list length.
+
+The report credits the old cyclic-norm exponent-catalog count and inherited energy/order results. The new observation is the representative selection and its strengthened local/residue-depth scope, not a new prime theorem or generic backend lower bound. It neither acquires a cover/query nor rules out full-input-dependent relative metadata, arbitrary circuits or scalar norm algorithms. No acquisition closure or new Lean claim is made.

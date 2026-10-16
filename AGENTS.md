@@ -18381,3 +18381,16 @@ remains distinct from the pending complete4.34 optional audit. Record the
 exact pushed SHA and distinguish pending remote CI from local success.
 No new independent RH arithmetic estimate or exclusion beyond the imported
 strict>7/8 baseline is claimed. The operator roadmap goal remains active.
+
+
+## Semiprime checkpoint publication authorized, 2026-10-16
+
+The user paused the semiprime sixth-rate research goal and explicitly
+requested committing and pushing the accumulated work. This supersedes
+local-only holds for this publication. Register the three conditional
+semiprime modules, preserve all historical evidence and hashes, and archive
+the latest scratch-only handoffs portably. Run the tracked hook and applicable
+ordinary publication/browser checks, then verify exact-SHA CI and Pages.
+Do not rerun the exhaustive optional numerical certificate. No universal
+soft-O(m) acquisition theorem or guaranteed sixth-rate Lean bit theorem is
+claimed. Keep the research goal paused after publication.

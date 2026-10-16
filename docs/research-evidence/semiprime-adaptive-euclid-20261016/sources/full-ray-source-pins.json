@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "path": "/tmp/semiprime-norm-system-20261016/hyperbolic/report.md",
+      "bytes": 14077,
+      "sha256": "242dbe88a63b516da5b659983f4dccf9c7b13cb805b5053cf7fc6e580cb62ca7"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "bytes": 19002,
+      "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowBudget.lean",
+      "bytes": 31630,
+      "sha256": "47da050cb8019ccb1b1595ce197b5ca1aa62a82c6e8845d5cbd9f5a27a32d540"
+    }
+  ]
+}

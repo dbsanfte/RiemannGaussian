@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "path": "primary/simpade2016.pdf",
+      "bytes": 656794,
+      "sha256": "0a0c4c85d3c70e475a87d2f10eeb044b2df20452d3a5c5a55dd57521efb781f6"
+    },
+    {
+      "path": "primary/simpade2016.txt",
+      "bytes": 75953,
+      "sha256": "db0d53a544038793677dfd1d2b9b874581b5ef93c2a4079b140f369761d0906f"
+    },
+    {
+      "path": "primary/spi2018.pdf",
+      "bytes": 589441,
+      "sha256": "fbd4046981d9fdbd9322460f83ddb9fe4dbdf2cabd00f53134f57893404bffe0"
+    },
+    {
+      "path": "primary/spi2018.txt",
+      "bytes": 153669,
+      "sha256": "13e939aa1a81fd739aab2eedf44493538cb0d6a528921fa3f2d9fb3871c4b46a"
+    },
+    {
+      "path": "report-v2.md",
+      "bytes": 9688,
+      "sha256": "b22dfebe61a0117c66ed43b79c87b8671306363795e1e1f07350032ec958c181"
+    },
+    {
+      "path": "source-pins-v2.json",
+      "bytes": 1231,
+      "sha256": "d4b52cdb8b8a97ac7d97c76548c734bf80e8c4d5cf129bf14f2a0654c06c09fa"
+    }
+  ],
+  "classification": "Transfer of frozen nonhit-moment obstruction plus generic standard-Pade precision observation; no acquisition progress",
+  "supersedes_report_sha256": "a92a9aa0a604237e233e98ec0b84b086e84c9237d7f67c848de33ff6523f3cfc"
+}

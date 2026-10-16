@@ -1,0 +1,448 @@
+{
+  "files": [
+    {
+      "path": "RiemannGaussian/SemiprimeFermatQuotientCatalog.lean",
+      "bytes": 10921,
+      "sha256": "283c92aad93ab1129b8cf271a17443ba7ce02f67112bafd94adbeb9cdecf7fa2"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+      "bytes": 2782,
+      "sha256": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+      "bytes": 8065,
+      "sha256": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d"
+    },
+    {
+      "path": "scripts/CheckSemiprimeFermatQuotientCatalog.lean",
+      "bytes": 1207,
+      "sha256": "da351d0fe8d26b229e14856391a14f3da61ec8697b4b324677b3a2ad017a1297"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+      "bytes": 1220,
+      "sha256": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114"
+    },
+    {
+      "path": "scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+      "bytes": 1237,
+      "sha256": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb"
+    },
+    {
+      "path": "scripts/probe_semiprime_fermat_quotient_catalog.py",
+      "bytes": 12975,
+      "sha256": "1fdf9ecf97193b33cd32a90650ff7928a10785e2e8916eec6051ebc6a822c98e"
+    },
+    {
+      "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+      "bytes": 28139,
+      "sha256": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3"
+    },
+    {
+      "path": "docs/semiprime-fermat-quotient-catalog-audit.json",
+      "bytes": 22200,
+      "sha256": "52778b1ba3f144ad362a5601c9be6ba8a493a7b0694adc65290d0fca0ecaabd2"
+    },
+    {
+      "path": "docs/semiprime-sparse-residue-gauss-audit.json",
+      "bytes": 33419,
+      "sha256": "92c7ac8748ee2ad3af3e98549b366bd0be00fa29ed8dd9bce95013a37586cc4e"
+    },
+    {
+      "path": "docs/semiprime-sparse-residue-gauss-radius-audit.json",
+      "bytes": 10879,
+      "sha256": "fe42f8f3b83f09ff0d44b6ab21d39f17584b8fe6ec160cb8d1b07f80802ba94c"
+    }
+  ],
+  "syntax_ast": {
+    "scripts/probe_semiprime_fermat_quotient_catalog.py": true,
+    "scripts/probe_semiprime_sparse_residue_gauss.py": true
+  },
+  "audit_pin_recheck": [
+    {
+      "audit": "docs/semiprime-fermat-quotient-catalog-audit.json",
+      "pins": [
+        {
+          "path": "scripts/probe_semiprime_fermat_quotient_catalog.py",
+          "expected": "1fdf9ecf97193b33cd32a90650ff7928a10785e2e8916eec6051ebc6a822c98e",
+          "actual": "1fdf9ecf97193b33cd32a90650ff7928a10785e2e8916eec6051ebc6a822c98e",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeFermatQuotientCatalog.lean",
+          "expected": "283c92aad93ab1129b8cf271a17443ba7ce02f67112bafd94adbeb9cdecf7fa2",
+          "actual": "283c92aad93ab1129b8cf271a17443ba7ce02f67112bafd94adbeb9cdecf7fa2",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/CheckSemiprimeFermatQuotientCatalog.lean",
+          "expected": "da351d0fe8d26b229e14856391a14f3da61ec8697b4b324677b3a2ad017a1297",
+          "actual": "da351d0fe8d26b229e14856391a14f3da61ec8697b4b324677b3a2ad017a1297",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeStrassenPrefix.lean",
+          "expected": "66f3a9b128761101e16b3943828dbbe60499a2c8b97f5d878a2a7c794b59e489",
+          "actual": "66f3a9b128761101e16b3943828dbbe60499a2c8b97f5d878a2a7c794b59e489",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/semiprime-hensel-spectrum-obstruction-audit.json",
+          "expected": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec",
+          "actual": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+          "expected": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+          "actual": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_long_period.py",
+          "expected": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+          "actual": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_quadratic_extraction.py",
+          "expected": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+          "actual": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_single_extraction.py",
+          "expected": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+          "actual": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_weighted_batch.py",
+          "expected": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+          "actual": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-fermat-quotient-catalog-20261016/constructive-catalog.md",
+          "expected": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2",
+          "actual": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-fermat-quotient-catalog-20261016/implementation-review-final.md",
+          "expected": "8c1287d7bef56704e73177f1e68c07dbbb90b614111518fac13d363b04cb7863",
+          "actual": "8c1287d7bef56704e73177f1e68c07dbbb90b614111518fac13d363b04cb7863",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeFermatQuotientCatalog.lean",
+          "expected": "283c92aad93ab1129b8cf271a17443ba7ce02f67112bafd94adbeb9cdecf7fa2",
+          "actual": "283c92aad93ab1129b8cf271a17443ba7ce02f67112bafd94adbeb9cdecf7fa2",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/CheckSemiprimeFermatQuotientCatalog.lean",
+          "expected": "da351d0fe8d26b229e14856391a14f3da61ec8697b4b324677b3a2ad017a1297",
+          "actual": "da351d0fe8d26b229e14856391a14f3da61ec8697b4b324677b3a2ad017a1297",
+          "status": "MATCH"
+        }
+      ],
+      "counts": {
+        "MATCH": 14,
+        "MISMATCH": 0,
+        "MISSING": 0
+      }
+    },
+    {
+      "audit": "docs/semiprime-sparse-residue-gauss-audit.json",
+      "pins": [
+        {
+          "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+          "expected": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3",
+          "actual": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+          "expected": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "actual": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+          "expected": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "actual": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+          "expected": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+          "actual": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+          "expected": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+          "actual": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_long_period.py",
+          "expected": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+          "actual": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_quadratic_extraction.py",
+          "expected": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+          "actual": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_single_extraction.py",
+          "expected": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+          "actual": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_weighted_batch.py",
+          "expected": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+          "actual": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-fermat-quotient-catalog-20261016/constructive-catalog.md",
+          "expected": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2",
+          "actual": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-direct-frontier-20261016/lifted/previous-gaofenghupan.txt",
+          "expected": "85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0",
+          "actual": "85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+          "expected": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109",
+          "actual": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+          "expected": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "actual": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+          "expected": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "actual": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/research-evidence/research-checkpoint-20261012/objects/85/85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0.gz",
+          "expected": "50c9e30597c112271debced24e34dd16b6f1bba039a0a545291a8213fee67216",
+          "actual": "50c9e30597c112271debced24e34dd16b6f1bba039a0a545291a8213fee67216",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/semiprime-fermat-quotient-catalog-audit.json",
+          "expected": "52778b1ba3f144ad362a5601c9be6ba8a493a7b0694adc65290d0fca0ecaabd2",
+          "actual": "52778b1ba3f144ad362a5601c9be6ba8a493a7b0694adc65290d0fca0ecaabd2",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-sparse-residue-gauss-20261016/derivation.md",
+          "expected": "4602ecfde03947a60badf2818f411084bb64e8a2cdb9d8285b8179c61d32c8e7",
+          "actual": "4602ecfde03947a60badf2818f411084bb64e8a2cdb9d8285b8179c61d32c8e7",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-sparse-residue-gauss-20261016/final-proof-review-a.md",
+          "expected": "e15040ac387b37bbb9289731e0675cb126451709436a4ad8b2f7a4238ba5284a",
+          "actual": "e15040ac387b37bbb9289731e0675cb126451709436a4ad8b2f7a4238ba5284a",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-sparse-residue-gauss-20261016/implementation-review.md",
+          "expected": "2d4b0842c6b7fcc7ddcb8fdefb30091eb418b485f8842aa9f5f43e84bfd8ad7f",
+          "actual": "2d4b0842c6b7fcc7ddcb8fdefb30091eb418b485f8842aa9f5f43e84bfd8ad7f",
+          "status": "MATCH"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+          "expected": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "actual": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "status": "MATCH"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/scripts/CheckSemiprimeSparseResidueGauss.lean",
+          "expected": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "actual": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "status": "MATCH"
+        }
+      ],
+      "counts": {
+        "MATCH": 21,
+        "MISMATCH": 0,
+        "MISSING": 0
+      }
+    },
+    {
+      "audit": "docs/semiprime-sparse-residue-gauss-radius-audit.json",
+      "pins": [
+        {
+          "path": "RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+          "expected": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d",
+          "actual": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+          "expected": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb",
+          "actual": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/semiprime-sparse-residue-gauss-audit.json",
+          "expected": "92c7ac8748ee2ad3af3e98549b366bd0be00fa29ed8dd9bce95013a37586cc4e",
+          "actual": "92c7ac8748ee2ad3af3e98549b366bd0be00fa29ed8dd9bce95013a37586cc4e",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+          "expected": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3",
+          "actual": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+          "expected": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "actual": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+          "expected": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "actual": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+          "expected": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+          "actual": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+          "expected": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+          "actual": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_long_period.py",
+          "expected": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+          "actual": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_quadratic_extraction.py",
+          "expected": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+          "actual": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_single_extraction.py",
+          "expected": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+          "actual": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/probe_semiprime_weighted_batch.py",
+          "expected": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+          "actual": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-fermat-quotient-catalog-20261016/constructive-catalog.md",
+          "expected": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2",
+          "actual": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-direct-frontier-20261016/lifted/previous-gaofenghupan.txt",
+          "expected": "85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0",
+          "actual": "85bf6dff921dec5d8cdd49ec5ff314c697312dda5b2877891186cc3e996e62e0",
+          "status": "MATCH"
+        },
+        {
+          "path": "docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+          "expected": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109",
+          "actual": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+          "expected": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "actual": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/CheckSemiprimeSparseResidueGauss.lean",
+          "expected": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "actual": "47b5c03f90f6055a59014a7bd79a9ba7a9b49ddb89e946afd54460c4a230c114",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+          "expected": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d",
+          "actual": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d",
+          "status": "MATCH"
+        },
+        {
+          "path": "scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+          "expected": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb",
+          "actual": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb",
+          "status": "MATCH"
+        },
+        {
+          "path": "RiemannGaussian/SemiprimeSparseResidueGauss.lean",
+          "expected": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "actual": "6b0a9819e5cb918dbcbc80a35f066b36d264aa4d05deede64247c276c4d11227",
+          "status": "MATCH"
+        },
+        {
+          "path": "/tmp/semiprime-weighted-boundary-acquisition-20261016/moving/radius-review.json",
+          "expected": "0999da99d789a7b8c0684a1e72e473555481231fe471783e13024c2cc63991bf",
+          "actual": "0999da99d789a7b8c0684a1e72e473555481231fe471783e13024c2cc63991bf",
+          "status": "MATCH"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSparseResidueGaussRadius.lean",
+          "expected": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d",
+          "actual": "bbc83d39d7a772d57adf8615a4210f52864083a93328cadd890b226c1752c61d",
+          "status": "MATCH"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/scripts/CheckSemiprimeSparseResidueGaussRadius.lean",
+          "expected": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb",
+          "actual": "e50d37306a37d47c84e5e4021afdb1604089183495e80378ea58978247dd3acb",
+          "status": "MATCH"
+        }
+      ],
+      "counts": {
+        "MATCH": 23,
+        "MISMATCH": 0,
+        "MISSING": 0
+      }
+    }
+  ],
+  "taxonomy": {
+    "SemiprimeFermatQuotientCatalog": "semiprime",
+    "SemiprimeSparseResidueGauss": "semiprime",
+    "SemiprimeSparseResidueGaussRadius": "semiprime"
+  }
+}

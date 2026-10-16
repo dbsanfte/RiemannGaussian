@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "path": "diagonal-followup.md",
+      "bytes": 9041,
+      "sha256": "73685f5580b92375b7d3a9f09265c245125ebee6edf048243a4558b6d5f4e3a2"
+    },
+    {
+      "path": "recurrence-width.pdf",
+      "bytes": 748851,
+      "sha256": "3b93d08ac7d900af790fb2d835cec1ee1e56583aa43b96c1e28702a3627a860d"
+    },
+    {
+      "path": "recurrence-width.txt",
+      "bytes": 286936,
+      "sha256": "e1d4b97233956284ec433118b0bd40338775b8acfde4b0b955c7d9dc98144845"
+    },
+    {
+      "path": "determinant-calculus.pdf",
+      "bytes": 565748,
+      "sha256": "ca5e7d38360b4ba477db2f214f226660d59d9b1e5ad02da0e0c34a6d15733ae4"
+    },
+    {
+      "path": "determinant-calculus.txt",
+      "bytes": 260203,
+      "sha256": "34507f53d52fb3d7b258e6d164dd493f79602f0ed9a5933e7283815a424d09f4"
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/fast-mixed-matrix-interface.md",
+      "bytes": 5661,
+      "sha256": "4959b0f33989570507b15eb82e8b93c2020449032ad1612b4d4e92b74f1d5767"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    }
+  ]
+}

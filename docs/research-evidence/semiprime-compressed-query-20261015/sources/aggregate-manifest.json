@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "path": "direct-images-2026.pdf",
+      "bytes": 642733,
+      "sha256": "925b07d1def066ac5a6c0ab06b5ee788a05d456a47fc920957b0ec7aa0722315"
+    },
+    {
+      "path": "direct-images-2026.txt",
+      "bytes": 131338,
+      "sha256": "5566115b5ebecf0166bd84354f0d0ad6c1233336ce593f93dbbf9265780cb02f"
+    },
+    {
+      "path": "report.md",
+      "bytes": 8718,
+      "sha256": "f705f561af0657bf4c7a58e48883a65183a67524caf34bc1cd81c83517af5f69"
+    },
+    {
+      "path": "sparse-resultants-slp-2018.pdf",
+      "bytes": 407207,
+      "sha256": "4da370b1fe3b3e07809431f6bfe2553c8e73e4b42908d896d4dceaff27aabcb4"
+    },
+    {
+      "path": "sparse-resultants-slp-2018.txt",
+      "bytes": 59305,
+      "sha256": "38d1594e41feb96f0bb029ece71fbb10e80341ec6a431ab622b6fa3530a7c101"
+    }
+  ],
+  "inherited_interface_pins": [
+    {
+      "path": "/tmp/semiprime-input-dependent-20261015/implicit/transform-interface.md",
+      "bytes": 8901,
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae"
+    },
+    {
+      "path": "/tmp/semiprime-input-dependent-20261015/implicit/positive-adjoint-interface.md",
+      "bytes": 6464,
+      "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7"
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+      "bytes": 1767,
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c"
+    },
+    {
+      "path": "/tmp/semiprime-long-query-20261015/norms/report.md",
+      "bytes": 13674,
+      "sha256": "fc473d52c916ba1741e09a6c2be4879365abb76123d9340e0a988c54158cb8dc"
+    }
+  ],
+  "primary_urls": {
+    "direct-images-2026": "https://arxiv.org/pdf/2602.14657",
+    "sparse-resultants-slp-2018": "https://ri.conicet.gov.ar/bitstream/handle/11336/89011/CONICET_Digital_Nro.9f5a9366-0db2-455c-8733-7fb11571421e_A.pdf?sequence=2"
+  }
+}

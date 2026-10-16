@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/research-checkpoint-20261012/objects/26/264fca0018ff33277a172ea0e93f6273311a0178a038b127bca8978f8d315b4f.gz",
+      "bytes": 5168,
+      "sha256": "a01e83bbdf892639bfb3518ba11a75e030ead2494489dfc73202ed0f482829ac",
+      "gzip": true,
+      "uncompressed_bytes": 11565,
+      "uncompressed_sha256": "264fca0018ff33277a172ea0e93f6273311a0178a038b127bca8978f8d315b4f"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/research-checkpoint-20261012/objects/d8/d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591.gz",
+      "bytes": 5303,
+      "sha256": "e7dca2a5bb92bea0ebef416546649265b94c771f0a068c999012933b36537c27",
+      "gzip": true,
+      "uncompressed_bytes": 12559,
+      "uncompressed_sha256": "d82b01d0c246795c2483c9316ced7e307d593d09debcfd2cd54d24343ce7c591"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-bounded-offset-20261016/reports/general-q-recurrence.md",
+      "bytes": 5582,
+      "sha256": "36070d66b167ac8b15fb2e05402e4a3a2c43b32dd0fc081df06e85dfa15b552f"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-matrix-clock-obstruction-20261016/reports/mixed-index-clock-obstruction.md",
+      "bytes": 12194,
+      "sha256": "55da629133046fc1cf162e8f130ce141b8516213dac9b77de3e4871a52fa7073"
+    }
+  ]
+}

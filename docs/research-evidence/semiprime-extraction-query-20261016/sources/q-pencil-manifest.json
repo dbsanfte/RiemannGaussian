@@ -1,0 +1,24 @@
+{
+  "report": {
+    "path": "report.md",
+    "bytes": 6653,
+    "sha256": "ef999aa2cfbea33c29192035900542808532e906b70a95f55a8c7a30a3819433"
+  },
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/fast-mixed-matrix-interface.md",
+      "bytes": 5661,
+      "sha256": "4959b0f33989570507b15eb82e8b93c2020449032ad1612b4d4e92b74f1d5767"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "bytes": 6713,
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb"
+    }
+  ]
+}

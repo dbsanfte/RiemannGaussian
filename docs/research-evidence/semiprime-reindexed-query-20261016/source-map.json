@@ -1,0 +1,213 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/README.md",
+      "bytes": 6328,
+      "sha256": "4f5e44041591c8455f55b8bcc0a81ba7fa837075bcdd46123e15804e62bcd41f",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/sources/journal-entry.md",
+      "bytes": 4661,
+      "sha256": "e5c32217d8549b13ceb01b800543f712172ffc35c010a5c6404c7a834aca0b15",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/sources/pre-entry-baseline.json",
+      "bytes": 2717,
+      "sha256": "b307f8c28ff6e720e6a5e3f478f07b90e5b38971fe715b36c553cc9cb115b829",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/rows/raw-energy-rowwise-carriers.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reports/raw-energy-rowwise-carriers.md",
+      "bytes": 7891,
+      "sha256": "bdd42a257462ec85f91aed190f989fe227bed637fbb1e4c8b568657b6196c02b",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/norm/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reports/constant-carry-normalization.md",
+      "bytes": 5429,
+      "sha256": "51720a3c545040d9a833ad6f5778cbcba9e4719d33195426944b061f774aa70f",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/redesign/constant-leading-sidon.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reports/constant-leading-sidon.md",
+      "bytes": 6115,
+      "sha256": "35753a778eab8f913d619c9f5e4aa70c97f13afb9c4a9dedeed611d0195731bf",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/redesign/denominator-m-redesign.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reports/denominator-m-redesign.md",
+      "bytes": 6873,
+      "sha256": "2193b7985de153dd440276c431c9998ec53473b95929de7f8f902631ae3c9a24",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/rows/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/sources/raw-energy-source-pins.json",
+      "bytes": 1454,
+      "sha256": "ddb696c9b84d6f518331a9314a52a46e911a97e59c54b463d09bc768e69d98dd",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/norm/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/sources/normalization-manifest.json",
+      "bytes": 164,
+      "sha256": "6efc245d7d4b8a8dfc7f37afcecd27e0bf60b66e73ffd5caf136fc037e30baf6",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/norm/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/sources/normalization-source-pins.json",
+      "bytes": 817,
+      "sha256": "c6210bd13a7f849a613156e1e4011fac5f2d6db91fe17da8414a9550e867b991",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/redesign/sidon-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/sources/sidon-source-pins.json",
+      "bytes": 1184,
+      "sha256": "7e2858e1548667148a9d34dfc9166e6f25b23747c456ce65ce373062329f1961",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/redesign/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/sources/denominator-m-source-pins.json",
+      "bytes": 1173,
+      "sha256": "a919d177aaabf1067fa0e0e35fac316e81012d143c98dffb0f56409a4b83e90a",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/reviews/raw-energy-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reviews/raw-energy-review.md",
+      "bytes": 4019,
+      "sha256": "37827d4b8be3b62b7b244e08ad217a4b46dc6db3b75474c16a0a509afe2ba239",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/reviews/normalization-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reviews/normalization-review.md",
+      "bytes": 3005,
+      "sha256": "bd71611175d00718567d38813f850fa3bdb47ba6ca39c02f52e6111bd082d216",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/reviews/redesign-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reviews/redesign-review-a.md",
+      "bytes": 6143,
+      "sha256": "46eef6f119f0cec67f50ef84e6d9201d988d5effe5077efcf085e16a5747bd7c",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/reviews/redesign-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reviews/redesign-review-b.md",
+      "bytes": 4768,
+      "sha256": "de1ab1d1f8c20ec13610244f5aa21838cde59a048084c4996b04b43e69f953b5",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-reindexed-query-20261016/reviews/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/reviews/integration-review.md",
+      "bytes": 4674,
+      "sha256": "05791dab2d3e9d07e5de9f97378428c3bd6e9dc149adb9e611397c17e5383180",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "bytes": 9861,
+      "sha256": "720e5546858fc02091052e759919fb0d9b5b1dfec97bd83792621eb7e86e7eb7",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "bytes": 10881,
+      "sha256": "882bbf2500add5deec9f90e0e46630b55a8c0a3f8e5ad72e8bc7bd68d4e2269e",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "bytes": 20679,
+      "sha256": "5c481ee4df760a453ab1453065d083ec343407ad2f8936cb7fafeabc9ab99440",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "bytes": 29680,
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCarries.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeDenseRowCarries.lean",
+      "bytes": 23960,
+      "sha256": "db087a256343323e857186154e74506380d9a8f49dc9f76ee0f498897a362f2e",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-long-query-20261015/baselines/q-factorial-upper-bound.md",
+      "resolved_path": "docs/research-evidence/semiprime-long-query-20261015/baselines/q-factorial-upper-bound.md",
+      "bytes": 5808,
+      "sha256": "21aa5ab9f214ff04921a06063f1ba322aa7e60639a5735afce2326e5ffd2db07",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    }
+  ]
+}

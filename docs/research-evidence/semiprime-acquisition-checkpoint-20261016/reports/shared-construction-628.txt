@@ -1,0 +1,122 @@
+Shared multi-target hyperbolic menus: constructive audit, 2026-10-16
+
+Result: no soft-O(m) long-query algorithm obtained. There is a genuine
+shared power constructor, and an exact obstruction to its most direct
+menu-merging use. Neither statement is a lower bound for arbitrary scalar
+factoring algorithms. Native soft-O(m^(3/2)) acquisition and the integrated
+soft-O(m^(6/5)) factoring baseline are unchanged by this work.
+
+Primary source inspected:
+P. Stanica, E. Mulder, M. Hittmeir,
+Multi-target hyperbolic sieves and elliptic trace obstructions,
+https://arxiv.org/html/2606.13018v2
+Lemma 3.5, Theorem 3.6, Corollaries 3.7-3.8 and 5.3, Section 6.
+The source gives coefficient-squareclass scaling and common CRT menus;
+it expressly does not claim a factoring-complexity improvement.
+
+1. Exact shared constructor, including the carry
+
+Let D be a sieve modulus and beta a unit modulo N. Put Q=beta^D.
+For a coefficient a, let theta be the source scaling residue and U a
+common normalized menu. For s in U define
+
+  z=[theta*s]_D,  kappa=floor(theta*s/D).
+
+Then a valid normalized seed is
+
+  X_(a,s)=beta^(N+a-z)
+         =beta^(N+a-theta*s) Q^kappa.                    (A)
+
+Thus a table beta^r, 0<=r<D, really shares all residue powers, at cost
+O(D) multiplications rather than one modular exponentiation per pair.
+The additional a-dependent factors cost O(J). Materializing the J*|U|
+labelled seeds still takes that many writes, but one can instead merge
+equal scalar exponents. Their exponents N+a-z lie in an interval of
+length at most D+A when 1<=a<=A. Constructing the FULL interval, which
+contains the merged roots, gives a concrete O(D+A) shared-power
+constructor and soft-O(D+A) product-tree cost. This avoids hiding the
+cost of determining the exact union, which naive menu traversal would
+still charge at J*|U|. Keeping the extra roots preserves a guaranteed
+hit; ordinary product splitting must retain the original guaranteed
+proper local collision when other factors make the total gcd equal N.
+
+This produces a usable merged query, not just a menu-cardinality claim.
+However, with canonical A~m and balanced P,Q~m^3, the searched form
+aP+Q has range O(m^4). The common Q progression must have length
+L_D=O(m^4/D), with coefficient-dependent endpoints enlarged safely.
+For D>=m, the available generic long-query budget is therefore
+
+  soft-O(D + sqrt(D*m^4/D)) = soft-O(D+m^2).             (B)
+
+This is a cost of the explicit broadened construction, not a claimed
+optimal lower bound. At native D=m^2 it replaces the special m critical
+seeds by up to m^2 menu seeds, so it does not improve the native clock.
+The CRT density of source menus does not furnish a polynomial saving
+in D: for distinct prime factors, k=omega(D)=O(log D/log log D), so a
+fixed local factor such as (3/4)^k is D^(-o(1)).
+
+2. Exact local menu merging lemma
+
+For an odd prime l>=11 and n!=0 in F_l, define
+
+  E_n = union_(a in n*(F_l^*)^2) (a-H_a(n;l)).
+
+Then E_n=F_l. Consequently merging coefficient-compensated powers of
+the full hyperbolic menus loses every local exclusion, already over
+the single prime supporting the native coefficient family.
+
+Proof. Fix e and put c=e/n. Write a=n*t^2 with t!=0. Membership
+e in a-H_a is equivalent to the existence of y with
+
+  y^2=(t^2-c)^2-4*t^2.                                 (C)
+
+For c=0 take t=2; for c=-1 take t=1. For other c this monic quartic
+is squarefree: a simultaneous zero of it and its derivative can only
+occur at c=0 or c=-1. Its nonsingular completion has two rational
+points at infinity. Hasse-Weil therefore gives at least
+l-1-2*sqrt(l) affine points. There are exactly two affine points with
+t=0 because c!=0. Hence at least l-3-2*sqrt(l)>0 affine points have
+t!=0 for l>=11. Such a point proves the desired membership. QED.
+
+Direct finite-field enumeration confirmed E_n=F_l for every nonzero n
+at l=11,13,17,19,23,29,31,37,41,43,47. At l=3,5,7 one residue is
+missing for each n, so the small-prime threshold matters.
+
+The critical-value subset used in the native rows is much smaller:
+if a=n*t^2 and z=2*n*t, then a-z=n*((t-1)^2-1). Extending it to the
+whole H_a is therefore a substantive broadening, not an innocuous
+use of the source's common-menu representation.
+
+3. Carry factors cannot be deleted, even for an actual menu entry
+
+At D=7, n=N mod7=2, primitive root 3, source union
+U=H_3(2;7) union H_2(2;7)={0,2,3,4,5}. Choose theta=2,
+Gamma=2, a=theta^2*Gamma=1 mod7, s=4, z=1, kappa=1.
+In Z/247Z take beta=4 and Q=beta^7=82. For the two index values
+i=1,2, the correct seed X=beta^(N+a-z)=199 gives
+
+  gcd(product_i(Q^i-X),247)=13.
+
+Deleting the carry in (A) gives Xwrong=beta^(N+a-theta*s)=144 and
+
+  gcd(product_i(Q^i-Xwrong),247)=1.
+
+This is not a counterexample to the original guaranteed family, but
+it is an explicit algebraic counterexample to the proposed scaling
+shortcut, with an actual source menu entry and gcd(D,N)=1.
+
+4. The exact remaining constructive opportunity
+
+Writing (A) turns scaled menus into powers on a two-parameter grid,
+with a mask kappa=floor(theta*s/D). The shared power table pays the
+residue values but does not evaluate the multiplicative product over
+that mask and a long interval. An additive cyclic or multiplicative
+convolution of menu indicators can detect/construct supports; it does
+not compute the required product at the scalar beta while preserving
+the Q^kappa weights. A useful next identity must evaluate that masked
+multiplicative transform, or retain only the native critical values
+and their carries in a smaller exact norm. Source scaling alone does
+not provide such an identity.
+
+All work stayed in this /tmp directory; no repository edits, stages,
+commits, pushes, public metadata or broad builds were performed.

@@ -1,0 +1,277 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "Quadratic constant-recurrence order and rational full-Taylor-stream degree obstruction via exact two-clock Pad\u00e9 equation",
+  "previous_goal_turn": "Progress: unbalanced short-annihilator extraction and paid all-semiprime setup with explicit canonical query interface",
+  "model_authorization": "User-authorized existing gpt-6.1-sol agents reused for parallel investigations and independent checks",
+  "whole_family_soft_linear_query_acquired": false,
+  "coefficient_stream": "C(X)=sum A_k X^k, A_k=c_k g^(-binom(k,2)), product_(i<L)(1-q^i T)=sum c_k T^k, q=g^(m^2), L=2m^2+2",
+  "constant_recurrence_barrier": {
+    "theorem": "Over any field with g,q nonzero and ord(q)>L+r, no nonzero constant recurrence of effective orderr with4r<=L holds onallk0..L-r",
+    "canonical": "Certified localqorder>16m^2 gives effective order>floor(L/4)=Omega(m^2), excludes order2m and everyO(mpolylogm) eventually in both hidden fields",
+    "method": "Recurrence supplies rationalPad\u00e9 P/Q throughL, four-shift residual degree<=4r forcesexactequation, unique finite propagation throughL+r forcesr zero-tail coefficients and degreecontradiction",
+    "advice": "Coefficients may depend on entire input or hidden field; arbitrary characteristic, compositeorders, no frequencydistinctness or alias screen"
+  },
+  "rational_degree_barrier": "For full Taylor agreement throughL, degP=u<L,degQ=v,Q0nonzero,ordq>L+v implyu+3v>=L; no selected-value interpolant claim",
+  "applicability": "Original qualified source and latest paid all-semiprime beta/q setup on certified no-factor branch; no additional exceptional deletion",
+  "primary_recognition": "Exact deformed homogeneous polynomial R_L(1,-X;q/g|q), Lopez2026. Functional equation and mixed-shift addition formulas are KNOWN, not claimed new; finite Pad\u00e9 consequences proved independently.",
+  "general_query_bound": "Existing soft O(J+sqrt(JL))=soft O(m^(3/2)), unchanged",
+  "credit": "Old coefficient ratio/chirp, prior order-at-most-m result and standard Pad\u00e9/denominator-clearing methods inherited. New stronger finite-stream order and weighted-degree consequences; no literature-priority claim.",
+  "limits": "No arbitrary operation lower bound, no exclusion of q-dependent/vector/multivariate/sparse/nonlinear/selected-value methods, no acquired longquery or Lean/controller theorem",
+  "verification_scope": "Independent exact-file mathematical, integration and primary-provenance reviews; no native edit, examples, broad build, commit or push",
+  "review_target_checks": [
+    {
+      "review": "reviews/proof-review-A.md",
+      "target": "reports/pade-constant-recurrence.md",
+      "target_bytes": 7291,
+      "target_sha256": "d749385717bca05f1cdb1bbe3e432b3571200b07e79902b64491a796739d6937"
+    },
+    {
+      "review": "reviews/proof-review-A.md",
+      "target": "sources/source-pins.json",
+      "target_bytes": 1313,
+      "target_sha256": "e94471eab58bd43ad292e3bcbe41d62181966d9ddb4cef2cb49f316226fd86a5"
+    },
+    {
+      "review": "reviews/proof-review-B.md",
+      "target": "reports/pade-constant-recurrence.md",
+      "target_bytes": 7291,
+      "target_sha256": "d749385717bca05f1cdb1bbe3e432b3571200b07e79902b64491a796739d6937"
+    },
+    {
+      "review": "reviews/proof-review-B.md",
+      "target": "reports/rational-approximation-barrier.md",
+      "target_bytes": 3450,
+      "target_sha256": "40da69ad305c1446c032132ef38643e43681eb8180fad569ab1d3f36a2324741"
+    },
+    {
+      "review": "reviews/proof-review-B.md",
+      "target": "sources/source-pins.json",
+      "target_bytes": 1313,
+      "target_sha256": "e94471eab58bd43ad292e3bcbe41d62181966d9ddb4cef2cb49f316226fd86a5"
+    },
+    {
+      "review": "reviews/supplement-and-integration.md",
+      "target": "reports/rational-approximation-barrier.md",
+      "target_bytes": 3450,
+      "target_sha256": "40da69ad305c1446c032132ef38643e43681eb8180fad569ab1d3f36a2324741"
+    },
+    {
+      "review": "reviews/supplement-and-integration.md",
+      "target": "README.md",
+      "target_bytes": 2922,
+      "target_sha256": "475c344ca69736d5cdc3cd42a20ea031893b44b1d7e81e997432779c5b05e384"
+    },
+    {
+      "review": "reviews/supplement-and-integration.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 3424,
+      "target_sha256": "5013ea817285da1e3e8c2e41ac9a677f8ba84b1b4b21cae5c8e088a4e1227551"
+    },
+    {
+      "review": "reviews/primary.md",
+      "target": "reports/literature-match.md",
+      "target_bytes": 1230,
+      "target_sha256": "0a5c6291f515e374d21598fa3cbdb4a0b56d0650d3909d4764c3af990c427cee"
+    },
+    {
+      "review": "reviews/primary.md",
+      "target": "sources/primary-fingerprints.json",
+      "target_bytes": 792,
+      "target_sha256": "47f825ff586d99b6f2e92d9a59389287dbb3dceca5c988ba786d27d102b4ae8d"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/manifest.json",
+      "bytes": 11885,
+      "sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-boundary-20261016/manifest.json",
+      "bytes": 13388,
+      "sha256": "14df1782fab8a4427ae73167175a290b62a4af370cee8d051b1fa29541345a1b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-high-digit-query-20261016/manifest.json",
+      "bytes": 9387,
+      "sha256": "05cb25cae8e0639707c38ca0841ab23e6ace6f1f1f224a0396904436b37203c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-reindexed-query-20261016/manifest.json",
+      "bytes": 10286,
+      "sha256": "4e7c96174f2f8cc199c858aa6efe1665787cd0268286cf3652259a2508331d8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-spectral-source-20261016/manifest.json",
+      "bytes": 11092,
+      "sha256": "39dc9c21e01770310c33d384e49a592d5cb80825540d32d427543a3f03f9b38b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-channel-acquisition-20261016/manifest.json",
+      "bytes": 8428,
+      "sha256": "c860df18ab59c69fc70fb3d18fdfaf7b99db657f3faf8827701d0e4a60ebd101"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/manifest.json",
+      "bytes": 10176,
+      "sha256": "f4aa02dd10a2a2baec95fcf427c1c822619d7efeb4f59133f8ebb494a1e1d0ed"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-center-20261016/manifest.json",
+      "bytes": 9534,
+      "sha256": "2f1373b2ff2abd21881945b63f32f3c895f7b68b22bdbafc82ff3d0f7488e09b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-frontier-20261016/manifest.json",
+      "bytes": 10074,
+      "sha256": "fadf463d83f2881df841ff41da22da41c3dbc40a689011439b13a87dfab63d6a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-small-multiple-20261016/manifest.json",
+      "bytes": 10620,
+      "sha256": "c8d1d6e6041650fe17347b6471ed71183481ab3e9bc103b097706c91ba3a4b98"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-representative-carrier-20261016/manifest.json",
+      "bytes": 9946,
+      "sha256": "8c8f35c1ecc9df7b75b2e0a66b78c335e40ce44c21d49bcfebb9487512621aba"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-wide-annihilator-20261016/manifest.json",
+      "bytes": 13813,
+      "sha256": "5cd39e19d0e670f8c903ffa243eae862258f7e6198f8235471da0e19f604fcaf"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-bounded-offset-20261016/manifest.json",
+      "bytes": 13963,
+      "sha256": "de34e9b5a4efbc304b712eb7ad7983a74f2d11b6047c0a4961d4bd0b59150717"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/manifest.json",
+      "bytes": 11875,
+      "sha256": "669c3357f264136ea0745cf3de3775d7c1f59a5e5d73ebe66be3ebc27c1740a8"
+    }
+  ],
+  "prior_listed_files_unchanged": 540,
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1601483,
+    "sha256": "eb4e94758940a42d0ef6417174ca259cf001497de49015cc0ecbc3f2de223f5a"
+  },
+  "entry_bytes": 3424,
+  "entry_sha256": "5013ea817285da1e3e8c2e41ac9a677f8ba84b1b4b21cae5c8e088a4e1227551",
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2922,
+      "sha256": "475c344ca69736d5cdc3cd42a20ea031893b44b1d7e81e997432779c5b05e384"
+    },
+    {
+      "path": "reports/literature-match.md",
+      "bytes": 1230,
+      "sha256": "0a5c6291f515e374d21598fa3cbdb4a0b56d0650d3909d4764c3af990c427cee"
+    },
+    {
+      "path": "reports/pade-constant-recurrence.md",
+      "bytes": 7291,
+      "sha256": "d749385717bca05f1cdb1bbe3e432b3571200b07e79902b64491a796739d6937"
+    },
+    {
+      "path": "reports/rational-approximation-barrier.md",
+      "bytes": 3450,
+      "sha256": "40da69ad305c1446c032132ef38643e43681eb8180fad569ab1d3f36a2324741"
+    },
+    {
+      "path": "reviews/primary.md",
+      "bytes": 1964,
+      "sha256": "bc65d90c97412426264ec184525c43ece2e2a8f7de4b70155aaf1416568825af"
+    },
+    {
+      "path": "reviews/proof-review-A.md",
+      "bytes": 4370,
+      "sha256": "faba31ff833a6c63ea44e1ec5357b76367072b0ef03e1038ef2ab9533d2414ba"
+    },
+    {
+      "path": "reviews/proof-review-B.md",
+      "bytes": 3209,
+      "sha256": "cafc81c8a7af1be45793e4a13f4deca4ca481fe8df2722d2640ce2fe047a834e"
+    },
+    {
+      "path": "reviews/supplement-and-integration.md",
+      "bytes": 3701,
+      "sha256": "f7710f3849a63fe87842e9f276b418fe7b471a6328d9c764c6e4511ab850992c"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 9135,
+      "sha256": "825932f4b17786fc79aef9e7c5c1193b394637ac94654bad2c90cf6234af4f54"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 3424,
+      "sha256": "5013ea817285da1e3e8c2e41ac9a677f8ba84b1b4b21cae5c8e088a4e1227551"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 5093,
+      "sha256": "078924922de60bb7c5dcb7e4b01fee89720ebcb052dcb65018dcd33e80172939"
+    },
+    {
+      "path": "sources/primary-fingerprints.json",
+      "bytes": 792,
+      "sha256": "47f825ff586d99b6f2e92d9a59389287dbb3dceca5c988ba786d27d102b4ae8d"
+    },
+    {
+      "path": "sources/source-pins.json",
+      "bytes": 1313,
+      "sha256": "e94471eab58bd43ad292e3bcbe41d62181966d9ddb4cef2cb49f316226fd86a5"
+    }
+  ]
+}

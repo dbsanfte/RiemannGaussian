@@ -1,0 +1,16 @@
+{
+  "self_test": "PASS",
+  "test_groups": 18,
+  "larger_factor_reciprocal_case": {
+    "n": 107505499,
+    "m": 23,
+    "p": 8467,
+    "q": 12697
+  },
+  "equal_nonzero_case": {
+    "n": 75076889,
+    "m": 23,
+    "factor_quotient": 17
+  },
+  "scope": "reference factors only in optional tests; not an all-input theorem"
+}

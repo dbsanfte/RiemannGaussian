@@ -1,0 +1,149 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/README.md",
+      "bytes": 4665,
+      "sha256": "e5228cf863b9e7d93c2457ca8bbc82312ac67cc53419f4928c3d2f1516da0569",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/sources/journal-entry.md",
+      "bytes": 2899,
+      "sha256": "759de6a90f7f7c6780f1c12177975e1014e83e40bf26663fb2a7faea10a084bb",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/sources/pre-entry-baseline.json",
+      "bytes": 3428,
+      "sha256": "8332c33ad4fba594032d6af13f65c73a3d6c6b0f48a0762a99bb1ea4b07e7037",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/hyperbolic/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reports/primitive-hyperbolic-catalog.md",
+      "bytes": 14077,
+      "sha256": "242dbe88a63b516da5b659983f4dccf9c7b13cb805b5053cf7fc6e580cb62ca7",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/hyperbolic/full-ray-trimming.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reports/full-ray-tag-trimming.md",
+      "bytes": 7771,
+      "sha256": "52684f92a92b2b037d687d99708ff3a3473c5b22502990686d308a9fdc902b23",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/hyperbolic/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/sources/hyperbolic-source-pins.json",
+      "bytes": 1277,
+      "sha256": "cf8528861d5d6537fa29dab869c8c82f67675820d5a62987b34aaf06e9a31f43",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/hyperbolic/full-ray-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/sources/full-ray-source-pins.json",
+      "bytes": 636,
+      "sha256": "afce9896d4405c1b80dc87f6213ca087c7bd6594354a709f02aaaee962462cc6",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/hyperbolic/final-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reviews/proof-review-a.md",
+      "bytes": 6926,
+      "sha256": "9672950b42324cc9e959e38a4b9cc3c5b91f073c3ff9ffd9268dddf936aca739",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/hyperbolic/final-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reviews/proof-review-b.md",
+      "bytes": 6823,
+      "sha256": "ca4338a13524d09713df0a38afd045ed95c34b9f094b02b1d0c55bf4afaf7ffb",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/hyperbolic/final-review-c.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reviews/proof-review-c.md",
+      "bytes": 7671,
+      "sha256": "d2997c795e6ee7de20a29124bfe7f4313349cda4e310694479e68142babd743a",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-norm-system-20261016/hyperbolic/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reviews/integration-review.md",
+      "bytes": 3209,
+      "sha256": "1cecc295a46ebdcba92c5ca9eea3ca449fdaf7fb9e6b113c1a231d43635c0141",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-spectral-source-20261016/reports/shortrow-cone-energy.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/reports/shortrow-cone-energy.md",
+      "bytes": 7633,
+      "sha256": "c41354a285a57ec510f4a289515525f72e663687b7870bcc0ffb85d33d0f65bb",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "bytes": 9861,
+      "sha256": "720e5546858fc02091052e759919fb0d9b5b1dfec97bd83792621eb7e86e7eb7",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "bytes": 10881,
+      "sha256": "882bbf2500add5deec9f90e0e46630b55a8c0a3f8e5ad72e8bc7bd68d4e2269e",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "bytes": 19002,
+      "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowBudget.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeEuclidRowBudget.lean",
+      "bytes": 31630,
+      "sha256": "47da050cb8019ccb1b1595ce197b5ca1aa62a82c6e8845d5cbd9f5a27a32d540",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    }
+  ]
+}

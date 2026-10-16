@@ -1,0 +1,217 @@
+{
+  "schema": "semiprime-constructive-fermat-quotient-catalog-v1",
+  "date_utc": "2026-10-16",
+  "baseline_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "verdict": "PASS for stated structured classes; full goal remains open",
+  "public_inputs": [
+    "N",
+    "public odd prime m",
+    "explicit quotient list A",
+    "optional include_equal flag"
+  ],
+  "assumptions": [
+    "N=P*Q for distinct odd primes",
+    "N<=m^6",
+    "paid preprocessing factors or certifies P,Q>16*m^2",
+    "m primality is a certified public premise; the probe probable-prime check does not prove it"
+  ],
+  "positive_scope": {
+    "supplied_catalog": "returns a proper factor if either factor Fermat quotient lies in normalized A",
+    "default_A": [
+      0
+    ],
+    "equal_extension": "include_equal inserts publicly computed q_m(N)/2 modulo m, covering every equal-factor-quotient input",
+    "multiplier_extension": "same grid captures a smaller-factor multiple cP<N if cP<=m^3+m^2-1, gcd(c,m)=1 and q_m(cP) in A; no complete multiplier cover assumed",
+    "acquisition": "monic product/remainder evaluation at m+1 public points; no full catalog-by-point matrix",
+    "derived_bit_bound": "soft O(m*|A|*log N) for nonempty normalized A, plus reading/reducing explicit metadata; soft O(m) for polylogarithmic A at sixth-root scale",
+    "no_hit": "finite-grid unit statement unconditionally; factor-quotient exclusion only under semiprime/size/prefix assumptions"
+  },
+  "formal_scope": {
+    "namespace": "RiemannGaussian.SemiprimeFermatQuotientCatalog",
+    "terminal_theorems": [
+      "sixth_scale_public_index_coverage",
+      "positiveFactorResidues_card_le",
+      "all_public_leaves_bounded",
+      "public_leaf_proper_gcd"
+    ],
+    "covers": "zero-quotient arithmetic public catalog coverage, cardinality, indices, positivity and proper gcd leaf bounds",
+    "not_formalized": [
+      "general nonzero quotient classification",
+      "Fermat quotient additivity and equal-quotient extension",
+      "multiplier extension",
+      "executable MPE and saturation controller",
+      "bit complexity",
+      "all-input sixth-rate factorization"
+    ]
+  },
+  "checks": {
+    "root_warning_as_error_leaf": {
+      "exit_code": 0,
+      "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true RiemannGaussian/SemiprimeFermatQuotientCatalog.lean"
+    },
+    "root_focused_checker": {
+      "exit_code": 0,
+      "linters": 15,
+      "explicit_declarations": 24,
+      "generated_declarations": 9,
+      "all_module_declarations": 33,
+      "all_module_theorems": 28,
+      "transitive_axioms_only": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "python_optional_self_test": {
+      "exit_code": 0,
+      "test_groups": 18,
+      "command": "../.venv/bin/python -B scripts/probe_semiprime_fermat_quotient_catalog.py --self-test",
+      "scope": "implementation regression, not proof or empirical scaling"
+    },
+    "root_specification_checks": {
+      "status": "PASS",
+      "checks": 104,
+      "specification": "exact full quotient residue partitions for seven auxiliary primes; positive unit reciprocal catalogs",
+      "scope": "independent finite implementation checks, not a proof or scaling measurement"
+    },
+    "targeted_whitespace": {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  },
+  "new_source_pins": [
+    {
+      "path": "scripts/probe_semiprime_fermat_quotient_catalog.py",
+      "bytes": 12975,
+      "sha256": "1fdf9ecf97193b33cd32a90650ff7928a10785e2e8916eec6051ebc6a822c98e"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeFermatQuotientCatalog.lean",
+      "bytes": 10921,
+      "sha256": "283c92aad93ab1129b8cf271a17443ba7ce02f67112bafd94adbeb9cdecf7fa2"
+    },
+    {
+      "path": "scripts/CheckSemiprimeFermatQuotientCatalog.lean",
+      "bytes": 1207,
+      "sha256": "da351d0fe8d26b229e14856391a14f3da61ec8697b4b324677b3a2ad017a1297"
+    }
+  ],
+  "backend_source_pins": [
+    {
+      "path": "RiemannGaussian/SemiprimeStrassenPrefix.lean",
+      "bytes": 16538,
+      "sha256": "66f3a9b128761101e16b3943828dbbe60499a2c8b97f5d878a2a7c794b59e489"
+    },
+    {
+      "path": "docs/semiprime-hensel-spectrum-obstruction-audit.json",
+      "bytes": 151731,
+      "sha256": "1b3e901b6527242662f0de0638eb56ee3156d40257ca900c4d173d469fa068ec"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "scripts/probe_semiprime_long_period.py",
+      "bytes": 27138,
+      "sha256": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f"
+    },
+    {
+      "path": "scripts/probe_semiprime_quadratic_extraction.py",
+      "bytes": 18493,
+      "sha256": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb"
+    },
+    {
+      "path": "scripts/probe_semiprime_single_extraction.py",
+      "bytes": 16419,
+      "sha256": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34"
+    },
+    {
+      "path": "scripts/probe_semiprime_weighted_batch.py",
+      "bytes": 11127,
+      "sha256": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053"
+    }
+  ],
+  "derivation": {
+    "source_pin": {
+      "path": "/tmp/semiprime-fermat-quotient-catalog-20261016/constructive-catalog.md",
+      "bytes": 9056,
+      "sha256": "923f3ffe110e92c293025b9b2f9b938015f8d35ebb26c5b758b143a44a8964c2"
+    },
+    "text": "# Constructive Fermat-quotient residue catalogs\n\n## Positive theorem and input contract\n\nLet N=P Q with distinct odd primes, let m be an odd public prime with m∤N and N≤m⁶, and suppose paid preprocessing has either already factored N or certified P,Q>16m². Given any nonempty explicit public set A⊂F_m, there is a deterministic algorithm using soft O(m|A|) ring operations and soft O(m|A| log N) bit operations which returns a proper factor whenever either factor R satisfies\n\n    F_m(R)=((R^(m−1)−1)/m) mod m ∈ A.\n\nThe algorithm knows N,m,A, not R or its residue. Keeping the semiprime/size/prefix assumptions, outside the stated quotient class it either factors N or returns a valid certificate that neither factor has its Fermat quotient in A. Soft notation suppresses logarithms in m, |A| and log N. A is reduced and deduplicated modulo m; hence |A|≤m. In particular a polylogarithmic quotient catalog is paid soft O(m). The singleton A={0} factors the ENTIRE m-Wieferich exception class previously removed from the actual source family; there is no density or empirical-success qualification.\n\nThis does not yet factor every semiprime: no small catalog A capturing every input is asserted. The underlying product-tree/multipoint batching is classical Strassen arithmetic, not a new multiplication or known-residue factoring primitive. The new positive application is the explicit Fermat-quotient catalog and reciprocal closure of the previously discarded class.\n\n## Two further positive classes at the same cost\n\nFor integers x,y prime to m, expansion modulo m² proves additivity:\n\n    x^(m−1)=1+m F_m(x), y^(m−1)=1+m F_m(y) mod m²,\n    F_m(xy)=F_m(x)+F_m(y) mod m.\n\nThus compute τ_N=F_m(N) publicly by one modular power modulo m² and add τ_N/2 to A (2 is invertible modulo odd m). Whenever the TWO factor quotients are equal, each equals τ_N/2. The resulting explicit catalog therefore factors the entire equal-factor-quotient class, including nonzero equal quotients, at soft O(m) additional cost. Taking A={0,τ_N/2} covers the union of this class with the entire Wieferich class. This uses no knowledge of either quotient separately. It is a sufficient positive coverage statement, not a guarantee that factor quotients are equal.\n\nThe same tested grid also captures small multiples without expanding A or runtime. For the smaller factor P, suppose there exists an integer c≥1, gcd(c,m)=1, with\n\n    cP≤m³+m²−1,     F_m(P)∈A−F_m(c).\n\nThen additivity gives F_m(cP)∈A, so cP mod d is a DIRECT catalog residue. Its positive representative s gives cP=s+dk with 0≤k≤m. That tested leaf has a proper gcd with N. In particular cP≤m³ is a simple sufficient bound independent of its residue. The algorithm need not know or enumerate this witnessing c: the residue grid already includes it. This is a smaller-factor multiplier extension; reciprocal closure of a larger-factor multiple instead gives P/c modulo d and is not claimed to be a small integer multiple. No general short-multiplier coverage theorem is assumed.\n\n## Exact public residue construction\n\nPut d=m². Fermat's theorem makes F_m(R) an integer residue for each R prime to m. It depends only on R mod d: replacing R by R+dz changes R^(m−1) by a multiple of m² for every integer z. For j=1,…,m−1 form\n\n    ω_j = j^m mod d,     r_(j,τ)=ω_j(1−mτ) mod d,  τ∈A.\n\nAll residues are represented in {1,…,d−1}. Euler's theorem modulo d gives ω_j^(m−1)=1 mod d, and ω_j≡j mod m. These are precisely the m−1 Teichmüller residues. Indeed if a residue r has reduction j, write r=ω_j(1+mt) mod d with unique t∈F_m, using that ω_j is a unit. Binomial expansion gives\n\n    r^(m−1) = 1 + m(m−1)t = 1−mt mod d,\n    F_m(r)=−t mod m.\n\nThus F_m(r)=τ if and only if r=r_(j,τ). This proves both completeness and uniqueness without a hidden Hensel-lift oracle. Equivalently, these are the elementary simple-root lifts of X^(m−1)−1 for τ=0. The construction uses only modular powers, multiplication and inverses modulo the KNOWN integer d, where every inverted residue is a unit.\n\nLet T be the set of all r_(j,τ), and form the reciprocal closure\n\n    S = T ∪ {N r^(-1) mod d : r∈T}.\n\nIt has J=|S|≤2(m−1)|A| positive unit representatives. Let P denote the smaller factor, relabeling if necessary. If F_m(P)∈A then P mod d∈T. If instead F_m(Q)∈A, then Q mod d∈T and P≡N Q^(-1) mod d∈S. Consequently either-field coverage implies that the SMALLER factor has residue s∈S. No factor-side advice is used.\n\n## Paid detector and saturation recovery\n\nSince P≤√N≤m³, writing P=s+dk with 1≤s<d gives an integer 0≤k≤m. Build over R=Z/NZ the monic polynomial\n\n    H(X)=∏_(s∈S)(X−s).\n\nEvaluate it at x_k=−dk for k=0,…,m by a monic product/remainder tree. Ordinary multipoint evaluation over a commutative ring requires no inverse node differences; repeated nodes modulo either hidden factor are allowed. A covered P makes H(x_k)=0 modulo P for its corresponding k, since x_k−s=−P.\n\nBuild a balanced product tree of the m+1 returned values. Take the gcd with N of its root. A unit root proves all tested differences are units. A proper gcd factors N immediately. If the root gcd is N, descend to any child with nonunit gcd (testing children as needed); return a proper gcd whenever encountered. A nonunit parent cannot have two unit children. This locates a nonunit value H(x_k), unless a proper factor has already been found.\n\nNow use the already built root product tree of H. Evaluate its children at this x_k, and follow a nonunit child, again returning any proper gcd. Ultimately the leaf is x_k−s=−C where\n\n    1≤C=s+dk≤m³+m²−1<N.\n\nThe strict upper bound follows from N=P Q>256m⁴; m≥3 suffices. Thus a nonunit leaf cannot have gcd N: it necessarily yields a proper factor. This also proves correctness when BOTH hidden primes divide the aggregate or the same row through different leaves. There is no unresolved saturation branch and no inverse of a collision residual modulo N.\n\nIf the aggregate gcd is 1, every tested C is prime to N. Under the stated distinct-semiprime, size and paid-prefix assumptions, the coverage argument contrapositively certifies F_m(P),F_m(Q)∉A. The finite-grid unit certificate is unconditional; its interpretation as exclusion of the two factor quotient classes uses those assumptions. It is not a factorization of the complement.\n\n## Full arithmetic and bit charge\n\nCompute all ω_j by repeated modular powering with exponent m in soft O(m) small-integer work; prepare inverses modulo d by Euclid or batch unit inversion, and generate T,S in soft O(m|A|). Reducing, sorting and deduplicating uses soft O(m|A|) words. These are inverses modulo public d, not modulo a hidden field or arbitrary residues modulo N.\n\nPolynomial product trees and monic multipoint evaluation of degree J at m+1 points cost soft O(J+m) ring operations. Monic polynomial remainders use the reversed divisor's constant coefficient 1, so no nonunit division is hidden. Quasilinear polynomial multiplication over Z/NZ can be implemented through integer convolution with reduction, at soft O(n log N) bit cost for n coefficients; the customary coefficient-growth logarithms are included. The input exponent m and all integer candidates have O(log N) bits because the prefix promise P,Q>16m² implies m<sqrt(N).\n\nThe row-value product tree costs O(m) ring products; its recovery uses O(log(m+1)) gcds. Root recovery requires O(log(J+1)) gcds and child polynomial evaluations costing O(J) total by Horner evaluation, since degrees decrease geometrically along one balanced path. Standard integer gcd costs soft O(log N) bits. Tree storage is soft O(J+m) residues, or soft O((J+m)log N) bits, including recovery data. Public generation and arithmetic are therefore soft O(m|A|) ring/word work and soft O(m|A| log N) bits, after the separately paid preprocessing. An explicitly listed A's acquisition cost is not supplied for free: it is part of the input or must itself be paid by its producer.\n\n## Existing evidence and remaining positive task\n\nThe native Strassen prefix source already proves the classical root-product, no-small-factor and saturated-recovery interfaces, while explicitly separating its arithmetic backend obligation. This report supplies its own exact catalog-specific algorithm and bit accounting; it does not claim a new Lean theorem or that the existing native source has compiled this catalog. The old Hensel-spectrum audit records deletion of p^(m−1)=1 mod m² with O(K_* M⁵) loss. That counting statement is inherited, unnecessary for this positive algorithm, and is not a new result here.\n\nThe remaining constructive task is to acquire a public soft O(m)-size residue cover S_m(N) for every input, or another directly informative quotient catalog at the same cost. Full A=F_m does cover every input, but has Θ(m²) residues and this construction then costs soft O(m²); no sixth-rate conclusion follows from that exhaustive choice.\n"
+  },
+  "independent_implementation_review": {
+    "source_pin": {
+      "path": "/tmp/semiprime-fermat-quotient-catalog-20261016/implementation-review-final.md",
+      "bytes": 3940,
+      "sha256": "8c1287d7bef56704e73177f1e68c07dbbb90b614111518fac13d363b04cb7863"
+    },
+    "text": "# Independent implementation review\n\nReviewed `/home/dbsanfte/riemann/formal/scripts/probe_semiprime_fermat_quotient_catalog.py`: 10995 bytes, SHA256 964ce464b7c50e7abe755ada8b38deecaef30a14e73f711e0f93b3f8ca369d37.\nBackend source pins: `source-pins.json`, 1624 bytes, SHA256 0542bdc97bc41f5b747878c8e6e2f8c4cf9849aa0b68a3490b4125c05617f218.\n\nVerdict: PASS for the documented conditional factoring contract. This is an independent code review; I authored the accompanying mathematical catalog report.\n\nI checked the complete public input path and imported backend chain: long_period.MonicBatch -> quadratic_extraction -> single_extraction -> weighted_batch.mul. The latter uses integer packing with enough coefficient spacing to prevent convolution carries; MonicBatch reverses monic divisors, Newton-inverts only constant coefficient 1, and does not divide by node differences. Catalog generation uses inverses only modulo public m², on units. Quotient normalization/deduplication and reciprocal closure match the proved sign convention ω_j(1−mτ).\n\nThe code scans m+1 row gcds rather than using the report's optional balanced row-product descent; this remains soft O(m). A saturated row descends the root tree, testing child evaluations. Under the size promises, no saturated leaf exists because every candidate 0<s+m²k<N. Therefore the first saturated path must produce a proper factor with O(J) extra Horner work; the possible unresolved-saturated status is correctly retained for general out-of-contract residue grids. Its generic routine does not falsely claim the theorem outside its promises. Empty catalogs correctly return no-hit; public preflight handles even inputs, squares and gcd(N,m). Primality testing is explicitly a check of a public-premise input, not a newly proved deterministic primality algorithm. The public factor API receives no factors or factor-indexed tables.\n\nExecuted offline using `../.venv/bin/python -B scripts/probe_semiprime_fermat_quotient_catalog.py --self-test`: PASS, 18 test groups. Includes genuine larger-factor-only Teichmüller coverage requiring reciprocal closure, nonzero quotient class, saturated row recovery, repeated nodes, normalization, misses and invalid inputs. The system python lacks gmpy2; the repository virtual environment succeeds. This replay supports implementation consistency, not a formal proof or an empirical success-rate claim. No Lean build was run.\n\nNo blocking correctness or conditional complexity issue found. Whole-semiprime acquisition remains open; this routine closes the specified quotient classes positively.\n\n## Final include-equal branch review\n\nThis supersedes the initial implementation review's script pin; that old file is preserved. Final mathematical report: 8906 bytes, SHA256 00a8f56525551e0069e50a4b9eb17aefd3a6bee94ec50e8cff8fd3160db43ee1. The source-pin file remains 1624 bytes, SHA256 0542bdc97bc41f5b747878c8e6e2f8c4cf9849aa0b68a3490b4125c05617f218.\n\nIndependently re-read the public branch: after gcd(N,m)=1 validation, its modular power representative is 1 modulo m, so subtracting 1 and integer-dividing by m computes q_m(N) correctly. Multiplication by (m+1)//2 is inversion of 2 modulo odd m. The branch inserts this one quotient before ordinary normalization and reciprocal catalog construction, without using factors. The CLI flag reaches exactly this public branch. It adds only a polylogarithmic modular-power cost and at most one class, preserving soft O(m(1+|A|)). Additivity makes it cover all promised equal-factor-quotient inputs, not only the fixture. Default behavior remains the supplied catalog alone.\n\nRe-ran all 18 optional test groups with repository Python and -B: PASS. Separately executed --n 75076889 --m 23 --include-equal: proper factor8467, q_m(N)=11, inserted quotient17, saturated-row recovery succeeded. This is a regression replay, not the basis of the general mathematical proof. No blocking issue found.\n",
+    "note": "The final two report wording clarifications were independently checked by root after this historical review; implementation hash is unchanged."
+  },
+  "independent_lean_source_review": {
+    "verdict": "PASS",
+    "reviewer": "q_product_literature_615 (Sol 6.1)",
+    "formal_scope_matches": true,
+    "blocking_findings": [],
+    "build_run_by_reviewer": false
+  },
+  "lean_agent_audit": {
+    "verdict": "PASS",
+    "files": [
+      {
+        "path": "RiemannGaussian/SemiprimeFermatQuotientCatalog.lean",
+        "bytes": 10921,
+        "sha256": "283c92aad93ab1129b8cf271a17443ba7ce02f67112bafd94adbeb9cdecf7fa2"
+      },
+      {
+        "path": "scripts/CheckSemiprimeFermatQuotientCatalog.lean",
+        "bytes": 1207,
+        "sha256": "da351d0fe8d26b229e14856391a14f3da61ec8697b4b324677b3a2ad017a1297"
+      }
+    ],
+    "commands": [
+      "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true -o .lake/build/lib/lean/RiemannGaussian/SemiprimeFermatQuotientCatalog.olean RiemannGaussian/SemiprimeFermatQuotientCatalog.lean",
+      "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/CheckSemiprimeFermatQuotientCatalog.lean"
+    ],
+    "checks": {
+      "warning_as_error_leaf": true,
+      "linters": 15,
+      "linter_explicit_declarations": 24,
+      "generated_declarations": 9,
+      "module_provenance_all_declarations": 33,
+      "all_local_theorems_including_generated": 28,
+      "allowed_transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "sorry_axiom_opaque_in_new_leaf": false
+    },
+    "scope": "Arithmetic coverage and public-candidate leaf safety only. Public definitions depend only N,m. General m>1 with factor coprimality suffices. Positive residue filter safely discards zero; coverage preserved. No MPE/bit backend, root registration, broad build, metadata edits or full goal theorem claimed."
+  },
+  "preservation": {
+    "journal_before_bytes": 1624464,
+    "journal_before_sha256": "b56dedcbe44a17c1a6da1b0ad0d8ca5285c31f47c14a3c1ee85e84d129f1db44",
+    "removing_only_new_entry_restores_exact_prior_journal": true,
+    "prior_29_evidence_packets_untouched": true,
+    "root_registration_changed": false,
+    "broad_build_run": false,
+    "commit_or_push_performed": false
+  },
+  "credit": "Elementary Teichmuller/Fermat quotient identities and classical Strassen product/remainder arithmetic are reused; old exceptional-class deletion count is not new. No absolute novelty claim.",
+  "literature_background": [
+    {
+      "url": "https://arxiv.org/abs/2105.11105",
+      "title": "A log-log speedup for exponent one-fifth deterministic integer factorisation",
+      "use": "classical factoring background; not a source of the unproved sixth-rate claim"
+    },
+    {
+      "url": "https://arxiv.org/abs/1408.4515",
+      "title": "Products of Small Integers in Residue Classes and Additive Properties of Fermat Quotients",
+      "use": "constructive literature lead; no new general paid cover obtained"
+    }
+  ],
+  "remaining": "Acquire one informative public near-linear query or small residue cover for every input, then formalize complete algorithm and bit bound. Original long-collision acquisition remains unpaid."
+}

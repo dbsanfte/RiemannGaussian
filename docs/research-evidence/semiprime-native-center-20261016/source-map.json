@@ -1,0 +1,141 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/README.md",
+      "bytes": 4567,
+      "sha256": "93bfd98e8d8f231cf889bfe9ab00f09cdd5b39de3a2b12574304f32db5b7e6df",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/sources/journal-entry.md",
+      "bytes": 3016,
+      "sha256": "3748328ce11963d5f727c3a00153dee6f6d57980296d2099efbcc75cc7c7958f",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/sources/pre-entry-baseline.json",
+      "bytes": 3635,
+      "sha256": "a8f1c601e8e1b0c98fd053e60f9b1c27a76338e3f43d2d2571a11c01b5762539",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/reports/native-centers-and-origin-span.md",
+      "bytes": 15784,
+      "sha256": "2e9eef8c4ba33e53fc5ae822483a2d6d524dfb8d46ff02eeb73209f2a88aea1d",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/sources/source-pins.json",
+      "bytes": 1914,
+      "sha256": "6b75e6e2a4f6f0c39ededd3ab0ba3cb581152a67759a88dc594bf549d8b11848",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/reviews/proof-review-a.md",
+      "bytes": 7366,
+      "sha256": "d1376bed5c30ca6e29236a6928b437746b909159ed88a0ec588af68ef4f9e225",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/reviews/proof-review-b.md",
+      "bytes": 6933,
+      "sha256": "a963b699296a911418c7ff63a65f12518da29dbddcfd2e85cbd13d32e0e654b2",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/review-c.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/reviews/proof-review-c.md",
+      "bytes": 5921,
+      "sha256": "39de38f7e81150c59593377a7a540052939e4f5896f5b5094de89f7ad63c225a",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-origin-query-20261016/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/reviews/integration-review.md",
+      "bytes": 3376,
+      "sha256": "6be7ab6a4452d5dad52898818680527c9ce03d446b6c0074f0bdd2ebe8a57f85",
+      "gzip": false,
+      "role": "new arithmetic proof, independent review or metadata"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientCentering.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeQuotientCentering.lean",
+      "bytes": 18276,
+      "sha256": "ce7c98968bca9e460638cfa50bb1b0aa16d3ebba2cb8430ad3e43726d5be9b25",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeEuclidRowFamily.lean",
+      "bytes": 19002,
+      "sha256": "7af7c994464c5dcb335425f403f7fc86340a1d297352a63e954cf95205d18529",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEuclidRowBudget.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeEuclidRowBudget.lean",
+      "bytes": 31630,
+      "sha256": "47da050cb8019ccb1b1595ce197b5ca1aa62a82c6e8845d5cbd9f5a27a32d540",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-adaptive-euclid-20261016/reports/primitive-hyperbolic-catalog.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reports/primitive-hyperbolic-catalog.md",
+      "bytes": 14077,
+      "sha256": "242dbe88a63b516da5b659983f4dccf9c7b13cb805b5053cf7fc6e580cb62ca7",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-adaptive-euclid-20261016/reports/full-ray-tag-trimming.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reports/full-ray-tag-trimming.md",
+      "bytes": 7771,
+      "sha256": "52684f92a92b2b037d687d99708ff3a3473c5b22502990686d308a9fdc902b23",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "bytes": 9861,
+      "sha256": "720e5546858fc02091052e759919fb0d9b5b1dfec97bd83792621eb7e86e7eb7",
+      "gzip": false,
+      "role": "unchanged inherited source or theorem"
+    }
+  ]
+}

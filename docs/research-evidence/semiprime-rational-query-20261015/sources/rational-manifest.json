@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-15",
+  "classification": "New exact finite-order rational-certificate trace criterion; no fast evaluator or general lower bound",
+  "main_theorem": "T(p)=x^e rationally solvable iff actual row product zero; formal weighted solvability iff every row product zero",
+  "algorithm_scope": "Exact rational-function identities, not pointwise finite-grid or deformation finite parts",
+  "primary_urls": [
+    "https://arxiv.org/abs/1705.04188",
+    "https://www3.risc.jku.at/publications/download/risc_3804/PublishedVersion.pdf",
+    "https://arxiv.org/abs/2606.07061"
+  ],
+  "sources": [
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/actual-row-density-adjoint-obstruction.md",
+      "role": "actual full-row density and prior Laurent functional",
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "bytes": 8621
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+      "role": "ten frozen actual-source premises",
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c",
+      "bytes": 1767
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "role": "inherited actual projected prime local orders",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "bytes": 24354
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "role": "native source offset formula/bounds",
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "bytes": 31743
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "role": "existing padded length bounds and recovery",
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+      "bytes": 29680
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/positive-adjoint-interface.md",
+      "role": "formal weighted-program positive interface",
+      "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7",
+      "bytes": 6464
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "converging-gosper.pdf",
+      "sha256": "f307722e204ce34795b621d710c3fcb493f60de010318429fb91e92ec2e7fd5d",
+      "bytes": 130212
+    },
+    {
+      "path": "converging-gosper.txt",
+      "sha256": "a408360be1561ee2f9c2c828bb8822c6c78301e3dd06f89e888addb2ff082197",
+      "bytes": 33375
+    },
+    {
+      "path": "polynomial-reduction-2026.pdf",
+      "sha256": "0fac298246672cc41c67795df940a4e7516239349a7c3bde0cf4f2008e515319",
+      "bytes": 299921
+    },
+    {
+      "path": "polynomial-reduction-2026.txt",
+      "sha256": "cd396cac630dcdbff012a93a9c0b96de3606a0f1a906c527e47808bac9900f0f",
+      "bytes": 54740
+    },
+    {
+      "path": "q-denominator-bounds-2017.pdf",
+      "sha256": "261ed1e1053920f7f97bb5edcd5d37a81bbb24eb9526accd3ea9b307a65a24c4",
+      "bytes": 223994
+    },
+    {
+      "path": "q-denominator-bounds-2017.txt",
+      "sha256": "f1e783fee0ab30b1a9e9ac5772ef82f5c96e4bc05f5d42bb4647b8eadf4c55ad",
+      "bytes": 75996
+    },
+    {
+      "path": "report.md",
+      "sha256": "fae3439b4f7380ec1c819ce03d0f818c2f2b036e8777aca8686c4d17945342eb",
+      "bytes": 9866
+    }
+  ]
+}

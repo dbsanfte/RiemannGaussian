@@ -11,7 +11,6 @@ import gzip
 import hashlib
 import io
 import json
-import os
 from pathlib import Path
 import re
 import shutil
@@ -186,8 +185,6 @@ def build(*, raw_path=None, metadata=None, status_data=None, source_overrides=No
 
     project_sources, source_hashes, modules = {}, {}, {}
     nodes, family_counts = [], {f: 0 for f in families}
-    toolchain_sources = Path(os.environ.get("ELAN_HOME", str(Path.home() / ".elan"))) / "toolchains"
-    toolchain_sources /= f"leanprover--lean4---v{raw['leanVersion']}/src/lean"
     packages = [(ROOT / ".lake/packages" / p["name"], p["url"], p["rev"])
                 for p in manifest["packages"] if p["type"] == "git"]
 
@@ -246,8 +243,12 @@ def build(*, raw_path=None, metadata=None, status_data=None, source_overrides=No
                     source = {"url": f"{repo.removesuffix('.git')}/blob/{revision}/{source_path}#L{location['line']}",
                               "path": source_path, "line": location["line"], "exact": location["exact"], "project": False}
                     break
-            if not source and (toolchain_sources / source_path).is_file():
-                source = {"url": f"https://github.com/leanprover/lean4/blob/v{raw['leanVersion']}/src/lean/{source_path}#L{location['line']}",
+            # These compiler-exported module locations belong to the pinned
+            # Lean distribution. A frozen graph may use an older compiler
+            # whose source tree is absent on CI; its versioned source links
+            # must not depend on which toolchains happen to be installed.
+            if not source and source_module.split(".", 1)[0] in {"Init", "Lean", "Std"}:
+                source = {"url": f"https://github.com/leanprover/lean4/blob/v{raw['leanVersion']}/src/{source_path}#L{location['line']}",
                           "path": source_path, "line": location["line"], "exact": location["exact"], "project": False}
         if n["project"]:
             assert source and source["line"], f"Unresolved project source: {n['id']}"

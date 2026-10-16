@@ -2635,6 +2635,9 @@ import RiemannGaussian.SemiprimeTotientWindow
 import RiemannGaussian.SemiprimeWindowConstruction
 import RiemannGaussian.SemiprimeWindowInverse
 import RiemannGaussian.SemiprimeWindowSqrt
+import RiemannGaussian.SemiprimeFermatQuotientCatalog
+import RiemannGaussian.SemiprimeSparseResidueGauss
+import RiemannGaussian.SemiprimeSparseResidueGaussRadius
 
 /- Joint arithmetic floor payments and their obstruction audits. -/
 import RiemannGaussian.ZetaRieszAllTagNativeFloor

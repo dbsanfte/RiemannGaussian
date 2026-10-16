@@ -1,0 +1,182 @@
+{
+  "date": "2026-10-15",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "status": "classical research; independent algebra reviews; no new near-linear evaluator, Lean theorem, coverage theorem, or factoring exponent improvement",
+  "user_requested_models": "gpt-6.1-sol for all three parallel investigators",
+  "primary_sources": [
+    {
+      "title": "Fast modular composition using spiroids",
+      "url": "https://www.texmacs.org/joris/fftcomp/fftcomp.pdf",
+      "doi": "10.1016/j.jco.2026.102073",
+      "retrieved": "2026-10-15",
+      "path": "primary/norms-spiroids.pdf.gz",
+      "inspected": "Theorem 1 visually on page 1, introductory composite-ring/Kedlaya-Umans scope; algorithm interfaces; publication month from Crossref"
+    },
+    {
+      "title": "Fast computation of the N-th term of a q-holonomic sequence and applications",
+      "url": "https://arxiv.org/pdf/2012.08656",
+      "retrieved": "2026-10-15",
+      "path": "primary/qproducts-by.pdf.gz",
+      "inspected": "Algorithm 3, section 3.4, growing-degree and several-index bounds"
+    },
+    {
+      "title": "On the evaluation of some sparse polynomials",
+      "url": "https://cs.uwaterloo.ca/~eschost/publications/SparseEvaluation.pdf",
+      "retrieved": "2026-10-15",
+      "path": "primary/qproducts-nogneng-schost.pdf.gz",
+      "exact_source_url_in": "reports/nogneng-schost-check.md",
+      "inspected": "Propositions 1 and 2; sum versus product distinction"
+    },
+    {
+      "title": "Asymptotic Improvements of Lower Bounds for the Least Common Multiples of Arithmetic Progressions",
+      "url": "https://arxiv.org/abs/1101.0142",
+      "inspected": "Abstract for related literature only; new elementary LCM proof is self-contained"
+    }
+  ],
+  "historical_inputs": {
+    "archive_index": "docs/research-evidence/research-checkpoint-20261012/index.json",
+    "sha256": "aff82272488c438e01237cee3317176247cb354cf4f123afee7751b0d89c40dc",
+    "scope": "Archived q-factorial baseline and current-phase identities checked as recorded; full historical hard-family closure not rerun"
+  },
+  "journal_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "heading": "2026-10-15 \u2014 Long-query literature audit and source-specific compression obstructions",
+    "sha256": "cb5559328819642e1c6bb5dd5403ce6ccdc9ad42c879bf2f4715b7e11b250548",
+    "bytes": 3979
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "245935f8b0adf89af5cf79b888f41c725ef0c0df16c86ee6f1450dae8339fef1",
+      "bytes": 9932
+    },
+    {
+      "path": "baselines/q-factorial-upper-bound.md",
+      "sha256": "21aa5ab9f214ff04921a06063f1ba322aa7e60639a5735afce2326e5ffd2db07",
+      "bytes": 5808
+    },
+    {
+      "path": "lcm-exponent-obstruction.md",
+      "sha256": "1bf802103017848348c51b43ea56cdedb6dbce9c3c60a525d1a3a1afea1d25a4",
+      "bytes": 7138
+    },
+    {
+      "path": "primary/norms-crossref-spiroids.json.gz",
+      "sha256": "208cdc12df985a9166df3026f98d74f406c56d86e871f27b7c653f988bd6cae4",
+      "bytes": 3003,
+      "uncompressed_sha256": "1b54a464b53f962ff66b9e0f88032504b9e907e9ae6ed70681336dd592832cc0",
+      "uncompressed_bytes": 11282
+    },
+    {
+      "path": "primary/norms-spiroids.pdf.gz",
+      "sha256": "7e79d28fb958cf29e75d1e20929c18856c81cde1066eb4744d2bd1f409d64fc6",
+      "bytes": 307330,
+      "uncompressed_sha256": "3fef0f8c6851f45dc9e876ae178c46d73264546e9bbcde6a9d1204b69d600ecc",
+      "uncompressed_bytes": 378515
+    },
+    {
+      "path": "primary/norms-spiroids.txt.gz",
+      "sha256": "9303b4dc796707b3307765304576f6294832adda05ecf5b02347c2e1c424dc22",
+      "bytes": 24442,
+      "uncompressed_sha256": "9107cf618606ee994b207930467f073731acc407187c86de096e4b501f133a17",
+      "uncompressed_bytes": 103431
+    },
+    {
+      "path": "primary/qproducts-by.pdf.gz",
+      "sha256": "fb407530f83eb83df60633879c29f005d58a774efd9eab089cfe1461e70220be",
+      "bytes": 370577,
+      "uncompressed_sha256": "f3d617af2e9c899b41d5f4d9120412c78857ebc19009b69fe99e74d97f0d9b09",
+      "uncompressed_bytes": 499386
+    },
+    {
+      "path": "primary/qproducts-by.txt.gz",
+      "sha256": "a8d0a53318c748057dbf56b17b99eed39b56721f8cc330f70ab528ef1efb9661",
+      "bytes": 37461,
+      "uncompressed_sha256": "ae779c48d317414bc0223e381d6bc40296c5c9630903b4959e715e6b14d63c83",
+      "uncompressed_bytes": 121716
+    },
+    {
+      "path": "primary/qproducts-nogneng-schost.pdf.gz",
+      "sha256": "cd3cd126502448e6282679c70d3b132d3ca4872612b51fb144179885895d4b25",
+      "bytes": 298394,
+      "uncompressed_sha256": "a642a3371d2b3ce12563ed743d5f42c87c37f122b0cb7df8662f1a4efe55eb64",
+      "uncompressed_bytes": 301337
+    },
+    {
+      "path": "primary/qproducts-nogneng-schost.txt.gz",
+      "sha256": "4b190a39944b0a26571be02e2df374e0608a085d0fc99d7442e8df4542888b6a",
+      "bytes": 12006,
+      "uncompressed_sha256": "b9964c3076f11257028d0fb52fdacece58316a637fd58e6f56c2ee24c9444cd3",
+      "uncompressed_bytes": 37923
+    },
+    {
+      "path": "reports/formal-log-obstruction.md",
+      "sha256": "ddad3eed6caa962507d435892110cc952c64f93876326514e57d7725d2fb138a",
+      "bytes": 6715
+    },
+    {
+      "path": "reports/gauss-product-next-target.md",
+      "sha256": "b95c10ecb5bc730f6818b4c7976f0a54ba4190efbff292e3d2036a5498915c00",
+      "bytes": 2017
+    },
+    {
+      "path": "reports/implicit-norm-literature.md",
+      "sha256": "fc473d52c916ba1741e09a6c2be4879365abb76123d9340e0a988c54158cb8dc",
+      "bytes": 13674
+    },
+    {
+      "path": "reports/moving-carrier.md",
+      "sha256": "65652b39359356e94bdd32d2c5086dea616afcc18facd1105d686fea95e2c83f",
+      "bytes": 5822
+    },
+    {
+      "path": "reports/nogneng-schost-check.md",
+      "sha256": "727b6940c3d5adcbd919cab2761b15786c07ac94d09ad61db58d707468aaf9a4",
+      "bytes": 4819
+    },
+    {
+      "path": "reports/norm-primary-manifest.json",
+      "sha256": "ed0b661f68e7f112e8929807d6333a6bb44e3b17948cd5fe78cd931b8cb7aadd",
+      "bytes": 2309
+    },
+    {
+      "path": "reports/q-product-literature.md",
+      "sha256": "a42152b65fa0a9e4beaba3959826c01977aad0ae309127c7d109e98836e3ed83",
+      "bytes": 7017
+    },
+    {
+      "path": "reviews/algebra-independent-review.md",
+      "sha256": "196cf579a24292de234c7addc70b0b9d77b705e7336679781337652e904a0c17",
+      "bytes": 3443
+    },
+    {
+      "path": "reviews/integration-independent-review.md",
+      "sha256": "5559872a4fbf681fa3070a6d630d6827535c405c44d9894b1000d89ac9774650",
+      "bytes": 3378
+    },
+    {
+      "path": "reviews/journal-independent-review.md",
+      "sha256": "a38ddd4f60ed45b5dae28be580078548d5390ce4d2e5f624efe4e6ed1c265035",
+      "bytes": 2137
+    },
+    {
+      "path": "reviews/lcm-shortcut-independent-review.md",
+      "sha256": "b634df85cdd97b76a561029bf98128b2ad7d39e4ef78fc59166abd2f54b20936",
+      "bytes": 5008
+    },
+    {
+      "path": "source-map.json",
+      "sha256": "b404236b2b5ba1361c06fe7de5495bb79e48c45a03d925d6fab793c8a8de8e9a",
+      "bytes": 5753
+    }
+  ],
+  "validation": {
+    "independent_algebra_reviews": "PASS within stated scope; exact reviewed README, LCM and journal entry hashes checked",
+    "source_map_sha256_checks": "PASS for all 19 mappings",
+    "gzip_integrity": "PASS for all 7 compressed primary artifacts",
+    "readme_local_links": "PASS",
+    "git_diff_check": "PASS",
+    "lean_build": "not run; no Lean/code changes",
+    "experiments": "none; claims are algebraic/literature arguments"
+  }
+}

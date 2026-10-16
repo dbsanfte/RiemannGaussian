@@ -1,0 +1,159 @@
+Torsion acquisition audit, 2026-10-16
+
+Scope: classical deterministic soft-O(N^(1/6)) factorization, N=P Q,
+m ~ N^(1/6), with paid preprocessing giving P,Q>16m^2 or a factor.
+This audit is scratch research. No Lean theorem was compiled and no repository
+file was edited. The findings do not prove impossibility of a new algorithm.
+
+RESULT
+No constructive acquisition of the required large rational torsion subgroup,
+useful base point, or annihilator K within soft-O(m) was found. The tempting
+X_0 versus X_1 degree saving loses the required Frobenius eigenvalue. Known
+prescribed-subgroup constructions and the new prime-field factorization
+manuscript do not fill this missing step under the allowed assumptions.
+
+1. EXACT X_0 GAP
+
+Let ell != p be prime. An F_p-rational cyclic ell-isogeny kernel C is a
+Frobenius-stable line in E[ell]. Frobenius restricts to multiplication by
+lambda in F_ell^*. This is insufficient for a subgroup of E(F_p):
+
+  C(F_p) = ker([lambda-1]: C -> C).
+
+For prime ell it has size ell exactly if lambda=1, and size 1 otherwise.
+For cyclic composite t with scalar lambda, its size is gcd(t,lambda-1).
+Thus merely knowing a rational degree-t isogeny does not imply t divides
+#E(F_p), and the rational image need not have index t.
+
+A generic quadratic twist changes Frobenius lambda to -lambda. It supplies
+rational ell-torsion only when lambda is +/-1. Isogeny changes within the
+same F_p-isogeny class preserve #E(F_p), so ordinary isogeny walking cannot
+turn ell nondivisibility into ell divisibility.
+
+Concrete diagnostic: p=421, ell=5, E:y^2=x^3+x+3. Here p>16 ell^2,
+#E(F_421)=412, trace=10. The mod-5 Frobenius polynomial is
+
+  T^2 - 10T + 421 = T^2+1 = (T-2)(T-3).
+
+The two eigenspaces give two rational cyclic 5-isogenies, but neither gives
+rational nonzero 5-torsion. The nonsquare d=2 quadratic twist has equation
+y^2=x^3+4x+24 and order 432, also not divisible by 5. This is independently
+counted by check_x0_gap.py. Point counting is an exact diagnostic, not a
+kernel-checked proof or a cofinal lower bound.
+
+X_0(ell) has genus O(ell), so its coarse Weil existence scale is compatible
+with p >> ell^2. But the map X_1(ell)->X_0(ell) has generic degree
+(ell-1)/2: restoring a rational generator restores the lost data and degree.
+For p-independent characteristic-zero modular presentations, Abramovich's
+gonality bound gives
+
+  gon_C(X_1(ell)) >= 7(ell^2-1)/1600.
+
+This obstructs a generic plane-model projection of degree O(ell) over Q.
+It is not a universal complexity lower bound, and this characteristic-zero
+bound must not silently be asserted uniformly after reduction modulo p.
+
+2. SMOOTH 2-POWER CHAINS / UNIVERSAL FAMILIES
+
+Replacing ell by 2^k does not let a rational generic construction acquire
+unbounded torsion for free. A Q-defined curve or rational one-parameter
+family cannot have rational torsion orders growing like m: Mazur's bound
+allows point orders only 1..10 or 12 over Q. Any modular chain construction
+that actually produces a rational generator still lifts through X_1(2^k).
+Its characteristic-zero congruence index is 3*(2^k)^2/8, hence the generic
+gonality scale remains quadratic. A chain of rational 2-isogenies only
+keeps a stable kernel; it need not keep every point in the kernel rational.
+
+One can instead branch through quadratic root choices in finite fields,
+but local roots modulo unknown P,Q are not available as free modular
+square roots. Passing to a degree-growing etale algebra only supplies
+torsion over extension components. That does not imply t | #E(F_p), and
+the extension's group order has the wrong scale for the desired BSGS bound.
+
+3. CLOSEST DETERMINISTIC CONSTRUCTION
+
+Shparlinski--Sutherland, arXiv:1403.7887v3, Theorem 2: given a known prime p
+and an integer t=o(sqrt(p)/log^4(p)), full GRH gives a deterministic curve
+with t | #E(F_p) in t p^(1/2+o(1)) time. There is an unconditional almost-all
+primes variant, not an all-input guarantee. Their tilde convention hides
+p^o(1), not just powers of log p.
+
+For balanced p~m^3 and t~m, this is m^(5/2+o(1)), not soft-O(m). Even if
+p is only just above 16m^2 it costs at least m^(2+o(1)) at this scale.
+The construction explicitly uses p to choose a trace congruent to p+1 mod t,
+solve a norm/discriminant selection problem, and reduce Hilbert class
+polynomials modulo p. It cannot be invoked on N instead of p.
+
+Sutherland, arXiv:0811.0296v4, constructs optimized models of X_1(t) and
+samples points by selecting random x and finding roots of f_t(x,Y) in a
+known finite field. The practical fixed-t constructions are valuable ECM
+methods; they contain no deterministic short hitting-set guarantee for
+growing t~m over an unknown local prime.
+
+4. NEW PRIME-FIELD POLYNOMIAL FACTORIZATION RESULT
+
+OpenAI, Deterministic Polynomial Factorization over Prime Fields,
+October 4, 2026, Theorem 1.1, takes an explicitly given prime p and a dense
+degree-n polynomial over F_p. Its displayed upper bound is
+
+  O( ((n+1)*ceil(log_2 p))^(10^12) ) bit operations.
+
+It depends on the companion's uniform finite-order Hecke zero-free theorem
+for cyclotomic fields, not merely the pinned Dirichlet QRH >7/8 input.
+Thus it neither supplies a soft-linear growing-degree subroutine nor stays
+within the accepted analytic input. Its dynamic evaluation is over product
+algebras over a known finite field. In particular, Section 2.4's even-degree
+separator writes p-1=2^s t and uses Delta^(p-1) as an off-diagonal idempotent.
+Substituting N for p does not preserve that local identity: p-1 need not
+divide N-1. Similar issues arise for the Frobenius fixed algebra. Ordinary
+zero-divisor checks can be lifted to Z/N, but the prime-dependent identities
+cannot be lifted by that device.
+
+The paper also cites Altman's many-prime deterministic factorization:
+input is a monic irreducible integral polynomial, and all prime reductions
+below X are processed in total pi(X)*(D log H)^O(1)*log^5 X, where D is
+the splitting-field degree. The prime inputs and dependence on D (possibly
+factorial in polynomial degree) prevent this amortized statement from giving
+the required unknown-local-prime acquisition.
+
+5. ACQUISITION INTERFACE NEEDS MORE THAN TORSION
+
+Suppose the desired explicit order-t subgroup C <= E(F_p) has been supplied.
+Vélu produces phi:E->E/C in soft-O(t) field operations, but
+
+  #((E/C)(F_p)) = #E(F_p),
+  |phi(E(F_p))| = #E(F_p)/t.
+
+Only the image has the smaller order. A useful supplied R in E(F_p) gives
+phi(R) in that image. The distinguished t-torsion point supplied by X_1
+maps to zero. Therefore an acquisition theorem for the suggested BSGS
+consumer should jointly supply an appropriate base point, or prove a
+point-generation procedure within budget. Choosing an arbitrary point on
+the quotient does not justify the order bound. This caveat is independent
+of the unresolved eventual factor-separation guarantee.
+
+SOURCE URLS (download hashes in sources.json)
+
+Shparlinski--Sutherland prescribed subgroup:
+https://arxiv.org/abs/1403.7887
+
+Sutherland prescribed torsion:
+https://arxiv.org/abs/0811.0296
+
+Poonen, Gonality of modular curves in characteristic p, Theorem 1.1 quotes
+Abramovich's characteristic-zero linear-in-index bound:
+https://math.mit.edu/~poonen/papers/gonality.pdf
+
+Sutherland's official optimized-model table:
+https://math.mit.edu/~drew/X1_optcurves.html
+
+OpenAI factorization manuscript:
+https://github.com/openai/math/blob/main/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/Deterministic-Polynomial-Factorization-over-Prime-Fields.pdf
+
+CONCLUSION
+The surviving missing result is still constructive acquisition: produce,
+over Z/N without knowing either local characteristic, a suitable curve,
+point, and locally large pointwise-rational subgroup (or another useful K),
+with all root finding, covers, and separation included in soft-O(m). The
+audited standard constructions do not establish that result. This report
+does not rename an m-smooth projection branch as new progress.

@@ -1,0 +1,45 @@
+{
+  "primary_files": [
+    {
+      "path": "gessel-lagrange.pdf",
+      "bytes": 592157,
+      "sha256": "d233acf41264be0f67db15d883be22c94c26f835bfdde342a01684fc403c8b7e",
+      "url": "https://arxiv.org/pdf/1609.05988"
+    },
+    {
+      "path": "gessel-lagrange.txt",
+      "bytes": 124849,
+      "sha256": "ca8dd6a01f19f658905009dcdc776d22bd8c4715070d176d8d5d6e1048df1ba5",
+      "url": "https://arxiv.org/pdf/1609.05988"
+    },
+    {
+      "path": "stanton-q-lagrange.pdf",
+      "bytes": 129284,
+      "sha256": "49985ec0bf44b7be47d4ab3c54fa0cc5d419dbdc17b8a13b31681014f3a2d011",
+      "url": "https://www-users.cse.umn.edu/~stant001/PAPERS/qlagr.pdf"
+    },
+    {
+      "path": "stanton-q-lagrange.txt",
+      "bytes": 33072,
+      "sha256": "d1fb00a17a7146f3cb856b5a98e983fe04898fa587242dbfe8668e1f160ee7d2",
+      "url": "https://www-users.cse.umn.edu/~stant001/PAPERS/qlagr.pdf"
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-multistream-query-20261015/reports/selected-determinant.md",
+      "bytes": 8628,
+      "sha256": "ab9fb757fed120e5329885eb9eb6400b87bd9dbd967a7c608816ea781b9009c6"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    }
+  ]
+}

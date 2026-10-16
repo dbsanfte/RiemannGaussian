@@ -1,0 +1,79 @@
+Trace acquisition 623: fixed-depth divided-congruence route
+2026-10-16. Scratch only. No repository changes.
+
+RESULT
+No constructor for sigma_1(N) mod r in soft O(r^3) was obtained.
+Fixed depth 18 makes the required data finite, but neither of the primary
+sources checked gives the needed size, construction, or evaluation bound.
+This is an open computation, not a lower bound or a no-go for this route.
+
+EXACT FINITE-DEPTH COMPUTATION
+Let r>=5 be prime, r not dividing N, and N<r^18. Write
+N=sum_{j=0}^{17} d_j r^j. Put f(q)=sum_{n>=1} sigma_1(n)q^n mod r.
+It is enough to use (1-E_{r+1})/24 for f: Kummer congruences give
+E_{r+1}=E_2 mod r, so their nonconstant coefficients agree.
+
+On integral q-expansions define B_j by
+  B_j(q^n)=binomial(n,r^j) q^n.
+Lucas's theorem says that B_j acts modulo r by the j-th base-r digit of n.
+Thus the commuting projectors
+  Pi_{d,j}=1-(B_j-d)^(r-1)
+give the exact finite expression
+  g=product_{j=0}^{17} Pi_{d_j,j} f
+   =sigma_1(N)q^N + O(q^(N+r^18)).
+If t=q+O(q^2) is any normalized local parameter, the required scalar is
+  sigma_1(N) = (g/t^N)(cusp).
+The expression remains valid when that scalar is zero.
+
+This is constructive only after two computations have been supplied:
+  (1) build/apply these canonical higher q-operators in compact divided-
+      congruence data, including the divisions hidden in B_j;
+  (2) evaluate the displayed normalized cusp value in soft O(r^3) total.
+No such implementation or bound was found. Expanding the operators is
+not the desired algorithm. Formally B_j=binomial(theta,r^j), with
+theta=q d/dq, so its degree is r^j, and the factorial denominator has
+r-adic valuation (r^j-1)/(r-1). Merely taking 18 digit positions therefore
+does not turn this expansion into an r^3 computation. A recurrence or
+compact arithmetic circuit could conceivably do better; the sources
+checked do not provide the requisite recurrence and evaluation theorem.
+
+WHAT THE SMALL RAMANUJAN MODEL DOES SUPPLY
+Ordinary theta gives the first digit projector Pi_{d,0} inside the
+mod-r Ramanujan function field, since theta^r=theta on q-expansions.
+Movasati constructs the invariant curve and a local eigenparameter for
+this derivation. The statement is about the ordinary derivation and
+integrality; it does not implement B_1,...,B_17 on canonical q-expansions.
+Hornbostel--Naumann review the geometric divided-congruence/Igusa-tower
+description and give explicit Artin--Schreier generators in examples.
+They do not give a uniform r^3 algorithm for the higher operators above.
+In particular, an explicit finite Igusa level is not by itself a proof
+that the required functions and normalized cusp values fit that budget.
+
+DOWNSTREAM USE, IF THE COMPUTATION IS SOLVED
+Set s=sigma_1(N)-1-N mod r. For distinct-prime semiprime N=PQ, the roots
+of X^2-sX+N over F_r are precisely P and Q mod r. Enumerate the roots
+and all their r lifts modulo r^2. This is an explicit guaranteed menu of
+at most 2r residues, acquired from the one trace in O(r) further work.
+With r about N^(1/18), the existing sparse Gauss engine then has soft
+O(N^(1/6)) cost. The missing work remains acquisition of the trace.
+
+PRIMARY SOURCES CHECKED
+1. Hossein Movasati, Ramanujan vector field, arXiv:2406.13432.
+   https://arxiv.org/abs/2406.13432
+   Author's text containing the paper, chapter 4, especially Proposition
+   4.2, Theorem 4.3 and Proposition 4.4:
+   https://w3.impa.br/~hossein/myarticles/LeafScheme.pdf
+   A local copy and pdftotext output are beside this handoff.
+2. Jens Hornbostel and Niko Naumann, Beta-elements and divided congruences,
+   arXiv:math/0508466, section 3.1 and Theorem 5 (Igusa tower).
+   https://arxiv.org/abs/math/0508466
+3. John Voight, Computational modular forms, AWS project 4, pp.110--112.
+   https://jvoight.github.io/compmfs-aws.pdf
+   This is average polynomial time for all coefficients below a bound,
+   via q-expansions quasi-linear in that bound; it does not compute a
+   single composite coefficient at binary index N in polynomial log N.
+
+No rational diagonal with a proved size/evaluation bound, no closed
+digit-weighted section recurrence, and no alternative accessible trace
+giving the required menu was found in this pass. Do not count the
+operator reformulation as acquisition progress.

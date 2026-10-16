@@ -1,0 +1,305 @@
+{
+  "date": "2026-10-15",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "progress: arithmetic actual-family full-input digit-folding obstruction and conditional formal-adjoint interface; no faster evaluator or exponent improvement",
+  "model_authorization": "User requested Sol 6.1 parallel agents; all three used gpt-6.1-sol.",
+  "main_bound": {
+    "formula": "O(K_*V(S+1)M^5) <= O(M^5.993)",
+    "parameters": "K_*=O(M^.020), V=O(M^.969), S<=M^.004; polylog S gives soft O(M^5.989)",
+    "meaning": "input-exception count on inherited admissible prime-order supply, NOT runtime",
+    "union": "with frozen soft O(M^5.994) deletions preserves Omega(M^6/log^2 M) retained actual inputs"
+  },
+  "scope": "All delta in [-3m^2,m^2] and |s|<=S, permitting adaptive/advised full-N choices; index floor((N+delta)/m^2) mod W_m plus s, one prescribed m-only W_m=Theta(m^2). No free union over W, N-dependent moduli, other index formulas or general scalar algorithms.",
+  "conditional_positive_interface": "T-gate division-free FORMAL arbitrary-weight identity sum_j w_j P_L(z_j) implies all row products and their product in <=5T+J-1 ring operations and O(T+J) residue storage. Fast weighted SLP NOT constructed; restriction stability, constants and bit costs required.",
+  "native_status": "Existing coverage/global-leaf recovery credited to SemiprimeSeedSumAcquisition; new results classical and independently reviewed, not Lean compiled. No new code or broad build.",
+  "algebra_scope": "q-Weyl constant-linear-state all-prefix obstruction generic only; actual cyclic nowhere-zero primitive obstruction leaves singular/noncyclic alternatives open.",
+  "historical_archive": {
+    "path": "docs/research-evidence/research-checkpoint-20261012/index.json",
+    "sha256": "aff82272488c438e01237cee3317176247cb354cf4f123afee7751b0d89c40dc",
+    "two_report_bytes_verified_against_gzip_objects": true,
+    "analytic_supply": "inherited; not rebuilt"
+  },
+  "source_pin_resolutions": [
+    {
+      "original_path": "/tmp/semiprime-query-followup-20261015/restored-endpoint/tmp/semiprime-next-covered-acquisition-20261008/full-euclid-all-hit-obstruction.md",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "role": "historical report"
+    },
+    {
+      "original_path": "/tmp/semiprime-query-followup-20261015/restored-endpoint/tmp/semiprime-long-norm-frontier-20261008/charged-skipped-ray-obstruction.md",
+      "sha256": "ca92ab638d96409cc0dadb822ce3fcf31ac77d637b37020f81a19e1462568fae",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/charged-skipped-ray-obstruction.md",
+      "role": "historical report"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "role": "unchanged native source"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/semiprime-factorisation-investigation.md",
+      "sha256": "f5e202d23f2263d1ff1aa50383d6b6965ae7896574a4b0b9284fbb089749c087",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/pre-entry-investigation.md.gz",
+      "role": "historical pre-entry journal; current full journal expected to differ"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+      "resolved_path": "RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "role": "unchanged native source"
+    }
+  ],
+  "journal_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "heading": "2026-10-15 \u2014 Full-input digit folding fails; a formal weighted-sum route is sufficient",
+    "includes_markdown_heading_prefix": true,
+    "sha256": "29c4f0a16fd32c9dd16a16311330312d9a40e896466fd4520e3694834a834467",
+    "bytes": 5500
+  },
+  "primary_sources": [
+    {
+      "title": "Real quadratic fields and finite quantum dilogarithms I",
+      "url": "https://arxiv.org/abs/2609.21892",
+      "path": "primary/fqd-2026.pdf.gz",
+      "inspection": "title/topic and algebraicity result; no complexity theorem inferred"
+    },
+    {
+      "title": "Cyclic Quantum Teichm\u00fcller Theory",
+      "url": "https://link.springer.com/article/10.1007/s00220-026-05604-6",
+      "path": "primary/ishibashi-2026.pdf.gz",
+      "inspection": "known order/Fermat/cyclic premises; saved PDF independently checked"
+    },
+    {
+      "title": "The Shintani\u2013Faddeev modular cocycle: Stark units from q-Pochhammer ratios",
+      "url": "https://arxiv.org/abs/2411.06763",
+      "path": "primary/kopp-2025.pdf.gz",
+      "inspection": "complex meromorphic setting; saved PDF independently checked"
+    },
+    {
+      "title": "A New Product Formula for (z;q)_infinity, with Applications to Asymptotics",
+      "url": "https://link.springer.com/article/10.1007/s00365-026-09783-2",
+      "inspection": "Root freshly inspected publisher HTML: published 19 September 2026, eq. (2), Re(beta)>0, infinite analytic product. PDF attempt returned HTML: no fourth saved PDF/independent full-PDF check. New count and adjoint bridge do not depend on this source."
+    }
+  ],
+  "review_targets": {
+    "reviews/high-digit-review-a.md": [
+      "reports/high-digit-folding-obstruction.md",
+      "sources/high-digit-source-pins.json"
+    ],
+    "reviews/high-digit-review-b.md": [
+      "reports/high-digit-folding-obstruction.md",
+      "sources/high-digit-source-pins.json"
+    ],
+    "reviews/adjoint-review.md": [
+      "reports/positive-adjoint-interface.md"
+    ],
+    "reviews/implicit-reciprocity-review.md": [
+      "reports/q-weyl-boundary.md",
+      "reports/transform-interface.md",
+      "reports/cyclic-reciprocity-audit.md"
+    ],
+    "reviews/cyclic-review.md": [
+      "reports/cyclic-reciprocity-audit.md",
+      "sources/reciprocity-primary-manifest.json"
+    ],
+    "reviews/integration-review.md": [
+      "README.md"
+    ],
+    "reviews/journal-review.md": [
+      "external dated journal entry pinned above"
+    ]
+  },
+  "preliminary_review": "preliminary-digit-fold-review.md is historical intermediate review, not final theorem review",
+  "validation": {
+    "artifact_sha256": "PASS",
+    "source_map_entries": 26,
+    "high_digit_source_pins_verified": 5,
+    "native_pins_verified": 16,
+    "readme_relative_links_verified": 5,
+    "prior_bundles": [
+      {
+        "path": "docs/research-evidence/semiprime-long-query-20261015",
+        "manifest_sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c",
+        "files_verified": 22,
+        "journal_entry_prefix_verified": {
+          "path": "docs/semiprime-factorisation-investigation.md",
+          "heading": "2026-10-15 \u2014 Long-query literature audit and source-specific compression obstructions",
+          "sha256": "cb5559328819642e1c6bb5dd5403ce6ccdc9ad42c879bf2f4715b7e11b250548",
+          "bytes": 3979
+        }
+      },
+      {
+        "path": "docs/research-evidence/semiprime-canonical-query-20261015",
+        "manifest_sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06",
+        "files_verified": 25,
+        "journal_entry_prefix_verified": {
+          "path": "docs/semiprime-factorisation-investigation.md",
+          "heading": "2026-10-15 \u2014 Actual sparse catalogs and signed endpoint cancellations fail",
+          "sha256": "ea67ba0b288b864b54e38739ee39227beca50a1f4c3960f79e944244a0a59675",
+          "bytes": 5309
+        }
+      }
+    ],
+    "git_diff_check": "PASS",
+    "lean_build": "not run; research-only changes",
+    "examples_or_benchmarks": "none"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "2817387e1ae65711cd7f76f8ee71c699720a3aeee52370a1ecac9bed7d89cc79",
+      "bytes": 7603
+    },
+    {
+      "path": "primary/fqd-2026.pdf.gz",
+      "sha256": "abd3d366ed39d35b9f654530af5a30a0d1582725bcb7d9614507ed79e192932a",
+      "bytes": 594686,
+      "uncompressed_sha256": "aae135b3cb875ab24d64e0042cb10ced98b64171dd8a760a4c2a96fe88ba7e71",
+      "uncompressed_bytes": 610134
+    },
+    {
+      "path": "primary/fqd-2026.txt.gz",
+      "sha256": "1fd1e0621d99072834b79c4d1bc463e3665c873530f484e4f4c48a18522371f0",
+      "bytes": 49784,
+      "uncompressed_sha256": "1fb2b087e8a75da30e4f0ee821af2d1f0cde25feecbe4208441f0d6a917b5eeb",
+      "uncompressed_bytes": 207072
+    },
+    {
+      "path": "primary/ishibashi-2026.pdf.gz",
+      "sha256": "9e7736deb60ca9b14462131c4de1b4c6bed014c523aecd499bafc4dec2639d3c",
+      "bytes": 899407,
+      "uncompressed_sha256": "99233c0bf151cc1953cc0ddf8489976d728a66220659fbce132b3e8ccb2ddd43",
+      "uncompressed_bytes": 1343203
+    },
+    {
+      "path": "primary/ishibashi-2026.txt.gz",
+      "sha256": "edb26febef1fe3a2b59562362b23573233dab7257d38632393472beee7490f4b",
+      "bytes": 66768,
+      "uncompressed_sha256": "59673c35674c7b729d9c95d2a304b2a1b5fc827cfa9bb2a075e07826f4542506",
+      "uncompressed_bytes": 275710
+    },
+    {
+      "path": "primary/kopp-2025.pdf.gz",
+      "sha256": "92a9dc0f3f0a7679eb913718a34a44e99d4e1d72c14c9d5c42c55b0959e2c645",
+      "bytes": 945880,
+      "uncompressed_sha256": "17764426499b81d2771221fa933a91adb6ae35914755ef9d9d97d5435a8766a9",
+      "uncompressed_bytes": 1191327
+    },
+    {
+      "path": "primary/kopp-2025.txt.gz",
+      "sha256": "3cbbcbdba9b89ffa9b674d80de32b202711572fed34c5a375fb39eb86d86c251",
+      "bytes": 85250,
+      "uncompressed_sha256": "a045af10d482f3b46ce4461d39141aab1b653429a67530203ea813cd2924ecd9",
+      "uncompressed_bytes": 364466
+    },
+    {
+      "path": "reports/convex-box-pruning.md",
+      "sha256": "cbb76c14521ad62f4025b3d58596e8913bfeabafefdbd05a570120d1a8e521e1",
+      "bytes": 5150
+    },
+    {
+      "path": "reports/cyclic-reciprocity-audit.md",
+      "sha256": "48fb0580a1c90631215c7481ba8833637758ff15cf8c1d8f245cc3f6e067b3c1",
+      "bytes": 9015
+    },
+    {
+      "path": "reports/high-digit-folding-obstruction.md",
+      "sha256": "df7e67583b43d3daff78a581ca86f5d10a68cd9e3c922ed5e95d7f95042db3f7",
+      "bytes": 9623
+    },
+    {
+      "path": "reports/positive-adjoint-interface.md",
+      "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7",
+      "bytes": 6464
+    },
+    {
+      "path": "reports/q-weyl-boundary.md",
+      "sha256": "ac4172ffe1e3f98748e6a9de26bfc9a020cc0e8a705ee56b1770ce506dd1f44c",
+      "bytes": 5685
+    },
+    {
+      "path": "reports/transform-interface.md",
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae",
+      "bytes": 8901
+    },
+    {
+      "path": "reviews/adjoint-review.md",
+      "sha256": "f4b44694742133a3f83e1b2f53f0ba94acc894fb149122cbdc3135c63c8f0ce7",
+      "bytes": 4538
+    },
+    {
+      "path": "reviews/cyclic-review.md",
+      "sha256": "5919ae58f0d2ed3fa663511c5da1c63ab0df6f062c284706b566bdc6565729d5",
+      "bytes": 5028
+    },
+    {
+      "path": "reviews/high-digit-review-a.md",
+      "sha256": "4cd22800e86ae88338999830f062f964dc54a71ca1d1b93dca7ea7d8e694b7f3",
+      "bytes": 6926
+    },
+    {
+      "path": "reviews/high-digit-review-b.md",
+      "sha256": "70b5b6506d662e3b895c920f8ace18408726a88c114180fbe2276067ee612c80",
+      "bytes": 3127
+    },
+    {
+      "path": "reviews/implicit-reciprocity-review.md",
+      "sha256": "569d19682283883d8418ab7741a57fc68cf84bb6a35b7cdc61ccd64705a78902",
+      "bytes": 6560
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "sha256": "167035902fa8d4d7f57d7da63e612a584416e69e60c3740c75e251acef199dfd",
+      "bytes": 4522
+    },
+    {
+      "path": "reviews/journal-review.md",
+      "sha256": "18c3af605e926faf33c95bc7b45c098d2d8092f38b3638a070db8ff8bb324a47",
+      "bytes": 2373
+    },
+    {
+      "path": "reviews/preliminary-digit-fold-review.md",
+      "sha256": "b86dee35d0d07c09f802a1df369ffadd8f20266a4645e53920bbe2c591bc304a",
+      "bytes": 5826
+    },
+    {
+      "path": "source-map.json",
+      "sha256": "27341d282b7ed106ba5779093221c3ca54f0e29cbb49ec1c661c9eaef6ca7d39",
+      "bytes": 7865
+    },
+    {
+      "path": "sources/charged-skipped-ray-obstruction.md",
+      "sha256": "ca92ab638d96409cc0dadb822ce3fcf31ac77d637b37020f81a19e1462568fae",
+      "bytes": 11430
+    },
+    {
+      "path": "sources/full-euclid-all-hit-obstruction.md",
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "bytes": 24354
+    },
+    {
+      "path": "sources/high-digit-source-pins.json",
+      "sha256": "c7e2eb1cab39b4a6267c77c95bafe25f3d95879ce7df97536263f4f184619d2e",
+      "bytes": 881
+    },
+    {
+      "path": "sources/implicit-manifest.json",
+      "sha256": "b172362f03ed4c14f8af19edb794fa9b28f0bc786d4dccfd2df2c5f603ff428f",
+      "bytes": 1118
+    },
+    {
+      "path": "sources/pre-entry-investigation.md.gz",
+      "sha256": "9bba93d0039470a2ab6a5774a442c8dea56c851ee28cd2d03485a3f04391b1fa",
+      "bytes": 497700,
+      "uncompressed_sha256": "f5e202d23f2263d1ff1aa50383d6b6965ae7896574a4b0b9284fbb089749c087",
+      "uncompressed_bytes": 1512190
+    },
+    {
+      "path": "sources/reciprocity-primary-manifest.json",
+      "sha256": "c9f30664b00fec3b808449ccf591469604763d9525c3d7f350eb5ea2d28efe4a",
+      "bytes": 429
+    }
+  ]
+}

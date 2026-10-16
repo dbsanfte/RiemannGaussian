@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-16",
+  "goal": "Guaranteed classical deterministic N^(1/6) semiprime factorization, proved in Lean",
+  "goal_achieved": false,
+  "repository": "/home/dbsanfte/riemann/formal",
+  "journal_sha256": "4774f2bc3b9f8cd233b20062a241f23e6c96723c52a8b4f5c7e3253e4885995b",
+  "research_instruction": "Check these inherited positive targets before claiming a fresh constructor. A supplied-data consumer, equivalence, or cheap restricted family is not whole-family acquisition.",
+  "inherited_targets": [
+    {
+      "name": "Sparse Frobenius prefix and isolated binomial factor sum",
+      "journal_line": 1699,
+      "input": "N=PQ with odd primes P<Q<2P, M=floor(sqrt(2N))",
+      "identity": "(1+X)^N = 1+Q X^P+P X^Q modulo (N,X^(M+1)); P+Q = 1-(-1)^M binom(N-1,M) modulo N",
+      "missing": "Cheap truncation or isolated coefficient acquisition; scalar evaluation includes the tail",
+      "source": "scripts/probe_semiprime_sparse_signal.py"
+    },
+    {
+      "name": "Factorial first jet",
+      "journal_line": 1739,
+      "identity": "For F_M(X)=product_(1<=i<=M)(X+i), B=M!, b=B/N unit, F'_M(0)=b(P+Q) modulo N",
+      "missing": "Acquiring B modulo N^2 and derivative cheaply; constant-state product recurrence is not a cheap long jump",
+      "source": "scripts/probe_semiprime_factorial_jet.py"
+    },
+    {
+      "name": "Smooth projection and shared roots",
+      "journal_line": 4850,
+      "input": "Explicit exponent E=(m!)^A with A=O(log N)",
+      "paid": "Smooth-part projection, factor recovery on projected collapse, outside-product roots for small j^2",
+      "missing": "A constructor covering remaining large rough local orders; repeating smooth-order cases is not new"
+    },
+    {
+      "name": "Shared selected q-binomial coefficients and jets",
+      "journal_line": 30026,
+      "paid": "nu selected indices from one common length-L coefficient stream in soft O(sqrt L+nu); polylogarithmic parameter jets are similarly paid",
+      "missing": "Reduction of native changing-target row sums or sufficient norm to those selected data",
+      "related_journal_line": 30170
+    },
+    {
+      "name": "Original quadratic row product",
+      "journal_line": 31298,
+      "paid": "Forced collision over all rows; generic shared evaluator soft O(J+sqrt(JL))",
+      "parameters": "J~m, L~m^2, m~N^(1/6)",
+      "missing": "Whole-family restriction-stable soft O(m) evaluator or sufficient factor query"
+    },
+    {
+      "name": "Sparse factor-residue Gauss consumer",
+      "journal_line": 31374,
+      "paid": "Supplied explicit J-residue menu modulo n covering one factor gives soft O(N^(1/6)+J+N^(1/5)(J/n)^(3/5))",
+      "sufficient_data": "P+Q modulo r, r~N^(1/18), creates r lift classes modulo r^2",
+      "missing": "Acquiring that trace, or another sufficiently sparse guaranteed factor menu, in soft O(r^3)"
+    },
+    {
+      "name": "QRH long-annihilator decoder",
+      "journal_line": 31439,
+      "paid": "Given prepared gamma with odd local orders >16m^2 and nonzero L-bit K annihilating gamma, factor in soft O(L+N^(1/12)), accepting pinned uniform Dirichlet QRH input",
+      "missing": "Acquiring K within soft O(m); also not a new Lean proof of the analytic input"
+    },
+    {
+      "name": "Compact GAP group-order cover consumer",
+      "journal_line": 31534,
+      "paid": "Descriptions of polylog rank, actual volumes and descriptor bits soft m, separated hulls, individual crossdifference divisible by one local order imply soft-m factor recovery without prefactoring",
+      "missing": "Uniform explicit construction with the stated individual-difference cover",
+      "source": "/tmp/semiprime-annihilator-cover-20261016/cover/group-gap-criterion.md"
+    },
+    {
+      "name": "Explicit Lehman-start acquisition family",
+      "source": "/tmp/semiprime-constructive-round-20261016/cover621/explicit-lehman-product.md",
+      "identity": "c_uv=uN+v-ceil(2sqrt(uvN)), uv<=m^2; one c_uv-i is a positive local-order multiple for 0<=i<m",
+      "missing": "Actual giant volume is soft m^2; a faster restricted-product evaluator remains unproved"
+    },
+    {
+      "name": "Paired critical norm and carry-preserving stationary transform",
+      "source": "/tmp/semiprime-constructive-round-20261016/rows622/stationary-carry-status.txt",
+      "paid": "Exact additive stationary-phase convolution and O(m) reflection-boundary normalization",
+      "missing": "Multiplicative long norm evaluator; the quadratic transfer recurrence is standard, and cross-a bulk cancellation reintroduces the same critical product"
+    }
+  ],
+  "fresh_primary_sources_checked_this_round": [
+    {
+      "url": "https://arxiv.org/html/2609.29949v1",
+      "result": "Exact divisor summatory function in N^(9/28+o(1)) expected time",
+      "usable_limit": "Random neighbor factorization; unweighted divisor counts; stated dual evaluator M<=N^(2/5)",
+      "missing_for_goal": "Weighted sigma_1 evaluation at H=N^(1/6), M=N^(2/3), plus guaranteed cheap neighboring coefficients"
+    },
+    {
+      "url": "https://arxiv.org/html/2606.13018v2",
+      "result": "Explicit common residue menus for several linear forms aP+Q",
+      "usable_limit": "These are linear-form menus, not sparse factor menus; actual carry terms survive scaling",
+      "missing_for_goal": "A cheaper exact shared construction retaining native critical information"
+    }
+  ],
+  "this_round": {
+    "new_whole_family_acquisition_bound": false,
+    "new_lean_theorem": false,
+    "repository_files_changed": false,
+    "scratch_reports": [
+      "constructor627/secondary-order-constructor.md",
+      "multitarget628/shared-construction-status.txt",
+      "analytic629/handoff.txt"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "bytes": 20679,
+      "sha256": "5c481ee4df760a453ab1453065d083ec343407ad2f8936cb7fafeabc9ab99440"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCarries.lean",
+      "bytes": 23960,
+      "sha256": "db087a256343323e857186154e74506380d9a8f49dc9f76ee0f498897a362f2e"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-high-digit-query-20261016/reports/high-digit-carrier-obstruction.md",
+      "bytes": 9861,
+      "sha256": "720e5546858fc02091052e759919fb0d9b5b1dfec97bd83792621eb7e86e7eb7"
+    }
+  ]
+}

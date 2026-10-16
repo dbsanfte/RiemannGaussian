@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "path": "bostan-mori.pdf",
+      "bytes": 538442,
+      "sha256": "43aed49115a79b8ad0ac9b19972125fa05571021c3dbf1995cdc87d1a28d4b5a"
+    },
+    {
+      "path": "bostan-mori.txt",
+      "bytes": 85792,
+      "sha256": "e78bfb59831c21603948179edd8b72f38d5d8a2f76e9ded276280c01c9183099"
+    },
+    {
+      "path": "report.md",
+      "bytes": 10005,
+      "sha256": "65a5c827a64b5c035d3d0a7bed445c6970910f9f92749309878d1e1520e5c4fd"
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-multistream-query-20261015/reports/selected-determinant.md",
+      "bytes": 8628,
+      "sha256": "ab9fb757fed120e5329885eb9eb6400b87bd9dbd967a7c608816ea781b9009c6"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "bytes": 6713,
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+      "bytes": 1767,
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c"
+    }
+  ],
+  "primary_url": "https://mathexp.eu/bostan/publications/BoMo20.pdf",
+  "scope": "self-contained mask/transport/phase/pole arguments; no circuit lower bound or nearlinear query"
+}

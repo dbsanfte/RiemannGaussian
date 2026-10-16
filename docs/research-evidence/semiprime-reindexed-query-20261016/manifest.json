@@ -1,0 +1,230 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "actual rowwise reindexing energy theorem; exact global Sidon denominator redesign with coverage; denominator-m one-carrier cubic-stream reduction; paid conditional carry normalization; no whole-query improvement",
+  "model_authorization": "User authorized parallel Sol 6.1 research; three existing gpt-6.1-sol agents reused.",
+  "whole_family_soft_linear_query_acquired": false,
+  "general_query_bound": "soft O(m^(3/2)), unchanged",
+  "raw_energy": "sum_h Eraw(n,h)<=4m^3; every advised integer lift delta_j-m^2*s_j simultaneously inherits E<=lambda*m^2 outside a bad-residue set of size at most 4m^2/lambda.",
+  "family_transfer": "Varying-menu selectors give loss O(K_*M^6/lambda) against the SAME original supply. Lambda=K_*log^4 M retains majority; polylog menus give k^2 T=soft Omega(m^2).",
+  "rowwise_group_scope": "Global transfer requires twice lifted span below gamma element order. D>cM^4.062 covers every prescribed relative start range m^2 polylog M. Not a long-scale local-field claim. Unbounded relative advice has an explicit collapse counterexample.",
+  "sidon_redesign": "Public t_j=N^(-1)j^2 modm, a=1, exact centered lifts. Canonical own-factor coverage; global J=m-1 targets have EXACT energy 2J^2-J on stated order/size branch, no new deletion. Any GP cover k^2T>=J^2/4.",
+  "sidon_scope": "Global group theorem uses Euler N=P+Q-1 modulo element order and exact no-wrap phase comparison. Local quotient need not retain Sidon energy.",
+  "denominator_m": "t=m,a=0 yields one GP with missing point and canonical coverage. Enlarged complete product exactly P_(mL) in base gamma^m, length Theta(m^3); known ring-safe cost remains soft O(m^(3/2)). Saturated enlarged leaves recover factor sum on stated global-order branch.",
+  "paid_preprocessing": "delta=r+m^2*kappa, -3<=kappa<=1; at most six endpoint factors per tag normalize to actual residue graph in soft O(m) on endpoint-unit branch. Full canonical majority qualifies; arbitrary restrictions need their own unit branch or separately paid saturation handling.",
+  "scope": "Classical arithmetic and carrier representation results, not operation lower bounds, new Lean declarations, builds, numerical examples or factoring-rate claims. Non-cover scalar algorithms and shared computations remain possible.",
+  "missing_work": "Restriction-stable soft O(m) sufficient factor query, complete bit/controller and Lean sixth-rate composition.",
+  "review_target_checks": [
+    {
+      "review": "reviews/raw-energy-review.md",
+      "target": "reports/raw-energy-rowwise-carriers.md",
+      "target_bytes": 7891,
+      "target_sha256": "bdd42a257462ec85f91aed190f989fe227bed637fbb1e4c8b568657b6196c02b"
+    },
+    {
+      "review": "reviews/normalization-review.md",
+      "target": "reports/constant-carry-normalization.md",
+      "target_bytes": 5429,
+      "target_sha256": "51720a3c545040d9a833ad6f5778cbcba9e4719d33195426944b061f774aa70f"
+    },
+    {
+      "review": "reviews/redesign-review-a.md",
+      "target": "reports/constant-leading-sidon.md",
+      "target_bytes": 6115,
+      "target_sha256": "35753a778eab8f913d619c9f5e4aa70c97f13afb9c4a9dedeed611d0195731bf"
+    },
+    {
+      "review": "reviews/redesign-review-b.md",
+      "target": "reports/constant-leading-sidon.md",
+      "target_bytes": 6115,
+      "target_sha256": "35753a778eab8f913d619c9f5e4aa70c97f13afb9c4a9dedeed611d0195731bf"
+    },
+    {
+      "review": "reviews/redesign-review-a.md",
+      "target": "reports/denominator-m-redesign.md",
+      "target_bytes": 6873,
+      "target_sha256": "2193b7985de153dd440276c431c9998ec53473b95929de7f8f902631ae3c9a24"
+    },
+    {
+      "review": "reviews/redesign-review-b.md",
+      "target": "reports/denominator-m-redesign.md",
+      "target_bytes": 6873,
+      "target_sha256": "2193b7985de153dd440276c431c9998ec53473b95929de7f8f902631ae3c9a24"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "README.md",
+      "target_bytes": 6328,
+      "target_sha256": "4f5e44041591c8455f55b8bcc0a81ba7fa837075bcdd46123e15804e62bcd41f"
+    },
+    {
+      "review": "reviews/integration-review.md",
+      "target": "sources/journal-entry.md",
+      "target_bytes": 4661,
+      "target_sha256": "e5c32217d8549b13ceb01b800543f712172ffc35c010a5c6404c7a834aca0b15"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/manifest.json",
+      "bytes": 11885,
+      "sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-boundary-20261016/manifest.json",
+      "bytes": 13388,
+      "sha256": "14df1782fab8a4427ae73167175a290b62a4af370cee8d051b1fa29541345a1b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-high-digit-query-20261016/manifest.json",
+      "bytes": 9387,
+      "sha256": "05cb25cae8e0639707c38ca0841ab23e6ace6f1f1f224a0396904436b37203c2"
+    }
+  ],
+  "prior_listed_files_unchanged": 367,
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1562679,
+    "sha256": "2f741f4c9c7be8f7ac647bcf47ff95bba25c16218ab6ed9738a3f7229a054e52"
+  },
+  "entry_sha256": "e5c32217d8549b13ceb01b800543f712172ffc35c010a5c6404c7a834aca0b15",
+  "entry_bytes": 4661,
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6328,
+      "sha256": "4f5e44041591c8455f55b8bcc0a81ba7fa837075bcdd46123e15804e62bcd41f"
+    },
+    {
+      "path": "reports/constant-carry-normalization.md",
+      "bytes": 5429,
+      "sha256": "51720a3c545040d9a833ad6f5778cbcba9e4719d33195426944b061f774aa70f"
+    },
+    {
+      "path": "reports/constant-leading-sidon.md",
+      "bytes": 6115,
+      "sha256": "35753a778eab8f913d619c9f5e4aa70c97f13afb9c4a9dedeed611d0195731bf"
+    },
+    {
+      "path": "reports/denominator-m-redesign.md",
+      "bytes": 6873,
+      "sha256": "2193b7985de153dd440276c431c9998ec53473b95929de7f8f902631ae3c9a24"
+    },
+    {
+      "path": "reports/raw-energy-rowwise-carriers.md",
+      "bytes": 7891,
+      "sha256": "bdd42a257462ec85f91aed190f989fe227bed637fbb1e4c8b568657b6196c02b"
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "bytes": 4674,
+      "sha256": "05791dab2d3e9d07e5de9f97378428c3bd6e9dc149adb9e611397c17e5383180"
+    },
+    {
+      "path": "reviews/normalization-review.md",
+      "bytes": 3005,
+      "sha256": "bd71611175d00718567d38813f850fa3bdb47ba6ca39c02f52e6111bd082d216"
+    },
+    {
+      "path": "reviews/raw-energy-review.md",
+      "bytes": 4019,
+      "sha256": "37827d4b8be3b62b7b244e08ad217a4b46dc6db3b75474c16a0a509afe2ba239"
+    },
+    {
+      "path": "reviews/redesign-review-a.md",
+      "bytes": 6143,
+      "sha256": "46eef6f119f0cec67f50ef84e6d9201d988d5effe5077efcf085e16a5747bd7c"
+    },
+    {
+      "path": "reviews/redesign-review-b.md",
+      "bytes": 4768,
+      "sha256": "de1ab1d1f8c20ec13610244f5aa21838cde59a048084c4996b04b43e69f953b5"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 10382,
+      "sha256": "a9e6f5b5e7162411ead4a5786ce300aee2b2fc3d6f8529d1abf97484348c51e4"
+    },
+    {
+      "path": "sources/denominator-m-source-pins.json",
+      "bytes": 1173,
+      "sha256": "a919d177aaabf1067fa0e0e35fac316e81012d143c98dffb0f56409a4b83e90a"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 4661,
+      "sha256": "e5c32217d8549b13ceb01b800543f712172ffc35c010a5c6404c7a834aca0b15"
+    },
+    {
+      "path": "sources/normalization-manifest.json",
+      "bytes": 164,
+      "sha256": "6efc245d7d4b8a8dfc7f37afcecd27e0bf60b66e73ffd5caf136fc037e30baf6"
+    },
+    {
+      "path": "sources/normalization-source-pins.json",
+      "bytes": 817,
+      "sha256": "c6210bd13a7f849a613156e1e4011fac5f2d6db91fe17da8414a9550e867b991"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 2717,
+      "sha256": "b307f8c28ff6e720e6a5e3f478f07b90e5b38971fe715b36c553cc9cb115b829"
+    },
+    {
+      "path": "sources/raw-energy-source-pins.json",
+      "bytes": 1454,
+      "sha256": "ddb696c9b84d6f518331a9314a52a46e911a97e59c54b463d09bc768e69d98dd"
+    },
+    {
+      "path": "sources/sidon-source-pins.json",
+      "bytes": 1184,
+      "sha256": "7e2858e1548667148a9d34dfc9166e6f25b23747c456ce65ce373062329f1961"
+    }
+  ]
+}

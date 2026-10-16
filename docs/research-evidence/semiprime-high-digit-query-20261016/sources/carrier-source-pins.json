@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCarries.lean",
+      "bytes": 23960,
+      "sha256": "db087a256343323e857186154e74506380d9a8f49dc9f76ee0f498897a362f2e"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-query-20261016/forcing/uniform-shift-boundary.md",
+      "bytes": 9832,
+      "sha256": "028d106682957fe8f12c39b4045b9b0347851648b08bc8bd6380db22d24ce0ed"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "bytes": 10881,
+      "sha256": "882bbf2500add5deec9f90e0e46630b55a8c0a3f8e5ad72e8bc7bd68d4e2269e"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeQuotientRows.lean",
+      "bytes": 30477,
+      "sha256": "f1267ffe9d713981270b2fecb49133a219e0d4f0084f0e49f8ffb1e2efdf1b9b"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeDenseRowCoverage.lean",
+      "bytes": 20679,
+      "sha256": "5c481ee4df760a453ab1453065d083ec343407ad2f8936cb7fafeabc9ab99440"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-15",
+  "primary_url": "https://arxiv.org/pdf/2603.02425",
+  "reviewed_contract": "Algorithm 5 disjoint repetition-free Cauchy point lists; field operation bound softO(alpha^(omega-1)(m+n)); not a succinct-list or factor-or-query theorem",
+  "files": [
+    {
+      "file": "khichane-neiger-2026.pdf",
+      "bytes": 645998,
+      "sha256": "6f8256f25eeb11c1dc3b67e8f91bd1c58b8c3f40f2261c5c268738fb7e51b4bf"
+    },
+    {
+      "file": "khichane-neiger-2026.txt",
+      "bytes": 119507,
+      "sha256": "e817066548ec24611937c23b9c0945960706ffcd0d20b5e416926c7e47f78fbd"
+    },
+    {
+      "file": "report.md",
+      "bytes": 11460,
+      "sha256": "29d79b3e23b986bdd73ffa2d0df3c204c02cc09d4a0133660cfee517e4b315e2"
+    },
+    {
+      "file": "signed-shift-review.md",
+      "bytes": 4036,
+      "sha256": "e8d01635c9f1b92f8ac76434d6c2297ed7f11bdf5cf0e989c56cd4761b240470"
+    }
+  ],
+  "coverage_input_scope": "Known compiled canonical coverage and global-leaf recovery: SemiprimeSeedSumAcquisition.common_seed_sum_exact and long_public_route_seed_batch_succeeds, padded 2m\u00b2+2<=L<=4m\u00b2. Current contribution is scalar restriction-bisection interface and actual-instance Cauchy-domain obstruction.",
+  "frozen_report_sha256": "29d79b3e23b986bdd73ffa2d0df3c204c02cc09d4a0133660cfee517e4b315e2"
+}

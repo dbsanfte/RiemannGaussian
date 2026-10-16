@@ -1,0 +1,106 @@
+Analytic selected-coefficient search 629, 2026-10-16.
+Scratch only. No repository edits, staging, build, commit, push, or public metadata.
+
+RESULT
+No guaranteed soft-O(r^3) constructor for sigma_1(N) mod r and no new
+factoring exponent was obtained. There is a genuinely fresh primary analytic
+summation algorithm, but its theorem does not supply the needed weighted
+coefficient or guaranteed running time. Do not count this pass as a sixth-rate
+advance or as an impossibility result.
+
+FRESH PRIMARY SOURCE
+Darren Li, Computing the divisor summatory function in N^(9/28+o(1)),
+arXiv:2609.29949v1, 24 September 2026.
+https://arxiv.org/abs/2609.29949
+https://arxiv.org/html/2609.29949v1
+Local PDF/text: li2609.pdf, li2609.txt.
+
+Theorem 1 gives an exact Las Vegas D(N)=sum_{n<=N} d(n) algorithm in
+N^(9/28+o(1)) EXPECTED bit time and space. Its only randomization factors
+O(H) neighboring integers, H=N^(9/28+o(1)), for the smoothing correction.
+The deterministic analytic part uses Voronoi summation and shared quartic
+phase tables. Theorem 11 evaluates the finite dual sum only for
+2<=M<=N^(2/5), with cost soft-O(
+ N^(1/22) M^(17/22) + N^(10/33) + N^(1/10) M^(3/5)
+ + N^(1/4) + sqrt(M)). It is not a theorem about sigma_1.
+
+EXACT ADJACENT-WEIGHT ACCOUNTING (derived here)
+Let a_n=sigma_1(n), A(t)=sum_{n<=t} a_n, and let v_t be any smoothed
+step kernel. Put S_t=sum_n a_n v_t(n), C_t=A(t)-S_t, and
+W(n)=v_N(n)-v_{N-1}(n). Then, exactly,
+  C_N-C_{N-1}=a_N-sum_n a_n W(n).
+Consequently
+  a_N W(N)=S_N-S_{N-1}-sum_{n!=N} a_n W(n).
+A shared adjacent evaluation can isolate a_N WITHOUT supplying a_N in
+the correction, but only if it really computes the analytic difference
+and all other nonzero correction terms. For standard width-H steps,
+W(N)=Theta(1/H), and O(H) neighboring coefficients remain. Precision
+increases by O(log H), not by a power; the neighbor computations remain.
+Using the identical smoothed step for both endpoints makes W=0 and
+supplies no equation for a_N. Dropping the center from two separately
+computed corrections without solving this displayed equation is invalid.
+
+This is a potentially useful exact extraction interface, not a completed
+weighted Voronoi algorithm. Extending Li from d to sigma_1 requires a
+weighted summation formula, adequate Bessel remainder terms, and a proved
+coefficient/table evaluation bound. It must not be asserted for free.
+Also M~N/H^2: H=N^(1/6)=r^3 gives M=N^(2/3), outside Theorem 11's stated
+range. That theorem's range requires H at least N^(3/10), ignoring logs.
+Thus its cost expression cannot simply be plugged into the target scale.
+
+WHY ITS FINITE TABLE DOES NOT IMMEDIATELY SPEED FINITE-RING GIANT POWERS
+For t=k/K, Li uses e((q_j+K^j)t^j)=e(q_j t^j), since k^j is integral.
+For gamma^integer in Z/NZ, integral exponent shifts do not vanish unless
+ord(gamma) divides them; rational t^j exponents are not available at all.
+A rounded real Taylor remainder can be absorbed in a smooth complex
+amplitude, whereas floor/ceiling integer exponents require their exact
+carries. Therefore the K^10/K^9 table dimensions do not transfer merely by
+replacing e(.) with gamma^(.). This is an exact distinction for that
+proposed transfer, not a lower bound on alternative group algorithms.
+
+PAID EXACT FLOOR-DIFFERENCE BASELINE
+An actual rational-block divisor selector was implemented in
+  divisor_blocks.py
+using only integer arithmetic, continued fractions, modular inverses of
+known coprime integers, and integer square roots. It is a classical
+soft-O(N^(1/3)) selector, not a new exponent. Its purpose is to make the
+shared floor-boundary costs concrete and reproducible.
+
+Let U=ceil(N^(1/3)). Handle x<2U directly. Starting at A>=2U, choose
+H=min(floor(A/(2U)), floor(sqrt(N))-A+1). A continued fraction supplies
+coprime a,q with 1<=q<=H and
+  |-N/A^2-a/q|<=1/(q H).
+Choose z nearest q*N/A and set R(k)=(z+a*k)/q, 0<=k<H. Taylor's identity
+  N/(A+k)=N/A-N*k/A^2+N*k^2/(A^2*(A+k))
+shows
+  |N/(A+k)-R(k)| < 2/q,
+because N*H^3/A^3<=1/8 and q<=H. If A+k divides N, then the residue
+(z+a*k) mod q is among 0,1,2,q-2,q-1 modulo q. There are at most five
+residue classes. In each one, write k=k0+t*q and
+  floor(R(k))=c+a*t.
+Any integral quotient N/(A+k) then equals c+a*t+d for one of the fixed
+six integers -2<=d<=3. The exact divisor equation becomes
+  N=(A+k0+q*t)*(c+a*t+d),
+a quadratic in t. Solve it by integer discriminant-square testing and
+verify the resulting divisibility. No hidden search over q or H remains.
+Each block costs poly(log N); a dyadic A-range uses O(U) blocks, so all
+blocks cost soft-O(N^(1/3)). On a semiprime one can sum d+N/d modulo r
+at the recovered nontrivial divisor, but this is already a factor search.
+
+The semiprime roughness promise permits skipping the initial scalar
+range, because no nontrivial divisor occurs below 16*N^(1/3). The same
+upper bound still has O(N^(1/3)) blocks per dyadic range. This observation
+is not a proof that a different adaptive or collective method cannot save.
+
+Validation: python3 divisor_blocks.py passed 508 exact regressions against
+trial divisor enumeration. It also returned [1,1000003] below sqrt(N) for
+N=1000003*1000033=1000036000099, using 89593 rational blocks and 20001
+scalar checks. These are implementation regressions, not a Lean theorem
+or whole-family coverage evidence for a new rate.
+
+PRIMARY GEOMETRIC SOURCE
+D.H.J. Polymath, Deterministic methods to find primes, section 2.1:
+https://arxiv.org/abs/1009.3956
+Local PDF/text: polymath.pdf, polymath.txt.
+Its continued-fraction blocks are the source of the N^(1/3) geometric
+baseline; the explicit equality selector above is a direct specialization.

@@ -1,0 +1,445 @@
+{
+  "scope": "29 frozen packets; read-only integrity and publication hygiene audit, not mathematical re-review",
+  "packets": [
+    {
+      "directory": "semiprime-adaptive-euclid-20261016",
+      "manifest_sha256": "f4aa02dd10a2a2baec95fcf427c1c822619d7efeb4f59133f8ebb494a1e1d0ed",
+      "source_map_sha256": "7bc8ef7be8678cd893dd8d477f7648db0e60b593c9682047a306e6a6a9fef30d",
+      "manifest_payloads": 12,
+      "files_including_manifest": 13,
+      "bytes": 77092
+    },
+    {
+      "directory": "semiprime-arbitrary-base-ratio-20261016",
+      "manifest_sha256": "9b20f38d7d3389454e4b8aa1c716647767c39f27c16a5567046976750b6bac10",
+      "source_map_sha256": "8b864c08281569d464fdf4ae6fcd6fa10c087904399281c08045c74ab65c668d",
+      "manifest_payloads": 11,
+      "files_including_manifest": 12,
+      "bytes": 70005
+    },
+    {
+      "directory": "semiprime-block-query-20261016",
+      "manifest_sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a",
+      "source_map_sha256": "e5a6327c010aad0f469d8886fd6ed7071412cf09dcad51994c1d798013bd3d01",
+      "manifest_payloads": 47,
+      "files_including_manifest": 48,
+      "bytes": 2700738
+    },
+    {
+      "directory": "semiprime-bounded-offset-20261016",
+      "manifest_sha256": "de34e9b5a4efbc304b712eb7ad7983a74f2d11b6047c0a4961d4bd0b59150717",
+      "source_map_sha256": "0edbcc07c8963fda8fc2b99d0d4dc9000de9062558854ee291c6672923815ed4",
+      "manifest_payloads": 15,
+      "files_including_manifest": 16,
+      "bytes": 91595
+    },
+    {
+      "directory": "semiprime-canonical-query-20261015",
+      "manifest_sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06",
+      "source_map_sha256": "9b1e16c7d513986e6bb285ad260922f68b4f3fb2a06b74c6f8ef1e23c5623c4b",
+      "manifest_payloads": 25,
+      "files_including_manifest": 26,
+      "bytes": 708668
+    },
+    {
+      "directory": "semiprime-channel-acquisition-20261016",
+      "manifest_sha256": "c860df18ab59c69fc70fb3d18fdfaf7b99db657f3faf8827701d0e4a60ebd101",
+      "source_map_sha256": "5fc1059288ba8a26e91179b4439c87d76b4b054e57f4523d6deb543f0b938442",
+      "manifest_payloads": 14,
+      "files_including_manifest": 15,
+      "bytes": 1137785
+    },
+    {
+      "directory": "semiprime-compressed-query-20261015",
+      "manifest_sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88",
+      "source_map_sha256": "7ed30522ab88273674554a2c27533de93e217fe01822c40a10eb854b17f59bb1",
+      "manifest_payloads": 40,
+      "files_including_manifest": 41,
+      "bytes": 2876419
+    },
+    {
+      "directory": "semiprime-cyclotomic-row-cancellation-20261016",
+      "manifest_sha256": "a85a056d38606055d1d5a0523bc42dca362bfc8396d41e77b7befbbbc971547f",
+      "source_map_sha256": "1e15e4190fa1c84f817790acf7a69c7aa20370c932c64762249ed712d50521a2",
+      "manifest_payloads": 6,
+      "files_including_manifest": 7,
+      "bytes": 33755
+    },
+    {
+      "directory": "semiprime-descent-query-20261016",
+      "manifest_sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636",
+      "source_map_sha256": "1862fe2c94ac5cc9abde176b7e1e7fb784a9ecbfd98367f9df94e66a554d91b2",
+      "manifest_payloads": 29,
+      "files_including_manifest": 30,
+      "bytes": 3409244
+    },
+    {
+      "directory": "semiprime-direct-frontier-20261016",
+      "manifest_sha256": "fadf463d83f2881df841ff41da22da41c3dbc40a689011439b13a87dfab63d6a",
+      "source_map_sha256": "f9d6c204be3d28ac0c25d33ce489a5419d6f684cb88bf6e5982bc0e462e7e2bd",
+      "manifest_payloads": 26,
+      "files_including_manifest": 27,
+      "bytes": 1245283
+    },
+    {
+      "directory": "semiprime-direct-update-clock-20261016",
+      "manifest_sha256": "a086a29c9576ce7b9851cebed6e903c5b5463b29cc4fa2140e4d733a7e69f6f9",
+      "source_map_sha256": "3f82823b84e5b0b18bd207274f2baf4576d4676fd8b216253b2d7d9e7abd7138",
+      "manifest_payloads": 11,
+      "files_including_manifest": 12,
+      "bytes": 77551
+    },
+    {
+      "directory": "semiprime-extraction-query-20261016",
+      "manifest_sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c",
+      "source_map_sha256": "26a606efcd76800414c1059c289ddc20d86d1edabff18fd80079cbfc881ff6a3",
+      "manifest_payloads": 28,
+      "files_including_manifest": 29,
+      "bytes": 2334492
+    },
+    {
+      "directory": "semiprime-high-digit-query-20261016",
+      "manifest_sha256": "05cb25cae8e0639707c38ca0841ab23e6ace6f1f1f224a0396904436b37203c2",
+      "source_map_sha256": "38fe329b546bcfbf055c73d4ce21cef2bf306b7fe03ff5c7cf324d708bdf2117",
+      "manifest_payloads": 17,
+      "files_including_manifest": 18,
+      "bytes": 939055
+    },
+    {
+      "directory": "semiprime-input-dependent-20261015",
+      "manifest_sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874",
+      "source_map_sha256": "27341d282b7ed106ba5779093221c3ca54f0e29cbb49ec1c661c9eaef6ca7d39",
+      "manifest_payloads": 28,
+      "files_including_manifest": 29,
+      "bytes": 3290498
+    },
+    {
+      "directory": "semiprime-long-query-20261015",
+      "manifest_sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c",
+      "source_map_sha256": "b404236b2b5ba1361c06fe7de5495bb79e48c45a03d925d6fab793c8a8de8e9a",
+      "manifest_payloads": 22,
+      "files_including_manifest": 23,
+      "bytes": 1145662
+    },
+    {
+      "directory": "semiprime-matrix-clock-obstruction-20261016",
+      "manifest_sha256": "44c0daa007451633e5cd3229b50546410e79100185e8dbca3f8df851ccb6c04a",
+      "source_map_sha256": "3a8e5018f9ce16ddf644a04daab86c5a47140c6d4253c1c019919fad388e3d9d",
+      "manifest_payloads": 11,
+      "files_including_manifest": 12,
+      "bytes": 74231
+    },
+    {
+      "directory": "semiprime-multistream-query-20261015",
+      "manifest_sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3",
+      "source_map_sha256": "4fd0d6fed574567caa125ebd7d2faee1030b20944bba641d723d1dd63ab94da0",
+      "manifest_payloads": 27,
+      "files_including_manifest": 28,
+      "bytes": 779202
+    },
+    {
+      "directory": "semiprime-native-center-20261016",
+      "manifest_sha256": "2f1373b2ff2abd21881945b63f32f3c895f7b68b22bdbafc82ff3d0f7488e09b",
+      "source_map_sha256": "7508a419076a0a0ba21bf136017cd4461f1a137eae5692ef35a0b9077ff3b0f1",
+      "manifest_payloads": 10,
+      "files_including_manifest": 11,
+      "bytes": 69011
+    },
+    {
+      "directory": "semiprime-native-two-clock-20261016",
+      "manifest_sha256": "912daa3eda9d530700a47235682b973168d906677fd7648e8e52adcf84f7c61e",
+      "source_map_sha256": "4569bf08f8bbe013427f25238cf8b1f34b2d948bbe5aaae18da6b75421d9fb63",
+      "manifest_payloads": 11,
+      "files_including_manifest": 12,
+      "bytes": 101337
+    },
+    {
+      "directory": "semiprime-pade-obstruction-20261016",
+      "manifest_sha256": "187da324aed884db8e35b3a0288b9a5ae3970dea838b61f62ee8d8c3db2600e6",
+      "source_map_sha256": "825932f4b17786fc79aef9e7c5c1193b394637ac94654bad2c90cf6234af4f54",
+      "manifest_payloads": 13,
+      "files_including_manifest": 14,
+      "bytes": 60125
+    },
+    {
+      "directory": "semiprime-rational-query-20261015",
+      "manifest_sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e",
+      "source_map_sha256": "a723fec26cd8a8cb150892147a12767e5cd0e472b072b0941956cd0e8048f0dc",
+      "manifest_payloads": 40,
+      "files_including_manifest": 41,
+      "bytes": 2280086
+    },
+    {
+      "directory": "semiprime-reindexed-query-20261016",
+      "manifest_sha256": "4e7c96174f2f8cc199c858aa6efe1665787cd0268286cf3652259a2508331d8a",
+      "source_map_sha256": "a9e6f5b5e7162411ead4a5786ce300aee2b2fc3d6f8529d1abf97484348c51e4",
+      "manifest_payloads": 18,
+      "files_including_manifest": 19,
+      "bytes": 88083
+    },
+    {
+      "directory": "semiprime-representative-carrier-20261016",
+      "manifest_sha256": "8c8f35c1ecc9df7b75b2e0a66b78c335e40ce44c21d49bcfebb9487512621aba",
+      "source_map_sha256": "30ed2afaa17a20dea649e554baafaea107bb1568ddc4a6bea6c49b19cf5b7317",
+      "manifest_payloads": 9,
+      "files_including_manifest": 10,
+      "bytes": 54076
+    },
+    {
+      "directory": "semiprime-small-multiple-20261016",
+      "manifest_sha256": "c8d1d6e6041650fe17347b6471ed71183481ab3e9bc103b097706c91ba3a4b98",
+      "source_map_sha256": "e666078a26f3ab3737d9d9c3970b3297677a43f31d1fcf8183c30468a38ae119",
+      "manifest_payloads": 12,
+      "files_including_manifest": 13,
+      "bytes": 65275
+    },
+    {
+      "directory": "semiprime-spectral-source-20261016",
+      "manifest_sha256": "39dc9c21e01770310c33d384e49a592d5cb80825540d32d427543a3f03f9b38b",
+      "source_map_sha256": "0b1d047d4c9ae3db31de251ec6def5497de0c3357d78052eb2b82fd4478ff2d2",
+      "manifest_payloads": 24,
+      "files_including_manifest": 25,
+      "bytes": 118905
+    },
+    {
+      "directory": "semiprime-unbalanced-annihilator-20261016",
+      "manifest_sha256": "669c3357f264136ea0745cf3de3775d7c1f59a5e5d73ebe66be3ebc27c1740a8",
+      "source_map_sha256": "785a4944a85681b9f6971473a9e3055721bba5883ce7e795a3ba89f38051757c",
+      "manifest_payloads": 12,
+      "files_including_manifest": 13,
+      "bytes": 83165
+    },
+    {
+      "directory": "semiprime-uniform-boundary-20261016",
+      "manifest_sha256": "14df1782fab8a4427ae73167175a290b62a4af370cee8d051b1fa29541345a1b",
+      "source_map_sha256": "99e8a90ca2e44a890984c4ef81b40ae2bc010af5decbdf5edf2e79b91801c3b0",
+      "manifest_payloads": 32,
+      "files_including_manifest": 33,
+      "bytes": 3798414
+    },
+    {
+      "directory": "semiprime-weighted-query-20261015",
+      "manifest_sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302",
+      "source_map_sha256": "cf0e8cd33a95218e9681b39c1979f978201b2a7bec82727108ff723ef2157579",
+      "manifest_payloads": 32,
+      "files_including_manifest": 33,
+      "bytes": 1702013
+    },
+    {
+      "directory": "semiprime-wide-annihilator-20261016",
+      "manifest_sha256": "5cd39e19d0e670f8c903ffa243eae862258f7e6198f8235471da0e19f604fcaf",
+      "source_map_sha256": "cfb72fef334f22c99a52d65032f8785a8b8eeae5386289319ea7da57d3401242",
+      "manifest_payloads": 21,
+      "files_including_manifest": 22,
+      "bytes": 129364
+    }
+  ],
+  "manifest_errors": [],
+  "source_map_errors": [],
+  "broken_markdown_links": [],
+  "historical_context_links": [
+    {
+      "file": "docs/research-evidence/semiprime-adaptive-euclid-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-adaptive-euclid-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-adaptive-euclid-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-adaptive-euclid-20261016/reports/full-ray-tag-trimming.md",
+      "resolved_path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/reports/full-ray-tag-trimming.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-arbitrary-base-ratio-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-arbitrary-base-ratio-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-arbitrary-base-ratio-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-block-query-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-block-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-bounded-offset-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-bounded-offset-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-bounded-offset-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-channel-acquisition-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-channel-acquisition-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-channel-acquisition-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-channel-acquisition-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-channel-acquisition-20261016/reports/channel-pade.md",
+      "resolved_path": "docs/research-evidence/semiprime-channel-acquisition-20261016/reports/channel-pade.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-cyclotomic-row-cancellation-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-cyclotomic-row-cancellation-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-cyclotomic-row-cancellation-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-descent-query-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-descent-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-direct-frontier-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-direct-frontier-20261016/reports/direct-frontier.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/reports/direct-frontier.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-direct-frontier-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-direct-frontier-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-frontier-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-direct-update-clock-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-direct-update-clock-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-direct-update-clock-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-extraction-query-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-extraction-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-high-digit-query-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-high-digit-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-high-digit-query-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-matrix-clock-obstruction-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-matrix-clock-obstruction-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-matrix-clock-obstruction-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-multistream-query-20261015/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-multistream-query-20261015/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-multistream-query-20261015/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-native-center-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-native-center-20261016/reports/native-centers-and-origin-span.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/reports/native-centers-and-origin-span.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-native-center-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-native-center-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-center-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-native-two-clock-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-native-two-clock-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-native-two-clock-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-pade-obstruction-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-pade-obstruction-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-pade-obstruction-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-reindexed-query-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-reindexed-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-reindexed-query-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-representative-carrier-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-representative-carrier-20261016/reports/representative-and-local-carriers.md",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/reports/representative-and-local-carriers.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-representative-carrier-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-representative-carrier-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-representative-carrier-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-small-multiple-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-small-multiple-20261016/reports/low-digit-plan.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reports/low-digit-plan.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-small-multiple-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-small-multiple-20261016/reports/carrier-certificate.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/reports/carrier-certificate.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-small-multiple-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-small-multiple-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-small-multiple-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-spectral-source-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-spectral-source-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-spectral-source-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-unbalanced-annihilator-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-uniform-boundary-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-uniform-boundary-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/README.md"
+    },
+    {
+      "file": "docs/research-evidence/semiprime-wide-annihilator-20261016/sources/journal-entry.md",
+      "target": "research-evidence/semiprime-wide-annihilator-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-wide-annihilator-20261016/README.md"
+    }
+  ],
+  "unresolved_tmp_references": [],
+  "oversized_files": [],
+  "generated_or_secret_candidates": [],
+  "historical_current_file_drift": [],
+  "source_map_external_records": 5,
+  "totals": {
+    "packets": 29,
+    "manifest_payloads": 603,
+    "files_including_manifests": 632,
+    "bytes": 29541129
+  },
+  "largest_files": [
+    {
+      "path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/slp-gcd1988.pdf.gz",
+      "bytes": 2258893
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/primary/rational-preprocessing2026.pdf.gz",
+      "bytes": 1437767
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/primary/elliptic-butterflies.pdf.gz",
+      "bytes": 1169025
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/primary/kpsv21.pdf.gz",
+      "bytes": 1012857
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/primary/bernstein-norm-2023.pdf.gz",
+      "bytes": 988181
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/primary/kopp-2025.pdf.gz",
+      "bytes": 945880
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/primary/ishibashi-2026.pdf.gz",
+      "bytes": 899407
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/primary/sparse-gcd-2026.pdf.gz",
+      "bytes": 852371
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/primary/qholonomic-author-current.pdf.gz",
+      "bytes": 694552
+    },
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/primary/displacement2017.pdf.gz",
+      "bytes": 651416
+    }
+  ]
+}

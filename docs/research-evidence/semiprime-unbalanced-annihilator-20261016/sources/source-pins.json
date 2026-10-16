@@ -1,0 +1,36 @@
+{
+  "scope": "Existing dependency bytes plus primary metadata fingerprints; full copyrighted sources are not newly copied.",
+  "sources": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/small-order-separator.md",
+      "bytes": 5679,
+      "sha256": "5fd92268584613b0ffe9b1c12e076dd3ef93a52d53cb3d76c799b2a747793109"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/reports/short-annihilator-extractor.md",
+      "bytes": 10375,
+      "sha256": "433d10d8c413ad8cbe7ecb09bbafe0794559afa8b2b535e3667b9491950c1131"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-wide-annihilator-20261016/sources/primary-fingerprints.json",
+      "bytes": 1815,
+      "sha256": "a1e1b635d632a1c1acd047be0ecd5c982c7a843d33d0fabb7081cdaed3ab903b"
+    },
+    {
+      "key": "LauWu-primary-pdf",
+      "url": "https://hkumath.hku.hk/~imr/IMRPreprintSeries/2007/IMR2007-4.pdf",
+      "bytes": 221207,
+      "sha256": "4cc9dba73064795de434d6b42baca0743347313b6a242f5439c9ed979ddd4368",
+      "local_inspected_path": "/tmp/semiprime-wide-annihilator-20261016/primary/LauWu2007.pdf",
+      "inspected_sections": "Theorem1 printedp2; composite-modulus proof Section2 printedpp4-6"
+    },
+    {
+      "key": "LauWu-primary-layout-text",
+      "url": "https://hkumath.hku.hk/~imr/IMRPreprintSeries/2007/IMR2007-4.pdf",
+      "derived": "pdftotext layout text of pinned primary PDF",
+      "bytes": 53442,
+      "sha256": "99d222b33b06d55c1ac00637eb67db393417439e8305e1493bab58e40df5a8d5",
+      "local_inspected_path": "/tmp/semiprime-wide-annihilator-20261016/primary/LauWu2007.txt"
+    }
+  ]
+}

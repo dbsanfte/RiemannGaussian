@@ -1,0 +1,68 @@
+Trace626 constructive acquisition search, 2026-10-16
+Scratch only; no repository edits, staging, builds, commits or pushes.
+
+OUTCOME
+No actual soft-O(r^3) acquisition of sigma_1(N) mod r, no improved
+unconditional factoring exponent, and no sufficient whole-family sparse
+factor-residue menu was obtained. This pass is not a new obstruction
+result and should not be recorded as a sixth-rate advance.
+
+FRESH PRIMARY 2026 SOURCE
+Pantelimon Stanica, Erik Mulder, Markus Hittmeir:
+Multi-target hyperbolic sieves and elliptic trace obstructions.
+arXiv:2606.13018v2, revised 5 October 2026.
+https://arxiv.org/abs/2606.13018
+https://arxiv.org/html/2606.13018v2
+
+The paper gives actual finite-field candidate-set constructors:
+  H_a(N;l)={a*x+N/x : x in F_l^*},
+  |H_a|=(l+chi(a*N))/2.
+For an explicit coefficient family A, Proposition 6.1 constructs the union
+in O(|A|*l) field operations, after O(l) inverse precomputation. Thus this
+is paid data acquisition and a guaranteed menu for the LINEAR FORMS
+  a*P+Q mod l,
+not for P mod l. Unions of k coefficient sets have size
+  l*(1-2^(-k)) + error,
+with explicit error at most (k-1+2^(-k))*sqrt(l)+k. CRT products cover k^t
+coefficient classes using one product menu over t auxiliary primes.
+
+For primitive-root coefficients (g,g^2), the exact union cardinality is
+controlled by one elliptic curve trace t_g. Proposition 6.2 / Remark 6.3
+allows deterministic Schoof point counting in poly(log l) per explicitly
+supplied primitive root. This computes the SIZE and tests a local bound;
+it does not determine the actual factor sum P+Q mod l. Membership in the
+image can itself be tested by chi(z^2-4*a*N) != -1.
+
+The paper explicitly states in Introduction and Conclusion that it proves
+no improvement of deterministic factorization: construction costs AND
+subsequent search would need analysis. The restricted r-th-power images
+apply to a known input shape N=u^r*v, not a general distinct semiprime.
+The source therefore does not currently close this task. Its exact
+multi-target menu remains a possible ingredient if another task supplies
+a cheap shared linear-form consumer; no such consumer was supplied here.
+
+OTHER SOURCE VERIFICATION
+Chris Umans, Siki Wang, A number-theoretic conjecture implying faster
+algorithms for polynomial factorization and integer factorization,
+arXiv:2511.10851, 13 November 2025, still only v1 as checked today.
+https://arxiv.org/abs/2511.10851
+Its 1/6 consequence remains conditional on the structured divisor-cover
+conjecture; no 2026 proof or revision was found. The prior repo consumer
+already addresses the group-cover transfer, so this is not fresh progress.
+
+CONSTRUCTIVE DIRECTIONS EXAMINED
+1. Isolated finite-field coefficients / theta-series representations:
+   no actual compact representation and coefficient algorithm with the
+   needed cost was found. A four-square identity merely replaces the
+   unknown divisor coefficient by the unknown representation count.
+2. Binomial units / factorial digits modulo the known auxiliary prime:
+   the standard digit algorithms compute explicit functions of N but no
+   identity extracting the hidden trace was supplied. Modulo N, useful
+   binomial/factorial cancellations still require a paid large product.
+3. Small-level modular symbols / composite Hecke index:
+   no source supplies unfactored composite-index Hecke evaluation in
+   soft-O(r^3). Fixed small dimension does not supply such evaluation.
+
+No finite-dimensional existence claim, new hardness/lower-bound claim,
+QRH-to-GRH substitution, or prime/composite Frobenius identification was
+made. No successful numerical examples were used as coverage evidence.

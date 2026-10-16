@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-16",
+  "acquisition_achieved": false,
+  "target": "For an unfactored semiprime N and an auxiliary prime r asymptotic to N^(1/18), compute [q^N] H_r(q) modulo r in deterministic bit soft O(r^3), where H_r=(E_{r-1}-1)/r. No such evaluator was established.",
+  "scope": "Primary sources and direct formal-series deductions only. All artifacts under this /tmp directory; no repository changes, tests, commits, shared journal, or backend lemmas.",
+  "sources_actually_read": [
+    {
+      "title": "Dwork Crystals III: From Excellent Frobenius Lifts Towards Supercongruences",
+      "authors": "Frits Beukers and Masha Vlasenko",
+      "url": "https://arxiv.org/abs/2105.14841",
+      "pdf": "https://arxiv.org/pdf/2105.14841",
+      "local_text": "dwork-iii.txt",
+      "verified_locations": "Definition 3.1 through Corollary 3.4; Theorem 4.2; Section 7 assumptions and Theorem 7.3; Propositions 7.6-7.9; Corollary 7.11; Lemma 7.13; Definition 7.14; Theorem 7.15 and its proof.",
+      "exact_hypotheses": "R is a p-adically complete coefficient ring with a Frobenius lift. In Section 7, f=1-tg; the Newton polytope of g is reflexive; g is completely symmetric (all nonzero lattice points are vertices and a finite monomial symmetry group is transitive on them). The odd prime p does not divide the vertex coefficient gamma, the group order, or the index of the support lattice. The first and second Hasse-Witt determinants are invertible in R. For the excellent lift theorem, R is the p-adic completion of Z_p[t,1/hw^(1),1/hw^(2)].",
+      "valid_small_elliptic_family": "g=x+x^(-1)+y+y^(-1) has the diamond Newton polytope, vertex coefficient 1, symmetry group of order 8, and full support lattice. Thus all p>=5 pass the prime restrictions. Its constant-term period is F(t)=sum_{m>=0} binom(2m,m)^2 t^(2m), a pullback of the Legendre hypergeometric period. Here t, its canonical nome, and the full-level q must be distinguished; their usual finite pullbacks do not by themselves supply coefficient extraction.",
+      "what_cartier_means": "The paper's C_p selects coefficients at Laurent monomials x^(p u) in the auxiliary x variables. It is not the nonzero-digit section operator on the canonical q expansion.",
+      "what_the_finite_quotient_discards": "Corollary 3.4 identifies F_k M with M intersected with the module of formal kth derivatives in the auxiliary Laurent variables. The finite de Rham-style quotient is not an evaluator for the retained exact component of H_r.",
+      "proved_outputs": [
+        "q(t)=t exp(G(t)/F(t)) is p-integral, where F and F log t+G are the normalized Picard-Fuchs solutions.",
+        "There is a unique excellent lift phi(t)=t^sigma satisfying q(phi(t))=gamma^(p-1) q(t)^p. For gamma=1 this is the usual Bottcher conjugacy equation.",
+        "The excellent phi belongs to the stated completed localization (Theorem 7.15). This is membership, not a selected-coefficient complexity theorem or a quantitative degree O(p^2) assertion at arbitrary precision.",
+        "For the naive lift t->t^p, Lemma 7.13 identifies lambda_1=(F(t)F(t^p)/W(t^p)) log(q(t)^p/q(t^p)) when gamma=1. Proposition 7.7 gives lambda_1 in pR.",
+        "The proof of Theorem 7.15 gives phi=t^p(1+h), h=sum_{m>=1} s_m/m! * ((F(t^p)/F(t))*lambda_1)^m, with s_1=1 and s_m integral. Consequently h=(F(t^p)/F(t))*lambda_1 mod p^2 for p>=3."
+      ],
+      "not_used": "Conjecture 7.5's stronger supercongruences are conjectural and were not assumed. No claim that completed-localization membership pays an O(p^3) bit algorithm is made."
+    },
+    {
+      "title": "Algorithms for Algebraic and Arithmetic Attributes of Hypergeometric Functions",
+      "authors": "Xavier Caruso and Florian Fuernsinn",
+      "version": "Author PDF linked to arXiv:2601.16105, 2026",
+      "url": "https://arxiv.org/abs/2601.16105",
+      "pdf": "https://xavier.caruso.ovh/papers/publis/hypergeom-algorithms.pdf",
+      "local_text": "hypergeom-2026.txt",
+      "verified_locations": "Section 3.2, Proposition 3.5, Remark 3.6, Corollary 3.7; Section 3.3, Proposition 3.8 and Theorem 3.9.",
+      "positive_algorithm": "For a rational-parameter hypergeometric series h of good reduction at p, Proposition 3.5 explicitly expresses every section Lambda_d h as a scalar multiple of another hypergeometric series, using the Dwork map on shifted parameters (with the stated valuation/scaling modifications). Remark 3.6 computes the multiplicative congruence class of h_N in O((m+n)*p*log N) multiplications/divisions. This is a genuinely proved nonzero-digit section rule in the algebraic parameter.",
+      "applicable_part": "The Legendre period itself is covered. In the particularly simple central-binomial period, Lucas digit products also give selected period coefficients directly.",
+      "precise_missing_transfer": "The theorem treats hypergeometric series in their own argument. It does not assert closure after composing with the inverse mirror coordinate t(q), exponentiating G/F, or taking the first Hasse jet. Its proved finite family cannot be reused for q-digit sections without a new argument.",
+      "cost_caution": "The stated operation count is not automatically a bit O(p log N) count for general rational input parameters. For fixed Legendre parameters the elementary Lucas implementation does have soft O(p+log N) bit preprocessing/query cost. This does not compute H_r(q)'s composite-index coefficient."
+    },
+    {
+      "title": "Coefficient-Level Bottcher Theory for Wild Superattracting Germs of Degree p^e",
+      "author": "Rufei Ren",
+      "version": "arXiv:2604.02014v3, 14 May 2026",
+      "url": "https://arxiv.org/html/2604.02014v3",
+      "verified_locations": "Abstract; Theorems 1.1 and 1.5 and their exact normalizations.",
+      "scope": "The clean family is phi_{a,e}(x)=x^(p^e)+p^(a+e)x^(p^e+1), e>=2. The digit-sum law concerns the divided-power numerators a_k in f=x sum a_k x^k/k!, not arbitrary ordinary coefficients of an elliptic excellent lift. Tail stability requires its explicit valuation conditions. Neither the elliptic excellent lift nor its iterates were shown to satisfy these hypotheses, so this is not invoked as an evaluator."
+    }
+  ],
+  "direct_proved_deductions": [
+    {
+      "name": "What the first excellent jet determines",
+      "statement": "Write phi(t)=t^r(1+rV(t)) mod r^2 and E(t)=t q'(t)/q(t), for gamma=1. Differentiating q(phi)=q^r and dividing by r gives E(t)=(1+tV'(t))*E(t)^r mod r. Equivalently E(t)^(r-1)=1/(1+tV'(t)).",
+      "proof": "phi'/phi=r/t+rV' mod r^2. Substitute into (q'/q)(phi)*phi'=r q'/q and reduce after division by r. E(t^r)=E(t)^r over F_r. Dwork's formula E=W/F^2 is consistent with this equation.",
+      "implication": "This algebraic logarithmic derivative is usable data, but differentiation loses rth-power coordinate information."
+    },
+    {
+      "name": "Finite precision coordinate ambiguity",
+      "statement": "For every k>=2 and v(z) in 1+z Z_r[[z]], h(z)=z*v(z)^(r^(k-1)) satisfies h(z^r)=h(z)^r mod r^k. Consequently q and h composed with q satisfy the same excellent-lift equation to precision r^k, whereas their reductions modulo r can differ at degree r^(k-1)+1.",
+      "proof": "v(z^r)=v(z)^r mod r. Raising two congruent units to r^(k-1) improves this congruence to mod r^k by the binomial theorem for odd r. Multiply by z^r. Taking v=1+z makes h mod r equal to z+z^(r^(k-1)+1).",
+      "scope": "This concerns the truncated conjugacy equation alone. A full Picard-Fuchs normalization still uniquely specifies the canonical coordinate. It is not a lower bound against algorithms using that additional data.",
+      "algorithmic_consequence": "A selected evaluator based only on a precision-k lift must account for this coordinate information. Depth about log_r N+1 can affect coefficient N. Since N is about r^18 here, this is a fixed number of precision levels, not an exponential required p-adic precision. The remaining issue is representation growth and selected extraction, not the number of precision levels."
+    },
+    {
+      "name": "Exact selected mirror-coordinate query",
+      "statement": "For any integral q(t)=t*u(t), u(0)=1, inverse t(q), any integral h(t), and r not dividing m, Lagrange inversion gives [q^m]h(t(q))=(1/m)*[t^(m-1)] h'(t)*u(t)^(-m) mod r.",
+      "retained_derivative": "For h(t)=H_r(q(t)) in a coordinate with the original normalized q(t)=t+..., let B(t)=E_2(q(t)) mod r and E=t q'/q. The identity 12 D H_r=E_2(q)-E_2(q^r) yields h'(t)=E(t)*(B(t)-B(t)^r)/(12t). Hence [q^N]H_r=(1/(12N))*[t^N] E(t)*(B(t)-B(t)^r)*u(t)^(-N). Finite power/rescaling changes of the nome can be handled by the corresponding index change; no accidental identification of nomes is assumed here.",
+      "why_useful": "The derivative multiplier is algebraic in the ordinary modular/period algebra modulo r. The hard term is the canonical mirror unit u(t)^(-N). This formulation keeps exactly the nonzero-index derivative component requested by the parent. It does not replace it with a finite cohomology class."
+    }
+  ],
+  "new_promising_paid_query": {
+    "input": "An ordinary elliptic Picard-Fuchs family with its normalized period and logarithmic period, an explicit excellent Frobenius lift represented modulo r^k in a bounded-degree localized algebra, a specified algebraic multiplier A(t), and binary m. Here k is about 1+log_r m (about 20 in the target scaling), and the multiplier of interest is E*(B-B^r).",
+    "output": "The selected twisted mirror coefficient [t^m] A(t)*(q(t)/t)^(-m) mod r, without computing the prefix through m or factoring m.",
+    "required_cost": "A proof of total deterministic bit soft O(r^3), including construction of the higher-precision lift, all localized-algebra representations, and the extraction. A log m sequence of steps is sufficient only if the actual nonzero-digit operator representation sizes stay within that bound.",
+    "unpaid_steps": [
+      "A quantitative construction/degree bound for the necessary precision of the elliptic excellent lift, beyond the membership statement of Dwork Theorem 7.15.",
+      "A selected Bottcher/mirror coefficient algorithm for the displayed twist, with proved treatment of every nonzero base-r digit and controlled representation growth. The hypergeometric section theorem does not pay this composition step."
+    ],
+    "honest_status": "This is a sharper arithmetic query and a possible research direction, not an acquired residue catalog or a sixth-root factoring algorithm. No finite q-Cartier kernel is assumed, and mod r^2 or mod r^3 Frobenius preprocessing is not counted as coefficient acquisition."
+  },
+  "actual_bottcher_recurrence": {
+    "setup": "Write the inverse coordinate T(z)=z B(z), B(0)=1, and phi(t)=t^r(1+r V(t)) modulo r^k. Then B(z^r)=B(z)^r*(1+r V(z B(z))) modulo r^k.",
+    "coefficient_rule": "If B=1+sum b_n z^n and B_<n=1+sum_{i<n} b_i z^i, then r b_n = 1_{r|n} b_(n/r) - [z^n] B_<n^r - r*[z^n] B_<n^r V(z B_<n) modulo r^k. The last replacement by B_<n is valid when V has zero constant term; a nonzero constant can first be normalized away.",
+    "cost_accounting": "This is a valid coefficient recursion, not yet a selected digit recursion. After division by r, B_<n^r contains all two-part contributions b_i b_j for i+j=n, with unit multinomial weights modulo r (for distinct i,j the weight is r-1). Thus this direct evaluation enumerates a number of split indices depending on n. No constant branching per base-r digit or total r^3 state representation has been proved.",
+    "relation_to_Ren": "Ren uses divided-power normalization and factorial valuations to isolate carry-free cumulants. For the integral ordinary elliptic inverse coordinate, that collapse needs a new proof; the quoted digit law alone does not evaluate this recurrence."
+  }
+}

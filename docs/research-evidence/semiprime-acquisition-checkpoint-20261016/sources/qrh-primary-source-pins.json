@@ -1,0 +1,31 @@
+{
+  "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "repository": "https://github.com/openai/math",
+  "files": [
+    {
+      "file": "/tmp/semiprime-first-jet-acquisition-20261016/fresh/qrh-sept30.pdf",
+      "sha256": "8fe93046f8cf5ef1ba5969c89addc02d76311adc4ee907509ff9cd96f7ec99e7",
+      "bytes": 1588969
+    },
+    {
+      "file": "/tmp/semiprime-first-jet-acquisition-20261016/fresh/qrh-sept30.txt",
+      "sha256": "503e5904b4b4db4ebcb473e9d9284143f93e062d471e3bcb8f10f72bde098fd0",
+      "bytes": 816646
+    },
+    {
+      "file": "/tmp/semiprime-first-jet-acquisition-20261016/fresh/primitive-roots-oct4.pdf",
+      "sha256": "671ac4b3ece879f614ed8f4b782e61a07805e533f385a694fe4d7afbda3c9365",
+      "bytes": 891737
+    },
+    {
+      "file": "/tmp/semiprime-first-jet-acquisition-20261016/fresh/primitive-roots-oct4.txt",
+      "sha256": "2a297e67ff1881016db2b4ebfbc718d6e7106d9ea31af07ff6f1fe4b8fa71a7c",
+      "bytes": 352743
+    }
+  ],
+  "verified_statements": {
+    "QRH_Theorem_1_1": "All Dirichlet L-functions, including zeta, zero-free Re(s)>7/8.",
+    "QRH_Corollary_1_2": "Every odd PRIME p has least quadratic nonresidue <= C(log p)^A, A=32 admitted in proof. Does not literally state composite Jacobi bound.",
+    "primitive_roots_Theorem_1_2": "Every finite-order Hecke L-function over every cyclotomic F containing mu12 zero-free Re(s)>1-10^-6, no conductor/height cutoff."
+  }
+}

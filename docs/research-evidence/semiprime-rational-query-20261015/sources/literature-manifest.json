@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-15",
+  "scope": "four freshly downloaded primary PDF/text pairs; positive selected-coefficient algorithm and literature-interface report",
+  "files": [
+    {
+      "file": "accurate-summation-2005.pdf",
+      "sha256": "df45d6cadc90d0ae5576ea8674940b3cd1698bd441c2ddc6a20799d8d6e65315",
+      "bytes": 197748
+    },
+    {
+      "file": "accurate-summation-2005.txt",
+      "sha256": "6956e50cc6b54d6254f6ed9ea67fecd8f4f6a889c42ab131724741fc6c17f05a",
+      "bytes": 62867
+    },
+    {
+      "file": "discrete-residues-2025.pdf",
+      "sha256": "ba345f68eb91856d2fb5744d9dca10d6e7abaaf462c7e7b5d9379b5aa9234d63",
+      "bytes": 401391
+    },
+    {
+      "file": "discrete-residues-2025.txt",
+      "sha256": "26c0f772e1eb9649e77f040329e0fd1c3bb517ca546913a422f5ec1cbfe90623",
+      "bytes": 110948
+    },
+    {
+      "file": "gosper-multiples-2021.pdf",
+      "sha256": "12bf1f469effc21d0fb7bbf0f8afa94abd4172ce57e68e531d33d66bfec92515",
+      "bytes": 117679
+    },
+    {
+      "file": "gosper-multiples-2021.txt",
+      "sha256": "666fbecab2d02cb704453ea614a3b4810067ca996881316e240b5457b9d25ada",
+      "bytes": 29526
+    },
+    {
+      "file": "primary-search-report.md",
+      "sha256": "c9e4af4ed9d3f57d50d8edeb79a29b44e067da8681ae246e26eee0bb2a2a51a6",
+      "bytes": 6368
+    },
+    {
+      "file": "q-rational-2022.pdf",
+      "sha256": "5a2be2a4ca8f13a600b0a378292fd171853076e35e64d062e46fa1a11dc4b5e7",
+      "bytes": 194176
+    },
+    {
+      "file": "q-rational-2022.txt",
+      "sha256": "94e88ec85ce0f18f7f9c31cf2341a9e8a314694f6ea48da5f477455dc371fb1a",
+      "bytes": 52339
+    },
+    {
+      "file": "selected-qbinomial-primitive.md",
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb",
+      "bytes": 6713
+    }
+  ]
+}

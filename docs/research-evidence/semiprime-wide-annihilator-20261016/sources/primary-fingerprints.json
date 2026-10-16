@@ -1,0 +1,38 @@
+{
+  "scope": "Metadata only; the full papers and derived text were inspected locally and are not redistributed. Fingerprints are not independent proof or remote authentication.",
+  "sources": [
+    {
+      "key": "HH-v2-pdf",
+      "url": "https://arxiv.org/pdf/2601.11131v2",
+      "version": "arXiv2601.11131v2, 2026-06-05",
+      "bytes": 412025,
+      "sha256": "0e957bacebc0b74f363436ab09b70085f4ad83c45dee93bda8aef19fbfdcbff0",
+      "local_inspected_path": "/tmp/semiprime-order-acquisition-20261016/harvey-hittmeir.pdf",
+      "inspected_sections": "Theorem1.1, bit model, Lemmas2.1-2.3 and Algorithm3.1"
+    },
+    {
+      "key": "HH-v2-layout-text",
+      "url": "https://arxiv.org/pdf/2601.11131v2",
+      "derived": "pdftotext layout text of pinned primary PDF",
+      "bytes": 46216,
+      "sha256": "2d4b8fc6eb1ba0b20c0b057fa02317f982a93fe319099dbd453a531e16c57d24",
+      "local_inspected_path": "/tmp/semiprime-order-acquisition-20261016/harvey-hittmeir.txt"
+    },
+    {
+      "key": "LauWu-primary-pdf",
+      "url": "https://hkumath.hku.hk/~imr/IMRPreprintSeries/2007/IMR2007-4.pdf",
+      "bytes": 221207,
+      "sha256": "4cc9dba73064795de434d6b42baca0743347313b6a242f5439c9ed979ddd4368",
+      "local_inspected_path": "/tmp/semiprime-wide-annihilator-20261016/primary/LauWu2007.pdf",
+      "inspected_sections": "Theorem1 printedp2; composite-modulus proof Section2 printedpp4-6"
+    },
+    {
+      "key": "LauWu-primary-layout-text",
+      "url": "https://hkumath.hku.hk/~imr/IMRPreprintSeries/2007/IMR2007-4.pdf",
+      "derived": "pdftotext layout text of pinned primary PDF",
+      "bytes": 53442,
+      "sha256": "99d222b33b06d55c1ac00637eb67db393417439e8305e1493bab58e40df5a8d5",
+      "local_inspected_path": "/tmp/semiprime-wide-annihilator-20261016/primary/LauWu2007.txt"
+    }
+  ]
+}

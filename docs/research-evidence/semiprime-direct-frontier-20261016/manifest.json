@@ -1,0 +1,267 @@
+{
+  "recorded_date": "2026-10-16",
+  "repository_head": "c6916d08aba9d5fe3059b630ae74dc7b6128efee",
+  "classification": "Unsuccessful direct-acquisition pass and independently reviewed external-source delta; no new arithmetic obstruction",
+  "model_authorization": "User authorized parallel Sol 6.1 research; three existing gpt-6.1-sol agents reused.",
+  "whole_family_soft_linear_query_acquired": false,
+  "general_query_bound": "Existing soft O(J+sqrt(JL)), hence soft O(m^(3/2)), unchanged",
+  "new_acquisition_or_obstruction": false,
+  "external_snapshot": {
+    "base": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "head": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "added_preprint_blobs": 381,
+    "modified_preprint_blobs": 6,
+    "removed_preprint_blobs": 31,
+    "touched_folders": 30,
+    "selected_unchanged_arithmetic_blobs": 62,
+    "unchanged_oai_subtrees": 4
+  },
+  "verification_scope": "Offline saved Git Merkle/blob/hash consistency, not remote authentication, theorem validation, Lean compilation or an operation lower bound",
+  "missing_work": "Restriction-stable soft O(m) sufficient factor query, full bit/controller proof, Lean sixth-rate composition",
+  "review_target_checks": [
+    {
+      "review": "reviews/delta-review.md",
+      "target": "repo-delta/check.py",
+      "target_bytes": 4530,
+      "target_sha256": "132271a381414a15c648a01aeee9f6bc69772071b89cce1a8a54d922d6409a3e"
+    },
+    {
+      "review": "reviews/delta-review.md",
+      "target": "repo-delta/certificate.json",
+      "target_bytes": 13342,
+      "target_sha256": "59801bafe3be03ef9d08a9fd58f625dace053d89dd30e47049baa7b89533f452"
+    }
+  ],
+  "prior_manifests_unchanged": [
+    {
+      "path": "docs/research-evidence/semiprime-block-query-20261016/manifest.json",
+      "bytes": 42580,
+      "sha256": "562b3b54859243e9b0cddf2f1878d6b9f563b5189c1f0642f29967dc61214b8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/manifest.json",
+      "bytes": 7083,
+      "sha256": "ef1f2bc40e459a6d1cbef6e3263bf9fd758438fe00b5f79cfef37db7b0b58b06"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-compressed-query-20261015/manifest.json",
+      "bytes": 24627,
+      "sha256": "7982069d6c7c34506c01c7a1afef7f2d9a14b192eca3ae673b832d25a9499f88"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/manifest.json",
+      "bytes": 13605,
+      "sha256": "b2bd655bee0ee1b7a500a4b7f5b25c1763ad972ddc37c8c655a58e4cc2f16874"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-long-query-20261015/manifest.json",
+      "bytes": 7479,
+      "sha256": "6971dd26dcc596eb527f8026bf95e5021a00877be8dfccbbbb1db43961e6f33c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-multistream-query-20261015/manifest.json",
+      "bytes": 26790,
+      "sha256": "9cfd8d8b0622353d965a76909e159accb933e0b384754b7c4e69d82ebc64e8a3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-rational-query-20261015/manifest.json",
+      "bytes": 24340,
+      "sha256": "fe907304ad113f8148f570bae65e8e4f2ec2e468523ff542d92bab7f8af9ec2e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-weighted-query-20261015/manifest.json",
+      "bytes": 17493,
+      "sha256": "3e8690e9191adf0ac005bebda39526927333a7dcbd9ca462fb0c40b3856f4302"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/manifest.json",
+      "bytes": 11885,
+      "sha256": "85d1bf01213f242427c3c2b400c612db510623567c0b277441016af2eecb4636"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-boundary-20261016/manifest.json",
+      "bytes": 13388,
+      "sha256": "14df1782fab8a4427ae73167175a290b62a4af370cee8d051b1fa29541345a1b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-high-digit-query-20261016/manifest.json",
+      "bytes": 9387,
+      "sha256": "05cb25cae8e0639707c38ca0841ab23e6ace6f1f1f224a0396904436b37203c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-reindexed-query-20261016/manifest.json",
+      "bytes": 10286,
+      "sha256": "4e7c96174f2f8cc199c858aa6efe1665787cd0268286cf3652259a2508331d8a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-spectral-source-20261016/manifest.json",
+      "bytes": 11092,
+      "sha256": "39dc9c21e01770310c33d384e49a592d5cb80825540d32d427543a3f03f9b38b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-channel-acquisition-20261016/manifest.json",
+      "bytes": 8428,
+      "sha256": "c860df18ab59c69fc70fb3d18fdfaf7b99db657f3faf8827701d0e4a60ebd101"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-adaptive-euclid-20261016/manifest.json",
+      "bytes": 10176,
+      "sha256": "f4aa02dd10a2a2baec95fcf427c1c822619d7efeb4f59133f8ebb494a1e1d0ed"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-center-20261016/manifest.json",
+      "bytes": 9534,
+      "sha256": "2f1373b2ff2abd21881945b63f32f3c895f7b68b22bdbafc82ff3d0f7488e09b"
+    }
+  ],
+  "prior_listed_files_unchanged": 445,
+  "journal_before_entry": {
+    "path": "docs/semiprime-factorisation-investigation.md",
+    "bytes": 1579917,
+    "sha256": "ea54fbf675a260112f753509064931a1ca708399dc92a8f4400d3631617cf648"
+  },
+  "entry_bytes": 2067,
+  "entry_sha256": "29f55aa83287e1da15d676e86ad6882a2d32f49780911e43dc95b7f8595b3402",
+  "source_map": "source-map.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1783,
+      "sha256": "d4bf352c6b7ec40c4a887d86c323f859982501c84df7a7925e186dd37846e598"
+    },
+    {
+      "path": "repo-delta/Deterministic.lean",
+      "bytes": 22624,
+      "sha256": "f51289517dc00b6f843e6f408f393c1bcac7d25e78eb162c0c629618875d252b"
+    },
+    {
+      "path": "repo-delta/Equality.lean",
+      "bytes": 4386,
+      "sha256": "4e04bb9a264ff32042267832d47423079a0d72b9880994b5e84957d672d5fbe9"
+    },
+    {
+      "path": "repo-delta/base-commit.json",
+      "bytes": 822,
+      "sha256": "2b6a00b5d314d099df6b0eb0fd38a86a103f76cda99548d638585efc0317d514"
+    },
+    {
+      "path": "repo-delta/base-lean-root.json",
+      "bytes": 2697,
+      "sha256": "0db7538ceadfdbdd985dd3395aeacbd4231cccc9e46437da49ff4bf4773d2a83"
+    },
+    {
+      "path": "repo-delta/base-oai-root.json",
+      "bytes": 4851,
+      "sha256": "52dfce40dc367c3fd5c266bf559f6b4b928e0d77c4215b987ed70ac0613e2195"
+    },
+    {
+      "path": "repo-delta/base-preprints-tree.json.gz",
+      "bytes": 553341,
+      "sha256": "0086463e41b1fc29e00dbc41427c7f5e7805e50655591dfd691a06533361a3a4",
+      "uncompressed_bytes": 3849833,
+      "uncompressed_sha256": "9b377c4863646ac9aab5c9eb4dbdd96db07378bd13e778407bd225b7b45dafc5"
+    },
+    {
+      "path": "repo-delta/base-root.json",
+      "bytes": 1852,
+      "sha256": "282785c45382e7478af985d206d8d5ecec3a2301b8a229a8c6fef14343c67dee"
+    },
+    {
+      "path": "repo-delta/certificate.json",
+      "bytes": 13342,
+      "sha256": "59801bafe3be03ef9d08a9fd58f625dace053d89dd30e47049baa7b89533f452"
+    },
+    {
+      "path": "repo-delta/check.py",
+      "bytes": 4530,
+      "sha256": "132271a381414a15c648a01aeee9f6bc69772071b89cce1a8a54d922d6409a3e"
+    },
+    {
+      "path": "repo-delta/commits.json",
+      "bytes": 977,
+      "sha256": "26991b35eaced8ac75b75fdf195b85837d34e992d50c750645b9d4d2cc9616a2"
+    },
+    {
+      "path": "repo-delta/head-commit.json",
+      "bytes": 2602,
+      "sha256": "7f4e6d22ccd7a8bc8f7938f3d84e3b83090791835a119a0140d821dc686cca6c"
+    },
+    {
+      "path": "repo-delta/head-computability-root.json",
+      "bytes": 8240,
+      "sha256": "7733536ab4ffbfa0aace2649c971ceae2944ca7eac07240831e891c68af4918f"
+    },
+    {
+      "path": "repo-delta/head-lean-root.json",
+      "bytes": 2697,
+      "sha256": "94a586d0ec310f482ae1f0f917d09c69f32a4c62b440fcbb6063cfd1c86c85d7"
+    },
+    {
+      "path": "repo-delta/head-logspace-root.json",
+      "bytes": 11163,
+      "sha256": "c3de6efffb1a01dde89045ae972d6a72e77967c71f5aae4fb438984de07cbf66"
+    },
+    {
+      "path": "repo-delta/head-oai-root.json",
+      "bytes": 4851,
+      "sha256": "584e1513957e4cf66e5d547b208b7af46712e24a5448dcb78c5dcad8224ffaec"
+    },
+    {
+      "path": "repo-delta/head-preprints-tree.json.gz",
+      "bytes": 561768,
+      "sha256": "e86c3ebe60cb530a989d6e4c4cdc90333e26b64c082d7320bb4b730bd8593e3e",
+      "uncompressed_bytes": 3981751,
+      "uncompressed_sha256": "8acf8c8ebedb69ec74b64332644552450d87aa180f6fdad88badae13d92e2a01"
+    },
+    {
+      "path": "repo-delta/head-root.json",
+      "bytes": 2263,
+      "sha256": "0647109fae7a95edaf248f71fe58ee38d0500d18deae25636a3f24ba6f624745"
+    },
+    {
+      "path": "repo-delta/history.md",
+      "bytes": 2281,
+      "sha256": "41c2a2d470014b3628695c7aabf5fd0c93f6f687621fca172062f22b59ed6a1e"
+    },
+    {
+      "path": "repo-delta/logspace-scope.md",
+      "bytes": 1739,
+      "sha256": "c30217d377d082871543dc37646e4ddc214e22d3a1a2c6fd906a3a4572f5573b"
+    },
+    {
+      "path": "reports/direct-frontier.md",
+      "bytes": 6234,
+      "sha256": "eba769360060996c82fc354bb2e4f3c819d0e90a2b5b9d6779f9c8e9a1fcfcb5"
+    },
+    {
+      "path": "reviews/delta-review.md",
+      "bytes": 1698,
+      "sha256": "9f4b0841e6139f29940736767c1fe529baf95ac871f83b0a857557b93f26e3b2"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 11494,
+      "sha256": "f9d6c204be3d28ac0c25d33ce489a5419d6f684cb88bf6e5982bc0e462e7e2bd"
+    },
+    {
+      "path": "sources/journal-entry.md",
+      "bytes": 2067,
+      "sha256": "29f55aa83287e1da15d676e86ad6882a2d32f49780911e43dc95b7f8595b3402"
+    },
+    {
+      "path": "sources/pre-entry-baseline.json",
+      "bytes": 3839,
+      "sha256": "5c161e1e1efac8807e3a39246f53b8ada8f2534d160906793b38ffc0c0ffd42c"
+    },
+    {
+      "path": "sources/primary-pins.json",
+      "bytes": 1068,
+      "sha256": "d7cefccf53ed966db416915e368600082635785e65a106624b01fcf78706ffcb"
+    }
+  ]
+}

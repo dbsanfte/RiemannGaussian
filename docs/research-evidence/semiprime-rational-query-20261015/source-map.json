@@ -1,0 +1,273 @@
+[
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/rational/report.md",
+    "path": "reports/rational-trace-criterion.md",
+    "sha256": "fae3439b4f7380ec1c819ce03d0f818c2f2b036e8777aca8686c4d17945342eb",
+    "bytes": 9866
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/implicit/q-newton-prefix-initialization.md",
+    "path": "reports/q-newton-prefix-initialization.md",
+    "sha256": "6ed478a66c92b7f27065c490a7bee1cfc7f771a0f41ee80ef4fc570336f883ec",
+    "bytes": 6258
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/selected-qbinomial-primitive.md",
+    "path": "reports/selected-qbinomial-primitive.md",
+    "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb",
+    "bytes": 6713
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/primary-search-report.md",
+    "path": "reports/primary-search-report.md",
+    "sha256": "c9e4af4ed9d3f57d50d8edeb79a29b44e067da8681ae246e26eee0bb2a2a51a6",
+    "bytes": 6368
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/rational/manifest.json",
+    "path": "sources/rational-manifest.json",
+    "sha256": "2daa1bf4520008162357c62953d2308d305bfdb4150e7d23e55d7157a0db51c3",
+    "bytes": 3493
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/implicit/source-pins.json",
+    "path": "sources/prefix-source-pins.json",
+    "sha256": "b1dc935675a4a49d6817ec2ae47d84543e8cc1553907cb28b0ededc4ba6457a1",
+    "bytes": 740
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/manifest.json",
+    "path": "sources/literature-manifest.json",
+    "sha256": "ff5fe8c3803f39912ff7969702f4dcb29bd3483deaf75faa448d3b6eb2124f03",
+    "bytes": 1790
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/source/journal-entry-exact.md",
+    "path": "sources/journal-entry.md",
+    "sha256": "1c12b8e71cfb7379487371afc0af6f1032aef1bf4960f5857f67b6ed47b30162",
+    "bytes": 5135
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/implicit/rational-trace-independent-review.md",
+    "path": "reviews/rational-trace-review-a.md",
+    "sha256": "35754a48a513654cc41ec89d218f5776fc7809418fb0708b2e920bd5034cf883",
+    "bytes": 7386
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/rational-trace-independent-review.md",
+    "path": "reviews/rational-trace-review-b.md",
+    "sha256": "02cdfc894fb6b965a9086c8e20bbed670eccd4d45e0d49e5c1497adb2b0f7be6",
+    "bytes": 5582
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/implicit/selected-coefficient-independent-review.md",
+    "path": "reviews/selected-coefficient-review.md",
+    "sha256": "33576b8c58ce43ef18baba3a10e9fcd66db32eb74ec90cdadbf832ded4caa07d",
+    "bytes": 5213
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/source/prefix-independent-review.md",
+    "path": "reviews/prefix-review.md",
+    "sha256": "1ed3268fbb840cfd87112975cec8529b52cf08ce03706aedfc2bab0d27abc119",
+    "bytes": 2221
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/rational/q-denominator-bounds-2017.pdf",
+    "path": "primary/q-denominator-bounds-2017.pdf.gz",
+    "sha256": "577ddaec9490be3b3f6c55f0a37b52d07f84d211ceaba42904c2ada2ebdeb3dd",
+    "bytes": 180199,
+    "uncompressed_sha256": "261ed1e1053920f7f97bb5edcd5d37a81bbb24eb9526accd3ea9b307a65a24c4",
+    "uncompressed_bytes": 223994
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/rational/q-denominator-bounds-2017.txt",
+    "path": "primary/q-denominator-bounds-2017.txt.gz",
+    "sha256": "fac37520a447adca5bcdb1fa17f7a8d788b500b08e72f36b9cf33a110d8783e9",
+    "bytes": 18741,
+    "uncompressed_sha256": "f1e783fee0ab30b1a9e9ac5772ef82f5c96e4bc05f5d42bb4647b8eadf4c55ad",
+    "uncompressed_bytes": 75996
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/rational/converging-gosper.pdf",
+    "path": "primary/converging-gosper.pdf.gz",
+    "sha256": "1853148956182afc58786cc4663f9372152751a13046ae060ed858327708c87b",
+    "bytes": 116060,
+    "uncompressed_sha256": "f307722e204ce34795b621d710c3fcb493f60de010318429fb91e92ec2e7fd5d",
+    "uncompressed_bytes": 130212
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/rational/converging-gosper.txt",
+    "path": "primary/converging-gosper.txt.gz",
+    "sha256": "b725946bab617ed976b6d5cd61495dfd5b37628e1516aa061912344657eed513",
+    "bytes": 9001,
+    "uncompressed_sha256": "a408360be1561ee2f9c2c828bb8822c6c78301e3dd06f89e888addb2ff082197",
+    "uncompressed_bytes": 33375
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/rational/polynomial-reduction-2026.pdf",
+    "path": "primary/polynomial-reduction-2026.pdf.gz",
+    "sha256": "edd5c5ee5016e07f30375bfe54a71b15812bcb887872cfef922177c1f1db1533",
+    "bytes": 248312,
+    "uncompressed_sha256": "0fac298246672cc41c67795df940a4e7516239349a7c3bde0cf4f2008e515319",
+    "uncompressed_bytes": 299921
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/rational/polynomial-reduction-2026.txt",
+    "path": "primary/polynomial-reduction-2026.txt.gz",
+    "sha256": "87c5a2459aef94177c3e72535ab6f0067da487b1582ebe8fc69415761607c1ee",
+    "bytes": 14113,
+    "uncompressed_sha256": "cd396cac630dcdbff012a93a9c0b96de3606a0f1a906c527e47808bac9900f0f",
+    "uncompressed_bytes": 54740
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/q-rational-2022.pdf",
+    "path": "primary/q-rational-2022.pdf.gz",
+    "sha256": "4c043492a945a43d2e98a467ccc9c08924dd7e0143e6b5e67234706c81eab4ef",
+    "bytes": 145778,
+    "uncompressed_sha256": "5a2be2a4ca8f13a600b0a378292fd171853076e35e64d062e46fa1a11dc4b5e7",
+    "uncompressed_bytes": 194176
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/q-rational-2022.txt",
+    "path": "primary/q-rational-2022.txt.gz",
+    "sha256": "0732fbee0002759f70d564786c426edd22a2159fdf931c8cde4904bd31a9db00",
+    "bytes": 13298,
+    "uncompressed_sha256": "94e88ec85ce0f18f7f9c31cf2341a9e8a314694f6ea48da5f477455dc371fb1a",
+    "uncompressed_bytes": 52339
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/gosper-multiples-2021.pdf",
+    "path": "primary/gosper-multiples-2021.pdf.gz",
+    "sha256": "bb17cff9f7141c98b43748890848dd3bd45aeeee9a6369905e3213f0583ad9e2",
+    "bytes": 90400,
+    "uncompressed_sha256": "12bf1f469effc21d0fb7bbf0f8afa94abd4172ce57e68e531d33d66bfec92515",
+    "uncompressed_bytes": 117679
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/gosper-multiples-2021.txt",
+    "path": "primary/gosper-multiples-2021.txt.gz",
+    "sha256": "07176967912e2f07294f02512f6a2dd95f356a0128a1a4d5d98df8c4e893bf26",
+    "bytes": 6600,
+    "uncompressed_sha256": "666fbecab2d02cb704453ea614a3b4810067ca996881316e240b5457b9d25ada",
+    "uncompressed_bytes": 29526
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/accurate-summation-2005.pdf",
+    "path": "primary/accurate-summation-2005.pdf.gz",
+    "sha256": "dfe76ee81abffdb59d80995399a76036e399f76af1ae3e5f6749c1fc813a51fc",
+    "bytes": 153407,
+    "uncompressed_sha256": "df45d6cadc90d0ae5576ea8674940b3cd1698bd441c2ddc6a20799d8d6e65315",
+    "uncompressed_bytes": 197748
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/accurate-summation-2005.txt",
+    "path": "primary/accurate-summation-2005.txt.gz",
+    "sha256": "29820b02cfb4e80993f41106705efedee227463da4aabb366d36f68e58ff3a02",
+    "bytes": 14603,
+    "uncompressed_sha256": "6956e50cc6b54d6254f6ed9ea67fecd8f4f6a889c42ab131724741fc6c17f05a",
+    "uncompressed_bytes": 62867
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/discrete-residues-2025.pdf",
+    "path": "primary/discrete-residues-2025.pdf.gz",
+    "sha256": "f6f29fb2fd07519470073f76a9cb24ff614b0b0d44fe34946da597b009ebb2aa",
+    "bytes": 309052,
+    "uncompressed_sha256": "ba345f68eb91856d2fb5744d9dca10d6e7abaaf462c7e7b5d9379b5aa9234d63",
+    "uncompressed_bytes": 401391
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/literature/discrete-residues-2025.txt",
+    "path": "primary/discrete-residues-2025.txt.gz",
+    "sha256": "ff97e380effddbc8f7222548ca9b4892acf85980beb1f4798f0b455b66b74e2c",
+    "bytes": 29199,
+    "uncompressed_sha256": "26c0f772e1eb9649e77f040329e0fd1c3bb517ca546913a422f5ec1cbfe90623",
+    "uncompressed_bytes": 110948
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/restored-q/tmp/semiprime-implicit-followup-20261008/qholonomic-author-current.pdf",
+    "path": "primary/qholonomic-author-current.pdf.gz",
+    "sha256": "e27265cea28b887a83627a6d38395aefe330fba990034a76b273f07da9e4fa4a",
+    "bytes": 694552,
+    "uncompressed_sha256": "718904c094b78a76732fc7ca3959129c6996fd2689a251f580e20c2af91919fd",
+    "uncompressed_bytes": 701479,
+    "role": "historically archived expanded author version; distinct from shorter prior saved BY text"
+  },
+  {
+    "original_path": "/tmp/semiprime-long-query-20261015/restored-q/tmp/semiprime-implicit-followup-20261008/qholonomic-author-current.txt",
+    "path": "primary/qholonomic-author-current.txt.gz",
+    "sha256": "e317e69fd8a2806ad33bd63805934b27e43a325086bda41c167826e84cd99e7f",
+    "bytes": 37938,
+    "uncompressed_sha256": "0f1d9762b0fc1b62c10a0af138153f753db60b451a2a96ea108c933f3c5199a8",
+    "uncompressed_bytes": 122274,
+    "role": "historically archived expanded author version; distinct from shorter prior saved BY text"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+    "path": "sources/actual-row-density-adjoint-obstruction.md",
+    "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+    "bytes": 8621,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/sources/density-source-pins.json",
+    "path": "sources/density-source-pins.json",
+    "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c",
+    "bytes": 1767,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/holonomic-interface.md",
+    "path": "sources/holonomic-interface.md",
+    "sha256": "c424a84a41c4390a4ce55ea26278f5e0da87ad86e979aec02a795675a02d5334",
+    "bytes": 11357,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/positive-adjoint-interface.md",
+    "path": "sources/positive-adjoint-interface.md",
+    "sha256": "c703190ef3e657a3375e8b681e45e3353a85cdcedde01f5a8a6abb5b749243d7",
+    "bytes": 6464,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/high-digit-folding-obstruction.md",
+    "path": "sources/high-digit-folding-obstruction.md",
+    "sha256": "df7e67583b43d3daff78a581ca86f5d10a68cd9e3c922ed5e95d7f95042db3f7",
+    "bytes": 9623,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/reports/transform-interface.md",
+    "path": "sources/transform-interface.md",
+    "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae",
+    "bytes": 8901,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+    "path": "sources/full-euclid-all-hit-obstruction.md",
+    "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+    "bytes": 24354,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/charged-skipped-ray-obstruction.md",
+    "path": "sources/charged-skipped-ray-obstruction.md",
+    "sha256": "ca92ab638d96409cc0dadb822ce3fcf31ac77d637b37020f81a19e1462568fae",
+    "bytes": 11430,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/reports/prescribed-tag-catalog-obstruction.md",
+    "path": "sources/prescribed-tag-catalog-obstruction.md",
+    "sha256": "f3352537846c716c36f4ad3e191be857c484993f986f887fc770eba3e6ccfca4",
+    "bytes": 7704,
+    "role": "unchanged frozen premise/source"
+  },
+  {
+    "original_path": "/tmp/semiprime-rational-query-20261015/implicit/integration-journal-review.md",
+    "path": "reviews/integration-journal-review.md",
+    "sha256": "04be5a74d80059d4ba2423ccfd8f22d1138dbae5fad8916cff2da559e7008d3b",
+    "bytes": 4583
+  }
+]

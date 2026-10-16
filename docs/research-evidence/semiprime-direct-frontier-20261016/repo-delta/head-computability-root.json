@@ -1,0 +1,231 @@
+{
+  "sha": "9fe1124f7e8e1629dfb56f964087caad51922e17",
+  "tree": [
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ae0aeb3777a665a1299687663f17345ce0c05bb",
+      "url": "https://api.github.com/repos/openai/math/git/trees/4ae0aeb3777a665a1299687663f17345ce0c05bb",
+      "path": "BinPacking"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d979299cdac872372c8c2893b287ebf89fbb9258",
+      "url": "https://api.github.com/repos/openai/math/git/trees/d979299cdac872372c8c2893b287ebf89fbb9258",
+      "path": "DegreeRigidity"
+    },
+    {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99685106ac66031d0f7b1ccff8c242dbbd9a11c8",
+      "size": 195,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/99685106ac66031d0f7b1ccff8c242dbbd9a11c8",
+      "path": "DepthThree.lean"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1fc90c3ce1b74f69928d89206d98895615c67c2",
+      "url": "https://api.github.com/repos/openai/math/git/trees/f1fc90c3ce1b74f69928d89206d98895615c67c2",
+      "path": "DepthThree"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5d51a332d0336b380fd746ff9d71caa32555cc6a",
+      "url": "https://api.github.com/repos/openai/math/git/trees/5d51a332d0336b380fd746ff9d71caa32555cc6a",
+      "path": "DeterministicSum"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99a5f2f41cc65eba686d4b875c7822a5a8cb3557",
+      "url": "https://api.github.com/repos/openai/math/git/trees/99a5f2f41cc65eba686d4b875c7822a5a8cb3557",
+      "path": "DirectedFeedback"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "31656f0fcd5c8e66bb526983e5e5eb673eb135be",
+      "url": "https://api.github.com/repos/openai/math/git/trees/31656f0fcd5c8e66bb526983e5e5eb673eb135be",
+      "path": "FiniteCompiler"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1060a9046be0de7c038c5df506dd7f9893485b8c",
+      "url": "https://api.github.com/repos/openai/math/git/trees/1060a9046be0de7c038c5df506dd7f9893485b8c",
+      "path": "FourierCircuit"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "802d5973fc75d0dd96312c645df11b2af8d3c7c2",
+      "url": "https://api.github.com/repos/openai/math/git/trees/802d5973fc75d0dd96312c645df11b2af8d3c7c2",
+      "path": "FourierTransform"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "713117e55d3dd495bda2249b12cd2320f453f625",
+      "url": "https://api.github.com/repos/openai/math/git/trees/713117e55d3dd495bda2249b12cd2320f453f625",
+      "path": "GeneralizedCircuits"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5bfbee1bc089265fc2aa6e34be461f6c6a46ec7",
+      "url": "https://api.github.com/repos/openai/math/git/trees/c5bfbee1bc089265fc2aa6e34be461f6c6a46ec7",
+      "path": "Interspersed"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a56a002fe91dd3361f596ec31498a29601d83df0",
+      "url": "https://api.github.com/repos/openai/math/git/trees/a56a002fe91dd3361f596ec31498a29601d83df0",
+      "path": "Logspace"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bae9b1cf0531e4cc68ebadaeab4e44285f004101",
+      "url": "https://api.github.com/repos/openai/math/git/trees/bae9b1cf0531e4cc68ebadaeab4e44285f004101",
+      "path": "LoopMatching"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c833090fc1d027543413b79cee5f39ced4cd1279",
+      "url": "https://api.github.com/repos/openai/math/git/trees/c833090fc1d027543413b79cee5f39ced4cd1279",
+      "path": "MatchingCount"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e93be82c50880d0e49bb9cbc288652b1792b4cbc",
+      "url": "https://api.github.com/repos/openai/math/git/trees/e93be82c50880d0e49bb9cbc288652b1792b4cbc",
+      "path": "MaxCut"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03190bcd2d0ac9712ab55cc0e476aff76968f27a",
+      "url": "https://api.github.com/repos/openai/math/git/trees/03190bcd2d0ac9712ab55cc0e476aff76968f27a",
+      "path": "MeanPayoff"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4c5e2a8b343530f4d9c2f55e718850978ca8a6a1",
+      "url": "https://api.github.com/repos/openai/math/git/trees/4c5e2a8b343530f4d9c2f55e718850978ca8a6a1",
+      "path": "MinUncut"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4abf4e021db2aca45b9557602b49268e01952a95",
+      "url": "https://api.github.com/repos/openai/math/git/trees/4abf4e021db2aca45b9557602b49268e01952a95",
+      "path": "PerfectCompleteness"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dcb37d070c56f6f34705e43fc707c424ab9cfcb6",
+      "url": "https://api.github.com/repos/openai/math/git/trees/dcb37d070c56f6f34705e43fc707c424ab9cfcb6",
+      "path": "QuantumFactoring"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ef3e4ebf90a6b8c2c25ef53fb0199b96e072a35",
+      "url": "https://api.github.com/repos/openai/math/git/trees/3ef3e4ebf90a6b8c2c25ef53fb0199b96e072a35",
+      "path": "RandomMean"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f0ed6305191a68d5f8ad1c19468bfe93171a708",
+      "url": "https://api.github.com/repos/openai/math/git/trees/3f0ed6305191a68d5f8ad1c19468bfe93171a708",
+      "path": "RationalHitting"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f2197a48f1635ad0d89601015767120bfe0a584",
+      "url": "https://api.github.com/repos/openai/math/git/trees/5f2197a48f1635ad0d89601015767120bfe0a584",
+      "path": "Scheduling"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8806e63671f8c30dc03a2001d96f02fdddfa43d4",
+      "url": "https://api.github.com/repos/openai/math/git/trees/8806e63671f8c30dc03a2001d96f02fdddfa43d4",
+      "path": "SolenoidalRecorder"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a59c571c47b1d37699b02ad30f80bd2bc8f1a4d9",
+      "url": "https://api.github.com/repos/openai/math/git/trees/a59c571c47b1d37699b02ad30f80bd2bc8f1a4d9",
+      "path": "SpaceSimulation"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62727665057e51fcfa8a8820652417e169af6de1",
+      "url": "https://api.github.com/repos/openai/math/git/trees/62727665057e51fcfa8a8820652417e169af6de1",
+      "path": "StarHeight"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "549ab9397e5a2b4249ff75769b073afeca2a3dfb",
+      "url": "https://api.github.com/repos/openai/math/git/trees/549ab9397e5a2b4249ff75769b073afeca2a3dfb",
+      "path": "Superstring"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29f272249a8a880d74064822ec4d772f6edac784",
+      "url": "https://api.github.com/repos/openai/math/git/trees/29f272249a8a880d74064822ec4d772f6edac784",
+      "path": "TypeSystem"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3550e41dab1bbbe968af3b6e585b5b1374397b96",
+      "url": "https://api.github.com/repos/openai/math/git/trees/3550e41dab1bbbe968af3b6e585b5b1374397b96",
+      "path": "UniqueGames"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf4ec484d11cecb4d13d2fe38e17d7e78f2b3f92",
+      "url": "https://api.github.com/repos/openai/math/git/trees/bf4ec484d11cecb4d13d2fe38e17d7e78f2b3f92",
+      "path": "VertexCover"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6549dcce6f2cfa14d552ef1f932edbc9013f6449",
+      "url": "https://api.github.com/repos/openai/math/git/trees/6549dcce6f2cfa14d552ef1f932edbc9013f6449",
+      "path": "WLIdentification"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2e909781d373ffb56d3b6a7692385cd4c755da6",
+      "url": "https://api.github.com/repos/openai/math/git/trees/d2e909781d373ffb56d3b6a7692385cd4c755da6",
+      "path": "WeisfeilerLeman"
+    },
+    {
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b110daf0997e9862e74f57dd1a656e4fbc0d36b1",
+      "url": "https://api.github.com/repos/openai/math/git/trees/b110daf0997e9862e74f57dd1a656e4fbc0d36b1",
+      "path": "WitnessedChoice"
+    }
+  ],
+  "truncated": false
+}

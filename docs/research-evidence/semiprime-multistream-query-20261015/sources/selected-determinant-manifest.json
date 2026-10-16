@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "path": "primary-bibliography.html",
+      "bytes": 26083,
+      "sha256": "46a81cb34eb1496f922ddbaeb0e5c16a6a60e817f97cd110f96db368bd1bb73f"
+    },
+    {
+      "path": "primary-retrieval-note.md",
+      "bytes": 419,
+      "sha256": "b0e093987155b93ffa7854551abfb63b15da0fc0b1ab16953ebd5f3a0d5ad6da"
+    },
+    {
+      "path": "report.md",
+      "bytes": 8628,
+      "sha256": "ab9fb757fed120e5329885eb9eb6400b87bd9dbd967a7c608816ea781b9009c6"
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-rational-query-20261015/reports/selected-qbinomial-primitive.md",
+      "bytes": 6713,
+      "sha256": "78b387b6cf64cba8a358a8a796ede8f1640dc5effc36882dc484a99935f95ddb"
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9"
+    },
+    {
+      "path": "/tmp/semiprime-weighted-query-20261015/source/density-source-pins.json",
+      "bytes": 1767,
+      "sha256": "566dca1bf09f8fddf130caaeb8639658995d02552fc185898a976ac4fcfcd46c"
+    },
+    {
+      "path": "/tmp/semiprime-input-dependent-20261015/implicit/transform-interface.md",
+      "bytes": 8901,
+      "sha256": "5c8b4d56f2ee00e59b608fb1a15ae7baefee8af02acaba4655f5aa930c0505ae"
+    }
+  ],
+  "primary_inspection": "institutional bibliography freshly opened/saved; conventions exposed by search-indexed primary text; PDF fetches404/403, no full-PDF inspection claimed",
+  "mathematical_proof": "self-contained determinant/tail proof",
+  "sanity_check": "100 deterministic small composite-ring cases modulo15, repeated nodes/nonunit differences allowed; not a proof substitute"
+}

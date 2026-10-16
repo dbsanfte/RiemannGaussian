@@ -1,0 +1,353 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/README.md",
+      "bytes": 6521,
+      "sha256": "7a50e3139ef1157d590c9d2dd03f2ca6d094379e6d4275a5dbd4fdd677139610",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/sources/journal-entry.md",
+      "bytes": 5217,
+      "sha256": "a8afd04b6fd94f4a4f4306b10a6b4e0b3c0b8906ec731e78837bf4b047b12d17",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/sources/pre-entry-baseline.json",
+      "bytes": 2302,
+      "sha256": "d9ab976a89a4a6b3ca976b72752d04046a6d7e667e24c16d10e5821117025c7a",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/forcing/uniform-shift-boundary.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reports/uniform-shift-boundary.md",
+      "bytes": 9832,
+      "sha256": "028d106682957fe8f12c39b4045b9b0347851648b08bc8bd6380db22d24ce0ed",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/gauge/minimal-gauge-and-prefix-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reports/minimal-gauge-and-prefix-obstruction.md",
+      "bytes": 9210,
+      "sha256": "2f91066fa23e45baf4fa7eea1f39c67b1c1922c943df2af71627c40df543b162",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/gauge/all-stride-gauge-corollary.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reports/all-stride-gauge-corollary.md",
+      "bytes": 3697,
+      "sha256": "1b46c311abe2d03c4f23afd6503cc6071772e0a8b389e716cc4ec281203ea984",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/forcing/attempt.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reports/forcing-attempt.md",
+      "bytes": 4720,
+      "sha256": "1199ecd4b40fd9cd22194cf116dcdfe5d9d05e79107d8b333a2b7bd2e68806f2",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reports/locator-audit.md",
+      "bytes": 9067,
+      "sha256": "a72bb78d44efd4a638f33e6730cb457639db3e93e819e66693ec865628c119bf",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/forcing/uniform-shift-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/sources/uniform-shift-source-pins.json",
+      "bytes": 1337,
+      "sha256": "209c45721ac48425029afe13d65a05229f0f62df022d436dfce7eed9e72dd545",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/gauge/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/sources/minimal-gauge-source-pins.json",
+      "bytes": 1199,
+      "sha256": "0235d42b237365cc7226e0162c6183a346d8eda839b75277d64f0ef5749b2c80",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/gauge/all-stride-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/sources/all-stride-source-pins.json",
+      "bytes": 1251,
+      "sha256": "fd89dedaf2175d0338626610b1ece03a3b2999a8825b3ed91dcba11e4a846681",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/forcing/sources.json",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/sources/forcing-sources.json",
+      "bytes": 692,
+      "sha256": "9d2a93b062b1bd87f63781ad32976ab9d22cdbd5dc35ee82df9bfb0db488164c",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/sources/locator-manifest.json",
+      "bytes": 2875,
+      "sha256": "fdc378be2079a6dc495a5e61099d8e8b9815a5edecc0d1ca2cad3fc39bf6f0c5",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/reviews/uniform-shift-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reviews/uniform-shift-review-a.md",
+      "bytes": 4277,
+      "sha256": "996514f990868862d15fb7be486673f3d7030b37e6a36533752c21aca1b64f7e",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/reviews/uniform-shift-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reviews/uniform-shift-review-b.md",
+      "bytes": 4141,
+      "sha256": "6df124945aae931f01f12f36ab4c8861a3fed0c5e14b84c8ea6e5d06bff3cbf7",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/reviews/minimal-gauge-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reviews/minimal-gauge-review.md",
+      "bytes": 4966,
+      "sha256": "3e6205994f3bc61ce0de6f27ba9e4025c6eb5a18335ca95c0318daf31e9da1c7",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/reviews/all-stride-gauge-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reviews/all-stride-gauge-review.md",
+      "bytes": 3922,
+      "sha256": "3d0f3da74a43b367e8d171cbb32ec3f72993d0a4d337b009430a0003149a7cd4",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/reviews/locator-forcing-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reviews/locator-forcing-review.md",
+      "bytes": 6404,
+      "sha256": "d97f52876965c9fc1e066e14bd205afd65f6232ef23bb8d7bd233bb151177230",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/reviews/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/reviews/integration-review.md",
+      "bytes": 6529,
+      "sha256": "b3f1ffb32c1f5209a0ca82d0ec1618b99489b55b8a5d4e015e161311c5263620",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/constant-depth-gcd2025.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/constant-depth-gcd2025.pdf.gz",
+      "bytes": 425110,
+      "sha256": "8f15ab9b077eccbe6344a98b12546adcf1690b19137921c79bc7abec376eb2b3",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://arxiv.org/abs/2506.23220"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/constant-depth-gcd2025.txt",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/constant-depth-gcd2025.txt.gz",
+      "bytes": 78702,
+      "sha256": "4a141103c20a443047666902d7679bc7d3c45ffa05bd00cfe511d2cc5717fe40",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://arxiv.org/abs/2506.23220"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/directed-evaluation.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/directed-evaluation.pdf.gz",
+      "bytes": 530557,
+      "sha256": "20b6959dd71e3bd16e0c072f300b07a0c3714d013a28b1b0ea03955083df5da1",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://www.texmacs.org/joris/direval/direval.pdf"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/directed-evaluation.txt",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/directed-evaluation.txt.gz",
+      "bytes": 192829,
+      "sha256": "dbf4e983e4731e6b652fed2283950c975712d75aa8f569263ecd152c6c2030d7",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://www.texmacs.org/joris/direval/direval.pdf"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/single-factor1987.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/single-factor1987.pdf.gz",
+      "bytes": 95643,
+      "sha256": "56ea27444f536253f8e7bbbbb08c675c7dfc8c811b2f34ce5851e9f8c7e05257",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://kaltofen.math.ncsu.edu/bibliography/87/Ka87_stoc.pdf"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/single-factor1987.txt",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/single-factor1987.txt.gz",
+      "bytes": 43375,
+      "sha256": "338b879051f5863e7058c1f992a650b9d882d20dfb7b9add00dac65bd5f9e03b",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://kaltofen.math.ncsu.edu/bibliography/87/Ka87_stoc.pdf"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/single-seed2026.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/single-seed2026.pdf.gz",
+      "bytes": 512667,
+      "sha256": "776ee75768b0c096b84ae856c878fa755e71406be23ce551510364ae998566b1",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://arxiv.org/abs/2606.20633"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/single-seed2026.txt",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/single-seed2026.txt.gz",
+      "bytes": 70757,
+      "sha256": "e2307a0cb0e1db3f8738843fc04accab587beb0be60dc31666d5f52f28e9227c",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://arxiv.org/abs/2606.20633"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/slp-gcd1988.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/slp-gcd1988.pdf.gz",
+      "bytes": 2595083,
+      "sha256": "36f8c6e9e1c184ea9d6dd2270aa24843ebbd26c78881c7e69b69b75904d15731",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://kaltofen.math.ncsu.edu/bibliography/88/Ka88_jacm.pdf"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/slp-gcd1988.txt",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/slp-gcd1988.txt.gz",
+      "bytes": 110191,
+      "sha256": "54176e6146d6c8c578aea774d8f1b4bb1103fb95c331ea00c7ce2b7e3beb230b",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://kaltofen.math.ncsu.edu/bibliography/88/Ka88_jacm.pdf"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/eccc-tr25-171.html",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/eccc-tr25-171.html.gz",
+      "bytes": 23405,
+      "sha256": "702608314aea0e53368ae20c3a9341f140f1c49ca8361d5e405504373e4c7e10",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://eccc.weizmann.ac.il/report/2025/171/"
+    },
+    {
+      "original_path": "/tmp/semiprime-forcing-query-20261016/locator/eccc-tr25-171.txt",
+      "resolved_path": "docs/research-evidence/semiprime-uniform-boundary-20261016/primary/eccc-tr25-171.txt.gz",
+      "bytes": 6541,
+      "sha256": "5cd88bd08552752e0c422de702a93aeabcb648ebd8778e79bd270434d24ff0b2",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://eccc.weizmann.ac.il/report/2025/171/"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "bytes": 26720,
+      "sha256": "87b14d8c90e43d824c228a110179037586b548c986ae15f93bbcbc0bb1df05a9",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-descent-query-20261016/reports/weighted-descent.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/weighted-descent.md",
+      "bytes": 10054,
+      "sha256": "e748e766c37f3caa81cce1d41ee1a16419565f1e02219c04beeb8ef28eafd7bb",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/commutator/actual-qshift-power-defect.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/qshift-power-defect.md",
+      "bytes": 6120,
+      "sha256": "5e88b2b6b26310e535d959b6a4c3320adb25993c5e878fff8577708076007e5a",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-compressed-query-20261015/reports/exclusive-own-rows-prefix-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-compressed-query-20261015/reports/exclusive-own-rows-prefix-obstruction.md",
+      "bytes": 9878,
+      "sha256": "cb296cf1aec86329a0ee80225cdbd0f762406d735b6e86509d6855e78e1f69ed",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "resolved_path": "docs/research-evidence/semiprime-canonical-query-20261015/reports/endpoint-band-counterfamily.md",
+      "bytes": 10881,
+      "sha256": "882bbf2500add5deec9f90e0e46630b55a8c0a3f8e5ad72e8bc7bd68d4e2269e",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/recurrence/pole-count.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/pole-count.md",
+      "bytes": 7738,
+      "sha256": "3ed29741ff7c06d962ef68e36d35c78c5145505e3743dade3daa87f185a63457",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/boundary-inverse.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/boundary-inverse.md",
+      "bytes": 2671,
+      "sha256": "9a2a076613d2363f64e116a98568361da85e7a37e9a1ca01fd7564148240f7c9",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/common-channel-collision-locator.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/common-channel-collision-locator.md",
+      "bytes": 4385,
+      "sha256": "6dfc707ebe2896d7eb2ff78b6324d4df78b3db7ca6bc6a3e67e7b4adf4c737ff",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md",
+      "bytes": 8629,
+      "sha256": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "recorded_date": "2026-10-16",
+  "records": [
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/README.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/README.md",
+      "bytes": 7279,
+      "sha256": "acb13fa65535adc6dc3632adc03c95f9faff0d460640a327e037671a84d63979",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/journal-entry.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/sources/journal-entry.md",
+      "bytes": 4805,
+      "sha256": "c338287e37126684938937fba1d7f08996aaa7d47960526240a50d7e17303bc6",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/pre-entry-baseline.json",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/sources/pre-entry-baseline.json",
+      "bytes": 2068,
+      "sha256": "28ad1e0243ead3c907346025c7696d7d31873572f3b03fefce49666e6f73426d",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/spectral/weighted-descent.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/weighted-descent.md",
+      "bytes": 10054,
+      "sha256": "e748e766c37f3caa81cce1d41ee1a16419565f1e02219c04beeb8ef28eafd7bb",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/boundary-inverse.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/boundary-inverse.md",
+      "bytes": 2671,
+      "sha256": "9a2a076613d2363f64e116a98568361da85e7a37e9a1ca01fd7564148240f7c9",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/spectral/spectral-check-status.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/spectral-check.md",
+      "bytes": 6193,
+      "sha256": "79ba8ad3917cf974d94219fac29aca074eb57ee90a35150bcd9407d8d3249413",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/spectral/promise-level-spectral-avoidance.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/promise-level-spectral-avoidance.md",
+      "bytes": 5584,
+      "sha256": "db0e10b8ea49db24a436bba8c4716017e75248afe74e50ca3dc47d7ecda053e9",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/recurrence/pole-count.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/pole-count.md",
+      "bytes": 7738,
+      "sha256": "3ed29741ff7c06d962ef68e36d35c78c5145505e3743dade3daa87f185a63457",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reports/literature-audit.md",
+      "bytes": 8317,
+      "sha256": "d061b65e80fb82481b5585e2be126496714aca0fc8acee067ef88d058c2c35b9",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/spectral/source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/sources/spectral-source-pins.json",
+      "bytes": 1095,
+      "sha256": "2ea22bc0f055dfab5a9df7f8660c2f5e2286de379e9adc2efe9d39565f155c03",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/spectral/weighted-descent-source-pins.json",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/sources/weighted-descent-source-pins.json",
+      "bytes": 1416,
+      "sha256": "8a9872041910bbd4ad095441b8c3a523955fb5f67b54ca73fb56f2b309e08e1d",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/recurrence/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/sources/pole-count-manifest.json",
+      "bytes": 1343,
+      "sha256": "cfdbee72073d8649d0d121cc7116f02cd77d67570757bd85f5d601ace391dd6f",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/sources/literature-manifest.json",
+      "bytes": 1781,
+      "sha256": "e9877a7ed543f0436d08c48be34b5b502f0fb756f1f68758ef7685a0aaeb12a0",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/reviews/weighted-descent-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reviews/weighted-descent-review.md",
+      "bytes": 4669,
+      "sha256": "fb7ffcdb1153658f2633962b31dc5d5e6756f1e4f284ee68f03df1438bf03328",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/reviews/boundary-inverse-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reviews/boundary-inverse-review.md",
+      "bytes": 2960,
+      "sha256": "df3083d31618db35fe2153ed1967618406ecbabc63a0af4d47bd3a6665f35da1",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/reviews/spectral-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reviews/spectral-review.md",
+      "bytes": 4269,
+      "sha256": "7ce46648e82c56c2f6254fb7250d395b789ff65f37ad7117440473c7f505f5a0",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/reviews/pole-count-review-a.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reviews/pole-count-review-a.md",
+      "bytes": 3830,
+      "sha256": "c2bc476d8949a09fb273555a04e9aef813ee400773be66d310e2cfc839549f7c",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/reviews/pole-count-review-b.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reviews/pole-count-review-b.md",
+      "bytes": 4871,
+      "sha256": "fe56842f70cc80b625c6a5c340b1ba17039319426e7bafef923baae8f5b198f3",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/reviews/literature-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reviews/literature-review.md",
+      "bytes": 6005,
+      "sha256": "6525352b295ec26863907dfda8ce5ce0aaa407cb57b7957af343b37bff0e62f4",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/reviews/integration-review.md",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/reviews/integration-review.md",
+      "bytes": 3938,
+      "sha256": "db3acde82221e66952e859681b957b0221c97e80df1d4a818cac05c64c10ab34",
+      "gzip": false,
+      "role": "new proof, review or metadata"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/rational-preprocessing2026.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/primary/rational-preprocessing2026.pdf.gz",
+      "bytes": 1469592,
+      "sha256": "fa5db152b8d5f7c73c544624cd2986255c6bf3850f1deb45854c6cd786e6784e",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://arxiv.org/pdf/2609.06022"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/rational-preprocessing2026.txt",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/primary/rational-preprocessing2026.txt.gz",
+      "bytes": 604374,
+      "sha256": "be2e34704257d0c1d2758f60fb7d6a57ed6f76194ae45a912952a154a403b0df",
+      "gzip": true,
+      "role": "inspected primary payload"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/elliptic-butterflies.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/primary/elliptic-butterflies.pdf.gz",
+      "bytes": 1265688,
+      "sha256": "eb2f5b0613cb70f04333ff8567b2d261ca51018863a3cf255dbd91531a58e624",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://arxiv.org/pdf/2510.27375"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/elliptic-butterflies.txt",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/primary/elliptic-butterflies.txt.gz",
+      "bytes": 110164,
+      "sha256": "d08833ddf84735fb03181c48c7d6ab6bd8bd724e91ac9090c8bb7ce20ccd93fb",
+      "gzip": true,
+      "role": "inspected primary payload"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/truncated-resultant.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/primary/truncated-resultant.pdf.gz",
+      "bytes": 235158,
+      "sha256": "160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://arxiv.org/pdf/1609.04259"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/truncated-resultant.txt",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/primary/truncated-resultant.txt.gz",
+      "bytes": 73260,
+      "sha256": "756ffa9bb76cc004fa7b6b3b44f1d5379bdbb6b7b0832a17380d27d97a3b8da3",
+      "gzip": true,
+      "role": "inspected primary payload"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/linearized-ore.pdf",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/primary/linearized-ore.pdf.gz",
+      "bytes": 318726,
+      "sha256": "329b258df2c4610f54627851999f51efcd227410d57a8266668cc2d08c1d87dc",
+      "gzip": true,
+      "role": "inspected primary payload",
+      "url": "https://arxiv.org/pdf/1512.06520"
+    },
+    {
+      "original_path": "/tmp/semiprime-syzygy-query-20261016/literature/linearized-ore.txt",
+      "resolved_path": "docs/research-evidence/semiprime-descent-query-20261016/primary/linearized-ore.txt.gz",
+      "bytes": 99721,
+      "sha256": "d558735ffc80c9b56b32c7e9a2796b64dce5aab7f1e7e0e3fcd98f49ed363ea7",
+      "gzip": true,
+      "role": "inspected primary payload"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/normalized-operator-note.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/notes/normalized-operator.md",
+      "bytes": 2266,
+      "sha256": "78aa80b4b3d157ed48cf2d2858fb8e0d7a93f6df74ff542e0ab87d594b6ae21a",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/report.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/paid-q-pencil.md",
+      "bytes": 6653,
+      "sha256": "ef999aa2cfbea33c29192035900542808532e906b70a95f55a8c7a30a3819433",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/diagonal/diagonal-followup.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/coefficient-block-inverse.md",
+      "bytes": 9041,
+      "sha256": "73685f5580b92375b7d3a9f09265c245125ebee6edf048243a4558b6d5f4e3a2",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/tmp/semiprime-extraction-20261016/commutator/actual-qshift-power-defect.md",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/qshift-power-defect.md",
+      "bytes": 6120,
+      "sha256": "5e88b2b6b26310e535d959b6a4c3320adb25993c5e878fff8577708076007e5a",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-input-dependent-20261015/sources/full-euclid-all-hit-obstruction.md",
+      "bytes": 24354,
+      "sha256": "fb77b60fcf84ffad92c535bd6a0a3d9cc2434beadf48bbf86a39a2a2c8358bb0",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "bytes": 31743,
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeOffsetCarryObstruction.lean",
+      "bytes": 26720,
+      "sha256": "87b14d8c90e43d824c228a110179037586b548c986ae15f93bbcbc0bb1df05a9",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "resolved_path": "docs/research-evidence/semiprime-weighted-query-20261015/reports/actual-row-density-adjoint-obstruction.md",
+      "bytes": 8621,
+      "sha256": "723472c4e1dba27e23f490fbab953d240c032d65ffc7e79e87e98962f35939e9",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/decimation.md",
+      "resolved_path": "docs/research-evidence/semiprime-block-query-20261016/reports/decimation.md",
+      "bytes": 10005,
+      "sha256": "65a5c827a64b5c035d3d0a7bed445c6970910f9f92749309878d1e1520e5c4fd",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "resolved_path": "RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "bytes": 29680,
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "resolved_path": "docs/research-evidence/semiprime-extraction-query-20261016/manifest.json",
+      "bytes": 10804,
+      "sha256": "715712b0e6a8c307f8f5dc1ab280686614b1ca5d1df2ed80ed7c27a7eb0f056c",
+      "gzip": false,
+      "role": "unchanged inherited premise"
+    }
+  ]
+}
