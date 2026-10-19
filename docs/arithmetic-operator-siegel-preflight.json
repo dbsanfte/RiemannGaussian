@@ -1,0 +1,155 @@
+{
+  "checkpoint": "siegel-interpolation-research-preflight",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Literature review, exact finite regression and paper-level transfer audit only.",
+  "primary_source": {
+    "url": "https://arxiv.org/abs/2610.15483v1",
+    "author": "William D. Banks",
+    "title": "On the OpenAI proof that Landau-Siegel zeros do not exist",
+    "version": "v1, 2026-10-11",
+    "anchors": [
+      "Proposition 3.4",
+      "Lemma 4.1",
+      "Lemma 5.1",
+      "Lemmas 6.1-6.2",
+      "Corollary 6.3",
+      "Remark 7.2"
+    ]
+  },
+  "claims_not_made": [
+    "No Lean import or verification of this paper.",
+    "No new RH arithmetic estimate, zero exclusion or roadmap-family exhaustion.",
+    "No automatic transfer of the real-character theorem to complex zeta zeros or native Hecke coefficients.",
+    "No actual-prime asymptotic bound from the finite regression."
+  ],
+  "portable_candidate": {
+    "name": "Common-determinant extraction from lower-weight integral polynomial Frobenius rewrites",
+    "hypotheses": [
+      "One common finite column set and integral coordinates.",
+      "Full-rank greedy monomial evaluation rows.",
+      "Pointwise x1^p-Pp(x) in p*O on all columns.",
+      "Every correction monomial has weight below p*w1.",
+      "Nonzero determinant and an independently proved Archimedean height bound."
+    ],
+    "conclusion_paper_level": "Delta in p^(sum floor(alpha1/p))*O for every usable prime, simultaneously.",
+    "formalization_status": "Generalized statement derived at paper level, not compiled as a new Lean theorem."
+  },
+  "transfer_gates": [
+    {
+      "gate": "source and density",
+      "finding": "Fixed beta<1 matched harmonic diagnostic source is -m*(1-M^(beta-1))/(1-beta), bounded rather than proportional to log M.",
+      "campaign_single_mode_bound": "Absolute value at most 8*m when beta<=7/8.",
+      "scope": "This harmonic source channel; not all determinant mechanisms."
+    },
+    {
+      "gate": "phase encoding",
+      "finding": "At fixed nonzero y, p^(-iy) is a root of unity for at most one rational prime. It cannot replace a finite-order Frobenius character across prime columns.",
+      "scope": "Finite-order substitution only; arbitrary algebraic polynomial closure remains open."
+    },
+    {
+      "gate": "common columns",
+      "finding": "Prime-dependent column deletion generally changes the determinant; separate divisibilities cannot be multiplied without proving they belong to the same nonzero integer."
+    },
+    {
+      "gate": "existing cubic inputs",
+      "finding": "Cubic/allowed angular SW families already avoid exceptional real characters; the Type-I input is unconditional. No native growing quadratic-twist or model-source gate was discharged."
+    },
+    {
+      "gate": "growing conductor",
+      "finding": "A c/log D zero gap at D=X^kappa permits X^beta=X*exp(-c/kappa); that gap alone supplies no fixed power saving."
+    }
+  ],
+  "finite_regression": {
+    "field": "Q(sqrt(5),sqrt(2))",
+    "ring": "Z[sqrt(5),sqrt(2)]",
+    "grid_size": 16,
+    "parameters": {
+      "N": 2,
+      "H": [
+        1,
+        2
+      ]
+    },
+    "nontrivial_extraction": {
+      "H": 2,
+      "prime": 3,
+      "sum_row_floor_exponents": 2,
+      "norm_valuation": 8
+    },
+    "checks": [
+      "Exact Fraction field arithmetic.",
+      "Greedy row independence.",
+      "Nonzero integral determinant.",
+      "Entrywise prime-power divisibility of transformed rows.",
+      "Exact equality of old and transformed determinants.",
+      "Norm valuation at least four times the row exponent sum."
+    ],
+    "not_checked": [
+      "Asymptotic interpolation bounds.",
+      "Actual zero source.",
+      "Density/pole separation for a native carrier.",
+      "Independent native signed inequality."
+    ]
+  },
+  "next_preflight": "Exhibit one actual native common-column polynomial congruence closure; prove rank/degree/height reserve and calculate the controlled statistic source before a large formal library.",
+  "historical_pins": "Earlier checkpoint records remain unchanged. AGENTS.md and the research note were appended, so their old pins remain historical rather than current.",
+  "source_pins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "54cfacf7353d27a6520c7931aefb79cf64c3287aeb402b8951ba077d2a6f1498"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "2e57efbba5cd31fc2f7745e536557734aa7bbed5cbd72d30578498f398fc11a5"
+    },
+    {
+      "path": "RiemannGaussian/ArithmeticOperatorKummerPolynomialAudit.lean",
+      "sha256": "a986e77a4e372f331dbb3000a7076a7cd4c08d0ec042f2262b23948ee3781571"
+    },
+    {
+      "path": "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean",
+      "sha256": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe"
+    },
+    {
+      "path": "RiemannGaussian/ArithmeticOperatorFactorialUniqueness.lean",
+      "sha256": "ce40a05a45e74f8c83df412e109c938c36add2d2c5a8a9c855145748e15c69bf"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorKummerDilationSupport.lean",
+      "sha256": "0dac97faf38589ecc0e0a12dc770a4f64bdf964ce3f72f6bd8734805adb610c5"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/CubicTrace.lean",
+      "sha256": "cb21f0e22054cbc24ce4cb9d0ba7cd69297c10482ad2418e5f4431eeb13cd13e"
+    },
+    {
+      "path": ".lake/siegel-2610-15483/paper.pdf",
+      "sha256": "54891704515ba9d58ae60ce4c16f4b368a377a9732ca98e26172209fa0647d6f"
+    },
+    {
+      "path": ".lake/siegel-2610-15483/Effective_SZs.tex",
+      "sha256": "34a1586c6c285474c62d8d504f1a3077667a041c6bf507ad042cd5d6a86f2cfc"
+    },
+    {
+      "path": ".lake/siegel-2610-15483/exact_probe.py",
+      "sha256": "c5b4521bacda3b0975a02400e51b423d824680303454dcb8cf0df1b0e3f6a71a"
+    },
+    {
+      "path": ".lake/siegel-2610-15483/exact_probe.json",
+      "sha256": "0272386019bbd829163e1d756407f4b475917878fbc229ee12f494347bc83936"
+    },
+    {
+      "path": ".lake/siegel-2610-15483/transfer-audit.md",
+      "sha256": "da511db98980a0e3be3294c14267c7648bcd6976babda6044f62290ad7584fa6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-unconditional-gauss-input/paper-pinned.pdf",
+      "sha256": "0af3e675f8a6a5b3e47da9ea5ca7434a825f48f7186f79594b1ee5d54d443a37"
+    },
+    {
+      "path": ".lake/arithmetic-operator-unconditional-gauss-input/paper-pinned.txt",
+      "sha256": "4c231b89ade86e737a56874ebb025e983dc509fa66818d62ab64e1817321ac80"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "High-confidence credential-pattern scan of shipped raw payloads only; not a general security or mathematical review.",
+  "unique_payloads_checked": 1643,
+  "findings": [],
+  "full_paper_payloads": false,
+  "compiler_payloads": false,
+  "three_final_independent_reviews_present": [
+    ".lake/arithmetic-operator-square-source-review/independent-review.json",
+    ".lake/arithmetic-operator-joined-mark-independent-review/independent-review.json",
+    ".lake/arithmetic-operator-marked-harmonic-independent-review/independent-review.json"
+  ],
+  "root_common_g_preflight_present": true
+}

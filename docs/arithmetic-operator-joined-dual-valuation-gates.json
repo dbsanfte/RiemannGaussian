@@ -1,0 +1,732 @@
+{
+  "checkpoint": "whole-ideal-Ramanujan-cutoff-and-literal-determinant-valuation-phase",
+  "date": "2026-10-19",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Two strict finite native leaves; conditional whole-I density payment, moving-cutoff obstruction, phased determinant transfer obstruction and root-of-unity extracted-channel source deletion. No new RH inequality or zero exclusion.",
+  "formal_leaves": [
+    {
+      "path": "scripts/QuasiRHJoinedRamanujanAudit.lean",
+      "namespace": "OpenAIReview.JoinedRamanujan",
+      "sha256": "62540f5981623e7e3533a236bf57abd699aaf1aec26d209fc9f2023b3eb94232",
+      "local_declarations": 8,
+      "theorems_including_helpers": 5,
+      "log": ".lake/arithmetic-operator-native-ramanujan-gate/strict-build.log",
+      "axioms": ".lake/arithmetic-operator-native-ramanujan-gate/axioms.json",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "only_standard_axioms": true,
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/QuasiRHJoinedRamanujanAudit.lean"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean",
+      "namespace": "OpenAIReview.QDetValuationPhase",
+      "sha256": "8da165e0a1c3839a1e96fda6342d7fafa7927d79b62c815e7a13516b576dd9d7",
+      "local_declarations": 44,
+      "theorems_including_helpers": 34,
+      "log": ".lake/arithmetic-operator-qdet-valuation-phase-gate/lean.log",
+      "axioms": ".lake/arithmetic-operator-qdet-valuation-phase-gate/axioms.json",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "only_standard_axioms": true,
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean"
+    }
+  ],
+  "total_local_declarations": 52,
+  "total_theorems_including_helpers": 39,
+  "checked_conclusions": [
+    "Actual primitive-trace CRT unit sum times ideal Mobius is the complete prime product, retaining zero/nonunit/proper-power numerators.",
+    "For a prime numerator larger than the ideal norm, the actual signed native unit coefficient is exactly one.",
+    "Exact successive-depth cube extraction and reset defect for every complex phase.",
+    "Kernel-computed native q-factorial determinant D3(2), actual Phi3(2), exact seven-adic depths and actual real-height cubic fiber annihilation.",
+    "No positive fiberwise transfer from the extracted cyclotomic phase to the complete determinant phase."
+  ],
+  "paper_level_only": [
+    "Whole-I fixed-Hecke Euler series and density square-sum; conditional density bound Z^(-11/48+d/2).",
+    "Exact cutoff divisor expansion and failure of uniform fixed-n-density replacement; available discrepancy cost Z^(25/48+d/2), deficit Z^(1/3+d).",
+    "Literal cutoff depth partition; integer-base complete-envelope mass/source deletion and fixed summable row-Mellin physical holomorphy.",
+    "Root-of-unity conjugate height, cyclotomic resultant norm, all-row zero and extracted degree-normalized prime-power bound 3logX(1+logX)."
+  ],
+  "not_claimed": [
+    "No lower bound or nonzero source for the isolated native theta covariance from its finite arithmetic coefficient.",
+    "No use of a fixed-n residue formula uniformly over growing dual numerators.",
+    "No free loss of cusp/ray/model/mark/cube/calibration/exclusion weights.",
+    "No general full-native analytic Voronoi bridge or imported research-preprint theorem.",
+    "No actual zeta zero at the cubic seven-fiber height.",
+    "No extrapolation of complete-support envelope to every polynomial prime window.",
+    "No bound for the full root-of-unity determinant quotient or source preservation of a changed growing row family.",
+    "No whole operator-family exhaustion or endpoint improvement."
+  ],
+  "finite_regressions": {
+    "native_primitive_unit_sums": 126,
+    "native_global_unit_rescalings": 252,
+    "whole_ideal_arithmetic_checks": 1215,
+    "whole_ideal_large_prime_witnesses": 5,
+    "literal_determinant_phase_checks": 11597,
+    "root_unity_resultant_and_norm_checks": 3891,
+    "certify_infinite_analytic_assertions": false
+  },
+  "conditional_exponent_ledger": {
+    "S": "7/6-d",
+    "Q": "5/6-2d",
+    "Y": "23/48-d",
+    "K": "3/2",
+    "K_over_S": "1/3+d",
+    "density": "-11/48+d/2",
+    "moving_discrepancy": "25/48+d/2",
+    "old_theta": "3/16-d/2",
+    "deficit": "1/3+d"
+  },
+  "independent_review": ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/independent-review.json",
+  "previous_pins_verified_before_shared_edits": 119,
+  "additional_agent_pins_verified": 33,
+  "prior_verification": ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/prior-pins.json",
+  "agent_pin_verification": ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "tier1_families_exhausted": 0,
+    "baseline": "strict Re(s)>7/8 unchanged"
+  },
+  "publication": {
+    "root_registration": false,
+    "public_explorer_update": false,
+    "broad_checks": false,
+    "ci": false,
+    "commit": false,
+    "push": false
+  },
+  "source_pins": [
+    {
+      "path": ".lake/arithmetic-operator-calibration-numerator-gate/axioms.json",
+      "sha256": "e96bf16b0880f55f1e54d7f25c9ae88fa6967a2b928a68888241cc17b259247f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-calibration-numerator-gate/exact-probe.json",
+      "sha256": "713dd546dcca6e11529752b777f5f5fb0d6ad9e78050134eec2a4f7f68c59dbe"
+    },
+    {
+      "path": ".lake/arithmetic-operator-calibration-numerator-gate/exact_probe.py",
+      "sha256": "7cf427bc3acce87dd20bf03c62b7f357a43acbedf5e601705f5d0bf19aadded9"
+    },
+    {
+      "path": ".lake/arithmetic-operator-calibration-numerator-gate/preflight.md",
+      "sha256": "3dce2c9ece749e9e275d745f49b187fa3f3b17d02fbbea0c959e53a617ee8388"
+    },
+    {
+      "path": ".lake/arithmetic-operator-calibration-numerator-gate/probe.log",
+      "sha256": "7356632f3ad9645e2c69585bdf344b492407bc99b1c30816eafc4db01231d378"
+    },
+    {
+      "path": ".lake/arithmetic-operator-calibration-numerator-gate/source-pins.json",
+      "sha256": "39de09747220e439a5dfbe92b01379cdce369279dd9151e7f2318c70059a65cc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-calibration-numerator-gate/strict-build.log",
+      "sha256": "bc1f0d592f7bf35acddce1af2e20fb2b6ef09ad45db98c83ab4cf8876a4584ab"
+    },
+    {
+      "path": ".lake/arithmetic-operator-calibration-numerator-gate/validation.json",
+      "sha256": "5ee96c9cea6a8b774ed25820dae90426dce9a1be84334b266f82825bcd21bdac"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/axioms.json",
+      "sha256": "7b37d62e59e2a13b451fa9b95b35813e7ac9154e7ef37d58c73b1bc3593ba8e1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/exact-results.json",
+      "sha256": "4a07d79c4a905e4e8b00f0a9a11995121ada3b61ebb88dcf718eb9a884cc1bbb"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/exact_probe.py",
+      "sha256": "c5745d2e11aa99d928cac3ee2a463fae9fea4d7d214a00c8b2148dd4f55e655b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/lean.log",
+      "sha256": "6158153b8f7026a42c672eeb5e2f89726c6e5b30adf71c43fd8a3c9ae3033141"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/pins.json",
+      "sha256": "aa6da76d309941b4768c64e2c8f59410a264a122c4c6c04b0c93943ecbd2cac8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/pongsriiam-lte.pdf",
+      "sha256": "ef65bb597bb0883194b94d52dba3222d11a3cac86b93345ada0dd578a5f2b133"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/pongsriiam-lte.txt",
+      "sha256": "baba417e838eb103b1aa9b3656bc1f1cbea3d46e9054d21a256ae5721b8edc3f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/preflight.md",
+      "sha256": "89df60f59461cc43440853e605a90a811fa0dd140bbc95a64e86e70c3ab35dbf"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/sagan-retrieval-block.html",
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/sources.json",
+      "sha256": "91a2b7738278a0a397b2d8f388addb792c57c086a08c1ec507e54bc5ab75ed7a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/stewart-prime-factors.pdf",
+      "sha256": "280770d6a86c8f035c6ac4c5a80a2bc572fd227fe644310a1858c5b4b0d471a8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/stewart-prime-factors.txt",
+      "sha256": "59bf6c977dffedc706ef2fb05e7f62cd8181f79100a224f67fd606af592fe88a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/validation.json",
+      "sha256": "011987ce9fc934a556172b4802a2fe9f4b38edf5e9fb11b0c1e018df1e20974f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/ziegler-order.pdf",
+      "sha256": "82386029d28675a5341489c6d869567879bca35432220ea30c766b9f23b9595a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/ziegler-order.txt",
+      "sha256": "f6289acc7caef0f0a2c50935346ff0df49c6f5a38e8e397d52f1fea49fd75201"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/zudilin-2019.pdf",
+      "sha256": "888b884ad3e881df178603e5329b60129a9054588a8cf23ab5c00f45d271648d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/zudilin-2019.txt",
+      "sha256": "b18cafc99e1f0d8acb14ec419f658443d35338973510442cd18d5d638a5111ee"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/axioms.json",
+      "sha256": "f012d15422d2ec81f14faed587cf97bec2324b769fe9fef202457fc095d6e4ce"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/exact-probe.json",
+      "sha256": "232ff4b9122f62067c0363b44c29bff1f2e54d9a1fb171a89aa5013044e7c46d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/exact_probe.py",
+      "sha256": "4e275fdc8c8139be1730c4334548d3a74051efff955e6ae4233b5f032ee95119"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/preflight.md",
+      "sha256": "097a0dfff2d4eeb5218f52cd3bc5a8b8f52da01be85b6740b4bfd9a326e3fa17"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/probe.log",
+      "sha256": "e886e0b96110373cc5bf7ed74e4bd184f8ef79d46acb48debb0b84b99e42e988"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/source-pins.json",
+      "sha256": "a31c40a60c0b4f9f377218fe88103d9f0d42a25ecd0aa9407c435716f35b3527"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/strict-build.log",
+      "sha256": "4886d304edad0abbad3e6c10aa7d5d158f380956e60653fd1f8e1ad3741fc201"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/validation.json",
+      "sha256": "180f252f4800c5b752a909a52d4bf11316dc70e146183efa4557e12b1e05bb0f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/agent-pins.json",
+      "sha256": "7f87feed56cb9ef91ccf91790f42bd5bfff5a02ef47b581c30780bf05a5ea4ed"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/independent-review.json",
+      "sha256": "57cc91d84935cdfdd28f6964323089ae570d2b2a55268f99a590b9f6b723af63"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+      "sha256": "b38301eb8e963a6bba27939cb276526205513cf2871422e7b207ccb194d2d507"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/independent-review.json",
+      "sha256": "773c90480c127cf509d73a7ce6e12e6fef69b74af1dea98170c043cc8c76861c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+      "sha256": "9fe7e2c95e3e712ae02a999f85b0d3fbd191dc1c9ec1176d62aafbd9811998ea"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/prior-pins.json",
+      "sha256": "d6cd396854987cfdd5565ddb2bd1144592a0843266a8e06bebb0ef4808f9bbdc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/write_checkpoint.py",
+      "sha256": "1491b507ec05432a1166b2e51095562993d5160ca2123011b54a5d4da77d5c50"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-ramanujan-gate/pins.json",
+      "sha256": "62595278dcb47ff0eac48a5f4f17911111a4804cc4df43781b17901df72a0c6d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-ramanujan-gate/preflight.json",
+      "sha256": "24829c70c5b74366b2da4034b2e6994a44c6861bd6ac3f17f330632d8016750a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-ramanujan-gate/preflight.md",
+      "sha256": "57530d1c1c1ee096853674a4a707fdc4c1f7a1ae63964f7db1f4c78954e9d145"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-ramanujan-gate/probe.json",
+      "sha256": "0ad9463ddac2a6380b763272971f4e22d309edc3e0a140b25fe54a39aa7c3787"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joined-ramanujan-gate/probe.py",
+      "sha256": "2a3dfcde9d186868ce821ee1e19fa83f3b86714ac2fe0f8708226f9b842dbff4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/QuasiRHPattersonModelLocalAudit.olean",
+      "sha256": "bc05f89b838e9b332fd9b6bec1fc2ebc52784e245e57285ad73a6dfeeff8675d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-ramanujan-gate/axioms.json",
+      "sha256": "5dad82a0ad420b9df8d3a13f495005dba646d5b0faa010ea563acfab4a103bba"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-ramanujan-gate/exact-probe.json",
+      "sha256": "0ce88c81431631d3ca36b2766c433e987c4b64c78a9adb87fa6e2a4b4083e65e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-ramanujan-gate/exact_probe.py",
+      "sha256": "17e39b878abc2645a346909d24d3fb031cd13af118d73029b9f7a76b7e3ce857"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-ramanujan-gate/preflight.md",
+      "sha256": "d595c9f1f88504c0a63bc6b1c096773c7b0b7b26b30c4ec19d01d17a31769ed5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-ramanujan-gate/probe.log",
+      "sha256": "ac56f36efbae4ceaa9ae3e78ae515e84180c45d6abb3ac38c30c86ec126cada2"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-ramanujan-gate/source-pins.json",
+      "sha256": "6afa16200c975de09aced48d986a481d7e1a4daab4e6426ea397986fd2806038"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-ramanujan-gate/strict-build.log",
+      "sha256": "bd517eccbbe4dc3b1127a25de50214e316f5f640ff57b77d692e1524f21d8ed4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-ramanujan-gate/validation.json",
+      "sha256": "60a25ab25089217f900df32e97ba6a70b2469efbc7601d201009fcac4a4d6149"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/angular.tex",
+      "sha256": "f14a7c1c4f0b19b70d6705c8a2adcb658bfbc77814edb61cd57edb2465f38510"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/background-type1.tex",
+      "sha256": "1c7be908c862dc440772964cfdd59e095e7b0f079cec11d99f5c7a9644198dd1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/decomposition.tex",
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/dispersion.tex",
+      "sha256": "9a04b892feb99a79ec4e825bcd5096d3adb994c53d539c41d2da35f0a77f317c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/dual.tex",
+      "sha256": "1209fd17cee79f4a21b71d66d3d8b60b210216fa783ec555959d2ebff2fba483"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/dunn.pdf",
+      "sha256": "565462015051210f55b10699ffc611f35c554a1c67ac752b52a3b092fc7d62b9"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/nonorthogonality.pdf",
+      "sha256": "b8cb7c36e505bde5a00e2bc4e0bf0a3026c0707ed92f1ada9306980d2c67271d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/perron.tex",
+      "sha256": "fc8ef11c96aae384bd0faef3c8ee6c43a6608460d284a098179b9c9d6404b33b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/preflight.json",
+      "sha256": "ed08ba38da225663881d6dc7a3ae969740f4d0d0d9c2e04d98129d6c0fb7e4a0"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/preflight.md",
+      "sha256": "f67ad98b87c49f5f75bee0fa8af418181644cb43c8529b83e7d27aeb0f1c203c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/probe.json",
+      "sha256": "a756f0e75c75e9e70f2ead7cb33602a562dba5bd7db8e15154f3d61ba6bf1a39"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/probe.py",
+      "sha256": "1f987e430e28ace0196f382e1da96b7de81c6327cb1471169becaeaa9d46092f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/rstation-paper10-v2.md",
+      "sha256": "525c899dd4dd5cb0ed15db43f63fb6e25cc140f98358e9d41ddfe897f5a23a7a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/rstation-paper8-v1.md",
+      "sha256": "f1f9aed624908ccb9b6842911d898916230545ff76dc123187d7eadc3558def1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/axioms.json",
+      "sha256": "ab92388c5d6b734d64e7a5eb1459b14a6c6f9465f6aa125c018206af0fa3d7c5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/exact-results.json",
+      "sha256": "a22d7cd94ca55dbde15bd41d8d1dfa898300c131364d71dfb521ff578db37549"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/exact.log",
+      "sha256": "ef3d9b4bac569d897891d42809f0940e3b2767eeb5586c6f175e38cb982efdbe"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/exact_probe.py",
+      "sha256": "28cf0679ebf01d1457950dcbab1b93a2cb87de92272e1c394febb61c8019b767"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/lean.log",
+      "sha256": "0b45fd1572f59c07a8d5b8485c3c79bc7405ef920bd6d345a35af987e9d8cf77"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/pins.json",
+      "sha256": "625a3c9dfefc21a6a5664d70ba5a4afaf2ff4c404147a74922dc7bc2efa0fdec"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/preflight.md",
+      "sha256": "e77f656ec47324ee51bae2401a1924b6c5f8c992e8465a834e6fd96c8c5ffdf1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/sources.json",
+      "sha256": "feb2acaa35a096bb9e4eea8402f27f4237d34b70cfd60d873649a6782db7811a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qdet-valuation-phase-gate/validation.json",
+      "sha256": "b67fb2cd7fec08ec4429273543396c3be7fb9f114284d59627cd907f359feee6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qpascal-higher-gate/exact-results.json",
+      "sha256": "af357ff6c9d45c8e7203840fff182ec8813ddf8fd73926908b24fa19d7fe35e6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qpascal-higher-gate/exact.log",
+      "sha256": "8eea4e505b679ff6cac39895be376bd4a50d61059caac2450b78add9e678b4bf"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qpascal-higher-gate/exact_probe.py",
+      "sha256": "a11687e869f50a5a0b6c6244b4d443427623226487847b08a25bda852bff7c7f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qpascal-higher-gate/pins.json",
+      "sha256": "bd3edb419b9cf1b166a6b22e5fd89466611defb639834b19c98ded249618ed5e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qpascal-higher-gate/preflight.md",
+      "sha256": "d03665bc0524e08e7c35ffc83a376827ebf91b6d0aabbf76bdba74b72a020214"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qpascal-higher-gate/sources.json",
+      "sha256": "b7800f678f8fec6c6024d409c030a60b616c5bdad3ab14a361857d19fb611b30"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qpascal-higher-gate/validation.json",
+      "sha256": "79f89c83782865124f813bd68246ea99c41df7fa0d8fbd75f55b29bba5b58b56"
+    },
+    {
+      "path": ".lake/arithmetic-operator-qpascal-higher-gate/zudilin-2019.pdf",
+      "sha256": "888b884ad3e881df178603e5329b60129a9054588a8cf23ab5c00f45d271648d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-root-unity-determinant-gate/bzdega-herrera-moree.pdf",
+      "sha256": "30ad8bc163a664a5487f7317b87c2e65c790aa35a3f7bb110f999f6567a7b1e1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-root-unity-determinant-gate/bzdega-herrera-moree.txt",
+      "sha256": "0f0d1c5143f7e8073ed5f2375fce8e8953e29dcc6fea6ddce532225f347946cc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-root-unity-determinant-gate/preflight.md",
+      "sha256": "b90a098aecc3d47609f7ead822efa35fb1edc28d6461e13516e5e445ceff14e5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-root-unity-determinant-gate/probe.json",
+      "sha256": "cd6c3dc8544c96aa89d509acf916e41345069c1921247a893a473b30293e94f8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-root-unity-determinant-gate/probe.py",
+      "sha256": "efe016725075ec1c834cd44b2148072f765b1fe56cac0f1331d028b9d8d7836e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-root-unity-determinant-gate/source-pins.json",
+      "sha256": "d7ba435d1700b83d211aebf53ec11815dac94d12f1d02b1637db97f23b648cba"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/agent-pins.json",
+      "sha256": "b1c5f0bc1be0cbcba3f06781ddfcc9418696d8ec59951b92d0325557c0fe5396"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/independent-review.json",
+      "sha256": "1076db6844fe64c182773491aa78d2187c4dc93d4d217df5c0d5465b03d59685"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/prior-pins.json",
+      "sha256": "262718dc2ccfadf33adda65ba8ca88f5e6d71087234878914d038aaa41754b16"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/axioms.json",
+      "sha256": "367a0f2600296da484fee56a3b2b7ea425321cbf140daa97f4ec8f46ae1a38e7"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/broker-hoffstein.pdf",
+      "sha256": "9cde7f9e144457da23a557986e15514ac0d3e80a1664d1e526b1ffae93c8adaf"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/hamdar.pdf",
+      "sha256": "63ee2622a99363a172b1217461b4ecc0027765ac147891faff1cbf900be74e17"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/lean.log",
+      "sha256": "50336b818349b0206034866a6e994af9ad680a10588cb1c302bf97a07c70bdf9"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/preflight.json",
+      "sha256": "2581c4c03599c1eed0512fde4cbc86912d02d97421375b6d20ebe27d328f3c1b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/preflight.md",
+      "sha256": "a9692f3000b203c191bdfca65cbc4f32cd9975d41e0884bd6109e98eeeedebe5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/probe.json",
+      "sha256": "cc2322aa754922ab123c7efd503c70301917a545dcb7375743bde1be0ed6db6b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/probe.py",
+      "sha256": "6fd2167748270927bb72d12388e06a70eac42b40063f478548149fe65f47ea4e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-theta-covariance-gate/rstation-paper8-v1.md",
+      "sha256": "f1f9aed624908ccb9b6842911d898916230545ff76dc123187d7eadc3558def1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/preflight.md",
+      "sha256": "2dad23d63dd4ad36fd7d918fd0b38b168b675023ede49971dc6cedfef325dd9e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/source-pins.json",
+      "sha256": "5ae9e82d168b2b6e97180dda8b9d7f897796bafbfe3fcf36437847dd165b01d9"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/NumberTheory/MulChar/Lemmas.lean",
+      "sha256": "206683ca5ec3f95b2799a6a133d2841a760c8573056915f35ce3bf25b74eb0ac"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "4d9dcdf6a8f111ecbb0af8db5b013cd64a9adb0826dad3f6fa4775d500030516"
+    },
+    {
+      "path": "docs/arithmetic-operator-cyclotomic-source.md",
+      "sha256": "ac6f3e6707448a279acd9022a8be619fb80fdc143e748c281bde174f9f3a1249"
+    },
+    {
+      "path": "docs/arithmetic-operator-gauge-cyclotomic-continuous-gates.json",
+      "sha256": "e1902ab701533304a095ed46e6b992b9c80bf3b9f6147a82d0b3659b95c04506"
+    },
+    {
+      "path": "docs/arithmetic-operator-higher-q-determinant.md",
+      "sha256": "22bd9b0748be813f97fe6c94d0a01091c1fc5047c08f859d4176c959d4064a7a"
+    },
+    {
+      "path": "docs/arithmetic-operator-joined-dual-valuation.md",
+      "sha256": "8a09d841ab96cab1d820593fbd264bd5f6e4d92094cb1b0a0115e4bd8e7e7119"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "e6a8306dbb2014c0eed2e57b393a9c84853a21abbf840027ff8462afa50bb060"
+    },
+    {
+      "path": "docs/arithmetic-operator-root-unity-source.md",
+      "sha256": "a0ee4391567e9e8b0eb867b78c8ea0e7099e6f7179309106de3f6398c70d1d53"
+    },
+    {
+      "path": "docs/arithmetic-operator-sextic-continuous-frontier.md",
+      "sha256": "4c7325aa0c5f2c82574e5f3ed587d0189eba6c27bcd415ba2a5a2e20dbcda52f"
+    },
+    {
+      "path": "docs/arithmetic-operator-theta-calibration-qpascal-gates.json",
+      "sha256": "cc21f6841a46b5ba7f2578869134971bb45b8de448867f302a3777e5e95261c5"
+    },
+    {
+      "path": "docs/arithmetic-operator-theta-twist-frontier.md",
+      "sha256": "c91f0d733d0137f49c0f332daf70e9451a0be756fc1c5c5f0ee94c7395936645"
+    },
+    {
+      "path": "docs/siegel-interpolation-review.md",
+      "sha256": "51dfb44cc13fa30dcc19d75bf130bbee26ab795cf533118da2c6edd53f760382"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "6ba853c8a997903db18dfb4e142050f68f4ff86380ceceb2140b5400cb60c0f6"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean",
+      "sha256": "7d16119d1dd4d53cdfd7b43829e3769e8c9561151ba94ac26d7fb9283159ebf4"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean",
+      "sha256": "8da165e0a1c3839a1e96fda6342d7fafa7927d79b62c815e7a13516b576dd9d7"
+    },
+    {
+      "path": "scripts/QuasiRHCalibrationNumeratorAudit.lean",
+      "sha256": "3b70b7b49d24f8a783dbb6717a74e78beeced26421943760b9edbdca8c67dbc5"
+    },
+    {
+      "path": "scripts/QuasiRHCommonUnitGaugeAudit.lean",
+      "sha256": "a733bd10781a47430d5cd1cd8fc4ffcfb83992504783195d0de86d7b25416df5"
+    },
+    {
+      "path": "scripts/QuasiRHGaugeAverageAudit.lean",
+      "sha256": "451ce9cf570dfb5fa5612d83d8f87ecaf7a744cef40168b7b5f7213d99d37821"
+    },
+    {
+      "path": "scripts/QuasiRHJoinedRamanujanAudit.lean",
+      "sha256": "62540f5981623e7e3533a236bf57abd699aaf1aec26d209fc9f2023b3eb94232"
+    },
+    {
+      "path": "scripts/QuasiRHPattersonModelLocalAudit.lean",
+      "sha256": "726afad016f75360b81f79f212d47bee89944929f1acd7485d459f6f6d0cbf87"
+    },
+    {
+      "path": "scripts/QuasiRHThetaTwistAudit.lean",
+      "sha256": "b47a11c981d40f03149c079b233c748f61edb6116262f0372bcd6c0dfc03ec43"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean",
+      "sha256": "dd0ae071b0bdb5746fa6362de83aa86a4ee4462810a7fdbc72f0af95b5887675"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/ChineseRemainder/FrequencyLifts.lean",
+      "sha256": "782092da365c7773ff6a804a76c04ee2f4b6d8fd033158b43929f14094c5f250"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/ChineseRemainder/PrimaryCompletions.lean",
+      "sha256": "7f110a463e288c602fac99699d938f3744bbe198cf282e8b4ff67b5343e794bc"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Calibration.lean",
+      "sha256": "d8721f13440e278aab51b6625c948b89095b74ef89615eeb78fcb52cff1726c9"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CalibrationRemoval.lean",
+      "sha256": "36cfd6b37ce7823c249e0f1e9535bd5ddc405e83a19d102f365b20757ef69fc8"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CalibrationSupport.lean",
+      "sha256": "3de800afc83570e01c6583d5fe4847b3e63887d3b9f936dd824cff5e314fe224"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalPhysical.lean",
+      "sha256": "853242bc20a864a714dad73e8cb7c3077fa893fe19f0d4e322db0a381b0991a3"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalSummation.lean",
+      "sha256": "9a954d140811c6fa818b438ce507688a6890f439271d5141278920e221c5dabf"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowGaussEnergy.lean",
+      "sha256": "f0bd6e81c8f86abf32c5993333f9d9c424cefa790ab3b0bafc9b8fa5ae385c9d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowRayAmplitude.lean",
+      "sha256": "7c2aedb44bc9cf4048d6a788d992168443a27b58e73e16160d5f50db0c1547d4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowRowMellin.lean",
+      "sha256": "485c4c24852590e61653d2639d777d7e65f90627b937d93e26ce5bf722019799"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowSeparated.lean",
+      "sha256": "0cd344ff44c0b4db181ba658a3589a4368cfdae6d4205a439b7204e60dda18b2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Physical.lean",
+      "sha256": "324e33aaa6f25f99f984f75231e292d08d37ee971826d927b539861c326d5544"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalAnalytic.lean",
+      "sha256": "2c333bbf6a0252156005ca3654c53172e3352d3776dcd01356a623fceaca3fd7"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalCoefficient.lean",
+      "sha256": "cc0d219fc811ba2c1198a4f75dd08cd5f7dc40fdd9a6dba9eacd185085c46d1d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalPoisson.lean",
+      "sha256": "e11d050153c35e821df8372f14c29a250302bbb47ff95fb7cfbd56bee630818a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrimePower.lean",
+      "sha256": "2a1f1361af78658be0076053f8169e6900093b25ddc014ff88a2179aec0f1bdb"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalSplit.lean",
+      "sha256": "79246324533c426fdfc6743518a99b45a8821ce3689a6c48bccafd34c88c6d14"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Row.lean",
+      "sha256": "94cd0a68ced17d2ad52c67c13af03a3d199568862ebe43fde2f9f0ed96949ce0"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ScalarTable.lean",
+      "sha256": "e7105589c7ab123f999440eb4a48c3c797f3004cdf82d64cdb5f158387a35a12"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceCoefficient.lean",
+      "sha256": "374110c8227301a3be4ce6269f22ededcb0484583fc28a76c39e6b898fef70a4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceLocal.lean",
+      "sha256": "db29a85fc6d3e1c38ce9e8dce9e0f795baa68aa85b9a228c70df9991e0ec54c2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Eisenstein/ConjugateLevelAction.lean",
+      "sha256": "7f7ca628f1099385d079e845e669c4692bc4f84ef4291513ada64cc820d82366"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/SexticRadialPoisson.lean",
+      "sha256": "ca68cab23a762c9ec4b0cccfea9c8aab39596e713ff561bf199394d4c79173a4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Poisson/EisensteinLattice.lean",
+      "sha256": "0853b934802de3bd7a308988983964fc801d54fb96a44710cacfc4cc5d500536"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/PrincipalSignalComparison.lean",
+      "sha256": "3609a84d40122a6137bfa44fcb41f2830046e3456b77d72c34eb83f5c29b0e7b"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/RowCompletion/CubicReopening.lean",
+      "sha256": "574e90f9f9586d9c7a4d7393824a7867bf88dfea2495a63a1fdbe63d994e0aa2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/RowCompletion/ThetaNonvanishing.lean",
+      "sha256": "8027e02d12f871c42b640534070cd18383f5fbfb433a07a7a269eea692ccbe43"
+    }
+  ]
+}

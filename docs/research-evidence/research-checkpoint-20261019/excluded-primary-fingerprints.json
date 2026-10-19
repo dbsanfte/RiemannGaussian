@@ -1,0 +1,1202 @@
+{
+  "policy": "Full third-party primary paper bodies are not republished, including extracted text/HTML/Markdown. Frozen source pin/URL records remain archived. Compiler/bootstrap caches are omitted and source replay is documented.",
+  "excluded": [
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-additive-common-source-gate/corvaja-zannier-math0311030v2.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-additive-common-source-gate/corvaja-zannier-math0311030v2.pdf",
+      "reason": "external-primary-body",
+      "bytes": 191501,
+      "sha256": "bedfe37e5e3bff420921c4d9b71cb4918db9503f24113d7ca8f2e0850c34ca83"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-additive-common-source-gate/corvaja-zannier-math0311030v2.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-additive-common-source-gate/corvaja-zannier-math0311030v2.txt",
+      "reason": "external-primary-body",
+      "bytes": 78053,
+      "sha256": "903f100689ab70182ac62d0bc7f6dbc1270491446b731b349cf158fd0bb3074b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-collective-integration/gauss-paper.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-collective-integration/gauss-paper.tex",
+      "reason": "external-primary-body",
+      "bytes": 16774,
+      "sha256": "8cfe4339113b0f734a728e59f7bc82a17fbd15084c04097ba103ced76f2f10c3"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-collective-integration/quasi-paper.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-collective-integration/quasi-paper.tex",
+      "reason": "external-primary-body",
+      "bytes": 169005,
+      "sha256": "d9a8f15aa770cf883d0eabd2b775fad694ce20b44cba7928f5c0c9a6d8750d4d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-digital-gate/kamae-1978.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-digital-gate/kamae-1978.pdf",
+      "reason": "external-primary-body",
+      "bytes": 456804,
+      "sha256": "bc9fbaf20a26dee2527b35b8f765ebd7c2d91a3fa6b7898405f12c0b3e9eac23"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-digital-gate/spiegelhofer-beatty.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-digital-gate/spiegelhofer-beatty.pdf",
+      "reason": "external-primary-body",
+      "bytes": 399394,
+      "sha256": "3ea3c9a69bbb7bb51d2d046dafb7527ed535543c1f818c697c2487e8f1838c59"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-digital-gate/spiegelhofer-beatty.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-digital-gate/spiegelhofer-beatty.txt",
+      "reason": "external-primary-body",
+      "bytes": 87868,
+      "sha256": "6b64127d46b2516f5bce60d80632a2aaf8adaba536b0c51b487c85b3b35d5d2f"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-direct-gate/drmota-spiegelhofer-2025.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-direct-gate/drmota-spiegelhofer-2025.pdf",
+      "reason": "external-primary-body",
+      "bytes": 363171,
+      "sha256": "7e8c09ef746e88a24ec852433490206587d3e4e790fa0b79134899bdd18a86bc"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-direct-gate/drmota-spiegelhofer-2025.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-direct-gate/drmota-spiegelhofer-2025.txt",
+      "reason": "external-primary-body",
+      "bytes": 118397,
+      "sha256": "9eb3f1e166fcf949ac4ce161a5d9a58d1a4398bf82ecb424c1f5bb15d3285891"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-direct-gate/grabner-liardet-tichy-2005.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-direct-gate/grabner-liardet-tichy-2005.pdf",
+      "reason": "external-primary-body",
+      "bytes": 271950,
+      "sha256": "bc6a06a915c715ba454ea574dd69aca192af21620c5900006adb716646262b44"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-direct-gate/grabner-liardet-tichy-2005.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-direct-gate/grabner-liardet-tichy-2005.txt",
+      "reason": "external-primary-body",
+      "bytes": 75968,
+      "sha256": "4658c95d9d872826b0a68c08d5a6848a36c3e93afccdff8b4f877e3448937a98"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-direct-gate/kamae-1978.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-direct-gate/kamae-1978.pdf",
+      "reason": "external-primary-body",
+      "bytes": 456804,
+      "sha256": "bc9fbaf20a26dee2527b35b8f765ebd7c2d91a3fa6b7898405f12c0b3e9eac23"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-comparable-direct-gate/spiegelhofer-beatty.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-comparable-direct-gate/spiegelhofer-beatty.pdf",
+      "reason": "external-primary-body",
+      "bytes": 399394,
+      "sha256": "3ea3c9a69bbb7bb51d2d046dafb7527ed535543c1f818c697c2487e8f1838c59"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cubic-native-bridge/paper-page4.png",
+      "repository_relative_path": ".lake/arithmetic-operator-cubic-native-bridge/paper-page4.png",
+      "reason": "external-primary-body",
+      "bytes": 343976,
+      "sha256": "711d1bb1634441fe20c66ef0393f4459faa058b7c5ce3fd3f3b573d1600320b6"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cuspidal-input/dunn-2403.13151.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-cuspidal-input/dunn-2403.13151.txt",
+      "reason": "external-primary-body",
+      "bytes": 229919,
+      "sha256": "e7a66ad3c13bc4a1034594952f3ac63b620a4edc52dcb71978012be50f6f818e"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/pongsriiam-lte.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/pongsriiam-lte.pdf",
+      "reason": "external-primary-body",
+      "bytes": 162701,
+      "sha256": "ef65bb597bb0883194b94d52dba3222d11a3cac86b93345ada0dd578a5f2b133"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/pongsriiam-lte.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/pongsriiam-lte.txt",
+      "reason": "external-primary-body",
+      "bytes": 33498,
+      "sha256": "baba417e838eb103b1aa9b3656bc1f1cbea3d46e9054d21a256ae5721b8edc3f"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/sagan-retrieval-block.html",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/sagan-retrieval-block.html",
+      "reason": "external-primary-body",
+      "bytes": 212,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/stewart-prime-factors.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/stewart-prime-factors.pdf",
+      "reason": "external-primary-body",
+      "bytes": 287592,
+      "sha256": "280770d6a86c8f035c6ac4c5a80a2bc572fd227fe644310a1858c5b4b0d471a8"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/stewart-prime-factors.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/stewart-prime-factors.txt",
+      "reason": "external-primary-body",
+      "bytes": 43103,
+      "sha256": "59bf6c977dffedc706ef2fb05e7f62cd8181f79100a224f67fd606af592fe88a"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/ziegler-order.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/ziegler-order.pdf",
+      "reason": "external-primary-body",
+      "bytes": 250489,
+      "sha256": "82386029d28675a5341489c6d869567879bca35432220ea30c766b9f23b9595a"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/ziegler-order.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/ziegler-order.txt",
+      "reason": "external-primary-body",
+      "bytes": 63087,
+      "sha256": "f6289acc7caef0f0a2c50935346ff0df49c6f5a38e8e397d52f1fea49fd75201"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/zudilin-2019.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/zudilin-2019.pdf",
+      "reason": "external-primary-body",
+      "bytes": 171582,
+      "sha256": "888b884ad3e881df178603e5329b60129a9054588a8cf23ab5c00f45d271648d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-cyclotomic-factorial-gate/zudilin-2019.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/zudilin-2019.txt",
+      "reason": "external-primary-body",
+      "bytes": 44199,
+      "sha256": "b18cafc99e1f0d8acb14ec419f658443d35338973510442cd18d5d638a5111ee"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-digital-prime-preflight/annals-page.html",
+      "repository_relative_path": ".lake/arithmetic-operator-digital-prime-preflight/annals-page.html",
+      "reason": "external-primary-body",
+      "bytes": 76213,
+      "sha256": "b8d811ab87e2da760c8fd68bbb4bd6c89efce53068ce01a49e0f7e762dc14a13"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-digital-prime-preflight/mauduit-rivat-annals2010.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-digital-prime-preflight/mauduit-rivat-annals2010.pdf",
+      "reason": "external-primary-body",
+      "bytes": 1005714,
+      "sha256": "020f49aaceeca930f7a48952c85771721244c9ef613be0cb55fb03a0abad0e4c"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-digital-prime-preflight/mauduit-rivat-annals2010.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-digital-prime-preflight/mauduit-rivat-annals2010.txt",
+      "reason": "external-primary-body",
+      "bytes": 186194,
+      "sha256": "522578044a47dfc312bc325849cb4675d6e244bcd112c05fa6392836f37c1908"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-digital-prime-preflight/mauduit-rivat-jems2015.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-digital-prime-preflight/mauduit-rivat-jems2015.pdf",
+      "reason": "external-primary-body",
+      "bytes": 289779,
+      "sha256": "d9db84b1f9baf1694bd72769967988216d406d614785be4926c189e818307312"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-digital-prime-preflight/mauduit-rivat-jems2015.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-digital-prime-preflight/mauduit-rivat-jems2015.txt",
+      "reason": "external-primary-body",
+      "bytes": 167362,
+      "sha256": "c18cbf6800ad117ebb723a226599ccbf4e88339a7886bf7440e255f367edccd5"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-digital-prime-preflight/rivat-jtnb2009.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-digital-prime-preflight/rivat-jtnb2009.pdf",
+      "reason": "external-primary-body",
+      "bytes": 498889,
+      "sha256": "3e0e70f636100a9f0f2660f4ae888e7f80121a8e54d557478f8ab2433cc5477c"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-factorial-total-positive-gate/berg.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-factorial-total-positive-gate/berg.pdf",
+      "reason": "external-primary-body",
+      "bytes": 205390,
+      "sha256": "6caddf841bd46a2d3b805bb66d7481ff84f8c2ebd683d6b0ba4385c768d43540"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-factorial-total-positive-gate/howe.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-factorial-total-positive-gate/howe.pdf",
+      "reason": "external-primary-body",
+      "bytes": 335275,
+      "sha256": "57f5e6bf2078d00db25ab994e9379d8d84f62e52ef0f66974709e45e3c2a9161"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-factorial-total-positive-gate/howe.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-factorial-total-positive-gate/howe.txt",
+      "reason": "external-primary-body",
+      "bytes": 8346,
+      "sha256": "501a6d2b18cbbcf28c5c25595d56c0e0393dbe9e5a3b159b4ba19086d436c3be"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-factorial-total-positive-gate/pascal.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-factorial-total-positive-gate/pascal.pdf",
+      "reason": "external-primary-body",
+      "bytes": 6923468,
+      "sha256": "9063191698738238230815ce28da44a83e66398ff0b07c195b1491d31c80779b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-factorial-total-positive-gate/pascal.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-factorial-total-positive-gate/pascal.txt",
+      "reason": "external-primary-body",
+      "bytes": 13,
+      "sha256": "859aa658314fcc519a9b7aa9096bc94316446ca5d26eb9f1a5e9369030b02c86"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-gaussian-inverse-probe/dunn-2403.13151.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-gaussian-inverse-probe/dunn-2403.13151.pdf",
+      "reason": "external-primary-body",
+      "bytes": 890893,
+      "sha256": "565462015051210f55b10699ffc611f35c554a1c67ac752b52a3b092fc7d62b9"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-gaussian-inverse-probe/dunn-radziwill-2109.07463.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-gaussian-inverse-probe/dunn-radziwill-2109.07463.pdf",
+      "reason": "external-primary-body",
+      "bytes": 842156,
+      "sha256": "df888f8527b3647a3428d6677a3e3070aab7439f79f737f3e894218fb64cfef0"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-gaussian-inverse-probe/dunn-radziwill.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-gaussian-inverse-probe/dunn-radziwill.txt",
+      "reason": "external-primary-body",
+      "bytes": 314131,
+      "sha256": "636da1119ebebdcab6756e9258554af06a42d67baf0c47026c73e960de2f4767"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-global-square-identity-gate/heath-brown-kummer-2000.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-global-square-identity-gate/heath-brown-kummer-2000.pdf",
+      "reason": "external-primary-body",
+      "bytes": 196830,
+      "sha256": "54a1148394a5de1a22dee153f60411aeb0c8775a7fea090da6b1720ebbe915ad"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-global-square-identity-gate/heath-brown-kummer-2000.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-global-square-identity-gate/heath-brown-kummer-2000.txt",
+      "reason": "external-primary-body",
+      "bytes": 65585,
+      "sha256": "ae36b3ae09bd20ec84817717376cf1066dea6841da3e92257e39f8cc1221d8f8"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-global-square-identity-gate/heath-brown-ora.html",
+      "repository_relative_path": ".lake/arithmetic-operator-global-square-identity-gate/heath-brown-ora.html",
+      "reason": "external-primary-body",
+      "bytes": 62665,
+      "sha256": "d125547283d05ef7bc34c7b33e500ed06a85b689cf7ae18d566845b8f3a23ecf"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-growing-qbox-source-gate/krattenthaler-1999.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-growing-qbox-source-gate/krattenthaler-1999.pdf",
+      "reason": "external-primary-body",
+      "bytes": 767885,
+      "sha256": "d185dc9aa4c264170246938a291bac726198c217289c2e2e63b386554c4b62d0"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-growing-qbox-source-gate/krattenthaler-1999.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-growing-qbox-source-gate/krattenthaler-1999.txt",
+      "reason": "external-primary-body",
+      "bytes": 262934,
+      "sha256": "fea7feda2f74958f5cb6ce511cf54260c9129b0c9ab4015c414728bc3813cb3d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-growing-qbox-source-gate/lai-2017.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-growing-qbox-source-gate/lai-2017.pdf",
+      "reason": "external-primary-body",
+      "bytes": 158064,
+      "sha256": "b2b4300529627d819c74f9820e1df94c5e6dc4ed612424c3e8af2b5137ebce40"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-harmonic-recovery-audit/harmonic_mobius_ratio_recovery.md",
+      "repository_relative_path": ".lake/arithmetic-operator-harmonic-recovery-audit/harmonic_mobius_ratio_recovery.md",
+      "reason": "external-primary-body",
+      "bytes": 17335,
+      "sha256": "5a2ffb4713082170a6ebae7211233816e2d1633ad6702c5a9d42a22c5a51962f"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-integral-border-gate/milne-ft-v510.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-integral-border-gate/milne-ft-v510.pdf",
+      "reason": "external-primary-body",
+      "bytes": 1853550,
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-integral-border-gate/milne-ft-v510.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-integral-border-gate/milne-ft-v510.txt",
+      "reason": "external-primary-body",
+      "bytes": 483006,
+      "sha256": "dc32800c69fa9be6d7f9314e7b758ce38b1c09fed62f83a80f104bc23c1b59f3"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-joint-period-source/burgess-scope-reference-1907.03108v1.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-joint-period-source/burgess-scope-reference-1907.03108v1.pdf",
+      "reason": "external-primary-body",
+      "bytes": 476353,
+      "sha256": "8c6f2129d7d11e550a77c927454208c5d5603d886a25872ec01083848c5b3476"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-base-source-gate/bcz-author.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-base-source-gate/bcz-author.pdf",
+      "reason": "external-primary-body",
+      "bytes": 107911,
+      "sha256": "2a66a1b92c983dfb6a15862eb332d69f5941877c38979ed7ad83e847e23fb4ef"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-base-source-gate/bcz-author.ps",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-base-source-gate/bcz-author.ps",
+      "reason": "external-primary-body",
+      "bytes": 69522,
+      "sha256": "727cd4d7b36fd54573b84a35f2031b326ace14dd33d25603b2e91baa0deaf447"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-base-source-gate/bcz-author.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-base-source-gate/bcz-author.txt",
+      "reason": "external-primary-body",
+      "bytes": 16017,
+      "sha256": "bdfba6e324ad4a4a1a38e410a9e42460bce52e88563a7237ecd30329a8db26dd"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-base-source-gate/bcz-page1.png",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-base-source-gate/bcz-page1.png",
+      "reason": "external-primary-body",
+      "bytes": 120239,
+      "sha256": "9caa3d77c498a53a676a4678b6139302f1bd4e017459ac6c0d80c371d529fcf8"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-base-source-gate/cohen-sonn-1103.2207.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-base-source-gate/cohen-sonn-1103.2207.pdf",
+      "reason": "external-primary-body",
+      "bytes": 168515,
+      "sha256": "0048dd55eabe6935ab9e1043335180fdfd95ba8fc110bbec76c923279509983c"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-base-source-gate/cohen-sonn-1103.2207.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-base-source-gate/cohen-sonn-1103.2207.txt",
+      "reason": "external-primary-body",
+      "bytes": 31570,
+      "sha256": "5e1a6ca1bdc1f2af861fde6abfe14a3a500f738735a4fe460ed7e7ed7b299ef5"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-base-source-gate/nguyen-dang-2606.07959v2.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-base-source-gate/nguyen-dang-2606.07959v2.pdf",
+      "reason": "external-primary-body",
+      "bytes": 391358,
+      "sha256": "85e749b7b0d1c44c986aa642173472a98552094588736c32e1ee32353164c7ca"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-base-source-gate/nguyen-dang-2606.07959v2.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-base-source-gate/nguyen-dang-2606.07959v2.txt",
+      "reason": "external-primary-body",
+      "bytes": 31981,
+      "sha256": "ddc4508b2cf0bb7a95bbaeaac859203fa5f3b47aa43694df1bf0753f211cb6cb"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-digital-preflight/drmota-mauduit-rivat-author.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-digital-preflight/drmota-mauduit-rivat-author.pdf",
+      "reason": "external-primary-body",
+      "bytes": 498919,
+      "sha256": "9a957315ef5c994d547216b33672427d6405e9e4a48981cc5454ae4339f3da71"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mixed-digital-preflight/mauduit-rivat-2010.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-mixed-digital-preflight/mauduit-rivat-2010.pdf",
+      "reason": "external-primary-body",
+      "bytes": 1005714,
+      "sha256": "020f49aaceeca930f7a48952c85771721244c9ef613be0cb55fb03a0abad0e4c"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-mobius-transfer-gate/banks-shparlinski-2506.08787v1.html",
+      "repository_relative_path": ".lake/arithmetic-operator-mobius-transfer-gate/banks-shparlinski-2506.08787v1.html",
+      "reason": "external-primary-body",
+      "bytes": 501380,
+      "sha256": "15ca4daeb0e3205908913ae0a1ee3f333a3f3cd44e77c3bf3b9ffa5d11c41a4d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-cusp-source-review/white-angular-2022.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-cusp-source-review/white-angular-2022.pdf",
+      "reason": "external-primary-body",
+      "bytes": 484950,
+      "sha256": "2907f29a0c7c1988e63f03449998f612669f720e602168cb03196eb45b1e8f0d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/bgl-higher.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/bgl-higher.pdf",
+      "reason": "external-primary-body",
+      "bytes": 533218,
+      "sha256": "1ab29e362c592b9f4078eb85e495ecce6a4665972e6427e7cc2ab0fb214e303b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/bgl-higher.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/bgl-higher.txt",
+      "reason": "external-primary-body",
+      "bytes": 87657,
+      "sha256": "76f28f068e037f2c15a811beae2fe97387df86961e04c8db2a3070fad9012f6e"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/de-faveri-fixed-order.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/de-faveri-fixed-order.pdf",
+      "reason": "external-primary-body",
+      "bytes": 703196,
+      "sha256": "97720b3cacccbedb9c2014520ad4d128ae23afd0a781bdeff27dab4e86b7c726"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/de-faveri-fixed-order.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/de-faveri-fixed-order.txt",
+      "reason": "external-primary-body",
+      "bytes": 128135,
+      "sha256": "ef550aa4bca1659c6d98ebf69e2cbd42a2793b707f6171f53d1b2baeb8654a57"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/dunn-cuspidal.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/dunn-cuspidal.pdf",
+      "reason": "external-primary-body",
+      "bytes": 1734128,
+      "sha256": "7cb74d563b8e4fb35c7ec26b27eed11bf2e70bec568fc7db9a65e920abe63363"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/dunn-cuspidal.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/dunn-cuspidal.txt",
+      "reason": "external-primary-body",
+      "bytes": 267388,
+      "sha256": "7414b38034a594c52ecdadb6417e97b00704b28223b58a4344f2ee77aa13d517"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/goldmakher-louvel.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/goldmakher-louvel.pdf",
+      "reason": "external-primary-body",
+      "bytes": 266049,
+      "sha256": "5cc5f03388d3996b4333f07be51f989f60779fe172f8bd24c7aa6ddad64dd304"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/goldmakher-louvel.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/goldmakher-louvel.txt",
+      "reason": "external-primary-body",
+      "bytes": 88695,
+      "sha256": "4f35b5728dfb2b0e2dd6aa98630fcf8dc69c728b283b0cca11ef5db1d41beaed"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/hu-kaneko-martin-schildkraut.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/hu-kaneko-martin-schildkraut.pdf",
+      "reason": "external-primary-body",
+      "bytes": 441574,
+      "sha256": "472f556927a2a0da356a906608edba9a091c587d7b7fa1977eb54312b907b93b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/hu-kaneko-martin-schildkraut.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/hu-kaneko-martin-schildkraut.txt",
+      "reason": "external-primary-body",
+      "bytes": 153168,
+      "sha256": "cc8605a432afe5d6051d9cce29b40f6bfc0d377f3be670a1c29f66ac8674b9f1"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/quartic.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/quartic.pdf",
+      "reason": "external-primary-body",
+      "bytes": 623123,
+      "sha256": "2ed7fc135419837fbb427a89a6d36b58c2c0368aabd820d5640c7ce172c770a5"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/quartic.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/quartic.txt",
+      "reason": "external-primary-body",
+      "bytes": 143975,
+      "sha256": "f995d50a6b5d9b9781c5ebf240fb4dc19d79fcb356a4f129c43c9e80eb56f488"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/thorner-zaman-2017.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/thorner-zaman-2017.pdf",
+      "reason": "external-primary-body",
+      "bytes": 1664490,
+      "sha256": "504512d24db46f933d52f277d2ad3a14da5ed66e0efcda0407c8aceadd008d4c"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/thorner-zaman-2017.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/thorner-zaman-2017.txt",
+      "reason": "external-primary-body",
+      "bytes": 201122,
+      "sha256": "453ce1a9429c8a723ab3ff306a461291e1b11764487f3b44f81b59b8fef9b390"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/witness-page.png",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/witness-page.png",
+      "reason": "external-primary-body",
+      "bytes": 367849,
+      "sha256": "f6ccb5dc3e87e2d3b7d1d19fb9093f2e971483dd3a9b1aaaae5bb312649ef99f"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/xu-sang-sextic-lower.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/xu-sang-sextic-lower.pdf",
+      "reason": "external-primary-body",
+      "bytes": 384643,
+      "sha256": "9bf753a13e2ef5231c561ab799eac387b94c077198a8ffce6bb1555844faa504"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-quadratic-gate/xu-sang-sextic-lower.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-quadratic-gate/xu-sang-sextic-lower.txt",
+      "reason": "external-primary-body",
+      "bytes": 77410,
+      "sha256": "cfd72cd5284fba53a7b568b3080e1cdaa8b1c6506e6d4d7e498546f730e42907"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-residual-projection-gate/herman-2013.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-native-residual-projection-gate/herman-2013.pdf",
+      "reason": "external-primary-body",
+      "bytes": 431387,
+      "sha256": "7fd0db8085d9aea9b72f13eb7a805176702947c4e07df686ee699d771c2f1a2a"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-native-residual-projection-gate/herman-2013.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-native-residual-projection-gate/herman-2013.txt",
+      "reason": "external-primary-body",
+      "bytes": 150412,
+      "sha256": "8325ba01fd024965c69a2f58dd815322f296d94bbd9c556a80d6e1cbc16e5713"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-odd-core-hybrid-gate/xu-sang-2610.17675v1.html",
+      "repository_relative_path": ".lake/arithmetic-operator-odd-core-hybrid-gate/xu-sang-2610.17675v1.html",
+      "reason": "external-primary-body",
+      "bytes": 503425,
+      "sha256": "462f821d0fd54c0c892f3b71d5071436caa2322374ea785f42cc5fa54c53ccaa"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-odd-core-hybrid-gate/xu-sang-2610.17675v1.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-odd-core-hybrid-gate/xu-sang-2610.17675v1.pdf",
+      "reason": "external-primary-body",
+      "bytes": 384643,
+      "sha256": "9bf753a13e2ef5231c561ab799eac387b94c077198a8ffce6bb1555844faa504"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-odd-core-hybrid-gate/xu-sang-2610.17675v1.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-odd-core-hybrid-gate/xu-sang-2610.17675v1.txt",
+      "reason": "external-primary-body",
+      "bytes": 77410,
+      "sha256": "cfd72cd5284fba53a7b568b3080e1cdaa8b1c6506e6d4d7e498546f730e42907"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-odd-core-joined-gate/xu-sang-2610.17675v1.html",
+      "repository_relative_path": ".lake/arithmetic-operator-odd-core-joined-gate/xu-sang-2610.17675v1.html",
+      "reason": "external-primary-body",
+      "bytes": 503425,
+      "sha256": "462f821d0fd54c0c892f3b71d5071436caa2322374ea785f42cc5fa54c53ccaa"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-odd-core-marked-inverse/hybrid-character-moment.md",
+      "repository_relative_path": ".lake/arithmetic-operator-odd-core-marked-inverse/hybrid-character-moment.md",
+      "reason": "external-primary-body",
+      "bytes": 17303,
+      "sha256": "1099c679af4f6cfcd8830f40c4c643828bc3241e3c466055455569a123932d00"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-odd-core-marked-inverse/method-comparison.md",
+      "repository_relative_path": ".lake/arithmetic-operator-odd-core-marked-inverse/method-comparison.md",
+      "reason": "external-primary-body",
+      "bytes": 5164,
+      "sha256": "b1e6c20c2a698cc2a00bf5e38e5ee5e721571f75414545883e5055c418c446f2"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/angular.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/angular.tex",
+      "reason": "external-primary-body",
+      "bytes": 36320,
+      "sha256": "f14a7c1c4f0b19b70d6705c8a2adcb658bfbc77814edb61cd57edb2465f38510"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/background-type1.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/background-type1.tex",
+      "reason": "external-primary-body",
+      "bytes": 27216,
+      "sha256": "1c7be908c862dc440772964cfdd59e095e7b0f079cec11d99f5c7a9644198dd1"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/decomposition.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/decomposition.tex",
+      "reason": "external-primary-body",
+      "bytes": 23964,
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/dispersion.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/dispersion.tex",
+      "reason": "external-primary-body",
+      "bytes": 28635,
+      "sha256": "9a04b892feb99a79ec4e825bcd5096d3adb994c53d539c41d2da35f0a77f317c"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/dual.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/dual.tex",
+      "reason": "external-primary-body",
+      "bytes": 21454,
+      "sha256": "1209fd17cee79f4a21b71d66d3d8b60b210216fa783ec555959d2ebff2fba483"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/dunn.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/dunn.pdf",
+      "reason": "external-primary-body",
+      "bytes": 890893,
+      "sha256": "565462015051210f55b10699ffc611f35c554a1c67ac752b52a3b092fc7d62b9"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/dunn.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/dunn.txt",
+      "reason": "external-primary-body",
+      "bytes": 229919,
+      "sha256": "e7a66ad3c13bc4a1034594952f3ac63b620a4edc52dcb71978012be50f6f818e"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/nonorthogonality.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/nonorthogonality.pdf",
+      "reason": "external-primary-body",
+      "bytes": 616742,
+      "sha256": "b8cb7c36e505bde5a00e2bc4e0bf0a3026c0707ed92f1ada9306980d2c67271d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/nonorthogonality.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/nonorthogonality.txt",
+      "reason": "external-primary-body",
+      "bytes": 162853,
+      "sha256": "7f6d7723e55cfc5f3a544b2defcf60ecfed62cc9cf31582ac6a7fa1967242f73"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/perron.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/perron.tex",
+      "reason": "external-primary-body",
+      "bytes": 21910,
+      "sha256": "fc8ef11c96aae384bd0faef3c8ee6c43a6608460d284a098179b9c9d6404b33b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/rstation-paper10-v2.html",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/rstation-paper10-v2.html",
+      "reason": "external-primary-body",
+      "bytes": 86605,
+      "sha256": "51098d8c92dd24c664142e986e50fdf228f463ac4907cb01ae8e68ae05a3bd59"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/rstation-paper10-v2.md",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/rstation-paper10-v2.md",
+      "reason": "external-primary-body",
+      "bytes": 51670,
+      "sha256": "525c899dd4dd5cb0ed15db43f63fb6e25cc140f98358e9d41ddfe897f5a23a7a"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-patterson-residual-gate/rstation-paper8-v1.md",
+      "repository_relative_path": ".lake/arithmetic-operator-patterson-residual-gate/rstation-paper8-v1.md",
+      "reason": "external-primary-body",
+      "bytes": 38054,
+      "sha256": "f1f9aed624908ccb9b6842911d898916230545ff76dc123187d7eadc3558def1"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-positive-primitive-source-gate/kurlberg-pomerance-1108.5209.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-positive-primitive-source-gate/kurlberg-pomerance-1108.5209.pdf",
+      "reason": "external-primary-body",
+      "bytes": 216019,
+      "sha256": "223f8c97f3dbb21311faf48b781637fc1abc077b2f86a677ce6582aa57459f90"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-primitive-gcd-source-gate/bennett-martin-obryant-rechnitzer-2018.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-primitive-gcd-source-gate/bennett-martin-obryant-rechnitzer-2018.pdf",
+      "reason": "external-primary-body",
+      "bytes": 825474,
+      "sha256": "1eea39cd50acc43d286283624627d1151b51e7c573543a9bcd00f63037324185"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-primitive-gcd-source-gate/erdos-murty-1999.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-primitive-gcd-source-gate/erdos-murty-1999.pdf",
+      "reason": "external-primary-body",
+      "bytes": 410728,
+      "sha256": "75da28d20c371a3700af9c8a67130f5a8642010e74bab6ae2627bfefa64909a8"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-primitive-gcd-source-gate/erdos-murty-p1.png",
+      "repository_relative_path": ".lake/arithmetic-operator-primitive-gcd-source-gate/erdos-murty-p1.png",
+      "reason": "external-primary-body",
+      "bytes": 155533,
+      "sha256": "9f7a21dffc9d04b43eb4319269ad7837a390a45e8318bb719ec881630017481b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-primitive-gcd-source-gate/erdos-murty-p2.png",
+      "repository_relative_path": ".lake/arithmetic-operator-primitive-gcd-source-gate/erdos-murty-p2.png",
+      "reason": "external-primary-body",
+      "bytes": 189031,
+      "sha256": "5e40cb1c9cbf6a521a1a367368c8e4d588efe5ed4a1dcea68ec85fdb238dcea1"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-primitive-gcd-source-gate/kurlberg-pomerance-1108.5209.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-primitive-gcd-source-gate/kurlberg-pomerance-1108.5209.pdf",
+      "reason": "external-primary-body",
+      "bytes": 216019,
+      "sha256": "223f8c97f3dbb21311faf48b781637fc1abc077b2f86a677ce6582aa57459f90"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-small-window-gate/glasby-et-al-2016.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-small-window-gate/glasby-et-al-2016.pdf",
+      "reason": "external-primary-body",
+      "bytes": 166068,
+      "sha256": "87bcf6ba57fe68c951b17535e217e5707cbdb5546a201622ed052733e1de8dbe"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-small-window-gate/motose-1995.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-small-window-gate/motose-1995.pdf",
+      "reason": "external-primary-body",
+      "bytes": 421447,
+      "sha256": "7bb5b75256603fa37c5304cf314bd78ccc0038d491268de09ac0073bb9a1630c"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-small-window-gate/motose-page1.png",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-small-window-gate/motose-page1.png",
+      "reason": "external-primary-body",
+      "bytes": 183909,
+      "sha256": "2a8b6528f01e9956919c198975e59efaeb1bc19c5a47af4be747e7490ac41936"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-total-source-gate/multiplicative-titchmarsh.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-total-source-gate/multiplicative-titchmarsh.pdf",
+      "reason": "external-primary-body",
+      "bytes": 584776,
+      "sha256": "bf07efb3dd3a230363c8750b26c6c232ca49298cb369e933575a55d4f8839286"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-total-source-gate/multiplicative-titchmarsh.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-total-source-gate/multiplicative-titchmarsh.txt",
+      "reason": "external-primary-body",
+      "bytes": 166496,
+      "sha256": "af85dd20df8ac3b90d0079bb08cf8a90d51859b29762be523ec05bb55f6eab5e"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-total-source-gate/titchmarsh-intervals.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-total-source-gate/titchmarsh-intervals.pdf",
+      "reason": "external-primary-body",
+      "bytes": 463987,
+      "sha256": "bf3ab17cfd8e4c0b4d2d4a41cac139bfcba192325bb42896b0a5936c6fdb7326"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-total-source-gate/titchmarsh-intervals.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-total-source-gate/titchmarsh-intervals.txt",
+      "reason": "external-primary-body",
+      "bytes": 46619,
+      "sha256": "66958387b6ba39f4f46c89176e0bdb6966e33f8c9b037361eb307d6c21a9337d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-total-source-gate/titchmarsh-wong.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-total-source-gate/titchmarsh-wong.pdf",
+      "reason": "external-primary-body",
+      "bytes": 441071,
+      "sha256": "87d3a811c4fd59b3eaf0088eeedaeb22c2b50b6fe5b0bfd675d75305be581b88"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-total-source-gate/titchmarsh-wong.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-total-source-gate/titchmarsh-wong.txt",
+      "reason": "external-primary-body",
+      "bytes": 52759,
+      "sha256": "0c1f69fde6044233250499f10f33effe383f522d4a8960f2c1cb7b88d11afbdf"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-total-source-gate/uniform-titchmarsh-2021.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-total-source-gate/uniform-titchmarsh-2021.pdf",
+      "reason": "external-primary-body",
+      "bytes": 497084,
+      "sha256": "a7a0a12d7c53f69bf267384c1d72a9078f5bdf0c4f3e5d451743f5964af1a357"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qdet-unsaturated-gate/kim-2015-order-averages.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-qdet-unsaturated-gate/kim-2015-order-averages.pdf",
+      "reason": "external-primary-body",
+      "bytes": 162623,
+      "sha256": "6040f97a93100cfb9cd9abb7cf3397e9afaccebb1191aca0f25682d63c4a27ae"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-qpascal-higher-gate/zudilin-2019.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-qpascal-higher-gate/zudilin-2019.pdf",
+      "reason": "external-primary-body",
+      "bytes": 171582,
+      "sha256": "888b884ad3e881df178603e5329b60129a9054588a8cf23ab5c00f45d271648d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-roadmap/openai-math-review/CONTENTS.md",
+      "repository_relative_path": ".lake/arithmetic-operator-roadmap/openai-math-review/CONTENTS.md",
+      "reason": "external-primary-body",
+      "bytes": 640371,
+      "sha256": "c492802b53fb4c4161e45fc678bb67bd526add72ca2635493a367ff7fb860bf9"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-roadmap/openai-math-review/overview.tex",
+      "repository_relative_path": ".lake/arithmetic-operator-roadmap/openai-math-review/overview.tex",
+      "reason": "external-primary-body",
+      "bytes": 322922,
+      "sha256": "98533a7bc976f44970153f036320932655d07488382e858c25bb6c9e1e029789"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-root-unity-determinant-gate/bzdega-herrera-moree.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-root-unity-determinant-gate/bzdega-herrera-moree.pdf",
+      "reason": "external-primary-body",
+      "bytes": 242468,
+      "sha256": "30ad8bc163a664a5487f7317b87c2e65c790aa35a3f7bb110f999f6567a7b1e1"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-root-unity-determinant-gate/bzdega-herrera-moree.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-root-unity-determinant-gate/bzdega-herrera-moree.txt",
+      "reason": "external-primary-body",
+      "bytes": 65906,
+      "sha256": "0f0d1c5143f7e8073ed5f2375fce8e8953e29dcc6fea6ddce532225f347946cc"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-sextic-period-correlation/primary-page.html",
+      "repository_relative_path": ".lake/arithmetic-operator-sextic-period-correlation/primary-page.html",
+      "reason": "external-primary-body",
+      "bytes": 111749,
+      "sha256": "6615bac0e511e8b0109faa0c7c5d2cf14d7458cd7242d27f73ac8b921f623899"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-signed-integral-source-gate/fan-pollack-2505.05601v2.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-signed-integral-source-gate/fan-pollack-2505.05601v2.pdf",
+      "reason": "external-primary-body",
+      "bytes": 475507,
+      "sha256": "e8776e8e92f93b2e3429ed8d805145368f7f17a10f552dc6aed46da7bc85854b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-signed-integral-source-gate/fan-pollack-2505.05601v2.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-signed-integral-source-gate/fan-pollack-2505.05601v2.txt",
+      "reason": "external-primary-body",
+      "bytes": 114642,
+      "sha256": "7119e963cd05d7d89404e5e664a09d9cf1c00880f102f5654feb25c82d66b80c"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/chinta-friedberg-hoffstein-2011.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/chinta-friedberg-hoffstein-2011.pdf",
+      "reason": "external-primary-body",
+      "bytes": 220761,
+      "sha256": "7486de15b85448e70326f2b29ac3bdca7b7311d6508204b7263e61cef05fb5f3"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/chinta-friedberg-hoffstein-2011.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/chinta-friedberg-hoffstein-2011.txt",
+      "reason": "external-primary-body",
+      "bytes": 59654,
+      "sha256": "860275f929c67657b04b19289848c3c5852e6114e1499470e262d704b3f1b127"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/david-dunn-hamieh-lin-2306.11875v5.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/david-dunn-hamieh-lin-2306.11875v5.pdf",
+      "reason": "external-primary-body",
+      "bytes": 623123,
+      "sha256": "2ed7fc135419837fbb427a89a6d36b58c2c0368aabd820d5640c7ce172c770a5"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/david-dunn-hamieh-lin-2306.11875v5.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/david-dunn-hamieh-lin-2306.11875v5.txt",
+      "reason": "external-primary-body",
+      "bytes": 143975,
+      "sha256": "f995d50a6b5d9b9781c5ebf240fb4dc19d79fcb356a4f129c43c9e80eb56f488"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/de-faveri-dunn-hoffstein-2607.07911v2.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/de-faveri-dunn-hoffstein-2607.07911v2.pdf",
+      "reason": "external-primary-body",
+      "bytes": 616742,
+      "sha256": "b8cb7c36e505bde5a00e2bc4e0bf0a3026c0707ed92f1ada9306980d2c67271d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/de-faveri-dunn-hoffstein-2607.07911v2.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/de-faveri-dunn-hoffstein-2607.07911v2.txt",
+      "reason": "external-primary-body",
+      "bytes": 162853,
+      "sha256": "7f6d7723e55cfc5f3a544b2defcf60ecfed62cc9cf31582ac6a7fa1967242f73"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/friedberg-ginzburg-1403.3930.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/friedberg-ginzburg-1403.3930.pdf",
+      "reason": "external-primary-body",
+      "bytes": 475221,
+      "sha256": "a1eb1b59cab83d63c91f39fe499ee6e365452e1db5d55e3615d85eb1f36db75e"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/friedberg-ginzburg-1403.3930.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/friedberg-ginzburg-1403.3930.txt",
+      "reason": "external-primary-body",
+      "bytes": 170505,
+      "sha256": "30a538fe933fb80fe39b261ac68be90c511235e22d63614a08217c5587736044"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/xu-sang-2610.17675v1.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/xu-sang-2610.17675v1.pdf",
+      "reason": "external-primary-body",
+      "bytes": 384643,
+      "sha256": "9bf753a13e2ef5231c561ab799eac387b94c077198a8ffce6bb1555844faa504"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-correlation-preflight/xu-sang-2610.17675v1.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-correlation-preflight/xu-sang-2610.17675v1.txt",
+      "reason": "external-primary-body",
+      "bytes": 77410,
+      "sha256": "cfd72cd5284fba53a7b568b3080e1cdaa8b1c6506e6d4d7e498546f730e42907"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-covariance-gate/broker-hoffstein.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-covariance-gate/broker-hoffstein.pdf",
+      "reason": "external-primary-body",
+      "bytes": 295666,
+      "sha256": "9cde7f9e144457da23a557986e15514ac0d3e80a1664d1e526b1ffae93c8adaf"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-covariance-gate/broker-hoffstein.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-covariance-gate/broker-hoffstein.txt",
+      "reason": "external-primary-body",
+      "bytes": 89251,
+      "sha256": "5ec5eaa4510d77020435bc79eebd70a717bbfd7e6c3656d511c12693892b4507"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-covariance-gate/hamdar.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-covariance-gate/hamdar.pdf",
+      "reason": "external-primary-body",
+      "bytes": 623045,
+      "sha256": "63ee2622a99363a172b1217461b4ecc0027765ac147891faff1cbf900be74e17"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-covariance-gate/hamdar.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-covariance-gate/hamdar.txt",
+      "reason": "external-primary-body",
+      "bytes": 174180,
+      "sha256": "d72081af74b94d784eb195eba4011450f738105c798d5199dd8ac23ecb11a51f"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-covariance-gate/rstation-paper8-v1.md",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-covariance-gate/rstation-paper8-v1.md",
+      "reason": "external-primary-body",
+      "bytes": 38054,
+      "sha256": "f1f9aed624908ccb9b6842911d898916230545ff76dc123187d7eadc3558def1"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/bh-page25.png",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/bh-page25.png",
+      "reason": "external-primary-body",
+      "bytes": 225387,
+      "sha256": "9c3f16d7e8bb6389852588075f604a9600f12074131fb26201136641ead5c342"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/bh-page27.png",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/bh-page27.png",
+      "reason": "external-primary-body",
+      "bytes": 282045,
+      "sha256": "935e96ff138d2cdbb771fcdee39dd047782fdf371b130bf336c9f6a9af2cb2c0"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/bh-page5.png",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/bh-page5.png",
+      "reason": "external-primary-body",
+      "bytes": 260823,
+      "sha256": "24d6e7e4c7939454b6d41d5af0d3fd517673a51a623b741664f5d14fd1eba07b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/bh-page6.png",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/bh-page6.png",
+      "reason": "external-primary-body",
+      "bytes": 258702,
+      "sha256": "471fb54673a4436bec556fb140a9c83ffa183bc45b9d8680d046f725352251dd"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/friedberg-ginzburg-2018.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/friedberg-ginzburg-2018.pdf",
+      "reason": "external-primary-body",
+      "bytes": 289325,
+      "sha256": "4c17461338be0731da1373d2e8a9cb0f9da9a9f4879c9e6871305d267e7145f0"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/friedberg-ginzburg-2018.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/friedberg-ginzburg-2018.txt",
+      "reason": "external-primary-body",
+      "bytes": 173517,
+      "sha256": "ecb7b9120d90b672e7025235ef60d83b1bbadb0ac21c989906100410506dd3e7"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/kazhdan-patterson-1984.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/kazhdan-patterson-1984.pdf",
+      "reason": "external-primary-body",
+      "bytes": 10023375,
+      "sha256": "0f91142e8fc3814981fb77e3a3f05a7359ebd4a5e9afdf5386eb357cb4f2b57e"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/kazhdan-patterson-1984.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/kazhdan-patterson-1984.txt",
+      "reason": "external-primary-body",
+      "bytes": 255054,
+      "sha256": "2d0385771200de90e2a61c607877f8585e1a4a5171cdff4b39ba961a0dd473ad"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/kazhdan-patterson-corrections-1985.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/kazhdan-patterson-corrections-1985.pdf",
+      "reason": "external-primary-body",
+      "bytes": 157152,
+      "sha256": "4f6eb1ed12f8bd25ff54349bfd2cbd778b36d5c0fbb8ff6ddd763a0d1868e77d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/kazhdan-patterson-corrections-1985.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/kazhdan-patterson-corrections-1985.txt",
+      "reason": "external-primary-body",
+      "bytes": 3204,
+      "sha256": "f2b914c5713cef5fa25ecfd757a4a80687a1e080ceb4cdfe02bea5edbb5d313f"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/kp-page134.png",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/kp-page134.png",
+      "reason": "external-primary-body",
+      "bytes": 172918,
+      "sha256": "0f9d3ef8a2390eff2acfd311f2027c315f6f49969eb37c6a1f0b36eb017888a3"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-theta-hecke-gate/kp-printed134.png",
+      "repository_relative_path": ".lake/arithmetic-operator-theta-hecke-gate/kp-printed134.png",
+      "reason": "external-primary-body",
+      "bytes": 218873,
+      "sha256": "74ffcfabc795b885b780da1e3445dfddf9550a83cbb2ccb212c466ca10b3f224"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-total-trace-frontier-gate/zsigmondy-1892.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-total-trace-frontier-gate/zsigmondy-1892.pdf",
+      "reason": "external-primary-body",
+      "bytes": 966828,
+      "sha256": "45b2aea11e6e92711ab9b744b368dcb8ae0e84e69e5267c8515f61072faa9132"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-total-trace-frontier-gate/zsigmondy-1892.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-total-trace-frontier-gate/zsigmondy-1892.txt",
+      "reason": "external-primary-body",
+      "bytes": 49907,
+      "sha256": "299edcf4fc4d7748abfd06cb9fc4e1ab61137589a966af2a55f6b3dc0c5f65fc"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-unconditional-gauss-input/paper-current.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-unconditional-gauss-input/paper-current.pdf",
+      "reason": "external-primary-body",
+      "bytes": 649981,
+      "sha256": "0af3e675f8a6a5b3e47da9ea5ca7434a825f48f7186f79594b1ee5d54d443a37"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-unconditional-gauss-input/paper-current.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-unconditional-gauss-input/paper-current.txt",
+      "reason": "external-primary-body",
+      "bytes": 200484,
+      "sha256": "4c231b89ade86e737a56874ebb025e983dc509fa66818d62ab64e1817321ac80"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-unconditional-gauss-input/paper-pinned.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-unconditional-gauss-input/paper-pinned.pdf",
+      "reason": "external-primary-body",
+      "bytes": 649981,
+      "sha256": "0af3e675f8a6a5b3e47da9ea5ca7434a825f48f7186f79594b1ee5d54d443a37"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-unconditional-gauss-input/paper-pinned.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-unconditional-gauss-input/paper-pinned.txt",
+      "reason": "external-primary-body",
+      "bytes": 200484,
+      "sha256": "4c231b89ade86e737a56874ebb025e983dc509fa66818d62ab64e1817321ac80"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/costa-gerbicz-harvey-1209.3436.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/costa-gerbicz-harvey-1209.3436.pdf",
+      "reason": "external-primary-body",
+      "bytes": 274135,
+      "sha256": "10cd897f34c69fa6082aa27401e198b0f9a98cab982eeeef7e01639ea553d7b1"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/costa-gerbicz-harvey-1209.3436.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/costa-gerbicz-harvey-1209.3436.txt",
+      "reason": "external-primary-body",
+      "bytes": 71405,
+      "sha256": "9aa5bc986c5db02d92d0d2fff81cc081250d236fa962b528087f7abece1f9170"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/crandall-dilcher-pomerance-1997.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/crandall-dilcher-pomerance-1997.pdf",
+      "reason": "external-primary-body",
+      "bytes": 362654,
+      "sha256": "f1248405d19b4a5279ba54e56e41e9baced0e78a91775e14de7272dedfef34b3"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/crandall-dilcher-pomerance-1997.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/crandall-dilcher-pomerance-1997.txt",
+      "reason": "external-primary-body",
+      "bytes": 55071,
+      "sha256": "8878b24af3c0bd44af40a6e0a898cbb1a076fcc0caf7074ac8984d3000060793"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/kellner-2509.05402v2.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/kellner-2509.05402v2.pdf",
+      "reason": "external-primary-body",
+      "bytes": 438654,
+      "sha256": "263c98f88db9909ff0c9115327438ad75b64e68a9ae4cac86d0b820afd82967d"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/kellner-2509.05402v2.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/kellner-2509.05402v2.txt",
+      "reason": "external-primary-body",
+      "bytes": 58694,
+      "sha256": "554ed0d9b479d5e9ef98fcb6624d35eb9c6ccd2148d97b6461d8194ff609f796"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/shparlinski-1104.3909.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/shparlinski-1104.3909.pdf",
+      "reason": "external-primary-body",
+      "bytes": 175928,
+      "sha256": "2ae9757097a90ef21a2b80ed56ad32618da730f1a02525649dd2a6dca522b03b"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/shparlinski-1104.3909.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/shparlinski-1104.3909.txt",
+      "reason": "external-primary-body",
+      "bytes": 33881,
+      "sha256": "b127cd2449bbde5dbd21b0855f1ef677b2deebe7b993a46c55531bacd0ad7274"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/sondow-1110.3113.pdf",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/sondow-1110.3113.pdf",
+      "reason": "external-primary-body",
+      "bytes": 102490,
+      "sha256": "43890ffcb901d308c87f22cbb176ee7530456f46cccaac9eb83240c8b65b5e63"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-wilson-quotient-source-gate/sondow-1110.3113.txt",
+      "repository_relative_path": ".lake/arithmetic-operator-wilson-quotient-source-gate/sondow-1110.3113.txt",
+      "reason": "external-primary-body",
+      "bytes": 32076,
+      "sha256": "d6c8e95177142156c7ff888d46903a892edb0924d2555844b7b1cc435aa7f1e7"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/siegel-2610-15483/Effective_SZs.tex",
+      "repository_relative_path": ".lake/siegel-2610-15483/Effective_SZs.tex",
+      "reason": "external-primary-body",
+      "bytes": 58749,
+      "sha256": "34a1586c6c285474c62d8d504f1a3077667a041c6bf507ad042cd5d6a86f2cfc"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/siegel-2610-15483/figure1.png",
+      "repository_relative_path": ".lake/siegel-2610-15483/figure1.png",
+      "reason": "external-primary-body",
+      "bytes": 21692,
+      "sha256": "405f7ad3eb086bb3b2cccb0ffd786143c24431d1d770d6a95abf499e2ad6abad"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/siegel-2610-15483/paper.pdf",
+      "repository_relative_path": ".lake/siegel-2610-15483/paper.pdf",
+      "reason": "external-primary-body",
+      "bytes": 452832,
+      "sha256": "54891704515ba9d58ae60ce4c16f4b368a377a9732ca98e26172209fa0647d6f"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/siegel-2610-15483/paper.txt",
+      "repository_relative_path": ".lake/siegel-2610-15483/paper.txt",
+      "reason": "external-primary-body",
+      "bytes": 67792,
+      "sha256": "908547fb8a9d5a95d602bf6f51905ae600e4322d7bc52be57cae690c35291d67"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/siegel-2610-15483/z-Paperstyle.sty",
+      "repository_relative_path": ".lake/siegel-2610-15483/z-Paperstyle.sty",
+      "reason": "external-primary-body",
+      "bytes": 16559,
+      "sha256": "195f52c315481d8d345e1df42e3d787f3a7b95f7274d8d02ba14837aa7afdabc"
+    }
+  ]
+}

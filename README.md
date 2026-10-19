@@ -99,10 +99,10 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Semiprime checkpoint and portable certificate source links.** Registers three semiprime arithmetic proof modules with explicit hypotheses, archives the research evidence, and makes historical certificate source links independent of locally installed toolchains. The guaranteed sixth-rate factorization algorithm remains unproved.
-The semiprime research goal is paused. Universal cheap acquisition and the complete Lean bit-complexity proof remain open; the RH arithmetic obligation is unchanged.
+**Native square bound and arithmetic-correlation audits.** Publishes the Siegel-interpolation review, checked native central-square bounds through the actual source normalizer, and exact marked-coefficient audits. These supporting results retain the original arithmetic weights and masks.
+The signed odd-sector correlation and the independent RH arithmetic estimate remain open. The proved zero-free endpoint is unchanged.
 [Current checked endpoint](RiemannGaussian/SuzukiLaplaceCompensator.lean#L246)
-· [Proof details](docs/semiprime-factorisation-investigation.md#2026-10-16-publication-checkpoint).
+· [Proof details](docs/arithmetic-operator-source-normalized-marked-gates.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

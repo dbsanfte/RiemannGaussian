@@ -1,0 +1,26 @@
+{
+  "command": "python3 docs/research-evidence/research-checkpoint-20261019/whitespace-amendment/verify.py --check-live",
+  "terminal_exit_code": 0,
+  "result": {
+    "terminal_exit_code": 0,
+    "base_files_verified": 1772,
+    "amendment_files_verified": 10,
+    "normalizations_verified": 4,
+    "only_one_trailing_LF_removed_each": true,
+    "current_checkpoint_pins": 1550,
+    "portable_pin_coverage": {
+      "tracked-source-or-document": 307,
+      "archived-exact-bytes": 1020,
+      "excluded-compiled-artifact": 90,
+      "excluded-primary-fingerprint": 112,
+      "locked-upstream-package-source": 21
+    },
+    "unresolved_portable_references": 0,
+    "isolated_source_leaves": 91,
+    "source_dependencies_complete": true,
+    "all_live_pins_checked": true,
+    "fresh_Lean_build_claimed": false
+  },
+  "historical_base_untouched": true,
+  "proof_source_mutated_by_archive_agent": false
+}

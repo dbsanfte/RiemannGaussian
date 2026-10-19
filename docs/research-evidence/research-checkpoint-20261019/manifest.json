@@ -1,0 +1,95 @@
+{
+  "created_utc": "2026-10-19",
+  "repository_head": "842c9218be9867e4accfed673047302a2f0049d7",
+  "source_checkpoint": "docs/arithmetic-operator-source-normalized-marked-gates.json",
+  "source_checkpoint_sha256": "21556d126fa652634540f48d2c649cb4f801261b4bad3ed4dfd50192e99fb687",
+  "source_checkpoint_pins": 1544,
+  "entries": 1772,
+  "objects": 1643,
+  "compressed_object_bytes": 5230274,
+  "uncompressed_entry_bytes": 22182700,
+  "metadata_bytes_excluding_manifest": 2536743,
+  "files": [
+    {
+      "path": "ARCHIVE.md",
+      "bytes": 5835,
+      "sha256": "fa15d99612a86e51232630bbc3578ad04607edd75632f63bf82aa018eb5a5e29"
+    },
+    {
+      "path": "audit_checkpoint.py",
+      "bytes": 4670,
+      "sha256": "e06166baaf8c921f28c9402be3a6a1dc5934450e975b7f5809bddb7b35ef0620"
+    },
+    {
+      "path": "build-result.json",
+      "bytes": 168,
+      "sha256": "747627a72d8b44fece9c9f61a6102f11bfc7169b9de033cce87dc560eadf5ae8"
+    },
+    {
+      "path": "build_archive.py",
+      "bytes": 12318,
+      "sha256": "3e87c6e39a857acaecbf1dc4e641f7753936d526a449611407e20825f2f39161"
+    },
+    {
+      "path": "excluded-primary-fingerprints.json",
+      "bytes": 68088,
+      "sha256": "60c3af4c6aa2d45177b2211f83f547227b6d7b94bfdce79fd856ba9050b3982c"
+    },
+    {
+      "path": "index.json",
+      "bytes": 887326,
+      "sha256": "3d4c54cde75b6c7966a4416f770ddb6b45d20be9704e245df0f5189fe4991369"
+    },
+    {
+      "path": "inventory.json",
+      "bytes": 33337,
+      "sha256": "d8bf7e44ae033ee58ba8df7f5f057055a351ed380f07904e2b1416ffd072b3f8"
+    },
+    {
+      "path": "leaf-evidence-map.json",
+      "bytes": 85649,
+      "sha256": "8addb7d7a114ab16ad666c0ce95f308e9790d43c4d10e287d4eb9e5e9c18f5fe"
+    },
+    {
+      "path": "leaf-hash-reference-map.json",
+      "bytes": 122518,
+      "sha256": "b6a9c676ca2e8cffe78018639ab8d70662da12f3238603bf89e2876aceb3cc8d"
+    },
+    {
+      "path": "primary-url-catalog.json",
+      "bytes": 910227,
+      "sha256": "a40481aee6b23fe6efffcc43387cc8945c9d47dc796808e1bb637113e1e2ebd9"
+    },
+    {
+      "path": "publication-coverage.json",
+      "bytes": 366114,
+      "sha256": "8ec2c8ba295f8ff74c62fa7011664b5edd3d1d04cefb876ece0a3c2ed69db5a6"
+    },
+    {
+      "path": "publication-hygiene.json",
+      "bytes": 601,
+      "sha256": "d8f2a06b37814522b5415e34b0a6d72ffe23c5bc6753b1ff4892634bae3886b0"
+    },
+    {
+      "path": "replay-dependencies.json",
+      "bytes": 36607,
+      "sha256": "cb54922fc965fe35e94ee77ec3f2a8ef717f6c863af6b7b7ac3ee95b0da9d46c"
+    },
+    {
+      "path": "restore-smoke.json",
+      "bytes": 333,
+      "sha256": "4f67183c36dfad19141eba3579468ddb843052235262403f717d11f915c0478e"
+    },
+    {
+      "path": "restore.py",
+      "bytes": 2335,
+      "sha256": "3c53a048b1e597635eda3954bd5202f8acb3f212aa338e219c0257efae99bc4d"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 617,
+      "sha256": "54e2d62080c49a0a611f35f85d758fab272205e880e55dada58eaf867c1cb2e7"
+    }
+  ],
+  "status": "Frozen portable archive; no new collective Lean or analytic verification claim; root owns commit/push."
+}

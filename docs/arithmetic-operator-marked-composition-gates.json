@@ -1,0 +1,498 @@
+{
+  "checkpoint": "joined-marked-cubic-sextic-composition-and-model-source-gates",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Local exact finite identities and conditional norm/rate implications; no new native detector bound or zero exclusion.",
+  "gates": [
+    {
+      "name": "actual fourth-power label and same-product incidence",
+      "proved": [
+        "Complete zero-extended incidence reindexing with calibrated genuine Gauss phases.",
+        "Same-product cross relation; cofactor phase cancels but prime-pair character and masks remain.",
+        "Actual native CRT/completion coefficient retains chi_I(P)^4."
+      ],
+      "not_proved": [
+        "Native incomplete-period cancellation",
+        "Whole-source localization"
+      ]
+    },
+    {
+      "name": "scalar prescribed positive label-average rate",
+      "proved": [
+        "With physical label F=Y′, conditional rate=min(11/32-d/2,5/12-3d/2).",
+        "Improves3/16 only for d>11/72; atd0 rate11/32."
+      ],
+      "scope": "Rational budget only, not a native lower bound or no-go for coupled cubic use."
+    },
+    {
+      "name": "joined cubic then sextic operators",
+      "proved": [
+        "Finite composition with BOTH operator inequalities explicit hypotheses and one cofactor-only multiplier.",
+        "Exact multiplicative divisor kernel with nonunit zeros retained.",
+        "Conditional nominal rate<=1/36; prime collision rate<=-5/96.",
+        "All shorter cofactor lengths give E<=17/96-d-v."
+      ],
+      "paper_level": [
+        "Actual coefficient separation for matching squarefree physical block with fixed native outer data.",
+        "Complete puncture-divisor sum pays only logarithms.",
+        "All numerator sixth powers require bounded shortened-row coefficients; sixth-power dyads are summable."
+      ],
+      "not_proved": [
+        "Analytic large-sieve inputs in Lean",
+        "Exact native family identification and full uniform profile bridge",
+        "Whole physical/nonmatching row coverage",
+        "A source carried by the favorable matching block"
+      ]
+    },
+    {
+      "name": "same-weight Patterson model",
+      "proved": [
+        "Actual ray-preserving modelSourceCoefficient_eq_ratio.",
+        "Ratio norm exactly NI^(-1/6), without asserting multiplicativity.",
+        "Literal bareIdealHighSummand B0/B1/B2 and odd-cube vanishing.",
+        "Actual residue coefficients and their norms."
+      ],
+      "paper_level": [
+        "Normal convergence above Re x>5/6 after stripping density.",
+        "Marked decay ND^(-Re x-1/6) and complete annular slot mass ledger.",
+        "Candidate model double-residue power x-103/144."
+      ],
+      "not_proved": [
+        "Initial model-series identity and analytic continuation bridge",
+        "Contours and complete source transport",
+        "Nonprincipal free rows"
+      ]
+    },
+    {
+      "name": "squarefree physical source versus matching source",
+      "paper_level": [
+        "Squarefree physical restriction subtracts local W^2/(1-W).",
+        "At density residue its ratio to original local factor differs from1 by<(3/2)q^-2, hence a nonzero convergent correction above Re x>5/6.",
+        "Selected marked factors retain their inverse local ratios; positive compensated slot sums retain a fixed left-half-plane orientation.",
+        "Matching A|I correction is normally convergent near w=1,z=1/6 above Re x>5/6; thus the ORIGINAL double-density source is zero. Global restricted Euler/continuation and contour bridge remain unformalized."
+      ],
+      "scope": "Squarefree physical source preservation is not matching-block source coverage. Missing w pole blocks the original source comparison only; no theorem that all other coupled sources vanish.",
+      "proved": [
+        "Literal native sourcePrincipalTerm sum with physical k<=e, spectral e in Fin2 and all even cube orders.",
+        "Exact matching local rational sum with no (1-W) denominator.",
+        "Exact reciprocal-target local factorization; no global Euler/contour consequence assumed."
+      ]
+    },
+    {
+      "name": "source-bearing nonmatching covariance threshold",
+      "paper_level": [
+        "Actual native low row separation retains the physical normalized sextic Gauss polynomial and the independent prescribed C_-1 spectral vector.",
+        "Conditional unmarked separate-energy budget sqrt(Delta6(Q,Y)/Y) is exactly Z^(3/16) at Q=Z^(5/6), Y=Z^(23/48).",
+        "Delta6 has maximum exponent41/48; the mixed term consumes the possible1/96 saving."
+      ],
+      "not_proved": [
+        "Full all-moduli physical Gauss mean, including imprimitive nonsquarefree terms.",
+        "Fixed-power cancellation in the actual signed numerator covariance.",
+        "Marked/model whole-source transport or an RH endpoint."
+      ],
+      "scope": "No new Lean leaf or arithmetic bound; identifies the joined covariance needed beyond separate-energy Cauchy."
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/abs/2610.15483v1",
+      "role": "Earlier common integral determinant/Frobenius transfer review; scoped direct-transfer failures retained.",
+      "lean_import": false
+    },
+    {
+      "url": "https://rstation.ai/problems/riemann_hypothesis/papers/5",
+      "version": "v3,2026-10-17",
+      "role": "External prescribed angular-Gauss mean and exact gcd/Poisson formula; not independently certified or imported. Marked inverse polynomial remains outside its conclusion.",
+      "lean_import": false,
+      "source_dependency_revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.04045v1",
+      "role": "Candidate cubic and sixth-order character norms with common vectors and power-free indices. Exact native family comparison remains explicit.",
+      "lean_import": false
+    }
+  ],
+  "validation": {
+    "leaves": [
+      {
+        "source": "scripts/ArithmeticOperatorMarkedSexticRateAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorMarkedSexticRateAudit.lean",
+        "root_log": ".lake/arithmetic-operator-marked-correlation/rate-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-marked-correlation/rate-axioms.json",
+        "declarations": 28,
+        "theorems_including_generated_helpers": 22,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true,
+        "exit_code": 0
+      },
+      {
+        "source": "scripts/QuasiRHMarkedIncidenceAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/QuasiRHMarkedIncidenceAudit.lean",
+        "root_log": ".lake/arithmetic-operator-marked-correlation/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-marked-correlation/axioms.json",
+        "declarations": 14,
+        "theorems_including_generated_helpers": 10,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true,
+        "exit_code": 0
+      },
+      {
+        "source": "scripts/QuasiRHPattersonModelLocalAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/QuasiRHPattersonModelLocalAudit.lean",
+        "root_log": ".lake/arithmetic-operator-joint-gauss-correlation/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-joint-gauss-correlation/axioms.json",
+        "declarations": 67,
+        "theorems_including_generated_helpers": 55,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true,
+        "exit_code": 0
+      },
+      {
+        "source": "scripts/ArithmeticOperatorCubicSexticCompositionAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorCubicSexticCompositionAudit.lean",
+        "root_log": ".lake/arithmetic-operator-sextic-period-correlation/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-sextic-period-correlation/axioms.json",
+        "declarations": 30,
+        "theorems_including_generated_helpers": 23,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true,
+        "exit_code": 0
+      },
+      {
+        "source": "scripts/QuasiRHMatchingDensityAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/QuasiRHMatchingDensityAudit.lean",
+        "root_log": ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-axioms.json",
+        "declarations": 47,
+        "theorems_including_generated_helpers": 27,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true,
+        "exit_code": 0
+      }
+    ],
+    "local_declarations_total": 186,
+    "theorems_including_helpers_total": 137,
+    "prior_pins_matched_before_shared_edits": 56,
+    "broad_build": false,
+    "public_root_registration": false,
+    "ci": false,
+    "commit_or_push": false,
+    "matching_agent_pins_rechecked": 14
+  },
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "families_exhausted": 0,
+    "rh_endpoint_discharged": false,
+    "baseline": "Imported strict Re(s)>7/8 unchanged; remaining all-height1/2<beta<=7/8."
+  },
+  "next_gate": "The matching block lacks the original w-density source, while separate-energy bounds for the source-bearing independent rows return nominally to3/16. Target a fixed-power saving in the actual joined physical-Gauss/prescribed-C_-1 numerator covariance, retaining marks, phases, profiles and model terms. Full all-moduli physical energy and model/source bridges remain explicit obligations; no free-vector or source-free shortcut.",
+  "historical_pins": "All56 preceding cross-cell/sextic pins matched before this append. Earlier shared-file hashes are historical and unchanged.",
+  "source_pins": [
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/axioms.json",
+      "sha256": "3819a1a1e90f4020cebfa7690ec02913b748fd27cdcfe0c720cbb3f6084e0f40"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-axioms.json",
+      "sha256": "bae4c07663ab89ca043972993b2cddf917d08d51dea06e13904b45cf35dff2ab"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-root-strict.log",
+      "sha256": "cc4d5b26147122dc30b27551895ca2fcfdeae5b88d7ea6aa35f7b2c404c48309"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-source-gate.json",
+      "sha256": "e8010e83f6999b4c4a03229c48228d0a6b69c231d6d4f5fc5aa6e3110437cf18"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-source-gate.md",
+      "sha256": "0e49c5d4dd7b8bde4bc933213739cb5ff959a32938841c1f434e4c1dae807cde"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-strict-build.log",
+      "sha256": "cc4d5b26147122dc30b27551895ca2fcfdeae5b88d7ea6aa35f7b2c404c48309"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/matching-physical-source-gate.json",
+      "sha256": "b634ef3b3c8025fa900061fb756e13583e67d21ab2290bb4a27cb8de591b6d12"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/matching-physical-source-gate.md",
+      "sha256": "f347d9740b3011ab5d268261dc090fca1693680a23732c3d9a7cc2952827ea6d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/preflight.json",
+      "sha256": "74121096ea891f1049dc860d93db86dd3538949640364881832467bea8fdeadc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/preflight.md",
+      "sha256": "32285a361c542693444906a8056b3620164b10579fedae3ab9fcd1384b06acf1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/root-strict.log",
+      "sha256": "4eb51395dbc1678edf0e84e90161ec384c133861ff8aa7e577215900f605699e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/squarefree-physical-source-gate.json",
+      "sha256": "ed2532db405a707052acfc6ab93d783382bd287d2dff98fa0a27f853c97f91d8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/squarefree-physical-source-gate.md",
+      "sha256": "4bddef7b60b30053483550a6bf73443a542149e0d562ab63007b318d02417de7"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-gauss-correlation/strict-build.log",
+      "sha256": "4eb51395dbc1678edf0e84e90161ec384c133861ff8aa7e577215900f605699e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/agent-pin-validation.json",
+      "sha256": "c00d1a83ecc6c65c12332daf8180b8373b04e3b248ce68d155e4ea9f2b359052"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/axioms.json",
+      "sha256": "044927b7ee3820f56a6598602e476bdf8f4b3fbbc11f1f51f4b1ebf625dafd54"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/handoff.md",
+      "sha256": "8ca4508c73555e6c014b8c2817477a4343727df86e57c26b22c9652720091230"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/lean.log",
+      "sha256": "9589e9c2c1236e6708ac50676efa20599b7b9b83247dffecc84ec14bc97a8b9e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/previous-pins.json",
+      "sha256": "b0a56e5e7854526f22ce9f245d3c332c38ae69686805cc02a6e9c96b439a5192"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/probe.json",
+      "sha256": "f9b721284753bd3866d6a8cbb06ff47e9326e5d328ae07fe835b6d837ac81f07"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/probe.py",
+      "sha256": "40e64e6bdd97be1e78059c228fe51e9ed172f15dfd41140c0c283e03ccd9304a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/rate-axioms.json",
+      "sha256": "df12445e7192e8a85cc813cccc0bb3e72ec1d8e9567d5e44083a7b30e4277c98"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/rate-strict.log",
+      "sha256": "dd83114d2036132c44f96ff38f41b0259a36e1d7898be39b05c55eb5e93c1509"
+    },
+    {
+      "path": ".lake/arithmetic-operator-marked-correlation/root-strict.log",
+      "sha256": "9589e9c2c1236e6708ac50676efa20599b7b9b83247dffecc84ec14bc97a8b9e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/applicability.md",
+      "sha256": "4e0e1f4142b9086b5c74684b7b414682a5b24599034ce5da76df31dc48162a96"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/axioms.json",
+      "sha256": "d9e7efd7e4181d6956ba464800649516b7ba0a67d2f008ecbf8f2e49189d288b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/check.log",
+      "sha256": "a7e83f395ed827af52d81798f763b0473a02dee54a38bc799d8172ab63f01373"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/manifest.json",
+      "sha256": "7a504aa35eac3063b71d0460ba3ae2aa93cd46e893f0a27872eac6795fbe59fc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/nonmatching-threshold.json",
+      "sha256": "e8732429d4cd44642eaa46cbdd8f32350a5e1c33fbcc232528156b3788675740"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/nonmatching-threshold.md",
+      "sha256": "0008b5d39148c2232df5307fc3d9d256871f0d1bd0b9dc87e50d6924ec2615f4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/preflight.md",
+      "sha256": "59d4ec3ee2bbc29b8e3214215ffa6a7416b960e7e2157c1c98d6e41945bdaee4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/primary-page.html",
+      "sha256": "6615bac0e511e8b0109faa0c7c5d2cf14d7458cd7242d27f73ac8b921f623899"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/probe.json",
+      "sha256": "0ad0c42aacee340abe956bd7a4d3bf34fc6260de7fd467322eb61e3657e0f71d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/probe.log",
+      "sha256": "f676a13036edf82727d56a53e17910ec433b58e494461486756ebae4c9141a3e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/probe.py",
+      "sha256": "a729526859ad0d4158de84b9fa3c524fc6e89bcb5afbc94f1c4f061a4699e751"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/rates.json",
+      "sha256": "9f64f7bf58e44240ece1096fc95de48c9e03871be47b017880e24658435815d1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/rates.log",
+      "sha256": "9f64f7bf58e44240ece1096fc95de48c9e03871be47b017880e24658435815d1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/rates.py",
+      "sha256": "3c028d1c6aacfed1afb84020a77075ec8cb54e31fc498382409c0288dddf049a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/root-strict.log",
+      "sha256": "a7e83f395ed827af52d81798f763b0473a02dee54a38bc799d8172ab63f01373"
+    },
+    {
+      "path": ".lake/arithmetic-operator-sextic-period-correlation/sources.json",
+      "sha256": "cd05d2e48adbf777f76db948d30024ea6f398c090037b4c83bb396967e579087"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "eaabdb15fd3d076d978279ebb247e3280c29ed27fee8eddc4a35a0b5fd4ef019"
+    },
+    {
+      "path": "docs/arithmetic-operator-cross-cell-sextic-gates.json",
+      "sha256": "75d4782a17768dc1e8d8ab3ea5a98dd91a899ae6ab113721f69970651da2dee2"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "0fb375e69154f76d1ed32686cdb479e2c254300f034d90214f487869eb652f71"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCubicSexticCompositionAudit.lean",
+      "sha256": "948d100a3210cc60550d892842a53b6243af488ebebac77fe4f4cf4e68a1489c"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorMarkedSexticRateAudit.lean",
+      "sha256": "5b19bc04d5a24c9d30c7c6b10c49d15307b90b3d4a61c06220892ce0606c6f65"
+    },
+    {
+      "path": "scripts/QuasiRHCubicOrientationAudit.lean",
+      "sha256": "e1b06501f7c943c4ed91f12167aacf722bf5a80406b6bf24605c18d677192b5f"
+    },
+    {
+      "path": "scripts/QuasiRHMarkedIncidenceAudit.lean",
+      "sha256": "74dc33171c22e1e20708fe19bbf0a7d11cf1c44e57c4d9b21708408bc8bba57e"
+    },
+    {
+      "path": "scripts/QuasiRHMatchingDensityAudit.lean",
+      "sha256": "2049ed271a22cf88a0f46b5136cb35bea80ccfd1ba7db4518f8f374d3e3a7889"
+    },
+    {
+      "path": "scripts/QuasiRHPattersonModelLocalAudit.lean",
+      "sha256": "726afad016f75360b81f79f212d47bee89944929f1acd7485d459f6f6d0cbf87"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Completed.lean",
+      "sha256": "aacdde1452e633f7190ef1170925afa84cb14f38222898cf4ca6c91cae7b843a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CompletedCoefficient.lean",
+      "sha256": "73c24a04fa469f891a63a491a6d8afaa52249cf0b4ab2cf3eb0c4b99a9585648"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/EulerCoordinates.lean",
+      "sha256": "3c3a1b462473693820fd0a530b1b3a860b9b55fec2b2e38ebabf543ffc3a2943"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/HighDeletion.lean",
+      "sha256": "220edd1faefc835cef352ad47ffadc47f48c96e7bcac54ad662e97ca7396db1c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/HighEulerRational.lean",
+      "sha256": "9b8177391e39881163f87443b6de514fbf0c807cbd9ce6383bf93c049b4e1507"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/HighSeries.lean",
+      "sha256": "eac7cc6bd848ea9b64e6f3b3022ca408f3dee5bf213f7df3ef12fc3f07fe022c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/IdealLocalEuler.lean",
+      "sha256": "01fd17bb0c9ac3e39734d4811083462a7fc8490e04561b16799ae9e3d4556f74"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalSummation.lean",
+      "sha256": "9a954d140811c6fa818b438ce507688a6890f439271d5141278920e221c5dabf"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/MellinScaling.lean",
+      "sha256": "7304cb26073a299f790e6469fcb6d8ca6c8539475b5e1956f07bbc6e48537fb4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalReopen.lean",
+      "sha256": "17b2815b48db16c5534bda27e55a568e738290c5b4ce0ea24832c9e63287e376"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalContours.lean",
+      "sha256": "fefc1bbcb8eaab512a8d3b92bc2e374852333de8b8bee0ff43945fd0b8d9db8b"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalSplit.lean",
+      "sha256": "79246324533c426fdfc6743518a99b45a8821ce3689a6c48bccafd34c88c6d14"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ScalarTable.lean",
+      "sha256": "e7105589c7ab123f999440eb4a48c3c797f3004cdf82d64cdb5f158387a35a12"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ScalarVanishing.lean",
+      "sha256": "ddab9aa90212dcdea467bfda41e057184778c7e92323b0ddc64b3d1e54a0531f"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceCoefficient.lean",
+      "sha256": "374110c8227301a3be4ce6269f22ededcb0484583fc28a76c39e6b898fef70a4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceLocal.lean",
+      "sha256": "db29a85fc6d3e1c38ce9e8dce9e0f795baa68aa85b9a228c70df9991e0ec54c2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SpectralPoisson.lean",
+      "sha256": "51cade1ad1cece39d3e1eb3bdbe0c7624bf27195d3a07529a9a3fab333147404"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/TupleKernel.lean",
+      "sha256": "70a0c438696b6d709c1bbf23b723c2a941a01a79f669d15917c4f6f7f5e57316"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/TupleRows.lean",
+      "sha256": "ef7207fbf188d9a1dbaef6b2a3bcfb6ad0fa6b3a489fd3792310aa147753d9f6"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ZeroIndex.lean",
+      "sha256": "49f1b9219781ee95156776336245092a7486c916e4cad1cffdaebceac1530c70"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Eisenstein/CuspDilation.lean",
+      "sha256": "d5e0ea6d1486278f3d2d75e7c50ba55977543ae117af5197a1b79455f8dc392e"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/FiniteTranslations.lean",
+      "sha256": "433fc19b3771f3d14f595ec15f121fa25d1e579047291ee4ce8d8c6ef21f683e"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/PrincipalSignalComparison.lean",
+      "sha256": "3609a84d40122a6137bfa44fcb41f2830046e3456b77d72c34eb83f5c29b0e7b"
+    }
+  ]
+}

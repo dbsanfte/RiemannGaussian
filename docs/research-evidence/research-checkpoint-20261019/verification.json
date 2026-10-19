@@ -1,0 +1,18 @@
+{
+  "terminal_exit_code": 0,
+  "archive": {
+    "files_verified": 1772,
+    "objects_verified": 1643,
+    "files_restored": 0,
+    "external_paper_bodies_included": false,
+    "compiled_artifacts_included": false
+  },
+  "canonical_live_pins": 1544,
+  "canonical_live_pin_mismatches": 0,
+  "source_leaves": 91,
+  "distinct_scripts_module_dependencies": 25,
+  "unqualified_bootstrap_aliases": 2,
+  "missing_local_sources": 0,
+  "unresolved_portable_payloads": 0,
+  "scope": "Archive/hash/source-closure audit only; no Lean rebuild, analytic verification, semiprime research or optional numerical certificate replay."
+}

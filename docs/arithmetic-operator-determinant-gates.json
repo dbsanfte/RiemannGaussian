@@ -1,0 +1,206 @@
+{
+  "checkpoint": "native-determinant-cutoff-and-literal-carry-phase-gates",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Three scoped Lean-checked gates after the Banks/Siegel determinant review; no new independent RH arithmetic estimate.",
+  "paper_inspiration": {
+    "url": "https://arxiv.org/html/2610.15483v1",
+    "mechanism": "One nonzero common integral determinant subjected to lower-weight Frobenius row operations at many primes.",
+    "imported_or_formally_verified": false
+  },
+  "gates": [
+    {
+      "name": "literal masked Frobenius",
+      "proved": [
+        "p=2 cutoff original determinant -7, replacement -4, boundary -3; lower masked correction not in earlier rational row span.",
+        "p=3 cutoff original -116, replacement -108, replacement row divisible by 3.",
+        "Finite masked-flag repairs preserve determinants 1 and 2."
+      ],
+      "scope": "Pointwise congruence alone does not imply determinant invariance after these literal cutoffs. Not all cutoff-compatible determinants."
+    },
+    {
+      "name": "arbitrary finite interval-cell closure",
+      "proved": [
+        "For unequal and growing interval cells, the common masked polynomial-flag determinant equals the product of their superfactorials.",
+        "Cell translations do not change the determinant.",
+        "The factorial row normalization accounts for its entire integer value."
+      ],
+      "scope": "This complete interval-block repair only; non-block evaluation spaces remain open."
+    },
+    {
+      "name": "adjacent Pascal minor",
+      "proved": [
+        "Actual determinant is positive and D*(k+1)=choose(k+t,k)*choose(k+t+1,k).",
+        "Exact six-factorial identity.",
+        "At every denominator, the literal layer equals two original binomial carries minus the divisor indicator of k+1.",
+        "For arbitrary weights the extra channel is exactly an endpoint divisor sum.",
+        "With all prime powers and unit phase retained its norm is <=log X and its X^(-beta) normalization tends to zero for every beta>0 along X=2^(2J)."
+      ],
+      "scope": "Only the additional minor channel is paid. Both original signed carry packets and any unestimated exterior row mass remain unpaid."
+    }
+  ],
+  "information_loss_guards": [
+    "A base-prime-coded total valuation, a consecutive divisibility tower, and literal carry layers are different observables.",
+    "choose(4,2) has binary valuation 1 but the actual carry occurs at order 2; the Lean regression retains that location.",
+    "Determinant subtraction can produce prime factors beyond the entry cutoff: [[1,1],[1,6]] has determinant 5.",
+    "Never combine prime divisibilities of different prime-dependent determinants."
+  ],
+  "paper_level_only": [
+    "General bounded-gap Pascal minor formula with polynomial factor Q_ab; no generic literal phase theorem claimed.",
+    "Fixed-gap base-prime residual O(log X); no growing-row aggregate source estimate claimed."
+  ],
+  "validation": {
+    "leaves": [
+      {
+        "source": "scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean",
+        "log": ".lake/arithmetic-operator-frobenius-cutoff-gate/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-frobenius-cutoff-gate/axioms.json",
+        "local_declarations": 41,
+        "theorems_including_generated_helpers": 32,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      },
+      {
+        "source": "scripts/ArithmeticOperatorIntervalDeterminantAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorIntervalDeterminantAudit.lean",
+        "log": ".lake/arithmetic-operator-interval-determinant/strict-build.log",
+        "axiom_report": ".lake/arithmetic-operator-interval-determinant/axioms.json",
+        "local_declarations": 19,
+        "theorems_including_generated_helpers": 16,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      },
+      {
+        "source": "scripts/ArithmeticOperatorPascalMinorAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorPascalMinorAudit.lean",
+        "log": ".lake/arithmetic-operator-carry-determinant-source/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-carry-determinant-source/axioms.json",
+        "local_declarations": 45,
+        "theorems_including_generated_helpers": 40,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      }
+    ],
+    "local_declarations_total": 105,
+    "theorems_including_helpers_total": 88,
+    "prior_pins_matched_before_shared_edits": 14,
+    "broad_build": false,
+    "public_root_registration": false,
+    "commit_or_push": false
+  },
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "families_exhausted": 0,
+    "rh_endpoint_discharged": false,
+    "baseline": "Imported strict Re(s)>7/8 unchanged."
+  },
+  "next_gate": "Stop refining the three tested shortcuts. A new determinant candidate needs genuine cross-cell arithmetic in one common integral evaluation space, a nonzero actual zero source and pole separation before a larger formal development.",
+  "historical_pins": "Previous Siegel-preflight record is unchanged. Its two shared-document pins become historical after this dated append; all 14 matched beforehand.",
+  "source_pins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "56501955fdc07d5424e62e915c262e0219bdd8d9229ad0b350c21d8dce1b082a"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "7cc1e52f8196d9aa7667b6d9b751fa7cc350badc20a6def63640855f5b7aea46"
+    },
+    {
+      "path": "docs/arithmetic-operator-siegel-preflight.json",
+      "sha256": "e92c12906bc528618d50c306d6aba1c360e2c4b4bdccd044213f772dfee4a642"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5"
+    },
+    {
+      "path": "RiemannGaussian/ArithmeticOperatorKummerCutoff.lean",
+      "sha256": "32df8867fa00fae9888226cc780053b8c0905c5fda52cec26a2b5ec37ae8d21e"
+    },
+    {
+      "path": "RiemannGaussian/ArithmeticOperatorKummerPolynomialAudit.lean",
+      "sha256": "a986e77a4e372f331dbb3000a7076a7cd4c08d0ec042f2262b23948ee3781571"
+    },
+    {
+      "path": "RiemannGaussian/ArithmeticOperatorGammaTwistAudit.lean",
+      "sha256": "3106c7c7ec82bdf29954ea53f0e8bed2871e544ee53a191eabb25d993ff29efe"
+    },
+    {
+      "path": ".lake/arithmetic-operator-interval-determinant/previous-pins.json",
+      "sha256": "71983309912ef450b1683c6f678b82ce79a5f052e5ce0f58d41c000252195c38"
+    },
+    {
+      "path": ".lake/arithmetic-operator-frobenius-cutoff-gate/report.md",
+      "sha256": "f55d458b1cbf0cf9b619ad51112da673fb1b1e65e7e61ab266f61c4208672cc9"
+    },
+    {
+      "path": ".lake/arithmetic-operator-frobenius-cutoff-gate/exact_preflight.py",
+      "sha256": "e67f1fd6ed7c88aa9b4d2a43aca306df65539ca6e1544862115935ff2935ff38"
+    },
+    {
+      "path": ".lake/arithmetic-operator-frobenius-cutoff-gate/exact_preflight.json",
+      "sha256": "6b0135fcb8c6186c6ea631ebf4463a08daca83dd951af9b0b1f5ad399c530983"
+    },
+    {
+      "path": ".lake/arithmetic-operator-carry-determinant-source/source-audit.md",
+      "sha256": "e06b86f8a87d8ea19b5f9afa76a457aa3ff8164f9572eebee64e4baaf8bd1191"
+    },
+    {
+      "path": ".lake/arithmetic-operator-carry-determinant-source/exact_probe.py",
+      "sha256": "45f46c048d36e98c3161d1702584b4a11e31d601f41be6fd84391cf7564a5327"
+    },
+    {
+      "path": ".lake/arithmetic-operator-carry-determinant-source/exact_probe.json",
+      "sha256": "5421d0432162340dd7563bf8e2fa641f9664df5960a7af5654ffa71afc896f0d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-carry-determinant-source/validation.json",
+      "sha256": "1474e613d3623723bc0c281f2390b67a8fd3a2f5f2a9779c7f607cb809a744f7"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean",
+      "sha256": "dcf8715845e2b33bbc2dfbd673b54fea8357d7bfd1e2776d04d0958327caca1a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-frobenius-cutoff-gate/root-strict.log",
+      "sha256": "ba6261860dfeae664ae4a357f73d2497615a0685e1cbaf0a3cfa47980b66c90f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-frobenius-cutoff-gate/axioms.json",
+      "sha256": "e7456e0240d92d2af89abe0b757cca6d078bed3a42bb3c189c7461e1bb357990"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorIntervalDeterminantAudit.lean",
+      "sha256": "a1e68e1f02df53c1a432e7c0cdce744e62bfae577697cd89187e4a8bd7b881b0"
+    },
+    {
+      "path": ".lake/arithmetic-operator-interval-determinant/strict-build.log",
+      "sha256": "c11bf44c56920e00901f189797c33077b09be2721eeb5bddc7bf74d40e04c0fe"
+    },
+    {
+      "path": ".lake/arithmetic-operator-interval-determinant/axioms.json",
+      "sha256": "c4db5d8250ff48ec75ff35033e30323f3086592016f3e8938d90aa63da19c9c9"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorPascalMinorAudit.lean",
+      "sha256": "c63cac7d316a12181a8bf0ea5d9bc16eb9c281d4ea72fbe1110fee894fb41c90"
+    },
+    {
+      "path": ".lake/arithmetic-operator-carry-determinant-source/root-strict.log",
+      "sha256": "fa25a1ff4752bb96d7ac6c587adf9314ee6ea44d655149a70516b0189f54f0b7"
+    },
+    {
+      "path": ".lake/arithmetic-operator-carry-determinant-source/axioms.json",
+      "sha256": "327c959bea4108d6fd5724a348d74defa6f239b9b54a6d5b6a919ba44236dab0"
+    }
+  ]
+}

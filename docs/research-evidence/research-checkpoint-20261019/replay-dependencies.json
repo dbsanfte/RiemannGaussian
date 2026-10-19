@@ -1,0 +1,852 @@
+{
+  "scope": "Source import inventory; no broad rebuild. Historical leaf-specific strict producers remain separately archived.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "leaf_count": 91,
+  "imports": {
+    "scripts/ArithmeticOperatorAdaptiveLandingAudit.lean": [
+      "RiemannGaussian.ArithmeticOperatorGammaTwistAudit",
+      "Mathlib.Data.Nat.Factorization.PrimePow",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorAdditiveCommonSourceAudit.lean": [
+      "scripts.ArithmeticOperatorQDetSmallWindowAudit"
+    ],
+    "scripts/ArithmeticOperatorCommonBaseCRTAudit.lean": [
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Basic",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.Basic.Complex.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorComparableDigitalAudit.lean": [
+      "scripts.ArithmeticOperatorDigitalCarryAudit",
+      "Mathlib.RingTheory.RootsOfUnity.Complex",
+      "Mathlib.Topology.Order.OrderClosed",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorCubicSexticCompositionAudit.lean": [
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorCutoffRankAudit.lean": [
+      "Mathlib.LinearAlgebra.Pi",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean": [
+      "RiemannGaussian.EtaMoebiusFinitePrefix",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Eval",
+      "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorDigitalCarryAudit.lean": [
+      "Mathlib.Data.Nat.Choose.Factorization",
+      "Mathlib.NumberTheory.Padics.PadicVal.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorDigitalPairAudit.lean": [
+      "scripts.ArithmeticOperatorDigitalCarryAudit",
+      "Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt",
+      "Mathlib.Analysis.Complex.Basic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorDigitalSourceGate.lean": [
+      "RiemannGaussian.FiniteAbelVariation",
+      "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Continuity",
+      "scripts.ArithmeticOperatorDigitalCarryAudit",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorFactorialTN2Audit.lean": [
+      "RiemannGaussian.ArithmeticOperatorTwistedBulkAudit",
+      "Mathlib.NumberTheory.Divisors",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorFixedQLogAudit.lean": [
+      "Mathlib.Analysis.Analytic.Order",
+      "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+      "Mathlib.Analysis.SpecificLimits.Normed",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorFrobeniusBalanceAudit.lean": [
+      "Mathlib.Algebra.Group.Units.Equiv",
+      "Mathlib.Basic.Complex.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorGappedMinorAudit.lean": [
+      "Mathlib.Data.Nat.Choose.Cast",
+      "Mathlib.Data.Nat.Prime.Int",
+      "Mathlib.Data.Nat.ModEq",
+      "Mathlib.Data.Nat.Count",
+      "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+      "Mathlib.LinearAlgebra.Matrix.Notation",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorGappedSourceGate.lean": [
+      "scripts.ArithmeticOperatorGappedMinorAudit",
+      "scripts.ArithmeticOperatorResultantDiscrepancy"
+    ],
+    "scripts/ArithmeticOperatorGrowingQBoxAudit.lean": [
+      "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+      "Mathlib.Analysis.SpecificLimits.Normed",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorIntegralBasePopulationAudit.lean": [
+      "scripts.ArithmeticOperatorTotalTraceSourceAudit",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Eval",
+      "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+      "Mathlib.RingTheory.Coprime.Lemmas"
+    ],
+    "scripts/ArithmeticOperatorIntervalDeterminantAudit.lean": [
+      "Mathlib.LinearAlgebra.Vandermonde",
+      "Mathlib.LinearAlgebra.Matrix.Block",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorMarkedSexticRateAudit.lean": [
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean": [
+      "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+      "Mathlib.LinearAlgebra.Matrix.Notation",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorMixedBaseSourceAudit.lean": [
+      "Mathlib.FieldTheory.Finite.Basic",
+      "Mathlib.Data.Nat.Factorial.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorNextInteractionAudit.lean": [
+      "scripts.ArithmeticOperatorPrimitivePacketSourceAudit"
+    ],
+    "scripts/ArithmeticOperatorPascalMinorAudit.lean": [
+      "RiemannGaussian.ArithmeticOperatorKummerPolynomialAudit",
+      "RiemannGaussian.ArithmeticOperatorGammaTwistAudit",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorPrimitiveGCDSourceAudit.lean": [
+      "Mathlib.Data.Nat.GCD.Basic",
+      "Mathlib.FieldTheory.Finite.Basic",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Roots",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorPrimitivePacketSourceAudit.lean": [
+      "scripts.ArithmeticOperatorTotalTraceSourceAudit",
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorPrimitiveTransportAudit.lean": [
+      "scripts.ArithmeticOperatorTotalTraceSourceAudit",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Expand"
+    ],
+    "scripts/ArithmeticOperatorQDetSmallWindowAudit.lean": [
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Eval",
+      "Mathlib.FieldTheory.Finite.Basic",
+      "Mathlib.Data.Int.NatAbs",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorQDetTotalKernelAudit.lean": [
+      "Mathlib.Data.Nat.Totient",
+      "Mathlib.Basic.Complex.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorQDetUnsaturatedTraceAudit.lean": [
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Roots",
+      "Mathlib.FieldTheory.Finite.Basic",
+      "Mathlib.GroupTheory.SpecificGroups.Cyclic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean": [
+      "Mathlib.Data.Nat.Factorization.Basic",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Basic",
+      "Mathlib.RingTheory.RootsOfUnity.Complex",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorQuadraticNormAudit.lean": [
+      "RiemannGaussian.ArithmeticOperatorGammaTwistAudit",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorRadicalQBoxAudit.lean": [
+      "scripts.ArithmeticOperatorRadicalQBoxTailAudit",
+      "Mathlib.Data.Nat.Totient",
+      "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+      "Mathlib.Analysis.SpecificLimits.Normed",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorRadicalQBoxTailAudit.lean": [
+      "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+      "Mathlib.Analysis.SpecificLimits.Normed",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorResultantDiscrepancy.lean": [
+      "Mathlib.Data.Int.CardIntervalMod",
+      "Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt",
+      "Mathlib.Analysis.SpecificLimits.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorRowDeconvolutionAudit.lean": [
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Eval",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Expand",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorSexticRateAudit.lean": [
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorSignedDepthTransportAudit.lean": [
+      "scripts.ArithmeticOperatorTotalTraceSourceAudit",
+      "scripts.ArithmeticOperatorQDetValuationPhaseAudit",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorSignedIntegralSourceAudit.lean": [
+      "Mathlib.FieldTheory.Finite.Basic",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Roots",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorTernaryCorrelationAudit.lean": [
+      "scripts.ArithmeticOperatorComparableDigitalAudit"
+    ],
+    "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean": [
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Roots",
+      "Mathlib.FieldTheory.Finite.Basic",
+      "Mathlib.NumberTheory.Padics.PadicVal.Basic",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/ArithmeticOperatorWilsonSourceAudit.lean": [
+      "Mathlib.NumberTheory.Wilson",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHAllSquareAmplitudeBridgeAudit.lean": [
+      "scripts.QuasiRHAllSquarePartition",
+      "scripts.QuasiRHAllSquareGaussBridge",
+      "scripts.QuasiRHAllSquareEnergy",
+      "scripts.QuasiRHSquareGaussIdealNorm"
+    ],
+    "scripts/QuasiRHAllSquareEnergy.lean": [
+      "scripts.QuasiRHFiniteSquareEnergyAudit"
+    ],
+    "scripts/QuasiRHAllSquareGaussBridge.lean": [
+      "QuasiRHFiniteSquareGaussAudit",
+      "OAI.NumberTheory.DirichletL.Detector.HighRowsSharpScalar",
+      "Mathlib.RingTheory.UniqueFactorizationDomain.Multiplicative",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHAllSquarePartition.lean": [
+      "OAI.NumberTheory.DirichletL.CubicSieve.Gcd",
+      "Mathlib.RingTheory.UniqueFactorizationDomain.Finsupp",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHAuxiliaryHeckeCorrelationAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.LowRow",
+      "OAI.NumberTheory.DirichletL.Detector.LowCutoff",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHBorderedStatisticAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.PhysicalRows",
+      "Mathlib.LinearAlgebra.Matrix.SchurComplement",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHCalibrationFamilyAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.CalibrationCancellation",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHCalibrationNumeratorAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.LowRowMellin",
+      "OAI.NumberTheory.DirichletL.Detector.CalibrationRemoval",
+      "Mathlib.NumberTheory.MulChar.Lemmas",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHCentralRateFrontierAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.CentralMixedMargins",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHCommonUnitGaugeAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.CalibrationRemoval",
+      "OAI.NumberTheory.DirichletL.Arithmetic.IdealMobius",
+      "Mathlib.Algebra.Group.Units.Equiv",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHCoprimePoleGate.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.PrincipalProduct",
+      "OAI.NumberTheory.DirichletL.Hecke.Reciprocal",
+      "Mathlib.Analysis.Meromorphic.Order",
+      "Mathlib.Analysis.SpecialFunctions.Log.Summable",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHCoprimeResidueBound.lean": [
+      "Mathlib.Analysis.Complex.Basic",
+      "Mathlib.Basic.Complex.BigOperators",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHCubicOrientationAudit.lean": [
+      "OAI.NumberTheory.DirichletL.CubicSieve.Gauss",
+      "OAI.NumberTheory.DirichletL.CubicSieve.FixedProfiles",
+      "OAI.NumberTheory.DirichletL.Reciprocity.RamifiedSymbol",
+      "OAI.NumberTheory.DirichletL.Eisenstein.ConjugateLevelAction",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHExteriorCorrectionAudit.lean": [
+      "scripts.QuasiRHExteriorRegionAudit",
+      "OAI.NumberTheory.DirichletL.Detector.SourceExclusions",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHExteriorRegionAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.GlobalHolomorphic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHExteriorSlotAudit.lean": [
+      "OAI.NumberTheory.DirichletL.PrincipalSignalComparison",
+      "OAI.NumberTheory.DirichletL.Detector.FiniteProductBounds",
+      "scripts.QuasiRHExteriorRegionAudit",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHFiniteSquareEnergyAudit.lean": [
+      "OAI.NumberTheory.DirichletL.CubicSieve.Sharp",
+      "OAI.NumberTheory.DirichletL.CubicSieve.Gcd",
+      "OAI.NumberTheory.DirichletL.CubicSieve.B2Growth",
+      "OAI.NumberTheory.DirichletL.Detector.LowColumnBounds",
+      "OAI.NumberTheory.DirichletL.Detector.GramIdealSummation",
+      "Mathlib.Algebra.Order.Chebyshev",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHFiniteSquareGaussAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Moments.AmplificationLocal",
+      "OAI.NumberTheory.DirichletL.Detector.PhysicalCRT",
+      "OAI.NumberTheory.DirichletL.CubicSieve.Gcd",
+      "Mathlib.Algebra.Squarefree.Basic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHFullCentralBelowBoundaryAudit.lean": [
+      "scripts.QuasiRHMomentBelowBoundaryAudit",
+      "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyCollected",
+      "OAI.NumberTheory.DirichletL.PrimeRows.CentralSupportedSplit",
+      "OAI.NumberTheory.DirichletL.PrimeRows.CubeFloorCollected",
+      "OAI.NumberTheory.DirichletL.PrimeRows.CanonicalCubeBins",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHFullSourceRateAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.CentralExponent",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHGaugeAverageAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.CalibrationRemoval",
+      "OAI.NumberTheory.DirichletL.Detector.SourceCoefficient",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHJoinedDualPhaseAudit.lean": [
+      "OAI.NumberTheory.DirichletL.GaussSum.CompletedExpansion",
+      "OAI.NumberTheory.DirichletL.GaussSum.SquarePhaseFactorization",
+      "OAI.NumberTheory.DirichletL.Eisenstein.CompactEnergyFamilies",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHJoinedMarkVarianceAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.TuplePrincipal",
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHJoinedRamanujanAudit.lean": [
+      "OAI.NumberTheory.DirichletL.CubicSieve.GaussNorm",
+      "Mathlib.Algebra.Group.Pi.Units",
+      "Mathlib.Algebra.Group.Units.Equiv",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHJointPeriodAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.LocalPhysical",
+      "OAI.NumberTheory.DirichletL.Detector.PhysicalPoisson",
+      "OAI.NumberTheory.DirichletL.Detector.RadialIdentity",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHMarkedIncidenceAudit.lean": [
+      "scripts.QuasiRHCalibratedMatchingAudit",
+      "OAI.NumberTheory.DirichletL.Detector.CubicGaussCRT",
+      "OAI.NumberTheory.DirichletL.Detector.SpectralCoefficient",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHMatchingDensityAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.IdealLocalEuler",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHMomentBelowBoundaryAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Energy.CertifiedExistence",
+      "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyCertifiedBands",
+      "OAI.NumberTheory.DirichletL.Moments.DetectorPlainSlotProfile",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHNativeCuspStabilizerAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.GramJointFixed",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHNativeRaySixthAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.GramJointFixed",
+      "OAI.NumberTheory.DirichletL.Detector.CalibrationFourier",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHNativeSectionLiftAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.GramPrimaryLattice",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHNonmatchingSourceAudit.lean": [
+      "scripts.QuasiRHMatchingDensityAudit",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHOddCoreWitnessRateAudit.lean": [
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHPattersonModelLocalAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.IdealLocalEuler",
+      "OAI.NumberTheory.DirichletL.GaussSum.FiniteTranslations",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHPhysicalWindowSourceAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.PrincipalNormalizer",
+      "Mathlib.Analysis.Analytic.IsolatedZeros",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHRawSignRelationAudit.lean": [
+      "OAI.NumberTheory.DirichletL.GaussSum.CompletedExpansion",
+      "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHResidualProjectionAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Arithmetic.EisensteinEmbedding",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHSourceHalfplaneAudit.lean": [
+      "OAI.NumberTheory.DirichletL.PrincipalSignalComparison",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHSquareCubicMeanAudit.lean": [
+      "OAI.NumberTheory.DirichletL.CubicSieve.Sharp",
+      "OAI.NumberTheory.DirichletL.CubicSieve.Gcd",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHSquareEnergyRateAudit.lean": [
+      "Mathlib.Tactic",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHSquareGaussIdealNorm.lean": [
+      "scripts.QuasiRHAllSquarePartition",
+      "scripts.QuasiRHSquareGaussNorm",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHSquareGaussNorm.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.HighRowsSharpScalar",
+      "OAI.NumberTheory.DirichletL.Moments.AmplificationLocal",
+      "OAI.NumberTheory.DirichletL.Detector.PhysicalCRT",
+      "OAI.NumberTheory.DirichletL.Detector.LocalUnitFrequency",
+      "OAI.NumberTheory.DirichletL.Detector.PhysicalNorms",
+      "OAI.NumberTheory.DirichletL.Detector.RadialIdentity",
+      "OAI.NumberTheory.DirichletL.Moments.GaussEnergy",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHSquareGaussianPayment.lean": [
+      "scripts.QuasiRHSquareNativePayment",
+      "OAI.NumberTheory.DirichletL.Detector.LowGaussianSum",
+      "OAI.NumberTheory.DirichletL.PrimeRows.CubeNormalizer"
+    ],
+    "scripts/QuasiRHSquareNativePayment.lean": [
+      "scripts.QuasiRHSquareSectorIntegral",
+      "scripts.QuasiRHUnselectedWeightedMassAudit",
+      "OAI.NumberTheory.DirichletL.Detector.LowCentralTuple"
+    ],
+    "scripts/QuasiRHSquareSectorIntegral.lean": [
+      "scripts.QuasiRHSquareSectorTransfer",
+      "scripts.QuasiRHAllSquareAmplitudeBridgeAudit",
+      "OAI.NumberTheory.DirichletL.Detector.LowGramIntegrated",
+      "OAI.NumberTheory.DirichletL.Detector.LowTupleGram",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHSquareSectorTransfer.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.LowElementRows",
+      "OAI.NumberTheory.DirichletL.CubicSieve.FullNorm",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHSquareSourceNormalized.lean": [
+      "scripts.QuasiRHSquareGaussianPayment",
+      "OAI.NumberTheory.DirichletL.Detector.LowNormalized",
+      "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyData"
+    ],
+    "scripts/QuasiRHThetaCentralJoinAudit.lean": [
+      "OAI.NumberTheory.DirichletL.PrimeRows.CentralCube",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHThetaTwistAudit.lean": [
+      "QuasiRHPattersonModelLocalAudit",
+      "OAI.NumberTheory.DirichletL.GaussSum.CompletedExpansion",
+      "OAI.NumberTheory.DirichletL.Moments.Canonical",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ],
+    "scripts/QuasiRHUnselectedWeightedMassAudit.lean": [
+      "OAI.NumberTheory.DirichletL.Detector.LowUnselectedMass",
+      "Mathlib.Tactic.Linter",
+      "Lean.Util.CollectAxioms"
+    ]
+  },
+  "local_source_dependencies": {
+    "scripts/ArithmeticOperatorAdaptiveLandingAudit.lean": [],
+    "scripts/ArithmeticOperatorAdditiveCommonSourceAudit.lean": [
+      "scripts/ArithmeticOperatorQDetSmallWindowAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorCommonBaseCRTAudit.lean": [],
+    "scripts/ArithmeticOperatorComparableDigitalAudit.lean": [
+      "scripts/ArithmeticOperatorDigitalCarryAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorCubicSexticCompositionAudit.lean": [],
+    "scripts/ArithmeticOperatorCutoffRankAudit.lean": [],
+    "scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean": [],
+    "scripts/ArithmeticOperatorDigitalCarryAudit.lean": [],
+    "scripts/ArithmeticOperatorDigitalPairAudit.lean": [
+      "scripts/ArithmeticOperatorDigitalCarryAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorDigitalSourceGate.lean": [
+      "scripts/ArithmeticOperatorDigitalCarryAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorFactorialTN2Audit.lean": [],
+    "scripts/ArithmeticOperatorFixedQLogAudit.lean": [],
+    "scripts/ArithmeticOperatorFrobeniusBalanceAudit.lean": [],
+    "scripts/ArithmeticOperatorGappedMinorAudit.lean": [],
+    "scripts/ArithmeticOperatorGappedSourceGate.lean": [
+      "scripts/ArithmeticOperatorGappedMinorAudit.lean",
+      "scripts/ArithmeticOperatorResultantDiscrepancy.lean"
+    ],
+    "scripts/ArithmeticOperatorGrowingQBoxAudit.lean": [],
+    "scripts/ArithmeticOperatorIntegralBasePopulationAudit.lean": [
+      "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorIntervalDeterminantAudit.lean": [],
+    "scripts/ArithmeticOperatorMarkedSexticRateAudit.lean": [],
+    "scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean": [],
+    "scripts/ArithmeticOperatorMixedBaseSourceAudit.lean": [],
+    "scripts/ArithmeticOperatorNextInteractionAudit.lean": [
+      "scripts/ArithmeticOperatorPrimitivePacketSourceAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorPascalMinorAudit.lean": [],
+    "scripts/ArithmeticOperatorPrimitiveGCDSourceAudit.lean": [],
+    "scripts/ArithmeticOperatorPrimitivePacketSourceAudit.lean": [
+      "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorPrimitiveTransportAudit.lean": [
+      "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorQDetSmallWindowAudit.lean": [],
+    "scripts/ArithmeticOperatorQDetTotalKernelAudit.lean": [],
+    "scripts/ArithmeticOperatorQDetUnsaturatedTraceAudit.lean": [],
+    "scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean": [],
+    "scripts/ArithmeticOperatorQuadraticNormAudit.lean": [],
+    "scripts/ArithmeticOperatorRadicalQBoxAudit.lean": [
+      "scripts/ArithmeticOperatorRadicalQBoxTailAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorRadicalQBoxTailAudit.lean": [],
+    "scripts/ArithmeticOperatorResultantDiscrepancy.lean": [],
+    "scripts/ArithmeticOperatorRowDeconvolutionAudit.lean": [],
+    "scripts/ArithmeticOperatorSexticRateAudit.lean": [],
+    "scripts/ArithmeticOperatorSignedDepthTransportAudit.lean": [
+      "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean",
+      "scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorSignedIntegralSourceAudit.lean": [],
+    "scripts/ArithmeticOperatorTernaryCorrelationAudit.lean": [
+      "scripts/ArithmeticOperatorComparableDigitalAudit.lean"
+    ],
+    "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean": [],
+    "scripts/ArithmeticOperatorWilsonSourceAudit.lean": [],
+    "scripts/QuasiRHAllSquareAmplitudeBridgeAudit.lean": [
+      "scripts/QuasiRHAllSquarePartition.lean",
+      "scripts/QuasiRHAllSquareGaussBridge.lean",
+      "scripts/QuasiRHAllSquareEnergy.lean",
+      "scripts/QuasiRHSquareGaussIdealNorm.lean"
+    ],
+    "scripts/QuasiRHAllSquareEnergy.lean": [
+      "scripts/QuasiRHFiniteSquareEnergyAudit.lean"
+    ],
+    "scripts/QuasiRHAllSquareGaussBridge.lean": [
+      "scripts/QuasiRHFiniteSquareGaussAudit.lean"
+    ],
+    "scripts/QuasiRHAllSquarePartition.lean": [],
+    "scripts/QuasiRHAuxiliaryHeckeCorrelationAudit.lean": [],
+    "scripts/QuasiRHBorderedStatisticAudit.lean": [],
+    "scripts/QuasiRHCalibrationFamilyAudit.lean": [],
+    "scripts/QuasiRHCalibrationNumeratorAudit.lean": [],
+    "scripts/QuasiRHCentralRateFrontierAudit.lean": [],
+    "scripts/QuasiRHCommonUnitGaugeAudit.lean": [],
+    "scripts/QuasiRHCoprimePoleGate.lean": [],
+    "scripts/QuasiRHCoprimeResidueBound.lean": [],
+    "scripts/QuasiRHCubicOrientationAudit.lean": [],
+    "scripts/QuasiRHExteriorCorrectionAudit.lean": [
+      "scripts/QuasiRHExteriorRegionAudit.lean"
+    ],
+    "scripts/QuasiRHExteriorRegionAudit.lean": [],
+    "scripts/QuasiRHExteriorSlotAudit.lean": [
+      "scripts/QuasiRHExteriorRegionAudit.lean"
+    ],
+    "scripts/QuasiRHFiniteSquareEnergyAudit.lean": [],
+    "scripts/QuasiRHFiniteSquareGaussAudit.lean": [],
+    "scripts/QuasiRHFullCentralBelowBoundaryAudit.lean": [
+      "scripts/QuasiRHMomentBelowBoundaryAudit.lean"
+    ],
+    "scripts/QuasiRHFullSourceRateAudit.lean": [],
+    "scripts/QuasiRHGaugeAverageAudit.lean": [],
+    "scripts/QuasiRHJoinedDualPhaseAudit.lean": [],
+    "scripts/QuasiRHJoinedMarkVarianceAudit.lean": [],
+    "scripts/QuasiRHJoinedRamanujanAudit.lean": [],
+    "scripts/QuasiRHJointPeriodAudit.lean": [],
+    "scripts/QuasiRHMarkedIncidenceAudit.lean": [],
+    "scripts/QuasiRHMatchingDensityAudit.lean": [],
+    "scripts/QuasiRHMomentBelowBoundaryAudit.lean": [],
+    "scripts/QuasiRHNativeCuspStabilizerAudit.lean": [],
+    "scripts/QuasiRHNativeRaySixthAudit.lean": [],
+    "scripts/QuasiRHNativeSectionLiftAudit.lean": [],
+    "scripts/QuasiRHNonmatchingSourceAudit.lean": [
+      "scripts/QuasiRHMatchingDensityAudit.lean"
+    ],
+    "scripts/QuasiRHOddCoreWitnessRateAudit.lean": [],
+    "scripts/QuasiRHPattersonModelLocalAudit.lean": [],
+    "scripts/QuasiRHPhysicalWindowSourceAudit.lean": [],
+    "scripts/QuasiRHRawSignRelationAudit.lean": [],
+    "scripts/QuasiRHResidualProjectionAudit.lean": [],
+    "scripts/QuasiRHSourceHalfplaneAudit.lean": [],
+    "scripts/QuasiRHSquareCubicMeanAudit.lean": [],
+    "scripts/QuasiRHSquareEnergyRateAudit.lean": [],
+    "scripts/QuasiRHSquareGaussIdealNorm.lean": [
+      "scripts/QuasiRHAllSquarePartition.lean",
+      "scripts/QuasiRHSquareGaussNorm.lean"
+    ],
+    "scripts/QuasiRHSquareGaussNorm.lean": [],
+    "scripts/QuasiRHSquareGaussianPayment.lean": [
+      "scripts/QuasiRHSquareNativePayment.lean"
+    ],
+    "scripts/QuasiRHSquareNativePayment.lean": [
+      "scripts/QuasiRHSquareSectorIntegral.lean",
+      "scripts/QuasiRHUnselectedWeightedMassAudit.lean"
+    ],
+    "scripts/QuasiRHSquareSectorIntegral.lean": [
+      "scripts/QuasiRHSquareSectorTransfer.lean",
+      "scripts/QuasiRHAllSquareAmplitudeBridgeAudit.lean"
+    ],
+    "scripts/QuasiRHSquareSectorTransfer.lean": [],
+    "scripts/QuasiRHSquareSourceNormalized.lean": [
+      "scripts/QuasiRHSquareGaussianPayment.lean"
+    ],
+    "scripts/QuasiRHThetaCentralJoinAudit.lean": [],
+    "scripts/QuasiRHThetaTwistAudit.lean": [
+      "scripts/QuasiRHPattersonModelLocalAudit.lean"
+    ],
+    "scripts/QuasiRHUnselectedWeightedMassAudit.lean": []
+  },
+  "topological_compile_order": [
+    "scripts/ArithmeticOperatorAdaptiveLandingAudit.lean",
+    "scripts/ArithmeticOperatorQDetSmallWindowAudit.lean",
+    "scripts/ArithmeticOperatorAdditiveCommonSourceAudit.lean",
+    "scripts/ArithmeticOperatorCommonBaseCRTAudit.lean",
+    "scripts/ArithmeticOperatorDigitalCarryAudit.lean",
+    "scripts/ArithmeticOperatorComparableDigitalAudit.lean",
+    "scripts/ArithmeticOperatorCubicSexticCompositionAudit.lean",
+    "scripts/ArithmeticOperatorCutoffRankAudit.lean",
+    "scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean",
+    "scripts/ArithmeticOperatorDigitalPairAudit.lean",
+    "scripts/ArithmeticOperatorDigitalSourceGate.lean",
+    "scripts/ArithmeticOperatorFactorialTN2Audit.lean",
+    "scripts/ArithmeticOperatorFixedQLogAudit.lean",
+    "scripts/ArithmeticOperatorFrobeniusBalanceAudit.lean",
+    "scripts/ArithmeticOperatorGappedMinorAudit.lean",
+    "scripts/ArithmeticOperatorResultantDiscrepancy.lean",
+    "scripts/ArithmeticOperatorGappedSourceGate.lean",
+    "scripts/ArithmeticOperatorGrowingQBoxAudit.lean",
+    "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean",
+    "scripts/ArithmeticOperatorIntegralBasePopulationAudit.lean",
+    "scripts/ArithmeticOperatorIntervalDeterminantAudit.lean",
+    "scripts/ArithmeticOperatorMarkedSexticRateAudit.lean",
+    "scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean",
+    "scripts/ArithmeticOperatorMixedBaseSourceAudit.lean",
+    "scripts/ArithmeticOperatorPrimitivePacketSourceAudit.lean",
+    "scripts/ArithmeticOperatorNextInteractionAudit.lean",
+    "scripts/ArithmeticOperatorPascalMinorAudit.lean",
+    "scripts/ArithmeticOperatorPrimitiveGCDSourceAudit.lean",
+    "scripts/ArithmeticOperatorPrimitiveTransportAudit.lean",
+    "scripts/ArithmeticOperatorQDetTotalKernelAudit.lean",
+    "scripts/ArithmeticOperatorQDetUnsaturatedTraceAudit.lean",
+    "scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean",
+    "scripts/ArithmeticOperatorQuadraticNormAudit.lean",
+    "scripts/ArithmeticOperatorRadicalQBoxTailAudit.lean",
+    "scripts/ArithmeticOperatorRadicalQBoxAudit.lean",
+    "scripts/ArithmeticOperatorRowDeconvolutionAudit.lean",
+    "scripts/ArithmeticOperatorSexticRateAudit.lean",
+    "scripts/ArithmeticOperatorSignedDepthTransportAudit.lean",
+    "scripts/ArithmeticOperatorSignedIntegralSourceAudit.lean",
+    "scripts/ArithmeticOperatorTernaryCorrelationAudit.lean",
+    "scripts/ArithmeticOperatorWilsonSourceAudit.lean",
+    "scripts/QuasiRHAllSquarePartition.lean",
+    "scripts/QuasiRHFiniteSquareGaussAudit.lean",
+    "scripts/QuasiRHAllSquareGaussBridge.lean",
+    "scripts/QuasiRHFiniteSquareEnergyAudit.lean",
+    "scripts/QuasiRHAllSquareEnergy.lean",
+    "scripts/QuasiRHSquareGaussNorm.lean",
+    "scripts/QuasiRHSquareGaussIdealNorm.lean",
+    "scripts/QuasiRHAllSquareAmplitudeBridgeAudit.lean",
+    "scripts/QuasiRHAuxiliaryHeckeCorrelationAudit.lean",
+    "scripts/QuasiRHBorderedStatisticAudit.lean",
+    "scripts/QuasiRHCalibrationFamilyAudit.lean",
+    "scripts/QuasiRHCalibrationNumeratorAudit.lean",
+    "scripts/QuasiRHCentralRateFrontierAudit.lean",
+    "scripts/QuasiRHCommonUnitGaugeAudit.lean",
+    "scripts/QuasiRHCoprimePoleGate.lean",
+    "scripts/QuasiRHCoprimeResidueBound.lean",
+    "scripts/QuasiRHCubicOrientationAudit.lean",
+    "scripts/QuasiRHExteriorRegionAudit.lean",
+    "scripts/QuasiRHExteriorCorrectionAudit.lean",
+    "scripts/QuasiRHExteriorSlotAudit.lean",
+    "scripts/QuasiRHMomentBelowBoundaryAudit.lean",
+    "scripts/QuasiRHFullCentralBelowBoundaryAudit.lean",
+    "scripts/QuasiRHFullSourceRateAudit.lean",
+    "scripts/QuasiRHGaugeAverageAudit.lean",
+    "scripts/QuasiRHJoinedDualPhaseAudit.lean",
+    "scripts/QuasiRHJoinedMarkVarianceAudit.lean",
+    "scripts/QuasiRHJoinedRamanujanAudit.lean",
+    "scripts/QuasiRHJointPeriodAudit.lean",
+    "scripts/QuasiRHMarkedIncidenceAudit.lean",
+    "scripts/QuasiRHMatchingDensityAudit.lean",
+    "scripts/QuasiRHNativeCuspStabilizerAudit.lean",
+    "scripts/QuasiRHNativeRaySixthAudit.lean",
+    "scripts/QuasiRHNativeSectionLiftAudit.lean",
+    "scripts/QuasiRHNonmatchingSourceAudit.lean",
+    "scripts/QuasiRHOddCoreWitnessRateAudit.lean",
+    "scripts/QuasiRHPattersonModelLocalAudit.lean",
+    "scripts/QuasiRHPhysicalWindowSourceAudit.lean",
+    "scripts/QuasiRHRawSignRelationAudit.lean",
+    "scripts/QuasiRHResidualProjectionAudit.lean",
+    "scripts/QuasiRHSourceHalfplaneAudit.lean",
+    "scripts/QuasiRHSquareCubicMeanAudit.lean",
+    "scripts/QuasiRHSquareEnergyRateAudit.lean",
+    "scripts/QuasiRHSquareSectorTransfer.lean",
+    "scripts/QuasiRHSquareSectorIntegral.lean",
+    "scripts/QuasiRHUnselectedWeightedMassAudit.lean",
+    "scripts/QuasiRHSquareNativePayment.lean",
+    "scripts/QuasiRHSquareGaussianPayment.lean",
+    "scripts/QuasiRHSquareSourceNormalized.lean",
+    "scripts/QuasiRHThetaCentralJoinAudit.lean",
+    "scripts/QuasiRHThetaTwistAudit.lean"
+  ],
+  "unqualified_bootstrap_aliases": {
+    "QuasiRHFiniteSquareGaussAudit": "scripts/QuasiRHFiniteSquareGaussAudit.lean",
+    "QuasiRHPattersonModelLocalAudit": "scripts/QuasiRHPattersonModelLocalAudit.lean"
+  },
+  "missing_local_sources": [],
+  "command_pattern": "lake env bash -c 'export LEAN_PATH=\"$AUDIT_OUTPUT:$LEAN_PATH\"; exec lean -DwarningAsError=true -o \"$AUDIT_OUTPUT/scripts/LEAF.olean\" scripts/LEAF.lean'",
+  "notes": [
+    "Initialize AUDIT_OUTPUT/scripts and all documented run_cmd output directories before cold compilation.",
+    "Use a separate fresh checkout/worktree: run_cmd writes historical per-leaf axiom output paths. Do not replay against frozen local artifacts.",
+    "Prepend the private audit output AFTER lake env so lake does not overwrite LEAN_PATH.",
+    "Compile dependencies first in the listed order; scripts.* imports resolve under AUDIT_OUTPUT/scripts.",
+    "For each listed unqualified bootstrap alias, make the same built olean available under AUDIT_OUTPUT/<alias>.olean as the historical bootstrap does.",
+    "OAI imports are the tracked vendor/openai-quasi-rh closure; Mathlib/dependency revisions are fixed by lake-manifest.json and lean-toolchain.",
+    "Historical command absolute paths may be relocated; frozen report bytes and expected hashes are preserved. A fresh rerun is new evidence and must not rewrite the historical records."
+  ]
+}

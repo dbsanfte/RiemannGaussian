@@ -1,0 +1,933 @@
+{
+  "head": "842c9218be9867e4accfed673047302a2f0049d7",
+  "recorded_date": "2026-10-19",
+  "untracked_count": 146,
+  "untracked_lean_leaves": 91,
+  "untracked_docs": 55,
+  "tracked_modified_count": 3,
+  "research_roots": 225,
+  "research_candidates": 1910,
+  "classification_counts": {
+    "archive": 1623,
+    "generated-cache": 116,
+    "external-primary-body": 171
+  },
+  "classification_bytes": {
+    "archive": 16149971,
+    "generated-cache": 89164023,
+    "external-primary-body": 65167296
+  },
+  "pruned_cache_or_upstream_roots": [
+    ".lake/arithmetic-operator-joint-covariance-probe/__pycache__",
+    ".lake/arithmetic-operator-roadmap/openai-math-review/preprints",
+    ".lake/arithmetic-operator-roadmap/openai-math-review/verification/.lake",
+    ".lake/arithmetic-operator-roadmap/openai-math-review/verification/OAI",
+    ".lake/arithmetic-operator-roadmap/openai-math-review/lean/OAI",
+    ".lake/siegel-2610-15483/__pycache__"
+  ],
+  "normal_publication_candidates": [
+    {
+      "path": "docs/arithmetic-operator-all-square-finite-gates.json",
+      "status": "untracked",
+      "bytes": 257618,
+      "sha256": "84861d943f2db6422bc1311bc0609c971fa48ddbc0dfb56790528da24d3dad9d"
+    },
+    {
+      "path": "docs/arithmetic-operator-all-square-finite-gates.md",
+      "status": "untracked",
+      "bytes": 6717,
+      "sha256": "a3af6a34cb7641acbb3aa6407a19bddfff72eda74edd81bd4c113ccfafe1a0d5"
+    },
+    {
+      "path": "docs/arithmetic-operator-auxiliary-order-central-gates.json",
+      "status": "untracked",
+      "bytes": 176443,
+      "sha256": "7ef7a16cbf3bd85dbe37bd0b28dc478011962d57f90364175e5ce9ea0f002307"
+    },
+    {
+      "path": "docs/arithmetic-operator-auxiliary-order-central.md",
+      "status": "untracked",
+      "bytes": 8007,
+      "sha256": "ee8cc4ff3c9f2bf3aa7624505c03dac839057d276a915eeb2165be168de4be61"
+    },
+    {
+      "path": "docs/arithmetic-operator-common-base-section-gates.json",
+      "status": "untracked",
+      "bytes": 80223,
+      "sha256": "a202f5f1042265a34771a9a0dbe6b643770d1b5ecc27a269fa3c6d7b868787c2"
+    },
+    {
+      "path": "docs/arithmetic-operator-common-base-section.md",
+      "status": "untracked",
+      "bytes": 7521,
+      "sha256": "3924f86a0367a2c93a571dbc103d67bd9cf7976130da224a1887a03570de9e0e"
+    },
+    {
+      "path": "docs/arithmetic-operator-comparable-digital-source.md",
+      "status": "untracked",
+      "bytes": 14220,
+      "sha256": "ebb19d2e1ca79f887e6f7bd58b483e313f50226a483ba1d2c8ca1601c1df30a5"
+    },
+    {
+      "path": "docs/arithmetic-operator-comparable-pair-raw-gates.json",
+      "status": "untracked",
+      "bytes": 13393,
+      "sha256": "7e3d25cd5e95a381b9628ece69f68502667bae8aad0cab8e50be38d5b79e533d"
+    },
+    {
+      "path": "docs/arithmetic-operator-cross-cell-sextic-gates.json",
+      "status": "untracked",
+      "bytes": 17005,
+      "sha256": "75d4782a17768dc1e8d8ab3ea5a98dd91a899ae6ab113721f69970651da2dee2"
+    },
+    {
+      "path": "docs/arithmetic-operator-cross-tuple-tail-window-gates.json",
+      "status": "untracked",
+      "bytes": 188044,
+      "sha256": "a10977779b2c78c028ca8ef66cde76ac43f3bcd88ddc31925f5a624bd8ed08d4"
+    },
+    {
+      "path": "docs/arithmetic-operator-cross-tuple-tail-window.md",
+      "status": "untracked",
+      "bytes": 8138,
+      "sha256": "955da7a93237063d027709ad6540dad2524912178dc61b72d7ddfdbf6481fe1c"
+    },
+    {
+      "path": "docs/arithmetic-operator-cusp-source-frontier-gates.json",
+      "status": "untracked",
+      "bytes": 92875,
+      "sha256": "728214a308e06e33af98539249314fdfeb252c78fdea33261eabcbbda0080f66"
+    },
+    {
+      "path": "docs/arithmetic-operator-cusp-source-frontier.md",
+      "status": "untracked",
+      "bytes": 8348,
+      "sha256": "125bdffc35f3e6a9ef3963665af5bd2a520bee4d19893fa8c5944c2926b637be"
+    },
+    {
+      "path": "docs/arithmetic-operator-cyclotomic-source.md",
+      "status": "untracked",
+      "bytes": 14900,
+      "sha256": "ac6f3e6707448a279acd9022a8be619fb80fdc143e748c281bde174f9f3a1249"
+    },
+    {
+      "path": "docs/arithmetic-operator-determinant-gates.json",
+      "status": "untracked",
+      "bytes": 9841,
+      "sha256": "46280acdbb4b8b6ba0dbcb27b3267ca68dbba722b67447d4d9e1c92c5a40bc1d"
+    },
+    {
+      "path": "docs/arithmetic-operator-exterior-physical-transfer-gates.json",
+      "status": "untracked",
+      "bytes": 109671,
+      "sha256": "c84656f2b7e99c057cf52ea3906938d219465770577656cce8c4381c8446326e"
+    },
+    {
+      "path": "docs/arithmetic-operator-exterior-physical-transfer.md",
+      "status": "untracked",
+      "bytes": 7733,
+      "sha256": "379500f4bad0a3fb868a3800da3779449eedb51f0c79166bd0fd012e5325330e"
+    },
+    {
+      "path": "docs/arithmetic-operator-gauge-cyclotomic-continuous-gates.json",
+      "status": "untracked",
+      "bytes": 18332,
+      "sha256": "e1902ab701533304a095ed46e6b992b9c80bf3b9f6147a82d0b3659b95c04506"
+    },
+    {
+      "path": "docs/arithmetic-operator-higher-q-determinant.md",
+      "status": "untracked",
+      "bytes": 13088,
+      "sha256": "22bd9b0748be813f97fe6c94d0a01091c1fc5047c08f859d4176c959d4064a7a"
+    },
+    {
+      "path": "docs/arithmetic-operator-integral-primitive-moment-gates.json",
+      "status": "untracked",
+      "bytes": 162021,
+      "sha256": "6378b103729949b91247f6b8561532d7dd35b145143d32f7f74fa4078c8a6058"
+    },
+    {
+      "path": "docs/arithmetic-operator-integral-primitive-moment.md",
+      "status": "untracked",
+      "bytes": 8368,
+      "sha256": "efa6e121a09381364e527198ba8669bb450d19717e371e4b81fa6c84db737d43"
+    },
+    {
+      "path": "docs/arithmetic-operator-joined-dual-valuation-gates.json",
+      "status": "untracked",
+      "bytes": 33355,
+      "sha256": "382542931fb6914d5e871f03c2e545b533b2f7fdaa7dd8232919f0ea2c42508f"
+    },
+    {
+      "path": "docs/arithmetic-operator-joined-dual-valuation.md",
+      "status": "untracked",
+      "bytes": 7800,
+      "sha256": "8a09d841ab96cab1d820593fbd264bd5f6e4d92094cb1b0a0115e4bd8e7e7119"
+    },
+    {
+      "path": "docs/arithmetic-operator-joined-typei-ray-window-gates.json",
+      "status": "untracked",
+      "bytes": 55441,
+      "sha256": "cd3768ba1943ad2561000fc258c95faf6c3bc7e31a45ec14d1d50451a40cdd88"
+    },
+    {
+      "path": "docs/arithmetic-operator-joint-covariance-gates.json",
+      "status": "untracked",
+      "bytes": 23536,
+      "sha256": "6083a84141f97175c45199647d8d4f9e9164d501837fefc25cbfe481b933ef32"
+    },
+    {
+      "path": "docs/arithmetic-operator-marked-composition-gates.json",
+      "status": "untracked",
+      "bytes": 23614,
+      "sha256": "f72053b8b5b95f52c20f08786cd105f25520d0579cc4d5cbab6542b118c2d986"
+    },
+    {
+      "path": "docs/arithmetic-operator-mixed-wilson-local-gates.json",
+      "status": "untracked",
+      "bytes": 199825,
+      "sha256": "2f49d40c93fab6a5f9d9a732b9ec357ae1a35ab6d552487ab533389f27b71584"
+    },
+    {
+      "path": "docs/arithmetic-operator-mixed-wilson-local-gates.md",
+      "status": "untracked",
+      "bytes": 8916,
+      "sha256": "9e2f4c041ec62ae206b1e372b37ed6796f38b1c961d2c7ee8f8811a3b53f96f3"
+    },
+    {
+      "path": "docs/arithmetic-operator-moving-digital-border-gates.json",
+      "status": "untracked",
+      "bytes": 14389,
+      "sha256": "0baab599436962675998c16e7f49f03d3455a145aa7fd04338a47c6ddbb46bd8"
+    },
+    {
+      "path": "docs/arithmetic-operator-native-gauge-digital-tn2-gates.json",
+      "status": "untracked",
+      "bytes": 15263,
+      "sha256": "352d1ecdc772083a6c47690f22e962d3213d0c58e47ce54a29d041f67b00dac1"
+    },
+    {
+      "path": "docs/arithmetic-operator-native-ray-fixed-q-source.md",
+      "status": "untracked",
+      "bytes": 8715,
+      "sha256": "b1cf943f2c6b763b533d0a9f3a28a0913065d387654343f327b917197b61adbf"
+    },
+    {
+      "path": "docs/arithmetic-operator-native-source-coupling-gates.json",
+      "status": "untracked",
+      "bytes": 127029,
+      "sha256": "4d6e19e222163399a7b01831e459896359aa6ca9008c9f4abbec4304a55bc44f"
+    },
+    {
+      "path": "docs/arithmetic-operator-native-source-coupling.md",
+      "status": "untracked",
+      "bytes": 9462,
+      "sha256": "993e4c3767ef0b14ec89f7d2bcfa7c51dfa117ef7b9ac7d80c75ef1d528ee751"
+    },
+    {
+      "path": "docs/arithmetic-operator-primitive-depth-frontier-gates.json",
+      "status": "untracked",
+      "bytes": 145558,
+      "sha256": "74f7c6dd28db14e44bb7016dbfbfbc781a9d75df4e7d2db02f03b0b1b5a1e7bf"
+    },
+    {
+      "path": "docs/arithmetic-operator-primitive-depth-frontier.md",
+      "status": "untracked",
+      "bytes": 8695,
+      "sha256": "c0051a5b4e85da2caab7fd28ba25d8c0ebce2a950e22494227e7e0cae6d10d7f"
+    },
+    {
+      "path": "docs/arithmetic-operator-residue-cubic-gates.json",
+      "status": "untracked",
+      "bytes": 231203,
+      "sha256": "709c4cc9105901411c1e1c102c601c412e6575706b50390cac393128ec5d00be"
+    },
+    {
+      "path": "docs/arithmetic-operator-residue-cubic-gates.md",
+      "status": "untracked",
+      "bytes": 12013,
+      "sha256": "8fa11a8c33d7f16559b7e5b307dd859d4161aa9b5a2ef0d3768b23e194a88465"
+    },
+    {
+      "path": "docs/arithmetic-operator-resultant-adaptive-gates.json",
+      "status": "untracked",
+      "bytes": 32197,
+      "sha256": "cd52dfad47d1e2f560a946fc7d9fedad699bbdcafa810ef312cc09f659e1dffb"
+    },
+    {
+      "path": "docs/arithmetic-operator-root-unity-source.md",
+      "status": "untracked",
+      "bytes": 7072,
+      "sha256": "a0ee4391567e9e8b0eb867b78c8ea0e7099e6f7179309106de3f6398c70d1d53"
+    },
+    {
+      "path": "docs/arithmetic-operator-sextic-continuous-frontier.md",
+      "status": "untracked",
+      "bytes": 9126,
+      "sha256": "4c7325aa0c5f2c82574e5f3ed587d0189eba6c27bcd415ba2a5a2e20dbcda52f"
+    },
+    {
+      "path": "docs/arithmetic-operator-siegel-all-class-gates.json",
+      "status": "untracked",
+      "bytes": 13015,
+      "sha256": "86579dbabd4e29f9c6f330c071326de77e4e87933e0513785784e5caa9796063"
+    },
+    {
+      "path": "docs/arithmetic-operator-siegel-preflight.json",
+      "status": "untracked",
+      "bytes": 6538,
+      "sha256": "e92c12906bc528618d50c306d6aba1c360e2c4b4bdccd044213f772dfee4a642"
+    },
+    {
+      "path": "docs/arithmetic-operator-source-normalized-marked-gates.json",
+      "status": "untracked",
+      "bytes": 290604,
+      "sha256": "21556d126fa652634540f48d2c649cb4f801261b4bad3ed4dfd50192e99fb687"
+    },
+    {
+      "path": "docs/arithmetic-operator-source-normalized-marked-gates.md",
+      "status": "untracked",
+      "bytes": 6406,
+      "sha256": "54bbaae0f6b3daccb18628562d6809a3ca1a02ba87101fa9b3ccbc5b1aa49ddd"
+    },
+    {
+      "path": "docs/arithmetic-operator-square-gaussian-source-gates.json",
+      "status": "untracked",
+      "bytes": 277985,
+      "sha256": "b069fa905b4f68b5dca8405293ed29e4299f90c78d7652defc13cfa9a004f951"
+    },
+    {
+      "path": "docs/arithmetic-operator-square-gaussian-source-gates.md",
+      "status": "untracked",
+      "bytes": 6095,
+      "sha256": "900771782217c974a649c0fc3ca292f12cb8ed4a745299286cae5c4b3c06ccc3"
+    },
+    {
+      "path": "docs/arithmetic-operator-square-native-odd-core-gates.json",
+      "status": "untracked",
+      "bytes": 264365,
+      "sha256": "fca3c6298005eba118f428928f3dfd0b25a800967c954c1abe7baa931c19c5f0"
+    },
+    {
+      "path": "docs/arithmetic-operator-square-native-odd-core-gates.md",
+      "status": "untracked",
+      "bytes": 6245,
+      "sha256": "ef03ba3fba54fcd9fb57659a041dc66fc767e7ba57530d1756416c8fb4d5ab62"
+    },
+    {
+      "path": "docs/arithmetic-operator-theta-calibration-qpascal-gates.json",
+      "status": "untracked",
+      "bytes": 27309,
+      "sha256": "cc21f6841a46b5ba7f2578869134971bb45b8de448867f302a3777e5e95261c5"
+    },
+    {
+      "path": "docs/arithmetic-operator-theta-support-small-window-gates.json",
+      "status": "untracked",
+      "bytes": 41829,
+      "sha256": "b93bd0c0a2673da383e26351dda16c9a9419317e0074c2438f208e397e4ec7a6"
+    },
+    {
+      "path": "docs/arithmetic-operator-theta-support-small-window.md",
+      "status": "untracked",
+      "bytes": 8967,
+      "sha256": "ddf11bc97afddd383f5b6fdba20c754305ecf5f525d022991c314d3137bc5b5a"
+    },
+    {
+      "path": "docs/arithmetic-operator-theta-twist-frontier.md",
+      "status": "untracked",
+      "bytes": 9456,
+      "sha256": "c91f0d733d0137f49c0f332daf70e9451a0be756fc1c5c5f0ee94c7395936645"
+    },
+    {
+      "path": "docs/arithmetic-operator-total-source-section-gates.json",
+      "status": "untracked",
+      "bytes": 66719,
+      "sha256": "24651784e67701637e0af9d91795bc5f8515ea18a397b27b610c43b20f09ffbf"
+    },
+    {
+      "path": "docs/arithmetic-operator-total-source-section.md",
+      "status": "untracked",
+      "bytes": 7136,
+      "sha256": "3755c42338912c68ddc5f310995cb2b63cd89b719c03b4bbb1fb3ff5a48feaf9"
+    },
+    {
+      "path": "docs/siegel-interpolation-review.md",
+      "status": "untracked",
+      "bytes": 33348,
+      "sha256": "1a63f74f09bd13a7c9c0da093e5c8f2d15bf482244ca5ff9537c9b5fc95d04ba"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorAdaptiveLandingAudit.lean",
+      "status": "untracked",
+      "bytes": 7808,
+      "sha256": "801a2e0d0c75b68e412227301a904622139dc3ef397eb6a75c508fa78ae6f7c8"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorAdditiveCommonSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 7591,
+      "sha256": "671c91bd17d8f4a599816d66e647821a65ce5b46f950d247a3ff2e770a4759f5"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCommonBaseCRTAudit.lean",
+      "status": "untracked",
+      "bytes": 8475,
+      "sha256": "68c9070d42a97aa8f114452d5e70ef763d01d3f552d948f8ffa2de1f81c48c34"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorComparableDigitalAudit.lean",
+      "status": "untracked",
+      "bytes": 8800,
+      "sha256": "c52e2353a1428d45da3ac67ff9b5de20eb42efc240e82ffcfe0a967d8b34ec67"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCubicSexticCompositionAudit.lean",
+      "status": "untracked",
+      "bytes": 10166,
+      "sha256": "948d100a3210cc60550d892842a53b6243af488ebebac77fe4f4cf4e68a1489c"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCutoffRankAudit.lean",
+      "status": "untracked",
+      "bytes": 7336,
+      "sha256": "c8b079324b4b9aab5b1def90fb53bbd35e7ace69782aeccc64bab7bf49ebe518"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean",
+      "status": "untracked",
+      "bytes": 8657,
+      "sha256": "7d16119d1dd4d53cdfd7b43829e3769e8c9561151ba94ac26d7fb9283159ebf4"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalCarryAudit.lean",
+      "status": "untracked",
+      "bytes": 11988,
+      "sha256": "321bcc650674ba690965c9fa045bfc26a2b09c10c28957562f6f1cae04915fbf"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalPairAudit.lean",
+      "status": "untracked",
+      "bytes": 10164,
+      "sha256": "568a3f3d5b3b34815b0c0c7e5a8d6ce697f9f6e74f1650364235abefcc7e1291"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalSourceGate.lean",
+      "status": "untracked",
+      "bytes": 15689,
+      "sha256": "dd0519af79a51e4493ce55ff0dc4f68bf57529b4ddc621b063fe404738be25f2"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorFactorialTN2Audit.lean",
+      "status": "untracked",
+      "bytes": 12777,
+      "sha256": "38b81c4efcb59b9c4adb253a1ee36a8aed1d104942b25cbd98f5ff5399237331"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorFixedQLogAudit.lean",
+      "status": "untracked",
+      "bytes": 6364,
+      "sha256": "c0de7655e15871eba074a3f212599895aa7f3165e643bc0c78fa6452b00568cd"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorFrobeniusBalanceAudit.lean",
+      "status": "untracked",
+      "bytes": 7749,
+      "sha256": "8a8e5fd71a319d5de0542425412238cbb5b886dc29a5f83939d7fc51d1b4d075"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorGappedMinorAudit.lean",
+      "status": "untracked",
+      "bytes": 14695,
+      "sha256": "b60f9984987a4c1cc63234e66b7de00dbdd84be01f559b46bbe94f7bbb199aee"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorGappedSourceGate.lean",
+      "status": "untracked",
+      "bytes": 10532,
+      "sha256": "9485e842eea562d9eee4a7be741496917e5cddb4667085eef81598d65ddef124"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorGrowingQBoxAudit.lean",
+      "status": "untracked",
+      "bytes": 11959,
+      "sha256": "c58fb0fa8cf7a469ceae0daeb58eb76613b49caad3c66c7ed915b437a27b092f"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorIntegralBasePopulationAudit.lean",
+      "status": "untracked",
+      "bytes": 13424,
+      "sha256": "6f298389b4e307570d92a7dbc5eefd38b7f3d30ca5e88f708d96e81ce38bb4bd"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorIntervalDeterminantAudit.lean",
+      "status": "untracked",
+      "bytes": 6202,
+      "sha256": "a1e68e1f02df53c1a432e7c0cdce744e62bfae577697cd89187e4a8bd7b881b0"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorMarkedSexticRateAudit.lean",
+      "status": "untracked",
+      "bytes": 6446,
+      "sha256": "5b19bc04d5a24c9d30c7c6b10c49d15307b90b3d4a61c06220892ce0606c6f65"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean",
+      "status": "untracked",
+      "bytes": 8377,
+      "sha256": "dcf8715845e2b33bbc2dfbd673b54fea8357d7bfd1e2776d04d0958327caca1a"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorMixedBaseSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 6085,
+      "sha256": "cd83e1c6c9cfb4f1bf374eae15796780e14dd7b28bb045494809fc922b0cfe6b"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorNextInteractionAudit.lean",
+      "status": "untracked",
+      "bytes": 8647,
+      "sha256": "2f8520a422914cf599f64518cdea10662c03d9085caf3bb2d436cb007c94b92d"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorPascalMinorAudit.lean",
+      "status": "untracked",
+      "bytes": 17940,
+      "sha256": "c63cac7d316a12181a8bf0ea5d9bc16eb9c281d4ea72fbe1110fee894fb41c90"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorPrimitiveGCDSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 6617,
+      "sha256": "2464526f210e5d988a3a405d26d619b85189ba8eb20ba88b374a0e28e7c377c2"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorPrimitivePacketSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 7887,
+      "sha256": "6f1dfd65d500f682d2077a812e356e550072b9a5b12546277098a7e9d8eb44ba"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorPrimitiveTransportAudit.lean",
+      "status": "untracked",
+      "bytes": 8594,
+      "sha256": "7d1630a9b50728288158c1496e92d5b306a259477b34926b921c149ef57c0e0d"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorQDetSmallWindowAudit.lean",
+      "status": "untracked",
+      "bytes": 8301,
+      "sha256": "85b1f8461d10ce479aa1cc2bd54cd90342dd5bbe06867410778cee201d849169"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorQDetTotalKernelAudit.lean",
+      "status": "untracked",
+      "bytes": 5917,
+      "sha256": "f281c98a0ddd60067b56720d552ada502db8ef9e3de02366d940faae3b3781d1"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorQDetUnsaturatedTraceAudit.lean",
+      "status": "untracked",
+      "bytes": 6351,
+      "sha256": "53fef6b4c21d53e39f91b928b14b3f0df300766f3eeb6f29bbc13ae7bd4e2698"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean",
+      "status": "untracked",
+      "bytes": 10011,
+      "sha256": "8da165e0a1c3839a1e96fda6342d7fafa7927d79b62c815e7a13516b576dd9d7"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorQuadraticNormAudit.lean",
+      "status": "untracked",
+      "bytes": 10284,
+      "sha256": "5bec7a4f6a3ef7027f5c37e2076c46e57ae08ffb425095c073e3711b9c1d3955"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorRadicalQBoxAudit.lean",
+      "status": "untracked",
+      "bytes": 8907,
+      "sha256": "433e46d2477f950609652a90ab7763d7a396d8ddbb3d13ea285bcd657f0abc6f"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorRadicalQBoxTailAudit.lean",
+      "status": "untracked",
+      "bytes": 11212,
+      "sha256": "95ccb8e735c6f6d97619d5d09783ace2cb51fe92086772af8a0808b5b6d66823"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorResultantDiscrepancy.lean",
+      "status": "untracked",
+      "bytes": 9450,
+      "sha256": "ca7075c3d3c41f4ab8b7588b0bca15e605af75890555a306a437fe0cdeaf1381"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorRowDeconvolutionAudit.lean",
+      "status": "untracked",
+      "bytes": 8117,
+      "sha256": "0cb2d9642abd78c7f98f6824741f79daff54af4185e9ac5c5a9fa764a6546388"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorSexticRateAudit.lean",
+      "status": "untracked",
+      "bytes": 7034,
+      "sha256": "eabede10b4a3776278546c903fe845e52f603d3c42140aa2bbc3f9eedff10480"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorSignedDepthTransportAudit.lean",
+      "status": "untracked",
+      "bytes": 13260,
+      "sha256": "18a3500d1ab89f9c5a1722d83cc3c7bd187f322fd3dd201c3e43bcb1c2794599"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorSignedIntegralSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 6616,
+      "sha256": "9b39547e40d0735fe8cb8858869409066e04b1dc2113f83dbb6c553ee0a84cc4"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorTernaryCorrelationAudit.lean",
+      "status": "untracked",
+      "bytes": 12231,
+      "sha256": "117254891aa701222c6628939ec2848a22fe79ad030b9e9413accbb2cc03da85"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 9603,
+      "sha256": "793c7a4ada3121ccd847a57f14502473d350305ac83d5ecc2f152a271b2e7e71"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorWilsonSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 8828,
+      "sha256": "05ca1f9f9ee6033347270559dd7417c9f19016e2c78aabb188fdff32a4728962"
+    },
+    {
+      "path": "scripts/QuasiRHAllSquareAmplitudeBridgeAudit.lean",
+      "status": "untracked",
+      "bytes": 32248,
+      "sha256": "4a535eae8bd3dae1e7d413644e7f91611cb23c430684c9bbf059d33626d479f6"
+    },
+    {
+      "path": "scripts/QuasiRHAllSquareEnergy.lean",
+      "status": "untracked",
+      "bytes": 25728,
+      "sha256": "8b5349d0adbeb1e1d2bcb10aeccd8b77b5cb37ba8d76ae0386f2d57e7e1eaff0"
+    },
+    {
+      "path": "scripts/QuasiRHAllSquareGaussBridge.lean",
+      "status": "untracked",
+      "bytes": 27757,
+      "sha256": "2941a40834cf78d0b9bdfdba7ebcfe6142c7840707da83cd0299a06b26bb3d5d"
+    },
+    {
+      "path": "scripts/QuasiRHAllSquarePartition.lean",
+      "status": "untracked",
+      "bytes": 26947,
+      "sha256": "1017777790ab3f56998ec739c6d6b42d438675059edc1e920e5f68d21eded7ed"
+    },
+    {
+      "path": "scripts/QuasiRHAuxiliaryHeckeCorrelationAudit.lean",
+      "status": "untracked",
+      "bytes": 5129,
+      "sha256": "85711ed0795773d93ecb757cc549f1c50a67bb5129a0db22c8365f217b2b0ae5"
+    },
+    {
+      "path": "scripts/QuasiRHBorderedStatisticAudit.lean",
+      "status": "untracked",
+      "bytes": 8423,
+      "sha256": "e1c4e78c88171d3b29653d67f914223c5b83c0b174a4af2ac44bdeccb7145274"
+    },
+    {
+      "path": "scripts/QuasiRHCalibrationFamilyAudit.lean",
+      "status": "untracked",
+      "bytes": 8355,
+      "sha256": "d53de0c8336e1078b874a2a462ae819a14a37a099f231e812eca278d38a120de"
+    },
+    {
+      "path": "scripts/QuasiRHCalibrationNumeratorAudit.lean",
+      "status": "untracked",
+      "bytes": 10594,
+      "sha256": "3b70b7b49d24f8a783dbb6717a74e78beeced26421943760b9edbdca8c67dbc5"
+    },
+    {
+      "path": "scripts/QuasiRHCentralRateFrontierAudit.lean",
+      "status": "untracked",
+      "bytes": 6705,
+      "sha256": "d5a6422484c85f03171ca11d2240d84d78053ce66284c28fd484cd942355d038"
+    },
+    {
+      "path": "scripts/QuasiRHCommonUnitGaugeAudit.lean",
+      "status": "untracked",
+      "bytes": 7808,
+      "sha256": "a733bd10781a47430d5cd1cd8fc4ffcfb83992504783195d0de86d7b25416df5"
+    },
+    {
+      "path": "scripts/QuasiRHCoprimePoleGate.lean",
+      "status": "untracked",
+      "bytes": 16263,
+      "sha256": "12b71b3bcfef23f6bee670c77dd445357e27fcb7d16498c6dd3ca8826ea202f3"
+    },
+    {
+      "path": "scripts/QuasiRHCoprimeResidueBound.lean",
+      "status": "untracked",
+      "bytes": 10141,
+      "sha256": "85cad4ae8edc5639c8ca4b2ea6c073f3b5940f60549eb1b9d5f5a7263828c547"
+    },
+    {
+      "path": "scripts/QuasiRHCubicOrientationAudit.lean",
+      "status": "untracked",
+      "bytes": 11895,
+      "sha256": "e1b06501f7c943c4ed91f12167aacf722bf5a80406b6bf24605c18d677192b5f"
+    },
+    {
+      "path": "scripts/QuasiRHExteriorCorrectionAudit.lean",
+      "status": "untracked",
+      "bytes": 15105,
+      "sha256": "ec82bb54f4435cc4aaae4205d91917c4b8c22abeb5119b0476910a5a29ffdc57"
+    },
+    {
+      "path": "scripts/QuasiRHExteriorRegionAudit.lean",
+      "status": "untracked",
+      "bytes": 15437,
+      "sha256": "01020b7144a50a089cfd5b748dfb9800b4c11a3eee8d3f8f47a89a09f07c0650"
+    },
+    {
+      "path": "scripts/QuasiRHExteriorSlotAudit.lean",
+      "status": "untracked",
+      "bytes": 13539,
+      "sha256": "3e3b6a9b4689941d218cd6dbf0323a7bf0ca8d08cde04a285f639c6734ae4015"
+    },
+    {
+      "path": "scripts/QuasiRHFiniteSquareEnergyAudit.lean",
+      "status": "untracked",
+      "bytes": 24606,
+      "sha256": "d59f6774baaf400933d17a590b70334cfa2200a5c4e4c74a7ce0f068514dcd13"
+    },
+    {
+      "path": "scripts/QuasiRHFiniteSquareGaussAudit.lean",
+      "status": "untracked",
+      "bytes": 9145,
+      "sha256": "3b6df917847897b832d09b86657b49b6dce9484c1076adf2c630d7323f2f4662"
+    },
+    {
+      "path": "scripts/QuasiRHFullCentralBelowBoundaryAudit.lean",
+      "status": "untracked",
+      "bytes": 22872,
+      "sha256": "43cd9914d9210fe1d6497717248005933cdc6a2fa236bcde4b15a619f1128c5d"
+    },
+    {
+      "path": "scripts/QuasiRHFullSourceRateAudit.lean",
+      "status": "untracked",
+      "bytes": 4658,
+      "sha256": "4f0109e9532659025c6b727f3d002710b308665f1de9a27ef78dc2a8a6865fda"
+    },
+    {
+      "path": "scripts/QuasiRHGaugeAverageAudit.lean",
+      "status": "untracked",
+      "bytes": 9058,
+      "sha256": "451ce9cf570dfb5fa5612d83d8f87ecaf7a744cef40168b7b5f7213d99d37821"
+    },
+    {
+      "path": "scripts/QuasiRHJoinedDualPhaseAudit.lean",
+      "status": "untracked",
+      "bytes": 9583,
+      "sha256": "2bbba61d842c4a20de086dcc09f376d739f1150b3928bb8ad426d19e31ca0bea"
+    },
+    {
+      "path": "scripts/QuasiRHJoinedMarkVarianceAudit.lean",
+      "status": "untracked",
+      "bytes": 8543,
+      "sha256": "c8eaf7c5399d014b8e01f0208db193f89b54f24066b5d25736e5270618c8940b"
+    },
+    {
+      "path": "scripts/QuasiRHJoinedRamanujanAudit.lean",
+      "status": "untracked",
+      "bytes": 9671,
+      "sha256": "62540f5981623e7e3533a236bf57abd699aaf1aec26d209fc9f2023b3eb94232"
+    },
+    {
+      "path": "scripts/QuasiRHJointPeriodAudit.lean",
+      "status": "untracked",
+      "bytes": 7212,
+      "sha256": "663fb036cb4c7c5076a49b0f701e07735dac1a09b02d97808c91ba076890632e"
+    },
+    {
+      "path": "scripts/QuasiRHMarkedIncidenceAudit.lean",
+      "status": "untracked",
+      "bytes": 15204,
+      "sha256": "74dc33171c22e1e20708fe19bbf0a7d11cf1c44e57c4d9b21708408bc8bba57e"
+    },
+    {
+      "path": "scripts/QuasiRHMatchingDensityAudit.lean",
+      "status": "untracked",
+      "bytes": 8545,
+      "sha256": "2049ed271a22cf88a0f46b5136cb35bea80ccfd1ba7db4518f8f374d3e3a7889"
+    },
+    {
+      "path": "scripts/QuasiRHMomentBelowBoundaryAudit.lean",
+      "status": "untracked",
+      "bytes": 7360,
+      "sha256": "ccf3faaeda1145496c00b0ac7e91399a712a74d02ecc7d373e374187ec1d7bac"
+    },
+    {
+      "path": "scripts/QuasiRHNativeCuspStabilizerAudit.lean",
+      "status": "untracked",
+      "bytes": 6403,
+      "sha256": "190eade54ef80c33c36741c8c0078308965f317b77e60df458c53c92b1184034"
+    },
+    {
+      "path": "scripts/QuasiRHNativeRaySixthAudit.lean",
+      "status": "untracked",
+      "bytes": 16402,
+      "sha256": "1b5b35c7d6ade78cf30481dae50982a5acbbcf024df4406fc6f81e803bd21201"
+    },
+    {
+      "path": "scripts/QuasiRHNativeSectionLiftAudit.lean",
+      "status": "untracked",
+      "bytes": 6932,
+      "sha256": "60d27c62a00bdd5c717dd8a311ee0d3710b52211d3646fd2056e12b378a3420e"
+    },
+    {
+      "path": "scripts/QuasiRHNonmatchingSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 9316,
+      "sha256": "ae128724e5a8c27e3ce2d1298abd3a9494b02a3d3ee9d7bbe212ef0682e0af50"
+    },
+    {
+      "path": "scripts/QuasiRHOddCoreWitnessRateAudit.lean",
+      "status": "untracked",
+      "bytes": 7511,
+      "sha256": "74147ede698c35e779ab5af65e92bfc5aee1ca99036dfade3c2c56a0150b69b3"
+    },
+    {
+      "path": "scripts/QuasiRHPattersonModelLocalAudit.lean",
+      "status": "untracked",
+      "bytes": 17759,
+      "sha256": "726afad016f75360b81f79f212d47bee89944929f1acd7485d459f6f6d0cbf87"
+    },
+    {
+      "path": "scripts/QuasiRHPhysicalWindowSourceAudit.lean",
+      "status": "untracked",
+      "bytes": 8083,
+      "sha256": "f70758cf75a19da42f789d68d655668eac63f9c235584591f67bd87933419e7b"
+    },
+    {
+      "path": "scripts/QuasiRHRawSignRelationAudit.lean",
+      "status": "untracked",
+      "bytes": 9580,
+      "sha256": "46a5c8ea6e57dbf4561d0fb7347787e356c9217fb28de7a8191c83414124683d"
+    },
+    {
+      "path": "scripts/QuasiRHResidualProjectionAudit.lean",
+      "status": "untracked",
+      "bytes": 5748,
+      "sha256": "865ca6ec0aaf760637eb2391cdab3ab25ae97dcadc349a80014d97bf621ff225"
+    },
+    {
+      "path": "scripts/QuasiRHSourceHalfplaneAudit.lean",
+      "status": "untracked",
+      "bytes": 15913,
+      "sha256": "5223c61cd7b7425e8a8b4ed3829d2a6fff6e08ebc0014cc6d762f13e941176d0"
+    },
+    {
+      "path": "scripts/QuasiRHSquareCubicMeanAudit.lean",
+      "status": "untracked",
+      "bytes": 9406,
+      "sha256": "81135b2ebf890b67552a8325c48c76a5de61358ec2a02144fbd26fbd428c8630"
+    },
+    {
+      "path": "scripts/QuasiRHSquareEnergyRateAudit.lean",
+      "status": "untracked",
+      "bytes": 4711,
+      "sha256": "b2d70d2b4e259cccf5a2d1a548ba5578d390b3dc68157de9b88f68d3b1a28254"
+    },
+    {
+      "path": "scripts/QuasiRHSquareGaussIdealNorm.lean",
+      "status": "untracked",
+      "bytes": 5029,
+      "sha256": "e28640e7fbfb99c6af312814ad38e0dd52b879120173ff6b0d3bb74d3e567e2d"
+    },
+    {
+      "path": "scripts/QuasiRHSquareGaussNorm.lean",
+      "status": "untracked",
+      "bytes": 15528,
+      "sha256": "077d2ffe211cc962b11bdff6210b5b5c0c2cada9caccb7441759321f7beb35ed"
+    },
+    {
+      "path": "scripts/QuasiRHSquareGaussianPayment.lean",
+      "status": "untracked",
+      "bytes": 26822,
+      "sha256": "4299ebf5025d3eb91579c59413b7cbd539bd14be63480fe64b66181488dae32e"
+    },
+    {
+      "path": "scripts/QuasiRHSquareNativePayment.lean",
+      "status": "untracked",
+      "bytes": 22886,
+      "sha256": "ed08c585912a86303517883c1150a41dd8d23ccabc415bd6653839eacc2446a4"
+    },
+    {
+      "path": "scripts/QuasiRHSquareSectorIntegral.lean",
+      "status": "untracked",
+      "bytes": 11246,
+      "sha256": "9f80169b7014db71a0dcfeb68519bb947e9c5012e8db5ff3dc6122b85079212a"
+    },
+    {
+      "path": "scripts/QuasiRHSquareSectorTransfer.lean",
+      "status": "untracked",
+      "bytes": 9951,
+      "sha256": "f833d44519a84f31e18cb96ee06f9df4279e9149cb388b5b62b688a3e8f65af4"
+    },
+    {
+      "path": "scripts/QuasiRHSquareSourceNormalized.lean",
+      "status": "untracked",
+      "bytes": 12457,
+      "sha256": "b313d52bd34a00e31bbd080a86ed484e2d85553b76caa2d8a0337d0b33053f53"
+    },
+    {
+      "path": "scripts/QuasiRHThetaCentralJoinAudit.lean",
+      "status": "untracked",
+      "bytes": 6842,
+      "sha256": "18c416b9312572fb236e985b67b2612911aac2ef2d674641c1cf03773e261a64"
+    },
+    {
+      "path": "scripts/QuasiRHThetaTwistAudit.lean",
+      "status": "untracked",
+      "bytes": 10926,
+      "sha256": "b47a11c981d40f03149c079b233c748f61edb6116262f0372bcd6c0dfc03ec43"
+    },
+    {
+      "path": "scripts/QuasiRHUnselectedWeightedMassAudit.lean",
+      "status": "untracked",
+      "bytes": 9353,
+      "sha256": "3f742455175b301c04650daae72125fcb9564488d3c44a1e5765c1888de2dc0d"
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "tracked-modified",
+      "bytes": 1279915,
+      "sha256": "4b3c4537d211741c5d21f2627760266d5a4c06a72715066e36f0c44999df6b10"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "status": "tracked-modified",
+      "bytes": 456774,
+      "sha256": "460827771be43ec219f370b5b2014635eeac16a71cdb8ec0e24e0c40d389ea93"
+    },
+    {
+      "path": "docs/rh-proof-explorer/metadata.json",
+      "status": "tracked-modified",
+      "bytes": 606834,
+      "sha256": "76d0d64b29032f37fab205ce213e066e34053ddef2a0022d04663639b5245c35"
+    }
+  ],
+  "normal_publication_paths_not_snapshotted": [
+    "docs/rh-proof-explorer/metadata.json"
+  ],
+  "canonical_checkpoint": "docs/arithmetic-operator-source-normalized-marked-gates.json",
+  "canonical_checkpoint_sha256": "21556d126fa652634540f48d2c649cb4f801261b4bad3ed4dfd50192e99fb687",
+  "canonical_pins": 1544,
+  "canonical_pin_live_mismatches": [],
+  "canonical_pin_scope": "Historical frozen expected values are never rewritten; live shared doc changes during parent publication are reported explicitly.",
+  "semiprime": "Paused; no semiprime research or optional numerical certificate replay performed."
+}

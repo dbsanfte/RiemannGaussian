@@ -1,0 +1,287 @@
+{
+  "checkpoint": "comparable-digital-completion-adjacent-pair-and-actual-raw-Gauss-sign-gates",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Three scoped finite arithmetic gates; no independent RH endpoint estimate or new zero exclusion.",
+  "formal_leaves": [
+    {
+      "path": "scripts/ArithmeticOperatorComparableDigitalAudit.lean",
+      "sha256": "c52e2353a1428d45da3ac67ff9b5de20eb42efc240e82ffcfe0a967d8b34ec67",
+      "strict_command": "isolated digital dependency added to LEAN_PATH after lake env; /home/dbsanfte/.elan/bin/lean scripts/ArithmeticOperatorComparableDigitalAudit.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 28,
+      "theorems_including_helpers": 22,
+      "log": ".lake/arithmetic-operator-comparable-digital-formal/lean.log",
+      "axiom_report": ".lake/arithmetic-operator-comparable-digital-formal/axioms.json"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalPairAudit.lean",
+      "sha256": "568a3f3d5b3b34815b0c0c7e5a8d6ce697f9f6e74f1650364235abefcc7e1291",
+      "strict_command": "isolated digital dependency added after lake env; lean scripts/ArithmeticOperatorDigitalPairAudit.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 32,
+      "theorems_including_helpers": 21,
+      "log": ".lake/arithmetic-operator-digital-nonlinear-gate/lean.log",
+      "axiom_report": ".lake/arithmetic-operator-digital-nonlinear-gate/axioms.json"
+    },
+    {
+      "path": "scripts/QuasiRHRawSignRelationAudit.lean",
+      "sha256": "46a5c8ea6e57dbf4561d0fb7347787e356c9217fb28de7a8191c83414124683d",
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/QuasiRHRawSignRelationAudit.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 43,
+      "theorems_including_helpers": 36,
+      "log": ".lake/arithmetic-operator-integral-border-gate/strict-build.log",
+      "axiom_report": ".lake/arithmetic-operator-integral-border-gate/axioms.json"
+    }
+  ],
+  "total_local_declarations": 103,
+  "total_theorems_including_helpers": 79,
+  "checked_conclusions": [
+    "Actual ternary digit code equals its factorial-valuation code; both finite high windows retain their native periods.",
+    "At X=H^2 with K>=H/2 and positive retained digit depths, CRT completion period>=3X; this particular normalized allowance cannot tend to zero.",
+    "The actual H=4,K=3,T=8 overlap is 5+omega and is nonzero.",
+    "For an odd translated row the adjacent digital pair amplitude on all actual prime powers is minus the uncoded odd-power sum plus the exact two-power tower.",
+    "The Hermitian and independently polarized finite ledgers retain all phases and distinct-prime cross terms.",
+    "Native raw Gauss identities recover the actual Mobius sign and give the faithful sixth-degree relation.",
+    "Clearing the whole matrix column has exact norm cost q; a common odd-map defect transfers by the same rational unit sign.",
+    "The explicit Fin6 x Fin2 exponent box has zero prime-floor extraction for primes>=7; no basis or interpolation statement follows."
+  ],
+  "paper_level_only": [
+    "Six-child mixed-digit recurrence, moving-rational-Beatty formulation and scope of fixed-code published theorems.",
+    "Adjacent-pair Dirichlet/source continuation through the uncoded odd-prime channel; no diagonal-only source inference.",
+    "Local integral denominator inverse, rank12 normal form and common-field Kummer degree 3^c.",
+    "Actual common integral Frobenius, native interpolation/source bridge and any independent fixed-power saving.",
+    "Banks--Shparlinski conditional-exponent audit; no bridge to the native joined weights."
+  ],
+  "not_claimed": [
+    "No lower bound on the actual comparable-code signed discrepancy.",
+    "No exhaustion of comparable digital, nonlinear Kummer or whole-matrix arithmetic mechanisms.",
+    "No source theorem inferred from a Hermitian denominator diagonal.",
+    "No actual Galois automorphism flipping a fixed rational Mobius sign.",
+    "No field-degree-alone obstruction or new native prime bound."
+  ],
+  "finite_regressions": {
+    "mixed_overlap_checks": 315,
+    "six_child_recurrence_checks": 315,
+    "period_allowance_checks": 640,
+    "adjacent_pair_exact_checks": 1159,
+    "native_cyclotomic_cases": 5,
+    "equal_defect_valuation_checks": 10,
+    "finite_sign_capacity_checks": 1482,
+    "floating_proof_input": false
+  },
+  "previous_pins_verified_before_shared_edits": 53,
+  "agent_pins_verified": 31,
+  "prior_verification": ".lake/arithmetic-operator-comparable-digital-formal/prior-pins.json",
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "tier1_families_exhausted": 0,
+    "imported_endpoint": "strict Re(s)>7/8 unchanged"
+  },
+  "publication": {
+    "broad_build": false,
+    "root_public_registration": false,
+    "CI": false,
+    "commit_push": false
+  },
+  "source_pins": [
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/preflight.md",
+      "sha256": "c0e0fe79de1a6359e14d7b3aa46872b3eacd3893f924cf0fdcaf4c04b1b27dce"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-formal/axioms.json",
+      "sha256": "1c49e5d02221f4ef7a0072078277ecabc8ee3c3d2ac9488903cc9056cceb26ba"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-formal/lean.log",
+      "sha256": "559528c321a8f21918faf671f5180587adb0d323866b2428866df12e606ff241"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-formal/prior-pins.json",
+      "sha256": "c81a29fd76d5d10186931700963a0089e607b1d799bfdb18a506e80cc3201be5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-formal/validation.json",
+      "sha256": "153bd8bb5ccad3a23fcada4bd4866ea74ce05be3b49aecc2aa2cf66d37f3cd1f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-gate/exact-results.json",
+      "sha256": "9779da9b9dbd08c3fb9cac5ab6797ace150ce5562567fe24acfdf8405e8cf93d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-gate/exact_recurrence_probe.py",
+      "sha256": "5d8be5a2ff886b1e477c96b024188197825674bbe742348249062e8edb7ee0af"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-gate/kamae-1978.pdf",
+      "sha256": "bc9fbaf20a26dee2527b35b8f765ebd7c2d91a3fa6b7898405f12c0b3e9eac23"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-gate/preflight.md",
+      "sha256": "5c4f5eca27044497d58659a403650833174c9903da15f12f085d64d325121f2a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-gate/sources.json",
+      "sha256": "1e79ad7ff8345c7ac102ce7d6fbdd921dc5bb756fc17f17fc5e61f2d513e6e4f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-gate/spiegelhofer-beatty.pdf",
+      "sha256": "3ea3c9a69bbb7bb51d2d046dafb7527ed535543c1f818c697c2487e8f1838c59"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-gate/spiegelhofer-beatty.txt",
+      "sha256": "6b64127d46b2516f5bce60d80632a2aaf8adaba536b0c51b487c85b3b35d5d2f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-digital-gate/validation.json",
+      "sha256": "b5e4634666fbcbed169d9f80373e7227a8b24ef53b611157dbf68004b0d4d121"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-nonlinear-gate/audit.md",
+      "sha256": "a937a309d5f4356e9195189901082d0fbf918a8f59982433df3ba96251c7c2d7"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-nonlinear-gate/axioms.json",
+      "sha256": "02640b4ced93ca75ce02ada41661c18a619144507df212df5d26b3ea16a9d502"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-nonlinear-gate/lean.log",
+      "sha256": "807f863aed453924baac1533cd58c06956f4624b2202dc0461a168b2b077f9a8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-nonlinear-gate/pins.json",
+      "sha256": "939db9c2845a44ddadebc368e5ea4e68612eda1089f57a14652a9e581427426a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-nonlinear-gate/probe.json",
+      "sha256": "53a9447b663afd5b7b3c0e8719f4248f5f44b0567ff8174b8fd7d7d942b4b6a1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-nonlinear-gate/probe.py",
+      "sha256": "fcbd749aa7fa3dd021a5d2a6ea3b37ea0920e469a26d7b558fe9b6962d58d118"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/axioms.json",
+      "sha256": "95f1526a23809c3242aa4e326878060e93c6505bdab27b4cb36e78dfce7b3166"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/exact-probe.json",
+      "sha256": "5c7c9a12050db307920c2a5f7eb77de14718071fe7aacabbf60c9630a716ec23"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/exact_probe.py",
+      "sha256": "8622071c063944ad4dc3c64811c4de725157467f62ad18e185d6a393d1997223"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/milne-ft-v510.pdf",
+      "sha256": "5c43ea0bf4ec190b819727fe720414a80e09f9e762533d08bad5b8a0b6de7273"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/milne-ft-v510.txt",
+      "sha256": "dc32800c69fa9be6d7f9314e7b758ce38b1c09fed62f83a80f104bc23c1b59f3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/preflight.md",
+      "sha256": "c694bedaa4617c3a429f847ccf992ba49298fdba468530124e6111b4f3b1621a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/probe.log",
+      "sha256": "5c7c9a12050db307920c2a5f7eb77de14718071fe7aacabbf60c9630a716ec23"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/source-pins.json",
+      "sha256": "9683c090964e4ad764c41dde55bdbc9ba40bce5d5c2ee457ae3660390f941cb1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/strict-build.log",
+      "sha256": "c3f3c93c60088ebc759a1399819ac0271fa4484f32292c2dbbd7b0a8b5b6191e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/validation.json",
+      "sha256": "6124fba704a234b14845cad30932183517d593faad1f0f51c303870e9c303d0e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mobius-transfer-gate/banks-shparlinski-2506.08787v1.html",
+      "sha256": "15ca4daeb0e3205908913ae0a1ee3f333a3f3cd44e77c3bf3b9ffa5d11c41a4d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mobius-transfer-gate/prior-pins.json",
+      "sha256": "c2a3ef5ab87bf7f51ef1f53eeea3458e8e2e5dc2e69aa997b04d002ad5ccbf28"
+    },
+    {
+      "path": ".lake/siegel-paper-review/transfer-audit/source-and-lift-gates.md",
+      "sha256": "12bfc69ba213a71bfa3392d5a2ee5b53813033173b58e48de3dc10adf26f7b5d"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "aa5c18cdb73686381d13ee20315076afb56642deaa6bb97e3605df0632359e0b"
+    },
+    {
+      "path": "docs/arithmetic-operator-moving-digital-border-gates.json",
+      "sha256": "0baab599436962675998c16e7f49f03d3455a145aa7fd04338a47c6ddbb46bd8"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "619b863effce842cdd33c3293d361f99e68d6d344d320bbf4399156ac7489c03"
+    },
+    {
+      "path": "docs/siegel-interpolation-review.md",
+      "sha256": "3c37cd699fdc8fddc7eb5de7d84bd97c1f4a538c963a1f5b820dff0ff4204fa5"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorComparableDigitalAudit.lean",
+      "sha256": "c52e2353a1428d45da3ac67ff9b5de20eb42efc240e82ffcfe0a967d8b34ec67"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalCarryAudit.lean",
+      "sha256": "321bcc650674ba690965c9fa045bfc26a2b09c10c28957562f6f1cae04915fbf"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalPairAudit.lean",
+      "sha256": "568a3f3d5b3b34815b0c0c7e5a8d6ce697f9f6e74f1650364235abefcc7e1291"
+    },
+    {
+      "path": "scripts/QuasiRHBorderedStatisticAudit.lean",
+      "sha256": "e1c4e78c88171d3b29653d67f914223c5b83c0b174a4af2ac44bdeccb7145274"
+    },
+    {
+      "path": "scripts/QuasiRHRawSignRelationAudit.lean",
+      "sha256": "46a5c8ea6e57dbf4561d0fb7347787e356c9217fb28de7a8191c83414124683d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Arithmetic/EisensteinEmbedding.lean",
+      "sha256": "ce0a59ae784c27a535e465b0cc6a112bef83435b66c3a9bcb274ac05dbb4febe"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Completed.lean",
+      "sha256": "aacdde1452e633f7190ef1170925afa84cb14f38222898cf4ca6c91cae7b843a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/CompletedExpansion.lean",
+      "sha256": "01569023b64065bc867e0a0ce170bc71a006758313b4b05b886b4af7a0b7ee94"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+      "sha256": "d98c4a7e074469b429890e1c21b8cc76c410026525a776895293cdc0f9e6ae89"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/PrimeRows/ActiveGaussFactorization.lean",
+      "sha256": "944b4154dad5c6ca880a210a9e23a0add57d944c5cd6748f36d6eadc2a55d77b"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-19",
+  "scope": "Additive EOF-only publication amendment. Immutable base archive and all historical manifests remain unchanged. No new proof tokens or Lean build claim.",
+  "immutable_base": {
+    "manifest.json": "acb9908a9bf43b89bd4939a4871dca411e09f27a9547ef2f291426618947a9f0",
+    "index.json": "3d4c54cde75b6c7966a4416f770ddb6b45d20be9704e245df0f5189fe4991369"
+  },
+  "normalization_record": ".lake/arithmetic-operator-publication-20261019/whitespace-normalization.json",
+  "current_checkpoint": "docs/arithmetic-operator-source-normalized-marked-gates.json",
+  "current_checkpoint_sha256": "94aa92aa57c8571df15f35c9163ccb55730e2866f63e15239de42271019c2a97",
+  "current_checkpoint_pins": 1550,
+  "entries": [
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-publication-20261019/whitespace-normalization.json",
+      "repository_relative_path": ".lake/arithmetic-operator-publication-20261019/whitespace-normalization.json",
+      "sha256": "633d81819750fcc22bfe6b1f3f785440e011203671aa4befb76916803d71344a",
+      "bytes": 2063,
+      "archive_path": "objects/63/633d81819750fcc22bfe6b1f3f785440e011203671aa4befb76916803d71344a.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/docs/arithmetic-operator-source-normalized-marked-gates.json",
+      "repository_relative_path": "docs/arithmetic-operator-source-normalized-marked-gates.json",
+      "sha256": "94aa92aa57c8571df15f35c9163ccb55730e2866f63e15239de42271019c2a97",
+      "bytes": 292079,
+      "archive_path": "objects/94/94aa92aa57c8571df15f35c9163ccb55730e2866f63e15239de42271019c2a97.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/scripts/ArithmeticOperatorDigitalSourceGate.lean",
+      "repository_relative_path": "scripts/ArithmeticOperatorDigitalSourceGate.lean",
+      "sha256": "55380db6c59e66ff3b8e72c2b7db5596c449f22c64d6091343c31076d84bc1d2",
+      "bytes": 15688,
+      "archive_path": "objects/55/55380db6c59e66ff3b8e72c2b7db5596c449f22c64d6091343c31076d84bc1d2.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-publication-20261019/whitespace-originals/ArithmeticOperatorDigitalSourceGate.lean",
+      "repository_relative_path": ".lake/arithmetic-operator-publication-20261019/whitespace-originals/ArithmeticOperatorDigitalSourceGate.lean",
+      "sha256": "dd0519af79a51e4493ce55ff0dc4f68bf57529b4ddc621b063fe404738be25f2",
+      "bytes": 15689,
+      "archive_path": "objects/dd/dd0519af79a51e4493ce55ff0dc4f68bf57529b4ddc621b063fe404738be25f2.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/scripts/ArithmeticOperatorSexticRateAudit.lean",
+      "repository_relative_path": "scripts/ArithmeticOperatorSexticRateAudit.lean",
+      "sha256": "6318a2a253e2ead7df0ff93b2037ed54bc8c76262c6ffeb0aa246bcd1ce56517",
+      "bytes": 7033,
+      "archive_path": "objects/63/6318a2a253e2ead7df0ff93b2037ed54bc8c76262c6ffeb0aa246bcd1ce56517.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-publication-20261019/whitespace-originals/ArithmeticOperatorSexticRateAudit.lean",
+      "repository_relative_path": ".lake/arithmetic-operator-publication-20261019/whitespace-originals/ArithmeticOperatorSexticRateAudit.lean",
+      "sha256": "eabede10b4a3776278546c903fe845e52f603d3c42140aa2bbc3f9eedff10480",
+      "bytes": 7034,
+      "archive_path": "objects/ea/eabede10b4a3776278546c903fe845e52f603d3c42140aa2bbc3f9eedff10480.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/scripts/QuasiRHAllSquarePartition.lean",
+      "repository_relative_path": "scripts/QuasiRHAllSquarePartition.lean",
+      "sha256": "fe1b30aae32098040f25fd9488cf20275be322d14c27e23b086c3d5db3810810",
+      "bytes": 26946,
+      "archive_path": "objects/fe/fe1b30aae32098040f25fd9488cf20275be322d14c27e23b086c3d5db3810810.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-publication-20261019/whitespace-originals/QuasiRHAllSquarePartition.lean",
+      "repository_relative_path": ".lake/arithmetic-operator-publication-20261019/whitespace-originals/QuasiRHAllSquarePartition.lean",
+      "sha256": "1017777790ab3f56998ec739c6d6b42d438675059edc1e920e5f68d21eded7ed",
+      "bytes": 26947,
+      "archive_path": "objects/10/1017777790ab3f56998ec739c6d6b42d438675059edc1e920e5f68d21eded7ed.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/scripts/QuasiRHSquareGaussIdealNorm.lean",
+      "repository_relative_path": "scripts/QuasiRHSquareGaussIdealNorm.lean",
+      "sha256": "02a1f861180a99ef49781bc64d47c68c4bef1c9ee5421be7c71db8731c900bf7",
+      "bytes": 5028,
+      "archive_path": "objects/02/02a1f861180a99ef49781bc64d47c68c4bef1c9ee5421be7c71db8731c900bf7.gz"
+    },
+    {
+      "original_path": "/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-publication-20261019/whitespace-originals/QuasiRHSquareGaussIdealNorm.lean",
+      "repository_relative_path": ".lake/arithmetic-operator-publication-20261019/whitespace-originals/QuasiRHSquareGaussIdealNorm.lean",
+      "sha256": "e28640e7fbfb99c6af312814ad38e0dd52b879120173ff6b0d3bb74d3e567e2d",
+      "bytes": 5029,
+      "archive_path": "objects/e2/e28640e7fbfb99c6af312814ad38e0dd52b879120173ff6b0d3bb74d3e567e2d.gz"
+    }
+  ],
+  "objects": 10,
+  "compressed_object_bytes": 107604,
+  "original_entry_bytes": 403536
+}

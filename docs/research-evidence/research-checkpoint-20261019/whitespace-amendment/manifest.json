@@ -1,0 +1,26 @@
+{
+  "scope": "Additive EOF-only publication cleanup; no new mathematical/proof verification",
+  "base_manifest_sha256": "acb9908a9bf43b89bd4939a4871dca411e09f27a9547ef2f291426618947a9f0",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2854,
+      "sha256": "8211dbd9a6538d78f7757c4f563b91cddf8f91d4560ffdca5c6d4e75ffac0824"
+    },
+    {
+      "path": "index.json",
+      "bytes": 5442,
+      "sha256": "b218c37404ab6d4ce6287ba9547672db5c3d55dc1cb81202a667b96abc450ae8"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 903,
+      "sha256": "87bcf6251a086f9b80cbeab7693c0e3c2c048cbd1d3e0a0ff78e8ac4a2266178"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 4041,
+      "sha256": "20e378c2a9009153d89e1e91999b540e0dca8727706523c012d86e2dbc20a8ee"
+    }
+  ]
+}

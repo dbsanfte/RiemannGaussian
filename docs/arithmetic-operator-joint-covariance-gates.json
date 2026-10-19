@@ -1,0 +1,492 @@
+{
+  "checkpoint": "joined-native-covariance-and-coprime-source-gate",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Four strict local leaves; scoped completion failure and source-preserving local candidate. No independent covariance estimate or zero exclusion.",
+  "proved": [
+    {
+      "source": "scripts/QuasiRHJointPeriodAudit.lean",
+      "results": [
+        "Repeated physical prime shared with the squarefree spectral ideal kills the actual joint row pointwise.",
+        "Canonical NONEMPTY calibration and actual coprimality kill zero Fourier frequency.",
+        "The actual smooth cutoff equals the imported Poisson sum over nonzero frequencies."
+      ],
+      "not_claimed": [
+        "Complete-period cancellation pays the incomplete cutoff.",
+        "Every imprimitive normalized physical Gauss value is at most one."
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHNonmatchingSourceAudit.lean",
+      "results": [
+        "Native full sourcePrincipalSeries minus literal matchingSeries equals W/(1-W)+WR/(1-R).",
+        "Exact repeated-tail subtraction.",
+        "Literal physical-coprime disjointSeries equals (1-q^-1 R-delta(1-V))/((1-V)(1-R))+W/(1-W), with all physical prime powers retained."
+      ],
+      "not_claimed": [
+        "Global restricted Euler/contour or model transfer.",
+        "Product of local differences equals global nonmatching series."
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHJoinedDualPhaseAudit.lean",
+      "results": [
+        "Actual modulus-four-corrected spectral coefficient times native Gauss root is mu(I).",
+        "Sign-adjusted CRT root cancels physical Gauss phase without producing mu(A).",
+        "All-frequency identity retains actual native reciprocity factor and both idealRowHom factors, including nonunit zeros."
+      ],
+      "not_claimed": [
+        "New complete primitive Fourier or calibrated source bridge.",
+        "Identification of bare joint h with native calibrated H=u*a^6.",
+        "Nonsquarefree physical extension of the squarefree phase leaf."
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCoprimeResidueBound.lean",
+      "hypotheses": "0<=s<=1/7, norms of delta and theta <=1/4, norm R<=1/49",
+      "results": [
+        "||U||>=993/1372.",
+        "||B+1||<=890/993<9/10.",
+        "Re B<=-103/993.",
+        "Every nonzero positive-real weighted single-slot average in the displayed disk is nonzero."
+      ],
+      "not_claimed": [
+        "Native parameter and global residue bridge.",
+        "Noncancellation for arbitrary complex weights or coupled tuple averages."
+      ]
+    }
+  ],
+  "paper_level_source_gate": {
+    "candidate": "Physical ideal coprime to completed spectral ideal, all physical powers retained.",
+    "source_ratio_at_density": "1+s*(delta-R)*(1-s)^2/((1-s^2)*(1-(1-s)*delta-s*R))",
+    "normal_convergence_range": "Near w=1,z=1/6 at Re x>5/6; source-ratio correction O(q^(-Re x-1)+q^-3).",
+    "pending": [
+      "Restricted initial series and global Euler identity.",
+      "Continuation and nonzero global residue.",
+      "Actual mark/positive-slot factorization and model transfer."
+    ],
+    "complete_period_diagonal": "Original double-density source absent at paper level; not a replacement source theorem.",
+    "native_principal_family": "Original SourceCoefficient/PrincipalSplit APIs retain source in native nonzero H=u*a^6 family; fixed H alone does not have the full sixth-frequency density.",
+    "bare_frequency_caveat": "The bare joint Fourier h^6 probe does not establish the native calibrated H-family identification."
+  },
+  "scale_audit": {
+    "scope": "Exact rational budgets at H=V=1, not new estimates.",
+    "independent_spectral": "7/6-d",
+    "physical": "23/48-d",
+    "numerator": "5/6-2d",
+    "dual": "13/16",
+    "dual_over_physical": "1/3+d",
+    "invalid_shortcut": "11/16 is only the cofactor length after imposing matching I=A*I0, which loses original double-density source.",
+    "previous_separate_energy": "S-independent nominal3/16 unchanged."
+  },
+  "conditional_character_audit": {
+    "plain_nonprincipal_pv_gain": "7/96-d",
+    "squarefree_physical_pv_gain": "7/192-d/2",
+    "counterfactual_scalar_burgess_r2_gain": "67/768-d/2, minimum1/256 on0<=d<=1/6",
+    "no_native_import": true,
+    "absolute_nominal_pv_aggregate": "11/12+d/2",
+    "absolute_nominal_burgess_aggregate": "231/256",
+    "normalizer": "sqrt(Q)/(Y^(3/2)*S); absolute summation over D=YS/Q dual frequencies and S spectral rows leaves sqrt(Q)*D*B/Y^(3/2).",
+    "scope": "Crude conditional upper budgets, not lower bounds or no-go for collective cancellation. Principal source remains outside nonprincipal estimates."
+  },
+  "diagnostics": {
+    "exact_cyclic_support_cases": 16,
+    "native_high_precision_phase_checks": 64,
+    "native_direct_fourier_checks": 28,
+    "exact_principal_sixth_residue_label_cases": 4,
+    "annular_incomplete_fourier_reconstructions": 36,
+    "maximum_phase_error": "1.63e-64",
+    "maximum_incomplete_reconstruction_error": "2.29e-16",
+    "scope": "Convention/support diagnostics only. Native compatible-unit sectors, all gcd divisors, nonunit zeros and imprimitive p^2,p^3,p^4 cases retained. No numerical asymptotic theorem or Lean proof input."
+  },
+  "literature": [
+    {
+      "url": "https://arxiv.org/abs/2610.15483v1",
+      "role": "Banks interpolation determinant review motivated common integral arithmetic constraints; direct-transfer gates are preserved.",
+      "lean_import": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/1907.03108v1",
+      "role": "Pierce-Xu scalar/rational-prime Burgess scope check; not a composite-ideal or Mobius inverse estimate.",
+      "lean_import": false
+    },
+    {
+      "url": "https://rstation.ai/problems/riemann_hypothesis/papers/5",
+      "version": "v3,2026-10-17",
+      "role": "Prior exact gcd/dual phase formula only; no new structured-mean estimate imported.",
+      "lean_import": false
+    }
+  ],
+  "validation": {
+    "leaves": [
+      {
+        "source": "scripts/QuasiRHJointPeriodAudit.lean",
+        "root_log": ".lake/arithmetic-operator-joint-covariance/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-joint-covariance/axioms.json",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/QuasiRHJointPeriodAudit.lean",
+        "exit_code": 0,
+        "declarations": 8,
+        "theorems_including_generated_helpers": 5,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      },
+      {
+        "source": "scripts/QuasiRHNonmatchingSourceAudit.lean",
+        "root_log": ".lake/arithmetic-operator-joint-covariance-root/nonmatching-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-joint-period-source/axioms.json",
+        "strict_command": "lake env bash -c 'export LEAN_PATH=/home/dbsanfte/riemann/formal/.lake/arithmetic-operator-joint-covariance-root:$LEAN_PATH; lean -DwarningAsError=true -o .lake/arithmetic-operator-joint-covariance-root/QuasiRHNonmatchingSourceAudit.olean scripts/QuasiRHNonmatchingSourceAudit.lean'",
+        "exit_code": 0,
+        "declarations": 49,
+        "theorems_including_generated_helpers": 32,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      },
+      {
+        "source": "scripts/QuasiRHJoinedDualPhaseAudit.lean",
+        "root_log": ".lake/arithmetic-operator-joint-covariance-probe/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-joint-covariance-probe/axioms.json",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/QuasiRHJoinedDualPhaseAudit.lean",
+        "exit_code": 0,
+        "declarations": 11,
+        "theorems_including_generated_helpers": 6,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      },
+      {
+        "source": "scripts/QuasiRHCoprimeResidueBound.lean",
+        "root_log": ".lake/arithmetic-operator-coprime-residue-bound/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-coprime-residue-bound/axioms.json",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/QuasiRHCoprimeResidueBound.lean",
+        "exit_code": 0,
+        "declarations": 11,
+        "theorems_including_generated_helpers": 9,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      }
+    ],
+    "local_declarations_total": 79,
+    "theorems_including_helpers_total": 52,
+    "bootstrap": {
+      "source": "scripts/QuasiRHMatchingDensityAudit.lean",
+      "command": "lake env lean -DwarningAsError=true -o .lake/arithmetic-operator-joint-covariance-root/scripts/QuasiRHMatchingDensityAudit.olean scripts/QuasiRHMatchingDensityAudit.lean",
+      "log": ".lake/arithmetic-operator-joint-covariance-root/matching-bootstrap.log",
+      "source_sha256": "2049ed271a22cf88a0f46b5136cb35bea80ccfd1ba7db4518f8f374d3e3a7889",
+      "exit_code": 0
+    },
+    "previous_pins_matched_before_shared_edits": 75,
+    "source_agent_pins_matched": 23,
+    "phase_agent_pins_matched": 10,
+    "broad_build": false,
+    "public_root_registration": false,
+    "ci": false,
+    "commit_or_push": false
+  },
+  "decision": "Freeze complete-period replacement and ordinary completion as automatic source-estimate shortcuts. Coprime local source survives, but its joined inverse/plain covariance and principal-family contribution remain unpaid. Do not refine reversible phase identities as if they were a power saving.",
+  "next_arithmetic_requirement": "A genuinely new collective source-sensitive estimate for the actual calibrated marked physical-Gauss/spectral C_-1 aggregate, or its correctly transferred dual, retaining all physical powers, cube/nonunit masks, principal and nonprincipal frequencies, model correction and full native lengths. Prove source/continuation bridge before using a restricted population in the endpoint.",
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "families_exhausted": 0,
+    "rh_endpoint_discharged": false,
+    "baseline": "Imported strict Re(s)>7/8 unchanged; all-height1/2<beta<=7/8 remains."
+  },
+  "historical_pins": "All75 prior record pins,23 source-agent pins and10 phase-agent pins matched before relevant shared-document edits. Earlier hashes remain historical;15 new arithmetic-preflight pins checked separately.",
+  "source_pins": [
+    {
+      "path": ".lake/arithmetic-operator-coprime-residue-bound/axioms.json",
+      "sha256": "2adde7c78807e6fb00ce0db5066159c0ad97c95bb01897037a0572683c767b31"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-residue-bound/handoff.md",
+      "sha256": "08030913e31fb638d8ccbc61f993cf3da3180176bb78bcb81fcd1b0b4f575dce"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-residue-bound/lean.log",
+      "sha256": "8b34d63e08231624f5505fe51c91a245386420c87d3f340f6139b80449274dfa"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-residue-bound/root-strict.log",
+      "sha256": "8b34d63e08231624f5505fe51c91a245386420c87d3f340f6139b80449274dfa"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/axioms.json",
+      "sha256": "2e8efde4477914f745783e0e466168a101b6b7139d686a8cb460958eb7dd422b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/check.log",
+      "sha256": "4204d8f9cd9487dc16af5b17ac31a58c668d30f82b37c2b9eaa274461b566051"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/eisenstein.py",
+      "sha256": "e4d331ea06d299ca207d1f37c46a1ee8a55154066a06320ca7dbceaf82e85cb5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/manifest.json",
+      "sha256": "5855093f9f65343c35df3fe786c9416693565fccae4aa32f8438ab88f1cddc01"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/preflight.md",
+      "sha256": "e1dfc8a9003facbe7358b12f29e99a855525973db7a30a546d9499ec2f69b6b3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/probe.json",
+      "sha256": "6758724e79f4a2cb308007a17443181ddf7a517053e275a4aba1999b52c92d1c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/probe.log",
+      "sha256": "d5b74962ee06ff4d45e07f26d93d8ed2e99676cdcd354de9d97f70152adec27e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/probe.py",
+      "sha256": "18b429e3e67333e0414c8c647a20123d91a61d49f9d69dc963dade420fc7c398"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/root-strict.log",
+      "sha256": "4204d8f9cd9487dc16af5b17ac31a58c668d30f82b37c2b9eaa274461b566051"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/scales.json",
+      "sha256": "9ba905675c0877b73b8ae7bbb24c50fd6f42b88f8d15d4cfa92c2903a44a54cc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/source-pins.json",
+      "sha256": "d2034be31b51c341fbdc823b4801b27ba3fec5fb31322211db5d898d05137b78"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-root/final-prior-pins.json",
+      "sha256": "ea3d30b32480bd95967f416e8a986bea7a0d93a4fe5ece628dc3e663aa0007d1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-root/matching-bootstrap.log",
+      "sha256": "cc4d5b26147122dc30b27551895ca2fcfdeae5b88d7ea6aa35f7b2c404c48309"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-root/nonmatching-strict.log",
+      "sha256": "b667a1f5ccaa3c993b6d39d3bbd3a10a10eb30e21eb42a6965e641f0c905accf"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-root/validation.json",
+      "sha256": "e275522903afe8bdf85358ae36dde76045b676638781dfc8be8161e832ccc1b6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/axioms.json",
+      "sha256": "00842097657ef7f492907e192db25e08874e9c54b289adda9c7e14f18ed23f8c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/handoff.md",
+      "sha256": "0506acd9bf70cbf587b1ece5f24535d60cbbb1fdb2a8ee58de9001e54e1cab41"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/lean.log",
+      "sha256": "03be16c4c7dc578f8f10005a36d4d022a636a7a2f95deb422c78cd85453f7dd6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/probe.json",
+      "sha256": "60422411a25b6e293d500c11136f2730f71508e419e3f10372735fa885d1c681"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/probe.py",
+      "sha256": "67a76a1699caef1f45f8c486fb63c839c227b0c295e09d906f6526b802701e35"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/root-strict.log",
+      "sha256": "03be16c4c7dc578f8f10005a36d4d022a636a7a2f95deb422c78cd85453f7dd6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/axioms.json",
+      "sha256": "094b88d4262f52bdcf68aa9d08949139930619cdd8c84820713406a548bb75ef"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/burgess-scope-reference-1907.03108v1.pdf",
+      "sha256": "8c6f2129d7d11e550a77c927454208c5d5603d886a25872ec01083848c5b3476"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/calibrate.py",
+      "sha256": "8599afeb82b3640ba87d82a3a76cafd3ca2d9e41ddd364fbbbd7e222c15886c3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/dual-principal-arithmetic-preflight.json",
+      "sha256": "59708e245ad4b7c59997dfec22adb64a596c37ebe0a2d6a187cbbc0c06df3aac"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/dual-principal-arithmetic-preflight.md",
+      "sha256": "cb0cc587ea0495254362c33192040965c95a2706c3b8df7b15784dc768663d56"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/preflight.json",
+      "sha256": "36207b32e38d8e235c9e270a00abf80628b46fc3873c0625214e60de19e37182"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/preflight.md",
+      "sha256": "54abd8081f906c0e954e0d63be948e12607b085a46d402a66a3ca13a13a39433"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/scripts/QuasiRHMatchingDensityAudit.olean",
+      "sha256": "80cdda8cfb4904bfbfbf190ba72f9f5f96fd66178630deb9dd89b1c305d97213"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/strict-build.log",
+      "sha256": "b667a1f5ccaa3c993b6d39d3bbd3a10a10eb30e21eb42a6965e641f0c905accf"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "55fda0f66a868ab97a08a032e13c52d900e162770ddaea1ef439dcd44575be9a"
+    },
+    {
+      "path": "docs/arithmetic-operator-marked-composition-gates.json",
+      "sha256": "f72053b8b5b95f52c20f08786cd105f25520d0579cc4d5cbab6542b118c2d986"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "6f9938c5ca2cff78c0a20b57309f7ff3f47df4388ff19d1ba9e357e7c6f0644c"
+    },
+    {
+      "path": "docs/arithmetic-operator-siegel-preflight.json",
+      "sha256": "e92c12906bc528618d50c306d6aba1c360e2c4b4bdccd044213f772dfee4a642"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "scripts/QuasiRHCoprimeResidueBound.lean",
+      "sha256": "85cad4ae8edc5639c8ca4b2ea6c073f3b5940f60549eb1b9d5f5a7263828c547"
+    },
+    {
+      "path": "scripts/QuasiRHJoinedDualPhaseAudit.lean",
+      "sha256": "2bbba61d842c4a20de086dcc09f376d739f1150b3928bb8ad426d19e31ca0bea"
+    },
+    {
+      "path": "scripts/QuasiRHJointPeriodAudit.lean",
+      "sha256": "663fb036cb4c7c5076a49b0f701e07735dac1a09b02d97808c91ba076890632e"
+    },
+    {
+      "path": "scripts/QuasiRHMatchingDensityAudit.lean",
+      "sha256": "2049ed271a22cf88a0f46b5136cb35bea80ccfd1ba7db4518f8f374d3e3a7889"
+    },
+    {
+      "path": "scripts/QuasiRHNonmatchingSourceAudit.lean",
+      "sha256": "ae128724e5a8c27e3ce2d1298abd3a9494b02a3d3ee9d7bbe212ef0682e0af50"
+    },
+    {
+      "path": "scripts/QuasiRHPattersonModelLocalAudit.lean",
+      "sha256": "726afad016f75360b81f79f212d47bee89944929f1acd7485d459f6f6d0cbf87"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CalibrationCancellation.lean",
+      "sha256": "2e6bedeaedd3c5c2f5869a6a3478b81984d4dfe12b396e79077c1a47729ec95e"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CalibrationFourier.lean",
+      "sha256": "38d5b05a2473ea3fdb4de76fa3ee8ee3db2d2463657e409f4dbe5af726ba9f1a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Completed.lean",
+      "sha256": "aacdde1452e633f7190ef1170925afa84cb14f38222898cf4ca6c91cae7b843a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/HighDeletion.lean",
+      "sha256": "220edd1faefc835cef352ad47ffadc47f48c96e7bcac54ad662e97ca7396db1c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/HighSeries.lean",
+      "sha256": "eac7cc6bd848ea9b64e6f3b3022ca408f3dee5bf213f7df3ef12fc3f07fe022c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalPhysical.lean",
+      "sha256": "853242bc20a864a714dad73e8cb7c3077fa893fe19f0d4e322db0a381b0991a3"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalSeries.lean",
+      "sha256": "95f67efdc7a20e4bb253a427183e8be324914747e1147e36772ca5dc67b0c306"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalSummation.lean",
+      "sha256": "9a954d140811c6fa818b438ce507688a6890f439271d5141278920e221c5dabf"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalCRT.lean",
+      "sha256": "d9b9c31ec2acfaddd4bca0fc2475151c9947851b39b27eb7f7721a77c98557a3"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalPoisson.lean",
+      "sha256": "e11d050153c35e821df8372f14c29a250302bbb47ff95fb7cfbd56bee630818a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalReopen.lean",
+      "sha256": "17b2815b48db16c5534bda27e55a568e738290c5b4ce0ea24832c9e63287e376"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalContours.lean",
+      "sha256": "fefc1bbcb8eaab512a8d3b92bc2e374852333de8b8bee0ff43945fd0b8d9db8b"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalEulerIdentity.lean",
+      "sha256": "8edd1fc6579727fc2ab6ac39dd467b89840ba43f26bf48a6201d2cc5e8515e0d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalSplit.lean",
+      "sha256": "79246324533c426fdfc6743518a99b45a8821ce3689a6c48bccafd34c88c6d14"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Row.lean",
+      "sha256": "94cd0a68ced17d2ad52c67c13af03a3d199568862ebe43fde2f9f0ed96949ce0"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ScalarTable.lean",
+      "sha256": "e7105589c7ab123f999440eb4a48c3c797f3004cdf82d64cdb5f158387a35a12"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ScalarVanishing.lean",
+      "sha256": "ddab9aa90212dcdea467bfda41e057184778c7e92323b0ddc64b3d1e54a0531f"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceCoefficient.lean",
+      "sha256": "374110c8227301a3be4ce6269f22ededcb0484583fc28a76c39e6b898fef70a4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceLocal.lean",
+      "sha256": "db29a85fc6d3e1c38ce9e8dce9e0f795baa68aa85b9a228c70df9991e0ec54c2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SpectralPoisson.lean",
+      "sha256": "51cade1ad1cece39d3e1eb3bdbe0c7624bf27195d3a07529a9a3fab333147404"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/TupleRows.lean",
+      "sha256": "ef7207fbf188d9a1dbaef6b2a3bcfb6ad0fa6b3a489fd3792310aa147753d9f6"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ZeroIndex.lean",
+      "sha256": "49f1b9219781ee95156776336245092a7486c916e4cad1cffdaebceac1530c70"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/CompletedExpansion.lean",
+      "sha256": "01569023b64065bc867e0a0ce170bc71a006758313b4b05b886b4af7a0b7ee94"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/MixedConversion.lean",
+      "sha256": "7a7d7459142cb9f2462fd41c7d59b28ab4c5a55e725a6cf2336f1083dca84df8"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/SquarePhaseFactorization.lean",
+      "sha256": "72607eef57bb692a8f488250c84294fd058057bd9c56235116afe799acb4c74c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/PrimeRows/ActiveGaussFactorization.lean",
+      "sha256": "944b4154dad5c6ca880a210a9e23a0add57d944c5cd6748f36d6eadc2a55d77b"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/upstream-pin.json",
+      "sha256": "95105caa9179dc7f30e9b392855312ae9be135aa01c0fa205c7a0a8dc737a111"
+    }
+  ]
+}

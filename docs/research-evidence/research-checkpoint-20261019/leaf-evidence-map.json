@@ -1,0 +1,1356 @@
+{
+  "scope": "Textual evidence-reference map only; a reference is not an assertion that every historical diagnostic succeeded. Final strict/axiom metadata must be assessed separately.",
+  "leaves": [
+    {
+      "source": "scripts/ArithmeticOperatorAdaptiveLandingAudit.lean",
+      "source_sha256": "801a2e0d0c75b68e412227301a904622139dc3ef397eb6a75c508fa78ae6f7c8",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-next-interaction-gate/preflight.md",
+        ".lake/arithmetic-operator-next-interaction-gate/validation.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/validation.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorAdditiveCommonSourceAudit.lean",
+      "source_sha256": "671c91bd17d8f4a599816d66e647821a65ce5b46f950d247a3ff2e770a4759f5",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-additive-common-source-gate/preflight.md",
+        ".lake/arithmetic-operator-additive-common-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-additive-common-source-gate/validation.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-residue-cubic-checkpoint/formal-specs.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorCommonBaseCRTAudit.lean",
+      "source_sha256": "68c9070d42a97aa8f114452d5e70ef763d01d3f552d948f8ffa2de1f81c48c34",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-covariance-gate/pins.json",
+        ".lake/arithmetic-operator-common-base-covariance-gate/preflight.md",
+        ".lake/arithmetic-operator-common-base-covariance-gate/status.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/agent-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorComparableDigitalAudit.lean",
+      "source_sha256": "c52e2353a1428d45da3ac67ff9b5de20eb42efc240e82ffcfe0a967d8b34ec67",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-comparable-digital-formal/validation.json",
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorCubicSexticCompositionAudit.lean",
+      "source_sha256": "948d100a3210cc60550d892842a53b6243af488ebebac77fe4f4cf4e68a1489c",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-sextic-period-correlation/manifest.json",
+        ".lake/arithmetic-operator-sextic-period-correlation/preflight.md"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorCutoffRankAudit.lean",
+      "source_sha256": "c8b079324b4b9aab5b1def90fb53bbd35e7ace69782aeccc64bab7bf49ebe518",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-cross-cell-minor/handoff.md",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-marked-correlation/previous-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean",
+      "source_sha256": "7d16119d1dd4d53cdfd7b43829e3769e8c9561151ba94ac26d7fb9283159ebf4",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-covariance-gate/prior-pins.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cyclotomic-factorial-gate/pins.json",
+        ".lake/arithmetic-operator-cyclotomic-factorial-gate/preflight.md",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/agent-pins.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorDigitalCarryAudit.lean",
+      "source_sha256": "321bcc650674ba690965c9fa045bfc26a2b09c10c28957562f6f1cae04915fbf",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-digital-carry-gate/handoff.md",
+        ".lake/arithmetic-operator-digital-nonlinear-gate/pins.json",
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-mobius-transfer-gate/prior-pins.json",
+        ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorDigitalPairAudit.lean",
+      "source_sha256": "568a3f3d5b3b34815b0c0c7e5a8d6ce697f9f6e74f1650364235abefcc7e1291",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-digital-nonlinear-gate/audit.md",
+        ".lake/arithmetic-operator-digital-nonlinear-gate/pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorDigitalSourceGate.lean",
+      "source_sha256": "dd0519af79a51e4493ce55ff0dc4f68bf57529b4ddc621b063fe404738be25f2",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-digital-source-gate/ArithmeticOperatorDigitalSourceGate.log",
+        ".lake/arithmetic-operator-digital-source-gate/handoff.md",
+        ".lake/arithmetic-operator-digital-source-gate/validation.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-mobius-transfer-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorFactorialTN2Audit.lean",
+      "source_sha256": "38b81c4efcb59b9c4adb253a1ee36a8aed1d104942b25cbd98f5ff5399237331",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-factorial-total-positive-gate/audit.md",
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorFixedQLogAudit.lean",
+      "source_sha256": "c0de7655e15871eba074a3f212599895aa7f3165e643bc0c78fa6452b00568cd",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-fixed-qdet-source-gate/preflight.md",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-divisor-typei-gate/independent-fixed-qlog-review-pins.json",
+        ".lake/arithmetic-operator-joined-divisor-typei-gate/independent-fixed-qlog-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorFrobeniusBalanceAudit.lean",
+      "source_sha256": "8a8e5fd71a319d5de0542425412238cbb5b886dc29a5f83939d7fc51d1b4d075",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-digital-source-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/siegel-paper-review/formal-balance-first.log"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorGappedMinorAudit.lean",
+      "source_sha256": "b60f9984987a4c1cc63234e66b7de00dbdd84be01f559b46bbe94f7bbb199aee",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-gapped-minor-gate/handoff.md",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.json",
+        ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.md",
+        ".lake/arithmetic-operator-resultant-adaptive-root/validation.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorGappedSourceGate.lean",
+      "source_sha256": "9485e842eea562d9eee4a7be741496917e5cddb4667085eef81598d65ddef124",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-additive-common-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-additive-common-source-gate/sources.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.json",
+        ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.md",
+        ".lake/arithmetic-operator-resultant-adaptive-root/validation.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorGrowingQBoxAudit.lean",
+      "source_sha256": "c58fb0fa8cf7a469ceae0daeb58eb76613b49caad3c66c7ed915b437a27b092f",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-growing-qbox-source-gate/pins.json",
+        ".lake/arithmetic-operator-growing-qbox-source-gate/validation.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorIntegralBasePopulationAudit.lean",
+      "source_sha256": "6f298389b4e307570d92a7dbc5eefd38b7f3d30ca5e88f708d96e81ce38bb4bd",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-integral-base-population-gate/pins.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/preflight.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/producer.json",
+        ".lake/arithmetic-operator-integral-primitive-moment-checkpoint/integral-primitive-independent-review.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorIntervalDeterminantAudit.lean",
+      "source_sha256": "a1e68e1f02df53c1a432e7c0cdce744e62bfae577697cd89187e4a8bd7b881b0",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-native-quadratic-gate/previous-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorMarkedSexticRateAudit.lean",
+      "source_sha256": "5b19bc04d5a24c9d30c7c6b10c49d15307b90b3d4a61c06220892ce0606c6f65",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean",
+      "source_sha256": "dcf8715845e2b33bbc2dfbd673b54fea8357d7bfd1e2776d04d0958327caca1a",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-frobenius-cutoff-gate/report.md",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-native-quadratic-gate/previous-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorMixedBaseSourceAudit.lean",
+      "source_sha256": "cd83e1c6c9cfb4f1bf374eae15796780e14dd7b28bb045494809fc922b0cfe6b",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-mixed-base-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-mixed-base-source-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorNextInteractionAudit.lean",
+      "source_sha256": "2f8520a422914cf599f64518cdea10662c03d9085caf3bb2d436cb007c94b92d",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-next-interaction-audit/preflight.md",
+        ".lake/arithmetic-operator-next-interaction-audit/source-pins.json",
+        ".lake/arithmetic-operator-primitive-gcd-source-gate/word-independent-review.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorPascalMinorAudit.lean",
+      "source_sha256": "c63cac7d316a12181a8bf0ea5d9bc16eb9c281d4ea72fbe1110fee894fb41c90",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-carry-determinant-source/source-audit.md",
+        ".lake/arithmetic-operator-carry-determinant-source/validation.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-native-quadratic-gate/previous-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorPrimitiveGCDSourceAudit.lean",
+      "source_sha256": "2464526f210e5d988a3a405d26d619b85189ba8eb20ba88b374a0e28e7c377c2",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-auxiliary-order-central-checkpoint/branch-independent-review.json",
+        ".lake/arithmetic-operator-auxiliary-order-central-checkpoint/primitive-gcd-pins-before-review.json",
+        ".lake/arithmetic-operator-primitive-gcd-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-primitive-gcd-source-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorPrimitivePacketSourceAudit.lean",
+      "source_sha256": "6f1dfd65d500f682d2077a812e356e550072b9a5b12546277098a7e9d8eb44ba",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-auxiliary-order-central-checkpoint/primitive-gcd-pins-before-review.json",
+        ".lake/arithmetic-operator-integral-primitive-moment-checkpoint/integral-primitive-independent-review.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-mixed-base-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-next-interaction-audit/source-pins.json",
+        ".lake/arithmetic-operator-positive-primitive-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-positive-primitive-source-gate/validation.json",
+        ".lake/arithmetic-operator-primitive-gcd-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-signed-integral-source-gate/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorPrimitiveTransportAudit.lean",
+      "source_sha256": "7d1630a9b50728288158c1496e92d5b306a259477b34926b921c149ef57c0e0d",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-positive-primitive-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/preflight.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/producer.json",
+        ".lake/arithmetic-operator-signed-integral-source-gate/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorQDetSmallWindowAudit.lean",
+      "source_sha256": "85b1f8461d10ce479aa1cc2bd54cd90342dd5bbe06867410778cee201d849169",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-additive-common-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-additive-common-source-gate/sources.json",
+        ".lake/arithmetic-operator-common-base-covariance-gate/prior-pins.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-mixed-base-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-theta-support-gate/qdet-small-window-independent-review.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-qdet-small-window-gate/pins.json",
+        ".lake/arithmetic-operator-qdet-small-window-gate/preflight.md",
+        ".lake/arithmetic-operator-qdet-small-window-gate/validation.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/independent-review.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorQDetTotalKernelAudit.lean",
+      "source_sha256": "f281c98a0ddd60067b56720d552ada502db8ef9e3de02366d940faae3b3781d1",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-covariance-gate/prior-pins.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-qdet-total-source-gate/pins.json",
+        ".lake/arithmetic-operator-qdet-total-source-gate/preflight.md",
+        ".lake/arithmetic-operator-qdet-total-source-gate/validation.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/agent-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/pins.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/sources.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorQDetUnsaturatedTraceAudit.lean",
+      "source_sha256": "53fef6b4c21d53e39f91b928b14b3f0df300766f3eeb6f29bbc13ae7bd4e2698",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-covariance-gate/prior-pins.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-divisor-typei-gate/independent-unsaturated-review-pins.json",
+        ".lake/arithmetic-operator-joined-divisor-typei-gate/independent-unsaturated-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-qdet-total-source-gate/sources.json",
+        ".lake/arithmetic-operator-qdet-total-source-gate/validation.json",
+        ".lake/arithmetic-operator-qdet-unsaturated-gate/pins.json",
+        ".lake/arithmetic-operator-qdet-unsaturated-gate/validation.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/pins.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/sources.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorQDetValuationPhaseAudit.lean",
+      "source_sha256": "8da165e0a1c3839a1e96fda6342d7fafa7927d79b62c815e7a13516b576dd9d7",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-covariance-gate/prior-pins.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-qdet-valuation-phase-gate/pins.json",
+        ".lake/arithmetic-operator-qdet-valuation-phase-gate/preflight.md",
+        ".lake/arithmetic-operator-qdet-valuation-phase-gate/validation.json",
+        ".lake/arithmetic-operator-signed-depth-transport-gate/independent-review.json",
+        ".lake/arithmetic-operator-signed-depth-transport-gate/pins.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorQuadraticNormAudit.lean",
+      "source_sha256": "5bec7a4f6a3ef7027f5c37e2076c46e57ae08ffb425095c073e3711b9c1d3955",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-marked-correlation/previous-pins.json",
+        ".lake/arithmetic-operator-polynomial-norm-source/manifest.json",
+        ".lake/arithmetic-operator-polynomial-norm-source/source-audit.md"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorRadicalQBoxAudit.lean",
+      "source_sha256": "433e46d2477f950609652a90ab7763d7a396d8ddbb3d13ea285bcd657f0abc6f",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorRadicalQBoxTailAudit.lean",
+      "source_sha256": "95ccb8e735c6f6d97619d5d09783ace2cb51fe92086772af8a0808b5b6d66823",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/agent-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-radical-qbox-source-gate/formal-bridge.md",
+        ".lake/arithmetic-operator-radical-qbox-tail-gate/initial.log",
+        ".lake/arithmetic-operator-radical-qbox-tail-gate/pins.json",
+        ".lake/arithmetic-operator-radical-qbox-tail-gate/preflight.json",
+        ".lake/arithmetic-operator-radical-qbox-tail-gate/preflight.md",
+        ".lake/arithmetic-operator-radical-qbox-tail-gate/proof.log",
+        ".lake/arithmetic-operator-radical-qbox-tail-gate/proof2.log",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/preflight.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorResultantDiscrepancy.lean",
+      "source_sha256": "ca7075c3d3c41f4ab8b7588b0bca15e605af75890555a306a437fe0cdeaf1381",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-additive-common-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-additive-common-source-gate/sources.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.json",
+        ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.md",
+        ".lake/arithmetic-operator-resultant-adaptive-root/validation.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorRowDeconvolutionAudit.lean",
+      "source_sha256": "0cb2d9642abd78c7f98f6824741f79daff54af4185e9ac5c5a9fa764a6546388",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/pins.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/sources.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-row-deconvolution-gate/initial.log",
+        ".lake/arithmetic-operator-row-deconvolution-gate/pins.json",
+        ".lake/arithmetic-operator-row-deconvolution-gate/preflight.json",
+        ".lake/arithmetic-operator-row-deconvolution-gate/preflight.md",
+        ".lake/arithmetic-operator-row-deconvolution-gate/proof.log",
+        ".lake/arithmetic-operator-row-deconvolution-gate/proof2.log",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/pins.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/preflight.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/sources.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorSexticRateAudit.lean",
+      "source_sha256": "eabede10b4a3776278546c903fe845e52f603d3c42140aa2bbc3f9eedff10480",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-marked-correlation/previous-pins.json",
+        ".lake/arithmetic-operator-odd-core-preflight/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorSignedDepthTransportAudit.lean",
+      "source_sha256": "18a3500d1ab89f9c5a1722d83cc3c7bd187f322fd3dd201c3e43bcb1c2794599",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-signed-depth-transport-gate/independent-review.json",
+        ".lake/arithmetic-operator-signed-depth-transport-gate/pins.json",
+        ".lake/arithmetic-operator-signed-depth-transport-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorSignedIntegralSourceAudit.lean",
+      "source_sha256": "9b39547e40d0735fe8cb8858869409066e04b1dc2113f83dbb6c553ee0a84cc4",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-mixed-base-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-signed-integral-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-signed-integral-source-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorTernaryCorrelationAudit.lean",
+      "source_sha256": "117254891aa701222c6628939ec2848a22fe79ad030b9e9413accbb2cc03da85",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-ternary-correlation-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorTotalTraceSourceAudit.lean",
+      "source_sha256": "793c7a4ada3121ccd847a57f14502473d350305ac83d5ecc2f152a271b2e7e71",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-integral-base-population-gate/pins.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-native-source-coupling-checkpoint/primitive-review.json",
+        ".lake/arithmetic-operator-next-interaction-audit/source-pins.json",
+        ".lake/arithmetic-operator-positive-primitive-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-signed-depth-transport-gate/independent-review.json",
+        ".lake/arithmetic-operator-signed-depth-transport-gate/pins.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/pins.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/preflight.json",
+        ".lake/arithmetic-operator-total-trace-frontier-gate/producer.json"
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorWilsonSourceAudit.lean",
+      "source_sha256": "05ca1f9f9ee6033347270559dd7417c9f19016e2c78aabb188fdff32a4728962",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-wilson-quotient-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-wilson-source-gate/independent-review.json",
+        ".lake/arithmetic-operator-wilson-source-gate/preflight.md",
+        ".lake/arithmetic-operator-wilson-source-gate/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHAllSquareAmplitudeBridgeAudit.lean",
+      "source_sha256": "4a535eae8bd3dae1e7d413644e7f91611cb23c430684c9bbf059d33626d479f6",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-bridge-integration/preflight.md",
+        ".lake/arithmetic-operator-all-square-bridge-integration/source-pins.json",
+        ".lake/arithmetic-operator-all-square-bridge-integration/strict-command.json",
+        ".lake/arithmetic-operator-all-square-endpoint-review/independent-review.json",
+        ".lake/arithmetic-operator-all-square-endpoint-review/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-integral-review/source-pins.json",
+        ".lake/arithmetic-operator-square-native-review/source-pins.json",
+        ".lake/arithmetic-operator-square-sector-integral/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHAllSquareEnergy.lean",
+      "source_sha256": "8b5349d0adbeb1e1d2bcb10aeccd8b77b5cb37ba8d76ae0386f2d57e7e1eaff0",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-bridge-integration/source-pins.json",
+        ".lake/arithmetic-operator-all-square-endpoint-review/source-pins.json",
+        ".lake/arithmetic-operator-all-square-energy/preflight.md",
+        ".lake/arithmetic-operator-all-square-energy/source-pins.json",
+        ".lake/arithmetic-operator-all-square-ledger-review/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHAllSquareGaussBridge.lean",
+      "source_sha256": "2941a40834cf78d0b9bdfdba7ebcfe6142c7840707da83cd0299a06b26bb3d5d",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-bridge-integration/source-pins.json",
+        ".lake/arithmetic-operator-all-square-endpoint-review/source-pins.json",
+        ".lake/arithmetic-operator-all-square-finite-checkpoint/metadata-count-correction.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-1-command.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-1.log",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-2-command.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-2.log",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-3-command.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-4-command.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-4.log",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-5-command.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-5.log",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-6-command.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-6.log",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-7-command.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/diagnostic-7.log",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/preflight.md",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/source-pins.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/strict-build-command.json",
+        ".lake/arithmetic-operator-all-square-ledger-review/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHAllSquarePartition.lean",
+      "source_sha256": "1017777790ab3f56998ec739c6d6b42d438675059edc1e920e5f68d21eded7ed",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-bridge-integration/source-pins.json",
+        ".lake/arithmetic-operator-all-square-endpoint-review/source-pins.json",
+        ".lake/arithmetic-operator-all-square-ledger-review/source-pins.json",
+        ".lake/arithmetic-operator-all-square-partition/compile.log",
+        ".lake/arithmetic-operator-all-square-partition/preflight.md",
+        ".lake/arithmetic-operator-all-square-partition/source-pins.json",
+        ".lake/arithmetic-operator-all-square-partition/validation.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-gauss-ideal-norm/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHAuxiliaryHeckeCorrelationAudit.lean",
+      "source_sha256": "85711ed0795773d93ecb757cc549f1c50a67bb5129a0db22c8365f217b2b0ae5",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-auxiliary-hecke-correlation-gate/command.json",
+        ".lake/arithmetic-operator-auxiliary-hecke-correlation-gate/source-pins.json",
+        ".lake/arithmetic-operator-auxiliary-hecke-correlation-gate/validation.json",
+        ".lake/arithmetic-operator-auxiliary-order-central-checkpoint/branch-independent-review.json",
+        ".lake/arithmetic-operator-collective-hecke-transfer-gate/source-pins.json",
+        ".lake/arithmetic-operator-cross-tuple-hecke-gate/source-pins.json",
+        ".lake/arithmetic-operator-theta-correlation-preflight/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHBorderedStatisticAudit.lean",
+      "source_sha256": "e1c4e78c88171d3b29653d67f914223c5b83c0b174a4af2ac44bdeccb7145274",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-bordered-gauss-preflight/preflight.md",
+        ".lake/arithmetic-operator-bordered-gauss-preflight/source-pins.json",
+        ".lake/arithmetic-operator-bordered-gauss-preflight/validation.json",
+        ".lake/arithmetic-operator-digital-source-gate/agent-pins.json",
+        ".lake/arithmetic-operator-integral-border-gate/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-mobius-transfer-gate/prior-pins.json",
+        ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCalibrationFamilyAudit.lean",
+      "source_sha256": "d53de0c8336e1078b874a2a462ae819a14a37a099f231e812eca278d38a120de",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-calibration-family-gate/pins.json",
+        ".lake/arithmetic-operator-calibration-family-gate/preflight.md",
+        ".lake/arithmetic-operator-calibration-family-gate/validation.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/calibration-family-review.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCalibrationNumeratorAudit.lean",
+      "source_sha256": "3b70b7b49d24f8a783dbb6717a74e78beeced26421943760b9edbdca8c67dbc5",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-calibration-numerator-gate/preflight.md",
+        ".lake/arithmetic-operator-calibration-numerator-gate/source-pins.json",
+        ".lake/arithmetic-operator-calibration-numerator-gate/validation.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/agent-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-d-transfer-gate/native-source-index.json",
+        ".lake/arithmetic-operator-full-d-transfer-gate/source-pins.json",
+        ".lake/arithmetic-operator-full-d-transfer-review/independent-review.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-cusp-source-review/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-section-lift-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-section-lift-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-sextic-section-gate/source-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-theta-arithmetic-saving-gate/source-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/agent-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/independent-review.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/initial-agent-pins.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/agent-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCentralRateFrontierAudit.lean",
+      "source_sha256": "d5a6422484c85f03171ca11d2240d84d78053ce66284c28fd484cd942355d038",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-central-rate-frontier-gate/independent-review.json",
+        ".lake/arithmetic-operator-central-rate-frontier-gate/preflight.md",
+        ".lake/arithmetic-operator-central-rate-frontier-gate/source-pins.json",
+        ".lake/arithmetic-operator-central-rate-frontier-gate/validation.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCommonUnitGaugeAudit.lean",
+      "source_sha256": "a733bd10781a47430d5cd1cd8fc4ffcfb83992504783195d0de86d7b25416df5",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-gauge-average-gate/source-pins.json",
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/agent-pins.json",
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/preflight.md",
+        ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/source-pins.json",
+        ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCoprimePoleGate.lean",
+      "source_sha256": "12b71b3bcfef23f6bee670c77dd445357e27fcb7d16498c6dd3ca8826ea202f3",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-coprime-pole-gate/preflight.json",
+        ".lake/arithmetic-operator-coprime-pole-gate/preflight.md",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/coprime-pins.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/validation.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCoprimeResidueBound.lean",
+      "source_sha256": "85cad4ae8edc5639c8ca4b2ea6c073f3b5940f60549eb1b9d5f5a7263828c547",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-coprime-residue-bound/handoff.md",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joint-covariance-root/validation.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/prior-pins.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCubicOrientationAudit.lean",
+      "source_sha256": "e1b06501f7c943c4ed91f12167aacf722bf5a80406b6bf24605c18d677192b5f",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-cubic-native-bridge/preflight.md",
+        ".lake/arithmetic-operator-cubic-native-bridge/source-pins.json",
+        ".lake/arithmetic-operator-cubic-native-bridge/strict-exit.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joint-gauss-correlation/preflight.json",
+        ".lake/arithmetic-operator-marked-correlation/previous-pins.json",
+        ".lake/arithmetic-operator-native-quadratic-gate/preflight.json",
+        ".lake/arithmetic-operator-native-quadratic-gate/preflight.md"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHExteriorCorrectionAudit.lean",
+      "source_sha256": "ec82bb54f4435cc4aaae4205d91917c4b8c22abeb5119b0476910a5a29ffdc57",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-exterior-correction-gate/independent-review.json",
+        ".lake/arithmetic-operator-exterior-correction-gate/pins.json",
+        ".lake/arithmetic-operator-exterior-correction-gate/validation.json",
+        ".lake/arithmetic-operator-exterior-source-transfer-review/source-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHExteriorRegionAudit.lean",
+      "source_sha256": "01020b7144a50a089cfd5b748dfb9800b4c11a3eee8d3f8f47a89a09f07c0650",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-exterior-correction-gate/independent-review.json",
+        ".lake/arithmetic-operator-exterior-correction-gate/pins.json",
+        ".lake/arithmetic-operator-exterior-physical-checkpoint/region-validation.json",
+        ".lake/arithmetic-operator-exterior-region-gate/pins.json",
+        ".lake/arithmetic-operator-exterior-region-gate/preflight.json",
+        ".lake/arithmetic-operator-exterior-region-gate/preflight.md",
+        ".lake/arithmetic-operator-exterior-source-transfer-review/prior-pins-verification.json",
+        ".lake/arithmetic-operator-exterior-source-transfer-review/source-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHExteriorSlotAudit.lean",
+      "source_sha256": "3e3b6a9b4689941d218cd6dbf0323a7bf0ca8d08cde04a285f639c6734ae4015",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-exterior-physical-checkpoint/source-doc-review.json",
+        ".lake/arithmetic-operator-exterior-source-transfer-review/preflight.md",
+        ".lake/arithmetic-operator-exterior-source-transfer-review/source-pins.json",
+        ".lake/arithmetic-operator-exterior-source-transfer-review/validation.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joined-mark-recovery/preflight.md",
+        ".lake/arithmetic-operator-joined-mark-recovery/source-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHFiniteSquareEnergyAudit.lean",
+      "source_sha256": "d59f6774baaf400933d17a590b70334cfa2200a5c4e4c74a7ce0f068514dcd13",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-bridge-integration/source-pins.json",
+        ".lake/arithmetic-operator-all-square-energy/source-pins.json",
+        ".lake/arithmetic-operator-all-square-ledger-review/source-pins.json",
+        ".lake/arithmetic-operator-finite-square-energy/development.log",
+        ".lake/arithmetic-operator-finite-square-energy/preflight.md",
+        ".lake/arithmetic-operator-finite-square-energy/source-pins.json",
+        ".lake/arithmetic-operator-finite-square-energy/validation.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-residue-cubic-checkpoint/formal-specs.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHFiniteSquareGaussAudit.lean",
+      "source_sha256": "3b6df917847897b832d09b86657b49b6dce9484c1076adf2c630d7323f2f4662",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-bridge-integration/source-pins.json",
+        ".lake/arithmetic-operator-all-square-gauss-bridge/source-pins.json",
+        ".lake/arithmetic-operator-finite-square-gauss/compile-command.json",
+        ".lake/arithmetic-operator-finite-square-gauss/diagnostic-1.log",
+        ".lake/arithmetic-operator-finite-square-gauss/preflight.md",
+        ".lake/arithmetic-operator-finite-square-gauss/source-pins.json",
+        ".lake/arithmetic-operator-odd-core-preflight/preflight.md",
+        ".lake/arithmetic-operator-odd-core-preflight/source-pins.json",
+        ".lake/arithmetic-operator-residue-cubic-checkpoint/formal-specs.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHFullCentralBelowBoundaryAudit.lean",
+      "source_sha256": "43cd9914d9210fe1d6497717248005933cdc6a2fa236bcde4b15a619f1128c5d",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-ledger-review/source-pins.json",
+        ".lake/arithmetic-operator-auxiliary-hecke-correlation-gate/full-central-independent-review.json",
+        ".lake/arithmetic-operator-full-central-below-boundary-gate/final-independent-review.json",
+        ".lake/arithmetic-operator-full-central-below-boundary-gate/pins.json",
+        ".lake/arithmetic-operator-full-central-below-boundary-gate/validation.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-odd-core-exceptional-join/source-pins.json",
+        ".lake/arithmetic-operator-odd-core-joined-gate/source-pins.json",
+        ".lake/arithmetic-operator-theta-correlation-preflight/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHFullSourceRateAudit.lean",
+      "source_sha256": "4f0109e9532659025c6b727f3d002710b308665f1de9a27ef78dc2a8a6865fda",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-full-source-transfer-gate/source-allocation-amendment.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/source-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/validation.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHGaugeAverageAudit.lean",
+      "source_sha256": "451ce9cf570dfb5fa5612d83d8f87ecaf7a744cef40168b7b5f7213d99d37821",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-gauge-average-gate/source-pins.json",
+        ".lake/arithmetic-operator-gauge-average-gate/validation.json",
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/agent-pins.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHJoinedDualPhaseAudit.lean",
+      "source_sha256": "2bbba61d842c4a20de086dcc09f376d739f1150b3928bb8ad426d19e31ca0bea",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-gauss-divisor-gate/source-pins.json",
+        ".lake/arithmetic-operator-joint-covariance-probe/manifest.json",
+        ".lake/arithmetic-operator-joint-covariance-probe/preflight.md",
+        ".lake/arithmetic-operator-joint-covariance-root/validation.json",
+        ".lake/arithmetic-operator-joint-period-source/dual-principal-arithmetic-preflight.json",
+        ".lake/arithmetic-operator-marked-harmonic-independent-review/independent-review.json",
+        ".lake/arithmetic-operator-marked-harmonic-independent-review/source-pins.json",
+        ".lake/arithmetic-operator-odd-core-joined-gate/source-pins.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/prior-pins.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHJoinedMarkVarianceAudit.lean",
+      "source_sha256": "c8eaf7c5399d014b8e01f0208db193f89b54f24066b5d25736e5270618c8940b",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/independent-review.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-recovery/development.log",
+        ".lake/arithmetic-operator-joined-mark-recovery/development2.log",
+        ".lake/arithmetic-operator-joined-mark-recovery/development3.log",
+        ".lake/arithmetic-operator-joined-mark-recovery/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-recovery/strict-command.json",
+        ".lake/arithmetic-operator-joined-mark-recovery/strict-final.log",
+        ".lake/arithmetic-operator-joined-mark-recovery/strict.log"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHJoinedRamanujanAudit.lean",
+      "source_sha256": "62540f5981623e7e3533a236bf57abd699aaf1aec26d209fc9f2023b3eb94232",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-ramanujan-gate/preflight.md",
+        ".lake/arithmetic-operator-native-ramanujan-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-ramanujan-gate/validation.json",
+        ".lake/arithmetic-operator-native-theta-support-gate/preflight.md",
+        ".lake/arithmetic-operator-native-theta-support-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-theta-support-gate/validation.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-theta-hecke-gate/preflight.md",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHJointPeriodAudit.lean",
+      "source_sha256": "663fb036cb4c7c5076a49b0f701e07735dac1a09b02d97808c91ba076890632e",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joint-covariance/handoff.md",
+        ".lake/arithmetic-operator-joint-covariance-root/validation.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/prior-pins.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHMarkedIncidenceAudit.lean",
+      "source_sha256": "74dc33171c22e1e20708fe19bbf0a7d11cf1c44e57c4d9b21708408bc8bba57e",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-marked-correlation/handoff.md"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHMatchingDensityAudit.lean",
+      "source_sha256": "2049ed271a22cf88a0f46b5136cb35bea80ccfd1ba7db4518f8f374d3e3a7889",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-coprime-pole-gate/preflight.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joint-covariance-root/validation.json",
+        ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-source-gate.json",
+        ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-source-gate.md",
+        ".lake/arithmetic-operator-joint-period-source/preflight.json",
+        ".lake/arithmetic-operator-odd-core-joined-gate/source-pins.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/coprime-pins.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/prior-pins.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHMomentBelowBoundaryAudit.lean",
+      "source_sha256": "ccf3faaeda1145496c00b0ac7e91399a712a74d02ecc7d373e374187ec1d7bac",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-auxiliary-hecke-correlation-gate/full-central-independent-review.json",
+        ".lake/arithmetic-operator-full-central-below-boundary-gate/final-independent-review.json",
+        ".lake/arithmetic-operator-full-central-below-boundary-gate/pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-moment-below-boundary-gate/independent-review.json",
+        ".lake/arithmetic-operator-moment-below-boundary-gate/pins.json",
+        ".lake/arithmetic-operator-moment-below-boundary-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHNativeCuspStabilizerAudit.lean",
+      "source_sha256": "190eade54ef80c33c36741c8c0078308965f317b77e60df458c53c92b1184034",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-full-d-transfer-gate/source-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/compile-command.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHNativeRaySixthAudit.lean",
+      "source_sha256": "1b5b35c7d6ade78cf30481dae50982a5acbbcf024df4406fc6f81e803bd21201",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/agent-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-d-transfer-gate/native-source-index.json",
+        ".lake/arithmetic-operator-full-d-transfer-gate/source-pins.json",
+        ".lake/arithmetic-operator-full-d-transfer-review/independent-review.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-review/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-ray-sixth-gate/development-build.log",
+        ".lake/arithmetic-operator-native-ray-sixth-gate/preflight.md",
+        ".lake/arithmetic-operator-native-ray-sixth-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-ray-sixth-gate/validation.json",
+        ".lake/arithmetic-operator-native-section-lift-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-section-lift-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-sextic-section-gate/source-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-theta-arithmetic-saving-gate/source-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/agent-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHNativeSectionLiftAudit.lean",
+      "source_sha256": "60d27c62a00bdd5c717dd8a311ee0d3710b52211d3646fd2056e12b378a3420e",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/agent-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/independent-section-review.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-d-transfer-gate/source-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-review/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-section-lift-gate/compile-command.json",
+        ".lake/arithmetic-operator-native-section-lift-gate/preflight.md",
+        ".lake/arithmetic-operator-native-section-lift-gate/source-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHNonmatchingSourceAudit.lean",
+      "source_sha256": "ae128724e5a8c27e3ce2d1298abd3a9494b02a3d3ee9d7bbe212ef0682e0af50",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-coprime-pole-gate/preflight.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joint-covariance-root/validation.json",
+        ".lake/arithmetic-operator-joint-period-source/dual-principal-arithmetic-preflight.json",
+        ".lake/arithmetic-operator-joint-period-source/preflight.json",
+        ".lake/arithmetic-operator-odd-core-joined-gate/source-pins.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/coprime-pins.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/prior-pins.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHOddCoreWitnessRateAudit.lean",
+      "source_sha256": "74147ede698c35e779ab5af65e92bfc5aee1ca99036dfade3c2c56a0150b69b3",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-odd-core-witness-rate/preflight.md",
+        ".lake/arithmetic-operator-odd-core-witness-rate/source-pins.json",
+        ".lake/arithmetic-operator-odd-core-witness-rate/validation.json",
+        ".lake/arithmetic-operator-square-native-odd-checkpoint/rate-independent-review.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHPattersonModelLocalAudit.lean",
+      "source_sha256": "726afad016f75360b81f79f212d47bee89944929f1acd7485d459f6f6d0cbf87",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-coprime-pole-gate/preflight.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/agent-pins.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joint-gauss-correlation/matching-density-source-gate.json",
+        ".lake/arithmetic-operator-joint-gauss-correlation/matching-physical-source-gate.json",
+        ".lake/arithmetic-operator-joint-gauss-correlation/preflight.json",
+        ".lake/arithmetic-operator-joint-gauss-correlation/preflight.md",
+        ".lake/arithmetic-operator-joint-gauss-correlation/squarefree-physical-source-gate.json",
+        ".lake/arithmetic-operator-joint-period-source/preflight.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-patterson-residual-gate/preflight.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/coprime-pins.json",
+        ".lake/arithmetic-operator-resultant-adaptive-root/prior-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/agent-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-theta-covariance-gate/preflight.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json",
+        ".lake/siegel-paper-review/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHPhysicalWindowSourceAudit.lean",
+      "source_sha256": "f70758cf75a19da42f789d68d655668eac63f9c235584591f67bd87933419e7b",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-physical-window-source-gate/dev.log",
+        ".lake/arithmetic-operator-physical-window-source-gate/independent-review.json",
+        ".lake/arithmetic-operator-physical-window-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-physical-window-source-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHRawSignRelationAudit.lean",
+      "source_sha256": "46a5c8ea6e57dbf4561d0fb7347787e356c9217fb28de7a8191c83414124683d",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-integral-border-gate/preflight.md",
+        ".lake/arithmetic-operator-integral-border-gate/source-pins.json",
+        ".lake/arithmetic-operator-integral-border-gate/validation.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json",
+        ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHResidualProjectionAudit.lean",
+      "source_sha256": "865ca6ec0aaf760637eb2391cdab3ab25ae97dcadc349a80014d97bf621ff225",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-residual-projection-gate/pins.json",
+        ".lake/arithmetic-operator-native-residual-projection-gate/preflight.json",
+        ".lake/arithmetic-operator-native-residual-projection-gate/preflight.md",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/agent-pins-before-shared-edits.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSourceHalfplaneAudit.lean",
+      "source_sha256": "5223c61cd7b7425e8a8b4ed3829d2a6fff6e08ebc0014cc6d762f13e941176d0",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-exterior-source-transfer-review/prior-pins-verification.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-review/source-pins.json",
+        ".lake/arithmetic-operator-odd-core-exceptional-join/source-pins.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-source-halfplane-gate/development.log",
+        ".lake/arithmetic-operator-source-halfplane-gate/independent-review.json",
+        ".lake/arithmetic-operator-source-halfplane-gate/pins.json",
+        ".lake/arithmetic-operator-source-halfplane-gate/preflight.md"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareCubicMeanAudit.lean",
+      "source_sha256": "81135b2ebf890b67552a8325c48c76a5de61358ec2a02144fbd26fbd428c8630",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-amplitude-gate/source-pins.json",
+        ".lake/arithmetic-operator-direct-square-amplitude-independent/independent-review.json",
+        ".lake/arithmetic-operator-direct-square-amplitude-independent/preflight.md",
+        ".lake/arithmetic-operator-direct-square-amplitude-preflight/source-pins.json",
+        ".lake/arithmetic-operator-finite-square-energy/source-pins.json",
+        ".lake/arithmetic-operator-global-square-identity-gate/preflight.md",
+        ".lake/arithmetic-operator-global-square-identity-gate/source-pins.json",
+        ".lake/arithmetic-operator-global-square-independent-review/independent-review.json",
+        ".lake/arithmetic-operator-residue-cubic-checkpoint/formal-specs.json",
+        ".lake/arithmetic-operator-square-cubic-mean/preflight.md",
+        ".lake/arithmetic-operator-square-cubic-mean/source-pins.json",
+        ".lake/arithmetic-operator-square-cubic-mean/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareEnergyRateAudit.lean",
+      "source_sha256": "b2d70d2b4e259cccf5a2d1a548ba5578d390b3dc68157de9b88f68d3b1a28254",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-global-square-identity-gate/source-pins.json",
+        ".lake/arithmetic-operator-global-square-independent-review/independent-review.json",
+        ".lake/arithmetic-operator-residue-cubic-checkpoint/formal-specs.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareGaussIdealNorm.lean",
+      "source_sha256": "e28640e7fbfb99c6af312814ad38e0dd52b879120173ff6b0d3bb74d3e567e2d",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-bridge-integration/source-pins.json",
+        ".lake/arithmetic-operator-all-square-endpoint-review/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-odd-core-preflight/source-pins.json",
+        ".lake/arithmetic-operator-square-gauss-ideal-norm/preflight.md",
+        ".lake/arithmetic-operator-square-gauss-ideal-norm/source-pins.json",
+        ".lake/arithmetic-operator-square-gauss-ideal-norm/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareGaussNorm.lean",
+      "source_sha256": "077d2ffe211cc962b11bdff6210b5b5c0c2cada9caccb7441759321f7beb35ed",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-bridge-integration/source-pins.json",
+        ".lake/arithmetic-operator-all-square-endpoint-review/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-gauss-ideal-norm/source-pins.json",
+        ".lake/arithmetic-operator-square-gauss-norm/source-pins.json",
+        ".lake/arithmetic-operator-square-gauss-norm/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareGaussianPayment.lean",
+      "source_sha256": "4299ebf5025d3eb91579c59413b7cbd539bd14be63480fe64b66181488dae32e",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-gaussian-payment/development-next.log",
+        ".lake/arithmetic-operator-square-gaussian-payment/development.log",
+        ".lake/arithmetic-operator-square-gaussian-payment/preflight.md",
+        ".lake/arithmetic-operator-square-gaussian-payment/source-pins.json",
+        ".lake/arithmetic-operator-square-gaussian-payment/strict-command.json",
+        ".lake/arithmetic-operator-square-gaussian-review/independent-review.json",
+        ".lake/arithmetic-operator-square-source-normalized/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareNativePayment.lean",
+      "source_sha256": "ed08c585912a86303517883c1150a41dd8d23ccabc415bd6653839eacc2446a4",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-gaussian-payment/source-pins.json",
+        ".lake/arithmetic-operator-square-native-payment/development.log",
+        ".lake/arithmetic-operator-square-native-payment/preflight.md",
+        ".lake/arithmetic-operator-square-native-payment/source-pins.json",
+        ".lake/arithmetic-operator-square-native-payment/strict-command.json",
+        ".lake/arithmetic-operator-square-native-review/independent-review.json",
+        ".lake/arithmetic-operator-square-native-review/source-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareSectorIntegral.lean",
+      "source_sha256": "9f80169b7014db71a0dcfeb68519bb947e9c5012e8db5ff3dc6122b85079212a",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-gaussian-payment/source-pins.json",
+        ".lake/arithmetic-operator-square-integral-review/independent-review.json",
+        ".lake/arithmetic-operator-square-integral-review/source-pins.json",
+        ".lake/arithmetic-operator-square-native-payment/source-pins.json",
+        ".lake/arithmetic-operator-square-native-review/source-pins.json",
+        ".lake/arithmetic-operator-square-sector-integral/source-pins.json",
+        ".lake/arithmetic-operator-square-sector-integral/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareSectorTransfer.lean",
+      "source_sha256": "f833d44519a84f31e18cb96ee06f9df4279e9149cb388b5b62b688a3e8f65af4",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-ledger-review/source-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-integral-review/source-pins.json",
+        ".lake/arithmetic-operator-square-sector-integral/source-pins.json",
+        ".lake/arithmetic-operator-square-sector-transfer/source-pins.json",
+        ".lake/arithmetic-operator-square-sector-transfer/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHSquareSourceNormalized.lean",
+      "source_sha256": "b313d52bd34a00e31bbd080a86ed484e2d85553b76caa2d8a0337d0b33053f53",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-source-normalized/source-pins.json",
+        ".lake/arithmetic-operator-square-source-normalized/strict-command.json",
+        ".lake/arithmetic-operator-square-source-review/independent-review.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHThetaCentralJoinAudit.lean",
+      "source_sha256": "18c416b9312572fb236e985b67b2612911aac2ef2d674641c1cf03773e261a64",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-physical-window-source-gate/independent-review.json",
+        ".lake/arithmetic-operator-physical-window-source-gate/source-pins.json",
+        ".lake/arithmetic-operator-theta-central-join-gate/source-pins.json",
+        ".lake/arithmetic-operator-theta-central-join-gate/validation.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHThetaTwistAudit.lean",
+      "source_sha256": "b47a11c981d40f03149c079b233c748f61edb6116262f0372bcd6c0dfc03ec43",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-common-base-section-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-cusp-deconvolution-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-full-source-transfer-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-integral-base-population-gate/prior-pins.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/pin-review.json",
+        ".lake/arithmetic-operator-joined-dual-valuation-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-joined-ramanujan-gate/preflight.md",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-joined-typei-ray-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-native-cusp-source-gate/prior-pins-verification.json",
+        ".lake/arithmetic-operator-native-ramanujan-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-residual-projection-gate/validation.json",
+        ".lake/arithmetic-operator-native-theta-support-gate/source-pins.json",
+        ".lake/arithmetic-operator-native-theta-support-gate/validation.json",
+        ".lake/arithmetic-operator-primitive-transport-gate/prior-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/agent-pins.json",
+        ".lake/arithmetic-operator-theta-calibration-qpascal-checkpoint/independent-review.json",
+        ".lake/arithmetic-operator-theta-covariance-gate/preflight.json",
+        ".lake/arithmetic-operator-theta-covariance-gate/preflight.md",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/agent-pin-review.json",
+        ".lake/arithmetic-operator-theta-support-small-window-checkpoint/prior-pins.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins-before-shared-edits.json",
+        ".lake/arithmetic-operator-total-source-section-checkpoint/prior-pins.json"
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHUnselectedWeightedMassAudit.lean",
+      "source_sha256": "3f742455175b301c04650daae72125fcb9564488d3c44a1e5765c1888de2dc0d",
+      "evidence_paths": [
+        ".lake/arithmetic-operator-all-square-ledger-review/source-pins.json",
+        ".lake/arithmetic-operator-global-square-identity-gate/source-pins.json",
+        ".lake/arithmetic-operator-integral-primitive-moment-checkpoint/weighted-mass-independent-review.json",
+        ".lake/arithmetic-operator-joined-mark-independent-review/publication-preflight.json",
+        ".lake/arithmetic-operator-square-native-payment/source-pins.json",
+        ".lake/arithmetic-operator-square-native-review/source-pins.json",
+        ".lake/arithmetic-operator-theta-arithmetic-saving-gate/independent-review.json",
+        ".lake/arithmetic-operator-theta-correlation-preflight/source-pins.json",
+        ".lake/arithmetic-operator-unselected-weighted-mass-gate/pins.json",
+        ".lake/arithmetic-operator-unselected-weighted-mass-gate/preflight.json",
+        ".lake/arithmetic-operator-unselected-weighted-mass-gate/producer.json"
+      ]
+    }
+  ]
+}

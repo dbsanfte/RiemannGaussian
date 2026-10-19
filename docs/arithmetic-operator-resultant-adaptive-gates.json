@@ -1,0 +1,706 @@
+{
+  "checkpoint": "growing-resultant-discrepancy-and-coprime-pole-gates",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Five strict local leaves; actual growing-gap centered estimate and scoped source/collapse obstructions. No independent RH endpoint or zero exclusion.",
+  "literature_motivation": {
+    "url": "https://arxiv.org/abs/2610.15483v1",
+    "author": "William D. Banks",
+    "mechanism": "Common nonzero determinant constrained simultaneously by integral Frobenius congruences and Archimedean size.",
+    "not_claimed": "No Lean import or verification of the whole paper; no transfer of its real-character source to complex zeta zeros."
+  },
+  "proved": [
+    {
+      "source": "scripts/ArithmeticOperatorGappedMinorAudit.lean",
+      "results": [
+        "Literal integer Pascal determinant with rows t,t+2,t+4 and columns 0,2,3 is 4*(t^2+3*t+1).",
+        "Every common divisor of q(t),q(t+h) divides |h^2(h^2-5)|; this resultant is positive for h>0.",
+        "At most two roots at EVERY actual prime power, including singular prime five and proper powers.",
+        "Exact literal prefix count equals sum over actual simultaneous residue classes."
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorResultantDiscrepancy.lean",
+      "results": [
+        "One literal residue prefix error has absolute value <=1.",
+        "Resultant-supported, Mangoldt-weighted joined root discrepancy has norm <=2*log R when prime-power root counts <=2.",
+        "Exterior-family bound retains 2*sum |weight|*log R.",
+        "Polynomial-times-geometric source normalization tends to zero under an explicit logarithmic budget."
+      ]
+    },
+    {
+      "source": "scripts/ArithmeticOperatorGappedSourceGate.lean",
+      "results": [
+        "Actual gcd-divisor packet minus EXACT h-dependent residue density equals the generic discrepancy packet.",
+        "Norm bound <=2*log |h^2(h^2-5)|, including literal d^(-iy) phase and all prime powers.",
+        "Resultant <=6*h^4; source normalization tends to zero for positive h_J<=2^(A*(J+1)), fixed A, arbitrary prefix T_J, and any unit-bounded denominator phases.",
+        "Exact native prime-eleven bounded row code has centered period sum 20/11."
+      ],
+      "scope": [
+        "The subtraction is arithmetic and h-dependent, not an already-paid analytic pole.",
+        "h=0, uncentered/single-polynomial source and uncontrolled exterior weights are excluded.",
+        "The full determinant factor-four centering bridge is paper-level; the checked packet uses q.",
+        "No nonzero actual zero-source theorem for the centered observation is asserted."
+      ]
+    },
+    {
+      "source": "scripts/QuasiRHCoprimePoleGate.lean",
+      "results": [
+        "Actual idealCoeff and actualAPhase correction defect <=1.5*(q^(-1-Re x)+q^-3) for supported q>=7 and Re x>=5/6.",
+        "Local, finite and infinite actual correction products nonzero; defects summable via existing prime-norm theorem.",
+        "Actual imported reciprocal analytic equivalence and meromorphic-order preservation under analytic nonzero multiplication."
+      ],
+      "explicit_missing_hypotheses": [
+        "Local analyticity of actual infinite correction product.",
+        "Actual restricted source identity, excluded calibration/mark factors and model/contour transport."
+      ],
+      "decision": "Coprimality alone is not an independent saving or pole regularization. Prescribed spectral mu/physical covariance remains open."
+    },
+    {
+      "source": "scripts/ArithmeticOperatorAdaptiveLandingAudit.lean",
+      "results": [
+        "Literal adaptive lag h=k(k+1)-n on k^2<n<=k(k+1), including all prime powers and exact quotient counts.",
+        "Strictly positive lag packet equals b(k)+b(k+1), b=(id-1)*(Lambda*phase).",
+        "The identity holds for arbitrary complex coefficients supported on actual prime powers.",
+        "Explicit composite denominator counterexample prevents unsupported extension."
+      ],
+      "decision": "Source survives in scalar convolution, but exact landing identity supplies no independent signed estimate."
+    }
+  ],
+  "paper_level_only": [
+    {
+      "artifact": ".lake/arithmetic-operator-next-interaction-gate/preflight.md",
+      "result": "Adaptive scalar response [zeta(s-1)-zeta(s)]*(-zetaPrime/zeta)(s+iy) has nonzero matched source and separable density poles. Native cumulative endpoint remains unpaid; physical source scale X^(beta/2) when X~K^2."
+    },
+    {
+      "artifact": ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.md",
+      "result": "At h=4 density is T*log11*phase11/11. Full determinant4q adds exact fixed 2/4 layers to both raw packet and density. Bounded row weights can restore linear growth."
+    },
+    {
+      "artifact": ".lake/arithmetic-operator-gapped-minor-gate/lag_density_paper.md",
+      "result": "For fixed h-independent phase, X=6H^4, complete positive-lag density sum minus fixed mean is bounded by 4*(log X)^2+4H*(log X+1)/X.",
+      "scope": "No Lean theorem; no arbitrary lag masks or h-dependent phases. Prime-five supported phase and multiples-of-five lag mask give linear centered mass."
+    }
+  ],
+  "regressions": {
+    "gapped": {
+      "literal_minor_checks": 500,
+      "common_matrix_Dodgson_checks": 500,
+      "all_prime_power_root_checks": 1133,
+      "exact_prefix_discrepancy_checks": 9064,
+      "resultant_support_checks": 37500,
+      "fixed_shift_diagnostics": [
+        {
+          "h": 1,
+          "gcd_values": [
+            1
+          ]
+        },
+        {
+          "h": 2,
+          "gcd_values": [
+            1
+          ]
+        },
+        {
+          "h": 3,
+          "gcd_values": [
+            1
+          ]
+        },
+        {
+          "h": 4,
+          "gcd_values": [
+            1,
+            11
+          ]
+        }
+      ],
+      "scope": "Finite exact regressions of uniform growing-shift support/discrepancy; no claim on uncentered polynomial prime packet or unknown exterior mass."
+    },
+    "adaptive": {
+      "prime_power_count_checks": 584,
+      "proper_power_cases_included": 161,
+      "complex_rational_packets": 120,
+      "positive_lag_packets": 120
+    },
+    "lag_density": {
+      "period_identities": 60,
+      "positive_prefix_discrepancies": 904,
+      "support_checks": 127
+    },
+    "no_floating_proof_input": true
+  },
+  "validation": {
+    "leaves": [
+      {
+        "source": "scripts/QuasiRHCoprimePoleGate.lean",
+        "sha256": "12b71b3bcfef23f6bee670c77dd445357e27fcb7d16498c6dd3ca8826ea202f3",
+        "strict_log": ".lake/arithmetic-operator-resultant-adaptive-root/coprime-strict.log",
+        "strict_exit_code": 0,
+        "warnings_as_errors": true,
+        "axiom_report": ".lake/arithmetic-operator-coprime-pole-gate/axioms.json",
+        "local_declarations": 25,
+        "theorems_including_generated_helpers": 18,
+        "linters": 15,
+        "standard_axioms_only": true,
+        "all_local_module_provenance": true,
+        "validation_mode": "standard isolated leaf"
+      },
+      {
+        "source": "scripts/ArithmeticOperatorAdaptiveLandingAudit.lean",
+        "sha256": "801a2e0d0c75b68e412227301a904622139dc3ef397eb6a75c508fa78ae6f7c8",
+        "strict_log": ".lake/arithmetic-operator-resultant-adaptive-root/adaptive-strict.log",
+        "strict_exit_code": 0,
+        "warnings_as_errors": true,
+        "axiom_report": ".lake/arithmetic-operator-next-interaction-gate/axioms.json",
+        "local_declarations": 23,
+        "theorems_including_generated_helpers": 19,
+        "linters": 15,
+        "standard_axioms_only": true,
+        "all_local_module_provenance": true,
+        "validation_mode": "standard isolated leaf"
+      },
+      {
+        "source": "scripts/ArithmeticOperatorGappedMinorAudit.lean",
+        "sha256": "b60f9984987a4c1cc63234e66b7de00dbdd84be01f559b46bbe94f7bbb199aee",
+        "strict_log": ".lake/arithmetic-operator-resultant-adaptive-root/gapped-strict.log",
+        "strict_exit_code": 0,
+        "warnings_as_errors": true,
+        "axiom_report": ".lake/arithmetic-operator-gapped-minor-gate/axioms.json",
+        "local_declarations": 38,
+        "theorems_including_generated_helpers": 32,
+        "linters": 15,
+        "standard_axioms_only": true,
+        "all_local_module_provenance": true,
+        "validation_mode": "isolated scripts olean bootstrap"
+      },
+      {
+        "source": "scripts/ArithmeticOperatorResultantDiscrepancy.lean",
+        "sha256": "ca7075c3d3c41f4ab8b7588b0bca15e605af75890555a306a437fe0cdeaf1381",
+        "strict_log": ".lake/arithmetic-operator-resultant-discrepancy/lean.log",
+        "strict_exit_code": 0,
+        "warnings_as_errors": true,
+        "axiom_report": ".lake/arithmetic-operator-resultant-discrepancy/axioms.json",
+        "local_declarations": 13,
+        "theorems_including_generated_helpers": 10,
+        "linters": 15,
+        "standard_axioms_only": true,
+        "all_local_module_provenance": true,
+        "validation_mode": "isolated scripts olean bootstrap"
+      },
+      {
+        "source": "scripts/ArithmeticOperatorGappedSourceGate.lean",
+        "sha256": "9485e842eea562d9eee4a7be741496917e5cddb4667085eef81598d65ddef124",
+        "strict_log": ".lake/arithmetic-operator-gapped-source-gate/lean.log",
+        "strict_exit_code": 0,
+        "warnings_as_errors": true,
+        "axiom_report": ".lake/arithmetic-operator-gapped-source-gate/axioms.json",
+        "local_declarations": 20,
+        "theorems_including_generated_helpers": 17,
+        "linters": 15,
+        "standard_axioms_only": true,
+        "all_local_module_provenance": true,
+        "validation_mode": "LEAN_PATH isolated root after lake env; imports previous two leaves"
+      }
+    ],
+    "local_declarations_total": 119,
+    "theorems_including_helpers_total": 96,
+    "previous_pins_verified_before_shared_edits": 73,
+    "coprime_agent_pins_verified": 23,
+    "review_snapshot_sha256": "2d152c413e6e892c6404a83e3cdd95f0d0dd7ce6470baf9be51eada24e148f21",
+    "review_snapshot_status": "Historical source snapshot preserved; final source adds literal d^(-iy) specialization and exact weighted prime-eleven counterexample only.",
+    "broad_build": false,
+    "public_root_registration": false,
+    "ci": false,
+    "commit_or_push": false
+  },
+  "source_history": "All 73 preceding current pins and 23 coprime-agent pins matched before shared-note edits. Historical checkpoint hashes remain unchanged. The review snapshot is preserved separately; two guard lemmas were subsequently added and strictly validated.",
+  "next_gate": "Do not refine the source-blind centered resultant or complete unweighted lag averages. A new trial must establish a nonzero actual source in the retained correlated weights or a genuinely different common integer constraint before attempting estimates.",
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "tier1_families_exhausted": 0,
+    "independent_rh_endpoint_discharged": false,
+    "imported_strict_region": "Re(s)>7/8 unchanged"
+  },
+  "local_only": true,
+  "source_pins": [
+    {
+      "path": ".lake/arithmetic-operator-coprime-pole-gate/axioms.json",
+      "sha256": "88bd57bfd274cc786a27e3f783dd869e3775b8c6adabf82898e76a5f436147f9"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-pole-gate/calibrate.py",
+      "sha256": "835c7f901af384e226bad7f76cce325c0057c83714d22066294e0fe4a89e16da"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-pole-gate/preflight.json",
+      "sha256": "448c3beb1aaeb45a966f75521052c2fc6b70322d5b25d79873360e059aa9cb6c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-pole-gate/preflight.md",
+      "sha256": "9618b74802a60e8ff2788cf00aff7a4c315e6d75905b1cdf84b726b23a6b885f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-pole-gate/strict-build.log",
+      "sha256": "d0c7d7ecfa4410a66c2c67f048dfe47e9c4e62d1281ea26d62bbea88c1ed4f48"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-residue-bound/axioms.json",
+      "sha256": "2adde7c78807e6fb00ce0db5066159c0ad97c95bb01897037a0572683c767b31"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-residue-bound/handoff.md",
+      "sha256": "08030913e31fb638d8ccbc61f993cf3da3180176bb78bcb81fcd1b0b4f575dce"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-residue-bound/lean.log",
+      "sha256": "8b34d63e08231624f5505fe51c91a245386420c87d3f340f6139b80449274dfa"
+    },
+    {
+      "path": ".lake/arithmetic-operator-coprime-residue-bound/root-strict.log",
+      "sha256": "8b34d63e08231624f5505fe51c91a245386420c87d3f340f6139b80449274dfa"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/axioms.json",
+      "sha256": "a2b7ea09ee7f4536f593c1aeaf3381715db7cf74af8200ab36d4b45479be28ec"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/handoff.md",
+      "sha256": "b68db37e8b547cf376e293817fb2a95cc038211e0d6928d2c2c5279b939930ca"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/lag_density_paper.md",
+      "sha256": "044ccecb8e9f40f8561b39b2f471af4919d499eb506c4d8d84aa81128285185e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/lag_density_probe.json",
+      "sha256": "0fac7366255824ca482201792f3b78bc5ebfbb424291670adcb5748b96fa64f1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/lag_density_probe.py",
+      "sha256": "e6b6d37624dae562928d36acd37749380802a7b2defd78d82b213b399995bf47"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/lean.log",
+      "sha256": "23349c431d5717789ddf551d79859351d4b4504671beb4bd7cc6ca64b63ac494"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/probe.json",
+      "sha256": "f9edc5b0e1b9052c80e5b2932255f3ff5d226933174b6cc51d0fefc645b98db4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/probe.log",
+      "sha256": "f9edc5b0e1b9052c80e5b2932255f3ff5d226933174b6cc51d0fefc645b98db4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-minor-gate/probe.py",
+      "sha256": "a340c172f35b030e74666c712572f5a9ad169008fd2661a0a8783bc3356aaa1a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-source-gate/axioms.json",
+      "sha256": "b113ca8dad9d577f6af98304d63bb791f5d5bdfcdb7bb611470f558cc3ae0ff5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gapped-source-gate/lean.log",
+      "sha256": "3f8a1de17f9e4e0c2f29ff7d69a3a8e9febe99deb615a6e484027cb04b0e599f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/axioms.json",
+      "sha256": "2e8efde4477914f745783e0e466168a101b6b7139d686a8cb460958eb7dd422b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/check.log",
+      "sha256": "4204d8f9cd9487dc16af5b17ac31a58c668d30f82b37c2b9eaa274461b566051"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/eisenstein.py",
+      "sha256": "e4d331ea06d299ca207d1f37c46a1ee8a55154066a06320ca7dbceaf82e85cb5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/manifest.json",
+      "sha256": "5855093f9f65343c35df3fe786c9416693565fccae4aa32f8438ab88f1cddc01"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/preflight.md",
+      "sha256": "e1dfc8a9003facbe7358b12f29e99a855525973db7a30a546d9499ec2f69b6b3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/probe.json",
+      "sha256": "6758724e79f4a2cb308007a17443181ddf7a517053e275a4aba1999b52c92d1c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/probe.log",
+      "sha256": "d5b74962ee06ff4d45e07f26d93d8ed2e99676cdcd354de9d97f70152adec27e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/probe.py",
+      "sha256": "18b429e3e67333e0414c8c647a20123d91a61d49f9d69dc963dade420fc7c398"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/root-strict.log",
+      "sha256": "4204d8f9cd9487dc16af5b17ac31a58c668d30f82b37c2b9eaa274461b566051"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/scales.json",
+      "sha256": "9ba905675c0877b73b8ae7bbb24c50fd6f42b88f8d15d4cfa92c2903a44a54cc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/source-pins.json",
+      "sha256": "d2034be31b51c341fbdc823b4801b27ba3fec5fb31322211db5d898d05137b78"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-root/final-prior-pins.json",
+      "sha256": "ea3d30b32480bd95967f416e8a986bea7a0d93a4fe5ece628dc3e663aa0007d1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-root/matching-bootstrap.log",
+      "sha256": "cc4d5b26147122dc30b27551895ca2fcfdeae5b88d7ea6aa35f7b2c404c48309"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-root/nonmatching-strict.log",
+      "sha256": "b667a1f5ccaa3c993b6d39d3bbd3a10a10eb30e21eb42a6965e641f0c905accf"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-root/validation.json",
+      "sha256": "e275522903afe8bdf85358ae36dde76045b676638781dfc8be8161e832ccc1b6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/axioms.json",
+      "sha256": "00842097657ef7f492907e192db25e08874e9c54b289adda9c7e14f18ed23f8c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/handoff.md",
+      "sha256": "0506acd9bf70cbf587b1ece5f24535d60cbbb1fdb2a8ee58de9001e54e1cab41"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/lean.log",
+      "sha256": "03be16c4c7dc578f8f10005a36d4d022a636a7a2f95deb422c78cd85453f7dd6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/probe.json",
+      "sha256": "60422411a25b6e293d500c11136f2730f71508e419e3f10372735fa885d1c681"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/probe.py",
+      "sha256": "67a76a1699caef1f45f8c486fb63c839c227b0c295e09d906f6526b802701e35"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance/root-strict.log",
+      "sha256": "03be16c4c7dc578f8f10005a36d4d022a636a7a2f95deb422c78cd85453f7dd6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/axioms.json",
+      "sha256": "094b88d4262f52bdcf68aa9d08949139930619cdd8c84820713406a548bb75ef"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/burgess-scope-reference-1907.03108v1.pdf",
+      "sha256": "8c6f2129d7d11e550a77c927454208c5d5603d886a25872ec01083848c5b3476"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/calibrate.py",
+      "sha256": "8599afeb82b3640ba87d82a3a76cafd3ca2d9e41ddd364fbbbd7e222c15886c3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/dual-principal-arithmetic-preflight.json",
+      "sha256": "59708e245ad4b7c59997dfec22adb64a596c37ebe0a2d6a187cbbc0c06df3aac"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/dual-principal-arithmetic-preflight.md",
+      "sha256": "cb0cc587ea0495254362c33192040965c95a2706c3b8df7b15784dc768663d56"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/preflight.json",
+      "sha256": "36207b32e38d8e235c9e270a00abf80628b46fc3873c0625214e60de19e37182"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/preflight.md",
+      "sha256": "54abd8081f906c0e954e0d63be948e12607b085a46d402a66a3ca13a13a39433"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/scripts/QuasiRHMatchingDensityAudit.olean",
+      "sha256": "80cdda8cfb4904bfbfbf190ba72f9f5f96fd66178630deb9dd89b1c305d97213"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/strict-build.log",
+      "sha256": "b667a1f5ccaa3c993b6d39d3bbd3a10a10eb30e21eb42a6965e641f0c905accf"
+    },
+    {
+      "path": ".lake/arithmetic-operator-next-interaction-gate/axioms.json",
+      "sha256": "3d7db50f644891252313699d96dc4921055cae178490bc3760325988f85a719d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.json",
+      "sha256": "0daadfd230fe3330fa27c05d4f41386a4d7d63910e26c3b46bf80419016f31f4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-next-interaction-gate/gapped-source-review.md",
+      "sha256": "1e579cf77d6c4416fadd2449d85c9129fda3d6744d05cfbae6d921594130cac6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-next-interaction-gate/preflight.md",
+      "sha256": "77df7fb71d7704f75053dcf43b1f2fee42fedec63910f23476ed9a42997d79e3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-next-interaction-gate/probe-results.json",
+      "sha256": "63f477ab06365e3125476a9b1cf9a0a720dd3c15662b3ab3b5e667f08d2c5533"
+    },
+    {
+      "path": ".lake/arithmetic-operator-next-interaction-gate/probe.py",
+      "sha256": "fae2b75fa66e41f9be2e7e7eefd7406f815a8d5cdb7255fd0121909207f70e52"
+    },
+    {
+      "path": ".lake/arithmetic-operator-next-interaction-gate/strict.log",
+      "sha256": "75dc73c1fc9744facd8db9ed465b14d232a0d063eaf45fb42d0eb3a2aecaab7e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-next-interaction-gate/validation.json",
+      "sha256": "06e581307fb4b3e5a0cdade870247e4b5ab381734446c0b75d9a8c62a83d32cd"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-adaptive-root/adaptive-strict.log",
+      "sha256": "75dc73c1fc9744facd8db9ed465b14d232a0d063eaf45fb42d0eb3a2aecaab7e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-adaptive-root/coprime-pins.json",
+      "sha256": "5a5f293dcc84529e1cd8ec9a387d4fb49ea45b6b40431011cf47b5e276332b31"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-adaptive-root/coprime-strict.log",
+      "sha256": "d0c7d7ecfa4410a66c2c67f048dfe47e9c4e62d1281ea26d62bbea88c1ed4f48"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-adaptive-root/gapped-source-reviewed-snapshot.lean",
+      "sha256": "2d152c413e6e892c6404a83e3cdd95f0d0dd7ce6470baf9be51eada24e148f21"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-adaptive-root/gapped-strict.log",
+      "sha256": "23349c431d5717789ddf551d79859351d4b4504671beb4bd7cc6ca64b63ac494"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-adaptive-root/prior-pins.json",
+      "sha256": "22a0cb81f6634cdef2261e79cfd6fa994cd2ea9eb13a4444ede858ba0ef9e929"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-adaptive-root/validation.json",
+      "sha256": "e231dce465c589301d687746e64d04b14cfdc9017cc13040980b8153600c4575"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-discrepancy/axioms.json",
+      "sha256": "767ec2f61526b11ffc9cf1699f2ea43ed8094f2b1e578301fd64a5b60dc6df09"
+    },
+    {
+      "path": ".lake/arithmetic-operator-resultant-discrepancy/lean.log",
+      "sha256": "7413fe6ef39c54b305ebcfdac6854ce841f8fa4f4408be549539e279d3913ff2"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Analytic/Constructions.lean",
+      "sha256": "b4ebe935f31d1c4110a0889146b48909c63e30a9e2de771e9065fa472d7d1be6"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Meromorphic/Order.lean",
+      "sha256": "d41c74dcdd579dafd65b12c19ce572ed487b56494000b8fe7736f78cedc887ed"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Log/Summable.lean",
+      "sha256": "80cc85bb742cb48f341eceee2719036562cb8f0cdf516b13e3436a11441206f1"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "c4c27e585849a0af24a6350ffaf37adee69a0becf9d432719a50e474b3a032a1"
+    },
+    {
+      "path": "docs/arithmetic-operator-joint-covariance-gates.json",
+      "sha256": "6083a84141f97175c45199647d8d4f9e9164d501837fefc25cbfe481b933ef32"
+    },
+    {
+      "path": "docs/arithmetic-operator-marked-composition-gates.json",
+      "sha256": "f72053b8b5b95f52c20f08786cd105f25520d0579cc4d5cbab6542b118c2d986"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "92d5ac7fc29cad74a1bed9cc11244335429c1a9654b2855ba251cb32dd46278d"
+    },
+    {
+      "path": "docs/arithmetic-operator-siegel-preflight.json",
+      "sha256": "e92c12906bc528618d50c306d6aba1c360e2c4b4bdccd044213f772dfee4a642"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorAdaptiveLandingAudit.lean",
+      "sha256": "801a2e0d0c75b68e412227301a904622139dc3ef397eb6a75c508fa78ae6f7c8"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorGappedMinorAudit.lean",
+      "sha256": "b60f9984987a4c1cc63234e66b7de00dbdd84be01f559b46bbe94f7bbb199aee"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorGappedSourceGate.lean",
+      "sha256": "9485e842eea562d9eee4a7be741496917e5cddb4667085eef81598d65ddef124"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorResultantDiscrepancy.lean",
+      "sha256": "ca7075c3d3c41f4ab8b7588b0bca15e605af75890555a306a437fe0cdeaf1381"
+    },
+    {
+      "path": "scripts/QuasiRHCoprimePoleGate.lean",
+      "sha256": "12b71b3bcfef23f6bee670c77dd445357e27fcb7d16498c6dd3ca8826ea202f3"
+    },
+    {
+      "path": "scripts/QuasiRHCoprimeResidueBound.lean",
+      "sha256": "85cad4ae8edc5639c8ca4b2ea6c073f3b5940f60549eb1b9d5f5a7263828c547"
+    },
+    {
+      "path": "scripts/QuasiRHJoinedDualPhaseAudit.lean",
+      "sha256": "2bbba61d842c4a20de086dcc09f376d739f1150b3928bb8ad426d19e31ca0bea"
+    },
+    {
+      "path": "scripts/QuasiRHJointPeriodAudit.lean",
+      "sha256": "663fb036cb4c7c5076a49b0f701e07735dac1a09b02d97808c91ba076890632e"
+    },
+    {
+      "path": "scripts/QuasiRHMatchingDensityAudit.lean",
+      "sha256": "2049ed271a22cf88a0f46b5136cb35bea80ccfd1ba7db4518f8f374d3e3a7889"
+    },
+    {
+      "path": "scripts/QuasiRHNonmatchingSourceAudit.lean",
+      "sha256": "ae128724e5a8c27e3ce2d1298abd3a9494b02a3d3ee9d7bbe212ef0682e0af50"
+    },
+    {
+      "path": "scripts/QuasiRHPattersonModelLocalAudit.lean",
+      "sha256": "726afad016f75360b81f79f212d47bee89944929f1acd7485d459f6f6d0cbf87"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CalibrationCancellation.lean",
+      "sha256": "2e6bedeaedd3c5c2f5869a6a3478b81984d4dfe12b396e79077c1a47729ec95e"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CalibrationFourier.lean",
+      "sha256": "38d5b05a2473ea3fdb4de76fa3ee8ee3db2d2463657e409f4dbe5af726ba9f1a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Completed.lean",
+      "sha256": "aacdde1452e633f7190ef1170925afa84cb14f38222898cf4ca6c91cae7b843a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/EulerCoordinates.lean",
+      "sha256": "3c3a1b462473693820fd0a530b1b3a860b9b55fec2b2e38ebabf543ffc3a2943"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/HighDeletion.lean",
+      "sha256": "220edd1faefc835cef352ad47ffadc47f48c96e7bcac54ad662e97ca7396db1c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/HighSeries.lean",
+      "sha256": "eac7cc6bd848ea9b64e6f3b3022ca408f3dee5bf213f7df3ef12fc3f07fe022c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalPhysical.lean",
+      "sha256": "853242bc20a864a714dad73e8cb7c3077fa893fe19f0d4e322db0a381b0991a3"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalSeries.lean",
+      "sha256": "95f67efdc7a20e4bb253a427183e8be324914747e1147e36772ca5dc67b0c306"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalSummation.lean",
+      "sha256": "9a954d140811c6fa818b438ce507688a6890f439271d5141278920e221c5dabf"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalCRT.lean",
+      "sha256": "d9b9c31ec2acfaddd4bca0fc2475151c9947851b39b27eb7f7721a77c98557a3"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalPoisson.lean",
+      "sha256": "e11d050153c35e821df8372f14c29a250302bbb47ff95fb7cfbd56bee630818a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalReopen.lean",
+      "sha256": "17b2815b48db16c5534bda27e55a568e738290c5b4ce0ea24832c9e63287e376"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalContours.lean",
+      "sha256": "fefc1bbcb8eaab512a8d3b92bc2e374852333de8b8bee0ff43945fd0b8d9db8b"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalEulerIdentity.lean",
+      "sha256": "8edd1fc6579727fc2ab6ac39dd467b89840ba43f26bf48a6201d2cc5e8515e0d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalProduct.lean",
+      "sha256": "aae40d351969536fa8e3faae9f588ba4b94f1ad0e0429e74bcdcce5da414a198"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalSplit.lean",
+      "sha256": "79246324533c426fdfc6743518a99b45a8821ce3689a6c48bccafd34c88c6d14"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Row.lean",
+      "sha256": "94cd0a68ced17d2ad52c67c13af03a3d199568862ebe43fde2f9f0ed96949ce0"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ScalarTable.lean",
+      "sha256": "e7105589c7ab123f999440eb4a48c3c797f3004cdf82d64cdb5f158387a35a12"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ScalarVanishing.lean",
+      "sha256": "ddab9aa90212dcdea467bfda41e057184778c7e92323b0ddc64b3d1e54a0531f"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceCoefficient.lean",
+      "sha256": "374110c8227301a3be4ce6269f22ededcb0484583fc28a76c39e6b898fef70a4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceLocal.lean",
+      "sha256": "db29a85fc6d3e1c38ce9e8dce9e0f795baa68aa85b9a228c70df9991e0ec54c2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SpectralPoisson.lean",
+      "sha256": "51cade1ad1cece39d3e1eb3bdbe0c7624bf27195d3a07529a9a3fab333147404"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/TupleRows.lean",
+      "sha256": "ef7207fbf188d9a1dbaef6b2a3bcfb6ad0fa6b3a489fd3792310aa147753d9f6"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ZeroIndex.lean",
+      "sha256": "49f1b9219781ee95156776336245092a7486c916e4cad1cffdaebceac1530c70"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/CompletedExpansion.lean",
+      "sha256": "01569023b64065bc867e0a0ce170bc71a006758313b4b05b886b4af7a0b7ee94"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/MixedConversion.lean",
+      "sha256": "7a7d7459142cb9f2462fd41c7d59b28ab4c5a55e725a6cf2336f1083dca84df8"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/SquarePhaseFactorization.lean",
+      "sha256": "72607eef57bb692a8f488250c84294fd058057bd9c56235116afe799acb4c74c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Hecke/MobiusEulerCorrection.lean",
+      "sha256": "75d572e9739e36d437d021ea13f7d32e8bda8702c6dce6d02b40fa11b03d4f32"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Hecke/Reciprocal.lean",
+      "sha256": "d243f1e44bb2fcec20d209300980172dcaf2f5a09e31c45dcb761343b9c9e89b"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/PrimeRows/ActiveGaussFactorization.lean",
+      "sha256": "944b4154dad5c6ca880a210a9e23a0add57d944c5cd6748f36d6eadc2a55d77b"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/upstream-pin.json",
+      "sha256": "95105caa9179dc7f30e9b392855312ae9be135aa01c0fa205c7a0a8dc737a111"
+    }
+  ]
+}

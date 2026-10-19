@@ -1,0 +1,311 @@
+{
+  "checkpoint": "moving-Kummer-cutoff-source-gate-and-native-lossless-border-collapse",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Scoped quantitative smooth-source obstruction and exact native finite border audit. No independent RH arithmetic inequality or new zero exclusion.",
+  "formal_leaves": [
+    {
+      "path": "scripts/ArithmeticOperatorDigitalCarryAudit.lean",
+      "sha256": "321bcc650674ba690965c9fa045bfc26a2b09c10c28957562f6f1cae04915fbf",
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean scripts/ArithmeticOperatorDigitalCarryAudit.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 45,
+      "theorems_including_helpers": 41,
+      "log": ".lake/arithmetic-operator-digital-carry-gate/lean.log",
+      "axiom_report": ".lake/arithmetic-operator-digital-carry-gate/axioms.json"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalSourceGate.lean",
+      "sha256": "dd0519af79a51e4493ce55ff0dc4f68bf57529b4ddc621b063fe404738be25f2",
+      "strict_command": "isolated LEAN_PATH; /home/dbsanfte/.elan/bin/lean scripts/ArithmeticOperatorDigitalSourceGate.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 31,
+      "theorems_including_helpers": 28,
+      "log": ".lake/arithmetic-operator-digital-source-gate/lean.log",
+      "axiom_report": ".lake/arithmetic-operator-digital-source-gate/axioms.json"
+    },
+    {
+      "path": "scripts/QuasiRHBorderedStatisticAudit.lean",
+      "sha256": "e1c4e78c88171d3b29653d67f914223c5b83c0b174a4af2ac44bdeccb7145274",
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/QuasiRHBorderedStatisticAudit.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 17,
+      "theorems_including_helpers": 9,
+      "log": ".lake/arithmetic-operator-bordered-gauss-preflight/strict-build.log",
+      "axiom_report": ".lake/arithmetic-operator-bordered-gauss-preflight/axioms.json"
+    }
+  ],
+  "total_local_declarations": 93,
+  "total_theorems_including_helpers": 78,
+  "checked_conclusions": [
+    "Original finite dyadic upper-carry layers equal the moving high-digit central-binomial parity code; every prefix is bounded by H=2^k.",
+    "Exact unit-cell power response, not quadrature: prefix bound B gives source-normalized norm <=2B/X for beta<=1, X>0.",
+    "Every moving highCode packet with H/X->0 loses the diagnostic matched power source, uniformly in its other interval endpoint.",
+    "At X=H the normalized power response equals -(2^beta-1)/beta<0 for beta>0, while the arbitrary-weight arithmetic packet equals the negative original uncoded interval.",
+    "The bounded correlated selector (1+code)/2 restores half the uncoded channel; no arbitrary-mask estimate follows.",
+    "Actual native physicalRowWeight and spectralSummand with all powers and masks give an exact lossless border determinant equal to their original finite signed join.",
+    "Bare determinant norm is invariant under actual supported spectral Mobius column signs; this alone supplies no prescribed-vector estimate."
+  ],
+  "paper_level_only": [
+    "Mixed high-binary/low-ternary power-source deletion and blockwise published prime-theorem rate mismatch.",
+    "General centered-prefix integration-by-parts principle and its sharp coarse two-cell countercheck.",
+    "Whole-border common-integrality/Frobenius obligations and adjugate-source mismatch beyond the checked finite native border identity."
+  ],
+  "not_claimed": [
+    "A zeta explicit formula for a nonlinear digital observation.",
+    "Uniform growing-threshold applicability of fixed-function digital prime theorems.",
+    "Any asymptotic no-go or nonzero source for comparable growing high/high binary-ternary codes.",
+    "A native infinite/source/contour bridge or independent estimate for a new determinant.",
+    "Exhaustion of any whole Tier-1 family."
+  ],
+  "finite_regressions": {
+    "literal_carry_integer_checks": 62302,
+    "mixed_factorial_checks": 10000,
+    "mixed_density_prefix_cases": 27,
+    "mixed_coarse_scope_case": 1,
+    "border_rectangular_cases": 72,
+    "column_phase_gram_cases": 36,
+    "floating_mellin": "diagnostic only, not proof input"
+  },
+  "previous_pins_verified_before_shared_edits": 30,
+  "agent_pins_verified": 25,
+  "preservation": "Earlier source pins are historical; all prior proofs, audits and separate semiprime work preserved.",
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "tier1_families_exhausted": 0,
+    "imported_endpoint": "strict Re(s)>7/8 unchanged"
+  },
+  "publication": {
+    "broad_build": false,
+    "root_public_registration": false,
+    "CI": false,
+    "commit_push": false
+  },
+  "source_pins": [
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/axioms.json",
+      "sha256": "69ca8a8e56e41f2d56ffd6db7e848ceaa659288737d30e7bbacf5290940944d6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/exact-probe.json",
+      "sha256": "35662eff329ba8e07f206a96561f98ad87a10a76cb4b151dfc7ca2742df19e98"
+    },
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/exact_probe.py",
+      "sha256": "42ece9ff3812dd4a822284313a1f61c82e6f318ae2614dda1e148f3d1fb337a7"
+    },
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/preflight.md",
+      "sha256": "c0e0fe79de1a6359e14d7b3aa46872b3eacd3893f924cf0fdcaf4c04b1b27dce"
+    },
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/probe.log",
+      "sha256": "35662eff329ba8e07f206a96561f98ad87a10a76cb4b151dfc7ca2742df19e98"
+    },
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/source-pins.json",
+      "sha256": "b4a08debf6e5ce1d7955db2fb3683e84ca46efad0e6bee3c38cf5c060b1d286a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/strict-build.log",
+      "sha256": "d9d40dff8ba7729653a3ceae1428de76bf60f78b1f4ef0dedb22e5123d3470ce"
+    },
+    {
+      "path": ".lake/arithmetic-operator-bordered-gauss-preflight/validation.json",
+      "sha256": "44b3d3ecd794028fd18660efd10ccf2b697f604af26801f46df5d1941e910017"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-carry-gate/axioms.json",
+      "sha256": "e93992eb9de3df46003d02a2ec0900ba5165a32c83ee56d466992b53dc0a49ee"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-carry-gate/check.log",
+      "sha256": "3e60f8d28adde341ea527861431dc7a3f7e73c26d9aca48d1470e80f82f4fbfd"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-carry-gate/handoff.md",
+      "sha256": "26852e03b5b433788013af0ef45a6511190e9965e931d4bc2befdeb921853a14"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-carry-gate/lean.log",
+      "sha256": "cef14baf304e34b9c2dce56411245bc606a926e562dd8fa592197cd2ad699f83"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-carry-gate/preflight_probe.json",
+      "sha256": "2df6fd9913f980c3a42c325e1ee2736816baf8424d7c09eda4ee0f62f05483d8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-carry-gate/preflight_probe.py",
+      "sha256": "2306d7c8e2e2f7a8319e4459445cb4ce921a0becdd999fdf3a3c7573008acc0b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-prime-preflight/growing-scale-source-gate.md",
+      "sha256": "3289fa4c33a15f3e029c70e76e58d4f1ca9b5548b6827c2a531dc2c43fc9a54b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-scale-preflight/preflight.md",
+      "sha256": "9a5b0b3bf3e19faa93bac38f2d33e479bf60d76f83dd2420bb1c37bc678d22f9"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-source-gate/ArithmeticOperatorDigitalCarryAudit.log",
+      "sha256": "cef14baf304e34b9c2dce56411245bc606a926e562dd8fa592197cd2ad699f83"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-source-gate/ArithmeticOperatorDigitalSourceGate.log",
+      "sha256": "27ad53ad458b16b4cf6b7c039780af51591fcc67997b64118daa0cf437a9f3b6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-source-gate/agent-pins.json",
+      "sha256": "e45ff1d02d5c1c229908a2e8a4bdbccc88e2b40b4117894883c3abd74f17f159"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-source-gate/axioms.json",
+      "sha256": "3598ddc82992b0049e128c5db84f589dc887640443f89b1d9e81a93c570191a6"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-source-gate/handoff.md",
+      "sha256": "d9c347f6d4bf6a29714ceed6d8057636a781a66b7ffca980fb196d295cf42f86"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-source-gate/lean.log",
+      "sha256": "bbabb4015507fb5cf41e3dd9fbf73ccd3d6cfd3c08740e80e3303708988cd411"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-source-gate/prior-pins.json",
+      "sha256": "143fdcc11b381db7e411dc92d398f37c6dcacecba5e019127200e45569d9f7e3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-digital-source-gate/validation.json",
+      "sha256": "aa98e5fc6393f49d7fe831f09fa90a933f7746814d2d57a181ee2b5b5b303eb5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-covariance-probe/preflight.md",
+      "sha256": "e1dfc8a9003facbe7358b12f29e99a855525973db7a30a546d9499ec2f69b6b3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mixed-digital-preflight/drmota-mauduit-rivat-author.pdf",
+      "sha256": "9a957315ef5c994d547216b33672427d6405e9e4a48981cc5454ae4339f3da71"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mixed-digital-preflight/mauduit-rivat-2010.pdf",
+      "sha256": "020f49aaceeca930f7a48952c85771721244c9ef613be0cb55fb03a0abad0e4c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mixed-digital-preflight/preflight.md",
+      "sha256": "6832cb2ed4dbb19a00891e5e970c31b7ee88fc4c18357c54437dafaae2470558"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mixed-digital-preflight/probe-results.json",
+      "sha256": "96ca8e5aaf6a629aa2aa5677e9eb92f41141553f05ae627959722e69cead7088"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mixed-digital-preflight/probe.log",
+      "sha256": "2b4b1705e303ad729b55b82926cf243720a5b676c990f9a2cbe71d21adcdf42e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mixed-digital-preflight/probe.py",
+      "sha256": "2b7f88b49fd3dcced8ea137d50f46b8073a102a4a5ad3b5d79a7473523784258"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mixed-digital-preflight/sources.json",
+      "sha256": "e22894b5e560aa316d3e8d93ba46a7268ea8d5e6bd595448b3f32d2b34716c39"
+    },
+    {
+      "path": ".lake/arithmetic-operator-mixed-digital-preflight/validation.json",
+      "sha256": "58dbd3e8d71a84f9bf7fb6f164f86e4b182a4eb8fc94946e90e09bf48661949a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/witness-overlap-source-gate.md",
+      "sha256": "a23eed992475d44288e280a4f100711357a6b506a8196901dd8811eb68f687ff"
+    },
+    {
+      "path": ".lake/siegel-paper-review/transfer-audit/source-and-lift-gates.md",
+      "sha256": "12bfc69ba213a71bfa3392d5a2ee5b53813033173b58e48de3dc10adf26f7b5d"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "a0bd639303296044385feb9da956f09d42828b09a7e77e8d3ed7fe32cc30de77"
+    },
+    {
+      "path": "RiemannGaussian/FiniteAbelVariation.lean",
+      "sha256": "cb23c463ac3f6f8471c9d12531307680cfd439e7573586e4a9012cc02c67dc6d"
+    },
+    {
+      "path": "RiemannGaussian/SuzukiIntegerCarry.lean",
+      "sha256": "1591f653adfab3ad6be68367183806a7db34f755445a0eb9aa0ca01686bc27da"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "532ddc7f6c9d21bdd7b422744071199e72ca9e930ab9182d8c85fe7762ada94e"
+    },
+    {
+      "path": "docs/arithmetic-operator-siegel-all-class-gates.json",
+      "sha256": "86579dbabd4e29f9c6f330c071326de77e4e87933e0513785784e5caa9796063"
+    },
+    {
+      "path": "docs/siegel-interpolation-review.md",
+      "sha256": "7b85677cc9ce173c67ccb39b12b9eafd38a80fa6b6f7b147b84e45595bd5019e"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalCarryAudit.lean",
+      "sha256": "321bcc650674ba690965c9fa045bfc26a2b09c10c28957562f6f1cae04915fbf"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalSourceGate.lean",
+      "sha256": "dd0519af79a51e4493ce55ff0dc4f68bf57529b4ddc621b063fe404738be25f2"
+    },
+    {
+      "path": "scripts/QuasiRHBorderedStatisticAudit.lean",
+      "sha256": "e1c4e78c88171d3b29653d67f914223c5b83c0b174a4af2ac44bdeccb7145274"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean",
+      "sha256": "dd0ae071b0bdb5746fa6362de83aa86a4ee4462810a7fdbc72f0af95b5887675"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalRows.lean",
+      "sha256": "58b97cbec9cc8b7c8fdb1feaffd1b91f62e1e247bcbb57aa865750dad2c456c8"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalSplit.lean",
+      "sha256": "79246324533c426fdfc6743518a99b45a8821ce3689a6c48bccafd34c88c6d14"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Row.lean",
+      "sha256": "94cd0a68ced17d2ad52c67c13af03a3d199568862ebe43fde2f9f0ed96949ce0"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceCoefficient.lean",
+      "sha256": "374110c8227301a3be4ce6269f22ededcb0484583fc28a76c39e6b898fef70a4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/CompletedExpansion.lean",
+      "sha256": "01569023b64065bc867e0a0ce170bc71a006758313b4b05b886b4af7a0b7ee94"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/PrimeRows/ActiveGaussFactorization.lean",
+      "sha256": "944b4154dad5c6ca880a210a9e23a0add57d944c5cd6748f36d6eadc2a55d77b"
+    }
+  ]
+}

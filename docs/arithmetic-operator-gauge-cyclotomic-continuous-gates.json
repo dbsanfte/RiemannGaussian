@@ -1,0 +1,385 @@
+{
+  "checkpoint": "native-calibrated-average-cyclotomic-convolution-and-conditional-full-Kubota-mean",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Two strict finite native conservation leaves, faithful paper-level cyclotomic source/invertible-convolution gate and conditional continuous/theta exponent split. No new independent RH inequality or zero exclusion.",
+  "formal_leaves": [
+    {
+      "path": "scripts/QuasiRHGaugeAverageAudit.lean",
+      "namespace": "OpenAIReview.GaugeAverage",
+      "local_declarations": 14,
+      "theorems_including_helpers": 8,
+      "log": ".lake/arithmetic-operator-gauge-average-gate/strict-build.log",
+      "axioms": ".lake/arithmetic-operator-gauge-average-gate/axioms.json",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "only_standard_axioms": true,
+      "sha256": "451ce9cf570dfb5fa5612d83d8f87ecaf7a744cef40168b7b5f7213d99d37821",
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/QuasiRHGaugeAverageAudit.lean"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean",
+      "namespace": "OpenAIReview.CyclotomicConvolution",
+      "local_declarations": 25,
+      "theorems_including_helpers": 20,
+      "log": ".lake/arithmetic-operator-cyclotomic-factorial-gate/lean.log",
+      "axioms": ".lake/arithmetic-operator-cyclotomic-factorial-gate/axioms.json",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "only_standard_axioms": true,
+      "sha256": "7d16119d1dd4d53cdfd7b43829e3769e8c9561151ba94ac26d7fb9283159ebf4",
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean"
+    }
+  ],
+  "total_local_declarations": 39,
+  "total_theorems_including_helpers": 28,
+  "checked_conclusions": [
+    "Actual calibrated physical quotient average is (-1)^r times the original, with equal norm; corrected average is the original pointwise.",
+    "Every fixed native Fourier/congruence coefficient, including H=u*a^6, is preserved under the explicit actual finite multiplier-family hypotheses.",
+    "Actual integer cyclotomic evaluations at every b>=2 are positive including index one; their log residual has exactly the elementary divisor profile.",
+    "Finite Mobius convolution, full factorial-floor deletion and signed tail-weighted Mertens prefix identity/comparison."
+  ],
+  "paper_level_only": [
+    "CRT existence, complete coset operator spectrum/rank and projected-profile character description; changed full-unit Euler source audit.",
+    "Entire zero-free C_b numerator, explicit |C_2|>=2/81, all multiplicity-preserving reciprocal-zeta source, infinite l1 inverse and equivalence of prefix growth bounds.",
+    "q-factorial valuations, all-order phase transport, q-Lucas/additive identities and physical/order-scale audit; exact finite regressions only.",
+    "AI-authored rStation10/v2 B=1 full-D mean and powerful-numerator extension, fixed-section functional equation/large-sieve inputs, native analytic calibration/contour/source/mark transfers.",
+    "Conditional continuous budget 17/96-d/2 versus retained theta budget 3/16-d/2; no literal theta covariance estimate."
+  ],
+  "not_claimed": [
+    "No global sixth-power-frequency-set invariance under residue units and no free native-alpha sign change.",
+    "No original prime-height source theorem from the nonzero prime-phase order series.",
+    "No cancellation of the actual theta-residue pairing by a scalar spectral Patterson model.",
+    "No direct substitution of native character weights for paper8 divisor weights; no new RH/zero-free result.",
+    "No Lean verification or axiom import of either rStation preprint or the whole Banks no-Siegel argument.",
+    "No exhaustion of any complete Tier-1 operator family."
+  ],
+  "finite_regressions": {
+    "cyclotomic_integer_checks": 35865,
+    "gauge_eigenchannels": 24,
+    "gauge_finite_profile_pair_identities": 24,
+    "native_prime_power_Gauss_frequency_controls": 15,
+    "nonzero_calibrated_sixth_frequency_controls": 4,
+    "powerful_integer_decompositions": 5000,
+    "prove_analytic_limits": false
+  },
+  "independent_review": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/independent-review.json",
+  "previous_pins_verified_before_shared_edits": 52,
+  "additional_agent_pins_verified": 62,
+  "prior_verification": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+  "agent_pin_verification": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/agent-pins.json",
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "tier1_families_exhausted": 0,
+    "imported_endpoint_unchanged": "strict Re(s)>7/8"
+  },
+  "publication": {
+    "root_public_registration": false,
+    "broad_CI": false,
+    "commit": false,
+    "push": false
+  },
+  "source_pins": [
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/axioms.json",
+      "sha256": "7b37d62e59e2a13b451fa9b95b35813e7ac9154e7ef37d58c73b1bc3593ba8e1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/exact-results.json",
+      "sha256": "4a07d79c4a905e4e8b00f0a9a11995121ada3b61ebb88dcf718eb9a884cc1bbb"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/exact_probe.py",
+      "sha256": "c5745d2e11aa99d928cac3ee2a463fae9fea4d7d214a00c8b2148dd4f55e655b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/lean.log",
+      "sha256": "6158153b8f7026a42c672eeb5e2f89726c6e5b30adf71c43fd8a3c9ae3033141"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/pins.json",
+      "sha256": "aa6da76d309941b4768c64e2c8f59410a264a122c4c6c04b0c93943ecbd2cac8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/pongsriiam-lte.pdf",
+      "sha256": "ef65bb597bb0883194b94d52dba3222d11a3cac86b93345ada0dd578a5f2b133"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/pongsriiam-lte.txt",
+      "sha256": "baba417e838eb103b1aa9b3656bc1f1cbea3d46e9054d21a256ae5721b8edc3f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/preflight.md",
+      "sha256": "89df60f59461cc43440853e605a90a811fa0dd140bbc95a64e86e70c3ab35dbf"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/sagan-retrieval-block.html",
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/sources.json",
+      "sha256": "91a2b7738278a0a397b2d8f388addb792c57c086a08c1ec507e54bc5ab75ed7a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/stewart-prime-factors.pdf",
+      "sha256": "280770d6a86c8f035c6ac4c5a80a2bc572fd227fe644310a1858c5b4b0d471a8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/stewart-prime-factors.txt",
+      "sha256": "59bf6c977dffedc706ef2fb05e7f62cd8181f79100a224f67fd606af592fe88a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/validation.json",
+      "sha256": "011987ce9fc934a556172b4802a2fe9f4b38edf5e9fb11b0c1e018df1e20974f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/ziegler-order.pdf",
+      "sha256": "82386029d28675a5341489c6d869567879bca35432220ea30c766b9f23b9595a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/ziegler-order.txt",
+      "sha256": "f6289acc7caef0f0a2c50935346ff0df49c6f5a38e8e397d52f1fea49fd75201"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/zudilin-2019.pdf",
+      "sha256": "888b884ad3e881df178603e5329b60129a9054588a8cf23ab5c00f45d271648d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cyclotomic-factorial-gate/zudilin-2019.txt",
+      "sha256": "b18cafc99e1f0d8acb14ec419f658443d35338973510442cd18d5d638a5111ee"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/axioms.json",
+      "sha256": "f012d15422d2ec81f14faed587cf97bec2324b769fe9fef202457fc095d6e4ce"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/exact-probe.json",
+      "sha256": "232ff4b9122f62067c0363b44c29bff1f2e54d9a1fb171a89aa5013044e7c46d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/exact_probe.py",
+      "sha256": "4e275fdc8c8139be1730c4334548d3a74051efff955e6ae4233b5f032ee95119"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/preflight.md",
+      "sha256": "097a0dfff2d4eeb5218f52cd3bc5a8b8f52da01be85b6740b4bfd9a326e3fa17"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/probe.log",
+      "sha256": "e886e0b96110373cc5bf7ed74e4bd184f8ef79d46acb48debb0b84b99e42e988"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/source-pins.json",
+      "sha256": "a31c40a60c0b4f9f377218fe88103d9f0d42a25ecd0aa9407c435716f35b3527"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/strict-build.log",
+      "sha256": "4886d304edad0abbad3e6c10aa7d5d158f380956e60653fd1f8e1ad3741fc201"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-average-gate/validation.json",
+      "sha256": "180f252f4800c5b752a909a52d4bf11316dc70e146183efa4557e12b1e05bb0f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/agent-pins.json",
+      "sha256": "7f87feed56cb9ef91ccf91790f42bd5bfff5a02ef47b581c30780bf05a5ea4ed"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/independent-review.json",
+      "sha256": "57cc91d84935cdfdd28f6964323089ae570d2b2a55268f99a590b9f6b723af63"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauge-cyclotomic-continuous-checkpoint/prior-pins.json",
+      "sha256": "b38301eb8e963a6bba27939cb276526205513cf2871422e7b207ccb194d2d507"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/angular.tex",
+      "sha256": "f14a7c1c4f0b19b70d6705c8a2adcb658bfbc77814edb61cd57edb2465f38510"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/background-type1.tex",
+      "sha256": "1c7be908c862dc440772964cfdd59e095e7b0f079cec11d99f5c7a9644198dd1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/decomposition.tex",
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/dispersion.tex",
+      "sha256": "9a04b892feb99a79ec4e825bcd5096d3adb994c53d539c41d2da35f0a77f317c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/dual.tex",
+      "sha256": "1209fd17cee79f4a21b71d66d3d8b60b210216fa783ec555959d2ebff2fba483"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/dunn.pdf",
+      "sha256": "565462015051210f55b10699ffc611f35c554a1c67ac752b52a3b092fc7d62b9"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/nonorthogonality.pdf",
+      "sha256": "b8cb7c36e505bde5a00e2bc4e0bf0a3026c0707ed92f1ada9306980d2c67271d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/perron.tex",
+      "sha256": "fc8ef11c96aae384bd0faef3c8ee6c43a6608460d284a098179b9c9d6404b33b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/preflight.json",
+      "sha256": "ed08ba38da225663881d6dc7a3ae969740f4d0d0d9c2e04d98129d6c0fb7e4a0"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/preflight.md",
+      "sha256": "f67ad98b87c49f5f75bee0fa8af418181644cb43c8529b83e7d27aeb0f1c203c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/probe.json",
+      "sha256": "a756f0e75c75e9e70f2ead7cb33602a562dba5bd7db8e15154f3d61ba6bf1a39"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/probe.py",
+      "sha256": "1f987e430e28ace0196f382e1da96b7de81c6327cb1471169becaeaa9d46092f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/rstation-paper10-v2.md",
+      "sha256": "525c899dd4dd5cb0ed15db43f63fb6e25cc140f98358e9d41ddfe897f5a23a7a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-patterson-residual-gate/rstation-paper8-v1.md",
+      "sha256": "f1f9aed624908ccb9b6842911d898916230545ff76dc123187d7eadc3558def1"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/preflight.md",
+      "sha256": "2dad23d63dd4ad36fd7d918fd0b38b168b675023ede49971dc6cedfef325dd9e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/source-pins.json",
+      "sha256": "5ae9e82d168b2b6e97180dda8b9d7f897796bafbfe3fcf36437847dd165b01d9"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "34098c748a6408d1741a836166aa3a4840134e970d4279a9291b032eacb35b7e"
+    },
+    {
+      "path": "docs/arithmetic-operator-cyclotomic-source.md",
+      "sha256": "ac6f3e6707448a279acd9022a8be619fb80fdc143e748c281bde174f9f3a1249"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "a5c2a345d4fa0919a4bd636027f4228968f13d028f2b231befe845ff5d34e0c5"
+    },
+    {
+      "path": "docs/arithmetic-operator-sextic-continuous-frontier.md",
+      "sha256": "d3724e5db8efcd2733341875c9dda89be36ca0c7695efe7d40d147cfc486e430"
+    },
+    {
+      "path": "docs/siegel-interpolation-review.md",
+      "sha256": "a05e0569714df5a6310c0c190ba60e5ea50b5648f78a8dd218655c244b0d53b5"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCyclotomicConvolutionAudit.lean",
+      "sha256": "7d16119d1dd4d53cdfd7b43829e3769e8c9561151ba94ac26d7fb9283159ebf4"
+    },
+    {
+      "path": "scripts/QuasiRHCommonUnitGaugeAudit.lean",
+      "sha256": "a733bd10781a47430d5cd1cd8fc4ffcfb83992504783195d0de86d7b25416df5"
+    },
+    {
+      "path": "scripts/QuasiRHGaugeAverageAudit.lean",
+      "sha256": "451ce9cf570dfb5fa5612d83d8f87ecaf7a744cef40168b7b5f7213d99d37821"
+    },
+    {
+      "path": "scripts/QuasiRHPattersonModelLocalAudit.lean",
+      "sha256": "726afad016f75360b81f79f212d47bee89944929f1acd7485d459f6f6d0cbf87"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean",
+      "sha256": "dd0ae071b0bdb5746fa6362de83aa86a4ee4462810a7fdbc72f0af95b5887675"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Calibration.lean",
+      "sha256": "d8721f13440e278aab51b6625c948b89095b74ef89615eeb78fcb52cff1726c9"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CalibrationRemoval.lean",
+      "sha256": "36cfd6b37ce7823c249e0f1e9535bd5ddc405e83a19d102f365b20757ef69fc8"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalPhysical.lean",
+      "sha256": "853242bc20a864a714dad73e8cb7c3077fa893fe19f0d4e322db0a381b0991a3"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LocalSummation.lean",
+      "sha256": "9a954d140811c6fa818b438ce507688a6890f439271d5141278920e221c5dabf"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowGaussEnergy.lean",
+      "sha256": "f0bd6e81c8f86abf32c5993333f9d9c424cefa790ab3b0bafc9b8fa5ae385c9d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowRayAmplitude.lean",
+      "sha256": "7c2aedb44bc9cf4048d6a788d992168443a27b58e73e16160d5f50db0c1547d4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowRowMellin.lean",
+      "sha256": "485c4c24852590e61653d2639d777d7e65f90627b937d93e26ce5bf722019799"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowSeparated.lean",
+      "sha256": "0cd344ff44c0b4db181ba658a3589a4368cfdae6d4205a439b7204e60dda18b2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Physical.lean",
+      "sha256": "324e33aaa6f25f99f984f75231e292d08d37ee971826d927b539861c326d5544"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalCoefficient.lean",
+      "sha256": "cc0d219fc811ba2c1198a4f75dd08cd5f7dc40fdd9a6dba9eacd185085c46d1d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalPoisson.lean",
+      "sha256": "e11d050153c35e821df8372f14c29a250302bbb47ff95fb7cfbd56bee630818a"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrimePower.lean",
+      "sha256": "2a1f1361af78658be0076053f8169e6900093b25ddc014ff88a2179aec0f1bdb"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PrincipalSplit.lean",
+      "sha256": "79246324533c426fdfc6743518a99b45a8821ce3689a6c48bccafd34c88c6d14"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/Row.lean",
+      "sha256": "94cd0a68ced17d2ad52c67c13af03a3d199568862ebe43fde2f9f0ed96949ce0"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/ScalarTable.lean",
+      "sha256": "e7105589c7ab123f999440eb4a48c3c797f3004cdf82d64cdb5f158387a35a12"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceCoefficient.lean",
+      "sha256": "374110c8227301a3be4ce6269f22ededcb0484583fc28a76c39e6b898fef70a4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceLocal.lean",
+      "sha256": "db29a85fc6d3e1c38ce9e8dce9e0f795baa68aa85b9a228c70df9991e0ec54c2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/PrincipalSignalComparison.lean",
+      "sha256": "3609a84d40122a6137bfa44fcb41f2830046e3456b77d72c34eb83f5c29b0e7b"
+    }
+  ]
+}

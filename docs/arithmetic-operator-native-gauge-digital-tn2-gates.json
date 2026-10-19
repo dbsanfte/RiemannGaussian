@@ -1,0 +1,319 @@
+{
+  "checkpoint": "actual-common-unit-gauge-phased-factorial-TN2-and-comparable-digital-source",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Three strict finite arithmetic leaves and a separately reviewed paper-level digital smooth-source rejection; no RH endpoint inequality or new zero exclusion.",
+  "formal_leaves": [
+    {
+      "path": "scripts/ArithmeticOperatorTernaryCorrelationAudit.lean",
+      "sha256": "117254891aa701222c6628939ec2848a22fe79ad030b9e9413accbb2cc03da85",
+      "strict_command": "Isolated LEAN_PATH after lake env; /home/dbsanfte/.elan/bin/lean scripts/ArithmeticOperatorTernaryCorrelationAudit.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 57,
+      "theorems_including_helpers": 46,
+      "log": ".lake/arithmetic-operator-ternary-correlation-gate/lean.log",
+      "axiom_report": ".lake/arithmetic-operator-ternary-correlation-gate/axioms.json"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorFactorialTN2Audit.lean",
+      "sha256": "38b81c4efcb59b9c4adb253a1ee36a8aed1d104942b25cbd98f5ff5399237331",
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/ArithmeticOperatorFactorialTN2Audit.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 51,
+      "theorems_including_helpers": 43,
+      "log": ".lake/arithmetic-operator-factorial-total-positive-gate/lean.log",
+      "axiom_report": ".lake/arithmetic-operator-factorial-total-positive-gate/axioms.json"
+    },
+    {
+      "path": "scripts/QuasiRHCommonUnitGaugeAudit.lean",
+      "sha256": "a733bd10781a47430d5cd1cd8fc4ffcfb83992504783195d0de86d7b25416df5",
+      "strict_command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true scripts/QuasiRHCommonUnitGaugeAudit.lean",
+      "exit_code": 0,
+      "warning_as_error": true,
+      "namespace_linters": 15,
+      "all_local_module_provenance": true,
+      "standard_axioms_only": true,
+      "local_declarations": 20,
+      "theorems_including_helpers": 10,
+      "log": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/strict-build.log",
+      "axiom_report": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/axioms.json"
+    }
+  ],
+  "total_local_declarations": 128,
+  "total_theorems_including_helpers": 99,
+  "checked_conclusions": [
+    "Actual finite ternary factorial/digit code, exact cyclic carry correlation recurrence and native repeated-11 contraction with ratio 7/9; finite initial state is (1,1).",
+    "Exact floor/divisor-profile factorial bridge and adjacent-minor sign equivalence.",
+    "At every nonzero height, actual phased factorial entry moduli have negative adjacent minors beyond both row and column heads; every prime power remains.",
+    "Untwisted actual von Mangoldt factorial prefix equals N! and has nonnegative adjacent minors.",
+    "Conditional on actual minus-one canonical sextic residue units on one pool, one common finite permutation realizes actual Mobius on every overlapping squarefree subset column.",
+    "Native weighted Gram covariance requires profile co-transform; complete-period Gram is invariant.",
+    "Actual full calibrated physical Gauss join has its exact residue/physical co-transform, with all imprimitive support retained."
+  ],
+  "paper_level_only": [
+    "Uniform translated autocorrelation, real-suspension Bochner measures, all-dilation singularity and compactness/Hellinger passage to moving comparable cutoffs.",
+    "Qualitative o(1) normalized matched smooth-power response for the prescribed comparable binary/ternary family; no actual-prime source theorem.",
+    "Existence and calibrated CRT lift of actual minus-one units; native alpha invariance and whole Gram determinant evaluation.",
+    "Global Euler/source audit of the changed coefficient series after freezing rather than transporting the physical profile.",
+    "Optional monotone ordinary-multiplicative rigidity; unnecessary for the checked actual-phase TN2 obstruction."
+  ],
+  "not_claimed": [
+    "No independent signed or PSD arithmetic estimate discharging an RH endpoint.",
+    "No fixed-power rate or actual-prime cancellation from the digital source audit.",
+    "No free sign change of native alpha or deletion of physical Liouville/cube factors.",
+    "No impossibility theorem for fixed-source-vector constraints, all determinant ideas or entire roadmap families.",
+    "No Lean verification of the whole no-Siegel paper or its cited finite computation."
+  ],
+  "finite_regressions": {
+    "comparable_digital_exact_checks": 34836,
+    "finite_cyclic_recurrences": 617,
+    "finite_cyclic_matrix_products": 364,
+    "native_raw_Gauss_dilation_checks": 135,
+    "complete_Gram_entries": 64,
+    "untwisted_Pascal_minors": 8884,
+    "rational_factorial_profile_checks": 1008,
+    "literal_factorial_checks": 25,
+    "are_proof_of_analytic_limits": false
+  },
+  "independent_review": {
+    "reviewed": "docs/arithmetic-operator-comparable-digital-source.md, paper \u00a7\u00a71\u20136",
+    "reviewers": [
+      "root",
+      "cross_cell_minor_gate"
+    ],
+    "result": "No fatal gap identified; all-real aliases, translated origins, moving-slope compactness and scope checked. This is not Lean certification."
+  },
+  "previous_pins_verified_before_shared_edits": 46,
+  "additional_agent_pins_verified": 33,
+  "prior_verification": ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json",
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "tier1_families_exhausted": 0,
+    "imported_endpoint_unchanged": "strict Re(s)>7/8"
+  },
+  "publication": {
+    "public_root_registration": false,
+    "broad_CI": false,
+    "commit": false,
+    "push": false
+  },
+  "source_pins": [
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/drmota-spiegelhofer-2025.pdf",
+      "sha256": "7e8c09ef746e88a24ec852433490206587d3e4e790fa0b79134899bdd18a86bc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/drmota-spiegelhofer-2025.txt",
+      "sha256": "9eb3f1e166fcf949ac4ce161a5d9a58d1a4398bf82ecb424c1f5bb15d3285891"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/exact-results.json",
+      "sha256": "02bf72eec2b3302afaa40cffd56e440acca4d90a248d1ce932a6e13f080ebd92"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/exact_probe.py",
+      "sha256": "473e865425cf0163e354902d8f13984f20011822f09615788d4d0ec3c18028a8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/grabner-liardet-tichy-2005.pdf",
+      "sha256": "bc6a06a915c715ba454ea574dd69aca192af21620c5900006adb716646262b44"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/grabner-liardet-tichy-2005.txt",
+      "sha256": "4658c95d9d872826b0a68c08d5a6848a36c3e93afccdff8b4f877e3448937a98"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/kamae-1978.pdf",
+      "sha256": "bc9fbaf20a26dee2527b35b8f765ebd7c2d91a3fa6b7898405f12c0b3e9eac23"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/pins.json",
+      "sha256": "dcb9ff175c258d91c8abef286583c1bb45540724d8800afffa2cb45b28e6aa6a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/preflight.md",
+      "sha256": "dfa78f8ddb6ad90e05367883a7dbfbb1095e42ec8777ab957aafae3d4765676b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/sources.json",
+      "sha256": "e11ba044f456609ec2e399da1165cd205ca0f3041d9a0e50a7dbdcf8ef734496"
+    },
+    {
+      "path": ".lake/arithmetic-operator-comparable-direct-gate/spiegelhofer-beatty.pdf",
+      "sha256": "3ea3c9a69bbb7bb51d2d046dafb7527ed535543c1f818c697c2487e8f1838c59"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/audit.md",
+      "sha256": "f87e173b9298c85fe82755f2cd0fd027cdb53684d394f994d50c4a7d294275e7"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/axioms.json",
+      "sha256": "8ddc7207017494bed5b28289ab808f662c31b7a08e2ad9c3158dc379021489fc"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/berg.pdf",
+      "sha256": "6caddf841bd46a2d3b805bb66d7481ff84f8c2ebd683d6b0ba4385c768d43540"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/howe.pdf",
+      "sha256": "57f5e6bf2078d00db25ab994e9379d8d84f62e52ef0f66974709e45e3c2a9161"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/howe.txt",
+      "sha256": "501a6d2b18cbbcf28c5c25595d56c0e0393dbe9e5a3b159b4ba19086d436c3be"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/lean.log",
+      "sha256": "3f01e61209d8edae17bbed254e09268f91acddeaf1b57be070406567f1827f35"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/pascal.pdf",
+      "sha256": "9063191698738238230815ce28da44a83e66398ff0b07c195b1491d31c80779b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/pascal.txt",
+      "sha256": "859aa658314fcc519a9b7aa9096bc94316446ca5d26eb9f1a5e9369030b02c86"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/probe.json",
+      "sha256": "d2bf1753b1bee4af9eb3b3bd4ecb914cef8a7e517c89c032365f7dfe22968a75"
+    },
+    {
+      "path": ".lake/arithmetic-operator-factorial-total-positive-gate/probe.py",
+      "sha256": "01410d39d6facae8038f17017a2cf2ce6fc9daea2c898ff4bc85c41e208e3e6a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-integral-border-gate/preflight.md",
+      "sha256": "c694bedaa4617c3a429f847ccf992ba49298fdba468530124e6111b4f3b1621a"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-period-source/preflight.md",
+      "sha256": "54abd8081f906c0e954e0d63be948e12607b085a46d402a66a3ca13a13a39433"
+    },
+    {
+      "path": ".lake/arithmetic-operator-ternary-correlation-gate/axioms.json",
+      "sha256": "7be78f54eb92be22478d44253591e1ed2c05478c8fd74f986714899b7cf22fa4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-ternary-correlation-gate/lean.log",
+      "sha256": "6f3e75186862ed225c038caf9290128c772eff499eb251c4bfa5298d2b817c43"
+    },
+    {
+      "path": ".lake/arithmetic-operator-ternary-correlation-gate/prior-pins.json",
+      "sha256": "d9eba77381d582373822a47db6eaee5dcaf48f6c9eddccb2a051c91a9a376a5f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-ternary-correlation-gate/validation.json",
+      "sha256": "dea4ad88a6803e4bff2c93e948e7dc6a2a2405479a8af769a8863305ef50cb19"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/axioms.json",
+      "sha256": "fdc07bb9a34187ceb27b3f1c6d77fd575c8122d902f54ef8895b631c17be3da7"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/exact-probe.json",
+      "sha256": "87093d42dfeba32d94ed983cccf79ab1af73db5e115a7db35928cb6f6c27b182"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/exact_probe.py",
+      "sha256": "170a2e693229549b958c1e74f13834bcd3b86c1a8066545b9bc53a511dfc9a32"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/preflight.md",
+      "sha256": "2dad23d63dd4ad36fd7d918fd0b38b168b675023ede49971dc6cedfef325dd9e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/probe.log",
+      "sha256": "87093d42dfeba32d94ed983cccf79ab1af73db5e115a7db35928cb6f6c27b182"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/source-pins.json",
+      "sha256": "5ae9e82d168b2b6e97180dda8b9d7f897796bafbfe3fcf36437847dd165b01d9"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/strict-build.log",
+      "sha256": "6dd3f6738bb222b038fd6bfd02799c956dcf332cfab2c2bec339312bb60fad41"
+    },
+    {
+      "path": ".lake/arithmetic-operator-whole-gauss-orthogonality-gate/validation.json",
+      "sha256": "a23db2b71a61778bfa0c10186b3fb78a7ba367d70b743e93a6750e2a988f2469"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "428b915bfc7de24bcbe5444f974ab9140fd0912bb1364faa8022eac7a17ddb24"
+    },
+    {
+      "path": "docs/arithmetic-operator-comparable-digital-source.md",
+      "sha256": "ebb19d2e1ca79f887e6f7bd58b483e313f50226a483ba1d2c8ca1601c1df30a5"
+    },
+    {
+      "path": "docs/arithmetic-operator-comparable-pair-raw-gates.json",
+      "sha256": "7e3d25cd5e95a381b9628ece69f68502667bae8aad0cab8e50be38d5b79e533d"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "9f190e0e48307588064065364fc45d26562fb44485e3fee59b213376f5cff5fc"
+    },
+    {
+      "path": "docs/siegel-interpolation-review.md",
+      "sha256": "ca5d1ddff38f908357a3f708aed9bc6e0d9f5f38c0a84b184ee48168f49e2b80"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorComparableDigitalAudit.lean",
+      "sha256": "c52e2353a1428d45da3ac67ff9b5de20eb42efc240e82ffcfe0a967d8b34ec67"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorDigitalCarryAudit.lean",
+      "sha256": "321bcc650674ba690965c9fa045bfc26a2b09c10c28957562f6f1cae04915fbf"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorFactorialTN2Audit.lean",
+      "sha256": "38b81c4efcb59b9c4adb253a1ee36a8aed1d104942b25cbd98f5ff5399237331"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorTernaryCorrelationAudit.lean",
+      "sha256": "117254891aa701222c6628939ec2848a22fe79ad030b9e9413accbb2cc03da85"
+    },
+    {
+      "path": "scripts/QuasiRHCommonUnitGaugeAudit.lean",
+      "sha256": "a733bd10781a47430d5cd1cd8fc4ffcfb83992504783195d0de86d7b25416df5"
+    },
+    {
+      "path": "scripts/QuasiRHRawSignRelationAudit.lean",
+      "sha256": "46a5c8ea6e57dbf4561d0fb7347787e356c9217fb28de7a8191c83414124683d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/CalibrationRemoval.lean",
+      "sha256": "36cfd6b37ce7823c249e0f1e9535bd5ddc405e83a19d102f365b20757ef69fc8"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/IdealLocalEuler.lean",
+      "sha256": "01fd17bb0c9ac3e39734d4811083462a7fc8490e04561b16799ae9e3d4556f74"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalCoefficient.lean",
+      "sha256": "cc0d219fc811ba2c1198a4f75dd08cd5f7dc40fdd9a6dba9eacd185085c46d1d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/SourceLocal.lean",
+      "sha256": "db29a85fc6d3e1c38ce9e8dce9e0f795baa68aa85b9a228c70df9991e0ec54c2"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Eisenstein/CompactEnergyFamilies.lean",
+      "sha256": "895150367a2a113d4e16b072eddc9ef1ce7f3cf861fb891641101fdd9c6c6893"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/SecondPoissonScale.lean",
+      "sha256": "5453ff3e38024577604c103d57018cad7f4caecc57297192d2de6c56fa9a99d5"
+    }
+  ]
+}

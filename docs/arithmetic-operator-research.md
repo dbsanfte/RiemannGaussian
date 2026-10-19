@@ -5771,3 +5771,2096 @@ as freshly relinted. The user authorized parallel agents for this
 checkpoint; they changed only their assigned isolated files. Historical
 documentation pins stay unchanged. No root/public registrations,
 publication, ordinary CI or wider migration checks were run.
+
+## 2026-10-18: Siegel-zero interpolation determinant preflight
+
+Primary source: Banks, [arXiv:2610.15483v1](https://arxiv.org/html/2610.15483v1),
+especially Proposition 3.4, Lemmas 4.1/5.1/6.2 and Remark 7.2.
+Two Sol 6.1 analyses and an exact finite regression are research evidence,
+not a Lean import or verification of the whole paper. The paper excludes
+real exceptional zeros near one for primitive real Dirichlet characters;
+its all-conductor numerical constant additionally invokes a separate
+finite computation. No zeta or complex-zero exclusion is imported here.
+
+The reusable mechanism is a COMMON nonzero algebraic-integer determinant:
+weighted greedy monomial rows permit lower-weight Frobenius substitutions,
+extracting prime powers from that same determinant for many primes.
+In the rank-four/three-coordinate construction, the upper main coefficient
+is 13/16 with the paper's chosen degree balance, against a near-one
+logarithmic prime-mass lower coefficient. The use of field-linear row
+operations is sound: determinant equality is established over the field,
+while divisibility is established separately from the integral transformed
+entries. Integral change-of-basis coefficients are not required.
+
+Our portable generalization/preflight, NOT a new checked theorem: it is
+enough to have an integral polynomial rewrite
+`x_1^p = P_p(x) mod p` whose weighted degree is less than `p*w_1`,
+on ONE common finite point set with a full-rank greedy evaluation basis.
+The binomial expansion then places every correction in earlier rows.
+Prime-specific column deletion invalidates the inference that all the
+resulting prime divisibilities belong to one nonzero integer. This is a
+genuinely collective arithmetic constraint worth testing in the existing
+Kummer/cutoff geometry, provided its actual zero source survives.
+
+The direct transfer has two distinct missing gates. First, the fixed-height
+phase cannot be substituted for a finite-order Frobenius label: for nonzero
+height it is a root of unity on at most one rational prime, by unique
+factorization and the irrationality of the ratio of two distinct prime
+logarithms. This does not exclude other algebraic polynomial rewrites.
+Second, a fixed `beta<1` diagnostic zero contributes only
+`-m*integral x^(beta-2) dx` to the MATCHED harmonic logarithmic prime mass.
+That contribution is bounded as the upper endpoint grows. It does not
+supply the positive mass fraction required by this determinant comparison.
+The construction's limiting dimensional threshold is 3/4, not merely a
+nonzero response. A finite near-one regime must not be confused with an
+all-height asymptotic estimate in the surviving `1/2<beta<=7/8` region.
+
+An exact rational calculation in `Z[sqrt(5),sqrt(2)]`, with 16 grid points
+and the full greedy row selection, checks unchanged determinants and
+entrywise divisibility after the Frobenius row substitution. For weight
+parameter 2 the admissible prime 3 has row exponent sum 2, and the norm
+has valuation exactly 8, reproducing the predicted `3^(4*2)` extraction.
+The tiny example has no degree/bias margin and proves no asymptotic bound.
+Script, output, pinned PDF and TeX are under `.lake/siegel-2610-15483/`;
+the reproducibility/scoping record is
+`docs/arithmetic-operator-siegel-preflight.json`.
+
+No automatic cubic-estimate shortcut follows either. The existing pinned
+cubic first-moment input is already unconditional; its cubic/allowed
+angular Siegel--Walfisz families explicitly exclude the exceptional-real
+character channel. A `c/log(conductor)` zero gap at conductor `X^kappa`
+alone gives no fixed power saving in `X`. The genuine growing quadratic
+twist, model-source and joint numerator gates remain unpaid.
+
+The next determinant experiment must therefore establish a native common
+column set and lower-weight congruence closure, then calculate a nonzero
+source AND a divisibility surplus large enough after density separation.
+Stop before building a determinant library if the only source uses complete
+Gamma evaluation (already source-blind), if the columns depend on the
+extracted prime, or if only bounded harmonic mass is obtained. These are
+gates on this proposed transfer, not exhaustion of determinant methods or
+of a roadmap family. No independent RH inequality or exclusion was proved;
+the imported strict `Re(s)>7/8` endpoint remains unchanged.
+
+## 2026-10-18: native common-determinant and literal carry-phase gates
+
+The paper's collective divisibility idea was tested against actual finite
+integer cutoffs and Pascal minors before constructing any general library.
+Two Sol 6.1 agents handled disjoint finite gates; the root checked the
+prime-power-phase distinction and proved the general interval-repair result.
+Three isolated Lean leaves pass warnings-as-errors, 15 linters each and
+standard-axiom checks over every local declaration by module provenance.
+They contain 105 local declarations / 88 theorem declarations including
+generated helpers. The record is
+`docs/arithmetic-operator-determinant-gates.json`.
+
+**Masked Frobenius extraction needs masked row closure.** On the common
+columns n=1,2,3, the rows `1,n,1_(2n<=4)n^2` have determinant -7.
+Replacing the last row by `1_(2n<=4)(n^2-n)` gives an even row and
+determinant -4, not -7. The missing correction has determinant -3 and
+does not lie in the preceding rational row span. The analogous literal
+p=3 cutoff has determinant -116 and replacement -108. These are checked
+in `scripts/ArithmeticOperatorMaskedFrobeniusAudit.lean`; pointwise integral
+congruences alone do not license the determinant-preserving operation.
+The tested finite repairs do preserve their nonzero determinants.
+
+**The complete interval-block repair is exactly factorial.** For arbitrary
+finite blocks, block b consisting of `length(b)+1` consecutive integer
+columns and every polynomial degree from 0 through `length(b)`, Lean proves
+
+    det(maskedFlags) = product_b superFactorial(length(b))
+                    = product_b product_(j=0..length(b)) j!.
+
+This is `maskedFlags_det_factorials` in
+`scripts/ArithmeticOperatorIntervalDeterminantAudit.lean`. Cell translations
+do not affect it. Thus repairing closure by splitting into complete
+interval polynomial flags supplies no determinant factor beyond the
+ordinary factorials, even with growing or unequal cell sizes. This is an
+exact statement about this repair, not every cutoff-compatible space.
+
+**The adjacent Pascal minor adds only an endpoint channel.** Let n=k+t and
+
+    D = choose(n,k)*choose(n+1,k+1)
+        - choose(n,k+1)*choose(n+1,k).
+
+`scripts/ArithmeticOperatorPascalMinorAudit.lean` proves D>0,
+`D*(k+1)=choose(n,k)*choose(n+1,k)`, and its six-factorial identity.
+More importantly, at EVERY literal denominator d the corresponding
+factorial-floor coefficient is
+
+    h_d = carry(k,t;d) + carry(k,t+1;d) - 1_(d divides k+1).
+
+For any common cutoff X>=n+1 and arbitrary complex weights w(d), its
+joined residual is exactly `-sum_(d | k+1) w(d)`. With
+`w(d)=Lambda(d)*d^(-iy)`, every prime power and phase survives. The norm
+of this additional channel is at most `log(k+1)<=log X`, and Lean proves
+its source-normalized decay for every beta>0 on the cofinal dyadic scale.
+The TWO ORIGINAL signed binomial-carry packets are not bounded by this
+result. A weighted sum of many minors still needs an exterior mass bound.
+
+The phase audit matters: Kummer identifies the number of carries with
+v_p of the binomial, but not their levels. For `choose(4,2)=6`, the sole
+binary carry is at order 2, so its literal height factor is `2^(-2iy)`;
+base-prime weighting or a consecutive tower through valuation one would
+give `2^(-iy)`. The small example is checked in Lean. The actual-phase
+minor theorem uses the denominator-by-denominator identity above; it
+does not silently apply valuation additivity after changing phases.
+
+Exact finite regression also checked 861 adjacent minors, 24,682 literal
+layer identities and 12,176 bounded-gap examples. The bounded-gap formula
+is paper-level only: the extra factor is the polynomial
+`Q_ab(t)=(t+a).falling_b-t.falling_b`. For fixed gaps its base-prime
+logarithmic mass is O(log X), but no general literal carry-phase theorem
+or growing-minor source theorem is claimed. Subtraction can create new
+prime factors beyond the entry cutoff: rows 2,4 and columns 0,2 give the
+matrix `[[1,1],[1,6]]` with determinant 5. Such primes need an explicit
+physical-cutoff bridge.
+
+The action-changing result is to freeze these three specific shortcuts:
+unclosed masked Frobenius substitution; interval-block factorial repair;
+and the added adjacent-minor endpoint as a proposed new positive-power
+source. A viable next determinant candidate must keep genuine cross-cell
+information in one integral evaluation space and pass the actual source
+and pole-separation tests. Nonadjacent/growing minors and other evaluation
+spaces remain open; no entire operator family is exhausted. No new RH
+arithmetic premise or zero exclusion has been proved. The goal remains
+active, with 8 Tier-1 families visited and none exhausted.
+
+All 14 previous Siegel-preflight pins matched before these notes and
+AGENTS.md changed. Those earlier records remain historical. No public
+registration, broad build, CI, commit or push was performed in this slice.
+
+## 2026-10-18: cross-cell rank, polynomial source and sextic resonance gates
+
+This follow-up tests the surviving determinant proposals and a specific
+connection to the native Gaussian coefficients. Three new isolated Lean
+leaves pass warnings-as-errors, 15 linters each, and standard-axiom checks
+over every local declaration by module provenance: 71 local declarations,
+59 theorem declarations including generated helpers. These are scoped
+structural/rate audits, not a new independent RH estimate. The reproducibility
+record is `docs/arithmetic-operator-cross-cell-sextic-gates.json`.
+
+**The cutoff closure cost concerns earlier rows.**
+`scripts/ArithmeticOperatorCutoffRankAudit.lean` works over any ring. If a
+submodule of functions on N literal columns contains the constant-one row
+and is invariant under EVERY prefix cutoff, successive prefixes produce
+every column delta and the submodule is the whole space. Exact interval
+restriction and finite cell reconstruction are also proved. Thus a PROPER
+earlier-row filtration cannot satisfy this strong closure hypothesis.
+The final space of a full-rank determinant is already the whole space;
+this theorem is not an obstruction to its closure. Nor does it cover a
+weighted filtration with a smaller, row-dependent native cutoff family.
+
+The associated paper-level Pascal audit factors a general gapped minor
+into its binomial rows, Vandermonde and a factorial-Schur polynomial after
+clearing denominators. For fixed geometry the additional base-prime mass
+is O(log X). Growing gaps introduce a genuine unknown polynomial factor,
+but neither its actual zero response nor its literal carry-layer bridge
+follows from total valuations. For example, rows 3,6 and columns 0,3 give
+`[[1,1],[1,20]]`, determinant 19, beyond the entry top index 6. Exact probes
+checked 4,500 product identities, 250 degree tests and four confluent
+Fourier examples. These are regressions, not an asymptotic source proof.
+
+**A genuine adjacent integer relation is too source-blind.**
+For `f(t)=3t^2+3t+2`, the new
+`scripts/ArithmeticOperatorQuadraticNormAudit.lean` proves
+
+    (t+2)*f(t) = t*f(t+1)+4,
+    gcd(f(t),f(t+1)) = if t%4=1 then 4 else 2.
+
+For arbitrary complex prime-power codes phi, the entire common-divisor
+packet through T rows is exactly
+
+    T*log(2)*phi(2) + floor((T+2)/4)*log(2)*phi(4).
+
+Subtracting its exact mean density leaves norm at most log(2), provided
+`norm(phi(4))<=1`. Lean proves decay after division by X^beta for every
+beta>0, even with moving row endpoints/codes. This closes the adjacent
+common-divisor source test negatively, retaining both literal layers 2
+and 4. It does not bound the full polynomial prime-divisor packet.
+
+The latter has a different, paper-level density/source gate. With
+rho(d) the root count of f modulo d and chi the quadratic character of
+conductor 15, its prime-power density series is
+
+    H(s) = -zeta'/zeta(s)-L'/L(s,chi)-R(s),
+
+where R is analytic for Re(s)>1/2, including the inert even-power and
+bad-prime corrections. Hence the density model retains actual zero
+residues. But replacing literal root counts by their density incurs the
+unpaid signed discrepancy. At cutoff Y the diagnostic source is
+`T*Y^(beta-1)`, versus the elementary O(Y) replacement budget. At the full
+quadratic cutoff Y~T^2 this does not close. The O(T log T) absolute bound
+must not be compared to X^beta: the corresponding source at X=T^2 is
+X^(beta-1/2). Adding the L and R corrections restores exactly the original
+Mangoldt coefficients, not a new estimate. The full source audit remains
+in `.lake/arithmetic-operator-polynomial-norm-source/source-audit.md`.
+
+**A newer sextic estimate has a precisely quantified missing range.**
+Primary literature considered here includes
+[de Faveri, arXiv:2610.04045v1](https://arxiv.org/abs/2610.04045v1) and
+[Xu--Sang, arXiv:2610.17675v1](https://arxiv.org/abs/2610.17675v1), alongside
+the quadratic/cubic/quartic inputs pinned in the audit. None is imported
+as a new Lean analytic theorem. Quadratic large-sieve input cannot be
+applied merely by writing the sextic character as quadratic times cubic:
+the shifted cubic Gauss factor still depends on both matrix indices.
+
+Even GRANTING common separated coefficients, fix the physical marked
+prime P before applying a conductor estimate. On the maximal-mark,
+H=V=1 stratum, let the norm-length exponents be
+
+    Y'=Z^(23/48-d), Q=Z^(5/6-2d), U=Z^(11/16), X_G=Y'*U.
+
+The candidate sixth-order norm has exponent from
+`Q+U+Q^(5/6)*U^(1/3)+Q^(1/3)*U^(5/6)`.
+The native normalizers, the cost of summing P, and the compensation
+factor give the conditional rate
+
+    E(d) = max(2/9-5d/6, 107/576-d/3).
+
+`scripts/ArithmeticOperatorSexticRateAudit.lean` proves this rational
+calculation, and proves `E(d)<3/16` iff `d>1/24` on `0<=d<=1/6`.
+At d=0 the rate misses by exactly 5/144. This is failure of this separate
+norm budget, not a lower bound or a no-go for the actual signed statistic.
+Even the counterfactual pure quadratic norm would give only 1/96 margin
+after preserving the marked-prime cost. Pooling P into the cofactor
+conductor without its numerator-dependent phase would invent a saving.
+
+**The most concrete new lead is the prescribed Möbius modulation.**
+The sextic lower-bound paper's resonant column uses the conjugate
+normalized sextic Gauss sum. The imported exact identities
+`moebius_star_gauss_one_eq_coefficient` and
+`canonicalProductG_eq_fixed_quotient` identify our supported column as
+
+    alpha_native(I) = mu(I)*g_ray(I)*conj(gamma_1(I)).
+
+The additive trace convention already agrees; g_ray is fixed on an
+explicit finite residue class. Thus the known resonant direction and
+the native column differ by the VARYING Möbius sign, as well as the
+literal native mark/profile weights. A norm lower bound for a freely
+chosen vector gives no lower bound for this prescribed vector; a norm
+upper bound gives no orthogonality either. The paper's later squarefree-row
+transfer may change its witness. Its full-cutoff lower bound is not
+automatically a native dyadic or masked lower bound.
+
+On a common fixed ray and identical radial profile, the exact Hermitian
+overlap loses the Gauss factors and becomes a weighted Möbius sum. This
+is a useful identification of the missing correlation, not a saving:
+small overlap with ONE witness does not bound the whole sextic operator.
+More precisely, for a common real radial profile W and fixed ray C,
+the normalized overlap is a fixed phase times the ratio of
+`sum mu(I)*W(NI/B)^2/NI` to `sum W(NI/B)^2/NI`, on that same support.
+The Mellin transform of the numerator is the profile transform times
+a finite ray-character combination of `1/L_S(1+z,psi)`. Thus even its
+bare single-witness projection restores reciprocal-Hecke zero sources.
+Fixed-data Möbius PNT gives o(1), which is compatible with every individual
+`B^(beta-1)` source and supplies no required fixed power. Retaining the
+native numerator character instead gives
+`sum mu(I)*chi6_I(m)*W(NI/B)^2/NI`, whose reciprocal-Hecke conductor grows
+with m. The fixed-data statement does not apply uniformly there.
+Freeze the inference from single-witness orthogonality to a native saving;
+the missing complementary-operator/joint estimate has not been supplied.
+The next gate is the actual mixed moment with the numerator, fixed
+marked prime, coprimality, calibration, Gaussian profiles and model
+corrections retained. Do not assume random Möbius signs, delete the native
+support to prime cofactors, or use a generic norm theorem as a prescribed
+coefficient estimate. See the exact literature/hypothesis audit at
+`.lake/arithmetic-operator-native-quadratic-gate/preflight.md`.
+
+All 25 pins from the preceding determinant record matched before this
+append. Historical hashes remain unchanged. The three new leaves were
+strictly rechecked by the root; six primary PDFs, exact probes and input
+hashes are recorded separately. No broad build, public/root registration,
+CI, commit or push. The imported strict Re(s)>7/8 result is unchanged;
+8 Tier-1 families have been visited and none exhausted. No new RH
+arithmetic premise has been discharged.
+
+## 2026-10-18: join the marked cubic character before the sextic norm
+
+The new record is
+[`arithmetic-operator-marked-composition-gates.json`](arithmetic-operator-marked-composition-gates.json).
+All five isolated leaves pass warnings-as-errors, 15 namespace linters and
+all-local standard-axiom checks: 186 local declarations/137 theorem declarations
+including generated helpers. No large-sieve analytic theorem has been imported,
+and no new bound for the whole native detector is asserted.
+
+### Exact coefficient and period gates
+
+`QuasiRHMarkedIncidenceAudit.lean` proves the actual zero-extended identity
+
+    1_(P does not divide m) chi_B(m) = chi_A(m) conjugate(chi_P(m)),
+    A=P^(6t+1)*B,
+
+and its calibrated Gauss cross-product version. For two incidences of the SAME
+product A, the common cofactor phase cancels from the square, leaving the
+two-prime character and every coprimality/calibration factor. This does not
+remove cross terms between different products. The numerator norm-volume
+is still smaller than the two-prime conductor by Z^(1/8), so complete-period
+orthogonality is not a native annular estimate.
+
+The same leaf checks the native CRT coefficient. After the completed fixed-ray
+and reciprocity factors cancel, a marked prime P leaves the FOURTH power
+chi_B(P)^4. It is not removed by matching the additive Gauss numerator. More
+generally the cofactor Gram has primitive conductor IJ/gcd(I,J)^2 and ambient
+period lcm(I,J); these must not be confused.
+
+The [rStation v3 structured-mean note](https://rstation.ai/problems/riemann_hypothesis/papers/5)
+claims a prescribed-coefficient positive mean with an averaged fourth-power
+label. It is an unformalized external input with dependencies on a different
+pinned revision of the OpenAI manuscript. Using it here requires the physical
+label length F=Y', even before any additional marks. The conditional scalar
+budget in `ArithmeticOperatorMarkedSexticRateAudit.lean` is
+
+    min(11/32-d/2, 5/12-3d/2),   0<=d<=1/6.
+
+It beats 3/16 only when d>11/72. The unlabelled estimate cannot be applied by
+dropping chi_B(P)^4. This failure concerns that scalar positive-average use,
+not every use of the marked character. The note's inverse/Gauss cancellation
+is prior work and its remaining prime-marked inverse polynomial is explicitly
+outside its conclusion.
+
+### A different conditional estimate that retains both character matrices
+
+Write Q=Z^q, U=Z^u, Y'=Z^y, with
+
+    q=5/6-2d, y=23/48-d, 0<=u<=11/16.
+
+After exact separation, form the common cofactor coefficient FIRST:
+
+    A_I = sum_A a_A chi_I(A)^4.
+
+Apply the cubic operator to (I,A), multiply by the actual cofactor-only
+coefficient b_I, then apply the sextic operator to (m,I). The finite inequality
+is checked in `ArithmeticOperatorCubicSexticCompositionAudit.lean` with both
+operator estimates retained as explicit hypotheses. Their proposed factors are
+
+    Delta3(U,Y') = U+Y'+(U*Y')^(2/3),
+    Delta6(Q,U)  = Q+U+Q^(5/6)*U^(1/3)+Q^(1/3)*U^(5/6).
+
+The [fixed-order large-sieve theorem](https://arxiv.org/abs/2610.04045v1)
+permits common coefficient vectors; exact comparison to the native finite-ray
+character family remains an applicability obligation. It does not permit an
+arbitrary row-dependent amplitude.
+
+With the stated native normalizers, the checked nominal rate at u=11/16 is
+
+    1/36-2d/3       for 0<=d<=7/96,
+    -5/576-d/6     for 7/96<=d<=13/96,
+    -31/576+d/6    for 13/96<=d<=1/6.
+
+For every shorter cofactor scale, the checked implication is E<=17/96-d-v,
+where v>=0 is the exterior square-cube exponent. This has a uniform 1/96
+margin below 3/16, CONDITIONAL on the actual analytic inputs and support bridge.
+It is not a signed lower bound, a new zero-free region, or an estimate already
+proved for the literal full source.
+
+The squarefree physical puncture can be retained by its full divisor expansion.
+At fixed D with A=D*P and m=D*n, multiplicativity gives exactly
+
+    chi_I(A)^4 chi_I(m) = chi_I(D)^5 chi_I(P)^4 chi_I(n).
+
+The D factor is a column-only contraction; the shortened lengths are Y'/ND
+and Q/ND. The raw composed bound has reciprocal weight 1/ND. Summing each D
+dyad costs O(1), hence only logarithms in total, using ideal counting and
+monotonicity of both norm factors. This is a paper-level complete collision
+payment, not merely the smaller single-prime correction. The literal W0 ratio
+cancels D exactly; fixed selected marks split into at most 2^K owner cases,
+with K fixed, without a hidden power of their norm.
+
+The immediate sextic theorem has sixth-power-free rows. For the raw bilinear
+sum, arbitrary numerators are handled on shortened rows by bounded coefficients
+and the convergent sum of sixth-power weights Nb^-3. A sole total row-energy
+hypothesis is insufficient; no unrestricted positive-moment estimate is claimed.
+Fixed bad-prime and unit sectors must remain, with their costs kept fixed.
+
+The arithmetic/source coverage gate is still open. `PhysicalRowIndex` contains
+all supported ideals, not just primes or squarefree ideals. The favorable
+composition currently addresses the MATCHING squarefree block. Other physical
+rows, nonmatching squarefree rows, and the complete source/model ledger are not
+paid by this argument. Restricting a positive norm after the fact cannot replace
+that source theorem.
+
+### The same-weight Patterson model no longer has an automatic source obstruction
+
+`QuasiRHPattersonModelLocalAudit.lean` proves identities for literal
+`bareIdealHighSummand`, with the actual character and ramified ray retained.
+The exact model ratio has norm NI^(-1/6) and replaces only the paper-oriented
+cubic Gauss coefficient. It is NOT multiplicative, so no unsupported model
+Euler product is used.
+
+After removing the two density factors, the actual zero, squarefree and even
+cube coefficients B0,B1,B2 are computed; every odd cube order vanishes. At
+w=1,z=1/6, with q=Np and R=actualAPhase(p)*q^(3-6x), they simplify to
+
+    B0=1-q^(-2),
+    B1/B0=-eta(p)*q^(-x)*(1-q^(-1)),
+    B2/B0=1-q^(-1).
+
+The ratio norm gives an absolute majorant for the remaining squarefree/cube
+sum above Re x>5/6. A selected mark D|I*V^6 retains decay
+ND^(-Re x-1/6), with a fixed factor (4/3)^K. This cancels the actual selected
+ND^x factor. With the exterior annular slot masses retained, the remaining
+double-residue Mellin power is x-103/144, not x-11/16. These normal-convergence,
+mark-mass and contour consequences are paper-level calculations; the leaf proves
+the underlying actual coefficients and norms. The equality to the full model
+series, contour shifts, other free rows and complete source transport remain
+to be established.
+
+Repeated physical prime powers are also located exactly by existing local
+tables: physical exponent k>=2 contributes only at that prime's zero completed
+and zero frequency indices, with tail W^2/(1-W). This is a LOCAL assertion.
+Such factors can multiply source-bearing factors at other primes. A proposed
+squarefree-physical source restriction must retain the modified Euler product
+and every marked local factor; it is not justified by calling this tail
+globally source-free. The new source-ratio analysis is recorded separately and
+does not yet transfer the matching-block estimate to the complete source.
+
+### Evidence and next gate
+
+The root independently rechecked all five strict leaves: 186 local declarations
+and 137 theorem declarations including generated helpers, with 15 linters and
+all-local standard-axiom audits. Arithmetic probes
+check 25 exact complete correlations, 175 exact puncture identities, 702 exact
+divisor kernels, 18 actual matching tests and 105 high-precision phase tests;
+the floating tests remain diagnostics. Native coefficient, mask, primary-source,
+toolchain and validation hashes accompany the record. All 56 prior pins matched
+before this shared-document append; historical hashes are preserved.
+
+The next useful result must attach the composed estimate to a source-bearing
+literal population, or identify its remaining native obstruction. A successful
+squarefree-physical source bridge alone still leaves the nonmatching squarefree
+rows to estimate. Do not refine scalar positive label allowances, discard
+punctures, or credit these conditional budgets as an RH inequality. The strict
+>7/8 baseline is unchanged. The goal remains active: 8 Tier-1 families visited,
+none exhausted. No public/root registration, broad build, CI, commit or push.
+
+The final source preflight gives a sharper negative conclusion for the favorable
+matching block. Restrict the physical local order to k<=e, where e=0 or 1 is the
+squarefree spectral order, and retain all even cube orders and frequencies. Put
+delta=eta(p)*q^(-x), W=q^(-w), V=q^(-6z), R=actualAPhase(p)*q^(4-6x-6z).
+The literal restricted local sum, now proved in
+`QuasiRHMatchingDensityAudit.lean` directly from `sourcePrincipalTerm`, is
+
+    E_match = [1-q^(-1)*R-delta*(1-V+(q-1)*W*V)] / [(1-V)*(1-R)]
+            = (1-delta)/(1-V) * C_match,
+    C_match = 1 + [R*(1-q^(-1)-delta)+delta*V*(1-(q-1)*W)]
+                      / [(1-R)*(1-delta)].
+
+There is NO (1-W) density denominator. The correction product is normally
+convergent near w=1,z=1/6 for Re x>5/6. Thus the principal matching source has
+the reciprocal target L and the z-density factor, but no w=1 pole. Finite
+completed-index marks and prime-slot sums are holomorphic in w there too.
+The original iterated/double residue at w=1,z=1/6 is therefore zero. This
+paper-level source test blocks using the favorable matching norm bound in
+the ORIGINAL source comparison. It does not prove that every possible
+x/z or coupled-contour source vanishes. No such replacement source has been
+established, so do not continue sharpening this block as a contradiction
+route. The source-bearing nonmatching population is still unpaid.
+
+For those independent rows, the final unmarked separate-energy check returns
+exactly to the existing threshold. Granting the prescribed spectral mean Q
+and the physical Gauss mean Y*Delta6(Q,Y), the native normalizers give
+sqrt(Delta6(Q,Y)/Y). At q=5/6 and y=23/48, the four Delta6 exponents are
+5/6, 23/48, 41/48 and 65/96. Their maximum is 41/48, so the resulting
+exponent is (41/48-23/48)/2=3/16, with no strict saving. This is a CONDITIONAL
+nominal ledger, not a new bound for all physical rows. In particular, their
+nonsquarefree Gauss terms still require the actual all-moduli energy bridge.
+
+The remaining potentially useful input is a fixed-power bound on the signed
+joined numerator covariance of the physical Gauss polynomial and the actual
+C_-1 spectral vector. Both phases, all fixed ray sectors, the original smooth
+profiles, marks, and model corrections must survive that estimate. Imposing
+A|I supplies a better norm budget but removes the original double-density
+source; separate-energy Cauchy on the source-bearing rows gives 3/16 again.
+These two facts identify the missing correlation rather than paying it.
+
+## Joined covariance and coprime-source audit, 2026-10-18
+
+The current exact tests separate source preservation from arithmetic saving.
+Four new isolated leaves are strict green, with 79 local declarations and 52
+theorem declarations including generated helpers, 15 linters per leaf and
+all-local module-provenance standard-axiom audits. The root rebuilt the
+matching-density import in an isolated path before checking the dependent
+source leaf. Evidence and hashes are in
+`arithmetic-operator-joint-covariance-gates.json`. No new zero exclusion or
+independent RH endpoint estimate follows from this checkpoint.
+
+### Exact support and the literal cutoff
+
+`QuasiRHJointPeriodAudit` proves that a repeated physical prime overlapping
+the squarefree spectral ideal kills the joint summand pointwise. This uses
+the imprimitive Gauss support and the actual spectral character zero, so
+physical prime powers are retained rather than assumed squarefree.
+
+With nonempty canonical calibration and its coprimality hypotheses, the
+zero Fourier coefficient vanishes. The same leaf applies the existing
+native Poisson identity to express the actual smooth numerator cutoff as
+the sum over nonzero frequencies. Those frequencies are still unpaid.
+An uncalibrated complete-period calculation singles out the squarefree
+physical/spectral diagonal, but that diagonal lacks the original double
+density source (global continuation argument remains paper-level).
+Complete-period orthogonality therefore does not substitute for a bound
+on the incomplete covariance.
+
+### A source-preserving coprime candidate
+
+Write q for the prime-ideal norm, s=1/q, delta=eta(p)q^(-x), W=q^(-w),
+V=q^(-6z), and R=actualAPhase(p)q^(4-6x-6z). The native local sums now
+proved in `QuasiRHNonmatchingSourceAudit` are
+
+    E_full - E_match = W/(1-W) + W*R/(1-R),
+    E_coprime = [1-s*R-delta*(1-V)]/[(1-V)*(1-R)] + W/(1-W).
+
+The second identity restricts the physical ideal to be coprime to the
+completed spectral ideal. It retains every physical power at zero
+completed order. The full nonmatching global series is the difference
+of two global series, not the Euler product of local differences.
+
+At w=1,z=1/6, put t=1-s and B0=1-s^2. The exact algebraic ratio is
+
+    E_coprime/E_full
+      = 1 + s*(delta-R)*t^2/[B0*(1-t*delta-s*R)].
+
+Its correction is O(q^(-Re x-1)+q^(-3)) for Re x>=5/6. The paper-level
+Euler analysis therefore identifies a nonzero source-preserving candidate,
+including the actual marks and all physical powers. A global restricted
+initial-series/Euler/continuation proof and model transfer are still open;
+the local Lean sum identity is not such a theorem.
+
+The compensated local mark is B=-s+t^2*(theta-1)/U, where
+U=B0-t^2*delta-2*s*t*R. `QuasiRHCoprimeResidueBound` proves
+
+    ||U|| >= 993/1372,
+    ||B+1|| <= 890/993 < 9/10,
+    Re B <= -103/993,
+
+assuming 0<=s<=1/7, ||delta||,||theta||<=1/4 and ||R||<=1/49.
+Positive real weighted single-slot averages cannot vanish. This is a
+local rational estimate; it does not assert noncancellation for arbitrary
+complex-weighted or coupled tuple sums.
+
+### What the joined nonzero frequencies actually contain
+
+`QuasiRHJoinedDualPhaseAudit` proves the native corrected spectral
+coefficient times its sextic Gauss root equals exactly mu(I). The physical
+Gauss root cancels its conjugate without producing mu(A). The actual
+reciprocity factor and both dual characters remain, including their zeros
+at nonunits. The proved identity is explicitly for the sign-adjusted CRT
+root; the complete Fourier interpretation uses the imported CRT chain.
+
+Thus the nonzero-frequency expression has one spectral Möbius inverse
+polynomial coupled to a plain physical character polynomial. It supplies
+no second independent Möbius cancellation. Principal sixth-power and
+calibration-compatible frequencies are nonzero frequencies, and the native
+source APIs retain the reciprocal-L source there. Running the exact
+completion chain again does not independently estimate that source.
+Keep the frequency coordinates distinct: the probe's bare joined-Poisson
+h has not been identified with the fully calibrated H=u*a^6. The native
+source statement uses `calibrationForSet_residue_sixth`,
+`sourceHighCoefficient_eq_bare` and `rowIntegral_principal`; the bare
+sixth-power tests are phase diagnostics, not that global source proof.
+
+The full independent spectral length is S=Z^(7/6-d), not the matching
+cofactor length Z^(11/16). At H=V=1,
+
+    Y=Z^(23/48-d), Q=Z^(5/6-2d),
+    Y*S/Q=Z^(13/16), (Y*S/Q)/Y=Z^(1/3+d).
+
+This closes the shortcut that the entire physical row is longer than its
+dual conductor. It does not rule out useful character bounds. Conditional
+on a suitable native smooth plain-row square-root-conductor bound,
+nonprincipal rows would save 7/96-d in the exponent; all ray/profile,
+coprimality, spectral, mark and dual-summation costs must still be paid.
+No such full native aggregate bound is supplied here, and principal source
+terms remain outside that nonprincipal estimate. The previous conditional
+separate-energy rate 3/16 is unchanged.
+
+The final paper-level aggregation check makes that distinction quantitative.
+In the same nominal unmarked scalar normalization, the Poisson prefactor
+is sqrt(Q)/(Y^(3/2)*S). An absolute sum of D=YS/Q dual frequencies and S
+spectral rows, each with physical bound B, costs sqrt(Q)*D*B/Y^(3/2).
+With B=sqrt(D) this has exponent 11/12+d/2. Even a hypothetical scalar
+Burgess-shaped B=Y^(1/2)*D^(3/16) gives 231/256. These deliberately crude
+upper budgets exceed 3/16; they are not lower bounds or an impossibility
+theorem for collective cancellation. The scalar Burgess expression has
+not been imported for the composite-ideal/ray/masked native family.
+
+### Regression, decision and remaining arithmetic
+
+The diagnostics cover 16 exact cyclic Gauss support cases, 64 native
+high-precision phase checks, 28 direct native finite Fourier coefficients,
+four exact principal-sixth residue-label cases and 36 incomplete annular
+Fourier reconstructions. They include compatible unit sectors and
+imprimitive physical powers. A bare radial average can vanish merely from
+a nontrivial unit character; the probe keeps such cases labelled and also
+checks compatible cases. No floating result is used in a Lean proof.
+
+The scoped failure is now explicit: complete-period replacement and
+ordinary completion alone do not improve the actual source comparison.
+The coprime restriction passes the local source test but leaves a
+source-bearing joined inverse/plain correlation. Do not refine this
+reversible completion indefinitely or mistake a single-row gain for an
+aggregate saving. A future attempt needs new arithmetic information in
+that correlated sum, its full native source bridge and model correction.
+Other covariance mechanisms and the roadmap families remain open.
+
+All 75 previous source pins and 23 source-agent pins matched before the
+shared-document append; historical records are preserved. The work is
+local, with no broad build, registration, CI, commit or push. The goal
+remains active: 8 Tier-1 families visited, none exhausted; the imported
+strict Re(s)>7/8 result is unchanged.
+
+## 2026-10-18: growing resultant discrepancy and coprime pole gates
+
+Five isolated strict leaves add 119 local declarations / 96 theorem
+declarations including generated helpers, with 15 linters per leaf and
+all-local standard-axiom checks. The record is
+`docs/arithmetic-operator-resultant-adaptive-gates.json`. These tests follow
+the common-integer constraint suggested by Banks's interpolation argument;
+they neither import that paper nor establish an independent RH estimate.
+
+### A genuine growing-gap bound, with the source loss made explicit
+
+The literal integer Pascal matrix with row arguments t,t+2,t+4 and columns
+0,2,3 has determinant 4q(t), q(t)=t^2+3t+1. The new
+`ArithmeticOperatorGappedMinorAudit` proves this evaluation and the exact
+common-resultant identity. For every positive integral h, every common
+divisor of q(t),q(t+h) divides the SAME positive integer
+
+    R_h = |h^2(h^2-5)|.
+
+At EVERY prime power d, the actual joint residue set J_h(d) has at most
+two elements. This includes the singular prime five: there is one root
+modulo five and no roots modulo twenty-five. No squarefree-denominator
+shortcut or unproved simple-root assumption is used. The prefix count is
+exactly the sum of its residue-class counts.
+
+`ArithmeticOperatorResultantDiscrepancy` and the native join
+`ArithmeticOperatorGappedSourceGate` now prove, for arbitrary unit-bounded
+denominator phases,
+
+    | Σ_(t<T) Σ_(d|gcd(q(t),q(t+h))) Λ(d) phase(d)
+       - T Σ_(d|R_h) Λ(d) phase(d) |J_h(d)|/d | <= 2 log R_h.
+
+All proper prime powers are retained, and a checked specialization uses
+the literal phase d^(-iy). This is a bound for the assembled centered
+statistic. It follows from exact integer residue counts and
+Σ_(d|R_h)Λ(d)=log R_h, without a PNT estimate or a surrogate prime measure.
+The uniform theorem R_h<=6h^4 gives source-normalized decay even for
+1<=h_J<=2^(A(J+1)), with fixed A and arbitrary prefix sequence T_J:
+for every 0<=r<1, r^J times this centered packet tends to zero. Thus this
+particular centered observation cannot retain a nonzero positive-power
+source. This extends the earlier fixed-shift rejection to growing shifts.
+
+The subtraction must NOT be called an already-paid analytic density pole.
+It is h-dependent arithmetic. At h=4 its value is exactly
+T log(11) phase(11)/11, and the uncentered packet has linear growth.
+An actual source in a varying h-family may reside in that subtraction.
+The single-polynomial prime packet, h=0 and uncontrolled exterior weights
+remain outside the theorem. The generic exterior bound keeps the full
+cost 2 Σ_i |c_i| log R_i. Arbitrary bounded t-dependent row weights also
+fail: the new checked prime-eleven example gives 20/11 per period when
+the row weight is +1 on t=2 mod11 and -1 elsewhere, against the usual
+centered indicator. No signed-weight extension follows from |weight|<=1.
+
+The full determinant's factor four needs its two fixed layers. Since q(t)
+is odd, the raw common determinant packet adds exactly
+T log2[phase(2)+phase(4)], and its exact period density adds the same term.
+This last factor-four bridge is paper-level in the review note; the Lean
+source theorem is explicitly for q. In particular do not apply the
+at-most-two-roots lemma to 4q at modulus four, where all four residues are
+roots. The exact native join and the source rejection are otherwise fully
+checked, not inferred from the regression.
+
+A short NEXT preflight, not yet formalized in Lean, also bounds the
+unweighted average of the retained density. For fixed denominator phase
+phi, let D_phi(h)=Σ_d Λ(d)phi(d)|J_h(d)|/d and
+C_phi=Σ_d Λ(d)phi(d)|roots(d)|^2/d^2. The latter converges absolutely.
+The ordered-root-pair identity gives
+Σ_(h mod d)|J_h(d)|=|roots(d)|^2. For H>=1 and X=6H^4, exact positive-lag
+counting and the resultant support therefore yield
+
+    |Σ_(1<=h<=H) D_phi(h)-H*C_phi|
+      <= 4(log X)^2+4H(log X+1)/X.
+
+Thus the complete unweighted growing-lag density average is also
+source-blind after its now-FIXED mean is removed. The proof needs no prime
+distribution estimate. It is not valid for arbitrary lag masks or
+h-dependent phases: taking phi supported at five gives
+D_phi(h)=(log5/5)1_(5|h), C_phi=log5/25, and the mask 1_(5|h) restores
+linear centered mass. No native character or prime-sequence constraints
+are granted to that free-phase control. The next unresolved possibility
+is a source carried by the actual correlated weights, not a complete
+unweighted averaging shortcut. The note and finite checks are separate
+from the five compiled leaves in the checkpoint record.
+
+### Coprimality preserves the inverse source; it does not pay it
+
+`QuasiRHCoprimePoleGate` upgrades the preceding local source calculation
+to genuine prime-ideal coordinates, using actual idealCoeff, actualAPhase
+and the existing prime-norm summability theorem. For supported q>=7 and
+Re x>=5/6 it proves
+
+    |rho_q(x)-1| <= (3/2)[q^(-1-Re x)+q^(-3)],
+
+where rho_q is the previously derived physical-coprime/full local source
+ratio. Every local factor, finite product and absolutely convergent
+infinite correction product is nonzero. Conditional analytic and
+meromorphic-order theorems apply to the imported Hecke reciprocal itself:
+an analytic nonzero correction preserves its pole order.
+
+The final literal-source application EXPLICITLY requires local analyticity
+of the actual infinite product and equality with the restricted source.
+The restricted global Euler identity, excluded-prime/calibration and mark
+factors, contour/model normalization, and source transfer remain unpaid.
+Pointwise summability is not asserted to prove these bridges. Accordingly
+the failure concerns the inference that coprimality alone improves the
+estimate or regularizes a pole; it does not prove impossibility of a new
+signed covariance theorem on that useful domain. The actual prescribed
+spectral mu/Hecke vector coupled to the physical character remains open.
+Free coefficients cannot be granted native reciprocity or calibration,
+and no such generalized-prime compatibility claim is made.
+
+### A separate adaptive-lag candidate collapses exactly
+
+`ArithmeticOperatorAdaptiveLandingAudit` tests the genuinely varying lag
+h=k(k+1)-n on k^2<n<=k(k+1). For each actual prime power d, coprimality of
+k,k+1 gives exact counts k/d if d|k and (k+1)/d if d|k+1. The claim would
+be false for an arbitrary composite d: k=2,d=6 is a checked counterexample.
+For arbitrary complex weights supported on the ACTUAL prime powers, the
+strictly positive-lag packet is exactly b_y(k)+b_y(k+1), where
+
+    b_y(a) = Σ_(d|a) (a/d-1) Λ(d)d^(-iy).
+
+This retains all proper powers and removes the zero-lag endpoint exactly.
+Its scalar Dirichlet response, derived at paper level, is
+[zeta(s-1)-zeta(s)]*(-zeta'/zeta)(s+iy). The matched beta source multiplier
+zeta(beta-1)-zeta(beta) is nonzero on 1/2<beta<1; the density poles at
+2,1,1-iy can be separated by a finite dilation filter without killing beta.
+But the finite identity already holds for free prime-power-supported
+coefficients and is just (id-1)*(Λ phase). It supplies no further signed
+constraint. The cumulative native packet also retains the explicit
+endpoint b_y(K+1), not paid by its O(K log K) allowance. Physical size is
+X~K^2, so the scalar source is X^(beta/2), NOT X^beta.
+
+Freeze this adaptive landing shortcut and the centered common-resultant
+source shortcut, not the full families. Further work needs a source for
+the retained arithmetic density or a different nonlinear common-integer
+constraint before attempting estimates. Merely increasing h, the number
+of minors or the number of free coefficients supplies no such source.
+
+Exact regression checks include 500 literal minors, 500 same-matrix
+Dodgson identities, 1,133 prime-power root sets, 9,064 rational prefix
+discrepancies, 37,500 resultant incidences, and the 824 adaptive-landing
+checks. None replaces a Lean proof or supplies an asymptotic source.
+All 73 previous source pins and 23 coprime-agent pins matched before
+shared-document edits. Prior records remain historical. Local only: no
+root/public registration, broad build, CI, commit or push. Goal active;
+8 Tier-1 families visited, none exhausted, strict >7/8 unchanged.
+
+## 2026-10-18: second Siegel review, simultaneous extraction and density balance
+
+The user requested a fresh deep dive with Sol 6.1 agents. Three independent
+analyses read the full Banks v1 argument and prior scoped audits. The
+consolidated result is [the review](siegel-interpolation-review.md), with
+evidence in `arithmetic-operator-siegel-all-class-gates.json`.
+
+A new finite refinement extracts all visible Frobenius coordinates at
+once, on the SAME determinant. Exact Fraction checks include a nonvacuous
+exponent-2 extraction at prime3 where the first-coordinate exponent is0,
+and a nonvacuous previously omitted tau class. There were36 determinant/
+norm checks,3 with positive extraction and33 with zero extraction. The
+general extraction argument remains paper-level; this is not a Lean import
+of the paper or an asymptotic arithmetic estimate.
+
+The new strict leaf `ArithmeticOperatorFrobeniusBalanceAudit` proves the
+finite-group overlap average, the four-class character decomposition,
+and exact arithmetic-versus-smooth centering with full complex weights.
+Its13 local declarations/10 theorems including helpers pass15 linters
+and all-local standard-axiom auditing. Uniform extraction coefficient
+|V|/|G| matches the Archimedean main slope IF interpolation at that scale
+is independently available. There is no automatic nonabelian Frobenius
+closure or arbitrary-subset interpolation theorem.
+
+Actual-prime centering removes the guaranteed trivial-character zeta
+residue; coincident quadratic L zeros are not ruled out. Smooth centering
+retains the arithmetic zeta error, conductor/height/floor costs, and the
+bounded harmonic source. These cannot be confused. The compressed
+rank-eight/five-coordinate finite test passes but supplies no uniform
+interpolation/source bridge. The natural strict monic cubic-Gauss lift
+has exponent at most2 in its greedy rows, so that particular coordinate
+cannot supply further prime-floor extraction. Both are scoped paper-level
+gates, not exclusions of larger families.
+
+All119 preceding source pins matched before this append. Historical
+records remain unchanged. No RH endpoint premise, new zero-free region,
+public/root registration, broad checks, CI, commit or push. Goal active;
+8 Tier-1 families visited, none exhausted.
+
+
+## 2026-10-18: moving carry source gate and native determinant-border audit
+
+This pass follows the Siegel interpolation review with two concrete escape
+tests. Three strict isolated leaves give93 local declarations/78 theorem
+declarations including generated helpers, each passing15 namespace linters
+and an all-local standard-axiom audit. No independent RH endpoint premise
+or stronger zero-free region is proved. See
+`arithmetic-operator-moving-digital-border-gates.json`.
+
+### The growing carry cutoff deletes the tested power source
+
+`ArithmeticOperatorDigitalCarryAudit` proves the actual Kummer identity
+
+    carry(n,2^(k+j))=carry(floor(n/2^k),2^j), j>=1.
+
+The complete finite retained-layer parity is exactly
+`highCode(k,n)=(-1)^s_2(floor(n/2^k))`, with the original layer endpoint
+hypothesis explicit. This is not an invented digit decoder or an assumed
+integral quotient of two binomial coefficients. Adjacent quotient blocks
+cancel, including both initial heads and the final partial block, and
+EVERY prefix has absolute value at mostH=2^k.
+
+`ArithmeticOperatorDigitalSourceGate` now proves the corresponding exact
+smooth-source bound. For ANY code z with every prefix bounded byB, use
+literal integral weights w_beta(n)=integral_n^(n+1)x^(beta-1)dx. For0<beta<=1,
+lo>0 and arbitrary count,
+
+    |lo^(-beta) sum_(k<count) w_beta(lo+k) z(lo+k)| <=2B/lo.
+
+The exact complex matched-height identity is proved before this estimate.
+It sends the diagnostic density -m*x^(beta+i*y-1), twisted byx^(-iy), to
+-m*x^(beta-1). This is a computation of that individual power component,
+not an asserted explicit formula for nonlinear Kummer-weighted primes.
+The native highCode specialization allows ALL cutoff parameters to vary:
+H/lo->0 forces normalized matched-power response->0. No exponentially
+thin cells, PNT error, or fixed-threshold uniformity assumption enters.
+Conversely an eta-sized response requires2B>=eta*lo, so ordinary prefix
+cancellation alone cannot certify a nonzero macroscopic smooth source.
+
+At the macroscopic endpointlo=H, the code is exactly-1 on[H,2H). Its
+normalized power response is exactly-(2^beta-1)/beta, strictly negative.
+But for ARBITRARY complex weights its arithmetic packet is exactly minus
+the original uncoded interval; smooth-density centering leaves the same
+unpaid Chebyshev error. This retains actualLambda, proper powers and phase
+when instantiated. The bounded mask(1+code)/2 also restores half the
+uncoded row exactly. Thus neither arbitrary masks nor a coarse cutoff are
+paid by the small-prefix theorem. Freeze this linear source escape only;
+no impossibility claim about all digital/nonlinear mechanisms is made.
+
+A separate mixed binary/ternary preflight uses the actual factorial codes
+epsilon(n)=(-1)^v2(choose(2n,n)), eta(n)=exp(2pi*i*s3(n)/3). High-binary
+x low-ternary has matched responseO(1/H+1/X), uniformly in the independent
+ternary precision, from exact cancellation inside every three unit cells.
+The available fixed ternary prime theorem, used blockwise, costs
+X^(2-delta3)/H against a largest possible sourceX^beta/H; even0<delta3<=1
+cannot pay any beta<1 by this method. This rate and mixed-code argument
+are PAPER LEVEL, not a new imported prime theorem. Both primary PDFs and
+their hypotheses are pinned. Comparable growing high/high scales remain
+unresolved: exact integer data and floating power probes show no source
+plateau, but prove neither an asymptotic no-go nor a surviving source.
+The centered-prefix principle explains why a proposed new digital code
+must demonstrate genuine source covariance before a prime estimate.
+
+### A border preserves the actual Gauss statistic but supplies no estimate
+
+`QuasiRHBorderedStatisticAudit` defines the finite join using ACTUAL
+physicalRowWeight, spectralSummand, and prescribed spectralmu. It proves
+mu(I)^2*spectralSummand=spectralSummand by the exact squarefree Gauss
+support, without deleting any physical powers, cube orders, calibration,
+nonunit zeros, marks, profiles or phases. For literal K and source vectors,
+
+    det [[I,K,0],[0,I,mu],[u^T,0,0]]=u^T K mu
+
+is exactly the original unpaid native joined sum. Bare absolute determinant
+is invariant under the supported Mobius column signs. The border retains
+their orientation but does not create a new signed relation or estimate.
+An ordinary cofactor border instead givesu^T adj(A)mu and needs its OWN
+actual source/conditioning bridge; it cannot be substituted silently.
+
+The finite Frobenius control also exposes the extra arithmetic obligation.
+A row change must act on the added source column, and that entry must have
+the same prime divisibility as every old entry. Core-row divisibility alone
+is insufficient. This is demonstrated by an exact symbolic countercheck,
+not by granting arbitrary weights the native Gauss identities. A viable
+new integral border must prove common Frobenius closure for the ENTIRE
+border plus a genuine height/divisibility surplus and source transfer.
+Normalized Gauss phases and arbitrary analytic profiles are not thereby
+integral coordinates. Freeze packaging-alone as a saving, preserving the
+possibility of a genuinely new common-integral arithmetic relation.
+
+The exact carry regression has62,302 checks; the mixed-code probe has
+10,000 factorial identities and27 density/prefix cases; the border probe
+has72 rectangular and36 column-phase/Gram checks plus symbolic controls.
+Floating Mellin values are diagnostics only. All30 preceding checkpoint
+pins matched before shared notes changed, and25 additional agent pins
+matched. Historical records remain unchanged. No broad build, CI,
+public/root registration, commit or push. Goal active:8 Tier-1 families
+visited, none exhausted; the strict imported>7/8 endpoint is unchanged.
+
+## 2026-10-18: comparable digital windows, nonlinear pair, and raw Gauss sign
+
+This pass tests three concrete extensions of the preceding gates, including
+the Siegel paper's common-integral-object idea against actual native Gauss
+relations. The strict leaves are `ArithmeticOperatorComparableDigitalAudit`,
+`ArithmeticOperatorDigitalPairAudit`, and `QuasiRHRawSignRelationAudit`:
+103 local declarations/79 theorem declarations including helpers, each
+passing 15 linters and an all-local standard-axiom audit. These results
+close particular unsupported shortcuts; they do not discharge an RH
+endpoint premise. Evidence is in
+`arithmetic-operator-comparable-pair-raw-gates.json`.
+
+### Comparable high/high digital scales
+
+The binary and ternary codes are literal integer factorial data. The new
+leaf proves the ternary Legendre formula, the finite-window identification,
+both native periods, and the exact common CRT period. With H=2^a,
+K=3^b>=H/2 and X=H^2, retaining ell,m>=1 digits gives
+
+    P*Q=2^(a+ell)*3^(b+m)>=6HK>=3X.
+
+Its normalized whole-period allowance cannot tend to zero. This is NOT a
+lower bound for the actual signed discrepancy: correlations might still
+cancel without paying that allowance. The actual first nonaligned overlap
+H=4,K=3,T=8 equals 5+omega, with omega the primitive cubic root; it is
+nonzero by an exact polynomial proof. Separate digit-block means therefore
+cannot simply be multiplied on their physical intersection.
+
+The paper-level six-child overlap recurrence retains unequal intersection
+weights, so it supplies no scalar contraction. There are 315 exact overlap
+and 315 recurrence checks, plus 640 rational period-budget checks. Primary
+Kamae/Spiegelhofer sources concern fixed digital functions/full digits;
+their hypotheses do not give uniformity in our two growing low-digit
+thresholds. The remaining direct question is centered covariance of
+epsilon(floor u) and eta(floor r_a*u), uniformly in the moving rational
+slope r_a=H/K on intervals of length H. Neither a source plateau nor a
+general impossibility theorem is claimed.
+
+### A genuine nonlinear pair still restores an unpaid channel
+
+Here all prime-power weights are joined before forming the energy, so
+different-prime cross terms are present. For q(n)=epsilon(n)epsilon(n+1),
+q(2r)=-1. On EVERY odd translated row and for arbitrary complex weights
+supported on actual prime powers,
+
+    sum_d w(d)q(n+d)
+      =-sum_(d odd)w(d)+sum_(r>=1,2^r in D)w(2^r)q(n+2^r).
+
+The finite theorem specializes to actual Lambda with arbitrary phase and
+retains every proper power. Both its genuinely Hermitian square and its
+independent two-variable polarization are checked. In particular odd-odd
+distinct-prime cross terms have coefficient+1, not an automatic saving.
+
+For a fixed odd row, the PAPER-LEVEL Dirichlet continuation is
+A_n(s)=zeta'/zeta(s)+H_n(s), where H_n is an explicit finite/geometric
+two-power series analytic on Re(s)>0. Thus its actual zero source survives,
+but through the old uncoded odd-prime response. This is not a new estimate.
+The Hermitian diagonal removes the matching ordinate phase. A separately
+polarized diagonal pole is also insufficient: off-diagonal terms can
+cancel it. The source check therefore uses the joined response throughout.
+All 1159 finite exact probes pass. Freeze only this odd-row adjacent-pair
+shortcut; other lags/nonlinear interactions are not exhausted.
+
+### The prescribed Mobius sign is encoded, but gains no free valuation
+
+The new native leaf proves, with the actual squarefree spectral ideal,
+primary generator pi and norm q,
+
+    T1*T2=mu*D, |D|=q, T2^3=mu*pi*q, T2^6=(pi*q)^2.
+
+One must retain the sign in the cubic relation, or use degree six after
+elimination. The raw quotient is valid, and at auxiliary primes away from q
+its denominator is a local unit (the localized integral assertion is
+paper-level). For any common ring map sigma and odd exponent ell, Lean
+proves the exact defect identity
+
+    (T1*T2)^ell-sigma(T1*T2)=mu*(D^ell-sigma(D)).
+
+The unit sign cannot add a valuation. Clearing the denominator from the
+WHOLE matrix column changes its determinant norm by exactly q, also checked
+in Lean. Clearing only the added source entry changes the statistic. These
+facts reject sign elimination as an automatic surplus, not every possible
+common-matrix arithmetic relation.
+
+The localized mixed degree-six/quadratic normal form has at most 12 base
+monomials; the explicit Fin6xFin2 prime-floor assertion is formal, while
+spanning and local integrality remain paper-level. For c distinct split
+rational prime columns, valuations of the cubic radicands prove independent
+classes modulo cubes; Milne's Kummer theorem gives common-field degree 3^c.
+This paper-level deduction prevents silently importing a FIXED-field
+interpolation theorem. It is not an estimate obstruction by itself, since
+degree-normalized costs can cancel. Five exact native cyclotomic cases,
+10 equal defect-valuation checks and 1482 finite capacity cases pass.
+
+### A published Mobius transfer does not bootstrap the current exponent
+
+Banks--Shparlinski, [Multiple sums with the Mobius function, v1](https://arxiv.org/html/2506.08787v1),
+Theorem 2.2, is an external conditional arithmetic theorem, not a new native
+estimate. Its no-Siegel input gives exp(-c*sqrt(logN)) beyond the linear
+scale. For any fixed beta<1 that saving remains weaker than N^beta.
+Its uniform Dirichlet zero-free hypothesis Re(s)>=sigma<1 gives exponent
+(sigma+3)/4 for sigma>=3/5. Taking sigma>7/8, as licensed by the imported
+strict endpoint, gives exponent >31/32. That does not improve 7/8, and no
+bridge from our literal joined Gauss weights to its constrained triple
+Mobius sum has been proved. Do not infer applicability or a power saving
+for our carrier from the title or from no-Siegel alone.
+
+All 53 preceding checkpoint pins and 31 additional agent pins matched before
+shared notes changed. Earlier hashes remain historical and are preserved.
+No public/root registration, broad build, CI, commit or push. The goal
+remains active: 8 Tier-1 families visited, none exhausted, strict>7/8
+unchanged. New mixed-row integer constraints and the direct comparable
+digital correlation are still open, separately from the closed shortcuts.
+
+## 2026-10-18: common native gauge, phased factorial minors and direct digital source test
+
+This slice tests whole-object constraints suggested by the Siegel
+interpolation review and closes the previously open prescribed comparable
+digital smooth-source test at paper level. Three strict local leaves add
+128 local declarations/99 theorem declarations, including generated helpers.
+All pass warnings-as-errors, 15 namespace linters, and module-provenance
+standard-axiom audits. Evidence is in
+[arithmetic-operator-native-gauge-digital-tn2-gates.json](arithmetic-operator-native-gauge-digital-tn2-gates.json).
+There is no new independent RH inequality or zero-free region.
+
+### A common arithmetic gauge does not give a free source estimate
+
+`QuasiRHCommonUnitGaugeAudit` acts on actual canonical sextic characters in
+one finite CRT target, with actual residue units of character value `-1`.
+For every squarefree subset ideal `I`, including overlapping columns, the
+same multiplication permutation gives `chi_I(a x)=mu(I)chi_I(x)`. This is
+not an independently assigned sign on each column. Its pullback is the
+imported native `idealRowHom`; all nonunit zero entries remain.
+
+The checked weighted Gram covariance transports the weight to `w(a·)`.
+At weight one the whole Gram is invariant. The paper-level full-subset Gram
+determinant is `prod_P [q_P(q_P-1)]^(2^(c-1))`; unnormalized Gauss columns
+add one further `q_P` in each local factor. This evaluates that determinant's
+valuation and size, rather than supplying an extra source-sensitive surplus.
+Numerator characters lie in the fixed sixth-root field; the common Fourier
+operator and raw Gauss fields have separate conductor-dependent costs.
+
+The checked full physical Gauss join also co-transforms. Arbitrary physical
+prime powers contribute Liouville(A), not Mobius(A), and completed cube
+orders retain their extra factor. Native alpha is invariant under the
+corresponding change of its defining additive character. Neither physical
+phase may be dropped. The actual CRT multiplier need not be a global
+lattice unit, so its finite permutation does not preserve the original
+Gaussian/radial profile. General CRT existence and the global source
+calculation are paper-level. The exact finite probe includes split and
+inert primes, 135 raw Gauss dilation checks and 64 whole Gram entries.
+
+Scope decision: freeze automatic complete-period/phase-invariant PSD
+savings. The fixed physical source vector and its transformed-profile
+correlation remain unpaid. A new relation involving that vector is still
+a live possibility. Merely fixing the old profile after the gauge changes
+the coefficient series and removes the old source in the paper Euler audit.
+
+### Twisted factorial total positivity fails even after taking entry moduli
+
+For arbitrary real denominator weights, `ArithmeticOperatorFactorialTN2Audit`
+proves the exact floor/divisor-profile bridge
+
+`log F_w(N) = sum_(n<=N) B_w(n)`, `B_w(n)=sum_(d|n)w(d)`.
+
+The adjacent minor of `F_w(a+b)/(F_w(a)F_w(b))` is a strictly positive factor
+times `exp B_w(a+b+2)-exp B_w(a+b+1)`. At a prime,
+`B_w(p^2)-B_w(p)=w(p^2)`, with the unit term cancelling exactly. For the
+actual entry modulus of the phased factorial kernel,
+`w_y(d)=Lambda(d) cos(y log d)` and
+`w_y(p^2)=log p cos(2y log p)`.
+
+The existing unconditional prime-window theorem at fixed height `2y`
+therefore yields negative adjacent modulus minors beyond both row and
+column heads at every nonzero y. This is a cofinal theorem using literal
+integer primes, not a floating counterexample. The untwisted checks
+`F_Lambda(N)=N!` and nonnegative adjacent minors also compile. This rejects
+only that phased/modulus TN2 extension. Other integer determinant
+constraints, untwisted positivity and signed-minor information remain.
+No claim of source annihilation is made here. Optional monotone
+multiplicative-function rigidity is paper-level and unnecessary for this
+specific result; ordinary multiplicativity must not be silently strengthened.
+
+### Comparable binary/ternary cancellation removes the tested smooth source
+
+The full argument is preserved in
+[the separate source audit](arithmetic-operator-comparable-digital-source.md).
+It proves on paper that the real-step binary and proper ternary digit-code
+spectral measures are singular under every fixed positive real dilation.
+Protected leading ternary `11` blocks give a zero weak limit along a
+subsequence of binary powers, while the binary limit is `-1/3`. The real
+suspension keeps all Fourier aliases. Uniform translated autocorrelations,
+weak probability compactness and Hellinger affinity then give uniform
+prefix `o(X)` for moving comparable H,K=o(X), including H=2^a,K=3^b,X=H².
+No uniform Diophantine hitting-time rate is assumed.
+
+The new strict `ArithmeticOperatorTernaryCorrelationAudit` checks the finite
+arithmetic core of that proof: the literal cyclic factorial/digit code,
+its exact three-residue recurrence, the finite initial vector `(1,1)`, and
+native repeated-11 contraction with rational factor `7/9`. The spectral,
+uniformity and matched-power conclusions remain paper-level, independently
+reviewed in this session. All 34,836 regression checks are finite identities,
+not certification of the analytic limits.
+
+For every fixed complex rho, the annular smooth matched-power response of
+this prescribed code is consequently `o(1)` after source normalization;
+the raw mean and centered prefix also vanish. This closes this particular
+source-test escape. It is not an estimate for the actual prime-weighted
+code, an explicit formula for a nonlinear observation, a power-saving rate,
+or a no-go for other digital correlations or growing heights. The 2025
+Drmota--Spiegelhofer growing-multiplier theorem was checked but not applied
+as though it covered both moving high-digit cutoffs.
+
+All 46 preceding checkpoint pins and 33 additional agent pins matched
+before shared notes changed. Their historical manifests are preserved.
+No public/root registration, broad checks, CI, commit or push. The active
+goal remains at 8 Tier-1 families visited, none exhausted; strict>7/8 is
+unchanged. The next useful constraint must retain the actual source and
+physical profile inside the same collective arithmetic estimate.
+
+## 2026-10-18: calibrated averaging, cyclotomic source and sextic continuous remainder
+
+Two new strict leaves, `QuasiRHGaugeAverageAudit` and
+`ArithmeticOperatorCyclotomicConvolutionAudit`, add 39 local declarations
+and 28 theorem declarations including helpers. Both pass warnings as
+errors, 15 namespace linters and all-local standard-axiom checks.
+The new analytic application remains a conditional paper-level audit;
+no rStation theorem has been introduced as a Lean axiom. Evidence is in
+`arithmetic-operator-gauge-cyclotomic-continuous-gates.json`.
+
+### The actual coset average conserves every fixed source frequency
+
+The finite family consists of actual Eisenstein multipliers fixing
+calibration, coprime to the full physical modulus and having the stated
+actual character ratio. General CRT existence remains paper-level. Lean
+proves that raw averaging multiplies the literal `physicalQuotient` by
+`(-1)^r`, preserving its pointwise norm; sign-corrected averaging equals
+the original quotient. Thus every FIXED `actualPhysicalFourier`, including
+the native `H=u*a^6` congruence coefficient, is unchanged. This does not
+assert that a CRT unit preserves the global sixth-power frequency set.
+
+The paper-level operator satisfies `T_-^2=P_kernel` and acts by modulus-one
+eigenvalues on the relevant characters. Every physical prime power and
+cube factor remains; the physical sign is Liouville rather than Mobius.
+The projected profile coordinates are the original incomplete character
+sums. Independent estimates of those coordinates remain possible, but
+the averaging identity itself supplies no source-sensitive contraction.
+An unweighted full-unit average defines a different detector and removes
+its original first-order source channels in the local Euler audit.
+No global source theorem for that changed detector is claimed.
+
+### Cyclotomic norms retain the source through an invertible Mobius convolution
+
+The full derivation is preserved in
+[arithmetic-operator-cyclotomic-source.md](arithmetic-operator-cyclotomic-source.md).
+For every integer `b>=2`, including cyclotomic index one, Lean proves for
+the ACTUAL integer-polynomial evaluation
+
+    R_b(d)=log Phi_d(b)-phi(d)log b,
+    sum_(d|n) R_b(d)=c_b(n), c_b(n)=log(1-b^(-n)),
+    R_b=mu*c_b,
+    sum_(d<=N) floor(N/d)R_b(d)=sum_(n<=N)c_b(n).
+
+It also proves the exact finite prefix identity against the signed
+Mertens prefixes. On paper, first-term dominance gives an entire factor
+`C_b(s)=sum c_b(n)n^(-s)` nonzero throughout `Re(s)>=0`, with
+`|C_2(s)|>=2/81`. Hence `C_b/ζ` preserves every nontrivial zero and its
+multiplicity as a pole. The same dominance gives an inverse in Dirichlet
+convolution l1, so prefix bounds `O(X^theta)` for `R_b` and for Mobius
+are equivalent for every `theta>=0`. The bounded factorial aggregate
+deletes that source by the exact zeta convolution; it is no stronger
+bound for the unaveraged residual.
+
+The source lives in the cyclotomic ORDER index. An order-index power is
+only logarithmic at prime-factor cutoff `X~b^N`. Literal prime-power
+phases are transported through `ord_(p^(r+v_p(b-1)))(b)` and cannot be
+reset at each cyclotomic factor. The exact regression includes exceptional
+two-adic and Wieferich cases. Its 35,865 finite checks do not certify the
+analytic continuation or inverse-convolution limits. Freeze the plain
+factorial shortcut only: actual q-Pascal, higher cyclotomic congruences
+and genuinely coupled additive constraints are not exhausted.
+
+### A candidate continuous saving leaves the actual theta covariance
+
+See
+[arithmetic-operator-sextic-continuous-frontier.md](arithmetic-operator-sextic-continuous-frontier.md).
+The new primary candidate is the AI-authored rStation paper10/v2,
+Proposition 3. Its `B=1` full-Kubota-series argument, followed by the
+unique exponent-one/powerful numerator split, gives a conditional
+unrestricted-numerator volume mean. The proof uses the full finite-vector
+functional equation and sextic sieve; neither its quadratic-sieve step
+nor primitive inversion is needed for this narrower consequence.
+
+Existing `LowGaussEnergy` already supplies the literal finite full Gauss
+image. It is NOT automatically the squarefree adjoint in Corollary 5:
+`A=p^2,m=p` supplies a nonzero imprimitive term while `g_6(1,p^2)=0`.
+The fixed calibration-to-numerator/local-section bridge still needs
+proof, and no growing-conductor uniformity is available. The original
+physical Mellin kernel retains its theta residue even though the
+auxiliary absorption kernel cancels a pole.
+
+With the same nominal spectral energy and native unmarked normalization,
+the continuous/theta budgets are respectively
+
+    (Q/Y)^(1/2)=Z^(17/96-d/2),
+    Q^(5/12)Y^(-1/3)=Z^(3/16-d/2).
+
+Thus a possible `1/96` saving is confined to the continuous component.
+The retained term pairs the full theta residue in the numerator with
+the actual same-weight spectral residual, including character, cube
+and mark masks. The scalar Patterson model on the spectral ideal is
+not that physical theta vector. The available residue Type-I theorem
+has divisor-convolution coefficients, whereas the actual covariance
+has character coefficients. Directly putting `a=I` fails even at the
+support level: `S/Q=Z^(1/3+d)>1` makes the proposed divisor incidence
+empty while character entries on units remain nonzero. A new coupled
+summation estimate, with source and boundary transfer, is still required.
+
+All 52 preceding pins and 62 agent pins matched before shared notes
+changed. The two new leaves are locally validated; the analytic source,
+operator spectral assertions and external mean-square input remain
+clearly separate from Lean results. No broad checks, public/root
+registration, CI, commit or push. Goal active:8 Tier-1 families visited,
+none exhausted; the strict imported `Re(s)>7/8` endpoint is unchanged.
+## Native calibration, principal theta twist and higher q determinant — 2026-10-18
+
+The [current checkpoint](arithmetic-operator-theta-calibration-qpascal-gates.json)
+adds two strict finite native leaves. They close applicability and source
+bookkeeping gaps, not an independent RH estimate. Every previous no-go
+and the strict imported `Re(s)>7/8` endpoint are preserved.
+
+`QuasiRHCalibrationNumeratorAudit` proves that the ACTUAL choose-based
+good-prime calibration character is a power `j=1..5` of the canonical
+sextic character. It proves complete canonical CRT evaluation, the local
+fixed-numerator transfer `p^(j-1)` for nonsquarefree physical moduli too,
+and a masked generator transfer of the actual `lowArithmeticCoefficient`.
+Global good/bad-prime assembly is paper-level; the sufficient native
+bad-prime period is 72. The full-series mean still needs its version with
+the ORIGINAL fixed exclusions. A numerator change does not license
+dropping a physical-modulus mask or a growing-conductor uniformity claim.
+
+`QuasiRHThetaTwistAudit` proves that the native inverse-character/cusp
+unit weight is principal at every additive frequency. Its zero frequency
+is the full unit mass. The actual same-weight model subtraction restores
+`mu(I)*(1-c*pattersonRatio(I))`, retaining its angular/ray/mod-four
+factors. It also proves the actual ideal fact `D|I, NI<2ND => D=I`;
+there is no cofactor averaging in that top divisor block.
+
+The conditional analytic [theta-twist audit](arithmetic-operator-theta-twist-frontier.md)
+now tests the second, longer dual, not the already rejected empty direct
+divisor substitution. Its length is `K=S^2/Q=Z^(3/2)`. The available
+Type-I error costs `sqrt(QS)` before the physical normalization, or
+`Z^(61/144-d/6)` after it. This is worse than `Z^(3/16-d/2)` by
+`Z^(17/72+d/3)`. The full transformed Mellin kernel has zero second
+density moment; it does not cancel the first twisted pole. A conditional
+isolated-pole rate `Z^(1/6-3d/8)` has margin `1/48-d/8`, but requires the
+exact fixed Hecke-weight bridge and does not pay the long dual. All marks,
+cube rows, source transfer and external analytic inputs remain explicit.
+Freeze this available-Type-I payment, not the whole signed covariance.
+
+The [higher q-binomial determinant](arithmetic-operator-higher-q-determinant.md)
+has a genuine common-numerator gain: `Phi_n(q)^3` divides the equal-area
+two-row determinant, exactly to order three for every `n>2`. Its paper
+proof gives a uniform centered logarithmic error `<=1280*b^(-n)` at
+every base `b>=2`. The actual integer quotient carries exactly the
+opposite tracked source, `-3*R_b`, up to that error. Full index density,
+exceptional valuations and the extra index-two factor are retained.
+The 509 exact checks include rational calculations in `Q[q]/Phi_n`;
+they do not replace the paper proof or constitute a Lean theorem. This
+no-gain result is for ordinary logarithmic norms. No conclusion for a
+literal nonzero prime-power phase is inferred by resetting its factors.
+
+Both new Lean leaves pass warnings-as-errors, all 15 namespace linters,
+and all-local standard-axiom audits (45 declarations, 35 theorem
+declarations including generated helpers). The finite full-integer
+identities remain distinct from the paper-level analytic obligations.
+Local work only; no broad CI, root/public registration, commit or push.
+Goal active: 8 Tier-1 families visited, none exhausted.
+
+## Whole-I joining and literal determinant phases — 2026-10-19
+
+The [new gate record](arithmetic-operator-joined-dual-valuation-gates.json)
+and [full audit](arithmetic-operator-joined-dual-valuation.md) add two
+strict finite native leaves and freeze two specific payment shortcuts.
+They do not supply a new RH inequality or extend the strict imported
+`Re(s)>7/8` endpoint.
+
+`QuasiRHJoinedRamanujanAudit` joins the actual prescribed ideal Mobius
+coefficient with the entire primitive-trace unit sum. Its exact prime
+product is `product_(P|I)(if P|n then 1-NP else 1)`, with every numerator
+and prime-power case retained. In particular a prime numerator larger
+than the ideal cutoff makes the whole coefficient one. The moving
+dual range has `K/S=Z^(1/3+d)`, so these terms cannot be deleted.
+
+The paper-level whole-I Euler calculation gives an inexpensive principal
+density contribution, conditionally `Z^(-11/48+d/2)`. But the exact
+finite divisor cutoff prevents using it as a uniform approximation.
+The current discrepancy allowance costs `Z^(25/48+d/2)`, a deficit
+`Z^(1/3+d)` against the old theta budget. This is an upper-bound failure,
+not a lower bound for the actual signed theta output. The genuinely
+missing estimate is on that theta-weighted moving-cutoff discrepancy,
+with the original profile and model retained. The earlier first pole
+and global native bridges remain explicit.
+
+`ArithmeticOperatorQDetValuationPhaseAudit` closes the phase-reset
+loophole in the higher-q integer test. The actual D_3(2) has exactly
+three 7-adic depths. At a literal cubic prime phase the complete fiber
+vanishes while the extracted single cyclotomic depth is nonzero. The
+checked extraction identity shifts the quotient's depth; it never
+replaces the full packet by an additive unshifted split. Full-envelope
+mass bounds are paper-level and do not close smaller polynomial prime
+windows, which still need their own source/incidence theorem.
+
+The separate [root-of-unity audit](arithmetic-operator-root-unity-source.md)
+tests lower Archimedean height. Its extracted norm packet, divided by
+field degree, has only O(log^2 X) mass even with all physical prime-power
+phases and a growing root order. That extracted channel cannot retain
+an X^beta source. Moreover the product of all actual rows at the root
+vanishes for every order M>=4, so it is not a nonzero integer norm
+witness. The full quotient is unpaid; no family-wide obstruction follows.
+
+The two Lean leaves passed 15 namespace linters each and all-local
+standard-axiom audits:52 declarations/39 theorem declarations including
+helpers. All119 preceding pins and33 additional agent pins were checked
+before shared notes changed. No broad CI, root/public registration,
+commit or push. Goal active:8 Tier-1 families visited,none exhausted.
+
+## Sextic support and small-window source audit — 2026-10-19
+
+The [new checkpoint](arithmetic-operator-theta-support-small-window-gates.json)
+and [research note](arithmetic-operator-theta-support-small-window.md)
+close a genuine finite divisibility question and delimit the remaining
+theta input. They add no independent RH inequality.
+
+`ArithmeticOperatorQDetSmallWindowAudit` proves that the actual once-counted
+cyclotomic product through N contains exactly every base-coprime prime
+power through N. This includes2 and correctly omits index1. Therefore
+its growing-family physical packet for X<=N is exactly twisted Chebyshev
+with a finite base-prime correction. The full determinant product restores
+that correction on paper. The zero source survives, but the observation
+is uncoded: no further signed constraint is supplied. Freeze this particular
+small-window whole-product route, not unsaturated windows or row correlations.
+
+The imported cubic theta support does not describe the physical sextic
+residue. Known sextic Hecke relations neither determine nor universally
+annihilate prime coefficients. The preceding maximal-prime arithmetic
+witness therefore has not been promoted to a nonzero actual theta witness.
+Known fourth/sixth-power sectors retain radical collisions. The fixed-ray
+and transformed cusp identifications are also substantive: period72 alone
+does not imply sixth-power invariance, as an exact native-ring example shows.
+
+The kernel-aligned prime/cube Hecke test leaves the precise factor
+`W(t)-v*(q-1)q^-2 W(qt)`. Even with a common profile, its local multiplier
+has norm>=43/49 forq>=7. This rejects exact local cancellation; it gives
+no lower bound for the full signed covariance. A real joint estimate of
+the sextic residue against the moving cutoff, with all masks and model
+terms retained, is still open. No new scalar or reflected support shortcut
+is licensed by the primary literature reviewed here.
+
+The new leaf passed strict Lean,15linters and the all-local standard-axiom
+audit:27 declarations/24 theorem declarations including helpers. Root reruns
+passed31,408 small-window,105 quotient and1,829 Hecke algebra checks;
+the mod36/mod72 ray enumeration is additional. The analytic and complete
+determinant arguments remain paper-level. All157 preceding and48 agent
+pins matched before shared edits. Local only; goal active,8 Tier-1 families
+visited,none exhausted; strict imported Re(s)>7/8 unchanged.
+
+## Actual sixth-power profile and unsaturated determinant trace — 2026-10-19
+
+The [new checkpoint](arithmetic-operator-joined-typei-ray-window-gates.json)
+and [full note](arithmetic-operator-native-ray-fixed-q-source.md) add three
+strict leaves. They resolve finite arithmetic and source questions, without
+an independent signed RH estimate.
+
+The native profile now passes the sixth-power test pointwise. This is the
+actual choose-based calibration, bad-place supplement, fixed physical ray
+and primary mask, including every zero/nonunit input and original exclusion.
+The sufficient period72 counterexample no longer obstructs this profile.
+The transformed sextic cusp/section and analytic model bridges still remain.
+
+A class-wide paper argument shows that fixed-construction Gaussian
+determinants at a fixed integer base have an exponentially small ordinary
+logarithmic residual after all quadratic/linear/constant terms are retained.
+Their centered row Dirichlet series is entire. The conditional analytic-germ
+step is Lean checked; the general determinant identification and entire
+continuation are independently reviewed paper-level results. This freezes
+that source observation, not moving constructions or phased prime powers.
+
+The unsaturated product gives a different exact result. For p>N its complete
+integer-base prime trace is the truncated totient divisor sum on p−1, now
+proved in Lean. Paper-level lifting estimates pay every proper prime power
+by O_eta(N^(1/2+eta)logN), below any N^beta with beta>1/2. The prime layer
+splits into a principal reference and an explicit aggregate of nonprincipal
+characters with moduli up to N. The reference has a matched-zero Mellin
+residue; whether that aggregate cancels it is the precise unpaid source
+question. Finite base averaging has a separate discrepancy and height cost.
+
+The joined whole-divisor Type-I calculation recovers the existing rate,
+not a new saving. It retains rho(Dm), the moving profile, short-n density
+boundary and first pole. Its analytic input remains an unimported preprint.
+This attempted improvement is frozen before any further framework work.
+
+Root reran all three strict leaves:49 local declarations/42 theorem
+declarations including helpers,15 linters each,standard axioms only.
+Exact regressions include1,336 q-germ/determinant checks and43,353 unsaturated
+incidence checks; native-ray finite checks are separately recorded. All211
+prior and49 agent pins matched before shared edits. No broad checks,root
+registration,commit or push. Goal active:8 Tier-1 families visited,none
+exhausted; imported strict Re(s)>7/8 unchanged.
+
+
+## Follow-up: whole trace, growing rank, native section (2026-10-19)
+
+[Total-source/section audit](arithmetic-operator-total-source-section.md)
+closes three specific shortcuts and narrows the native bridge. The new
+strict leaves total76 local declarations/62 theorem declarations,15linters
+each,standard axioms; all269 previous and57 agent pins matched before edits.
+No new independent signed endpoint estimate is claimed.
+
+A rank-N boxed Gaussian determinant tests genuine growing construction
+complexity. Its exact finite-product Lambert formula gives geometric
+ordinary-log residual after cubic/quadratic height and constant; its
+centered row Dirichlet series has no zero source. The finite product is
+Lean-checked; determinant identification and entire-series interpretation
+are paper-level, independently reviewed. Other growing-rank geometry and
+prime-depth/common-base observations remain open.
+
+The TOTAL complete-base trace, not merely its principal reference, has
+Mellin kernel max(d,p^(1/kappa))^-s over d|p-1. Finite reindexing and
+saturation are checked. Fixed-d holomorphy cannot settle a growing-divisor
+source; kappa1 provides the actual counterexample. kappa>1 source and
+nonprincipal covariance remain unproved. A zero-explicit Titchmarsh result
+exists but has unsuitable weights/cutoffs/error here. No total cancellation
+or preservation is inferred, and no free common-base transfer is taken.
+
+Native calibration is fixed and its required numerator extraction operator
+is now explicit, with normalization (N M_C)^(5/12). The missing spectral
+bridge is concrete: actual inverse-kappa lifts, Fourier normalizer and
+cusp/scattering vector. Independently, a strict finite theorem separates
+principal and sextic profiles, blocking direct standard trace-formula
+substitution. Removing the residual projection would conditionally remove
+the whole unpaid theta pairing; source survival still needs proof.
+
+Detailed frozen preflights and reproducible artifacts are in
+[the new manifest](arithmetic-operator-total-source-section-gates.json).
+Keep the next work source-sensitive: actual growing-divisor covariance or
+native coupled section/projection identity. Eight Tier-1 families visited,
+none exhausted; imported strict>7/8 unchanged. Local only, no publication.
+
+## Common base, moving norm, and literal section (2026-10-19)
+
+The [new audit](arithmetic-operator-common-base-section.md) makes the
+common-base distinction exact. Complete CRT averaging of the actual
+cyclotomic product deletes all distinct-prime covariance. Same-prime
+depths remain nested; the non-Hermitian prime diagonal and incomplete
+base intervals remain unpaid. This is no bound on the source-bearing mean.
+
+A genuinely moving algebraic base, with the complete integer norm across
+all conjugates, retains a divisor convolution. Its exact finite profile
+and exponentially small primitive deficit are now checked. Nevertheless
+the independently reviewed ordinary row-log transform has only elementary
+poles, so this particular complete norm still fails the zero-source gate.
+The norm identification and analytic continuation are paper-level.
+
+The native sextic route gains an applicability result: use the literal
+periodic coefficient directly in a primitive-row section. The finite
+bijection, periodicity and omitted-zero cases are checked in Lean. The
+actual sextic row law, explicit fixed-level lifts and Fourier normalizer
+are independently reviewed on paper, preserving physical prime powers,
+nonunit numerators, the primary selector and index -m. The next question
+is the whole transformed-cusp residue/source pairing, not another scalar
+theta filter or isolated calibration transfer. Its independent signed
+estimate is still open.
+
+Four strict leaves pass:98 local declarations/76 theorem declarations,
+15linters each,standard axioms. All337 preceding and68 agent pins matched
+before shared edits; exact finite regressions total2,113 cases. Scope,
+commands and independent reviews are in the
+[checkpoint](arithmetic-operator-common-base-section-gates.json).
+Eight Tier-1 families visited,none exhausted; strict>7/8 unchanged.
+Local only; no broad checks,root registration,commit or push.
+
+## Actual source correction and the whole cusp gate (2026-10-19)
+
+The [new checkpoint](arithmetic-operator-cusp-source-frontier.md) proves
+an unconditional extension of the unchanged source Euler correction:
+after suitable fixed exclusions it is analytic and nonzero on every
+prescribed half-plane strictly right of2/3, uniformly in the native
+finite Hecke character and height. The local exponent
+`min(6a-3,a+1,2)>1` gives ordinary absolute ideal summability. This removes
+the correction's inherited7/8 restriction, not the full detector's.
+
+Exact extraction also identifies, on paper, the next source issue:
+`H_cont(s)=L_S(eta^6 angular^-6,6s-3)*J(s)`, with J nonzero on Re(s)>1/2.
+The angular character is outside the imported finite-character zero
+supremum. Below2/3 its zeros could cancel a target source. Continuation
+is distinct from the pointwise totalized product; no cozero assertion
+or new zero-free result is made.
+
+Native finite cusp symbols are now checked without discarding zero,
+bad or nonunit inputs. The full paper-level cusp computation identifies
+the same unpaid signed theta covariance. Importantly, native selected-mark
+and cube energy, and unselected tuple mass, are already paid. The missing
+inputs are the actual full-D physical remainder and full source/exterior
+transport. Conditional continuous cost17/96 would separate from the
+source for beta>83/96; neither that bound nor source allocation has been
+proved. The original exterior estimates retain their7/8 hypotheses.
+
+The parallel row-inversion audit proves exact integer-product identities
+and the literal integrality failure C6/(C2C3)=4235/2 at base3. It also
+records the actual prime-depth phase mismatch under row subtraction.
+The fixed-resultant restriction is paper-level, and fixed-base growing
+quotients remain open. Linear inversion alone is still an arbitrary-weight
+shifted-divisor kernel and supplies no signed estimate.
+
+Three strict leaves:85 local declarations/74 theorem declarations,
+15linters each,standard axioms. All398 prior and99 new manifest entries
+matched before shared edits; exact finite regressions total1,191 checks.
+See the [manifest](arithmetic-operator-cusp-source-frontier-gates.json)
+for proofs, exact commands, independent reviews and formal/paper boundaries.
+The next regional-correction preflight has decay149/100 at x>=3/4 with
+the actual exterior w,z coordinates; it remains uncompiled. No new
+independent endpoint inequality, exhausted family, commit or push.
+
+
+## Enlarged contour bounds and exact physical applicability (2026-10-19)
+
+The [new checkpoint](arithmetic-operator-exterior-physical-transfer.md)
+proves three strict analytic leaves on the unchanged native expressions:
+local correction bounds with exponents149/100 and73/50; global normal
+product nonvanishing/analyticity after fixed enlarged exclusions; and
+marked-slot decay1440Q^-alpha for4/5<=alpha<=7/8. The original outer
+contours now lie inside the proved analytic region. These are genuine
+prerequisite estimates, not an extended detector or zero-free theorem.
+
+The principal-source replay is explicit on paper, with unchanged exterior
+saving17/48000 and amended marked saving alpha ellMin-e. The full
+nonprincipal/high-row transport remains separate. A second independently
+reviewed application reduces the ACTUAL physical section to the fixed216
+character/full-D family of paper10/v2, preserving all prime powers,
+calibration exclusions, numerator valuations and trace normalization.
+Its analytic mean/continuation input is still an UNIMPORTED AI preprint.
+The honest physical error retains Y^(2eta) and polynomial height cost;
+Y^8<<Q^5 absorbs a sufficiently small fixed eta.
+
+Conditional continuous cost17/96 is source-small for beta>83/96. To assign
+the remaining source to theta still requires the entire source/exterior
+ledger; the signed theta covariance is not bounded. No generic scalar
+projection, old unfiltered Cauchy RHS, or primitive-series substitution
+supplies that missing conclusion. Three strict leaves:68 declarations,
+55 theorems,15 linters each,standard axioms. Prior470 pins are preserved
+apart from explicit shared-note updates. Eight families visited,none
+exhausted; strict>7/8 unchanged. Local only,no broadCI,commit or push.
+
+## 2026-10-19: full source difference, calibration rank and primitive isolation
+
+The [new checkpoint](arithmetic-operator-native-source-coupling.md) adds
+three strict leaves:56 module-local declarations/48 theorem declarations
+including helpers,15 namespace linters each,standard axioms only. All557
+preceding pins and140 new manifest entries matched before shared notes
+changed. Evidence is in the companion gates JSON; no vendor/root changes,
+broadCI,commit or push.
+
+The complete source-transport audit now treats ramified/nonprincipal
+selected factors and moving-height bins explicitly. Its PAPER extension
+retains the full central sum F_all for83/96<betaStar<=7/8. Independent
+review corrected a consequential scope error: the protected source lives
+in normalizedProbe-F_all, NOT automatically in F_all or a theta component.
+The available probe bound3/16 is not source-small below7/8. Full physical
+and central source accounting remains necessary.
+
+The strict QuasiRHFullSourceRateAudit evaluates the ACTUAL native floor
+exponent at109/600. To pay that envelope relative to source requires
+1043/1200+loss+saving<=betaStar. At83/96 the deficit is11/2400. Keeping
+floor rows in the joined transport is permitted; silently discarding them
+using the old7/1200 budget is not. This is not a lower bound on their
+actual signed contribution.
+
+The strict QuasiRHCalibrationFamilyAudit closes a separate cheap test:
+varying calibration characters at fixed coprime moduli, unchanged F and
+frequency has exact CRT rank1 after actual nonzero Gauss normalization.
+Any sum-zero code also removes the common source; the identity holds for
+arbitrary F. Nonunit zeros remain. This is narrower than an impossibility
+result for theta projection or new physical data. Exact cyclotomic-field
+regressions check1365CRT identities and1092rank relations.
+
+A new PAPER cubic/sextic interaction cancels the actual corrected Gauss
+phase through the unit-numerator j0/j4 residue relation. It preserves the
+spectral Mobius sign, fixed calibration and source, but shifts m to m*i4
+and changes the finite section. The correctly normalized residue transfer
+is unitary. Disjoint cube factors are compatible; overlapping ones require
+the literal quotient character and valuation4 mask. Enlarged numerator
+means or separate norms provide no saving. The actual6300unit/936whole-I
+Gauss tests are floating regressions, not certified analytic equalities.
+No independent signed theta estimate is credited.
+
+The substantive new integer restriction is checked in
+ArithmeticOperatorTotalTraceSourceAudit: for the ACTUAL rational product
+of Phi_e(b)^beta_e, a primitive d-root modulo primeq isolates the d-th
+factor below d*q, so integrality forcesbeta_d>=0. It applies at one fixed
+integer base to growing signed families. Primitive existence is supplied
+in Lean, with an actualbase2/order4/prime5 instance; global Zsigmondy and
+source consequences remain PAPER. The original1892 result gives the
+sqrtM<d<=M nonnegative shell forM>=36. Bounded negative LINEAR trace
+coefficients then have Mellin holomorphy Re(s)>1/2, so cannot modify an
+already-established source farther right. This proves neither such a
+total source nor a linearization of whole-product depth phases. The new
+co-divisor principal Euler coefficient is nonzero but remains principal
+only; growing nonprincipal covariance and max-boundary remain unestimated.
+
+Next genuine target: a joint estimate for the exact source difference,
+retaining the full central population, or stronger common-integer
+constraints that preserve a proved total source. Eight Tier-1 families
+visited,none exhausted; imported strict Re(s)>7/8 unchanged.
+
+
+## Common-integer phase transport and native central frontier (2026-10-19)
+
+The [new checkpoint](arithmetic-operator-primitive-depth-frontier.md) keeps
+the actual integrality constraint through prime-power depths. Four isolated
+strict leaves prove actual primitive-chain transport/uniqueness, a finite
+repeated-depth error bound for signed products with exponents in{-1,0,1},
+a stronger native balanced exponent certificate, and fixed-row regularity
+at the corrected physical theta locus. All55 local declarations/48 theorem
+declarations pass standard-axiom audit and15namespace linters perleaf.
+
+The new PAPER collective constraint R_minus|L_plus prevents separate reuse
+of a positive descendant's divisibility budget. With positiveexponents<=B
+and fixedb it gives direct full-depth packet comparison to the positive
+primitive product withO_b(BM^(2/3)logM) error. Source must already be known;
+no estimate for that positive primitive product or totalkappa>1source follows.
+The finite unit-bounded signed ledger error is <=4times original repeated
+depths, with physicalcutoffandphase. Its unconditional complete-base mean
+is source-small by the prior uniform properpower bound and monotone
+convergence. Integrality-conditioned or finite-base means are NOT paid:
+Phi6(b)/Phi2(b) is integral forb>=2 onlyatb2.
+
+For the native analytic route, an independently reviewed PAPER replay of
+the actual moment producer with auxiliaryDelta>0 pays F_all forbeta>.8748;
+only the local1/5000 exponent/costcertificate is newcompiledLean. The
+protected source remains inProbe-F_all, so no new zeroexclusion follows.
+Exact physicaltheta locus isw+z=7/6, hencew62/75-iImz oncentralz17/50.
+Each fixednonprincipalrow is analytic there; infinitegrowingrow interchange
+requires new control and cannot allocate source forfree. Existingabsolute
+majorantU^(63/50+delta) is not summable and is not a signedlowerbound.
+
+No root/publicregistration,broadCI,commitorpush. All657 priorpins and118
+newmanifestentries matchedbefore sharednotes changed. EightTier1families
+visited,noneexhausted;importedstrictRe(s)>7/8unchanged. Nextgenuinenewinput
+is a source-aware positiveprimitive/common-base estimate or actualsigned
+physicaltheta covariance, not further reuse of equivalent valuation data.
+
+## Fixed integral bases, actual primitive collapse and weighted mass (2026-10-19)
+
+See [the checkpoint](arithmetic-operator-integral-primitive-moment.md) and
+[its evidence](arithmetic-operator-integral-primitive-moment-gates.json).
+The paper's common-integer principle produces a stronger actual restriction:
+with a fixed negative exponent in a finite signed cyclotomic product, any
+integral base lies below the absolute value of its actual nonzero resultant.
+Lean proves unbounded integral bases exist exactly when all supported
+exponents are nonnegative. This closes the proposed fixed signed-array
+base average. Moving arrays, bands and resultants remain outside that claim.
+
+The actual positive primitive packet has also passed its saturated source
+gate and failed its novelty gate. At p<=M its prime support is precisely all
+primes away from b(b-1), with arbitrary complex weights. The paper-level
+proper-power error is O(sqrtM logM), so the kappa1 packet retains the zeta
+source but reduces to ordinary Chebyshev. For kappa>1 the full max/order
+Mellin still needs a noncompensation theorem; no estimate is pursued before
+that total source exists. The fixed-base order sectors are finite and cannot
+be substituted for complete-base arithmetic-progression densities.
+
+On the native analytic side, the four-field moment producer below7/8 is now
+compiled with an independent positive Delta, rather than using the invalid
+negative gap beta-7/8. The native fine-slot condition, all moments, fixed
+source data and moving height are retained. The full normalized central-row
+bound forbeta>.8748 remains a paper composition, and the protected source
+still belongs to Probe-F_all.
+
+There is a quantitative partial payment, not just a new representation.
+Lean now proves the actual tuple bound sum||w_a||L_a^theta<=C for every
+fixedtheta<1/2,including1/6. Combined on PAPER with the known full-vector
+sextic0/4 and sixth-power coefficient relations, the originalG04 numerator
+sector m=a^4b^6 (a squarefree,overlapallowed) has rho-energyQ^1/6 and source-
+normalized costZ^(-13/144+C_Bepsilon+nu_N). The native marked/cube B energy
+and the ORIGINAL full-slot normalizer remain. Its inverse contributes the
+explicit existing subpowernu_N. Physical rawrho/section and globalHecke
+transfer are still unimported paper inputs; this is not a Lean theta bound.
+
+The generic sextic sieve does not pay the remaining physical population:
+after retaining ALL numerator powers, its Cauchy exponent61/144-d/6 is
+worse than native3/16-d/2 by17/72+d/3. The undetermined prime/square-core
+correlation with the actualB profile remains the next independent arithmetic
+target. No arbitrary-vector lower bound or sector source is inferred.
+
+Four strict leaves:75 local declarations,64 theorem declarations including
+helpers,15linters each,stdaxioms only. Root reruns and31527 exact finite
+checks pass;749 priorpins and111 newmanifestentries matched before shared
+updates. No public/rootregistration,broadCI,commit orpush. Activegoal:
+8Tier1familiesvisited,0exhausted;importedstrict>7/8unchanged.
+
+
+## Full central payment and scoped arithmetic closures — 2026-10-19
+
+The [new checkpoint](arithmetic-operator-auxiliary-order-central.md) adds a
+checked full central bound: for actual betaSup in[8749/10000,7/8], prepared
+native fine data and every compatible fixed source datum give the original
+normalized ALL central rows a power saving1/250000 relative to the source.
+The four-field moments, actual buffered bins, floor/nonfloor split and source
+normalizer are all in the proof. This upgrades a narrower part of the prior
+paper application; the stronger>.8748 interval remains paper-only.
+The source is still normalizedProbe-normalizedF_all. Physical/theta payment
+and a new zero exclusion do not follow.
+
+Three scoped prototypes are closed at their actual arithmetic interfaces:
+
+- Auxiliary j1/j3 Hecke partners have disjoint original canonical physical
+  windows. The exact native coefficient retains the cubic phase and every
+  cube/nonunit mask. Cross-tuple transfers remain possible only with a new
+  exact weighted comparison; no generic gain is inferred.
+- Actual gcd/order restrictions do not make the fixed-kappa>1 extra-prime
+  sector absolutely small. A finite square-base inclusion is checked, and
+  explicit fixed-AP PNT gives positive linear absolute mass on paper for
+  every fixed base. The signed total residue is still unresolved.
+- Every positive same-base product/GCD/LCM word of nested cutoff integers
+  has the first-prime layer of one original row, for arbitrary complex
+  weights. Source comparison for the full physical depth cutoff costs only
+  sqrtXlogX on paper, but saturation needs X<=the effective cutoff. Signed
+  divisions and mixed bases are explicitly outside this closure.
+
+Four strict leaves,98 local declarations/58 theorem declarations including
+helpers,15 linters each,standard axioms. Root reran all three agent leaves
+and257188 exact checks; independent review added3584 depth-majorant checks.
+All826 prior pins matched before shared notes changed. Two paper-domain
+corrections were archived and pinned; strict statements were unchanged.
+The ranked unpaid arithmetic remains the prescribed prime/square-core theta
+correlation, not another componentwise norm. Eight Tier-1 families visited;
+zero exhausted. Local work only, no commit/push or broadCI.
+
+
+## Cross-tuple and signed-tail source gates — 2026-10-19
+
+See [checkpoint](arithmetic-operator-cross-tuple-tail-window.md) and its
+frozen evidence manifest. Two new strict leaves,37 local declarations/33
+theorem declarations including helpers,15 linters each,standard axioms.
+All906 prior pins plus120 new manifest entries matched before note edits;
+root independently reran the tail leaf and400176 exact checks.
+
+The physical-window test now proves a no-go for EXACT pointwise theta
+projection preserving the named principal double-residue normalizer. Any
+finite signed family of actual windows vanishing on an open central theta
+segment vanishes at the source intersection(1,1/6). This is not quantitative
+smallness or integrated covariance cancellation, and does not delete the
+single-residue/exterior sources of a newly coded whole principal pool.
+
+The signed integral numerator-tail application either deletes its source at
+X<=M+1 (paper old-debt estimate), or reaches an unproved TOTAL order-selected
+source at X=M^kappa. Lean identifies the first extra annulus exactly with
+fixed-base primitive-root primes, retaining any adaptive parent mask.
+Integrality itself permits arbitrary high positive row selections. No Artin
+density/source theorem is imported and no all-tail impossibility is asserted.
+
+The actual cross-tuple Hecke rescue was checked before being rejected as
+an automatic saving: a conjugate slot and I reindex DO align both profiles.
+The forward scalar branch factor is q^-1/2, its inverseq^1/2; the leading
+preimage remains and whole prime numerators lack original slot coverage.
+All marks, cube overlaps, finite sections and current exclusions are explicit.
+Rawrho relations remain paper inputs; no whole-sum source is assigned.
+
+The literature search isolates a conditional full fixed-vector square-energy
+bound Q^(1/3+eps) giving nativeZ^-1/48 with no unselected-length loss. CFH's
+number-field square convolution and FG's descent identification do not prove
+it; even that subtarget would leave prime/odd-core signed correlations unpaid.
+No new independent RH estimate follows. The prior actual entire-central
+payment is preserved, as is the imported strict7/8 boundary. Eight Tier1
+families visited,zero exhausted; local research continues.
+
+
+## 2026-10-19: mixed bases, Wilson source deletion, and collective local relations
+
+Checkpoint: [mixed/Wilson/local gates](arithmetic-operator-mixed-wilson-local-gates.md).
+This pass adds two isolated strict Lean leaves and two bounded paper gates.
+It proves no new independent RH inequality or zero exclusion.
+
+The new exact mixed-base identity uses ONE actual common integer:
+q | gcd(b^n-1,c^n-1) iff lcm(orderOf(b mod q),orderOf(c mod q)) | n.
+All prime-power depths and arbitrary complex weights survive. Forced
+factorial synchronization has a genuine ordinary Chebyshev source only
+because every physical p^r<=N is present, away from p|bc. Its exponent is
+N!, not N. The primary BCZ o(n) logarithmic gcd estimate does not beat an
+n^beta source, nor the much smaller row source on factorial exponents.
+Outside saturation, the TOTAL joint-order source is not established.
+
+The Wilson test closes another specific Tier-1#8 shortcut. The actual
+factorial residue at n>4 is n-1 at a prime and zero at a composite. A
+centered code with uniform slope K therefore has size at most K/n. The
+strict terminal theorem allows moving codes and arbitrary complex weights
+bounded by log n and proves every positive-power normalized packet tends
+to zero. Source-restoring division by the prime amplitude exactly recovers
+the ordinary prime indicator and its full weighted sum. High frequencies,
+joint rows and Wilson quotients remain outside this scoped obstruction.
+
+The collective native Phi graph fixes original tuples and decreases the
+unselected rank. Its finite nilpotent inverse yields the original scalar
+sum as a root sum with coefficients1+O(K a^(-1/2)Z^(-ell_min/2)). The roots
+remain prescribed actual coefficients and may obey inherited constraints;
+they are not asserted free. Averaging incoming exact laws is one-way.
+Prime and all-even numerator vertices remain isolated. Neither small norm
+nor coalescing tuple labels gives a signed bound for the root covariance.
+The raw finite-section recurrence is still a paper input, not a new import.
+
+The square self-relation audit gives a precise local-plus-energy limitation.
+Actual full j2 operators can be Id on a deep fixed principal ray class.
+A compatible lacunary single-prime-square-core model, extended by actual
+j0/j4 maps and sixth powers, satisfies raw total energy O(Q^(5/6)) and
+normalized energy O(Q), while square energy is >=Q^(5/6) cofinally. The
+model is not automorphic and has no claimed RS/scattering functional
+equation, actual fixed-vector covariance or zero source. Thus the desired
+square saving must use a global relation on core magnitudes beyond these
+local equations and the positive global energy consequence alone.
+
+Validation:17 explicit new theorems;45 local declarations/43 theorems with
+helpers;15 linters per strict leaf; standard axioms only. Root replayed
+1012161 exact finite checks. Independent reviews checked both paper/finite
+scopes and the new Wilson leaf; all980 previous pins plus97 new entries
+matched before the shared-note edits. Broad CI/public registration/commits
+were not run. The strict7/8 endpoint and central1/250000 saving are unchanged.
+Eight Tier-1 families remain visited,zero exhausted. The current candidate
+map is sharper, but no new source-preserving signed estimate has landed.
+
+
+## 2026-10-19: global square arithmetic, with the literal finite bridge isolated
+
+Checkpoint: [residue/cubic gates](arithmetic-operator-residue-cubic-gates.md).
+The promising new input is the ACTUAL cubic character matrix hidden in
+square-numerator sextic Gauss sums. It supplies global arithmetic absent
+from the preceding local-Hecke-plus-energy countermodel.
+
+Five strict leaves now prove additive common-integer support, exact native
+energy-rate implications, the actual masked sharp cubic estimate, the
+literal prime-power Gauss support/table, and a quantitative cubic divisor
+assembly. The latter proves the coefficient mass from the original
+lowGaussColumn, using its real profile/ray/calibration/height data. Its
+original-amplitude corollary leaves only an explicit Gauss bridge and
+support/phase conditions; no sieve or block energy is assumed. It keeps
+the physical cutoff distinct from the normalization length. The full-element
+cubic input for arbitrary roots is also strict.
+
+An independently checked PAPER extension includes every physical prime
+power and arbitrary square roots: c=H^6*b*d^3*e^5, T=H^3*d*e^2 divides x.
+The varying root contributes conjugate cubic(b,u), cubic(e,u), and a d
+coprimality mask. Principal-only H primes permit nonunit u. The unique T
+partition and actual cubic sieve leave summable powers T^(-7/3),T^(-4/3),
+yielding paper amplitude energy (AY)^eps[A^(1/3)+A^(4/3)/Y]. The corresponding
+native norm cost is Z^(5/72-d/6+O(eps)); source remains the whole carrier.
+The next formal task is the exact global all-nonunit Gauss bridge, followed
+by this divisor assembly. No unconditional all-square Lean endpoint yet.
+
+A separate reviewed BH-contour/full-functional-equation argument gives
+raw sf-core energy A^(1+eps), then all-even Q^(1/2+eps). Its native cost
+7/144-d/6 is smaller, but needs the prior physical residue identification.
+The direct finite route avoids that longer analytic bridge. Neither paper
+argument pays prime/odd-core covariance or locates a source on the square
+sector, and neither contradicts the nonautomorphic local countermodel.
+
+Two bounded source tests stopped earlier. Positive polynomial lags in
+saturated additive cutoff gcds remove the positive-power source; the
+unsaturated source remains unknown. Wilson quotients modulo n^2 have an
+uncontrolled TOTAL D_h residue even though the ordinary-prime coefficient
+is nonzero. Generic S-unit/Fermat-quotient results do not fill those gaps.
+These are scoped failures of automatic transfers, not bans on nonlinear
+or unsaturated arithmetic candidates.
+
+Validation:45 explicit new theorem declarations,97 local constants/80
+local theorem declarations including helpers;15 linters per leaf and
+standard axioms only. Root replayed222766 exact finite checks;288 floating
+phase regressions remain diagnostic. All1257 manifest entries matched
+before shared-note updates. No broad CI, publication, commit or push.
+Strict Re(s)>7/8 and the prior full-central saving remain unchanged.
+Eight Tier-1 families visited,zero exhausted; the arithmetic goal is active.
+
+## 2026-10-19: unconditional original all-square amplitude and integral
+
+Checkpoint: [all-square finite gates](arithmetic-operator-all-square-finite-gates.md).
+The explicit Gauss obligation from the preceding checkpoint is discharged.
+Lean now bounds the ORIGINAL `lowRayAmplitude` on every unit-times-square
+numerator, uniformly in canonical calibration, ray and Mellin height,
+with every physical modulus and arbitrary nonzero root retained:
+
+```text
+sum_(Nx<=A) |lowRayAmplitude(zeta*x^2)|^2
+ <= C*(B*a^(-1/2))^2*A^eta*(A*Z)^eps*(Z/Y)^2
+      *[A^(1/3)+A^(4/3)/Z].
+```
+
+There is no assumed Gauss, phase, baseline norm or energy premise. The
+proof combines the actual all-nonunit prime-power formulas, a unique
+ideal partition, the ANY-divisor baseline norm, original coefficient
+pushforward with injective fibers, and the imported actual cubic sieve.
+The physical cutoff Z remains independent of normalization Y. In
+particular principal-only sixth powers do not acquire a false root
+coprimality mask, and noncanonical enlarged columns are never assigned
+the canonical ratio identity.
+
+The original Mellin integral now has a checked square/complement split
+with genuine integrability of both terms. Its square integral is bounded
+using this unconditional energy and the unchanged `lowInverseMass`.
+The latter is unnormalized and retains all selected/cube phases and
+overlaps. The reviewed central-Gaussian application has dominant paper
+cost `Zsource^(5/72)*L^(-1/6)` before explicit small losses; the full
+source-normalized Gaussian wrapper is not newly claimed compiled here.
+Use the exact `theta=-1/6` weighted tuple mass. Keep remoteAll under its
+original whole-family payment rather than inferring a filtered bound.
+
+The exact source remains `Probe-F_all`; the usable ledger is
+`centralSquare+(centralOdd-F_all)+remoteAll`. The square sector has ample
+rate margin, but the odd-core central covariance is unpaid. A new paper
+preflight explains why separate fixed-core estimates fail at large core:
+the cost is `Q^(1/12)R^(5/12)+Q^(1/3)R^(1/6)Y^(-1/2)`, reaching `sqrt Q`
+when R is comparable to Q. It also retains an actual negative principal
+sixth-power boundary that disappears in the even sector. The next test
+must join the moving sextic core phase with the cubic square-part phase
+and the original companion, not sum individual core norms.
+
+Validation: eight strict leaves,178 explicit theorems,438 module-local
+declarations/364 theorems including helpers;15 linters,warning-as-error
+and standard axioms only. Independent endpoint reviews pass. Canonical,
+budget and odd-core diagnostics total62,394 exact checks. All1446 manifest
+entries matched before shared edits. No broad build or publication.
+No new zero-free claim: strict7/8 and prior full-central1/250000 saving
+are preserved. Eight Tier-1 families visited,none exhausted; goal active.
+
+
+### Original normalized square family is now paid; odd-core gate remains
+
+The [new local checkpoint](arithmetic-operator-square-native-odd-core-gates.md)
+composes the unconditional all-square amplitude/integral with the actual
+normalized companion theorem and the original unselected tuple mass.
+`SquareNativePayment.native_square_joined` proves cost
+`Z^(5/72+255*epsilon)` on the literal central spectral window, with every
+selected prime mark, completed cube and original Mellin factor retained.
+Before the tuple sum it retains `L^(-1/6)`; the checked theta=-1/6 mass
+pays this with no extra tuple count. No assumed energy or companion bound
+remains. The leading improvement over3/16 is17/144 on this population.
+The common Gaussian/source wrapper and the unsplit remote family retain
+their separate interfaces; no source is assigned to this subset.
+
+The simultaneous odd-core applicability audit identifies the exact good
+character conductor as `rad[(bI/gcd(b,I)^2)*oddKernel(J)]`, with all
+nonunit masks onrad(bIJ). Its principal case isb=I,J square. Neither that
+finite diagonal nor calibration zero frequency is identified withF_all.
+Complete means and pairwise completion/triangle costs supply no bound on
+the original masked, squarefree-core, prescribed-coefficient aggregate.
+An algebraic coherent sixth-frequency direction remains possible; its
+source-sized overlap with this particular family is not proved.
+
+Revisiting the already-pinned Xu-Sang paper gives a sharper PAPER norm
+diagnosis. Its positive all-modulus annular Gauss witness keeps critical
+energy on large odd cores after the small-core cubic costs are removed.
+The new strict `OddCoreWitnessRateAudit` checks the native rates and
+conditional finite-energy localization; the external asymptotic and the
+fixed-core analytic bound remain explicit premises. This witness is not
+the original calibrated vector or marked companion. Consequently the
+result closes a generic norm shortcut while leaving the actual signed
+correlation as the research target. The rStation unmarked structured
+input is prior work and still excludes the required marked inverse term.
+
+Two new strict leaves passed15linters each and all-local standard-axiom
+audits; the native normalization/application also passed independent
+read-only review. The two finite probes add67,076 exact checks. All1464
+previous/new manifest entries matched before these shared-note updates.
+No public claim,root registration,broad build,commit,push or new zero
+exclusion. The roadmap remains8families visited,0exhausted.
+
+
+## Gaussian square endpoint and source-preserving recovery gates
+
+2026-10-19. See [the checkpoint](arithmetic-operator-square-gaussian-source-gates.md)
+and its JSON for proofs, source pins and scoped audits.
+
+The original central square sector now survives the entire Gaussian
+integration and dyadic summation with cost
+`Z^(5/72+255*epsilon+2*epsilon_G)`. The new strict leaf proves absolute
+summability, genuine inner/outer integrability and an exact split of the
+original `lowCommonDyad`. The full source/ray normalizer and finite-subset
+assembly are identified separately; their original data must match, and
+no square-filtered remote estimate is inferred.
+
+The principal-source audit prevents a false cancellation: the actual
+`F_all` row band excludes `u=1`, while the complete principal free-row pool
+retains the reciprocal-L source and both contour exteriors. The exact
+relation is `rawProbe/normer-F_all = U1/normer + transport error`, followed
+by the existing principal comparison. The wider below-7/8 transport is
+still paper-level; the original compiled theorem's domain is unchanged.
+
+A useful marked-input clarification also emerged. The native inverse
+moment already admits the actual coherent prime-divisor slots. On a
+reflected large-frequency head its capacities are satisfied. Paying the
+whole frequency recovery, however, returns `K+D_g`, with `D_g/K` at least
+`Z^(3/16+2*ell)`. This does not establish the missing row-scale bound; it is
+a limitation of that application, not a lower bound for the true covariance.
+Differentiation in a fixed-period bounded-character family is not a free
+way to enlarge its coefficient class.
+
+The harmonic Möbius literature audit distinguishes its internal reduced
+ratio from the physical odd core. Exact Euler-child recovery repairs
+extra punctures at subpower coefficient cost, but does not preserve the
+old ratio partition automatically. The actual selected/cube coefficients
+and nonzero balanced internal-ratio complement remain unpaid. No new
+analytic literature input is asserted in Lean.
+
+The new checked result is a genuine square-population payment. The next
+missing inequality is still the signed original
+`centralOdd/normer-F_all`, with the prescribed companion and source ledger.
+No new zero-free or RH endpoint follows from these scoped results.
+
+## 2026-10-19 — Actual source-normalized square bound and joined marks
+
+The [new checkpoint](arithmetic-operator-source-normalized-marked-gates.md)
+closes the same-data normalization obligation left above. The native
+square sum is now bounded after division by the actual source normalizer:
+`Z^(5/72+255*epsilon+2*epsilon_G+nu)`. The strict theorem returns the original
+Gaussian identity for the same source windows and verifies support,
+exclusions, norm annuli and eventual disjointness for the same ray pools.
+It assumes no free scalar normalizer estimate. This is a genuine arithmetic
+estimate for one original population, smaller than the candidate source
+rate near7/8, not a whole-probe decay or zero-exclusion theorem.
+
+The full compensation was joined before the next quadratic test. Its
+native one-prime factor is `B*1_(P|I*J^3)-c`, with every cube and exclusion
+retained. Lean proves its exact residue variance and product energy. Even
+perfect centering leaves positive energy for nonzeroB. Consequently a
+zero-mean argument alone cannot erase the recovered-row volume cost. This
+is a scoped no-go for that shortcut; the incomplete signed covariance has
+not been bounded below or proved impossible to estimate.
+
+There is also a positive conditional paper result: fixed distinct prime
+marks retain the harmonic common-factor saving and the original internal
+ratio range when the complete three-term HR.7 estimate is used. Its Euler
+children must keep their changed kernel scales. Their fixed-k norm cost
+is at most `3*3^k` plus the stated subpower factor. This refines the earlier
+applicability audit: introducing one marked prime is not itself an
+obstruction. It does not pay the coherent growing marked-pool sum, prove
+the actual Gauss/plain coefficient identification, recover every cube
+child, or control the balanced large internal-ratio complement.
+
+A separate exact CRT check identifies why the physical/spectral gcd is
+different from HR's common factor. Cancelling its common Gauss root leaves
+a moving cubic phase. Two actual Eisenstein primes of norm157, in the same
+primary and mod-four ray class, give different phases for the same residual
+pair. The uncoloured harmonic Möbius bound therefore cannot be substituted
+for this twisted sum without a new estimate. This is a finite applicability
+test, not a global covariance lower bound.
+
+The new evidence consists of two strict isolated Lean leaves (14 explicit
+theorems,41 all-local declarations,15linters each and standard axioms),
+115475 exact diagnostic checks and1016 independent review checks. All1601
+current/new manifest entries matched before shared-note edits. The source
+remains in `rawProbe/normer-F_all`; remoteAll stays whole. Eight Tier-1
+families have been visited and none is declared exhausted.
+
+The user authorized publishing all accumulated work after this slice.
+The portable evidence archive preserves the reports, probes, validation
+and historical hashes; original third-party paper bodies and rebuildable
+binary caches are fingerprinted separately. The campaign update is a
+publication of supporting arithmetic progress, with the signed odd-sector
+estimate and the independent RH-strength inequality still explicitly open.

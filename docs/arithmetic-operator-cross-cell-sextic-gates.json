@@ -1,0 +1,353 @@
+{
+  "checkpoint": "cross-cell-rank-polynomial-norm-and-native-sextic-gates",
+  "date": "2026-10-18",
+  "base_commit": "842c9218be9867e4accfed673047302a2f0049d7",
+  "status": "Local strict finite/rate audits and source-checked literature preflights; no new independent RH arithmetic estimate.",
+  "gates": [
+    {
+      "name": "full-prefix closure of an earlier row space",
+      "proved": [
+        "Over any ring, a constant-containing submodule invariant under all prefix cutoffs is top.",
+        "Exact interval restriction and finite cell decomposition."
+      ],
+      "scope": "A proper earlier-row space only; the final full-rank space is already top. Native restricted/row-dependent cutoff families need not satisfy this hypothesis."
+    },
+    {
+      "name": "adjacent quadratic norm values",
+      "proved": [
+        "(t+2)f(t)=t*f(t+1)+4 for f(t)=3t^2+3t+2.",
+        "Adjacent gcd is 4 at t mod 4 =1, and 2 otherwise.",
+        "Every prime-power phase retained: growing common-divisor packet is exactly T log(2) phi(2)+floor((T+2)/4) log(2) phi(4).",
+        "After exact density centering, norm<=log(2), and normalization by X^beta tends to zero for every beta>0."
+      ],
+      "scope": "This adjacent common-divisor statistic loses the positive-power zero source. The full polynomial prime-divisor packet, nonadjacent/growing correlations and determinant carry-layer bridge remain open."
+    },
+    {
+      "name": "native sextic generic norm rate",
+      "proved": [
+        "Conditional rational rate E(d)=max(2/9-5d/6,107/576-d/3) on 0<=d<=1/6.",
+        "E(d)<3/16 iff d>1/24; shallow deficit exactly 5/144.",
+        "Even a counterfactual pure quadratic ledger retains the mark cost and only has 1/96 shallow margin."
+      ],
+      "scope": "H=V=1, maximal physical mark; assumes common separated coefficients and the stated norm input. No literature analytic theorem imported, no native signed lower/upper bound proved."
+    },
+    {
+      "name": "native coefficient versus sextic resonant witness",
+      "existing_checked_identity": "alpha_native(I)=mu(I)*g_ray(I)*conj(gamma_1(I))",
+      "paper_level_conclusion": "On common fixed ray/profile the Gauss overlap is a weighted Mobius sum. Its Mellin transform is a finite reciprocal-Hecke combination. Retaining the numerator restores a growing-conductor reciprocal-Hecke row.",
+      "scope": "Free-vector operator norms do not bound one prescribed vector. Small overlap with one witness does not control the complementary operator. No fixed-power native saving or source exclusion follows."
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/html/2610.15483v1",
+      "role": "Common nonzero integral determinant and lower-weight Frobenius row substitutions; reviewed previously.",
+      "lean_import": false
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.04045v1",
+      "role": "Candidate sixth-order operator norm input; its native applicability is not proved and the conditional shallow budget still fails.",
+      "lean_import": false
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.17675v1",
+      "role": "Generic sextic lower bound and conjugate-Gauss witness. No transfer to prescribed native masks or squarefree-row coefficient is asserted.",
+      "lean_import": false
+    }
+  ],
+  "paper_level_only": [
+    "General factorial-Schur/Pascal product and growing-gap degree budget.",
+    "Quadratic root-density Euler source and literal discrepancy/tail scale audit.",
+    "Literature large-sieve theorems, witness overlap and inverse-Hecke Mellin reduction."
+  ],
+  "validation": {
+    "leaves": [
+      {
+        "source": "scripts/ArithmeticOperatorCutoffRankAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorCutoffRankAudit.lean",
+        "log": ".lake/arithmetic-operator-cross-cell-minor/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-cross-cell-minor/axioms.json",
+        "local_declarations": 19,
+        "theorems_including_generated_helpers": 16,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      },
+      {
+        "source": "scripts/ArithmeticOperatorQuadraticNormAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorQuadraticNormAudit.lean",
+        "log": ".lake/arithmetic-operator-polynomial-norm-source/root-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-polynomial-norm-source/adjacent-axioms.json",
+        "local_declarations": 25,
+        "theorems_including_generated_helpers": 22,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      },
+      {
+        "source": "scripts/ArithmeticOperatorSexticRateAudit.lean",
+        "strict_command": "lake env lean -DwarningAsError=true scripts/ArithmeticOperatorSexticRateAudit.lean",
+        "log": ".lake/arithmetic-operator-native-quadratic-gate/rate-strict.log",
+        "axiom_report": ".lake/arithmetic-operator-native-quadratic-gate/rate-axioms.json",
+        "local_declarations": 27,
+        "theorems_including_generated_helpers": 21,
+        "namespace_linters": 15,
+        "all_local_module_provenance": true,
+        "only_standard_axioms": true
+      }
+    ],
+    "local_declarations_total": 71,
+    "theorems_including_helpers_total": 59,
+    "prior_pins_matched_before_shared_edits": 25,
+    "repository_literature_pins": 16,
+    "primary_pdf_pins": 6,
+    "broad_build": false,
+    "public_root_registration": false,
+    "commit_or_push": false,
+    "overlap_input_pins": 10,
+    "supplemental_primary_pdf_pins": 2
+  },
+  "goal": {
+    "status": "active",
+    "tier1_families_visited": 8,
+    "families_exhausted": 0,
+    "rh_endpoint_discharged": false,
+    "baseline": "Imported strict Re(s)>7/8 unchanged; remaining all-height 1/2<beta<=7/8."
+  },
+  "next_gate": "Do not refine full-prefix repairs, the source-blind adjacent gcd, a generic quadratic substitution, or one-witness Mobius projection. A useful next estimate must retain the actual joined numerator/marked-prime/Mobius/cubic correlations and model-source correction, or supply a different common determinant with an every-denominator source and genuinely new prime constraint.",
+  "historical_pins": "All 25 previous determinant-record pins matched before this shared-document append. Earlier shared-document hashes are historical and not rewritten.",
+  "source_pins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a62f939518779629412fa8056a81075319d0dd1582f6ca352b381bfbacfde6d7"
+    },
+    {
+      "path": "docs/arithmetic-operator-research.md",
+      "sha256": "7917fc0fd65ade361bb977299e9cf4340d9f7cda4249273b67fd8e8a637ea2f3"
+    },
+    {
+      "path": "docs/arithmetic-operator-determinant-gates.json",
+      "sha256": "46280acdbb4b8b6ba0dbcb27b3267ca68dbba722b67447d4d9e1c92c5a40bc1d"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/previous-pins.json",
+      "sha256": "14eaf0b905c8a4fc224f524670fdfd72ed3e70bc826b625b9fb4799379efe34d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cross-cell-minor/handoff.md",
+      "sha256": "7451fc31f53b3d7eb48d3db6b061a0add2cf3025f53db4c43b1362fdbf1ef84c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cross-cell-minor/probe.py",
+      "sha256": "dfffbc617742219391cb0f1e0cf2b3fedec366bf9000db0ff28481245d571dbb"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cross-cell-minor/probe.json",
+      "sha256": "9f43be7057ecd73cce3570482eac65348817688031b7a3257605f328f0097ae4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-polynomial-norm-source/source-audit.md",
+      "sha256": "93e72f9b5bd4902d596b43ae5a2c1ba794fa5b800c1739ac12c0d927f90354ed"
+    },
+    {
+      "path": ".lake/arithmetic-operator-polynomial-norm-source/exact_probe.py",
+      "sha256": "d0d52c806e3321f1e3bc674be0566002db62d42ad97553bfbc1448f342089b57"
+    },
+    {
+      "path": ".lake/arithmetic-operator-polynomial-norm-source/exact_probe.json",
+      "sha256": "83fcebba7324771729d7776582ddd437c03d4b37f10c44463bb67cb026f0d033"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/preflight.md",
+      "sha256": "b355ead6bfcfa10f474037c02fead4e33bf2318c90cb6a4facb120b8a78eadb3"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/preflight.json",
+      "sha256": "685ce809b48f679eaaee153aac34619052040dc03790782656d550e3f11329bb"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/calibrate.py",
+      "sha256": "0855037429b28d30fd1b7a51ef81ad2f4bbefd468d08132bd5dfc0d30d5d2377"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/sources.json",
+      "sha256": "aee6ebfb53f8886374ca2e88613c185f025f18f17ed84f070e796ff6d8565bfc"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorCutoffRankAudit.lean",
+      "sha256": "c8b079324b4b9aab5b1def90fb53bbd35e7ace69782aeccc64bab7bf49ebe518"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cross-cell-minor/root-strict.log",
+      "sha256": "07dbb986f64c9f35f0e524daaf8db679fe895d10c6555b09e50abe4afad1cc63"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cross-cell-minor/axioms.json",
+      "sha256": "a6fd3a448c4b2a063f04b5e0e8cd80b304a613902b8219d46d0dda2e846caa9b"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorQuadraticNormAudit.lean",
+      "sha256": "5bec7a4f6a3ef7027f5c37e2076c46e57ae08ffb425095c073e3711b9c1d3955"
+    },
+    {
+      "path": ".lake/arithmetic-operator-polynomial-norm-source/root-strict.log",
+      "sha256": "f0e329df6a6c27ce999d26aedb2f789068f6409383d3465395cc7b896df06af8"
+    },
+    {
+      "path": ".lake/arithmetic-operator-polynomial-norm-source/adjacent-axioms.json",
+      "sha256": "907ec101e5dfbee15002b6fc7eae4f912699881f16fc19f60a41036499209b6e"
+    },
+    {
+      "path": "scripts/ArithmeticOperatorSexticRateAudit.lean",
+      "sha256": "eabede10b4a3776278546c903fe845e52f603d3c42140aa2bbc3f9eedff10480"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/rate-strict.log",
+      "sha256": "02d59f2974a134ee6ddcb724abc0ecf31e234ac81eeefcc4808fc64ee52a4641"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/rate-axioms.json",
+      "sha256": "470c33b65eb7aee8937d47abaa34eb91edaf0005b86741e6cf73c687de77d018"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/PrimeRows/ActiveGaussFactorization.lean",
+      "sha256": "944b4154dad5c6ca880a210a9e23a0add57d944c5cd6748f36d6eadc2a55d77b"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/CompletedExpansion.lean",
+      "sha256": "01569023b64065bc867e0a0ce170bc71a006758313b4b05b886b4af7a0b7ee94"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/SquarePhaseFactorization.lean",
+      "sha256": "72607eef57bb692a8f488250c84294fd058057bd9c56235116afe799acb4c74c"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/SexticNormalization.lean",
+      "sha256": "11bc22bdaa6864eeb8792acc6cd1f33094e5c8726af5aad95e483b0d66656b76"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/ChineseRemainder/AdditiveCharacters.lean",
+      "sha256": "faab90406b9a9982bd194d85f10bbd5bea3901950b9e66e1767813c1f7bd6e36"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/GaussSum/ChineseRemainder.lean",
+      "sha256": "8884d2987203e1ffffde1a4a69663a41915d11e8be255e6688376a167e9c21e4"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Arithmetic/EisensteinEmbedding.lean",
+      "sha256": "ce0a59ae784c27a535e465b0cc6a112bef83435b66c3a9bcb274ac05dbb4febe"
+    },
+    {
+      "path": "scripts/QuasiRHCubicOrientationAudit.lean",
+      "sha256": "e1b06501f7c943c4ed91f12167aacf722bf5a80406b6bf24605c18d677192b5f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-cubic-native-bridge/preflight.md",
+      "sha256": "cb99308b2d0730811a1be1e23f232f932422711553520a0312a3431f8d00a69c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-typeI-profile/preflight.md",
+      "sha256": "d5f55643a55d4feff2a691c59d3da67f8f97a2c420f6932d2bff9ec0394185b4"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauss-budget-gate/preflight.md",
+      "sha256": "62193332a1b6d64451c001147747dd47ce799e0f4af9051ee0995f6c0f05fc8e"
+    },
+    {
+      "path": ".lake/arithmetic-operator-gauss-budget-gate/preflight.json",
+      "sha256": "d30847af7b4008f394230bfee9760c3170361d66019f80600e721ee7a1261688"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/QuadraticSieve/LogarithmicLoss.lean",
+      "sha256": "eee2f4bbf9a66ec704ad90cda630861aa19783d916e37d4316a927adfc05abd3"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/PhysicalRows.lean",
+      "sha256": "58b97cbec9cc8b7c8fdb1feaffd1b91f62e1e247bcbb57aa865750dad2c456c8"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Detector/LowRowMellin.lean",
+      "sha256": "485c4c24852590e61653d2639d777d7e65f90627b937d93e26ce5bf722019799"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean",
+      "sha256": "dd0ae071b0bdb5746fa6362de83aa86a4ee4462810a7fdbc72f0af95b5887675"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/goldmakher-louvel.pdf",
+      "sha256": "5cc5f03388d3996b4333f07be51f989f60779fe172f8bd24c7aa6ddad64dd304"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/dunn-cuspidal.pdf",
+      "sha256": "7cb74d563b8e4fb35c7ec26b27eed11bf2e70bec568fc7db9a65e920abe63363"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/quartic.pdf",
+      "sha256": "2ed7fc135419837fbb427a89a6d36b58c2c0368aabd820d5640c7ce172c770a5"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/bgl-higher.pdf",
+      "sha256": "1ab29e362c592b9f4078eb85e495ecce6a4665972e6427e7cc2ab0fb214e303b"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/xu-sang-sextic-lower.pdf",
+      "sha256": "9bf753a13e2ef5231c561ab799eac387b94c077198a8ffce6bb1555844faa504"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/de-faveri-fixed-order.pdf",
+      "sha256": "97720b3cacccbedb9c2014520ad4d128ae23afd0a781bdeff27dab4e86b7c726"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/witness-overlap-source-gate.json",
+      "sha256": "54934d927ed7fa64c4f99e2af32030716f311a5a975968947e5b994d3a84d1f2"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/overlap-sources.json",
+      "sha256": "14ef2473a9b178e299c5541fef9f364da4c23bc6f1aa2762a3a255ebc845db36"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Hecke/Euler.lean",
+      "sha256": "3c2d31189b4eb5efa3417c73fa7390c7add3350143df5e98fd951a375631558d"
+    },
+    {
+      "path": "vendor/openai-quasi-rh/OAI/NumberTheory/DirichletL/Hecke/Dirichlet.lean",
+      "sha256": "8b33d23c18ec5b85a13043aa775841389903247645fc00536cc2b3286332ff7d"
+    },
+    {
+      "path": ".lake/arithmetic-operator-joint-cofactor-source/preflight.md",
+      "sha256": "6f2bf5b81772b929679b078ac5ee33b8fee6b904887a88130bcbcc89583e1110"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/witness-page.png",
+      "sha256": "f6ccb5dc3e87e2d3b7d1d19fb9093f2e971483dd3a9b1aaaae5bb312649ef99f"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/witness-overlap-source-gate.md",
+      "sha256": "a23eed992475d44288e280a4f100711357a6b506a8196901dd8811eb68f687ff"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/thorner-zaman-2017.pdf",
+      "sha256": "504512d24db46f933d52f277d2ad3a14da5ed66e0efcda0407c8aceadd008d4c"
+    },
+    {
+      "path": ".lake/arithmetic-operator-native-quadratic-gate/hu-kaneko-martin-schildkraut.pdf",
+      "sha256": "472f556927a2a0da356a906608edba9a091c587d7b7fa1977eb54312b907b93b"
+    }
+  ],
+  "witness_source_audit": {
+    "note": ".lake/arithmetic-operator-native-quadratic-gate/witness-overlap-source-gate.md",
+    "record": ".lake/arithmetic-operator-native-quadratic-gate/witness-overlap-source-gate.json",
+    "new_lean_declarations": 0,
+    "native_power_saving_proved": false,
+    "complementary_operator_bound_proved": false,
+    "exact_scope": "Common-index overlap only. Fixed/moving pure coprimality marks retain Euler factors; alpha(P I0) against witness(I0) also needs the cubic CRT twist. No squarefree-row-transfer coefficient match assumed."
+  }
+}
