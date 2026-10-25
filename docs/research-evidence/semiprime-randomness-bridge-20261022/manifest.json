@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "classification": "Conditional resource reduction; no new whole-family acquisition bound",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7724,
+      "sha256": "167a0b80644fcae6418944622e1bb94884646d5bbf599d811da36933c7f6391b"
+    },
+    {
+      "path": "composition-review.md",
+      "bytes": 5949,
+      "sha256": "950b2207bcd3e83433707c47075baed6a43b19a369caba21acf820561a8c7e64"
+    },
+    {
+      "path": "reports/adaptive-localization.md",
+      "bytes": 7157,
+      "sha256": "6d7f977384bddc980299c4e4603d783439f379516a294a217db1627c6b2dd412"
+    },
+    {
+      "path": "reports/circuit-space.md",
+      "bytes": 7160,
+      "sha256": "506dd8973b35d5fe6222f543efa44453685969da59d64cc62cb509f96c26e53b"
+    },
+    {
+      "path": "reports/cubic-small-trace.md",
+      "bytes": 5414,
+      "sha256": "beac1797a7a910f123e6beeba891258bd6e224a85de16b40b1be90c8eb0cd679"
+    },
+    {
+      "path": "reports/hensel-support-contraction.md",
+      "bytes": 6419,
+      "sha256": "b729f1fe1b9aa52d1b55aade1798d8d5f1f1c1097a58f280e464254477b328e8"
+    },
+    {
+      "path": "reports/logspace-quantitative.md",
+      "bytes": 13313,
+      "sha256": "73e9869348fb9d0951912572dd7ee909a128eac7c35150f641a12c02b8b59507"
+    },
+    {
+      "path": "reports/lowspace-factoring.md",
+      "bytes": 11069,
+      "sha256": "68ce7edf43f9c3796de0994632d76a9a4b9648ebf0b3517b4d5c4bd52ccfb6ae"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 4437,
+      "sha256": "3422ef180fb6b101137b64ddac33c2fd9f17f0d6c321b555144d3e4376f18de0"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 470,
+      "sha256": "7b8910296ddcaac553037a6c5119e78e43c95726c03eeb21f37658b39f312bd0"
+    }
+  ]
+}

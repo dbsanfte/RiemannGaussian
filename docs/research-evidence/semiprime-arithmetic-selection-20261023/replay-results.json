@@ -1,0 +1,9 @@
+{
+  "command": "python3 -B replay_principal_square_premise.py",
+  "working_directory_at_execution": "/tmp/semiprime-arithmetic-selection-20261023",
+  "exit_code": 0,
+  "stdout": "{'r': 43, 'N': 3551779909, 'h': 1318, 'sigma': 48, 'D': -1032540, 'Delta': 18810226398064, 'G_cycle': {'reduced': (1849, 4336374, -823003), 'length': 152120, 'principal_forms': 0, 'ambiguous_forms': 0}, 'F_cycle': {'reduced': (-1032540, 4230728, 220613), 'length': 151318, 'principal_forms': 0, 'ambiguous_forms': 0}}\n",
+  "interpretation": "One inherited prepared witness refutes automatic principal-square transfer. No whole-catalog absence, coverage, or runtime claim.",
+  "root_execution_count": 1,
+  "independent_review": "Code and class conventions inspected without duplicating execution."
+}

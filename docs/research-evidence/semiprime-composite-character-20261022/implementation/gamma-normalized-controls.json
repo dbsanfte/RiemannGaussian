@@ -1,0 +1,20 @@
+{
+  "core_expanded_pair_vectors": 0,
+  "counts": {
+    "character_components": 72,
+    "direct_pair_checks": 234,
+    "even_order_rejections": 1,
+    "inverse_component_checks": 498,
+    "inverse_vector_checks": 27,
+    "negative_E_checks": 1,
+    "parameter_cases": 4,
+    "proper_divisor_components": 20,
+    "public_factor_checks": 2,
+    "saturation_checks": 3,
+    "weighted_checks": 72,
+    "whole_checks": 72
+  },
+  "max_packed_degree": 14,
+  "scope": "exact conventions/exceptions, not coverage or certified runtime",
+  "status": "PASS"
+}

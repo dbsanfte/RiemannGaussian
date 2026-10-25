@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-22",
+  "external": [
+    {
+      "url": "https://arxiv.org/pdf/2610.01447v2",
+      "arxiv_version": "2610.01447v2",
+      "title": "An O(1) Bound for the KLS Constant",
+      "authors": [
+        "Zhao Song",
+        "Xinzhi Zhang"
+      ],
+      "pdf_title_page_date": "2026-10-02",
+      "arxiv_version_stamp": "2026-10-04",
+      "printed_pages": 140,
+      "sha256": "fad3f750a121cd99f09213ea237fc71b66e97ad1699ecca1d07f74c2fd69d771",
+      "review_scope": "substantive theorem/proof applicability reading distributed across existing team; not independent certification of main claimed theorem",
+      "cached_path": "/tmp/semiprime-collision-broaden-20261022/2610.01447v2.pdf",
+      "bytes": 1039202
+    },
+    {
+      "title": "Fast Pattern Matching in Strings",
+      "url": "https://www.cs.jhu.edu/~misha/Spring23/Knuth77.pdf",
+      "cached_path": "/tmp/semiprime-collision-broaden-20261022/knuth77.pdf",
+      "sha256": "cf3391d85e2456f8242a3dc4a88e7cdead9a419b52890bb4b8a31433e9659dcb",
+      "bytes": 3112451
+    },
+    {
+      "title": "Compression in Finite Fields and Torus-Based Cryptography",
+      "url": "https://www.math.uci.edu/~asilverb/bibliography/tbc.pdf",
+      "cached_path": "/tmp/semiprime-collision-broaden-20261022/rubin-silverberg-tbc.pdf",
+      "sha256": "e819b5c59e40993e3ad53b892af5107220219957b209b82ed995692fed26708d",
+      "bytes": 425129
+    },
+    {
+      "title": "A derivation of Dickson polynomials using the Cayley-Hamilton theorem",
+      "url": "https://arxiv.org/pdf/2406.07322v2",
+      "cached_path": "/tmp/semiprime-collision-broaden-20261022/pain-dickson-2406.07322v2.pdf",
+      "sha256": "63325ab0228fc61cf5a5b6ba69010e14a531054859a243c0dcc745d4bbe915de",
+      "bytes": 161227
+    },
+    {
+      "title": "Quadratic reciprocity and the sign of the Gauss sum via the finite Weil representation",
+      "url": "https://people.math.wisc.edu/~sgurevich/QR-IMRN.pdf",
+      "cached_path": "/tmp/semiprime-collision-broaden-20261022/weil-QR-IMRN.pdf",
+      "sha256": "72cfb031d11f68e10e315e5013ecdf7d9c59e42358a6ce4b56c9b861ed300782",
+      "bytes": 131982
+    },
+    {
+      "title": "Harvey--Hittmeir: A log-log speedup for exponent one-fifth deterministic integer factorisation",
+      "url": "https://arxiv.org/pdf/2105.11105",
+      "scope": "Proposition 3.3, public residue and real-window hypotheses",
+      "sha256": null
+    },
+    {
+      "title": "Modular hyperbolas and bilinear forms of Kloosterman sums",
+      "url": "https://arxiv.org/pdf/1905.00291",
+      "scope": "Theorem 1 and Corollary 2, supplied prime-field assumptions",
+      "sha256": null
+    },
+    {
+      "title": "Elliptic butterflies",
+      "url": "https://arxiv.org/pdf/2510.27375v2",
+      "scope": "Specified geometric input, basis and isogeny-fiber requirements",
+      "sha256": null
+    },
+    {
+      "title": "A linear filtering approach to the computation of discrete Fourier transform",
+      "url": "https://doi.org/10.1109/TAU.1970.1162132",
+      "scope": "Historical chirp transform; finite-ring binomial identity proved directly in report",
+      "sha256": null
+    },
+    {
+      "title": "Trading GRH for algebra: algorithms for factoring polynomials and related structures",
+      "url": "https://arxiv.org/pdf/0811.3165v2",
+      "scope": "Sections 3--5; supplied finite field and explicit algebra",
+      "sha256": "64e890d74c0872dbb83d33c3a0d0cae84f2dc54a616fab290a4496b1a72be050",
+      "cached_path": "/tmp/semiprime-collision-broaden-20261022/sources/trading-grh.pdf",
+      "bytes": 413701
+    },
+    {
+      "title": "Sparse interpolation over finite fields via low-order roots of unity",
+      "url": "https://arxiv.org/pdf/1401.4744v2",
+      "scope": "Theorem 1.1 and straight-line-program input cost",
+      "sha256": "bd4607953e24cf7a4ab183a4fcbe873b172817c3958dfdc6592f9a13498077a9",
+      "cached_path": "/tmp/semiprime-collision-broaden-20261022/sources/sparse-interpolation.pdf",
+      "bytes": 248275
+    },
+    {
+      "title": "Computing the structure of finite algebras",
+      "url": "https://doi.org/10.1016/S0747-7171(08)80017-X",
+      "scope": "Publisher abstract only; no detailed theorem imported",
+      "sha256": null
+    },
+    {
+      "title": "Schemes for Deterministic Polynomial Factoring",
+      "url": "https://eccc.weizmann.ac.il/report/2008/043/download",
+      "scope": "Explicit tensor-algebra ranks and conditional scope",
+      "sha256": null
+    },
+    {
+      "title": "Primality testing with Gaussian periods",
+      "url": "https://math.dartmouth.edu/~carlp/aks080709.pdf",
+      "scope": "Author version 20090807; introduction and input/output distinction",
+      "sha256": null
+    },
+    {
+      "title": "Frobenius Maps of Abelian Varieties and Finding Roots of Unity in Finite Fields",
+      "url": "https://people.maths.ox.ac.uk/pila/Frobenius.pdf",
+      "scope": "Theorems A--D and fixed-data restrictions",
+      "sha256": null
+    },
+    {
+      "title": "Dedekind--Carlitz Polynomials as Lattice-Point Enumerators in Rational Polyhedra",
+      "url": "https://page.mi.fu-berlin.de/chaase/papers/carlitz.pdf",
+      "scope": "Theorem 1, floor-weight reciprocity; no transfer of binomial weights assumed",
+      "sha256": "4392e867fe5327c284163565d605726d878fe942c2928001eea165e2c1d21448",
+      "cached_path": "/tmp/semiprime-collision-representation-20261022/sources/carlitz.pdf",
+      "bytes": 238500
+    },
+    {
+      "title": "Reciprocity formulae for general Dedekind--Rademacher sums",
+      "url": "https://people.mpim-bonn.mpg.de/zagier/files/acta/73-4/fulltext.pdf",
+      "scope": "Introductory generalized Bernoulli-weight setup",
+      "sha256": null
+    },
+    {
+      "title": "Power Series Composition in Near-Linear Time",
+      "url": "https://arxiv.org/pdf/2404.05177v2",
+      "scope": "Theorem 1, supplied power series modulo a nilpotent precision variable; not a cyclic-modulus theorem",
+      "sha256": "6ae924a2766d31e1a5f47d966e9e8225591c84c37b811b17e3f61ef871b508ef",
+      "cached_path": "/tmp/semiprime-collision-representation-20261022/sources/kinoshita-li.pdf",
+      "bytes": 185136
+    },
+    {
+      "title": "Algebraic Diagonals and Walks: Algorithms, Bounds, Complexity",
+      "url": "https://arxiv.org/pdf/1510.04526v1",
+      "scope": "Supplied rational input and degree-dependent preprocessing",
+      "sha256": null
+    },
+    {
+      "title": "Detecting lacunary perfect powers and computing their roots",
+      "url": "https://arxiv.org/pdf/0901.1848v2",
+      "scope": "Supplied sparse polynomial and known-field/large-characteristic input; no cyclic rational-power recognition theorem imported",
+      "sha256": null
+    }
+  ],
+  "local": [
+    {
+      "path": "docs/research-evidence/semiprime-composite-character-20261022/reports/composite-modulus-source.md",
+      "sha256": "18dfbd9765acb867c4c4f93062a7112a998b834e1ae4fbf47850f1f531c712d0"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-composite-character-20261022/reviews/gamma-normalization-review.md",
+      "sha256": "081c0ced78fd72492287771c051e5d29913fe28e0c0d5afeb62d836d0de892cc"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-twist-character-20261022/README.md",
+      "sha256": "e474f950ef87dd03c8fa30509068a77497ffdbc9661a22bcb18c1998715a6906"
+    }
+  ],
+  "note": "Full external papers are cached outside the repository. A null hash means only the cited primary passage and version/URL were recorded; no byte fingerprint is claimed."
+}

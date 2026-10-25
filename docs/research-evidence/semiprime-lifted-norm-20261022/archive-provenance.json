@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-22",
+  "copies": [
+    {
+      "source": "/tmp/semiprime-common-product-20261022/lifted_relations/report.md",
+      "destination": "reports/lifted-norm-consumer.md",
+      "bytes": 8464,
+      "sha256": "9fc4f47cbdd0ab01fa7645d9f83d02c4fb472229c6c2193601239db20a9bb601",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/native_geometry/antipodal-shared-blocks.md",
+      "destination": "reports/antipodal-shared-blocks.md",
+      "bytes": 4290,
+      "sha256": "79dc2ebea56da140d22fc1602b1f83b02a7dd8f4d882cf264561b1e435ca0359",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/fast_evaluation/endpoint-jet-interface.md",
+      "destination": "reports/endpoint-jet-interface.md",
+      "bytes": 7040,
+      "sha256": "089171999264237007185da19faf3f26c68a9a6fc149c3569077b9d1591d64a3",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/character_identities/report.md",
+      "destination": "reports/finite-character-products.md",
+      "bytes": 9431,
+      "sha256": "2fd7d80927a934f4b53692ec6397f9cb3e071f84e2e563f868b34c7ffbf9a6b2",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/lifted_relations/twist-completion-audit.md",
+      "destination": "reports/bounded-twists.md",
+      "bytes": 5419,
+      "sha256": "d066976cdec86fbaef3a5f15022451533281b61ef38632496719033fbc00d70a",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/native_geometry/higher-cancellation-audit.md",
+      "destination": "reports/higher-cancellation.md",
+      "bytes": 4994,
+      "sha256": "c71f5689ee855b644786c4698dd3480937f854781027d4037a4f8dc479a34bb6",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/lifted_relations/negative-pair-existence.md",
+      "destination": "reports/negative-pair-existence.md",
+      "bytes": 6992,
+      "sha256": "14c50c0118a6583713de3be57f60c501e3c4b95613f2a3d8615a7768f6eed5cd",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/native_geometry/lifted-root-consumer.md",
+      "destination": "reports/small-smooth-base-consumer.md",
+      "bytes": 5845,
+      "sha256": "da648a5431a70ca21a1adcccfe776c3326a2f09e81a56cf6b97510ea8edabb75",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/reviews/character-nontriviality-audit.md",
+      "destination": "reports/singleton-and-character.md",
+      "bytes": 10705,
+      "sha256": "765e55e4e46d59add13bf33165ea7694d0ab49d480a254ab89f05a741f3ce5c6",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/reviews/all-pairs-review.md",
+      "destination": "reviews/all-pairs-review.md",
+      "bytes": 8039,
+      "sha256": "f5ce1bc03c0ebe82e76bd5b85258dba5e7455725b5f7cd727ca66569c8c66d18",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/reviews/all-pairs-arithmetic-review.md",
+      "destination": "reviews/all-pairs-arithmetic-review.md",
+      "bytes": 5270,
+      "sha256": "a7848ed8369706b477f8d1ee1adad0e65396230a905c20f3911c8f51f0ec2cd9",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/reviews/negative-pair-size-review.md",
+      "destination": "reviews/negative-pair-size-review.md",
+      "bytes": 3531,
+      "sha256": "fee0fbf8de287955b93562af1bdb903f352e2f57b9e8260cd95fc3beb502c395",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-common-product-20261022/reviews/consolidated-review.md",
+      "destination": "reviews/consolidated-review.md",
+      "bytes": 3068,
+      "sha256": "f5515633e364688182c5dbc6dc3e274af1e70a084d83401325331cb8563cd3ce",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-norm-existence-20261022/pell-count.md",
+      "destination": "reports/pell-count.md",
+      "bytes": 8256,
+      "sha256": "e4ead316383d72c93369b3b0cf6f3a15613b6f3c6dab69183118640b2dad460e",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-norm-existence-20261022/fixed-modulus-density.md",
+      "destination": "reports/fixed-modulus-density.md",
+      "bytes": 6221,
+      "sha256": "28d750c9c4141ac3714c7ffa1abe0896fc45e06b4448976c08e0e1900f6346a5",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-norm-existence-20261022/prepared-order-density-addendum.md",
+      "destination": "reports/prepared-order-density-addendum.md",
+      "bytes": 5746,
+      "sha256": "53b6d6e17f33623ac3dc043460b7df71170f9759546eb904b59fb6616ce0711d",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-norm-existence-20261022/density-review.md",
+      "destination": "reviews/density-review.md",
+      "bytes": 10481,
+      "sha256": "97c252421a4c6af534e3a7bb30f704b35e9ef2fce2afdde3fdab0f7e8bd63d12",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-norm-existence-20261022/surviving-cancellation-route.md",
+      "destination": "reports/rational-invariant-screen.md",
+      "bytes": 5966,
+      "sha256": "f3db7dbe57474d2ec3d70e1c85a86518aa885bfc4310d39d6eb566870dcdfed2",
+      "copy": "verbatim"
+    }
+  ]
+}

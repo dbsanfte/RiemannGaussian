@@ -1,0 +1,19 @@
+{
+  "previous_goal_turn": "no progress, revalidated",
+  "executed_new_candidates": [
+    "unfiltered multiplier floor-word product: exact concatenation and direct cost k^1.5, worse than k^1.25",
+    "continued-fraction convergent menu: coverage/phase/axes valid, same horizon and query cost",
+    "fresh reciprocal-trace locator: only sign involution, constant reduction",
+    "fresh stationary-bin cover: pays k^1.25 labels and lacks signed coverage",
+    "fresh Charlier Christoffel-Darboux transfer: exact divisibility, unacquired bilinear exponent action"
+  ],
+  "subagents_finished": [
+    "/root/fresh_scalar_locator",
+    "/root/fresh_arithmetic_cover",
+    "/root/fresh_recurrence_transfer"
+  ],
+  "runtime_progress": false,
+  "new_authoritative_append": false,
+  "goal": "active; softN1/6andLeanbitproofunproved",
+  "only_new_memo": "/tmp/semiprime-fresh-locator-20261024/localization-audit.md"
+}

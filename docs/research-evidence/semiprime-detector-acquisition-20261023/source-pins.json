@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-23",
+  "local": [
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/constructive-frontier-index.json",
+      "bytes": 5703,
+      "sha256": "9885d687eb030009277d8de7079d5d172a89a1632c277cb6d0aadc82b393bc3a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-trace-20261023/reports/unbalanced-geometry.md",
+      "bytes": 18228,
+      "sha256": "8df4fd185865a81052a9c98c62c360ba9c66d5040eb52c89ae260cc54a0b3814"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/reports/interval-reindexing.md",
+      "bytes": 11243,
+      "sha256": "4d740852b65196979e2db370b2be1a2f0f56fea1b91ca53c1511070454b95282"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/reports/phase-contraction.md",
+      "bytes": 13419,
+      "sha256": "5caa2939743e1b5ea2f957e88cc2855c1ce86f15a9805f9eff61f1b6a6d14089"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-query-continuation-20261022/reports/rough-order-cleaning.md",
+      "bytes": 6817,
+      "sha256": "2c04b959d680ae3e04eed20c71e6ea3faf2b253b5d2c6b1aa940a28aac8142f9"
+    }
+  ],
+  "primary_pdf_fingerprints": [
+    {
+      "url": "https://cr.yp.to/codes/goppalist-20110303.pdf",
+      "title": "Bernstein, List decoding for binary Goppa codes",
+      "inspected": "Section 3 linear combinations as divisors",
+      "local_download": "/tmp/semiprime-detector-acquisition-20261023/goppalist.pdf",
+      "bytes": 403338,
+      "sha256": "db90973705f87854adfb7a8ffba17afca1ef399ec977a299b1113e2fa507e051",
+      "copied_into_repository": false
+    },
+    {
+      "url": "https://cr.yp.to/factorization/smoothparts-20040510.pdf",
+      "title": "Bernstein, How to find smooth parts of integers",
+      "inspected": "Abstract and Section 2, batched smooth parts",
+      "local_download": "/tmp/semiprime-detector-acquisition-20261023/sources/bernstein-smoothparts-20040510.pdf",
+      "bytes": 129464,
+      "sha256": "2ef7aa60f8133ec1125bac4a39498285b626c0f553571fb00385822377facda7",
+      "copied_into_repository": false
+    },
+    {
+      "url": "https://cr.yp.to/focus/focus-20030928.pdf",
+      "title": "Bernstein, Doubly focused enumeration of locally square polynomial values",
+      "inspected": "Section 3, actual enumeration cost and averaging scope",
+      "local_download": "/tmp/semiprime-detector-acquisition-20261023/sources/bernstein-focus-20030928.pdf",
+      "bytes": 142937,
+      "sha256": "8f0b40557c7d0095bb2c277c8a35bf9fd06a2451d53c2bb23b71fa118724cdae",
+      "copied_into_repository": false
+    },
+    {
+      "url": "https://www.mat.univie.ac.at/~schlosse/pdf/determinants-new.pdf",
+      "title": "Rosengren-Schlosser, Elliptic determinant evaluations and the Macdonald identities for affine root systems",
+      "inspected": "Corollary 4.7 and quasiperiodicity",
+      "local_download": "/tmp/semiprime-detector-acquisition-20261023/rosengren-schlosser-determinants.pdf",
+      "bytes": 294717,
+      "sha256": "6ce3745572b1729bc79faa429fc4053aca09cd349ce00b0b08244ceb2d442273",
+      "copied_into_repository": false
+    },
+    {
+      "url": "https://mathexp.eu/bostan/publications/BoJeMoSc17.pdf",
+      "title": "Bostan-Jeannerod-Mouilleron-Schost, On matrices with displacement structure",
+      "inspected": "Generator model and ordinary inverse structure",
+      "local_download": "/tmp/semiprime-detector-acquisition-20261023/bostan-jeannerod-mouilleron-schost-2017.pdf",
+      "bytes": 758372,
+      "sha256": "466d9112461876577fd631808b37f3fab3150d621ba7518b29aef85f1075ee3b",
+      "copied_into_repository": false
+    }
+  ],
+  "primary_web_or_indexed_only": [
+    {
+      "url": "https://www.crypto-uni.lu/jscoron/publications/bivariate.pdf",
+      "title": "Coron, Finding Small Roots of Bivariate Integer Polynomial Equations Revisited",
+      "inspected": "Primary indexed Theorem 5 and Section 6; root also read official IACR slides; no fresh PDF hash asserted"
+    },
+    {
+      "url": "https://www.iacr.org/conferences/eurocrypt2004/slides/session14talk2.pdf",
+      "title": "Coron, official EUROCRYPT 2004 slides",
+      "inspected": "Bivariate lattice setup and stated degree bounds"
+    },
+    {
+      "url": "https://xavier.caruso.ovh/papers/publis/fastfactor.pdf",
+      "title": "Caruso-Le Borgne, A new faster algorithm for factoring skew polynomials over finite fields",
+      "inspected": "Finite-field automorphism and reduced-norm input hypotheses"
+    },
+    {
+      "url": "https://www.cse.iitk.ac.in/users/nitin/papers/integerFact.pdf",
+      "title": "Agrawal-Saxena-Srivastava, Integer Factoring Using Small Algebraic Dependencies",
+      "inspected": "Supplied-dependency premise and stated conjectural cyclotomic consumer"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2010.05450",
+      "title": "Harvey, An exponent one-fifth algorithm for deterministic integer factorisation",
+      "inspected": "Weighted Lehman comparison, Section 3 and Lemma 3.1"
+    }
+  ],
+  "scope": "Pins identify inspected inputs, not independent certification of the papers or of an improved factorization algorithm."
+}

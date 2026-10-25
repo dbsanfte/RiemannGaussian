@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "scope": "Classical proof reviews and exact reference implementation controls; no universal acquisition, coverage, Lean, or interpreter-time claim.",
+  "root_replay": {
+    "command": "/home/dbsanfte/riemann/formal/.lake/plot-venv/bin/python -B -m unittest -v test_packed_gauss.py",
+    "working_directory": "implementation",
+    "backend": "gmpy2-mpz-byte-kronecker",
+    "exit_code": 0,
+    "tests": 8,
+    "output": "test_packing_carries_and_random (test_packed_gauss.ConvolutionControls) ... ok\ntest_full_phi_carrier_and_every_exception (test_packed_gauss.GaussControls) ... ok\ntest_input_unit_guards (test_packed_gauss.GaussControls) ... ok\ntest_large_exponent_cocycle_and_quadratic_backend (test_packed_gauss.GaussControls) ... ok\ntest_dense_same_no_factor_and_invalid_normalization (test_packed_gauss.RestrictionControls) ... ok\ntest_every_divisor_and_parent_fold_cost (test_packed_gauss.RestrictionControls) ... ok\ntest_factor_only_after_proper_divisor_fold (test_packed_gauss.RestrictionControls) ... ok\ntest_monomial_dense_and_different_positions (test_packed_gauss.RestrictionControls) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.051s\n\nOK\n"
+  },
+  "archive_checks": {
+    "verbatim_files": 14,
+    "relative_readme_links": 12,
+    "implementation_agent_pins": 3
+  },
+  "previous_frozen_packets": [
+    {
+      "path": "../semiprime-twist-character-20261022",
+      "verified_entries": 18,
+      "manifest_sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23"
+    },
+    {
+      "path": "../semiprime-twist-palette-20261022",
+      "verified_entries": 6,
+      "manifest_sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3"
+    }
+  ],
+  "reviews": [
+    "reviews/higher-conductor-review.md",
+    "reviews/two-common-products-review.md",
+    "reviews/two-products-sufficiency-addendum.md",
+    "reviews/implementation-review.md",
+    "reviews/packed-gauss-independent-review.md"
+  ],
+  "implementation_scope": "Actual packed C_E acquisition and all-divisor monomial-support controller implemented. Guarded fast half-gcd and simultaneous H_+/H_- evaluation are not implemented.",
+  "git_diff_check_exit_code": 0,
+  "lean_source_changed": false,
+  "broad_build_run": false,
+  "committed_or_pushed": false
+}

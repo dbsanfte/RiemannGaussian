@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-23",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "classification": "Linear-cover correction, exact quadratic carry recurrences and soft-linear one-trace acquisition; no sixth-rate collision query",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 13133,
+      "sha256": "214ef9b430d587b807072b86bf5314d9c7199fa3b3abbb0e5f3c6587f61feb30"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 2654,
+      "sha256": "b76f5d24664c19df5679551b3461fc38bdecfa82524e3be976b64b6068b7348d"
+    },
+    {
+      "path": "reports/ap-catalog.md",
+      "bytes": 16096,
+      "sha256": "cd9908436dc64cdd0d6293af46619e4b432411f0380519b4afb41c11da504b34"
+    },
+    {
+      "path": "reports/canonical-lift-recursion.md",
+      "bytes": 12358,
+      "sha256": "a2448ab6ef380e7806b994407862ed0a14f2c22b8e8a7e789098340f1bb1fe4d"
+    },
+    {
+      "path": "reports/dyadic-cover.md",
+      "bytes": 8293,
+      "sha256": "71059940bd73a86f3eadec74fbdfefbac9a030d3476cc003cfc3d0e156c6e64a"
+    },
+    {
+      "path": "reports/interval-reindexing.md",
+      "bytes": 11243,
+      "sha256": "4d740852b65196979e2db370b2be1a2f0f56fea1b91ca53c1511070454b95282"
+    },
+    {
+      "path": "reports/multibase-literature.md",
+      "bytes": 17907,
+      "sha256": "8a76250d120c06feb59f20a6acc4ba8c97d96da4c79e2f55cd64e73d7a8a05ac"
+    },
+    {
+      "path": "reports/phase-contraction.md",
+      "bytes": 13419,
+      "sha256": "5caa2939743e1b5ea2f957e88cc2855c1ce86f15a9805f9eff61f1b6a6d14089"
+    },
+    {
+      "path": "reports/quadratic-transport.md",
+      "bytes": 9083,
+      "sha256": "19679d8115249cf00cad1b85914442665b1835a6a69766f4f7548c8c55fc28ce"
+    },
+    {
+      "path": "reports/teich-norm.md",
+      "bytes": 10035,
+      "sha256": "abf976e374161ac1dcc6f125a38bb18959781d6e1f16b8ac630d6cfa95c3cf88"
+    },
+    {
+      "path": "reviews/independent-review.md",
+      "bytes": 12510,
+      "sha256": "23d78bcedb29ca0592b3e4c99cd2c95bd488392caf85cd8d88aebbd9969a08d0"
+    },
+    {
+      "path": "reviews/powertrace-review.md",
+      "bytes": 10205,
+      "sha256": "f1aaed9eb46dda1417e7f83e5843b9b49b35bf3b26611fd8ecb27656448dbece"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 2729,
+      "sha256": "efad76bcf139309dbbaa49238a3a6fdebc116ebc99a24ef331e5bf80e178e876"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 2632,
+      "sha256": "89ead853c0cadb2f38a60c1925a1bf598120ef7a983abeca36a62b19a0f4ec17"
+    }
+  ]
+}

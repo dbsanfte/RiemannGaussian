@@ -99,10 +99,10 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Native square bound and arithmetic-correlation audits.** Publishes the Siegel-interpolation review, checked native central-square bounds through the actual source normalizer, and exact marked-coefficient audits. These supporting results retain the original arithmetic weights and masks.
-The signed odd-sector correlation and the independent RH arithmetic estimate remain open. The proved zero-free endpoint is unchanged.
+**Local Suzuki cancellation and semiprime recurrence checkpoint.** Publishes the checked local Suzuki cancellation identities, conditional RH transfer, and explicit three-eighths arithmetic bound, together with the accumulated semiprime coverage and recurrence audits. The research evidence preserves corrections and distinguishes proved components from open acquisition claims.
+The subpolynomial prime estimate and guaranteed sixth-exponent factorization remain open. The proved zero-free endpoint is unchanged.
 [Current checked endpoint](RiemannGaussian/SuzukiLaplaceCompensator.lean#L246)
-· [Proof details](docs/arithmetic-operator-source-normalized-marked-gates.md).
+· [Proof details](docs/suzuki-local-cancellation.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

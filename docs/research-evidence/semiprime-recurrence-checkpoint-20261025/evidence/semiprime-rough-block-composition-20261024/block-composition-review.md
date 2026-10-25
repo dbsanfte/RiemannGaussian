@@ -1,0 +1,44 @@
+# Independent audit of block-composition.md
+
+24 October 2026. **PASS.** Exact final source reviewed: `/tmp/semiprime-rough-block-composition-20261024/block-composition.md`, SHA256 `5752e4192376b7351b3e003bc0dc0a4536b1a7d976de52d175465aaf63c941f2`. The initial requested pin was `c11b973e1c569cc6e6bf3a51c2d0b74f17d56f2aa671efcb12f9a6788d202e65`. The author corrected two requested scope precisions before this final pin: norm saturation is not asserted to be whole split-side equality, and common smooth exponents have an explicit bit-width bound. No required corrections remain. Reviewer made no source or repository edits.
+
+## Fixed quotient and true fiber determinant
+
+The quotient modulus is the ACTUAL acquired monic F_d and remains fixed. Scaling the external start X in R_b(C;X) therefore gives the composition (2) without applying the generally false quotient endomorphism C->zC. Its initialization R_1=C-X and rank-two multiplication law (3) are correct. Substituting the shifted first state gives A_2=s_d-(1+z)X and B_2=zX²-c_d.
+
+The fiber determinant of A C+B is B²+s_d A B+c_d A². Expanding those actual first states yields exactly the quartic (5), including its X² coefficient z*s_d²+(1+z²)c_d and leading term z²X^4. For arbitrary constant r, the companion determinant equals the displayed product over the ACTUAL fiber roots. This is a monic-resultant identity over the composite coefficient ring; it does not require hidden diagonalization or invertible target differences. Determinant multiplicativity gives the scalar polynomial composition (7). No determinant cross term is silently omitted in this particular normalization.
+
+The highest-coefficient argument is exact, not just an upper degree estimate. Selecting the X term from every factor gives (-1)^b z^(b(b-1)/2) in the constant companion basis coordinate. Every term containing C has smaller X degree before reduction, and reducing C powers cannot increase it. The unit coefficient therefore survives. The determinant likewise has exact degree r*b and unit leading coefficient (-1)^(r*b)z^(r*b(b-1)/2). These facts concern this retained state and are not claimed as lower bounds for other scalar representations.
+
+## Both completed algorithms and their costs
+
+The first evaluated block is genuinely acquired collectively in soft(J+b): construct the one degree-b geometric polynomial and take monic remainders against all fiber F_d. A subsequent start needs its actual shifted polynomial/remainder state. Alternatively, the root-side MPE list has J*floor(L/b) shifted roots and those actual points are charged. That orientation returns soft(J+b+JL/b).
+
+The coefficient-side algorithm is also completed through its FINAL scalar. H_1=(-1)^J F is acquired from actual targets. The composition H_(a+b)(X)=H_a(X)H_b(z^aX), with actual coefficient scaling and polynomial multiplication, acquires H_b at cost soft(Jb). Balanced recursion or binary doubling charges all growing intermediate arrays. No previously expanded fiber determinants or implicit coefficient oracle are assumed.
+
+The actual giant starts number floor(L/b); one monic MPE of the acquired degree-Jb H_b and the literal clipped tail yields soft(J+Jb+L/b). Minimizing gives b~sqrt(L/J) and soft(J+sqrt(JL)). All orientations and phases check: full blocks have B-valued sign (-1)^(Jbr), while the requested rank-two norm removes it because Norm_B(-1)=1. The tail has its own correctly clipped degree/cost. At native J~k,L~k² the coefficient-side cut and the root-side cut both retain the old k^(3/2) bound, with different block lengths. Neither computes a varying scalar start from one previous value for free.
+
+## Nonunits, restrictions and original recovery
+
+All divisors used by remainder/evaluation routines are monic; the only scalings are explicit powers of the unit z. No block value, determinant, s_d, discriminant or singular terminal is inverted. Zero factors and repeated targets therefore do not invalidate the value algorithm.
+
+A nonunit block is localized with its actual giant index retained. The recomputed target-subset H_b degrees down one row path sum to O(Jb); then the acquired seed tree fixes an ORIGINAL bounded index. If no common label survives at both primes, a proper child gcd separates them. The final corrected source properly states that a saturated leaf is the ORIGINAL NORM leaf Norm(V_j-z^i)=0 modulo N. It need not give whole-element equality on the split side. Only then does the predecessor's nonsplit-field/G_beta consumer return a factor or a saturated original scalar beta leaf. This preserves the actual original labels without importing an auxiliary-value decoder.
+
+Intervals with offsets and shorter tails retain their labels. The source does not replace joint same-index support by products of independent coordinate tests.
+
+## Rough angular powers and the native j² identity
+
+The angular power assertion is correct for positive smooth m of the stated width. The local subgroup generated by rough W has order coprime to m, so u_j=v^i is equivalent to u_j^m=(v^m)^i. Keeping the norm coordinate makes this exact WHOLE local incidence on both split and nonsplit sides. It is explicitly not asserted as arbitrary beta-coupled split-component norm-mask equivalence, and no rough-beta hypothesis is needed for this ANGULAR-only transformation.
+
+The final source bounds m to O(log N) bits and actually acquires W^m once, followed by all short T_j powers. Wider exponents are separately charged. Thus the soft-k target acquisition has no unbounded exponent input. The changed common seed is actually rescreened, and the fixed-width fiber polynomial remains acquired from its constant-many actual roots. The index horizon L is unchanged.
+
+Expanding j²*T_j with a_jj²=N-kD_j gives exactly
+
+    epsilon*N*(j-epsilon)²
+      +k*(b_j*j²+D_j*(2j-epsilon)).
+
+Both the N-square term and every carry sign in (15) are correct. Roughness genuinely licenses this variable angular power, without knowing inverse exponents. Its comparator is nevertheless (v^(j²))^i, a DIFFERENT row seed base. All transformed targets have O(log N)-bit exponents and are acquired in soft k; acquiring separate degree-b polynomials across rows costs soft(Jb). The source does not transfer the common-z merge to those changing bases or import an unproved Gauss-period identity.
+
+## Scope
+
+The controlled-modulus norm-fiber input, r_d<=16 and the sum of all fiber ranks are retained at their actual cost. Constant angular width is not treated as a constant number of fibers. The report exhibits a complete zero-safe nonautonomous composition at the EXISTING covered-query clock and two exact retained quantities: the growing coefficient (8) and the row-dependent base in (15). It does not infer a whole-query speedup, factoring-exponent gain or generic algorithmic impossibility. Exact final bytes pass.

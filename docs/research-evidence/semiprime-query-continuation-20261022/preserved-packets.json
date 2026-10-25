@@ -1,0 +1,45 @@
+{
+  "verified_manifest_entries": 169,
+  "packets": [
+    {
+      "packet": "semiprime-twist-character-20261022",
+      "files": 18,
+      "manifest_sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23"
+    },
+    {
+      "packet": "semiprime-twist-palette-20261022",
+      "files": 6,
+      "manifest_sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3"
+    },
+    {
+      "packet": "semiprime-colour-retention-20261022",
+      "files": 18,
+      "manifest_sha256": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb"
+    },
+    {
+      "packet": "semiprime-lifted-norm-20261022",
+      "files": 22,
+      "manifest_sha256": "11ce7d9e67e205772498f1501e3f02321cb28fd22e6d8c71cb45eef4993be97b"
+    },
+    {
+      "packet": "semiprime-character-aggregate-20261022",
+      "files": 22,
+      "manifest_sha256": "301999c41ea2e7f562a42ccf9ec119867481d63f8dfb69f81304b12fec59847d"
+    },
+    {
+      "packet": "semiprime-composite-character-20261022",
+      "files": 28,
+      "manifest_sha256": "d0f6dafabb5b33f5cab33dd9c117d701f7426598e4f8ba6bf60cfadb698586d4"
+    },
+    {
+      "packet": "semiprime-collision-representation-20261022",
+      "files": 29,
+      "manifest_sha256": "6846eb84465b23e4dce8db04a1b95e5235882166dea31932aa932d1999f55af0"
+    },
+    {
+      "packet": "semiprime-dyadic-shared-20261022",
+      "files": 26,
+      "manifest_sha256": "cf35e01493f26bbb960d4143f3f461ea4766ac0b4a7c0df5c7aede33a7bbd8e7"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "validated_at": "2026-10-23T18:52:56.118682+00:00",
+  "head": "6e969fd6e9c639eed280c595732248c106187603",
+  "shared_documents": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1402957,
+      "lines": 21824,
+      "sha256": "65a3b5ec4ff8b494217db3c5b55523c0e9d12398a103587820a43b1defde3b9f",
+      "original_prefix_preserved": true,
+      "append_heading_line": 21790,
+      "append_sha256": "8422d9ca1e868a0a15091efe7b6deda01c4e3c295a3ac2f07ea9a7f7dc956ac8"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "bytes": 2038112,
+      "lines": 38862,
+      "sha256": "0c936c2568d7bd3a1e526c4a52a0a9570a4e16c18c940e923fe10cd742b8e242",
+      "original_prefix_preserved": true,
+      "append_heading_line": 38741,
+      "append_sha256": "03b8f1ccb227283d9e9c065d9e0cd52305473f169aff10cbaf9a87e63bb7deff"
+    }
+  ],
+  "frozen_packets": [
+    {
+      "path": "docs/research-evidence/semiprime-twist-character-20261022/manifest.json",
+      "sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-twist-palette-20261022/manifest.json",
+      "sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3",
+      "entries": 6,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-colour-retention-20261022/manifest.json",
+      "sha256": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-lifted-norm-20261022/manifest.json",
+      "sha256": "11ce7d9e67e205772498f1501e3f02321cb28fd22e6d8c71cb45eef4993be97b",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-character-aggregate-20261022/manifest.json",
+      "sha256": "301999c41ea2e7f562a42ccf9ec119867481d63f8dfb69f81304b12fec59847d",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-composite-character-20261022/manifest.json",
+      "sha256": "d0f6dafabb5b33f5cab33dd9c117d701f7426598e4f8ba6bf60cfadb698586d4",
+      "entries": 28,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-collision-representation-20261022/manifest.json",
+      "sha256": "6846eb84465b23e4dce8db04a1b95e5235882166dea31932aa932d1999f55af0",
+      "entries": 29,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022/manifest.json",
+      "sha256": "cf35e01493f26bbb960d4143f3f461ea4766ac0b4a7c0df5c7aede33a7bbd8e7",
+      "entries": 26,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-query-continuation-20261022/manifest.json",
+      "sha256": "539df1ca1ec160aaf3806a57ab0f47e9870c2d39e1a86f7a77c691c03a7ca5fc",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-randomness-bridge-20261022/manifest.json",
+      "sha256": "716d8af72bf0189a72e21c1202cdfc33ca022e14670da33a5d3a1f2c5eb2c79a",
+      "entries": 10,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fermat-multiplier-20261022/manifest.json",
+      "sha256": "5ca79fec94998f07db68fea18d6e807d0df9daba75f12aaf694afa396bae233f",
+      "entries": 11,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/manifest.json",
+      "sha256": "8128b86203baeadac53842eb5aaca8ed275c904b8b059271708483238c75cfdd",
+      "entries": 14,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-trace-20261023/manifest.json",
+      "sha256": "8fd192d4c6a0fc707fa3bfe8fd60545870d26cc147847084acfe18afe5fa3b97",
+      "entries": 12,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-detector-acquisition-20261023/manifest.json",
+      "sha256": "09f9c88ae7cfb412fc9756686cf766f9f8f331ed5cb1e28ff39451289777624c",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-arithmetic-selection-20261023/manifest.json",
+      "sha256": "b112a2fc0f5f38cc0d5d329765effb0e60040d337e4c32f1dedb975e629c3ff8",
+      "entries": 14,
+      "all_entries_verified": true
+    }
+  ],
+  "frozen_entry_count": 270,
+  "reports": [
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/acceleration-independent-review.md",
+      "bytes": 4255,
+      "sha256": "338e2066a900fa006c2fccef8ccf71514647423dc61b7d51cd6d27a2b9ca3202"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/agents-append.md",
+      "bytes": 2128,
+      "sha256": "8422d9ca1e868a0a15091efe7b6deda01c4e3c295a3ac2f07ea9a7f7dc956ac8"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/constant-power-correction.md",
+      "bytes": 7761,
+      "sha256": "e4481d2a6a3eb536fc13108ba7903bb4e61cac38134a805044aaa36afc3fbdb5"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/fixed-power-independent-review.md",
+      "bytes": 4584,
+      "sha256": "de80f2b37f85b95db331fb4c31ffdea657dc922a039cf37c522215f485bab69a"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/fresh-boundary-algorithm.md",
+      "bytes": 4654,
+      "sha256": "a0938be39b8877f1a3de75370de2440b9b800db3cdf3f3be50da6dd0044bdf24"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/fresh-boundary-review.md",
+      "bytes": 3690,
+      "sha256": "369a5abf5ffd00ad54f2db730a0e007a717ae81d2d542b7bdf288d271e46e93d"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/integration-review.md",
+      "bytes": 3708,
+      "sha256": "66d5e5fc0801f4051a9373a225718f81c0c1e8e363996dcbc97e324a13fff8ed"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/interval-dlp-transfer.md",
+      "bytes": 6071,
+      "sha256": "158d018e6090729fc43b6807e007131aba71c994d0529f260b4875330bb0fe04"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/joint-forcing-attempt.md",
+      "bytes": 6141,
+      "sha256": "34ebb3bcc289c03a0d825a9bc37cbefd1f949a610354e062641fa22a0728a5a7"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/joint-hadamard-recurrence.md",
+      "bytes": 7887,
+      "sha256": "9e93a8b82e4728a37a01b14a55357d7d496cc85dcfe493a9d8ed3f98e2966ba3"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/joint-hadamard-review.md",
+      "bytes": 3827,
+      "sha256": "3b3b31acb2e90b5fd9126f9f26dee597973f81238413fc3f642d78905f20464a"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/journal-append.md",
+      "bytes": 6520,
+      "sha256": "03b8f1ccb227283d9e9c065d9e0cd52305473f169aff10cbaf9a87e63bb7deff"
+    },
+    {
+      "path": "/tmp/semiprime-forcing-acceleration-20261023/paired-norm-execution.md",
+      "bytes": 5462,
+      "sha256": "d2d09b95ac3ac721f49a5f7e7bab4d93e2bbc78d3561e38424fc510209a76b11"
+    }
+  ],
+  "review_pins": "all matched current source/draft bytes",
+  "source_pins": {
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/block-transform.md": "825aaaa7d10637eddcf38a7b8e8f2241a70984c4b94c506372e922b845b2fe70",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-block-query-20261016/reports/fast-mixed-matrix-interface.md": "4959b0f33989570507b15eb82e8b93c2020449032ad1612b4d4e92b74f1d5767",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-extraction-query-20261016/reports/coefficient-block-inverse.md": "73685f5580b92375b7d3a9f09265c245125ebee6edf048243a4558b6d5f4e3a2",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-extraction-query-20261016/reports/qshift-power-defect.md": "5e88b2b6b26310e535d959b6a4c3320adb25993c5e878fff8577708076007e5a"
+  },
+  "diff_check": "passed",
+  "tracked_changes": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ],
+  "classification": "Acquired fixed-matrix powers via finite q-Newton/Toeplitz conversion, proved a joint two-term dyadic correction identity, and derived an initialized common-moment state with paid joint terminal decoding. Exact boundary forcing/moments and product-Hadamard contraction remain unacquired; no improved whole-query exponent or sixth-rate completion. Main next target is a jointly initialized correction evaluator, retaining original coverage and full bit costs.",
+  "broad_builds_or_example_campaigns": false
+}

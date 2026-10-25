@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "scope": "Classical composite supply/catalog and normalized UNIT-aggregate acquisition, with reference implementations. No near-linear collision query, all-input factoring rate or new Lean theorem claimed.",
+  "mathematical_reviews": [
+    {
+      "reports": [
+        "reports/composite-colour-catalog.md",
+        "reports/composite-gauss-supply.md",
+        "reports/composite-modulus-source.md"
+      ],
+      "review": "reviews/composite-integration-review.md",
+      "result": "PASS; primewise gcd and all-retained source clarifications incorporated."
+    },
+    {
+      "report": "reports/gamma-normalized-gauss.md",
+      "review": "reviews/gamma-normalization-review.md",
+      "result": "PASS with constructive explicit inverses and normalized aggregate algorithms; supersedes original auxiliary-supply/inversion caveats."
+    },
+    {
+      "report": "reviews/gamma-normalization-review.md",
+      "review": "reviews/normalized-formula-independent-review.md",
+      "result": "PASS; includes source, original-base rebase and same-leaf ideal equality."
+    },
+    {
+      "report": "README.md and final journal/AGENTS sections",
+      "review": "reviews/final-integration-review.md",
+      "result": "PASS; source numerical constants independently inspected by root, not re-transcribed by final reviewer."
+    }
+  ],
+  "implementation_reviews": [
+    {
+      "code": "implementation/composite_colours.py",
+      "review": "implementation/review-composite-colours.md",
+      "result": "PASS"
+    },
+    {
+      "code": "implementation/composite_gauss_aggregate.py",
+      "review": "implementation/review-composite-gauss.md",
+      "result": "PASS"
+    },
+    {
+      "code": "implementation/gamma_normalized_aggregate.py",
+      "review": "implementation/review-gamma-normalized.md",
+      "result": "PASS after exposed inverse helper received an odd-order guard and rejection control."
+    }
+  ],
+  "root_replay": {
+    "interpreter": "/home/dbsanfte/riemann/formal/.lake/plot-venv/bin/python",
+    "environment": "PYTHONDONTWRITEBYTECODE=1",
+    "directory": "implementation",
+    "tests": [
+      {
+        "name": "composite_colours",
+        "exit_code": 0,
+        "result": "PASS: 5 exact unittest groups"
+      },
+      {
+        "name": "composite_gauss",
+        "exit_code": 0,
+        "result": {
+          "core_full_pair_expansion": false,
+          "counts": {
+            "character_components": 72,
+            "coordinated_rows": "matched",
+            "direct_pair_checks": 234,
+            "direct_whole_checks": 72,
+            "invalid_checks": 3,
+            "parameter_cases": 4,
+            "proper_divisor_components": 20,
+            "public_factor_checks": 4,
+            "weighted_checks": 72
+          },
+          "max_packed_degree": 14,
+          "scope": "deterministic arithmetic/exception controls, not coverage or timing",
+          "status": "PASS"
+        }
+      },
+      {
+        "name": "gamma_normalized",
+        "exit_code": 0,
+        "result": {
+          "core_expanded_pair_vectors": 0,
+          "counts": {
+            "character_components": 72,
+            "direct_pair_checks": 234,
+            "even_order_rejections": 1,
+            "inverse_component_checks": 498,
+            "inverse_vector_checks": 27,
+            "negative_E_checks": 1,
+            "parameter_cases": 4,
+            "proper_divisor_components": 20,
+            "public_factor_checks": 2,
+            "saturation_checks": 3,
+            "weighted_checks": 72,
+            "whole_checks": 72
+          },
+          "max_packed_degree": 14,
+          "scope": "exact conventions/exceptions, not coverage or certified runtime",
+          "status": "PASS"
+        }
+      }
+    ],
+    "scope": "One focused replay from archived paths. Exact algebra/control tests, not empirical coverage or certified timing."
+  },
+  "source_verification": "Primary author-hosted EBPAP PDF inspected by source agent and independently by root from cache; Theorem 1.2, (1.10)-(1.12) constants confirmed. Full paper fingerprinted, not archived.",
+  "old_frozen_packets": [
+    {
+      "packet": "semiprime-twist-character-20261022",
+      "entries_verified": 18,
+      "manifest_sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23"
+    },
+    {
+      "packet": "semiprime-twist-palette-20261022",
+      "entries_verified": 6,
+      "manifest_sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3"
+    },
+    {
+      "packet": "semiprime-colour-retention-20261022",
+      "entries_verified": 18,
+      "manifest_sha256": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb"
+    },
+    {
+      "packet": "semiprime-lifted-norm-20261022",
+      "entries_verified": 22,
+      "manifest_sha256": "11ce7d9e67e205772498f1501e3f02321cb28fd22e6d8c71cb45eef4993be97b"
+    },
+    {
+      "packet": "semiprime-character-aggregate-20261022",
+      "entries_verified": 22,
+      "manifest_sha256": "301999c41ea2e7f562a42ccf9ec119867481d63f8dfb69f81304b12fec59847d"
+    }
+  ],
+  "artifact_checks": {
+    "verbatim_copies_verified": 24,
+    "local_dependency_pins_verified": 9,
+    "markdown_local_links_checked": 13,
+    "journal_and_guide_single_entry": "PASS",
+    "git_diff_check": "PASS",
+    "old_manifest_entries_verified": 86
+  },
+  "exploratory_reports": "Scalar-pair and Gauss-deformation reports were read by root; not separate universal acquisition theorems.",
+  "lean": "No new declaration or build.",
+  "publication": "No commit or push."
+}

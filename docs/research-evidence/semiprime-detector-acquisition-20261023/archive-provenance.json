@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-23",
+  "copies": [
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/README.md",
+      "path": "README.md",
+      "bytes": 5485,
+      "sha256": "1a8781086150daaee7e0acaf78af10da5eb1a72802998d7d309b939a07abcb98"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/structured-catalog-proof.md",
+      "path": "reports/structured-catalog-proof.md",
+      "bytes": 6256,
+      "sha256": "6cb01f74382eca5ee261ce61c3331a89c2ccb80b7ef62ced4d44e5c7213fe2f8"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/arithmetic-detector.md",
+      "path": "reports/arithmetic-detector.md",
+      "bytes": 16617,
+      "sha256": "bcb6bac3f02fd241817a5d07a408428301943a12d586014a9df4a0449f273515"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/ratio-selector-continuation.md",
+      "path": "reports/ratio-selector-continuation.md",
+      "bytes": 10788,
+      "sha256": "09be7f838ae336b16a09f56620550b7c4fe8e39c595ed46ecb674c7f2ea3f173"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/norm-detector.md",
+      "path": "reports/norm-detector.md",
+      "bytes": 11335,
+      "sha256": "76eb4616864bd506d78e1c9bbf877e62877b3f47b79b4d2e6ee243a45e664131"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/theta-displacement-check.md",
+      "path": "reports/theta-displacement-check.md",
+      "bytes": 8340,
+      "sha256": "32f295a3c11bd0acb546b279b0edf82deda156302f81a4cbe1a16a94d4a22168"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/count-acquisition.md",
+      "path": "reports/count-acquisition.md",
+      "bytes": 9295,
+      "sha256": "17d2c263402ad48c821895ba75e552d74e0cdf9bec59a97a5d4f4de7fc934c92"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/discriminant-relations.md",
+      "path": "reports/discriminant-relations.md",
+      "bytes": 7984,
+      "sha256": "4b7b6348caba33141c51296bab8099bcef60b49e7e4ac8c04d2dabaad5ee0765"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/trace-target-audit.md",
+      "path": "reports/trace-target-audit.md",
+      "bytes": 2385,
+      "sha256": "104f9374e7784a6f3815e9889f2202b53b800d4cc1a91043c828b0a146d2ecec"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/structured-catalog-review.md",
+      "path": "reviews/structured-catalog-review.md",
+      "bytes": 2185,
+      "sha256": "0f7fd4eeccd7c912f7c458aab03ff2f3078f41842370c629915850b9f9219725"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/ratio-selector-final-review.md",
+      "path": "reviews/ratio-selector-final-review.md",
+      "bytes": 3043,
+      "sha256": "465e6c6a4b1d24751e4d6cac243273a485fcc7d269a4de3b6b0d6b285bb8125e"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/acquisition-review.md",
+      "path": "reviews/acquisition-review.md",
+      "bytes": 4734,
+      "sha256": "62d8267c0c14435453712ee0f254f842adc0183647b2f71445382633d438e345"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/norm-theta-review.md",
+      "path": "reviews/norm-theta-review.md",
+      "bytes": 5634,
+      "sha256": "359a858910f51be2aa8c8d7b3e414006b0959bdb4492bd23ad0d1b1698d50970"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/root-review.md",
+      "path": "reviews/root-review.md",
+      "bytes": 3583,
+      "sha256": "81414ba621b723b063fb0702148964b5972c21576f7312b28d940b65e536b247"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/check_integer_character_filter.py",
+      "path": "implementation/check_integer_character_filter.py",
+      "bytes": 1501,
+      "sha256": "5f15055874c161cd5a26011f806a0c272c021ba5ad8e29127df71ded89fa7641"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/replay_ratio_counterexample.py",
+      "path": "implementation/replay_ratio_counterexample.py",
+      "bytes": 2966,
+      "sha256": "17c4dab7b2d3e24647e9f7ac921d5b3ca2139c8db89d4823a1de73ca19a0cf4e"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/ratio-counterexample-replay.json",
+      "path": "implementation/ratio-counterexample-replay.json",
+      "bytes": 1047,
+      "sha256": "8e414e24c823c0b30ba88d5c4749f00c4df0dbebbe2cfedbd6842dbdbe57ee92"
+    },
+    {
+      "source": "/tmp/semiprime-detector-acquisition-20261023/replay_discriminant_cubic_identity.py",
+      "path": "implementation/replay_discriminant_cubic_identity.py",
+      "bytes": 1270,
+      "sha256": "37cde2ea5222773098bcffb4d5a228421b1d5ca5d48dde3ab625ca5e32b6813f"
+    }
+  ],
+  "scope": "Final reviewed scratch reports and fixed algebra replays copied verbatim; no factorizer or Lean theorem is claimed."
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-23",
+  "status": "pass",
+  "classification": "Exact carry recurrences and a fixed-index additive trace; full collision acquisition remains open",
+  "root_review": "Checked interval bijection and unit cancellation, quadratic transport, legal roots, dyadic vertical/quarter/carry formulas, AP conventions, trace factorization, K=0 screen, short-annihilator interface and bit costs.",
+  "independent_reviews": [
+    "reviews/independent-review.md",
+    "reviews/powertrace-review.md"
+  ],
+  "repairs_checked": [
+    "Total requested precision O(m) across mask partition, not separately for every mask.",
+    "r=Theta(N^(1/6)) in trace ledger.",
+    "Different C/B centering conventions and finite sigma caps retained.",
+    "Optional q4-order uniqueness derived with all inherited size/order hypotheses."
+  ],
+  "verbatim_reports_and_reviews": 10,
+  "local_readme_links": 14,
+  "primary_pdf_fingerprints_checked": 4,
+  "inherited_local_source_pins_checked": 5,
+  "previous_frozen_entries_verified": 208,
+  "previous_manifest_sha256": {
+    "semiprime-twist-character-20261022": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23",
+    "semiprime-twist-palette-20261022": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3",
+    "semiprime-colour-retention-20261022": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb",
+    "semiprime-lifted-norm-20261022": "11ce7d9e67e205772498f1501e3f02321cb28fd22e6d8c71cb45eef4993be97b",
+    "semiprime-character-aggregate-20261022": "301999c41ea2e7f562a42ccf9ec119867481d63f8dfb69f81304b12fec59847d",
+    "semiprime-composite-character-20261022": "d0f6dafabb5b33f5cab33dd9c117d701f7426598e4f8ba6bf60cfadb698586d4",
+    "semiprime-collision-representation-20261022": "6846eb84465b23e4dce8db04a1b95e5235882166dea31932aa932d1999f55af0",
+    "semiprime-dyadic-shared-20261022": "cf35e01493f26bbb960d4143f3f461ea4766ac0b4a7c0df5c7aede33a7bbd8e7",
+    "semiprime-query-continuation-20261022": "539df1ca1ec160aaf3806a57ab0f47e9870c2d39e1a86f7a77c691c03a7ca5fc",
+    "semiprime-randomness-bridge-20261022": "716d8af72bf0189a72e21c1202cdfc33ca022e14670da33a5d3a1f2c5eb2c79a",
+    "semiprime-fermat-multiplier-20261022": "5ca79fec94998f07db68fea18d6e807d0df9daba75f12aaf694afa396bae233f"
+  },
+  "finite_checks_scope": "Reviewed reports record independent identity/sign/boundary checks. They are not semiprime coverage or asymptotic runtime evidence; no additional root numerical campaign was run.",
+  "whole_family_collision_query_acquired": false,
+  "improved_factoring_exponent": false,
+  "lean_build": false,
+  "commit_or_push": false
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-22",
+  "scope": "Paper identities and native cost review; convention checks only. No collision acquisition bound, Lean theorem, benchmark, or complete palette implementation.",
+  "independent_review": "reports/independent-review.md",
+  "review_repairs_incorporated": [
+    "Unit-lift proof fixes full quartic phase, not only its square",
+    "Explicit zero symbol on nonunit Gaussian norms",
+    "Polynomial-size indices with modular powering and symbol bit charges"
+  ],
+  "root_replay": {
+    "command": "python3 docs/research-evidence/semiprime-twist-palette-20261022/probes/check_palette.py",
+    "exit_code": 0,
+    "nonlinear_palette_leaf_checks": 405,
+    "seed_product_updates": 12,
+    "dependency_checks": {
+      "cross_parameter_cases": 1012,
+      "gaussian_local_and_torus_cases": 1120,
+      "full_octic_cases": 92,
+      "prime_mod8_branches": [
+        1,
+        3,
+        5,
+        7
+      ]
+    }
+  },
+  "previous_packet_manifest_entries_verified_unchanged": 18,
+  "git_diff_check": "passed"
+}

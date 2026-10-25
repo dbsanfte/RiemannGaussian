@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-23",
+  "purpose": "Arithmetic selection and exact carry-preserving common clocks; no improved factoring theorem",
+  "entries": [
+    {
+      "path": "README.md",
+      "bytes": 5141,
+      "sha256": "a91c54a1f4f29e6e9b315ff38d89fa3064aad914d78ff0ee4607131509592fb8"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 2748,
+      "sha256": "554b8262548c004f848fe004ce90976432b640855eca289dda197f1872676069"
+    },
+    {
+      "path": "implementation/replay_principal_square_premise.py",
+      "bytes": 2826,
+      "sha256": "2dc008af1b7db31cde84afb6ec8a4df0f183ae3082ee2b8fe3cb395cb892b129"
+    },
+    {
+      "path": "replay-results.json",
+      "bytes": 779,
+      "sha256": "c26abed97aeb73d561d49bcd4c6979a1adfa51847c9f6412c8a3f6902ffce923"
+    },
+    {
+      "path": "reports/factored-coefficients-continuation.md",
+      "bytes": 9411,
+      "sha256": "f57c9a08c06aba8300465c5bcbca98807b0ce186e9e38075ac0d73b851fe88f1"
+    },
+    {
+      "path": "reports/ideal-short-cofactor.md",
+      "bytes": 16832,
+      "sha256": "b884eae5ddce1188a12ac963b60873d3387a369801fa0baba1dd3ea7eb5fd04d"
+    },
+    {
+      "path": "reports/paired-label-selection.md",
+      "bytes": 10653,
+      "sha256": "58ea4f2344a193853bcc83fae8fb4701a54376ab9fe9c51f7d650c3e57d28a58"
+    },
+    {
+      "path": "reports/quadratic-carry-gauge.md",
+      "bytes": 7633,
+      "sha256": "99990d0338cef4a4b1eaf0de6b43ff443d655a4ca26b8022990cb9c4f7310fe4"
+    },
+    {
+      "path": "reports/reciprocal-bezout-kernel.md",
+      "bytes": 10438,
+      "sha256": "996f11f232883cb9c2dfd40aac71af30f32e51c17019b579c7d2d1ab6b429852"
+    },
+    {
+      "path": "reviews/gauge-independent-review.md",
+      "bytes": 4024,
+      "sha256": "2d5840e7367d73d1e4d809b23b146d8b8fb5845c3db0afefa798dd82a3703ab6"
+    },
+    {
+      "path": "reviews/ideal-review.md",
+      "bytes": 5064,
+      "sha256": "08ea47e204d45c95c0ee24ba214d84176c8e2e356c66b4cac38ef815375da67a"
+    },
+    {
+      "path": "reviews/root-review.md",
+      "bytes": 6185,
+      "sha256": "c4b22a222eb9bbac9bbc79d2dfe3ca60719d1ca01290bbbf51b37006c23de68d"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 8338,
+      "sha256": "0765aa74125d0cc8be64e7657c9ff0b04cd679ff7d8713c955a4885b2056b66f"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 4444,
+      "sha256": "93c6632a80c377bdd9b67013a8fa408c1c425da42063f471b46c85203563d047"
+    }
+  ]
+}

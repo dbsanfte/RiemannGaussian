@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "scope": "Paper identities and exact implementation/convention checks; no universal acquisition, factoring exponent, or new Lean proof.",
+  "independent_reviews": [
+    {
+      "report": "reports/cayley-paid-companion.md",
+      "scope": "Entire unit companion, leaf support, restriction domain and bit-cost audit",
+      "result": "pass"
+    },
+    {
+      "report": "reports/independent-retained-lift-character-review.md",
+      "scope": "Split/inert lift, global phase distinction, corrected-map identity and exact iteration",
+      "result": "pass"
+    },
+    {
+      "report": "reports/selected-shift-overlap.md",
+      "scope": "Monic selected-shift evaluation and batched matched-partner localization",
+      "result": "pass"
+    }
+  ],
+  "root_replays": [
+    {
+      "command": "python3 /tmp/semiprime-character-acquisition-20261022/algebraic_symbols/check_corrected_root.py",
+      "archived_program": "probes/check_corrected_root.py",
+      "archived_bytes_identical": true,
+      "exit_code": 0,
+      "counts": {
+        "gaussian_local_and_torus": 1120,
+        "reciprocal_parameter": 1012,
+        "full_octic": 92,
+        "corrected_root": 548,
+        "iterations_per_corrected_case": 4
+      }
+    },
+    {
+      "command": ".lake/plot-venv/bin/python docs/research-evidence/semiprime-twist-character-20261022/probes/check_cayley_companion.py --repo-root . --test",
+      "exit_code": 0,
+      "output": "cayley-companion-checks.json"
+    }
+  ],
+  "existing_backend": [
+    {
+      "path": "scripts/probe_semiprime_long_period.py",
+      "sha256": "06fc4c43252df738bed0039ea549b837a002c6a2d70f2d6177b5664c898efb8f"
+    },
+    {
+      "path": "scripts/probe_semiprime_quadratic_extraction.py",
+      "sha256": "d7f01f8df0cf814fd7225e5d67f5ccb737e5cc3cb09dfe44a7bff945a47b5cfb"
+    },
+    {
+      "path": "scripts/probe_semiprime_single_extraction.py",
+      "sha256": "e7dc6d92f7a3a43cd7388fb245f28e53b82f181b19ec06042ebd20ac64285f34"
+    },
+    {
+      "path": "scripts/probe_semiprime_weighted_batch.py",
+      "sha256": "135c9196459af804aef2002f9868f6dfff68302b1f4e2c8b9873ef794f3ed053"
+    }
+  ],
+  "changes": "Research journal, agent continuation notes, archived reports and optional probes only; no ordinary library or CI changes.",
+  "full_bit_complexity_status": "Whole companion cost established at paper level; remaining collision acquisition and complete Lean factoring/runtime proof open."
+}

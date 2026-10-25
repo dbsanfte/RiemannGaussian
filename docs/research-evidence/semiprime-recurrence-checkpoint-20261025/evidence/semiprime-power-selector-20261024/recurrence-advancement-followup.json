@@ -1,0 +1,24 @@
+{
+  "time": "2026-10-24T20:58:54.646735+00:00",
+  "previous_no_runtime_progress_revalidated": true,
+  "new_executed_candidates": [
+    "Exact moving-quotient merge tree: still soft sqrt(Jh).",
+    "Exact F(D) Ore recurrence: row and scalar initialization cost soft J; endpoint advancement unresolved.",
+    "q-Newton Graeffe/parity: exact soft-J quotient squaring, but seed parameters grow; no fast coefficient extraction.",
+    "Actual stripe Toeplitz diagonalization to Cauchy rectangle plus one resonant cell; arbitrary padded stripe extension independently audited; paired contraction unresolved.",
+    "Barycentric moments vanish through tJ<h-1; reciprocal formula reintroduces original query values."
+  ],
+  "runtime_progress": false,
+  "current_query_bound": "soft(J+sqrt(Jh)) = soft k^(5/4) at k~N^(1/6)",
+  "full_sixth_goal": "active, unproved",
+  "scratch_files": {
+    "/tmp/semiprime-varying-quotient-recurrence-20261024/ore-recurrence.md": "a5a664974a72986af57fc7d535c2950b2ae8114cb13a4d9beda4d1409b90a36e",
+    "/tmp/semiprime-qnewton-decimation-20261024/qnewton-parity.md": "fd5ac0ac206a93189d314ed90b663f61f9f7fadf4f6ba597679dcaff557584fa",
+    "/tmp/semiprime-genuine-stripe-diagonalizer-20261024/diagonalizer.md": "715dda9a17846b8a1c71a234bb87ae8322ddd28c2dd6a9018318de3ec9244ef7"
+  },
+  "shared_unchanged": {
+    "/home/dbsanfte/riemann/formal/AGENTS.md": "e902a44c0e93e513916fdeab27c4388e9e16fb7df10adff5a5da16561306c605",
+    "/home/dbsanfte/riemann/formal/docs/semiprime-factorisation-investigation.md": "501d0541de5a9ac87fef5f409f247de1e87284f2f50ea979eeb8f30fddecf39a"
+  },
+  "integration": "No authoritative append, no Lean/backend changes, no commit or push."
+}

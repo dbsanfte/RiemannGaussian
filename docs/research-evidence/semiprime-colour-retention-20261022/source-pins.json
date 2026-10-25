@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-22",
+  "papers": [
+    {
+      "url": "https://reneschoof.github.io/05rene.pdf",
+      "local_review_copy": "/tmp/semiprime-colour-retention-20261022/packed_coefficients/schoof-four-tests.pdf",
+      "sha256": "a5eb47de1dd06b5a0588478cb869bd13cc7dd9020ecf4472dac7ec47dac96d32",
+      "bytes": 238164,
+      "archived_full_text": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/2212.12389v1",
+      "local_review_copy": "/tmp/semiprime-colour-retention-20261022/packed_coefficients/van-der-hoeven-hgcd-2212.12389v1.pdf",
+      "sha256": "4aa40faa8d128ab01b01e7bfcd36fe90bfe89690a7a5d4d828edf28b6412bd3e",
+      "bytes": 319108,
+      "archived_full_text": false
+    }
+  ],
+  "additional_primary_background": {
+    "url": "https://journals.math.tku.edu.tw/index.php/TKJM/article/view/1866",
+    "scope": "Publisher abstract consulted; special conductor-m^3 formulas are proved self-contained in this packet."
+  }
+}

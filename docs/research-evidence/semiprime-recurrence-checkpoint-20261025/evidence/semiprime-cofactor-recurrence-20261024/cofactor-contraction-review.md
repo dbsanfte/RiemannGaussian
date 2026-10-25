@@ -1,0 +1,23 @@
+# Exact-source review: initialized cofactor contractions
+
+24 October 2026. **PASS**, no corrections required.
+
+Reviewed cofactor-contraction.md SHA256:
+`e4100f7c507a1f3a894b9c9285425b942f086f0080e3f2ef51bd2b0aa7838ee0`.
+No source/shared files changed. Disclosure: this reviewer supplied the weighted dyadic degree observation credited in Section 4; it was recomputed here. The main unweighted target, recovery, exact cofactor identities and Gosper arguments were not authored by this reviewer and were independently checked.
+
+The unweighted U1 state and its initial (1,0,0) are exact without divisions. U2 is multiplication in a rank-three square-zero algebra. T0,T1 are resultant-deformation derivatives, NOT the two Bezout cofactors. At the promised unique simple grid hit only one summand survives, so T0 is nonzero at the smaller nonsplit field and T1/T0 is the seed root. The existing norm/coordinate validation and one-row consumer therefore apply. Wrong orientations retain the safe fallback, not an unproved unique cover.
+
+Canonical minus rows are nonempty under the source character/modulus contract, so J=0 cannot occur on this promised full input; no empty-family claim is needed. The explicitly separated J=1 case uses the original single-row locator, avoiding nonexistent adj(0,1) indices. For J>=2 the residue-at-infinity identity is valid for both s=0,1. Vandermonde diagonalization gives the stated sigma sign and 1/F'(V_j) factors in (1). Passing to grid residues introduces exactly (-1)^(JL+1), proving (2). Clearing cross factors formally and substituting the unit discriminants is lawful even at hits; no F(q^i) inverse is taken.
+
+The grid derivative powers/sign and lambda0=(q;q)_(L-1)^(-1) are correct. Both required q-factorial prefixes are actually acquired in soft sqrt L and their factors are guarded units. The ratio rho=q(1-q^(1-L)x)/(1-qx) is exact; its final numerator is zero at i=L-1 while the denominator remains a unit. Thus lambda_L=0 and the final vanishing first state are correct, with both cofactor states retained. Denominator clearing N(x) has degree J+1 and divides only the acquired global unit (q;q)_L after multiplying the whole initialized state.
+
+The polynomial-matrix product construction pays ALL degree-(J+1)b coefficient arrays, q scales, giant starts, entry evaluations and the clipped last block. Its constant dimension does not erase degree. The optimized complete cost is soft(sqrt((J+1)L)+J+sqrt L). For U1 the same execution has degree J and no factorial startup, giving soft(sqrt(JL)+J). Both are globally zero safe. No full remainder is presumed input.
+
+The unweighted dyadic leading coefficients are correct, including the extra X for U1,b. Geometric sums factor into unit plus factors because every actual component order is odd, giving exact stated degrees. In the weighted test W_b is the NORMALIZED, partially denominator-cleared M-product off-diagonal, not the raw N_b entry: the latter has the final extra denominator-clearing factor. Its exact top coefficient is (8), and the same odd-order reasoning makes it a unit. The actual unique-hit block also directly prevents cancellation of its whole zero F-product from that off-diagonal. These conclusions concern the tested representation only.
+
+The short polynomial Gosper test is correct. For d>s and d<=L+J-2 its top multiplier is a guarded unit times a q power, forcing the degree down. Low coefficients give r=X^s/(q^(s+1)-1); its top equation would force the forbidden q^(L+J)=1. The resonant d=L+J-1 is EXPLICITLY NOT excluded by that degree argument, and its formal solve has the correct diagonal F(0)(q^(n+1)-1) and soft-L precision cost, followed by necessary identity verification.
+
+The optional stronger pole test is also valid under its extra UNIT boundary certificates. It never assigns index L to the original interval decoder. The moving weights lambda_i(z) have the correct rho ratio; at z=1 all original weights are units, lambda_L has a zero, and only the unique simple hit yields a nonzero-residue pole on the left. Certified F(1),F(q^L) units make the right boundary regular for polynomial r of any degree. Thus this PARTICULAR r/F certificate is excluded on that continuing branch, without excluding other rational poles, telescopers or scalar algorithms.
+
+The positive result is an actually initialized constant-width contraction and sufficient gradient recovery target at the RETAINED degree-aware k^(3/2) clock. Exact cofactors have the correctly distinguished stronger weighted realization. No short-jet endpoint inference, lost zero amplitude, general lower bound or new all-input rate is claimed.

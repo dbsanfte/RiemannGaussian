@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "classification": "Uniform small-multiple cover acquired; factoring query remains open",
+  "root_review": "Finite image proof, greedy contraction, exact packed convolution, catalog and witness bijection, balanced linear equation and bounded global decoder checked.",
+  "independent_review": "reports/fermat-constructor-review.md",
+  "final_readme_review": "Independent Sol 6.1 review passed. Requested distinct odd-prime and coprimality assumptions are explicit; expanded giant differences are not assumed to be units.",
+  "constructor_self_test": {
+    "status": "pass",
+    "packing_cases": 16,
+    "auxiliary_primes": 25,
+    "unit_identity_cases": 74834,
+    "selected_pair_cases": 74834,
+    "linear_row_identity_cases": 163,
+    "scope": "Algebra and constructor checks, not native semiprime coverage or an asymptotic timing claim."
+  },
+  "independent_boundary_checks": 17,
+  "verbatim_reports": 7,
+  "verbatim_implementations": 1,
+  "local_readme_links": 9,
+  "previous_frozen_entries_verified": 197,
+  "lean_build": false,
+  "whole_family_factoring_query_acquired": false,
+  "source_model_followups": "Exploratory only; no completed qualifying factorizer."
+}

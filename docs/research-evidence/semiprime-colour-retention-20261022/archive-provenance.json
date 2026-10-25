@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-22",
+  "copies": [
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/higher_conductor/native-quadratic-colour.md",
+      "destination": "reports/native-quadratic-colour.md",
+      "bytes": 4821,
+      "sha256": "0ef87fb77032d920019a53efcfe82cf6859bb06250fe473771f44e3f8d4ee363",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/higher_conductor/two-common-products.md",
+      "destination": "reports/two-common-products.md",
+      "bytes": 4865,
+      "sha256": "3b2193f7abf3fade0fd72333c53adc99d1a03091ecba78526d5c6c092780d9f4",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/packed_coefficients/report.md",
+      "destination": "reports/packed-coefficient-observables.md",
+      "bytes": 13680,
+      "sha256": "a3c94e2c6a193ac9cf4445dc83b6609f94879076e39cd10af71ccd836b3ad0fd",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/weighted_twists/outcome.md",
+      "destination": "reports/weighted-twist-outcome.md",
+      "bytes": 4967,
+      "sha256": "c91c63c9c37431ebe001b80f63e751360a5784508b5cd475779cd074cf444f34",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/reviews/higher-conductor-review.md",
+      "destination": "reviews/higher-conductor-review.md",
+      "bytes": 10652,
+      "sha256": "29e23d4a5f5426f06c1efe47e835c90b5d5a71927c69b36ac2a7588e9adaac60",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/reviews/two-common-products-review.md",
+      "destination": "reviews/two-common-products-review.md",
+      "bytes": 9123,
+      "sha256": "7904572c0efe16a632862b93afb733d7834aa3b383c976b167f6e37253a3737d",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/reviews/implementation-review.md",
+      "destination": "reviews/implementation-review.md",
+      "bytes": 6455,
+      "sha256": "51b500914e8d5d7a77a4d0487f58022e84cd88bcfeb16dfd02571cceec32a814",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-weighted-acquisition-20261022/gauss_literature/packed-gauss-quotient.md",
+      "destination": "reports/packed-gauss-quotient.md",
+      "bytes": 10159,
+      "sha256": "5a14dff79453ba3c9eaa410063b7d09b9ff55d491bd3f558450edd04d1a7925d",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-weighted-acquisition-20261022/high_order_colour/packed-gauss-independent-review.md",
+      "destination": "reviews/packed-gauss-independent-review.md",
+      "bytes": 6609,
+      "sha256": "a2cac2ae12f86693e2267ab0b95306f6901595f2da9dfecdd354c6275346d260",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/implementation/README.md",
+      "destination": "implementation/README.md",
+      "bytes": 5191,
+      "sha256": "2668fc0e87704eb80f7b50edfe1d7a44f6c8c6939349dc5ef9c7aa98b5519529",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/implementation/packed_gauss.py",
+      "destination": "implementation/packed_gauss.py",
+      "bytes": 8833,
+      "sha256": "bce84a9b96b12720298052f317bae2e521a6e574aed8ef50c2c7d7d4a4f2f1ea",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/implementation/test_packed_gauss.py",
+      "destination": "implementation/test_packed_gauss.py",
+      "bytes": 6921,
+      "sha256": "70c2847aa32f71233f38c73db2e07e4993d276c9b3ea30bd6b153c2696a77ab0",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/implementation/validation.json",
+      "destination": "implementation/validation.json",
+      "bytes": 1047,
+      "sha256": "4224448ed8810595147b6468a50c4d382f6c6bc6cbf610feaf962eac7bca029f",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-colour-retention-20261022/reviews/two-products-sufficiency-addendum.md",
+      "destination": "reviews/two-products-sufficiency-addendum.md",
+      "bytes": 5796,
+      "sha256": "e0c8615374cbfba3a98489abe70011957fda127ada325012ef4da9add2be7e0c",
+      "copy": "verbatim"
+    }
+  ]
+}

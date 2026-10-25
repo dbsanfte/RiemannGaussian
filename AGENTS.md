@@ -19767,3 +19767,3598 @@ run the tracked hook and applicable browser/renderer checks, then record
 the exact pushed SHA and its CI/Pages status. Keep the optional exhaustive
 numerical certificate opt-in. The semiprime research goal remains paused;
 the arithmetic-operator goal remains active.
+
+## Semiprime research explicitly resumed, 2026-10-22
+
+The user resumed semiprime research and permitted Sol 6.1 subagents for
+literature and implementation. This supersedes the historical semiprime
+pause for this task. Latest record: the 2026-10-22 section of
+docs/semiprime-factorisation-investigation.md. No publication is performed
+by this checkpoint; preserve prior frozen manifests and source pins.
+
+The user's explicit progress criterion is a guaranteed whole-input
+acquisition improvement. Selected infinite classes do not establish an
+improved worst-case exponent. The new 3-full mixed-sign residue menus are
+conditional partial results only; expansion of special classes was stopped.
+This round proved no universal soft-O(m) acquisition theorem and added no
+Lean backend lemmas. Current target: a useful collision locator in
+soft O(J+sqrt(L)) for the actual covered J~m,L~m^2 query, including implicit
+data acquisition and localization, or another universal paid constructor.
+The known exact query cost remains soft O(J+sqrt(JL)); do not confuse it
+with the general deterministic N^(1/5) baseline or promote applicability
+checks into general impossibility theorems.
+
+The user's next direction is colour/charm/twist properties. The subsequent
+2026-10-22 journal section separates public Jacobi colours, RH support
+colours and higher-symbol oracles. Joint-sign covering menus are
+polylogarithmic under the inherited QRH corollary, but do not give short
+orders. The exact character deficit sum(1-Jacobi(h,N)^2) preserves the
+original useful collision set; its fast restricted evaluation is OPEN.
+Odd-order 2-power twists preserve local zero masks but leave query size
+unchanged. No charm invariant was found or invented, and no universal
+factoring-rate advance or new formal proof is claimed for these identities.
+
+The user then prioritized twist/colour/character cancellation specifically.
+The subsequent journal entry and
+docs/research-evidence/semiprime-twist-character-20261022/README.md record a
+PAID whole-query Cayley companion: for x_j,u,q all prepared odd-order gamma
+powers, T(t)=(t-1)/(t+1) gives R_T=C R, where the complete unit C costs
+soft O(J+sqrt(L)). This is acquired, including the scalar plus-product;
+the transformed norm/locator is NOT. T(t^-1)=-T(t), but the transformed
+orbit is (s+v)/(1+vs), not ordinary addition. Arbitrary seed restrictions
+and newly introduced reciprocal hits retain their own costs/recovery.
+
+The retained Gaussian LIFT character tau(z)=S_N(alpha), z=alpha/baralpha,
+is publicly computable or factors; direct S_N(z)=tau(z)^2. For
+sigma=Jacobi(-1,N), k=(N-sigma)/4, F(z)=z^k tau(z)^(-sigma) has
+F(z)^4=z^(N-sigma) and GLOBAL tau(F(z))=1. It does not kill both local
+characters or imply membership in G^4. Iteration is F(z)^(k^(t-1)); tau
+is already1 on odd-order inputs. Preserve this retained-phase distinction
+without promoting it to an order reduction. A chosen canonical q-shift
+has a paid soft-J overlap/localization screen; universal useful twist
+selection remains missing. Optional exact probes are convention/backend
+checks, not coverage or rate evidence. No new Lean proof, exponent,
+publication, broad build, or selected-class expansion is claimed.
+
+The next continuation is recorded in
+docs/research-evidence/semiprime-twist-palette-20261022/README.md.
+For a_k=u*q^k, W_a(t)=(t+a*i)/(t-a*i), the ENTIRE nonlinear palette's
+unit corrections and product character gauges cost soft O(J+sqrt(L)+nu).
+One target-polynomial MPE and one scalar Gaussian seed product plus
+boundary updates pay this bound. Native polynomial-size indices and
+modular exponent/symbol costs are explicit. Nonlinear W points can have
+nontrivial lift phases, even from prepared scalar odd-order inputs.
+
+Every Gaussian norm-one chord has S_N(w-z)=Jacobi(2,N)*tau(w)*tau(z)
+on unit differences, with zero otherwise. Use unit lifts: the numerator
+alpha*conj(beta)-beta*conj(alpha) is i times a rational unit. Conjugation
+alone only proves the SQUARE of the phase. The independent review's
+proof repair, zero convention and bit-size clarification are incorporated.
+Common twists still leave the SAME uncomputed mask; asymmetric geometric
+twists give shifted windows. No acquisition gain follows from their gauges.
+
+An exact remaining target is f(x)=1-2*sum_i y_i*w_i/(x+y_i), where
+w_i=(-1)^i R_i R_(L-1-i), R_k=prod_(h<=k)(1+q^h)/(1-q^h), y_i=u*q^i.
+Denominators are native units. A soft-(J+sqrt(L)) simultaneous evaluator
+at all native targets would pay row selection and then scalar interval
+localization. It is OPEN; selected weights and q-hypergeometric identities
+do not provide it. Reciprocal folding retains the prior dominant cost.
+No new Lean proof, universal exponent improvement or publication occurred.
+
+The next journal entry, "packed Gauss-power acquisition and native phase
+cancellation", contains a self-contained reviewed algorithm. For PUBLIC
+auxiliary prime ell, k|ell-1, gcd(N,ell*k)=1, one degree-k vector C_E in
+(Z/N)[X]/(X^k-1) packs ALL Gauss quotients G(chi^r)^E/G(chi^(rE)).
+Explicit trivial-character projectors and O(logE) public Jacobi histograms
+pay soft O(ell+k) native bit cost, with no joint ell*k carrier or hidden
+field. Proof-only additive algebra uses Phi_ell, ensuring G_0=-1.
+This is a paid primitive, NOT a hidden factor character or collision query:
+C_N(chi)=chi(P)^(-N)*C_Q(chi^P) modP retains an unknown C_Q.
+
+For character order m equal to the row modulus and auxiliary ell=1 modm,
+native a_j*j²=N modm cancels the extra unknown auxiliary Frobenius phase.
+The public T_j=u^ell_j*g_j^a_j*rho_(j^-1)(C_N)*g_(N/j) preserves the
+own-tag equality to u^(m²I). BOTH target and seed then have grade zero,
+so no I residue is recovered. Whole-family acquisition, auxiliary-prime
+supply and the new base's order/recovery contract remain unpaid. Wild
+conductor m² gives u=m*zeta_(m²) and collapses exactly to the scalar-base-m
+query; its trivial Gauss sum is0, so do not apply the prime-conductor rule.
+No improved exponent, new Lean backend, implementation or publication.
+
+The next continuation is archived at
+docs/research-evidence/semiprime-colour-retention-20261022/README.md and
+the journal section "retained quadratic colour reduces to two shared long
+products". This pass adds a real paid row-family reduction and a reference
+implementation, but NO all-input exponent improvement or Lean theorem.
+
+For own P=j+mh, the native INTEGER identity is IP=ah²+bh+c. A conductor-m³
+character cancels the third digit and retains I=(ah²+bh+c)/j modm. The
+proof-only base gamma*zeta_(m³)^(-1) keeps the ORIGINAL scalar preparation;
+do not import it into the separate Gauss amplitude's order contract.
+Every exact admissibility mask is kappa_j+R_sign, with
+kappa_j=-(b²-4ac)/(4aj), sign=Legendre(Nj,m), R_+=0 union squares,
+R_-=0 union nonsquares. Each has (m+1)/2 residues. Their cyclotomic mask
+polynomials also have paid soft-m acquisition in a formal quadratic
+algebra, but do not evaluate a long original-q product.
+
+Write L=mK+t. All masked rows reduce to assigned values of TWO common
+H_sign(X)=prod_(r in R_sign,n<K)(X-q^(r+mn)), q=gamma^(m²), at
+y_j=gamma^E_j*q^(-kappa_j). ALL translations/wrap/partial-block corrections
+are paid soft(m+J) by segment-tree prefix/suffix products and batched monic
+MPE. Boundary recovery uses original gamma. Its nonzero ledger is proved
+from P,Q>16m², E>=N-3m², L<=4m²: E>m²(L+m).
+
+Simultaneous H VALUES ALONE now suffice. After unit boundary checks,
+a nonunit H value certifies an unmasked native row; J gcds select it and
+the inherited scalar interval primitive plus one-path descent costs
+soft sqrtL. No separate H-restriction or H-localization oracle is missing.
+The remaining target is acquiring those J assigned values in soft(m+J).
+Their common degree is about L/2; current blocking still costs sqrt(JL).
+Every lift of a nonzero-square discriminant class survives all powers of
+the SAME m, so higher conductor precision does not repeatedly halve this
+particular mask. Do not promote that fact to a general lower bound.
+
+implementation/packed_gauss.py now acquires actual C_E coefficients with
+carry-safe byte packing and implements the total-soft-k all-divisor
+monomial-support factor controller. It uses public auxiliary data only.
+Eight exact algebra/control tests passed root replay and independent code
+review; they are not factor-family coverage or certified interpreter-time
+evidence. Unequal local monomial behaviour is sufficient, universal
+auxiliary selection remains OPEN. The alternate guarded half-gcd torsion
+controller is paper-level only. Preserve all old frozen packets, manifests
+and source pins. No publication or broad/native build occurred.
+
+The next continuation is archived in
+docs/research-evidence/semiprime-lifted-norm-20261022/README.md and the
+journal section "lifted norm cancellation and a complete square-relation
+screen". It adds a paid whole-supplied-family singleton/pair consumer,
+NOT a universal relation-existence theorem or an improved factoring rate.
+
+The native colour gives v=ell-m²kappa and the EXACT integer
+z=(v²-4aN)/m³, so v²=m³z modN. All descriptors cost soft m. Retained
+native bounds make gcd(v,N) proper or1; on the latter branch z is a
+nonzero unit. Bernstein coprime-base construction AND sparse exponent
+decompositions cost soft total input bits. Group by sign and odd exponent
+IDs of nonsquare base elements. Base elements need not be squarefree.
+Each class is z=sigma*D*s²; one normalized root v/s per row and comparison
+with ONE class representative detects ALL actionable pairs in soft m.
+No prime-factor oracle, m² pair loop or general sparse-nullspace primitive.
+
+NEW integer-size nontriviality theorem: for NEGATIVE same-class norms,
+v_i²+m³D*s_i²=4a_iN. With 0<a_i,a_j<m and m>=17, both
+A_plus/minus=v_i*s_j +/- v_j*s_i have absolute value<N, by the exact
+sum-of-squares identity in the independent negative-pair review. They are
+both nonzero iff a_i*v_j²!=a_j*v_i². Their product is divisible byN,
+and units preclude a prime dividing both. Thus BOTH gcds are proper
+complementary factors, without a separate hidden-sign premise. Proportional
+pairs are exactly trivial. Existence of a negative repeated square class
+with differing v²/a is OPEN; it must not be assumed from character counts.
+The native N<=m⁶ and N>256m⁴ imply m>=17 automatically; the abstract
+negative-pair lemma itself does not otherwise need N<=m⁶ or balance.
+
+Positive singleton z=m*s² also necessarily factors: (v-m²s)(v+m²s)=4aN,
+and both nonzero absolute factors are<N. One explicit sentinel
+(v,z,a)=(m²,m,0) includes all singleton cases in the generic pair screen;
+validate its unit root equation, not the canonical-row m-not-dividing-v
+condition. Native Jacobi(z,N)=Jacobi(m,N) is forced and is not a row colour
+separator. Bounded twists are paid, while the rational conic operation
+forcing matching square classes gives a global sign on its unit branch.
+Do not promote that construction-specific identity to a general obstacle.
+
+Finite H reflection reduces two palettes to one for m=3 mod4, and bounded
+antipodal carries and endpoint jets are paid. These do NOT give the native
+unit-point H values or improve sqrt(JL). The old q-integration mechanism
+is credited for jets. Preserve all previous frozen packets. No new Lean,
+implementation, successful-example campaign, commit/push or broad build.
+
+The same continuation was extended with a uniform Pell count and a
+reviewed FIXED-MODULUS density limitation. For fixed N0modm³, all a,v
+are fixed and z=Z0-4a*t. A nonproportional square-product pair gives
+X²-a_i*a_j*Y²=C² with C!=0, |C|=O(m⁴), |X|=O(m⁵).
+Maximal-order ideals of norm C² number at most tau(C²); same-sign
+generators are separated by a norm-one unit>=(3+sqrt5)/2. Thus there
+are tau(C²)*O(logm)=m^{o(1)} occurrences per descriptor. This is a
+count, not an efficient Pell solver or a soft-O(1) divisor estimate.
+
+O(m³) residues times O(m²) pairs give m^{5+o(1)} successful inputs in
+a fixed broad balanced N box. Initial gcd successes O(m⁴) and singleton
+successes O(m³) are INCLUDED. C0 proportional pairs are globally trivial.
+The box has Omega(m⁶/log²m) semiprimes; most defeat this fixed-modulus
+singleton/pair consumer. A positive-density refinement admits gamma
+with coprime odd local orders>16m² and gcd(m,orders)=1, so q=gamma^(m²)
+retains them and global order>256m⁴. Fixed-q PNTAP, BT tails and CRT
+existence prove this; it does NOT supply a public gamma constructor.
+
+Do NOT transfer this result to the literal least-prime selector bin
+(previousprime(m)⁶,m⁶], an adaptive modulus menu, higher dependencies,
+or the entire preprocessing/controller. It refutes uniform pair coverage
+over arbitrary admissible supplied m only. Selector-specific existence
+remains open. The original shared-H query retains proved native coverage
+and is still the main constructive target. No whole-input exponent gain,
+Lean theorem or publication has resulted.
+
+The next user-prioritized twist/colour continuation is archived in
+docs/research-evidence/semiprime-character-aggregate-20261022/README.md.
+It acquires a WHOLE weighted Gauss UNIT aggregate, not the H collision
+query. For a supplied prime ell=1modm, U=-C_m, E0 the trivial-character
+projector and D=E0+(1-E0)ell, exact inverse-character pairing gives
+C_j*C_(m-j)=U/D. Since the native INTEGER weights satisfy a_-j=a_j,
+prod C_j^a_j=(U/D)^A, A=sum over antipodal representatives. Cost is
+soft(ell+m), including packed acquisition; cheap auxiliary supply is OPEN.
+
+Centered b gives ell_j+ell_-j=-m²s_j, s_j in{0,1,2}. Corrected Gauss
+targets satisfy T_j*T_-j=q_G^-s_j D^(a_j+N), q_G=U^m. Three shared
+length-m vectors plus O(m) scalar/index data acquire every pair product;
+do NOT claim m full vectors were expanded at that cost. Their entire
+product is q_G^-S D^(A+N(m-1)/2), one acquired vector. All trivial signs
+and explicit unit inverses are reviewed. Conjugation norm is D^E_j;
+projecting a collision requires equality in the WHOLE local character
+algebra or both conjugate components, not a lone component hit. The
+resulting base-ell collision has no inherited gamma order/decoder contract.
+
+Paid root preparation gamma=gamma0^(2^d), d=ceil log2(8m), preserves odd
+orders and supplies original-input coherent chains in softm. The SAME
+annihilator K works for gamma0. Complete twist fibres have paid degree-J
+powered-target norm polynomials, but do NOT compress dyadic shifted
+origins; their long H resultant remains unpaid. Reviewed literal
+multiplier recursion costs soft(m+JK), with safe original endpoint gaps.
+Native reuse congruences test integer-exponent identities only, not every
+possible local-order coincidence. No whole-input exponent gain follows.
+
+A sufficient future scalar norm query may operate on groups of complete
+antipodal pairs: binary-select one pair, then run the paid original scalar
+descent on its two rows. The acquired Gauss UNIT products do not provide
+these products of differences or zero masks. Keep that acquisition as the
+main target; no new Lean backend, examples, implementation or publication
+was added in this continuation. Preserve all older frozen manifests.
+
+The following continuation is archived in
+docs/research-evidence/semiprime-composite-character-20261022/README.md.
+It PAYS auxiliary supply, composite colours and normalized UNIT aggregates;
+it does not acquire long H or improve the all-input factoring exponent.
+
+Choose ell first: u=ceil(N^(1/6)), first prime ell>2u with ell=3mod4,
+m=(ell-1)/2. Fixed-progression explicit PNT gives ell=O(u); doubling
+sieves, public m/ell-1 factorization and primitive-character enumeration
+cost soft u. m>=u is odd, possibly composite. Screen known prime divisors
+of m and ell INDIVIDUALLY against N, avoiding combined-gcd saturation.
+This is an amended selector, not the old least-prime row modulus.
+
+Canonical t=1 rows on UNIT tags retain all exact identities. On retained
+P,Q>16m², N<=m⁶, P<=Q, one has P<=m³, Q<m⁴/16 and
+13<I<(17/16)m²+3<4m²: no balance restriction. The small-q-order screen
+handles loss from gamma->gamma^(m²); gamma preparation/decoder remains
+an inherited interface. Do not import prime-field or arbitrary-denominator
+Lean results unchanged into composite m.
+
+Exact mask=kappa+(4aj)^-1*Squares(Z/m). Colours are local Legendre tuples;
+keep ZERO and NONUNIT squares, not just Jacobi/unit signs. Local two-list
+size<=p^e+1, so all CRT coloured output T<=m(1+logm). Explicit local
+marking+CRT constructs it in softm, including duplicated cross-colour
+zeros. All palette boundary trees together cost soft(m+J). Long H_colour
+values remain uncomputed. Reference preprocessor does not implement
+boundary MPE or verify hidden-factor/prepared-order hypotheses.
+
+Normalize h_a=t*g_a/g_-a with public t²=gamma from paid 2-power rebasing.
+Bar is character inversion fixing the additive root. Every component has
+h_a*bar(h_a)=gamma. With U=-C_m and D=E0+(1-E0)ell, acquire
+V=t^m*U²*D^-m=h_1^m and q_h=V^m. Exact antipodal formulas:
+T_j*T_-j=gamma^(N+a_j)*q_h^-s_j;
+prod_units T_j=gamma^(A+N*h)*q_h^-S;
+prod_units A_j^a_j=(V/gamma)^A, h=phi(m)/2.
+Three shared vectors plus O(m) scalar/index data pay ALL pair products;
+whole products are one vector. No auxiliary-amplitude caveat remains for
+these normalized aggregates. Explicit C_E^-1=barC_E*D_E*D^-E handles
+all E>=0 using the E-th-power-trivial projector, including composite-order
+exceptions. The exposed helper REQUIRES odd character order.
+
+True own-tag normalized coverage is WHOLE-local-algebra equality. For a
+single leaf f=T_j-q_h^i, G=gamma^E_j-gamma^(m²i), the exact ideal equality
+(f,barf)=(f,G) supplies original scalar recovery from SAME-LEAF paired
+support. Unpaired hits or distributed zeros across leaves do not suffice.
+Mixed traces, paired-support acquisition/localization, and original H are
+still unpaid. These are scoped contracts, not a general lower bound.
+
+New isolated reference implementations and independent code/math reviews
+are archived. Exact direct Gauss tests retain trivial/proper-divisor
+characters and explicit unit controls; they are not coverage/rate proofs
+or certified Python bit bounds. No new Lean backend, full factor engine,
+broad build or publication. Preserve all preceding frozen manifests.
+
+## Collision representation research and exact KLS reading, 2026-10-22
+
+The user set the active goal to "find and prove a near-linear collision
+query", requested broader literature, the exact paper
+https://arxiv.org/pdf/2610.01447v2, and constructive representation work
+by Sol 6.1 agents. Latest packet:
+docs/research-evidence/semiprime-collision-representation-20261022/README.md.
+No complete soft-O(m) collision query or exponent improvement is proved.
+
+Deterministic gcd-aware KMP now pays cyclic matching of ACTUALLY acquired
+arrays in <=6d gcd comparisons, including screened prefix comparisons.
+Factor OR identical complete occurrence sets in both hidden fields is
+proved. Random hashes/sparse discrepancy are unnecessary in this cyclic
+case. Prime-m primitive-root indexing gives rho_j orbit matching; screen
+coefficient0. Fixed arrays and common-match recovery metadata remain
+required. The reference implementation's five groups pass root replay.
+
+The alternative source W=t(1+gamma X)/(X+gamma) in the rank-m cyclic
+algebra is paid and has WbarW=gamma. No auxiliary Gauss prime is required;
+prime row m via the usual sieve is allowed for this source. Its true
+canonical tag is a WHOLE-local-algebra hit with original scalar norm.
+All generic-W antipodal aggregates remain paid by three shared vectors.
+This does not identify W with the previous Gauss base or change frozen
+selector results. Clearing B-rho_j W gives two fixed additive-shift
+arrays, but W^N has an unknown cofactor power at the true tag. Do not
+replace the full varying native array by that comparison family.
+
+New reviewed algorithm pays ALL Tr(B*(W/X)^a), a<m, for ONE arbitrary
+fixed explicit B in soft m. Generating function reduces to a quadratic
+algebra, using balanced companion evaluation and a unit scalar series
+inverse. Keep U modulo z^(m+1) before exact U0/z shift. No root or
+discriminant inverse is assumed. Valid for odd composite m as well.
+The selected native unweighted power-piece diagonal is paid, but actual
+weight rho_(a/N)(W^N) varies with a; the ell_j factor also remains.
+Trace equality is not a whole-algebra or same-leaf collision certificate.
+
+Song--Zhang KLS v2 was read across substantive sections1--9+references
+for applicability, not certified as a breakthrough or imported into Lean.
+Its exact-defect/same-family ideas motivated a constructive positive
+Jacobi kernel: K(a,b)=sum_t chi(t+a)chi(t+b), W_char=K²-1 is nonnegative
+and positive exactly at ORIGINAL scalar nonunit leaves. Its sum gives
+valid positive restriction/localization; a geometric feature boundary
+update and public decision gap are proved. The full character contraction
+and startup values are NOT paid; the gap alone is not a complexity gain.
+KLS is not an input to these algebraic identities. Preserve all 114 prior
+manifest entries. No broad build, commit, push or new Lean backend.
+
+The same representation packet includes a constructive follow-up. The
+special weight B=W^N satisfies the exact odd-m doubling recurrence
+T_(2a-m*kappa)=T_a^2/rho_(a/b)(C)*R^(-m*kappa), C=(R^2/rho_2R)^N.
+C is one paid vector of a fixed degree-four rational base. Scalar traces
+still do not close on this recurrence. Low-order wrap jets of W^N are
+flat and determined by the cyclic vector; do not apply an ordinary
+logarithmic derivative to its reduced representative as a Q certificate.
+
+A NEW dyadic option m=2^k is valid for the rational source. Canonical
+odd-tag coverage/bounds and the original decoder survive with b centered
+in [-m/2,m/2); b_-j=2a-b_j-ms still gives s in {0,1,2}. Odd-b masks are
+parity classes; even-b masks complete the square using the integer b/2.
+Four unit squareclasses and two parity palettes have total O(m) output.
+Do not import inverse-of-4 masks, the odd-m denominator sign, prime-m KMP
+indexing, or odd-character Gauss formulas into this interface unchanged.
+
+The actual rational norm closure is Wγ,t(X)Wγ,t(-X)=W_(γ²,γ)(-X²),
+also for R=W/X. All fixed norm bases across the decreasing-rank tower
+are paid softm; the terminal coordinate is -1, not1. Even-m unit scalar
+is 1-γ^m. Inherited integer row powers and original m² seed strides are
+NOT recentered away. The exact additive recurrence has two moving parity
+weights and a 2x2 rational transfer matrix. Its shared contraction remains
+OPEN; unit norm closure does not compute Norm(T-s), whose cross-term
+requires the relative trace. Same-leaf recovery and all components remain.
+Use homogeneous tower coordinates: for odd N, B=W^N has even coordinate
+B_e(1)=0 exactly from W(1)=t,W(-1)=-t. A global Cayley inverse of 2B_e
+is invalid; splitting this public component does not pay the mixed trace.
+
+Positive character support reduces to a multiplicative convolution with
+exact two-endpoint transport after startup. Its complete Jacobi Fourier
+coefficient equals N*(N-2(P+Q)+4); a fast acquisition would factor, but
+that coefficient is not available spectral metadata. No whole-input
+query, controller bit proof or exponent gain follows from these results.
+
+The representation packet is now frozen: 29 manifest entries, SHA256
+6846eb84465b23e4dce8db04a1b95e5235882166dea31932aa932d1999f55af0.
+Root verified 23 verbatim report/implementation copies, 14 local links,
+9 cached primary-source fingerprints, all five archived KMP test groups,
+and the 114 preceding frozen entries. Preserve all 143 entries in later
+work; do not expand validation controls into native coverage evidence.
+
+## Sparse dyadic acquisition and full sixth-rate goal, 2026-10-22
+
+The active user goal is now "achieve and prove 1/6 factorization speed".
+Latest packet:
+docs/research-evidence/semiprime-dyadic-shared-20261022/README.md.
+No full soft-m collision query or improved factoring exponent is proved.
+
+ACTUAL new constructor: for dyadic m, supplied shift s and ONE supplied
+spatial U of degree L<=2m, acquire Norm_(X^m=Y)(F+epsilon U)=Q+epsilon V,
+epsilon²=0, where F=g-z*X^s*f and deg f,deg g<=2. Prepared eta with both
+local orders>16m² suffices. Full output costs soft(m+L); modulo z^h costs
+soft(h+L), 1<=h<=m, including h=1. Bit factors include logN,logm,log|s|.
+The implementation specializes to g=(X+gamma)²,f=t²(1+gamma X)².
+
+At rank p, each z^j coefficient of Q occupies at most three spatial
+exponents around sj/p. One U insertion adds width L/p. Remove floor(s/p)
+as an integer shear; conjugation sign uses the ACTUAL exponent, including
+the removed shear. With q=min(p,h-1), FULL pre-filter products have
+O((q+1)(1+L/p)) known slots. Encode j+(2q+1)*e_stored; every node exponent
+span stays below10m². Deterministic geometric moments and inverse
+transposed Vandermonde acquire the products with unit denominators over
+Z/N. Recover through z-degree2q BEFORE discarding j>=h. Truncating the
+interpolation support prematurely aliases high terms into low terms.
+
+V/Q=Tr(U/F); U=B*g supplies ONE fixed-weight rational-power sequence when
+g is a cyclic unit. Arbitrary monomial shifts are now paid without their
+dense ambient degree. This is a proved algorithm, not just a support
+description. Standard fast monic polynomial kernels give the bit bound;
+the archived Python correctness reference uses schoolbook kernels and
+does not certify that runtime. All five independent determinant/trace/
+prefix/guard groups pass; no native coverage campaign or new Lean backend.
+
+The varying native power piece H_a=CT[rho_(u*a)(W^N)R^a] still needs a
+shared contraction. Equivalently acquire the weighted logarithm of
+different shifted norms Q_k=Norm(1-z R X^(u*k)). Linearity in ONE tangent
+direction does not share different bases. The exact first fused fold and
+affine-tag updates are retained. The nominal O(m) all-branch support sum
+is conditional on supplying the phase directions; their contraction
+with R^sigma is still unacquired. Phase coordinates X^p and X^(m/p) are
+dependent for dyadic m; Galois conjugation changes R(X) to R(X^sigma),
+not R(X)^sigma. At terminal phase rank the missing contraction is H again.
+Native ell_j powers, original seed I and same-leaf recovery also remain.
+
+Direct scalar q-Newton coordinates pay bidiagonal dilation and a
+one-column quotient defect. They do not acquire det B_L(C). Exact native
+half-tag transport changes to odd seed phases, whose startups remain.
+The reciprocal defect retains whole-local equality but is not a paid
+trace query. Do not infer odd order of t solely from odd order of t²:
+the scalar projection proof instead uses the EVEN original gap.
+
+The full-controller audit identifies the strongest existing ORIGINAL
+bounded scalar route as unconditional: public base setup, exceptional
+order branches and bounded global-leaf decoding are already paid
+classically. A restriction-stable soft-m original query would close the
+mathematical rate by composition; executable/Lean bit integration still
+needs work. Do not import QRH from the wider long-annihilator route or
+invent a second unproved base-acquisition premise. Existing noncomputable
+Lean routes and probe scripts are not a complete factoring implementation.
+
+Preserve all 143 preceding frozen manifest entries. This packet is new
+evidence; no historical frozen file, full build, commit or push was used.
+
+The new packet is now frozen: 26 manifest entries, SHA256
+cf35e01493f26bbb960d4143f3f461ea4766ac0b4a7c0df5c7aede33a7bbd8e7.
+Root verified 20 verbatim copies, 23 local links, 11 local source pins,
+the archived five-group reference suite, and all 143 previous entries.
+Independent final integration review is embedded in validation.json.
+Preserve all 169 current entries in later work. The whole-source query
+and complete sixth-rate theorem remain open.
+
+## Original-query continuation and duplicate-work guard, 2026-10-22
+
+Latest checkpoint:
+docs/research-evidence/semiprime-query-continuation-20261022/README.md.
+This pass proves NO new whole-family acquisition bound or factoring
+exponent. Do not classify it as another query acquisition win.
+
+Before proposing fresh order work, read the inherited-target index:
+docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/constructive-frontier-index.json.
+Smooth projection E=(m!)^A, collapse recovery, complementary-exponent
+roots for small j², and the smaller prime/semiprime rough-order shape
+were already paid. Current cleaning/root reports are REVALIDATION,
+including their whole-family bit ledger and newer setup compatibility.
+All candidate coindex roots exist on both rough subgroups; no true
+coindex or remaining full-field torsion is acquired by that construction.
+The OpenAI prime-field factorization manuscript was also already read;
+its known-characteristic and large polynomial degree cost limitations
+are recorded in the October16 checkpoint. Do not restart that search.
+
+Direct original-query deformation has favorable epsilon precision J+1
+but direction H_L-X^L+Y of length L. Reducing it modF is the original
+unpaid long remainder. Squaring preserves SAME-leaf prime support via
+unit plus factors, but neither J nor L shrinks. Every geometric-seed
+coefficient stays a unit under squaring. Large cyclic norm rank M keeps
+the small-prefix node cap (h,L_U<=m gives span<16m²), including logM
+stage cost; no original geometric-grid embedding has been constructed.
+Cleared q-Cauchy determinants equal intra-set Vandermonde units: the
+original collision product cancels. Long shifted-factorial variants
+retain the unpaid row normalization. No general lower bound is claimed.
+
+Oriented Lambda_j={(A,K):Aj²=KN modm} yields centered quotient width
+O(1+Delta/(mT)+TNDelta²/(m²P0³)). Balanced Delta=m^(8/3) gives O(m)
+babies in ONE window, but m^(4/3) total row/window giants. Full explicit
+tradeoff optimizes to N^(1/5). Kinetic vector reuse has no softm total
+cover bound. Higher-degree projected lattice mean does not pay its
+integer lift; account for all trivial polynomial multiples.
+
+Useful recovery refinement: for a TRUE covered row, any full-N match
+inside its bounded quotient interval has the true integer quotient if
+the interval diameter is below ord_P(q). Solve the nonzero recovery
+polynomial. This needs no giant-exponent/global-order size comparison.
+Fixed degree d,s uses m^d*g((Z-j)/m)-sigma*m^d*Z^s and tests its zero
+exception. Dyadic m preserves odd local orders under m^d powering.
+Keep separate interval witnesses when reusing targets; an unrelated
+distant saturated match cannot justify discarding a true witness.
+
+Root proof review and independent scope review are archived. The goal
+remains active, and the original shared query remains unacquired.
+
+The continuation checkpoint is frozen with 18 manifest entries, SHA256
+539df1ca1ec160aaf3806a57ab0f47e9870c2d39e1a86f7a77c691c03a7ca5fc.
+Validation checks 12 verbatim scratch copies, 13 local links, 5 local
+source pins and all 169 previous entries. Preserve all 187 entries.
+This archive integrity check is not an additional mathematical advance.
+
+## Quantitative derandomization target, 2026-10-22
+
+Latest note:
+docs/research-evidence/semiprime-randomness-bridge-20261022/README.md.
+NO new whole-family query bound or factoring exponent. Goal remains active.
+The old L=BPL formal-interface audit is inherited. The full primary
+manuscript's fixed interpreter now gives a conditional resource bridge:
+fresh-coin source time T, simultaneous BITspace S on n=logN bits yields
+deterministic time 2^O(S+logT+logn). Both S=o(n), logT=o(n) would suffice.
+No qualifying source is supplied. Printed compiler constants do not pay
+Theta(n)-space algorithms; a large upper-bound exponent is NOT a lower bound.
+
+Rigorous HECM supplies bounded subexponential time, not sublinear bitspace.
+Shallow circuit evaluation with path recomputation supplies only a
+TWO-WAY reusable-random-tape representation. Do not substitute fresh
+coins for repeated inputs or hide a random assignment in virtual padding.
+Cheng--Wu v3 Cor6 costs 2^O(v*(S+log(n+T))) poly(n,T,1/epsilon), with v
+physical visits per random cell. Proposed Dixon B=exp(n^(1/3)) suggests
+soft n^(2/3) resources only conditional on a completed uniform circuit;
+v*(S+logT+logn)=o(n) is still unproved. Output must be explicitly bitwise
+canonicalized or extracted from a valid fresh-coin accepting run.
+
+Retained interrupted-turn followups: an original gcd locator suffices
+but remains unpaid; adaptive first-half cost is still soft sqrt(JL).
+The Hensel mask is exactly a translated m-adic square image: higher
+digits constrain only the critical channel, jointly paid by inherited
+MPE. The remaining unit-square palettes stay open. P+Q mod r gives at
+most2 factor residues directly mod r; P²+Q² gives at most4. Neither
+trace is decoded by the paid rank-r N-power tables.
+
+Next work must acquire the source/randomness bound or original query;
+more compiler/backend lemmas do not establish that advance. No build,
+coverage campaign, commit or push. Preserve all187 preceding frozen entries.
+
+The randomness note is frozen with10 entries, manifest SHA256
+716d8af72bf0189a72e21c1202cdfc33ca022e14670da33a5d3a1f2c5eb2c79a.
+Seven verbatim reports/review, two primary PDF fingerprints, seven local
+links and all187 earlier entries checked. Preserve all197 entries.
+These are conditional research and integrity checks, not a factorizer.
+
+## Uniform small-multiple cover, 2026-10-22
+
+Latest constructive result:
+docs/research-evidence/semiprime-fermat-multiplier-20261022/README.md.
+NO soft-m factoring query or improved factoring exponent yet. The active
+goal remains the complete sixth-rate algorithm and proof.
+
+NEW paid cover: public odd prime r, H=r². Compute Q={q_r(c):1<=c<r}.
+Ostafe--Shparlinski arXiv1001.1504v2 Thm10 and its finite proof give
+|Q|>=ceil(pi(r-1)²/(pi(r-1)+r-2))=Omega(r/log²r). Exact greedy cyclic
+convolution constructs A-Q=F_r with |A|=O(log³r) in soft O(r) BIT work.
+S={j^r(1-r*tau) mod H: j=1..r-1,tau in A} is explicit, size soft r,
+and covers cP modH for SOME c<r for EVERY unit P. Witness lookup needs
+q_r(P); do not replace it by the public q_r(N). All selected (s,c)
+pairs are in bijection with the r(r-1) units modulo H, so explicit
+label restoration costs r². This is not a general operation lower bound.
+
+Actual constructor scripts/probe_semiprime_fermat_multiplier_cover.py
+uses packed GMP integer convolution. Radix exceeds r; byte packing avoids
+quadratic growing-word shifts. Algebra/self-tests and independent byte
+boundary review pass. They are not a native semiprime coverage campaign.
+
+Balanced linear consumer: b_s=center(-N/s mod H), d_s=(N+s*b_s)/H,
+g_s(h)=b_s*h+d_s. At cP=s+Hh, H*sigma=b_s*c+Q, g_s(h)=sigma*P.
+If P,Q<=2r³, |sigma|<3r. Query beta^(N+b_s*c) versus (beta^H)^sigma;
+q_r(b_s)=q_r(N)-q_r(s) retains small quotient layers. The shared
+bilinear query is OPEN. Selected c sets are SUBSETS of a GP's indices.
+Expanded giant differences are not automatically units. Do not import
+the original O(r²)-offset unit proof across this O(r³)-offset band.
+
+Inherited strong setup with m=r supplies D=ord_N(beta)>256r^4. ANY global
+leaf gives D|(P+Q-1+b_s*c-H*sigma), whose absolute value is <8r³<D.
+Thus P+Q=1+H*sigma-b_s*c and inherited quadratic recovery works. No new
+local-order uniqueness or QRH premise. This is conditional on acquiring
+the restriction-safe query, not a new acquired collision. Linear sigma
+bound becomes Q/H+r/2 unbalanced; do not claim O(r) for all sizes.
+
+Direct integer-progression consumer costs soft sqrt(JL)=soft r^1.5,
+J=soft r,L=O(r²), with positive<N leaves enabling safe saturation
+descent. This is one-quarter, worse than the existing one-fifth frontier.
+Source/randomness followups in the packet remain exploratory and give
+no qualifying all-semiprime low-space factorizer. Preserve all 197 prior
+frozen entries. No broad build, backend, commit, push or goal completion.
+
+The new cover packet is frozen with 11 entries, manifest SHA256
+5ca79fec94998f07db68fea18d6e807d0df9daba75f12aaf694afa396bae233f.
+Seven verbatim reports, one implementation copy, nine local links,
+the primary PDF fingerprint, and all 197 preceding entries were checked.
+Preserve all 208 entries. Integrity checks are not factoring progress.
+
+## Curvature acquisition and linear-cover correction, 2026-10-23
+
+Latest checkpoint:
+docs/research-evidence/semiprime-curvature-acquisition-20261023/README.md.
+No new whole-family soft-m collision query or factoring exponent. The
+sixth-rate goal remains active. Preserve the 208 preceding frozen entries.
+
+The previous Fermat constructor is valid, but uniform small-multiple
+coverage alone is elementary: S={1+rt:0<=t<r}, c=P^(-1) modr covers every
+unit P modr². Its quotient-layer representation is the distinctive part.
+The selected Fermat linear pairs biject ALL unit residues modH=r². With
+T=H*sigma-b_s*c, the aligned query is exactly a unit times the ordinary
+GP product over all T in the interval with r not dividing T. For whole
+H-blocks the unit exponent cancels; [1,2r³] has2r³-2r² leaves. This is a
+reindexing, not search thinning or a general operation lower bound.
+Arbitrary original boxes are not automatically T intervals or vice versa.
+
+Quadratic transport is exact: r²*sigma=C_s*I+kappa*u+nu,
+u=(P-j)/r. Paid coefficient roots give r native targets and soft-r clocks,
+but the phase D_s,j remains two-indexed. Modular coefficient lifts cannot
+be changed without the private clock correction involving Q. Do not
+count inherited smooth projection or outside-product roots as new query
+progress.
+
+New exact dyadic vertical recurrence: m=2n,j=r+epsilon*n,
+a_m=a_n+eta*n, eta=h_n(r) mod2, kappa in{-7,...,2},
+E_m=E_n+n*eta*(1-r)+n²*kappa. A slope lambda updates to2lambda+eta;
+original seed stride/phase(A,theta) updates to(4A,4theta-kappa+2lambda*epsilon).
+All metadata and target-polynomial updates remain softm. The number of
+slopes times lower rank is m, NOT a cost obstruction. The missing norm
+contraction retains moment-dependent phase q^(theta*k). A repeated dense
+base multiplier has candidate support O(p*(1+D)), whereas a single tangent
+insertion has O(p+D). These are representation costs, not lower bounds.
+The actual scalar-target embedding and long seed product remain unpaid.
+
+New paid additive slice for elementary AP rows: for a specified k,
+S_k=(sum_sigma beta^(-k*r4*sigma)) *
+sum_s beta^(k*C_s*N)*P_k(beta^(k*B_s)),
+P_k(X)=sum_c beta^(k*c²)*X^c. One monic MPE acquires this full-family trace
+in soft O(r*(logN)²) bits, with row masks, COMMON multiplier masks and
+actual interval endpoints. A native-tag restriction is common because
+s=1 modr. h traces/product prefix cost soft O(rh), NOT soft O(r).
+Do not substitute this additive statistic for F(1)=product(1-Z).
+The AP coefficient-only resultant is paid; its correlated c²+B_s*c
+phase is still present. Positive-C/centered-B and centered-C/centered-b
+conventions have different finite sigma bounds; keep them explicit.
+
+Quadratic nonzero global leaves already have the inherited unconditional
+short-annihilator decoder, cost N^(31/192)<N^(1/6). Their integer K has
+O(logN) bits. Public K=0 cleanup is cheap: the double-root valuation
+forces c=s<r; in the AP catalog only s=c=1 is possible. Scan at most
+one candidate per row and subtract its count h0 from each trace. This
+never deletes the true leaf, since K=(P-1)*(C_s*Q-c²) there is nonzero.
+No new decoder premise, QRH input, Lean backend, coverage campaign,
+build, commit or push is part of this checkpoint.
+
+The curvature packet is frozen with14 entries, manifest SHA256
+8128b86203baeadac53842eb5aaca8ed275c904b8b059271708483238c75cfdd.
+Ten verbatim reports/reviews,14 README links,4 primary PDF fingerprints,
+5 inherited local source pins and all208 preceding entries were checked.
+Preserve all222 current entries. These integrity checks do not establish
+the missing detector or a sixth-rate factorizer.
+
+
+## Uniform short-clock source, 2026-10-23
+
+Latest checkpoint:
+docs/research-evidence/semiprime-uniform-trace-20261023/README.md.
+The AP small-multiple construction now has ALL-INPUT short-clock geometry
+and soft-r one-fixed-index additive traces. No multiplicative/count query
+or improved factoring exponent; the sixth-rate goal remains active.
+
+Credit inherited exact quotient Gauss. For H=r², windows
+P0=16r²*2^j<=sqrtN and X=2P0/r, its GENERAL nearest-lift bound is
+norm²<=(2N/H+H²/2)X²<=(5/2)H²X², using N<=H³. Therefore |a|<r/20 and
+at true cP=s+Hh, |sigma|<6r for every factor size. There are r AP rows
+per O(logN) windows. Do not reuse the old implementation's a!=0 or HX
+assumptions: a=0 is legal and exact shortestness gives u=±N, C=±H,
+b unit modH. C!=0 holds in every branch. True K=(P-1)(CQ-ac²) is nonzero
+by primality and |a|,c<r<Q. Public K=0 only at s=c=1,sigma=d once per
+window; this deletes individual leaves, not whole rows. Remaining global
+leaves use the inherited unconditional short-annihilator decoder.
+
+Paid roots rho_v^a_v=purified common beta normalize the varying quadratic
+coefficient. Include r in projection and retain collapse recovery.
+One polynomial sum_c beta^(kc²)T^c, a second sum_c T^c for linear rows,
+and ROW-DEPENDENT seed weights sum_sigma rho_v^(-kr⁴sigma) give a
+whole-family fixed-k trace by monic MPE in soft O(r(logN)²) bits.
+The O(logN) windows, actual signed endpoints, masks and root costs are
+charged. This is not a count or product detector. h traces/prefix for
+h<=r still cost soft O(rh). The pre-purification zero set need not equal
+the purified set; coverage and recovery remain valid on the new base.
+
+Separate coefficient-one AP norm continuation: rank-r W linear/V dense
+state is acquired, but the quadratic doubling shift V->beta^(2n)V cannot
+be an endomorphism of that rank-r algebra under the large-order bound.
+Only that reuse step is excluded. Its soft(r+h) adjacent-window trace
+difference cancels common local zeros and lacks an acquired window value.
+Do not transfer the coefficient-one AP's linear W to the Gauss family.
+Large-index Frobenius identities and one exact scalar diagnostic do not
+supply detection. No generic operation lower bound is claimed.
+
+Next substantive target: acquire a restricted product or exact local
+count in soft r. Per ONE size window mu_P,mu_Q<=r(r-1)<P,Q, so count
+localization cannot wrap; use O(logN) separate windows, since their
+combined count need not be <P. Count/character-deficit equivalences are
+inherited, and no count algorithm is acquired. More geometry or backend
+lemmas alone do not close the user's whole-family acquisition gap.
+
+The new packet is frozen with12 entries, manifest SHA256
+8fd192d4c6a0fc707fa3bfe8fd60545870d26cc147847084acfe18afe5fa3b97.
+Preserve all234 entries across the current13 packets. Two independent
+reviews/root proof,9 verbatim copies,11 README links,9 local pins and
+one fixed identity replay checked. No new Lean theorem, broad build,
+commit or push. Integrity and finite checks are not exponent progress.
+
+## Structured coefficient source and detector audit, 2026-10-23
+
+Latest checkpoint:
+docs/research-evidence/semiprime-detector-acquisition-20261023/README.md.
+No new whole-family soft-r collision detector or improved exponent. The
+sixth-rate goal remains active. Source acquisition alone is not the goal.
+
+New explicit source: H=r²,M=r⁴, P0=16H*2^j, A=floor(sqrtN/P0),
+T=floor(H/(A+1)). Enumerate 1<=a<=A,0<|C|<=T,CN=a modr by clipped
+C progressions. J<3r per window and |aC|<H. A circular-gap proof covers
+every surviving semiprime. Recover s=1+rt from CN=a*s² modH and retain
+B=center(-as-CN/s modM). The true seed satisfies M*sigma=ac²P+Bc+CQ,
+|sigma|<3.5r, and K=(P-1)(CQ-ac²)!=0. Include r and actual a values in
+coefficient-root purification. K=0 screening uses the Taylor derivative
+term's valuation and forces s=c=1; MANY descriptors can have this label.
+Delete individual leaves, not unchecked rows. Per-window count<3r²<P,Q.
+
+Exact ratio invariant: denominator(sigma/c)=c/gcd(c,C); B lifts only add
+integers. For single-AP-label descriptors with |C|<=V and explicit menus
+R_v, residue-wise universal coverage requires b_V*J+sum_v|R_v|>=r*Pi,
+where Pi counts primes in(r/2,r), b_V=floor(logV/log(r/2)). For
+V<=r² polylogr this excludes a soft-r explicit-menu strengthening of
+that coverage proof. It is NOT an actual-semiprime factoring lower
+bound: N-dependent selection of the two hidden divisor labels remains
+open. The fixed counterexample uses the prepared pair59447*59747,r43,
+with true ratios48/41 and3/7 and certified large odd coprime local orders.
+
+Full Ore product is only a descriptor; moving-fiber evaluation is unpaid.
+Finite-theta aggregate units are paid, but their corrections stay inside
+the differences. Displacement rank of the entry matrix is not its entry
+product. Completing the square uses the hidden order, not N; the proposed
+small-argument Jacobi filter can delete a true witness. A square D0 or
+duplicate D0 among distinct structured rows in ONE window would factor,
+but neither is guaranteed. Cubic norm simplification supplies the globally
+known root -5a and loses information if its integer carries are dropped.
+
+Research gate: the inherited normalized cofactor GP ALREADY supplies
+S_1,...,S_h and a Newton prefix in soft h for h<=r. More fast traces
+require a proved detection link; they alone do not advance acquisition.
+Next target remains an actual restricted product/count or N-dependent
+witness in soft r, followed by complete executable/Lean bit-cost proof.
+
+Packet frozen with22 entries, manifest SHA256
+09f9c88ae7cfb412fc9756686cf766f9f8f331ed5cb1e28ff39451289777624c.
+Preserve all256 entries across14 current packets. Eighteen verbatim
+copies,17 local README links,7 local pins,5 primary PDF fingerprints and
+3 fixed identity replays checked. No new Lean theorem, broad build,
+commit or push. These checks are not a factoring-rate certificate.
+
+## Arithmetic selection and carried common clocks, 2026-10-23
+
+Latest checkpoint:
+docs/research-evidence/semiprime-arithmetic-selection-20261023/README.md.
+No soft-r whole-family acquisition or improved factoring exponent. Goal
+active; exact representations and supplied-data consumers are not closure.
+
+Integral gauge: b=B mod2a, t=(B-b)/(2a), d_b=M^(-1)b² mod4a,
+e=(b²-M*d_b)/(4a), k=(D-d_b)/(4a) give
+K=a(c+t)²+b(c+t)+e-M(sigma+k). All carries/endpoints retained;
+balanced a=1 has two common clocks. In one(a,b) branch distinct t differ
+by nonzero multiples of r, and |Delta k|+|Delta t|/2>=Nr/M>256r.
+Thus literal short-edge overlap does not provide telescoping. Finite
+r-cycle specialization also fails. Neither is a general query lower bound.
+
+All a,C can be FULLY factored in total soft r by prime-product refinement
+through r; every remaining |C|<r² cofactor is prime. Public factored ideal
+relation is acquired, hidden norm-|sigma| relation recognition is not.
+SQUFOF transfer at Delta=16aCN needs proper/narrow principality. With
+delta=4aCN and r_B=(r,sqrt(delta)-B), the norm form of r_B² is G^(-1),
+not G; [F]=[r_B]^4. Its oriented positive-norm equation is
+u²-delta*v²=r⁴, u+Bv=0modr⁴, r not dividing v. Every C<0 row fails by
+size; v=0 has the wrong orientation. A single positive-C true-row replay
+only refutes automatic principality per true row, NOT all-row existence.
+
+Paired all-input short-seed equation g(c*tau-ell)=sigma*(H*tau-b_t*d)
+has proper-gcd recovery for EVERY solution in the factor window: candidate
+X divides CN, |C|<X<N. This does not acquire its row/multiplier/seeds.
+Monicization supplies two global roots and a length-O(r²) integer-lift
+search; generic shared cost remains soft r^(3/2). For a=1 the first-root
+family exactly reindexes the inherited long AP. No thinning is claimed.
+Direct rank-two reciprocal identities fail on the actual Vandermonde
+minor; the exact Bezout input still contains the missing product residue.
+
+Packet frozen with14 entries, manifest SHA256
+b112a2fc0f5f38cc0d5d329765effb0e60040d337e4c32f1dedb975e629c3ff8.
+Preserve all270 entries across15 current packets. Ten verbatim copies,
+13 README links,5 inherited pins,7 local primary PDFs and one fixed
+class-cycle replay checked; two primary references were web-only reads
+with their narrower scope recorded. No Lean theorem, broad build or
+publication. Next substantive target remains the full acquisition step.
+
+
+## Original-query and arithmetic-selection continuation, 2026-10-23
+
+The latest journal section records this pass; the frozen arithmetic-selection
+packet remains authoritative and all270 entries across15 packets are retained.
+No soft-m whole-family acquisition, improved exponent or new Lean theorem.
+The sixth-rate goal remains active. Do not count another exact representation
+or supplied-data predicate as the user's requested acquisition advance.
+
+For original rows, j -> j/(j-1) has the carried identity
+Y_k^(j-1)=Y_j*beta^A*q^kappa with A=(j-1)*a_j-a_k. Its residue
+A=a_j*(j-1)*(2-j) modm is nonzero outside j=1,2; it does not close
+the original q-shift cache. The direct scalar recurrence has coefficient
+degree J and costs soft(J+sqrt(J*ell)), as does the ring-safe block proof.
+
+For structured rows Mg=Y(aY+B)+CN, gcd(g,Y)=gcd(CN,Y) exactly.
+The reduced ratio denominator is Y/gcd(CN,Y). A found rational point has
+a constant-work factor-window lift predicate, but finding it remains open.
+The exact Stern--Brocot traversal is complete, with no soft-r bound on all
+visited/rejected cells. Paired (c,s,t,tau) labels biject the full factor
+interval on units modr; the full carry and coefficient reflection alone
+do not thin it. Quadratic selection still requires x dividing CN.
+
+A symmetric Cauchy border DOES preserve collision support: every u+v is
+a unit in the prepared odd-order subgroup, and its seed Schur complement
+is S_jk=R(Y_j)R(Y_k)/(Y_j+Y_k), R(z)=prod_i(z-x_i)/(z+x_i).
+Thus det S=unit*V^2, including collisions. No fast border evaluator was
+acquired. Sequential determinant updates retain rational degree2J. The
+seed inverse boundary has a paid initial value and constant-degree
+q-hypergeometric recurrence, but its Cauchy projection at the targets
+is exactly the missing R(Y_j); a short vector description is not its sum.
+The geometric seed-core determinant is a WEIGHTED q-superfactorial, so its
+value is not paid merely by the ordinary q-factorial routine. Unit status
+of either it or the full cross-plus product does not acquire its value;
+neither is the earlier paid separable Cayley denominator companion.
+
+These are exact derivations and scoped cost checks. No general factoring
+lower bound, success campaign, backend expansion or publication follows.
+Next substantive work must acquire the restricted whole-family query or
+a direct arithmetic witness, with total bit work and localization paid.
+
+## Shared Cauchy and native selection follow-up, 2026-10-23
+
+Latest journal section records no acquisition or exponent improvement.
+All270 entries across15 frozen packets remain authoritative; no new
+packet, Lean theorem, backend expansion or publication was made.
+
+The Cauchy boundary has an exact shared TRANSPOSED evaluator: the cleared
+two-state triangular transfer has degree J+2, fixed unit denominator W
+actually computed as its lower diagonal, and lower-left entry linear in
+dual target weights. Charged fixed preprocessing and linear arithmetic
+circuits permit transposition, at soft(J+sqrt(J*ell)), not soft m.
+Rational Gauss/Geronimus first J modified moments are an invertible
+transform of the missing row projections. Paid ordinary moments do not
+acquire those boundary values. Do not reopen either supplied-data claim.
+
+For original rows, an N-dependent k-tag list containing P modm converts
+to a k-list for P+Q modm; the converse has at most2k tags via
+j^2-s*j+N=0modm. Both conversions cost soft m. A polylog list suffices
+but is NOT acquired. This concerns true own-tag selection, not arbitrary
+accidental collisions. At x=j+mh, gcd(f_j(h),x)=gcd(N,x) exactly;
+integral f_j(h)/x is already the divisor predicate. All real candidates
+in the factor window pass the sign/index relaxation. Native discriminants
+are negative and unit squares modN, so these sign/Jacobi tests add no
+selector. No universal hidden-residue menu premise is used.
+
+The rank-(m-1) critical algebra over Z/m^2 gives E_j only modulo m^2.
+Exact lifts have a PAID five-value carry alphabet {-3,-2,-1,0,1}; that
+small alphabet is not itself a cost obstruction. The long product norm
+in the target algebra remains unpaid. Finite character-norm completion
+returns a powered query plus the zero-label row, with possible extra
+zeros and no acquisition gain. Next work must acquire the contraction
+or a genuine N-dependent selector, not another carrier description.
+
+## Small auxiliary trace continuation, 2026-10-23
+
+The latest journal continuation records no acquisition or exponent gain.
+The r~N^(1/18), soft-r^3 trace consumer is inherited from the October16
+small-auxiliary audit, not a new reduction. All270 entries across15 frozen
+packets remain unchanged; no new packet or Lean theorem was created.
+
+For (1+X)^N=sum_(j<r)X^j*A_j(X^r), C_j=A_j(1) is already paid.
+The exact cyclic-wrap jet is A_j(1+T)=C_j*(1+T)^(-j/r) mod(N,T^d).
+After a paid prime screen through r*d<=r^3, every positive-j coefficient
+is a UNIT multiple of C_j, with identical gcd against N. This closes
+individual low-jet coefficient gcd tests, not arbitrary extraction from C.
+
+The fixed weight2/level2 Eisenstein coefficient sigma_1(N) modr would
+supply the trace. Bruin2011 Theorem1.1 requires the index FACTORED;
+Remark1.3 already identifies the full-coefficient factoring connection.
+Public cyclotomic Artin trace 1+N is not the Hecke coefficient
+1+N+P+Q. The APR residual norm test also retains an uncovered unit branch;
+its quadratic specialization is the inherited N-1 order projection.
+None of these operations acquires the missing trace or a guaranteed list.
+
+## Coarse constraints and repaired compact cover, 2026-10-23
+
+Latest journal continuation records no acquisition or exponent improvement.
+The explicit compact cover K_ij=M*(m^2+m*j-i)+j, 0<=i,j<m,
+M=product_(p<=m) p^floor(log_p ceil(sqrt N)), was checked WITH the paid
+smooth projection, small-order screen and added signed-inverse query.
+Its initial smooth-order counterclass is handled by that preprocessing;
+do not use that counterclass as an obstruction to the repaired method.
+
+The repaired literal family nevertheless fails at the actual prepared
+input N=4403924094733, m=129. Its safe factors have odd prime orders
+1048889 and1049663, both above16m^2 and unchanged by the projection.
+Neither inverse query hits; affine residues have minima2483 and7234,
+both greater than128. This failure applies to every prepared odd-order
+base on this input. It is ONE exact counterexample to this all-input
+coverage claim, not an infinite-family/asymptotic factoring obstruction.
+
+CRT interval MITM with the full hyperbolic local catalogs still pays
+all reported lifts after narrow-window reuse. Chan2026 DOES supply
+deterministic soft-t ordinary subset sum; do not cite lack of determinism
+as that route's gap. Categorical selection/output size remain unpaid.
+For G=F_s^*, H=<N>, the P,Q actions on G/H are inverse and have identical
+cycle types. Public sigma_N-fixed algebra loses this splitting distinction.
+The supplied-factor Galois-block adapter and locally complete splitter
+targets do not acquire their inputs. All270 frozen entries are retained.
+
+## Native input-dependent acquisition continuation, 2026-10-23
+
+Latest journal continuation records no whole-family acquisition or exponent
+gain. The uncentered rectangle gamma^i-gamma^(uN+v) has a PAID support fold
+t=i-v, costing soft(|U|+V+L) with label reconstruction and nonzero-gap
+recovery. Generic triple-resultant m^2 work is NOT the best bound for this
+special case. Native Lehman centers change t to s_(uv)+i-v; their actual
+integer shifts and divisor masks remain unpaid. Integer interval separation
+is not a lower bound against modular or implicit methods. Square-product
+multiplier restrictions were previously tested and are not reopened.
+
+The parity-safe Schur Pfaffian preserves unit*V without squaring; diagonal
+kernel entries are defined as0, including padding. Every matching retains
+the same unknown product R_X(Y_j), and positive reciprocal pairing duplicates
+it. This representation does not improve soft(J+sqrt(J*ell)) acquisition.
+
+The soft-m consecutive-secondary-orbit query gamma^((N-1)^i) versus
+gamma^(N^j), 0<=i,j<=m except(0,0), FAILS on the same prepared input
+N=4403924094733,m=129: all16,899 allowed leaves are units. Its nonzero
+selected annihilator and bit costs are paid; coverage is false at this
+literal radius. No infinite/asymptotic failure claim follows. Preserve
+all270 frozen entries. Next work must acquire the covered contraction
+or prove coverage for a genuinely affordable N-dependent replacement.
+
+## Centered-source and polarized-character continuation, 2026-10-23
+
+Latest journal continuation records NO whole-family acquisition/exponent
+gain. All Lehman centers k<=m^2 have a paid soft-m list of O(m) rational
+cubic descriptors, with exact ceil centers in {C_K,C_K+1}, where
+C_K=floor(P_K/Q)+1.
+The dyadic denominators and their roots are paid without changing odd
+orders. The actual modular carry e=Q*C-P in [1,Q], divisor mask and
+restricted collision product are NOT acquired by that descriptor list.
+Three binary carry tests give a valid per-label walk, still soft m^2.
+
+The exact discriminant equation (P_K(x)+r)^2-Q^2*y^2-4NQ^2(K+x)=0
+is irreducible and has conservative true-witness cutoff y<2m^2.
+Do NOT reinstate the unproved strict y<m^2 draft bound. Integer equality
+forces the carry congruence; mod-N equality does not. The checked fixed-r
+Coppersmith sufficient inequality fails at the outer parameters; this is
+not a general lattice lower bound. Explicit finite resultants exceed the
+budget. Brisebarre--Hanrot2606.04858 has a heuristic resultant-nonvanishing
+step. Dividing known components is safe OFF the center curve, not on the
+factor hyperbola; residual common components remain unpaid.
+
+Tal TR26-211 plus Lenstra--Silverberg gives a constructive CONDITIONAL
+composite Jacobi product: supplied common primitive odd-prime-q root
+modN -> public ideal I*barI=N -> exact J_P*J_Q, oriented by 1mod(1-zeta)^2.
+Charge q^{O(1)}, not softq. Its direct gcd evaluations have identical
+local valuation bits (unit or saturated). Common odd-order roots do not
+exist on the safe-prime branch. Supplied q~m already gives soft-m AP
+factor search from P=Q=1modq; this is not a new fast family. Cyclotomic
+projection does not supply the full character-sum augmentation.
+
+The covered m by m^2 commensurate GP query remains soft m^(3/2).
+Its factorial endpoints and all jets below min(P,Q)>16m^2 vanish;
+symbolic cancellation/high-valuation compression remain open. Preserve
+all270 frozen entries and previous document prefixes. Next work must
+acquire a sufficient whole-family selector, not another descriptor.
+
+## Adjacent-hull selector and rational-center follow-up, 2026-10-23
+
+Latest journal continuation proves no acquisition or exponent gain.
+Vert(K_N) minus Vert(K_(N+1)) is EXACTLY the divisor pairs for the
+integer hull of xy>=N. Retained consecutive old vertices retain their
+edge; unequal successors from a common vertex expose a deleted divisor
+vertex. New vertices can appear: do not call the symmetric difference
+four points. The known complete hard chain still has Theta(N^(1/3)log N)
+vertices after the small-coordinate screen. That output charge is NOT
+a lower bound on an implicit comparison or early-stopping factorizer.
+Polynomial sail-run certificates are a candidate compressed verifier;
+no soft-m covering by valid runs or interval-change query is acquired.
+
+The [2/1] Pade center chart preserves exact two-center coverage and
+reduces a fixed-residual discriminant to degrees (4,2). Its checked
+small-root sufficient bound still fails (exponent>=12, height<=m^10).
+The reciprocal-carry conversion retains an index-128q affine lattice,
+the uv mask and weights; its full-hull scale is still N^(1/3).
+The AP cubic denominator argument includes L<=4 exceptions and the
+span>=m/polylog extension. It excludes literal all-q enumeration only.
+
+A public rank-two CM lift carries the native beta without common
+torsion. Its cheap phase F/bar(F) cancels collision zeros. Charge only
+compact/modular epsilon^S, not expanded rational coordinates. A fixed
+polarization orientation switch I*bar(I)=N does retain support, but
+Norm(n+bar(I)) is exactly the missing query gcd; acquiring its small
+basis is not paid by its size or polarization. The Cayley alternative
+is the old plus-Cauchy query. Preserve all 270 frozen entries and prior
+document prefixes; next work must acquire a sufficient selector.
+
+## Differential acquisition and native recurrences, 2026-10-23
+
+Latest journal continuation obtains NO acquisition or exponent gain.
+The prior complete polynomial-coordinate hull-cover proposal is now
+FALSE at soft-m size: for f=xy-N, d=deg f, vertex values lie in[0,2m^2].
+Nonzero integer dth differences imply J<=d(2(2m^2)^(1/d)+1), unless
+J<=d. Noncollinear runs have d>=3; polylog-degree runs contain only
+soft O(m^(2/3)) vertices, forcing soft Omega(m^(4/3)) runs for the full
+hard chain. Sparse parameters, nonpolynomial/high-degree circuits and
+early stopping are outside this model. Stop expanding its verifier.
+
+An actual differential-envelope recursion is acquired at soft m^2.
+Endpoint NEW minimizers give crossing directions; equal crossing values
+certify a whole common interval, otherwise expose a new face and recurse.
+At a tied split pass max-y to the left child and min-y to the right child.
+Single-direction acquisition is polylog via integer-coordinate search.
+Neither the small deletion set nor cheap point separation supplies the
+unpaid range optimization. Shifted Strassen interval queries cost
+soft sqrt(length), retaining N^(1/4) for the complete hard range.
+
+With m reset to the original odd-prime row modulus, the native parameter
+N->N+m^2 leaves delta_j exactly fixed and scales
+targets by q. For B(z)F(qz)=q^(JL)A(z)F(z), the endpoint polynomials
+cost soft J to construct; F(1) is not acquired. F(0)'s orbit stays at0.
+Known nonzero roots give cheap zero values, but leaving their zero chains
+makes the recurrence 0=0. Its usable normalization remains unpaid.
+Native J>=(m+1)/2. The separate prefix recurrence has a paid startup,
+but its constructor still costs soft(J+sqrt(JL)). All carries/nonunits
+are retained. Shared six-coefficient Euclidean transport cancels two
+traces but does not acquire their future quotient words. Root integrality
+in its translation discriminant must be kept; an axis returns divisibility.
+
+The F2 cutoff log derivative is an exact divisor selector. Its fully
+reduced denominator has degree Theta(B^2), NOT a coefficient lower bound;
+the inherited product/gcd evaluator costs soft sqrt B. Full/tail cofactor
+cancellation has T(T(B))=B, T(B)=floor(N/(B+1)), on B<=sqrt N. The tested
+binary-class/support-pruning recursion reaches singleton classes before
+pruning can help. Other implicit contractions remain open. Preserve all
+270 frozen entries and prior document prefixes. Next work must acquire a
+whole-family query or selector; these identities do not close the goal.
+
+## Coupled roots and signed normalization, 2026-10-23
+
+Latest journal continuation obtains NO whole-family soft-m acquisition or
+factoring exponent gain. One representative of each native delta modH
+class gives C>=(m+1)/2 globally distinct q-grids of lengthL=2H+2,
+H=m^2. Since CL>P, two roots collide locally, in different rows and at
+unequal indices. Translation moves a collision to a start/end derivative.
+Thus full-root barycentric unit inversions are INVALID on this actual
+source. Endpoint connection norms have unweighted pair clock
+product_(1<=s<L)W(q^s), W(T)=product_(c!=d)(T*Y_d-Y_c), times paid
+unit factors. Explicit acquisition costs soft m^2 with proper-gcd leaves;
+this is independent coverage, not acquisition of original F(1).
+
+Simple tags Y_j=(beta^m)^j reduce that auxiliary selector to the ordinary
+g-factorial through K=m(m^2+1)-1, divided by a certified unit q-factorial.
+Its paid cost is soft m^(3/2), matching classical order search. The tested
+complete-binomial shortcut fails: prepared-power roots require common
+torsion in coprime local orders. Even outside that subgroup, C split
+roots force C|gcd(P-1,Q-1); the N-1 projection implies C*ord_P(q)<=P-1.
+An internally distinct grid L0<=ord_P(q) then cannot have CL0>P-1.
+This scope is binomial plus unit-grid pigeonhole, not all sparse norms.
+
+Retaining gamma pays tau=gamma^((N-1)/2), eta=tau^H, eta^2=q. The signed
+ONE-row f(x)=prod_i(x-uq^i)/(x+uq^i) has a paid nonzero central value at
+c=u eta^(L-1), via two scalar GP products costing soft sqrtL. This is
+the inherited one-row scale, not whole-F normalization. Its short central
+grid is uniformly unit. The short NEGATIVE grid is also unit, but outside
+the odd subgroups; full negative-orbit denominators are not guaranteed.
+Exact iterative Chebyshev folding, with legal L'<=4H padding, rescales
+to ordinary contiguous seed blocks Y_j q^(-2sr); target growth retains
+soft(Jd+sqrt(JL')). Charge descendants; no implicit lower bound follows.
+
+The q-Dyson partial CT is paid from inherited low coefficients. A Cauchy
+weight restores the original query via C(1)+known negative part, with
+E(1) guards fully paid (including impossible global label-1 at a=0).
+The long positive-part value C(1) remains unacquired. Common-scaling
+invariance is not an all-native-input failure theorem. Preserve all270
+frozen entries and prior document prefixes; no new backend or publication.
+
+### Trace norms and prefix-only endpoint acquisition, 2026-10-23
+
+Follow-up still obtains NO soft-m acquisition or exponent gain. Use
+retained distinct literal offsets; remove exact duplicates first. Common
+Dickson trace grid X_i=q^i+q^-i, A_j=Y_j^m, b_j=A_j+A_j^-1 satisfies
+D_m(X_i,1)-b_j=r^-i(r^i-A_j)(r^i-A_j^-1), r=q^m. This keeps the native
+hit without split m-torsion, but retains two long powered row queries.
+Actual size bounds force v_m(ord_l beta)<=1; beta^m,q,q^m share local
+orders>B. Direct global leaves use the original decoder; inverse global
+leaves are excluded by 0<S+delta+Hi<D'. All b_j are globally distinct;
+soft-J derivative/MPE collision screening factors or makes them pairwise
+unit-distinct. It is not guaranteed to factor. The anchored alternative
+has a compulsory i0 zero; omit it and guard original seed0 separately.
+
+Endpoint algebra A=R[X]/P_T has P_T=prod_c(X-Y_c). For
+H_t=prod_(s=1)^t P_T(q^s X) modP_T, h_t=Norm_A H_t, the start connection
+norm equals (-1)^(CK) kappa^(-2CK) h_K, K=L-1. Only PREFIX acquisition
+of h_t or H_t in soft(C+sqrt t) would suffice: binary-search first nonunit
+prefix, then soft-C endpoint evaluation and proper-leaf descent. Arbitrary
+row/interval restriction is unnecessary for this conditional interface.
+Credit inherited first-nonunit control; the prefix itself remains unpaid.
+q-scaling is not a fixed-quotient endomorphism without P_T(qX)=0 modP_T.
+
+Macdonald staircase/q-discriminant identities do not supply their native
+specialization value. The checked cell-quotient denominator is paid and
+unit; its long numerator is not paid or invertible by assumption.
+Johansson rectangular splitting retains scalar and
+coefficient work. One common q-block costs soft(J+b+Jell/b); native phases
+leave Omega(m floor(ell/b)) globally distinct explicit nodes. This is an
+array-size charge, not an implicit norm lower bound. Preserve all270 frozen
+entries and prior document prefixes; no backend expansion or publication.
+
+## Native late hits and first-collision acquisition, 2026-10-23
+
+Latest journal proves a scoped arithmetic late-hit theorem, NOT a
+soft-m acquisition or exponent gain. For every sufficiently large odd
+prime m, Omega(m^5/log^2 m) semiprimes have
+P in[m^3/2,3m^3/4], Q in[(m^6-8m^5)/P,(m^6-4m^5)/P], P,Q3mod4,
+gcd(P-1,Q-1)=2, P,Q!=1modm, and admissible FULL-odd-order projected
+bases with every original leaf unit for signed |i|<=m^2/log^3 m.
+This literal least-prime selector returns m; ceil(N^(1/6)) need not be m.
+The CRT base construction uses P,Q. Do NOT claim the actual HH/setup
+returns it, that every qualifying base fails, or that factoring is hard.
+
+Exact centered carries give j*delta=a*j*(1-j)-PQ modH, H=m^2.
+A P-local hit implies Q+delta-Hi=k(P-1)/2 and
+2a*(j^2-2Pj+P)=kP(P-1) modm. For fixed P not0,1modm and ANY k,
+ordinary tags give one QmodH; at most two degenerate tags give O(m);
+the own tag gives at most m lifts. Total<=4m residues per k; no
+|k|<m assumption. Signed |i|<=T gives O(m+T) partners per fixed
+factor and O(m^4+m^3T) bad pairs over both primes. At T=m^2/log^3 m
+this is negligible against the prime-pair supply.
+
+That supply uses fixed-CRT short-interval PPS counts, with eight pieces
+for each moving Q-window, and interval BT at modulus M*ell. Retain
+the SAME CRT density factor in main and medium-divisor tail. Large
+divisors and modm exclusions cost O(m^4+m^3logm). Both full odd
+orders are coprime and prime to m; N-1 projection preserves them.
+The positive native own hit I=(a_j*P+Q+ell_j)/H, ell_j=delta_j-a_j,
+still occurs by2H+1.
+Do not drop its multiplier a_j. Signed exclusion covers Dickson direct
+and inverse SEED factors, not trace-target mergers, endpoint pairs,
+nonunit pivots or other selectors. Explicit dense scan Jb+T/b has
+soft-m^(3/2) charge; this is not a general operation lower bound.
+
+One supplied endpoint shift has an acquired soft-C factor-or-inverse
+algorithm by monic MPE, gcd localization, unit batch inversion and
+interpolation. Inverse transport retains the next correction inverse;
+the split algebra is reduced, so finite nilpotent truncation is unlicensed.
+Koutschan--Zhang formal q-dispersion assumes char0 and transcendental q.
+Global orbit matching misses the required local matches; formal empty
+dispersion does not certify specialized modular resultants to be units.
+
+Public N^k lifts and Hasse jets are constructible at fully charged
+soft O(kh*(J+sqrt(JL))*logN). Multiplicity at1 is<=J per prime;
+unequal multiplicities separate, but equal ones have no guarantee.
+Low coefficients at0 do not give the jet at1. Integer valuations need
+their own precision bound; root counts do not supply it. Artinian
+resultants still require acquired coefficients/remainders; DVR methods
+do not give a public hidden uniformizer.
+
+Native differences do give an ACQUIRED cover of all nonzero residues
+modm: express v/N as x^2-y^2 with x,y!=-1 using at most five trial
+parameters, then use tags(x+1)^-1,(y+1)^-1. Acquire e_v=delta_c-delta_d.
+The smaller d_P is prime to m by ord_P(q)>16H and d_P<=m^3.
+With g=beta^m and NEGATIVE target Z_v=beta^(-e_v), u=(d_P-e_v)/m
+lies in(0,m^2+4m] and g^u=Z_v at P. All nonunit leaves are proper.
+This is inherited soft-m^(3/2) order search; simple e_v=v already suffice.
+This particular d_P witness lies on the original H-clock only if
+e_v=d_P modH; other order multiples can give other endpoint hits.
+The N->N+m sweep is synthetic, not an actual-input failure theorem.
+No short acquired shift menu was obtained. Preserve all270 frozen entries
+and previous document prefixes. Next work must acquire a sufficient
+whole-family selector; no backend expansion or publication is implied.
+
+## Native coefficient-gap acquisition, 2026-10-23
+
+Latest continuation acquires a soft-m residue screen, then proves its
+catalog NOT universal; no exponent gain. For each j!=0modm use
+t_+/-=j^-1+/-j/(4N), c=t_+^-1,d=t_-^-1. Nonexceptional pairs have
+a_c-a_d=1 AS INTEGERS; r_j=[ell_d-ell_c]_H has r_j=jmodm.
+For <=4 exceptional tags j²=+/-4Nmodm include ALL m H-lifts.
+Inherited CHGN screens the entire O(m)-class catalog in softm,
+using H>=N^(1/3)>N^.3 and both coprimality premises. No factor
+residue is supplied. A proper factor must be checked in its class.
+
+At an actual nonexceptional P tag, P=r_jmodH iff the canonical
+A=[(P-4Q)^2/(16N)]_H lies in[1,m-2]. Simple-root Hensel uniqueness
+proves the full-carry equivalence. Fixed P,A give
+16Q²-8P(1+2A)Q+P²=0modH with unit discriminant. Both factor
+orientations and all exceptions total O(m^4) catalog successes in
+the prior curved strip with Omega(m^5/log²m) qualifying prime pairs.
+Hence many actual inputs are missed, independent of beta choice.
+This is catalog coverage, not incidental-pivot/setup failure.
+
+For a FIXED h universe U_m, t_+/-=j^-1+/-h*j/(4N), actual k=a_c-a_d
+is h or h-m. Screening [(ell_d-ell_c)/k]_H gives the same count
+O(|U_m|m^4); prescribed polylog universes fail. Do NOT apply this
+count to arbitrary N-adaptive choices from all h.
+
+All distinct-a gaps satisfy (ell_d-ell_c)/(a_c-a_d)=-4N/(ell_c+ell_d)
+modH, with H-unit denominators. Dense class hitP means sum=-4QmodH.
+Its whole support costs softH explicitly; no compact CHGN recovery
+or universal dense coverage is proved. For Hk-sum=4Q the index k
+need NOT be0mod4. All integer lifts3..ceil(H/4+2) are valid.
+At one supplied k, monic MPE acquires
+D(k)=product_(c,d)(Hk-ell_c-ell_d) in softJ. Each leaf is in(0,N),
+so saturation localizes properly. The long additive block constructor
+costs soft(Jb+JT/b), giving m² generally and m^1.5 if Q=O(m³).
+
+Nir2608.00668v2 applies to the native square-free integer row product,
+but h factors give degree2h and constantN^h. Its stated n^1.5*b
+bound costs soft h^2.5 here; no compact input is acquired. The old
+internal subdiscriminant-pivot coverage condition remains open and
+was not expanded into backend work. Preserve all270 frozen entries
+and prior document prefixes; the universal soft-m acquisition and
+full bit-complexity goal remain unproved.
+
+## Ratio fibers and complete square cover, 2026-10-23
+
+No whole-family soft-m acquisition or exponent gain. For distinct coefficient
+VALUES a,b in[1,m-1], SOME native root orientation gives classP iff
+F(x,a,b)=16x²-8(a+b)x+(a-b)²=0modH, x=Q/P. The universal C_m must be
+intersected with Legendre(x,m)=Legendre(N,m) for the ACTUAL native table.
+For one supplied x0, all pairs are a=[x0(t+1)²]_m,b=[x0(t-1)²]_m,
+t!=0,+/-1. With C=F(x0,a,b)/m, D=16x0(1-t²), the sole highdigit is
+xi=-C/D. The degree(m-3)/2 fiber polynomial is acquiredsoftm.
+Each fiber covers at most(m-3)/2 highdigits; this is modular support,
+NOT an actual-prime failure family. Carries A=(x0(t+1)²-a)/m,
+B=(x0(t-1)²-b)/m give xi=-A/(2(1+t))-B/(2(1-t)); never drop them.
+P²x=N makes x1 affinebijective in unknownp1 for fixedp0. Higher integer
+digits may help; no adaptive selection proved. Explicitallfiberscostm².
+All-coefficient-lift completion is just all factorclasses; its F_m norm
+X^m-X selects no integer divisor. Do not expand this into backend work.
+
+Enlarged square-Lehman cover resets m0=ceilN^(1/6), originalprimem=Theta(m0).
+In P0<=P<2P0 use A=ceil sqrt(2P0/m0), B=ceil(A sqrtN/P0+1).
+AB=Theta(m0²); Dirichlet gives a<=A,b<=B,i=a²Q+b²P-ceil(2ab sqrtN)<m0.
+c_ab=a²N+b²-ceil(2ab sqrtN) satisfies c_ab-i=(P-1)(a²Q-b²).
+This IS complete, but uv=(ab)² can beO(m0^4), not oldbudgetm0².
+One shared slope is not a new small cache. For q<=m0,p approximating
+2q sqrtN, epsilon=2q sqrtN-p, F=qNa²-pab+qb², exact carry overcoverage
+uses W=O(qm0+AB|epsilon|+q) seeds. Dirichlet only guaranteesW=O(m0²).
+Even W=softm leavesAB targets uncontracted. ActualmonicseedMPEcostm0²;
+all enlarged exponentdifferences positiveOlogNbits, so supplied-annihilator
+recovery is valid. No new implicit quadratic-phase product is acquired.
+For ONE suppliedt, integerK_t=product_ab(F(a,b)-t) modulo a public small
+modulus DOES costsoftm by degree2A polynomial+APblocks. But d_P|K_t
+doesnotimplyP|K_t; K_tmodN doesnotgive gamma^K_t. ExactK hasTheta(m²logN)
+bits andt isunknown. No collision acquisition follows. The exact shift
+(a,b)->(a+2q,b+p) hasp>B, so that telescope hasnointerioroverlap.
+
+Short Egyptian fractions Lemma4.1 has2^r indexed entries PER LIST; every-u terminal
+range onlyu<=exp(r); largerlevels have exceptions. Covering d<=m³ needs
+indexedsize>=m^(3log2), notsoftm. This is indexedmaterializationcharge,
+not supportlowerbound. Compactsubsetproduct norms and deterministicgood
+realization remain unpaid. Factorlab boundedprimarytriage found its
+restrictedproductgenerator assumed and finitecoversearchheuristic;
+common-gcd algorithm is class-dependent, not an all-input gain.
+Preserve all270 frozen entries and prior prefixes; no newbackend,
+examplecampaign, broadbuild, publication or fullsixth-rateclaim.
+
+## Fixed-denominator square-cover seeds, 2026-10-23
+
+The prior apparent small-denominator requirement is REMOVED. No whole-query
+soft-m acquisition or exponent gain follows yet. Put m0=ceilN^(1/6),
+original prime M>=m0, and retain projected beta. Existing square-cover
+A,B satisfy AB<=4m0². Choose D=M (or m0), p=isqrt(4D²N)+1,
+L=ceil(AB/D), g=beta^D, J=[-L,m0-1]; length<=5m0. No CF needed.
+s=Na²+b²-ceil(pab/D), u=Dceil(pab/D)-pab. Proof carry
+z=ceil(2ab sqrtN)-ceil(pab/D) lies[-L,0]; true j=i+z gives
+s-j=(P-1)(a²Q-b²). All seeds, their polynomial and endpoint costsoftm0.
+Seed gaps obey D|h|<5M²<16M². For every enlarged leaf and m0>=16,
+s-j>=N-8m0^5-5m0>0. A saturated leaf supplies short annihilator
+D(s-j) for ORIGINAL beta; do not assume arbitrary powering preserves orders.
+
+Exact unit relation is between normalized query and RESIDUE-MATCHED seeds
+u+Dj, not the older unrestricted t interval. Full/cartesian prefactor
+beta^(ell sum u) is acquiredsoftm0: sum u=D sum ceil(pab/D)-p sum ab,
+using one O(log D) Euclidean floor sum per a. Target array stillAB~m0²;
+short seeds and paid gauge do not acquire its rational-floor group norm.
+
+Group image g^(product x_l) is not an OR of individual order hits.
+Conditional PREFIX image localization is legal with projected beta:
+locate FIRST NONUNIT prefix and return any proper gcd. If that first
+nonunit prefix is saturated, preceding h has gcd(h-1,N)=1 and short
+h^x=1; local orders stay odd/coprime. Inherited detector factors or
+certifies both>16M² (common branch impossible), then inherited extractor
+applies. The prefix/image constructor remains UNACQUIRED; no backend
+expansion or exponent claim. Preserve all270 frozen entries and prior
+prefixes; no example campaign, broad build, commit or publication.
+
+## Fixed-target dyadic and lattice checks, 2026-10-23
+
+No whole-query acquisition or exponent gain. D=2^ceil(log2m0) is legal:
+seed count<=5m0, D-gap<6m0²<16M², and odd beta orders are unchanged
+by D or D². Literal a-half-step has increment
+N(Da+D²/4)-floor(pb/2)-[pb]_2*1_{u<D/2}, u=[-pab]_D;
+u=0 is in the lower half, u=D/2 is not. Paired leaves are
+RT²-(1+R)TZ+Z². Reused masks retain the quadratic/cross-clock phase.
+The frozen norm's actual tangent span D²+13D+5<16M² is paid;
+its low-width polynomial INPUT is still missing. Natural X_a=g^a
+have distinct D-th powers, and target multiplier R has odd order,
+so neither literal identification gives its X->-X conjugation.
+These are scoped input checks, not an obstruction to other coordinates.
+Public sqrtN convergent numerators costsoftm but witness accuracy m²
+does not prove numerator membership/coverage. Ocansey–Schneider2018
+symbolic product normalization does not acquire the finite modular norm;
+keep its eventual-nonzero hypothesis separate from periodic local zeros.
+All three attempts retain available fullquerycostm0². Preserve prior
+prefixes/all270 frozen entries; no new backend, examples or publication.
+
+## Native fourfold seed reduction, 2026-10-23
+
+No exponent gain. Odd coefficient lifts a*<2m, with b/ell recomputed,
+retain canonical1<=I*<=2H by convex endpoint bounds. Gap(P-1)(Q-a*)
+is divisible4; r=[N+delta*]_4, T=beta^((N+delta*-Hr)/4) and
+k<(H+1)/2 give a covered sufficient query. Nonprincipal quartic factors
+are units in odd local subgroups; positive short-annihilator recovery is
+inherited. This is NOT an oracle for the old coefficient-family V.
+Folded target count staysTheta(m) via(N/4)(j^-1-1)²modm, so actual
+totalcost remainssoftm^1.5. Universal8 lifts double the prefold range.
+Original prime-digit division keeps a nonzero own-row seed twist.
+Exact antipodal normalization pays four original endpoint leaves/pair;
+the acquired q-chain recurrence still has >=(m+1)/2 boundary factors.
+New trimmed-MPE interface returns explicit block values and leaves
+J+b+JL/b. BOTH target and q-grid differences are certified units;
+q-gap<L<16H, use the q-order bound rather than beta exponentHL.
+Preserve all270 entries/prior prefixes; no backend or example expansion.
+
+## Universal lifted-gap palette, 2026-10-23
+
+Positive coverage theorem, NOT soft-m acquisition. For all x!=0,y modm,
+canonicalxi=-[F(x,a,b)/m]/[16x(1-t²)], a=[x(t+1)²],b=[x(t-1)²],
+F=16X²-8(A+B)X+(A-B)². POSITIVE lifts a+mr,b+ms shiftxi by
++r/(2(t+1))-s/(2(t-1)). Hitlines s=((t-1)/(t+1))r-2(t-1)(y-xi)
+have m-3 distinct slopes, union>=(m-3)(m+4)/2>=m²/2. Unionbound
+gives an m-ONLY K=ceil3log2m palette covering ALLstates, allN. This is
+existence/advice, not a paid deterministicconstructor. Actual rowlayers
+A=[Nc^-2]+mz with recomputed centeredb/ell realize BOTH Henselsigns.
+For X=q/p, rootsLa=-(kp+4q)/2,Lb=(kp-4q)/2 give class(Lb-La)/k=pmodH.
+Completed support is EXACTLYallphi(H)unitclasses, not a sparse selector.
+SuppliedlayerrowscostsoftmK, explicitclassscreeningsoftm²K. Deterministic
+greedycostsoftm4; verifiedLasVegaspaletteexpectedsoftm². Integer score
+sum(n-binomial(n,2))<=coverage hasaverage>=U/2 butscattersstillm4.
+Shared paidWtable tau(z)=z^m=z+mW(z)modH gives exact carries. Do not
+dropW or attribute fullsplitgridsoftm² toWittAlg3.1beforedegreeaccounting.
+Single residue-universal annihilator coefficient permits onlyR|24;
+universalmenusneedK>=R/polylogR andcanonicalCRTtarget/rangecosts erase
+the displayed foldgain. This is not an arbitraryN-adaptivelowerbound.
+No original-query rate improvement, newbackend or examples. Preserve
+priorprefixes/all270entries. Paletteconstruction AND nonenumerating
+integer-divisor acquisition stillneedproof; coveragealoneisnot1/6.
+FreshZhang2610.28338v2 proves factorialmultipleCIRCUITexistence, explicitly
+notcomparableuniformsample/branchconstruction. Suppliedmodularcircuit
+evaluationischeap; saturation/primeseparation remainsunproved. Do not
+readitsSLP asfreeunknown-order groupexponentiation orimportSDPclaims.
+
+## Uniform Kummer certificate acquisition, 2026-10-23
+
+Positive NEW per-sample constructor removes original rationalBRANCH gap
+for a replacementZ, NOTdeterministicsampleacquisition. For ZhangmonicG,
+a=1+3^10t5, markedD haskappa d=(0,81,9a,a²), identityo=(0,0,0,1).
+MüllerfixedINTEGERquarticdelta/biquadraticB satisfyBii=wi*zi (NO2).
+FixedAd2=d2B22,Adi=d2Bi2-diB22 equalsmu*d2²*w foradjacentmultiples.
+Binaryladder usesbit0(deltaU,Ad(U,V)),bit1(Ad(U,V),deltaV),OLDoperands.
+OverQ allstatesnonzero andMD!=0. Z=(6aDiscG)²*(U1²+U2²+U3²)>0.
+CircuitUNIFORMLYacquiredinsoft(logM+logH_samp), O(logM+logH_samp)gates;
+modNevaluationsoft(logN*(logM+logH_samp)). Hugeintegersnotcomputed.
+PublishedmapsnonzeroatEVERYgoodspecialization; afterguard6aDiscG,
+gcd(N,U1,U2,U3) hasEXACTidentitysupport. Sumsquaresonlyoneway!
+Positive-densityseparation: P goodB-smoothJacorder killsDP; Q goodPRIME
+Jacorder inI_Q and>B keepsDQnonzero. LPPmarked-slicelowercounts+PPSprime
+countgiveetaQ>>1/(log³Q loglog²Q). PPSambientx=3Q²/2, NOT2Q².
+Uniformz in[0,N)^5 givesexactCRTindependence,rho=exp(-E)/polylogN.
+AllworkforrandomizedrepeatedsamplingisNo1, inheritedLPPphenomenon,
+NOTtheuser'sdetworstgoal. UseexactB*=2^(2048ceilcuberoot(lambda²mu)),
+lambda=ceil log2(16k²),mu=ceil log2(2lambda), foruniformintegercutoffs.
+Successfulshortdeterministicsampleliststillunacquired. Publicz^N=z
+quotientshrinkslocalsampler; NpowerisnotlocalFrobenius. No freepointcount,
+group-exponentaction, backend or examplecampaign. Preserve270entries
+andpreviousprefixes. Originalsoft-mrowacquisition/completebitproofopen.
+
+## X-only twist separation and short-family selection, 2026-10-23
+
+Positive supplied-curve refinement; NOdeterministicexponentgain. For good
+E/Z_N, N=PQ, 3<P<Q, if E_P orquadratic twist hasorderP, oddpsi_N(x)
+has>=(P-1)/2 rootsmodP independentoforientation/sqrt/markedpoint.
+Normalizepsi_n=R_n forodd,2Y R_n foreven; standardhalvingrecurrences
+withY²=tau aredivisionfree andcostO(logN) ringops, softlog²Nbits.
+Zero criterionvalidwhenchar|N via scheme-theoreticdivisionpolydivisor.
+AtQ set a=#E,b=#twist,k0,k1 theirN-kernel sizes. Exactrootcount
+(k0+k1-2)/2. BothgroupscannotbeNkilled: HasseforcesordersP,P²,Q;
+fullP²torsionandtwistsumcontradictWeilpairingP|(Q-1), including
+Q=P²-2 casewouldforceP|3. Same2torsionmeanssameparity: evenbothkernels
+index>=2, oddoneproperindex>=3. Survivors>=(Q+1-2sqrtQ)/3.
+Suppliedcurve+uniformxmodN givesconstantproperfactorprobability, NOT
+shortdeterministicsampling. CM4P=1+Dv² needsD>4,goodordinaryj!=0,1728;
+guardexceptionalj/modeldenominators. Oddpsi_N liesrankh algebra;
+originalrank2h resultantissquare withsameprimesupport. h1 inherits
+singlecurveQbound; generalclasspolynormunionssupports, canhaveextension
+components; noaggregateQbound/freehiddenrootselection. R<=X2/3
+traceoneDmenu missesprimes byO(sqrtXR)count, NOTgeneralalgorithmfailure.
+Concreteprojector1_T=avgcharacters trivialonT; eachLangpushforwardviax
+hasrank2,conductor<=6 independentofindexK, butaggregateisKterms.
+Checkedellipticcharacterintervalboundsstill sqrtqlogq; m<sqrtP/4 and
+jointshortCRTcorrelationunproved. Do notimportBurgesswithoutactualbridge.
+ActualZhanglinef=X5+(1+3s)(9X-1) ischeapmarkedfamily, noorderdensity.
+KowalskisplitpencilhasfullJ[2],16|#J, so prime/2primecomparatorsfail;
+16*prime cankeepnonWeierstrassDellpart, butselectionstillmissing.
+CompleteD+J[2^h]norm contracts tooneendpointpower andaddsnohitcoverage.
+Keep270frozenentries/priorprefixes; no backend/examples/publication.
+Originalsoft-m acquisition andfullsixth-ratebitproofremainopen.
+
+## Deterministic supplied-curve selector, 2026-10-23
+
+Positive deterministicCONDITIONALtheorem: suppliedgoodE/Z_N withA,B,Delta
+units and#E_P=P orP+2 yieldsfactorinsoftN5/32. NOTallinput1/6: curve/
+D acquisitionmissing. ScreenN+1squarefortwins. R=ceilN5/32; findJacobi-1a
+thenU={b,ab:b<=R}. LauWuleastnonresiduealpha=1/(4sqrt(e))<5/32
+provesall4hiddenquadraticpatterns, noR²Cartesianmenu. Foru, SWUx1=
+-(B/A)(1+1/(u(u+1))),x2=u*x1; f(x2)=u³f(x1). Guarddenomsandf(xi);
+fhasnoProots sinceP,P+2odd, soitsnonunitgcdproper. Ppsi_Nbits EXACT
+quadraticsign aftertwincheck; nonsquareuP givesonehot, squaregives00/11.
+For saturatedpsi_N, liftmodN² withc=3B/(2A),j0=1728*4A³/(4A³+27B²),
+j_e=j0+eN,A_e=3c²j_e/(1728-j_e),B_e=2c³j_e/(1728-j_e),e0,1.
+UseSTANDARDpsi_N, neverdivideleadingN. AtP anomalousnonzeropoint,
+correctedSatohAraki1999Thm3.7 makesatmostonebadjclassmodP²; twolifts
+ensurevPpsi_N=1forone. AtQ orderPpoint,[N]=[Q][P]landsE2foreverylift,
+so vQpsi_N>=2. Exactresiduer=psi_NmodN² divisibleN;gcd(r/N,N)=Q
+foronepubliclift. Unitphi/omega equateformal/psi valuations; twists
+rescalepsi byaunitandpreservej. No localroots/logs/canonicalj computed.
+FULLcontroller: anynonzeroNtorsionatQ hasorderP orQ since#E_Q<2Q<PQ.
+IfnoQ-orderpointonbothorientations, uP- givesPonehot→ordinaryfactoror
+Q-Ptorsiontwoliftescape. IfQ-orderpoint exists,#groupQ,partnerQ+2;
+u(+,-) givesP00/11andoneQbit1. P00⇒gcdQ; P11partnerbit0⇒gcdP,
+partnerbit1⇒orderP→twoliftescape. No kernelcardinalityassumptionneeded.
+List+perentrysoftlog²N givesdetsoftN5/32; finiteBurgessexceptionsfallback.
+SeparatelysuppliedmonicCMH h<P,Q,SPLITSmodP,allProotstrace±1: guardedFASTgcd
+squarefree/startupgoodj, distinctcubicscoprime⇒genus2Weilpairdifference
+prob>=1/4. Freshuniformx, gcd(F,psi_N), KEEP SMALLERfactor;allProots
+useful, degreeshalve. Expectedsofth log²N includingQextensioncomponents;
+linearglobalj acquiredfinallyorintegerfactorfirst. T_H additional.
+ReplacingfinalpointtrialsaddssoftN5/32 toexpectedsofth log²N+T_H.
+Pointselectorremovesfinalpointrandomness, NOTcomponentrandomnessnorDmenu.
+Variablelabelt,D,v alreadycomputesp_label=(t²+Dv²)/4, so directgcdfirst;
+Kformulaaloneaddsnogain. qAprocessnolegalshiftwithdivisor>H; BKSsqrtP
+andknownP/linearshiftinputnotours. Preserve270entries/priorprefixes;
+reviewedpaperproofonly, notLean/fullbitintegration orallinputexponent.
+
+## Universal curve acquisition and full-CM output boundary, 2026-10-23
+
+Latest journal continuation adds a paid block derivative, not universal
+acquisition. Supplied split-P good trace+/-1 F, twin screen applied:
+on a block psi_N(x;T)=0 in A_F, compute ambient partial_j by substituting
+T+epsilon in ORIGINAL coefficient/psi circuit. Do not differentiate the
+reduced zero representative. Canonical first-order j class EXISTS and is
+unique by corrected SatohAraki; affine slope therefore nonzero at every
+P component. At any Q component whose point has order P, [P] reachesE1
+and[Q]E2 for all lifts, so derivativezero. Guarded gcd(F,D) exposes
+degree0 atP/positive atQ and factors. Costsoftdlog²N; requireskilledblock.
+Even-degree Q components make ALL base-field labels squares, so scalar
+(+,-)controllerfails there; Q-primary/PQ pointsalsooutsidebaseHasseproof.
+Cross-P test is chi(V_r(eta)V_s(eta)), V_r=4(eta²+eta+1)³+
+27r eta²(eta+1)², notchi(eta). Charge failedtestsum sum d_s*t_s.
+
+One-centerFermat handles Q<=P+1+2sqrtP. Else E_r:coeff3r,2r and
+T_N(r)=product_palette,i psi_N(x_eta,i;3r,2r) hasgoodP-roots EXACTLY
+trace+/-1 parameters. Circuit/evaluationsoftN5/32; degreeO(RN²),
+rootacquisitionunpaid. Publicj+N liftskeepinitialrmodP unchanged.
+
+NEW scoped universal dense-CM obstruction: each separated interval
+(X,5X/4],(7X/4,2X] has>>X/logX primeswith4p-1squarefree. FixY128,
+W=productoddell<=Y ell² constant, allowedAPdensity>=1/2; PNT_APmain
+h/(4logX), BTmiddleloss<=h/(16logX), integerAPtailo(h/logX).
+ChoosebothP,Q: actualbalancedseparatedfamily, notsetupfailureclaim.
+Delta=1-4p fundamental forces End(trace+/-1E)=O_Delta. ANYchar0CMorder
+good-specializingembeds, hencehasDelta*f² evenifp|f. Unitjchartjustifies
+classpolyroot specialization. Conductorformula h(Deltaf²)>=h(Delta).
+Siegel h>=c_epsilon|Delta|^(1/2-epsilon), ineffective; epsilon1/12 gives
+FULL monicclasspolydegreeOmegaN5/24 atEITHERfactor, adaptiveDincluded.
+ExplicitdenseoutputaloneexceedssoftN1/6. NOTcompressedCM/generalcurve/
+factoringlowerbound; compactselecteddataandearlyfactorremainopen.
+
+Originalbeta+cN producttangent retainsweightedexclusionproducts;
+>=2localhits vanishmodp² foralllifts; uniquehitcanhavep|K. Cheaplogphase
+omitsminus1 andisunit. ExistingmodN²/ADquery remainssoft(J+sqrt(Jell)).
+Preserve270frozenentries/priorprefixes. Fullsixth-rategoalstillopen;
+no backend/examples/publication or newLeanclaim.
+
+## User-directed cross-representation synthesis, 2026-10-23
+
+Userrequested rereadpastrepresentations, selectcomplementarypairings and
+assignsubagents. Rootinventoried12families; threeSol6.1agents tested
+Frobenius+ambientlifts+KMP, squarecover+integernorm+prefiximage, and
+coefficientroots+Gaussclocks+sparsedyadicnorm. No whole-family acquisition
+or exponentgain. Exactjoinedidentitiesandremainingoperatorsinlatestjournal.
+
+Torusf=X^m-1,W=t(1+gammaX)/(X+gamma),w=W'/W. Compute W^N=F0+fF1
+mod(N²,f²): (F0'+f'F1)/N=Bw mod(N,f), AFTERwrapcancellationonly.
+AllshortambientjetsfromcyclicB0: S=X(1+f)^(-1/m), W(X)^N=
+B0(S)(1+Nlog(W(X)/W(S))) mod(N²,f^k). DoesnotdismissB0'sowninformation.
+HiddenkappaP'=(gamma²-1)gamma(X^(j-1)-1)(X^(j+1)-1)/(d rho_j d),
+d=(X+gamma)(1+gammaX); observeddividedderivativeonlygivessumwith
+X^(j-1)rho_j(w), notisolateddefect/Qaction. KMP stillneedsvariable
+A_(j,I)=W^(m²I-ell_j)(rho_jW)^(-a_j). (U+NC)^N=U^NmodN², and
+etaleGm U^N=1modN implies1modN² foralllifts: noellipticjtransversality.
+
+SquareF=DNa²-pab+Db²=Ds+u. Shortj requiresrow-dependentt=u+Dj;
+unfilteringfixed-tnormrestoresTheta(m²)commonseeds. PaidKtmodN gives
+relativeimage(beta+cN)^Kt/beta^Kt=1+cN beta^-1 Kt modN², whose
+dividedgcd EXACTgcd(Kt,N), notord_P(beta)|Kt detector. Prefiximage
+recoverylegal: locateFIRSTNONUNITprefix, ifsaturatedprecedinghunitaway
+from1 andh^x=1 short⇒inheriteddecoder. Imageconstructionunpaid.
+
+NormalizedGaussnodes=beta^(c²)U_v V_v^c q_v^-sigma. Literal changing
+weightB_c(k) hasone-rowV^(kc)unitVandermonderankh afterpaidorderguard;
+rulesoutboundedTERMWISEdirections, NOTaggregateweight/directcontraction.
+AbsorbV: b=Bmod2|a|,t=(B-b)/2a,e=(4a)^-1b²modM,
+k=(CN-at²-bt-e)/M; K=a(c+t)²+b(c+t)+e-M(sigma-k).
+CommonchirpT(n)=rho_a^e beta^(n²)rho_a^(bn), Tau_t(z,T)=
+(z beta^(t²)T^t,beta^(2t)T) isexacttranslationaction. NearbyO(r)²
+clusterhaspaidsoftrproduct/localization; zeroexponenttargetomittedsince
+allitsotherseedleavesunits. ActualGauss |B|<2M andDeltaC nonzero
+multiple r imply |Deltak|+2|Deltat|>=Nr/M>256r. OnlyO(1)rowsper
+boundedcluster/branch; sumstartupcosts, notmax. Wholefamilygainunproved.
+Nextconstructivetarget: directsharedproductacrossseparatedtranslations;
+anotherfixed-ktrace/termdescriptorisnotsufficient. Scalarrootsdonotgive
+rootsofrationalWfamilyforfree. Preserve270entries/priorprefixes;
+no backend/examples/publication; universalsixth-rate/fullbitproofopen.
+
+## Direct translated-product acquisition pass, 2026-10-23
+
+Latest pass obtains no whole-family acquisition or exponent gain. Root and
+three agents tested norm first, adaptive rows, and primary q/Ore algorithms.
+Prior synthesis supplied exact compatible interfaces, not faster factoring.
+
+All rho_v and beta have the SAME local orders: for support, replace rho_v^K
+by beta^K. One q=beta^M and rank-|I| seed algebra suffice across all a.
+G(Z)=prod_vc(1-Z beta^(a_vc²+B_vc+C_vN)), F_I(z)=prod_sigma G(zq^-sigma).
+G modulo the seed polynomial or its norm is sufficient, not a necessary
+output; initialization is unacquired. Explicit targets+G+MPE cost soft r²,
+not r³. Fixed cleaned G satisfies F_I(qz)G(zq^-B)=F_I(z)G(zq^(1-A));
+these G-boundaries are unpaid. Omit an integer-zero TARGET only if its
+sigma0=E/M belongs to the actual I: its other seed leaves are units.
+Graeffe support folding does not acquire G or the plus normalization.
+
+Actual shared boundary constructor: supplied R-values use one seed
+polynomial plus batched evaluation, soft(L+E_R). Supplied C-values use an
+interval product tree on U acquired distinct horizontal positions and
+batched evaluation, soft(U+E_C). Transport deletes individual (1-z) zero
+factors; exact R deflation is -q^sigma0*A'(q^sigma0), C splits out the
+known zero position. Each disconnected startup still costs soft r;
+requests, positions and paths are charged. No nearlinear total is proved.
+
+Any valid short descriptors satisfy CN=as² mod H, s=1 mod r. Fixed
+nonzero a and distinct tags force DeltaC to be a nonzero multiple of r.
+For |B|<=Bmax, Bmax|Deltat|+M|Deltak|>=Nr, without a canonical choice.
+Nearest lift (d,b)->(d+vs,b+vH) fixes a,C and sends B->B+vM; the true
+seed moves sigma->sigma+vc. This is a shear. Rectangular seed span is
+12r+|v|(r-2); exact narrow handling needs c-dependent endpoints.
+Top window P0>=sqrt(N)/2 forces shortest Gauss rows to be linear.
+The inherited deliberate balanced a=1 source is a different valid choice.
+One tag s=1 with c<H and X'=2P0 is covered but costs soft r².
+
+Explicit interval-overcover model: cover all cleaned literal row grids,
+charge coordinate arrays, exclude early factoring or new unit pruning.
+A rectangle mixing two same-clock rows needs
+W_seed+2W_n>=Nr/M-14r=Omega(r³); all singleton rows cost O(r²).
+Otherwise each row forces Omega(r) horizontal coverage, even with splits.
+The centered balanced a=1 catalog has r rows and at most two clocks,
+so total list volume is Omega(r²). Credit the old disjoint-interval/Jr
+floor; this is NOT an implicit-norm or factoring lower bound.
+
+Symbolic J_n=prod_c<n(1-z u^(c²)T^c) has cubic u-degree. No fixed-order
+scalar sum A_i(u,u^n,z,T)J_(n+i)=0 recurrence: coefficient degrees are
+O(n), while the highest shift has a unique degree gap Theta(n²).
+A monomial gauge preserves cubic span; Garoufalidis Theorem1.1 at u and
+u^-1 excludes that scalar q-holonomic shortcut too. Only generic symbolic
+inputs are covered; parabolic, native finite-ring and nonmonomial methods
+remain open. Caruso--Le Borgne finite-field norms need explicit extension
+data; a faithful shift fixing beta with sigma(T)=beta²T has order/degree
+above 16r². No small Ore input or finite-window norm was acquired.
+
+Final reports and independent PASS reviews are in
+/tmp/semiprime-translated-product-20261023; proofs and scopes are in the
+latest journal section. Preserve all 270 frozen entries and prior prefixes.
+No backend/example/publication claim; universal sixth rate and bit proof
+remain open. Next constructive target: implicit common-seed norm with
+restriction/localization, or a support-sensitive shared window contraction.
+
+## Implicit norm circuit and reversed seed quotient, 2026-10-23
+
+No whole-family acquisition or exponent gain. Previous boundary pass was
+progress in reviewed computations/interfaces, not faster factoring. New
+three-agent pass actually constructs a compact target circuit, tests the
+seed quotient, and simplifies the balanced source to one clock.
+
+For U_v=beta^(C_v*N), V_v=beta^B_v, W_v=beta^a_v, interpolate U,V,W
+at row labels 1..J. E_C(Y,X)=sum_k<=C binom(X,k)(Y-1)^k has O(C)
+gates using only public small unit denominators and E_C(Y,c)=Y^c.
+H(T,X)=U(T)E_C(V(T),X)E_C(E_C(W(T),X),X) has O(J+C) paid gates
+and EXACT values beta^(a_v*c²+B_v*c+C_v*N), including signed/zero a.
+Clean one legal zero target with (1-e_v0(T)e_c0(X))*H, only if its zero
+seed is included. Degree bounds are ((C²+C+1)(J-1), C²+2C), before mask.
+Tensor-grid norm has actual degree JC (JC-1 cleaned), rank JC; seed norm
+is still unacquired. Small circuit is not small scalar-norm cost.
+Jeronimo--Sabia2007 Theorem5 charges resultant degree/coefficient inputs
+over Q, not arbitrary input-circuit gate count. No nearlinear transfer.
+Explicit chirp-block/MPE table with s,t has s³t² generic support (s>=2)
+and r³/(st) requests; best exponent2. s1 is univariate but still >=r²
+requests. Only that explicit table pipeline is constrained.
+
+Seed companion C_S and coefficient dilation D_b obey paid rank-one
+D_b C_S-b C_S D_b=(b^L S-S(bZ))*e_last^T. For P mod S=R_P and
+z_i=q^(-(A+i)), q-shift correction is EXACTLY
+P(qZ) mod S=D_q R_P+(P(q*z0)-R_P(q*z0))*e0. Endpoint P=G remains
+the unpaid aggregate; large jumps need overlap/boundary accounting.
+Beta-dilation Cauchy denominators beta*z_i-z_j reduce to 2L-1 gaps
+beta*q^d-1. All are paid in soft L: proper gcd factors; saturated gap
+has nonzero short annihilator 1+M*d; else all are units. Propagated
+Bezout kernel still needs G(z_j), G(beta*z_i), both unacquired vectors.
+
+Balanced deliberate a1 source can choose unique even Btilde=B+vM in
+(-M,M), v=-1,0,1. Seed shears by vc; cap [-5r,5r] suffices. Then
+t=Btilde/2,k=(CN-t²)/M gives ONE clock K=(c+t)²-M(sigma-k).
+Shortening t=t0+H*lambda retains 2H*lambda*(c+t0); it is an M seed
+shift for every c only if H|lambda (here lambda0). Rebuilding at t0
+with C'=center_M(t0²/N) proves only O(r³) seeds, not a necessary
+lower bound. On that longer interval delete the public zero individually;
+do not drop its other potentially nonunit leaves. Cubic Hensel/carry
+description was inherited and is explicitly credited.
+
+Scratch /tmp/semiprime-implicit-norm-20261023, essential proofs in latest
+journal. Preserve 270 frozen entries and prior prefixes. No examples,
+backend/Lean expansion or publication; sixth-rate and bit proof remain
+open. Next work must compute the implicit norm/support, not just describe it.
+
+## Executed binomial/digit norm contraction, 2026-10-23
+
+No whole-family soft-r acquisition or exponent improvement. Previous turn
+paid a compact arithmetic target circuit and quotient guards. This pass
+executes a product recurrence and proves a narrow actual-source state
+count; it also gives a streamed quadratic-time completion with soft-r space.
+
+Balanced even-lift a1 rows: |B_j|<M=r4, all B_j=-2 modr and distinct,
+CN=t²+Mk, B=2t, seed I=[-5r,5r]. Paid A_I(X)=prod_sigma(1-Xq^-sigma).
+Q_h(z;V,W)=prod_d<h A_I(zW^(d²)V^d) obeys EXACT
+Q_h=Q_ceil(h/2)(z;V²,W⁴)*Q_floor(h/2)(zVW;V²W⁴,W⁴).
+Root h=r-1,z=beta^(CN+B+1),V=beta^(B+2),W=beta. At stride s=2^ell,
+c=cbar+s*d: z=beta^(CN+B*cbar+cbar²), V=beta^(s*(B+2cbar)),
+W=beta^(s²); keep original q/seed interval and all carries. Handle the
+authorized public zero terminal as1, or exclude its row for state counting.
+
+Global order D=dP*dQ>256r4 is odd. Equal V keys imply D divides
+s*(B_j-B_j'+2(cbar-cbar')); cancel s and use |parenthesis|<2M+2r<D
+to get integer0. Modr then cbar=cbar', and B equality gives same row.
+For (r-1)/8<s<=(r-1)/4 there are Theta(r²) distinct literal keys with
+>=4 multipliers per prefix. This rules out soft-r EXPLICIT literal-key
+memoization of this recurrence, not joint template evaluation, other
+diagrams, implicit norms, early factoring, pruning or factoring generally.
+Terminal phase acquisition+seed MPE remains soft r².
+
+Binomial boundary: E_C(Y,X+1)=Y E_C(Y,X)-binom(X,C)(Y-1)^(C+1).
+Internal shift phi(U,V,W)=(UVW,VW²,W) is parabolic. For nonzero a it
+sends CN to CN+B+a, not a multiple of N (0<|B+a|<N), and root tag
+s to s-1=0 modr; no literal valid-row permutation. Transformed values
+may still be evaluated with original multiplier labels.
+Stream h_c=UV^cW^(c²), d_c=VW^(2c+1); h_next=h*d,d_next=d*W².
+Form g_c=prod_v(1-Zh_vc), applying actual zero cleanup, then accumulate
+R<-R*g_c mod S_I. Cost soft C(J+L), active space soft(J+L+C), including
+restricted recomputation up to logs. At native scale: soft r² time,
+soft r space, NOT a time/exponent gain.
+
+An ACQUIRED scalar-weighted decision DAG has true product elimination
+P_v=prod_edges a_e^(#suffix)*P_child over Z/N, including zero divisors.
+A phase DAG instead needs P_child(a_e*z) for leaf1-z*h: different
+arguments remain paid. Two weighted seed suffixes1-Yz and1-Y'z agree
+at two unit-separated seeds only if weight1 and Y=Y'. No actual-target
+count or generic diagram lower bound follows from that fact.
+Primary circuit theorems checked: Jansen--Sarma7 balances SAMEpolynomial;
+Shen--Choi--Darwiche3 is POINTWISE product of supplied PSDDs;
+Vergari3.6 is restricted log of supplied structured probabilistic input.
+They do not compile H into a cheap all-assignment product over Z/N.
+
+Scratch /tmp/semiprime-circuit-contraction-20261023; essential proofs and
+scopes in latest journal. Preserve all270 entries/prior prefixes. No
+examples/backend expansion/publication or full-goal claim. Further work
+needs a genuinely shared evaluation or different support witness, rather
+than another description of the same parameterized subproducts.
+
+## Shared auxiliary-exponent construction, 2026-10-23
+
+Positive paid operation, no exponent gain: A=N+1 acts on <beta> as
+S=P+Q, so beta^(S^k) is acquired through degree d in soft(d+1). More usefully,
+for integer lists a_j,b_j of O(logN) bits, ALL
+beta^K_k, K_k=(prod_{j<=k}a_j)(prod_{j>k}b_j), cost soft(d+1).
+Node[l,u] carries beta^((prod_{j<=l}a_j)(prod_{j>u}b_j)); at
+v=floor((l+u)/2), left child exponent prod_{v<j<=u}b_j,
+right child exponent prod_{l<j<=v+1}a_j. Product trees and total
+exponent-bit length per level pay the bound; signed/zero factors legal.
+No hidden-order reductions, roots or factorial division.
+
+a_j=X+1-j,b_j=j gives K_k=d!*binom(X,k). At X=N+1-C it encodes
+(beta^(d!))^binom(S-C,k). For d<=r, inherited r-rough orders are
+preserved by d!. Full smooth purification/collapse is inherited.
+Fixed f_d(X)=prod_{j<d}(X-j): all t consecutive-center images cost
+soft(d+t), by common-window intersection plus mixed prefix/suffix
+products, partitioned into blocks of <=d centers. This is a real
+structured family, not a generic encoded-coefficient MPE theorem.
+
+For d,t>=1, the prime-order zero channel with ell>d+t-1 covers d+t-1 classes
+[-(t-1),d-1], not d*t. Nonzero value collisions and composite orders are
+not excluded. Need an actual deterministic coverage theorem or shared
+constructor for the native separated rows; current full query unacquired.
+
+Factored zero-image hits have UNCONDITIONAL recovery: nonzero short leaves
+T=L*R, invariant h^T=1 with h nontrivial in both fields. Test h^L: proper
+gcd factors, saturated keeps (h,L), unit keeps (h^L,R). At a short leaf
+the detector factors or pays the large-order premise for the 31/192
+extractor. Descending costs soft d, final recovery soft r once. Reject
+public zero leaves. General value-difference collisions need not have
+this short factor decomposition.
+
+Cheon2010 known-prime-order minus search plus our auxiliary startup
+costs soft(e+sqrt(ell/e)+sqrt(e)), with a cube-root balance for suitable data.
+Primitive-generator startup cannot be sourced from its heuristic rho
+paragraph; the plus theorem has an ERH startup assumption. Cheon--Kim2016
+general-f MPE still uses a KNOWN exponent field and random field samples.
+Known global D already gives S=(N+1) mod D. A nontrivial prime GLOBAL
+order projection of the prepared beta already factors by gcd(g-1,N).
+Do not grant these inputs to acquisition. Positive unreduced Cheon lists
+preserve a conditional hit but literal coefficients/actions can cost r³;
+this is a specific failed implementation, not a general lower bound.
+
+Unfactored high-degree collision relations can have soft-r bits: use the explicitly
+QRH-dependent long-annihilator consumer at that length, not the
+unconditional polylog-bit 31/192 decoder. Remove integer-zero relations.
+Next task: exploit the cheap Newton/window families in a NONZERO collision
+witness with all-input coverage; more conditional consumers do not pay
+acquisition.
+
+Scratch /tmp/semiprime-auxiliary-exponent-20261023 includes proof reports,
+primary caches, independent review and shared_exponent_reference.py.
+Reference identity/boundary checks are not coverage or a Python bit proof.
+Preserve prior prefixes and all 270 entries. No Lean/backend expansion,
+factoring exponent gain or full-goal claim. The sixth-rate goal remains open.
+
+## Actual collision use of shared exponent families, 2026-10-23
+
+No whole-family acquisition or exponent gain. Previous nearlinear window
+construction was progress; current pass executes its cancellations and a
+Dickson colour repair. Do not substitute these for the remaining coverage.
+
+Let A=N+1, S=P+Q, c=A/2. Natural D_e(S,N) encodes 1+N^e; at a PRIME
+local order ell, n=N mod ell, its secret n+1 is split. Unless n^e=1,
+its direct fibre is {zeta+n/zeta:zeta^e=1 in F_ell}, size gcd(e,ell-1),
+at most2 when e|(ell+1). The exception test is paid but saturated
+N^e-1 has O(e logN) bits; at soft-r length beyond polylogarithmic size,
+use the QRH long consumer rather than the unconditional short decoder.
+
+Constructive repair: a_u=c²-u, h0=beta²,h1=beta^A,
+h_next=h^A*h_prev^(-a_u). All degrees<=d cost soft(d+1) per u.
+A nonresidue u at ell gives actual discriminant4u and nonsplit secret.
+For e|(ell+1), traces zeta*(c+sqrtu)+zeta^-1*(c-sqrtu) have >=ceil(e/2)
+distinct values in the target fibre. No orbit points are supplied.
+Under PINNED QRH least-nonresidue input, public U=bit_length(2N)^33
+palette works eventually and costs soft(d+1) total; retain finite exceptions.
+Direct unconditional palette costs r^(47/32) at d~r, not soft r.
+No unknown Legendre-symbol test, local-order field or admissible e is free.
+
+Cayley t candidate has y=[A(t²+u)+4tu]/(t²-u). Cleared relation
+K=(t²-u)^e D_e(A,a_u)-Tr((c+sqrtu)^e(t+sqrtu)^(2e))=-4u L_e R_e.
+For positive e,u,t its two binomial-sum factors are positive: K<0.
+One image costs soft e, T images currently soft Te. Repeated algebraic
+powers are not the shared linear-factor windows. No short t cover proved.
+
+Window gap identity: f_d(X+k)-f_d(X)=f_(d-k)(X)R_(d,k)(X),
+R=prod_{j=1..k}(X+j)-prod_{j=d-k..d-1}(X-j), degree k-1, leading kd.
+Polylog gaps in an O(r) list have a fully paid unconditional soft-r
+collision filter/recovery, but no coverage. General growing residual
+cannot be handed to the short-annihilator decoder.
+Native step-H mapping keeps delta_j and I=(a_j P+Q+ell_j)/H.
+Literal covered interval has d+t-1 labels. Gap2 adds no own-forced
+linear label. For larger gaps, exact composite condition is
+(D_P/gcd(D_P,f_(d-k)(I-z+i))) | R_(d,k)(I-z+i).
+That effective order is not known. Do not cancel the common factor blindly.
+
+Short T=prod_{a=1..r}(N-a) plus detector is a paid partial-order screen;
+NoHit certifies smaller order unchanged, not larger order unchanged.
+K_box=prod_{u=1..r, |v|<=r}(uN-v) covers every two-factor rough smaller
+order by circular gaps, allowing factors at different leaves. Its current
+group action/restrictions cost soft r² on disjoint windows; prime smaller
+orders remain uncovered. An ordinary resultant modN is not this action.
+
+Scratch /tmp/semiprime-exponent-collision-20261023 holds reports/reviews.
+Preserve prior prefixes/all270 entries. No samples, backend expansion,
+new factoring exponent or full-goal claim. Need affordable uniform
+collision acquisition, including valid saturation recovery and bit costs.
+
+## Combined Dickson acquisition and degree coverage, 2026-10-23
+
+Positive acquisition refinement, no factoring exponent gain. With
+A=N+1,c=A/2,a=c²-u and positive t,u, put b=t²-u,
+B=A(t²+u)+4tu,a'=a*b². Exact cleared Cayley relation is
+K_e(t)=D_e(A*b,a')-D_e(B,a'). TWO public Dickson recurrences with
+O(logN)-bit coefficients acquire ALL beta^K_e(t),e<=R, in soft R,
+with streamed gcds/constant active residues. No preselected e needed
+at ONE candidate. K_e<0; saturated selected relation has soft e bits
+and uses the explicitly QRH-dependent long consumer, not short decoder.
+For prime local order ell with u nonsquare, hit iff ord(zeta_t)<=R
+or ord(zeta_t/eta)<=R, eta=(c-sqrtu)/(c+sqrtu),
+zeta_t=(t+sqrtu)/(t-sqrtu). No cheap t-menu coverage proved.
+All T candidates still cost soft RT. Aggregate torus union has
+sum_(d|ell+1,d<=R)phi(d) elements, not sum_e e distinct points.
+
+Mixed-tree Dickson coefficients: d_(k+1)/d_k=n_k/b_k with
+n_k=-a(e-2k)(e-2k-1),b_k=(k+1)(e-k-1),q=floor(e/2),Q=prod_(k<q)b_k.
+All beta^(Q*d_k), and beta^(Q*d_k*A^(e-2k)), cost soft e;
+the latter uses b_k*A² and initial base beta^(A^(e mod2)). Q is
+r-smooth for e<=r, preserving BOTH composite local supports exactly.
+Actual lists beta^(Q*D_e(Ai,a)),beta^(Q*D_e(j,a)) still cost soft eT
+by Horner. For a>0,T²<=4a every cross exponent difference is positive
+by split-real versus conjugate-root trace bounds. No coverage follows.
+Cayley binomial coefficients also have soft-e startup with (2e)!
+scaling; that scale can ADD composite support through primes<=2r.
+Its paired-label test is not a T² Cayley coverage theorem.
+Literal integer subproduct MPE has Theta(T²logT) coefficient bits;
+this only excludes that implementation, not specialized evaluation.
+
+Ford1(v),6 refute an all-ABSTRACT-prime near-cube-root divisor contract
+even with fixed polylog slack; take half the desired lower endpoint
+to handle closed intervals. This is not an actual semiprime failure
+family and does not dismiss the whole-degree direct-hit filter.
+Generalized Cheon supplied subgroup indices include one>=sqrt(ell-1),
+so the present low-degree ladder does not provide those inputs.
+
+Paired distributed cover prod_(u,v<=r)(u²N²-v²) still costs soft r²
+action, soft r active space, including restrictions/saturated-row
+short-factor descent. Its first N-adic jets are paid scalar residues
+but do not provide the group action. Exact formal-top-term omission
+loses the forced composite-order collision; no generic lower bound.
+
+Details/reviews: /tmp/semiprime-dickson-list-acquisition-20261023 and
+latest journal. Preserve prior prefixes/all270 entries. No new Lean
+backend, example campaign, publication, whole-family acquisition or
+sixth-rate claim. Need arithmetic coverage AND a paid candidate query.
+
+Further positive synthesis: T_e=floor(r/e), E_i=floor(r/i). Run
+UNSCALED fixed-label Dickson recurrences at A*i and i through E_i,
+then bucket by e. Sum_i E_i=O(rlogr), so all lists of lengths T_e
+are acquired in soft r; explicit-list MPE/localization summed over
+e also costs soft r. Q_e need not be applied: it preserves support.
+The same positive-difference guard and one selected QRH long recovery
+apply. All Cayley pairs e*t<=r also cost soft r by fixed-t scans.
+This genuinely acquires/searches a nonrectangular family, but its
+all-input collision coverage is OPEN. It is not the full grid or
+the original guaranteed-covered long query. Do not confuse those.
+
+## Charlier full-list acquisition; hyperbolic coverage closed negatively, 2026-10-23
+
+Previous turn's soft-r hyperbolic Dickson/Cayley menu is NOW PROVED
+not to cover all actual prepared inputs. Do not keep its coverage OPEN
+or try to prove that exact false contract. No full-controller or general
+factoring lower bound follows. Full sixth-rate goal remains active.
+
+Constructive replacement: monic parameter-one Charlier
+H_n(X)=sum_k(-1)^(n-k)binom(n,k)X_under_k,
+H_(n+1)=(X-n-1)H_n-nH_(n-1),
+H_e(X+1)=(X+1-e)H_e(X)-XH_e(X-1).
+For X0=N+1-C, TWO seeds via degree recurrence cost soft e; argument
+recurrence yields ALL beta^H_e(X0+i),i<T in soft T. Other list
+beta^H_e(j),j<T has small seeds H_e(0)=(-1)^e,H_e(1)=(-1)^e(1-e).
+All actions have O(logN)-bit integer scalars; no scalar division, roots,
+denominator or hidden order. Full fixed-degree e~T~r lists AND ordinary
+ring MPE collision query/localization now cost soft(e+T), unconditionally.
+This is a different polynomial family, not fast Dickson evaluation.
+
+Public guard X0>T+4e makes EVERY cross integer gap positive: roots H_e
+lie in(0,2e) by tridiagonal Jacobi LL^t/Gershgorin. Selected nonzero K
+has soft-e bits; compute via balanced integer2x2 matrix products, not
+naive growing-integer recurrence. General saturated recovery uses the
+inherited explicitly QRH-based long consumer once, costsoft(e+r).
+No uniform degree/centre/collision cover is proved for Charlier.
+
+Delta H_e=e H_(e-1). At an adjacent collision, roughness gives
+D|H_(e-1)(x), and coprimality of consecutive polynomials gives
+gcd(H_e(x),D)=1: colliding value retains full local order. No forced
+root in a short interval. General gaps are sums of lower H, not old
+falling outer factors. Centered coefficients rule out nontrivial affine
+deck transformations for e>=3, and affine power/Dickson equivalence
+for e>=4; no general monodromy/fibre bound. H_ell(X)=X^ell-X-1 is
+constant on F_ell but its unknown degreeell>16r² is not paid.
+
+Actual hyperbolic no-hit proof: degree<=e in c=(N+1)/2. Odd-e c
+coefficient2ei*u^((e-1)/2) nonzero; evene2k eitherconstantnonzero
+or c² coefficient4k²i²u^(k-1) nonzero. Cayley primes dividing positive
+L_e(t) are removed using proof-side product logO(U R²logR).
+KP Lem19/20 give dense balanced bins of primes with ell_P>P^.677
+and ell_P|ord_P(2). Root unionsO(U R²logR), R~X^(1/3), delete only
+o(X/logX) partners per P. Apply both sides; remove cross-period cases.
+Infinitely many actual pairs remain with public beta=(2^(N-1))^((r!)^h)
+having exact distinct prime local ordersell_P,ell_Q>16r² and NO defined
+hyperbolic leaf at EITHER field, all colours up to fixed polylog envelope.
+Stronger: since(P−1)/ell_P<r, EVERY r-rough large-order legalprepared
+base has exactlyell_P atP, likewiseQ. No-hit is uniform over allsuch
+bases, including adaptivechoices INSIDEtheinterface. Full-controller
+survival and alternative bases outside the interface remain unclaimed.
+Full e~T~r Charlier root-degree charge r³ is outside this obstruction.
+
+Native polynomial F_e,H(X)=H^e H_e(X/H) preserves original hits but
+literal targets costsoft(eJ), seedssoft(e+L), J~r,L~r²: no rate gain.
+Details/reviews/current validation: /tmp/semiprime-hyperbolic-coverage-20261023.
+Preserve all prior prefixes/all270 frozen entries. No Lean backend,
+sample campaign or new factoring exponent. Need a uniform COVERED
+acquired family plus full executable/Lean bit integration.
+
+## Charlier pairing audit and parameter-N construction, 2026-10-23
+
+Latest pass adds paid constructions/identities but NO uniform collision
+theorem or factoring exponent. Full sixth-rate objective remains open.
+Do not count this as the requested substantive arithmetic advance.
+
+Nearby centres share one interval of length T+W-1, acquired soft(e+T+W).
+Already acquired secret lists admit ALL off-diagonal self-collisions via
+product_i P'(U_i)=sign*product_(i<j)(U_i-U_j)^2, soft T with localization.
+Far-right root guard makes selected integer gaps positive. Neither query
+forces a hit. Full all-gap charge eT²~r³ is outside old hyperbolic obstruction.
+
+General Charlier parameter a=N centralizes secret A=a+1. N-power/order
+screen factors or preserves BOTH ORIGINAL orders and proves gcd(N,d_P d_Q)=1:
+if P|d_Q, new Q-order<=d_Q/P<Q/P<r²/256 while P-order stays>16r².
+Ordered2x2 output tree acquires both lengthT lists scaled by N^(T-1) in
+soft(e+T), with no roots/inverses; common scale preserves exact full-order
+support. Near-N guard B=e+2ceil_sqrt(Ne), N>2(B+T) gives every cross gap
+nonzero. Setup soft r once; one general long recovery retains QRH.
+
+Central H_e(a+x;a) has degree<=floor(e/2) in a; FULL cross gap against
+ordinary H_e(j;a) still has degree e. Known factor a may cancel after screen,
+but no forced root follows. H2(a+1;a)=H3(a+1;a)=-a is INTEGER tautology,
+not factor evidence. Cubic extra roots need unknown-field sqrt(3a+1).
+
+PARAMETER-ONE self-duality gives a cheap ORIGIN list at a supplied
+O(log N)-bit distant degree only, not secret startup. Do not transfer this
+unscaled startup to a=N: its large common action remains unacquired.
+For oddprime ell, H_(m ell+s)=H_ell^m H_s, H_ell=X^ell-X-1; evaluated
+block sign(-1)^m is essential. No Lucas/Frobenius modulo composite N.
+Native encoded determinant tests F_(e+1)-F_e, not the integer CD numerator;
+its covered query still costs soft((e+1)J+e+L), L~r². No cheap long norm.
+
+Details/reviews/validation: /tmp/semiprime-charlier-coverage-20261023 and
+latest journal. Need forced actual-order coverage OR paid original covered
+long query; then full executable/Lean bit integration. Preserve all prior
+prefixes/all270 entries. No new backend, example campaign or rate claim.
+
+## One-shot native remainder target, 2026-10-23
+
+For the ORIGINAL guaranteed query, acquiring R=P_L mod F ONCE for the full
+actual source in soft(J+sqrt L) suffices. The NEW routine need not support
+restrictions: monic MPE gives J row products, then a saturated single row is
+localized by the existing single-target interval evaluator in total softsqrtL.
+The original bounded global-leaf decoder finishes. Scalar-only output still
+needs a witness/restriction mechanism. This contract simplification was
+independently checked; it does NOT acquire R or improve the current clock.
+Current b+JL/b query optimizes at m^(3/2); desired shared work at b~m must
+avoid J*(L/b) evaluations. Exact doubled remainder retains shifted quotient
+term Q_h(q^(-h)X); paid transport inverses do not acquire it. See latest journal.
+
+## Initialized forced recurrence design, 2026-10-23
+
+User explicitly wants innovation in the fast recurrence algorithm. Current
+pass derives exact candidate states but NO cheaper whole query. Do not count
+old C/C^T coefficient-block actions as new; they are fully paid in20261016.
+
+Main next design: P=sum c_n t^n, D=1+sum d_j t^j, a=[t^n]P/D. Companion A
+with firstrow(-d1,...,-dJ), b=e1 gives x_(n+1)=A x_n+b c_n, x0=0,c0=1,
+c_(n+1)=r_n c_n, r_n=(q^L-q^n)/(1-q^(n+1)), r_L=0. x_(L+1) is ALLJ tail.
+Block product [[A^h,v_(k,h)],[0,c_(k+h)/c_k]] merges via
+v_(k,h+l)=A^l v_(k,h)+(c_(k+h)/c_k)v_(k+h,l). A-power actions and scalar
+ratios paid; the joint forcing vector is NOT. Terminal zero doesn't kill it.
+Equivalent transfer C+r_n u w^t has w^tC=0,w^tu=1; its product is
+C^h+f_(n,h)(C)u w^t. Rank1 correction still contains degree-h forcing.
+Need a new nonseparable algorithm for this initialized state, not J separate
+old block calls or a hidden polynomial-remainder oracle.
+
+Proper BM state R updates in softJ with paid inverse, including quotient
+exactly: U=A0D+R -> U'=D'S_pA0+S_p(RD(-t)). But initial R=P modD is unpaid.
+Cheap update alone does not solve acquisition; shifted quotient forcing stays.
+
+Alternative padded square covered query has acquired full pencil
+S D1-K S Q D0=[Y,xi1^t]. Dyadic Hadamard compression through S obeys
+T_h(SM)=S T_h(M)+T_h([S,X_h]T_h(M)); the product/correction contraction is
+still unpaid. Explicit low-rank ordinary-generator route fails ONLY for that
+padded square model; implicit algorithms remain open. Extra seed/row leaves
+keep bounded global recovery (<17H² versus global order>256H²).
+
+Details/reviews/validation: /tmp/semiprime-one-shot-construction-20261023 and
+latest journal. Current query remains soft m^(3/2); whole sixth-rate goal
+active, with full executable/Lean bit integration still required. Preserve
+previous prefixes/all270 entries. No sample campaign or backend expansion.
+
+## Acquired fixed-power core; coupled correction still open, 2026-10-23
+
+New finite-ring auxiliary operation: C=multiplication by X mod monic F,
+D=diag(q^i), M=(I-C)D. For k<=J, M^k e0=P_k(C)e0. Expanding
+F=sum nu_k P_k in the q-Newton basis gives ACTUAL charM=kappa_J sum nu_k T^k.
+Both basis conversions are softJ finite Toeplitz convolutions: Q_i=(q;q)_i,
+forward kernel1/Q_n, inverse kappa_n/Q_n, with all Q_<=J certified units.
+Thus M^L on supplied vectors costs soft(J logL), without collision inverses.
+This is a fast auxiliary core, NOT the original R_L once L>J.
+
+Exact initialized correction: w_i=f_i(q^J-q^i),u=(I-C)w,v=e_(J-1),
+R0=e0,s0=0; R'=MR-s; s'=(I-q^(n+1)C)s-q^n*u*(v^tR).
+Its direct cost is JL. R_L=M^L e0-sum M^(L-1-n)s_n still needs joint forcing.
+The shear eta=s-(M-I+q^nC)R gives R'=(I-q^nC)R-eta,eta'=Meta,eta0=0;
+this tested gauge restores the original product, not a cheap correction.
+
+Fresh common-moment state: in paid q-grid gauge C=diag(q^-r)+alpha beta^t,
+tau_n=beta^t y_n has startup0 through J-2, then1. H_s(n)=sum_(k<n)
+q^((s+1)k)tau_k/(q;q)_k decodes ALL y_L via one scaled q-binomial
+convolution plus adjacent factorials in soft(J+sqrtL). H_s(J) is explicit
+and nonzero. Acquiring H(L) from its coupled rank-one feedback is still
+unpaid; geometric MPE on unknown tau coefficients does not initialize it.
+
+Dyadic masks telescope jointly: T(S E_B)=S T(E_B)+q^-B[S,Z]Q
+-q^-B T([S,Y]Q), T(E_B)=q^(1-B)E1. No exponential symbolic correction tree
+is needed. Supplied rank-k masks have paid Cauchy actions, but the product
+contraction remains unpaid. Reciprocal cancellation with diagonal middle
+does not erase the actual middle S or the adjoint residual.
+
+Details/reviews/validation: /tmp/semiprime-forcing-acceleration-20261023 and
+latest journal. Whole-query bound unchanged at soft m^1.5; sixth-rate goal
+and executable/Lean integration remain open. Pursue a jointly initialized
+boundary evaluator, not repeated block actions, supplied forcing vectors,
+uncovered cheap families or finite examples. Preserve all prior prefixes
+and all270 frozen entries. No new backend or factoring-rate claim.
+
+## Scalar feedback is solved; static terminal compression remains, 2026-10-23
+
+New executed operation: for ANY supplied length-h causal RHS, the moment
+block inverse is B^-1=D^-1 T_k Toeplitz(G*/F*) T_k^-1 D. Here
+(T_k u)_i=sum_(t<=i) kappa_t q^(kt)[i choose t]_q u_t, D_i=Q_(k+i)/Q_k,
+F*=det(I-zC),G*=det(I-zLambda), both constant1. Finite q-Pascal convolutions
+and ordinary series division pay soft(J+h), including complete block action.
+Relative D avoids acquiring Q_k. No collision determinant is inverted.
+Independent nilpotent-q-grid derivation agrees; count as ONE block solver.
+
+Native short input is now ACQUIRED: U(z)=N0/F*=sum u_t z^t,
+N0=-q^(J-1)(G*-F*)/z, y_J=-q^(J-1)alpha. For h=L-J,
+H_s(L)=H_s(J)+q^((s+1)J) sum_(i<h) q^((s+1)i)(T_Ju)_i/Q_(J+i).
+The inner feedback inverse and numerator are paid. This STATIC terminal
+projection without h entries is the exact remaining algorithmic target.
+Expansion costs soft(J+L), worse than the old soft(J+sqrt(JL)) query.
+
+Negative-grid S_h(q^-r),r<=J, is paid by rational-truncation MPE and one
+convolution in soft(J log(h+1)). Proper denominator gcd factors; exact poles
+use derivative quotients with units from F*'s separated roots. This does
+not acquire the far positive endpoint or the terminal projection.
+
+Details/reviews/validation: /tmp/semiprime-moment-feedback-20261023 and latest
+journal. Whole sixth-rate goal remains active; no query exponent advance.
+Preserve prior prefixes/all270 frozen entries. Do not repeat the now-solved
+block inverse or substitute supplied long coefficients for terminal
+acquisition. Full executable/Lean bit integration remains after that gap.
+
+## Terminal attempts remain above the required clock, 2026-10-23
+
+No whole-query acquisition advance this pass. All lower antidifference
+endpoints are now paid: E_s^-=sum_(r=1)^J q^(-(s+1)r)S_h(q^-r)/Q_(J-r),
+one geometric MPE from the acquired negative boundary. Keep the genuine
+explicit base at q^-J. Upper B_s(q^(h-1)) remains unpaid; rational reversal
+keeps a positive-index q-binomial transform, not the cheap negative map.
+
+Entire terminal R obeys R N=A R+a b^T. A,a,R1 and guarded rational A
+actions are paid; residual b^T N^t g(N)1 is EXACTLY the old filtered
+q-binomial tail. Native boundary a is cyclic with acquired unit weights;
+output/residual interconvert softJ. This is no smaller acquisition problem
+or generic lower bound. Do not report more gauge changes as a rate gain.
+
+After prefix guard, N0 and every ordinary tail Nh remain units moduloF*;
+their ordinary Pade order cannot expose a later native hit. Dyadic powered
+pole probes retain exactly the selected SINGLE-SEED support. Non-dyadic
+support needs explicit hidden-order divisibility not supplied by coverage.
+These scoped checks are not a counterfamily against all possible queries.
+
+Details/reviews/validation: /tmp/semiprime-terminal-projection-20261023 and
+latest journal. Best query stays soft m^1.5; sixth-rate goal active, full
+executable/Lean bit integration still required. Need genuinely new fused
+terminal evaluation or actual-source arithmetic selection. Preserve all
+prior prefixes/all270 frozen entries; no examples/backend/rate claim.
+
+## Scalar determinant and weighted-prefix audit, 2026-10-23
+
+No new whole-query rate. For D=product(1-Y_j*z), P=product_(i<L)(1-q^i*z),
+a_n=[z^n]P/D, exact scalar is (-1)^(JL)det(a_(L+r-c))_(r,c<J).
+Unit-triangular Sylvester elimination proves this over Z/N even at hits.
+Literal far-boundary acquisition remains unpaid: J coefficients starting
+n0=L-J+1 reconstruct P modD as z^n0*(D*sum_(t<J)a_(n0+t)z^t modz^J)
+modD, in soft JlogL. Direct determinant acquisition is still open; this
+is NOT a lower bound for scalar algorithms.
+
+Complete cyclic-kernel norm is cheap from supplied split roots and a
+certified common separated period, but native q-orders>16H>L do not
+supply that kernel. Bostan--Caruso--Schost2014 section4.2 uses COMPLETE
+additive characteristic-p orbit, not arbitrary prefixes. Formal binomial
+completion needs the missing period; powered-root probes keep old support.
+
+Weighted Euclidean rays plus public prefix T=max(16m^2,ceil sqrt(N/m))
+give old soft(m+(N/m)^(1/4)) controller, including every window and
+nonzero short-bit saturated leaf. m^(5/4) scale is ALREADY recorded.
+At m~N^(1/6) prefix alone costs m^(5/4): accelerating only its shorter
+query would not prove sixth rate. T=soft m^2 keeps prefix softm but
+retains worst horizon soft m^2. Do not silently discard prefix work.
+
+Reports/reviews/validation: /tmp/semiprime-scalar-native-20261023 and latest
+journal. Canonical query remains soft m^1.5; goal active, no new exponent
+or all-input obstruction. Full bit/Lean composition remains unfinished.
+Preserve previous prefixes, all270 frozen entries and concurrent RH files.
+
+## Factor-aware residue target remains unacquired, 2026-10-23
+
+No query exponent gain. Direct target rho=Res_t sum_(i in I)
+[-F'(q^i-t)/F(q^i-t)] has local hit counts0<=h_p<=J<p; a factor-or-rho
+routine soft(J+sqrt|I|) on every restriction would localize a native hit.
+Count recovery is OLD. Laurent expansion/CRT is proof-only; nonunit
+constant denominators forbid assuming an acquired series inverse.
+
+Literal qMAP probe D/P_L has paid residual1/(1-X) since partial-fraction
+weights sum1, even when hits cancel poles. Local full trace d/(1-X^d)
+proves that this probe remains nonsummable at both primes. Twisted weight
+polynomial W=C*B/Q_(L-1) has a paid short B and single scalar evaluation,
+but no covered zero-coefficient-to-root selector. Do not count it as one.
+Explicit Jacobi/HGCD and resultant reciprocity do not acquire implicit
+restricted-product symbols. Candidate-factor f_j(h)=H^-1*x*(a*x+ell)
+has old W! coverage channel; other channel needs a new coverage theorem.
+
+Reports/reviews/validation: /tmp/semiprime-factor-aware-recurrence-20261023.
+Canonical query stays soft m^1.5; goal active, bit/Lean completion open.
+Preserve previous prefixes, all270 frozen entries and concurrent RH files.
+
+## Stabilized hit valuations and a short uncovered filter, 2026-10-23
+
+No whole-query exponent gain. After the OLD charged N-power/order screen,
+q1=q^N,Z=Y^N modN² preserve hits and lift them modp². Acquired F1=prod(X-Z)
+gives d_i=F1(q1^i-N) with exact local valuation1 at hits,0 otherwise.
+Integral fraction -N F1'/F1 locally gives the0/1 indicator but its nonunit
+division is unacquired. Matrix[[d,-NF1'],[0,d]] has terminal W(N),NW'(N),
+still soft sqrt(Jh). W alone at precisionN^(J+1) gives exact factor-or-count
+by maximal N-power division, but costs soft m^2.5. Precision limitation is
+for this whole-product engine, NOT all restricted factor queries.
+
+Short T_j(h)=m(a_jh+b_j)-a_jj,h<m product is acquired softm by additive
+factorial MPE; all leaves nonzero and |T|<N. Coverage unproved; if both
+primes>m³-m² its coordinate envelope proves a miss (no preparation-survival
+family claimed). (j,h)->TmodH bijects H-units. Completing b->b+mk,|k|<=m+2,
+and clipping tofactorinterval gives exactly old integer factorial search,
+softm^1.5. Do not omit this covering lift cost or infer a small palette.
+
+Full Hermite matrix has correct hit nullity and cheap selected moments.
+The tested J×J Bezout certificate has +P_hmodF as its highest-Y column;
+explicit matrix/generator acquisition still needs that remainder. Rank-only
+implicit algorithms remain open. Details/reviews/validation in
+/tmp/semiprime-residue-construction-20261023; goal active, bit/Lean work open.
+Preserve previous prefixes, all270 frozen entries and concurrent RH files.
+
+## Euclidean carries and scalar endpoint audit, 2026-10-24
+
+No whole-query exponent gain. Public nearest lifts contract one supplied
+length-m² interval to an acquired soft-m factorial query; selecting a
+covering small menu remains open. Complete interval family costs old
+softm^1.5. Scalar G(K) softm does not pay the whole K menu.
+
+Carry residues are gaps of <a,M>. For M=qa+b,
+S(a,M;z)=S(b,a;z)*prod_(1<=i<a,0<=t<qi)(z+bi+at), S(1,M)=1.
+Common-step blocking plus charged tails executes this in softsqrt(aM)
+per row, with acquired-denominator gcd handling. Literal all-row version
+emits Theta(m²) targets and costs softm². No shared aggregate gain or
+period-a_j coverage reduction is proved. Need to compress actual product
+acquisition, not just Euclidean metadata.
+
+Stabilized formal q-sum prefixes are all N-divisible and return the WRONG
+zero support at unit arguments. One seed denominator is cheap; the full
+sum at the new center is not initialized. Scalar adjoint/logdet jets are
+also paid softJ, but E'/E has at least h poles on EACH native residue
+field: one target supplies h distinct poles, multiplicity<=J<p prevents
+cancellation. This excludes exact degree-O(J) reconstruction for h>>J,
+not a fast endpoint-only evaluator. The short q-difference equation does
+not initialize orbit jets; this repeats the old unstable-quotient issue.
+
+Reviewed reports and preservation validator:
+/tmp/semiprime-recurrence-innovation-20261024. Goal active; canonical query
+softm^1.5, full bit/Lean completion open. Preserve prior prefixes, all270
+frozen entries and concurrent RH files. No examples/backend/rate claim.
+
+## Gap-complement sharing returns the old cover, 2026-10-24
+
+No exponent gain. For gap polynomial S of <a,m>, g=(a-1)(m-1)/2,
+F=2g-1, exact S(z)S(-z-F)=(-1)^g B_(2g)(z) uses NO hit-factor division.
+Native opposite tags realize this with K'=1-a-tau-K. Reflection-closed
+K menus merge by zero support into one O(m²)-length AP per pair; fill
+a=2 holes safely and handle empty a=1 separately. This completed family
+covers EVERY integer n<=m³ prime to m up to sign. Symmetric physical
+clipping gives exactly the old factor-interval factorial, with acquired
+sign. It is not a smaller N-dependent selector. Acquisition remains
+softm^1.5; no improvement to the separate N^1/5 factoring benchmark.
+
+Common-step transposition and paired triangles are exact, but the explicit
+shared evaluator still emits Theta(m²) starts. Recent explicit-input MPE
+and composition results do not acquire those products automatically.
+Reciprocal j*=N/j normalizes every transported lift class only by expanding
+its range; the normalized integer is the original O(m³) leaf. No blanket
+small-leaf unit screen transfers. Correct carry uses PLUS:
+t_j=(b_j*j+(N-a_j*j²)/m)/m, giving j*c_j=m²*t_j-N.
+
+Reviewed current reports and preservation validator:
+/tmp/semiprime-shared-triangles-20261024. Need an actual long-product
+acceleration or original q-recurrence endpoint acquisition retaining
+additional native information; another metadata folding is not a rate
+result. Sixth-rate goal active, full bit/Lean composition unfinished.
+Preserve prior prefixes, all270 frozen entries and concurrent RH files.
+
+## Translated cyclotomic jet audit, 2026-10-24
+
+No exponent gain. u=beta+zeta escapes old self-reciprocity theorem; its
+inverse,f=u^N,q=u^m² are acquired softm via beta^m+1 unit certificate.
+Actual selected-coefficient rows currently cost softm². ALL augmentation
+rows costsoftm but equal (beta+1)^(N+delta_j), the old scalar-list problem.
+e0 projection/weighted trace is rankone; original regular trace is not.
+The nonzero e0 summand exists only in the full cyclic ring, not Phi_m.
+
+Star ratio retains I. Z d/dZ does not descend: raw-power quotient carry
+cannot be dropped. Beta tangents do not preserve own Frobenius equality.
+Actual raw G² lift would expose m²I by logarithmic differentiation, but
+canonical etale lift y=Z(1-G/m) has zero derivative. Mixed natural lift
+has logderivative ell/u, differing from own raw power by UNIT Q/u modP.
+Thus this initialization fails uniformly. No translated q order/decoder
+is inherited from original beta.
+
+One supplied LOCAL native raw jet permits softm factor-or-I extraction
+via nonconstant-coefficient gcd, a paid scalar interval product/descent,
+and ORIGINAL beta leaf recovery. This is conditional, not jet acquisition
+or own-row selection. Even all cheaply supplied scalar indices modP leave
+the old softsqrt(JL) additive query. Do not count it as a newwholequery.
+
+Reviewed reports and preservation validator:
+/tmp/semiprime-translated-cyclotomic-20261024. Sixth-rate goal active,
+canonical querysoftm^1.5, full bit/Lean integration open. Preserve prior
+prefixes, all270 frozen entries and concurrent RH files. No examples or
+backend expansion establish a rate here.
+
+## Quadratic Gauss-period acquisition, 2026-10-24
+
+Paid positive result: power sums (-1+chi(k)tau)/2 plus fast series exp
+acquire the ENTIRE degree-(m-1)/2 period product in softm. tau²=D belongs
+to the nontrivial cyclotomic component; full cyclic Gauss square is
+D(1-e0), invariant rankTHREE. All nontrivial rank-two native rows and
+all compact rank-three relative-norm rows are acquired softm. This is
+more than the previous augmentation projection, but NOT a long-query gain.
+
+The tau coefficient of U(Z) has degree (m-3)/2 with leading coefficient
+1/2. A softm MPE/gcd palette of m-2 beta powers guarantees a factor or
+RAW W0=U/bar(U) nonidentity at both primes. No guarantee survives the
+public separator W1=W0^(N-Jacobi(D,N)); entire palette may lie in its
+kernel. Whole-group kernel is a separately detectable twin-prime case,
+which does not exclude a particular palette kernel.
+
+On a projected survivor, guarded 2-part removal and q=W^m² construction
+introduce no new unresolved global-identity branch. One complete softm
+q-order screen returns a factor or coprime odd local orders >16m².
+Complete first-block descent handles saturated order leaves. Norm-one
+collision equivalence holds even in the split algebra. Native torus row
+coverage and a signed sum/difference saturated decoder are proved under
+these acquired guards; the covered query still costssoftm^1.5.
+
+Antipodal Hilbert-90/Dickson folding has only constant degree gain: half
+the targets, twice the evaluation degree. Exact period dyadic identity
+has zero tested residual for EVERY exponent, not a row selector. Use
+one common public projection power across coupled points. Cheap K point
+values do not pay K order screens or K complete row families.
+
+Reviewed reports and preservation validator:
+/tmp/semiprime-gauss-period-20261024. Sixth-rate goal active; softm whole
+query, projected-point supply, and full bit/Lean composition remain open.
+Preserve all earlier prefixes, 270 frozen entries and concurrent RH work.
+
+## Binary-mask recurrence endpoint test, 2026-10-24
+
+Positive paid constructor: exact native index image modulo2^r is O(r)
+dyadic classes perrow, acquiredsoftm, not m*2^r enumeration. For
+f(v)=av+N/v on oddballs v0+2^t*z, k=v2(av0²-N)<t gives a full image
+class modulus2^min(r,t+k) by odd-derivative unique lifting. Refine only
+criticalballs k>=t (atmost4/level), stop2t>=r. Keep full carries and
+apply the public odd H^-1 affine output; next-bit images alone do not
+supply the necessary preimages. This filter preserves the native own I.
+
+No endpoint exponent gain. Even-a image is one parityclass; odd-a image
+contains a full class modulus<=128, so density>=1/128. Grouped scalar
+query and originalbeta saturated decoder are paidsoftsqrt(JL). This
+prices that completion, not a distinct-target or general lowerbound.
+Christoffel boundary/full-Hankel rank were already known and still
+retain the long P_L(Y_j) values. Compact moments are not a determinant.
+
+Tensor-norm alternative has genuinely paid inputs of sizeJ+sqrtL:
+F(XY) in R[X,Y]/(A_s,B_t), s,t~sqrtL geometric moduli. Scalar norm
+stillunpaid; rankst, innerdegreeJs, quotientrankt cannot disappear from
+the cost ledger. Generator closure/nonunits/restrictions need a new
+algorithm. Primary q-holonomic theorem stillhas coefficientdegreeJ.
+
+Reviewed reports and validator:
+/tmp/semiprime-recurrence-endpoint-20261024. Sixth-rate goalactive,
+wholequerysoftm^1.5 and full bit/Lean composition unfinished. Preserve
+prior prefixes,270 frozenentries and concurrent RH work.
+
+## Tensor elimination / q-hook normalization, 2026-10-24
+
+Executed first Sylvester Schur step: with C=A-B, c=lcC,
+h=c*b_(n-1)-c_(n-2), D=c²B-(cX+h)C has <=6 Laurent monomials per
+coefficient, acquiredsoftn. ALL formal principal pivot constants are
+signed square-Schur specializations at 1,q,...,q^(n-1). Short q-hook
+factors certify units, and shared q-factorial prefix products acquire
+every constantsoftn. Principal p_k(Z) has degree<=k²; reversing with
+that PUBLIC bound gives unit-leading polynomial inY, permitting exact
+monic-normalized R[Y]division BEFORE quotient reduction. Endpoint
+pivots neednotbeunits. FormalprecisionM costssoftnM; Z=Y^-1 is a unit,
+so short formal prefixes cannot be evaluated there by dropping tails.
+
+Geometric Cauchy connection/firstSchur/action are paidsoftt, but
+d_q=B_t(qY)modB_t is UNIT for the transverse q-shift. Its multiplication
+carry has rankt−1 ambient image; actual F commutator rank<=J with
+soft(J+t)action doesnotgive fastscalar norm. In inverse transport use
+RAW h(qY) before reduction; quotientscaling hmodB losesanothercarry.
+Within-grid q^s shift has oneseam but unacquired initial slicenorms.
+
+Early linear/quartic pivot norms supply only an adaptive properfactor
+branchsoftm; saturatedauxiliarypivots are NOT original beta leaves.
+Expanded tensor completionsoftm² is worse than existingquerysoftm^1.5.
+Scalar norm of additive mixed Schur updates remains unpaid. No general
+lowerbound, all-input rate gain, examples or backend expansion claimed.
+
+Reviewed reports/validator: /tmp/semiprime-tensor-norm-20261024.
+Sixth-rate goal active; actual endpoint and full bit/Lean proof remain
+open. Preserve prior prefixes,270 frozenentries and concurrent RH work.
+
+## Character/native pivot endpoint test, 2026-10-24
+
+Positive complete refinement: first linear and second unit-leading
+quartic pivot supports handledsoftm, INCLUDING saturatedauxiliarynorms.
+Evaluate EACH at t knownnodes andgcd individually; absentproperfactor,
+badnodesarepublicglobalzeros, atmost1+4. Acquireoriginal n-point slice
+ateach; originalhitsdecode, unitslicesrecord/remove bymonicdivision.
+Remaining pivots becomeunits withsoft(n+t) totalwork. Latermixedpivot
+supportsareunacquired; noearlypivotcoverage orqueryexponentgain.
+
+Exactfixeddegree identity is Res(C,D)=(-1)^n*c^(2n-4)*Res(A,B).
+Reviewfixedmissingsign. Evenpowerseraseunitphase, NOTzero support.
+Nativecommon-scale covariance extends toALL pivots. Firstquartic
+moment cancellationsretainmarkedtraces; distinctopposite centersremain.
+Forinverse j*=[N/j]_m, A=a_j,B=A^-1 modm,rho=(AB-1)/m,
+B(delta_j+1)-(delta_j*+1)=mκ, κ≡rho(1-j)modm. NonzeroifA!=1,j!=1;
+boundedglobalqshiftscannotremoveit. Thisisaboutnormalizedβ^(δ+1);
+fulltargetskeepextraphaseβ^((N-1)(B-1)). No generallowerbound.
+
+Knownodd-order torusrootR, W=R² gives exactchordnormsquare half;
+allunitnormalizerspaidsoft(J+sqrtL), butterminalG isUNIT*F_W, degreeJ
+andhorizonunchanged. Jacobi remainsknownphase timesunpaid0/1mask.
+Scalarcoherentrootsmustthemselveshaveoddorder; arbitraryrootnotenough.
+Keepconditionalperiodsurvival/signeddecoderseparatefromoriginalβ.
+
+Reviewedreports/validator: /tmp/semiprime-character-endpoint-20261024.
+Wholequeryremainssoftm^1.5; sixth-rategoalactive, bit/Leanproofopen.
+Preservepriorprefixes,270 frozenentries andconcurrentRHwork.
+
+## Compact recurrence / square-LCM certificate, 2026-10-24
+
+K=lcm(1..m), M=K^2 is a paid soft-m projection. For d<m^3, if
+r=d/gcd(d,M)>16m^2 then r is m-rough: any surviving p<=m forces
+the removed p^(2floor(log_p m))>m and hence r<m^2. On the prepared
+smaller-prime branch the coindex<m/16 makes r EXACT full m-rough(P-1),
+prime or two primes counted with multiplicity. Do not transfer this
+shape to Q. Factored global-kernel tree and ordered NoHit screen close
+all branches; optional q projection needs its own screen. Same
+asymptotic cost as old purification, not a query exponent gain.
+
+Quadratic lists f_N(mb),f_N(a), f_N=x(N-x), have genuinely acquired
+second-difference group recurrences and soft-m cross-evaluation. Gap
+Delta=(mb-a)(N-mb-a)>0 is short, decoded on guarded projected gamma',
+NOT original beta with long M*Delta. Their UNIVERSAL COVERAGE IS FALSE:
+P900143,Q909863,N819006810409,m97,beta4 has prime local orders450071,
+454931 satisfying all preparation margins and unchanged by smooth
+projection. N residues9721,445212 miss v interval[97,9505]; every
+quadratic pair is a unit. Exact fixed replay proves entire-family miss.
+Do not reopen unchanged quadratic lists as a coverage conjecture.
+
+Inverse-row fused phase cancels exactly to beta^(-m*rho_j*(j-1)); own
+condition is weighted Fermat beta^[m*rho_j*(j+mh-1)]=1. Still h~m^2,
+varying bases; exceptional zero-rho rows kept in paid original queries.
+No general recurrence lower bound follows. Separate rough-factor
+divisibility of {uN-v} does not give a whole-order group collision;
+simultaneous ratio-order predicate remains unacquired.
+
+Reviewed reports/replay/validator: /tmp/semiprime-compact-cover-20261024.
+Guaranteed full query stays soft m^1.5. Sixth-rate and bit/Lean proof
+open; goal active. Preserve prior prefixes,270 frozen entries,RH work.
+
+## Terminal recurrence / generic-circuit recovery, 2026-10-24
+
+No new guaranteed acquisition bound. Actual Hankel/Toda moment family
+F*(Zu)/A*(u) has paid scalar-vector startup and correct resultant norm.
+Executed tau3 determinant and q-contiguous tau2 update retain additive
+mixed norms; full-support Toda cancels unknown amplitude. Original-grid
+E1*F1=E0*Fend gives UNIT multiplier c and E1=cE0, NOT a defined E1/E0
+at coveredzero E0. Endpoint decoding stays <4H. No absolute mask start.
+
+Complete logn-pivot cleanup plus actual head/cofactor and nextdoubleblock
+are paidsoftm; taildegree stillTheta(m), explicitlargerstatekt. This is
+a supporting helper, not wholequery progress or a lowerbound.
+
+Generic size-C scalar circuit must compute an identity in INDEPENDENT
+Fcoeffs, with actual unit denominators. Native-beta-only/Booleanoracle
+does not license AD. First gradient recovers singlehit; adaptiveHasse
+finds minhitcount h, propergcd ifcounts differ, or unita_h ifequal.
+Costsoft(C(h+1)), notfree. New direct rootstatistic:
+[z^(h-1)] dE(F+z)/dYj = -a_h F'(Yj)*localhitindicator. Shortconvolution/
+MPE andgcds identifyfactor/commonoriginalhitrow, noNewton/integerh
+divisions needed. Original rowlocatorcostsoftsqrtL remainspaid.
+
+UNIFORM genericcircuit can insteadpad rowrestrictions andbisect at
+soft(C+J+sqrtL), avoidinghfactor. Zero padding needsunrestrictedcontract;
+forunit-separatedroots obtainJdummy q^(u-s) froms1..3J viaoriginalF
+MPE/gcd, discardglobalbad<=J, orreturnproperfactor. Shortqguard makes
+dummyseedfactorsunits; their numericlongproductneednotbeacquired.
+Pointwisevalidtrace/native-onlycircuit doesnotimplyuniformpaddingvalid.
+
+Reviewedreports/validator: /tmp/semiprime-terminal-recurrence-20261024.
+Fullguaranteedquerystillsoftm^1.5; sixthrate/bitLeanproofopen, goalactive.
+Preservepriorprefixes,270frozenentries,concurrentRHwork.
+
+## Conductor-first native character attempt, 2026-10-24
+
+Choose primeell~N1/6 FIRST thenrowmodulusk=ell−1; smallorderkcharacter
+conductor andpubliclogs nowpaidsoftk. Compositeunit-tag source/coverage/
+delta-dedup/originaldecoder valid; keepactualqscreen afterβ^(k²).
+AllnativeE_j andH divisible4; knownquarterexponentspreserveALLscalar
+hitmasks sinceβordersodd, butJ,Lunchanged. Squarefibersmaymany; inverse
+nonzero-phase primeproofnottransfer. Kroneckerresidueissueonlyv2k1,
+notv2k2 (2charactersquaredtrivial). Odd row-content extractionneedsguard.
+
+Evenk GaussD=e0+ell*X^(k/2)*(1−e0). Sharedantipodalunitproducts paid,
+but EVERYrawdifferenceTj−qG^i haszeroe0component; fullcyclicnormalways0.
+PrimitiveRamanujanprojector+publicCRTunitgroupgenerators+binaryorbit
+products acquireprimitiveNormofONEACTUALrankkvectorsoftk, zero-safe.
+Thisdoesnotacquirefullnativeweightedrows orlongproduct. Galoisorbit
+shortcut changesbothweightedtargetsandseeds. Multiplicativeideals
+do notcomputeunit-minus-one mixednorms.
+
+Rj=D^(−Ej/2)Tj,Q0=D^(−H/2)qG normone andRjR_-j=Q0^tau;
+pairdifferencesstillneedmixedtraceS_j. β-coupledVj=β0^Ej Rj gives
+(f,barf)=(f,β0^(2Ej)−β0^(2Hi)). OnlySAMELEAFpairedhits certifyoriginal
+β0decoder; unpairedprimitivezeros doNOT. Group-ringP−ρj annihilates
+zero-grade intermediateu^(Q−aρj), notrawGaussu withauxFrobeniusphase.
+
+ExactTj^j=qG^c_j ρ_(j^-1)(Cj)^N Cj^(−a_j*j). Actualsharedprefixstream
+fixediseedscalar costssoftk²time,softkmemory; notanoutputlowerbound.
+Poweredpairedβbridge needsPAIDboth-k-roughorders tocancelj.
+
+Reviewedreports/validator: /tmp/semiprime-native-character-20261024.
+Wholequerysoftk^1.5unchanged; one-sixthandbitLeanproofopen,goalactive.
+Preservepriorprefixes,270frozenentries,concurrentRHwork.
+
+## Uniform quadratic family and scalar recurrence, 2026-10-24
+
+New constructor: find negative fundamental D with Jacobi(D,N)=-1 in
+soft N^(5/32), using the accepted cubefree nonresidue bound and explicit
+trial-division fallback on the finite failed-scan set. Synchronize even
+k=2|D| ceil(ceil(N^(1/6))/(2|D|)); k=Theta(N^(1/6)). Run the original
+composite-k beta setup, INCLUDING its actual beta^H screen, H=k^2.
+
+In B=(Z/N)[tau]/(tau^2-D), W=(1+D+2tau)/(1-D) is an acquired norm-one
+unit. Exactly one unknown local algebra is a field. ALL native targets
+V_j=beta^E_j W^[ell_j+chi_D(j)(N+a_j)] and z=(beta W)^H cost soft k.
+Own coverage is preserved. Retain raw tags: delta-only dedup is unsafe.
+No W-order or torus-survival premise is needed. Short z-difference blocks
+are nonzero on the field side, so their nonunit norms immediately factor;
+the soft-k screen otherwise certifies all required short units.
+
+Saturated ORIGINAL norm leaves imply the paired beta condition at the
+field side via (f,bar f)=(f,beta^(2E)-beta^(2Hi)). The scalar gcd then
+factors or gives the original bounded beta leaf/decoder. Localize BEFORE
+using this identity. This does not fix arbitrary full Gauss norm leaves.
+
+All actual h_j(i)=Norm(V_j-z^i) share the acquired monic recurrence
+(T-1)(T-t)(T^2-sT+t), t=beta^(2H), s=Tr(z). Four starts per row cost
+soft k; repeated eigenvalues/zeros are legal. Whole-row product has an
+explicit acquired annihilator of formal degree (J+1)^2 at soft J^2,
+NOT a lower bound on minimal order. Long product still costs soft k^1.5.
+
+Other executed tests: Gauss antipodes give two centered Dickson streams,
+but trace updates retain changing mixed products. Moving scalar quotient
+F_v=q^(-vJ)F(q^vX) makes norm merge exact; its start acquisition retains
+the old soft(J+sqrt(JL)) cost. Native chain bound <=5 is ONLY for the
+specified bounded global shifts, never arbitrary or local q-orbits.
+
+Reports/reviews/validator: /tmp/semiprime-recurrence-closure-20261024.
+One-sixth acquisition and full bit/Lean proof remain open; goal active.
+Preserve prior prefixes, 270 frozen entries, and concurrent RH work.
+
+## Quadratic long-product attempts, 2026-10-24
+
+Exact constant Somos-4 AND Somos-5 rejection for the initialized quadratic
+family. With h_n=Norm(V-z^n), P_n=prod_(i<n)h_i, the cleared Somos
+residual has an acquired monic order-ten annihilator. Guarded fitting
+and fixed-many start checks cost soft k, but NO continuing row can fit.
+At the nonsplit side, Norm(z^a bar(z)^b)=t^(a+b), ord(t)>16k^2,
+isolates spectral degrees. Distinct z/bar(z) contradict the two degree-one
+channels; equal z/bar(z) also contradicts short guards, including Tr(V)=0.
+Absorbing first zeros in P give a separate contradiction. Fixed unit
+quadratic gauges do not help. No general nonlinear-recurrence lower bound.
+
+Nodal division polynomials are actually initialized, but test v^n=1,
+not the covered finite segment v=z^i. Tate period Q=Z^L adds infinite
+tails and lacks specialization at finite-ring unit z^L: formal unit
+1-Q^d would map to zero. Do not substitute these torsion/net values for
+original bounded leaves or silently discard reciprocal companions.
+
+All antipodal sums/group polynomials are now acquired soft k in rank two.
+Centers beta^[2(N+a)]z^tau vary; inverse fusion keeps differing starts
+and an unknown-P index carry. Safe all-start overcover has its own valid
+scalar decoder but costs soft k^2. Optional odd W projection preserves
+coverage; quarter masks equal only the PROJECTED family's masks. RERUN
+actual seed screens after changes; old split-side certificates do not
+automatically transfer. Neither row count nor horizon decreases.
+
+Universal block K_b(X,Y)=P_b(X)bar(P_b)(Y) has rank-one coefficient
+description, acquired soft b. Full evaluation still pays J floor(L/b)
+scaled states and returns old soft(J+sqrt(JL)). Checked primary batching
+and rectangular-MM guarantees do not improve the exponent here.
+
+Reports/reviews/validator: /tmp/semiprime-quadratic-product-20261024.
+No whole-query speedup; one-sixth and bit/Lean proof open, goal active.
+Preserve prior prefixes, all 270 frozen entries and concurrent RH work.
+
+## Quadratic torus supplier and paid point ideals, 2026-10-24
+
+Uniform deterministic soft-k BIT supplier now returns a factor or an
+ACTUAL norm-one W with BOTH local odd ord(W^H)>16k^2, H=k^2. Do NOT
+infer cross-prime order coprimality or N+1-projection survival. Maintain
+M<k dividing both p-chi(p); 2M+1 acquired injective Cayley parameters
+escape the two M-kernels or factor. Odd-project one selected point and
+run an actual ordered q_W screen. A small common projected order gives
+an actually factored O(log N)-bit raw annihilator; guarded prime removal
+gives a factor or exact common raw order d. Then lcm(M,d) at least
+doubles, or a common divisor >=k triggers the paid BOTH-sign AP search
+up to sqrt N, costing soft k. No small-order/kernel branch is left open.
+
+Use supplied W in all native rows and RERUN the actual beta-coupled
+seed screen. Its split-coordinate certificate is not inherited from
+q_W. Coverage and same-original-leaf saturated beta recovery survive.
+Only at the nonsplit side, odd beta^H/W^H orders divide p-1/p+1 and
+are coprime; the coupled seed there has order >C^2. This is not an
+additive genericity certificate or coprimality between different primes.
+
+Controlled public k=2c q: select one Jacobi-minus prime ell from the
+accepted discovery integer, take its negative fundamental D (or D=-4
+for N=3 mod 4), and choose public odd q!=ell by sieve/two Bertrand
+intervals. Actual new-k preparation stays soft k. At most two squarefree
+odd prime factors and v2(k) in {1,3,4} imply each EXACT integer-delta
+fiber has <=16 tags via N^-1 delta=(j^-1-1)^2-1 mod k. The number M
+of norm fibers is >=phi(k)/16>=k/60; this is degree accounting only.
+
+After exact actual-target dedup, monic derivative MPE gives soft-J
+factor-or-unit target separation; no J^2 pair scan. Interpolate the
+<=17 coefficient functions of norm-fiber F_d(U) against separated
+n_d=beta^(2E_d). This acquires the TRUE auxiliary-coordinate point
+ideal (G(T),T-X^2+DY^2,H0,H1) with O(k) explicit coefficient slots.
+Faithfully flat quadratic CRT proves exactness, not just a vanishing
+curve. T substitution may expand to k^2; no balanced original-bivariate
+Groebner basis follows automatically.
+
+Coordinate-fiber derivative guards separately acquire exact monic
+component ideals in soft J. A measured rectangular s*d=n profile with
+s,d=O(sqrt n) yields genuine low-degree complete-intersection equations;
+no theorem supplies that profile uniformly. Public-label RUR has degree
+n and no free inverse projection. Actual one-index membership/localization
+retains original labels and costs soft n, with proper/saturated cases safe.
+
+Original fixed W has actual D=-3 torsion collapse to the scalar line;
+eta=2 there, eta=1 otherwise removes characteristic-zero torsion, with
+rows/changed seed recomputed and screened. That fixed repair does NOT
+certify finite-field orders; the uniform supplier above is stronger.
+Neither makes a balanced coordinate profile automatic.
+
+For two ACTUALLY supplied degree-O(sqrt J) equations, acquire the full
+triangular O(J) spectral denominator, two numerators and ALL recurrence
+starts in soft J. Spectral Pade/gcd does not find SAME-index joint zeros.
+Expansion plus original-target cleanup costs soft(J+L)=soft k^2.
+The covered guaranteed query remains soft(J+sqrt(JL))=soft k^(3/2).
+No full-query speedup, one-sixth theorem or bit/Lean completion claimed.
+Preserve prior prefixes/frozen entries and concurrent RH work; goal active.
+
+Exact source pins and independent PASS reviews:
+
+- [torus-order-supplier.md](/tmp/semiprime-quadratic-ideal-20261024/torus-order-supplier.md): `1f3033cc85c1b6798a188daa7b7c32d702b87d2cb3401e3e1f1afe6cb3a4e9bc`; [review](/tmp/semiprime-quadratic-ideal-20261024/torus-order-supplier-review.md).
+- [ideal-literature.md](/tmp/semiprime-quadratic-ideal-20261024/ideal-literature.md): `90f760d067f9de61a2950289c4f8aceba013cba521a2e4078053c2c2916ef77b`; [review](/tmp/semiprime-quadratic-ideal-20261024/ideal-literature-review.md).
+- [point-ideal.md](/tmp/semiprime-quadratic-ideal-20261024/point-ideal.md): `eefa209ef7189a374cf3eaefe4fb85b2376d7f85814f72fdc90fe585df504f11`; [review](/tmp/semiprime-quadratic-ideal-20261024/point-ideal-review.md).
+- [ideal-seed-query.md](/tmp/semiprime-quadratic-ideal-20261024/ideal-seed-query.md): `25b326ed8a0dd0c0b3f81a7b997c130c79baec13b0b68f077ec0643b8f20159a`; [review](/tmp/semiprime-quadratic-ideal-20261024/ideal-seed-query-review.md).
+
+## Rough torus supply and joint seed graph, 2026-10-24
+
+Stronger uniform supplier is paid: factor or BOTH k-rough local W orders
+>16k^2 in soft k BIT work. Use fully factored
+E=prod_(ell<=k prime)ell^floor(log_ell(N+1)), bitlength soft k, not the
+old 2-part projection alone. H=k^2 does not change the surviving orders.
+On a small common projected order r, RAW annihilator K=E H r is WIDE.
+Do not call the short-annihilator beta decoder or independently power
+by K/ell for every ell. A complementary product/exponent tree acquires
+all R^(K/ell^v_ell(K)) at total soft bitlength(K). This is established
+Celler--Leedham-Green machinery (Sutherland thesis, Section7.4 Alg7.3).
+Norm-gcd threshold searches separate differing local prime valuations
+or certify the SAME raw order d. All leaves together cost soft k.
+Then d is actually O(log N)-bit, divides both p-chi(p), and feeds the
+previous lcm(M,d) doubling / exact BOTH-sign AP escape. All rounds soft k.
+No N+1 projection or cross-prime coprimality. Rebuild native targets and
+RERUN the changed beta-coupled seed screen before the old query consumer.
+
+Joint norm/angular short seed graph is genuinely initialized:
+t=beta^(2H), v=W^H, B_b(T)=prod_(a<b)(T-t^a), C_b(t^a)=v^a.
+Exact ideal (B_b,Y-C_b) costs soft b. With n=b-1 its leading coefficient
+is prod_(r<n)(v-t^r)/prod_(r<n)(t^n-t^r). Nonsplit norm/order guards
+certify the numerator nonzero there; actual norm-gcd gives factor or
+unit leading coefficient. This interpolant has EXACT degree b-1;
+no general implicit-ideal/nonlinear-recurrence lower bound follows.
+
+Whole continuation acquires (n_j*t^(-bg),u_j*v^(-bg)) for J*floor(L/b)
+states. Same-state joint tests and original-label localization are safe,
+including split angular zeros between norm-one values. Total remains
+soft(J+b+JL/b), optimized old soft k^1.5. Separate products of norm and
+angular tests do NOT detect common-index support. Large nonsplit period
+puts all chi=+1 hits in one unknown <=5-index window, but does not locate
+it, supply a hit in that colour, or bound split-side zeros. No query gain.
+
+Proofs/reviews/validator: /tmp/semiprime-large-order-recurrence-20261024.
+One-sixth acquisition and full bit/Lean composition remain open, goal
+active. Preserve prior prefixes, all270 frozen entries and concurrent RH.
+
+## Rough shared block composition, 2026-10-24
+
+No exponent gain: complete covered query remains soft k^1.5. Constant
+angular width <=16 is paid, but not a constant number/rank of norm fibers.
+The executed companion block R_b(C;X) closes under shifted X and monic
+reduction. Its constant-coordinate X^b coefficient is the actual UNIT
+(-1)^b z^[b(b-1)/2]; its scalar fiber degree is r*b. The global scalar
+composition H_(a+b)(X)=H_a(X)H_b(z^aX) is fully initialized, costs
+soft(J+Jb+L/b), and optimizes to old soft(J+sqrt(JL)). Root-side starts
+pay JL/b; norm-last rank-M arithmetic costs soft k^2. No generic lowerbound.
+Saturated NORM leaves use the original nonsplit/G_beta consumer; never
+infer whole split equality or decode an auxiliary polynomial coefficient.
+
+Scalar beta roughening is actually paid via the factored smooth exponent,
+order screen and complementary-tree kernel closure; changed rows/seeds
+are rebuilt/rescreened. The j-power geometric quotient is a unit in every
+local component, including at Y=1. Restrictions preserve exact norm masks.
+Actual residuals remain Q_j=z^[j i-h_j], |h_j|<=2k; no free Gauss cocycle.
+Powered coefficient or separate-row-base completions cost soft k^2.
+Inverse tags retain unknown-P carries and only O(k^3) swapped horizons.
+
+Current primary thin-matrix theorem: [Alman--Vassilevska Williams](https://arxiv.org/abs/2610.06783),
+*Truly Subquadratic 3SUM and Truly Subcubic APSP via Triangles in Sparse
+Lopsided Graphs*. Integer lifts are valid and zero safe. Literal input,
+clock, rank, thinness and sparse-output costs stop the tested reduction;
+this is not a general no-go. New implicit tensor-encoding followup at
+/tmp/semiprime-implicit-thin-encoding-20261024 is UNFINISHED, not a result.
+
+Packet /tmp/semiprime-rough-block-composition-20261024; exact PASS pins:
+block-composition 5752e4192376b7351b3e003bc0dc0a4536b1a7d976de52d175465aaf63c941f2 / review 73c33f62e968a97c6d3cd3d775f9d491e027b52b58d5accf34bfc01dbd00e93f;
+block-literature 86fd66adb32e7b18cdfaf787d2bde4971c93c0a14941f1ef9df0debaf54b2ee3 / review 542750c63f0e72d7362c26f593787ef774b4157d3bae9e9de6497cd7ed380ae0;
+rough-index-cancellation 283cb2dd6b39f1c84aa62e488703bc2f68a89e3fda2d6620aa14a59dc5236da0 / review cf9afeef32415820baff4737b43b6f98ef77ca8c05ede1fcb4c87e951ea2b7b5.
+Need NEW scalar-only restricted start contraction; one-sixth/bit/Lean goal
+stays open. Preserve prior prefixes/all270 frozen entries/concurrent RH.
+
+## Implicit coefficient access and dense recurrence action, 2026-10-24
+
+Positive initialized primitives, no whole-query exponent improvement.
+For P_b(X)=prod_(i<b)(1-q^i X), native q=z has all short q-differences
+through C=16k^2 certified units, b<=L=2k^2+2. ANY T requested factorial
+prefixes cost soft(sqrt b+T): shared coarse blocks plus one actual MPE
+per dyadic tail size. Selected coefficients follow by q-binomial unit
+divisions. One fixed sparse digit mask and ALL R consecutive clock
+values cost soft(sqrt b+t+R), with actual fraction-tree initialization
+and constant-one series inversion; aliases and zero outputs are safe.
+
+Stronger dense action: reshape M[rho,r]=c_(D rho+r)*x^(D rho+r), with
+D,H~sqrt b and final padding explicit. Arbitrary supplied v gives ALL
+H entries M v in soft sqrt b, including row-start coefficient acquisition.
+Ratio (1-q^(r+1)U)M[rho,r+1]=x(q^b-q^r U)M[rho,r], U=q^(D rho),
+reduces all rows to ONE acquired rational Newton expression. Balanced
+(P,Q,S) prefix-sum tree and MPE pay degree D plus H actual row nodes.
+Do not invert x, coefficients, or final sums. Respect final denominator
+indices/tails. This also pays ONE arbitrary separable row/column mask,
+even dense digit-product masks; it is not a low-rank coefficient claim.
+
+Transpose of this fixed-input linear circuit is also paid. For ONE outer
+vector u, acquire M^T u and then ALL 6^m inner singleton/pair masks by
+6-by-4 tensor transforms in soft(sqrt b+H+D+6^m), D=4^m. Balanced
+D,H give soft b^0.6463; this standalone balance is not automatic in the
+actual thin layout. No per-mask square-root repetition. Actual tensor
+outer weights still vary with Q. ONE complete fixed-Q mixed-radix
+coefficient-band box is soft sqrt b via a balanced digit cut (or direct
+selected coefficients for a short block). All-Q/full-leaf sharing is open.
+
+For original P_b(y), BOTH u_rho=y^(D rho) and v_r=y^r vary with y.
+The remaining constructive target is simultaneous paired moving-vector
+contractions across the original target family (or its zero-safe restricted
+product). Fast action for one vector is NOT that acquisition theorem.
+Current complete query remains soft(J+sqrt(JL))=soft k^1.5; one-sixth
+and full executable/Lean bit composition remain open, goal active.
+
+One residue's T AP coefficient-prefix sums also cost soft(sqrt b+T),
+via actual degree-D order-two q-blocks or sparse enumeration for large D.
+Exact thin-tensor encodings still sum active Q and ternary outer boxes.
+One active Q collapses to matching singleton products; full preencoding
+writes too many leaves. Both tested literal output reductions retain
+unpaid native weighted contractions or excessive explicit outputs.
+These are scoped costs, never a generic lower bound.
+
+Exact native block: prod_(r<b)(V_j-q^(ab+r))=V_j^b P_b(q^(ab)/V_j).
+Preserve all original row/block/tail labels and saturated-leaf consumer;
+auxiliary mask or box zeros are not factoring witnesses. Proofs/reviews/
+validator: /tmp/semiprime-implicit-thin-encoding-20261024. Preserve prior
+shared prefixes, all 270 frozen entries and concurrent RH work.
+
+## Paired Cauchy query and full-determinant failure, 2026-10-24
+
+ACTUAL Cauchy factorization is paid, with correct generalized eigenbasis
+E=B0 W, not W. W's h_t=q^(-bt)*(q^(b+1);q)_t/(q;q)_t through t<d
+cost soft d; identities/inverses need only their finite prefixes. Regular
+rows n+d<=b give C_reg=diag(g) K diag(eta) E^-1 with
+K[rho,s]=1/(q^(b-s)-q^(d*rho)). Cross exponents lie in[1,b]; broader
+h guards through b+d-1 are in the native screen. Last <=d coefficients
+and ALL target tail values cost soft(sqrt b+d+J). No hidden-field oracle.
+
+The FULL kernel obeys
+(1-q^bY)G(X,Y)-(1-Y)G(q^dX,qY)=(Y^d-X)g(X).
+Its transformed rank-two forcing vectors are acquired soft k, but vanish
+EXACTLY on X=Y^d. The diagonal recurrence has no supplied native-orbit
+amplitude. First normal derivative has acquired forcing/start c_d and
+exact degree b-d with unit leading coefficient; coefficient propagation
+costs b and does not acquire all native derivative values cheaply.
+
+Uniform obstruction to the literal FULL determinant replacement:
+use the paid rough beta AND W branch, rebuilt rows/rescreened seed,
+unit-separated d=J targets, and b=J^2-1. Full square coefficient C has
+unit determinant: CE has a unit last diagonal corner and a unit Cauchy
+upper block. Powering target ratios by J<=k preserves difference masks,
+so BOTH native Vandermonde factors have unit determinants. Thus each
+full target sandwich/bordered determinant is a UNIT. Cover[0,L) by full
+length-b windows, adding the overlapping final window[L-b,L) if needed.
+Original coverage forces a nonunit desired DIAGONAL in that cover while
+ALL full determinants remain units. This rejects the entire specific
+replacement uniformly, not just a finite sample or arbitrary matrix.
+It is NOT a generic determinant or recurrence lower bound.
+
+An ACTUAL soft-k 2-by-2 Schur correction gives only
+q^nu F(q^s)/F(q^(b+s)), with original endpoint guards. Next 4-by-4
+correction is also paid and gives a two-slice ratio. General doubling
+requires diag(P_r(q^s/V_j)) itself: the original long amplitudes remain.
+No internal desired value is inverted by the Cauchy/Vandermonde solver;
+only ORIGINAL bounded endpoint nonunits invoke the retained consumer.
+
+Checked 2017 structured theorem at alpha=1, beta=J costs soft(J sqrt b)
+with all columns/outputs. Literal attempted outer operator matching has
+local rank >=min(number_of_rows,J)-1; no claim about every operator.
+Equal-spectrum displacement leaves the desired diagonal in its kernel;
+Olshevsky's diagonal transform requires those kernel parameters as INPUT.
+No missing parameters are supplied merely by off-diagonal generators.
+
+Complete original query remains soft(J+sqrt(JL))=soft k^1.5. Need actual
+simultaneous paired diagonals or their zero-safe product, not full matrix
+determinants or endpoint ratios. One-sixth/full bit-Lean goal remains
+open and active. Proofs/reviews/validator:
+/tmp/semiprime-paired-contraction-20261024. Preserve shared prefixes,
+all 270 frozen entries and concurrent RH work.
+
+## Matched-label query and canonical quadratic phases, 2026-10-24
+
+Correct diagonal selector is acquired: for actual separated native roots
+y_j and F=prod(T-y_j), E=B[T]/F has rank J. The divided-difference
+idempotent ((F(T)-F(S))/(T-S))*(F'(S))^-1 mod(F(T),F(S)) selects exactly
+matched labels; T-S is NOT inverted. One E-valued border has determinant
+-P_L(theta), whose E/B norm is the original diagonal product up to sign.
+Expanded fast coefficient action over E costs soft(J sqrt L), not
+soft(J+sqrt L). Dual-number off-diagonal suppression is an exact identity
+but requires the unacquired native diagonal as its constant input.
+
+Precise constructive recurrence target: implicit G(T^d,T) modF=P_L modF,
+where G is supplied by paid q-binomial generators and fast C/C^t actions,
+NOT its L dense coefficients. Acquiring this J-coefficient remainder in
+soft(J+sqrt L) suffices; a scalar-only shortcut also needs charged witness
+localization. Current whole query remains soft(J+sqrt(JL))=soft k^1.5.
+
+Every acquired quadratic coefficient a=x+y*tau is factor/unit/globalzero:
+test Norm(a); saturation forces x,y=0 at the nonsplit side, and then their
+coordinate gcd factors unless a=0 globally. Guarded fast gcd still needs
+the actual long remainder. Original delta-mod-H anchor normalization has
+at most five shifts per anchor, keeps original interval maps and >=J/5
+anchors. Formal-q dispersion results requiring q-orbit indices do not
+provide the missing finite-ring query.
+
+Repaired native family: epsilon=b mod2, a'=a+epsilon*k<2k,
+b'=center(b+epsilon*j) even, ell'=k*b'-2a'*j. Solve
+a'*t=-b'/2 mod(k/2), Jtilde=j+k*t, u=Jtilde^-1 modH.
+Then a'=[Nu²]_H, E'=N(u-1)² modH; chi-minus T'=-N(u+1)² modH.
+chi-plus V'=(beta W)^E'; chi-minus V'=beta^E' W^T'.
+Canonical phases have CONSTANT carry menus; RAW quadratics have huge
+row-dependent q shifts. Keep the correlated filter [Nu²]_H<2k and colours.
+Own-row I'=(a'P+Q+ell')/H is covered by L'=3H+2. Actual seed is unchanged;
+2L'<16H. Delta span<5H preserves guards/dedup. Saturated beta decoder uses
+|(1+Hi-delta')-(P+Q)|<4H²<256H²<product(local beta orders).
+Full repaired family remains Theta(k), including Theta(k) minus targets.
+Content division is legal by roughness but does not shorten the horizon.
+
+Old Hensel identities and distinct balanced parity repairs are credited;
+this is a proved normal form with native guarantees, not a new acquisition
+exponent. One-sixth and full executable/Lean bit composition remain open.
+Proofs/reviews/validator: /tmp/semiprime-zero-query-20261024. Preserve all
+prior shared prefixes, all270 frozen entries and concurrent RH work.
+
+## Reciprocal boundaries and filtered theta query, 2026-10-24
+
+Previous pass gave canonical phases, no rate improvement. New executed
+reciprocal grid has R_G=prod_(j,g<G)(T-q^(mg)y_j), L=mG, and
+F(q^(-m(G-1))T)R_G(q^mT)=F(q^mT)R_G(T). Its TOP m coefficients cost
+soft(J+m+G): native power sums times S_G(q^(mr)), evaluated as the actual
+degree-(G-1) polynomial. Do NOT invert unguarded1-q^(mr). Only small
+integer Newton divisions are used. Reciprocal augmentation gives centre
+q^(1-m), known constant term, and BOTTOM m coefficients at the SAME cost
+when mG equals its length. ACTUAL balanced native instance uses MAIN
+L0=2H,m=k,G=2k,a0=q^(1-L0), plus the TWO original tail factors, acquired
+soft J. For repaired 3H+2 use L0=3H,G=3k. The main resultant is a known
+unit times the main product squared; combine the known tail squared.
+Reverse indices use L0-1-i only for the main prefix. Do NOT assume
+balanced divisors of 2H+2 or silently reuse its reciprocal centre.
+The specific open operation is R_G mod P_m / its zero-safe terminal
+resultant from these initialized data. Both coefficient ends are not an
+already solved middle vector. Existing C/C^t actions remain available.
+
+For original globally deduplicated targets and m>=6, all JG grid points
+are globally distinct: beta order>256H² forces
+delta_j-delta_h=Hm(g-h), while delta span<5H forces g=h then j=h.
+Full explicit materialization therefore has JG outputs, plus m explicit
+baby coefficients. This bounds THAT output task, not implicit algorithms,
+local unit separation, augmented targets, or early-factor executions.
+
+Finite theta identity is exact and zero-safe but its general antipodal
+centre beta^(2(N+a'))q^mu has Theta(k) actual classes. NO actual centre
+can match z=q: at the nonsplit side odd beta/W orders divide r-1,r+1
+and are coprime, forcing mu=-1 by the W order bound. Global equality
+then makes beta order>256H² divide positive P+Q+a'-1<H², impossible.
+All acquired centre tests are proper-factor-or-unit, with no guaranteed
+factor discovery. This rejects only the literal theta-centre alignment.
+General paired q-shift retains four boundary factors;
+even the finite theta special case retains endpoint corrections. No
+analytic infinite-tail or monomial-quasiperiodicity oracle is supplied.
+
+Reflection1-u is ALWAYS nonunit for native odd u. Its disjoint reflected
+strip nevertheless gives an acquired O(k)-size self-dual overcover.
+Retain original minus rows and seven bounded carries; new plus exponents
+have delta in(-6H,2H) and a proved factor-sum consumer. Extra target
+separation follows from pi^d-1 dividing unit q^d-1 for |d|<8H, NOT from
+different norms alone on split coordinates. Symmetry gives A_eta B_eta
+on both strips and leaves A_eta unpaid. Low-a boundary degree is Theta(k),
+its long unit certificate still unpaid at soft k. Closure under BOTH
+negation and1-u generates translation1 and all H explicit labels.
+
+Whole query remains soft(J+sqrt(JL))=soft k^1.5. No new factoring rate or
+generic lower bound; one-sixth/full bit-Lean goal open. Preserve prior
+prefixes and270 frozen entries. Proofs/reviews/validator:
+/tmp/semiprime-quadratic-batch-20261024.
+
+## Initialized terminal adjoint/Newton solver audit, 2026-10-24
+
+Actual main L0=2H=k*(2k), with its two-factor tail explicit. Set Q=q^k,
+A(T)=F(Q^(-(G-1))T), B(T)=A(Q^G T), degreeR=D=jG<=4H.
+Q^n-1 is unit through D by actual k-rough component orders of q and the
+old q^n guard; do not infer this from raw exponent kn<C. Enumerating all
+D inverses still costs D. Positive coefficients solve a dimension-D,
+band-j triangular system with unit diagonal a0(Q^n-1) and j-supported
+actual RHS. Formal q-log normalization gives a zero-safe soft D completion.
+
+The finite two-step adjoint acquired in soft k cancels its cross term:
+A(t)A(Qt)R(Q²t)=B(t)B(Qt)R(t). It supplies transport, not amplitude.
+Some B endpoints are NEGATIVE original indices; no original consumer or
+division is assigned to those auxiliary coefficients. The finite reverse
+stencil pairs with both paid ends AFTER its trajectory is acquired.
+Gauge inverse M_R Delta^-1 M_(BR)^-1 still needs long generators; its first
+transpose entry t^s[R(t)-known upper tail] retains the desired R(t).
+
+TRUE upper k Newton coefficients are now acquired in soft k by reversing
+R/N_D, multiplying a length-k geometric product and short basis conversion.
+Sparse identity N_k(T)N_d(QT)=Q^d N_(d+k)(T) is exact. The first window
+F(q^(-kG-r))v_r=F(q^-r)v_(k+r) has 2k actual coefficients acquired in soft k.
+Initial denominator factors map to ORIGINAL indices r (native) or
+L0-1-r (reciprocal); test/localize with that map before division.
+Full window transfer and explicit k-by-k upper-boundary matching still
+write Theta(k²) data. The low monomial block is NOT the low Newton block.
+
+Short-quotient raw shift fails: P_k(QT) mod P_k is an acquired unit from
+short q guards, so the omitted quotient carry survives. Literal weighted
+and unweighted shift displacements of the coefficient matrix have local
+rank D-1. These are scoped operator facts, NOT generic lower bounds.
+Ordinary syzygy lacks g=h(QT) compatibility; the q-series theorem charges
+precision D, not just input degree j.
+
+The target remains short-remainder contraction Pi M^-1 b with acquired
+sparse b, implicit geometric Pi, both ends and now the upper Newton end.
+No soft-k algorithm for it yet. Whole query remains soft k^1.5;
+one-sixth and the full bit/Lean proof remain open.
+Proofs/reviews/validator: /tmp/semiprime-terminal-boundary-20261024.
+Preserve all prior prefixes, all 270 frozen entries and concurrent RH work.
+
+## Native moment actions and cubic-cover alternative, 2026-10-24
+
+Original whole query remains soft k^1.5; one-sixth and full executable/Lean
+bit composition OPEN. New complete scalar cover costs soft N^(2/9)=k^4/3
+on the paid-controller branch, but is WORSE than separate known N^1/5.
+It changes the family; do not claim it solves the old terminal recurrence.
+
+Native moment stripe p_(a+mr) is actually acquired in soft k via weights
+y_j^a and denominator prod_j(1-y_j^m Z), using fraction-addition trees and
+constant-one series inversion. The reshaped unweighted P/P^t actions cost
+soft k via supplied-root MPE and weighted rational expansion. This is a
+standard rational primitive, not a new Gauss character identity.
+For MONIC R=prod(T-Q^g y_j), the correct q-log uses INVERSE moments:
+log(R/r0)=-sum bar_p_n S_G(Q^-n)T^n/n. Reacquire inverse roots/weights;
+positive moments would describe the reversed polynomial. Exclude n=0
+and clip n>D. One weighted log stripe is soft k, all+exp/remainder softk².
+The weighted action remains sum_g diag(Q^-mrg) bar_P diag(Q^-ag);
+nonlinear exp mixes residue carries. Neither is supplied by fast P alone.
+Canonical raw family J0<=k removes the duplicate filter representatives;
+AFTER reciprocal augmentation actual degree J<=2k gives D<=4H/6H.
+Retaining duplicates instead gives8H/12H, still<16H. Keep actual main
+centres/tails and original row/index labels. Native phases retain q carries.
+
+Public lift s changes delta by ks(1-j)-Hz_s. One congruence with
+g=gcd(j-1,k) puts canonical delta_* in[0,kg), but a_s can reachH/g and
+ownI_*=[a_s(P-1)+Q+delta_*]/H can reach k³/g. Small phases do NOT imply
+old guard/decoder margins. Safe hybrid only replaces g>=k/2 (s<=1),
+retaining other parity rows; complete cost unchangedsoftk^1.5.
+
+Primitive bilinear small-root equation has height N/k, notN: its removed
+content defeats the spurious sixth-bit inference. Substitution of nativeI
+removes a SECOND k and gives g=(j+kx)I-a x²-bx-c_j, TOTAL DEGREE TWO.
+Even its stronger total-degree certificate XY<sqrt(W) fails on full boxes.
+Unknown-factor univariate lattice has determinant
+N^(t(t+1)/2)X^(d(d-1)/2); its finite-d norm guarantee requires xi<beta²,
+while native xi=beta-1/6>beta² forbeta∈[1/3,1/2]. These are scoped
+certificate failures, not general lattice lower bounds or extra prime bits.
+
+CUBIC ALTERNATIVE: acquire all tags/bin-centres and the rank3 lattice
+b+3aj=0 modk, cN-2aj³-bj²=0 modk², determinantk³. Set
+ell0=-aj²-bj-cNj^-1 modk³. Then f(P)=aP³+bP²+ell0P+cN is0modk³
+at own tag. LLL on derivative coordinates ofF(P)=aP²+bP+cN/P has
+determinant k³NDelta^6/P0^4 and bound T=O(kN^1/3Delta²/P0^4/3).
+Exact Taylor remainder<=4T. Use actual rationalfloor centering nu,
+U=ceil(1/2+4T/k³), ell=ell0-k³nu+k³U, E=a+b+ell+cN,
+q_c=beta^(k³), h=2U+1. OwnE-k³i=(P-1)[cQ-a(P+1)-b].
+PRETEST integer roots of nonzero aX²+(a+b)X-cN. Only THEN remove entire
+rows having public E=k³z with0<=z<h; short localorder uniqueness proves
+coverage survives. Degenerate a=0 triples are lawful and handled.
+All remaining global scalar leaves supply NONZERO O(logN)-bit K; use
+existing GENERAL short-annihilator decoder, NOT bounded factor sum.
+Delta~kS^(7/9)/N^(1/9) gives J_S,h~N^(1/9)S^(2/9)<=N^(2/9).
+Actual scalar roughness preserves q_c orders>16H; checkh<16H, finite
+fallback. Acquire full h-factor polynomial and all row MPE values; localize
+at mosth leaves then recover. Whole promised-branch bit costsoftN^(2/9),
+including all rows, starts, LLL, zero prechecks and recovery. No sixthgain.
+
+COMPOSED TERMINAL: Gamma_G=prod(Z-Q^g), H_t=X^G Gamma_G(t/X),
+R(t)=Res(F,H_t) costssoft(J+G) with actual factor/unit/globalzero pivot
+classifier. Split larger root/orbit subset to localize at same cost.
+At t=q^-i map nativeleaf to mg+i, augmentedleaf toL0-1-(mg+i), mainonly.
+Batchm independent calls costssoftk². More specific open operation:
+with fixed acquired v=(XmodF)^-1, acquire SCALAR norms
+Norm_(B[X]/F)(Gamma_G(t_i v)) from geometric outer rescalings. Input
+sizeO(J+G+m); ordinary linear composition/transposition is not nonlinear
+norm batching. Full composed-product and highdegree preprocessing costJG;
+KU composite-ring scope is valid but does not supply missing interface.
+
+Sources/reviews/validator: /tmp/semiprime-native-terminal-20261024.
+Preserve all prior prefixes, all270 frozen entries and concurrent RH work.
+
+## Shared norm homotopy and native index/local uniqueness, 2026-10-24
+
+No whole-query rate gain: original softk^1.5 retained; separateN^1/5 and
+openone-sixth/fullbitLean unchanged. Packet /tmp/semiprime-norm-sharing-20261024.
+
+Actual companion homotopy F_e=X^J+e(F-X^J), C_e=C0+eu e_last^t has
+H_t(C0) triangularToeplitz diagonald=t^G. Leading minors constantd^r,
+Schurpivotsconstantd; Bareissminor pivots powersd^r. All principalformal
+pivotsunits, not arbitraryoffdiagminors or endpoint inverses. Mixedfirst
+Schurnumerator retains -h1 h_(J-1)u0. Rankonelemma gives
+P(Z)=sum_(d=1)^J f_(J-d)Z^d, 1+P=Z^J F(1/Z), and
+Delta(e,t)=prod_g t^J[1+eP(Q^g/t)], degree_e<=G.
+Whole matchedbatch fuses EXACTLY Xi(e)=prod_(n<L0)[1+eP(q^n)].
+prod_iDelta(e,q^-i)=q^(-JGm(m-1)/2)Xi(e). OriginalE_main=U_VXi(1),
+U_V=prodV_j^L0. AugmentedE_main²=c0^J0 U_VXi_aug(1),
+c0=(-1)^L0 q^(L0(L0-1)/2); multiply ORIGINALtail² separately.
+MainreciprocalindexmapL0-1-n only. ActualfullDelta array softk².
+Firsts globalXi coefficients acquiredsoft(Js²+s²) via explicitP^r,
+Lambda_d=(1-q^(L0d))/(1-q^d), S_r=sum[P^r]_dLambda_d, log/exp.
+RequireJs<=16H,s<P,Q; polylogs givesactualsoftk contraction.
+Standardpowerprojection needs explicitJs+1 functionalentries; noimplicit
+weightsolver. LocallydegreeXi>=L0-J though e=1multiplicity<=J.
+Shorte0jet isNOT e1value; e->1 doesn't descendfromB[e]/e^s.
+
+INDEXPALETTE: actualparityrepair givesI'=I+epsilon*x-zeta and
+I'=lambda_j(x-t)^2+gamma_j modk, lambda=Nj^-3unit,
+gamma=j^-1(a't²+b't+c'_j). Acquireallcoeffs/t and squaremapinverse
+bucketssoftk; controlledk has<=16square roots forEVERYresidue.
+SuppliedpaletteA sizes yields<=16ks explicitPmodH candidates,
+S_A={j+k[(X+t)modk]}. Producttree/MPEat-Hn,0<=n<=k factors in
+soft(k+ks) ifownI' modk∈A. Positiveintegerleavesv+Hn<N ensureproper
+factor; noannihilator ambiguity. NOuniformsmallcoveringpalette supplied.
+Fullquadraticimage>=k/16 (unitsphi(k)/16); notactualprimecoverage claim.
+Positivelegallifts retainunitquadraticcoefficient; roughgroupordcoprimek
+hasnoexponentmodk quotientcharacter. Neither is a generic lowerbound.
+
+UNITBRANCH derivative acquiredsoft(J+G): extendedgcd suppliesH_t^-1modF,
+thenR'/R=Trace(H_t^-1 partial_tH_t). Nonunitsuseoriginalleaflocalization.
+Zero-safe differentiatedsystem A²[R(Qt);thetaR(Qt)] equals
+[[AB,0],[A thetaB-B thetaA,AB]][R;thetaR]. Shortforcing/knownzero state
+stilldoesn'tinitializeunitnodeamplitudes. PrimaryCS4.13 formalchar0 moving
+polecriterion isnotfinite-ringno-go; numeric/rectangularscopefullycharged.
+
+LOCALUNIQUENESS: onlywhenSMALLERP isNONsplit. Oddr_beta|P-1,r_W|P+1
+coprime, product>256H². Minuscollisionforcesproductdivides
+(delta-Hi)+Q+(P-1)a, whoseabsolutevalue<8H²; henceHi=aP+Q+ell.
+Native expansiona(P-j)²+kb(P-j)+k²c_j thenforcesk|(P-j) byvaluation:
+EXACTLYone canonicalminus hitrow, oneindex. Plus hits allsameδmodH;
+span<5H andfibers<=16 give<=80. Total<=81 inTHISbranch only.
+No extensiontolargernonsplit/split, nofree sparsegcd/locationoracle,
+no lowmultiplicity->lowhomotopydegree or finitejet endpointinference.
+Preserveallpriorprefixes,270frozenentriesandconcurrentRHwork.
+
+## Unique-hit acquisition target and conditional orientation, 2026-10-24
+
+Packet /tmp/semiprime-unique-acquisition-20261024. Original whole query
+stillsoftk^1.5; knownfifth and openone-sixth/fullbitLean unchanged.
+ActualcanonicalMINUS F=prod(X-V_j), L=3H+2. SMALLER NONSPLIT P has
+gcd(F,G_L)degree1. ACQUIRED S1=c1X+c0 hasc1nonzeroatP, soNormgcd
+unit/proper, neverN. Ifunit alpha=-c0/c1; actualFalpha/productlocalization
+andcoordinateclassifier givefactororglobalalpha=V_j; queryONEoriginalrow
+softsqrtL=softk. Correctconsumer, notacquiredS1.
+CorrectBezoutK=[F(X)h(Y)-F(Y)h(X)]/(X-Y), h=G_LmodF, satisfies
+VKVt=diag(F'(V_j)h(V_j)), adjK=c(1,alpha,...) (1,alpha,...)t atP.
+TWOactualcofactorsadj00,adj01suffice. ONEcolumnKe0alreadyrecoversh:
+h0=K_(J-1,0), h(X)=[F(X)K_(J-1,0)-XK(X,0)]/F0. CheapqbinomialC
+isNOTthisoracle. Originalblockedh+interpolation+S1costsoftk^1.5.
+ForpaletteuseboundedFAILUREconsumeronwronglabels; deferfullfallbackuntil
+allattempts. Acquisitionitselfstillneedsboundedruntime/successongoodlabel.
+
+ACTUALBMstep A=prod(1-q^iT),D=prod(1-V_jT),U=T²:
+D1=De²-UDo²=prod(1-V_j²U), Ne=AeDe-UAoDo,No=AoDe-AeDo.
+FirstfarO(J)numeratorwindowpaidsoft(sqrtL+J)viaactualqbinomialband.
+AtstrideB, numeratorSection_(nmodB)(A K_B), K_B=D_B(T^B)/D(T),
+degK_B=J(B-1); explicitwindowneedsO(JB)band/filterandcostsoft(sqrtL+JB).
+Scopedledgeronly, nogenericlowerbound. BMprimaryrequiresactualshortproper
+numerator; uninitializedlongAdoesnotmeetthatcontract. A(T)A(-T)=A_(q²,L)(U)
+stilldegreeL; oddroughorderspreservesupportundersquaring,nothorizon.
+Twocofactorsarenotclaimedtobetwoarbitraryfarcoefficients.
+
+ORIENTATION: EXPLICITQRHIMPORTn(p)<=C(logp)^32. r=ceilN1/6,
+B=bitlength(2N)^33. FIRSTcommonscreen1..400r²costsoftr; allunitscertifies
+bothprimes>16k_D²forEVERYk_D<5r. SmallnegativeD0Jacobi-1from-4or
+BurgessscanN5/32+publicintegerfactorizationN5/64; c0<=4ceilN5/32.
+Alluv,u,v<=BwithJacobi+1containsboth-signflip;normalizeD0uvnegative
+fundamentalD. c<=4c0B²=o(r),knownfactorizations. Guardsc<=r/16,Tc>B;
+twoBertrandintervalssupplyqpubcoprimetoc, k_D=2c*qpub in[r,5r).
+Extraoddconductorprimesinflatefiberbound16toPOLYLOG<=16B²; neverreuse16.
+RebuildALLroughbases/characters/paritytargetsandrescreencoupledqperlabel.
+Polyloglabelssoft-rpreparation; oneUNRECOGNIZEDlabelSMALLERnonsplitand
+EXACTLYonecanonicalminushitlocally. NOTglobalunique/nosplit-sidebound.
+Analyticfiniteexceptionsnotrecognizedbyguards; finalcompletefallback.
+Conditionalcover+consumerdoesNOTacquirequeryorproveunconditionalsixth.
+
+SIGNEDWEIGHTaudit: detk latticeaj²=cNmodk, HI=aP+cQ+ell;
+derivativecovolumekNDelta³/P0³, exactvariation<=3T, T<=2sqrt(kN)eta^1.5.
+Allbins/tagsJ~k/eta, h~1+sqrtN eta^1.5/k^1.5. ConstantpaletteJ~k²;
+balanceknownN1/5. PretestnonzerolinearaX-cN BEFOREintegerzerorowremoval,
+thenactualMPE/generalshortannihilatorconsumer. EVENk universalquadratic
+modk³ onlyforcesk|2a, k|ell, (k/2)|c; commoncontentk/2leaves2k².
+AuxiliaryCheonauditOLDcredit: actualJdinputsplussharedsqrt(Jp/d)+sqrt(Jd)
+doesnotimprovek^1.5. EXACTlocalbetaorderoneithersidealreadyfactorsor
+givesshortGLOBALannihilator; onlySMALLERsidegetscoveredindex. Wideexponents
+donotmeetshortannihilatorbitcontract. Preserveall270frozenentries/RHwork.
+
+## Initialized three-state derivative query, 2026-10-24
+
+Packet /tmp/semiprime-cofactor-recurrence-20261024. Wholequeryretains
+softsqrt(JL)=softk^1.5; separateknownfifth and one-sixth/fullbitLeanopen.
+ActualF=prod(X-V_j),x_i=q^i. Sufficientoutputsare
+T_s=sum_i x_i^s prod_(r!=i)F(x_r),s0,1, NOTBezoutcofactors.
+UniqueSMALLERnonsplitindexI givesT0nonzero,T1=x_I T0locally.
+Normdenominatorunit/proper; actualFalpha/rootlocalization/ONEoriginalrow
+consumer. Wronglabelsboundedfailure; deferfullfallback. QRHorientation
+paletteconditionalunchanged, notglobaluniqueness.
+Publicstate(A,T0,T1)=(1,0,0); step(F A,F T0+A,F T1+xA), polynomial
+degreeJ, fixedwidth3, NOdivisions/qfactorialstarts. Equivalentcommuting
+productprod(F(x_i)+e+h x_i),e²=eh=h²=0. Trueinitializedprimitive.
+ActualdegreeJbblock+allL/bgiantMPEvalues+clippedtail costssoft(Jb+L/b+J),
+b~sqrt(L/J). OffdiagonaldegreesEXACTJ(b-1),J(b-1)+1ondyadicb:
+topcoeffphase*sumq^(-Jt),phase*sumq^((1-J)t), unitsbyoddcomponentorders.
+ThisdoesNOTexcludeimplicitblocks/scalaralgorithms.
+
+Actualcofactorvariant: lambda_i=1/G_L'(q^i),
+adjK_(0,s)=(-1)^[J(J-1)/2+JL+1]sum_i lambda_i x_i^s prod_(r!=i)F(x_r).
+UniversalpartialfractionidentityclearsUNITdiscriminants, NEVERFhitfactors.
+lambda0=(q;q)_(L-1)^-1paidsoftsqrtL; rho=q(1-q^(1-L)X)/(1-qX).
+State(Z,B0,B1)=(lambda0,0,0),step(rhoFZ,FB0+Z,FB1+XZ).
+ClearedmatrixdegreeJ+1; acquiredunitdenominator(q;q)_L. TerminalZ=0
+known, notunpaidstart. WholeexactcofactorclockstillsoftsqrtJL.
+WeightednormalizedB0contributionW_b,clearedonlyby(qX;q)_(b-1),has
+degree(J+1)(b-1)andunitdyadicleadingcoefficient; notrawN_bentry.
+Gosperpolynomialr/Fshortdegree<=L+J-2fails; L+J-1resonantNOTexcluded
+bydegreeargument. OptionalunitboundariesF1,FqLgiveinteriorpoleexclusion
+forthisparticularcertificateclass; outsideindexLnotoriginaldecoded.
+
+Primary2606.07061adjointaudit: char0K(q), nofastfiniteendpointtheorem.
+For1/F(q^n), L=F(qX)sigma-F(X), L*p=F(X)(p(X/q)-p(X)). Laurentimage
+hasfactorF; requested1,XremainresidualforJ>1,F0unit. e0resonance;
+notrationalcertificate/generalalgorithmno-go. ShortC=A/Dqoperatorand
+acquiredshortprefixstillneedfarpairedcontraction. Nextconstructivetarget
+implicitapplicationofACTUALinitializedblocks, notanotherunpaidstart.
+Preserveall270frozenentries/priorprefixes/concurrentRHwork.
+
+## Exact gradient/product transfer and small tag readout, 2026-10-24
+
+Packet /tmp/semiprime-implicit-gradient-20261024. Queryclockstillsoftk^1.5;
+knownfifth/one-sixth/fullbitLeanunchanged. LetE(F)=prod_iF(q^i),Ts old
+unweightedgradients,Fq=F(qX),a=F1,b=FqL. EXACTthroughALLzeros:
+(q^L-1)E=a[qT1(Fq)-T0(Fq)]+b[T0(F)-T1(F)]. Takeu,vcoeffsof
+(F1+u+v)E((F+u+vX)q)=(FqL+u+vqL)E(F+u+vX); nocancellation.
+OnlyguardedqL-1inverse. MonicFtilde=q^-J Fq; Ts(Fq)=q^[J(L-1)]Ts(Ftilde).
+ExtrasoftJ. RequiresEXACToutputsANDoneshiftclosure, notmerelygoodratio.
+ForwardADrequiresactualdivisionfree/unitguardedcircuitvalidondeformations.
+GoodsmallernonsplitMINUSboundary: R>256H²dividesK_i=aP+Q+ell-Hi;
+0<K0<3H², -3H²-13H/2<KL<-15H²/16-3H/2<0. ThusF1,FqLunitatP;
+actualnormscreensfactororunit. ShiftedhitI-1mapsi→i+1; nooutsideLdecoder.
+
+STRONGUNIFORMCONTRACT: exactsoft(|S|+sqrtL)productforFULLbothcolourfamily
+andselectedsubfamilies⇒wholequerysoftkbyone-childsatnormdescentplus
+originalrow/indexconsumer. Uniformexactgradient+oneshift⇒productabove.
+NeedsNOQRHorientationbecauseoriginalfullcoverageunconditional. Thisis
+CONDITIONALIMPLICATIONfromMISSINGfastalgorithm, notachievedsixththeorem.
+Uniquehit-onlyshortcutstillretainsexplicitorientationcondition.
+
+SMALLTAGtarget: acquireHw=-sum_j wj prod_l!=j(X-Vl),H1=-F' byweighted
+tree softJ. DirectionalsumsDw/D1=wj* atuniqueP hit; chooseoriginaltagj<k.
+Denominatornormunit/proper; taucoefficientgcdproperorglobalbasescalarz.
+Integerlabelintervalprod(z-j) queriedsoftsqrtk givesfactororglobaltag;
+ONEoriginalrowsoftk, boundedfailureonwronglabels. Actualstate(1,0,0),
+matrix[[F,0,0],[H1,F,0],[Hw,0,F]]degreeJ stillcostsoftsqrtJL.
+Generalinterpolationprimitive, NOTnativepair-specificrateimprovement.
+
+Nativeh=[-N/j]kpreservesminus; N-inversionj→N/jflips,ordinaryj^-1preserves.
+A=a'j,B=a'h,d=(AB-1)/k,r=(h+Aj)/k,Lj=b'h+B b'j-2Br:
+ellh+B ellj=kLj, Vh Vj^B=pi^(kLj)barpi^[(B+1)(N+1)+kd].
+Keepactualqcarry/residualpi/barpifactors; B>knotautomaticallyrough-coprime.
+Knowninteger-halfpaircentresK,Z giveVj=KZ,Vh=K/ZbutKvaries.
+Fixedtags<=16originalonly,POLYLOGnewpalette; querythemthenremoveonlyUNIT
+products. GenericquadraticgroupingdoesnotlowerdiagonalFdegreeJ.
+
+CAUCHYtest: m=k,R=3k,ell=mR-1; retainTHREEoriginaltailfactors.
+FullCrectangle, D=C E, DΛ-U D=gηt. Oneknownresonantcorner
+D_(R-1,m-1)=-q^(m-1)c_ell; nozero-crossdifferenceinverse.
+Gamma=prod(Z-U),V symmetricgridVandermonde,H=Bez(Gamma,1),H Mt=M H.
+ModifiedS_corr=V_X H V D hasactualrank2generators andfastchosendiagonal,
+NOTdesiredV_X C V_Yt. Restoringinverseleavesdiag(Gamma'(U)^-1)[U,V]D;
+ordinaryactionsarenotpairedcontraction. Actualreciprocity:
+H^-1C=c_ell D_R T_Psi^-1 C J_m D_m, a=q^(1-ell),
+Psi(z)=prod_rho(1-q^[m(rho+ell-1)]z),retainreciprocaltwist.
+Psi(T^m)sharesONLYlastendpointfactorwithP_ell byroughm+shortqguards.
+TRUEW/E_tail fastactions: Qmat=T_Psi^-1C, upperToeplitztailψ_(R+rho-sigma)
+givesEreshape; Psi(T^m)W=P_ell+T^(ell+1)E_tail. ActualnativeweightsPsi(y^m)
+and y^(ell+1)paidsoftk, butBOTHpaireddiagonalsunacquired. No taildeletion,
+noimplicitshortpencilendpointclaim. Preserveall270entries/RHwork/prefixes.
+
+## Unit-normalized weak collision readout, 2026-10-24
+
+Packet /tmp/semiprime-quotient-gradient-20261024. Whole query still costs
+soft k^1.5. No sixth-rate or full executable Lean bit proof. Goal active.
+Use only the actual smaller-nonsplit MINUS unique-hit promise here;
+wrong labels may bounded-decline. Its QRH orientation condition remains.
+Prior FULL-family exact-product transfer remains unconditional in coverage.
+
+Acquire w(V_j)=original tag j, deg w<J, via actual unit F'(V_j) and the
+weighted product tree, soft J. Simplest weak target: start (Z,A,B)=(1,1,1),
+step (F Z,F A-Z,F B-w Z) at x=q^n. At the unique hit A,B reset to
+-Z_I(1,j*), Z becomes zero, later nonhits rescale both equally. Thus
+B/A=j* with A nonzero locally. No lambda or denominator is needed for
+this target. Degree J and all block work still give soft sqrt(JL).
+This is an old unweighted-state recombination, NOT a new fast evaluator.
+
+Finite weighted certificate: K=Bez(F,G mod F), M=K+e0 e0^t;
+det M=det K+adj00, det(K+e0 w^t)=det K+w^t adjK e0. At the good hit
+adjK=c vv^t, v0=1, so their ratio is j and M^-1 e0=v. h=G mod F remains
+unacquired. Exact cyclic rank-four generator still contains h. The 2008
+structured solve theorem takes supplied generators, a field and randomness;
+do not import it as deterministic implicit-input/composite-ring acquisition.
+Actual weighted start (lambda0,1,1), step (rho F Z,F A-Z,F B-w Z) has
+lambda0=(q;q)_(L-1)^-1, rho=q(1-q^(1-L)x)/(1-qx), lambdaL=0. The sign
+relating its terminal pair to the determinants is (-1)^[J(J-1)/2+JL].
+Cleared degree J+1 and full cost remain soft sqrt(JL).
+
+Actual reciprocal Psi(Z)=prod_(rho<3k)(1-q^[k(rho+ell-1)]Z), ell=3H-1,
+is a unit at EVERY inverse native minus root y_j^k on the good branch.
+Rough k-power injectivity would otherwise force V_j=q^n with
+3H-2<=n<4H; local order>256H² divides K_n in (-5H²,-15H²/16+5H/2),
+impossible. Actual P>16k² and P<=k³ force k>16. MPE/norm screens acquire
+global units or a proper factor in soft k; wrong saturation may decline.
+No outside-index decoder. Acquire U=prod Psi(y_j^k) and its directions.
+partial(E/U)=U^-1 partial E-E U^-2 partial U preserves local ratios.
+It does NOT remove E_tail from Psi(T^k)W=P+T^(ell+1)E_tail: at the own
+root W=b E_tail, not E_tail=0. Both matched transforms remain unacquired.
+Uniform tail nondivisibility is not a native-own-hit counterexample.
+
+Short residue rows B_r(T)=P(alpha q^-r T) mod(T^k-1), alpha=q^(1-ell),
+obey (1-q^-r T)B_(r+1)-(1-alpha q^(-r-1)T)B_r=gamma_r(T^k-1).
+B0/B1 are paid C^t actions; gamma_r=B_r(0)-B_(r+1)(0) all paid by the
+selected c_(k rho) column and MPE. Retain r0; no inverse of 1-T there.
+With D_r(t)=B_r(q^r t), this is the old fixed q-Pascal operator plus
+supplied forcing. Partial fractions still need coupled D_r(y/alpha) with
+q^(-kr) poles; paid boundaries do not acquire that mixed-step contraction.
+Next target is an actual soft(J+sqrt L) weak-output evaluator, or the prior
+strong uniform product contract. Preserve prefixes, all270 entries, RH work.
+
+## Direct projective evaluator and circuit-selection audit, 2026-10-24
+
+Packet /tmp/semiprime-projective-evaluator-20261024. NO cheaper query:
+soft sqrt(JL)=soft k^1.5 remains. Full sixth-rate/bit-Lean goal active.
+The long geometric G_L now has an explicit acquired scalar circuit of
+soft sqrt L gates: b~sqrt L, fixed-node monic MPE of
+sum_s d_s X^(b-s)T^s at T=q^(ba), followed by product and clipped tail.
+No X-dependent inverse; all constants/start data paid. This compiles the
+old one-point algorithm. Quotient-ring execution still costs soft J sqrt L.
+
+Kaltofen1987 output-degree theorem bounds answer CIRCUIT LENGTH; its
+lifting requires selected factor image g0, which already contains the
+unknown degree-one root here. Keep printed field-size hypotheses.
+Kaltofen1988 constructive GCD has NO supplied-root premise, but extracts
+input coefficient vectors through unary input degree d. Do not conflate.
+2026 spiroid theorem really covers arbitrary scalar Z/rZ deterministically;
+bound D^[5/sqrt(log D)] soft(Dlog r) is NOT soft D, and input is full
+degree-<D coefficient arrays. G_L at D=J needs the missing remainder;
+padding to D=L+1 is k^[2+o(1)]. Few-point MPE similarly retains degree L.
+
+Reset block pruning first needs the original block unit/product test;
+bisection retains sqrt(JL). Tested Padé shortcut: for EVERY candidate
+alpha, Q_alpha*(G/F)=G/(X-alpha) holds at short precision; its first
+degree-L polynomiality test is -alpha^(-L-1)G(alpha), the original query.
+No generic lower bound. Antipodal attempt duplicates frozen colour-fusion;
+do not repeat it as a new geometric-centre algorithm. Next work must
+uniformly ACQUIRE a factor/readout from supplied circuit/native data.
+Preserve shared prefixes, all270 frozen entries, and concurrent RH files.
+
+## Coarse residue completion and exact quadratic blocks, 2026-10-24
+
+Packet /tmp/semiprime-partial-tag-20261024. Query still soft k^1.5;
+full deterministic sixth-rate/executable Lean bit goal OPEN. Positive:
+supplied c=P mod m admits deterministic soft(1+N^1/4/m) completion.
+For m>=N^1/12 this fits sixth budget; no residue acquired by this fact.
+Dyadic bins use n=ceil log2N,b<=n/2,beta=b/n, exact
+X=max(1,floor(floor(root_(n²)(N^(b²)))/16)). Enumerate every actual s
+with c+ms in bin in X-sized blocks. X1 directgcd; otherwise monic
+f=z+[m^-1(c+mS0)]N and LLL dimension n,multiplicity b. Determinant
+N^[b(b+1)/2]X^[n(n-1)/2]; norm strictly<P^b gives integer root.
+All bits/dimensions/root isolation polynomial(logN); no fixedN^epsilon.
+Per-bin count O(1+N^1/4/m), wrong tags bounded and factors verified.
+Local weak ratio need only [j]_m; existing coordinate/scalarinterval
+consumer extracts global c, then this decoder. Classical small roots,
+not a claim that one-sixth known bits alone gives polynomial time.
+
+Acquire NEW modulus k=2c0 r³,m=2c0 r²,H=k². First common prefix
+through16(125K0)², K0=ceilN1/6. Guard c0<=K0/128, integer
+T=ceil_cuberoot(K0/(2c0))>B0. Two Bertrand intervals supply r not|c0
+because only one conductor prime can exceedB0. k in[K0,125K0),
+m³=2c0H,m>=k2/3, classes exactlyr unit same-colour tags. Rebuild
+ALL rough bases/rows/coupledqscreen. Prior QRH orientation/finiteexception
+scope remains conditional. Degenerate delta fibres inflate O(rB0²);
+do NOT reuse PLUS80/oldconstantidealwidth. Generic actual discriminant
+MPE+ONEpairscan gives factor-or-unit-separation softk after globaldedup.
+UniqueMINUS valuation proof works for r³ without delta-fibre counts.
+
+Canonical repair A_j=[Nj^-2]_(2k). In a coarse class A_h=A_c+2mh
+after permutation. With s0=A_cJ0 modH, acquire
+s(h)=s0+mNs0^-1 h-(m²/2)N²s0^-3 h². Its square is N A_h modH;
+j_h=s(h)/A_h modk permutes the class. Lift ambiguity0/H2 disappears
+under -2. Center coefficients of -2s(h) to get ellhat quadratic,
+d_h=(ellhat-ell_native)/H exact O(r²), and GLOBAL identity
+q^d_h V_h=C D^h E^(h²), D retains barpi^(2m). Starts/carries softk.
+Shift U=r²+r+12 so e_h=U+d_h in[0,2U], Lnew=3H+2+2U<4H.
+Overcover maps each leaf to i-e_h; extended order/S bound (<7H²)
+retains own uniqueness and saturated scalar factor-sum consumer.
+
+Reset retains ALLr rows/class; no interpolation needed. Original
+separation does NOT certify shifted roots. If later rerun separator and
+dedup, recompute class sizes/degrees. F=prodFc,H0=sumF/Fc,H1=sumcF/Fc
+have degrees J,J-r,<=J-r; start(1,0,0), step(FZ,FA+H0Z,FB+H1Z).
+Unique good ratio is coarse label. Explicit b-block diagonal degreeJb
+remains; offdiagJb-r has unit dyadic leading coefficient. Current
+soft(Jb+Lnew/b+J) execution remains k1.5. Need actual shared contraction
+on these acquired quadratic-phase classes, not more supplied-data claims.
+Preserve all prior prefixes, 270 frozen entries and concurrent RH work.
+
+## Finite quadratic-class recurrence tests, 2026-10-24
+
+Packet /tmp/semiprime-quadratic-class-query-20261024. NO whole-query
+speedup: soft sqrt(JL)=soft k^1.5 remains; full sixth-rate goal open.
+Use inverse arguments z_h=Vhat_h^-1=C D^h E^(h²), P_L(z)=(z;q)_L.
+ell2 multiple m² gives supplied E^(r²)=q^a, a=-ell2/m². Exact finite
+transport P_L(C)Z(CDE,DE²)=P_L(CD^r q^a)Z(C,D) has paid all-class
+endpoint batches soft sqrt((J/r)L). Interior amplitude/first variation
+cancels; this is NOT a query improvement. D^(r²) retains barpi factor,
+no scalar orbit closure. Artificial endpoints have no native decoder.
+
+Finite Warnaar specialization: R_ij=(q^Lz_i;q)_j/(z_i;q)_j,
+detR=q^[2binom(n,3)]prod_t(1-q^(L-t))^(n-1-t)*Vand(z)/prod_i(z_i;q)_(n-1).
+M_ij=P_L(q^jz_i) equals diag(P_L(z_i))*R. Short heads are good-P units
+since shifted own index>r. Actual within-class dedup/separation supplies
+unit normalizer and direction data WHOLE-family softk; dedup preserves
+weak ratio up to local common unit, NOT full-r scalar equality. Recompute
+sizes; no inherited uniform-size leading coefficient. Long M amplitudes
+remain unacquired. Known Z(0)=1/short q-coefficients do not initialize
+nonzero-C orbit; degree rL can exceed16H denominator guards. Shared
+small-class remainder cost is only a target, no paired contraction yet.
+Preserve all prefixes, 270 entries and concurrent RH work.
+
+## Interior-state and square-lift execution, 2026-10-24
+
+Packet /tmp/semiprime-casoratian-endpoint-20261024. Wholequery still
+soft sqrt(JL)=soft k^1.5; full sixth-rate/Leanbit goal open.
+For M=diag(a)R, acquire v^T=1^TR; det(M+eps*1*v^T)=detR*(Z+eps*S),
+Z=prod a,S=elementary cofactor sum. Global rank-one and coarse-weighted
+variants give sufficient two coefficients; their VALUES remain unpaid.
+Full-r window transfer is [[c,0],[(1-c)/a_endpoint,c]], c=next/old
+endpoint, with paid coefficients. Interiorhit Z0,Snonzero only rescalesS;
+known stateatC0 notnativeorbit. No closedperiod or longmatrix action.
+
+Actual local distinguished lifts: ell0=-2AJ0+Hu0,ell1=-2mJ0+Hu1,
+t=(P-J0)/m,c=-(AP+Q-2AJ0)/m² integer, a=-J0/A modr².
+C=q^(-B-u0)theta^c,D=q^-u1 theta^-2t, c=t²/a modr² proved via
+Pc=-At²-r²*(N-AJ0²)/H. NO inversePmodord thenreductionmodr².
+Roughness gives <theta>=<q>=<pi>; formal exponentmodr² is NOT a
+groupcharacter. B[T]/(T^r²-q) constant lifts don't supplyunknownc,t.
+ActualdirectT_c=g^t search overP'=J0+mt<=k³ has saturatedgcd(P',N)
+decoder on the good orientation, butM<=m timeslengthO(k³/m) stillsoftk1.5.
+On other orientation labels, accept only verified proper gcd factors
+and otherwise return bounded failure. No query gain.
+Abramov1999 assumesq-suitablechar0field withpower-rootsearch; dense
+classsolutiondegree rL and unguardedlargerqdenominators remainpaid.
+Ardehali–Rosengren2026 analyticinfinitegamma identity is notfinite-ring
+endpoint algorithm. Preserveprefixes, all270entries and RHwork.
+
+## Selected-output acquisition tests, 2026-10-24
+
+Packet /tmp/semiprime-selected-scalar-acquisition-20261024. No query
+exponent gain; soft sqrt(JL)=soft k^1.5 and full sixth-rate goal open.
+KN2026 Theorems1/25 supply deterministic field structured solve without
+generic-rank/random-preconditioner premise, from EXPLICIT generators.
+Actual supported Stein conversion: D=(Bez(F,h)+e0e0^t)R,
+D-SDS^t=h(e0+SRf)^t-f(SRh)^t+e0e_last^t. Rank<=3; J<=2 direct.
+First displaced column IS h=G modF for J>1. Any explicit generator
+therefore acquires h; old guarded gcd already suffices once h supplied.
+No new query advance. TR25-171 January2026 primary revision reports
+gap in6.2/6.4 underlying allresults; do not import border-circuit claims.
+Actual monic product batching g residue candidates gives guaranteed
+radius N^(beta²/g)/16. Balanced FULL scheduled budget is
+m/g+N^(1/2-1/(4g))/g; grouping worsens the proved bound. This is NOT
+Omega actual runtime with early exit. Square-lift exponent still unknown;
+no uniformly bounded cross-class LLL translation supplied. Preserve all
+prefixes, 270 entries and concurrent RH/DeltaNet proposal work.
+
+## Constant-size native blocks, 2026-10-24
+
+Packet /tmp/semiprime-jet-recurrence-20261024. No whole-query gain;
+soft k^1.5 and full sixth-rate/Leanbit goal remain open. NEW paid setup:
+triples use k=2c0*3^e,e>=3 minimal>=K0, guard54c0<=K0, k<3K0,m=k/3.
+Pairs use k=16c0*2^s minimal>=K0, guard16c0<=K0,k<2K0,m=k/2.
+Reprove old oddr/coprime(r,d) assumptions via2k|m²,k|m²/2,H|m³,H|m⁴/4.
+CanonicalA AP, quadraticlift, affine tag permutation and0/H2 ambiguity
+work at arbitrary2/3-adic valuation. FIRST prefix16(3K0)² (or pair-only
+16(2K0)²), rebuildALLbeta/W/rows/coupledqguard. Orientation stillconditional.
+TriplesB24,L3H50; pairsB18,L3H38. Unique-minus and signeddecoder survive.
+theta=pi^m²: triples theta9=q,a=±1,±2,±4, E=theta^a,
+z0*z2/z1²=theta^(2a): six GENUINE curvature types shared perlabel.
+Pairs theta4=q,a=±1 BUT h²=h, so EabsorbsintoD: noquadraticrestriction.
+Discardolddegenerate-delta fibre bounds; actualsoftkseparator independent.
+Full-rreset mayretainallrows; ifdeduprecomputeclasses/degrees.
+m=Theta(k) givesprovided-residuecompletionsoftN1/12. Constantclass
+dimension doesNOTevaluate longamplitudes; C,D stillvary. Hypothetical
+paidnativeperclasssoft r^omega logL wouldnowgivewholefamilysoftk.
+Gavrylenko2025 tau4.3/5.4 andgauge4.38 analytic/infinite, notinitialized
+finite modular engine. Duplicatejet/condensation identitiesnotnewprogress.
+Preserveallprefixes,270entries and concurrent RH/DeltaNet proposal work.
+
+## Nested phase alignment and finite cyclic boundary, 2026-10-24
+
+Packet /tmp/semiprime-nested-alignment-20261024. Query stillsoftk1.5;
+fullsixthrate/Leanbitgoalopen. Positivepaidprimitive: R=3^ell,2R³|k,
+m=k/R givescompatiblequadraticblocks; h=v+3t maps
+(C,D,E)->(C D^v E^(v²),D³ E^(6v),E^9). O(J)classes,
+O(Jlogk)rowoccurrences. Canonicalshifts align via
+P_LR(q^-e y)=P_L0(y)P_e(q^-e y)P_(2B_R-e)(q^L0y).
+ALL stripsD=O(k2/3) acquiredsoftk bydyadicprefixpolys+monicMPE.
+ExtendeduniqueMINUS excludesboundaryhitsgoodP; actualnormscreens
+factor/orglobalunit,wronglabelsboundedfailure. Ifa'=u alpha,U=prod u,
+cofactorweightsu*w giveU*originaldirection. Longalpha STILLunpaid.
+Optionalcubic2R²|k adds(m³/2)N³s0^-5h³; H|m⁴/4 killssquareerror.
+CarriesonlyO(R³); variableprefixengine soft(J+sqrt(JD)), atmostk1.25
+atR=O(sqrtk),softkifD<=O(k). ActualmaxRdependsv3k. DoNOTtransfer
+c=t²/a modR² withoutR²|m. Noquerygainfromextension.
+Finiteclock X=cdiag(q^i), cyclicY givescornerf(c)-f(cq^d)
+=f(c)*(1-P_d(cq^L)/P_d(c)) onlyAFTERheadunitcertification.
+Shortvectorspaidsoft(d+J),headhitsusenativeprefixconsumer. Rankone
+doesNOTsupplycorneramplitude. Nilpotentf(S) usesfirstd qcoeffspaid;
+cyclicf(Y) needsfoldedcoefficients,notthisgerm. RW2609.21892finite
+arithmeticpentagonisdistinctfromrootunitycycliccase; noactualnative
+map/fastmodularstartsprovided. Preserveprefixes,270entries,RH/DeltaNetwork.
+
+## Actual q-substitution versus proposed shared resolvent, 2026-10-24
+
+Packet /tmp/semiprime-hierarchy-contraction-20261024. NOquerygain;
+softk1.5/fullsixthrateopen. Actualstripeeq:
+(1-q^ellY)f_rho(Y)-(1-Y)U_rho f_rho(qY)
+=(1-U_rho)gamma_rho+g_rhoY^b. RetainqSUBSTITUTION.
+FixednativequotientdescentneedsFc|Fc(qY), impossiblegoodfieldfinite
+unitrootsetdegree<ordq. Dynamicquotientsnotruledout.
+SeparatePROPOSEDresolventR(A)=sum g_rho A^(b rho)/(U_rho-A)
+isNOTderivedfromnativepencil. GlobalF(U_rho) allpaidsoftk;
+negativeindices(-4H,0] give0<K<7H², soactualscreensfactor/unitgoodP.
+No needemitallFc(U_rho). W=sum(g_rho/F(U_rho))Z^rho acquired;
+R(A)=sum_j A^j sum_(n>j)f_n W(q^[b(n-1-j)]A^b).
+OnefixedshiftW(nativey^b)batchsoftk, correlatedsumSTILLunpaid.
+Nooutputcountlowerboundorclaimednativeelimination.
+Solomonik2504.20305v5 exactinversebutterflyrequiresSUPPLIEDsparse
+matrix/treegraph. Native3-stateclockunitlowerbidiagonalhasconstant
+widthbut3(L+1)variables andLcoeffblocks: actualsoft(J+L),noquerygain.
+Compositeforwardpassvaliddirectly; noimportofgeneralfieldLUtorings.
+Preserveprefixes,270entries andconcurrentRH/DeltaNetwork.
+
+## Faster complete signed-weight query at sixth-root scale, 2026-10-24
+
+Packet /tmp/semiprime-arithmetic-query-reuse-20261024. Positive PAPER
+algorithm: whole attempt soft(k+N^(1/4)/k^(1/4)); fixed k=Theta(N^(1/6))
+gives soft k^(5/4)=soft N^(5/24), versus old fixed-scale k^(3/2).
+Old signed two-weight family + old BSGS evaluator + new direct nonsplit
+integer-quadratic consumer. Known global N^(1/5) is still better;
+optimizing this tradeoff recovers that known exponent. Sixth/Lean open.
+ONE unconditional Jacobi-minus D0 suffices; no QRH orientation palette
+for this NEW family. Both-prime beta/W suppliers symmetric. Keep actual
+rough cleaning, k=2c0*3^e guard and FIRST prefix16k²; N<=k6,P,Q>16H,
+k>16. R may be LARGER nonsplit prime. ord_R(pi)>256H², pi=beta W,
+q=pi^H; RERUN coupled short screen after base/modulus changes.
+Run ALL powers-of-two factor bins B0<=N SEPARATELY. For each unitj
+Gauss reduce (kB0²,0),(sB0²,N),s=[Nj^-2]k, giving(aB0²,bN).
+Every correct-bin row has |a|R+|b|N/R<4sqrt(kN), including a0/b0.
+D=(aj²-bN)/k,t=[Dj^-1]k,ell=centerH(-2aj+kt),
+V=pi^ell barpi^(a+bN). f(j)=0modH,f'(j)=0modk ⇒own-tag I integer.
+At nonsplit R, ALL rows V=pi^(aR+bN/R+ell), by Frobenius.
+M=ceil(4ceil(sqrt(kN))/H)+2,h=2M+1<16H; T=q^M V searches0<=t<h.
+Actual d=min(h,ceil sqrt(Jh)) blocks, ALL giant arguments, residualtail,
+monic MPE cost soft(J+sqrt(Jh)); same evaluator localizes norm products
+without uniqueness/inverting collisions. Correct-bin EVERY saturated leaf
+has K=aR+bN/R+ell-Hi, |K|<3H²<order ⇒INTEGER K0.
+Solve aX²+(ell-Hi)X+bN exactly; handle a0/b0 linearly; verify divisor.
+Do NOT discard scalar-trivial rows or invoke beta-annihilator consumer.
+Wrong-bin decoder may fail boundedly; do NOT aggregate bins and then
+decode arbitrary leaf. Correct bin guarantees any selected leaf succeeds.
+Remaining acquisition gap k^(1/4). Old hierarchy/triple query unchanged.
+Separate Skolem2026 audit initializes fixed order64 integer norm LRS
+softk, but exact-zero candidates do not cover unknown-P divisibility;
+literal hidden-P decimation M>L. No general lower bound, no gain from
+that audit, no input to positive theorem. Preserveprefixes,270entries,RHwork.
+
+## Complete weighted phase catalogue, 2026-10-24
+
+Packet /tmp/semiprime-weighted-recurrence-20261024. NO further query
+exponent gain: current complete fixed-scale cost soft k^(5/4), sixth/Lean
+goal open. New ACQUIRED representation: all signed 0<|ab|<k divisor
+pairs plus four axes(+/-k,0),(0,+/-k), all lambda²=4abN modH roots.
+k has <=3 primes2,3,ell; existing N is a supplied nonresidue modell
+when ell>=5. Explicit2/3 cases, merge ell3. Root cosets lambda0+(H/g)t
+have <=16 branches, g=prod p^min(floor(vp(4K)/2),ep); do NOT assume
+constant root count. Smooth-part bound sums divisor/root rows to
+O(klogk), axes4k; ALL phases/targets acquiredsoftk.
+Per-bin ellipse (aB²)²+(bN)²<=2kB²N contains Gauss witnesses and
+preserves complete cosets. EVERY retained correct-bin row bounded.
+Uncenteredlambda in[0,H) uses sameM; K_leaf<8sqrt(kN)+4H+4<3H².
+Same quadratic consumer handles all added roots, signs, contents/axes.
+Keep bins SEPARATE; no QRH orientation or unit-tag-only root claim.
+u=pi^(H/g),u^g=q,Y=q^-M/V0 gives exact
+prod_(t<g)P_h(Yu^-t;q)=P_(gh)(Y u^(-g+1);u).
+Exact shifted difference prefactor (q^M V0)^(gh)u^(h g(g-1)/2).
+Mergedj maps s=floor(j/g),t=g-1-(jmodg), originali=s-M.
+Groupby g, sum Cg*g=softk; costs stillsoftk1.25. Monic method needs
+NO new-base difference units even if gh>16H. Localize groups/cosets
+then ONE merged interval; no broken-mask oracle. Varying divisor
+centres remain the missing shared long evaluation.
+Paid variable-window primitive: exact row extrema and dyadic unequal
+tails give soft(J+sqrt(sum h_j)); current bound sumh_j=O(k2.5).
+Quartic Laurent trial determinantk6, derivative determinantN³eta10,
+exact7T variation; even free ALL-CENTRE/all-orbit seed costs k9/7,
+or separate-centre k7/5. Seed not supplied; no general obstruction.
+Preserve all prefixes,270entries and concurrent RH/DeltaNet work.
+
+## Complete scalar catalogue controller, 2026-10-24
+
+Packet /tmp/semiprime-paired-weighted-query-20261024. New simpler
+COMPLETE execution, stillsoftk1.25; sixth/Lean goal open. Fixed known
+k=2*3^e least>=K0, scalar HH/controller/qscreen Sections1–4 of uniform
+setup need NO initial prime-prefix premise. Success beta orders odd
+>16H and q orders>16H forcesP,Q>16H+1. No D0/W/roughcleanup needed;
+Burgess remains INSIDE paidcontroller/extractor. Complete signed
+|ab|<k +fouraxis catalogue and ALL lambda²=4abNmodH roots acquired
+softk usingONLY2/3lifting. E=a+bN+lambda,Y=beta^E, oldM/h.
+Virtual Gauss bin provesown witnessHI=aR+bS+lambda, |I|<M;
+E-HI=(R-1)(bS-a), nonzero automatically since|a|<=k<S andpairnonzero.
+NO algorithmic bins/ellipse masks. DeleteWHOLErow ifE/H integerin[-M,M].
+Own witness survives byq order>h. Scalar weightedrows/zero-deletion
+are OLD palette credit, notnewidentity. One actual aggregate, monicBSGS,
+residuals and localization yield propergcd or GLOBAL beta^K=1,K!=0,
+O(logN)bits. Licensed unbalancedextractor costsN31/192<k. Extra rows
+need NO private integer-zero bound. No fullcosettiling afterdeletion.
+Paired conic exactcontentH, primitiveirreducible quotient. Honest
+X1X2=Theta(N/k³), primitiveheightTheta(N/H), inclhardaxisbasis.
+L1/L2 monomial map throughD hasdetk^[D(D+1)(D+2)/6]; notfree,
+not a completeauxlatticedeterminant/no-go. No cheaper indexselector.
+Gao2025 rank3 stillBSGSsameindexscale; latestUW/HS contractsdon't
+give two softk lists or universalcover. Seedh=k1.5 stillunpaidsoftk.
+Preserve prefixes,270entries and concurrent RH/DeltaNet work.
+
+## Shared global hit correction and pair preparation, 2026-10-24
+
+Packet /tmp/semiprime-arithmetic-locator-20261024. NO fullquery rate gain;
+soft k1.25 at sixth scale and full sixth/Lean goal remain open. ERRATUM:
+frozen scalar-terminal/terminal-contract.md wrongly denied a promised
+GLOBAL zero index; its old PASS accepted that scope error. Preserve both;
+new swap-erratum.md and review supersede that conclusion. If
+HI=aP+bQ+lambda, stored swap(b,a,lambda) hitsQ at SAME I. Fermat gaps
+(P-1)(bQ-a),(Q-1)(aP-b) are both nonzero, so BOTH survive zero deletion.
+F(q^(M+I))=0globally, possibly via different leaves. Opposite signs give
+two distinct GLOBAL indices; clockT^(h-1)=0 stillvalid, not a kernel.
+Paid diagonal screen: a=b implies|a|<sqrtk; rootcount<=32smooth_2,3(a),
+sum softsqrtk. Its old query costssoftsqrt(sqrtk*h)=softk. Nonunit factors;
+else dropdiagonals safely. Keep only COMPLETE surviving swap pairs.
+ScanA-B forpairs A=q^M beta^E,B=q^M beta^E'; propergcd factors; saturated
+gives NONZERO globalannihilator(a-b)(1-N), licensedextractor. Thuscontinuing
+pairquadratics haveUNITdiscriminants. Guaranteed z=q^s equalsAmodP,BmodQ;
+gcd(z-A,N)proper, normalized(2z-A-B)/(A-B) nontrivialroot1. Trivialknown
+rootsA/B doNOTselectz. Allpaircoefficients acquiredsoftk; mixedroot/pair
+selection stillunpaid. One suppliedpair costssoftsqrt h; genericrestricted
+query stillsoftsqrt(Jh). Conditionaladvice/shortatomconsumers notinputs.
+Preserveallprefixes,270frozenentries,HEAD andconcurrentRH/DeltaNetwork.
+
+## Accumulated research publication authorized, 2026-10-25
+
+The user explicitly requested committing and pushing all repository progress
+before continuing the fast-recurrence investigation. This supersedes prior
+local-only publication holds for this checkpoint. Include the accumulated
+semiprime evidence, local Suzuki proof modules, and existing engineering
+proposals. Preserve the 270 frozen evidence entries and historical reports;
+archive recent scratch reports with their corrections and source hashes.
+Register ordinary proof modules, run the tracked hook and applicable
+generated-asset/browser checks, and verify the exact pushed revision and CI.
+Do not invoke exhaustive optional numerical-certificate verification.
+No guaranteed sixth-exponent factorization or complete RH proof is claimed.
+The semiprime research goal remains active after this publication.

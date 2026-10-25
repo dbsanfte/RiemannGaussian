@@ -1,0 +1,17 @@
+{
+  "core_full_pair_expansion": false,
+  "counts": {
+    "character_components": 72,
+    "coordinated_rows": "matched",
+    "direct_pair_checks": 234,
+    "direct_whole_checks": 72,
+    "invalid_checks": 3,
+    "parameter_cases": 4,
+    "proper_divisor_components": 20,
+    "public_factor_checks": 4,
+    "weighted_checks": 72
+  },
+  "max_packed_degree": 14,
+  "scope": "deterministic arithmetic/exception controls, not coverage or timing",
+  "status": "PASS"
+}

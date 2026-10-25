@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "scope": "Reviewed mathematical acquisition and integer nontriviality proofs plus a scoped fixed-admissible-modulus density limitation. No all-input sixth-rate, actual-selector failure, implementation-runtime or Lean theorem claim.",
+  "proof_reviews": [
+    {
+      "path": "reviews/all-pairs-review.md",
+      "verdict": "PASS",
+      "scope": "Complete sparse coprime-base acquisition, Bernstein output/cost, unit and all-pairs recovery contracts"
+    },
+    {
+      "path": "reviews/all-pairs-arithmetic-review.md",
+      "verdict": "PASS",
+      "scope": "Cubic relation, sizes, signature equivalence and representative completeness"
+    },
+    {
+      "path": "reviews/negative-pair-size-review.md",
+      "verdict": "PASS",
+      "scope": "Exact sum-of-squares bound, integer proportionality and complementary proper gcds"
+    },
+    {
+      "path": "reviews/consolidated-review.md",
+      "verdict": "PASS",
+      "scope": "Consumer summary, singleton/sentinel integration, independent negative-pair check and native m>=17 discharge; predates the density extension"
+    },
+    {
+      "path": "reviews/density-review.md",
+      "verdict": "PASS",
+      "scope": "Uniform Pell counting, all success branches, fixed-modulus semiprime density, prepared gamma/q existence refinement and selector/preprocessing exclusions"
+    }
+  ],
+  "root_proof_inspection": "Read all archived reports and reviews; independently derived and checked the cubic norm relation, singleton size argument, negative-pair integer identities, uniform Pell reduction, fixed-modulus counts, prime-order density tails and preservation of q orders. This is mathematical review, not kernel verification.",
+  "archive_checks": {
+    "verbatim_files": 18,
+    "relative_readme_links": 19,
+    "source_pins": 6
+  },
+  "previous_frozen_packets": [
+    {
+      "path": "../semiprime-twist-character-20261022",
+      "verified_entries": 18,
+      "manifest_sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23"
+    },
+    {
+      "path": "../semiprime-twist-palette-20261022",
+      "verified_entries": 6,
+      "manifest_sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3"
+    },
+    {
+      "path": "../semiprime-colour-retention-20261022",
+      "verified_entries": 18,
+      "manifest_sha256": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb"
+    }
+  ],
+  "git_diff_check_exit_code": 0,
+  "all_packet_files_trailing_whitespace_check": "PASS",
+  "new_implementation_or_experimental_tests": false,
+  "lean_source_changed": false,
+  "lean_build_or_axiom_audit_run": false,
+  "committed_or_pushed": false,
+  "open_requirements": [
+    "Simultaneous shared H values or another universally sufficient observable acquired in soft O(m).",
+    "Coverage of the actual least-prime selector or a paid adaptive variant; fixed-modulus density does not settle this.",
+    "Full worst-case bit/controller accounting and kernel-checked Lean composition for guaranteed 1/6 scaling."
+  ]
+}

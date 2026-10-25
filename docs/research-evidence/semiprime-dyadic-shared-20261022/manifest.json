@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8304,
+      "sha256": "b526dfcf9ff9de14d5bb06c2c08c615a5868a37aaf9337851cd6515e602377c0"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 5036,
+      "sha256": "9c46e0e93b5a4f099ebc9e438a97bb4d6dfa58b2bc936fbf9482f8a74918931e"
+    },
+    {
+      "path": "implementation/README.md",
+      "bytes": 5506,
+      "sha256": "4270d05e2918890901202fd4edcc581b220a6edc85490504dfd789564ee1d564"
+    },
+    {
+      "path": "implementation/independent-code-review.md",
+      "bytes": 4964,
+      "sha256": "e634392212326ee409c41a13c0a579284e5656c91631b862fb4b54348a925ed9"
+    },
+    {
+      "path": "implementation/precision-and-bit-audit.md",
+      "bytes": 2729,
+      "sha256": "6df64c54f1ad893f2ae8d94fbebdf0511d25e9d2bbf732333e742445baa35996"
+    },
+    {
+      "path": "implementation/sheared_norm.py",
+      "bytes": 7977,
+      "sha256": "2118c7c71ac218608025d5b62846b7e4ac44e9e3cca6b91d09f8b766f2e8278f"
+    },
+    {
+      "path": "implementation/test_sheared_norm.py",
+      "bytes": 7808,
+      "sha256": "d064b68a80f60bed8436a7c37df68af401998e2a27e59a16dbc2552948343adc"
+    },
+    {
+      "path": "preserved-packets.json",
+      "bytes": 1315,
+      "sha256": "7a0099f5b92e16fbe892f91f6108f686cc419711e76658da63f8a30c55207b9d"
+    },
+    {
+      "path": "reports/additive-contraction.md",
+      "bytes": 14189,
+      "sha256": "160529aabc8a880316a27f6c32770f8b18d7224ae9314565db28ac0d99645d89"
+    },
+    {
+      "path": "reports/full-controller-audit.md",
+      "bytes": 8546,
+      "sha256": "567cfb2fe23f7618645df7910fb3c5f4a79be3c2543457e563b8404e58f40607"
+    },
+    {
+      "path": "reports/native-dyadic-transport.md",
+      "bytes": 5954,
+      "sha256": "d9001ff797904a5f461b843e26d601c3768e2378b4738f8b34f14c926e94e2a4"
+    },
+    {
+      "path": "reports/phase-direction-ledger.md",
+      "bytes": 4993,
+      "sha256": "802fd1c6d03fd66f5aa8052bcff0806ece9cd98b7166724eb570ad5614b9fe7f"
+    },
+    {
+      "path": "reports/q-newton-contraction.md",
+      "bytes": 5225,
+      "sha256": "9812515436f8f2210c79b0b234677e48c2b00f4495f4b227943a5fa36f1383b1"
+    },
+    {
+      "path": "reports/resampled-displacement.md",
+      "bytes": 5675,
+      "sha256": "2e45ed7267436bd9bfd1e5236f0afb3b0da6c0ffd69cfcd4a3c0e940fd3be0b8"
+    },
+    {
+      "path": "reports/sheared-norm-constructor.md",
+      "bytes": 8387,
+      "sha256": "f022b3c74067a223057a3fdbc47986007e119a11e01cd0a0340640b14e4c389d"
+    },
+    {
+      "path": "reports/sheared-norm-scalar-application.md",
+      "bytes": 5521,
+      "sha256": "51c56a3f51dbe55a3cabe85497d6ef677753c2becf070f497b52b890afe1a33c"
+    },
+    {
+      "path": "reports/source-retaining-functional.md",
+      "bytes": 5379,
+      "sha256": "a07d811cebca3e4d9ff2e830e0a861c1430ba3ae6c7a370de575046e231ddbf0"
+    },
+    {
+      "path": "reports/stationary-phase-contraction.md",
+      "bytes": 6571,
+      "sha256": "1a51efb0ce0dce5b12a7cb0111e12ab37ddf251b67f7d92925e6c9ebbf2246b6"
+    },
+    {
+      "path": "reports/weighted-log-directions.md",
+      "bytes": 7636,
+      "sha256": "99f90cabd2c0129cb5f0a62d54d509fb24c03a4c6df7048399a1da1d01f343c6"
+    },
+    {
+      "path": "reviews/fold-review.md",
+      "bytes": 5188,
+      "sha256": "ddcbcd544f4e07d4183e44ebd90d4443890ca470623e2cea9fb310e24d8cc15b"
+    },
+    {
+      "path": "reviews/root-integration-review.md",
+      "bytes": 8214,
+      "sha256": "30653449cf32447b5406531c13aaa63d55a9c54c87f3923ca62c654b9995c5c5"
+    },
+    {
+      "path": "reviews/sheared-norm-low-precision-review.md",
+      "bytes": 5745,
+      "sha256": "082781bd4dfb084d38f4f1abca8ddb7a9dac475c125b8ee5debea48abe5cded2"
+    },
+    {
+      "path": "reviews/sparse-norm-constructor-review.md",
+      "bytes": 4826,
+      "sha256": "f5d44db795285dc3cbdaafe4e5e88b90b55099520cccb1b7072dd6eaabf73847"
+    },
+    {
+      "path": "reviews/tangent-transposition-review.md",
+      "bytes": 5315,
+      "sha256": "ba0785ec8d2369bfb243515c7d9921aa0bf7fbeee7051b2204a1bfe57febafac"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 3474,
+      "sha256": "dfcfa8007e33859b7340d56fc4d841fcc2977b11f9ffcfb2ea6e96005fe39ebe"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 5405,
+      "sha256": "7041023ae903cc34fae8e34905d5d01ec0c21f0037c118eba926ced67eb64d52"
+    }
+  ],
+  "note": "Frozen primitive acquisition proof, reviewed reference and explicitly unpaid whole-query interfaces. Manifest excludes itself. All 143 previous entries preserved."
+}

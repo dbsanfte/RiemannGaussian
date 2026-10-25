@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "copies": [
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/additive-transform.md",
+      "destination": "reports/additive-transform.md",
+      "bytes": 5230,
+      "sha256": "b15a093a9e8249fd36dcb364e3532977d66a8057d851299489876a8100a2b83a",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/coherent-root-preparation.md",
+      "destination": "reports/coherent-root-preparation.md",
+      "bytes": 5839,
+      "sha256": "cfe244b79106868a8317de2a41a24e7dba5b0e5a068ad5bd289845cbe6b5881c",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/coupled-palettes.md",
+      "destination": "reports/coupled-palettes.md",
+      "bytes": 4321,
+      "sha256": "843dbe94be7545d2f7a10880a0f3054c3a4023ca518222873128e00fc35318de",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/direct-character-norm.md",
+      "destination": "reports/direct-character-norm.md",
+      "bytes": 4666,
+      "sha256": "611ea4d7c4c6e4f71955fce0e5e637108080289524666a5ea220f030c0d770a9",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/finite-character-product-literature.md",
+      "destination": "reports/finite-character-product-literature.md",
+      "bytes": 8466,
+      "sha256": "4e5c3ea2115068b422390d14771bce68db83ea6b5a9a70563a6eea7f49180ed1",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/gauss-cocycle-extraction.md",
+      "destination": "reports/gauss-cocycle-extraction.md",
+      "bytes": 5808,
+      "sha256": "779868d25f790b5ca7529c8add8b2bb4563177e5e2909253b9d8ae85dc560530",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/gauss-weighted-norm.md",
+      "destination": "reports/gauss-weighted-norm.md",
+      "bytes": 11258,
+      "sha256": "b7885ee829d6a1d8f3861a56a82b426ae5de958cdcf0e06cc4d02d4fbe5f990c",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/multiplier-recursion.md",
+      "destination": "reports/multiplier-recursion.md",
+      "bytes": 7254,
+      "sha256": "4251e383a1664b060fc386982d52c4a13f673698f371893f52fb922527721511",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/multiplier-state-cost.md",
+      "destination": "reports/multiplier-state-cost.md",
+      "bytes": 5962,
+      "sha256": "312fe186f7b7a7b7a706f0b684fe318aad4c326140c9d1fc62e3de00fb268899",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/multiplier-symbol-recursion.md",
+      "destination": "reports/multiplier-symbol-recursion.md",
+      "bytes": 7366,
+      "sha256": "280c22e3b8bf668a8df66e5f0637755d71e3b36fdda94ccba510419a38ee3b75",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/native-multiplier-closure.md",
+      "destination": "reports/native-multiplier-closure.md",
+      "bytes": 5277,
+      "sha256": "9fe6af71ea1317be696483660720da96fa9428adf8d5351a68d681ea6d489282",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/partial-matching-character.md",
+      "destination": "reports/partial-matching-character.md",
+      "bytes": 7054,
+      "sha256": "73e76eb3ebec5d04a5880e9176799e2efc613775dd2b997c28500faae1989717",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/reciprocity-observable.md",
+      "destination": "reports/reciprocity-observable.md",
+      "bytes": 8785,
+      "sha256": "19a87256dcf5ef9be65534e8a7b9a70f519bd424a06e89ded06b581292d50517",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/review-gauss-weighted-norm.md",
+      "destination": "reviews/review-gauss-weighted-norm.md",
+      "bytes": 5983,
+      "sha256": "c63e5ff07b20d15e5d482f9617a6c5939c25bdc31cf7055d5dae723b0b775e35",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/review-native-multiplier.md",
+      "destination": "reviews/review-native-multiplier.md",
+      "bytes": 7809,
+      "sha256": "d70eb074e5502a395f57321fc22239ef3c6f04415c73a0be9bd010c5b1f759d1",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/review-twist-norm.md",
+      "destination": "reviews/review-twist-norm.md",
+      "bytes": 5361,
+      "sha256": "4a8f2cd1b1c403b8dc20107098517682f80a62fb5b53493d22c68bf45d2abe92",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/twist-norm-aggregation.md",
+      "destination": "reports/twist-norm-aggregation.md",
+      "bytes": 9913,
+      "sha256": "a7533e5b36f0cf76ca46ef62493b5ecd294afa2e9081094a5b3cc49493514b14",
+      "copy": "verbatim"
+    },
+    {
+      "source": "/tmp/semiprime-h-character-acquisition-20261022/review-final-integration.md",
+      "destination": "reviews/review-final-integration.md",
+      "bytes": 3210,
+      "sha256": "a736adedeb7b73476c050aa1843f48ee78043cfd8e45783f97570cd725bd86f4",
+      "copy": "verbatim"
+    }
+  ],
+  "scope": "Final research reports copied verbatim; historical scratch paths identify working locations. No full third-party paper is included."
+}

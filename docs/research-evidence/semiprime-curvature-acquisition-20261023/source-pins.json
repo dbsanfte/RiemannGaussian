@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-23",
+  "scope": "Selected primary sources directly checked in this continuation and inherited local theorem contracts. External PDFs are fingerprinted, not copied into the repo. Other literature references remain in the verbatim reports.",
+  "primary": [
+    {
+      "name": "staircases-z2.pdf",
+      "url": "https://math.colgate.edu/~integers/k58/k58.pdf",
+      "scratch_path": "/tmp/semiprime-curvature-acquisition-20261023/primary/staircases-z2.pdf",
+      "bytes": 813804,
+      "sha256": "79b325f2a4b59333a949f16817e71896feca74c53d50bed03d45e15994b99593"
+    },
+    {
+      "name": "rademacher-carlitz-1310.0380v1.pdf",
+      "url": "https://arxiv.org/pdf/1310.0380v1",
+      "scratch_path": "/tmp/semiprime-curvature-acquisition-20261023/primary/rademacher-carlitz-1310.0380v1.pdf",
+      "bytes": 214626,
+      "sha256": "91ffb5e540d4fbaa6752328ff2e469076dd584cae8fd4cdc1e4ac42d74daff59"
+    },
+    {
+      "name": "velusqrt-2003.10118v1.pdf",
+      "url": "https://arxiv.org/pdf/2003.10118v1",
+      "scratch_path": "/tmp/semiprime-curvature-acquisition-20261023/primary/velusqrt-2003.10118v1.pdf",
+      "bytes": 371582,
+      "sha256": "058162905a84b39fc6e23f12341b02899cce9328e9b45ac20750fa86cdfedd11"
+    },
+    {
+      "name": "q-holonomic-2012.08656v1.pdf",
+      "url": "https://arxiv.org/pdf/2012.08656v1",
+      "scratch_path": "/tmp/semiprime-curvature-acquisition-20261023/primary/q-holonomic-2012.08656v1.pdf",
+      "bytes": 499386,
+      "sha256": "f3d617af2e9c899b41d5f4d9120412c78857ebc19009b69fe99e74d97f0d9b09"
+    }
+  ],
+  "local": [
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022/reports/sheared-norm-constructor.md",
+      "bytes": 8387,
+      "sha256": "f022b3c74067a223057a3fdbc47986007e119a11e01cd0a0340640b14e4c389d"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022/reports/native-dyadic-transport.md",
+      "bytes": 5954,
+      "sha256": "d9001ff797904a5f461b843e26d601c3768e2378b4738f8b34f14c926e94e2a4"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/constructive-frontier-index.json",
+      "bytes": 5703,
+      "sha256": "9885d687eb030009277d8de7079d5d172a89a1632c277cb6d0aadc82b393bc3a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fermat-multiplier-20261022/README.md",
+      "bytes": 9727,
+      "sha256": "4431bdf273b8ef4d0c727400e592d0e8591d27a429cfdea8aac288249f876e1d"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "classification": "Uniform soft-linear small-multiple cover; no improved factoring exponent",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 9727,
+      "sha256": "4431bdf273b8ef4d0c727400e592d0e8591d27a429cfdea8aac288249f876e1d"
+    },
+    {
+      "path": "implementation/fermat_multiplier_cover.py",
+      "bytes": 9432,
+      "sha256": "fcf1a3f038e78907e3b3205c3098aa314883b464812ae169a66f456dcbc1120f"
+    },
+    {
+      "path": "reports/fermat-constructor-review.md",
+      "bytes": 7327,
+      "sha256": "bc1ac1c11ada714823be66928a763e2fb8394f53ad4e7c0fef81862f02b1aef3"
+    },
+    {
+      "path": "reports/fermat-consumer-independent.md",
+      "bytes": 7893,
+      "sha256": "473cc6434747da245434af4de9f6fca36324725f620bd02eb29fd59ebdba891b"
+    },
+    {
+      "path": "reports/fermat-multiplier-cover.md",
+      "bytes": 12137,
+      "sha256": "ea7e29d45355caba560c9603bfd6e6e565dde51544b1c3c9f2696370c3c554af"
+    },
+    {
+      "path": "reports/fermat-structured-cover.md",
+      "bytes": 8350,
+      "sha256": "be7099f6eea6abca2321788ad552fe2cc8585c4cdfba4e641dda81748f2f2f86"
+    },
+    {
+      "path": "reports/native-shared.md",
+      "bytes": 11983,
+      "sha256": "f248ae4861b630e69982eca9a5eeb93836a8f74c77a9abf222d3df2f9d93416a"
+    },
+    {
+      "path": "reports/oblivious-source.md",
+      "bytes": 10543,
+      "sha256": "0071815d218cc17b1768c6921fe574b10670b71ac5164411b80a188f3fa5a9ae"
+    },
+    {
+      "path": "reports/short-seed-source.md",
+      "bytes": 13566,
+      "sha256": "fa7ffffabdb52342fc938a2935889429b5d45beb2ac5ef91bfe37e5965fd423c"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 903,
+      "sha256": "d2876c8681ff10725b50f12ad89dac2116a257b11093fb5a6488c4f7162e0ebf"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1192,
+      "sha256": "5668c09207a87101810ca2fbc66371c56d2a2e31de336400eef2aabc93131bc9"
+    }
+  ]
+}

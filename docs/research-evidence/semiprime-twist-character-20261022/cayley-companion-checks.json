@@ -1,0 +1,21 @@
+{
+  "aggregate_gcd_masks": [
+    1,
+    7,
+    11,
+    77
+  ],
+  "cases": 96,
+  "domain_rejections": 5,
+  "leaf_gcd_masks": [
+    1,
+    7,
+    11,
+    77
+  ],
+  "max_convolution_degree": 32,
+  "max_factor_degree": 32,
+  "max_point_tree_degree": 32,
+  "scope": "exact conventions/composite arithmetic; no coverage, timing or rate claim",
+  "status": "passed"
+}

@@ -1,0 +1,17 @@
+# Independent exact-source gradient/product review
+
+24 October 2026. **PASS**, no corrections required.
+
+Reviewed gradient-product.md SHA256:
+`8ef791e4c8beb245a8fee233deea946c2322f62cf9935985fc042185bda73894`.
+Source/shared files were not modified by reviewer. Cached Baur--Strassen Theorem 2 and the actual native exponent bounds were checked.
+
+The finite shifted-product identity (3) is a polynomial identity before taking derivatives. Extracting u and v coefficients gives the displayed two equations, and subtraction gives exactly (q^L-1)E with the stated signs and q*T1 term. No factor a,b,E or covered leaf is canceled or inverted, so nilpotents and all zero patterns are included. q^L-1 is genuinely a supplied unit. Monic normalization is F_tilde=q^-J F(qX), and each omitted-factor summand rescales by q^[J(L-1)], not q^[JL]. The J-coefficient setup, endpoint evaluations and phase powers are actually acquired, yielding a complete two-call reduction at the claimed supplementary cost.
+
+The source explicitly requires exact gradient outputs and one common q-shift closure. A ratio-only promised consumer or an algorithm valid only at unshifted native inputs is insufficient. Unit separation transfers under the known unit scaling, but native membership or other restrictions are not presumed. With both boundaries globally certified units, shifted index i maps to original i+1 and no boundary hit is lost/added. The outside index L is not assigned to the old interval decoder. Wrong-label boundary saturation can decline or factor; it is not silently converted to a promised native witness.
+
+The native good-boundary proof is valid. At smaller nonsplit P, separating odd scalar/torus orders makes their product R divide K_i=aP+Q+ell-Hi for any alleged minus collision. At i=0, P,Q>16H and ell>-9H/2 imply positivity, and a<2k,P<=k³,Q<H²/16 give K0<3H². At i=L, the displayed negative upper/lower bounds follow by subtracting 3H²+2H. Both nonzero magnitudes are <R>256H². Thus there is no P-side hit at either endpoint, and neither boundary norm gcd can be saturated on a continuing good orientation. No analogous claim is transferred to arbitrary roots or larger intervals.
+
+Forward lifting into the rank-three square-zero algebra is exact; its unit inverse formula and constant arithmetic overhead are correct. Actual unit divisors and a valid independent-deformation circuit identity are required, including through data-dependent branches. Native-only pointwise correctness is expressly not enough for differentiation off the native set. No product/state inverse is used at a collision. The cached Baur--Strassen Theorem 2 has the stated 2A+M,2S,3M operation accounting and at-most-four total-cost consequence; its field result is credited, while the elementary square-zero proof supplies the composite-ring justification.
+
+The completed existing evaluator still pays degree-Jb blocks, all L/b starts, clipped tails and initialization, giving soft(J+sqrt(JL)) for both calls. The exact reduction does not provide either pair at a faster clock. It establishes an interface equivalence under its stated shift/uniformity closure, not a general lower bound or equivalence for unspecified successful ratios. Pole/residue notation and infinity jets are not treated as acquired endpoint data. No new factoring exponent, conditional-orientation upgrade or unsupported finite-ring AD theorem is asserted.

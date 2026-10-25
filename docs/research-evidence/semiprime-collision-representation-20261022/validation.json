@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS",
+  "scope": "Research integration and reference-matcher controls; no full collision query or improved factoring exponent is certified.",
+  "kmp_reference": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest -v test_gcd_kmp.py",
+    "working_directory": "implementation/kmp",
+    "result": "PASS",
+    "test_groups": 5,
+    "replayed_by": "root",
+    "oracle": "independent naive matching in both local prime fields, exhaustive short alphabets and directed longer controls"
+  },
+  "verbatim_copies_verified": 23,
+  "external_primary_references": 20,
+  "cached_primary_fingerprints_verified": 9,
+  "local_source_fingerprints_verified": 3,
+  "prior_manifest_entries_preserved": 114,
+  "local_markdown_links_verified": 14,
+  "json_and_whitespace_checks": "PASS",
+  "git_diff_check": "PASS",
+  "unique_journal_and_guide_sections": "PASS",
+  "mathematical_review": [
+    "fixed-weight rational trace algorithm independently reviewed",
+    "root integration review of rational source, KMP, weighted trace, character positivity and follow-up identities",
+    "independent dyadic native-interface and homogeneous-coordinate reviews"
+  ],
+  "not_claimed": [
+    "machine-checked new mathematical proofs",
+    "near-linear native varying-weight acquisition",
+    "complete collision controller",
+    "improved worst-case factoring exponent"
+  ],
+  "broad_build": false,
+  "commit_or_push": false
+}

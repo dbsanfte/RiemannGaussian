@@ -1,0 +1,3075 @@
+{
+  "date": "2026-10-25",
+  "purpose": "Portable scratch evidence checkpoint; no improved factoring theorem",
+  "excluded_self_files": [
+    "manifest.json",
+    "validation.json"
+  ],
+  "entries": [
+    {
+      "path": "ERRATA.md",
+      "bytes": 3361,
+      "sha256": "eae0d4b48b537a30009d4ebb9b18b4d2e0876fca9e305372cea129f2984a056e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7114,
+      "sha256": "6c9492540cd0dc5cc9c77dd0e119d56f4ca0c752de6715c6f045b873cc646a87"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/advice-batching.md",
+      "bytes": 6029,
+      "sha256": "7087effc3492a47b14897bb17c323b6844b3f2ef9782dc0e92a5631bdcd8f760"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/agents-append.md",
+      "bytes": 1513,
+      "sha256": "86267abdb0cf793d378b5fd853791c55c8e750ed0ecad4a3be13a517d93a36e6"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "befa3c2902f7df2b2bf0eb636691cb1c087ec0e94388f0d4ba5c5e9c2201757e"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/continuation-validation.json",
+      "bytes": 59328,
+      "sha256": "68d5df053ac1b66b01291fa389d0fe653bf07332efb770c160b0926d3bfb772a"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/final-pins.json",
+      "bytes": 493,
+      "sha256": "a0afdb952060e0ce0e5465a91f1345ca86c0b86e47e211a3002bf71bc990a4b4"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/inherited-source-pins.json",
+      "bytes": 50152,
+      "sha256": "ecb431cf9b382df25db3687e81c317cc1c0b4dd42f0edc398982693b3dddb7c9"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/integration-review.md",
+      "bytes": 3847,
+      "sha256": "17bf5869b8dcbd421f4a8d8db2b734578150e9156d0a6f408920af96b0ebebaa"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/journal-append.md",
+      "bytes": 3911,
+      "sha256": "eb0b8635c0fefb2d4c865b7cb64da64de8fce006217e9ec7bd898080be62d3e7"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/source-pins.json",
+      "bytes": 52149,
+      "sha256": "ca9dc9a8a19ac36056650ed15c6aa0f097569a3c3f1faabb4d6b2b2bb487e060"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/swap-erratum-review.md",
+      "bytes": 3056,
+      "sha256": "534a8bcc9e1928280c3bade57e23b6f3a14274e378259535d4d8a4f8fc8a7236"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/swap-erratum.md",
+      "bytes": 6494,
+      "sha256": "1655476d3d979386229edea78ee0a6fe4cfbc4dd44807bc722fa7deefb302bf7"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/turn-classification.json",
+      "bytes": 681,
+      "sha256": "f5ba34baec340163668b43d3362cacf71f805035c9e6013c4c1ff60ba5068c7c"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-locator-20261024/validate-continuation.py",
+      "bytes": 4718,
+      "sha256": "4ad476f2493a5711570d4307e2f19dab0373a30dbb65b3f8a0035b85ac535e96"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/agents-append.md",
+      "bytes": 2186,
+      "sha256": "824b0fc90c13c89985a8a880a6162c66690b40834762c3260b9b932f8206ae0e"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/bounded-skolem-audit.md",
+      "bytes": 6484,
+      "sha256": "b79225a64b0a63f25384e35125d656e327c506979f0f41c465ed2a90f97e7f06"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/bounded-skolem-review.md",
+      "bytes": 2078,
+      "sha256": "9c246d6e2f187f83432ca954cd27ac0307745e4c2ada9d1b0dbbab089ded13a0"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "059b11e5419d262fd647929e6f06b1ce8433da52b090d60081a9c5101981b5fd"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/continuation-validation.json",
+      "bytes": 52513,
+      "sha256": "f0bec2b9a55325c03ff738721dc21ab8d8fdc2b6fe08907361fbb60a3d1e1f0b"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/final-pins.json",
+      "bytes": 921,
+      "sha256": "43ab61b591b84686a2c929ba6252b95881c5c4213c744755092e6d820491548a"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/inherited-source-pins.json",
+      "bytes": 43218,
+      "sha256": "965717cf0229cddb9581565f38b8cd42fac75805e5eea81f6ef2fd5764dd8f74"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/integration-review.md",
+      "bytes": 4215,
+      "sha256": "40b92f30af677a4d0ec06c3100ab909f5e2dce8c3bf2b167e70412655b49a427"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/journal-append.md",
+      "bytes": 7514,
+      "sha256": "f021c90e996f28e9b8d960c201b0e236732878f49a04b7d891c00607772bfae2"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/signed-two-weight-query-review.md",
+      "bytes": 5312,
+      "sha256": "16b648c2556ae7b72864901a6a213672d18bce575a9c73114d15c1bf48c67eec"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/signed-two-weight-query.md",
+      "bytes": 11374,
+      "sha256": "b36e44e9d5e2c897caac87d6ad6339548fd9d438bd21352bd50971ff236efc93"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/source-pins.json",
+      "bytes": 44566,
+      "sha256": "5f4d27725a8f05d79f6a7d2a1ac3c701c7c9370f51bcb8789321ca3fd55455f3"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/symmetric-supplier-audit.md",
+      "bytes": 7892,
+      "sha256": "e31daf2b017109cd844bda3b5814cac84bd000ac223a7571efe13c615ff1ac62"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/symmetric-supplier-review.md",
+      "bytes": 2431,
+      "sha256": "d053de0057df702f033690d4376a4f74ae2fa4d5e0e0434a1b49b28ee352500a"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/turn-classification.json",
+      "bytes": 375,
+      "sha256": "52a53ed45276d102d1d49710b3f28bc31161565d1601822803e670736f4d05e4"
+    },
+    {
+      "path": "evidence/semiprime-arithmetic-query-reuse-20261024/validate-continuation.py",
+      "bytes": 5063,
+      "sha256": "32791503eb21a0b36ee41ef9a9dd272e5442fad6d1d971cf07495ef1d3403040"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/agents-append.md",
+      "bytes": 1534,
+      "sha256": "50ffad90bd2deb3e240e29b1e132aa9695295d064a1e9899b145f8864312e8cb"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "1c5c7bf196bbdc3255df451b1a3ade479fc03a92550aca3a43a751a72c02500a"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/continuation-validation.json",
+      "bytes": 43205,
+      "sha256": "d064cfd8d7865f60cbf922de73e8418bacc07bf38ce1eeef28f53a2d2de31cec"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/final-pins.json",
+      "bytes": 887,
+      "sha256": "8a31e7cb9f6db2eff112f82356ae18051f794fb28acace42793cbdb36672c982"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/inherited-source-pins.json",
+      "bytes": 34998,
+      "sha256": "4f0a545b3d35e0c1c8f515664929b73be2dfc36e0c0be5dcc3e6457cbd5d85a4"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/integration-review.md",
+      "bytes": 3173,
+      "sha256": "f043a7e3107263353a0adb4d0c3feffc76f50734915e0e10e4ff70c21351160a"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/journal-append.md",
+      "bytes": 5394,
+      "sha256": "80d6e167f98caffa1cf8260c261008133c99453c7fe7d74f2c79754e5d043cdc"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/literature-review.md",
+      "bytes": 4472,
+      "sha256": "15349fa6ece7b1db9d64153e0170e0ce61aa1c2de97e566872da2bde88f6a6c5"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/literature.md",
+      "bytes": 7103,
+      "sha256": "49b298182ed180517cdd5582f4276b280939ea52619aeb4138e07eeccaa92ae8"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/local-square-lift-review.md",
+      "bytes": 3525,
+      "sha256": "09f31a0d03828ac3a6264ffa459194d260c4ab7cd4a3351831d1bacff4df17e8"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/local-square-lift.md",
+      "bytes": 4848,
+      "sha256": "8e68b2fb169ed9f567ce7f25f4a958a41ebe574afe9be323f4cf18f2ede7af14"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/rank-one-boundary-review.md",
+      "bytes": 2369,
+      "sha256": "7ff4cd54b28ffaeea109014bc5aceb7238185514cf5cb4ac44399b7af30bb130"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/rank-one-boundary.md",
+      "bytes": 7110,
+      "sha256": "8d0d5e13b23cc95835e567bd71bda2d3024c5338bb7e3a0bc3f3020d88e841a7"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/source-pins.json",
+      "bytes": 35588,
+      "sha256": "bfe8ef8eeb545fc5c73db42bdde7c254194b5278c4cdf69e3ff73c968dae04aa"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/turn-classification.json",
+      "bytes": 526,
+      "sha256": "cb36e50fea88aeadc19f5493bec31fb0feec00fd70b7f590f76ed5e3d6a7683c"
+    },
+    {
+      "path": "evidence/semiprime-casoratian-endpoint-20261024/validate-continuation.py",
+      "bytes": 4884,
+      "sha256": "775a891c711cfdeef9fe772873ecb2543f94d00e7ff28d8967d645214a10f2bc"
+    },
+    {
+      "path": "evidence/semiprime-changed-scale-mask-ledger-20261024/mask-ledger.md",
+      "bytes": 10172,
+      "sha256": "c5e164b457639016dbbddcc76c09e3b0ad8d303faf9cccc2944dc6d1f2bc616e"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/agents-append.md",
+      "bytes": 1608,
+      "sha256": "41e0f693765cee6ffe593a9c8b6115a86bb08130fc9a8fc77d52ac5b377ddf09"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/character-independent-review.md",
+      "bytes": 5836,
+      "sha256": "e2d9a2c02bc92681e6c33b009a2dd0438e0214c556ea7d9eecc12bb22b87a9b4"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/character-resultant.md",
+      "bytes": 13679,
+      "sha256": "87c7b82b0bcc516f63d8ff4f1f81f2214f1e8c4e3e23083072470d7c2a672fb1"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/character-review.md",
+      "bytes": 4002,
+      "sha256": "0d1003b979dc22040ed35a30e7e04cc1c62cbf6d50040c37a3519cce84d9b12d"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "fec59d81fcc69b22b7245d2aa403d7e054ce73f61b3caeea059c3934f9e8451c"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/continuation-validation.json",
+      "bytes": 8437,
+      "sha256": "bbb51d738c46af5e6fd03ad8301615901b27d9850f802119d310ba09d772b501"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/final-pins.json",
+      "bytes": 995,
+      "sha256": "4e7e908809b3f3a8ba8c5c3bdc64ae00f345e26b9328837879c2c54d1c7526fe"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/half-norm-cancellation.md",
+      "bytes": 13054,
+      "sha256": "b0185cb2ab94f4224ebe3133dabe0a1cb5179f87ecfe22907f72160b93118889"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/half-norm-review.md",
+      "bytes": 6288,
+      "sha256": "75db8757e5b5164094f34b944bb2c2730cd31a1fe24013874d6472977766a5ef"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/integration-review.md",
+      "bytes": 7070,
+      "sha256": "4be950e133e218613acfd1cf57a1a498dad14e245e8f32d92c71106725fbad93"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/journal-append.md",
+      "bytes": 5158,
+      "sha256": "312f4c66233c53a5428bbded9fb7ef838d3d97fa4788fd98b0f0e6771f779153"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/native-pivot-contraction.md",
+      "bytes": 14222,
+      "sha256": "9e363fee81473624d32088c4cba883d60fb3f9194d93f5ba30368c8881318c9a"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/native-review.md",
+      "bytes": 5501,
+      "sha256": "30a314097a2239faf62fcf4f12c7f5b399068450c979b14115305231a108f128"
+    },
+    {
+      "path": "evidence/semiprime-character-endpoint-20261024/validate-continuation.py",
+      "bytes": 5923,
+      "sha256": "5414fac6b1c2e0b3e2f6752cc67751d6996447386c0c090a1e23c54d5e8c5e6b"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/agents-append.md",
+      "bytes": 2292,
+      "sha256": "ec0417cd8288ecfedc4b451f357ca961d5354586527396d44625c25d79a7d772"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/cofactor-contraction-review.md",
+      "bytes": 4639,
+      "sha256": "ae37b6c013a8fa556ad51870646b27b2f56eac7e53edd2073e2d006474eb81bc"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/cofactor-contraction.md",
+      "bytes": 16840,
+      "sha256": "e4100f7c507a1f3a894b9c9285425b942f086f0080e3f2ef51bd2b0aa7838ee0"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "e23156430ff96ff9bcc14bc16057dc57e4738a671ef0694d4fd2abe69c655429"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/continuation-validation.json",
+      "bytes": 32146,
+      "sha256": "8021a3ed0b7be785203d04d14fcdcc3f6a8d4e89a408622514f89dc1d3f710d3"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/final-pins.json",
+      "bytes": 716,
+      "sha256": "e0264d6a4f5c640d82ba26bab87952edb5b50432eac615b50fcba305beaffc51"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/inherited-source-pins.json",
+      "bytes": 24762,
+      "sha256": "16e9c8e5776c5b2e2fd8526272dea957d9ca6188e4e41859974cee0206c199c8"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/integration-review.md",
+      "bytes": 5292,
+      "sha256": "c3155922bf24c578414e0df2b0e51fbe8c62bc102e58a796d16572dc8be87c58"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/journal-append.md",
+      "bytes": 7230,
+      "sha256": "e79d512b371a02c197066f3abb3a08900ddac1260671a0ce601bd00f88723989"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/sectioned-convolution-review.md",
+      "bytes": 5162,
+      "sha256": "0d6ca1230bae3fa25ca9c6f64e9f1be942e841925c52d134764d671e8a99f415"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/sectioned-convolution.md",
+      "bytes": 8581,
+      "sha256": "0d091f604177354cf4d9a6fa4e6f709bbff5820b708e3f4c8f0a866a8f211237"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/source-pins.json",
+      "bytes": 25062,
+      "sha256": "0eafe6370a9ba2909ada8925a70720ebc3e872830c0e00f371465dec58c55505"
+    },
+    {
+      "path": "evidence/semiprime-cofactor-recurrence-20261024/validate-continuation.py",
+      "bytes": 4764,
+      "sha256": "838a65126751c94e9988570bd481ea1b2fa484a51a49844b91ea89f8b990aec3"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/agents-append.md",
+      "bytes": 1827,
+      "sha256": "22931ea7e6381ca85f8e19db262d14002ce3dc9f98fa33667bde006e9274616c"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "f5cc9438ece36375dfa2df4441f1dd2fd3101963f3fd9bd059f470f6c887279f"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/continuation-validation.json",
+      "bytes": 8426,
+      "sha256": "dc7db0542161078a67f12b9718d0fb081aa368df47e974374d294cf56ef900e8"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/cover-literature.md",
+      "bytes": 16226,
+      "sha256": "28b9b5e14ac5e94a101213d17f4ca387ad959efb708160f90af66b2eb21970d1"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/cover-review.md",
+      "bytes": 4350,
+      "sha256": "c8c6b6f4f29f0edf09dbd223d484560b18aefdb0d70866c6147043e6c54c2bb2"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/final-pins.json",
+      "bytes": 1188,
+      "sha256": "1f6c056640a91aca881054dc543b774a8b2f5724848c6f349aaacde34ede1fc8"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/integration-review.md",
+      "bytes": 6251,
+      "sha256": "10ba17d4dc7ba6bd6472bd98b3646f90b1525378a00e982e2a5ba909eb335020"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/journal-append.md",
+      "bytes": 4864,
+      "sha256": "b423372017937509019b9bb482b77709e417d25c8b93b47d94b754379dfd7c18"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/native-cover-combination.md",
+      "bytes": 11484,
+      "sha256": "72a8f581367f249bb764032fe9e249c3e7ae5ecc7021a2955ac11514a134fefe"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/native-cover-review.md",
+      "bytes": 5838,
+      "sha256": "ef4aa798efd0135c67f2cb429ceeb3cb4e6fe832477289f412c9738c8b416638"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/quadratic-counterexample-review.md",
+      "bytes": 2577,
+      "sha256": "e69080306bd17e8bbe9419fb6a5e09db1da087218db88911efe7f013c2d8c7f5"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/quadratic-counterexample.md",
+      "bytes": 3903,
+      "sha256": "be4bd0ee878584be832f029202e33790fb6752ad33807397336b00e130ff1210"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/smooth-rough-cover.md",
+      "bytes": 15102,
+      "sha256": "1111187524344b96671b0b800e899e7b71bec74d5f21d04bd23a8057189572c0"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/smooth-rough-review.md",
+      "bytes": 7417,
+      "sha256": "e158875faae432b95a044eca629eb546c31f0362cdf4e8d808cc0d9a6c9d54bc"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/tinyreplay.py",
+      "bytes": 2386,
+      "sha256": "5f09e0c77ea9e02e25181176928b5c29c419452ec0a157038ba6dc00268cc805"
+    },
+    {
+      "path": "evidence/semiprime-compact-cover-20261024/validate-continuation.py",
+      "bytes": 5810,
+      "sha256": "53e26855ae83f7c5ae21350f7793b3e7566254080312a8811e5cf137d4206a28"
+    },
+    {
+      "path": "evidence/semiprime-dual-moment-displacement-20261024/dual-moments.md",
+      "bytes": 4774,
+      "sha256": "b56f631361203ac466295985ce25dec5c83443efdc5db8e8831aa078fef80e8c"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/acceleration-independent-review.md",
+      "bytes": 4255,
+      "sha256": "338e2066a900fa006c2fccef8ccf71514647423dc61b7d51cd6d27a2b9ca3202"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/agents-append.md",
+      "bytes": 2128,
+      "sha256": "8422d9ca1e868a0a15091efe7b6deda01c4e3c295a3ac2f07ea9a7f7dc956ac8"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/constant-power-correction.md",
+      "bytes": 7761,
+      "sha256": "e4481d2a6a3eb536fc13108ba7903bb4e61cac38134a805044aaa36afc3fbdb5"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/continuation-baseline.json",
+      "bytes": 4931,
+      "sha256": "1cbc3812e659605971101a2d51e7a75f32eff9ddb6a9fa8ae71204466c517764"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/continuation-validation.json",
+      "bytes": 8974,
+      "sha256": "7d817a6eb0d3e04706d4882ba7f2ed1bdecbe6a25171f93ea48e69f355dc4673"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/final-pins.json",
+      "bytes": 1592,
+      "sha256": "2c19ef8758514f4c6613d34531658b632b0046d77b5f38d2191196fc7f130405"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/fixed-power-independent-review.md",
+      "bytes": 4584,
+      "sha256": "de80f2b37f85b95db331fb4c31ffdea657dc922a039cf37c522215f485bab69a"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/fresh-boundary-algorithm.md",
+      "bytes": 4654,
+      "sha256": "a0938be39b8877f1a3de75370de2440b9b800db3cdf3f3be50da6dd0044bdf24"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/fresh-boundary-review.md",
+      "bytes": 3690,
+      "sha256": "369a5abf5ffd00ad54f2db730a0e007a717ae81d2d542b7bdf288d271e46e93d"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/integration-review.md",
+      "bytes": 3708,
+      "sha256": "66d5e5fc0801f4051a9373a225718f81c0c1e8e363996dcbc97e324a13fff8ed"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/interval-dlp-transfer.md",
+      "bytes": 6071,
+      "sha256": "158d018e6090729fc43b6807e007131aba71c994d0529f260b4875330bb0fe04"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/joint-forcing-attempt.md",
+      "bytes": 6141,
+      "sha256": "34ebb3bcc289c03a0d825a9bc37cbefd1f949a610354e062641fa22a0728a5a7"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/joint-hadamard-recurrence.md",
+      "bytes": 7887,
+      "sha256": "9e93a8b82e4728a37a01b14a55357d7d496cc85dcfe493a9d8ed3f98e2966ba3"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/joint-hadamard-review.md",
+      "bytes": 3827,
+      "sha256": "3b3b31acb2e90b5fd9126f9f26dee597973f81238413fc3f642d78905f20464a"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/journal-append.md",
+      "bytes": 6520,
+      "sha256": "03b8f1ccb227283d9e9c065d9e0cd52305473f169aff10cbaf9a87e63bb7deff"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/paired-norm-execution.md",
+      "bytes": 5462,
+      "sha256": "d2d09b95ac3ac721f49a5f7e7bab4d93e2bbc78d3561e38424fc510209a76b11"
+    },
+    {
+      "path": "evidence/semiprime-forcing-acceleration-20261023/validate-continuation.py",
+      "bytes": 5845,
+      "sha256": "419850f3774536dee2a00bfb42ae3afcab4c12dff94247c72823b829d0b722c1"
+    },
+    {
+      "path": "evidence/semiprime-fresh-locator-20261024/localization-audit.md",
+      "bytes": 3564,
+      "sha256": "c14620e8755ba56658a64b309652b96448c48c38fedc0a7011b8e91ba6c509f2"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/agents-append.md",
+      "bytes": 1994,
+      "sha256": "3ffd9f3cd7db87688494e435e506a73863cbed28dc6e7d4ddf77780f6158dc0c"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/constructor-review.md",
+      "bytes": 6374,
+      "sha256": "2e4d581d99995f9053af84ed7e2217c538ebb43a5dfce0b4d0f627bb85cefdfb"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "180893a0a64dd5b495056eae7948a825917ed0dfb29235a810d78ef3a8cc3e9e"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/continuation-validation.json",
+      "bytes": 7778,
+      "sha256": "65c6277ddf2d6acf3a49220026cb4f1d5c409aeaee117189623a9f065e8c47a2"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/final-pins.json",
+      "bytes": 876,
+      "sha256": "eed769a2b03b815b257095425a46dd5d2a64b0295870105f443fbdb4bb65bfe4"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/integration-review.md",
+      "bytes": 6479,
+      "sha256": "85172de36ba5c498e1972669b6a6b401d321cf7682190a7799d7bc619c6a09ec"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/journal-append.md",
+      "bytes": 5078,
+      "sha256": "8c8d88393ddfef66466f089470d3dd3e8d47377ac21ad25a9fbf3fb306a77d27"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/period-constructor.md",
+      "bytes": 10837,
+      "sha256": "c7b338819761dddd0838f81a21ad65c7e9d830f48bcc9da4b4c4c99b6d2e14b5"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/period-query-attempt.md",
+      "bytes": 10716,
+      "sha256": "b876429f4ca01b324e5dec74d62a27706664942c023a5eb97487252df6152cb9"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/period-recovery.md",
+      "bytes": 15042,
+      "sha256": "bb8fd816c969e00061192201e88c97d0d8e0ed0993dced370f1e7ea670408e3d"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/proposal.txt",
+      "bytes": 2804,
+      "sha256": "6805966d404fc1903b628bf191f567f3e41c25821b6082a3af74ae44442ca2c5"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/query-review.md",
+      "bytes": 7025,
+      "sha256": "eb26bbedb5f14fd8e46f832f9842bce37b9bef62cd9fdc797599a20661c678ba"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/recovery-review.md",
+      "bytes": 6404,
+      "sha256": "793c62406eea028409f4cf261a14dda14c1a45ce3d704fc7ffc33e5626c838cb"
+    },
+    {
+      "path": "evidence/semiprime-gauss-period-20261024/validate-continuation.py",
+      "bytes": 5466,
+      "sha256": "fa7f915219588add9d4c05ed3002cade5cba3cb30f71ba88f1c45388cf75846f"
+    },
+    {
+      "path": "evidence/semiprime-genuine-stripe-diagonalizer-20261024/diagonalizer.md",
+      "bytes": 7851,
+      "sha256": "715dda9a17846b8a1c71a234bb87ae8322ddd28c2dd6a9018318de3ec9244ef7"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/agents-append.md",
+      "bytes": 1137,
+      "sha256": "5b8ddc1bfb2587410703cfd043974950aaa052db9fc5cd9e44a88e2bfdfd555f"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "84f4b1c2454ee71bb8581ecc29274247f4d316e1501ccc6d78e535aafaa3b27e"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/continuation-validation.json",
+      "bytes": 49573,
+      "sha256": "eaabaed19e1e9e76c6b097f85914280b555c747c74acff5cf30fb28efbe391ca"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/final-pins.json",
+      "bytes": 686,
+      "sha256": "1612009dc937c20bdf066f94a152b3eba5904963b6e3e85b4c0aafa43e0a592e"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/inherited-source-pins.json",
+      "bytes": 41954,
+      "sha256": "8487c6ca8eabb5425249a8ce44e2e0cbad03b628498897f263ffc00b8a434b60"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/integration-review.md",
+      "bytes": 4574,
+      "sha256": "31f7d63a238ef6fb10cb5fc95323bb71150e3a254a90fce40aaaf62d0ac8e7d2"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/journal-append.md",
+      "bytes": 3093,
+      "sha256": "9b23ddb80c57d0b03e908b00b29dde760b4437a57235e37ada14737633590a87"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/literature-review.md",
+      "bytes": 3042,
+      "sha256": "69acb917502e32c0b953929b2e43303a2a35fe9ddf48a699ed9e12333d3d5be0"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/literature.md",
+      "bytes": 5051,
+      "sha256": "8348b39631655b2eaa7b1aa3180f5b3e377500ec4e24d6c010c5822755fe02f8"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/shared-resolvent-review.md",
+      "bytes": 2066,
+      "sha256": "ab08eed6ea66492878e42daf67cc2aa755bd498c731f58f9b3e6dbd921dc1520"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/shared-resolvent.md",
+      "bytes": 7721,
+      "sha256": "e30a380d104cf719368e6623811c229b4497e6b8a2d9ad05a2453ecb39478b4a"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/source-pins.json",
+      "bytes": 42246,
+      "sha256": "6727ad0bc4c8147664c179957bb1df6788b382d96f822220332619c344a367ac"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/turn-classification.json",
+      "bytes": 353,
+      "sha256": "78dff834e180ffced53103e2b9f2589bd32b0ebd064a85a2f6d1c2dbb59d36ba"
+    },
+    {
+      "path": "evidence/semiprime-hierarchy-contraction-20261024/validate-continuation.py",
+      "bytes": 4836,
+      "sha256": "77121b2df6a055962d19217553ff7b7488800d32b4adfb968e8746fbe6850e9d"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/agents-append.md",
+      "bytes": 3132,
+      "sha256": "153a3edd4254bef74ff959b3b433bc6849631b3b56277069159546921516c813"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/cauchy-contraction-review.md",
+      "bytes": 6087,
+      "sha256": "d86febff54a9606cd2d7435b4ab0bf9f20a7f4317d5556aa777e68edff481164"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/cauchy-contraction.md",
+      "bytes": 13337,
+      "sha256": "cc91bc1edc9534368081749933e980daa1ec04b6aea2b750366481741bc8bc70"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "831fa9abf88f23dd7f25e7a51e82438e0461896a0a36332d26e42cae99657b1f"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/continuation-validation.json",
+      "bytes": 34856,
+      "sha256": "bcb6949f3647268cad5e1a409d15898c4dbae719504dd5854188651862613d01"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/final-pins.json",
+      "bytes": 1114,
+      "sha256": "f5c8d50acd8d68908412b55403394c6e884289d07f40070affa6581cafce6cfb"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/gradient-product-review.md",
+      "bytes": 3413,
+      "sha256": "658e06778395453aff545cc8071f44a108dd254c99b0b572129630e6351507ba"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/gradient-product.md",
+      "bytes": 10925,
+      "sha256": "8ef791e4c8beb245a8fee233deea946c2322f62cf9935985fc042185bda73894"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/inherited-source-pins.json",
+      "bytes": 26050,
+      "sha256": "144621a1f504224e4b00ba3ff3d35f122a2a4b509b2f97f9c8b5abfe1cc99103"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/integration-review.md",
+      "bytes": 6255,
+      "sha256": "be97a0dee3be7e78efaa809ae71dd1cd70fe2fdbf9538d98ba3b94c26f36074e"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/journal-append.md",
+      "bytes": 11691,
+      "sha256": "953ead18885b5124311e2c37e177ed3e42aa90e1138b329d3d32fbdb81b779d2"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/native-orbit-blocks-review.md",
+      "bytes": 5044,
+      "sha256": "ee9764338da59521f9e18cb9dd6c8ee3e795f161106073a0c19aedadacba68c4"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/native-orbit-blocks.md",
+      "bytes": 10941,
+      "sha256": "a6ab972dd085669e3c322a5031597fd441821d43945b4fee62e97b3f2a818e15"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/source-pins.json",
+      "bytes": 26909,
+      "sha256": "fd751b3072f11fd4ea5c926b2344b7b4f305863a9877271af9d1630fcdb9f16a"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/turn-classification.json",
+      "bytes": 390,
+      "sha256": "bbf884646dea9819ce04b1095fb01f556df85de4d032833998c5d2afce5fa780"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/uniform-query-transfer-review.md",
+      "bytes": 3315,
+      "sha256": "f0546e00bd406f15726a472a74a10fc253ad82cb5eb7d3ce53f10af010494f48"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/uniform-query-transfer.md",
+      "bytes": 4861,
+      "sha256": "ff4dd5abb31116f23652c6c81e9509006e8c5bdfdbd69b057279ec81f9d88b0d"
+    },
+    {
+      "path": "evidence/semiprime-implicit-gradient-20261024/validate-continuation.py",
+      "bytes": 4922,
+      "sha256": "055ee743d62e3517a8c23feecf4f592ade382c7d2c8685befd90f88afca4a645"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/agents-append.md",
+      "bytes": 3088,
+      "sha256": "dbb0538136e36a8b24c5dc047373e82fa300e962e63f5b29295a5a6548c0dc48"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/all-mask-sharing-review.md",
+      "bytes": 6656,
+      "sha256": "131aa98fb6f09ce933d20dddb35045ab5ac3b555e233fabcb15f43413d6eaa02"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/all-mask-sharing.md",
+      "bytes": 18363,
+      "sha256": "5f79d577ff7fddf72a6e3670d5bca3b7ff2ef72557f137553d388b9fea9c0f31"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "82b8595cf7a36b480f89877c2a21e9df4acaff747f979e11c31f98ec435f0775"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/continuation-validation.json",
+      "bytes": 16419,
+      "sha256": "2064bfd537036fa853d857b3cc8b6b303b3366c9ee060808aaa9a2cb79370d27"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/digit-mask-attempt.md",
+      "bytes": 13913,
+      "sha256": "300952af3de79e56b9c90d4fe02c756e640273a3e2db444010c0c79d7cb07400"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/digit-mask-review.md",
+      "bytes": 7266,
+      "sha256": "6181de9f3141f6fb707cc932b724c5db7fe3307c420a4fa5a770aa67ecb9b40e"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/final-pins.json",
+      "bytes": 873,
+      "sha256": "7894fe5c855aecaf3767150a9e549478df26265a9c7135089126b548a7146e3f"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/integration-review.md",
+      "bytes": 6125,
+      "sha256": "8064bf19c6201dcd10833c522e611917c1a6872b940ad52e5a574214b6eea6cf"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/journal-append.md",
+      "bytes": 8883,
+      "sha256": "f76c046ff1c27922b0b797d61675e107387a1f40318f28644e0db2a30f7408e1"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/validate-continuation.py",
+      "bytes": 13773,
+      "sha256": "bd1fb2d2a9a5a5cc5157ed596f99ef9c1bc3fc520b04aeb4e7aa9f5aaca1e0f0"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/working-review.md",
+      "bytes": 7313,
+      "sha256": "bd3f762d6b87eeed820c4e03c7411a40401b5f2cf24e301941d3ef2029fcf934"
+    },
+    {
+      "path": "evidence/semiprime-implicit-thin-encoding-20261024/working.md",
+      "bytes": 22380,
+      "sha256": "84c8f8036a33637d6c05dc9e444c75f29ee98b4efe68f18d4d3b55b09d3b5435"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/agents-append.md",
+      "bytes": 1449,
+      "sha256": "0e7757dfb844e19a6621a4005ca0ac1ab32f436b7ca9f313709d9e327c80e27f"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/constant-blocks-review.md",
+      "bytes": 4037,
+      "sha256": "7d2060c7829341c83eb5958e8622583b3ca3bb4e21b1c74d21acaea2356070cc"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/constant-blocks.md",
+      "bytes": 8207,
+      "sha256": "30e92d4286611be1e6a70e28ac2c612e673e44a919d9c281e5d86486964153f7"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "342c4b753ae9db28efbc0e714024b79fd39e19a8d534d4ad2d244a0a6872109c"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/continuation-validation.json",
+      "bytes": 46144,
+      "sha256": "088e8de2e22ab5ee9cb6d4e8b31f0bab49e6c1ebfb39e72e72bbaae2906c4066"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/final-pins.json",
+      "bytes": 684,
+      "sha256": "8c3b781fa07e4a1e6aee9f262cf4996342ee0271d4e4e51c75a52977141830c0"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/inherited-source-pins.json",
+      "bytes": 38622,
+      "sha256": "9be46639782c93667c9208a3dd33d40c17f15f54d0d91d9767c9c1b57dc13308"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/integration-review.md",
+      "bytes": 4730,
+      "sha256": "c426d49aa9bddfafe521721edc886ccff517be7bada2a0c2715991fe6e23cc24"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/journal-append.md",
+      "bytes": 5141,
+      "sha256": "47a3f31734709cb3321cd13b87c39842979c9e90c7d16cda779ab09f33db0bd3"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/literature-review.md",
+      "bytes": 2968,
+      "sha256": "6f41fca3c4b6337f322f6730318e2aca4c573cff82fee51c246474cae45922f8"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/literature.md",
+      "bytes": 3811,
+      "sha256": "30a73b67e86f0e168ebb3fedd50a54619460ed6f8e20801c0c703687d294cdd0"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/source-pins.json",
+      "bytes": 38902,
+      "sha256": "a739368ad6a535611469f87bfb9c49988dead499d04ce089a5770b553d858d8d"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/turn-classification.json",
+      "bytes": 519,
+      "sha256": "ea61bd65b2f96b07b51a1899b97f7071bbc864ab7cfc07f052446882c2703495"
+    },
+    {
+      "path": "evidence/semiprime-jet-recurrence-20261024/validate-continuation.py",
+      "bytes": 4841,
+      "sha256": "56f2f2440d129d770eb7fff42362236deb625949ecd9c87b46f659a18a02937f"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/agents-append.md",
+      "bytes": 2296,
+      "sha256": "558d81ca3cf51959d0b0b888e68e5722cb4ecc3d743f52ccc9e3c323db42e565"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "7f797f0622fb176cbcd6ea7b93579c8b04dd7a58d3d1daa44deb3330c007eb4c"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/continuation-validation.json",
+      "bytes": 12917,
+      "sha256": "09f9aeb579e4cbb8a97acdcb031f9efab4867fcc0ccaa06e6b2b38ebede37ad2"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/final-pins.json",
+      "bytes": 710,
+      "sha256": "0586bf192b6447868e65a30b78a2057465d16567071a7297f319cc218778b23c"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/integration-review.md",
+      "bytes": 6451,
+      "sha256": "e3729b8128d4cabacde492bf9aab11fbc308e00e767278fa7004c59b420a9e10"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/journal-append.md",
+      "bytes": 6905,
+      "sha256": "203495cfe6c54177248e2f1af1ac10f7aee262679495b88ae97e92e4ebfd5c3b"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/recurrence-followup-review.md",
+      "bytes": 3822,
+      "sha256": "56f064030b1a0324d4e683d96070c55b12774141fb852a06977ac68d318cef6e"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/recurrence-followup-working.md",
+      "bytes": 11145,
+      "sha256": "45c2f89d53d509bab46d43db3f2cc6d9f64e992c6748d4cc27a3df93268f41c1"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/rough-torus-review.md",
+      "bytes": 6817,
+      "sha256": "c75d40a2873f4b9b24db438e36b79d19be158b48c3ab5f4d606f12f2e1ad7ebf"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/rough-torus-working.md",
+      "bytes": 12106,
+      "sha256": "6333f318c8bc1c1e88a398aaeff94efb83b0d2e6ead3d64d455317b41036dcda"
+    },
+    {
+      "path": "evidence/semiprime-large-order-recurrence-20261024/validate-continuation.py",
+      "bytes": 10710,
+      "sha256": "50aaad615701e8c72a2e5a968a4d3fb9eb86588249680ab033d9695b8d390d58"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/agents-append.md",
+      "bytes": 1767,
+      "sha256": "4cd7b79c7e1557d57cdc639be1f110f2a36d8f322c4ad5b787fb71c9d5e22839"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/character-acquisition-review.md",
+      "bytes": 7521,
+      "sha256": "88af4e6fb0df963ce6901ad3406675dea9786e68e2f01b7fe2c27de76fa910a3"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/character-acquisition.md",
+      "bytes": 19397,
+      "sha256": "83bd40ae27d975320566827bba50ae73d63464218d2993bfc5b226e60e7749a7"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/character-literature-review.md",
+      "bytes": 4336,
+      "sha256": "0ae57466adb44e9b80fcf8ea797012fb8fd3bc4004bd5a71a3da430237e4f613"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/character-literature.md",
+      "bytes": 13592,
+      "sha256": "24ec2dd1529a9c36070df12e880347c21c8841e7367eaa711c0bd7cfcf601c02"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/composite-row-contract.md",
+      "bytes": 18331,
+      "sha256": "66795af6eae4e0cde23b6e84a6beb7ae18a656e41bdf9f94d739c83f3cbccb74"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/composite-row-review.md",
+      "bytes": 7892,
+      "sha256": "d6df6253b443d6b92e47cc59df2c6fe386408647c48f755747d09291a8d78ca6"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "3b8c66bfe3ad226289fc8569b4f4b7e5c2184e392ca256b6ba8a33913e78d0d0"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/continuation-validation.json",
+      "bytes": 7983,
+      "sha256": "35d300dacb9d278fced5e2f4bdd8277ffb165da4bdc81eb4fe7c87405756b365"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/final-pins.json",
+      "bytes": 916,
+      "sha256": "8ea4736bbfb759fb05cf0aa1f867a005201a12bba58a53d3cc6c5c3e4c46f60d"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/integration-review.md",
+      "bytes": 6149,
+      "sha256": "f540f88eca3b2870b5ee62c4826ff809028d65f8266bd61886824a5adfbe6c04"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/journal-append.md",
+      "bytes": 5977,
+      "sha256": "bb32f75d6a5e2da2630e6f5598f0f18563abf4311584ba137dc46d9cdb555dc1"
+    },
+    {
+      "path": "evidence/semiprime-native-character-20261024/validate-continuation.py",
+      "bytes": 5639,
+      "sha256": "8297c6cd1cb6bf56310e4b426e3940cc2208262a07c9254eec43e582bfcf13d6"
+    },
+    {
+      "path": "evidence/semiprime-native-family-sharing-20261024/deletion-and-grouping.md",
+      "bytes": 3157,
+      "sha256": "7920ab290cb6123be17ac7e0277575b9af92bf9811aa8d07909e9c99d5e4e087"
+    },
+    {
+      "path": "evidence/semiprime-native-mask-tree-20261024/moment-tree.md",
+      "bytes": 3126,
+      "sha256": "3da8568fa7ce8cf25edb905bbdacf856099afb18395f0a712d0dd8a24b9914ce"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/agents-append.md",
+      "bytes": 4380,
+      "sha256": "8e49872fa43e429bef79883abf52d2f5d16fb9d0ec65e5ea22265f8bf2f9a68f"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/composed-terminal-review.md",
+      "bytes": 4918,
+      "sha256": "f4eec2729247c98d92b7dd2a623fc244d972a5d740ea94da14368c4576521518"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/composed-terminal.md",
+      "bytes": 12496,
+      "sha256": "6ad4b2e3206dec95673013b34f9a0ee52d77f134b89af9f21bd450902ad264e8"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "29389f8149d3e97c713903925646cd2eb1ded736edce24e3ae4e843d8d571f1a"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/continuation-validation.json",
+      "bytes": 26587,
+      "sha256": "7cc5808eb5022a09615c47601b67449c951cce1ce6493ed1b0ce0a74b9539498"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/cubic-cover-review.md",
+      "bytes": 3727,
+      "sha256": "e1843fab16ae065c5666a84cba8974a6f3ca839e2d21e1f4bc04e054cd973c1e"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/cubic-cover.md",
+      "bytes": 14502,
+      "sha256": "9ca92557ef8b5229143e0ac2162e890d87b3b61d8bed18ce4bb1d0fd6844dec2"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/final-pins.json",
+      "bytes": 1279,
+      "sha256": "99de40ccf0703e8ef60445991742dca26253ee20ac36598ee78316fa8372dfb7"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/inherited-source-pins.json",
+      "bytes": 17622,
+      "sha256": "ab7feb5ff963db07f7683e8f4bf1a82f1254168d7207d7d7b99e53e8165acae5"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/integration-review.md",
+      "bytes": 3811,
+      "sha256": "c61d5e469c0d1bc77ae2cc76ca85e1e351b75b4ea94fb48e28d5533342d5adf8"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/journal-append.md",
+      "bytes": 13113,
+      "sha256": "8fb38196b6e5121a0b3d160199941f22440b80ded55376959d2a782a73a5c349"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/native-lattice-review.md",
+      "bytes": 4077,
+      "sha256": "d114eefe59305bf2071dba58a774860e49816e1964ad7bdfbeef377b07341c31"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/native-lattice.md",
+      "bytes": 10517,
+      "sha256": "0967581b19be8e9b5a929a9c09d2aec27f9be9e1d5a9383682bf26976d271769"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/native-lift-sharing-review.md",
+      "bytes": 3963,
+      "sha256": "c0b5ab02d239e8333c5269cc87a5ee234bc965728f6d5e9ca667ba8203c476a8"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/native-lift-sharing.md",
+      "bytes": 10225,
+      "sha256": "56ca00c3b840ca4984df5909437a72540a20ac44adc89f310bd378eff8be1490"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/native-moments-review.md",
+      "bytes": 3100,
+      "sha256": "1e02c3fb1770295ce23eb126b36af4f9d87af4f3f4d13e957fb9689577066a1b"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/native-moments.md",
+      "bytes": 13810,
+      "sha256": "6fabb876e618ba1a5fafbda304f95d43c1b8d785e56de6062254b0ae63f3b20d"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/source-pins.json",
+      "bytes": 18477,
+      "sha256": "8a30fef7da2f6a55b31b0d70d234b276c20b43de4c038a1c8eae75fee077419e"
+    },
+    {
+      "path": "evidence/semiprime-native-terminal-20261024/validate-continuation.py",
+      "bytes": 4885,
+      "sha256": "de25edf60f917d20c6c5aae0668f8149e2db668618a59c709cb076e6b9361319"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/agents-append.md",
+      "bytes": 1401,
+      "sha256": "6f0d9155d695bb38830a0e842dbcae7f6c1529b80810fea5873cc8eec00fe5ea"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "678731fdbc06af8a3c5bd5379ebfa0ab4b9d75018caf1070e73b022cac9ff228"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/continuation-validation.json",
+      "bytes": 48318,
+      "sha256": "767e512eb673c3b7ed23307c228c9af3e0cc949abd6f4491361ee54840579ea4"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/final-pins.json",
+      "bytes": 696,
+      "sha256": "d736efaedded94970919d01d1e150f621a7687e58ae62415087ca44a3ee800b2"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/finite-boundary-review.md",
+      "bytes": 1951,
+      "sha256": "13888fc77d9300fbb5de80b33e1367c51ea65c954f66a3462dd6a5dc600e6e73"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/finite-boundary.md",
+      "bytes": 7592,
+      "sha256": "72af212e6ea601eb7dac483847aa30fa1b672dcba3cdece483c354ac5672d3b5"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/inherited-source-pins.json",
+      "bytes": 39823,
+      "sha256": "89f8713fd320da7eb16216faeeab2f1fa83c0ff42929d58e2381f1c81da7e101"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/integration-review.md",
+      "bytes": 3912,
+      "sha256": "b14c5cfcc2d7b1cc0055693bc6b6309be27bb6f895e4a4969eb2b60c2686f5d3"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/journal-append.md",
+      "bytes": 3721,
+      "sha256": "1fae89dcb23d88a48ad7e57286e04dc270b0112795ab549f5b3a72008064dafd"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/nested-alignment-review.md",
+      "bytes": 5482,
+      "sha256": "39b09038574e17891f21ccfe175577ee44c338ae0ae5907e4762b17b064e6986"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/nested-alignment.md",
+      "bytes": 9911,
+      "sha256": "fc96885e2ec89b08b939012777df8f542563a46bfea51667ed56a1eabd554216"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/source-pins.json",
+      "bytes": 41007,
+      "sha256": "d46684bc5b378bec6ebf02120ed06dce7c1ac8c8cf5ff7537d662aa81dc2b055"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/turn-classification.json",
+      "bytes": 256,
+      "sha256": "9e67d095a108a8b3bc2c0d9bf802e51356a0df1548dbd73fd303db2928124411"
+    },
+    {
+      "path": "evidence/semiprime-nested-alignment-20261024/validate-continuation.py",
+      "bytes": 4868,
+      "sha256": "598b19f22e4d0ee8d4c363f4f38faa1373b31885d9d42c039a4887b6ef49980d"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/agents-append.md",
+      "bytes": 3121,
+      "sha256": "b8a1d35900e2b385cfcf7f2ec19f823fe867fa0f4340fcec8f1696f84e4f68c2"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/auxiliary-powers.md",
+      "bytes": 7481,
+      "sha256": "b7acfd6719ba23645b7eb0a9fca44d70c7f1af5c08c72b4de28cd59ec01cdc85"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "452fa8252d425d4c4c16604411b3d5184915540704c096100b70da6f0174e8cf"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/continuation-validation.json",
+      "bytes": 28481,
+      "sha256": "671247cc04aa1912f0284af18b6e53167ac35c615590ae6b854267583fe699a0"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/determinant-sharing-review.md",
+      "bytes": 3542,
+      "sha256": "9d3ddbfb5c31dfe0ee13f6e64fae3a21145a185e16a19eeb7147a2f01316b077"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/determinant-sharing.md",
+      "bytes": 14215,
+      "sha256": "be9ffbb1cd9b03beb9c7efdc4ad8204794f7390a1a0bd302d43ee3e6c19280e1"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/final-pins.json",
+      "bytes": 901,
+      "sha256": "7573550aa1e53edb379d3cb6c0b1e05fd44250801bd8a53f9f75b873f8bd41bc"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/implicit-evaluation-review.md",
+      "bytes": 5782,
+      "sha256": "d889b02294b894dc1a681ac64145f3792f7a2dc638d848243843f4f81a3dadc9"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/implicit-evaluation.md",
+      "bytes": 13998,
+      "sha256": "5600980cbd17a37e09c79ed9503766cd081df9753bf8593443cc66bc0d4c0646"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/index-residue-review.md",
+      "bytes": 3163,
+      "sha256": "774d2fc6dc0480c7a126ebf6d3ece7a1b5d0ea8d13cce044e9f158b70c0102ad"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/index-residue.md",
+      "bytes": 9746,
+      "sha256": "5077989d6481171b747fa708e7c46b0b3d90b7470f05ed963567d9e43cd98c58"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/inherited-source-pins.json",
+      "bytes": 20228,
+      "sha256": "02593db7ef556199de0718c1e3ee78e03d2c1eb8333a5dd4c53e4ce8a781bd83"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/integration-review.md",
+      "bytes": 3953,
+      "sha256": "e8b18d660c9c89b53465bfb2d11c24b54a395692a1846a44885be80cd4248eb5"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/journal-append.md",
+      "bytes": 9512,
+      "sha256": "aa765899cbb55e697dfd0b04a25b0920094a5d024085a6996042fea4fd71ccdb"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/source-pins.json",
+      "bytes": 21081,
+      "sha256": "b08cfa11e74fd037aee7a04085743e183d7aae4c53e2cb43b573fe329423292f"
+    },
+    {
+      "path": "evidence/semiprime-norm-sharing-20261024/validate-continuation.py",
+      "bytes": 4845,
+      "sha256": "fa33dcc9ef0c71d170bd0bd1a0a8bcd75833929ca5d44cf286115e0b16c55b3a"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/agents-append.md",
+      "bytes": 3007,
+      "sha256": "725db25e33962edff8b2750c16a712d5f7b49a1d949b596399d0440976fb35d2"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "1ae8f9d994438ac6c342a18d1e1f0e49fe5bcce72e975bdd6d238cd9f5cbe8ab"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/continuation-validation.json",
+      "bytes": 18710,
+      "sha256": "6265a73fc360bcd60ddc24700d7d28992e5715e59b57fab45436bd6396e61046"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/final-pins.json",
+      "bytes": 1078,
+      "sha256": "3aee71f612507709a84f178a0c318814ec1d3d5804e5f98f5f1b786a5cd724e0"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/inherited-source-pins.json",
+      "bytes": 10482,
+      "sha256": "c3e6811182a9a6e9c8265ddd99f3b4a8d23d28b5350763a9ad5eddf5da9a6aba"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/integration-review.md",
+      "bytes": 7471,
+      "sha256": "3b2e5ae8907278a905b7fdc94104506f7e364675d9e91bff9c128e72f6f0e7d3"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/journal-append.md",
+      "bytes": 8323,
+      "sha256": "072d366ddfa55fc5309629477e87d0c94e60f78b1d91a04400fa7d4dcc4b5158"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/kernel-cauchy-review.md",
+      "bytes": 4545,
+      "sha256": "a42f29b2f2f5c1e637b46a648f90429802c7aef8316f7020ec70b07b5445ff8b"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/kernel-cauchy.md",
+      "bytes": 7774,
+      "sha256": "0153202f0e05e06437085ec6c8050725be1603993d83383a8949b8acaf209181"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/paired-literature-review.md",
+      "bytes": 3485,
+      "sha256": "4c4df82f5584198e878d5e14759be2e98a8e2c7298c7d519bbcbb1596cc90e4e"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/paired-literature.md",
+      "bytes": 14948,
+      "sha256": "36e34e4836490fd41ea64f7f4d2e278cfef18df2b8c1f9f3e4d475578394b17a"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/paired-pencil-review.md",
+      "bytes": 6574,
+      "sha256": "a785e3436c37293e07161f284ff4b96d832c3afdf363e279982ce63975b570e7"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/paired-pencil.md",
+      "bytes": 15358,
+      "sha256": "9892f8c7f1f4105b87af55213277e0a1a1fde20cc5fffe60f7f035e7f5f1a262"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/paired-product-review.md",
+      "bytes": 8315,
+      "sha256": "607b23a6ffadb545150fd1001b62328282d06885a191a383b43530833be317c7"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/paired-product.md",
+      "bytes": 15525,
+      "sha256": "6417d39410c9bc9d58acba925933afde1c2db38c2dfe94e05c959cb9db0febea"
+    },
+    {
+      "path": "evidence/semiprime-paired-contraction-20261024/validate-continuation.py",
+      "bytes": 15698,
+      "sha256": "bf594dba586871bd8dcd40f02617fb0d4851db37552642b9b86301b6d976aff8"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/agents-append.md",
+      "bytes": 1600,
+      "sha256": "680ed9a71554266683d48f76a95a3e0eb67480f46bff2f4c7fee3c5e66aa30d6"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "19fcdb5b7c816e48074e6bdc4495dd33f7c33a62eedfda2ed1bbb01d1f45a82a"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/continuation-validation.json",
+      "bytes": 55791,
+      "sha256": "4dbced027c75372fe7f0a460b8526cfc21af4e18baac564599c1b6ac2eae7933"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/final-pins.json",
+      "bytes": 690,
+      "sha256": "8d0ae7daed15089dec784e4f1dd4a26cfb9e328822b4475507d579f1b559fa39"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/inherited-source-pins.json",
+      "bytes": 47413,
+      "sha256": "7e06fe0e4e43a5a4ed1e27a33675bd355802050db41d33d886b25396ec62c786"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/integration-review.md",
+      "bytes": 4583,
+      "sha256": "b0832b87dce3e7b30566dff65277b7d527318983f2a323c54d3490e54ef40f68"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/journal-append.md",
+      "bytes": 5710,
+      "sha256": "21e7ee636064b0ada21acc7fc68022f139183bccb5261e6d710d78cf96942bd9"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/paired-conic-review.md",
+      "bytes": 2826,
+      "sha256": "d218a5e72d10f3a8d49a435e6e120b7333c159d253f29e229b6402a72b5d8150"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/paired-conic.md",
+      "bytes": 8161,
+      "sha256": "3ced9caac158ea4f6c4093f38a6ab94e86ceaba8a59012877242c3a0d99ca4fb"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue-review.md",
+      "bytes": 6230,
+      "sha256": "ce4d15b225d546c8008efaf5e6bdb2d2c0923b2b99d8603d3e1e24273efc6c27"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue.md",
+      "bytes": 10140,
+      "sha256": "9ded79850c2f200069a7da67502d0de579d1df0457cb06c865fb3d39c9654058"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/source-pins.json",
+      "bytes": 48333,
+      "sha256": "bfb698c5cdbd66321039ce6d57f57fa2eab508d95d080d19b2043e503ac7947b"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/turn-classification.json",
+      "bytes": 472,
+      "sha256": "2ea80a5df3e0435e1083bb7d88b4129f1b1d6bd27d1f6b1d9b7621304a290b14"
+    },
+    {
+      "path": "evidence/semiprime-paired-weighted-query-20261024/validate-continuation.py",
+      "bytes": 4882,
+      "sha256": "463c70f7a8fd3d5cf342d57496f2155c3510f12f4707a072f4b101bb62c3b40d"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/agents-append.md",
+      "bytes": 2955,
+      "sha256": "2994b1b2d576958f64982ac8aeb651fbff459eec9dbdbc3c9ad061c64bdc7a4e"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "b9a9d5991c7dba1c5a51a9e63a447579b7be3a1e474181ba121b7766a6056f7d"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/continuation-validation.json",
+      "bytes": 40106,
+      "sha256": "fd0553594e8a8ebece5af9b46b0079f2274b1dc375316eee823ad6a0ea4b12ee"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/final-pins.json",
+      "bytes": 879,
+      "sha256": "04b9d3472a6d40eeedec8993d1393363490e02051262a1ade891a1ff691e3360"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/inherited-source-pins.json",
+      "bytes": 32039,
+      "sha256": "b54e186a481c72bff34965c152224fa9cf6a6b9f9d706ec1ff72985001b18188"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/integration-review.md",
+      "bytes": 4938,
+      "sha256": "82f4d5f979c4cf7332c731d14b8ae60f376fa2df1d5d7d36bdff03217873de10"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/journal-append.md",
+      "bytes": 10265,
+      "sha256": "181d1023c2f530296e9c77e626b1742fadf5a067b1444954caae8c09a215b697"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/modulus-supplier-review.md",
+      "bytes": 3853,
+      "sha256": "81296cc3153dd3265a954558a0bfef32c3d568442f69ea63da76c4ac39cd4782"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/modulus-supplier.md",
+      "bytes": 14047,
+      "sha256": "91c4e5e0f8b0c84cb9a5eca349191c5728b0566af77f20444e9da335c6451387"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/partial-tag-review.md",
+      "bytes": 5267,
+      "sha256": "41f97351b0e58da4399c337ae6156389478f0b906422e65f4a0d371415408464"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/partial-tag.md",
+      "bytes": 11274,
+      "sha256": "79da1b9032b30777bd940709277f1687d47c51c5df431eb0d753168cdcfbd9cb"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/residue-block-review.md",
+      "bytes": 6095,
+      "sha256": "8ec37b13c4dc574fcc99ef0db719ecfc10a47c9225004eb9cf90b25b75509723"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/residue-block.md",
+      "bytes": 9095,
+      "sha256": "359dba948c766eea58d9b6f2e556a851d0e1354fb860126122afacb842e4d7f9"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/source-pins.json",
+      "bytes": 32577,
+      "sha256": "ee15e3d3729c9d2ce7306a36e9e3e57d34551ae3b4d248ec484f39e0d09d8328"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/turn-classification.json",
+      "bytes": 463,
+      "sha256": "20583d7ccf08a1d915449150f59988d82b6bb7917e68f91c313586b03f6412d2"
+    },
+    {
+      "path": "evidence/semiprime-partial-tag-20261024/validate-continuation.py",
+      "bytes": 4901,
+      "sha256": "1c76fbe8a20949e4dc056a91dd61d49d9a07cbadac07c5e76b309be5c15a33e5"
+    },
+    {
+      "path": "evidence/semiprime-power-selector-20261024/cauchy-tensor-followup.json",
+      "bytes": 2199,
+      "sha256": "31f25d561b3061fcfbf0faf785cf75b6af51a29c6c91bfcfbe9406860935b673"
+    },
+    {
+      "path": "evidence/semiprime-power-selector-20261024/floor-followup.json",
+      "bytes": 711,
+      "sha256": "5e7a1271cc57ca92ff4caba4bff970aa32936c495dba77dd0fdad73b6100a6dc"
+    },
+    {
+      "path": "evidence/semiprime-power-selector-20261024/fresh-followup.json",
+      "bytes": 906,
+      "sha256": "61138bfb4168fca055b3e2ba3ee2094da0f1320d91300b4c78485c0c78de9b6a"
+    },
+    {
+      "path": "evidence/semiprime-power-selector-20261024/outcome.json",
+      "bytes": 1056,
+      "sha256": "de5c6a73be6eae87529ee8c2887502da2f61a1307d80a4585862bd71d7c860ba"
+    },
+    {
+      "path": "evidence/semiprime-power-selector-20261024/recurrence-advancement-followup.json",
+      "bytes": 1688,
+      "sha256": "552f3192a42785f9607bdd541d029bf79fe1ababd9c8f339d54dfa36ad78482a"
+    },
+    {
+      "path": "evidence/semiprime-power-selector-20261024/turn-classification.json",
+      "bytes": 557,
+      "sha256": "a29c3a5819eb0db295cee0572682eea5a864d4b7fe796ec83bdc10b4c8238a57"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/agents-append.md",
+      "bytes": 1775,
+      "sha256": "dab884b4353ede1654fa49e8169dbced03836aa6d5de81446ea38c8609260a7e"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "ba1b063050fc3a02748c2b21149c31ea683e4ba2c08b626be7e0c1745c5926bd"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/continuation-validation.json",
+      "bytes": 38049,
+      "sha256": "c33497c3e5ed60ca9050cf57974a27976fce7cf254d9a815e7ef6c29c07f3780"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/final-pins.json",
+      "bytes": 489,
+      "sha256": "233986e6f6b4817e48e471d55ea818575af35fcc7f429f5fddfe505f6b81d4ed"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/inherited-source-pins.json",
+      "bytes": 29790,
+      "sha256": "6cbbd6fb64a58aaaaf2ed8e5cacce7434e2a08247d3dd088469edf27073fcac2"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/integration-review.md",
+      "bytes": 5897,
+      "sha256": "ca849807a77bd1e6ef0ec5851708becdc24801641b06b7237685b1b2d2c0c751"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/journal-append.md",
+      "bytes": 5124,
+      "sha256": "58f49b573cd41573b18aee464c28a21d02e371929ca50803d9791566d9d6cbbc"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/literature-review.md",
+      "bytes": 4436,
+      "sha256": "7e3265cc6578d9c3b800188eb4b7c5e919258cd5e17dd581696ad7068b5d1824"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/literature.md",
+      "bytes": 12634,
+      "sha256": "83184aa38af9e438ffa27207cef4eeda6bfc347e8b8fa2fa00eaa505e475c1a3"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/source-pins.json",
+      "bytes": 31357,
+      "sha256": "614832d7c5b49beb86048716dd0909bdabde9c624c76a25ce4feb14b0214d423"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/turn-classification.json",
+      "bytes": 419,
+      "sha256": "368f446edd0a55d2cef36d14751c805ea5586bd9dc5fa48588138ee1796abe7b"
+    },
+    {
+      "path": "evidence/semiprime-projective-evaluator-20261024/validate-continuation.py",
+      "bytes": 4712,
+      "sha256": "c690f157806964b0fd979946e64c8a74d98266c540f04122c89a428a9bec6488"
+    },
+    {
+      "path": "evidence/semiprime-qnewton-decimation-20261024/qnewton-parity.md",
+      "bytes": 5798,
+      "sha256": "fd5ac0ac206a93189d314ed90b663f61f9f7fadf4f6ba597679dcaff557584fa"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-basechange-review-20261024/quadratic-consequences.md",
+      "bytes": 7652,
+      "sha256": "53f38e651a518306403b4da21d59e8b3bd1b5bf088bed49429a19413fce4d445"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/agents-append.md",
+      "bytes": 3156,
+      "sha256": "bc6e5370ca150ca16092b143dde224cfcd9bb1a5619c9c9014860dc9e0fe98e3"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/centre-alignment-review.md",
+      "bytes": 1877,
+      "sha256": "1f6b1ce7a32f5cf2421fa7500f5001ecb6589d743e9376518fd2e8b246a98963"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/centre-alignment.md",
+      "bytes": 2726,
+      "sha256": "8c2d18c27951d5b07c67fcc852f4cd0d7d688d8de41e5429658f5d935cf011e5"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "96c701e79cc814306d3682fa8868a4cedb91616eb6c6efdf70a410d735afc551"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/continuation-validation.json",
+      "bytes": 22203,
+      "sha256": "ab89bf57c5708f7b676fd81831687da3f60303f7ea1c44263fa35dcd255a2567"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/filter-reciprocity-review.md",
+      "bytes": 5054,
+      "sha256": "bc65ad6ff7658fccbf5b97f6fd30f15ed8d9392dbe51f341dec4bcdb7361533b"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/filter-reciprocity.md",
+      "bytes": 9078,
+      "sha256": "55c5961f6391d3acf76050d4bbdfd725edb0fd007b5cd6d62ab814681c3efd25"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/final-pins.json",
+      "bytes": 1108,
+      "sha256": "e2748b953a5683c60eb622cc82e9e93981f47ed4cfe9161f245e431ea5d926a3"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/inherited-source-pins.json",
+      "bytes": 14266,
+      "sha256": "3caa9807a65320e344d7581445155a4329352fbe94dae1c13d3b92424eb6f959"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/integration-review.md",
+      "bytes": 6074,
+      "sha256": "267cdc286acf8443fa1ed77177ed77d71be98ad4b334830e3c28d7b21c88cea3"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/journal-append.md",
+      "bytes": 9667,
+      "sha256": "e7749bce6e0230705666d47bf93ce7a2b35d72770ce1af90856e51a36abdaa4a"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/quadratic-product-review.md",
+      "bytes": 2563,
+      "sha256": "a711c16cc08aaf99aa4b8270ab109f806dbd6c45b9b572f1449359f9c017ce3a"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/quadratic-product.md",
+      "bytes": 12686,
+      "sha256": "69d3bbc5a0813ba7a5a5cd40e315b250f51d209b82e7085073a9aed52b607eb1"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/reciprocal-recurrence-review.md",
+      "bytes": 4441,
+      "sha256": "f73675dd2b712132a82a9ae492b1f80a4f9ec7912256f2c48ac2acd8da31b033"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/reciprocal-recurrence.md",
+      "bytes": 16674,
+      "sha256": "4642b776f4c72a42a5a2c20beac07b25dbff0a21ba9f3569cd495108d4801f1b"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/source-pins.json",
+      "bytes": 14573,
+      "sha256": "8acb7cb32b2723c333b26748cab49eed66ed0c99765cfa7491d4f6526ec8cf23"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-batch-20261024/validate-continuation.py",
+      "bytes": 4805,
+      "sha256": "dbbc929ccea286e4b575ac4ea732e3e1444e7d92628602aeb98211a3ad5b0750"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/agents-append.md",
+      "bytes": 1382,
+      "sha256": "69bc6160adbdf3499bab6028db4927e2908172f167121ed940a4af81f9d0f187"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/class-transport-review.md",
+      "bytes": 3245,
+      "sha256": "666d3a871c062d45d51fe1a5b0aed148291d1b2cd6e7b49f0894188afaff6850"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/class-transport.md",
+      "bytes": 7300,
+      "sha256": "f813dc08c143a108758bd4a286bc601ded2a854b3a5c5bdb4693fc2695fca360"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "19846a1b66fa57206f06abcab0908b505b717cfc206a97869a76409c90ab635d"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/continuation-validation.json",
+      "bytes": 41130,
+      "sha256": "dacef1705216d871093b0842f4fa861520959f0dc1f62d604c585a33eee30420"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/final-pins.json",
+      "bytes": 684,
+      "sha256": "4b8c92015951dc34ad26adf0dc425a9e4ada5cf4bd14ebabc96d5308c0a27237"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/inherited-source-pins.json",
+      "bytes": 33740,
+      "sha256": "821a324dfb246b117ad1b16693148d05333c523d2af8b3d2be2b1552dcf94af9"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/integration-review.md",
+      "bytes": 3457,
+      "sha256": "b0bed939d5dd45a1b8e3e68ca9beff7330c9a76298b1b1c8bcf485332de21b21"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/journal-append.md",
+      "bytes": 5638,
+      "sha256": "7ed29e5e00a9ec6391eca850f826af2a16b4bd3ba03c51844ad4741474aefd75"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/literature-review.md",
+      "bytes": 5540,
+      "sha256": "4defa1e82a139a7cfa5f68ad79c94d45d63077c3490ce6e4d7d0d0aef62787d3"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/literature.md",
+      "bytes": 9915,
+      "sha256": "5aa07471d0d2c514b62eff39c1b5f77eb247632cc15c0907eef82dff32f6bea4"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/source-pins.json",
+      "bytes": 34028,
+      "sha256": "77af1e5bcea9c20a774666d2f409e0f6f2853f9dad43a04784be42ae894d64be"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/turn-classification.json",
+      "bytes": 470,
+      "sha256": "3ad6e07f29684b80a95cd48e4a3ab827cdfafc5e50208d05ad92ab6e13458dc9"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-class-query-20261024/validate-continuation.py",
+      "bytes": 4727,
+      "sha256": "d89cac3198fb1fbe74d92dc6c3679b83bd138d5826bc7a0315149b8ae46ab201"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/agents-append.md",
+      "bytes": 4431,
+      "sha256": "e91ccdafc41ed1d0fb5f4313c1c6721da904a9ec2dceb8b2cd68c344146643cc"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "35e940af8b5c6eb38d89232c140e1d07a1f4b3a3ce247186338450f50be754c6"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/continuation-validation.json",
+      "bytes": 12064,
+      "sha256": "615c22a0fc14185faafff2fcf4a9ee3622bb035a7aa41392dd4a8fc0ad457ee2"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/final-pins.json",
+      "bytes": 1090,
+      "sha256": "41021776e8be13576f675c2519fd67e6c670bf18ef663f1eff1a76525fb0cc6b"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/ideal-literature-review.md",
+      "bytes": 8222,
+      "sha256": "b922249b3fa55c5db826a8f86c2019f05ed49b0e41628198721e1c29b0924b1b"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/ideal-literature.md",
+      "bytes": 17542,
+      "sha256": "90f760d067f9de61a2950289c4f8aceba013cba521a2e4078053c2c2916ef77b"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/ideal-seed-query-review.md",
+      "bytes": 3333,
+      "sha256": "5ff414a79da8b0520321b8a192ad5f2a01f4b6f7da4c87818f3d0f3fd7cff6c6"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/ideal-seed-query.md",
+      "bytes": 14719,
+      "sha256": "25b326ed8a0dd0c0b3f81a7b997c130c79baec13b0b68f077ec0643b8f20159a"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/integration-review.md",
+      "bytes": 5856,
+      "sha256": "ef59016f8818706c1b6bfe93844e7ba2206ffa105b890c0ae98e6a1567e71002"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/journal-append.md",
+      "bytes": 11529,
+      "sha256": "17f748e20378a000ba44b696629d9c06bc8290beaabc2c6f15a9418540c760c3"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/point-ideal-review.md",
+      "bytes": 5779,
+      "sha256": "187bc96f19f9dfa2fec2b6a0abb2c3cad2c50b47e4c5919afab92083a06d3342"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/point-ideal.md",
+      "bytes": 17644,
+      "sha256": "eefa209ef7189a374cf3eaefe4fb85b2376d7f85814f72fdc90fe585df504f11"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/torus-order-supplier-review.md",
+      "bytes": 7137,
+      "sha256": "f84298cac56e9f028828ab69494e408d3fbe9d288be57b7a3688b14cf7fd4de6"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/torus-order-supplier.md",
+      "bytes": 10181,
+      "sha256": "1f3033cc85c1b6798a188daa7b7c32d702b87d2cb3401e3e1f1afe6cb3a4e9bc"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-ideal-20261024/validate-continuation.py",
+      "bytes": 9264,
+      "sha256": "10b4aae0184d15774190cc4c78b2b3a6cd5455ca7275b37d3f6902f0dd1226f3"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/agents-append.md",
+      "bytes": 2025,
+      "sha256": "9a5b4ee7cd5c5397b6db2f29eb1f7525c1a63074487118f3ae3befdb379c4306"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/colour-fusion-review.md",
+      "bytes": 4462,
+      "sha256": "0994d290fa53b33505cd70ddef8a6196c95823c573bb4c565f687545f68c4925"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/colour-fusion.md",
+      "bytes": 13388,
+      "sha256": "c9d51ce76a7b364d217440f1a73ac0f1262e448421c58691dbb42d632240de80"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "ec952776491df7918b1caf5e14b5f5f8d614558da47a50ce3fd2c2fd9465c0cd"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/continuation-validation.json",
+      "bytes": 9858,
+      "sha256": "43c7be08f0376f7252a586619362a25bc448cd583cdd031887b6e382a24be179"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/division-product-review.md",
+      "bytes": 7234,
+      "sha256": "5c9eb496bd750ecf956fab3580d3c56ab18bcf6f531e9f7059545d323dc02dc0"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/division-product.md",
+      "bytes": 16919,
+      "sha256": "97ac4f4f1ef8ce9a62ff5dcf2847c8182036bb3e5508c80b6883275d2cbd6031"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/final-pins.json",
+      "bytes": 891,
+      "sha256": "69a2f1cfb308d4336c1a39b214dfeee1760a24d36461dba30d74a642e5129df8"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/integration-review.md",
+      "bytes": 5693,
+      "sha256": "f3a18a432b1cf029ae3cf36a934e6aea1d7564f88906c2ec8f99ca606f43d752"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/journal-append.md",
+      "bytes": 6826,
+      "sha256": "94567a8430f1863bcedc52a47874384d513073c43f8c342071a3873ee0070f2a"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/shared-evaluation-review.md",
+      "bytes": 5082,
+      "sha256": "587969b458343ade05f61a6ac63602423f4d896435c3759a79c4510af1f5551d"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/shared-evaluation.md",
+      "bytes": 12852,
+      "sha256": "d3df0e461a41583dfa60d4272d44174abd4ca3b05a0c730d31ede0dc06903f4b"
+    },
+    {
+      "path": "evidence/semiprime-quadratic-product-20261024/validate-continuation.py",
+      "bytes": 7436,
+      "sha256": "9eb5f3550721ef202bb849c53b4e51f5c20ce0349d72e3ec21ffe6cd6a285561"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/agents-append.md",
+      "bytes": 3028,
+      "sha256": "1eec5edd60fbbf994cde7c60d99c94b9d2b3de21fdeb1899e346987423f59d55"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "24be199c7ea86dd5daa5fac976d1722f6f60f81af6ab41db8755a3c8f8fb3c33"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/continuation-validation.json",
+      "bytes": 36056,
+      "sha256": "75ce915549e3a3cd930b1779fac2c293cb99f3cf75d1ce1ecf8b3a578635d62b"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/final-pins.json",
+      "bytes": 875,
+      "sha256": "250190d25338f2980c25ad995f0a18b2b2bbe8940bdab2ba8cae559a5a16f909"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/inherited-source-pins.json",
+      "bytes": 28441,
+      "sha256": "5f5dfe43dec7b7c4990940815b606f56f2fe13340dffd8fccc637ad928f83960"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/integration-review.md",
+      "bytes": 4582,
+      "sha256": "703fc179d9de4bc2c363f96424cfbe79d8f8b7b644a0253b213aaafd272d33d9"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/journal-append.md",
+      "bytes": 9940,
+      "sha256": "fdd69c4c8dd77b29995272cd675b2195fe082d62ca167f2c6a158660036c48cf"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/quotient-cauchy-review.md",
+      "bytes": 5594,
+      "sha256": "4fa30e7b04396c06f847bcd0fec18b062f8ce7cb5b4cbb1b776192ccd1cb5e7e"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/quotient-cauchy.md",
+      "bytes": 13134,
+      "sha256": "1814877cd7cae711a15623e0aa189a8d6ae6d194cb29106ce8e1385276ba1444"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/source-pins.json",
+      "bytes": 28577,
+      "sha256": "3787fee7f02ccdb778ddf89a7d4a32268a006664145452c196bd24ec85764e6c"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/turn-classification.json",
+      "bytes": 383,
+      "sha256": "9c5bc0a577a950e80aef91e96ed184221edcfb430e39188a336d9c9e2868b842"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/unit-filter-review.md",
+      "bytes": 5160,
+      "sha256": "edfd3baab46ceaeee84c4a615bd0ba07e8d4dda3603a856171e8ead4b3f25896"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/unit-filter.md",
+      "bytes": 10154,
+      "sha256": "fae30a63a9693ba9e38a2653c7feefa4dcbbc31ebb112a1a42b21d2958ddb18c"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/validate-continuation.py",
+      "bytes": 4775,
+      "sha256": "52c6066fc1e1fc572bc84abc9d07a56c0c27a0ae7b7366b2b17e6c8ce53beac3"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/weak-readout-review.md",
+      "bytes": 3873,
+      "sha256": "05c2cc22c5f5fe05d6b968339a96f43a7ea1ee706631a867de7478e073a6a765"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/weak-readout.md",
+      "bytes": 11129,
+      "sha256": "6d324cd99fa32427de877666e82fb67cc60c857c49e2eecbaa9ad2526e1d9bd1"
+    },
+    {
+      "path": "evidence/semiprime-quotient-gradient-20261024/whitespace-correction.json",
+      "bytes": 538,
+      "sha256": "35d083d6528d5a30d248a612c2705f0c62a18dd44f9fc58d5bb83f6a20ab3cd4"
+    },
+    {
+      "path": "evidence/semiprime-rational-mixture-telescoping-20261024/rational-mixture.md",
+      "bytes": 4719,
+      "sha256": "632e88ef49be34bd0e698f9bf8b2b205221564d6558ea446a1e54074fda7e7f7"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/agents-append.md",
+      "bytes": 2118,
+      "sha256": "f5d5afccd72f891889a9bc5da2ad5e84ca62f1ef1bf0e899a959082ad00c2458"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "d57c534b922ef9a4db8f66ab883dcc30bacc64f6456a84ed8f73d855a27f3e6f"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/continuation-validation.json",
+      "bytes": 9148,
+      "sha256": "3eaca6824dc41807e45578a57592f7e733fef95ca64bf2090480785800da2066"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/final-pins.json",
+      "bytes": 1086,
+      "sha256": "6601d73509f59d1f0adc439805bf77bae57ce21b528ff64777b7f864eb4f5057"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/frobenius-pairing-review.md",
+      "bytes": 7478,
+      "sha256": "147ed84ea489fb61e8e2b47e2c6d09a90cf247f743df017e48314b613f815a97"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/frobenius-pairing.md",
+      "bytes": 16956,
+      "sha256": "215f1fd452452ce0719ff4b88b81f74b69c8a88dc12d80c8bb63a81d11e2e363"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/integration-review.md",
+      "bytes": 5223,
+      "sha256": "38baea83de8a68577f35c8ae7e3895f261c67be1d536a0a43c6b6c5359683038"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/journal-append.md",
+      "bytes": 6749,
+      "sha256": "847fd6fc0ed9c5cf7b333c6dbacafbbd045a508b226c685a4d3dd3d52af98488"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/scalar-closure-review.md",
+      "bytes": 2704,
+      "sha256": "e404f257207ca9ba5cd027e2f7d887dbb9af001426c7a9be222ab7515dbc9a1d"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/scalar-closure.md",
+      "bytes": 13329,
+      "sha256": "6f9ae09d1b514b49beb00d03a921d1eb217a699ff7a92d140445c70e6d1a3755"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/shared-recurrence-review.md",
+      "bytes": 5587,
+      "sha256": "7aac04c2dd7501a8e641d1780e49eda71351485f7b4040bbd2c6ca714a13ccfd"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/shared-recurrence.md",
+      "bytes": 6198,
+      "sha256": "654218a0e5dde8e0261ea662cf40c8ceb82e5e152cebebb4542b831f0b322562"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/trace-closure-review.md",
+      "bytes": 6226,
+      "sha256": "566d29a4b37cb37af97d391573b1593504f059e1895ecba4069073d362768c68"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/trace-closure.md",
+      "bytes": 15434,
+      "sha256": "bf6e0fa9c41c25af10f4575d098b51d2c7556af709ffb3ed4391d45c14f415cc"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-closure-20261024/validate-continuation.py",
+      "bytes": 6404,
+      "sha256": "6e9bb48e24a95a55abb3408599a8b92230e21e8ff68ca8b01bacdcfc560b614b"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/agents-append.md",
+      "bytes": 1531,
+      "sha256": "b1de6bbe1d821d5e985453fd30c6e31164181c8baf32a89a62ec6ac172f2c090"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/christoffel-review.md",
+      "bytes": 6194,
+      "sha256": "f84bc294fee567035fe341cb73746691c069f30578e587a7a703182d51af5ba2"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/christoffel-terminal.md",
+      "bytes": 11477,
+      "sha256": "c523fc8a1a7a23d667f32714e1671c6eb782b52d423984681402eb8deea01008"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "3f4c4d04ecab02e9abe5d658c82bdd29542496336ccd941c4ab32788ad176bf3"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/continuation-validation.json",
+      "bytes": 8207,
+      "sha256": "238767d7312a0a9443d5fe67333dc3b56ebc386a6d9c4addf73d70a2e6f772bc"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/final-pins.json",
+      "bytes": 883,
+      "sha256": "cf5f431ec076912f033dbbb4ad574abd5e9883b93b6f65c4fa42606373c780d5"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/integration-review.md",
+      "bytes": 6351,
+      "sha256": "fc13aa923cbea5f76c4c44f201cca0d58d7f540e8f8ac9060f58d4dd43fcff93"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/journal-append.md",
+      "bytes": 3845,
+      "sha256": "ee6b6565bffa907a0f4054c0f644a9b7bf5ce92210361318c54a79928c1e7de9"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/literature-endpoint.md",
+      "bytes": 11765,
+      "sha256": "762a054cb539cc633f3d8295184a3feb9a8339348bd115396f2e4d340cbad85b"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/literature-review.md",
+      "bytes": 3499,
+      "sha256": "f36c824058eea4326ba4ef6718922c6ff1744a9ee1bb613d9b33d7f62fb20cd7"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/scalar-elimination.md",
+      "bytes": 13758,
+      "sha256": "cc5ad6f52a941b0f150a8be8acc908ead21ef33c3de5b1312e1b61bb6c17f9ec"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/scalar-review.md",
+      "bytes": 7664,
+      "sha256": "7c9738d9e30242731231e7bb665d9b01940aacb68f75fc37236b9c87e0d980c5"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-endpoint-20261024/validate-continuation.py",
+      "bytes": 5827,
+      "sha256": "312b36a92e774b062c939d742a26b42eeb2224346733246edaf6974183efed04"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/adaptive-precision-followup.md",
+      "bytes": 1856,
+      "sha256": "ead3be1eea13a6bb882a2ddd25ccf30f5116c47bf7e33937c8ebe062b280e609"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/adjoint-attempt.md",
+      "bytes": 5708,
+      "sha256": "5ba2d08b5ba4ceeb4f06c410b092e2a2b4606e4e4800b95c1c76ca8c1376f842"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/adjoint-review.md",
+      "bytes": 2246,
+      "sha256": "1adbb691ad4120c6db936b9330b26b57909dd4c54018985cca428aac025e868f"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/agents-append.md",
+      "bytes": 1618,
+      "sha256": "0d6da2672af903bfc5de0e0f85bb74ba71abe9c59785de820d0d8eb613d78a23"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "23e71207761e985f61631f85b4eeeba8f1fbfed90ba8460d9057d347cd54d9d5"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/continuation-validation.json",
+      "bytes": 10977,
+      "sha256": "d65cad87eba58c83a590c7f63b098df08294738162617a868d444061ce2e3d96"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/covering-lift-selector.md",
+      "bytes": 6292,
+      "sha256": "71f206d8dbc253f354a63da0d8a39084bd8b37f9d6e1f5428ba382a887783a6e"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/endpoint-qdifference-extension.md",
+      "bytes": 6244,
+      "sha256": "e2265505be7b22db845c8f3c5f454a02f2bedc844dbe4978da011833e5763f63"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/euclidean-carry-attempt.md",
+      "bytes": 7471,
+      "sha256": "674d6478cf0bc4925871f1ce22555e32911f4afd279e8969c6a9a2b88be56be1"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/final-pins.json",
+      "bytes": 1581,
+      "sha256": "5192693086864e12ad93e307693cdb0de6999c119f3b8a40e61916aaa333246d"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/floor-product-literature.md",
+      "bytes": 7321,
+      "sha256": "afeaf86a0d713f41793db5ac7c25aeeeeeea7b45d09ae50618f8c25c961f4ab9"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/integration-review.md",
+      "bytes": 5297,
+      "sha256": "e26ae8bd80d19bdc913b71637b6426a3ea57b71946ef78072dc85dbd4aa91742"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/journal-append.md",
+      "bytes": 5858,
+      "sha256": "a05c91e054b838b2a1e620f0fb3e56ec2370452636cf02adaecc02c558ce0791"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/literature.md",
+      "bytes": 6142,
+      "sha256": "65bd049c6c47107741595bd180b10ab10d1d634301fc57f3d099dad6ba94b877"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/review-innovation.md",
+      "bytes": 5675,
+      "sha256": "785d022b06edf64f7e7077ff7e25df65efb84eab06a74cebb1178c28392b675e"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/review.md",
+      "bytes": 3111,
+      "sha256": "d64da6b86edaa52548a33d01d9db40878ed449ec731a77c09e656f0d25baaf05"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/root-review.md",
+      "bytes": 2919,
+      "sha256": "96b19ebe91821abbf9750ad309a935a058f9823c7a2b8156aabd86b410c12602"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/shared-affine-factorial.md",
+      "bytes": 6060,
+      "sha256": "5db88f386e78d69e60861ee96471ea66896fc94e1e275c782c5d68b319f2ae57"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/stabilized-aggregate-attempt.md",
+      "bytes": 9206,
+      "sha256": "2b92a490b61aac8825385f4d8da9c9f6283e25cbe8d0ead9dd96d1343194b481"
+    },
+    {
+      "path": "evidence/semiprime-recurrence-innovation-20261024/validate-continuation.py",
+      "bytes": 7473,
+      "sha256": "ae1f75478a09ee2781691633cff41d9d13d26d690f734d2e2f9890dbc3ceb38d"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/agents-append.md",
+      "bytes": 2445,
+      "sha256": "8987296ed655d7586874f1de640dc8ce43e44a76794ea4c5ad7cebc606542aeb"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/block-composition-review.md",
+      "bytes": 6855,
+      "sha256": "73c33f62e968a97c6d3cd3d775f9d491e027b52b58d5accf34bfc01dbd00e93f"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/block-composition.md",
+      "bytes": 17099,
+      "sha256": "5752e4192376b7351b3e003bc0dc0a4536b1a7d976de52d175465aaf63c941f2"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/block-literature-review.md",
+      "bytes": 4646,
+      "sha256": "542750c63f0e72d7362c26f593787ef774b4157d3bae9e9de6497cd7ed380ae0"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/block-literature.md",
+      "bytes": 15400,
+      "sha256": "86fd66adb32e7b18cdfaf787d2bde4971c93c0a14941f1ef9df0debaf54b2ee3"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "03fef6cbb051c21e865129accdd1039f0f407e3761044dadc9b8b4bca448a044"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/continuation-validation.json",
+      "bytes": 15062,
+      "sha256": "3a2f5aea6b8cf46af99819937e6d91e8ea3b1abb60764f6797c7bbe6f6c6a7d6"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/final-pins.json",
+      "bytes": 913,
+      "sha256": "7409bf05d05e43eb2d0ff5207fabede4c88ece5628168bfabbd8acb940bd1dd5"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/integration-review.md",
+      "bytes": 6667,
+      "sha256": "63f9bbfd7f18a72f7a6a5adb6ffb141acce37f17ae996ec63b02f6597753ab6e"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/journal-append.md",
+      "bytes": 6672,
+      "sha256": "1c6a98a1dd39c0c60e5ac81bccc96f48a04bf17f0fb92b67dc4e0cb94b80a0ea"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/rough-index-cancellation-review.md",
+      "bytes": 6180,
+      "sha256": "cf9afeef32415820baff4737b43b6f98ef77ca8c05ede1fcb4c87e951ea2b7b5"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/rough-index-cancellation.md",
+      "bytes": 11854,
+      "sha256": "283cb2dd6b39f1c84aa62e488703bc2f68a89e3fda2d6620aa14a59dc5236da0"
+    },
+    {
+      "path": "evidence/semiprime-rough-block-composition-20261024/validate-continuation.py",
+      "bytes": 12448,
+      "sha256": "00a749e7dc6564c3775cf6c3ea777597186f5686404eef515ba3d3da7dd1bdeb"
+    },
+    {
+      "path": "evidence/semiprime-scalar-shared-query-20261024/candidate-audit.md",
+      "bytes": 4517,
+      "sha256": "9f2859a0ecb697a89e5b3b36671e8aa60b867689738f4b205d372547e5bf4d22"
+    },
+    {
+      "path": "evidence/semiprime-scalar-terminal-20261024/terminal-contract.md",
+      "bytes": 6776,
+      "sha256": "202706e6213e9ba5e9957c7e7d712a46e2a2dbd555329f4bf6298c2a017026c8"
+    },
+    {
+      "path": "evidence/semiprime-scalar-terminal-20261024/terminal-review.md",
+      "bytes": 2834,
+      "sha256": "a99c6a541ce1af28d87a938b79a9f0e2ca98fcf9b2d0322807bfec6ca57f4b60"
+    },
+    {
+      "path": "evidence/semiprime-scalar-terminal-20261024/wide-annihilator-lemma.md",
+      "bytes": 5637,
+      "sha256": "6fa449a65eb7e94ea82750a34c4fd63f8fe2cd9e7b3bb47f40bd53efc9d4a7f6"
+    },
+    {
+      "path": "evidence/semiprime-scalar-terminal-20261024/wide-annihilator-review.md",
+      "bytes": 2354,
+      "sha256": "27ec8a5f263726cfd153be18c18894b6f226b150dc6b91027b3334edec58c513"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/agents-append.md",
+      "bytes": 1139,
+      "sha256": "c6e61348516de2e882358c53bf32dd208922c13cd000e9fcb8e98a00e840c388"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "9d62a1bd3dc6d6fdc8b01a932ae893cd470b218467dd95523b38c35f42176db0"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/continuation-validation.json",
+      "bytes": 44881,
+      "sha256": "9d75d11b91d937aa5135a53c285a2cc419b6d9803dafbd028cd3c73fa45dc335"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/final-pins.json",
+      "bytes": 686,
+      "sha256": "93dcd27b63a4ddb9633050e7f1953ab749fd2296added038e104a22d42aac2cd"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/inherited-source-pins.json",
+      "bytes": 36831,
+      "sha256": "f07a3a3c9a06415e0280d78a1f538378efc256bd7131d7d5c49c95ff7c61bf1a"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/integration-review.md",
+      "bytes": 4014,
+      "sha256": "e861275ae0cc8e3ce421d9fe0f0043d0d7bbbcecb7b9865a15be73b2404df911"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/journal-append.md",
+      "bytes": 4152,
+      "sha256": "95d669d1252a7cdd2c70fa006e96454cf7d9ce1871cac126e693d683b1a84dbf"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/lattice-batching-review.md",
+      "bytes": 4535,
+      "sha256": "f09dd41a4df360d2f98369b408b197b491d028861d1cc71639e7221334441c70"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/lattice-batching.md",
+      "bytes": 5852,
+      "sha256": "e7e9582f310c0d1dad8b59bf15d52b485a4cc92926e234b206bd1d6899f0a293"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/literature-review.md",
+      "bytes": 3355,
+      "sha256": "0e61d23ad31eb800aec6a05812fb4653a6bf2b3194d6d897f36d8c3945556f6b"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/literature.md",
+      "bytes": 5911,
+      "sha256": "6cd4ab03933c048f1490f5af2f8cb590a9740188e94188d518f00a0fe5516d68"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/source-pins.json",
+      "bytes": 37608,
+      "sha256": "7bf0a21db505ab25def672a6258e9417c558996f96bd488a7ccb08c12baa2ce7"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/turn-classification.json",
+      "bytes": 480,
+      "sha256": "8f03cafd1aaaf95805d8b43c8fe82ecd3d843486b5008feea5766ecee9d78a0c"
+    },
+    {
+      "path": "evidence/semiprime-selected-scalar-acquisition-20261024/validate-continuation.py",
+      "bytes": 4812,
+      "sha256": "aecb13d021cc61ee02ef977780e71f90323c1d96b2cf71bbf866578309801e9c"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/affine-batching-literature.md",
+      "bytes": 10535,
+      "sha256": "fd6aa51296c5a0ca5d5a39c02c015766aa9baa0e2980965392037d1f012ff089"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/agents-append.md",
+      "bytes": 1578,
+      "sha256": "2006c7e9b70481c3fb878e1a2b4ca19a3394791888f6a0778fd460dabe1ff956"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/continuation-baseline.json",
+      "bytes": 4660,
+      "sha256": "59287d6fef1fbbc1142d065e2888b539faab4597685509f42e04416377a98f84"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/continuation-validation.json",
+      "bytes": 10306,
+      "sha256": "64249b694d50a86bf4159051a32f5e28d49ffa9d964836dc62d0a79e349d2367"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/final-pins.json",
+      "bytes": 1002,
+      "sha256": "d6d43a059f275f4bf4767547e2532b0e12a1d55057ce8979df09d3e0b45f4224"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/gap-complement-review.md",
+      "bytes": 6540,
+      "sha256": "e61daac264c2459eebfb3e01ec7980f8bc458cd6323032053bf6dccaf076235e"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/gap-complement-sharing.md",
+      "bytes": 8679,
+      "sha256": "c5d0b856504dfe7e1ef14deacd4ddc4c033eb1bd5708de2f18e217e20a2fc884"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/integration-review.md",
+      "bytes": 5356,
+      "sha256": "a7804fd67a5b1354ff8914313134c980399dffb75fbe64c12b743347fe3002dc"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/journal-append.md",
+      "bytes": 4657,
+      "sha256": "69aae7e89e1261c2ae80116ce055959938e8e6acbb9a7469081d2ace36801806"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/native-pairing-review.md",
+      "bytes": 5818,
+      "sha256": "15d87c02ce93c154a0d1afb2fc3ac3c9fd03de5fc69d96d093de60ac671db464"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/native-row-pairing.md",
+      "bytes": 10496,
+      "sha256": "2b0c3715072e3c6edb40986982dd64fcdeacbbb92a2d99aa072a8ef2add5c769"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/reviews-shared.md",
+      "bytes": 6817,
+      "sha256": "be89318a795e5373e71e4796e2a1bb379701425c47664103bf88b9a8f49f59b6"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/shared-triangle-attempt.md",
+      "bytes": 7376,
+      "sha256": "2cec78cbbb96fe4a04ce5a2930294e55f4c25832f9d190ab4d589ce4d1850356"
+    },
+    {
+      "path": "evidence/semiprime-shared-triangles-20261024/validate-continuation.py",
+      "bytes": 7915,
+      "sha256": "22149db8c7891ba95e858913b9dac141c6b6d9a04c9205615ae7b3bd467f1ae9"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/agents-append.md",
+      "bytes": 1714,
+      "sha256": "7a89c23c37b7ccc7531744a10a241b034bafdec80024c11058add28e17067f34"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "fb60299c1cf664025aa8b9d16f14ca4637b477eca0cc912569e73c4f163a76fe"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/continuation-validation.json",
+      "bytes": 7745,
+      "sha256": "dfc925419aa08b53de70e5cc107eee3cac63be06821a628293ddf2beaea438ba"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/final-pins.json",
+      "bytes": 900,
+      "sha256": "a25deaf3c2b0192b412b714fa911519123f1582fc2093f259d3c0772449c1c37"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/geometric-generator.md",
+      "bytes": 13026,
+      "sha256": "8ff92a623b50d8698b34260ab01216f3d17ad89c26c5a88831561d3602aa581a"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/geometric-review.md",
+      "bytes": 3572,
+      "sha256": "69586e679ac60049040a28ba03f726e241b9b419d01330d17af8b8f6b7633d95"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/integration-review.md",
+      "bytes": 3794,
+      "sha256": "67c2ee885f3187375a91de4484b8028938278fcef4db2d3a87549e27ef908b5e"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/journal-append.md",
+      "bytes": 4655,
+      "sha256": "beb315d6d71c3dcbd7f368f32e4bd8fc49850afe2d85c494e8447c1dbb8d0f5f"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/scalar-resultant-algorithms.md",
+      "bytes": 13094,
+      "sha256": "680d3a937f7b30f504c01f007f151442d850ffac44c100ec31ba12ea8ff5d34b"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/scalar-resultant-review.md",
+      "bytes": 6894,
+      "sha256": "9385c8b037d936db478e39658aad4187675f5a467513056e5fd18a39b42c79b9"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/sylvester-elimination.md",
+      "bytes": 18719,
+      "sha256": "f3375df02a067a43230d1f4accddc476bbbe020a64c9145b90757ba5404720c2"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/sylvester-review.md",
+      "bytes": 7085,
+      "sha256": "69cf2b14828d9b04937c50ad38da5a769a8df7d0d3b70c50a792ca60396b5486"
+    },
+    {
+      "path": "evidence/semiprime-tensor-norm-20261024/validate-continuation.py",
+      "bytes": 5441,
+      "sha256": "b4da9f233dd0043b8f38a8f742a7c9a81be10c31ca00d0711fb138dffd9e3041"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/adjoint-terminal-review.md",
+      "bytes": 4481,
+      "sha256": "f945505935e9982b8ae4e03d6993881fcc296f45baef6e9a69ccbea0bf952f9a"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/adjoint-terminal.md",
+      "bytes": 12376,
+      "sha256": "3a95f0ffd153bc2ab661fd5bb4a62b34a0d107f382d2ecaa41d75e6b3f78d8c4"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/agents-append.md",
+      "bytes": 2435,
+      "sha256": "32f7095b5fb354e5566008708cc3a8ae40c5f3892f43de99a39fc60877e0ff5b"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/boundary-solver-review.md",
+      "bytes": 2950,
+      "sha256": "e66c8b7b11205f37315b8f32fe9b097492b2b2d4bd5c1890e004fc49329698cd"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/boundary-solver.md",
+      "bytes": 12859,
+      "sha256": "ffbc045a4e646c89b444ff3a2732f003660780a73b5cf44f7ce7df684529532f"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "588adebd1784b7ca6fae01d13c477a3c6921cf586ff360ac067a9faf5c19e765"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/continuation-validation.json",
+      "bytes": 23675,
+      "sha256": "45f8a7475c6280f09c36395edfc32243f1323e964c67f65f2d30c3a9f5d111c6"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/final-pins.json",
+      "bytes": 891,
+      "sha256": "f9afc8cd14030e261ba14e1a10c0aadc1776a9690261a2ac2fee18206844cac9"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/inherited-source-pins.json",
+      "bytes": 16077,
+      "sha256": "b65ab72d86daa79c45b30194aaa3e7ab22627b3381c9c78af89e088f1dd5188e"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/integration-review.md",
+      "bytes": 6257,
+      "sha256": "da8a400e07f00159e05cff9c1c1ef157e600c4d58a42ff3f1e796924711196f9"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/journal-append.md",
+      "bytes": 8458,
+      "sha256": "722929c68a8d50bdf2b123bcbb372ad10e75caf2836cdac478e0de4e789d41f6"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/newton-terminal-review.md",
+      "bytes": 6303,
+      "sha256": "e3251de9a6d34985f4fb0ab46ef2e1f229dee9d4427c56238117a2b05ee94e8b"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/newton-terminal.md",
+      "bytes": 12968,
+      "sha256": "d4f59a31f8b7d92cfd3b2a91d4557bf7d98d0419bc4a6451c92e7ac47c6d9748"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/source-pins.json",
+      "bytes": 16393,
+      "sha256": "474639a38a16d4a8fb38b5fafb0afa0ee9f4a2998c3cb0b0a9a4e4b918e1ed7d"
+    },
+    {
+      "path": "evidence/semiprime-terminal-boundary-20261024/validate-continuation.py",
+      "bytes": 4754,
+      "sha256": "52ddf4b030149cd4961b645b6056c6cae95a5dc22097b3397911d066dee02a7d"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/agents-append.md",
+      "bytes": 1860,
+      "sha256": "c1a27733b11a973bced2c6c51e077d9344ca5a89fa3cc4fee5d4ef17484468f9"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/continuation-baseline.json",
+      "bytes": 4519,
+      "sha256": "960b0968e8615fb44b9f15b9cad18264358c44064536b24999003cbfc586377a"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/continuation-validation.json",
+      "bytes": 8454,
+      "sha256": "eedf27e51faea06cc2444288a1ffdea786473785b9fe6e1eec8df64e691fe5e5"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/final-pins.json",
+      "bytes": 1108,
+      "sha256": "7ccd0d725c77d7a27d5055f05d4d23bf3cd3e6ba1b22f5c4aaff514d920c600c"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/integration-review.md",
+      "bytes": 9038,
+      "sha256": "790d8af26732c19cf6aa45ceb33c4d4cc8e5bcbe5660370dc041b3d4b870c835"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/journal-append.md",
+      "bytes": 5660,
+      "sha256": "f7654a0fea513eb0c3c17c8df6b4fe2ddd63d656ebcd7f0545193a2e7f8fb976"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/terminal-character-review.md",
+      "bytes": 7355,
+      "sha256": "82b488de920c560b6abb281482932804d337431d1211fa5722aa031ced7a0ffd"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/terminal-character.md",
+      "bytes": 16243,
+      "sha256": "75cf6cbaa4a15bd5d334440a93fafad90a57b6d3286228e5d4e016a911c0e9ae"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/terminal-literature-review.md",
+      "bytes": 6969,
+      "sha256": "3f268ed6d74f6235397608723ad873e68313f304fb242c161bed2150bc215dc2"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/terminal-literature.md",
+      "bytes": 15634,
+      "sha256": "49c90f496dcfaf1f4cc2e69e746950c9e3b597257ca94d21056c76ad7547ed06"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/terminal-root-gradient-review.md",
+      "bytes": 5857,
+      "sha256": "ade4b84c487eccefb6f8212d91f172dc3c59a36388fd10bfcda82db74d1aa960"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/terminal-root-gradient.md",
+      "bytes": 6269,
+      "sha256": "8915ff758ba60c6cf956fb49b65287a45d82623f2c5c92f003a4021b137fa4cf"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/terminal-toda-review.md",
+      "bytes": 6226,
+      "sha256": "23582de978202fb4dbcdd545ff649fcad86193033d8b8f8173dd21432634b1b0"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/terminal-toda.md",
+      "bytes": 16345,
+      "sha256": "937018c6ee61730a90df1ee9f05bea37cd1bc0a9d2a4addbb3701ec670aa0e3c"
+    },
+    {
+      "path": "evidence/semiprime-terminal-recurrence-20261024/validate-continuation.py",
+      "bytes": 5738,
+      "sha256": "7e6e4e4336843923a68084dc1d45abf7e236c59d0bab11f8f02a2fb96f337de7"
+    },
+    {
+      "path": "evidence/semiprime-thin-fixed-q-joint-20261024-36wtj7ic/joint.md",
+      "bytes": 4675,
+      "sha256": "a149f438ba1424cda1e8099f934e8729d21f4ecf8717508b78bebee958981a73"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/acquisition-attempt.md",
+      "bytes": 7830,
+      "sha256": "8c70eb75861922ea5f06b9a515b8a05e330d472a860b4dfae8ad597895f1669a"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/acquisition-review.md",
+      "bytes": 5621,
+      "sha256": "21acaaf99290b0fdcc5eb01c9dd6324edd02e257739ff7eac1dfab237138891a"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/agents-append.md",
+      "bytes": 1624,
+      "sha256": "9a9d35452a2490c20fa4883f8015ff6f732bebd6dde5bef4fb286da69d02ec95"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/continuation-baseline.json",
+      "bytes": 4658,
+      "sha256": "df4dfbe5b8a0b61ac50b3775d0e840d08b04efde26059fc1e8c30114db49982e"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/continuation-validation.json",
+      "bytes": 10758,
+      "sha256": "7cd79220bce70c8879a2160e4aa2d536cfc1e98b74da31d7cc6833fa4352a39b"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/exponent-review.md",
+      "bytes": 6097,
+      "sha256": "87db7b3d2921153dd0cb2c446ead203a9a11456fa209eac32a0374bb0bc3d2de"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/final-pins.json",
+      "bytes": 1080,
+      "sha256": "4fed37a4365cc7b1bb2ac47bc2de8c43704f32a45b13e444b7c9d238031a753b"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/integration-review.md",
+      "bytes": 5128,
+      "sha256": "ad36664238a5c734760d5b42223f0aa956416212746f91f71ee597ce4ac7c4f9"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/journal-append.md",
+      "bytes": 5142,
+      "sha256": "10b08cf06b76ed0dcf0f985545fadcf5722ca9f835c06fa559d190c41846fbb1"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/literature-and-exponent.md",
+      "bytes": 12748,
+      "sha256": "a5aec97ae267a4d1b242aa38a09bd52176c895a52cf18d43f6a2d9b155928ac5"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/local-jet-recovery.md",
+      "bytes": 10259,
+      "sha256": "e61d9639d9bc2925a32c57bd7da4da25fa1ed4af75457f9985483d12220a2c8c"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/local-jet-review.md",
+      "bytes": 2122,
+      "sha256": "f51658338c1e6ccaaa2d547fc225c549e044c708fd23d8de276e396328f6dbd4"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/observable-attempt.md",
+      "bytes": 7959,
+      "sha256": "aa5b21052038ba096114bb84e7246976fd94ec4b6ffeb7bd9ebaa24bcc1d9b52"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/observable-review.md",
+      "bytes": 4456,
+      "sha256": "c0b5c7d23d316db48ff5b9e18e9be996a7db51bd758051c2006dae1b57f3240a"
+    },
+    {
+      "path": "evidence/semiprime-translated-cyclotomic-20261024/validate-continuation.py",
+      "bytes": 8168,
+      "sha256": "ee38ac95f9438de738445306537f19878f836cd2c8b863d9fbcf824feda6833c"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/agents-append.md",
+      "bytes": 3216,
+      "sha256": "49183ff5e0c0fdff6d86512a0b6df3decf2282f5feca7fb5beef99dad595d541"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/auxiliary-powers-review.md",
+      "bytes": 2931,
+      "sha256": "9a96a5c702ef3d062bc254829db230b1348139106f5828a4be3287cee5e2f384"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/auxiliary-powers.md",
+      "bytes": 8247,
+      "sha256": "3aeb1f40b72340face8154ac40657003fdea4078f5ca9cc766868767d4cd6be2"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "4e5482c03df09fc1318dc4fc73888c0a6af74b5b2ef3bbd0979ae85197bf662d"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/continuation-validation.json",
+      "bytes": 31140,
+      "sha256": "c9499aacf4ffe5bd755e0784618e8c57a969867a9aad28ce090c688bde4ff992"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/final-pins.json",
+      "bytes": 1092,
+      "sha256": "5d4dfaff1e0d7a096a8121f6e57b4c59b8138aa0d6a1138af84fa1dad4e32646"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/inherited-source-pins.json",
+      "bytes": 22275,
+      "sha256": "e1608be66deee1d2bbe4db49a5b3b1f975de4c67781308f2bb79626ef9db57d3"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/integration-review.md",
+      "bytes": 4958,
+      "sha256": "1a2c31fdfbb8f9686767596a9f1f726ecba1e5e0d8d155e635e7f43f45fd89b0"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/journal-append.md",
+      "bytes": 11817,
+      "sha256": "d59ae8e47625608feff8138f132ba4bcd32196f6ea306158f231ac241e8688ff"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/orientation-palette-review.md",
+      "bytes": 4053,
+      "sha256": "ec28ba3480d789e95c65242b52833b36dbeea59396891ca091631ea96d57117e"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/orientation-palette.md",
+      "bytes": 14501,
+      "sha256": "97db9cf0004dac3ec2c6c9cc341b27531fb90c51d5f6739e6b121c6bc4e20fbf"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/palette-acquisition-review.md",
+      "bytes": 3001,
+      "sha256": "ba5ea945f548aa9805633efa9acf010ebda18f0e3f91ea2260d3bd2b768f221a"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/palette-acquisition.md",
+      "bytes": 9775,
+      "sha256": "85009ef8ac37c32cc1eef60aed0796c2a150ab756bc30c7c22d7fb2dc6c8159f"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/source-pins.json",
+      "bytes": 23241,
+      "sha256": "255e4b0fe6d251db821f01cd0baa28f4da3682e452a7f47c28a52518bdc04d91"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/unique-gcd-review.md",
+      "bytes": 4835,
+      "sha256": "48554cc95e08279c6cda8cd8154b15347c31fa9afcb474eb6e9465158bd4825d"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/unique-gcd.md",
+      "bytes": 13539,
+      "sha256": "8eba0f3676ef0de414f4b48fa463a54058aed4fed97db3a0557be0189ec8c862"
+    },
+    {
+      "path": "evidence/semiprime-unique-acquisition-20261024/validate-continuation.py",
+      "bytes": 4917,
+      "sha256": "e8e5e00f45cdf95d04d4f7ec53e1c86e489e2ae4deccfd33a39c67b697bb8400"
+    },
+    {
+      "path": "evidence/semiprime-varying-quadratic-hecke-20261024-aLLfXK/audit.md",
+      "bytes": 10097,
+      "sha256": "3633ad54378d022bf9938f47bb858d355a3b95c836f2901a1ca42c09d345165e"
+    },
+    {
+      "path": "evidence/semiprime-varying-quadratic-hecke-20261024-aLLfXK/source-pins.json",
+      "bytes": 6522,
+      "sha256": "99a36a35dc1d9578fdcec954f088e3bffda2c92435c31ed23fbdde7b39cac1f5"
+    },
+    {
+      "path": "evidence/semiprime-varying-quotient-recurrence-20261024/ore-recurrence.md",
+      "bytes": 5791,
+      "sha256": "a5a664974a72986af57fc7d535c2950b2ae8114cb13a4d9beda4d1409b90a36e"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/agents-append.md",
+      "bytes": 1854,
+      "sha256": "83c1921af1bb0c4c73be574cb6c2d7fd76099f2bc090f2e56162b1fe54d972f2"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "34e1d900dc807659a9afacfc1f23a2f135f86e5c1fa5e66550e16fdb5d33c5c6"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/continuation-validation.json",
+      "bytes": 53987,
+      "sha256": "167d568bd4c5913dd11362861b3f428500b72e8626410a32b8d0951263b1cb09"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/final-pins.json",
+      "bytes": 885,
+      "sha256": "73200907b14b86bae7ad536b24ec23b2a8df89b42957fe91520b07f9e69f7803"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/hyperbola-cosets-review.md",
+      "bytes": 4615,
+      "sha256": "47d887acc9638d6be9ab78286585239d3d772a6c86df9ac84d6baff1de387cd4"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/hyperbola-cosets.md",
+      "bytes": 13279,
+      "sha256": "88e282d7fda806d22b1cee13866204acfed166305c98a669a78596d53a318a14"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/inherited-source-pins.json",
+      "bytes": 45870,
+      "sha256": "08893140ad8b41ca243d7b920675110f5876b4e9de04d3f8fa9008e852b302a3"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/integration-review.md",
+      "bytes": 5679,
+      "sha256": "3ac122dbdc69f41951f25226d959b37d8e3c1500a25617d9cb215c54d6e655ae"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/journal-append.md",
+      "bytes": 6198,
+      "sha256": "ef6aac4c2fdfd577aa408e5c185ee1576c2a86d8a3f0115c317efcf8b4216fc9"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/quartic-attempt.md",
+      "bytes": 6917,
+      "sha256": "fcfdad2713ee3b9a4de57d7db61e4d7877f6672b48e9f983f69f7342a0b3af67"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/quartic-review.md",
+      "bytes": 2422,
+      "sha256": "ba0d0f61522e961db39a17d2f3ae1245defb08fd4b1a216eea26b3e9976738f1"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/source-pins.json",
+      "bytes": 46172,
+      "sha256": "2108d6df60b326c956f47c24ad88c94e963507e00ab536b52d9615bcece1c427"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/turn-classification.json",
+      "bytes": 411,
+      "sha256": "031ce8188427060f891eec736ac4183d040d558200821be2669cc7729a73c6bc"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/validate-continuation.py",
+      "bytes": 4933,
+      "sha256": "8091e5eb250ab9dba4a5e1c14200e657dc478d56ff6278d2895f5b115dac7104"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/variable-windows-review.md",
+      "bytes": 3766,
+      "sha256": "e9892cf833de4581ff023aebfcf4f2cd68d91073284c11e921d5356a4ee03ef0"
+    },
+    {
+      "path": "evidence/semiprime-weighted-recurrence-20261024/variable-windows.md",
+      "bytes": 4692,
+      "sha256": "ec0dd0acc8af6d60c71aeaa1098865f2d86ecc4ed63c5f7e8da51c0e81dc8d4b"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/agents-append.md",
+      "bytes": 2628,
+      "sha256": "5fa2b681c2bb78d9f97ffda9ada406740d21ecfdbf892d8a0aa757392193c9db"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/continuation-baseline.json",
+      "bytes": 4183,
+      "sha256": "f4736b07ac0dd33f62ecd6a12145acb99e56348269601e530420896107582201"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/continuation-validation.json",
+      "bytes": 20079,
+      "sha256": "7b4f465c6686f8aa8fd09ea20e579850fd34c271fb53bebd53b8b3697f414abb"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/diagonal-product-review.md",
+      "bytes": 2590,
+      "sha256": "fbbc057f0ffce8900528b13a6c4a65f84a2034583773c04ed8af8d5a001d2ad9"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/diagonal-product.md",
+      "bytes": 15107,
+      "sha256": "dc386bc0f06035786cf964ecff43c7145b43d2ac54191c52adbf8ffb533f68a7"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/direct-gcd-review.md",
+      "bytes": 7002,
+      "sha256": "cf5538fb43f2daf2d9f9381082ddae19be077a0af4d66a2a0e858ffb5d207c32"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/direct-gcd.md",
+      "bytes": 10951,
+      "sha256": "9cc5a04f1acdcda8a30edfa80b37b6a468112bc98db2ac0af65383ef5d67a386"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/final-pins.json",
+      "bytes": 879,
+      "sha256": "7cff3cf0fc00dfe766f197306ee3f5a711bac2b1cef7fa1f87b91b28e7b1ae8d"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/inherited-source-pins.json",
+      "bytes": 12552,
+      "sha256": "9977829654b3a5f97c66626237e4692fc58c7423f6d698112651e11bb3a214ff"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/integration-review.md",
+      "bytes": 4457,
+      "sha256": "b3b75a7a685312f5c7575f865fbbd57121faec7c34a5abaa714bfeb6f0f863c9"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/journal-append.md",
+      "bytes": 11593,
+      "sha256": "59006b3c87503c5f9fee75061e89ce3731c2bf75489943b4bcc7bd0ed15834b9"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/native-pairing-review.md",
+      "bytes": 5122,
+      "sha256": "5ed34fc536b4b7c968457b70d5be704661227f363bcb4ea9e7f1dfef2e5785dd"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/native-pairing.md",
+      "bytes": 14838,
+      "sha256": "06548c974c61d9922a4ec6c2f41ba1c95d7dfcbb92442b3b2e5ceff984cd8016"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/source-pins.json",
+      "bytes": 13112,
+      "sha256": "f207600b82f454a02b908b089bf5b3970081eccd29e5056e508e3f4087110bac"
+    },
+    {
+      "path": "evidence/semiprime-zero-query-20261024/validate-continuation.py",
+      "bytes": 4542,
+      "sha256": "e8f259e5f9789bf0dead9284b5fc6397bc6320af364755ff965d22d32e70fc76"
+    },
+    {
+      "path": "path-index.tsv",
+      "bytes": 160614,
+      "sha256": "ed27e024bd3161a99ad81cf0cf969ab91082650d8ad98e9f9e5c0a94ddaf0d82"
+    },
+    {
+      "path": "provenance/frozen-baseline.json",
+      "bytes": 3718,
+      "sha256": "9ded592a43c771d78350884229632d51204a0dc132be231f8dbff8b2567488b0"
+    },
+    {
+      "path": "provenance/inherited-376-pins.json",
+      "bytes": 52825,
+      "sha256": "2b222966aca3ec356fb02f0c6ab22be46bfb60043445449f2760c0f957132757"
+    },
+    {
+      "path": "provenance/protected-snapshot.json",
+      "bytes": 1662,
+      "sha256": "891630d54cf6330aa466a2b432411abf1c07c3a33f10edf21e67b7b47bec14ab"
+    },
+    {
+      "path": "provenance/source-provenance.json",
+      "bytes": 303089,
+      "sha256": "3977509586fbe7a828f49159f336a64dea5b69d3f9044de5f295a281cb56203c"
+    },
+    {
+      "path": "provenance/source-url-index.json",
+      "bytes": 6142860,
+      "sha256": "8d6c5ca0ea550c867ad0d04d29487b4b9d7e5680c183fe91019c0789ec2bc766"
+    },
+    {
+      "path": "validate.py",
+      "bytes": 3886,
+      "sha256": "8253a345d2dce0ac514d4e77b5847913f134b0c4c5537bd2c5d01c9be516fc17"
+    }
+  ]
+}

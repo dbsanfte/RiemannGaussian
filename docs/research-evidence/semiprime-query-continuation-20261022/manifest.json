@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "classification": "Research checkpoint; no new whole-family acquisition bound",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6080,
+      "sha256": "5e6e3f2e6b2a72e6e1cdda11affc5f455c6082393f000cac388f0b85c2e588e1"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 3085,
+      "sha256": "b81dee6bb9b06075a5b3b862d2c54dc6f99ffa867d780c8f2ff37dbc76df542a"
+    },
+    {
+      "path": "checkpoint-review.md",
+      "bytes": 1522,
+      "sha256": "21197270718bad67389c2ce3e659998ddcb6f6a08fae820dd0f975f2a8138ace"
+    },
+    {
+      "path": "preserved-packets.json",
+      "bytes": 1491,
+      "sha256": "61cf8ccc1dd01021f752b1839f9eb5f718c73f2ea2de49d8753de6c964eda285"
+    },
+    {
+      "path": "reports/direct-product.md",
+      "bytes": 5597,
+      "sha256": "8e1139bb16a567b474a164443abb57f11c33ea1239122e13896e13ee7996265b"
+    },
+    {
+      "path": "reports/higher-degree-quotient.md",
+      "bytes": 7133,
+      "sha256": "0c39c2355cbddc5212f1c859fba0bb8e8b4da8b3aca602daddd08d95339765b6"
+    },
+    {
+      "path": "reports/lattice-route.md",
+      "bytes": 5899,
+      "sha256": "c47a19539e378e90ce62357b2328a73b3e0e941143f6528ca83b82385219f9a1"
+    },
+    {
+      "path": "reports/order-cleaning-independent-review.md",
+      "bytes": 8583,
+      "sha256": "174353b9e1d61bbbf3751f6fe07b8e92e2c49743b3498c7931680755ee470cf9"
+    },
+    {
+      "path": "reports/q-cauchy-determinant.md",
+      "bytes": 5121,
+      "sha256": "0d6a095c38c4544dba96f732478f3d0f6fc3205e5cfe175f5ea66629bbdb1aac"
+    },
+    {
+      "path": "reports/quotient-centering.md",
+      "bytes": 5300,
+      "sha256": "0615ad427dbb07819969cb4f9fb21dce5edd435adaafac023092ca6187bcd21b"
+    },
+    {
+      "path": "reports/rough-order-cleaning.md",
+      "bytes": 6817,
+      "sha256": "2c04b959d680ae3e04eed20c71e6ea3faf2b253b5d2c6b1aa940a28aac8142f9"
+    },
+    {
+      "path": "reports/shared-centering-recovery.md",
+      "bytes": 6269,
+      "sha256": "12cc20ac9a2e78d92d28f5678e7e3e9201963cd536dd7a637780b647f6781d5b"
+    },
+    {
+      "path": "reports/shared-coindex-roots.md",
+      "bytes": 5869,
+      "sha256": "3537f30b23dbb4808d6d31ced12fee8bb82e5fa8533d6ebb64bf1cc95c2a1beb"
+    },
+    {
+      "path": "reports/squaring-query-prefix.md",
+      "bytes": 5058,
+      "sha256": "6a03c35de5474d5bea776c442e5dc539ec2b1a6a7cc45aa5277d960befd59e4c"
+    },
+    {
+      "path": "reports/strong-order-route.md",
+      "bytes": 6665,
+      "sha256": "2dd177157b90dcf00a67c066244a9a1de04608f63b74a8773dd6a6f9283b2d25"
+    },
+    {
+      "path": "root-review.md",
+      "bytes": 3880,
+      "sha256": "d018ed6c4b37920cecc2defd96675f1b81ab8fdc74eebc1a3dc084087f0ff290"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 1728,
+      "sha256": "85e41d0518836879a7d7f70b360a6c9417a2793aa2d4d5c1ad4bf391bc786816"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 987,
+      "sha256": "0ad5f4ed8f31f8e2d77282c1494afcf0358b772cb30131c86fcd1ae3d5d93502"
+    }
+  ]
+}

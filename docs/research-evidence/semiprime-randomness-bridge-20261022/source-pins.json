@@ -1,0 +1,104 @@
+{
+  "classification": "Conditional resource reductions; no acquired whole-family factorizer or original long query.",
+  "verbatim_report_copies": [
+    {
+      "path": "reports/logspace-quantitative.md",
+      "scratch_source": "/tmp/semiprime-derandomization-20261022/logspace-quantitative.md",
+      "bytes": 13313,
+      "sha256": "73e9869348fb9d0951912572dd7ee909a128eac7c35150f641a12c02b8b59507"
+    },
+    {
+      "path": "reports/lowspace-factoring.md",
+      "scratch_source": "/tmp/semiprime-derandomization-20261022/lowspace-factoring.md",
+      "bytes": 11069,
+      "sha256": "68ce7edf43f9c3796de0994632d76a9a4b9648ebf0b3517b4d5c4bd52ccfb6ae"
+    },
+    {
+      "path": "reports/circuit-space.md",
+      "scratch_source": "/tmp/semiprime-derandomization-20261022/circuit-space.md",
+      "bytes": 7160,
+      "sha256": "506dd8973b35d5fe6222f543efa44453685969da59d64cc62cb509f96c26e53b"
+    },
+    {
+      "path": "reports/adaptive-localization.md",
+      "scratch_source": "/tmp/semiprime-support-query-20261022/adaptive-localization.md",
+      "bytes": 7157,
+      "sha256": "6d7f977384bddc980299c4e4603d783439f379516a294a217db1627c6b2dd412"
+    },
+    {
+      "path": "reports/hensel-support-contraction.md",
+      "scratch_source": "/tmp/semiprime-support-query-20261022/hensel-support-contraction.md",
+      "bytes": 6419,
+      "sha256": "b729f1fe1b9aa52d1b55aade1798d8d5f1f1c1097a58f280e464254477b328e8"
+    },
+    {
+      "path": "reports/cubic-small-trace.md",
+      "scratch_source": "/tmp/semiprime-support-query-20261022/cubic-small-trace.md",
+      "bytes": 5414,
+      "sha256": "beac1797a7a910f123e6beeba891258bd6e224a85de16b40b1be90c8eb0cd679"
+    },
+    {
+      "path": "composition-review.md",
+      "scratch_source": "/tmp/semiprime-derandomization-20261022/composition-review.md",
+      "bytes": 5949,
+      "sha256": "950b2207bcd3e83433707c47075baed6a43b19a369caba21acf820561a8c7e64"
+    }
+  ],
+  "primary_source_fingerprints": [
+    {
+      "url": "https://github.com/openai/math/blob/main/preprints/Exact-Derandomization-of-Logarithmic-Space-L-equals-RL-equals-BPL-September-23-2026/paper.pdf",
+      "cache_path": "/tmp/semiprime-derandomization-20261022/logspace-paper.pdf",
+      "bytes": 1000094,
+      "sha256": "15030fab23d31a4d91bd944100a547c3e9eff6da8330a4fb94ea999f071fadfc",
+      "scope": "Relevant primary statements and quantitative interfaces read; not independent full-proof certification."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2609.23603v3",
+      "cache_path": "/tmp/semiprime-derandomization-20261022/cheng-wu.pdf",
+      "bytes": 852126,
+      "sha256": "d0e8cbd18b93a9bd560c68102c3f6112a8aa4ba1afdae5788f22dc44ae97483a",
+      "scope": "Relevant primary statements and quantitative interfaces read; not independent full-proof certification."
+    }
+  ],
+  "preserved": {
+    "preserved_entries": 187,
+    "packets": [
+      {
+        "directory": "semiprime-twist-character-20261022",
+        "manifest_sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23"
+      },
+      {
+        "directory": "semiprime-twist-palette-20261022",
+        "manifest_sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3"
+      },
+      {
+        "directory": "semiprime-colour-retention-20261022",
+        "manifest_sha256": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb"
+      },
+      {
+        "directory": "semiprime-lifted-norm-20261022",
+        "manifest_sha256": "11ce7d9e67e205772498f1501e3f02321cb28fd22e6d8c71cb45eef4993be97b"
+      },
+      {
+        "directory": "semiprime-character-aggregate-20261022",
+        "manifest_sha256": "301999c41ea2e7f562a42ccf9ec119867481d63f8dfb69f81304b12fec59847d"
+      },
+      {
+        "directory": "semiprime-composite-character-20261022",
+        "manifest_sha256": "d0f6dafabb5b33f5cab33dd9c117d701f7426598e4f8ba6bf60cfadb698586d4"
+      },
+      {
+        "directory": "semiprime-collision-representation-20261022",
+        "manifest_sha256": "6846eb84465b23e4dce8db04a1b95e5235882166dea31932aa932d1999f55af0"
+      },
+      {
+        "directory": "semiprime-dyadic-shared-20261022",
+        "manifest_sha256": "cf35e01493f26bbb960d4143f3f461ea4766ac0b4a7c0df5c7aede33a7bbd8e7"
+      },
+      {
+        "directory": "semiprime-query-continuation-20261022",
+        "manifest_sha256": "539df1ca1ec160aaf3806a57ab0f47e9870c2d39e1a86f7a77c691c03a7ca5fc"
+      }
+    ]
+  }
+}

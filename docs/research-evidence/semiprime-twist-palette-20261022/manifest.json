@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7215,
+      "sha256": "1501dfe049c2567d486cdeb30f15e6c9cc140b76acca2ea9c69cd7aa842e2ef7"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 1052,
+      "sha256": "5660efeba5d0584e1c44f2fb20921003feddcd1900666947019e1d7391eadafb"
+    },
+    {
+      "path": "probes/check_palette.py",
+      "bytes": 1328,
+      "sha256": "1466e853eed07175c9cd40d317b4ca6e48cf9dfad3a432276ea56b4ea7b7fc37"
+    },
+    {
+      "path": "reports/independent-review.md",
+      "bytes": 6154,
+      "sha256": "0f8cf9ad8b0ed00897694c3942902b69a69bda0e5d3497aff40b8a2519bb6682"
+    },
+    {
+      "path": "reports/nonlinear-quartic-palette.md",
+      "bytes": 8666,
+      "sha256": "c55429def67e8863f1f4b7893ba922623fb6a7ce1f78bb3e416d6108b794c925"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1037,
+      "sha256": "05327f6be506d545a70aad28f9aa9c32b195ad8d29918b9b738812fe5e70f9af"
+    }
+  ],
+  "external_packet_dependency": {
+    "path": "docs/research-evidence/semiprime-twist-character-20261022/probes/check_formulas.py",
+    "sha256": "13d5298bdb64b754986b8f51041033e5074afe933653126f3100e8798edae4d3"
+  }
+}

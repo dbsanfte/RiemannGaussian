@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-22",
+  "copies": [
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/sheared-norm-constructor.md",
+      "destination": "reports/sheared-norm-constructor.md",
+      "sha256": "f022b3c74067a223057a3fdbc47986007e119a11e01cd0a0340640b14e4c389d"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/additive-contraction.md",
+      "destination": "reports/additive-contraction.md",
+      "sha256": "160529aabc8a880316a27f6c32770f8b18d7224ae9314565db28ac0d99645d89"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/weighted-log-directions.md",
+      "destination": "reports/weighted-log-directions.md",
+      "sha256": "99f90cabd2c0129cb5f0a62d54d509fb24c03a4c6df7048399a1da1d01f343c6"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/phase-direction-ledger.md",
+      "destination": "reports/phase-direction-ledger.md",
+      "sha256": "802fd1c6d03fd66f5aa8052bcff0806ece9cd98b7166724eb570ad5614b9fe7f"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/resampled-displacement.md",
+      "destination": "reports/resampled-displacement.md",
+      "sha256": "2e45ed7267436bd9bfd1e5236f0afb3b0da6c0ffd69cfcd4a3c0e940fd3be0b8"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/q-newton-contraction.md",
+      "destination": "reports/q-newton-contraction.md",
+      "sha256": "9812515436f8f2210c79b0b234677e48c2b00f4495f4b227943a5fa36f1383b1"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/sheared-norm-scalar-application.md",
+      "destination": "reports/sheared-norm-scalar-application.md",
+      "sha256": "51c56a3f51dbe55a3cabe85497d6ef677753c2becf070f497b52b890afe1a33c"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/source-retaining-functional.md",
+      "destination": "reports/source-retaining-functional.md",
+      "sha256": "a07d811cebca3e4d9ff2e830e0a861c1430ba3ae6c7a370de575046e231ddbf0"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/stationary-phase-contraction.md",
+      "destination": "reports/stationary-phase-contraction.md",
+      "sha256": "1a51efb0ce0dce5b12a7cb0111e12ab37ddf251b67f7d92925e6c9ebbf2246b6"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/full-controller-audit.md",
+      "destination": "reports/full-controller-audit.md",
+      "sha256": "567cfb2fe23f7618645df7910fb3c5f4a79be3c2543457e563b8404e58f40607"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/sparse-norm-constructor-review.md",
+      "destination": "reviews/sparse-norm-constructor-review.md",
+      "sha256": "f5d44db795285dc3cbdaafe4e5e88b90b55099520cccb1b7072dd6eaabf73847"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/tangent-transposition-review.md",
+      "destination": "reviews/tangent-transposition-review.md",
+      "sha256": "ba0785ec8d2369bfb243515c7d9921aa0bf7fbeee7051b2204a1bfe57febafac"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/sheared-norm-low-precision-review.md",
+      "destination": "reviews/sheared-norm-low-precision-review.md",
+      "sha256": "082781bd4dfb084d38f4f1abca8ddb7a9dac475c125b8ee5debea48abe5cded2"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/fold-review.md",
+      "destination": "reviews/fold-review.md",
+      "sha256": "ddcbcd544f4e07d4183e44ebd90d4443890ca470623e2cea9fb310e24d8cc15b"
+    },
+    {
+      "source": "/tmp/semiprime-collision-next-20261022/native-dyadic-transport.md",
+      "destination": "reports/native-dyadic-transport.md",
+      "sha256": "d9001ff797904a5f461b843e26d601c3768e2378b4738f8b34f14c926e94e2a4"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/implementation/sheared_norm.py",
+      "destination": "implementation/sheared_norm.py",
+      "sha256": "2118c7c71ac218608025d5b62846b7e4ac44e9e3cca6b91d09f8b766f2e8278f"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/implementation/test_sheared_norm.py",
+      "destination": "implementation/test_sheared_norm.py",
+      "sha256": "d064b68a80f60bed8436a7c37df68af401998e2a27e59a16dbc2552948343adc"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/implementation/README.md",
+      "destination": "implementation/README.md",
+      "sha256": "4270d05e2918890901202fd4edcc581b220a6edc85490504dfd789564ee1d564"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/implementation/independent-code-review.md",
+      "destination": "implementation/independent-code-review.md",
+      "sha256": "e634392212326ee409c41a13c0a579284e5656c91631b862fb4b54348a925ed9"
+    },
+    {
+      "source": "/tmp/semiprime-dyadic-shared-20261022/implementation/precision-and-bit-audit.md",
+      "destination": "implementation/precision-and-bit-audit.md",
+      "sha256": "6df64c54f1ad893f2ae8d94fbebdf0511d25e9d2bbf732333e742445baa35996"
+    }
+  ],
+  "note": "Verbatim scratch snapshots, frozen only after root integration and validation. No historical frozen files were edited."
+}

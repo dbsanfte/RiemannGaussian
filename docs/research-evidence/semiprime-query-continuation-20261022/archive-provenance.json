@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-22",
+  "classification": "Research checkpoint; no new whole-family acquisition bound",
+  "copies": [
+    {
+      "path": "reports/direct-product.md",
+      "source": "/tmp/semiprime-native-shared-20261022/direct-product.md",
+      "sha256": "8e1139bb16a567b474a164443abb57f11c33ea1239122e13896e13ee7996265b",
+      "bytes": 5597
+    },
+    {
+      "path": "reports/squaring-query-prefix.md",
+      "source": "/tmp/semiprime-native-shared-20261022/squaring-query-prefix.md",
+      "sha256": "6a03c35de5474d5bea776c442e5dc539ec2b1a6a7cc45aa5277d960befd59e4c",
+      "bytes": 5058
+    },
+    {
+      "path": "reports/q-cauchy-determinant.md",
+      "source": "/tmp/semiprime-native-shared-20261022/q-cauchy-determinant.md",
+      "sha256": "0d6a095c38c4544dba96f732478f3d0f6fc3205e5cfe175f5ea66629bbdb1aac",
+      "bytes": 5121
+    },
+    {
+      "path": "reports/lattice-route.md",
+      "source": "/tmp/semiprime-native-shared-20261022/lattice-route.md",
+      "sha256": "c47a19539e378e90ce62357b2328a73b3e0e941143f6528ca83b82385219f9a1",
+      "bytes": 5899
+    },
+    {
+      "path": "reports/quotient-centering.md",
+      "source": "/tmp/semiprime-native-shared-20261022/quotient-centering.md",
+      "sha256": "0615ad427dbb07819969cb4f9fb21dce5edd435adaafac023092ca6187bcd21b",
+      "bytes": 5300
+    },
+    {
+      "path": "reports/shared-centering-recovery.md",
+      "source": "/tmp/semiprime-native-shared-20261022/shared-centering-recovery.md",
+      "sha256": "12cc20ac9a2e78d92d28f5678e7e3e9201963cd536dd7a637780b647f6781d5b",
+      "bytes": 6269
+    },
+    {
+      "path": "reports/higher-degree-quotient.md",
+      "source": "/tmp/semiprime-native-shared-20261022/higher-degree-quotient.md",
+      "sha256": "0c39c2355cbddc5212f1c859fba0bb8e8b4da8b3aca602daddd08d95339765b6",
+      "bytes": 7133
+    },
+    {
+      "path": "reports/strong-order-route.md",
+      "source": "/tmp/semiprime-native-shared-20261022/strong-order-route.md",
+      "sha256": "2dd177157b90dcf00a67c066244a9a1de04608f63b74a8773dd6a6f9283b2d25",
+      "bytes": 6665
+    },
+    {
+      "path": "reports/rough-order-cleaning.md",
+      "source": "/tmp/semiprime-native-shared-20261022/rough-order-cleaning.md",
+      "sha256": "2c04b959d680ae3e04eed20c71e6ea3faf2b253b5d2c6b1aa940a28aac8142f9",
+      "bytes": 6817
+    },
+    {
+      "path": "reports/shared-coindex-roots.md",
+      "source": "/tmp/semiprime-native-shared-20261022/shared-coindex-roots.md",
+      "sha256": "3537f30b23dbb4808d6d31ced12fee8bb82e5fa8533d6ebb64bf1cc95c2a1beb",
+      "bytes": 5869
+    },
+    {
+      "path": "reports/order-cleaning-independent-review.md",
+      "source": "/tmp/semiprime-native-shared-20261022/order-cleaning-independent-review.md",
+      "sha256": "174353b9e1d61bbbf3751f6fe07b8e92e2c49743b3498c7931680755ee470cf9",
+      "bytes": 8583
+    },
+    {
+      "path": "checkpoint-review.md",
+      "source": "/tmp/semiprime-native-shared-20261022/checkpoint-review.md",
+      "sha256": "21197270718bad67389c2ce3e659998ddcb6f6a08fae820dd0f975f2a8138ace",
+      "bytes": 1522
+    }
+  ]
+}

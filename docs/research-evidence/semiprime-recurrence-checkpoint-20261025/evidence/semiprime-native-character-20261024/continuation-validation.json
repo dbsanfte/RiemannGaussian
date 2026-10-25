@@ -1,0 +1,179 @@
+{
+  "validated_at": "2026-10-24T13:24:48.254847+00:00",
+  "head": "6e969fd6e9c639eed280c595732248c106187603",
+  "shared_documents": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1427603,
+      "lines": 22256,
+      "sha256": "5acca0a0d6f799f8f4d717491c026737d9119a34198c6ebc8eaa0536501262e2",
+      "original_prefix_preserved": true,
+      "append_heading_line": 22226,
+      "append_sha256": "4cd7b79c7e1557d57cdc639be1f110f2a36d8f322c4ad5b787fb71c9d5e22839"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "bytes": 2113584,
+      "lines": 40202,
+      "sha256": "86292c9871ff0c4e2242b830d7cb7bfbb046f66635a4cd9f9254c652edcafb53",
+      "original_prefix_preserved": true,
+      "append_heading_line": 40097,
+      "append_sha256": "bb32f75d6a5e2da2630e6f5598f0f18563abf4311584ba137dc46d9cdb555dc1"
+    }
+  ],
+  "frozen_packets": [
+    {
+      "path": "docs/research-evidence/semiprime-twist-character-20261022/manifest.json",
+      "sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-twist-palette-20261022/manifest.json",
+      "sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3",
+      "entries": 6,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-colour-retention-20261022/manifest.json",
+      "sha256": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-lifted-norm-20261022/manifest.json",
+      "sha256": "11ce7d9e67e205772498f1501e3f02321cb28fd22e6d8c71cb45eef4993be97b",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-character-aggregate-20261022/manifest.json",
+      "sha256": "301999c41ea2e7f562a42ccf9ec119867481d63f8dfb69f81304b12fec59847d",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-composite-character-20261022/manifest.json",
+      "sha256": "d0f6dafabb5b33f5cab33dd9c117d701f7426598e4f8ba6bf60cfadb698586d4",
+      "entries": 28,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-collision-representation-20261022/manifest.json",
+      "sha256": "6846eb84465b23e4dce8db04a1b95e5235882166dea31932aa932d1999f55af0",
+      "entries": 29,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022/manifest.json",
+      "sha256": "cf35e01493f26bbb960d4143f3f461ea4766ac0b4a7c0df5c7aede33a7bbd8e7",
+      "entries": 26,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-query-continuation-20261022/manifest.json",
+      "sha256": "539df1ca1ec160aaf3806a57ab0f47e9870c2d39e1a86f7a77c691c03a7ca5fc",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-randomness-bridge-20261022/manifest.json",
+      "sha256": "716d8af72bf0189a72e21c1202cdfc33ca022e14670da33a5d3a1f2c5eb2c79a",
+      "entries": 10,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fermat-multiplier-20261022/manifest.json",
+      "sha256": "5ca79fec94998f07db68fea18d6e807d0df9daba75f12aaf694afa396bae233f",
+      "entries": 11,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/manifest.json",
+      "sha256": "8128b86203baeadac53842eb5aaca8ed275c904b8b059271708483238c75cfdd",
+      "entries": 14,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-trace-20261023/manifest.json",
+      "sha256": "8fd192d4c6a0fc707fa3bfe8fd60545870d26cc147847084acfe18afe5fa3b97",
+      "entries": 12,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-detector-acquisition-20261023/manifest.json",
+      "sha256": "09f9c88ae7cfb412fc9756686cf766f9f8f331ed5cb1e28ff39451289777624c",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-arithmetic-selection-20261023/manifest.json",
+      "sha256": "b112a2fc0f5f38cc0d5d329765effb0e60040d337e4c32f1dedb975e629c3ff8",
+      "entries": 14,
+      "all_entries_verified": true
+    }
+  ],
+  "frozen_entry_count": 270,
+  "reports": [
+    {
+      "path": "/tmp/semiprime-native-character-20261024/agents-append.md",
+      "bytes": 1767,
+      "sha256": "4cd7b79c7e1557d57cdc639be1f110f2a36d8f322c4ad5b787fb71c9d5e22839"
+    },
+    {
+      "path": "/tmp/semiprime-native-character-20261024/character-acquisition-review.md",
+      "bytes": 7521,
+      "sha256": "88af4e6fb0df963ce6901ad3406675dea9786e68e2f01b7fe2c27de76fa910a3"
+    },
+    {
+      "path": "/tmp/semiprime-native-character-20261024/character-acquisition.md",
+      "bytes": 19397,
+      "sha256": "83bd40ae27d975320566827bba50ae73d63464218d2993bfc5b226e60e7749a7"
+    },
+    {
+      "path": "/tmp/semiprime-native-character-20261024/character-literature-review.md",
+      "bytes": 4336,
+      "sha256": "0ae57466adb44e9b80fcf8ea797012fb8fd3bc4004bd5a71a3da430237e4f613"
+    },
+    {
+      "path": "/tmp/semiprime-native-character-20261024/character-literature.md",
+      "bytes": 13592,
+      "sha256": "24ec2dd1529a9c36070df12e880347c21c8841e7367eaa711c0bd7cfcf601c02"
+    },
+    {
+      "path": "/tmp/semiprime-native-character-20261024/composite-row-contract.md",
+      "bytes": 18331,
+      "sha256": "66795af6eae4e0cde23b6e84a6beb7ae18a656e41bdf9f94d739c83f3cbccb74"
+    },
+    {
+      "path": "/tmp/semiprime-native-character-20261024/composite-row-review.md",
+      "bytes": 7892,
+      "sha256": "d6df6253b443d6b92e47cc59df2c6fe386408647c48f755747d09291a8d78ca6"
+    },
+    {
+      "path": "/tmp/semiprime-native-character-20261024/integration-review.md",
+      "bytes": 6149,
+      "sha256": "f540f88eca3b2870b5ee62c4826ff809028d65f8266bd61886824a5adfbe6c04"
+    },
+    {
+      "path": "/tmp/semiprime-native-character-20261024/journal-append.md",
+      "bytes": 5977,
+      "sha256": "bb32f75d6a5e2da2630e6f5598f0f18563abf4311584ba137dc46d9cdb555dc1"
+    }
+  ],
+  "review_pins": "all matched current source/draft bytes",
+  "source_pins": {
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-query-continuation-20261022/reports/rough-order-cleaning.md": "2c04b959d680ae3e04eed20c71e6ea3faf2b253b5d2c6b1aa940a28aac8142f9",
+    "/tmp/semiprime-native-character-20261024/sources/nguyen-schmidt-2009.pdf": "b08f0bdc0a9177c38985654db3dafd6768dc1937928f2812769e7f38103b6e09",
+    "/tmp/semiprime-native-character-20261024/sources/lenstra-silverberg-CMorders.pdf": "3ad0d7592e70aeb079c93324c6c20f2343de7a0f82547d2081a874e2fda97dcd"
+  },
+  "diff_check": "passed",
+  "tracked_changes": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ],
+  "classification": "Conductor-first composite native source and coherent quarter representation paid; zero-safe primitive norm of one acquired packed vector paid soft k. Raw full cyclic difference norm is identically zero. Paired beta recovery and single-Cj rewrite are exact, but streamed fixed-index acquisition still costs soft k^2 and the original whole query stays soft k^1.5. Sixth-rate and full bit/Lean proof remain open.",
+  "broad_builds_or_example_campaigns": false
+}

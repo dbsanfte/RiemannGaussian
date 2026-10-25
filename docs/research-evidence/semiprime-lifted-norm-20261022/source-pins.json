@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-22",
+  "papers": [
+    {
+      "url": "https://cr.yp.to/lineartime/dcba-20040404.pdf",
+      "local_review_copy": "/tmp/semiprime-common-product-20261022/reviews/bernstein-dcba-20040404.pdf",
+      "bytes": 197230,
+      "sha256": "49a78cd05264e3c0c544ef40d36b593218c422b2c02f8547ad8b6f44d71a0e46",
+      "scope": "Algorithms 18.1, 21.2; Theorems 18.2, 21.3; complete coprime-base and sparse decomposition output",
+      "archived_full_text": false
+    },
+    {
+      "url": "https://mrc.sdu.edu.cn/ziliao/87.pdf",
+      "local_review_copy": "/tmp/semiprime-common-product-20261022/character_identities/chan-chan-gauss-jenkins.pdf",
+      "bytes": 284857,
+      "sha256": "999b2df86f840a5dd244d66e331feef3cbaaef6ceeeac3755503fbf942bbba9b",
+      "scope": "Finite q-Gauss identity and its additional root-of-unity specialization",
+      "archived_full_text": false
+    },
+    {
+      "url": "https://qseries.org/fgarvan/papers/auto-theta.pdf",
+      "local_review_copy": "/tmp/semiprime-common-product-20261022/character_identities/frye-garvan-auto-theta.pdf",
+      "bytes": 391754,
+      "sha256": "d14f6a070696299945edcdd7ff543826224cbb1f310daefe1bfb6ea85bc89a58",
+      "scope": "Generalized eta/theta identities and finite-ring specialization contract",
+      "archived_full_text": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/1805.01254v1",
+      "local_review_copy": "/tmp/semiprime-common-product-20261022/character_identities/gorodetsky-1805.01254v1.pdf",
+      "bytes": 479222,
+      "sha256": "bc0abc27fbac75071fa16efdf1e12b58af45a856c77f604194a7c61ce0e26a27",
+      "scope": "Cyclotomic congruence input contract",
+      "archived_full_text": false
+    },
+    {
+      "url": "https://math.stanford.edu/~conrad/154Page/handouts/genpell",
+      "local_review_copy": "/tmp/semiprime-norm-existence-20261022/sources/conrad-generalized-pell.pdf",
+      "bytes": 158321,
+      "sha256": "c87a0aebf42032cdc5779d5ab234831d9fd76b5c45dc93031e4a7b01841a4549",
+      "scope": "Author notes on generalized Pell equations and ideal/unit method; the uniform quantitative count is proved in this packet",
+      "archived_full_text": false
+    },
+    {
+      "url": "https://math.dartmouth.edu/~carlp/aks240817.pdf",
+      "local_review_copy": "/tmp/semiprime-norm-existence-20261022/sources/lenstra-pomerance-20170824.pdf",
+      "bytes": 379132,
+      "sha256": "f9bec5b837311afbcbe1833cc0cce417fb69df03f53e22c9543f5451398d97b5",
+      "scope": "24 August 2017, section 11 page 35: fixed-q PNT in progressions and Lemma 11.1 Brun--Titchmarsh, inspected by root",
+      "archived_full_text": false
+    }
+  ],
+  "source_scope": "Primary copies inspected by investigators and the independent coprime-base reviewer. Root browser retries for Bernstein returned 502; retained PDF/text and theorem references were inspected locally. Other algorithm contracts are linked in the verbatim reports."
+}

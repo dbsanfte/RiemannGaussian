@@ -1,0 +1,122 @@
+{
+  "repository_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "files": [
+    {
+      "remote_family": "Primitive-roots-for-every-admissible-integer-base-October-4-2026",
+      "remote_file": "01-introduction.tex",
+      "local": "primitive-introduction.tex",
+      "git_blob": "d3ed0c86e7524058a601145a4863acdb89d576e7",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "5cb01a814c568efa5bb6324ecfb9d556ea367e11fa5d59f455a5b203f9ce390d",
+      "cached_sha256": "23bb75c5f00a1324061f3b5fb8cff54a5722d07186db9245724ac068d27854c5"
+    },
+    {
+      "remote_family": "Primitive-roots-for-every-admissible-integer-base-October-4-2026",
+      "remote_file": "06-zero-free.tex",
+      "local": "primitive-zero-free.tex",
+      "git_blob": "589df3a177b3961e83ff3b8f6fadcba6ebb2f64a",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "c565166640d5e8210a2af70f00f6b9072112033a182ec7dede17e1517e76be33",
+      "cached_sha256": "af54c2267f4a2219cb32c78486af92d2b4caebf648951154bbd9bd48a1e352dc"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "00-introduction.tex",
+      "local": "factorization-00-introduction.tex",
+      "git_blob": "24bb00b878eac7882bfb3cbb862acf1903cf2693",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "a7048b62d7a31c5029827ad5db7e32187f5d29035138d6cc0677d48309a05af9",
+      "cached_sha256": "8a2764008061bbd1f047856d5abe13a62dc277c264e7d4234690edc73ad36c6d"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "01-table.tex",
+      "local": "factorization-01-table.tex",
+      "git_blob": "d7d4be3c1fe9d0d0043568ffcdfaa70fb52ff5ab",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "3cec5c2a6de5fe8b8759cdc20fd2c11723de54774c7e385626e3caa60ad92639",
+      "cached_sha256": "b67c5814668a745037a9cb92860b52313ff515562f3cceaf5550cda3b9a2dbb0"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "02-finite-fields.tex",
+      "local": "factorization-02-finite-fields.tex",
+      "git_blob": "714682cbb142309e1fb8d7dc119cb5f48d7cf72b",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "a55ede868711f34fcca8c3adb788611e0c1bed4653bef1e568f67467fbe5dde2",
+      "cached_sha256": "955b8e5c1c677331d59fc6ef3f7ab8895c3666c973b70044e4ccf9e6eaec5698"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "03-norms.tex",
+      "local": "factorization-03-norms.tex",
+      "git_blob": "21f557c10d6785f752de2aecebabddc66500553f",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "25c456356962e8ccc68e22e2b7c81feb4f0dc854fba9e0f3bdcb8cfb0f762d2f",
+      "cached_sha256": "95e24181b9c696ab0511e25ae0a3657928a1c7915149320300dd8dc98cc63704"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "04-divisors.tex",
+      "local": "factorization-04-divisors.tex",
+      "git_blob": "09b891a6ed0c01bd6b78b88e90e84b548731009e",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "59a8b0d3e550838ef2cb507e2d06984bf21862d97d93f689e49488cf21e5a1d9",
+      "cached_sha256": "ba0a41af5feb2645dc017d3e06d8eb202f6ff7a0f672d0eb012d2a6b6231ba05"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "05-geometry.tex",
+      "local": "factorization-05-geometry.tex",
+      "git_blob": "31ef37eace1600670063ed7cfa47aaf6538ae4d6",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "a1291e26082593224df707cc5914976c0e764378bf633b87c2e5f3fde6d62094",
+      "cached_sha256": "871d8c6b11d2c88e5a67676718c00f5c38188dde9ad45495e7d32c983bd02bd5"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "06-division.tex",
+      "local": "factorization-06-division.tex",
+      "git_blob": "fd1f330029c44c0f98dcc92872e95d746d1b82ba",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "cf4edc99584ef070d2a7f24c9f217bc525c0b27a3f3aa422e9aeeb3ea4cef169",
+      "cached_sha256": "8fdce5f08eb73e367a613e9c48ca718f0fb168152992c596837b0ca5d9d296c1"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "07-odd-split.tex",
+      "local": "factorization-07-odd-split.tex",
+      "git_blob": "395cc0430fd71cf06f24ae1e5f58c80bc8d40734",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "b77810b3c92751113f2da014d96227970a5f8b89bdb21dac34d17c69a2abb02b",
+      "cached_sha256": "96caf96401e1903902747a564a2da5008edb8d4e916df4ec122ed39c40aac656"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "08-driver.tex",
+      "local": "factorization-08-driver.tex",
+      "git_blob": "4e5bbd81999a603d8ce4488d8b84a93b2602b5c0",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "2424818377cd664f42cf95da862733ad28932c525ce0b2fac18830443709440e",
+      "cached_sha256": "ed2e37edcadead0beeba64d215a5cc05c51e3223860e920e8fdb70d99c8514d4"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "09-complexity.tex",
+      "local": "factorization-09-complexity.tex",
+      "git_blob": "193697981fd7ee57af1398992eb04fd7462f9df7",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "b9b69f8a0515a2af0d9b2a8e037809bab138aef74b0388b6ce74d8df3efb045a",
+      "cached_sha256": "20822f62825af5668a4c76b24015fd7127b022fd971707093317a000c13fa3d4"
+    },
+    {
+      "remote_family": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "remote_file": "10-analytic.tex",
+      "local": "factorization-analytic.tex",
+      "git_blob": "21081c288d68760167d2d94a34247ba61240dddf",
+      "normalization": "cache has one additional LF",
+      "source_sha256": "61a920fb8ef1e22d487b8dbeaaf3d3bd98328d08992807b40ed20b467ce0645e",
+      "cached_sha256": "d6e937bb8925a917683263ae607062014e7c1e674ae0a3130b4430ab9718d5c8"
+    }
+  ]
+}

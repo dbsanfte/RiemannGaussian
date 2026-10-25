@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-23",
+  "copies": [
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/README.md",
+      "path": "README.md",
+      "bytes": 5141,
+      "sha256": "a91c54a1f4f29e6e9b315ff38d89fa3064aad914d78ff0ee4607131509592fb8"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/paired-label-selection.md",
+      "path": "reports/paired-label-selection.md",
+      "bytes": 10653,
+      "sha256": "58ea4f2344a193853bcc83fae8fb4701a54376ab9fe9c51f7d650c3e57d28a58"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/factored-coefficients-continuation.md",
+      "path": "reports/factored-coefficients-continuation.md",
+      "bytes": 9411,
+      "sha256": "f57c9a08c06aba8300465c5bcbca98807b0ce186e9e38075ac0d73b851fe88f1"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/ideal-short-cofactor.md",
+      "path": "reports/ideal-short-cofactor.md",
+      "bytes": 16832,
+      "sha256": "b884eae5ddce1188a12ac963b60873d3387a369801fa0baba1dd3ea7eb5fd04d"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/reciprocal-bezout-kernel.md",
+      "path": "reports/reciprocal-bezout-kernel.md",
+      "bytes": 10438,
+      "sha256": "996f11f232883cb9c2dfd40aac71af30f32e51c17019b579c7d2d1ab6b429852"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/quadratic-carry-gauge.md",
+      "path": "reports/quadratic-carry-gauge.md",
+      "bytes": 7633,
+      "sha256": "99990d0338cef4a4b1eaf0de6b43ff443d655a4ca26b8022990cb9c4f7310fe4"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/gauge-independent-review.md",
+      "path": "reviews/gauge-independent-review.md",
+      "bytes": 4024,
+      "sha256": "2d5840e7367d73d1e4d809b23b146d8b8fb5845c3db0afefa798dd82a3703ab6"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/ideal-review.md",
+      "path": "reviews/ideal-review.md",
+      "bytes": 5064,
+      "sha256": "08ea47e204d45c95c0ee24ba214d84176c8e2e356c66b4cac38ef815375da67a"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/root-review.md",
+      "path": "reviews/root-review.md",
+      "bytes": 6185,
+      "sha256": "c4b22a222eb9bbac9bbc79d2dfe3ca60719d1ca01290bbbf51b37006c23de68d"
+    },
+    {
+      "source": "/tmp/semiprime-arithmetic-selection-20261023/replay_principal_square_premise.py",
+      "path": "implementation/replay_principal_square_premise.py",
+      "bytes": 2826,
+      "sha256": "2dc008af1b7db31cde84afb6ec8a4df0f183ae3082ee2b8fe3cb395cb892b129"
+    }
+  ],
+  "scope": "Reviewed scratch reports copied verbatim after explicit ideal-orientation corrections; external papers fingerprinted rather than copied."
+}

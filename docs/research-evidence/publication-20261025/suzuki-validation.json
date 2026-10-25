@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-25",
+  "base_revision": "6e969fd6e9c639eed280c595732248c106187603",
+  "scope": "Registration and strict verification of the existing local Suzuki proof modules; no complete RH proof or new zero-free endpoint.",
+  "modules": 14,
+  "declarations": 236,
+  "theorems_including_helpers": 215,
+  "root_registered": true,
+  "only_standard_axioms": true,
+  "commands": [
+    "lake build RiemannGaussian.SuzukiLocalCancellationArithmeticBound RiemannGaussian.SuzukiLocalCancellationLogSampling RiemannGaussian.SuzukiLocalCancellationCriterion RiemannGaussian.SuzukiLocalCancellationSharedPrime RiemannGaussian --wfail",
+    "lake env lean -DwarningAsError=true scripts/CheckSuzukiLocalCancellation.lean"
+  ],
+  "result": "pass",
+  "sources": [
+    {
+      "path": "RiemannGaussian.lean",
+      "sha256": "27e776b8804ad77806c145c84f35f7a206d9a50bf57d820cb759b59db855f63a",
+      "bytes": 150133
+    },
+    {
+      "path": "scripts/CheckSuzukiLocalCancellation.lean",
+      "sha256": "6f0547e31ed93aa1cdb2939a9a9aadbb0ab8ed07ebb9cc1eacf986da33030997",
+      "bytes": 3900
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellation.lean",
+      "sha256": "d542fbb765d2dc9ca30ad36302214166c1d2c45e4f14639a4341e59ea7c8e218",
+      "bytes": 12859
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationArithmeticBound.lean",
+      "sha256": "a37cbe070f27768e39223476422b3de6039c5cec866d01e3f9afdcfbffc194b0",
+      "bytes": 7106
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationBoundary.lean",
+      "sha256": "9242a54536912d86e711679011c08fd3ecaf35fbe045b6be53d0f3a22aedcb10",
+      "bytes": 12024
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationCriterion.lean",
+      "sha256": "36b51d5529ba3f99ec009d1c63850023313751b72bf31c248383eaa8f6f15df6",
+      "bytes": 3077
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationExplicitBound.lean",
+      "sha256": "6ceadf5b9854c7d6d3ba00c611336896efbf939e6b015c15b8462a37a1bddc40",
+      "bytes": 27225
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationKernel.lean",
+      "sha256": "04d88f0c541821d199a297c9cd000b1da5d6d3394e4523e9e68a54194dde98be",
+      "bytes": 17102
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationLogSampling.lean",
+      "sha256": "de1f21a2ee516af0e928cf3c1b596d3c80add840db7fd6b5c6550a1f720a95bd",
+      "bytes": 21521
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationMoment.lean",
+      "sha256": "e910a75126f85af7ee1e630950cb147f95b5cf4f97b06c8169cc712ef1747a90",
+      "bytes": 9121
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationPhysical.lean",
+      "sha256": "e357091b3d66ff574097f841ea2767754fc626ca3c1f6ad9c2091e62f408c9f5",
+      "bytes": 7456
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationPrimePowers.lean",
+      "sha256": "83140126b21e5fbca3858b78a2b1a4f683b030d3421e4dc3312be213e231fb27",
+      "bytes": 8593
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationPrimitiveBound.lean",
+      "sha256": "168491ce0874807474c6e064553976b0c62d3ba9b221f146fb8b2875be53cac4",
+      "bytes": 4713
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationSampling.lean",
+      "sha256": "f1752135bd3657de5f8ce62ea97ed73b481fdb7f15c368ab7da669591522a483",
+      "bytes": 23332
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationSharedPrime.lean",
+      "sha256": "607080854bada61db597e38bd295ff2115c1861579e3e1bb688bc57272e8fa22",
+      "bytes": 4407
+    },
+    {
+      "path": "RiemannGaussian/SuzukiLocalCancellationTransfer.lean",
+      "sha256": "1f3b0b70e0cdd690ba3b65f4bbdb16a06be043e37fc1ae3eaddc43b9b039f11a",
+      "bytes": 18657
+    }
+  ]
+}

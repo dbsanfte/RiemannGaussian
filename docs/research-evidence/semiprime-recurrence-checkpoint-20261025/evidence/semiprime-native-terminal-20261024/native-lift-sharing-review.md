@@ -1,0 +1,19 @@
+# Independent review: native lift sharing
+
+24 October 2026. **PASS**, no corrections requested.
+
+Reviewed `/tmp/semiprime-native-terminal-20261024/native-lift-sharing.md`, exact SHA256 `56ca00c3b840ca4984df5909437a72540a20ac44adc89f310bd378eff8be1490`. This review checks the stated actual rough-source contracts and the executed safe hybrid. No source/shared file was edited.
+
+The centered b_s carry and both exponent changes in (1) are exact integer equalities. Substituting a_s=a+ks gives ell_s-ell=-ksj-Hz_s and delta_s-delta=ks(1-j)-Hz_s. Equation (3) consequently has precisely beta exponent k(1-j), W exponent k(chi(j)-j), and the common q^(-z_s) factor. At the own tag, the index change s(P-j)/k-z_s and both character-dependent Frobenius equalities follow by direct expansion; no parity or omitted raw phase quotient is needed for these more general positive lifts.
+
+The public congruence (4) correctly handles nonunit j-1: its right side is divisible by g, and after dividing by g the coefficient is a unit modulo k/g. The selected s exists uniquely in [0,k/g), including j=1. The derived delta_s is congruent to delta_* modulo H. Multiplying the WHOLE target by q^(-l_s) changes scalar and angular exponents by the same H multiple, giving exactly (5). In particular the minus angular exponent remains delta_*-2a_s-N; it is not replaced by the plus phase.
+
+The normalized own index (6) is a positive integer, and a_s<H/g proves (7): its three positive terms are bounded respectively by k³/g, H/16 and 1 after division by H. The chosen smaller delta strip therefore does not imply a shorter guaranteed horizon. All requested s, l_s, target powers and metadata have O(log N) bits, and actual O(k)-row acquisition costs soft k.
+
+The g-class count J_g<=k/g and constant number of classes use the controlled public modulus. Equation (8) is explicitly conditional on acquiring the enlarged guards and consumers; those are not imported from the old horizon. The source correctly identifies the possible k^5/g factor-sum scale and refuses to pass it to the old short decoder. The separate order screen is valid: a saturated q^r norm at the nonsplit side gives a nonunit beta^(2Hr)-1; global saturation and odd k-rough beta orders imply their coprime product divides r. Its product exceeds 256H² whereas the required r is at most O(k³), so global saturation is impossible in the stated range. Proper gcds factor. This justifies a paid factor-or-unit geometric screen, not the long target-leaf decoder.
+
+For the actual hybrid, g>=k/2 gives s<=1 and a_s<2k. Therefore I_*<2H+H/16+1<3H+2. With 0<=delta_*<H, every saturated norm leaf in that horizon has factor-sum difference below 4H², while the global beta order exceeds 256H². The same nonsplit/G_beta argument consequently recovers the exact factor sum with these ACTUAL exponents and index, without assuming whole equality on a split side. The remaining tags use the already acquired parity-repaired rows. Every possible own tag is represented; the unchanged common q guard covers the full horizon. Only constantly many large-g tags are replaced, so no uniform rate reduction is inferred.
+
+The hybrid requires no new target-difference inversion: root product trees and monic MPE are sufficient, duplicates may be retained, and all nonunit restriction outputs are localized to their stored actual row/index before the bounded consumer. Its soft-k startup and soft-k^(3/2) complete labelled blocking ledger are sound. The final balance-bin discussion also preserves the sign of the positive own numerator and charges the uncertainty and multiplier quantization rather than importing a private balancing oracle.
+
+The source credits older rational-centre, quotient-lattice and balance observations. It supplies a real public normalization and a safe complete hybrid, while explicitly leaving the long-strip terminal contraction unresolved. No general obstruction or factoring-exponent improvement is claimed.

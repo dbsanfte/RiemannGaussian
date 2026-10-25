@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-22",
+  "local": [
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+      "bytes": 13939
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+      "bytes": 9993
+    },
+    {
+      "path": "docs/research-evidence/semiprime-collision-representation-20261022/reports/dyadic-native-interface.md",
+      "sha256": "a1c9f6cbecd07f68e3d0a1f3d692eeab2d6b24760593faef97fb6fbfb356be76",
+      "bytes": 7514
+    },
+    {
+      "path": "docs/research-evidence/semiprime-collision-representation-20261022/reports/weighted-rational-trace.md",
+      "sha256": "487a24407fa48ed1817dadc8dd3828f755cbfccf079b3498780a8e67e0e5fca7",
+      "bytes": 6657
+    },
+    {
+      "path": "docs/research-evidence/semiprime-collision-representation-20261022/reports/dyadic-cyclic-contraction.md",
+      "sha256": "3397bc07e0c9896529ee2678c29e5ac790ef06d61bd1d8ed534b666af9b437b7",
+      "bytes": 7246
+    },
+    {
+      "path": "docs/research-evidence/semiprime-input-dependent-20261015/reports/cyclic-reciprocity-audit.md",
+      "sha256": "48fb0580a1c90631215c7481ba8833637758ff15cf8c1d8f245cc3f6e067b3c1",
+      "bytes": 9015
+    },
+    {
+      "path": "docs/research-evidence/semiprime-extraction-query-20261016/reports/paid-q-pencil.md",
+      "sha256": "ef999aa2cfbea33c29192035900542808532e906b70a95f55a8c7a30a3819433",
+      "bytes": 6653
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSeedLcm.lean",
+      "sha256": "360dffac147ee328687248acb6dae49277fd8c6f0aaa9c7839a4f36cee197c84",
+      "bytes": 18715
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeLocalOrderRouting.lean",
+      "sha256": "dad3763538913f0621bf98ecc291a6c9c04b1a9f837ff035ced0c20a66ca3a28",
+      "bytes": 24094
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSeedSumAcquisition.lean",
+      "sha256": "6223962bcacaf9f3325e3838fe221f8cf69f3b5e4c865d3e3d1335b0a039273e",
+      "bytes": 29680
+    },
+    {
+      "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+      "sha256": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3",
+      "bytes": 28139
+    }
+  ],
+  "external": [
+    {
+      "title": "Power Series Composition in Near-Linear Time",
+      "url": "https://arxiv.org/pdf/2404.05177v2",
+      "scope": "Theorem 1, supplied power series modulo a nilpotent precision variable; not a cyclic-modulus theorem",
+      "sha256": "6ae924a2766d31e1a5f47d966e9e8225591c84c37b811b17e3f61ef871b508ef",
+      "cached_path": "/tmp/semiprime-collision-representation-20261022/sources/kinoshita-li.pdf",
+      "bytes": 185136
+    },
+    {
+      "title": "A Simple and Fast Algorithm for Computing the N-th Term of a Linearly Recurrent Sequence",
+      "url": "https://arxiv.org/abs/2008.08822",
+      "author_pdf": "https://mathexp.eu/bostan/publications/BoMo21.pdf",
+      "scope": "Investigators used the supplied-rational-series input interface; no all-moving-direction theorem is imported.",
+      "sha256": null
+    }
+  ],
+  "note": "The constructor and cost proof are self-contained apart from standard fast integer/polynomial arithmetic. Literature interfaces do not supply the missing shared contraction. No external papers copied."
+}

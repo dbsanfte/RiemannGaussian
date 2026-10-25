@@ -1,0 +1,27 @@
+{
+  "reports": {
+    "acceleration-independent-review.md": "338e2066a900fa006c2fccef8ccf71514647423dc61b7d51cd6d27a2b9ca3202",
+    "agents-append.md": "8422d9ca1e868a0a15091efe7b6deda01c4e3c295a3ac2f07ea9a7f7dc956ac8",
+    "constant-power-correction.md": "e4481d2a6a3eb536fc13108ba7903bb4e61cac38134a805044aaa36afc3fbdb5",
+    "fixed-power-independent-review.md": "de80f2b37f85b95db331fb4c31ffdea657dc922a039cf37c522215f485bab69a",
+    "fresh-boundary-algorithm.md": "a0938be39b8877f1a3de75370de2440b9b800db3cdf3f3be50da6dd0044bdf24",
+    "fresh-boundary-review.md": "369a5abf5ffd00ad54f2db730a0e007a717ae81d2d542b7bdf288d271e46e93d",
+    "integration-review.md": "66d5e5fc0801f4051a9373a225718f81c0c1e8e363996dcbc97e324a13fff8ed",
+    "interval-dlp-transfer.md": "158d018e6090729fc43b6807e007131aba71c994d0529f260b4875330bb0fe04",
+    "joint-forcing-attempt.md": "34ebb3bcc289c03a0d825a9bc37cbefd1f949a610354e062641fa22a0728a5a7",
+    "joint-hadamard-recurrence.md": "9e93a8b82e4728a37a01b14a55357d7d496cc85dcfe493a9d8ed3f98e2966ba3",
+    "joint-hadamard-review.md": "3b3b31acb2e90b5fd9126f9f26dee597973f81238413fc3f642d78905f20464a",
+    "journal-append.md": "03b8f1ccb227283d9e9c065d9e0cd52305473f169aff10cbaf9a87e63bb7deff",
+    "paired-norm-execution.md": "d2d09b95ac3ac721f49a5f7e7bab4d93e2bbc78d3561e38424fc510209a76b11"
+  },
+  "adopted_designs": [
+    "constant-power-correction.md",
+    "joint-hadamard-recurrence.md",
+    "fresh-boundary-algorithm.md"
+  ],
+  "ancillary_audits": [
+    "joint-forcing-attempt.md",
+    "paired-norm-execution.md",
+    "interval-dlp-transfer.md"
+  ]
+}

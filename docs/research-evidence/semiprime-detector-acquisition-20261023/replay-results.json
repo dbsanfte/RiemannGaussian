@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-23",
+  "replays": [
+    {
+      "script": "implementation/check_integer_character_filter.py",
+      "command": [
+        "python3",
+        "-B",
+        "implementation/check_integer_character_filter.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{'N': 3551779909, 'window_P0': 59168, 'a': 1, 'C': 331, 's': 345, 'c': 41, 'B': 1082824, 'b': 586, 'd': 343984, 'sigma': 48, 'D0': -1032540, 'true_integer_square': 10381284, 'public_normalized_discriminant': 1879222500, 'jacobi_of_proposed_small_argument': -1}\n",
+      "scope": "Fixed identity/counterexample replay, not a coverage or performance experiment."
+    },
+    {
+      "script": "implementation/replay_ratio_counterexample.py",
+      "command": [
+        "python3",
+        "-B",
+        "implementation/replay_ratio_counterexample.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"r\": 43,\n  \"H\": 1849,\n  \"M\": 3418801,\n  \"P0\": 59168,\n  \"P\": 59447,\n  \"Q\": 59747,\n  \"N\": 3551779909,\n  \"A\": 1,\n  \"T\": 924,\n  \"primality\": \"complete trial division\",\n  \"preparation\": {\n    \"base\": 4,\n    \"local_orders\": [\n      29723,\n      29873\n    ],\n    \"global_order\": 887915179,\n    \"local_lower_bound\": 29584,\n    \"global_lower_bound\": 875213056,\n    \"coprime_local_orders\": true,\n    \"odd_local_orders\": true,\n    \"H_and_M_preserve_local_orders\": true\n  },\n  \"rows\": [\n    {\n      \"factor\": 59447,\n      \"c\": 41,\n      \"s\": 345,\n      \"C\": 331,\n      \"B\": 1082824,\n      \"h\": 1318,\n      \"sigma\": 48,\n      \"ratio\": \"48/41\",\n      \"denominator\": 41,\n      \"root_residual\": 0,\n      \"derivative_residual\": 0,\n      \"source_residual\": 0\n    },\n    {\n      \"factor\": 59747,\n      \"c\": 28,\n      \"s\": 1420,\n      \"C\": 116,\n      \"B\": -453996,\n      \"h\": 904,\n      \"sigma\": 12,\n      \"ratio\": \"3/7\",\n      \"denominator\": 7,\n      \"root_residual\": 0,\n      \"derivative_residual\": 0,\n      \"source_residual\": 0\n    }\n  ]\n}\n",
+      "scope": "Fixed identity/counterexample replay, not a coverage or performance experiment."
+    },
+    {
+      "script": "implementation/replay_discriminant_cubic_identity.py",
+      "command": [
+        "python3",
+        "-B",
+        "implementation/replay_discriminant_cubic_identity.py"
+      ],
+      "exit_code": 0,
+      "stdout": "homogeneous lift identity coefficients: [0, 0, 0, 0, 0, 0, 0]\nfixed-row centered-carry residual: 0\nfixed-row induced root modulo N: 3551779904 expected: 3551779904\n",
+      "scope": "Fixed identity/counterexample replay, not a coverage or performance experiment."
+    }
+  ]
+}

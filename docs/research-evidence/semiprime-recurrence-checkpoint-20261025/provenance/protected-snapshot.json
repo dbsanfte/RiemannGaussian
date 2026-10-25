@@ -1,0 +1,21 @@
+{
+  "head_at_preparation": "6e969fd6e9c639eed280c595732248c106187603",
+  "files": {
+    "README.md": "d48baeef00b7de09a49a2e5469bbd3d97b2c63304064265d1780fbea2118e37d",
+    "lakefile.toml": "6ba853c8a997903db18dfb4e142050f68f4ff86380ceceb2140b5400cb60c0f6",
+    "AGENTS.md": "96ee367095ccb6047970bcf1b2927eb684ce52aed9e3e0852505431d661085c3",
+    "NumericalCertificate.lean": "08962a6e3888458bca7190c59ea6bfa44d0bc1ff656720f2cc36a6488480048a",
+    "RiemannGaussian.lean": "27e776b8804ad77806c145c84f35f7a206d9a50bf57d820cb759b59db855f63a",
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    ".gitignore": "583bf96bf4de1bcc773305e7942ed80c14828a699d5cb7b2b89fff4b08d362f0",
+    "LICENSE": "b9e4bb798f04c0f434a665c1dcd27c761659b1dc07bab9b726252525a5d8260e",
+    "Scratch.lean": "cfc5618220dc4343518bca10ef160d659ea656c68f826509edebe4bb349eb4b0",
+    "lake-manifest.json": "1d592ed07f2fb73e366167a36c053253babce1989287b2f944e49199342ab5a5",
+    "RH_LOCAL_SUZUKI_CANCELLATION_RESEARCH.md": "ad671afe6c3ba2b2277f1313045baa43d6478347fed9f4cf5c79c0c8bdf712ca",
+    ".gitattributes": "40079d74dfec6a0129f734f818bed38b840651dade46dad1dc6d596544c30020",
+    ".dockerignore": "c849771f2bf25e65d5ea792b0f580863e323a6255eef01b547a2b5c5d59280ff",
+    "CERTIFICATE_AND_ZERO_FREE_INVESTIGATION.md": "048a187fde05ef9e326518bcbe5647d17260a993ae7604b732fe6ed1ac62c16c",
+    "docs/semiprime-factorisation-investigation.md": "501d0541de5a9ac87fef5f409f247de1e87284f2f50ea979eeb8f30fddecf39a"
+  },
+  "purpose": "Immediate scoped preservation check; not a requirement that future authorized root/metadata changes preserve these snapshots."
+}

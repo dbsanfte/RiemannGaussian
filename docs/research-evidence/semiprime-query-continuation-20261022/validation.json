@@ -1,0 +1,19 @@
+{
+  "status": "PASS for artifact integrity, displayed proof review and checkpoint scope only",
+  "new_whole_family_acquisition_bound": false,
+  "sixth_rate_goal_achieved": false,
+  "inherited_order_root_constructions_counted_as_new": false,
+  "verbatim_scratch_copies": 12,
+  "local_links_checked": 13,
+  "local_source_pins": 5,
+  "preceding_frozen_entries_verified": 169,
+  "git_diff_check": "PASS",
+  "tests": "No code change or new implementation test campaign; mathematical review is not a runtime certificate.",
+  "independent_scope_review": "checkpoint-review.md",
+  "reviewed_file_hashes": {
+    "README.md": "5e6e3f2e6b2a72e6e1cdda11affc5f455c6082393f000cac388f0b85c2e588e1",
+    "root-review.md": "d018ed6c4b37920cecc2defd96675f1b81ab8fdc74eebc1a3dc084087f0ff290",
+    "reports/shared-centering-recovery.md": "12cc20ac9a2e78d92d28f5678e7e3e9201963cd536dd7a637780b647f6781d5b",
+    "checkpoint-review.md": "21197270718bad67389c2ce3e659998ddcb6f6a08fae820dd0f975f2a8138ace"
+  }
+}

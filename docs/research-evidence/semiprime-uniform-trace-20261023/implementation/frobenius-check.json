@@ -1,0 +1,94 @@
+{
+  "parameters": {
+    "r": 37,
+    "P": 50147,
+    "Q": 50459,
+    "N": 2530367473,
+    "beta": 4,
+    "dP": 25073,
+    "dQ": 25229,
+    "B": 21904,
+    "global_order": 632566717,
+    "leaf_count": 494172,
+    "public_zero_count": 0
+  },
+  "traces": {
+    "1": {
+      "value": 38868229,
+      "gcd": 1,
+      "gcd_minus_leaf_count": 1,
+      "gcd_beta_index_minus_one": 1
+    },
+    "N-1": {
+      "value": 2038247167,
+      "gcd": 1,
+      "gcd_minus_leaf_count": 1,
+      "gcd_beta_index_minus_one": 1
+    },
+    "N": {
+      "value": 899554513,
+      "gcd": 1,
+      "gcd_minus_leaf_count": 1,
+      "gcd_beta_index_minus_one": 1
+    },
+    "N+1": {
+      "value": 1725649574,
+      "gcd": 1,
+      "gcd_minus_leaf_count": 1,
+      "gcd_beta_index_minus_one": 1
+    },
+    "(N-1)^2": {
+      "value": 98273555,
+      "gcd": 1,
+      "gcd_minus_leaf_count": 1,
+      "gcd_beta_index_minus_one": 1
+    },
+    "N^2": {
+      "value": 1127680563,
+      "gcd": 1,
+      "gcd_minus_leaf_count": 1,
+      "gcd_beta_index_minus_one": 1
+    },
+    "N^2-1": {
+      "value": 458980220,
+      "gcd": 1,
+      "gcd_minus_leaf_count": 1,
+      "gcd_beta_index_minus_one": 1
+    }
+  },
+  "defects": {
+    "S_N-S_1": {
+      "residue": 860686284,
+      "gcd": 1
+    },
+    "S_N-S_1^N": {
+      "residue": 1622092980,
+      "gcd": 1
+    },
+    "S_(N-1)-S_0": {
+      "residue": 2037752995,
+      "gcd": 1
+    },
+    "S_(N+1)-S_2": {
+      "residue": 1211663183,
+      "gcd": 1
+    }
+  },
+  "covered_witnesses": [
+    {
+      "local_prime_for_verification": 50147,
+      "s": 593,
+      "c": 34,
+      "sigma": 34,
+      "K": 344065145128
+    },
+    {
+      "local_prime_for_verification": 50459,
+      "s": 593,
+      "c": 4,
+      "sigma": 4,
+      "K": 344122349008
+    }
+  ],
+  "forced_frobenius_relations": "pass"
+}

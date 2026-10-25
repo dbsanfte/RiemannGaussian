@@ -1,0 +1,190 @@
+{
+  "validated_at": "2026-10-24T13:06:02.703035+00:00",
+  "head": "6e969fd6e9c639eed280c595732248c106187603",
+  "shared_documents": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1425836,
+      "lines": 22224,
+      "sha256": "a259a2aba221a66660f104d1f1f6cfa2ee3c01e108ee2bde6dc9849ac8c30bbf",
+      "original_prefix_preserved": true,
+      "append_heading_line": 22193,
+      "append_sha256": "c1a27733b11a973bced2c6c51e077d9344ca5a89fa3cc4fee5d4ef17484468f9"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "bytes": 2107607,
+      "lines": 40095,
+      "sha256": "631263923664e3ca2d5676225a7618c587be0640096b14c0612132f301ed8ab8",
+      "original_prefix_preserved": true,
+      "append_heading_line": 39992,
+      "append_sha256": "f7654a0fea513eb0c3c17c8df6b4fe2ddd63d656ebcd7f0545193a2e7f8fb976"
+    }
+  ],
+  "frozen_packets": [
+    {
+      "path": "docs/research-evidence/semiprime-twist-character-20261022/manifest.json",
+      "sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-twist-palette-20261022/manifest.json",
+      "sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3",
+      "entries": 6,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-colour-retention-20261022/manifest.json",
+      "sha256": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-lifted-norm-20261022/manifest.json",
+      "sha256": "11ce7d9e67e205772498f1501e3f02321cb28fd22e6d8c71cb45eef4993be97b",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-character-aggregate-20261022/manifest.json",
+      "sha256": "301999c41ea2e7f562a42ccf9ec119867481d63f8dfb69f81304b12fec59847d",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-composite-character-20261022/manifest.json",
+      "sha256": "d0f6dafabb5b33f5cab33dd9c117d701f7426598e4f8ba6bf60cfadb698586d4",
+      "entries": 28,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-collision-representation-20261022/manifest.json",
+      "sha256": "6846eb84465b23e4dce8db04a1b95e5235882166dea31932aa932d1999f55af0",
+      "entries": 29,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022/manifest.json",
+      "sha256": "cf35e01493f26bbb960d4143f3f461ea4766ac0b4a7c0df5c7aede33a7bbd8e7",
+      "entries": 26,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-query-continuation-20261022/manifest.json",
+      "sha256": "539df1ca1ec160aaf3806a57ab0f47e9870c2d39e1a86f7a77c691c03a7ca5fc",
+      "entries": 18,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-randomness-bridge-20261022/manifest.json",
+      "sha256": "716d8af72bf0189a72e21c1202cdfc33ca022e14670da33a5d3a1f2c5eb2c79a",
+      "entries": 10,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fermat-multiplier-20261022/manifest.json",
+      "sha256": "5ca79fec94998f07db68fea18d6e807d0df9daba75f12aaf694afa396bae233f",
+      "entries": 11,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/manifest.json",
+      "sha256": "8128b86203baeadac53842eb5aaca8ed275c904b8b059271708483238c75cfdd",
+      "entries": 14,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-trace-20261023/manifest.json",
+      "sha256": "8fd192d4c6a0fc707fa3bfe8fd60545870d26cc147847084acfe18afe5fa3b97",
+      "entries": 12,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-detector-acquisition-20261023/manifest.json",
+      "sha256": "09f9c88ae7cfb412fc9756686cf766f9f8f331ed5cb1e28ff39451289777624c",
+      "entries": 22,
+      "all_entries_verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-arithmetic-selection-20261023/manifest.json",
+      "sha256": "b112a2fc0f5f38cc0d5d329765effb0e60040d337e4c32f1dedb975e629c3ff8",
+      "entries": 14,
+      "all_entries_verified": true
+    }
+  ],
+  "frozen_entry_count": 270,
+  "reports": [
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/agents-append.md",
+      "bytes": 1860,
+      "sha256": "c1a27733b11a973bced2c6c51e077d9344ca5a89fa3cc4fee5d4ef17484468f9"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/integration-review.md",
+      "bytes": 9038,
+      "sha256": "790d8af26732c19cf6aa45ceb33c4d4cc8e5bcbe5660370dc041b3d4b870c835"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/journal-append.md",
+      "bytes": 5660,
+      "sha256": "f7654a0fea513eb0c3c17c8df6b4fe2ddd63d656ebcd7f0545193a2e7f8fb976"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/terminal-character-review.md",
+      "bytes": 7355,
+      "sha256": "82b488de920c560b6abb281482932804d337431d1211fa5722aa031ced7a0ffd"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/terminal-character.md",
+      "bytes": 16243,
+      "sha256": "75cf6cbaa4a15bd5d334440a93fafad90a57b6d3286228e5d4e016a911c0e9ae"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/terminal-literature-review.md",
+      "bytes": 6969,
+      "sha256": "3f268ed6d74f6235397608723ad873e68313f304fb242c161bed2150bc215dc2"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/terminal-literature.md",
+      "bytes": 15634,
+      "sha256": "49c90f496dcfaf1f4cc2e69e746950c9e3b597257ca94d21056c76ad7547ed06"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/terminal-root-gradient-review.md",
+      "bytes": 5857,
+      "sha256": "ade4b84c487eccefb6f8212d91f172dc3c59a36388fd10bfcda82db74d1aa960"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/terminal-root-gradient.md",
+      "bytes": 6269,
+      "sha256": "8915ff758ba60c6cf956fb49b65287a45d82623f2c5c92f003a4021b137fa4cf"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/terminal-toda-review.md",
+      "bytes": 6226,
+      "sha256": "23582de978202fb4dbcdd545ff649fcad86193033d8b8f8173dd21432634b1b0"
+    },
+    {
+      "path": "/tmp/semiprime-terminal-recurrence-20261024/terminal-toda.md",
+      "bytes": 16345,
+      "sha256": "937018c6ee61730a90df1ee9f05bea37cd1bc0a9d2a4addbb3701ec670aa0e3c"
+    }
+  ],
+  "review_pins": "all matched current source/draft bytes",
+  "source_pins": {
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be",
+    "/tmp/semiprime-tensor-norm-20261024/sylvester-elimination.md": "f3375df02a067a43230d1f4accddc476bbbe020a64c9145b90757ba5404720c2",
+    "/tmp/semiprime-tensor-norm-20261024/geometric-generator.md": "8ff92a623b50d8698b34260ab01216f3d17ad89c26c5a88831561d3602aa581a",
+    "/tmp/semiprime-terminal-recurrence-20261024/sources/baur-strassen-1983.pdf": "828e8c9eb30af0089c48b1a5bcac3990bc0e21d3b68d4e343490b0fdaa38ecae",
+    "/tmp/semiprime-terminal-recurrence-20261024/sources/bostan-lecerf-schost-2003.pdf": "c179b22688abc2ccf2deadc1fb5398ef9916e49f10688edc7a2a4b20a412e269"
+  },
+  "diff_check": "passed",
+  "tracked_changes": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ],
+  "classification": "Executed Toda and blocked character updates retain unacquired mixed norms/absolute amplitude. Logarithmic pivot cleanup and root-gradient Hasse recovery are supporting results only. Uniform generic scalar circuits admit paid dummy-padding bisection without multiplicity overhead. No new endpoint circuit: guaranteed query stays soft m^1.5; sixth-rate and full bit/Lean proof open.",
+  "broad_builds_or_example_campaigns": false
+}

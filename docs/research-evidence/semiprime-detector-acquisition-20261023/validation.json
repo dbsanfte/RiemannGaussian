@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-23",
+  "review_status": "PASS within explicitly stated source/selector/identity scope; detector remains open",
+  "verbatim_copies_verified": 18,
+  "readme_local_links_verified": 17,
+  "local_source_pins_verified": 7,
+  "primary_pdf_fingerprints_verified": 5,
+  "focused_replays_passed": 3,
+  "final_reviewed_inputs": {
+    "structured-catalog-proof.md": "6cb01f74382eca5ee261ce61c3331a89c2ccb80b7ef62ced4d44e5c7213fe2f8",
+    "ratio-selector-continuation.md": "09be7f838ae336b16a09f56620550b7c4fe8e39c595ed46ecb674c7f2ea3f173",
+    "trace-target-audit.md": "104f9374e7784a6f3815e9889f2202b53b800d4cc1a91043c828b0a146d2ecec",
+    "norm-detector.md": "76eb4616864bd506d78e1c9bbf877e62877b3f47b79b4d2e6ee243a45e664131",
+    "theta-displacement-check.md": "32f295a3c11bd0acb546b279b0edf82deda156302f81a4cbe1a16a94d4a22168",
+    "discriminant-relations.md": "4b7b6348caba33141c51296bab8099bcef60b49e7e4ac8c04d2dabaad5ee0765"
+  },
+  "prior_packets": [
+    {
+      "path": "docs/research-evidence/semiprime-twist-character-20261022",
+      "entries": 18,
+      "manifest_sha256": "7162ee1dd14c400dab42f80171ab043e3eb3483b00301a1b9e186133b6f51b23"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-twist-palette-20261022",
+      "entries": 6,
+      "manifest_sha256": "83b605e2ce7f78bcac96ee5714bf9e10bd8b91f378472c484ab3dbfc083306d3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-colour-retention-20261022",
+      "entries": 18,
+      "manifest_sha256": "f17271a7a66c07ce20a419282eac35c22645a0dcf9bdca90df8b4b808a000abb"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-lifted-norm-20261022",
+      "entries": 22,
+      "manifest_sha256": "11ce7d9e67e205772498f1501e3f02321cb28fd22e6d8c71cb45eef4993be97b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-character-aggregate-20261022",
+      "entries": 22,
+      "manifest_sha256": "301999c41ea2e7f562a42ccf9ec119867481d63f8dfb69f81304b12fec59847d"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-composite-character-20261022",
+      "entries": 28,
+      "manifest_sha256": "d0f6dafabb5b33f5cab33dd9c117d701f7426598e4f8ba6bf60cfadb698586d4"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-collision-representation-20261022",
+      "entries": 29,
+      "manifest_sha256": "6846eb84465b23e4dce8db04a1b95e5235882166dea31932aa932d1999f55af0"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022",
+      "entries": 26,
+      "manifest_sha256": "cf35e01493f26bbb960d4143f3f461ea4766ac0b4a7c0df5c7aede33a7bbd8e7"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-query-continuation-20261022",
+      "entries": 18,
+      "manifest_sha256": "539df1ca1ec160aaf3806a57ab0f47e9870c2d39e1a86f7a77c691c03a7ca5fc"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-randomness-bridge-20261022",
+      "entries": 10,
+      "manifest_sha256": "716d8af72bf0189a72e21c1202cdfc33ca022e14670da33a5d3a1f2c5eb2c79a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fermat-multiplier-20261022",
+      "entries": 11,
+      "manifest_sha256": "5ca79fec94998f07db68fea18d6e807d0df9daba75f12aaf694afa396bae233f"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023",
+      "entries": 14,
+      "manifest_sha256": "8128b86203baeadac53842eb5aaca8ed275c904b8b059271708483238c75cfdd"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-trace-20261023",
+      "entries": 12,
+      "manifest_sha256": "8fd192d4c6a0fc707fa3bfe8fd60545870d26cc147847084acfe18afe5fa3b97"
+    }
+  ],
+  "prior_entries_verified": 234,
+  "append_only_baselines": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1322967,
+      "sha256": "3fcc00b2a43eb3642b145c319ac0c3ddae70c8d39d707039b3ea293ab8a4f41e"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "bytes": 1736300,
+      "sha256": "9df00cea53db119494c52a099d65d77efd98c6cd899d61d9fb484a63dc28cd34"
+    }
+  ],
+  "new_factorization_exponent": false,
+  "new_whole_family_detector": false,
+  "new_lean_theorem": false,
+  "broad_build_performed": false,
+  "commit_or_push_performed": false
+}

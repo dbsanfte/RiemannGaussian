@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-22",
+  "sources": [
+    {
+      "title": "Explicit bounds for primes in arithmetic progressions",
+      "authors": "Bennett, Martin, O\u2019Bryant, Rechnitzer",
+      "journal": "Illinois Journal of Mathematics 62 (2018), 427\u2013532",
+      "url": "https://personal.math.ubc.ca/~gerg/papers/downloads/EBPAP.pdf",
+      "cached_path": "/tmp/semiprime-difference-character-20261022/EBPAP.pdf",
+      "bytes": 933725,
+      "sha256": "958b0390475236b68afdec28ce006b1a1d6ac59484eea9443e0b287e9f61a541",
+      "access": "Agent opened full primary PDF; root independently inspected cached full PDF text, title and Theorem 1.2 equations (1.10)\u2013(1.12). Root browser refetch timed out.",
+      "used_for": "Uniform theta estimate for fixed q=4,a=3; elementary subtraction gives doubled-interval prime supply. No RH premise.",
+      "numeric_check": "c0(4)=1/840<1/160; x0(4)=8*10^9.",
+      "archived_full_text": false
+    }
+  ],
+  "local_dependencies": [
+    {
+      "path": "docs/research-evidence/semiprime-colour-retention-20261022/implementation/packed_gauss.py",
+      "sha256": "bce84a9b96b12720298052f317bae2e521a6e574aed8ef50c2c7d7d4a4f2f1ea",
+      "bytes": 8833
+    },
+    {
+      "path": "docs/research-evidence/semiprime-colour-retention-20261022/reports/two-common-products.md",
+      "sha256": "3b2193f7abf3fade0fd72333c53adc99d1a03091ecba78526d5c6c092780d9f4",
+      "bytes": 4865
+    },
+    {
+      "path": "docs/research-evidence/semiprime-character-aggregate-20261022/reports/gauss-weighted-norm.md",
+      "sha256": "b7885ee829d6a1d8f3861a56a82b426ae5de958cdcf0e06cc4d02d4fbe5f990c",
+      "bytes": 11258
+    },
+    {
+      "path": "docs/research-evidence/semiprime-character-aggregate-20261022/reports/coherent-root-preparation.md",
+      "sha256": "cfe244b79106868a8317de2a41a24e7dba5b0e5a068ad5bd289845cbe6b5881c",
+      "bytes": 5839
+    },
+    {
+      "path": "docs/research-evidence/semiprime-canonical-query-20261015/reports/canonical-coverage-and-recovery.md",
+      "sha256": "2e5015278da165b55d4f92f51b39ba1fb3262d51c42201bf2bada91d2304bb22",
+      "bytes": 8471
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeGlobalPhaseCancellation.lean",
+      "sha256": "9e061d01e511f908a33256c229ca87aab1a3401077e63941f6fc2cf025720a1a",
+      "bytes": 31743
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeLocalOrderRouting.lean",
+      "sha256": "dad3763538913f0621bf98ecc291a6c9c04b1a9f837ff035ced0c20a66ca3a28",
+      "bytes": 24094
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeRoughProjection.lean",
+      "sha256": "7e9ec19945a091d8e6e14387c1cec1dcd866d971b2f64d5c4124b9e137c42e0f",
+      "bytes": 16768
+    },
+    {
+      "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+      "sha256": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3",
+      "bytes": 28139
+    }
+  ],
+  "scope": "Primary supply theorem and exact current local dependencies; no new formal theorem or independent gamma constructor inferred from these pins."
+}

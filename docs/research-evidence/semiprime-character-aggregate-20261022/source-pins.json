@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-22",
+  "scope": "Primary references and exact access scope. Full third-party papers are not copied into this packet. No literature source is asserted to supply the missing H evaluator.",
+  "sources": [
+    {
+      "title": "Jacobi-sum Hecke characters and Gauss-sum identities",
+      "authors": [
+        "Daniel S. Kubert",
+        "Stephen Lichtenbaum"
+      ],
+      "year": 1983,
+      "url": "https://www.numdam.org/item/CM_1983__48_1_55_0.pdf",
+      "bytes": 2242133,
+      "sha256": "dd8009005214c0f1dd6c38f9fff6868082919c37f8b4f4ac0c809672a235f08d",
+      "inspection": "Primary PDF inspected; sign convention and distribution/Stickelberger scope checked. New native pairing formulas are proved directly, not imported as an algorithm."
+    },
+    {
+      "title": "Distinguishing Gauss sums",
+      "authors": [
+        "Moshe Adrian",
+        "Jack Diamond",
+        "Kenneth Kramer",
+        "Geo Kam-Fai Tam"
+      ],
+      "version": "arXiv:2609.28211v1",
+      "url": "https://arxiv.org/abs/2609.28211v1",
+      "inspection": "Primary abstract only, independently opened by root. Supplied finite-field/Frobenius-conjugacy problem, not a theorem acquiring hidden semiprime tags. No full-text theorem asserted."
+    },
+    {
+      "title": "Infinite elliptic hypergeometric series: convergence and difference equations",
+      "authors": [
+        "D. I. Krotkov",
+        "V. P. Spiridonov"
+      ],
+      "year": 2023,
+      "url": "https://www.mathnet.ru/php/archive.phtml?jrnid=sm&option_lang=eng&paperid=9874&wshow=paper",
+      "inspection": "Primary full HTML; section2 equations2.1-2.5 and exact p=0 finite-product degeneration independently checked by root. No finite-ring evaluator imported."
+    },
+    {
+      "title": "Computing modular polynomials in quasi-linear time",
+      "authors": [
+        "Andreas Enge"
+      ],
+      "version": "arXiv:0704.3177v2",
+      "url": "https://arxiv.org/pdf/0704.3177v2",
+      "inspection": "Primary PDF, Result1.1 explicitly heuristic in this version; actual level-dependent output costs checked. No claim that all later analytic algorithms remain heuristic."
+    },
+    {
+      "title": "Computing modular polynomials by deformation",
+      "authors": [
+        "Sabrina Kunzweiler",
+        "Damien Robert"
+      ],
+      "version": "arXiv:2408.06990v1",
+      "url": "https://arxiv.org/pdf/2408.06990v1",
+      "alternate_primary_url": "https://www.math.u-bordeaux.fr/~damienrobert/pro/publications/articles/modular_deformation.pdf",
+      "inspection": "Root independently opened both primary full PDFs (28pages), checked abstract and introduction for unconditional construction, quadratic modular output and cubic integral size. The historical normalesup URL in the agent report timed out at freeze; these accessible primary copies verify the quoted scope. No degree-m finite-H specialization is supplied."
+    },
+    {
+      "title": "An O(M(n) log n) algorithm for the Jacobi symbol",
+      "authors": [
+        "Richard P. Brent",
+        "Paul Zimmermann"
+      ],
+      "version": "arXiv:1004.2091v2",
+      "url": "https://arxiv.org/abs/1004.2091v2",
+      "inspection": "Primary explicit-integer algorithm inspected by agent; root independently checked abstract/version. Not an implicit factored-product numerator acquisition theorem."
+    },
+    {
+      "title": "Computing Jacobi symbols modulo sparse integers and polynomials and some applications",
+      "authors": [
+        "Igor E. Shparlinski"
+      ],
+      "year": 2000,
+      "url": "https://doi.org/10.1006/jagm.2000.1091",
+      "inspection": "Agent retrieved author-institution abstract only; full text inaccessible. No theorem-level applicability or inapplicability is claimed."
+    },
+    {
+      "title": "On the Parallelization of Square-Root Velu\u2019s Formulas",
+      "year": 2024,
+      "url": "https://www.mdpi.com/2297-8747/29/1/14",
+      "inspection": "Agent inspected primary abstract/algorithm description; full fetch rate limited. No unseen amortized total-work theorem is attributed to it."
+    },
+    {
+      "title": "Faster computation of isogenies of large prime degree",
+      "url": "https://velusqrt.isogeny.org/velusqrt-20200616.pdf",
+      "inspection": "Inherited prior repository audit, explicitly credited; not a newly acquired J-target evaluator."
+    }
+  ]
+}

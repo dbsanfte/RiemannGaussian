@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS within stated primitive scope",
+  "root_replay": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v test_sheared_norm.py",
+    "cwd": "implementation",
+    "exit_code": 0,
+    "test_groups": 5,
+    "checks": "Independent scalar/dual determinants, coefficient-prefix determinant, multiplication-matrix traces, moment/convolution controls, negative shifts, degree-2m U, full-product-before-truncation alias control, proper and saturated interpolation failures."
+  },
+  "verbatim_copies_verified": 20,
+  "local_source_pins_verified": 11,
+  "cached_primary_fingerprints_verified": 1,
+  "local_markdown_links_verified": 23,
+  "links": [
+    {
+      "file": "README.md",
+      "target": "reports/sheared-norm-constructor.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reviews/sparse-norm-constructor-review.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reviews/tangent-transposition-review.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reviews/sheared-norm-low-precision-review.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reviews/root-integration-review.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/additive-contraction.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reviews/fold-review.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/weighted-log-directions.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/phase-direction-ledger.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/resampled-displacement.md"
+    },
+    {
+      "file": "README.md",
+      "target": "../semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/full-controller-audit.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/sheared-norm-scalar-application.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/q-newton-contraction.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/native-dyadic-transport.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/stationary-phase-contraction.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reports/source-retaining-functional.md"
+    },
+    {
+      "file": "README.md",
+      "target": "implementation/README.md"
+    },
+    {
+      "file": "README.md",
+      "target": "implementation/independent-code-review.md"
+    },
+    {
+      "file": "README.md",
+      "target": "implementation/precision-and-bit-audit.md"
+    },
+    {
+      "file": "README.md",
+      "target": "validation.json"
+    },
+    {
+      "file": "README.md",
+      "target": "archive-provenance.json"
+    },
+    {
+      "file": "README.md",
+      "target": "source-pins.json"
+    }
+  ],
+  "preserved_manifest_entries_verified": 143,
+  "git_diff_check": "PASS",
+  "independent_final_integration": {
+    "source": "/tmp/semiprime-dyadic-shared-20261022/integration-review.md",
+    "sha256": "0f9e54898815bcdde9cfeabe80366362f285ff001e445bb11720136faac58b3b",
+    "reviewed_readme_sha256": "b526dfcf9ff9de14d5bb06c2c08c615a5868a37aaf9337851cd6515e602377c0",
+    "reviewed_root_report_sha256": "30653449cf32447b5406531c13aaa63d55a9c54c87f3923ca62c654b9995c5c5",
+    "report_text": "# Independent final integration review \u2014 PASS\n\n2026-10-22. Read-only review of the new packet README and reviews/root-integration-review.md against the independent low-precision proof. No packet files changed.\n\nPASS; no concrete mathematical correction required.\n\nThe generalization to supplied f,g of degree at most two is valid: the denominator Newton strip is [sj,sj+2p], and one U insertion changes the upper endpoint to sj+2(p\u22121)+L. Neither argument requires the displayed squared-base coefficients. Arbitrary f,g need not be cyclic units for the norm construction; the text correctly imposes an extra unit condition only for trace division.\n\nThe precision-dependent bound matches the independent proof: full products of already-truncated inputs through z-degree2q, radix2q+1, safe interpolation exponent span, post-recovery truncation, and the h=1 case are all explicit. The stated soft(h+L) bit bound charges log N and shift metadata and uses ring-valid fast multiplication, monic division and unit scalar inverses. It does not claim the schoolbook Python reference realizes that asymptotic bound.\n\nThe packet does not conflate fixed supplied U with varying native modulations. Its remaining affine direction/phase contraction is explicitly unpaid, and it retains the ell_j/long-seed/same-leaf integration requirements. Direct scalar norm/endpoint/q-Newton representations are correctly scoped as original-source operations without a new query bound. Whole-local equality and relative-conjugate caveats are retained.\n\nThe full-controller conclusion agrees with the authoritative all-semiprime paid setup: no new public-preparation gap or QRH premise is invented for bounded canonical leaves, while executable/formal integration and a full bit ledger remain distinct obligations. No whole-query or sixth-rate theorem is claimed.\n"
+  },
+  "scope": "Correctness and evidence validation. No native collision coverage, near-linear Python runtime, full collision query, complete factorizer or Lean bit theorem is asserted."
+}

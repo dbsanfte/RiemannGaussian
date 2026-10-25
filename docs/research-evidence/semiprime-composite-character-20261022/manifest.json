@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10234,
+      "sha256": "0fa68f806ab6106a28f6cc2890506c3517f2ef614042765e5d6cd291ad6242b2"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 7795,
+      "sha256": "7dccb5ac3fb716fec72d35a657195c227d7e2b2520bf0ca9052edc42ed42836d"
+    },
+    {
+      "path": "implementation/README-composite-colours.md",
+      "bytes": 3854,
+      "sha256": "291cf3d91ff955355e86e210ef2d64de75ed137c5e0703316374951e844761b1"
+    },
+    {
+      "path": "implementation/aggregate-controls.json",
+      "bytes": 462,
+      "sha256": "0210f02c4afc6c73ee1038353a9e86e599678a29a2de500b729ff71b8e72e141"
+    },
+    {
+      "path": "implementation/aggregate-implementation.md",
+      "bytes": 3492,
+      "sha256": "158ef5f7a215e0f74cf0ff2df380558c656db1b298e6ba8bc7eed1bee58d88ac"
+    },
+    {
+      "path": "implementation/composite_colours.py",
+      "bytes": 6345,
+      "sha256": "f242c896cc78447a529db84e9f7a000a7ce39cac7b1bf1df68c57bbed9c3c0cf"
+    },
+    {
+      "path": "implementation/composite_gauss_aggregate.py",
+      "bytes": 4958,
+      "sha256": "8f1de8e39b4f62c781cf4797151af8e1f94ae64d0ae00121a24c959be4169ba9"
+    },
+    {
+      "path": "implementation/gamma-normalized-controls.json",
+      "bytes": 547,
+      "sha256": "c27c6bdc3c213ffce7fb815ba28c52be9d77308ca9655996868d0577d279ca2d"
+    },
+    {
+      "path": "implementation/gamma-normalized-implementation.md",
+      "bytes": 4466,
+      "sha256": "59166016ad2beb86f4fb1b19b516dca75492e22f7a69bbe5296dbbd4659f5226"
+    },
+    {
+      "path": "implementation/gamma_normalized_aggregate.py",
+      "bytes": 3841,
+      "sha256": "03f30d27015f069800f9d56f2a2365ee7167395cb481d15fa22d35543fe464b2"
+    },
+    {
+      "path": "implementation/review-composite-colours.md",
+      "bytes": 5780,
+      "sha256": "959332e9236a7a413bae9fb5f3a7e10bd83359c9898f6626d2bf483060a62345"
+    },
+    {
+      "path": "implementation/review-composite-gauss.md",
+      "bytes": 7815,
+      "sha256": "9c7a47a531dae3b51dafb52e9eaef59b7ce8a0a55641761fd4a06659631d80dd"
+    },
+    {
+      "path": "implementation/review-gamma-normalized.md",
+      "bytes": 6805,
+      "sha256": "add7b76c11c66ff0ffd40da3b2c010f590bd6ef3c96ee7a2910a6311e4f484f1"
+    },
+    {
+      "path": "implementation/test_composite_colours.py",
+      "bytes": 4119,
+      "sha256": "e0141aa8c90bee26107e84f9af364beda94d18a6c95e3274e0b4dbd2a90e31fd"
+    },
+    {
+      "path": "implementation/test_composite_gauss_aggregate.py",
+      "bytes": 5389,
+      "sha256": "ddd62d756311de28647f2c69f4f3eb96f3546fa1df770bb54787ceb9bfd28ee0"
+    },
+    {
+      "path": "implementation/test_gamma_normalized_aggregate.py",
+      "bytes": 5597,
+      "sha256": "39cb1b7f00b778a7cb3d3964df35f64b85651d5e8dc00e1da284096700940bd6"
+    },
+    {
+      "path": "reports/composite-colour-catalog.md",
+      "bytes": 9975,
+      "sha256": "006cdd6ed8c5ae1e144674821659269821dbd33673d54953399802e1eb645d48"
+    },
+    {
+      "path": "reports/composite-gauss-supply.md",
+      "bytes": 7812,
+      "sha256": "f8e35878a89a7da28c2dcf593f65dbde87183d98c336faecb79b8f4a20a57e1f"
+    },
+    {
+      "path": "reports/composite-modulus-source.md",
+      "bytes": 8269,
+      "sha256": "18dfbd9765acb867c4c4f93062a7112a998b834e1ae4fbf47850f1f531c712d0"
+    },
+    {
+      "path": "reports/difference-gauss-deformation.md",
+      "bytes": 7018,
+      "sha256": "252bacc966c0a9d8e6ff4bfd8ab459b5e3552a7edcec0ea088aa3e3bd40d4f30"
+    },
+    {
+      "path": "reports/gamma-normalized-gauss.md",
+      "bytes": 8497,
+      "sha256": "696800e2603982ff48610ae070a581505dc9a915286e5805100019e4c21bfcc9"
+    },
+    {
+      "path": "reports/paired-scalar-differences.md",
+      "bytes": 4777,
+      "sha256": "335ffe3efc0545f80063d31e9cf3ecebc08158b79534e894be5ab03afa5aa41c"
+    },
+    {
+      "path": "reviews/composite-integration-review.md",
+      "bytes": 5545,
+      "sha256": "adea542643f447c539ec66a1374b57aeac77d0bbec16e62f06dbfc81344eb1e2"
+    },
+    {
+      "path": "reviews/final-integration-review.md",
+      "bytes": 3412,
+      "sha256": "aa3b06c70e2fd8d8e4f73f95fa59c6a1cad7d1b1e154d61e08223bd7dc98ca97"
+    },
+    {
+      "path": "reviews/gamma-normalization-review.md",
+      "bytes": 8938,
+      "sha256": "081c0ced78fd72492287771c051e5d29913fe28e0c0d5afeb62d836d0de892cc"
+    },
+    {
+      "path": "reviews/normalized-formula-independent-review.md",
+      "bytes": 5821,
+      "sha256": "5f51a9ca2b05b3fd87264bfe5bd0dd6f72cb55d4aefe2fd7c3b5df616c4db3a8"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 3016,
+      "sha256": "e4182cc9c0f1a769409ab84a9b6cecfec77324089fc8da6d6fca24e188ce5961"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 5604,
+      "sha256": "68850ac057145a20d7bec012f5b7e44f6c7c9aad30447c0f1aa008c5b4109f25"
+    }
+  ],
+  "scope": "Classical composite supply/catalog and normalized UNIT-aggregate acquisition, with reference implementations. No near-linear collision query, all-input factoring rate or new Lean theorem claimed."
+}

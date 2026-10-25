@@ -1,0 +1,26 @@
+# Independent exact-source review: partial tag decoder
+
+24 October 2026. **PASS**, no corrections requested.
+
+Reviewed partial-tag.md SHA256 `79da1b9032b30777bd940709277f1687d47c51c5df431eb0d753168cdcfbd9cb`. Primary May dissertation sources/may-2003.pdf SHA256 `a6f8075b93c32a6a687ae83dde2698a98739b069a54c2cb644b75418ffc54332` was reread at Section 3.2, Theorems 6–7 and the lattice-norm argument. No source or shared repository file was edited.
+
+The claimed sufficient information is the ACTUAL smaller-prime residue, not a free upper interval or a small-root oracle. Every odd smaller prime is covered by b=1,...,floor(n/2), B=2^b and the literal sqrt-N-clipped bins. The rational beta=b/n satisfies N^beta<=B because N<=2^n. Empty bins and empty residue progressions are skipped; s_min includes zero and all possible nonnegative progression parameters are enumerated. Every block offset and clipped last length is explicit.
+
+The rounding proof is exact. T_b is floor R_b with R_b=N^(b²/n²), acquired by an integer exponentiation of O(n³) bits and a degree-n² integer root. For R_b>=1, T_b>=R_b/2 and max(1,floor(T_b/16))>=T_b/32, so X_b>=R_b/64. If X_b>=2 it equals floor(T_b/16) and is <=R_b/16. X_b=1 takes a direct candidate gcd branch and needs no small-norm premise. All root/power construction has polynomial-logarithmic bit cost.
+
+The monic f(z)=z+[m^-1(c+mS0)]_N has exactly the required modular meaning when gcd(m,N)=1. At the promised block z0 the known residue gives f(z0)=0 modulo the unknown P>=B>=N^beta. Its basis has degrees 0,...,d-1, leading coefficients N^(t-i) on the first t rows, and ones thereafter. Scaling column r by X^r proves determinant N^[t(t+1)/2] X^[d(d-1)/2]. Every row vanishes modulo P^t at z0, so the same is true of each integer lattice combination; no multivariate independence or unknown-prime arithmetic is assumed.
+
+For d=n,t=b, the standard deterministic delta=3/4 LLL first-vector bound is exactly the 2^[(d-1)/4] determinant bound in (5). Cauchy–Schwarz adds sqrt d because 0<=z0<X. Substituting log2 X<=beta² log2 N-4 gives
+
+    (1/2)log2 n+(n-1)/4
+       +(1/2)beta(1-beta)log2 N-2(n-1),
+
+and beta(1-beta)<=1/4 and log2 N<=n bound it by (1/2)log2 n-(13/8)n+7/4<0 for n>=2. Thus the nonzero integer polynomial H satisfies |H(z0)|<N^(beta t)<=B^t<=P^t and P^t divides H(z0), proving exact integer vanishing. Raising the norm bound to 4d gives the stated optional integer certificate (7), with all exponents and bit sizes polynomial in n. Basis heights, LLL output heights and degree<n are polynomial-logarithmic. Exact univariate integer-root isolation/factorization and all <=d-1 candidate validations therefore have the claimed deterministic polynomial-logarithmic cost per block.
+
+The full enumeration charge includes every bin, rather than imposing beta=1/2 on unbalanced factors. With a=log2 N, delta=n-a in [0,1), the identity b-beta²a=a beta(1-beta)+delta beta gives B/R_b<=sqrt2 N^(1/4). Each bin has O(1+B/(m X_b))=O(1+N^(1/4)/m) blocks. There are O(log N) bins and polynomial-logarithmic work per block, yielding soft(1+N^(1/4)/m). The choice epsilon=1/n in the primary theorem is legal with polynomial-logarithmic dimension/time, and N^(-1/n)>=1/2; no fixed N^epsilon loss is concealed. The independent finite lattice certificate already proves the exact specialization used. The source's general unknown-divisor theorem is not misquoted as a global bit-residue theorem without enumeration.
+
+For a wrong c the same fixed bounds, lattice dimensions and root validations apply. Only proper verified gcds are accepted. Every tested candidate is positive and inside the actual sqrt-N-clipped bin, so it cannot equal N; extraneous integer lattice roots cause no false factor. If the correct residue is supplied, its actual block contains z0, root extraction finds it, and a proper factor follows. The stand-alone input promises gcd(m,N)=1, with an encountered proper gcd handled immediately.
+
+The local-to-global validation is also complete. Under the native P>16k² and m<=k, labels in [0,m) are distinct in the good P field. With m|k, the own tag's residue is P modm. Repeated coarse labels do not interfere with the unique-hit directional ratio, and their actual interpolating/direction polynomial is acquired in soft J. At the nonsplit P side a nonzero A has nonzero norm; classification gives a proper factor or a unit. The tau coordinate of B/A is zero modulo P, so its gcd is proper or N on the good branch. If N, the ratio is globally the canonical base scalar z. Integer-block localization through [0,m) gives a proper factor or a saturated leaf z=c globally; canonical representatives then identify the actual coarse residue. The bounded decoder accepts only verified factors on every supplied label. Its validation cost soft sqrt m plus soft(1+N^(1/4)/m) is soft k when N^(1/12)<=m<=k at sixth-root scale.
+
+The source explicitly leaves acquisition of this weaker residue open, does not assume that every old k has a suitable divisor, and retains conditional orientation premises and the current degree-aware k^(3/2) query. Its new result is a complete unconditional residue-assisted decoder, not a new all-input factoring exponent or a polynomial-time claim from one-sixth known bits alone.

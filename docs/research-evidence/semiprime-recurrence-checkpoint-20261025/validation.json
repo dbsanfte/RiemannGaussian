@@ -1,0 +1,96 @@
+{
+  "validated_at": "2026-10-25T06:18:42.420412+00:00",
+  "manifest_sha256": "d649ba0ff1faefa288fc8c57c2fe3f42bb3e264d95bcde3c3b51d841e38979ec",
+  "packet_entries_verified": 613,
+  "verbatim_copies_verified": 604,
+  "inherited_pins_verified": 376,
+  "original_sources_verified": 826,
+  "frozen_packets": [
+    {
+      "path": "docs/research-evidence/semiprime-twist-character-20261022/manifest.json",
+      "entries": 18,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-twist-palette-20261022/manifest.json",
+      "entries": 6,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-colour-retention-20261022/manifest.json",
+      "entries": 18,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-lifted-norm-20261022/manifest.json",
+      "entries": 22,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-character-aggregate-20261022/manifest.json",
+      "entries": 22,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-composite-character-20261022/manifest.json",
+      "entries": 28,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-collision-representation-20261022/manifest.json",
+      "entries": 29,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022/manifest.json",
+      "entries": 26,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-query-continuation-20261022/manifest.json",
+      "entries": 18,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-randomness-bridge-20261022/manifest.json",
+      "entries": 10,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fermat-multiplier-20261022/manifest.json",
+      "entries": 11,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/manifest.json",
+      "entries": 14,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-uniform-trace-20261023/manifest.json",
+      "entries": 12,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-detector-acquisition-20261023/manifest.json",
+      "entries": 22,
+      "verified": true
+    },
+    {
+      "path": "docs/research-evidence/semiprime-arithmetic-selection-20261023/manifest.json",
+      "entries": 14,
+      "verified": true
+    }
+  ],
+  "frozen_entries_verified": 270,
+  "standalone_mode": false,
+  "full_external_papers_copied": false,
+  "historical_mutating_validators_executed": false,
+  "math_experiments_or_lean_builds_run": false,
+  "status": "PASS",
+  "scope": "Byte/provenance preservation and correction packaging only; current complete scalar bound soft k^(5/4), sixth-exponent objective open; external Hecke consequences conditional.",
+  "standalone_copy_replay": "PASS",
+  "readme_errata_local_links": "PASS",
+  "new_validator_syntax": "PASS",
+  "protected_root_and_journal_snapshot": "unchanged at final scoped check"
+}

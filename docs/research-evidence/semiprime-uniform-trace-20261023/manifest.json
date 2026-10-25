@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-23",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "classification": "All-input AP/Gauss short seed and fixed-index additive acquisition, with exact query frontier; no improved factoring exponent",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7506,
+      "sha256": "8ef213a6db5ddb876eb2959e5a003b01930698e97afa09fd6b1c455f1486ec2c"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 2368,
+      "sha256": "15f9440f1dfface04573de3c965a56f684265704eaaadd5e4290cd2545c019c6"
+    },
+    {
+      "path": "implementation/check_frobenius_traces.py",
+      "bytes": 2919,
+      "sha256": "dd6fd561d8f88b5788478f4f99b35cab706640ecf8ab9942f70f21d720077c73"
+    },
+    {
+      "path": "implementation/frobenius-check.json",
+      "bytes": 1810,
+      "sha256": "445cca89b314390d0912d3a71c249f99320ba7b327a6f9098d31a7a6c73a20dc"
+    },
+    {
+      "path": "reports/frobenius-traces.md",
+      "bytes": 14118,
+      "sha256": "ab523a01fe37cd0730a67dce6ef4cad3cb45cf8b55a75cf6814ef3acf8169e79"
+    },
+    {
+      "path": "reports/trace-index.md",
+      "bytes": 16500,
+      "sha256": "0761d8f7acb88648083d2112642898633a3bd2b734dab609a51afb00a0728be5"
+    },
+    {
+      "path": "reports/unbalanced-geometry.md",
+      "bytes": 18228,
+      "sha256": "8df4fd185865a81052a9c98c62c360ba9c66d5040eb52c89ae260cc54a0b3814"
+    },
+    {
+      "path": "reviews/geometry-review.md",
+      "bytes": 4638,
+      "sha256": "468d7401813456c6912772f3f104bde20ed68762a2cc2d5e3f7e9f4c95224a09"
+    },
+    {
+      "path": "reviews/integration-review.md",
+      "bytes": 6119,
+      "sha256": "e6eab304a096a165092d3db8824d4f1afb4b1d5a8e2b48a7f5da16e034d7acce"
+    },
+    {
+      "path": "reviews/root-review.md",
+      "bytes": 6842,
+      "sha256": "1327357fd388d3063487d3703f9b428b2311f76ce3aa2a2dc727378533ae4e00"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 2899,
+      "sha256": "e7432c578527f47d6606ee72a34008e2856444db6e2346548fa4e23b6665d651"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 3419,
+      "sha256": "35c5e4fbb5b39a5932a386a82d1ff1fe21d233751d3722a603094d5c8993e53c"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "primary": {
+    "url": "https://arxiv.org/pdf/1001.1504v2",
+    "title": "Pseudorandomness and Dynamics of Fermat Quotients",
+    "authors": [
+      "Alina Ostafe",
+      "Igor E. Shparlinski"
+    ],
+    "version": "arXiv:1001.1504v2",
+    "used": "Theorem 10 and its finite second-moment proof; identities (6)-(7)",
+    "bytes": 244667,
+    "sha256": "8a8549eca99a6ce5c1dc1aebbb23e173a6a6a3f16b85dc6c18a4000111102d88",
+    "local_cache": "/tmp/semiprime-source-construction-20261022/ostafe-shparlinski-1001.1504v2.pdf"
+  },
+  "derived_here": [
+    "deterministic additive translate cover",
+    "explicit small-multiple catalog and witness table",
+    "balanced linear collision consumer"
+  ],
+  "independent_review": "reports/fermat-constructor-review.md",
+  "historical_source_scope": "Additional source-model reports are exploratory and do not constitute a completed uniform machine theorem."
+}

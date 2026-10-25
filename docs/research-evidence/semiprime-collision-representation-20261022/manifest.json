@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 14061,
+      "sha256": "26ec5c7d9f448adb60a63325b0253040acdb0fae964919af097ae6bb20fe9ddb"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 5352,
+      "sha256": "12e37903511e172ba0a417609786a0d169496636312be9cb231085b074ac9a48"
+    },
+    {
+      "path": "implementation/kmp/README.md",
+      "bytes": 4088,
+      "sha256": "3cef2e5e6836014e21ae8b0993201be389aaae7f96ffbbb59c5b6bcfd7daafea"
+    },
+    {
+      "path": "implementation/kmp/gcd_kmp.py",
+      "bytes": 4758,
+      "sha256": "ad5cae7bd4835ddb14c921cf8cc82a1ca4c2a46be4110ff5ac3508fc70f72fa2"
+    },
+    {
+      "path": "implementation/kmp/test_gcd_kmp.py",
+      "bytes": 4347,
+      "sha256": "61a46391bfa3383af951a2a20868a2bb516e7706e392d53409d1812a8b8fd949"
+    },
+    {
+      "path": "preserved-packets.json",
+      "bytes": 1128,
+      "sha256": "e40c7086344d2c7f9db331aedcb03710b4a7c5773d62e095eb1aa83da768be89"
+    },
+    {
+      "path": "reports/algebraic-detection.md",
+      "bytes": 12401,
+      "sha256": "282f6e76c94d7c65fdad63d5f18e3147daaa610fa6b8082c3bdbd60254b92430"
+    },
+    {
+      "path": "reports/arithmetic-structure.md",
+      "bytes": 7878,
+      "sha256": "a6cfa43186efcea6d0184f2edd2836c1ed9e60aca034dce4023dd49c5799ee65"
+    },
+    {
+      "path": "reports/arxiv-2610-01447-v2.md",
+      "bytes": 13947,
+      "sha256": "a1c37e5104d26e7f1638582bca21d91d7082283b9f52b20de4adfca1e3e5b53e"
+    },
+    {
+      "path": "reports/character-contraction.md",
+      "bytes": 6148,
+      "sha256": "df5f411389b2b084b610f51b4ec98fc0b88ec7267d9cc232de9db52039279a5d"
+    },
+    {
+      "path": "reports/dyadic-cyclic-contraction.md",
+      "bytes": 7246,
+      "sha256": "3397bc07e0c9896529ee2678c29e5ac790ef06d61bd1d8ed534b666af9b437b7"
+    },
+    {
+      "path": "reports/dyadic-native-interface.md",
+      "bytes": 7514,
+      "sha256": "a1c9f6cbecd07f68e3d0a1f3d692eeab2d6b24760593faef97fb6fbfb356be76"
+    },
+    {
+      "path": "reports/dyadic-tower-coordinates.md",
+      "bytes": 5569,
+      "sha256": "2faa9fd5f090f4cb854b7378b7435f5542e0680b9022520eabd7cd7483f396d8"
+    },
+    {
+      "path": "reports/kls-representation.md",
+      "bytes": 12015,
+      "sha256": "183ba02dd57144e0eb6f31ece997d922f3886f72c425d9d53fb363ff69578cf5"
+    },
+    {
+      "path": "reports/kls-section6.md",
+      "bytes": 7596,
+      "sha256": "bceb0488dadd644b42828fadef549c3b70e9c7e647ebdf632a7f99464958c179"
+    },
+    {
+      "path": "reports/kls-sections7-9.md",
+      "bytes": 11447,
+      "sha256": "6c41d0032172785830eddcae4c855e762be90440f46bdd3963ced996622b61d2"
+    },
+    {
+      "path": "reports/native-fast-transform.md",
+      "bytes": 867,
+      "sha256": "38d13c3b9c9d9a29a407a163c4e00ffbb6800a8d7f442c33fa21300b0149fd63"
+    },
+    {
+      "path": "reports/orbit-correlation.md",
+      "bytes": 8317,
+      "sha256": "a2d315886e649682db918892794904abedcf3158131ac3773505bae6194f2ca5"
+    },
+    {
+      "path": "reports/orbit-representation.md",
+      "bytes": 12709,
+      "sha256": "a5eed947a69588dc8e0c8f2efbb01d77a20b25c9654b261593705ee33d89772c"
+    },
+    {
+      "path": "reports/rational-power-recognition.md",
+      "bytes": 7977,
+      "sha256": "1eac770c8b4fde859b1d4cb04bda61648ea0d5fd641dcef26f43fe8c1c052cc9"
+    },
+    {
+      "path": "reports/rational-query-bridge.md",
+      "bytes": 4945,
+      "sha256": "670b112e8a8547e9554b0a5a2de96410fc447facff135026ccd6f1d0994d8576"
+    },
+    {
+      "path": "reports/special-power-diagonal.md",
+      "bytes": 7105,
+      "sha256": "c95f6ff5c9aa7830990fb7a12b91ba5aca83d0dc043d1175930d50bd9e8701bf"
+    },
+    {
+      "path": "reports/torus-frobenius.md",
+      "bytes": 10095,
+      "sha256": "4f5c1be25050398d20b12db25bd329253c7fa7dd130c2f24d01b8a3b68138a88"
+    },
+    {
+      "path": "reports/varying-weight-diagonal.md",
+      "bytes": 9778,
+      "sha256": "cf23a3661cc7c3926ca9de812f884c3e4dde6d866b2ef84e26ffc53e36b5888e"
+    },
+    {
+      "path": "reports/weighted-rational-trace.md",
+      "bytes": 6657,
+      "sha256": "487a24407fa48ed1817dadc8dd3828f755cbfccf079b3498780a8e67e0e5fca7"
+    },
+    {
+      "path": "reviews/independent-trace-review.md",
+      "bytes": 7504,
+      "sha256": "e9e1d12f47f086deb98b6ab3b6e7ffeb8d125bc08339df49e29f609db61d1fe4"
+    },
+    {
+      "path": "reviews/root-integration-review.md",
+      "bytes": 5899,
+      "sha256": "9857562884886440e2dbc775480ba802e1d1c9fb8f4e5ef542317b1b4cc68729"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 7510,
+      "sha256": "8e87fde25f739a7378d9cf4dba7cdfd1f05cba7442b1941027d352e4334e2d11"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1448,
+      "sha256": "e498a034ff1f6cb72e66d49628d64fb0646ae66bdd0e937e7787ac242a60a372"
+    }
+  ],
+  "note": "Manifest excludes itself. Research interfaces and partial algorithms are frozen evidence; the full near-linear collision query remains open."
+}

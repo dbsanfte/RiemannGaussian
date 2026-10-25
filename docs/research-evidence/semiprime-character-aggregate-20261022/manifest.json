@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 9555,
+      "sha256": "4f725879b8fd0b4708aa58295bc10bfe374ec61640b05591ef35de68cfffc7b7"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 5581,
+      "sha256": "7bf4eef158054a46b7d0f383c63033eff08e4eb120d4d94f6767dd0c16ddad13"
+    },
+    {
+      "path": "reports/additive-transform.md",
+      "bytes": 5230,
+      "sha256": "b15a093a9e8249fd36dcb364e3532977d66a8057d851299489876a8100a2b83a"
+    },
+    {
+      "path": "reports/coherent-root-preparation.md",
+      "bytes": 5839,
+      "sha256": "cfe244b79106868a8317de2a41a24e7dba5b0e5a068ad5bd289845cbe6b5881c"
+    },
+    {
+      "path": "reports/coupled-palettes.md",
+      "bytes": 4321,
+      "sha256": "843dbe94be7545d2f7a10880a0f3054c3a4023ca518222873128e00fc35318de"
+    },
+    {
+      "path": "reports/direct-character-norm.md",
+      "bytes": 4666,
+      "sha256": "611ea4d7c4c6e4f71955fce0e5e637108080289524666a5ea220f030c0d770a9"
+    },
+    {
+      "path": "reports/finite-character-product-literature.md",
+      "bytes": 8466,
+      "sha256": "4e5c3ea2115068b422390d14771bce68db83ea6b5a9a70563a6eea7f49180ed1"
+    },
+    {
+      "path": "reports/gauss-cocycle-extraction.md",
+      "bytes": 5808,
+      "sha256": "779868d25f790b5ca7529c8add8b2bb4563177e5e2909253b9d8ae85dc560530"
+    },
+    {
+      "path": "reports/gauss-weighted-norm.md",
+      "bytes": 11258,
+      "sha256": "b7885ee829d6a1d8f3861a56a82b426ae5de958cdcf0e06cc4d02d4fbe5f990c"
+    },
+    {
+      "path": "reports/multiplier-recursion.md",
+      "bytes": 7254,
+      "sha256": "4251e383a1664b060fc386982d52c4a13f673698f371893f52fb922527721511"
+    },
+    {
+      "path": "reports/multiplier-state-cost.md",
+      "bytes": 5962,
+      "sha256": "312fe186f7b7a7b7a706f0b684fe318aad4c326140c9d1fc62e3de00fb268899"
+    },
+    {
+      "path": "reports/multiplier-symbol-recursion.md",
+      "bytes": 7366,
+      "sha256": "280c22e3b8bf668a8df66e5f0637755d71e3b36fdda94ccba510419a38ee3b75"
+    },
+    {
+      "path": "reports/native-multiplier-closure.md",
+      "bytes": 5277,
+      "sha256": "9fe6af71ea1317be696483660720da96fa9428adf8d5351a68d681ea6d489282"
+    },
+    {
+      "path": "reports/partial-matching-character.md",
+      "bytes": 7054,
+      "sha256": "73e76eb3ebec5d04a5880e9176799e2efc613775dd2b997c28500faae1989717"
+    },
+    {
+      "path": "reports/reciprocity-observable.md",
+      "bytes": 8785,
+      "sha256": "19a87256dcf5ef9be65534e8a7b9a70f519bd424a06e89ded06b581292d50517"
+    },
+    {
+      "path": "reports/twist-norm-aggregation.md",
+      "bytes": 9913,
+      "sha256": "a7533e5b36f0cf76ca46ef62493b5ecd294afa2e9081094a5b3cc49493514b14"
+    },
+    {
+      "path": "reviews/review-final-integration.md",
+      "bytes": 3210,
+      "sha256": "a736adedeb7b73476c050aa1843f48ee78043cfd8e45783f97570cd725bd86f4"
+    },
+    {
+      "path": "reviews/review-gauss-weighted-norm.md",
+      "bytes": 5983,
+      "sha256": "c63e5ff07b20d15e5d482f9617a6c5939c25bdc31cf7055d5dae723b0b775e35"
+    },
+    {
+      "path": "reviews/review-native-multiplier.md",
+      "bytes": 7809,
+      "sha256": "d70eb074e5502a395f57321fc22239ef3c6f04415c73a0be9bd010c5b1f759d1"
+    },
+    {
+      "path": "reviews/review-twist-norm.md",
+      "bytes": 5361,
+      "sha256": "4a8f2cd1b1c403b8dc20107098517682f80a62fb5b53493d22c68bf45d2abe92"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 4354,
+      "sha256": "d23dd435993d2654b730bc930c7d3a462c3d82542438a7925ee0bcedb3bab58e"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 3080,
+      "sha256": "1d5004c9c25aa67e0723b94e400721e0c00782f4d7aa46dbe8b88ce8caaa16e5"
+    }
+  ],
+  "scope": "Reviewed weighted Gauss unit-aggregate acquisition and twist/root identities. No whole-input H-query acquisition, improved factoring rate, executable runtime or Lean theorem claim."
+}

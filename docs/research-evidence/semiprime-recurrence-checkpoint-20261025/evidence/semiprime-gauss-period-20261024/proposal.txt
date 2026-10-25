@@ -1,0 +1,47 @@
+UNREVIEWED NEXT RESEARCH PROPOSAL, root, 2026-10-24.
+Not an established acquisition or factoring result. No shared document cites
+this as a theorem. Current authoritative packet is translated-cyclotomic.
+
+Try collapsing the translated cyclic rows via quadratic GAUSSIAN PERIOD
+PRODUCT, retaining character information rather than the augmentation.
+Repo rg found existing quadratic-torus work but no explicit Gauss-period
+or Aurifeuilian acquisition entry; check carefully before novelty claims.
+
+Let chi be Legendre modulo public odd prime m, D=chi(-1)*m,
+B=(Z/N)[tau]/(tau^2-D), conjugation tau->-tau, d=(m-1)/2.
+Formally let U(beta)=prod_(r quadratic residue modm)(beta+zeta^r).
+Its coefficient ring is the quadratic period subalgebra. Power sums of
+the QR roots, for 1<=k<=d, are p_k=(-1+chi(k)*tau)/2.
+Thus C(Z)=prod_QR(1+Z*zeta^r) has log coefficients
+(-1)^(k-1)*p_k/k for k<=d. Fast series exponentiation to d+1 and
+evaluation U=beta^d*C(beta^-1) should acquire U in soft m over rank-2 B.
+All k<=d and 2 are certified units. This avoids separately multiplying
+m cyclic degree-m factors. Verify Gauss identity, signs and embeddings.
+Norm U=(beta^m+1)/(beta+1), a certified unit for prepared odd-order beta.
+
+For own P, Frobenius in B conjugates iff chi(P)=-1 (quadratic reciprocity
+for D=chi(-1)m). Let epsilon_j=chi(j). Define translated normed rows with
+U in place of beta+zeta; sigma_j is identity/conjugation depending epsilon.
+All row elements now rank two and may be acquired softm (m scalar powers,
+not m degree-m algebra powers). Their own relation to U^(m²I) survives.
+This alone does NOT pay long query, guarantee U order or recover saturated
+translated collisions. Original scalar beta channel remains available.
+
+Norm-one W=U/conjugate(U). T_j/conjugate(T_j) then equals
+W^E_j, E_j=ell_j+epsilon_j*(N+a_j); q=W^(m²).
+At own P, E_j-m²I is (P-1)(Q-a_j) for epsilon=+1, and
+-(P+1)(Q+a_j) for epsilon=-1. Local group sizes P-epsilon.
+If m=3 mod4, opposite labels have epsilon opposite and ell_j+ell_-j=m²*tau_j,
+so E_j+E_-j=m²*tau_j: exact inverse/shift pairing. Only constant pair
+compression follows immediately. Do not call it whole-family exponent gain.
+
+Questions for next pass:
+1. Fully charge the period-product acquisition in B, including all units.
+2. Does any native character cancellation on these rank-2 rows actually
+   reduce the index query or provide a covered scalar beyond old norm/trace?
+3. Reuse/check existing torus/Dickson recovery and lower-family obstructions;
+   no free local order, nonzero projection, or factor decoder inheritance.
+
+Most likely possible useful output is a paid nontrivial character projection
+of all rows, not yet a rate advance. Require actual query improvement for
+substantive progress toward the complete all-semiprime N^(1/6) objective.

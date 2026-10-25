@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "r": 43,
+  "H": 1849,
+  "M": 3418801,
+  "P0": 59168,
+  "P": 59447,
+  "Q": 59747,
+  "N": 3551779909,
+  "A": 1,
+  "T": 924,
+  "primality": "complete trial division",
+  "preparation": {
+    "base": 4,
+    "local_orders": [
+      29723,
+      29873
+    ],
+    "global_order": 887915179,
+    "local_lower_bound": 29584,
+    "global_lower_bound": 875213056,
+    "coprime_local_orders": true,
+    "odd_local_orders": true,
+    "H_and_M_preserve_local_orders": true
+  },
+  "rows": [
+    {
+      "factor": 59447,
+      "c": 41,
+      "s": 345,
+      "C": 331,
+      "B": 1082824,
+      "h": 1318,
+      "sigma": 48,
+      "ratio": "48/41",
+      "denominator": 41,
+      "root_residual": 0,
+      "derivative_residual": 0,
+      "source_residual": 0
+    },
+    {
+      "factor": 59747,
+      "c": 28,
+      "s": 1420,
+      "C": 116,
+      "B": -453996,
+      "h": 904,
+      "sigma": 12,
+      "ratio": "3/7",
+      "denominator": 7,
+      "root_residual": 0,
+      "derivative_residual": 0,
+      "source_residual": 0
+    }
+  ]
+}

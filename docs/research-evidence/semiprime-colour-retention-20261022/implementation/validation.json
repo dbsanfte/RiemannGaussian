@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-22",
+  "scope": "exact reference algebra controls; no universal factor coverage or runtime certification",
+  "tests_per_backend": 8,
+  "runs": [
+    {
+      "command": "/home/dbsanfte/riemann/formal/.lake/plot-venv/bin/python -m unittest -v test_packed_gauss.py",
+      "backend": "gmpy2-mpz-byte-kronecker",
+      "result": "PASS"
+    },
+    {
+      "command": "python3 -S -m unittest -v test_packed_gauss.py",
+      "backend": "stdlib-int-byte-kronecker",
+      "result": "PASS"
+    }
+  ],
+  "production_inputs": [
+    "modulus N",
+    "public auxiliary prime ell",
+    "order k dividing ell-1",
+    "public exponent E"
+  ],
+  "test_only_inputs": [
+    "synthetic CRT prime factors",
+    "full small Phi_ell cyclotomic carrier"
+  ],
+  "sha256": {
+    "packed_gauss.py": "bce84a9b96b12720298052f317bae2e521a6e574aed8ef50c2c7d7d4a4f2f1ea",
+    "test_packed_gauss.py": "70c2847aa32f71233f38c73db2e07e4993d276c9b3ea30bd6b153c2696a77ab0",
+    "README.md": "2668fc0e87704eb80f7b50edfe1d7a44f6c8c6939349dc5ef9c7aa98b5519529"
+  }
+}

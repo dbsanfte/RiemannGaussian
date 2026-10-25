@@ -1,0 +1,14 @@
+{
+  "outcome": "no progress toward the runtime bound this turn",
+  "checked_candidates": [
+    "initialized factor-sum auxiliary powers",
+    "Dickson polynomial selectors",
+    "short-atom interval blocks",
+    "common mixed-root parameter and sign/swap representatives",
+    "Lenstra-Pomerance relation derandomization against exact QRH scope"
+  ],
+  "result": "No faster acquired selector or deterministic all-input supplier. Auxiliary powers, shared factorial constructors and wider atom descent already exist in journal37623ff; do not repackage them as new. Direct block exponent construction costs soft b per block, not the slower coefficient-expansion bound. Common-root algebra exposes only the known scalar roots without selection.",
+  "authoritative_documents_unchanged_this_turn": true,
+  "goal": "active; sixth-rate and complete Lean bit proof unproved",
+  "next_constraint": "Require an actual algorithm or a coverage-preserving transfer of an already paid recurrence; avoid additional conditional consumers or duplicate literature audits."
+}

@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-23",
+  "local": [
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/constructive-frontier-index.json",
+      "bytes": 5703,
+      "sha256": "9885d687eb030009277d8de7079d5d172a89a1632c277cb6d0aadc82b393bc3a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-detector-acquisition-20261023/reports/structured-catalog-proof.md",
+      "bytes": 6256,
+      "sha256": "6cb01f74382eca5ee261ce61c3331a89c2ccb80b7ef62ced4d44e5c7213fe2f8"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-detector-acquisition-20261023/reports/arithmetic-detector.md",
+      "bytes": 16617,
+      "sha256": "bcb6bac3f02fd241817a5d07a408428301943a12d586014a9df4a0449f273515"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-detector-acquisition-20261023/reports/discriminant-relations.md",
+      "bytes": 7984,
+      "sha256": "4b7b6348caba33141c51296bab8099bcef60b49e7e4ac8c04d2dabaad5ee0765"
+    }
+  ],
+  "primary": [
+    {
+      "title": "Gower-Wagstaff, Square Form Factorization",
+      "url": "https://www.cerias.purdue.edu/assets/pdf/bibtex_archive/S0025-5718-07-02010-8.pdf",
+      "inspection": "Proper reduction, principal-square premise and hypothesis-dependent average analysis",
+      "local_cache": "/tmp/semiprime-arithmetic-selection-20261023/sources/gower-wagstaff-2007.pdf",
+      "bytes": 413463,
+      "sha256": "57b77bc87ef473fc55a473f7e1ca0692581dbbc9ea4d4e5fa8997356854ad1b9",
+      "mechanism": "Downloaded primary PDF and local text inspection"
+    },
+    {
+      "title": "Bradford-Wagstaff, Square Form Factorization II",
+      "url": "https://homes.cerias.purdue.edu/~ssw/squfof2.pdf",
+      "inspection": "Positive-norm conventions and conditional algorithm theorem",
+      "local_cache": "/tmp/semiprime-arithmetic-selection-20261023/sources/bradford-wagstaff-squfof2.pdf",
+      "bytes": 204180,
+      "sha256": "cd9290c7f9acaf79a073cae2ab23d16b08b064ea553f7c22dc28a156a417f26f",
+      "mechanism": "Downloaded primary PDF and local text inspection"
+    },
+    {
+      "title": "Lenstra, On the calculation of regulators and class numbers of quadratic fields",
+      "url": "https://public.csusm.edu/ssharif/crypto/Lenstra82-QuadraticRegulators.pdf",
+      "inspection": "Arbitrary quadratic orders, ordinary/narrow classes, reduction and recognition",
+      "local_cache": "/tmp/semiprime-arithmetic-selection-20261023/sources/lenstra-1982-regulators.pdf",
+      "bytes": 1161002,
+      "sha256": "52cb06558c2efc901f5ed293497cd549eed231b0aa0a598cd8b1e634779eaab8",
+      "mechanism": "Downloaded primary PDF and local text inspection"
+    },
+    {
+      "title": "Shanks, SQUFOF manuscript",
+      "url": "https://homes.cerias.purdue.edu/~ssw/shanks.pdf",
+      "inspection": "CFRAC proper/global-sign distinction and failure scope",
+      "local_cache": "/tmp/semiprime-arithmetic-selection-20261023/sources/shanks-squfof.pdf",
+      "bytes": 162246,
+      "sha256": "8233d4d8fc4eb3b15e878c37937f38ec597041c1ed6e85a3950af40e3a20a010",
+      "mechanism": "Downloaded primary PDF and local text inspection"
+    },
+    {
+      "title": "Singer, A Bijective Proof of Borchardt\u2019s Identity",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/download/v11i1r48/pdf/",
+      "inspection": "Theorems 1.1 and 1.4",
+      "local_cache": "/tmp/semiprime-arithmetic-selection-20261023/borchardt-bijective.pdf",
+      "bytes": 140879,
+      "sha256": "ca93f229e1b43b55623d5b5df5556bb3d57c60bad099e165da33d1d1edaf6bf8",
+      "mechanism": "Downloaded primary PDF and local text inspection"
+    },
+    {
+      "title": "Ishikawa-Okada-Tagawa-Zeng, Generalizations of Cauchy\u2019s Determinant and Schur\u2019s Pfaffian",
+      "url": "https://arxiv.org/pdf/math/0411280",
+      "inspection": "Version 2, Theorem 5.1 and denominator definition",
+      "local_cache": "/tmp/semiprime-arithmetic-selection-20261023/ishikawa-okada-tagawa-zeng.pdf",
+      "bytes": 330651,
+      "sha256": "d7df164c163030a8ac6f3dce3f72c6155bf22411943b46ab4eebe18d34781d50",
+      "mechanism": "Downloaded primary PDF and local text inspection"
+    },
+    {
+      "title": "Andrews-Wigderson, Constant-Depth Arithmetic Circuits for Linear Algebra Problems",
+      "url": "https://www.math.ias.edu/~avi/PUBLICATIONS/AndrewsWi_Constant-Depth%20Arithmetic_2024.pdf",
+      "inspection": "Section 2.4, coefficient-input resultant and Bezout definitions",
+      "local_cache": "/tmp/semiprime-arithmetic-selection-20261023/andrews-wigderson-constant-depth.pdf",
+      "bytes": 1050882,
+      "sha256": "384597193f93b8601fd0d79807cdedd44ca78e3472864b17b702cfe22bfea84a",
+      "mechanism": "Downloaded primary PDF and local text inspection"
+    },
+    {
+      "title": "Hittmeir, Integer factorization as subset-sum problem",
+      "url": "https://arxiv.org/pdf/2205.10074",
+      "version": "arXiv:2205.10074v1, 20 May 2022",
+      "inspection": "Sections 3-6 and explicit heuristic qualification of equation 5.1",
+      "mechanism": "web.run parsed PDF; no local cache or PDF hash acquired"
+    },
+    {
+      "title": "Collins-Encarnacion, Efficient Rational Number Reconstruction",
+      "url": "https://www.microsoft.com/en-us/research/publication/efficient-rational-number-reconstruction/",
+      "inspection": "Publication metadata and abstract only; no full article theorem inspection",
+      "mechanism": "web.run publication page; actual source-size uniqueness proved directly in report"
+    }
+  ],
+  "supplemental_repository_search": {
+    "commit": "6bf5285492fe3ab96b1042e165f215b647f46620",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/iGentAI/factorlab/6bf5285492fe3ab96b1042e165f215b647f46620/README.md",
+        "sha256": "f1807fdbe00518e6ac8cec8273ce23a11c06c1596a4a8c8a9ddf90f5022dd28b",
+        "bytes": 6191
+      },
+      {
+        "path": "REPRODUCING.md",
+        "url": "https://raw.githubusercontent.com/iGentAI/factorlab/6bf5285492fe3ab96b1042e165f215b647f46620/REPRODUCING.md",
+        "sha256": "318d2d4cd69910c220d6fd766868b6d5a9d7a802b08b83a518496f11931e9520",
+        "bytes": 34429
+      },
+      {
+        "path": "CITATION.cff",
+        "url": "https://raw.githubusercontent.com/iGentAI/factorlab/6bf5285492fe3ab96b1042e165f215b647f46620/CITATION.cff",
+        "sha256": "225ca0ded5c3981379eaab554b45208e6518cb0e09bf7022b6569d4b34c5a157",
+        "bytes": 1698
+      },
+      {
+        "path": "factorlab/experiments/lehman_product.py",
+        "url": "https://raw.githubusercontent.com/iGentAI/factorlab/6bf5285492fe3ab96b1042e165f215b647f46620/factorlab/experiments/lehman_product.py",
+        "sha256": "6c8b681ba737bcc58bd02def5beff82a0da0749af576d2e145e3df21783d4413",
+        "bytes": 13759
+      },
+      {
+        "path": "factorlab/experiments/farey_cover.py",
+        "url": "https://raw.githubusercontent.com/iGentAI/factorlab/6bf5285492fe3ab96b1042e165f215b647f46620/factorlab/experiments/farey_cover.py",
+        "sha256": "1a44eefa5d114ef464f9ace0557a7711e37f4c5445d8761b43436bb9047c66bd",
+        "bytes": 12342
+      },
+      {
+        "path": "factorlab/experiments/cover_search.py",
+        "url": "https://raw.githubusercontent.com/iGentAI/factorlab/6bf5285492fe3ab96b1042e165f215b647f46620/factorlab/experiments/cover_search.py",
+        "sha256": "1324dd910db73bc7a9db8f62167f0caea99587c78ab9a5bca4a0fd7499fed1ba",
+        "bytes": 9683
+      },
+      {
+        "path": "factorlab/experiments/common_factor_curve.py",
+        "url": "https://raw.githubusercontent.com/iGentAI/factorlab/6bf5285492fe3ab96b1042e165f215b647f46620/factorlab/experiments/common_factor_curve.py",
+        "sha256": "b747aaa82b89202032a56643f333f2e92a3165706f3222cd6c3fcf2844c0b773",
+        "bytes": 11802
+      }
+    ],
+    "scope": "Primary repository source/header and reproduction-guide inspection only. No associated report PDF obtained and no theorem imported into this checkpoint."
+  },
+  "unavailable_source": "Morrison-Brillhart primary AMS PDF returned HTTP 403; no theorem imported from unread contents."
+}

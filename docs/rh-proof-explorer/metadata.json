@@ -21,17 +21,17 @@
       "changeReason": "The user requested integration of OpenAI's checked 7/8 baseline and the Lean 4.34.1 upgrade. This discharges the restricted frozen Riesz terminal while the active global Gaussian/Weil–Suzuki branch and its independent arithmetic obligation remain."
     },
     "latestUpdate": {
-      "sequence": 154,
-      "id": "publish-siegel-native-square-marked-checkpoint",
+      "sequence": 155,
+      "id": "publish-local-suzuki-semiprime-recurrence-checkpoint",
       "kind": "theorem",
-      "title": "Native square bound and arithmetic-correlation audits.",
-      "body": "Publishes the Siegel-interpolation review, checked native central-square bounds through the actual source normalizer, and exact marked-coefficient audits. These supporting results retain the original arithmetic weights and masks.",
-      "next": "The signed odd-sector correlation and the independent RH arithmetic estimate remain open. The proved zero-free endpoint is unchanged.",
+      "title": "Local Suzuki cancellation and semiprime recurrence checkpoint.",
+      "body": "Publishes the checked local Suzuki cancellation identities, conditional RH transfer, and explicit three-eighths arithmetic bound, together with the accumulated semiprime coverage and recurrence audits. The research evidence preserves corrections and distinguishes proved components from open acquisition claims.",
+      "next": "The subpolynomial prime estimate and guaranteed sixth-exponent factorization remain open. The proved zero-free endpoint is unchanged.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
         "globalSuzukiCriterionTheorem"
       ],
-      "documentation": "docs/arithmetic-operator-source-normalized-marked-gates.md"
+      "documentation": "docs/suzuki-local-cancellation.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",

@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-23",
+  "copies": [
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/README.md",
+      "path": "README.md",
+      "bytes": 7506,
+      "sha256": "8ef213a6db5ddb876eb2959e5a003b01930698e97afa09fd6b1c455f1486ec2c"
+    },
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/unbalanced-geometry.md",
+      "path": "reports/unbalanced-geometry.md",
+      "bytes": 18228,
+      "sha256": "8df4fd185865a81052a9c98c62c360ba9c66d5040eb52c89ae260cc54a0b3814"
+    },
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/trace-index.md",
+      "path": "reports/trace-index.md",
+      "bytes": 16500,
+      "sha256": "0761d8f7acb88648083d2112642898633a3bd2b734dab609a51afb00a0728be5"
+    },
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/frobenius-traces.md",
+      "path": "reports/frobenius-traces.md",
+      "bytes": 14118,
+      "sha256": "ab523a01fe37cd0730a67dce6ef4cad3cb45cf8b55a75cf6814ef3acf8169e79"
+    },
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/root-review.md",
+      "path": "reviews/root-review.md",
+      "bytes": 6842,
+      "sha256": "1327357fd388d3063487d3703f9b428b2311f76ce3aa2a2dc727378533ae4e00"
+    },
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/geometry-review.md",
+      "path": "reviews/geometry-review.md",
+      "bytes": 4638,
+      "sha256": "468d7401813456c6912772f3f104bde20ed68762a2cc2d5e3f7e9f4c95224a09"
+    },
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/integration-review.md",
+      "path": "reviews/integration-review.md",
+      "bytes": 6119,
+      "sha256": "e6eab304a096a165092d3db8824d4f1afb4b1d5a8e2b48a7f5da16e034d7acce"
+    },
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/check_frobenius_traces.py",
+      "path": "implementation/check_frobenius_traces.py",
+      "bytes": 2919,
+      "sha256": "dd6fd561d8f88b5788478f4f99b35cab706640ecf8ab9942f70f21d720077c73"
+    },
+    {
+      "source": "/tmp/semiprime-trace-acquisition-20261023/frobenius-check.json",
+      "path": "implementation/frobenius-check.json",
+      "bytes": 1810,
+      "sha256": "445cca89b314390d0912d3a71c249f99320ba7b327a6f9098d31a7a6c73a20dc"
+    }
+  ],
+  "scope": "Final reviewed scratch reports, README and one identity diagnostic copied verbatim; no full factor algorithm or Lean verification."
+}

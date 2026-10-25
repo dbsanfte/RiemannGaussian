@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-22",
+  "files": [
+    {
+      "path": "reports/nonlinear-quartic-palette.md",
+      "scratch_source": "/tmp/semiprime-cayley-acquisition-20261022/residual_characters/nonlinear-quartic-palette.md",
+      "sha256": "c55429def67e8863f1f4b7893ba922623fb6a7ce1f78bb3e416d6108b794c925",
+      "transformation": "verbatim final report"
+    },
+    {
+      "path": "reports/independent-review.md",
+      "scratch_source": "/tmp/semiprime-cayley-acquisition-20261022/structured_matrix/nonlinear-palette-independent-review.md",
+      "sha256": "0f8cf9ad8b0ed00897694c3942902b69a69bda0e5d3497aff40b8a2519bb6682",
+      "transformation": "verbatim final report"
+    },
+    {
+      "path": "probes/check_palette.py",
+      "scratch_source": "/tmp/semiprime-cayley-acquisition-20261022/residual_characters/check_palette.py",
+      "source_sha256": "16a973662abee2c6fee1416d5250a3ae03ea0bc5f0bf3be84a9f2b9a63cda1fa",
+      "transformation": "replace the scratch dependency path with the previous portable packet; arithmetic unchanged"
+    }
+  ]
+}

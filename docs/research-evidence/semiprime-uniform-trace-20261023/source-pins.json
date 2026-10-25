@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-23",
+  "scope": "Inherited exact constructor/query/recovery sources. Newly inspected external papers were read through web extraction; no new external PDF hashes are claimed.",
+  "local": [
+    {
+      "path": "docs/semiprime-sparse-residue-gauss-audit.json",
+      "bytes": 33419,
+      "sha256": "92c7ac8748ee2ad3af3e98549b366bd0be00fa29ed8dd9bce95013a37586cc4e"
+    },
+    {
+      "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+      "bytes": 28139,
+      "sha256": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "bytes": 13939,
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/reports/phase-contraction.md",
+      "bytes": 13419,
+      "sha256": "5caa2939743e1b5ea2f957e88cc2855c1ce86f15a9805f9eff61f1b6a6d14089"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/reports/quadratic-transport.md",
+      "bytes": 9083,
+      "sha256": "19679d8115249cf00cad1b85914442665b1835a6a69766f4f7548c8c55fc28ce"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/constructive-frontier-index.json",
+      "bytes": 5703,
+      "sha256": "9885d687eb030009277d8de7079d5d172a89a1632c277cb6d0aadc82b393bc3a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-query-continuation-20261022/reports/quotient-centering.md",
+      "bytes": 5300,
+      "sha256": "0615ad427dbb07819969cb4f9fb21dce5edd435adaafac023092ca6187bcd21b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-curvature-acquisition-20261023/source-pins.json",
+      "bytes": 2729,
+      "sha256": "efad76bcf139309dbbaa49238a3a6fdebc116ebc99a24ef331e5bf80e178e876"
+    }
+  ],
+  "primary_web_only": [
+    {
+      "title": "Agrawal-Kayal-Saxena, original primality manuscript",
+      "url": "https://cse.iitk.ac.in/users/manindra/algebra/primality_original.pdf",
+      "use": "Frobenius identity, Lemma 3.1(2); no factoring-query claim"
+    },
+    {
+      "title": "Grantham, Frobenius Pseudoprimes",
+      "url": "https://arxiv.org/pdf/1903.06820",
+      "use": "Sections 1-3 on Frobenius tests; no all-input factor locator claimed"
+    }
+  ],
+  "inherited_primary": {
+    "title": "Bostan-Yurkevich q-holonomic algorithms",
+    "url": "https://arxiv.org/pdf/2012.08656v1",
+    "pin_location": "docs/research-evidence/semiprime-curvature-acquisition-20261023/source-pins.json"
+  }
+}

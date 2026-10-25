@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-22",
+  "repository_base": "6e969fd6e9c639eed280c595732248c106187603",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 9146,
+      "sha256": "4b43983098ee30c1ab7055b451e14a573e04cb91073d0df1a4c49d91fa9348da"
+    },
+    {
+      "path": "archive-provenance.json",
+      "bytes": 4236,
+      "sha256": "5b1c77c9600c3a915831989cdb818597d3d049017144a6fa6e356a23dbb9092a"
+    },
+    {
+      "path": "implementation/README.md",
+      "bytes": 5191,
+      "sha256": "2668fc0e87704eb80f7b50edfe1d7a44f6c8c6939349dc5ef9c7aa98b5519529"
+    },
+    {
+      "path": "implementation/packed_gauss.py",
+      "bytes": 8833,
+      "sha256": "bce84a9b96b12720298052f317bae2e521a6e574aed8ef50c2c7d7d4a4f2f1ea"
+    },
+    {
+      "path": "implementation/test_packed_gauss.py",
+      "bytes": 6921,
+      "sha256": "70c2847aa32f71233f38c73db2e07e4993d276c9b3ea30bd6b153c2696a77ab0"
+    },
+    {
+      "path": "implementation/validation.json",
+      "bytes": 1047,
+      "sha256": "4224448ed8810595147b6468a50c4d382f6c6bc6cbf610feaf962eac7bca029f"
+    },
+    {
+      "path": "reports/native-quadratic-colour.md",
+      "bytes": 4821,
+      "sha256": "0ef87fb77032d920019a53efcfe82cf6859bb06250fe473771f44e3f8d4ee363"
+    },
+    {
+      "path": "reports/packed-coefficient-observables.md",
+      "bytes": 13680,
+      "sha256": "a3c94e2c6a193ac9cf4445dc83b6609f94879076e39cd10af71ccd836b3ad0fd"
+    },
+    {
+      "path": "reports/packed-gauss-quotient.md",
+      "bytes": 10159,
+      "sha256": "5a14dff79453ba3c9eaa410063b7d09b9ff55d491bd3f558450edd04d1a7925d"
+    },
+    {
+      "path": "reports/two-common-products.md",
+      "bytes": 4865,
+      "sha256": "3b2193f7abf3fade0fd72333c53adc99d1a03091ecba78526d5c6c092780d9f4"
+    },
+    {
+      "path": "reports/weighted-twist-outcome.md",
+      "bytes": 4967,
+      "sha256": "c91c63c9c37431ebe001b80f63e751360a5784508b5cd475779cd074cf444f34"
+    },
+    {
+      "path": "reviews/higher-conductor-review.md",
+      "bytes": 10652,
+      "sha256": "29e23d4a5f5426f06c1efe47e835c90b5d5a71927c69b36ac2a7588e9adaac60"
+    },
+    {
+      "path": "reviews/implementation-review.md",
+      "bytes": 6455,
+      "sha256": "51b500914e8d5d7a77a4d0487f58022e84cd88bcfeb16dfd02571cceec32a814"
+    },
+    {
+      "path": "reviews/packed-gauss-independent-review.md",
+      "bytes": 6609,
+      "sha256": "a2cac2ae12f86693e2267ab0b95306f6901595f2da9dfecdd354c6275346d260"
+    },
+    {
+      "path": "reviews/two-common-products-review.md",
+      "bytes": 9123,
+      "sha256": "7904572c0efe16a632862b93afb733d7834aa3b383c976b167f6e37253a3737d"
+    },
+    {
+      "path": "reviews/two-products-sufficiency-addendum.md",
+      "bytes": 5796,
+      "sha256": "e0c8615374cbfba3a98489abe70011957fda127ada325012ef4da9add2be7e0c"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 941,
+      "sha256": "4f94fea1d7aa91aa25f3300b9e8c608295429cf82f56aa3b4ca48eefdedc90a8"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 2417,
+      "sha256": "56d048a92d2f969226aa980ab7c533d4a991d8376ba38af2170fae75d2200259"
+    }
+  ],
+  "scope": "Frozen research reports, reviews and exact implementation controls; no all-input sixth-rate or new Lean claim."
+}

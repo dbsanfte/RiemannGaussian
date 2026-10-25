@@ -1,0 +1,43 @@
+{
+  "local_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/sources/constructive-frontier-index.json",
+      "sha256": "9885d687eb030009277d8de7079d5d172a89a1632c277cb6d0aadc82b393bc3a",
+      "bytes": 5703
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46",
+      "bytes": 13939
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022/reports/sheared-norm-constructor.md",
+      "sha256": "f022b3c74067a223057a3fdbc47986007e119a11e01cd0a0340640b14e4c389d",
+      "bytes": 8387
+    },
+    {
+      "path": "docs/research-evidence/semiprime-dyadic-shared-20261022/reports/q-newton-contraction.md",
+      "sha256": "9812515436f8f2210c79b0b234677e48c2b00f4495f4b227943a5fa36f1383b1",
+      "bytes": 5225
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeLongPeriodExtraction.lean",
+      "sha256": "dfd7371fbe423bb0b63bdcd06fc5fc57bcedd562377dbae986e003d797e933a1",
+      "bytes": 18377
+    }
+  ],
+  "external_sources": [
+    {
+      "url": "https://arxiv.org/html/2512.19076v1",
+      "scope": "Primary rank-three lattice source; no sixth-rate theorem imported."
+    },
+    {
+      "url": "https://www.scielo.cl/pdf/cubo/v12n3/art01.pdf",
+      "scope": "Theorem 1 and its determinant model inspected by report author. Root separately proves the cleared determinant identity. No external runtime theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2601.11131v2",
+      "scope": "Previously used high-order setup theorem; no new inverse-order oracle."
+    }
+  ]
+}
