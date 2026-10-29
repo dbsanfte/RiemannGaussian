@@ -1,0 +1,21 @@
+[
+  {
+    "path": ".lake/build/ir",
+    "status": "copied_separate_writable_files",
+    "seconds": 63.6105202609906
+  },
+  {
+    "path": ".lake/build/bin",
+    "status": "absent"
+  },
+  {
+    "path": "vendor/zeta23/.lake/build/ir",
+    "status": "copied_separate_writable_files",
+    "seconds": 0.5664188360096887
+  },
+  {
+    "path": "vendor/openai-quasi-rh/.lake/build/ir",
+    "status": "copied_separate_writable_files",
+    "seconds": 23.569998310995288
+  }
+]

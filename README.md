@@ -99,10 +99,10 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Semiprime algorithm and formal verification checkpoint.** Publishes the deterministic subexponential factoring construction, recursive acquisition specification, checked machine components and accumulated research evidence. A dedicated algorithm explorer separates proved identities, verified components and unfinished integration.
-The complete semiprime bit-complexity theorem remains open. The RH direction and proved zero-free endpoint are unchanged.
+**Boundary contraction halves the leading leaf exponent.** Installs an acquired deterministic boundary partition and full-jet sorted-record contraction in the original-binary factoring algorithm. Lean proves exact factor bytes, a uniform half-exponent native leaf report, and the tighter actual call-count estimate.
+The complete original-input primitive-machine bit-complexity theorem remains open. The RH direction and proved zero-free endpoint are unchanged.
 [Current checked endpoint](RiemannGaussian/SuzukiLaplaceCompensator.lean#L246)
-· [Proof details](docs/research-evidence/semiprime-histogram-acquisition-20261027/next-explicit-rate-target.md).
+· [Proof details](docs/research-evidence/semiprime-boundary-hybrid-20261029/README.md).
 <!-- RH_DIRECTION:END -->
 
 ## Deterministic Semiprime Factoring
@@ -111,11 +111,12 @@ The complete semiprime bit-complexity theorem remains open. The RH direction and
 
 [![Semiprime algorithm proof explorer: established identities, verified machine components and remaining runtime obligations](docs/semiprime-proof-explorer/assets/preview.png)](https://dbsanfte.github.io/RiemannGaussian/semiprime-proof/)
 
-The factoring investigation has identified the acquisition algorithm and
-formalised its recursive contraction semantics and factor-recovery identity.
-Verified machine components implement parts of that construction. The
-remaining work is to finish their integration and prove the complete cost
-from the original binary input. **The full runtime theorem is not yet proved.**
+The factoring algorithm now uses an acquired deterministic boundary partition
+and full-jet contraction through sorted records. Lean proves the same complete
+factor bytes and a uniform half-exponent native leaf report on the scheduled
+original-input family. Verified machine components implement parts of the
+construction. Their complete primitive-bit integration remains open.
+**The full runtime theorem is not yet proved.**
 
 For every semiprime, the target is
 
@@ -129,8 +130,10 @@ proved mathematical identities, verified machine components, work in progress
 and the open whole-algorithm bound. Its algorithm-stage connections are a
 reading guide; source links and verification records provide the proof evidence.
 
-[Recursive acquisition](RiemannGaussian/SemiprimeD1WordTapeRecursiveCounter.lean)
+[Current factoring entry](RiemannGaussian/SemiprimeD1HybridAlgorithm.lean)
+· [Recursive acquisition](RiemannGaussian/SemiprimeD1HybridRecursiveCounter.lean)
 · [Exact useful scalar](RiemannGaussian/SemiprimeD1PackedNetworkOriginal.lean)
+· [Boundary hybrid proof and validation](docs/research-evidence/semiprime-boundary-hybrid-20261029/)
 · [Publication evidence](docs/research-evidence/semiprime-publication-20261029/)
 · [Research history](docs/semiprime-factorisation-investigation.md)
 · [Recent paper and literature review](docs/research-evidence/semiprime-ecdl-review-20261029/).

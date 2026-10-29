@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-29T21:08:20.340619+00:00",
+  "research_goal": {
+    "status": "paused",
+    "full_goal_complete": false,
+    "target": "deterministic ALL-semiprime factoring from binary N; 2^(C*ell/sqrt(log(ell+2)))*(ell+1)^d total bit time, fixed C,d",
+    "ell": "ceil(log2(N+1))",
+    "publication_is_not_goal_completion": true
+  },
+  "curated_stage_order_not_lean_dependencies": true,
+  "dependency_edges": "No extracted semantic/import dependency graph is claimed. The explorer provides current source and declaration-location links; stage order is curated.",
+  "validation_epoch": "Preserved historical groups plus fresh current source/evidence hash scan; native integration compiled audits are separate parent evidence.",
+  "summary": {
+    "current_semiprime_sources": 3229,
+    "current_source_bytes": 25151709,
+    "current_source_lines": 449948,
+    "module_status_counts": {
+      "legacy-unclassified": 1753,
+      "proved-math": 87,
+      "finalized-machine": 1380,
+      "draft": 9
+    },
+    "authoritative_final_groups": 82,
+    "final_group_memberships": 1410,
+    "unique_final_source_files": 1398,
+    "historical_final_source_bytes": 8553511,
+    "supplementary_historical_records": 58,
+    "archived_source_snapshots": 3
+  },
+  "stages": [
+    {
+      "id": "algorithm-correctness",
+      "title": "Mathematical factoring correctness",
+      "status": "proved",
+      "summary": "The mathematical factoring algorithm and the changed boundary hybrid have exact original-binary factor-byte correctness proofs. Complete primitive-bit running time remains open.",
+      "remaining": [
+        "The full original-input finite-machine time theorem remains open."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1PublicCorrectness",
+          "declaration": "RiemannGaussian.SemiprimeD1PublicCorrectness.factorBits_complete"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1PackedMomentRecovery",
+          "declaration": "RiemannGaussian.SemiprimeD1PackedMomentRecovery.factorization"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridCorrectness",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridPublicExecution.run_complete"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "root-records",
+      "title": "Acquire the original network from binary N",
+      "status": "finalized",
+      "summary": "Real owner/factor sources produce exact original records, with actual acquisition clocks and all allocated tapes counted.",
+      "remaining": [],
+      "groups": [
+        "root-network-records",
+        "full-factor-catalogue-final",
+        "root-owner-index"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackRootNetworkRecordsOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackFullFactorCatalogueOriginal"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "selection-and-packets",
+      "title": "Acquire selection and packet metadata",
+      "status": "finalized",
+      "summary": "Original-N sources acquire rows, incidences, colour selection, keys, padding and packet inventory; no supplied topology answers.",
+      "remaining": [],
+      "groups": [
+        "root-selection-acquire",
+        "root-packet-padding",
+        "root-packet-inventory"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackRootPacketInventoryOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackRootSelectionAcquireOriginal"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "packed-root",
+      "title": "Build the marked root and retain its caches",
+      "status": "finalized",
+      "summary": "Packed-moment algebra, marked tables, binary 2ell context and actual weighted root-record input are available; structural caches are reused separately from table payloads.",
+      "remaining": [],
+      "groups": [
+        "packed-moment",
+        "marked-root-records",
+        "packed-root-input",
+        "packed-root-cache-reuse"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackPackedRootInputOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1PackedRootFactoryInputs"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "weighted-modes",
+      "title": "Enumerate feasible weighted modes",
+      "status": "partial",
+      "summary": "A fixed finite controller and catalogue frontend enumerate feasible tuples with real frames and own costs on their prepared physical inputs.",
+      "remaining": [
+        "Literal current-node caller and original packet-to-mode input handoff remain to be joined."
+      ],
+      "groups": [
+        "weighted-mode-core",
+        "weighted-mode-catalogue"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackWeightedModeExecution"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackWeightedModeCatalogueExecution"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "phase-caches",
+      "title": "Acquire and restore phase contexts",
+      "status": "finalized",
+      "summary": "Actual phase/fresh records, chronological heap references and full cache restoration are checked, including rejected phases and distinct old/new contexts.",
+      "remaining": [],
+      "groups": [
+        "root-phase-fresh-records",
+        "fresh-bank-restore",
+        "cache-phase"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackRootPhaseFreshRecordsOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackCachePhaseLineage"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "child-factory",
+      "title": "Acquire activation, endpoints and ordered ports",
+      "status": "finalized",
+      "summary": "Core115/Ready258 physically compute exact native activation, ordered endpoint buckets and all old-vertex scope/order streams, including isolated vertices and empty/repeated buckets.",
+      "remaining": [
+        "The literal enclosing N-only call and context-header installation remain separate caller work."
+      ],
+      "groups": [
+        "child-group-factory"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackChildGroupFactoryOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackChildGroupFactoryReadyResources"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "child-tables",
+      "title": "Construct active and inactive child vertices",
+      "status": "mixed",
+      "summary": "Real Entry61/Table134, active136, inactive32 and literal Choice169 constructors are finalized on prepared physical operands.",
+      "remaining": [
+        "Complete chronological parent-record/activation/scope/order zip and complete child-network assembly remain open."
+      ],
+      "groups": [
+        "child-table-entry",
+        "child-lift-table",
+        "child-lift-vertex",
+        "child-unit-vertex",
+        "child-vertex-choice",
+        "child-vertex-endpoint"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackChildVertexChoiceOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackChildLiftVertexMeaning"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "old-vertex-stream",
+      "title": "Join all old child-vertex records",
+      "status": "draft",
+      "summary": "Nine OldVertexStream source files are current work in progress. Publication compilation checks do not constitute a FINAL reviewed group.",
+      "remaining": [
+        "Whole execution/resource/original ordered-stream closure and final independent review are not recorded as FINAL."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackOldVertexStream"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackOldVertexStreamSpec"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "recursive-counter",
+      "title": "Run the complete physical recursive counter",
+      "status": "open",
+      "summary": "Many finite source components exist, but one literal original-input controller supplying recursive child answers and the final scalar is unfinished.",
+      "remaining": [
+        "Actual recursive child production; mode/phase/grid caller joins; complete scalar-producing machine; one whole original-input clock."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1WordTapeRecursiveCounter"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1WordTapeRecursivePhase"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed. This historical physical-counter frontier is distinct from the newly closed native hybrid correctness and own-report joins."
+    },
+    {
+      "id": "phase-folds",
+      "title": "Fold child jets and log phase blocks",
+      "status": "mixed",
+      "summary": "Exact right-fold JetFold, block extraction and chronological CachePhaseBank246 are finalized with own costs on actual prepared child-result bytes.",
+      "remaining": [
+        "Recursive child-result production and enclosing original-N joins remain open."
+      ],
+      "groups": [
+        "jet-fold",
+        "jet-blocks",
+        "cache-phase-bank"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackJetFoldOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackCachePhaseBankOriginal"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "recovery-geometry",
+      "title": "Acquire recovery geometry and local weights",
+      "status": "mixed",
+      "summary": "Grid104, affine112, normalized inverse58, powers47, weights60, Node141 and KernelLinear29 are checked physical sources with explicit input boundaries.",
+      "remaining": [
+        "Whole canonical-row/kernel-product/fresh-jet construction and the literal caller are not yet assembled."
+      ],
+      "groups": [
+        "recovery-grid",
+        "recovery-affine",
+        "normalized-inverse",
+        "recovery-powers",
+        "recovery-weights",
+        "recovery-node",
+        "kernel-linear"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackRecoveryNodeOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackKernelLinearOriginal"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "recovery-data",
+      "title": "Acquire coordinate/entry data and denominator",
+      "status": "mixed",
+      "summary": "Physical phase-bank coordinate extraction, two-level entry lookup, common-denominator product and signed recovery finish are finalized on their actual tapes.",
+      "remaining": [
+        "Canonical-row producer, full numerator construction and whole recovery caller still need literal source joins."
+      ],
+      "groups": [
+        "recovery-coordinate",
+        "recovery-entries",
+        "recovery-denominator",
+        "recovery-finish"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackRecoveryEntriesOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackRecoveryDenominatorOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackRecoveryFinishOriginal"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "factor-readout",
+      "title": "Decode factors from the actual packed scalar",
+      "status": "mixed",
+      "summary": "Mathematical packed channels and physical scalar readout/square root/factor recovery are checked; the scalar word remains a prepared input.",
+      "remaining": [
+        "The complete primitive-machine original-N scalar-producing recursive counter remains open; new native hybrid factor-byte correctness is recorded separately."
+      ],
+      "groups": [
+        "packed-network-original",
+        "packed-moment-readout",
+        "binary-square-root",
+        "packed-factor-recovery"
+      ],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1PackedNetworkOriginal"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryOriginal"
+        }
+      ],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "boundary-partition",
+      "title": "Acquire a deterministic boundary partition",
+      "status": "proved",
+      "summary": "The actual integer colour search, local conditional averaging and occurrence-covariance bound close simultaneously. The executed partition has width at most M/2 + 3*cuberoot(M^2*Delta), with no supplied good colouring.",
+      "remaining": [
+        "Physical finite-machine realization and its complete primitive-bit costs remain open."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryConditionalAverage",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryConditionalAverage.acquire_potential_le"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryPartitionWidthRate",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryPartitionWidthRate.acquired_width_cuberoot"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryPartitionReachRate",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryPartitionReachRate.eventually_reach_stopped_width_half"
+        }
+      ],
+      "scope_note": "Native executed partition and proof-only finite expectation identities. The uniform stopped-leaf half exponent includes empty graphs; the zero-fuel companion requires the original scheduled depth/fuel condition."
+    },
+    {
+      "id": "boundary-record-leaf",
+      "title": "Contract full jets through sorted boundary records",
+      "status": "proved",
+      "summary": "The concrete leaf contracts full jet tensors through sorted occurrence records and preserves the complete canonical leaf bytes. Under the stated original context and degree caps, its complete checked native report, including paid validation, fits 2^((1/2 + epsilon)*s/sqrt(logarithm s)).",
+      "remaining": [
+        "The native operation report is not a complete primitive-machine bit-time certificate."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryLeafValue",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryLeaf.run_words"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryLeafPolynomial",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryLeafPolynomial.run_clock_polynomial"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryCheckedOriginalRate",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryCheckedOriginalRate.eventually_checked_uniform_half"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryLeafOriginalReachRate",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryLeafOriginalReachRate.eventually_original_stopped_half"
+        }
+      ],
+      "scope_note": "Full-jet native semantics, actual sorted-record costs and the complete checked leaf retained report. The original-input Reach corollary derives all context, size and degree caps. Its zero-fuel companion requires scheduled original fuel exhaustion; no arbitrary zero-fuel root or physical-stack cost promotion is claimed."
+    },
+    {
+      "id": "hybrid-public-correctness",
+      "title": "Return exact factors with a closed native report",
+      "status": "proved",
+      "summary": "The changed hybrid recursion and public decoder return the exact original binary factor bytes. Its actual own mixed native report now has a closed eventual bound 2^(C*inputScale(ell)), paying acquired prefixes, changed recursion, checked partition/contraction leaves and decoding, with no supplied prefix-clock premise.",
+      "remaining": [
+        "A fixed primitive-machine realization must still pay every bit operation, address, tape and coefficient cost before the complete total-bit theorem follows."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridAlgorithm",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridAlgorithm.factor_complete"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridCorrectness",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridPublicExecution.run_factors_eq_tape"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridOriginalRate",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridOriginalRate.eventually_public_report_rate"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridAlgorithm",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridAlgorithm.report_rate"
+        }
+      ],
+      "scope_note": "Exact changed-algorithm correctness and its closed mixed native retained-report rate. The constant precedes all sufficiently large bit lengths and compact positive inputs. This report mixes native operations and existing component allowances; it is not one complete primitive bit-machine simulation, and it does not substitute the old WordTape counter budget for changed recursion."
+    },
+    {
+      "id": "tighter-original-call-envelope",
+      "title": "Tighten the original controller call envelope",
+      "status": "proved",
+      "summary": "The sharper child shrink gives a summable call-count envelope and smaller leading constant. Its public-report rate transport applies explicitly to the existing WordTapePublicReport controller and budget.",
+      "remaining": [
+        "This result supplies no new whole-counter budget for the changed hybrid recursion."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridCallOriginal",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridCallOriginal.eventually_original_call_rate"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridCallReport",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridCallReport.eventually_public_report_rate"
+        }
+      ],
+      "scope_note": "Improved actual original call count and the old WordTapePublicReport rate scope. Theorem/file naming does not assert that the new hybrid public report has the same complete counter budget."
+    },
+    {
+      "id": "whole-bit-target",
+      "title": "Close the deterministic total-bit theorem",
+      "status": "open",
+      "summary": "The complete kernel-checked original-input bound at the requested exponent is not proved.",
+      "remaining": [
+        "Combine all actual acquisition, addressing, recursion, coefficient and recovery clocks for one fixed finite program before deriving the global rate."
+      ],
+      "groups": [],
+      "proof_anchors": [],
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    }
+  ]
+}

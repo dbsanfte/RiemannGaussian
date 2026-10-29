@@ -1,0 +1,333 @@
+{
+  "exitCode": 0,
+  "checks": [
+    {
+      "name": "whole-project-lint",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/LintProject.lean"
+      ],
+      "startedAt": "2026-10-29T21:12:36.856299+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 71.33524690099875
+    },
+    {
+      "name": "project-dashboard",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/GenerateProjectStatus.lean"
+      ],
+      "startedAt": "2026-10-29T21:13:48.192059+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 13.820591034018435
+    },
+    {
+      "name": "theorem-graph-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportTheoremGraph.lean"
+      ],
+      "startedAt": "2026-10-29T21:14:02.014365+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 601.820150443993
+    },
+    {
+      "name": "rh-graph-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportTheoremGraph.lean"
+      ],
+      "startedAt": "2026-10-29T21:14:02.014651+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 794.4064347490203
+    },
+    {
+      "name": "theorem-explorer",
+      "command": [
+        "python3",
+        "scripts/build_theorem_explorer.py",
+        "--node",
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T21:27:16.436412+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 7.761563731008209
+    },
+    {
+      "name": "theorem-graph-check",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node",
+        "scripts/check_theorem_graph.cjs"
+      ],
+      "startedAt": "2026-10-29T21:27:24.212440+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 5.132689196994761
+    },
+    {
+      "name": "cached-certificate-explorer",
+      "command": [
+        "python3",
+        "scripts/build_numerical_certificate_explorer.py",
+        "--node",
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T21:27:29.345936+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 1.4576579160057008
+    },
+    {
+      "name": "rh-explorer",
+      "command": [
+        "python3",
+        "scripts/build_rh_proof_explorer.py",
+        "--node",
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T21:27:30.818312+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 18.37485046297661
+    },
+    {
+      "name": "zero-free-plot-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportZeroFreePlot.lean"
+      ],
+      "startedAt": "2026-10-29T21:27:49.207818+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 9.123759019974386
+    },
+    {
+      "name": "zero-free-plot-build",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/plot-venv/bin/python",
+        "scripts/build_zero_free_plot.py"
+      ],
+      "startedAt": "2026-10-29T21:27:58.346348+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 1.617662922013551
+    },
+    {
+      "name": "certificate-plot-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportNumericalCertificatePlot.lean"
+      ],
+      "startedAt": "2026-10-29T21:27:59.978675+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 5.405032458016649
+    },
+    {
+      "name": "certificate-plot-build",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/plot-venv/bin/python",
+        "scripts/build_numerical_certificate_plot.py"
+      ],
+      "startedAt": "2026-10-29T21:28:05.384589+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 0.8135402279731352
+    },
+    {
+      "name": "quasi-rh-pin",
+      "command": [
+        "python3",
+        "scripts/verify_openai_quasi_rh.py"
+      ],
+      "startedAt": "2026-10-29T21:28:06.199758+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 0.30367768500582315
+    },
+    {
+      "name": "quasi-rh-build",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "build",
+        "OAI.NumberTheory.DirichletL.RowCompletion.ZeroFreeRegion",
+        "--wfail"
+      ],
+      "startedAt": "2026-10-29T21:28:06.504483+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 3.468036222999217
+    },
+    {
+      "name": "quasi-rh-integration",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/CheckQuasiRHIntegration.lean"
+      ],
+      "startedAt": "2026-10-29T21:28:09.973763+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 18.102717173984274
+    },
+    {
+      "name": "optional-build-config",
+      "command": [
+        "python3",
+        "scripts/test_numerical_certificate_build_config.py"
+      ],
+      "startedAt": "2026-10-29T21:28:28.078214+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 3.5793762789980974
+    },
+    {
+      "name": "theorem-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/bin/python",
+        "scripts/test_theorem_explorer.py"
+      ],
+      "startedAt": "2026-10-29T21:28:31.672709+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 9.543152323021786
+    },
+    {
+      "name": "certificate-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/bin/python",
+        "scripts/test_numerical_certificate_explorer.py"
+      ],
+      "startedAt": "2026-10-29T21:28:41.230912+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 2.933286407002015
+    },
+    {
+      "name": "rh-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/bin/python",
+        "scripts/test_rh_proof_explorer.py",
+        "--refresh-preview"
+      ],
+      "startedAt": "2026-10-29T21:28:44.166165+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 218.96786491799867
+    },
+    {
+      "name": "github-readme",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/bin/python",
+        "scripts/test_github_readme.py"
+      ],
+      "startedAt": "2026-10-29T21:32:23.135373+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 10.4514651770005
+    },
+    {
+      "name": "theorem-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_theorem_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T21:32:33.601887+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 7.623968491010601
+    },
+    {
+      "name": "rh-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_rh_proof_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T21:32:41.227199+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 19.137810369982617
+    },
+    {
+      "name": "semiprime-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_semiprime_proof_explorer.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T21:33:00.366778+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 10.468382224004017
+    },
+    {
+      "name": "cached-certificate-freshness",
+      "command": [
+        "python3",
+        "scripts/build_numerical_certificate_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T21:33:10.850453+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 1.452787833986804
+    },
+    {
+      "name": "zero-free-plot-freshness",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/plot-venv/bin/python",
+        "scripts/build_zero_free_plot.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T21:33:12.318386+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 1.5849902250047307
+    },
+    {
+      "name": "certificate-plot-freshness",
+      "command": [
+        "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/plot-venv/bin/python",
+        "scripts/build_numerical_certificate_plot.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T21:33:13.918569+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 0.7963981780048925
+    }
+  ]
+}

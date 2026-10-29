@@ -1,0 +1,16 @@
+[
+  {
+    "name": "whole-project-lint",
+    "command": [
+      "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "scripts/LintProject.lean"
+    ],
+    "startedAt": "2026-10-29T21:05:44.890038+00:00",
+    "status": "failed",
+    "exitCode": 1,
+    "elapsedSeconds": 72.2511393520108
+  }
+]

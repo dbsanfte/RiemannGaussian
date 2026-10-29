@@ -1,0 +1,49 @@
+{
+  "review_snapshot_utc": "2026-10-29T20:49:05.408410+00:00",
+  "sha256": {
+    "RiemannGaussian/SemiprimeD1BoundaryPlan.lean": "5895b75a780bbf210cbd6ecb5112e6fb90a38a63ad45511722384b121c07081a",
+    "RiemannGaussian/SemiprimeD1BoundaryPotential.lean": "4d5c46d600a6cefcecf2d4290a31eee2c8ef36778df039860e795e2539075fb2",
+    "RiemannGaussian/SemiprimeD1BoundaryChoice.lean": "c0e8f294fcc72603936ce9dfe6a4d531579eaadd2ce7bdc11ea86ddd484036b8",
+    "RiemannGaussian/SemiprimeD1BoundaryColourWords.lean": "ac1531187fb20c589b4b789f8c2b2026f776987c8bd3af84880a4f82a6ba5759",
+    "RiemannGaussian/SemiprimeD1BoundaryConditionalAverage.lean": "4eb1e966e69493c8e26f47e19f9b0a4e54415522bd828bd4494f5e4ff10aff5c",
+    "RiemannGaussian/SemiprimeD1BoundaryInitialVariance.lean": "4fc14b8bf46c3e487302d734d3befc82aa6ea52fed0a09ba5a0c0deb929aa70f",
+    "RiemannGaussian/SemiprimeD1BoundaryOverlap.lean": "f34dd99cd6f8a548d43e25686ab304de6f8a5bc5984c8110ba7b6e6df9ae9e97",
+    "RiemannGaussian/SemiprimeD1BoundaryVariance.lean": "cb30b38c57772f244becac84fc90b94d9401233d374634fa468bd5ce78c0975b",
+    "RiemannGaussian/SemiprimeD1BoundaryMergeMean.lean": "986faf140a55e9e03ac9aa9df26603a1bbbdb173265738059cb300c2e483c6c7",
+    "RiemannGaussian/SemiprimeD1BoundaryWidth.lean": "dae7a805cfa2c4cc6cd27192df6a80249ad4a68cd01c69503951be5985db0b4d",
+    "RiemannGaussian/SemiprimeD1BoundaryPartitionRate.lean": "227c42fc72b43b02369db7378a1e4e87d37bbcb56b665e42dbbe232902fe701f",
+    "RiemannGaussian/SemiprimeD1BoundaryPartitionWidthRate.lean": "9a1da2fe624517527c756c8f957297a4088a54ba8c3ae2792f5149488f7107ef",
+    "RiemannGaussian/SemiprimeD1BoundaryBudgetEnvelope.lean": "548f5094aa82c018975e51876a39d0135ac8a6df16a9b1dab869ba2ba2a10caa",
+    "RiemannGaussian/SemiprimeD1BoundaryLeaf.lean": "6ad8d883329d6cb3f7541c317b6e8e743cdcf5f88ab4bbb2647487589a1e42e3",
+    "RiemannGaussian/SemiprimeD1BoundaryLeafBounds.lean": "5abfa0e4d115af8e74e69d241efff2d3eea0492350df830da1865bdabf354023",
+    "RiemannGaussian/SemiprimeD1BoundaryLeafReport.lean": "1ef9c481194def706f1d9f0e5c65db5b2a8ffd17e854df4ab3591cecc0bda092",
+    "RiemannGaussian/SemiprimeD1BoundaryLeafLoad.lean": "6cd74bf8f79393876fda9a63828a668afb26070f03f08040139f24c7d7edf734",
+    "RiemannGaussian/SemiprimeD1BoundaryLeafPolynomial.lean": "20dee80aa3d326a06fda983657f2b688b2652e87a41d493866b209e3447ec9c1",
+    "RiemannGaussian/SemiprimeD1BoundaryPlanBudget.lean": "43db3c4b96dc6f1b73bbbd35fd35355010035b41f84d13a3da0a0afc65fa7156",
+    "RiemannGaussian/SemiprimeD1HybridCallOriginal.lean": "e61c89f590dc91ace5ec7d6030704f571c281204a0e5b4d0a631477fa0bfd5bc",
+    "RiemannGaussian/SemiprimeD1HybridCallEnvelope.lean": "0d2e35943b0e81a1fa2c3d905233990bd10c124d70180e47e0a27474c21edfa6",
+    "RiemannGaussian/SemiprimeD1HybridCallBranch.lean": "55cf70e0a66ee834bc698931055b24fdc1d0189fee6c4de147f7a9471cdf1f50",
+    "RiemannGaussian/SemiprimeD1HybridCallTree.lean": "df50e8be9212b939c6fb0b9d8050fd7eb64396b57382c88d90bdbc8671d8cbbf",
+    "RiemannGaussian/SemiprimeD1HybridCallReport.lean": "5b1ce9bd03cd79cdbf7b13419f771afc771c715f370cfe7caa0c91854558f3a7",
+    "RiemannGaussian/SemiprimeD1HybridPathRate.lean": "630da0eff46b75105817c4bebbb3b4a585dcb80558c242651e2a26255e9ae3ac",
+    "RiemannGaussian/SemiprimeD1HybridPathDecay.lean": "5e280977235f038bcb3855341bb803618e7d002ee933696fd9bc10ec81e6cf38",
+    "RiemannGaussian/SemiprimeD1HybridRecursiveCounter.lean": "2de3984365e9ace4f86d223609bf616c5dfbbc2f2227e953f24505dfc350dd8f",
+    "RiemannGaussian/SemiprimeD1HybridPublicExecution.lean": "09a42d9feb21bb52c3234330fb6fe5ffdf4476e4bf18b77d86ded02e9307b8f6",
+    "RiemannGaussian/SemiprimeD1HybridRecursiveKernel.lean": "bcd9290d157b1ea5d705ceb47460e74ea33d7e05e88d7e1beacf70febabfe440",
+    "RiemannGaussian/SemiprimeD1BoundaryPartitionOriginalRate.lean": "ee6be40c45dd7424ae3f49d5229fdb3ecf038f0bfe7318c4294b240bc81c7ba0",
+    "scripts/test_boundary_leaf.lean": "2a53a6dc8c09f3c703589a004c89476f753f0909cc7d194dd7b1ebe5ffefb561"
+  },
+  "review_additional_snapshot_utc": "2026-10-29T20:50:54.074105+00:00",
+  "note": "Only these exact bytes are covered; new proof BoundaryNetworkDegree is authored separately and is excluded from independent-review scope.",
+  "followup_snapshot_utc": "2026-10-29T20:52:24.601534+00:00",
+  "followup_sha256": {
+    "RiemannGaussian/SemiprimeD1BoundaryLeafOriginalRate.lean": "91014433730b82a175c9ff8ca7213958a0f46d74599006f4c0ad09951815576d",
+    "RiemannGaussian/SemiprimeD1HybridPublicReport.lean": "c7182eee92a1201195ecaa1a68f350fa541354a53fe34a6862c3e0e718bfef81"
+  },
+  "followup2_snapshot_utc": "2026-10-29T20:52:46.945138+00:00",
+  "followup2_sha256": {
+    "RiemannGaussian/SemiprimeD1BoundaryPartitionOriginalRate.lean": "6e8d7cd2bb2387927a629b38de6259fe7a8413d7ba0744de77c9d92396b337c5",
+    "RiemannGaussian/SemiprimeD1BoundaryPartitionReachRate.lean": "569f79b76560befe67e69737d9c2ff261feadfe99f70f0ecbf2ac072a38e0a5c",
+    "RiemannGaussian/SemiprimeD1BoundaryLeafOriginalRate.lean": "e24dfb30915c92068177a40c53544df7798e303c2dbf57b6b8a8f82775590d5a"
+  }
+}

@@ -2,7 +2,7 @@
 
 # Theorem-family index
 
-Browse all **6,199 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
+Browse all **6,268 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
 
 The family names, colours and assignments share the explorer's [evergreen metadata](../theorem-explorer/metadata.json). [Open the interactive proof chain](https://dbsanfte.github.io/RiemannGaussian/) for theorem statements, dependency paths and axiom audits.
 
@@ -25,6 +25,6 @@ The family names, colours and assignments share the explorer's [evergreen metada
 | [Hilbert inequalities & sampling](hilbert.md) | 12 | The attributed Montgomery–Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools. |
 | [Zero-proportion interfaces](certificates.md) | 22 | Attributed Zeta23 baselines and project extensions. Individual sources distinguish external results from new deductions. |
 | [Certified numerical bounds](numerics.md) | 317 | Exact interval bounds, phase tables, coupled affine supports and finite-cover verifiers. Candidate certificate obligations remain explicit. |
-| [Semiprime arithmetic](semiprime.md) | 3160 | Semiprime factor-location identities, exact multiplication networks, recursive tensor acquisition and verified machine components. The complete deterministic subexponential bit-complexity theorem remains open; research probes are optional. |
+| [Semiprime arithmetic](semiprime.md) | 3229 | Semiprime factor-location identities, exact multiplication networks, recursive tensor acquisition and verified machine components. The complete deterministic subexponential bit-complexity theorem remains open; research probes are optional. |
 
 The ordinary root is [RiemannGaussian.lean](../../RiemannGaussian.lean); the opt-in root is [NumericalCertificate.lean](../../NumericalCertificate.lean). See [certificate status and verification](../numerical-certificate.md). External dependency sources, licenses and provenance are kept under [vendor/zeta23](../../vendor/zeta23/) and [vendor/openai-quasi-rh](../../vendor/openai-quasi-rh/); Lean and mathlib are external boundary nodes in the explorer, rather than project source modules.

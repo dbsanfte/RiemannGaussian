@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+    "build",
+    "--wfail"
+  ],
+  "root": "/home/dbsanfte/riemann/semiprime-hybrid-20261029",
+  "startedAt": "2026-10-29T21:08:18.844264+00:00",
+  "reason": "Recheck documentation-only alias comment and whitespace cleanup; exact noncomment/nonwhitespace Lean token equality is archived.",
+  "exitCode": 0,
+  "elapsedSeconds": 193.57702412901563,
+  "finishedAt": "2026-10-29T21:11:32.421490+00:00"
+}

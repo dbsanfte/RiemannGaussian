@@ -1,0 +1,89 @@
+{
+  "status": "STRICT_COMPILES_AND_SCOPED_LINT_STD3_PASS_NOT_BROAD_PUBLICATION_GATES",
+  "worktree": "/home/dbsanfte/riemann/semiprime-hybrid-20261029",
+  "base_commit": "07968f5ea0bff8caf39973599280e6321211c682",
+  "owned_sources": [
+    {
+      "module": "RiemannGaussian.SemiprimeD1HybridPathDecay",
+      "path": "RiemannGaussian/SemiprimeD1HybridPathDecay.lean",
+      "sha256": "5e280977235f038bcb3855341bb803618e7d002ee933696fd9bc10ec81e6cf38",
+      "lines": 70,
+      "object_sha256": "e7bd966bdcf72ff98997ad475efa3c0519acd15e055926bf8be785ee049e7219",
+      "strict_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/hybrid-path-decay-attempt4.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1HybridPathRate",
+      "path": "RiemannGaussian/SemiprimeD1HybridPathRate.lean",
+      "sha256": "630da0eff46b75105817c4bebbb3b4a585dcb80558c242651e2a26255e9ae3ac",
+      "lines": 46,
+      "object_sha256": "334bda091d76d572801a81404d217f8466817be01a1a8c7251709cbc7a6f3d0b",
+      "strict_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/hybrid-path-rate.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1HybridCallEnvelope",
+      "path": "RiemannGaussian/SemiprimeD1HybridCallEnvelope.lean",
+      "sha256": "0d2e35943b0e81a1fa2c3d905233990bd10c124d70180e47e0a27474c21edfa6",
+      "lines": 89,
+      "object_sha256": "7acee3f2b2e9570d1616f5c96bcb1a402b4afb4cb6221183b5b3b66134f84650",
+      "strict_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/hybrid-call-envelope.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1HybridCallBranch",
+      "path": "RiemannGaussian/SemiprimeD1HybridCallBranch.lean",
+      "sha256": "55cf70e0a66ee834bc698931055b24fdc1d0189fee6c4de147f7a9471cdf1f50",
+      "lines": 119,
+      "object_sha256": "e3355fadb6a64f2da24fe86705f153b60ec9159e418d350d6fa413542fbca676",
+      "strict_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/hybrid-call-branch.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1HybridCallTree",
+      "path": "RiemannGaussian/SemiprimeD1HybridCallTree.lean",
+      "sha256": "df50e8be9212b939c6fb0b9d8050fd7eb64396b57382c88d90bdbc8671d8cbbf",
+      "lines": 102,
+      "object_sha256": "8bb95b6fa8d02855584b33fe321089d7a6b19669f1c417e20ce5627ec2f468b6",
+      "strict_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/hybrid-call-tree.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1HybridCallOriginal",
+      "path": "RiemannGaussian/SemiprimeD1HybridCallOriginal.lean",
+      "sha256": "e61c89f590dc91ace5ec7d6030704f571c281204a0e5b4d0a631477fa0bfd5bc",
+      "lines": 112,
+      "object_sha256": "48d23241163eb7fa269d31ee01113dcbcffa747d235817c91fc5b109dcbec0a7",
+      "strict_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/hybrid-call-original.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1HybridCallReport",
+      "path": "RiemannGaussian/SemiprimeD1HybridCallReport.lean",
+      "sha256": "5b1ce9bd03cd79cdbf7b13419f771afc771c715f370cfe7caa0c91854558f3a7",
+      "lines": 196,
+      "object_sha256": "c2bc65b7ac8d71f8c8025b64da9f0f192aedcd5a27cd38dacbac02667996a269",
+      "strict_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/hybrid-call-report-attempt2.log"
+    }
+  ],
+  "total_lines": 734,
+  "maxHeartbeats": "default200000; no override in owned sources",
+  "warningAsError": true,
+  "scoped_lint": "all7 namespaces PASS",
+  "all_generated_declarations": 63,
+  "theorem_constants": 53,
+  "standard_axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audit_exit": 0,
+  "audit_log": "/tmp/semiprime-publication-20261029/hybrid-call-scoped-audit-attempt2.log",
+  "audit_log_sha256": "8fafb028361a688b7f4460e6e3b413f3bc7c7631f3d23f55bfe90eb3b61e5e16",
+  "sources_and_canonical_writers_stopped": true,
+  "old18_note_source_pins_unchanged": true,
+  "full_primitive_bit_theorem": "OPEN",
+  "source_changes": "7 NEW modules only; no existing Lean source, root, journal, Git staging/commit/push edits by owner",
+  "api": "/tmp/semiprime-publication-20261029/hybrid-call-api.txt"
+}

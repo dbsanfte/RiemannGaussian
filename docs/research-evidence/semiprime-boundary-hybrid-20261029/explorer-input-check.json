@@ -1,0 +1,10 @@
+{
+  "status": "IN_MEMORY_BUILDER_SCHEMA_AND_ANCHORS_PASS_NO_ASSET_WRITES",
+  "outputs_prepared": 388,
+  "source_writers_stopped_before_scan": true,
+  "inventory_sha256": "462e8ca9c22392f32267909829f401a56419ae387970bb0cbe56a5fe1089fa32",
+  "progress_sha256": "a7aeb57d7d9777ba548b85bdfde99dac6e5d1fb8ae6fe69c896e42fc0dc24bc0",
+  "metadata_sha256": "3bbf9e9b3fcc11e855ed886ad1aec0596f5afe441d7282bf061e6770b324eb94",
+  "generated_assets_written": false,
+  "fresh_lean_build": false
+}

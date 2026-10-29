@@ -1,0 +1,47 @@
+{
+  "status": "STRICT_DEFAULT_200K_AND_SCOPED_LINT_ALL_GENERATED_STD3_PASS",
+  "sources": [
+    {
+      "module": "RiemannGaussian.SemiprimeD1BoundaryPartitionRate",
+      "source_sha256": "227c42fc72b43b02369db7378a1e4e87d37bbcb56b665e42dbbe232902fe701f",
+      "object_sha256": "1f9eb045efbbde5141a3b0401e43d4f151c6cc79dbbe245824b9aea9921552ec",
+      "strict_default_200k_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/SemiprimeD1BoundaryPartitionRate-strict.log",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1BoundaryPartitionWidthRate",
+      "source_sha256": "9a1da2fe624517527c756c8f957297a4088a54ba8c3ae2792f5149488f7107ef",
+      "object_sha256": "1f1f9744aff2d9d2823f6e5bf3b705162adf9be440995f878911263ad4de1b95",
+      "strict_default_200k_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/SemiprimeD1BoundaryPartitionWidthRate-strict.log",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1BoundaryPartitionOriginalRate",
+      "source_sha256": "6e8d7cd2bb2387927a629b38de6259fe7a8413d7ba0744de77c9d92396b337c5",
+      "object_sha256": "7b18714e99d990f6a1f28a1535d35b243c689c2c75a765c9d25f62274458dfd3",
+      "strict_default_200k_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/SemiprimeD1BoundaryPartitionOriginalRate-strict.log",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1BoundaryPartitionReachRate",
+      "source_sha256": "569f79b76560befe67e69737d9c2ff261feadfe99f70f0ecbf2ac072a38e0a5c",
+      "object_sha256": "5baf37c80e3fc3ddbeb0d3a915f740c280a795040bc1b33f76df6af67544c666",
+      "strict_default_200k_compile_exit": 0,
+      "compile_log": "/tmp/semiprime-publication-20261029/SemiprimeD1BoundaryPartitionReachRate-strict.log",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "audit_exit": 0,
+  "audit_sha256": "656e817a415298a281c2b4baa2a3651aadadab817b447b7897d804c2799bb8de",
+  "audit_output": "PARTITION_RATE_ALL_GENERATED_STD3_PASS declarations=43 theorems=41 modules=4",
+  "closed_results": [
+    "Actual K sufficient and minimal over literal bounded menu; K\u2264max2ceil(cuberoot(M/Delta)); previous cube test fails if K>2.",
+    "Actual acquired W\u2264M/2+3*cuberoot(M\u00b2Delta).",
+    "Uniform eventual graph width\u2264(1/2+eps)*s/sqrt(logarithm s), including M0exact0.",
+    "Actual Reach stopped concrete leaf-report width and scheduled original zero-fuel width have same half-exponent bound."
+  ],
+  "scope": "Zero-fuel endpoint explicitly requires logarithm(s)+1\u2264call.depth+0. No arbitrary zero-fuel root claim. Width/exponent result, not a full primitive-machine runtime theorem."
+}

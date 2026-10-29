@@ -27024,3 +27024,67 @@ mobile explorer and live GitHub README checks passed. The fresh-publication
 record preserves exact compressed/raw log hashes and prior failed setup/stale-
 asset checks separately. These are local results; exact-SHA CI/Pages remains the
 post-push publication gate. The full semiprime bit-time goal remains OPEN.
+
+## Acquired boundary hybrid installed, 2026-10-29
+
+After publication commit 07968f5ea0bff8caf39973599280e6321211c682 was pushed,
+the user requested integration of the supplied boundary-hybrid research note.
+The preserved note and all eighteen original source pins are under
+docs/research-evidence/semiprime-boundary-hybrid-20261029/source-note. The
+previous publication packet and all prior Lean source bodies remain unchanged.
+
+SemiprimeD1HybridAlgorithm.factor is the current original-binary entry. It fixes
+the acquired boundary leaf at inactive and exhausted-fuel calls, preserves the
+existing active grid/mode/group controller, and returns the exact old factor
+bytes. Canonical full-jet equality is proved from actual sorted cursor joins,
+equal-key reductions and the original incidence order. The executable validity
+scan and malformed-input fallback are both paid. Precision zero, isolated
+scalar vertices, parallel occurrences and repeated/conflicting prefixes remain.
+
+The actual polynomial conditional-expectation search now has a closed marginal,
+mean and covariance proof, including disjoint-edge cancellation and all ordered
+overlap occurrences. Its own integer-selected K gives actual width
+W <= M/2 + 3*(M^2*Delta)^(1/3). The actual full leaf report is a fixed polynomial
+in original graph dimensions and the complete current coefficient context times
+2^W+1. Sorted records, forward joins, metadata, local table acquisition and the
+validity guard are included. Original resource and Reach invariants yield the
+uniform checked-leaf rate 2^((1/2+epsilon)*s/sqrt(logarithm s)), eventually for
+every fixed epsilon>0. Scheduled fuel exhaustion retains its depth/fuel premise;
+an arbitrary manually truncated zero-fuel root has no such small-leaf guarantee.
+
+The factor-sixteen actual child shrink improves the call-count coefficient
+from 98304 to 393216/7, exactly 4/7 of the former coefficient. All actual branches
+and the cubic whole-counter call reserve remain. HybridOriginalCounterBudget
+and HybridOriginalRate join the changed execution's own active, checked-leaf,
+root, query and decoder reports; the public native report rate has no supplied
+leaf/prefix cost premise. HybridCallReport's older public endpoint still names
+WordTapePublicReport and must not be relabelled as the changed execution's clock.
+The whole-counter reserve remains conservative; the sharper half-leaf theorem
+is recorded separately rather than silently substituted into that reserve.
+
+The 69 new modules are reachable through the ordinary root. Focused strict
+compilation, complete scoped lint/standard-axiom audits, exact executable
+stopping-site comparisons and separate independent branch reviews are recorded
+in the new packet. The updated explorer has 3229 sources and 19 curated stages;
+these counts are not completion percentages or an extracted dependency graph.
+Fresh combined publication checks and exact-SHA remote results remain separate
+from focused checks until their recorded runs complete.
+
+These are native executable/retained-report gains. The full original-input
+primitive bit-machine theorem, including host control, memory, addressing and
+report-erasure lowering, remains OPEN. The asymptotic target remains
+2^(C*ell/sqrt(log(ell+2)))*(ell+1)^d. No stronger complexity class or factoring
+record follows from the leaf improvement; the broader research goal remains
+paused and incomplete during this focused integration/publication task.
+
+Final local integration validation passed: the ordinary build completed 18,219
+jobs, all declaration linters passed, and the compiled audit contains 6,005
+project modules, 199,126 declarations and 140,019 theorem declarations with zero
+project axioms, nonstandard theorem axioms or placeholder-dependent declarations.
+Only these counts changed on the dashboard; every analytic result and RH=false
+is preserved. All 26 publication gates and the dedicated semiprime desktop/mobile
+checks passed. Exact compressed/raw logs and failed pre-cleanup setup checks are
+preserved separately in the new packet's fresh-publication directory. The only
+publication cleanup added one alias docstring and removed one trailing space in
+new files; the archived token comparison confirms no statement/proof/body change.
+Commit-hook and exact-SHA remote outcomes are still subsequent publication gates.

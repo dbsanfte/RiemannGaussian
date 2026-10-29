@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-10-29T18:09:18.914197+00:00",
+  "generated_at_utc": "2026-10-29T21:08:20.340619+00:00",
   "research_goal": {
     "status": "paused",
     "full_goal_complete": false,
@@ -10,15 +10,15 @@
   },
   "curated_stage_order_not_lean_dependencies": true,
   "dependency_edges": "No extracted semantic/import dependency graph is claimed. The explorer provides current source and declaration-location links; stage order is curated.",
-  "validation_epoch": "historical component records plus fresh source/evidence hash scan; parent publication build separate",
+  "validation_epoch": "Preserved historical groups plus fresh current source/evidence hash scan; native integration compiled audits are separate parent evidence.",
   "summary": {
-    "current_semiprime_sources": 3160,
-    "current_source_bytes": 24613387,
-    "current_source_lines": 439184,
+    "current_semiprime_sources": 3229,
+    "current_source_bytes": 25151709,
+    "current_source_lines": 449948,
     "module_status_counts": {
       "legacy-unclassified": 1753,
+      "proved-math": 87,
       "finalized-machine": 1380,
-      "proved-math": 18,
       "draft": 9
     },
     "authoritative_final_groups": 82,
@@ -33,7 +33,7 @@
       "id": "algorithm-correctness",
       "title": "Mathematical factoring correctness",
       "status": "proved",
-      "summary": "The public native algorithm has a correctness theorem; this is separate from a whole primitive-bit running-time certificate.",
+      "summary": "The mathematical factoring algorithm and the changed boundary hybrid have exact original-binary factor-byte correctness proofs. Complete primitive-bit running time remains open.",
       "remaining": [
         "The full original-input finite-machine time theorem remains open."
       ],
@@ -46,6 +46,10 @@
         {
           "module": "RiemannGaussian.SemiprimeD1PackedMomentRecovery",
           "declaration": "RiemannGaussian.SemiprimeD1PackedMomentRecovery.factorization"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridCorrectness",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridPublicExecution.run_complete"
         }
       ],
       "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
@@ -240,7 +244,7 @@
           "module": "RiemannGaussian.SemiprimeD1WordTapeRecursivePhase"
         }
       ],
-      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+      "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed. This historical physical-counter frontier is distinct from the newly closed native hybrid correctness and own-report joins."
     },
     {
       "id": "phase-folds",
@@ -325,7 +329,7 @@
       "status": "mixed",
       "summary": "Mathematical packed channels and physical scalar readout/square root/factor recovery are checked; the scalar word remains a prepared input.",
       "remaining": [
-        "The original-N scalar-producing recursive counter remains open."
+        "The complete primitive-machine original-N scalar-producing recursive counter remains open; new native hybrid factor-byte correctness is recorded separately."
       ],
       "groups": [
         "packed-network-original",
@@ -342,6 +346,110 @@
         }
       ],
       "scope_note": "Curated algorithm-stage description; not an extracted Lean dependency edge or a claim that all caller joins are closed."
+    },
+    {
+      "id": "boundary-partition",
+      "title": "Acquire a deterministic boundary partition",
+      "status": "proved",
+      "summary": "The actual integer colour search, local conditional averaging and occurrence-covariance bound close simultaneously. The executed partition has width at most M/2 + 3*cuberoot(M^2*Delta), with no supplied good colouring.",
+      "remaining": [
+        "Physical finite-machine realization and its complete primitive-bit costs remain open."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryConditionalAverage",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryConditionalAverage.acquire_potential_le"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryPartitionWidthRate",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryPartitionWidthRate.acquired_width_cuberoot"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryPartitionReachRate",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryPartitionReachRate.eventually_reach_stopped_width_half"
+        }
+      ],
+      "scope_note": "Native executed partition and proof-only finite expectation identities. The uniform stopped-leaf half exponent includes empty graphs; the zero-fuel companion requires the original scheduled depth/fuel condition."
+    },
+    {
+      "id": "boundary-record-leaf",
+      "title": "Contract full jets through sorted boundary records",
+      "status": "proved",
+      "summary": "The concrete leaf contracts full jet tensors through sorted occurrence records and preserves the complete canonical leaf bytes. Under the stated original context and degree caps, its complete checked native report, including paid validation, fits 2^((1/2 + epsilon)*s/sqrt(logarithm s)).",
+      "remaining": [
+        "The native operation report is not a complete primitive-machine bit-time certificate."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryLeafValue",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryLeaf.run_words"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryLeafPolynomial",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryLeafPolynomial.run_clock_polynomial"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryCheckedOriginalRate",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryCheckedOriginalRate.eventually_checked_uniform_half"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1BoundaryLeafOriginalReachRate",
+          "declaration": "RiemannGaussian.SemiprimeD1BoundaryLeafOriginalReachRate.eventually_original_stopped_half"
+        }
+      ],
+      "scope_note": "Full-jet native semantics, actual sorted-record costs and the complete checked leaf retained report. The original-input Reach corollary derives all context, size and degree caps. Its zero-fuel companion requires scheduled original fuel exhaustion; no arbitrary zero-fuel root or physical-stack cost promotion is claimed."
+    },
+    {
+      "id": "hybrid-public-correctness",
+      "title": "Return exact factors with a closed native report",
+      "status": "proved",
+      "summary": "The changed hybrid recursion and public decoder return the exact original binary factor bytes. Its actual own mixed native report now has a closed eventual bound 2^(C*inputScale(ell)), paying acquired prefixes, changed recursion, checked partition/contraction leaves and decoding, with no supplied prefix-clock premise.",
+      "remaining": [
+        "A fixed primitive-machine realization must still pay every bit operation, address, tape and coefficient cost before the complete total-bit theorem follows."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridAlgorithm",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridAlgorithm.factor_complete"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridCorrectness",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridPublicExecution.run_factors_eq_tape"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridOriginalRate",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridOriginalRate.eventually_public_report_rate"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridAlgorithm",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridAlgorithm.report_rate"
+        }
+      ],
+      "scope_note": "Exact changed-algorithm correctness and its closed mixed native retained-report rate. The constant precedes all sufficiently large bit lengths and compact positive inputs. This report mixes native operations and existing component allowances; it is not one complete primitive bit-machine simulation, and it does not substitute the old WordTape counter budget for changed recursion."
+    },
+    {
+      "id": "tighter-original-call-envelope",
+      "title": "Tighten the original controller call envelope",
+      "status": "proved",
+      "summary": "The sharper child shrink gives a summable call-count envelope and smaller leading constant. Its public-report rate transport applies explicitly to the existing WordTapePublicReport controller and budget.",
+      "remaining": [
+        "This result supplies no new whole-counter budget for the changed hybrid recursion."
+      ],
+      "groups": [],
+      "proof_anchors": [
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridCallOriginal",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridCallOriginal.eventually_original_call_rate"
+        },
+        {
+          "module": "RiemannGaussian.SemiprimeD1HybridCallReport",
+          "declaration": "RiemannGaussian.SemiprimeD1HybridCallReport.eventually_public_report_rate"
+        }
+      ],
+      "scope_note": "Improved actual original call count and the old WordTapePublicReport rate scope. Theorem/file naming does not assert that the new hybrid public report has the same complete counter budget."
     },
     {
       "id": "whole-bit-target",

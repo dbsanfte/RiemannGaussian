@@ -1,0 +1,27 @@
+{
+  "status": "STRICT_DEFAULT_200K_AND_SCOPED_LINT_ALL_GENERATED_STD3_PASS",
+  "sources": [
+    {
+      "module": "RiemannGaussian.SemiprimeD1BoundaryInitialVariance",
+      "source_sha256": "4fc14b8bf46c3e487302d734d3befc82aa6ea52fed0a09ba5a0c0deb929aa70f",
+      "object_sha256": "b1336747c6b62deda77685b00a0b7ce677ce3c87c11aeb7d963649ceb2294760",
+      "strict_default_200k_compile_exit": 0
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1BoundaryOverlap",
+      "source_sha256": "f34dd99cd6f8a548d43e25686ab304de6f8a5bc5984c8110ba7b6e6df9ae9e97",
+      "object_sha256": "7eb4c6c175343e28c58697392608bfacb6c25f0e267daa530bdf1d7e9b6ae394",
+      "strict_default_200k_compile_exit": 0
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1BoundaryVariance",
+      "source_sha256": "cb30b38c57772f244becac84fc90b94d9401233d374634fa468bd5ce78c0975b",
+      "object_sha256": "ec905b7bbb86cfd9ee7c38ab3978662d080d4e97bde5e7048e67a736ceac54e0",
+      "strict_default_200k_compile_exit": 0
+    }
+  ],
+  "audit_exit": 0,
+  "audit_sha256": "42d9e970770f5b372ec9e0b48319c3a973b3d7058bc84a0945713987d449a6ed",
+  "audit_output": "VARIANCE_ALL_GENERATED_STD3_PASS declarations=67 theorems=62 modules=3",
+  "frontier": "Actual variance and overlap sum complete conditional only on exact event-count mean identification; bucket mean closed, merge mean parent-owned."
+}

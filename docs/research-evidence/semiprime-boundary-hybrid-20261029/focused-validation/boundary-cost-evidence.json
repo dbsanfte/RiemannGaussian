@@ -1,0 +1,32 @@
+{
+  "scope": "actual mixed native retained report; not primitive finite-machine clock certification",
+  "final_module": "RiemannGaussian.SemiprimeD1BoundaryLeafPolynomial",
+  "final_api": "run_clock_polynomial ctx net WellFormed GoodVertices",
+  "bound": "run.clock <= closedBudget(ctx,original V,original M) * (2^(acquired plan.width)+1)",
+  "fixed_polynomial": "closedBudget = acquisitionBudget(V,M) + uniformFactor(ctx,V,M) + 10*inputFactor(ctx,V,M)",
+  "context_dimensions": [
+    "axes.length",
+    "axes.sum",
+    "rank",
+    "precision"
+  ],
+  "full_record_capacity": "K + rank*(precision+1) + 2; includes rank delimiters at precision zero",
+  "full_jet_arithmetic": "JetRingBounds.mulBudget(axes.length, rank, complete request/table record bytes, precision)",
+  "no_square_catalogue": "actual sort O(N log N), lookup O(Nrequests+Ntable), grouping O(N); canonical table setup contributes O(poly*2^arity), arity bounded by actual acquired incident load",
+  "actual_partition_link": "LeafLoad.width_le_plan from actual prefix metadata and three-region union_load; no advice input",
+  "final_ports_api": "BoundaryLeafLoad.acquired_empty_ports ctx net (no WellFormed hypothesis)",
+  "validation": "strict pinned Lean warningAsError, default 200000 heartbeats; scoped lint; all generated declarations Std3 audit",
+  "runtime_edits": "none by cost agent",
+  "scope_audit": {
+    "exit": 0,
+    "generated_declarations": 395,
+    "theorems": 320,
+    "modules": 13,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "strict_command": "ELAN_HOME=/home/dbsanfte/riemann/.lean/elan LEAN_NUM_THREADS=2 /home/dbsanfte/riemann/.lean/elan/bin/lake env lean -DwarningAsError=true -o .lake/build/lib/lean/RiemannGaussian/NAME.olean RiemannGaussian/NAME.lean"
+}

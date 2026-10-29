@@ -1,0 +1,751 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-29T21:36:04.315162+00:00",
+  "status": "LOCAL_COMBINED_BUILD_AND_PUBLICATION_GATES_PASS",
+  "scope": "Actual final ordinary build, full declaration/axiom audit, 26 publication gates, source preservation and staged source checks; remote CI/Pages and commit hook have separate subsequent outcomes.",
+  "ordinary_build": {
+    "command": [
+      "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+      "build",
+      "--wfail"
+    ],
+    "root": "/home/dbsanfte/riemann/semiprime-hybrid-20261029",
+    "startedAt": "2026-10-29T21:08:18.844264+00:00",
+    "reason": "Recheck documentation-only alias comment and whitespace cleanup; exact noncomment/nonwhitespace Lean token equality is archived.",
+    "exitCode": 0,
+    "elapsedSeconds": 193.57702412901563,
+    "finishedAt": "2026-10-29T21:11:32.421490+00:00"
+  },
+  "publication_gates": {
+    "exitCode": 0,
+    "checks": [
+      {
+        "name": "whole-project-lint",
+        "command": [
+          "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "scripts/LintProject.lean"
+        ],
+        "startedAt": "2026-10-29T21:12:36.856299+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 71.33524690099875
+      },
+      {
+        "name": "project-dashboard",
+        "command": [
+          "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "scripts/GenerateProjectStatus.lean"
+        ],
+        "startedAt": "2026-10-29T21:13:48.192059+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 13.820591034018435
+      },
+      {
+        "name": "theorem-graph-export",
+        "command": [
+          "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "scripts/ExportTheoremGraph.lean"
+        ],
+        "startedAt": "2026-10-29T21:14:02.014365+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 601.820150443993
+      },
+      {
+        "name": "rh-graph-export",
+        "command": [
+          "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "scripts/ExportTheoremGraph.lean"
+        ],
+        "startedAt": "2026-10-29T21:14:02.014651+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 794.4064347490203
+      },
+      {
+        "name": "theorem-explorer",
+        "command": [
+          "python3",
+          "scripts/build_theorem_explorer.py",
+          "--node",
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+        ],
+        "startedAt": "2026-10-29T21:27:16.436412+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 7.761563731008209
+      },
+      {
+        "name": "theorem-graph-check",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node",
+          "scripts/check_theorem_graph.cjs"
+        ],
+        "startedAt": "2026-10-29T21:27:24.212440+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 5.132689196994761
+      },
+      {
+        "name": "cached-certificate-explorer",
+        "command": [
+          "python3",
+          "scripts/build_numerical_certificate_explorer.py",
+          "--node",
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+        ],
+        "startedAt": "2026-10-29T21:27:29.345936+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 1.4576579160057008
+      },
+      {
+        "name": "rh-explorer",
+        "command": [
+          "python3",
+          "scripts/build_rh_proof_explorer.py",
+          "--node",
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+        ],
+        "startedAt": "2026-10-29T21:27:30.818312+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 18.37485046297661
+      },
+      {
+        "name": "zero-free-plot-export",
+        "command": [
+          "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "scripts/ExportZeroFreePlot.lean"
+        ],
+        "startedAt": "2026-10-29T21:27:49.207818+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 9.123759019974386
+      },
+      {
+        "name": "zero-free-plot-build",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/plot-venv/bin/python",
+          "scripts/build_zero_free_plot.py"
+        ],
+        "startedAt": "2026-10-29T21:27:58.346348+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 1.617662922013551
+      },
+      {
+        "name": "certificate-plot-export",
+        "command": [
+          "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "scripts/ExportNumericalCertificatePlot.lean"
+        ],
+        "startedAt": "2026-10-29T21:27:59.978675+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 5.405032458016649
+      },
+      {
+        "name": "certificate-plot-build",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/plot-venv/bin/python",
+          "scripts/build_numerical_certificate_plot.py"
+        ],
+        "startedAt": "2026-10-29T21:28:05.384589+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 0.8135402279731352
+      },
+      {
+        "name": "quasi-rh-pin",
+        "command": [
+          "python3",
+          "scripts/verify_openai_quasi_rh.py"
+        ],
+        "startedAt": "2026-10-29T21:28:06.199758+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 0.30367768500582315
+      },
+      {
+        "name": "quasi-rh-build",
+        "command": [
+          "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+          "build",
+          "OAI.NumberTheory.DirichletL.RowCompletion.ZeroFreeRegion",
+          "--wfail"
+        ],
+        "startedAt": "2026-10-29T21:28:06.504483+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 3.468036222999217
+      },
+      {
+        "name": "quasi-rh-integration",
+        "command": [
+          "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "scripts/CheckQuasiRHIntegration.lean"
+        ],
+        "startedAt": "2026-10-29T21:28:09.973763+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 18.102717173984274
+      },
+      {
+        "name": "optional-build-config",
+        "command": [
+          "python3",
+          "scripts/test_numerical_certificate_build_config.py"
+        ],
+        "startedAt": "2026-10-29T21:28:28.078214+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 3.5793762789980974
+      },
+      {
+        "name": "theorem-explorer-browser",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/bin/python",
+          "scripts/test_theorem_explorer.py"
+        ],
+        "startedAt": "2026-10-29T21:28:31.672709+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 9.543152323021786
+      },
+      {
+        "name": "certificate-explorer-browser",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/bin/python",
+          "scripts/test_numerical_certificate_explorer.py"
+        ],
+        "startedAt": "2026-10-29T21:28:41.230912+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 2.933286407002015
+      },
+      {
+        "name": "rh-explorer-browser",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/bin/python",
+          "scripts/test_rh_proof_explorer.py",
+          "--refresh-preview"
+        ],
+        "startedAt": "2026-10-29T21:28:44.166165+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 218.96786491799867
+      },
+      {
+        "name": "github-readme",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/bin/python",
+          "scripts/test_github_readme.py"
+        ],
+        "startedAt": "2026-10-29T21:32:23.135373+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 10.4514651770005
+      },
+      {
+        "name": "theorem-explorer-freshness",
+        "command": [
+          "python3",
+          "scripts/build_theorem_explorer.py",
+          "--check",
+          "--node",
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+        ],
+        "startedAt": "2026-10-29T21:32:33.601887+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 7.623968491010601
+      },
+      {
+        "name": "rh-explorer-freshness",
+        "command": [
+          "python3",
+          "scripts/build_rh_proof_explorer.py",
+          "--check",
+          "--node",
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+        ],
+        "startedAt": "2026-10-29T21:32:41.227199+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 19.137810369982617
+      },
+      {
+        "name": "semiprime-explorer-freshness",
+        "command": [
+          "python3",
+          "scripts/build_semiprime_proof_explorer.py",
+          "--check"
+        ],
+        "startedAt": "2026-10-29T21:33:00.366778+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 10.468382224004017
+      },
+      {
+        "name": "cached-certificate-freshness",
+        "command": [
+          "python3",
+          "scripts/build_numerical_certificate_explorer.py",
+          "--check",
+          "--node",
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+        ],
+        "startedAt": "2026-10-29T21:33:10.850453+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 1.452787833986804
+      },
+      {
+        "name": "zero-free-plot-freshness",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/plot-venv/bin/python",
+          "scripts/build_zero_free_plot.py",
+          "--check"
+        ],
+        "startedAt": "2026-10-29T21:33:12.318386+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 1.5849902250047307
+      },
+      {
+        "name": "certificate-plot-freshness",
+        "command": [
+          "/home/dbsanfte/riemann/semiprime-hybrid-20261029/.lake/plot-venv/bin/python",
+          "scripts/build_numerical_certificate_plot.py",
+          "--check"
+        ],
+        "startedAt": "2026-10-29T21:33:13.918569+00:00",
+        "status": "passed",
+        "exitCode": 0,
+        "elapsedSeconds": 0.7963981780048925
+      }
+    ]
+  },
+  "semiprime_browser": "Eight unit fixtures plus desktop/mobile file and HTTP modes PASS after cleanup; exact logs archived.",
+  "compiled_environment": {
+    "compiledProjectDeclarations": 199126,
+    "compiledProjectModules": 6005,
+    "nonstandardTheoremAxioms": [],
+    "placeholderDependentDeclarations": 0,
+    "projectAxioms": 0,
+    "projectTheorems": 140019,
+    "rhImplied": false
+  },
+  "preserved_source_note_files": 5,
+  "preserved_original_source_pins": 18,
+  "full_primitive_bit_goal_complete": false,
+  "files": [
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/build-cache-copy.json",
+      "sha256": "acb1f5e07292b5fbb844f33ebe1876288a542f6816b53b7a23318c9c5fe454a5",
+      "bytes": 464,
+      "encoding": "identity",
+      "raw_sha256": "acb1f5e07292b5fbb844f33ebe1876288a542f6816b53b7a23318c9c5fe454a5",
+      "raw_bytes": 464
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/cached-certificate-explorer.log.gz",
+      "sha256": "99ce95664d99dc59fb7f444d0df7666f09dc13071010070d18d54bb007563c1d",
+      "bytes": 163,
+      "encoding": "gzip",
+      "raw_sha256": "c0f8ab95b9c4929beda368153c564d2c8c961451e8891ee50cc807c6f8d67d11",
+      "raw_bytes": 198
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/cached-certificate-freshness.log.gz",
+      "sha256": "99ce95664d99dc59fb7f444d0df7666f09dc13071010070d18d54bb007563c1d",
+      "bytes": 163,
+      "encoding": "gzip",
+      "raw_sha256": "c0f8ab95b9c4929beda368153c564d2c8c961451e8891ee50cc807c6f8d67d11",
+      "raw_bytes": 198
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/certificate-explorer-browser.log.gz",
+      "sha256": "aba4a03a2d4848bf54e9e65e320417c0cf44c147edc98e61f6146413d9dea0ec",
+      "bytes": 390,
+      "encoding": "gzip",
+      "raw_sha256": "e1be09c7dd2fd8494cbfe7e5da91ba3dff43b5c4761bfa47e58f56bf727591ba",
+      "raw_bytes": 912
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/certificate-plot-build.log.gz",
+      "sha256": "9afc68dc1dd10a35439af5f3c984961815d1c304582ee67c0cdf8f7a9bd16440",
+      "bytes": 97,
+      "encoding": "gzip",
+      "raw_sha256": "68f544ee021c6d0ea1b3db08861ead30aa9d3ca8e8dc02473dd029282c807bd5",
+      "raw_bytes": 93
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/certificate-plot-export.log.gz",
+      "sha256": "8ecece2a0c366d9df7c4073a05978d0b376411867312740458fd5c42dd1e0e42",
+      "bytes": 82,
+      "encoding": "gzip",
+      "raw_sha256": "35bb3090568f9076eb60ddc1c0d0c370a20c231d13efca875a4e3419bc0f72d4",
+      "raw_bytes": 67
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/certificate-plot-freshness.log.gz",
+      "sha256": "9afc68dc1dd10a35439af5f3c984961815d1c304582ee67c0cdf8f7a9bd16440",
+      "bytes": 97,
+      "encoding": "gzip",
+      "raw_sha256": "68f544ee021c6d0ea1b3db08861ead30aa9d3ca8e8dc02473dd029282c807bd5",
+      "raw_bytes": 93
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/git-diff-check-before-cleanup.log.gz",
+      "sha256": "7ed405cc3ef748beb67106f801f69d1a751dff8ca7b48cd41ba1f08b50f804bb",
+      "bytes": 130,
+      "encoding": "gzip",
+      "raw_sha256": "eae87a456aaaa40143decf5cb184b822ee2902e47dc3f5acf38ddae0d1aa6aae",
+      "raw_bytes": 112
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/git-diff-check.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "encoding": "gzip",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/github-readme.log.gz",
+      "sha256": "daedd118e01cbd0fd363d52ee065cdd5dc1a92ae2d9932929dd317c362699262",
+      "bytes": 563,
+      "encoding": "gzip",
+      "raw_sha256": "8c907fc52652b287b3b4973d3f24748e9be75c31877cbcdb358d0abdfa0728e8",
+      "raw_bytes": 2783
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/lake-build-before-publication-cleanup-result.json",
+      "sha256": "1b5d65b04169c15ec04f319ac4a9af0b9057a2f1b144a1f3deb6f4a3d0ed4cac",
+      "bytes": 320,
+      "encoding": "identity",
+      "raw_sha256": "1b5d65b04169c15ec04f319ac4a9af0b9057a2f1b144a1f3deb6f4a3d0ed4cac",
+      "raw_bytes": 320
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/lake-build-before-publication-cleanup.log.gz",
+      "sha256": "55bb013b43936d0e10ee92becf8138d77a4c943b59bace572498c65db968c404",
+      "bytes": 5582,
+      "encoding": "gzip",
+      "raw_sha256": "f5b1d85a18be4b0c207034fd5bbaed94e369a46a8ca14b566bef52f0f6a02e47",
+      "raw_bytes": 69174
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/lake-build-result.json",
+      "sha256": "d3355601b1d0651051ad705a77e523aecbb20e7e5967750ba05c3a0a73128d6d",
+      "bytes": 466,
+      "encoding": "identity",
+      "raw_sha256": "d3355601b1d0651051ad705a77e523aecbb20e7e5967750ba05c3a0a73128d6d",
+      "raw_bytes": 466
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/lake-build.log.gz",
+      "sha256": "685c2d38d81be0b7ccf4d38ad342c606d6def3aeb2ba069448ce490fae18cd64",
+      "bytes": 5293,
+      "encoding": "gzip",
+      "raw_sha256": "9f8c3a3d061488824238209c43f1bb6970b2fc8f6db6721e5ca5dd5403046512",
+      "raw_bytes": 67576
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/optional-build-config.log.gz",
+      "sha256": "ecc69f71bf5960028c0c688349a75417da728a67ea102ecfd4f7722c68ec6627",
+      "bytes": 268,
+      "encoding": "gzip",
+      "raw_sha256": "5e98689f9d5af7003c983976c24b5fe9bc69340bcfbfa2f33f82db782b043314",
+      "raw_bytes": 457
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/placeholder-scan-before-index-sync.log.gz",
+      "sha256": "74073b45b4bf89e4e221291b716203f77fc967536bdaccb8d08d5ffa49ce6cae",
+      "bytes": 177,
+      "encoding": "gzip",
+      "raw_sha256": "c9a718fe4d8f47b611d5b4fbd85aaef96b737a6f3c049050d4fd45b1fa35a372",
+      "raw_bytes": 200
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/placeholder-scan.log.gz",
+      "sha256": "0c04903102bd07c1faa8602687473fafd46c088c08bacfb8edc9a0cd11e16072",
+      "bytes": 70,
+      "encoding": "gzip",
+      "raw_sha256": "7ca233c62b0baaed923374d60fba5492c1edfc5ca4e2c628e3c4a5f1aa127a19",
+      "raw_bytes": 52
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/project-dashboard.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "encoding": "gzip",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/publication-gates-before-cleanup.json",
+      "sha256": "03d8546b44e56de9771061f0cfb8278350124810fe505e27d29e86da86f5feae",
+      "bytes": 348,
+      "encoding": "identity",
+      "raw_sha256": "03d8546b44e56de9771061f0cfb8278350124810fe505e27d29e86da86f5feae",
+      "raw_bytes": 348
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/publication-gates-result.json",
+      "sha256": "ad29e705adc146b07ff6ef5dcf5539ebc78a09ddada6c3d88da68bc7cbdcbbbe",
+      "bytes": 10065,
+      "encoding": "identity",
+      "raw_sha256": "ad29e705adc146b07ff6ef5dcf5539ebc78a09ddada6c3d88da68bc7cbdcbbbe",
+      "raw_bytes": 10065
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/publication-runner-before-cleanup.log.gz",
+      "sha256": "767e879142df541001536aee3f248b33972fc46dbd5abd8bbbc0b031b12a20b1",
+      "bytes": 62,
+      "encoding": "gzip",
+      "raw_sha256": "e17ee8042918cc42f78e3da2022f738149222e990f4ce732bce65c129bf1ae55",
+      "raw_bytes": 58
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/publication-runner.log.gz",
+      "sha256": "35f41b6ca8c0424f4d12a858e24d9046d342b7c8e0fe1046117c484d42a0fd89",
+      "bytes": 422,
+      "encoding": "gzip",
+      "raw_sha256": "aa50c382d7a21250969c6fa30e5280234430e735516c8bb4f84d209a0767354e",
+      "raw_bytes": 1667
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/quasi-rh-build.log.gz",
+      "sha256": "38deffe6c681db2452690de8b36553ff790b3bc21627de8ba861211ef2bdfbe4",
+      "bytes": 62,
+      "encoding": "gzip",
+      "raw_sha256": "cc87acb6b2b9080ca50d34d07c4e9cf35c23cabe2eb3fad1e3c4f60171bff6e0",
+      "raw_bytes": 42
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/quasi-rh-integration.log.gz",
+      "sha256": "29bec90a4d49f35b07abd7ce3e2bb6c727bce557c99b0bba098cdbbe0fa125db",
+      "bytes": 718,
+      "encoding": "gzip",
+      "raw_sha256": "65f284afdcd0ed1afda27f4822954e45f87a9c8154d9b0d000de0a2e8474b822",
+      "raw_bytes": 2529
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/quasi-rh-pin.log.gz",
+      "sha256": "ca530224680ac87ae5dac84dc42be7653804677f667014dc8a02f14e9f2326c4",
+      "bytes": 101,
+      "encoding": "gzip",
+      "raw_sha256": "fd0bd89db2520e662fb614ddf8cd2fed10d74be1e614b559cd2b8213acdad130",
+      "raw_bytes": 89
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/rh-explorer-browser.log.gz",
+      "sha256": "a5d26a5dfab30b67cb8eec6e2a7d0ecba7edf62631fd5374d3443887ea43fd35",
+      "bytes": 906,
+      "encoding": "gzip",
+      "raw_sha256": "1907bfa0a2f3ef18efa218cc927cfc844e5889ec240f42e47dfc379944eb6201",
+      "raw_bytes": 3533
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/rh-explorer-freshness.log.gz",
+      "sha256": "40c8aade941201f921569bad7c51afb18f3838487dc99604a49e5e8c3df8684c",
+      "bytes": 163,
+      "encoding": "gzip",
+      "raw_sha256": "fc2d75acbdc980760c96968c299fbb242e12ee114c7c45d5dce940e1ac5fb519",
+      "raw_bytes": 190
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/rh-explorer.log.gz",
+      "sha256": "40c8aade941201f921569bad7c51afb18f3838487dc99604a49e5e8c3df8684c",
+      "bytes": 163,
+      "encoding": "gzip",
+      "raw_sha256": "fc2d75acbdc980760c96968c299fbb242e12ee114c7c45d5dce940e1ac5fb519",
+      "raw_bytes": 190
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/rh-graph-export.log.gz",
+      "sha256": "36a673ae3a00a2286e260fa011182d46f5744012bb986c4b728cbb605b26bbce",
+      "bytes": 69,
+      "encoding": "gzip",
+      "raw_sha256": "14a0932eed8fc3942dbce8dab0625e3fb1a9d4e60e7194d293acd32fc72b58fe",
+      "raw_bytes": 49
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/root-reachability.json",
+      "sha256": "97eec32c2ce15e036c6abf4265d651520208b5d47931adfa07d4f2017e03ed7a",
+      "bytes": 81,
+      "encoding": "identity",
+      "raw_sha256": "97eec32c2ce15e036c6abf4265d651520208b5d47931adfa07d4f2017e03ed7a",
+      "raw_bytes": 81
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/semiprime-browser-after-cleanup.log.gz",
+      "sha256": "9b1d9f4b684da7e7dcff36974dc4f7fcadb0859981f6ca0e4090dd0b4c637eb3",
+      "bytes": 378,
+      "encoding": "gzip",
+      "raw_sha256": "1a613b1d7aa0d464b374acfb17e34610140d98536954bba281c840faf9c1c46e",
+      "raw_bytes": 876
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/semiprime-browser.log.gz",
+      "sha256": "a6d47b156755816c1b1337b5bcdddafa3c77b970e0401d0724c3c348253a56a8",
+      "bytes": 377,
+      "encoding": "gzip",
+      "raw_sha256": "68264cbef118dfb95a37d6916d9358529b48a0e60b97c70fd28e905f8d525916",
+      "raw_bytes": 876
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/semiprime-explorer-build.log.gz",
+      "sha256": "9c88f7aae4ddbdc3edabbe46a273e5f813081d4622d2c75da2aac2be16b339cb",
+      "bytes": 110,
+      "encoding": "gzip",
+      "raw_sha256": "10c4fe343152b2bc77917bfa44c1163ff50929a54cc312e520e078a15ba29959",
+      "raw_bytes": 104
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/semiprime-explorer-freshness.log.gz",
+      "sha256": "0a06a05048fb936b9efda81b3378b9653be74a25bbc57e4711c564c8ca6fe617",
+      "bytes": 111,
+      "encoding": "gzip",
+      "raw_sha256": "35274231f4f05d9f2098ea2fefb2f19164c144b93f1a89362ed0e500ce94b5cb",
+      "raw_bytes": 106
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/source-note-preservation.json",
+      "sha256": "66cc3a06fb7fa7964ea705260bee161c0fc9c8da79a78695e46b9dbf751b50d8",
+      "bytes": 150,
+      "encoding": "identity",
+      "raw_sha256": "66cc3a06fb7fa7964ea705260bee161c0fc9c8da79a78695e46b9dbf751b50d8",
+      "raw_bytes": 150
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/source-pin-check.json",
+      "sha256": "3cea475581324ef8a117a2ecb4c6b4a3130daf6d5998463836ed0d24ba1541ac",
+      "bytes": 64,
+      "encoding": "identity",
+      "raw_sha256": "3cea475581324ef8a117a2ecb4c6b4a3130daf6d5998463836ed0d24ba1541ac",
+      "raw_bytes": 64
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/staged-whitespace-before-cleanup.log.gz",
+      "sha256": "3e32f52722ebadb61eb4ad929c12e9aabbc20210ed210a4a91b8219e0778822e",
+      "bytes": 106,
+      "encoding": "gzip",
+      "raw_sha256": "cea58c7518aa7b7dbb5bedfb96701d78df6e0770b567188a35993fef24cf727c",
+      "raw_bytes": 93
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/staged-whitespace.log.gz",
+      "sha256": "2921b7cba7e9caa59b85abc7ba7a2fb72134c006edc6e34e5df6e5a029bd85b9",
+      "bytes": 84,
+      "encoding": "gzip",
+      "raw_sha256": "fe8f1fb61705ed71cc041b4a80ad3fe1c0628bf07907114d0258677c9ee502a0",
+      "raw_bytes": 68
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/theorem-explorer-browser.log.gz",
+      "sha256": "833f23387a278f0061378f836df6b7f7f3dc4fdb2be0663b826dca458434abe5",
+      "bytes": 1145,
+      "encoding": "gzip",
+      "raw_sha256": "ce0bc8b3a8eb72b72046a39516b9abc52b67aaca15b0c3e46edaa17b862d8673",
+      "raw_bytes": 2549
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/theorem-explorer-freshness.log.gz",
+      "sha256": "5ea8960995e1790db0cf0923a800ae91e23a71696c6c106dd8ce5a81c74e1c24",
+      "bytes": 80,
+      "encoding": "gzip",
+      "raw_sha256": "a2487e6a21b8bb5be04aeff20f0cf849af7cb31dd08c44faaee67a58c0e7563a",
+      "raw_bytes": 63
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/theorem-explorer.log.gz",
+      "sha256": "5ea8960995e1790db0cf0923a800ae91e23a71696c6c106dd8ce5a81c74e1c24",
+      "bytes": 80,
+      "encoding": "gzip",
+      "raw_sha256": "a2487e6a21b8bb5be04aeff20f0cf849af7cb31dd08c44faaee67a58c0e7563a",
+      "raw_bytes": 63
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/theorem-graph-check.log.gz",
+      "sha256": "f4c89d5660b44f0a6b6e11009631ad0b9f4c8c4066b186683971408f631e249d",
+      "bytes": 105,
+      "encoding": "gzip",
+      "raw_sha256": "638a0c5942b9e032fce08fac0f1ce0681fb6caaec57537a5c08345a636777a59",
+      "raw_bytes": 93
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/theorem-graph-export.log.gz",
+      "sha256": "e9860ddb48f7361999e8e95b4e00e9f695c40e67be593e9f59e6bf2881933c55",
+      "bytes": 68,
+      "encoding": "gzip",
+      "raw_sha256": "51c248f804df522ee05ff768d3f336518aa8e92757302d3040d3fe107595d6f2",
+      "raw_bytes": 48
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/whole-project-lint-before-cleanup.log.gz",
+      "sha256": "f050eddaf635ea29ab0606c080f9ab95a2099a89fd984a8893bc6cd8f8546416",
+      "bytes": 243,
+      "encoding": "gzip",
+      "raw_sha256": "673fff0cc9abb9debd1ee7b235bdf7c38a785978fccc1eb71c66559531058e53",
+      "raw_bytes": 326
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/whole-project-lint.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "encoding": "gzip",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/zero-free-plot-build.log.gz",
+      "sha256": "d322a0b73c091112552006a5fd30f173bcb10e00214ce1e3ec3c954b7c9e9d93",
+      "bytes": 88,
+      "encoding": "gzip",
+      "raw_sha256": "e66e40150eaf7176755129f1980b04d3093972712b897cc9df97d320f3e54188",
+      "raw_bytes": 78
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/zero-free-plot-export.log.gz",
+      "sha256": "6a4370df8e9ac6bf45b884fc5776dbcd46a0b64e29d519305fe7082fbff347c4",
+      "bytes": 86,
+      "encoding": "gzip",
+      "raw_sha256": "5bfb52178eb9fdac3fde1f3e7b50cdbcda1fc754933128ab0bbb7b6617ff0394",
+      "raw_bytes": 70
+    },
+    {
+      "path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/fresh-publication/zero-free-plot-freshness.log.gz",
+      "sha256": "d322a0b73c091112552006a5fd30f173bcb10e00214ce1e3ec3c954b7c9e9d93",
+      "bytes": 88,
+      "encoding": "gzip",
+      "raw_sha256": "e66e40150eaf7176755129f1980b04d3093972712b897cc9df97d320f3e54188",
+      "raw_bytes": 78
+    }
+  ]
+}

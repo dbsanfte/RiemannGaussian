@@ -1,0 +1,449 @@
+DETERMINISTIC COLOUR/BOUNDARY HYBRID: A PROVED LEAF-EXPONENT IMPROVEMENT
+Scratch investigation, 29 October 2026
+
+Status and scope
+================
+
+This note proves a general deterministic exact-contraction algorithm. Its
+exponent is M/2 + O((M^2 Delta)^(1/3)), instead of enumerating all 2^M global
+assignments. Under the Riemann repository's current degree and leaf caps, this
+becomes 2^((1/2 + o(1)) s/sqrt(log_2 s)) for an entire leaf contraction,
+including coefficient arithmetic and constructing the partition.
+
+This is a paper proof with an exact Python prototype, not a new Lean theorem
+or an integrated factoring implementation. It improves the LEAF exponent.
+The global class 2^O(ell/sqrt(log ell)) is unchanged by the results here.
+
+A second result tightens the actual recursion CALL-COUNT bound: the coefficient
+98304 in its natural exponential can be replaced by 393216/7. This recovers
+slack from the existing factor-16 graph shrink theorem and a geometric sum.
+It is an improved analysis of the existing tree, not a runtime change.
+
+The colour partition here is an algorithmic grouping of tensor vertices. It
+does not import the old arithmetic residue-colour catalogue, nor assert that
+a Jones/Habiro/skein identity became part of the factorer. The useful carryover
+from the knot/colour investigations is exact contraction through boundaries,
+with every boundary factor and intermediate jet coordinate retained.
+
+Boundary contraction itself is an established technique; no literature-wide
+novelty claim is made. For context see Markov and Shi, "Simulating quantum
+computation by contracting tensor networks", SIAM J. Comput. 38 (2008),
+https://arxiv.org/abs/quant-ph/0511069 . The specific bound below is proved
+directly, without assuming a supplied tree decomposition or separator oracle.
+
+1. The exact object being contracted
+===================================
+
+Let G=(V,E) be a finite loopless multigraph with M=|E| binary edges and maximum
+degree Delta. Parallel edges and isolated vertices are permitted. Each edge
+has TWO distinct incident vertices. At each vertex v an explicitly stored
+table T_v : {0,1}^{E(v)} -> R is provided, where R is a commutative semiring.
+
+We compute
+
+    Z = sum_{x in {0,1}^E} product_{v in V} T_v(x restricted to E(v)).       (1)
+
+For the bit-complexity statement assume one R-value has a canonical encoding
+of b bits, and addition/multiplication are implementable in poly(b) bit work.
+Finite modular truncated polynomial rings used by the repo satisfy this,
+with b the length of the WHOLE coefficient vector, not just one coordinate.
+Over arbitrary unbounded rings, the arithmetic-operation statement still
+holds, but a separate coefficient-growth bound would be needed for bit cost.
+
+No loops or higher-arity incidences are silently accepted. The repo's
+well-formed bipartite tensor networks meet this two-endpoint hypothesis.
+
+2. The contraction identity and its precise work parameter
+=========================================================
+
+Choose K>=2, and assign each vertex one of K colours. C_g denotes colour g,
+numbered 0,...,K-1. For a vertex set S, E(S) consists of edges with both ends
+in S, and boundary(S) consists of edges with exactly one end in S.
+
+Build the exact boundary tensor
+
+    B_S(y) = sum_{z in {0,1}^{E(S)}} product_{v in S} T_v((y,z)|E(v)).       (2)
+
+For a single colour class C_g this takes, up to polynomial factors, 2^{I_g}
+work, where
+
+    I_g = |{e : at least one endpoint of e lies in C_g}|.                 (3)
+
+It does NOT enumerate assignments to edges disjoint from C_g.
+
+For disjoint vertex sets S,T, finite distributivity gives
+
+    B_{S union T}(y)
+      = sum_{z in {0,1}^{E(S,T)}} B_S((y,z)|boundary(S))
+                                    B_T((y,z)|boundary(T)).             (4)
+
+Here E(S,T)=boundary(S) intersect boundary(T). This is the complete set of
+variables that become internal upon merging. The new boundary is the
+symmetric difference of the two old boundaries. No omitted scalar,
+normalizing determinant, inverse, or nonzero test occurs in (4).
+
+Start with B_{C_0}; merge C_1,...,C_{K-1} in order. For j=2,...,K let
+P_{j-1}=C_0 union ... union C_{j-2}. The j-th merge costs 2^{U_j} times a
+polynomial, with
+
+    U_j = |boundary(P_{j-1}) union boundary(C_{j-1})|.                    (5)
+
+The final boundary is empty, and its scalar entry is exactly (1).
+Consequently, with
+
+    W = max( I_0,...,I_{K-1}, U_2,...,U_K ),                            (6)
+
+both work and storage are at most poly(|V|,M,K,b) 2^W. Isolated vertices
+contribute their scalar tables, including zero and non-units. An empty colour
+class contributes 1, not a spurious factor of 2. The M=0 case is just the
+product of all isolated scalar tables.
+
+3. A cheap deterministic partition with a uniform bound on W
+===========================================================
+
+Independent uniform random vertex colours are used ONLY to prove that a
+polynomial-time conditional-expectation algorithm succeeds. Runtime does
+not sample random colours, search all K^|V| assignments, or accept a partition
+as advice.
+
+For one edge, the probability of touching C_g is 2/K-1/K^2, so
+
+    mu(I_g) = M(2/K-1/K^2).                                           (7)
+
+For U_j, place a colour into one of the three regions: old prefix (j-1
+colours), new class (one colour), or future (K-j colours). An edge is counted
+exactly when its endpoints lie in different regions. Therefore
+
+    mu(U_j) = 2M [j(K-j+1)-1]/K^2.                                   (8)
+
+Since j(K+1-j) <= (K+1)^2/4, every one of the 2K-1 loads X has
+
+    mu(X) <= (1/2+1/K)M.                                             (9)
+
+We need a simultaneous bound on all these loads, not just on a single cut.
+Each X is a sum of M Bernoulli indicators. Indicators on vertex-disjoint
+edges are independent. Every individual variance is at most 1/4, and every
+covariance is at most 1/4. The number of unordered pairs of edges sharing an
+endpoint is at most sum_v binom(deg(v),2). Parallel pairs being counted twice
+in this last upper bound is harmless. Hence
+
+    Var(X) <= M/4 + (1/2) sum_v binom(deg(v),2)
+            = (sum_v deg(v)^2 - M)/4
+            <= M Delta/2.                                          (10)
+
+Define the nonnegative potential, centred at the UNCONDITIONAL means,
+
+    Phi = sum_{all 2K-1 loads X} (X - mu(X))^2.
+
+By (10), E Phi <= (2K-1)M Delta/2. Fix vertices one at a time. Given all
+colours fixed so far, compute the K possible conditional expectations of
+Phi for the next vertex, and select a least one. Their average is the current
+conditional expectation. Thus the selected value never increases it. At
+termination the actual Phi is at most its original expectation, so every X
+satisfies
+
+    |X-mu(X)| <= sqrt((2K-1)M Delta/2).
+
+Combining with (9) proves the explicit, deterministic width bound
+
+    W <= (1/2+1/K)M + sqrt((2K-1)M Delta/2).                           (11)
+
+The potential can be evaluated in polynomial time. Expand each X^2 into
+single-edge and edge-pair indicators. Each product depends on at most four
+unfixed vertex colours; enumerate at most K^4 possibilities. There are
+O(K M^2) terms, K choices per vertex, and |V| vertex steps. The deliberately
+loose total is O(|V| M^2 K^6) elementary rational-arithmetic operations.
+All conditional probabilities have denominator K^j for j<=4. Means have
+denominator K^2, so multiplying the complete potential by K^4 makes every
+calculation integral, with bit lengths O(log(M+1)+log(K+1)). There is no
+unaccounted exponential partition search.
+
+The prototype uses a faster equivalent variance formula: only pairs sharing
+a vertex need joint expectations; disjoint pairs remain independent after
+conditioning. Its assertions check each conditional-average identity exactly.
+
+4. Choosing K: the exponent theorem
+==================================
+
+For M>0, 1<=Delta<=M. Put
+
+    x = (M/Delta)^(1/3),  K = max(2,ceil(x)),  A = (M^2 Delta)^(1/3).
+
+Then x<=K<=2x, so M/K<=A and
+
+    sqrt((2K-1)M Delta/2) <= sqrt(K M Delta) <= sqrt(2) A.
+
+Theorem. The exact contraction (1) has a deterministic algorithm with
+
+    T, S <= poly(|V|,M,b) 2^{M/2+(1+sqrt(2))(M^2 Delta)^(1/3)}
+          <= poly(|V|,M,b) 2^{M/2+3(M^2 Delta)^(1/3)}.                 (12)
+
+Here T and S are bit work and bit storage under the coefficient-encoding
+assumption in Section 1. With unit-cost semiring operations, the corresponding
+arithmetic-operation bound also follows. The entire input is paid for: a
+vertex's degree is no greater than its colour class's incident-edge load,
+so every explicitly stored local table has at most 2^W entries.
+
+For Delta=o(M), (12) is 2^{M/2+o(M)}, up to the stated coefficient and vertex
+factors. Without that condition, use the smaller of (12) and brute force.
+There is no claim of improvement for every small or high-degree graph; a
+star can already contain an explicit 2^M table at its central vertex.
+
+The easy sufficient condition 3(Delta/M)^(1/3)<1/2 makes the displayed
+exponential term strictly smaller than 2^M. Its asymptotic constant 1/2 is
+not a practical twofold runtime improvement; it concerns a leading exponent.
+
+5. A bit algorithm rather than a free table-lookup model
+======================================================
+
+The Python prototype uses ordinary dictionaries/lists for convenience.
+The bit bound in (12) can be implemented with sequential records and sorting:
+
+* For a bucket, enumerate its N=2^{I_g} incident-edge assignments, represented
+  by O(M)-bit records. For each vertex in the bucket, form N local-address
+  requests, sort them by local address, and merge with that vertex's explicitly
+  stored table. There are at most N table entries since deg(v)<=I_g. Attach
+  the values, sort back by assignment identifier, and multiply into the
+  assignment's accumulator. Sort by boundary address and sum equal-key runs.
+
+* For a merge, enumerate N=2^{U_j} union-boundary assignments. Retrieve the two
+  input boundary entries by the same sorted request/merge process, multiply,
+  then sort by the new boundary key and sum runs. Both input tables have at
+  most N entries. Boundary masks, addresses, and restrictions take poly(M)
+  bit operations; no enormous tensor entry is supplied by an oracle.
+
+* Standard finite-tape merge sorting uses O(log N) sequential merge passes,
+  with polynomial record-copy/comparison cost per record. Record length is
+  O(M+b), log N<=M, and modular coefficient operations keep values canonical
+  and bounded by b. Thus these costs contribute only polynomial factors.
+  Sequentially process vertices and groups; no product of two exponentially
+  large request lists or free random-access assumption is needed.
+
+This is an explicit bit-algorithm construction and cost proof for the new
+leaf algorithm. It is not a claim that the repository's existing native
+program has already been lowered to this implementation or certified in Lean.
+
+6. Substitution into the current Riemann leaves
+=============================================
+
+All referenced sources are in /home/dbsanfte/riemann/formal/RiemannGaussian.
+Source hashes and the inspected repository HEAD accompany this note.
+
+SemiprimeD1LeafCounter.run builds all 2^M global assignments and sums them.
+Its LeafRun even stores that whole table. The word/tape recursive caller,
+however, consumes the leaf's contracted words and report, not the global
+assignment table. A replacement needs a leaner leaf result and a proved
+payload equality; preserving the unnecessary LeafRun.table output would
+erase the improvement.
+
+SemiprimeD1TensorNetwork.WellFormed provides exactly the two-endpoint incidence
+condition: each variable belongs to one left and one right vertex, with
+local port lists matching these incidences. It gives a loopless bipartite
+multigraph, even though the theorem above also allows non-bipartite graphs.
+
+SemiprimeD1OriginalStateResources.Bound.degree and eventually_original give,
+for every actually reached network, the uniform cap
+
+    lambda = ceil(log_2(s+2)),
+    Delta <= degreeCap(s) = 2^floor((9 lambda+9)/10) = O(s^(9/10)).       (13)
+
+The current cap is 9/10, not the older 3/4 appearing in earlier investigations.
+SemiprimeD1Schedule.leafSize and SemiprimeD1LeafRate give, for the actual
+sufficient-fuel controller and all stopped leaves,
+
+    M <= L_s := floor(s/(floor(sqrt(lambda))+1))+1
+             <= s/sqrt(lambda)+1.
+
+This is NOT asserted for arbitrary manually truncated recursion fuel: a
+zero-fuel root can intentionally invoke a large brute-force leaf. The public
+controller supplies the scheduled fuel.
+
+Write L=s/sqrt(lambda). Applying (12) uniformly over stopped leaves gives
+
+    M/2 + 3(M^2 Delta)^(1/3)
+      <= L/2 + O(s^(29/30)/lambda^(1/3)) + O(1)
+       = (1/2+o(1))L,                                                (14)
+
+because s^(-1/30) lambda^(1/6) tends to zero. Small leaves need not themselves
+have Delta=o(M); monotonicity in M and the ORIGINAL-scale cap yield the uniform
+bound (14) anyway. Actual degrees can always be capped additionally by M.
+
+Coefficient arithmetic remains subleading. The existing invariant bounds
+vertices by 5s, the full jet rank by (4s)^(lambda+1), and scalar precision by
+s*201(lambda+1)^2*2^(4lambda). Thus a full coefficient value has
+b=2^O(log^2 s) bits. Schoolbook truncated-jet arithmetic is polynomial in b
+and the axis metadata. Its log-cost is O(log^2 s), and explicit local-table
+inventory contributes O(Delta) in the exponent. Both are o(L). The broader
+existing scalar envelope 2^{(lambda+1)^3} is also 2^{o(L)}.
+
+Therefore the complete new leaf work is at most
+
+    2^{(1/2+o(1))L},                                                (15)
+
+where the previous eager-leaf envelope was 2^{(1+o(1))L}. This is the positive
+algorithmic result of this investigation: a uniform factor of two in the
+LEADING LEAF EXPONENT, not just a finite collection of faster examples.
+Convergence can be slow with the s^(9/10) degree cap; the finite-size formula
+(11), or its min with brute force, is the honest quantitative bound.
+
+Correctness substitutes structurally into the recursive counter because
+(2)-(4) compute the identical element of its current coefficient ring. The
+count and first moment survive whenever that ring has the packed marker.
+ALL current jet coordinates are retained, not discarded based on a final
+readout cancellation. Equality of canonical words additionally requires
+using the existing canonical coefficient encoding, an integration proof not
+performed here. No old collision-acquisition or knot-normalization oracle
+is reintroduced.
+
+7. A separate tightening of the actual recursion call exponent
+=============================================================
+
+This section concerns the current actual child list, with every grid point,
+mode and all 64 groups still included. It is independent of the new leaves.
+
+SemiprimeD1TensorNetworkRecursion.child_shrink already proves
+
+    16 * scope(child graph) <= edgeCount(parent).
+
+SemiprimeD1RecursiveCallState.child_rows identifies each actual child's rows
+with exactly that graph. The currently used child_shrink_eight weakens the
+factor to 8. The uniform eventual packing guard and reachable degree invariant
+already discharge the stronger theorem's hypotheses, just as they discharge
+the weaker one. Consequently, induction along actual child-list membership
+proves, for EVERY reachable call at depth d with original root size <=s,
+
+    M_d * 16^d <= s.                                                 (16)
+
+Root: d=0 and M_0<=s. Step: child size <= parent size/16, and actual depth
+increments by one. Every parent has the inherited degree cap and well-formed
+rows, so the same eventually-valid original-input packing guard applies.
+This proof introduces no favourable-instance or chosen-mode assumption.
+
+Let b0=floor(lambda/131072), u_d=floor(b0/2^d). At active nodes u_d>0. The
+existing exact-floor lemma SemiprimeD1PathRate.sqrt_floor_le states
+
+    sqrt(b0) <= 2^(d+1) sqrt(u_d).
+
+Using (16), it follows that
+
+    M_d/sqrt(u_d) <= (2s/sqrt(b0)) (1/8)^d.                           (17)
+
+The current menu bound is exp(48 M_d/sqrt(u_d)). The already-paid grid/group
+factor G_s=2^(4lambda+7) therefore bounds actual branching by
+
+    G_s exp(A_s (1/8)^d),  A_s=96s/sqrt(b0).                          (18)
+
+There are at most lambda+1 child generations. The number of nodes at depth t
+is at most the product of the first t branching bounds. Summing over depths,
+and using G_s>=1 and sum_{d>=0}(1/8)^d=8/7, gives
+
+    count <= (lambda+2) G_s^(lambda+1) exp((8/7)A_s).                 (19)
+
+This is the same elementary finite-tree induction as the existing count_le,
+with ratio 1/8 and its tighter geometric sum. It bounds all retained calls,
+not a single favourable path or only one child per mode. The existing fuel
+cap lets the same inequality hold uniformly over supplied fuels for call
+COUNT, even though the leaf-work bound requires scheduled sufficient fuel.
+
+Finally the already-proved floor bound sqrt(lambda)<=512 sqrt(b0) gives
+
+    (8/7) A_s <= (393216/7) s/sqrt(lambda).
+
+Thus, using 2^x<=exp(x) for the same grid term as the repository,
+
+    count <= (lambda+2)
+      exp( (393216/7)L + (4lambda+7)(lambda+1) ).                    (20)
+
+The current displayed coefficient is 98304; the new one is exactly 4/7 of
+it. This is a 3/7 reduction in that proved leading CALL-COUNT upper-bound
+coefficient. It is analysis slack removed, not a claim that the running tree
+now visits 3/7 fewer calls. More accurate square-root/floor estimates could
+further tighten constants without changing the asymptotic class.
+
+8. What these results do and do not say about the complete exponent
+=================================================================
+
+The main scale is unchanged:
+
+    L = Theta(ell/sqrt(log ell)),  since s=2^20 ell.
+
+The recursive modes still carry an exponential-in-L worst-case envelope.
+Halving a leaf exponent is not enough to replace sqrt(log ell) by log ell
+or to prove 2^{O(ell^alpha)} for alpha<1. Nothing in this note establishes
+such a stronger complexity class or a new factoring record.
+
+There is a further accounting detail: the current numeric whole-counter
+envelope is
+
+    localEnvelope(C,k,s) * (calls+1)^3,
+
+not localEnvelope times calls. It retains a C*degreeCap local-table reserve
+and a cubic multiplicity reserve. Consequently one must NOT report the
+combined leading coefficient as "98304+log(2)" for this envelope.
+
+For fixed C,k, the old numerical envelope, using its displayed tree bound,
+is at most
+
+    exp( [3*98304 + log(2) + o(1)] L ).                             (21)
+
+If a new implementation is joined to the corresponding envelope with only
+the leaf exponent replaced using (14), the improved numerical envelope is
+
+    exp( [3*(393216/7) + log(2)/2 + o(1)] L ).                      (22)
+
+Equation (22) is proved as a bound on that DEFINED numeric envelope, using
+(14) and (20). It is an integration target for the changed counter, not an
+already-proved bound on the current program's unchanged clock. Tightening
+the call-count analysis alone can improve the old numeric envelope while
+retaining its old leaf exponent. The new leaf routine must still be connected
+to the recursive program and its resource report before attributing (22)
+to an implemented counter.
+
+The repo's existing WordTapeOriginalRate endpoint explicitly bounds a mixed
+retained report, with full primitive source/control/memory simulation still
+separate. This note does not silently close that separate proof obligation.
+
+9. Executable validation and remaining work
+==========================================
+
+Run, entirely inside this scratch directory:
+
+    python3 -B test_boundary_hybrid.py
+
+The recorded run in validation.json passed:
+  - 48 exact comparisons with global brute-force contraction, on empty,
+    isolated, parallel, disconnected, cyclic, complete, star and bipartite
+    graphs, with K=2 and K=4, over modular rings and whole truncated jets;
+  - 16 exhaustive checks of load means and conditional potentials;
+  - all 35 colourings of a small graph for K=2 and K=3;
+  - isolated zero/non-unit scalar preservation;
+  - a square-zero-marker example returning count=2 and first moment=15;
+  - intermediate mixed jet products, without projecting to the final moment;
+  - malformed endpoint/loop rejection and automatic K>2 selection.
+
+The prototype verifies that executed assignment dimensions equal the load
+definitions used in the proof. These finite tests support code correctness;
+the whole-family exponent follows from Sections 2-6, not from test coverage.
+The prototype is not a Lean proof or a calibrated primitive clock simulator.
+
+To integrate the positive algorithmic result, the main thread would need to:
+  (a) implement the boundary-leaf result type and deterministic partition;
+  (b) prove exact canonical-word equality to the existing leaf semantics;
+  (c) account for sorted joins and polynomial partition work in the chosen
+      concrete cost model, including all local-table reads;
+  (d) replace both inactive and fuel-exhausted leaf call sites, and transport
+      the recursive correctness/report joins;
+  (e) use the actual factor-16 child shrink and the tighter geometric bound.
+
+Those are implementation/formalization tasks for this specific leaf gain.
+A stronger overall asymptotic class still requires a new mathematical bound
+on recursive mode acquisition/contraction (or another global bottleneck).
+
+A possible next hybrid is to compute local child responses as functions of
+only their incident mode coordinates, then contract the resulting mode graph.
+It would require a uniform bound on weighted boundary loads AND the cost of
+building all local response tables. Modes can in principle concentrate on
+few groups; this note does not prove those new bounds or assume them away.
+
+All work here is confined to this scratch directory. No main-tree source,
+Git state, running agent, or publication process was changed.

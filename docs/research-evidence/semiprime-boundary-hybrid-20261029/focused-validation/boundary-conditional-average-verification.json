@@ -1,0 +1,11 @@
+{
+  "status": "STRICT_DEFAULT_200K_AND_SCOPED_LINT_ALL_GENERATED_STD3_PASS",
+  "module": "RiemannGaussian.SemiprimeD1BoundaryConditionalAverage",
+  "source_sha256": "4eb1e966e69493c8e26f47e19f9b0a4e54415522bd828bd4494f5e4ff10aff5c",
+  "object_sha256": "cb4a042156d78f40942dadcf68a2b40e68b34be9aa46746da47b3f313a26756f",
+  "audit_sha256": "384921ad0a6d93fe2df038389930e3e2f747094be6508b6018b28b3213cd3b59",
+  "strict_compile_exit": 0,
+  "audit_exit": 0,
+  "audit_output": "CONDITIONAL_AVERAGE_ALL_GENERATED_STD3_PASS declarations=56 theorems=55 modules=1",
+  "result": "Executed localExpectation/potential exact averaging and selected/extend/acquire potential nonincrease. No graph-valid or colour-prefix assumptions needed. Initial variance bound remains open."
+}

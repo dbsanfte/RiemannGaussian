@@ -1,0 +1,21 @@
+{
+  "scope": "Exact source bytes before a documentation-only alias comment and removal of trailing whitespace. No implementation/proof body or statement changes.",
+  "files": [
+    {
+      "source": "RiemannGaussian/SemiprimeD1BoundaryRecords.lean",
+      "before_sha256": "167563b6fd29bb5d128981e80dd8393eaec2f3292ea27964924b796eabd97f05",
+      "snapshot": "docs/research-evidence/semiprime-boundary-hybrid-20261029/source-before-publication-cleanup/SemiprimeD1BoundaryRecords.lean.txt.gz",
+      "snapshot_sha256": "846a284318d4160ff61f9a3d06ea00b9acf976c16a64d8bee96e6df347056f94",
+      "after_sha256": "a714d7a07abb0be73106381ad99e16003c6b26d93b10960367ce8cdf51badcff",
+      "noncomment_nonwhitespace_lean_tokens_unchanged": true
+    },
+    {
+      "source": "RiemannGaussian/SemiprimeD1HybridPathRate.lean",
+      "before_sha256": "630da0eff46b75105817c4bebbb3b4a585dcb80558c242651e2a26255e9ae3ac",
+      "snapshot": "docs/research-evidence/semiprime-boundary-hybrid-20261029/source-before-publication-cleanup/SemiprimeD1HybridPathRate.lean.txt.gz",
+      "snapshot_sha256": "42ce6a7f8f8c83c44d49be9d1d2f92216a29d16f7ce14e8169ee5583e508240c",
+      "after_sha256": "28efa3392764379d17955623bc224abcdd6276fd09c74d4785b4385529a67e9c",
+      "noncomment_nonwhitespace_lean_tokens_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+    "build",
+    "--wfail"
+  ],
+  "root": "/home/dbsanfte/riemann/semiprime-hybrid-20261029",
+  "startedAt": "2026-10-29T21:00:26.885545+00:00",
+  "exitCode": 0,
+  "elapsedSeconds": 253.448293783993,
+  "finishedAt": "2026-10-29T21:04:40.333985+00:00"
+}

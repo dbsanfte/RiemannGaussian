@@ -21,17 +21,17 @@
       "changeReason": "The user requested integration of OpenAI's checked 7/8 baseline and the Lean 4.34.1 upgrade. This discharges the restricted frozen Riesz terminal while the active global Gaussian/Weil–Suzuki branch and its independent arithmetic obligation remain."
     },
     "latestUpdate": {
-      "sequence": 156,
-      "id": "publish-semiprime-algorithm-proof-explorer",
-      "kind": "maintenance",
-      "title": "Semiprime algorithm and formal verification checkpoint.",
-      "body": "Publishes the deterministic subexponential factoring construction, recursive acquisition specification, checked machine components and accumulated research evidence. A dedicated algorithm explorer separates proved identities, verified components and unfinished integration.",
-      "next": "The complete semiprime bit-complexity theorem remains open. The RH direction and proved zero-free endpoint are unchanged.",
+      "sequence": 157,
+      "id": "semiprime-boundary-hybrid-half-leaf-exponent",
+      "kind": "theorem",
+      "title": "Boundary contraction halves the leading leaf exponent.",
+      "body": "Installs an acquired deterministic boundary partition and full-jet sorted-record contraction in the original-binary factoring algorithm. Lean proves exact factor bytes, a uniform half-exponent native leaf report, and the tighter actual call-count estimate.",
+      "next": "The complete original-input primitive-machine bit-complexity theorem remains open. The RH direction and proved zero-free endpoint are unchanged.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
         "globalSuzukiCriterionTheorem"
       ],
-      "documentation": "docs/research-evidence/semiprime-histogram-acquisition-20261027/next-explicit-rate-target.md"
+      "documentation": "docs/research-evidence/semiprime-boundary-hybrid-20261029/README.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",

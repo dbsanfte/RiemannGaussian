@@ -1,0 +1,129 @@
+{
+  "review": "independent new public native-rate composition",
+  "reviewer_exclusions": "Reviewer-authored boundary leaf cost/rate proofs are excluded from independent approval and used only at their theorem interfaces.",
+  "utc": "2026-10-29T20:59:51.082397+00:00",
+  "snapshot": "/tmp/semiprime-publication-20261029/new-public-rate-independent-snapshot",
+  "validation_scope": "Source-level bounded independent review; no root build or global gates run.",
+  "sources": [
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridActiveBudget.lean",
+      "sha256": "cecde6cca8c026036bda2b82773df4907d2565facf10d853326c7b1fc0e43856",
+      "bytes": 8829,
+      "role": "primary"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridOriginalCounterBudget.lean",
+      "sha256": "b6e280f3a91d3b2fb3dff1229cf49721db61e1ba818e905ce4372e5972951ba8",
+      "bytes": 9363,
+      "role": "primary"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridOriginalRate.lean",
+      "sha256": "d248e6155f4f17c02b2ddd20bea0469839eb492bd089ca7e297a9a296c94b379",
+      "bytes": 12522,
+      "role": "primary"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridCorrectness.lean",
+      "sha256": "be0f952c1bc562fa5ef50a34de17ff0a9cd8ad1c61f4009f0e9810c8bc7cbffb",
+      "bytes": 7243,
+      "role": "primary"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridPublicReport.lean",
+      "sha256": "c7182eee92a1201195ecaa1a68f350fa541354a53fe34a6862c3e0e718bfef81",
+      "bytes": 7601,
+      "role": "primary"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridAlgorithm.lean",
+      "sha256": "ea1a72fb221e60ba5782f445cc27d6fbbc0cb1a22fb613192e41f49bde3e0c69",
+      "bytes": 3196,
+      "role": "primary"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridRecursiveKernel.lean",
+      "sha256": "928b541c12e681473c64a19b4524d07d7a1c709b1cddc42213e4a08de43bcb72",
+      "bytes": 10428,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridRecursiveCounter.lean",
+      "sha256": "2de3984365e9ace4f86d223609bf616c5dfbbc2f2227e953f24505dfc350dd8f",
+      "bytes": 3160,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridPublicExecution.lean",
+      "sha256": "09a42d9feb21bb52c3234330fb6fe5ffdf4476e4bf18b77d86ded02e9307b8f6",
+      "bytes": 6283,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1ActualCallReachableAggregation.lean",
+      "sha256": "f56b7bd2a9adc5c56193eb6728dacfa4405ad869d761f03c492f3860cce3a786",
+      "bytes": 2846,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1ActualCallPolynomialAggregation.lean",
+      "sha256": "d07a91eac26a1b94caa77c721578d03215a4af14a03e8ba1f51f1fb4540becab",
+      "bytes": 4069,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1HybridCallReport.lean",
+      "sha256": "5b1ce9bd03cd79cdbf7b13419f771afc771c715f370cfe7caa0c91854558f3a7",
+      "bytes": 11390,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordTapeOriginalResources.lean",
+      "sha256": "cd6254fc26a15e83940b878b310605d6445988420283800cd904b1e720885783",
+      "bytes": 8192,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1RecursiveLeafBounds.lean",
+      "sha256": "e70d8d94e64903984bff7b444c41d6661553372084c7e27cbecbc919add0adce",
+      "bytes": 6865,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1RootTapeNetwork.lean",
+      "sha256": "088d219e0e8085e36a047caf8b0e4aa5b392e4264fe2ca4b9638b3cb3edd7cd4",
+      "bytes": 4371,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordTapeFrameBudget.lean",
+      "sha256": "697fcd349055a7d611367494cf9850b46992b1741f6d0896c5b66eba22a06ef8",
+      "bytes": 7014,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordTapePhaseBudget.lean",
+      "sha256": "71f301f16b45bc094e7b626d8a832fa7f0501258b41e71345eef07f6dd905186",
+      "bytes": 16323,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordTapeRecursivePhase.lean",
+      "sha256": "300b04bdc1df706cea0c69fe2f860c6c97a77fb92d1c14cc9a99d4e61b22c0df",
+      "bytes": 9819,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordTapeEnvelopeArithmetic.lean",
+      "sha256": "4d352333576166815532eafb72ec3b9c0658945bfa5d91658e4669cd7d0cebe7",
+      "bytes": 2891,
+      "role": "supporting interface/body checked"
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordTapeOriginalRate.lean",
+      "sha256": "bd637c9c804dbb89d036c50c957c1895d27c6261025617f4219238b3d9118152",
+      "bytes": 9336,
+      "role": "supporting interface/body checked"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "module": "SemiprimeD1BoundaryLeafOriginalRate",
+    "exit": 0,
+    "seconds": 19.19,
+    "sha256": "e228b60771c029be95920c01075b293ccc6c5bfd2d7788dce19b8bb1b5d12332"
+  },
+  {
+    "module": "SemiprimeD1BoundaryCheckedPolynomial",
+    "exit": 0,
+    "seconds": 7.73,
+    "sha256": "a99222507dcce6a42e6a0adc563b7d37c8119716a2a59a8eb59fa32fd7aa574d"
+  },
+  {
+    "module": "SemiprimeD1BoundaryCheckedOriginalRate",
+    "exit": 0,
+    "seconds": 18.83,
+    "sha256": "3a587cfe3e1291955ea091a4e183178860225f5b5f77b974be94b8bcf6ec687b"
+  },
+  {
+    "module": "SemiprimeD1BoundaryLeafOriginalReachRate",
+    "exit": 0,
+    "seconds": 5.61,
+    "sha256": "454aa20da0d90e78bba67ea20b70d75b4615ed7cc911a08975920805b0162c4e"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "inspected_at_utc": "2026-10-29T18:40:41.784640+00:00",
+  "repository": "/home/dbsanfte/riemann/formal",
+  "head": "350a43f2f5d0205b9734a33bc39fb73049a55100",
+  "note": "Read-only source pins; actual files may include uncommitted parent-thread changes. No Git writes performed.",
+  "files": {
+    "RiemannGaussian/SemiprimeD1LeafCounter.lean": "5f1e2bd1cd8ea427412c6a1d9f0a5ccad69cf725b419ec0c44fb1f26ebb0fe98",
+    "RiemannGaussian/SemiprimeD1TensorNetwork.lean": "c79d8d461e5ff63b14fe049bb955283a140ac684203756f56f58674321e697b8",
+    "RiemannGaussian/SemiprimeD1TensorNetworkRecursion.lean": "78872284e1fa8c5b4168573ef051e99851b80acd8e8f13c111a146758060889b",
+    "RiemannGaussian/SemiprimeD1PackingReady.lean": "9dafcf8aa247965557758c151b7dbff15fe5fb2221c830971b9e7af41add5de7",
+    "RiemannGaussian/SemiprimeD1OriginalStateResources.lean": "355d8e7097e7409659595cc5b07037f376ecc2b3157a3e0e7f36bb676dece22d",
+    "RiemannGaussian/SemiprimeD1Schedule.lean": "3458c5629d0eb866bf6e8ebdec4353cc2b69ed38d408bb06cf369e6f5ed6cfd1",
+    "RiemannGaussian/SemiprimeD1LeafRate.lean": "d1655c8ebcad215fffcf56ffef380bde65ae04d4044203f0cd9d38df2096fe97",
+    "RiemannGaussian/SemiprimeD1PathRate.lean": "541ecc742f11929535b574da82f4bd4515e740ce24765416cc2fa77699744c2c",
+    "RiemannGaussian/SemiprimeD1RecursiveCallState.lean": "da9e6cebbd7db54adef747ee2e41905a8c5d3ce2b88180d2a71323c90e4ff992",
+    "RiemannGaussian/SemiprimeD1RecursiveCallPath.lean": "52bc62c505c82c6f629386ab2b04408e07a578be120196aa94ddc14c586875e3",
+    "RiemannGaussian/SemiprimeD1RecursiveCallModes.lean": "55879a53716d97e40a9e042629c2447c96d6961a77464a88328804bcb93fdaa3",
+    "RiemannGaussian/SemiprimeD1RecursiveBranchRate.lean": "91c79e64b2791b6875ba6f1ed71b4e60e47ae98883750d693531dacedf605eaa",
+    "RiemannGaussian/SemiprimeD1RecursiveTreeRate.lean": "457b5cde9ac97444f8535ef3971d91d4be99e7c3fecef6ad06d22cea90040b97",
+    "RiemannGaussian/SemiprimeD1RecursiveCountEnvelope.lean": "be8249832aa741d9d85d67696e879d4ae20337ab7c0d16bfd7d791d0d8d4dd4c",
+    "RiemannGaussian/SemiprimeD1OriginalEnvelopeRate.lean": "5f7e47a5406f5de04f716737c1337c0421faa14c6b780691d3b750b69eabeb7b",
+    "RiemannGaussian/SemiprimeD1WordTapeRecursiveCounter.lean": "61925f2269b5784c7cba3aa02497cced78949779c49fd349eb5811ea3cae1019",
+    "RiemannGaussian/SemiprimeD1WordTapeOriginalRate.lean": "bd637c9c804dbb89d036c50c957c1895d27c6261025617f4219238b3d9118152",
+    "RiemannGaussian/SemiprimeD1PublicPackingReady.lean": "5792c4e7caa3524364a95a96dc94a5a856baf3aa8ecbd7acc9c72cc95f8c08f6"
+  }
+}

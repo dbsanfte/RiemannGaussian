@@ -1,0 +1,80 @@
+[
+  {
+    "module": "SemiprimeD1BoundaryRecordsCanonical",
+    "exit": 0,
+    "seconds": 5.26,
+    "sha256": "c465eaa76e5782c1fd19c8fb615703e045e88f264a5a9adc1ce3ba4da6468180"
+  },
+  {
+    "module": "SemiprimeD1BoundaryLeafCanonical",
+    "exit": 0,
+    "seconds": 8.26,
+    "sha256": "902cb097d421e3dd3d2bde854a50f4da070a6b9fbd2b83d1fec53abeb7d0841d"
+  },
+  {
+    "module": "SemiprimeD1BoundaryRecordsGroupBounds",
+    "exit": 0,
+    "seconds": 7.68,
+    "sha256": "7d8a8b23136b79665e98c048ea097db7a4f54eb68a751050eb5aa3bc5f3ea952"
+  },
+  {
+    "module": "SemiprimeD1BoundaryRecordsContractBounds",
+    "exit": 0,
+    "seconds": 5.64,
+    "sha256": "fb3c5c4a32bf965dff9316305a372e28a794cf48609071ed9ff2e6246974ef74"
+  },
+  {
+    "module": "SemiprimeD1BoundaryRecordsAttachBounds",
+    "exit": 0,
+    "seconds": 6.56,
+    "sha256": "ca09fa66de703a1efc9d9d03ca5266a1dc18051c6a88c3617cdad595ca970162"
+  },
+  {
+    "module": "SemiprimeD1BoundaryRecordsSeedBounds",
+    "exit": 0,
+    "seconds": 5.76,
+    "sha256": "3a408c3aa8b27525d602eee7e460b5e2a1cff72e4086c8ad7937f57aea258dfe"
+  },
+  {
+    "module": "SemiprimeD1BoundaryRecordsTableBounds",
+    "exit": 0,
+    "seconds": 6.65,
+    "sha256": "97f38edb0c9277be0483ff814326cc25ef979d6111a876abf7f02edc43963e06"
+  },
+  {
+    "module": "SemiprimeD1BoundaryLeafBounds",
+    "exit": 0,
+    "seconds": 6.79,
+    "sha256": "5abfa0e4d115af8e74e69d241efff2d3eea0492350df830da1865bdabf354023"
+  },
+  {
+    "module": "SemiprimeD1BoundaryLeafReport",
+    "exit": 0,
+    "seconds": 9.82,
+    "sha256": "1ef9c481194def706f1d9f0e5c65db5b2a8ffd17e854df4ab3591cecc0bda092"
+  },
+  {
+    "module": "SemiprimeD1BoundaryLeafLoad",
+    "exit": 0,
+    "seconds": 7.17,
+    "sha256": "6cd74bf8f79393876fda9a63828a668afb26070f03f08040139f24c7d7edf734"
+  },
+  {
+    "module": "SemiprimeD1BoundaryBudgetEnvelope",
+    "exit": 0,
+    "seconds": 5.39,
+    "sha256": "548f5094aa82c018975e51876a39d0135ac8a6df16a9b1dab869ba2ba2a10caa"
+  },
+  {
+    "module": "SemiprimeD1BoundaryPlanBudget",
+    "exit": 0,
+    "seconds": 6.01,
+    "sha256": "43db3c4b96dc6f1b73bbbd35fd35355010035b41f84d13a3da0a0afc65fa7156"
+  },
+  {
+    "module": "SemiprimeD1BoundaryLeafPolynomial",
+    "exit": 0,
+    "seconds": 6.66,
+    "sha256": "20dee80aa3d326a06fda983657f2b688b2652e87a41d493866b209e3447ec9c1"
+  }
+]

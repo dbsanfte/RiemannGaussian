@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-29T20:15:52.767740+00:00",
+  "publicationBase": "07968f5ea0bff8caf39973599280e6321211c682",
+  "sourceDirectory": "/tmp/semiprime-hybrid-side-20261029-u7YjRp",
+  "scope": "Exact supplied scratch evidence, copied after publication push; new integration and validation remain separate.",
+  "files": [
+    {
+      "path": "source-note/RESEARCH.txt",
+      "sha256": "185eba3ac562c790bf9d54ccff1637bda2b49c5029179f3d6521338dd1d3459f",
+      "bytes": 21952
+    },
+    {
+      "path": "source-note/boundary_hybrid.py",
+      "sha256": "491499753701ac7c04a14ea48108427468189421a60a0be1126a3576fd58dffb",
+      "bytes": 10262
+    },
+    {
+      "path": "source-note/test_boundary_hybrid.py",
+      "sha256": "0719b88c380c3491cf9b69e0aa433948ebd3a41b37c3a419596ae4e53afad4f5",
+      "bytes": 6692
+    },
+    {
+      "path": "source-note/validation.json",
+      "sha256": "1557175e469cbd64ef5d3fb4ca83f2daed7662f8d8790011308e722ff87dc22a",
+      "bytes": 29730
+    },
+    {
+      "path": "source-note/source-pins.json",
+      "sha256": "5475c12637c29e9160bec8b13c3861f4fe990707d2921f34a057e5b7327f7e8c",
+      "bytes": 2543
+    }
+  ]
+}

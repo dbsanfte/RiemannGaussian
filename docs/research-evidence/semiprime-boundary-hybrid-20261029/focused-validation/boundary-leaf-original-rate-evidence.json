@@ -1,0 +1,23 @@
+{
+  "scope": "actual new boundary leaf mixed native retained report, including paid validation; not primitive bit-machine time; no whole-recursion half-exponent claim",
+  "generic_checked_family_api": "SemiprimeD1BoundaryCheckedOriginalRate.eventually_checked_uniform_half",
+  "original_stopped_api": "SemiprimeD1BoundaryLeafOriginalReachRate.eventually_original_stopped_half",
+  "original_zero_fuel_api": "SemiprimeD1BoundaryLeafOriginalReachRate.eventually_original_zero_fuel_half",
+  "conclusion": "forall eps>0, eventually every actual original-reachable stopped/zero-fuel checked leaf.clock <= 2^((1/2+eps)*scale(ell)/sqrt(logarithm(scale(ell))))",
+  "original_resources": "all WF/canonical words/degree/vertices/axes list and sum/rank/precision derived from actual original input Reach resources; only actual stop/fuel premise remains",
+  "polynomial_absorption": "fixed monomial witnesses for concrete closedBudget and checked validator budget; scalar=2^((lambda+1)^3); log^5<=s reserve proves every fixed cubic-log exponent=o(s/sqrtlambda)",
+  "checked_reserve_api": "SemiprimeD1BoundaryCheckedPolynomial.checked_original_polynomial",
+  "checked_reserve": "fixed positive B,k before family: checked.clock <= B*(scalar(s)+1)^k*2^leafSize(s,lambda); includes validate.clock",
+  "validation": {
+    "strict": true,
+    "warningAsError": true,
+    "maxHeartbeats": 200000,
+    "scopedlint_exit": 0,
+    "all_generated_Std3": {
+      "declarations": 65,
+      "theorems": 60,
+      "modules": 4
+    }
+  },
+  "prior_stable_13_modules_edited": false
+}
