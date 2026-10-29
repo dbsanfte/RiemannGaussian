@@ -1,0 +1,15 @@
+'RiemannGaussian.SemiprimeCounterSearch.counterSearch_queries_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterSearch.counterSearch_none_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterSearch.counterSearch_some_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterSearch.prefixCounter_eq_accepted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterSearch.prefixCount_eq_accepted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

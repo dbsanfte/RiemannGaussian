@@ -1,0 +1,338 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "source_subdir": "lean",
+  "scope": "63-module generic shared-summary layout closure; not full SAT endpoint",
+  "upstream_sources_byte_identical": false,
+  "license": "Apache-2.0",
+  "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "roots": [
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.PackingConcrete",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutUniversal",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutBlocks",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutHeadPullback",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutRankUniversal",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutRowSelection",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutSignatureBound",
+    "OAI.Algorithms.SubexponentialSAT.SubexpRowInterpolation"
+  ],
+  "local_adapter": "OpenAISemiprime.lean",
+  "only_upstream_transformation": "Replace the initial OAI. module prefix by OpenAISemiprime. in import commands; paths match. All declarations/namespaces/proofs remain byte-identical.",
+  "files": {
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SubexpRowInterpolation.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SubexpRowInterpolation.lean",
+      "upstream_sha256": "764ec288c71b20261e881ae136c5dedd05f11f961714fc6079d6c9cbe9acc2a1",
+      "adapted_sha256": "04ddd583ea4dfc24853de920ffd7761dbecc7a88e4c43c003f85bc356deb0267"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/LeanCompat.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/LeanCompat.lean",
+      "upstream_sha256": "51cb1c46b186fd52e15a5435e5ee5c2585fb999195f3fa009d726156b7a8037c",
+      "adapted_sha256": "51cb1c46b186fd52e15a5435e5ee5c2585fb999195f3fa009d726156b7a8037c"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutSignatureBound.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutSignatureBound.lean",
+      "upstream_sha256": "e8a5e2f6386a300e847c670b0c6d6a61f18448c4f75eceecc98f503d501c5c9f",
+      "adapted_sha256": "1359927c580b808d105206564748960b1521c3310a6ac7d2fda9531f9797eaa8"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutExactBuckets.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutExactBuckets.lean",
+      "upstream_sha256": "947ee8bad9f9ca64bbf0d70ef624353cbf233fd97c46a9727f55ca8264c7fbc9",
+      "adapted_sha256": "266447fe7139da99d7faa2ac43b37a2391f1cc25b8c8d6a276a9ac58b8f9443a"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutPullback.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutPullback.lean",
+      "upstream_sha256": "2f8b1a9980ac74a93e06473e193db59c6c33455f9f00eb6a5e8d5a6b9c6307e8",
+      "adapted_sha256": "de75e3033a41df9b3b3e484791032a94c5725f5cd00ef0617395d0f57499eaee"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutRowSelection.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutRowSelection.lean",
+      "upstream_sha256": "f3e08e33e14901dcd9d3e72f92a76b152f56f458bb99525590c90122e54b2c4d",
+      "adapted_sha256": "2ec3a7749fff00d1efc01e384b62f53833f8f3866e3578fa69cded02e65f9c70"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutRankUniversal.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutRankUniversal.lean",
+      "upstream_sha256": "e8e242b788fab34b1bce85d633679705af38608723ebbb6a1c4d723a22127980",
+      "adapted_sha256": "37e89bbcc83c0738200914ba159ff4b9269bf22c19ae8ccc366295e1fbdf983b"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutUniversal.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutUniversal.lean",
+      "upstream_sha256": "8d8a92678bf2b9abb10e849269590ee68d4373f5eb2fc1e6df9ebaa86f6741dd",
+      "adapted_sha256": "7857fe7574dde75f2c1f4930aed490621595fe87ce5a7371b44fb1a2bf3622a6"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutNumeratorBridge.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutNumeratorBridge.lean",
+      "upstream_sha256": "bee6f54e5a1ec684733b9a4e3080071b5fec2da60e712cf722c0a52abbc6095b",
+      "adapted_sha256": "12d8a2d1b2fc5a3b60402b04a73a38f66ec7c9e7bfbcffcde2f34bd6d08af532"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/SpectralRank.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/SpectralRank.lean",
+      "upstream_sha256": "e9c2faf223c4ec328017ebf897c8ae392833f61140f3977becbf16e3d7405166",
+      "adapted_sha256": "8e34e96ab67191c39158ceaa3e230e1880b0eaa24f9114ee447b9a22dc173378"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/SpectralTail.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/SpectralTail.lean",
+      "upstream_sha256": "4a70a48d54cc634aa476d888b11f93dc053123f7e0c46938dd2437295aa2db36",
+      "adapted_sha256": "228ad4fd64dbef5f9ccb043b9a4255a0f010cccd85d32c4847e7dc22e9cc630c"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Subexp/TailInterval.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Subexp/TailInterval.lean",
+      "upstream_sha256": "f8f4a8ffaeb51b8ec4956c703848cf5b83e531c8a867cf722368d15a401a54e6",
+      "adapted_sha256": "f5c7a3b80ac6103e8e3e150c6aab363f2cbcb5f64147699396711e28320ed6df"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SubexpSwapMultiplicity.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SubexpSwapMultiplicity.lean",
+      "upstream_sha256": "4feeea139344afe6d41144ebcfda43de723599e756fbb925f9fa90048e3c8f0a",
+      "adapted_sha256": "a06cb3629d9094df816e294ae85e0221a03ad2529b444b71824f66cea2ce8ede"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Subexp/SpectralRank.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Subexp/SpectralRank.lean",
+      "upstream_sha256": "d7ba437481c500019c49348f80a78f2e73d18136c85e57250b3239f82f37a388",
+      "adapted_sha256": "39b2b6ae8a1bb68db372917b399ffae9a86b4f9eca3c9c7df675208673707155"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Subexp/TensorSpectrum.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Subexp/TensorSpectrum.lean",
+      "upstream_sha256": "65e64b7e8f6632e75b939aefd6d64ce6ad3bf6bee04aaa96b119b165f3c9d986",
+      "adapted_sha256": "91b2e406862062a0f4ece4412bfdb26efb21b889a5a0b05ced19af5e33023153"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SpectralRank.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SpectralRank.lean",
+      "upstream_sha256": "95b526705caff5ad5eee5ebe77403ac0cadf057b0b2c11dbf4bc67b68d2cce8d",
+      "adapted_sha256": "9510e7f31b5bc5d5689555988d6c86e5bd6c07dd0c7c005e544bcde495a45535"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/BinomialInterpolation.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/BinomialInterpolation.lean",
+      "upstream_sha256": "f7f08d1d5b8458037b7b0d10f041c783c4aa771f9fd7f1fe5b1698dbc3c770ae",
+      "adapted_sha256": "9882344baf73f927244d7245b9b014dc3d052a5e112e0fcef26d2c4a23d9ffd4"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/MatrixSupport.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/MatrixSupport.lean",
+      "upstream_sha256": "f7d91c3483c2b7c3d08329f743e0f7548a563db05595c302f89f0087ec692eed",
+      "adapted_sha256": "66bb264fb3a324ea7a19d9f94bb22b2c574d3001e7ba12d41a5ddd45792f571b"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/LocalSpectrum.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/LocalSpectrum.lean",
+      "upstream_sha256": "11a317eb72d77e19557ac760af5e9e2d05708d3ef930c3013cf9e3e3525ef4f1",
+      "adapted_sha256": "77532b094db9fdec7155944b1369d89318f6a62d3bec7fd3e72acab89c68c4f6"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Types.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Types.lean",
+      "upstream_sha256": "3ec5dc9aa6370212f8a0daa544d139a33ca1a0184ccac95a890220f935525807",
+      "adapted_sha256": "269064c6589d18e5d5beed20c22e9d2fa8c3ae60c194ca225a284f698ea597a5"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/BinomialMatrix.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/BinomialMatrix.lean",
+      "upstream_sha256": "3efdb7308d78a4edf4b12d9c5c714969870b93c89e3ea2bf4989cb52c66cef77",
+      "adapted_sha256": "2f8971484f30a0afa731d0de636415e446d0b90379303fce18dc4ef48ec9c2dd"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/LayoutParameters.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/LayoutParameters.lean",
+      "upstream_sha256": "a1104a9f4148105ec02894cae6c626d48bb448a0026c60007a4eedf6123f591e",
+      "adapted_sha256": "9e596fea6816d9335f38b56b18c7adfe18c329a1680154ace1d7c638aeea6175"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/ParameterOrder.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/ParameterOrder.lean",
+      "upstream_sha256": "befc80871c1c0abd14e51276b594b412dc0767f661c0ccc6e3797a2dd1c63daa",
+      "adapted_sha256": "5a7f58ebcf57708221ebfd2b021fdc8fb9d0f912639c971820716e452c176f70"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/BinomialMultiplicity.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/BinomialMultiplicity.lean",
+      "upstream_sha256": "d33a894c029738d576dfa6cbea6f67de44bd5b128d599258e86f1d5617065418",
+      "adapted_sha256": "235b3a39c0e248fb798812409049c68882d2e00447177ea9454578a9f3105935"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Subexp/MatrixSupport.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Subexp/MatrixSupport.lean",
+      "upstream_sha256": "16de3e94f565c2ce8651d9a8a142d440fbb4292e6b71902ec2fa936eacef8eac",
+      "adapted_sha256": "80cd18ba357c8f2c8dcec6a38f7b2ab23acb2ae4cd67a6b4638e7b3d9ced3734"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/MulticolorTypes.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/MulticolorTypes.lean",
+      "upstream_sha256": "191f9698132c7dda340a7ba97b0b27c6d6b92b79ac1808f6c4a572260d55580e",
+      "adapted_sha256": "62249607fd8c0be3b92ef760fd63796d7585dd5a944d48c74c7c1b24cb8b9824"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SlotAssignment.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SlotAssignment.lean",
+      "upstream_sha256": "ff86e07c2fc681c781789f86da1544c26e8eef85fa33f6442f514ad286a04a9e",
+      "adapted_sha256": "ff9e5fc6507a9671be6282d2a2e28d8c5393f9436dc9796639f5690fe0a9dffb"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Incidence.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Incidence.lean",
+      "upstream_sha256": "b5f62fedb48b3d111b74b035aba2fb0f9e9debe81a0a4eee92bdfa2bd847fc64",
+      "adapted_sha256": "90c2fede65e54049e0546f763224b2520f7e2b3a0e98efb9496dc6ccbefa273f"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Factor.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Factor.lean",
+      "upstream_sha256": "fd091440873c984ca6e9b6bb85705721be34754e9e085e31d74bbe80635036a5",
+      "adapted_sha256": "22cd198804b3c0d559d7c58dbd94fa43bed6b06b5d1b44a864f638a94431709f"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Subexp/LocalSpectrum.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Subexp/LocalSpectrum.lean",
+      "upstream_sha256": "87b773ce7267b42b09295c14c98149e292d4da49b9acd967ff4150dfaaf89354",
+      "adapted_sha256": "bf22f0b05aec542e7cf97c8eb0c028cdc76423a4d5d36b52a686076703e73a99"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/SpectralBinomial.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/SpectralBinomial.lean",
+      "upstream_sha256": "59aba107edac67258f442374d612c63d5686560503006ba5c88f80ef26952c8f",
+      "adapted_sha256": "92470c565e2d5fb3bb2af3e99ad383c41faebcec92afbbc464ca90315796eb92"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutScaledMatrices.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutScaledMatrices.lean",
+      "upstream_sha256": "6392df41244307bde7fb0f9d3592075a973202b49a1550b457a7e0aa46e9403f",
+      "adapted_sha256": "a9cebec9394dbc574443c67a408c69c0ecaa728ff71a5dce9c27734dc6f471f4"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SubexpAnnihilation.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SubexpAnnihilation.lean",
+      "upstream_sha256": "b57b604427bc9df68cc5a1db08a3cc3c0c29b55e0fd4526565c030901829097f",
+      "adapted_sha256": "a8a7f59036eb8901c963da20c4bfc4ce19c10e469299c028a23540e68b9241dc"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Subexp/SubspaceDimension.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Subexp/SubspaceDimension.lean",
+      "upstream_sha256": "6e585e04d4bda138e599c76b51e0c78ae37caf5cb26b9ef2177d470f449c2f83",
+      "adapted_sha256": "8d6721db42f20aa0d77db726d0206317cdf1126f626a49829b8aeaf5b5998251"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SubspaceDimension.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SubspaceDimension.lean",
+      "upstream_sha256": "fd8eee12100b81b86e37b1bf4bf8f395bcad9e0176420f8284b2c56d9b675070",
+      "adapted_sha256": "b98212867cfe9849ddeba7520381787c0df95d06e97854e29416f471c88a32f7"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Annihilation.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Annihilation.lean",
+      "upstream_sha256": "9ad107f06a773d461ec6f27e546d5affb7615cdb4a6d45c1022b7ec74b931084",
+      "adapted_sha256": "b00bd18923c141dcf96eb151d2f72c3412bc2754157201ba9cfb9ba0de076ea8"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/RowInterpolation.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/RowInterpolation.lean",
+      "upstream_sha256": "16264f696ff8fcbd4ad381a0d2d98421a1907e3e36ac4fea40285bcb17794f0a",
+      "adapted_sha256": "85774ab11b5f2c263e7e0b91414764cd4821d5934799bdb2016b86c88fa5ef3e"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/TableInterpolation.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/TableInterpolation.lean",
+      "upstream_sha256": "7b22b8127f37251f98f14ddf2f52937d7b9b56c9727a004781756bf3b6830670",
+      "adapted_sha256": "61f0b04decc8c902220489d4dcd80e13b23d263d1e83c3a9daa17518fbc2ce5e"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/LiftRing.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/LiftRing.lean",
+      "upstream_sha256": "2e959228a2da5307ec628891fd7357348c8dfeb294ffe4b79a19d5822bc123fa",
+      "adapted_sha256": "6f798be42f46b6525af2def046b346c15942689611d4ccf9a463bbc2ed82ecd4"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutNumeratorBounds.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutNumeratorBounds.lean",
+      "upstream_sha256": "db1cec4ff81856699a16a157d0aaf6fcbb0ec4f9ab762872b5fca51e56cfc118",
+      "adapted_sha256": "703d6e8644c9d9f59a1064b4b09a54889e4c4602980ae1559ea86649e6ba3d9d"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutCoefficientBounds.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutCoefficientBounds.lean",
+      "upstream_sha256": "6c78a88f31977cd857cceb1b23092a32f175e06be468fc3a6755d1702449176f",
+      "adapted_sha256": "b080766ba0886f737b256f424a6945d6c9b58225629afc270981354473643d05"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutNumerator.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutNumerator.lean",
+      "upstream_sha256": "ae55281444576112eec473413fbeca313d35e6c5186c038c8f7836bed9eba97a",
+      "adapted_sha256": "00ddff849974e75e8337a6556aecb29cb887ecd3c7ef4c39cfdfcb415b5af6d0"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutIndexed.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutIndexed.lean",
+      "upstream_sha256": "e18492a0699298a37aaa984a4b53e29dacec0b615300f4237f6bfb08300194db",
+      "adapted_sha256": "590f4e140f641aa37c9ede066ce540dab571b6bc112d0ea9ad5f048db3f549fd"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutInterface.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutInterface.lean",
+      "upstream_sha256": "ccc72542a29ebce8f9219431752fb6925b9af8438c439cec8939cb6e3467f8f5",
+      "adapted_sha256": "dab524023c53e133c5f7c16f765c9a051fe88b8f52ff9d9bffb3d03c761d17c7"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutRankBlocks.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutRankBlocks.lean",
+      "upstream_sha256": "0660fcea5fa26b03ab40751a772d7e0f55a6f04b985f883ac1135c83bc620a78",
+      "adapted_sha256": "75b53a4984325d8c96d9fc9323f89e8c6860bb391b94f0e35f7039f7aa69fb36"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutRankCounts.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutRankCounts.lean",
+      "upstream_sha256": "c6f5e3c11b382b7ff6103145ae50e8aa1e99c14b860adaeedb30271d2cda6b19",
+      "adapted_sha256": "e99fdd640c1e60e611765f18715a1ced99a12b7e99fdceb66d57404b1c79035f"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutBlocks.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutBlocks.lean",
+      "upstream_sha256": "1523048be5227981a4b130a9964e34e5957df09054a8d70fa893c4ae37932eaa",
+      "adapted_sha256": "c6f8f6eb61b9f6a011135c0c8a595bb446f8d64b96973d4ae57c4691a076d9c0"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/BlockPacking.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/BlockPacking.lean",
+      "upstream_sha256": "2f0775dcffdd5bab7810c6b9311db5952d38eec3717ceedbafd4d9694e94d361",
+      "adapted_sha256": "980d14447d0c1a8b1597fb86689f3a3b20f9096f4ec81155ed2a6411871f9921"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutHeadPullback.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutHeadPullback.lean",
+      "upstream_sha256": "e3048a8126875ee820434bfbe1fbceb6cb2b7fe41fc4bb65a767f20544fc9172",
+      "adapted_sha256": "8044ee9371b168014800f988c452140ee0893654fca499295b8093bd1ecf02c0"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/LayoutRank.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutRank.lean",
+      "upstream_sha256": "d0f3dbfaf4074de941f4eb898b7ddab2fdff1ce807dcbf6b374dd45f4051d814",
+      "adapted_sha256": "ca9eee22a9389dda289802801454dc3aec3035619ae3e156a2ea053dbc894490"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/PackingConcrete.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingConcrete.lean",
+      "upstream_sha256": "51db59df0fbb823dde961322559aecb026d9f073de41c0493843ae0169553a5a",
+      "adapted_sha256": "7c6056cf1f93531d3fb50c7dc232d44c46ca8b9ad168d33fe84a5d1230151064"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Subexp/ConstructivePacking.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Subexp/ConstructivePacking.lean",
+      "upstream_sha256": "efc5a66462caf0be599f935ad3144587beff6437da949b8abf7db6bd0f7a11d8",
+      "adapted_sha256": "902715ff84c05e502161b6171becdb42cc483d1928f6d93eea0221a72e4f23e9"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SubexpBlockPacking.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SubexpBlockPacking.lean",
+      "upstream_sha256": "d6652d03d359847e94ae439fab9ed000dbe5851a2d479769b358e5084f279641",
+      "adapted_sha256": "973f063616d1f99f5cc53cd5465cdc3efeda5cbd5fbb07d6aa1c10c8de96882d"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/DirectSums.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/DirectSums.lean",
+      "upstream_sha256": "7d3bff4b66b1b4969421b4b99ed17e70ef84f5b8023c87f9e4d0eb1c12a63e7f",
+      "adapted_sha256": "cec94ff51dfad9733ad3a0b7f0b547b060335a23900743fc5725b43d41d48e02"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/PackingTheorem.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingTheorem.lean",
+      "upstream_sha256": "53ef478dba29a34ad638dd3ad5836ba0b4dd65445182832fc5f036b6e5b8f18a",
+      "adapted_sha256": "598fc0875958115d35fa9704684f9790891f9213d0e9bab3afbcd5e4156e45c5"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/PackingAlgorithm.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingAlgorithm.lean",
+      "upstream_sha256": "2d81098a243cd59235c68db24acb67d1645ebd1dee9a89fb8fc58a27970cd6cd",
+      "adapted_sha256": "155ed7b07d06b418c72cb2b71b4c5a2e3c27d459e7914f5427005a9df21a53ce"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/LocalExpectation.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/LocalExpectation.lean",
+      "upstream_sha256": "73106f4518e863bbe0ecf290ae8f7167b12c7ae66db72c5bcb82a4a141b4aeac",
+      "adapted_sha256": "65b8aa9c580513aa78d6c162ccc3d673ccdfaed71d364f353193dfedf8a7cdf8"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/TypeDistribution.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/TypeDistribution.lean",
+      "upstream_sha256": "9c4a0d1fafe5ac38a9ea2f2ff5c392a49195593fa2bce5a26381d9eb3f618711",
+      "adapted_sha256": "54202235d64b394f23e4b88de66947b8469455bb11e9b547b3661090360c3ecf"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/ConditionalExpectation.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/ConditionalExpectation.lean",
+      "upstream_sha256": "2a88f461708a0a246d9f75cc4de2b365ad21da21a087216585e23b57ffdb5300",
+      "adapted_sha256": "d8be458054c81e5d6724b777d893dd51949b47183e904b1b2703265acadb5817"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/Variance.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/Variance.lean",
+      "upstream_sha256": "896179c4445b507c7145009fb3a6ad6bff4ab717b24d2bd19bd7a6c962545313",
+      "adapted_sha256": "50c5baf42d295b7b15420332531702f568c98016e5b785c8182b046250f56f85"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/PackingSelection.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingSelection.lean",
+      "upstream_sha256": "f673a151986d5328152f85b76b594833c04dc1e778f7130493ab6a96cd4f53f6",
+      "adapted_sha256": "8d98f8cde4782b82a8f6a03e0562355c9b9170796ab2b3a36a9ad9cf07a56091"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/PackingWords.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingWords.lean",
+      "upstream_sha256": "85c3ec8833c734df46a745709fdbfe0baa93808cdbdfdd9a21951f95301154a1",
+      "adapted_sha256": "efa6177483a9241e97c12aaf89887a95326f160410d2dfd301729fcbe00d692b"
+    },
+    "OpenAISemiprime/Algorithms/SubexponentialSAT/SqrtLog/PackingVariance.lean": {
+      "upstream_path": "OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingVariance.lean",
+      "upstream_sha256": "7a893a98405779c0f032fd5f9af39666c44713f40e51018634dd9ac1cb75a986",
+      "adapted_sha256": "2ec8914ee50bf998a78b2dbfef3164a1b2efccfaa381762f1f7f08fc83b011e9"
+    }
+  }
+}

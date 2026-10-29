@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-26",
+  "classification": "Partial algorithmic progress: initialized common coefficient actions and full ternary hierarchy; no whole-query speedup",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft K^(5/4) native weighted query; soft K^(3/2) two-monic fallback",
+  "new_evidence": [
+    "All finite q-binomial sections share one rational-Newton operator with all starts, both tails and forward/transpose actions acquired in soft K.",
+    "Actual coefficient bank has acquired invertible rank-one displacement; its finite boundary telescopes on the exact power graph.",
+    "Native powered roots and inverse graph are acquired in soft J; actual composition source stages identify the missing matched polynomial-coefficient reduction.",
+    "Graph quotient-correction operator has full row rank J after paid native gates, while actual coefficient-column actions remain soft K. No rank or lower bound for their correlated scalar is asserted.",
+    "Complete ternary parent-root/GP-character/public-carry hierarchy supplies all three cubic coefficients and both orientations in soft K.",
+    "Componentwise simple Laurent residue specifies an amplitude-free hit idempotent with good traces (1,w_hit), without acquiring it.",
+    "Explicitly acquired rank-one q-bispectral core is a linear q-antiderivative, not the requested intersection mask."
+  ],
+  "remaining": "Soft-K matched diagonal, structure-aware relation reduction or direct Laurent-residue acquisition, plus full all-input recovery and bit-complexity proof.",
+  "reviews": [
+    "review-qbinomial.md",
+    "review-composition.md",
+    "review-ternary.md",
+    "review-singular.md"
+  ],
+  "validation": {
+    "mathematical": "Four independent paper reviews and primary-agent audit; integer-index/window and multiple-hit scopes integrated; reviewer last-column exponent transcription corrected. Not Lean.",
+    "status": "pass",
+    "local_links_checked": 16,
+    "source_pins_checked": 12,
+    "git_diff_check": true,
+    "json_and_whitespace": true,
+    "preservation_hashes": true
+  },
+  "preservation": {
+    "protected_files_verified": 974,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1556897,
+        "sha256": "2e7b38dbcaec5558387a8b516f1c337905f128cac759cf45d9369ae10a57d813"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2450309,
+        "sha256": "013659025a2c6c37ef2f211df74205c3fdcf85e29486af4e993c05b68f13696d"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "b73d5b2b8353553bedae11c7f6c5aef2d98cc54b6b4ba06bc4f100c2b114aab7"
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

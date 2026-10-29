@@ -1,0 +1,199 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 8,
+    "declarations": 172,
+    "theorems": 77
+  },
+  "modules": {
+    "SemiprimeD1ChildTableDirect": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1ChildTableDirect.lean",
+        "sha256": "7583f3588f2e21ecac463686d7c4ca74c95bee9d7072484e1308517f7ada89d5"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1ChildTableDirect.olean",
+        "sha256": "e0fff32f78dc6f0ac8486328a418e815c2084022435d33cb60e292ee974fa44b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-frozen/SemiprimeD1ChildTableDirect.olean",
+        "sha256": "e0fff32f78dc6f0ac8486328a418e815c2084022435d33cb60e292ee974fa44b"
+      }
+    },
+    "SemiprimeD1StackChildLiftVertex": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertex.lean",
+        "sha256": "e6a0c2a152656851b8691430fc0bcb0ce198acf747f5cfe636f14764bba9fd61"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildLiftVertex.olean",
+        "sha256": "052c3edb7838692e23305efdda6525298385ad817dd78cf89971e94fb4c1ca96"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-frozen/SemiprimeD1StackChildLiftVertex.olean",
+        "sha256": "052c3edb7838692e23305efdda6525298385ad817dd78cf89971e94fb4c1ca96"
+      }
+    },
+    "SemiprimeD1StackChildLiftVertexPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexPrimitives.lean",
+        "sha256": "d438bf1c6bbe410a5e770f05f6f3f5d3b4d103f4bf5027b5bc721658dba302f8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildLiftVertexPrimitives.olean",
+        "sha256": "89eddf7225cf926f085eccfc85ad2f4206479946c5c905a0bd10bd23ee9c00ac"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-frozen/SemiprimeD1StackChildLiftVertexPrimitives.olean",
+        "sha256": "89eddf7225cf926f085eccfc85ad2f4206479946c5c905a0bd10bd23ee9c00ac"
+      }
+    },
+    "SemiprimeD1StackChildLiftVertexFrames": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexFrames.lean",
+        "sha256": "b8d1637f4e4a595eeebd9009b81910f1b96763ed3255b16ec919d03bf4f6e137"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildLiftVertexFrames.olean",
+        "sha256": "2efb4ffa41a44704693d84b8a9c06e58ecf1ec3c48b4ac020d480da6642a4ec6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-frozen/SemiprimeD1StackChildLiftVertexFrames.olean",
+        "sha256": "2efb4ffa41a44704693d84b8a9c06e58ecf1ec3c48b4ac020d480da6642a4ec6"
+      }
+    },
+    "SemiprimeD1StackChildLiftVertexOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexOriginal.lean",
+        "sha256": "df8a6b47893504b942763eb4d4d56da8b8ddb81d16bdcfed71a2b2104477aabd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildLiftVertexOriginal.olean",
+        "sha256": "4b44ee73a718ff516a9e19f3605227f8f8c900c2f2fc056eb9988c0b4b487ec1"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-frozen/SemiprimeD1StackChildLiftVertexOriginal.olean",
+        "sha256": "4b44ee73a718ff516a9e19f3605227f8f8c900c2f2fc056eb9988c0b4b487ec1"
+      }
+    },
+    "SemiprimeD1StackChildLiftVertexBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexBounds.lean",
+        "sha256": "5b24934aa722810124bee06d57edd17244325a0444fb4bec989dc19c6f9e2fce"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildLiftVertexBounds.olean",
+        "sha256": "99da6d413fd8c094f5de67dd26a7f05ed27201642483d3c721fc35196e3237bc"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-frozen/SemiprimeD1StackChildLiftVertexBounds.olean",
+        "sha256": "99da6d413fd8c094f5de67dd26a7f05ed27201642483d3c721fc35196e3237bc"
+      }
+    },
+    "SemiprimeD1StackChildLiftVertexStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexStorage.lean",
+        "sha256": "e3bd4df0e5054c22b4c84817bf7ca28c53d9465e0013fc21416059e9774bbf54"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildLiftVertexStorage.olean",
+        "sha256": "50a33b9c4d0b6c804135716a0f363c68d5fb61a68e216dc19d0e46e8ec4a8a00"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-frozen/SemiprimeD1StackChildLiftVertexStorage.olean",
+        "sha256": "50a33b9c4d0b6c804135716a0f363c68d5fb61a68e216dc19d0e46e8ec4a8a00"
+      }
+    },
+    "SemiprimeD1StackChildLiftVertexMeaning": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexMeaning.lean",
+        "sha256": "367186cf6f974bd671a8522081d7296c4899784bbd7ec9ed591a57d2f5198f72"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildLiftVertexMeaning.olean",
+        "sha256": "6c0cea773409a14d91644c32f3964e0a02cc6619312eb4958044c04fa1753613"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-frozen/SemiprimeD1StackChildLiftVertexMeaning.olean",
+        "sha256": "6c0cea773409a14d91644c32f3964e0a02cc6619312eb4958044c04fa1753613"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "sealed_utc": "2026-10-29T04:56:23.125986+00:00",
+  "source_and_canonical_writers_stopped": true,
+  "source_and_canonical_mode": "0444; permanently immutable",
+  "default_200000_heartbeats": true,
+  "strict_root15_every_generated_std3_independent_byte_actual_terminal0_session": 81522,
+  "actual_after_live_header_terminal0_session": 91065,
+  "actual_imported_pins": {
+    "before_pairs": 18094,
+    "after_pairs": 18102,
+    "live_pairs": 18102,
+    "all_before_external_pairs_unchanged": true,
+    "all_current_actual_header_source_object_hashes_match": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-live-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-live-after.json",
+    "live": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-live.json"
+  },
+  "independent_read_only_review": {
+    "status": "PASS",
+    "all8_current_sources_fully_read": true,
+    "lines": 660,
+    "before_after_assignment_current_source_sha_match": true,
+    "source_canonical_writes": false,
+    "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-independent-review.txt",
+    "sha256": "e424e0ae82818ad41d0c5e0f20ec6e2a4d884c4f11555443ed82b239313d1835"
+  },
+  "actual_controls": {
+    "status": "PASS",
+    "actual_terminal0_session": 80203,
+    "whole_cases": 3,
+    "steps": [
+      3981,
+      2143,
+      3552
+    ],
+    "actual_total_transitions": 9676,
+    "all136_data_words_exact": true,
+    "source134_retained_exactly": true,
+    "actual_whole_table_calls_per_case": 1,
+    "actual_preserving_frame_calls_per_case": 2,
+    "framing_scratch_empty": true,
+    "flags_clear_two_real_outer_returns": true,
+    "observer_generated_standard3": 37,
+    "snapshot_identity_kernel_checked": true,
+    "source_pins_before_controls_match_current": true,
+    "current_source_canonical_independent_byte_equal": true,
+    "source": "/tmp/semiprime-explicit-rate-20261027/ChildLiftVertexControls.lean",
+    "source_sha256": "efa0ca2221214edc17dd13c6f58ede578678fa335443e7d4c775da596fd1157c",
+    "log": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-controls.log",
+    "log_sha256": "7379b8ea41fdd5dfce325d6f2c99d50b6d0689ff02cad8b06ea4b7378a7eeef5",
+    "no_frozen_control_replays": true
+  },
+  "scope": {
+    "physical_roles": 136,
+    "allocation": "ALL134 concrete table source/template/scanner/DFS words +record andrestoration scratch; allactualsavedreturns counted",
+    "runtime_inputs": "ONLY actualparentTable/order/oldAxes/binaryoldp/newAxes/binarynewp/canonicalScopeIDvector; noentry/table/recordanswer/nativeclock/getter/Fits advice",
+    "runtime_program": "realwhole134call once thenliteralFALSE EOF; realpreserving Frame acquiredtable; realpreserving Frame retainedscope; literalTRUE vertex tag; truehalt/clearedflags. Source134 retained andnewframingscratchEMPTY.",
+    "semantic": "ENTIRE existing records[vertex] codec, exactnativeactiveleftOne onactualoriginalacquisitions. FULLTable alignmentandcanonicalrecopy eliminated by exactbytes and internally derivedorder_length/child_length; originalindividualintegerlifts andold/newprecision remain.",
+    "clocks": "SAME own<=10^24*R^2*2^D andALL136+actualreturnsEVERYcompiledprefix<=10^27*R^2*2^D. Dactualcountedscope; Rsourcebytes+old/newrankandprecisionVALUES+scopebytes. Framing widths fromsemanticGoodtable bound; no recursive elapsedclock power/nativeclock transport.",
+    "honest_frontier": "PREPARED7wordentry, NOToriginalN-onlyinitList. Actualparentrecordextraction/activitybranch/inactiveunit/fullvertexloop/rightpackettable/fullrecursivecounter/scalarV/recoveryhandoff/globalbound remainOPEN."
+  },
+  "baseline_protected_files": {
+    "status": "PASS",
+    "files": 17054,
+    "historical_journals_whole_exact_append0": true
+  },
+  "api": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/child-lift-vertex-api.txt",
+    "sha256": "246faf99c016ddd96d3751231429479e9c03f5b03d5ac2a90211dbfbb0451f05"
+  },
+  "no_journal_registration_commit_push": true
+}

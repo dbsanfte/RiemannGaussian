@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "exact_integer_Gauss_identity": true,
+  "prime_palette_control": 5,
+  "gauss_identity_checks": 3,
+  "prime_Frobenius_checks": 3,
+  "composite_factor_control": 15,
+  "composite_decline_control": 55,
+  "scope": "structural controls only; no semiprime coverage/success campaign"
+}

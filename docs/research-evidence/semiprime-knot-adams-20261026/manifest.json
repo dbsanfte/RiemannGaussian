@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7644,
+      "sha256": "5639b0d5da7065f5ab692cb1366ddc7cef39960a11a313e12c6f9366587bf728"
+    },
+    {
+      "path": "adams-contraction.md",
+      "bytes": 11580,
+      "sha256": "a644592de01b5ba6f87ae993d920db2266f7deba104c2cf83d1a4be81f0394dc"
+    },
+    {
+      "path": "adams-review.md",
+      "bytes": 3375,
+      "sha256": "98180d48afde03da9d2a703c85830e8504fd79f4b2b7bafd2825ab81de0824bd"
+    },
+    {
+      "path": "cyclic-resultant-followup.md",
+      "bytes": 8030,
+      "sha256": "8d5c5b0f882e1cc322cb4d1ccc3ab415322ea16f74a3f89c417009e3eee68393"
+    },
+    {
+      "path": "extra-divisor-elimination.md",
+      "bytes": 11274,
+      "sha256": "9b48516632f5b632fc8e8513564ce5222a1251216bcbc07d93bcdd21b525f3e2"
+    },
+    {
+      "path": "extra-divisor-review.md",
+      "bytes": 6408,
+      "sha256": "c2964b1928c177eb19dfd4e7f9384b8d9ebc6859e4113686e17ae53d62ed9b82"
+    },
+    {
+      "path": "integration-review.md",
+      "bytes": 7074,
+      "sha256": "7b0bcef87a971937d32d11949ccefbc787c0d8948d5c4273209bec2c5b45b105"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2620,
+      "sha256": "5066be2b39aab702781ad1d36fbff63ae760a290659033bdc4d8b5e7fc57a8e1"
+    },
+    {
+      "path": "shared-label-roots.md",
+      "bytes": 11935,
+      "sha256": "91d94b6aa69200c9b9b0c611c98110fdea01e31710b9b156f0d332328f2e311d"
+    },
+    {
+      "path": "shared-roots-review.md",
+      "bytes": 4676,
+      "sha256": "22a2e72fc4d2e96d06e6626c852f5534f4e5858fefa41381da0dc5ae36ce92d4"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 4688,
+      "sha256": "3463411d8aabaf2b049ebd2f9bed8515999d54a09e2c4275b90ac882000964e8"
+    },
+    {
+      "path": "torus-adams.md",
+      "bytes": 8473,
+      "sha256": "b60193772431ecd155b5cec593acf6c2de728046096eae9f92ab98dce87cae28"
+    },
+    {
+      "path": "torus-review.md",
+      "bytes": 2851,
+      "sha256": "e287240ab12d2df0e1e31620826068d0a236740cb2c75ff05cbaa639022a8b4c"
+    }
+  ]
+}

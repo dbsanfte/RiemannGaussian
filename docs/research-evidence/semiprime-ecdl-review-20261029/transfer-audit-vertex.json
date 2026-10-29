@@ -1,0 +1,100 @@
+{
+  "status": "READ_ONLY_TRANSFER_REVIEW_COMPLETE",
+  "utc": "2026-10-29T15:26:07.738300+00:00",
+  "goal_state": "Factoring goal explicitly PAUSED by user; no goal work, proof builds, source/canonical edits, controls or journal updates. Only paper/repository reading and this scratch review artifact.",
+  "paper": {
+    "url": "https://raw.githubusercontent.com/bochum-crypto/subexponential-ecdl/252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee/subexponential-ecdl.pdf",
+    "sha256": "cd251dc0ed83bd283663aaaeb135bf6aed5bd2b015bdfa52591d9d6667754d27",
+    "bytes": 497881,
+    "commit": "252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee",
+    "text_sha256": "a3b7d5b57f89bde87887925a68fd95dbb2ee7d4200e7ccfd2ee905c278c7ee64",
+    "all1076_text_lines_read": true,
+    "title": "A Subexponential Time Algorithm for Elliptic Curve Discrete Logarithm",
+    "date": "2026-10-28"
+  },
+  "main_finding": "A conditional ECDLP application of the same unverified D1 blackbox. It independently uses essentially the already-existing linear-edge macro-FFT frontend; it does not close or lower our actual contraction backend.",
+  "frontend_comparison": {
+    "paper_sections": "2.2-2.4 / Theorem3 / Lemmas3-8",
+    "paper": "Fermat ring Z/(2^J+1), canonical J+1-bit words; one balanced split of each DFT; point products; inverse transform; integer carries; O(d) edges and O(d^(3/4)) degree. Fused twiddle factors and hardcoded zero positions give <1100(d+1) edges, degree<136(d+1)^(3/4).",
+    "repository": "MacroGraph has the same ordered producers/consumers, two forward/inverse transforms, separate explicit scale/twiddle vertices, point products, initial/terminal carry, exact canonical local predicates and equality subdivision. MacroGraphUnique and PublicFactorCount give unique extensions and ordinary ordered factor-pair bijection. MacroParameters.variableCount_le gives <=6400*ell and scopeBound_le_rpow gives <=512*ell^(3/4).",
+    "transfer": "Same asymptotic mechanism, with different constants, index convention and physical graph ABI. Folding twiddles/omitting forced-zero wires could reduce constants but needs a new graph/predicate/port proof and does not remove the open D1 backend. Not a drop-in source identity.",
+    "specific_existing_sources": [
+      "SemiprimeMacroGraph.producer/consumer",
+      "SemiprimeMacroGraphSemantics.localTable",
+      "SemiprimeMacroGraphUnique.accepted_unique",
+      "SemiprimePublicFactorCount.publicAcceptedFactorEquiv",
+      "SemiprimeMacroParameters.variableCount_le/scopeBound_fourth_le",
+      "SemiprimePublicAcquiredExecution.indexed_factor_count"
+    ]
+  },
+  "exponent_comparison": {
+    "paper": "Expected time2^O(b/m + m*b/sqrt(log b)); m\u2248(log b)^(1/4) balances inverse terms and yields2^O(b/(log b)^(1/4)). The relation matrix and factor-base enumeration cost2^O(b/m), not polynomial in b.",
+    "goal": "Deterministic all-semiprime total binary-input time2^(C*ell/sqrt(log(ell+2)))*(ell+1)^d, fixedC,d before all inputs. Direct single multiplication relation already has O(ell) edges, so conditionally D1 gives logarithmic saving1/2 without the ECDLP relation-collection loss.",
+    "conclusion": "For equal input-bit scales, saving1/4 is weaker than saving1/2. Neither is a b^(1/4) or b^(1/2) exponent; these are powers of log b in the denominator. Problems differ, so this compares parameter mechanisms rather than proving a complexity reduction between ECDLP and factoring."
+  },
+  "randomness_and_scope": {
+    "paper": "Las Vegas: random independent affine-hash seeds, random u/v target pairs, expected prime/square-root acquisition, and unbounded restarts. Deterministic decomposition solver and deterministic row dependency keep V uniform conditional on targets. Always-correct output does not imply deterministic worst-case time. Overall matrix space is subexponential, not polynomial, despite each D1 call using polynomial space.",
+    "non_transfer": "No same-rate deterministic seed search or worst-case total bound is supplied. Prime field, known prime group order and group relation extraction assumptions are not a semiprime-factor oracle. Fixing per-input good seeds would be advice, not the sought uniform finite program."
+  },
+  "shortcuts_audit": [
+    {
+      "mechanism": "Lemma1 positivity self-reduction / witness acquisition",
+      "disposition": "Already implemented semantically by existing public prefix-count recovery; new FINAL packed-moment route goes further: one weighted root scalar packs count+factor sum. Paper does not improve this. Physical acquisition of that scalar remains explicitly OPEN in PackedNetworkOriginal.counter_value / PackedMomentReadoutOriginal."
+    },
+    {
+      "mechanism": "Guess quotients/inverses and verify polynomial equations",
+      "disposition": "Useful relation encoding already compatible with our existing arithmetic predicate architecture. It turns witnesses into additional network variables; it does not physically acquire the Hermite/grid/packet coefficient words that our contraction algorithm needs. Invoking a second assumed contraction to produce them would not eliminate the backend obligation."
+    },
+    {
+      "mechanism": "Hash-factor-base inverse enumeration",
+      "disposition": "A real ECDLP-specific acquisition trick: enumerate only tau hash outputs via affine inverse, then solve curve-point square roots, avoiding a scan of the full group. No demonstrated shortcut for our already physically acquired compact alphabet/occurrence/selected-key sources or remaining coefficient/counter stages."
+    },
+    {
+      "mechanism": "Gaussian cancellation of relation rows",
+      "disposition": "Cancels unknown factor-base points to get a field equation U+V*xi=0, with V!=0 probabilistically. It is not a new exact contraction/cancellation identity or a deterministic semiprime scalar-acquisition procedure. No finite-stack clock/cell/heap/address source is furnished for our open pipeline."
+    }
+  ],
+  "openai_D1_verified_primary_statement": {
+    "source_url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+    "sha256": "5b1612dc2eebb2cad5b4cbe62d1fed2982f01ab1908c26f70010a651487e8123",
+    "verification": "Fetched pinned primary PDF in memory, checked exact887884bytes/SHA against existing source pin, extracted actual TheoremD.1 statement; no build.",
+    "assumptions": [
+      "Fixed positive C,A,b; integer s>=2.",
+      "Bipartite multigraph, <=Cs edges, max degree<=ceil(s^(9/10)), polynomially many vertices; ordered ports distinguish parallel edges and isolated scalar vertices remain.",
+      "L is TOTAL graph+tensor description length. Entries in B_(P0,l)=(Z/2^P0Z)[V]/V^l, 1<=P0,l<=Cs.",
+      "Uniform actual entry evaluation on every Boolean port assignment takes (s+L)^b*2^(A*s^.9) time and (s+L)^b space."
+    ],
+    "conclusion": "Deterministic exact modular contraction in (s+L)^O(1)*2^O(s/sqrt(log s)) bit operations and polynomial(s+L) space. Constants depend only on fixed hypotheses.",
+    "exact_count_specialization": "For Boolean predicates set l=1 and P0>|E|, bounded by Cs after fixed scaling; count<=2^|E| then no modular wraparound. Polynomial-size descriptions and polynomial entry predicates satisfy the stated evaluator budget. Edge subdivision creates the required bipartition at constant-factor cost.",
+    "scope": "This checks applicability/statement, not correctness of the full D1 proof. Pinned ECDLP paper explicitly disclaims independent verification of D1."
+  },
+  "formal_scope": {
+    "vendor_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "local_vendor": "63-module generic shared-summary/layout closure; namespace-prefix import adaptation only. It is not the full SAT endpoint or D1.",
+    "primary_doc_url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/docs/378.md",
+    "primary_final_source_url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean",
+    "actual_upstream_endpoint": "For each FIXED CNF width k>=2, one deterministic primitive exact-count/SAT machine, runtime poly_k(actual encoding length)*2^O_k(n*(loglog n)^2/sqrt(log n)), all-prefix polynomial visited space. Actual fixed-k theorem source was read; no fresh kernel build performed.",
+    "not_supplied": "The sharper high-arity implicit-tensor D1 endpoint or our complete original-binary factoring machine. Replacing fixed k by growing macrovertex arity is not justified: machine/constants depend on k. Existing native count equality or component FINAL proofs do not by themselves prove the sought whole total-bit clock."
+  },
+  "repository_reference_source_pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroGraph.lean": "91919748fae18f1340d2f4be1f79faa61dca323c8cad0f8762dbf16f88cf46e3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroGraphSemantics.lean": "7f439b8fe274959f417b10123e5907dfd874283d5b2512818061c89fc8529df7",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroGraphUnique.lean": "9774e108d86dc51d4d31ffec25b456a5d77c237b43b60ed6ea655a907230e3c1",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroBitNetwork.lean": "8d451c169141e7178288509d789f66fd0fb9ed1603b8da6d668503fb936f2f4e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroParameters.lean": "c080bebe112924b24e809db8ce37854e17873223c7e14fe4cb3292e3644e3fff",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicFactorCount.lean": "3f9aa45ff0644b769f49f0906035f739009d208562dc30d9fc9bf18c9ff32608",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicAcquiredExecution.lean": "640a3dc7c4ee46580ef4376b60def0c77b1bdf758866bd883c77227fe49a1532",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedMomentOriginal.lean": "b655610aa0db925f938fa20b5d7aded3c0e42257583b178a555647d51e5117e7",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkOriginal.lean": "55a8ca97b9d35cca8517a98cd6ee9e81b9cd4756d099fe9878bb55a603498660",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedMomentReadoutOriginal.lean": "8a265dd5d33b31398271475bb594804eb36958ee3a4635c66699e035c70603c0",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireEncoding.lean": "39823b1f6710ddcd83e047d9cac5d33ddd7e9d0d285668e94033c0f0df899b7d",
+    "/home/dbsanfte/riemann/formal/vendor/openai-semiprime/upstream-pin.json": "529b688003f15eca19b26ab8901c97775de3fd98a25c339a0be704061a125eff",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-eth-formal-bridge-20261026/lean-specification.md": "8400680eb8d36dc305fc73eb45e746fa5af1dbece2afb93449c3377abfe09987",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-eth-formal-bridge-20261026/review-factor-network-code.md": "850f9deb9fb29eee6c2b6d220479e17f35fdef00f0e7a94faa506b0ca73009cf",
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-eth-paper-20261026/implications.md": "de1920f2a5ad252033e165483990e93b403b0b1c8b8f0afe995245a4297359e4"
+  },
+  "no_repo_edits": true,
+  "no_proof_builds": true,
+  "no_goal_resume": true,
+  "no_blackbox_verification_claim": true
+}

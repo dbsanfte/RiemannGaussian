@@ -1,0 +1,189 @@
+{
+  "status": "FINAL_8_MODULES_SOURCE_CANONICAL_WRITERS_STOPPED",
+  "strict": true,
+  "ordinary_root_all15_default200k": true,
+  "lint_namespaces": 11,
+  "every_generated_standard3_only": true,
+  "counts": {
+    "modules": 8,
+    "declarations": 328,
+    "theorems": 214
+  },
+  "independent_objects_byte_equal": true,
+  "actual_import_pairs": 18312,
+  "actual_import_files": 36624,
+  "missing_imports": [],
+  "changed_import_files": [],
+  "protected17054_unchanged": true,
+  "frozen17_static10_descriptor10_carryRecord5_unchanged": true,
+  "modules": {
+    "SemiprimeD1StackTransformSelectors": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformSelectors.lean",
+        "sha256": "a4572a696394bd24805f41a9b1ec2a59b009256c3c32493ef8fa5e5ed9aaa2b8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformSelectors.olean",
+        "sha256": "c87d44fff38e0ebf606d4cda11ada03b8037d3b37413d110d5e22d348d9ccd0e"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformSelectors.independent.olean",
+        "sha256": "c87d44fff38e0ebf606d4cda11ada03b8037d3b37413d110d5e22d348d9ccd0e"
+      }
+    },
+    "SemiprimeD1StackTransformSelectorsPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformSelectorsPrimitives.lean",
+        "sha256": "d7d44b6e73ba2237986a75241f9e75902d63d59a96a2f5daf9c5c700bf96339e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformSelectorsPrimitives.olean",
+        "sha256": "87ba5658ae1320c425fb4862354a438853b2ec4b505d64516b66be14fa3d906b"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformSelectorsPrimitives.independent.olean",
+        "sha256": "87ba5658ae1320c425fb4862354a438853b2ec4b505d64516b66be14fa3d906b"
+      }
+    },
+    "SemiprimeD1StackTransformSelectorsDecode": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformSelectorsDecode.lean",
+        "sha256": "b6f6fba056d1488f9844129056a82fc321b31427947f474d34660f3dffabe350"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformSelectorsDecode.olean",
+        "sha256": "f3c854cd861e4cfe538f57c59eae9293a45e7985f274abcb17bf97e9be2ec222"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformSelectorsDecode.independent.olean",
+        "sha256": "f3c854cd861e4cfe538f57c59eae9293a45e7985f274abcb17bf97e9be2ec222"
+      }
+    },
+    "SemiprimeD1StackTransformSelectorsExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformSelectorsExecution.lean",
+        "sha256": "3e6f7bafb444bf444e22cc2db796654bcf6e599876862bfdc8c3de31a2dc2268"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformSelectorsExecution.olean",
+        "sha256": "c36d67de4414db717d2a538b2eadbd79179a13b6986b00e8f28353f11b02a278"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformSelectorsExecution.independent.olean",
+        "sha256": "c36d67de4414db717d2a538b2eadbd79179a13b6986b00e8f28353f11b02a278"
+      }
+    },
+    "SemiprimeD1StackTransformSelectorsBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformSelectorsBounds.lean",
+        "sha256": "db12cc1cc1f969eca8405817f18c6541b00525945d6e9977ee75a3aafa4d2c24"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformSelectorsBounds.olean",
+        "sha256": "e9d1d21d1fb74438c2e3ea764af97f489fb871b46e0c57057a743b58c2f22764"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformSelectorsBounds.independent.olean",
+        "sha256": "e9d1d21d1fb74438c2e3ea764af97f489fb871b46e0c57057a743b58c2f22764"
+      }
+    },
+    "SemiprimeD1StackTransformSelectorsReject": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformSelectorsReject.lean",
+        "sha256": "2b85a38d76fc9176a9e5f602ed0b6af46d1118aecb772be0f71cfae992b03358"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformSelectorsReject.olean",
+        "sha256": "cf5027e640d897ed46a18ef595ee97bafc468dfcd07c369086fc09721876c0f9"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformSelectorsReject.independent.olean",
+        "sha256": "cf5027e640d897ed46a18ef595ee97bafc468dfcd07c369086fc09721876c0f9"
+      }
+    },
+    "SemiprimeD1StackTransformSelectorsOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformSelectorsOriginal.lean",
+        "sha256": "cb5e9aa3f05bcd6a48b79a7e0467e584e579add3b784165c1ca3484e0eb0a7a4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformSelectorsOriginal.olean",
+        "sha256": "6e2914d995dd4e21e0995049d1f9e0794fe3406da4b79b586f178c2e976d777e"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformSelectorsOriginal.independent.olean",
+        "sha256": "6e2914d995dd4e21e0995049d1f9e0794fe3406da4b79b586f178c2e976d777e"
+      }
+    },
+    "SemiprimeD1StackCarryDescriptorRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCarryDescriptorRecord.lean",
+        "sha256": "9a84e966963b025bf411b0621ceb2c51f4d0ec4b0b6ef8def20ac38cb6b0332d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackCarryDescriptorRecord.olean",
+        "sha256": "7dc85e5e9e940f964c693dd2c8310bfcec764b3fec222df2e5a8a6a28d77af9e"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackCarryDescriptorRecord.independent.olean",
+        "sha256": "7dc85e5e9e940f964c693dd2c8310bfcec764b3fec222df2e5a8a6a28d77af9e"
+      }
+    }
+  },
+  "selector_valid_controls": [
+    "SELECTOR_PASS tag=1 tr=0 actual_steps=26 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true",
+    "SELECTOR_PASS tag=1 tr=1 actual_steps=32 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true",
+    "SELECTOR_PASS tag=1 tr=2 actual_steps=38 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true",
+    "SELECTOR_PASS tag=2 tr=0 actual_steps=32 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true",
+    "SELECTOR_PASS tag=2 tr=1 actual_steps=38 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true",
+    "SELECTOR_PASS tag=2 tr=2 actual_steps=44 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true",
+    "SELECTOR_PASS tag=3 tr=0 actual_steps=38 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true",
+    "SELECTOR_PASS tag=3 tr=1 actual_steps=44 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true",
+    "SELECTOR_PASS tag=3 tr=2 actual_steps=50 all7roles=true original_fields_retained=true before_pushes_both_readers_empty=true stale_selectors_erased=true singleton_bits_constructed=true flags_clear=true exact_outer_return=true own_exact_clock=true"
+  ],
+  "selector_reject_controls": [
+    "SELECTOR_ABORT_PASS case=unknown_tag0 actual_steps=13 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag4 actual_steps=37 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag5 actual_steps=43 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag6 actual_steps=49 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag7 actual_steps=55 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag8 actual_steps=61 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag9 actual_steps=67 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag10 actual_steps=73 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag11 actual_steps=79 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag12 actual_steps=85 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag13 actual_steps=91 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag14 actual_steps=97 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag15 actual_steps=103 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag16 actual_steps=109 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=unknown_tag17 actual_steps=115 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=tag_overflow20 actual_steps=130 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=tr_overflow4 actual_steps=46 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=tag_false_marker actual_steps=29 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true",
+    "SELECTOR_ABORT_PASS case=tr_false_marker actual_steps=52 all7roles=true selectors_empty=true originals_retained=true unread_suffix_exact=true flags_clear=true exact_outer_return=true"
+  ],
+  "carry_controls": [
+    "FULL_DESCRIPTOR_RECORD_PASS case=dirty_i0_empty_scope actual_transitions=3205 actual_loader_transitions=370 scopes=0 all137roles=true all51old_template_fields_drained=true loaded_template_only_N_index=true sources6_retained=true scratch_clear=true checker51clear=true scope_count_retained=true consumed_outputs=true caller_history_order=true caller_output_retained=true flags_clear=true real_outer_return_retained=true",
+    "FULL_DESCRIPTOR_RECORD_PASS case=dirty_i1_nontrivial_scope actual_transitions=12042 actual_loader_transitions=375 scopes=2 all137roles=true all51old_template_fields_drained=true loaded_template_only_N_index=true sources6_retained=true scratch_clear=true checker51clear=true scope_count_retained=true consumed_outputs=true caller_history_order=true caller_output_retained=true flags_clear=true real_outer_return_retained=true",
+    "FULL_DESCRIPTOR_RECORD_PASS case=empty_old_template_i0_two_zeroIDs actual_transitions=11611 actual_loader_transitions=115 scopes=2 all137roles=true all51old_template_fields_drained=true loaded_template_only_N_index=true sources6_retained=true scratch_clear=true checker51clear=true scope_count_retained=true consumed_outputs=true caller_history_order=true caller_output_retained=true flags_clear=true real_outer_return_retained=true"
+  ],
+  "selector_observer_constants_standard3": 15,
+  "carry_snapshot_observer_constants_standard3": 30,
+  "source_roles": {
+    "selector": 7,
+    "carry_descriptor": 137
+  },
+  "own_clock": {
+    "selector": "oldStage.len+oldInverse.len+6*(actualTag.len+actualCoord0.len)+15; exact same source",
+    "carry": "51*(6*ALL137actualInitialWordBytes+5)+2 plus actual completeCarryRecord clock+2"
+  },
+  "scope": "Physical selector7 plus completeCarry137 prepared metadata-to-row source; originalN/descriptor/scope acquisition and reuse cleanup remain actualcaller work. No N-only whole-graph claim.",
+  "artifacts": [
+    "/tmp/semiprime-explicit-rate-20261027/SelectorsCarryAudit.lean",
+    "/tmp/semiprime-explicit-rate-20261027/selectors-carry-audit-final.log",
+    "/tmp/semiprime-explicit-rate-20261027/TransformSelectorsControls.lean",
+    "/tmp/semiprime-explicit-rate-20261027/transform-selectors-controls.log",
+    "/tmp/semiprime-explicit-rate-20261027/CarryDescriptorRecordControls.lean",
+    "/tmp/semiprime-explicit-rate-20261027/carry-descriptor-record-controls.log"
+  ]
+}

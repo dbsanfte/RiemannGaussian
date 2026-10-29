@@ -1,0 +1,28 @@
+{
+  "status": "FINAL_ROUTING_COMPONENTS_PASS",
+  "counts": {
+    "modules": 13,
+    "new_sources": 12,
+    "repaired_allowed_existing_sources": 1,
+    "declarations": 640,
+    "theorems": 370
+  },
+  "strict": true,
+  "ordinary_root_15_default_budget": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "exact_execution_controls": true,
+  "actual_compiler_header_dependencies": 18168,
+  "live_dependency_source_object_pins_unchanged": true,
+  "protected_sources": 17054,
+  "protected_source_differences": [],
+  "historical_journals_unchanged": true,
+  "full_goal_complete": false,
+  "remaining": "Physical original-N endpoint recipe implementation, forward catalogue emission/ID zipper, factor-major per-record lookup/routed tape acquisition, and whole original-input factor-machine join remain open. Prepared-map lookup and prepared routed-tape fibre filtering are genuine finite-machine sources with actual clock/all-prefix bounds.",
+  "group_verifications": {
+    "owner-arithmetic": "/tmp/semiprime-explicit-rate-20261027/owner-arithmetic-verification.json",
+    "owner-lookup": "/tmp/semiprime-explicit-rate-20261027/owner-lookup-verification.json",
+    "owner-fibre": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-verification.json",
+    "owner-madd-bounds": "/tmp/semiprime-explicit-rate-20261027/owner-madd-bounds-verification.json"
+  }
+}

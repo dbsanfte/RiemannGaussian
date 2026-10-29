@@ -1,0 +1,54 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "modules": 5,
+  "declarations": 164,
+  "theorems": 105,
+  "strict": true,
+  "ordinary_root_15linters_default200k": true,
+  "all_generated_standard3": true,
+  "actual_compiled_controls": "mode=or words=[[], [true], [false, true]] transitions=489 all17roles=true flags=true return_cells=true bound=true\nmode=input words=[[false, false]] transitions=163 all17roles=true flags=true return_cells=true bound=true\nmode=equality words=[[true, true], [true]] transitions=370 all17roles=true flags=true return_cells=true bound=true\nmode=or words=[] transitions=215 all17roles=true flags=true return_cells=true bound=true\ntwo_real_record_calls transitions=885 all17roles=true chronological_history=true flags=true return_cells=true\n",
+  "live_import_pairs": 18071,
+  "live_files": 36142,
+  "missing": [],
+  "changed": [],
+  "objects": {
+    "SemiprimeD1StackBooleanRecord": {
+      "source_sha256": "12120a6c024348f096560112e6ddd7c65fb53ed83aa4878890fec21dba255e3f",
+      "canonical_sha256": "958dce5a0f6cc2d01059fe97588f5ece85bd1deef6bce1b37caa09b572adbd75",
+      "independent_sha256": "958dce5a0f6cc2d01059fe97588f5ece85bd1deef6bce1b37caa09b572adbd75",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackBooleanRecordComponents": {
+      "source_sha256": "add161bb3b5c26f3791a5ebaa0ac7a6b8acf82260a0f6384c79dac6a4a44d4f7",
+      "canonical_sha256": "c458ac8aa76ead78abb390bcff769b608fc80700dd3b8bb2765816ee4587cc86",
+      "independent_sha256": "c458ac8aa76ead78abb390bcff769b608fc80700dd3b8bb2765816ee4587cc86",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackBooleanRecordExecution": {
+      "source_sha256": "09d52d9b3c23a3532501072d82e2ed6e0386a89655c3d39c04f199cf8e86326c",
+      "canonical_sha256": "a6157b85b3b70e18b7f17a783cec5111451905b2caa4b7a91f8c341ed5a11986",
+      "independent_sha256": "a6157b85b3b70e18b7f17a783cec5111451905b2caa4b7a91f8c341ed5a11986",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackBooleanRecordBounds": {
+      "source_sha256": "1f48c3b58afb3ab3c0258b10aac3186c01d385d2d4836da562ffe3bdbf4e5601",
+      "canonical_sha256": "406127216b6c5f83ceda8f8bff1f2f7f13594ba837637bf9a682b289330ddd90",
+      "independent_sha256": "406127216b6c5f83ceda8f8bff1f2f7f13594ba837637bf9a682b289330ddd90",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackBooleanRecordOriginal": {
+      "source_sha256": "bc2c0329d9b2faa73d3334ece5f8943d080cafcfbd248aa076ce2cd8c2cf7091",
+      "canonical_sha256": "33c6bfab163572f842bf29743739a17806e3c5feabb42e0e279f51762ff9948c",
+      "independent_sha256": "33c6bfab163572f842bf29743739a17806e3c5feabb42e0e279f51762ff9948c",
+      "byte_equal": true
+    }
+  },
+  "preservation": {
+    "protected_count": 17054,
+    "changed": [],
+    "frozen_logger_changed": [],
+    "frozen_boundary_changed": []
+  },
+  "scope": "Actual three-mode literal Boolean full table, acquired ordered binary scope to unary, and consuming original record logger. Scope acquisition/routing and finite original vertex tag parsing remain caller work. Full original-input pipeline remains OPEN.",
+  "writers_stopped": true
+}

@@ -1,0 +1,110 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 4,
+    "declarations": 55,
+    "theorems": 32
+  },
+  "modules": {
+    "SemiprimeD1PackedNetworkTopology": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkTopology.lean",
+        "sha256": "60dec0a4e4c2536a2c0e34b5ea36db422f4d0e7d824318540e875bce8f379860"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedNetworkTopology.olean",
+        "sha256": "ae5c2b421053075e65ceee5b497370203f8dc9d937fa7d0325161775bc56b208"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-cache-reuse-frozen/SemiprimeD1PackedNetworkTopology.olean",
+        "sha256": "ae5c2b421053075e65ceee5b497370203f8dc9d937fa7d0325161775bc56b208"
+      }
+    },
+    "SemiprimeD1PackedRootCaches": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedRootCaches.lean",
+        "sha256": "b8578e41c5fc6d4cb021de62f7adb4c586d0663bd04809e04ad6391d40af21ce"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedRootCaches.olean",
+        "sha256": "bc42bfdebcd2714ecaa26faa896de9ec8d5a2c2df7e7b6d1d5751ba1fecc9863"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-cache-reuse-frozen/SemiprimeD1PackedRootCaches.olean",
+        "sha256": "bc42bfdebcd2714ecaa26faa896de9ec8d5a2c2df7e7b6d1d5751ba1fecc9863"
+      }
+    },
+    "SemiprimeD1PackedRootFactoryInputs": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedRootFactoryInputs.lean",
+        "sha256": "e1ba3f64e94b9df122fb69d7f5a8d4a0ed06ae449218432e4260eccfa52ded60"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedRootFactoryInputs.olean",
+        "sha256": "777938bd2fbfb61098a605e03b02c0dba6374c1432c914985491440ce56dc52e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-cache-reuse-frozen/SemiprimeD1PackedRootFactoryInputs.olean",
+        "sha256": "777938bd2fbfb61098a605e03b02c0dba6374c1432c914985491440ce56dc52e"
+      }
+    },
+    "SemiprimeD1PackedRootReady": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedRootReady.lean",
+        "sha256": "d321fa2a1fb56bc2ecb475d79c1bc44383a1a3d2b292780bacbc7d4b3a0e02bd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedRootReady.olean",
+        "sha256": "1b014587fb674447a32f68a84c58212ec0f697440f51752b416f4d6152dd68f2"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-cache-reuse-frozen/SemiprimeD1PackedRootReady.olean",
+        "sha256": "1b014587fb674447a32f68a84c58212ec0f697440f51752b416f4d6152dd68f2"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "sealed_utc": "2026-10-29T03:52:39.981612+00:00",
+  "source_and_canonical_writers_stopped": true,
+  "source_proofs_default_200000_heartbeats": true,
+  "source_and_canonical_mode": "0444; permanently immutable after this checkpoint",
+  "strict_and_audit_actual_terminal0_session": 9253,
+  "actual_header_pins_actual_terminal0_session": 33040,
+  "before_header_pins_actual_terminal0_session": 18626,
+  "actual_imported_pins": {
+    "before_pairs": 19184,
+    "after_live_pairs": 19188,
+    "all_19184_external_before_pairs_unchanged": true,
+    "all_current_actual_header_source_object_hashes_match": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/packed-topology-reuse-live-before.json",
+    "after_live": "/tmp/semiprime-explicit-rate-20261027/packed-root-cache-reuse-live-after.json"
+  },
+  "independent_read_only_review": {
+    "status": "PASS",
+    "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-cache-reuse-independent-review.txt",
+    "sha256": "beb002c8528f5b0f99ccafc02a7444811fed1095b009d56d88874caf468e3b94",
+    "all4_current_sources_fully_read": true,
+    "all_source_before_after_current_pins_match": true,
+    "all_source_canonical_writes": false
+  },
+  "scope": {
+    "runtime": "SAME immutable RootInput2505 original-binary-N-only program, no extra acquisition call",
+    "actual_data": "ALL154 stopped structural source/cache words, complete selector63/occurrence21 banks, chronological sparse placements and observed packet bytes bound to actual NEW marked-network semantics",
+    "cache": "all143 selector63/occurrence21/inventory59 roles statically included/injective; seven exact table-free factory operands; all unused maps and shadows retained",
+    "new_operands": "actual NEW weighted record tape and actual empty-axis2ell context/TRUEwidth remain separate; actual rationalFALSEwidth depends only on acquireda/M",
+    "clock": "OWN frozen RootInput2505 actual clock and all-prefix memory unchanged; fixedA,d before all canonical positiveN gives A*(ell+1)^d*2^(114000*scopeBound ell)",
+    "mathematical_transfer": "exact dependent owner-count/orderedtypedRows equality retains every order/duplicate/ID; only table-free payload transferred",
+    "not_claimed": "NO old tensor/table/coefficient bytes or old literalp2phasecache transfer; NO native-machineclock transport; NO acquired contraction/scalar or complete primitive recursivecounter/factorer"
+  },
+  "control_policy": "No new primitive controller or runtime changed: universal SAME actual source certificates and exact word proofs; no frozen control replay or numerical campaign",
+  "api": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-cache-reuse-api.txt",
+    "sha256": "86aecda3fc682981254f29f7771e9a473b55171ddd31da60d70abbc789651113"
+  }
+}

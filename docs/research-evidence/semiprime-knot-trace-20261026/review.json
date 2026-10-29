@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "previous_turn_classification": "progress",
+  "current_turn_classification": "progress in uniform coverage and acquired structure; no complete-query gain",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "current_query_bound": "soft O(J+sqrt(Jm))",
+  "target_query_bound": "soft O(J+sqrt(m))",
+  "principal_result": "Lift-independent linear phases on public index-k colour lattices and a soft-k acquired selected-root Gauss family with uniform prepared-semiprime coverage.",
+  "prior_credit": [
+    "The original catalogue already had soft-k acquisition.",
+    "Virtual weighted Gauss coverage/content and pair-first/Dickson consumers are inherited."
+  ],
+  "scope": [
+    "All-semiprime coverage on the inherited prepared branch, with easy cases and factor-or-unit prepasses inherited.",
+    "Exact two-generator traces propagate known common-prime intersections; no colour-subtree union predicate has been acquired.",
+    "Determinant-one phase result excludes literal integer exponent shifts, not hidden-order modular aliases.",
+    "Omega(k²) result concerns expanded formal common-trace coefficients of actual nondegenerate pairs, not arbitrary implicit algorithms.",
+    "Half-list mixed orientation is a global OR at the actual stationary pair; arbitrary local or scalar-norm zeros have no such promise."
+  ],
+  "reviews": [
+    "farey-query-review.md",
+    "trace-recurrence-review.md",
+    "mixed-trace-review.md"
+  ],
+  "incorporated_qualifications": [
+    "Minus sign in colour-lift variation.",
+    "Exact original integer-ceiling horizon and short-order guard.",
+    "Opposite closure, negative-window source metadata and nonzero-phase axes retained.",
+    "Swap exchanges j with N*j^-1; no same-colour assumption.",
+    "Explicit output-sensitive root/lift enumeration.",
+    "Nondegenerate leading-degree restriction; native traces use q^(-tau).",
+    "Ramified explicit Farey triple phase counts are12,12,4.",
+    "EMS equal-parameter coefficient from Theorem4.4, not unqualified Corollary4.5 wording.",
+    "Selected-root coverage proof distinguished from inherited full-list proof."
+  ],
+  "preservation": {
+    "protected_files_verified": 811,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1523484,
+        "sha256": "984501a88dac06207d85f250e9bc2a5627596e195fe5ea7b3aaa3a11d71d2f8b"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2385101,
+        "sha256": "286cbf5b02d688eec0e5b92fc28be207106ba84b2688ae542e42f5d5eaf5373c"
+      }
+    },
+    "concurrent_files_unchanged": 22,
+    "scratch_baseline_sha256": "f162b80c265cf8f53966f4843038cb276fde5c31c4ee6341dab1490d1884833e"
+  },
+  "validation": {
+    "primary_sources": 6,
+    "source_pins": 7,
+    "local_links": 9,
+    "json_and_whitespace": true,
+    "git_diff_check": true,
+    "mathematical_validation": "Independent paper derivations; no kernel-checked proof or computational coverage test."
+  },
+  "numerical_campaign": false,
+  "new_executable_research_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

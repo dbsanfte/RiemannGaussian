@@ -1,0 +1,39 @@
+{
+  "strict": true,
+  "root15": true,
+  "standard_axioms_only": true,
+  "declarations": 86,
+  "theorems": 63,
+  "isolated_byte_identical": true,
+  "smoke": "feature-bits-smoke.log",
+  "modules": {
+    "SemiprimeSourceHistogramFeatureBits": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramFeatureBits.lean",
+        "sha256": "43a60aa1f7823d64d4c2646526afa6c893a17df88c81be4b2af69bcd36b348b3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramFeatureBits.olean",
+        "sha256": "c7d198fb8de2b2ef778cd842b36101efeb6f27b73d48211215c12276024b9d00"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-histogram-acquisition-20261027/isolated/SemiprimeSourceHistogramFeatureBits.olean",
+        "sha256": "c7d198fb8de2b2ef778cd842b36101efeb6f27b73d48211215c12276024b9d00"
+      }
+    },
+    "SemiprimeSourceHistogramFeatureBitsBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramFeatureBitsBounds.lean",
+        "sha256": "c9221f4b4249cf3f774a2fcc883a4a2308b406e01dec3c05ef93da49cf50395f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramFeatureBitsBounds.olean",
+        "sha256": "ad0365366e0e7d6517fffc3f084f1a154536f4c56c3c25e1dc64ea70e5c6d684"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-histogram-acquisition-20261027/isolated/SemiprimeSourceHistogramFeatureBitsBounds.olean",
+        "sha256": "ad0365366e0e7d6517fffc3f084f1a154536f4c56c3c25e1dc64ea70e5c6d684"
+      }
+    }
+  }
+}

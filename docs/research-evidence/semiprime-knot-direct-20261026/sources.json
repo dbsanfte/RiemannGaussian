@@ -1,0 +1,92 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "Tal2026",
+      "title": "Computing Modular Factorials Below the Square-Root Barrier",
+      "author": "Yann Tal",
+      "url": "https://eccc.weizmann.ac.il/report/2026/211/",
+      "fulltext": "https://eccc.weizmann.ac.il/report/2026/211/download",
+      "checked": [
+        "Theorems 1.1–1.3",
+        "Proposition 4.3",
+        "Appendix H shifted-prefix state and halving"
+      ],
+      "use": "Tested the known-prime nilpotent-shift mechanism; its native unit-shift specialization does not close."
+    },
+    {
+      "id": "ZurnaciGoldmanSimeonov2020",
+      "title": "Relationships Between Identities for Quantum Bernstein Bases and Formulas for Hypergeometric Series",
+      "authors": [
+        "Fatma Zurnaci",
+        "Ron Goldman",
+        "Plamen Simeonov"
+      ],
+      "url": "https://www.pmf.ni.ac.rs/filomat-content/2020/34-8/34-8-2-11604.pdf",
+      "doi": "10.2298/FIL2008485Z",
+      "checked": [
+        "Sections 3.3–3.4"
+      ],
+      "use": "Basis-transform context; the exact native coefficient conjugacy is derived in this packet."
+    },
+    {
+      "id": "BostanYurkevich2022",
+      "title": "Fast computation of the N-th term of a q-holonomic sequence and applications",
+      "authors": [
+        "Alin Bostan",
+        "Sergey Yurkevich"
+      ],
+      "url": "https://arxiv.org/pdf/2012.08656",
+      "checked": [
+        "Section 3.4, Theorem 5"
+      ],
+      "use": "Prior baseline: keep growing recurrence order and coefficient degree in the cost."
+    },
+    {
+      "id": "GaroufalidisLe2005",
+      "title": "The colored Jones function is q-holonomic",
+      "authors": [
+        "Stavros Garoufalidis",
+        "Thang T. Q. Lê"
+      ],
+      "url": "https://arxiv.org/abs/math/0309214",
+      "checked": [
+        "q-holonomic existence theorem; prior source context retained"
+      ],
+      "use": "Does not itself initialize a uniformly bounded recurrence for the growing input family."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-joint-20261026/exact-string.md",
+      "bytes": 15328,
+      "sha256": "4fa2338e0aaaf21159c018411584727fe3d06becdea11781d42e901f31f514d8"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-joint-20261026/bispectral-string.md",
+      "bytes": 11026,
+      "sha256": "0fe0cb3392b0da83c8653023ef123145ab1c6a15cc831cacf90d2fbbfe6d7850"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-joint-20261026/native-inversion.md",
+      "bytes": 11663,
+      "sha256": "e5afbd697f2620e010882888d07fec31fcb2d8c8730d8c9fad4a6499e7971d0f"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-joint-20261026/group-polynomial.md",
+      "bytes": 8378,
+      "sha256": "8df97e2486c191ad989c97ac57da0e424820cd1e5541f08d2e19e5c87e06719e"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-prefix-20261025/README.md",
+      "bytes": 6429,
+      "sha256": "18f7fb131a7b1e93d28267f9076cf00d34dccb1b988d383879d6a00b55b86484"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue.md",
+      "bytes": 10140,
+      "sha256": "9ded79850c2f200069a7da67502d0de579d1df0457cb06c865fb3d39c9654058"
+    }
+  ]
+}

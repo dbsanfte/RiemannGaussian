@@ -1,0 +1,173 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeAffineJetBits",
+    "exit_code": 0,
+    "seconds": 7.631201950949617,
+    "source_sha256": "f7b40da75e97d34b0aa29676a23f9a25d3c0ba761dfb889ec25b36caa4c5e873",
+    "isolated_sha256": "190e29f9dfd7a5c8e45f91070a7e6a5611a423fd786dd44924af0fb203a1d16e",
+    "canonical_sha256": "190e29f9dfd7a5c8e45f91070a7e6a5611a423fd786dd44924af0fb203a1d16e",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeNormalizedInverseBits",
+    "exit_code": 0,
+    "seconds": 7.421489982982166,
+    "source_sha256": "007d76431c36fe29e09b79a2439dd93b1007e4ec069be606aa2d5c6499bf7bd8",
+    "isolated_sha256": "f0b10b04f4874ef2e7bca9c9a53c1ffa2286317009cce8ed937d130c29359e38",
+    "canonical_sha256": "f0b10b04f4874ef2e7bca9c9a53c1ffa2286317009cce8ed937d130c29359e38",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeNormalizedInverseBitsBounds",
+    "exit_code": 0,
+    "seconds": 7.458365872036666,
+    "source_sha256": "bdf95c036e489e18f5eca82312cf3de82d2cf38a7b12d22120f9f4720755c9a2",
+    "isolated_sha256": "8967008322f276541367ecf986a5014d1976d65643c017a35d78123e54d92a10",
+    "canonical_sha256": "8967008322f276541367ecf986a5014d1976d65643c017a35d78123e54d92a10",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteEvaluationBits",
+    "exit_code": 0,
+    "seconds": 7.540848411037587,
+    "source_sha256": "0534470a98c94fcc13a3a0487d645c9862d7085d36eded14ece3d22ba28db250",
+    "isolated_sha256": "f10bafdad8532517b3c79d8ae4128c1b43acbc43905dc0ad9513b6bf416871e9",
+    "canonical_sha256": "f10bafdad8532517b3c79d8ae4128c1b43acbc43905dc0ad9513b6bf416871e9",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteEvaluationBitsBounds",
+    "exit_code": 0,
+    "seconds": 11.896796689950861,
+    "source_sha256": "9f7655d379c2a3afc5b4404225419d5c46dfd4990781609de63d45421fde99cb",
+    "isolated_sha256": "78c7c0cfeb9eec4bbc926eb6580728d07d77e8202c706517c2bb75bf861e1184",
+    "canonical_sha256": "78c7c0cfeb9eec4bbc926eb6580728d07d77e8202c706517c2bb75bf861e1184",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeCardinalInputBits",
+    "exit_code": 0,
+    "seconds": 7.327490527066402,
+    "source_sha256": "b99ad37b40dba7f2b30fe3b261e172caee207246db4f6e32a8e4f98ae98aaa51",
+    "isolated_sha256": "96f05a2cbd2ac2fa55208c9548b8ae55eea50caa2451c409c21bbd15fbc10955",
+    "canonical_sha256": "96f05a2cbd2ac2fa55208c9548b8ae55eea50caa2451c409c21bbd15fbc10955",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeScalarWordSum",
+    "exit_code": 0,
+    "seconds": 7.606793484999798,
+    "source_sha256": "be4b6c93ea0caae096a6fc289fa7e91e3ec77a1c111be8635206eabf65cde856",
+    "isolated_sha256": "d16b558155d364760750e66f5c7869e1f2539e9f4ec832c584789cc935287c14",
+    "canonical_sha256": "d16b558155d364760750e66f5c7869e1f2539e9f4ec832c584789cc935287c14",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteWordWidth",
+    "exit_code": 0,
+    "seconds": 8.044967054040171,
+    "source_sha256": "5c319a6ea888a9c683514bebf2582c5a9301c8d738db17695e0ad1611a7ce2b6",
+    "isolated_sha256": "59398433c0e79c10a789b7922c8bcdfec1693c0052a19a52bb41391f3267f924",
+    "canonical_sha256": "59398433c0e79c10a789b7922c8bcdfec1693c0052a19a52bb41391f3267f924",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteNodeBits",
+    "exit_code": 0,
+    "seconds": 6.337503943941556,
+    "source_sha256": "a365b6a9d33e85ffd724adec427a7c8ca5021af3ec0636724079f5a5c03fa788",
+    "isolated_sha256": "95394f8921926216b518b99b651021306aaa5e016e8958f22a3518d375215ef3",
+    "canonical_sha256": "95394f8921926216b518b99b651021306aaa5e016e8958f22a3518d375215ef3",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteNodeBitsCorrectness",
+    "exit_code": 0,
+    "seconds": 7.256743527948856,
+    "source_sha256": "af16c2325100152d8518909be5adb445d07ae6ce7f39dc336922a8ac76bf2b17",
+    "isolated_sha256": "749b92e4e63f689b6d3776ecee04ccfd3b7bac0da2d37e5abefbd6cdf90c9986",
+    "canonical_sha256": "749b92e4e63f689b6d3776ecee04ccfd3b7bac0da2d37e5abefbd6cdf90c9986",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteNodeBitsBounds",
+    "exit_code": 0,
+    "seconds": 12.725843352032825,
+    "source_sha256": "8c0b78280db176f8772b502d208b352e181ddec80f438609b778df3f092a5af2",
+    "isolated_sha256": "f87a03c3e9187bd4aae4196daed7db6d70ef6fd46d35a369263e0aefa5b0c602",
+    "canonical_sha256": "f87a03c3e9187bd4aae4196daed7db6d70ef6fd46d35a369263e0aefa5b0c602",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeAcquiredHermiteBits",
+    "exit_code": 0,
+    "seconds": 6.90417227090802,
+    "source_sha256": "fd9bdf2f2e5fd5cdc19e2e1cf9552bf6e6aac3b9a898779679e258dafb1eff80",
+    "isolated_sha256": "1a5772325434411b342d2fd58edfde7ec007b6f83d1aebfe1bfbe70e46ef4683",
+    "canonical_sha256": "1a5772325434411b342d2fd58edfde7ec007b6f83d1aebfe1bfbe70e46ef4683",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeWordPacketHermiteInput",
+    "exit_code": 0,
+    "seconds": 6.861736085964367,
+    "source_sha256": "d3125e19316034b3b6b538ef266a83f529f1214d9ca8b8e4acf25a0ddf8372de",
+    "isolated_sha256": "6c48f961a0b28be6285f152516fd7293f4c4b07c924cfbec389d5910a3969845",
+    "canonical_sha256": "6c48f961a0b28be6285f152516fd7293f4c4b07c924cfbec389d5910a3969845",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteBitsCounter",
+    "exit_code": 0,
+    "seconds": 6.659903672058135,
+    "source_sha256": "f45a9c3e9effc142c9c6a14ea15fe40a818140b19f24ab3a026ee2f85cc4e4cb",
+    "isolated_sha256": "895c5b1c05134d2bdfa41f975f9a900e07fd7133198997bfb3790d6729634a65",
+    "canonical_sha256": "895c5b1c05134d2bdfa41f975f9a900e07fd7133198997bfb3790d6729634a65",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteBitsCounterBudget",
+    "exit_code": 0,
+    "seconds": 6.999560001073405,
+    "source_sha256": "337382a300b370c9e6c770942d7d6bb0501857d66332a54396922226010d24c5",
+    "isolated_sha256": "bb5ff24137e8a60d924337a0863900d660724b2d1e38b6a20613927cc0494be4",
+    "canonical_sha256": "bb5ff24137e8a60d924337a0863900d660724b2d1e38b6a20613927cc0494be4",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteBitsSetupCounter",
+    "exit_code": 0,
+    "seconds": 7.463424502057023,
+    "source_sha256": "e7873a4233a314bbe854a7b4371de3c6157650b0681f1253076587afb32a5dbf",
+    "isolated_sha256": "3bd2d075f1bb07a0429df8a67c4f1777f0f4c51a8907b4846a2cb663b2520c08",
+    "canonical_sha256": "3bd2d075f1bb07a0429df8a67c4f1777f0f4c51a8907b4846a2cb663b2520c08",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteBitsSetupBudget",
+    "exit_code": 0,
+    "seconds": 7.741252790903673,
+    "source_sha256": "10b6ce85eb46f2ca90fdc92b1cc8fc276ac4c67d91b010bc0d4350c3fce74711",
+    "isolated_sha256": "fc2f23e495823378bec1c2232fc7eaf358fe41e44581c37b46741b761ba4a431",
+    "canonical_sha256": "fc2f23e495823378bec1c2232fc7eaf358fe41e44581c37b46741b761ba4a431",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteBitsPublicController",
+    "exit_code": 0,
+    "seconds": 7.49842700897716,
+    "source_sha256": "d1f90eb2535aafb36633e33cf98db41ef907cd7fa8260e68ee4a6cdaf50938cb",
+    "isolated_sha256": "e2a1f6fd292c386632d6e4af023be3322165d3017903ce1064d976c01b480348",
+    "canonical_sha256": "e2a1f6fd292c386632d6e4af023be3322165d3017903ce1064d976c01b480348",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteBitsScheduledController",
+    "exit_code": 0,
+    "seconds": 6.851817447110079,
+    "source_sha256": "49ccc998cfe08b844bcfc5830a4471c355a6629cea2c314049c1ebc598a869fa",
+    "isolated_sha256": "49325b632887d66313fc7ce59a95ac59fafbdf2366014c72dad7d99f0def2f7c",
+    "canonical_sha256": "49325b632887d66313fc7ce59a95ac59fafbdf2366014c72dad7d99f0def2f7c",
+    "object_matches": true
+  }
+]

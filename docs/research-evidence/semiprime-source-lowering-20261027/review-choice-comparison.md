@@ -1,0 +1,13 @@
+# Independent review of physical source comparison and control
+
+Disposition: PASS at the stated conditional score-producer interface. Sources reviewed: SourceComparisonBits, SourceChoiceBits and SourceChoiceRefinement (exact pins in companion JSON). No source changes requested.
+
+Comparison uses the actual signed Boolean numerator×opposite-denominator products and signed-word order, without rational interpretation/GCD/Fits controlling execution. Positive original denominators are exactly the needed validity premise for cross-multiplication. Existing signed order handles both signed-zero encodings. The width and 200(W+1)^2 clock bounds are obtained from actual product and order primitives.
+
+`choose` follows the original tail-first recursion: its recursive winner is acquired first, then left and winner scores are BOTH actually invoked and charged, then actual Boolean order selects and physically copies an ID. Equality selects the left candidate. `choose_mem` justifies applying the original candidate-width/score bounds to the dynamically selected recursive winner. There is no unsupported reuse/caching claim for the repeated score calls.
+
+`assign` executes only the selected branch using a physical unary token list. The score receives the remaining tokens and candidate::fixed, matching the old scalar remaining-count recursion. The selected prefix is physically copied before recursion; the base case also copies. The bound hs is imposed at the reachable combined token/prefix length ≤N; every candidate trial retains that length bound. Each selected ID stays in the original finite candidate menu, so no unbounded ID width appears. `acquireTokens` actually constructs the n tokens and its 2n+1 work is included in run.
+
+Refinement uses arbitrary label decoding ONLY in theorem specifications. Its physical executable does not call decode or inspect rational values. `choose_decode`, `assign_decode`, `run_decode` preserve the exact original label order and ties even without injectivity of the decoding. The value-refinement and validity premises are the still-needed actual score compiler's contract, not an advised branch result. `control_polynomial` majorizes the literal finite-loop bound with a fixed monomial; it explicitly does NOT acquire or compile the score producer. Its score envelope F and W are conditional inputs that require a concrete compiler/height/resource join.
+
+No theorem here switches the current public N-only factorizer to this physical control. No all-source machine clock, complete allocator trace or primitive-internal report erasure is claimed. These are exact executed control and comparison refinements with retained callback/copy clocks, ready for the separate original-source compiler join.

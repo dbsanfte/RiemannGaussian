@@ -1,0 +1,18 @@
+{
+  "review": "algebra-counter-review.md",
+  "disposition": "PASS finite algebra and mathematical loop correspondence; execution/runtime refinement remains",
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeBooleanDiagonal.lean": {
+      "sha256": "149dd6487b7ed4af9b31ce84fa8313cee5824d68cdfc00c31268d03f1626a525",
+      "bytes": 8460
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterFiltration.lean": {
+      "sha256": "154cdbe955a199ada7719199ff0a19d23ed6c20c6da0ac3941b2d3c92ad452a5",
+      "bytes": 6943
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteRecovery.lean": {
+      "sha256": "781cc951d325e38f6c96d5c95c665c9c66b098f2d06d9f45c39382db093c1871",
+      "bytes": 10888
+    }
+  }
+}

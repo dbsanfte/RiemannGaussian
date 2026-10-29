@@ -1,0 +1,5 @@
+import RiemannGaussian
+import RiemannGaussian.SemiprimeBooleanDiagonal
+#lint- in RiemannGaussian.SemiprimeBooleanDiagonal
+#print axioms RiemannGaussian.SemiprimeBooleanDiagonal.boolean_diagonal
+#print axioms RiemannGaussian.SemiprimeBooleanDiagonal.retained_taylor_diagonal

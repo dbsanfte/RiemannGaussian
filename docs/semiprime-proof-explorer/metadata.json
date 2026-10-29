@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "title": "Semiprime algorithm proof explorer",
+  "repository_url": "https://github.com/dbsanfte/RiemannGaussian",
+  "pages_path": "/RiemannGaussian/semiprime-proof/",
+  "publication_packet": "docs/research-evidence/semiprime-publication-20261029",
+  "intro": "The mathematical factorization algorithm has a correctness proof. Its Boolean-stack implementation is being assembled from finalized components. The whole-program bit-complexity theorem remains open.",
+  "target": "2^(C·ℓ/√log(ℓ+2)) · (ℓ+1)^d",
+  "target_scope": "For every semiprime N from its canonical binary input, ℓ = ⌈log₂(N+1)⌉, with fixed C and d chosen before N. This is a target, not an achieved running-time theorem.",
+  "pipeline_disclaimer": "This is a curated algorithm reading order, not a Lean-extracted dependency graph. Adjacent stages do not assert that their physical caller joins are complete.",
+  "evidence_disclaimer": "Finalized means recorded historical component gates, with their original scope. This explorer checks source and evidence hashes; it does not run Lean or promote drafts to verified results.",
+  "status_labels": {
+    "finalized-machine": "Finalized machine component",
+    "proved-math": "Proved mathematical result",
+    "draft": "Draft / not finalized",
+    "legacy-unclassified": "Legacy source / unclassified"
+  },
+  "glossary": [
+    {
+      "term": "Mathematical correctness",
+      "meaning": "A theorem identifies the specified algorithm’s output. It does not by itself establish a primitive machine’s total running time."
+    },
+    {
+      "term": "Finalized component",
+      "meaning": "A fixed physical program and its stated local contract passed the recorded focused gates. Read its input boundary: a prepared operand is not automatically acquired from N."
+    },
+    {
+      "term": "Caller join",
+      "meaning": "A physical program passes actually acquired words to the next program, paying for copies, parsing, cleanup, memory and returns."
+    },
+    {
+      "term": "Whole bit-complexity theorem",
+      "meaning": "One deterministic original-input program factors every semiprime within the displayed bound, including preprocessing, recursive coefficients, storage and factor recovery."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "isolated_object_identical": true,
+  "generated_declarations": 35,
+  "theorem_constants": 30,
+  "hashes": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedRate.lean": "35f97a70a25c640cbd2d91d7adc5ea10187cbca68b4c006a28f815a037395180",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeMaterializedRate.olean": "3c34298f342e3d8344668c1eebff354c34297c3e37f2b680694e22dd672b45bc",
+    "/tmp/semiprime-materialized-clock-20261027/SemiprimeMaterializedRate.olean": "3c34298f342e3d8344668c1eebff354c34297c3e37f2b680694e22dd672b45bc",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeScheduledSupportRate.lean": "4377c10a36efe74e75adfad7e2a78d243db25d67ae660e8c81f8f247a59fb0a9",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeScheduledCounter.lean": "77370e194174b1e030d63f3d5c51de1668ef53940bb376550c35b00284550841",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceLayoutRate.lean": "5bd9f80b8e361b6c1a4a5755a0aa6e10a3638a52eaa68f4b3c16ebd4e1bd69c5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterRate.lean": "fd9c6ee9dc18089748e85cb2eeba06b8181a230a855aec05d30b5939ac273054",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroParameters.lean": "c080bebe112924b24e809db8ce37854e17873223c7e14fe4cb3292e3644e3fff"
+  }
+}

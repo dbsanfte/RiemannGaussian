@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-26",
+  "audit_window": [
+    "2026-10-24",
+    "2026-10-25",
+    "2026-10-26"
+  ],
+  "method": "Local original finite formulas and explicit symbolic compositions. No new literature theorem imported.",
+  "source_pins": [
+    {
+      "path": "docs/research-evidence/semiprime-knot-advancement-20261025/README.md",
+      "scope": "whole file",
+      "bytes": 10461,
+      "sha256": "b041d953162b7f76bbf7c2652e7acf73981e55ee457477bb018c1a3e8459b3a6"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-collective-20261026/quantum-torus.md",
+      "scope": "whole file",
+      "bytes": 14772,
+      "sha256": "f202a37096723d41c5a9d65fac163643d5672c9ed79f134519b3050b127d3c45"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-colourcontraction-20261026/common-character.md",
+      "scope": "whole file",
+      "bytes": 7938,
+      "sha256": "391a2b54f146b03f9f448cd8d3a715762d4a0af0af73e8084e95856d6b09ffd2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-joint-20261026/bispectral-string.md",
+      "scope": "whole file",
+      "bytes": 11026,
+      "sha256": "0fe0cb3392b0da83c8653023ef123145ab1c6a15cc831cacf90d2fbbfe6d7850"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-joint-20261026/exact-string.md",
+      "scope": "whole file",
+      "bytes": 15328,
+      "sha256": "4fa2338e0aaaf21159c018411584727fe3d06becdea11781d42e901f31f514d8"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-pair-20261026/README.md",
+      "scope": "whole file",
+      "bytes": 4115,
+      "sha256": "6980b5136fbe703003b165ca8b218f2cd9fa9d5a1b3b8acea68437dc7c02f4eb"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-prefix-20261025/README.md",
+      "scope": "whole file",
+      "bytes": 6429,
+      "sha256": "18f7fb131a7b1e93d28267f9076cf00d34dccb1b988d383879d6a00b55b86484"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-rectanglequery-20261026/phase-index.md",
+      "scope": "whole file",
+      "bytes": 4794,
+      "sha256": "7c39e9b6fc0dbacf79be0a5837ced21526fb148ca2cde88d419bd9d7cd9d91ad"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/README.md",
+      "scope": "whole file",
+      "bytes": 7114,
+      "sha256": "6c9492540cd0dc5cc9c77dd0e119d56f4ca0c752de6715c6f045b873cc646a87"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-cofactor-recurrence-20261024/cofactor-contraction.md",
+      "scope": "whole file",
+      "bytes": 16840,
+      "sha256": "e4100f7c507a1f3a894b9c9285425b942f086f0080e3f2ef51bd2b0aa7838ee0"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quotient-gradient-20261024/weak-readout.md",
+      "scope": "whole file",
+      "bytes": 11129,
+      "sha256": "6d324cd99fa32427de877666e82fb67cc60c857c49e2eecbaa9ad2526e1d9bd1"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "scope": "pre-audit prefix",
+      "bytes": 2409797,
+      "sha256": "5da7cbf1397057cc1ea0eddd7b27daf020ef5778898e1b117bcb5e3084d0eaac"
+    }
+  ],
+  "historical_errata": "Shared global index corrected; duplicate diagonalizer credit removed; fixed-q mask contract retained; conditional imports remain conditional."
+}

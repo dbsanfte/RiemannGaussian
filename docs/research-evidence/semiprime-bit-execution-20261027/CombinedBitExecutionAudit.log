@@ -1,0 +1,210 @@
+-- Found 0 errors in 46 declarations (plus 35 automatically generated ones) in RiemannGaussian.SemiprimeJetBits with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 20 declarations (plus 70 automatically generated ones) in RiemannGaussian.SemiprimePolynomialCodeBits with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 22 declarations (plus 31 automatically generated ones) in RiemannGaussian.SemiprimeLocalBits with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 6 declarations (plus 8 automatically generated ones) in RiemannGaussian.SemiprimeLocalBitsCorrectness with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 14 declarations (plus 9 automatically generated ones) in RiemannGaussian.SemiprimeLocalBitsBounds with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 31 declarations (plus 57 automatically generated ones) in RiemannGaussian.SemiprimeMeasurementBits with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 5 declarations (plus 12 automatically generated ones) in RiemannGaussian.SemiprimeSupportRate with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 7 declarations (plus 11 automatically generated ones) in RiemannGaussian.SemiprimeScheduledSupportRate with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 12 declarations (plus 6 automatically generated ones) in RiemannGaussian.SemiprimeAcquiredPrefixSearch with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 36 declarations (plus 13 automatically generated ones) in RiemannGaussian.SemiprimePublicAcquiredExecution with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 33 declarations (plus 6 automatically generated ones) in RiemannGaussian.SemiprimeScheduledFactorExecution with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+AUDIT RiemannGaussian.SemiprimeJetBits: declarations=81, theorems=54, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimePolynomialCodeBits: declarations=90, theorems=57, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeLocalBits: declarations=53, theorems=28, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeLocalBitsCorrectness: declarations=14, theorems=14, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeLocalBitsBounds: declarations=23, theorems=17, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeMeasurementBits: declarations=88, theorems=52, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeSupportRate: declarations=17, theorems=16, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeScheduledSupportRate: declarations=18, theorems=17, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeAcquiredPrefixSearch: declarations=18, theorems=13, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimePublicAcquiredExecution: declarations=49, theorems=32, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeScheduledFactorExecution: declarations=39, theorems=28, standard_axioms_only=true
+TOTAL modules=11, declarations=490, theorems=328, standard_axioms_only=true

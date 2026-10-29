@@ -7,10 +7,7 @@ cd "$project_root"
 
 python3 scripts/numerical_certificate.py
 
-if git grep --cached -nE '\<(sorry|admit|sorryAx)\>' -- '*.lean'; then
-  echo 'Staged Lean sources contain a forbidden proof placeholder.' >&2
-  exit 1
-fi
+python3 scripts/check_lean_placeholders.py --staged
 
 if command -v lake >/dev/null 2>&1; then
   lake_command=("$project_root/.githooks/with-clean-git-env" lake)
@@ -51,6 +48,7 @@ THEOREM_GRAPH_OUTPUT=.lake/rh-proof-explorer/lean-graph.json \
   "${lake_command[@]}" env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean
 python3 scripts/build_rh_proof_explorer.py --check --node "$theorem_node" \
   --check-commit-update HEAD --staged
+python3 scripts/build_semiprime_proof_explorer.py --check
 
 echo 'pre-commit: checked zero-free formulas and evergreen comparison graph'
 "${lake_command[@]}" env lean -DwarningAsError=true scripts/ExportZeroFreePlot.lean
@@ -65,4 +63,4 @@ fi
 "$plot_python" scripts/build_numerical_certificate_plot.py --check
 
 echo 'pre-commit: staged whitespace check'
-git diff --cached --check
+python3 scripts/check_staged_whitespace.py --staged

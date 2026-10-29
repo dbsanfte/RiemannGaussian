@@ -1,0 +1,10 @@
+CACHE_PHASE_BANK case=empty steps=28 calls=0 all246=true status=true
+CACHE_PHASE_BANK case=rejected steps=3644 calls=1 all246=true status=true
+CACHE_PHASE_BANK case=precision0 steps=3634 calls=1 all246=true status=true
+CACHE_PHASE_BANK case=mixed steps=19836 calls=2 all246=true status=true
+CACHE_PHASE_BANK case=repeat steps=16517 calls=2 all246=true status=true
+CACHE_PHASE_BANK case=missing-child steps=288 calls=0 all246=true status=false
+CACHE_PHASE_BANK case=trailing-ref steps=276 calls=0 all246=true status=false
+CACHE_PHASE_BANK case=missing-child-eof steps=3877 calls=1 all246=true status=false
+CACHE_PHASE_BANK cases=8 actual_transitions=48100 all246=true retained_four_inputs=true chronological_repeats=true rejected_rows=true actual_restore_guard=true real236_cleanup=true flags_returns=true eof_validation=true
+CACHE_PHASE_BANK_OBSERVER_STD3 68

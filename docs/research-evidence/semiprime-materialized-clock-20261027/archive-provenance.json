@@ -1,0 +1,398 @@
+{
+  "CachedCounterSmoke.lean": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/CachedCounterSmoke.lean",
+    "sha256": "df5f4442eaefa3004f9d03770e858cd12768d36675591ac859fc279e19300dfc"
+  },
+  "CombinedMaterializedAudit.lean": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/CombinedMaterializedAudit.lean",
+    "sha256": "8f4fc9e733e8d8e6b257ddecd43def7cd7ed52adf9fd0b99260a48fb4598fdd4"
+  },
+  "CombinedMaterializedAudit.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/CombinedMaterializedAudit.log",
+    "sha256": "8c951eb65317e2a2b02877659817a6665c913b03a249cfe2db39e48d716b281d"
+  },
+  "MaterializedFibreSmoke.lean": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/MaterializedFibreSmoke.lean",
+    "sha256": "5152c28454cdccfe646408e704f1f2644ce2a6877987b1f025bf108d463b3e9a"
+  },
+  "MaterializedPublicSmoke.lean": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/MaterializedPublicSmoke.lean",
+    "sha256": "7344d8b74ef69a1ca1b2dc208db3a08d157f8401207e42edfd9a126103c0be91"
+  },
+  "README.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/README.md",
+    "sha256": "64b02502653e7292ed431bc55310205eb70a3230ad62860f4b47b33a5a3d700f"
+  },
+  "SemiprimeCachedSourceCounter.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCachedSourceCounter.lean",
+    "sha256": "19bba8b56baf99d770700123f736219053a0a2670525706aeaff015be00c3ff5"
+  },
+  "SemiprimeCachedSourcePublicExecution.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCachedSourcePublicExecution.lean",
+    "sha256": "fb615d1a9ac98c0c7b5cd4b1ce7d0e0aca82a956e2b7894d1a23b33af9fdcced"
+  },
+  "SemiprimeCachedSourceScheduledExecution.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCachedSourceScheduledExecution.lean",
+    "sha256": "14c9d4c6c0a600c914ec7ada8356056719e94ad6b43fcca215e1f965c45daf85"
+  },
+  "SemiprimeMaterializedAcquiredCounter.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedAcquiredCounter.lean",
+    "sha256": "54edbdd04177235565bd96f0f3f3fbe154a2d1fe43187fb1c36bdf768467a9dc"
+  },
+  "SemiprimeMaterializedFibre.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedFibre.lean",
+    "sha256": "e398221db4f88eb072683dd259b599e4cd87f44862fa497d8a93878300e3a65c"
+  },
+  "SemiprimeMaterializedFibreNative.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedFibreNative.lean",
+    "sha256": "3d697dbc02ab8d54d6b9184c1ceeeb585b04031ccc9953a4d612184c196aceac"
+  },
+  "SemiprimeMaterializedFibrePacket.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedFibrePacket.lean",
+    "sha256": "adf4c7fbf9db7eed6255e39d5856611eeeef001ef08791328ea88a97de7ecff2"
+  },
+  "SemiprimeMaterializedOriginalSource.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedOriginalSource.lean",
+    "sha256": "1639369020244aabce48b4d438b08651a28ca6bb4917ee778c19d113a7c53885"
+  },
+  "SemiprimeMaterializedPacking.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedPacking.lean",
+    "sha256": "359b7220f5478236e7202280d3808f8c5af1f2fdb24c39949bf4f138638ea20b"
+  },
+  "SemiprimeMaterializedPublicExecution.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedPublicExecution.lean",
+    "sha256": "9ea02561619a03d8082b6620a97d952d91c3cd09025c3ffbd2c7e1bcb395d237"
+  },
+  "SemiprimeMaterializedRate.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedRate.lean",
+    "sha256": "35f97a70a25c640cbd2d91d7adc5ea10187cbca68b4c006a28f815a037395180"
+  },
+  "SemiprimeMaterializedScheduledExecution.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedScheduledExecution.lean",
+    "sha256": "4d36ede8fbabe873a408c1e65a7d8cc43307a7938e7e48322aeaa576589f943b"
+  },
+  "SemiprimeMaterializedScoreEnvironment.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedScoreEnvironment.lean",
+    "sha256": "cbab7d5ac3faab08fc9662d2b440fa56e9b129b2c0563b6be9a1095d9bdcc7e8"
+  },
+  "SemiprimeMaterializedScoreSearch.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedScoreSearch.lean",
+    "sha256": "e514bc7a0cdedd222cd9248db71b8d6763e2333311bdc94b3c8ed6f8e74f1e3a"
+  },
+  "SemiprimeMaterializedSelectionHeight.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSelectionHeight.lean",
+    "sha256": "4196598601b9754e518d8fc1f59dbbe46a4d5848b2b1d7ff3779a908536bbc90"
+  },
+  "SemiprimeMaterializedSelectionTemporaries.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSelectionTemporaries.lean",
+    "sha256": "dd7ed713faade689d75850e9b708eb13cdec91382596c9f3d9c4c895a7f10522"
+  },
+  "SemiprimeMaterializedSourceAcquisition.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSourceAcquisition.lean",
+    "sha256": "0f5e06920ac895a19275986352e98e61acb05d16824f279e58bfc515dcd41568"
+  },
+  "SemiprimeMaterializedSourceCache.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSourceCache.lean",
+    "sha256": "1e98fd77da2dcf4bdd9def48ac87129ba1daa13e5f2f3b6ebec3e7eff90e84b8"
+  },
+  "SemiprimeMaterializedSourcePullback.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSourcePullback.lean",
+    "sha256": "1cd1404b33f54eb6bc217531334aca106582073aa9c8139a5a2134bc9808b407"
+  },
+  "SemiprimeMaterializedSourceRows.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSourceRows.lean",
+    "sha256": "1b810554397568f592291284428cd83d390ecb0b51d3af0e2fbe7528e8f48e7e"
+  },
+  "SemiprimeMaterializedSourceUniversal.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSourceUniversal.lean",
+    "sha256": "8f7885ef1c05256a945a7a397ceff872856d08ee08e21a96f6c47a3ca485646d"
+  },
+  "SemiprimeMaterializedSourceWords.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSourceWords.lean",
+    "sha256": "bf6539799d72b1e59c5a153c288482079f1f1b1d73ffa691a473a61ebff73271"
+  },
+  "SemiprimeMaterializedWordSearch.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedWordSearch.lean",
+    "sha256": "51c532e993e0f0096eff36dc0f68161c2e9e25e30bd6349865a05b2bfe143989"
+  },
+  "SemiprimeMaterializedWords.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedWords.lean",
+    "sha256": "44b9f3dbfbf3ebd29ff2da43ceb09eea4b1e50260492d1b0f9eef2b383fb6e8d"
+  },
+  "SourceAcquisitionSmoke.lean": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/SourceAcquisitionSmoke.lean",
+    "sha256": "529234c829400076cce32a9cbbaee1059e9434770d556f3a852ef28818f42c18"
+  },
+  "SourceWordSmoke.lean": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/SourceWordSmoke.lean",
+    "sha256": "df410a1eab80e253494e53df0c20567b71a5d7ef205dc214be32c29a6c6ca207"
+  },
+  "additional-controls.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/additional-controls.json",
+    "sha256": "29e9e51e4ee9a43131e13e2ba6f95db4a8ac9ea14f032e095b80f3fef00b375c"
+  },
+  "all-modules.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/all-modules.json",
+    "sha256": "6e28c6174eaa4c92a5e9fbc5b3702c16c3c0e22cfa5b298c0819d07851cd25fd"
+  },
+  "archive_materialized.py": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/archive_materialized.py",
+    "sha256": "c353db27c44da64e46d2e6d4a44a5e2cd0f14e67eec2a47fb3075ba839d53bf0"
+  },
+  "cached-counter-smoke.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/cached-counter-smoke.log",
+    "sha256": "e16ff8ddc729860e34a6c91394a846f2a3e1ca39a6d7421f7800357c8885cdf7"
+  },
+  "clock-boundary.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/clock-boundary.md",
+    "sha256": "9dc952b464c8d9585e168d1dbe8b74e5412bf19a63145ce45ed7d8dc8ea584a8"
+  },
+  "compiler-imports.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/compiler-imports.json",
+    "sha256": "cade9e8bb1eca3fe5734e8830b336b9261a1fafb1326bf0eda0fd4adce6edbe1"
+  },
+  "final-isolated/SemiprimeCachedSourceCounter.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeCachedSourceCounter.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeCachedSourcePublicExecution.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeCachedSourcePublicExecution.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeCachedSourceScheduledExecution.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeCachedSourceScheduledExecution.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedAcquiredCounter.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedAcquiredCounter.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedFibre.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedFibre.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedFibreNative.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedFibreNative.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedFibrePacket.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedFibrePacket.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedOriginalSource.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedOriginalSource.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedPacking.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedPacking.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedPublicExecution.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedPublicExecution.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedRate.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedRate.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedScheduledExecution.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedScheduledExecution.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedScoreEnvironment.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedScoreEnvironment.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedScoreSearch.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedScoreSearch.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedSelectionHeight.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedSelectionHeight.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedSelectionTemporaries.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedSelectionTemporaries.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedSourceAcquisition.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedSourceAcquisition.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedSourceCache.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedSourceCache.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedSourcePullback.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedSourcePullback.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedSourceRows.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedSourceRows.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedSourceUniversal.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedSourceUniversal.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedSourceWords.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedSourceWords.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedWordSearch.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedWordSearch.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeMaterializedWords.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/SemiprimeMaterializedWords.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/dependencies-after.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/dependencies-after.json",
+    "sha256": "8276b818dcaae41fcfb78d7bcaf5fd2f4f82779cceddde4c1d96b14fab1fa906"
+  },
+  "final-isolated/dependencies-before.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/dependencies-before.json",
+    "sha256": "8276b818dcaae41fcfb78d7bcaf5fd2f4f82779cceddde4c1d96b14fab1fa906"
+  },
+  "final-isolated/results.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/results.json",
+    "sha256": "d12d4d6431de8672f0d64e722a322ea629bac4f2a71d2d5c3ba6ccea7bc13d37"
+  },
+  "final-isolated/summary.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-isolated/summary.json",
+    "sha256": "7c81afc311980d8ba86fa42d08ed6c58b26e8d8c442031f2f56ecf7deb156b06"
+  },
+  "final-wrapper-builds.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/final-wrapper-builds.json",
+    "sha256": "dcd29c6d73d8a80a43f3c673f53687ad9504469292927d97d8491dc3a23a407d"
+  },
+  "journal-append.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/journal-append.md",
+    "sha256": "6c4d3c81a30f0672300e7a5c8dd3965e4eb9ef4a0f3409c5a8bfdc3de9157bec"
+  },
+  "materialized-fibre-notes.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-fibre-notes.md",
+    "sha256": "80b9d5faff8afe591c66ea93284a8982c2e3e53948d0e923524ba807b7c8a81b"
+  },
+  "materialized-fibre-smoke.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-fibre-smoke.log",
+    "sha256": "e0e2425e7ce385e1afcccd5903ab77e70c983cb86d7bd91c034ce1738c63aa62"
+  },
+  "materialized-fibre-verification.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-fibre-verification.json",
+    "sha256": "a0685f2f34fc10da5b7dc51de5d92c5ced9e8170b924d8c188b16bcce7affe87"
+  },
+  "materialized-public-notes.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-public-notes.md",
+    "sha256": "5bb4ba7677fa0758dbd8967c0cd0426719e64a0ca706d2eb8db2ea7b39a5ee39"
+  },
+  "materialized-public-smoke.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-public-smoke.log",
+    "sha256": "9059fd39a447f42881ce62ac4608c99ecadce5f02bf88d61059d9d2ebc2ee6d6"
+  },
+  "materialized-public-verification.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-public-verification.json",
+    "sha256": "abd524e23de499a343991b30a81146d500ccff5522daa7f98aa25917573708ae"
+  },
+  "materialized-rate-pins.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-rate-pins.json",
+    "sha256": "0fa51332c64aad8f8981ccc1c408f96657d4fb5da56719bbd57b8a40018f2510"
+  },
+  "materialized-rate-proof.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-rate-proof.md",
+    "sha256": "859b08f7dff34e16e723708ed48bf7e6b9cda5b526a22068d1370712238649dc"
+  },
+  "materialized-selection-height-pins.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-selection-height-pins.json",
+    "sha256": "c6790ceea87605119c4e1895af659ad343c231ec906413f447a5fb8872285efa"
+  },
+  "materialized-selection-height-proof.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-selection-height-proof.md",
+    "sha256": "8a1500c0521342ec91b443cf27e0f3c6ebdf089665ecfc7961ef45ccdca91230"
+  },
+  "materialized-selection-temporaries-proof.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-selection-temporaries-proof.md",
+    "sha256": "58b4d05570a83df4ab5f489cba4d677a9666bb9e6f18b2ba991738169e61904f"
+  },
+  "materialized-selection-temporary-pins.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/materialized-selection-temporary-pins.json",
+    "sha256": "761264f490ad9aac0cb1b15d87dd82503a91bb34f636798d4f34a8d55e6572cd"
+  },
+  "original-source-counter-proof.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/original-source-counter-proof.md",
+    "sha256": "e46f017dd926a4dbfbb2a059f4f84b9a75b693ceb30da01374d843872618c527"
+  },
+  "owned-source-final-pins.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/owned-source-final-pins.json",
+    "sha256": "1cdadc975579a143fd066652814b6e9e2fb3e891a24f728f0e254119612ad19c"
+  },
+  "preservation-before.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/preservation-before.json",
+    "sha256": "31bb181ec527bd576018cb1248e6b1edb20a3cf4b89f3dd7d100c22cedf65122"
+  },
+  "review-final-join-sources.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/review-final-join-sources.json",
+    "sha256": "8e34b9954c87906cab5c6ed9782a7009735d716ed87e4aae76ea1b91e3f145f5"
+  },
+  "review-final-join.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/review-final-join.md",
+    "sha256": "afa0426428b2605a1675ef21d03f4ffa81b949422993ff0472baa99bbc597921"
+  },
+  "review-materialized-words-hash.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/review-materialized-words-hash.json",
+    "sha256": "01e102686294ca116e1d93cc879096893345dec6e4413fdb6967724456b27f88"
+  },
+  "review-materialized-words.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/review-materialized-words.md",
+    "sha256": "dd157955143b1ac5d7348fa381a1df7c69571ed3bf69d97f5c73af056f755a11"
+  },
+  "review-packing-sources.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/review-packing-sources.json",
+    "sha256": "7d11933b93bb082b9bbbd96c613c37f7fefec6fe855c64f45d29f959ca54facc"
+  },
+  "review-packing.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/review-packing.md",
+    "sha256": "204c0dfdc62170975d35b4d75314d3bc4d75b3b2a1ff122c27fb067f7871f136"
+  },
+  "root-isolated-pins.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/root-isolated-pins.json",
+    "sha256": "08eb58c35738f3a56255baf478932f46ece06eb2e3bcb297cca193474ad01d66"
+  },
+  "root-materialization-notes.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/root-materialization-notes.md",
+    "sha256": "8a87659760b116ae13e36efd3c3ecdd6d8edd61d0ca2806f8ff0256f95f143b7"
+  },
+  "source-acquisition-proof.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/source-acquisition-proof.md",
+    "sha256": "375c4e696611e9147206965b539951d857f9248595e4b4c046691f8890b79332"
+  },
+  "source-modules.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/source-modules.json",
+    "sha256": "cef31a0bb8653b0ea4fb76332dcab34604a39210611a67d62369041e8c2ec8f5"
+  },
+  "source-smoke.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/source-smoke.log",
+    "sha256": "949720a0d610b0c3d166f4fb145a7b256ee0b78ccb80c338deedbe4885de1dfc"
+  },
+  "source-word-acquisition-notes.md": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/source-word-acquisition-notes.md",
+    "sha256": "57481fe9f755ca4bf555d92cb9ad52aaaf879f3f8c5df5d5f8a64625859c7a2d"
+  },
+  "source-word-smoke.log": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/source-word-smoke.log",
+    "sha256": "b1d0105c3f1b080cc49fbb2194436475df13f896a5b3c19e51e454cdd24c85c7"
+  },
+  "source-word-verification.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/source-word-verification.json",
+    "sha256": "da19aafdbb6391f4be3880d202798d2dff7a1e3a7a0d25fb0d1a3e0e403348b4"
+  },
+  "strict-recheck.json": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/strict-recheck.json",
+    "sha256": "985c15ff43c377e16d398cf83266d675f7b9a98897d883357acf903ec6ddc9ee"
+  },
+  "verify_materialized.py": {
+    "source": "/tmp/semiprime-materialized-clock-20261027/verify_materialized.py",
+    "sha256": "0666f60152e97b7ab50f9c652e190f7143b20b2418cd112551ea129caf97ea32"
+  }
+}

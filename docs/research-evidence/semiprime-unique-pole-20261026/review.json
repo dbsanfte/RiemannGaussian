@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-26",
+  "previous_goal_turn": "progress: uniform unique-cover proof and implementation archived",
+  "verdict": "Exact paid cross-row cancellation and initialized scalar locator recurrence; no query exponent gain.",
+  "independent_reviews": [
+    {
+      "path": "review-weighted.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-subresultant.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-qpearson.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-handoff.md",
+      "verdict": "PASS"
+    }
+  ],
+  "proved_paper_results": [
+    "Soft-K factor-or-global-row-separation gate on selected native rows.",
+    "Unit barycentric weights collapse the whole row sum to constant numerator.",
+    "All-component simple poles license freezing numerators, and a common unit clock normalizer can be omitted from both outputs.",
+    "Exact division-free scalar Newton recurrence with soft-J initial prefix and a final two-value locator.",
+    "Natural polynomial Pearson closure is redundant; rational connection retains shifted pole data.",
+    "Finite little-q-Jacobi coefficients and both short endpoint transfers are initialized with actual unit guards."
+  ],
+  "acquisition": {
+    "new_scalar_recurrence_execution": "soft O(Jh), O(J) state",
+    "retained_joint_completion": "soft O(J+sqrt(Jh)) = soft O(K^(5/4))",
+    "target": "soft O(K)",
+    "improved": false
+  },
+  "diagnostics": {
+    "command": "python3 docs/research-evidence/semiprime-unique-pole-20261026/check_pole_identities.py --output /tmp/semiprime-unique-pole-replay.json",
+    "checks": 264,
+    "verdict": "PASS",
+    "root_archived_replay": "Exact JSON equality PASS",
+    "scope": "Finite exact identity diagnostics, including zero/repeated nonhit cases. Not native coverage, a complexity proof, or a factoring-success test."
+  },
+  "preservation": {
+    "protected_prior_files": 1085,
+    "append_only_prefixes": 2,
+    "concurrent_files": 24,
+    "checks": "PASS"
+  },
+  "not_claimed": [
+    "Whole-family soft-K acquisition",
+    "Constant-order closure or minimal-order lower bound",
+    "Complete all-semiprime sixth-rate bit proof",
+    "Lean formalization",
+    "Literature-wide novelty"
+  ],
+  "commit_or_push": false
+}

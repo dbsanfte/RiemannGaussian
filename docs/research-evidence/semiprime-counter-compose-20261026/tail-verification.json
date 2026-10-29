@@ -1,0 +1,77 @@
+{
+  "strict_compile": "PASS",
+  "ordinary_root_scoped_lint": "PASS",
+  "linters": 15,
+  "all_declarations": 58,
+  "theorem_constants_including_generated": 53,
+  "public_theorem_names": [
+    "binomialMean_succ",
+    "binomialMean_const_mul",
+    "binomialMean_add",
+    "bernoulli_mgf_le",
+    "binomial_mgf_le",
+    "binomialMean_mono",
+    "binomial_tail_le",
+    "negativeProbability_bounds",
+    "interval_mean_bounds",
+    "interval_outside_deviation",
+    "centered_tail_le_exp",
+    "four_power_le_exp",
+    "exponential_tail_budget",
+    "centered_tail_le_budget",
+    "scheduledCeilSqrt_sq_ge",
+    "scheduled_centered_tail_le_budget",
+    "tailNumerator_normalized",
+    "scheduled_tail_guard",
+    "eventually_scheduled_tail_guard",
+    "eventually_exact_schedule_guard"
+  ],
+  "axioms": "only propext, Classical.choice, Quot.sound",
+  "actual_tail_guard_closed": true,
+  "eventual_growing_arity_schedule_guard_closed": true,
+  "full_factoring_runtime_proved": false,
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterTail.lean": {
+      "bytes": 21065,
+      "sha256": "d2aa14210819ad7f7b6b720e601532820bf8f021ed9a8c92140af1c1534dea77"
+    },
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeCounterTail.olean": {
+      "bytes": 1396920,
+      "sha256": "c4ea0a00dd7c3b06c3c4a3660cc965953fcd32c9216acf2c001e302dc98aac65"
+    },
+    "/tmp/semiprime-counter-compose-20261026/tail-root-audit.lean": {
+      "bytes": 1344,
+      "sha256": "beddb07949e0829cfe4db605213de4cb93f4474abb78008805fac20ae4b85a4e"
+    },
+    "/tmp/semiprime-counter-compose-20261026/tail-root-audit.log": {
+      "bytes": 1461,
+      "sha256": "3e529ed1904306609f5278046bcf4390c263f041db3470f51c8836cbed2ac61e"
+    },
+    "/tmp/semiprime-counter-compose-20261026/tail-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "adapted_source_provenance": {
+    "repository": "https://github.com/openai/math",
+    "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "source": {
+      "path": "lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/SpectralBinomial.lean",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/SpectralBinomial.lean",
+      "git_blob": "4a5fbb95d38a8d525c442adc5ef2d2cd8fe78cd3",
+      "sha256": "59aba107edac67258f442374d612c63d5686560503006ba5c88f80ef26952c8f",
+      "bytes": 7641,
+      "working_copy_matches_pinned_blob": true
+    },
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/LICENSE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "local_copy": "LICENSE.OpenAI-Math.Apache-2.0.txt"
+    },
+    "adaptation": "Finite binomialMean/MGF/Chernoff derivation adapted with attribution in SemiprimeCounterTail module documentation. Exact Q-trial interval, schedule budget and integer guard are locally proved; no external theorem imported.",
+    "existing_license_provenance": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-eth-formal-bridge-20261026/sources.json"
+  }
+}

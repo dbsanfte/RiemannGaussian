@@ -1,0 +1,13 @@
+# Actual original-input word-packet controller wrappers — completed
+
+Three NEW modules adapt the frozen original-input chain to the new WordPacketCounter. Original/frozen sources were not edited.
+
+`WordPacketSetupCounter.count` executes actual paid original enumerations, original scalar source acquisition+physical encoding, cached integer constraints/physical design selection, then calls the NEW WordPacketCounter with retained source getter reports and the derived NativeInputBits width. Every setup/native report survives. `count_correct` instantiates the new counter correctness theorem from original source representation/coefficients/degree/restoration, existing original indexed source certificates and derived width guards. The dependent entire-design-function transport preserves exact enumeration and physical selection data; no default-layout/tie-order equivalence or old/new clock equality is used.
+
+`WordPacketPublicController.counter` actually calls this new setup counter with the original prefix entry words. It acquires each complete result once, floors its value and preserves its report. Value comparisons to the old correct counter are proof-only. Prefix restrictions retain original scopes. Zero-first recovery and actual physical operand decoding retain their reports; no count, encoded input, source or factor answer is an external runtime argument.
+
+`WordPacketScheduledController.run N` has only N as runtime input. Its finite fallback and guard branches are unchanged semantically; all-natural proper-factor soundness and none iff absence of proper factor are proved via value equality, without equating work. The eventual scheduled branch invokes the actual NEW word-packet controller. Aggregate work theorems still explicitly require a uniform bound on the ACTUAL new internal counter report; no old rate theorem is silently substituted.
+
+Source score/coefficient production, scalar canonical extraction/digits, cached integer head/summary metadata, final scalar Hermite/floor/fallback arithmetic and finite-address/control refinements remain separate from a complete primitive-bit runtime. This packet does not itself prove the new public subpower composition or any new native query exponent/practical speedup.
+
+Strict / ordinary-root15 / every-generated transitive standard-three-axiom gates PASS: 101 declarations, 64 theorem constants. All three isolated objects byte-identical canonical. Pins: word-packet-wrappers-verification.json. Exact dependency interface was first independently checked from the real imported Counter object, then parent confirmed final Counter freeze. No new finite factoring campaign.

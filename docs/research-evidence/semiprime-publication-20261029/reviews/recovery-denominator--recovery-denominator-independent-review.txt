@@ -1,0 +1,18 @@
+PASS: independent read-only review of RecoveryDenominator19.
+UTC: 2026-10-28T22:15:05.378742+00:00
+
+Reviewed Core, Loop, Execution, Bounds, Resources, Semantics and Original. No source edit, canonical build, or repeated control was performed.
+Only actual five-field tagged row tape and actual physical width template are loaded. The finite source really copies its input, seeds ONE, reads each true row marker, executes five real Field parses, drains the first four fields, and multiplies the fifth denominator field FIRST by the growing accumulator SECOND. This input orientation is crucial: existing actual mulBits_length gives additive raw padding, accBytes <=1+2*sum denominator bytes.
+The nonempty loop ends with ONE real full WordFit call to the supplied physical template; empty rows retain the original literal [true] exception even for empty template. Whole source_run includes all parser/copy/multiplier/fit calls, cleanup and genuine final halt. Both original inputs are retained and the other16 nonoutput roles, including two allocated fit shadows, are genuinely empty.
+Bounds pays all five fields, actual row count through tape bytes, raw padding, real cubic multiplier calls and final fit using its own fixed quartic10^12*(actualTapeBytes+actualTemplateBytes+1)^4. Resources counts all19 data tapes and real return cells at every actual prefix by10^14*the same quartic and gives the genuine prepared2input compiled certificate.
+Semantics proves equality of full integer products independent of children, derives actual product fit from per-row height and W, and combines exact W-length with equal numeric value to recover EXACT old W-padded bytes. It treats nil separately and makes no unbounded-domain byte-equality claim for truncated products.
+Original encodes the legacy row family only as a proof-side specification. Exact denominator field order, unchanged child entry denominators, canonical height/count caps and actual W suffice for output_original/source_original; output_value, positivity and2^(A*K) integer bound follow from original canonical recovery. Canonical row and W-template acquisition remain explicitly OPEN upstream; no N-only or old native-clock claim is made.
+
+Current seven-source SHA256 pins:
+d6174a4b83cc8d7d15c9cda1fb0782d812783e6af22cf23bc6a681272db5eb7a  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominator.lean
+77e5d3a5fc7dcd101b47665e4a235abcef71191b9e7aadb99670876fdf9226b2  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorLoop.lean
+cd34d089b6dd0ce1d78870442a8c9ccaecd440401195a5131dbc3a91ea226f20  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorExecution.lean
+507a14cb9f9ae248296dcb63baccdf4649548ec697d8b26d800f4bd74c18e362  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorBounds.lean
+baf4e2871b387aca661e6a0631fcbbeff10e20d672b5a0588493c4afdb42b921  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorResources.lean
+2cbcfca61ccbfbd7a82b113c23eeaaf947b62d308a70f2286ba76e00ee88a8d8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorSemantics.lean
+3f0dfeb8a273027611a118c3e257f29ec73aa41956a4c81be23188591fb0f010  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorOriginal.lean

@@ -1,0 +1,4 @@
+'RiemannGaussian.SemiprimeCounterEnumeration.tracked_menu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeCounterEnumeration.weightedCount_le_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

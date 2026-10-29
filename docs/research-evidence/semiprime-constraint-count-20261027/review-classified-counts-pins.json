@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "review": "root read-only independent mathematical/call-path/resource review",
+  "modules": {
+    "SemiprimeSourceClassifiedCounts": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceClassifiedCounts.lean",
+      "source_sha256": "11dc33869b36161d803e761482571d9f177b9b5a6babb15e9930ca83056c7382",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceClassifiedCounts.olean",
+      "object_sha256": "2475be6d69d2125d6f36509df3fffd567fcc2832d8d223e8dd4e023ca7665287"
+    },
+    "SemiprimeSourceClassifiedCountsClock": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceClassifiedCountsClock.lean",
+      "source_sha256": "c23015375de1966bf1b76534efde6eb6c152660d0b6b4c70cb376320f1055e10",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceClassifiedCountsClock.olean",
+      "object_sha256": "1fe5f7028d73538e562c50df7a6203db8525cf4f77c88f2cc3ce2c45519bff4e"
+    }
+  }
+}

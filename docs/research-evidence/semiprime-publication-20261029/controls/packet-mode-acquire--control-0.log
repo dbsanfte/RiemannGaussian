@@ -1,0 +1,8 @@
+PACKET_MODE packets=0 i=0 WIDTH=0 actual_transitions=124 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true
+PACKET_MODE packets=0 i=2 WIDTH=3 actual_transitions=226 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true
+PACKET_MODE packets=1 i=0 WIDTH=1 actual_transitions=187 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true
+PACKET_MODE packets=1 i=0 WIDTH=2 actual_transitions=2121 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true
+PACKET_MODE packets=4 i=1 WIDTH=2 actual_transitions=143980 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true
+PACKET_MODE packets=1 i=2 WIDTH=2 actual_transitions=27717 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true
+PACKET_MODE_CONTROLS cases=6 actual_transitions=174355 all44=true counts_acquired=true tile_value_paid=true flags_clear=true two_real_outer_returns=true
+PACKET_MODE_OBSERVER declarations=30 standard3_only=true

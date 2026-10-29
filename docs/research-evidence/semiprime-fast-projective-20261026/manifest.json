@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8712,
+      "sha256": "cbc88bfb218f0845b2ee3bbcffb829a8e03b7bf63e64e539d73eafc20c79e2c5"
+    },
+    {
+      "path": "hypergeometric-contraction.md",
+      "bytes": 10929,
+      "sha256": "b8beecf8716ac0e1046d5397b4e7ac64f915e8b3c0df793d802900261a1fdc98"
+    },
+    {
+      "path": "paired-contraction.md",
+      "bytes": 12747,
+      "sha256": "67438fc41de8ce657a14c83a057ebc930fe1fd84f79649db2bb7384a48df8c61"
+    },
+    {
+      "path": "projective-advance.md",
+      "bytes": 11339,
+      "sha256": "255c6c87647b15482f561756f8cf6e8e6b8525f73a3edce5c5e99b142f510bb2"
+    },
+    {
+      "path": "rational-certificate.md",
+      "bytes": 12238,
+      "sha256": "116375c120af7289264c730cb5ad566c27ed29c6d2d43115e1c797a7fd61bb34"
+    },
+    {
+      "path": "review-hypergeometric.md",
+      "bytes": 4420,
+      "sha256": "64ebbe136ba80b29937ad8a9713b79f41a67830938e878aa12118a7f9bc49853"
+    },
+    {
+      "path": "review-paired-contraction.md",
+      "bytes": 5858,
+      "sha256": "9d6b559c64b48dd77e9c4473721426c7776fe9e623e66be07b2d8f34091ebea5"
+    },
+    {
+      "path": "review-projective-degree.md",
+      "bytes": 5575,
+      "sha256": "000b8348ff81e8017793be4319d5c17c28e4d0ec6cbd65e31f7f40e7a7b2e2a0"
+    },
+    {
+      "path": "review-rational-certificate.md",
+      "bytes": 8757,
+      "sha256": "6b1eccf5ebe4e257f1d82b6023e1ae173f1885ddaf17576fd1508b1be5dc08f2"
+    },
+    {
+      "path": "review.json",
+      "bytes": 3167,
+      "sha256": "30fd3143a5f1d0367b93449a64297d9f1eb94a4e08704dd71fe8998916985adb"
+    },
+    {
+      "path": "separation-review.md",
+      "bytes": 6289,
+      "sha256": "51169a3fba92a4037b796f83bebc6e730de439de60e4bbb38bfcf93c921226d4"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 3862,
+      "sha256": "3de6906b77230e957a9c1690b7a79585a2696251fae972fac55cdfb02cf4098a"
+    }
+  ],
+  "manifest_excludes_self": true
+}

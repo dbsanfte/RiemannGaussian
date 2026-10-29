@@ -1,0 +1,12 @@
+test_all_binary_truth_tables (__main__.PaidCounterTests) ... ok
+test_empty_factors_and_zero_arity (__main__.PaidCounterTests) ... ok
+test_homogeneous_tensor_nonboolean_ports (__main__.PaidCounterTests) ... ok
+test_input_only_fallback_smoke (__main__.PaidCounterTests) ... ok
+test_invalid_source_rejected (__main__.PaidCounterTests) ... ok
+test_nonboolean_table_rejected (__main__.PaidCounterTests) ... ok
+test_product_higher_precision_and_prefix_restriction (__main__.PaidCounterTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.318s
+
+OK

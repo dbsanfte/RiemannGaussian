@@ -1,0 +1,7 @@
+JET_BLOCKS_WHOLE axes=[] oldprecision=2 q=0 R=1 input_fields=2 actual_transitions=161 all31=true
+JET_BLOCKS_WHOLE axes=[] oldprecision=0 q=1 R=1 input_fields=2 actual_transitions=191 all31=true
+JET_BLOCKS_WHOLE axes=[2] oldprecision=0 q=2 R=2 input_fields=3 actual_transitions=1040 all31=true
+JET_BLOCKS_WHOLE axes=[2, 3] oldprecision=1 q=2 R=6 input_fields=5 actual_transitions=1899 all31=true
+JET_BLOCKS_WHOLE axes=[2] oldprecision=2 q=3 R=2 input_fields=7 actual_transitions=1683 all31=true
+JET_BLOCKS_WHOLE cases=5 actual_transitions=4974 all31=true actual_context_source=true oldrank_acquired=true no_offset_evaluator=true exact_native_blocks=true raw_padded_coefs_preserved=true default_empty_padding=true extra_fields_drained=true source_inputs_and_context_retained=true two_real_outer_returns=true halt_flags_clear=true
+JET_BLOCKS_OBSERVER declarations=18 standard3_only=true

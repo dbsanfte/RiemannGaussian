@@ -1,0 +1,4 @@
+import RiemannGaussian.SemiprimeNodeArrayExecution
+#check @RiemannGaussian.SemiprimeNodeArrayExecution.fibre
+#check @RiemannGaussian.SemiprimeNodeArrayExecution.node
+#check @RiemannGaussian.SemiprimeNodeArrayExecution.count

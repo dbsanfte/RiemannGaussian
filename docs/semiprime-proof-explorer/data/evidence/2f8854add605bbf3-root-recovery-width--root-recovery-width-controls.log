@@ -1,0 +1,6 @@
+ROOT_WIDTH_PREPARED a=0 M=0 actual_transitions=3603 all2211=true within_own_clock=true all_foreign_retained=true copies=2 width_source=1
+ROOT_WIDTH_PREPARED a=1 M=0 actual_transitions=5843 all2211=true within_own_clock=true all_foreign_retained=true copies=2 width_source=1
+ROOT_WIDTH_PREPARED a=0 M=1 actual_transitions=106264 all2211=true within_own_clock=true all_foreign_retained=true copies=2 width_source=1
+ROOT_WIDTH_PREPARED a=2 M=0 actual_transitions=10627 all2211=true within_own_clock=true all_foreign_retained=true copies=2 width_source=1
+ROOT_WIDTH_CONTROLS cases=4 actual_transitions=126337 all2211=true prepared_continuations_only=true within_own_clock=true all_foreign_words_retained=true flags_clear=true two_real_outer_returns=true
+ROOT_WIDTH_OBSERVER declarations=32 standard3_only=true

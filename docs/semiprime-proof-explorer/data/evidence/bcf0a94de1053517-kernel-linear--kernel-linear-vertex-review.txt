@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "reviewer": "vertex_record_logger",
+  "utc": "2026-10-29T06:21:30.570417+00:00",
+  "scope": "FULL current bodies of all eight assigned modules, all613 lines, read in two nontruncated batches: Strip79+Signed110+Scan77+DivisionView63=329; Finish52+Tail79+ArithmeticBounds83+NormalizeBounds70=284. Additional reference context read from Spec, Normalize and Calls without importing/building them.",
+  "modules": [
+    {
+      "module": "SemiprimeD1StackKernelLinearStrip",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearStrip.lean",
+      "sha256": "357e66f2188df35bc1f70013f541656c7f80991c8b62d48ccf35149ae374d2b9",
+      "lines": 79
+    },
+    {
+      "module": "SemiprimeD1StackKernelLinearSigned",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearSigned.lean",
+      "sha256": "f4d523ba3e7d91f996133b17ae446bb2ecedb2b11e127b49479cbdd7f8fad6de",
+      "lines": 110
+    },
+    {
+      "module": "SemiprimeD1StackKernelLinearScan",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearScan.lean",
+      "sha256": "236aa5b536f25fc2bf38fe5300a420d623aa18387572f32cc1b3914d3aecc159",
+      "lines": 77
+    },
+    {
+      "module": "SemiprimeD1StackKernelLinearDivisionView",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearDivisionView.lean",
+      "sha256": "af3b230de1704169c2113d0c29746f11f74312a1771bfc086ef55650be226bc5",
+      "lines": 63
+    },
+    {
+      "module": "SemiprimeD1StackKernelLinearFinish",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearFinish.lean",
+      "sha256": "02eeb5987695072231c7b932a411346f7476989db89f640ae2e89a957284512b",
+      "lines": 52
+    },
+    {
+      "module": "SemiprimeD1StackKernelLinearTail",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearTail.lean",
+      "sha256": "3c45b558a98bf2e8105ec194177f5c28cb49972001fdd1b4abc5e199f6f828a7",
+      "lines": 79
+    },
+    {
+      "module": "SemiprimeD1StackKernelLinearArithmeticBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearArithmeticBounds.lean",
+      "sha256": "da504cbedf3b999d74b339ee127010550965b3a2534de3d7bec2de89200b037f",
+      "lines": 83
+    },
+    {
+      "module": "SemiprimeD1StackKernelLinearNormalizeBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearNormalizeBounds.lean",
+      "sha256": "b02399bad3b9480f846ca31cf69d6fbf38a100d8c9ee5b3d38e7f9d0a23bed11",
+      "lines": 70
+    }
+  ],
+  "before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearStrip.lean": "357e66f2188df35bc1f70013f541656c7f80991c8b62d48ccf35149ae374d2b9",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearSigned.lean": "f4d523ba3e7d91f996133b17ae446bb2ecedb2b11e127b49479cbdd7f8fad6de",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearScan.lean": "236aa5b536f25fc2bf38fe5300a420d623aa18387572f32cc1b3914d3aecc159",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearDivisionView.lean": "af3b230de1704169c2113d0c29746f11f74312a1771bfc086ef55650be226bc5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearFinish.lean": "02eeb5987695072231c7b932a411346f7476989db89f640ae2e89a957284512b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearTail.lean": "3c45b558a98bf2e8105ec194177f5c28cb49972001fdd1b4abc5e199f6f828a7",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearArithmeticBounds.lean": "da504cbedf3b999d74b339ee127010550965b3a2534de3d7bec2de89200b037f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearNormalizeBounds.lean": "b02399bad3b9480f846ca31cf69d6fbf38a100d8c9ee5b3d38e7f9d0a23bed11"
+  },
+  "after": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearStrip.lean": "357e66f2188df35bc1f70013f541656c7f80991c8b62d48ccf35149ae374d2b9",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearSigned.lean": "f4d523ba3e7d91f996133b17ae446bb2ecedb2b11e127b49479cbdd7f8fad6de",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearScan.lean": "236aa5b536f25fc2bf38fe5300a420d623aa18387572f32cc1b3914d3aecc159",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearDivisionView.lean": "af3b230de1704169c2113d0c29746f11f74312a1771bfc086ef55650be226bc5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearFinish.lean": "02eeb5987695072231c7b932a411346f7476989db89f640ae2e89a957284512b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearTail.lean": "3c45b558a98bf2e8105ec194177f5c28cb49972001fdd1b4abc5e199f6f828a7",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearArithmeticBounds.lean": "da504cbedf3b999d74b339ee127010550965b3a2534de3d7bec2de89200b037f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearNormalizeBounds.lean": "b02399bad3b9480f846ca31cf69d6fbf38a100d8c9ee5b3d38e7f9d0a23bed11"
+  },
+  "all_assignment_before_after_current_flat_sha256_match": true,
+  "all_bodies_read": true,
+  "lines": 613,
+  "blockers": [],
+  "findings": [
+    "Signed source executes original j-minus-displacement first, consumes the actual borrow, pushes its actual sign, physically drains the wrapped result when negative, then copies reversed operands and performs the second actual subtraction. reverse_borrow discharges its non-borrow from exact numeric borrow semantics; padding remains max(actual operand widths), including equal/zero operands.",
+    "Strip scans every actual low FALSE through a paid pop+content-zero push. The first TRUE is popped and restored before the next call, preserving ALL high padding. Actual EOF selects the all-zero branch. leading/odd and n in the induction are proof descriptions, not supplied runtime valuations or indices.",
+    "Scan performs the actual preserving magnitude copy and literal TRUE seed before the strip loop. Both actual first-one and EOF cases reach the exact byte-specified content and retained odd suffix; its budget is linear in actual copied magnitude bytes.",
+    "DivisionView describes every one of the eleven real divider fields, with all other work empty; updates preserve the complete foreign eighteen-role cache. Tail.prepare_trace copies the odd suffix to the constant, physically drains scan and magnitude BEFORE reusing the shared divider/arithmetic bank, and reaches data with its entire divider bank empty. No stale magnitude survives into the real division call.",
+    "The nonzero branch physically copies alpha and constructed content into the real divider and copies its ACTUAL quotient to slope. Content is the physically seeded shifted-one word, hence positive on this branch; no GCD, valuation, quotient or normalized answer is a runtime supplier. Exact quotient length/padding and the exact remainder are retained until explicit cleanup.",
+    "The all-zero branch physically drains provisional strip content, restores the actual alpha content by copy, leaves the fresh constant empty and pushes literal slopeONE. It retains the real padded zero magnitude until common cleanup. Signed zero is consistent with the actual non-borrow convention; no compact-trim replacement changes legacy bytes.",
+    "Finish executes all four actual drains (magnitude, buffer, quotient, remainder), paying their byte counts and real call/return/EOF costs, then pushes the real accepted marker. It reaches .done before the enclosing true halt, which belongs to the separate whole Execution proof. The exact +13 cleanup charge is four drain-call overheads plus the accepted push.",
+    "ArithmeticBounds uses exact add/subtract widths, raw magnitude max-width, physical odd-suffix size, actual fit discard, and the SAME Divider executionTime plus paid copies. NormalizeBounds combines independently bounded actual source fields j/displacement/alpha/buffer and fitted/scanned widths; no prior elapsed source/subtree clock is raised into a later operand size. Both branches have the stated fixed quadratic continuation envelope.",
+    "No source-level blocker found. This review covers assigned primitive/branch/quantitative bodies, not all25modules or a new N-only/canonical-row/full-counter claim. Whole source, original field lineage, all29 storage and acquisition bounds are separately assigned to parent/owner reviews. No finite-control pass is inferred merely from logs or author status."
+  ],
+  "validation_actions": "Read-only source/pin/diff-free inspection only. No imports, builds, edits, controls or replays.",
+  "source_canonical_writes": false
+}

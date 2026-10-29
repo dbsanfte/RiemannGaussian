@@ -1,0 +1,39 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "modules": 3,
+  "declarations": 105,
+  "theorems": 48,
+  "strict": true,
+  "ordinary_root_15linters_default200k": true,
+  "all_generated_standard3": true,
+  "actual_compiled_controls": "PREPARED_137_ONLY query=[] actual_transitions=454 all137roles=true paircatalogue_preserved=true query_preserved=true flags_clear=true outer_real_return=true exact_ordered_fibre=[[false, false, false]]\nPREPARED_137_ONLY query=[true, true] actual_transitions=546 all137roles=true paircatalogue_preserved=true query_preserved=true flags_clear=true outer_real_return=true exact_ordered_fibre=[[true, false, false], [false, true, false]]\nPREPARED_137_ONLY query=[false, true] actual_transitions=432 all137roles=true paircatalogue_preserved=true query_preserved=true flags_clear=true outer_real_return=true exact_ordered_fibre=[]\nPREPARED_137_ONLY query=[true, true, false] actual_transitions=564 all137roles=true paircatalogue_preserved=true query_preserved=true flags_clear=true outer_real_return=true exact_ordered_fibre=[[true, false, false], [false, true, false]]\n",
+  "live_import_pairs": 18234,
+  "live_files": 36468,
+  "missing": [],
+  "changed": [],
+  "objects": {
+    "SemiprimeD1StackFactorScopeFibre": {
+      "source_sha256": "cb0c9b338f74b84182a3d4790ed1857f4fc99b9c2563dc46103c57b4c99ed024",
+      "canonical_sha256": "ca4777ea65d41894816e3adcc1bd9f6e61b4eccf3afbfd53ae7ab8946cd5d332",
+      "independent_sha256": "ca4777ea65d41894816e3adcc1bd9f6e61b4eccf3afbfd53ae7ab8946cd5d332",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopeFibreExecution": {
+      "source_sha256": "c58a2ff96613f6fd930e62f7fb016624d4ce26a15b070e82f14c50a52596f61a",
+      "canonical_sha256": "39ea27110b74e6ccb32d97ba37a4565af659b569a9914e52d1e62f35375e4d7d",
+      "independent_sha256": "39ea27110b74e6ccb32d97ba37a4565af659b569a9914e52d1e62f35375e4d7d",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopeFibreBounds": {
+      "source_sha256": "a03bb1a536c17f2f4096b7632a62a07bbb06771e08bac260edb73e7362c2da8c",
+      "canonical_sha256": "c44ca156f5f9a361cd110f5c2fc8ff1a108468db7b3ad606750a196c2061dfdb",
+      "independent_sha256": "c44ca156f5f9a361cd110f5c2fc8ff1a108468db7b3ad606750a196c2061dfdb",
+      "byte_equal": true
+    }
+  },
+  "previous12_changed": [],
+  "prepared_entry": "Label.copy after physically acquired retained pair catalogue plus current physical key, every filter scratch/output empty",
+  "complete_entry": "Label.main binary N plus physically acquired factor key",
+  "scope": "All original factorNode.ports scope IDs in oldlocalorder. Querykeyacquisition remainscallerwork; preparedtrace retains paircatalogue forreuse; full original factoringpipeline OPEN.",
+  "writers_stopped": true
+}

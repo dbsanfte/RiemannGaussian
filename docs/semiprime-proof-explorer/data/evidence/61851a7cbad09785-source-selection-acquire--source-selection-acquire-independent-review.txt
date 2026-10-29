@@ -1,0 +1,35 @@
+Independent read-only review: SourceSelectionAcquire154 parent-owned source
+Result: PASS; no integration blocker found in the seven reviewed source files.
+
+Scope: reviewed Core, Calls, SelectorInput, KeyInput, Encoding, Execution and Original by source inspection only. No source edit, canonical rebuild, repeated control run, journal/registration, commit or push. This review does not claim independence for my own frozen Projection/Bounds/Storage proofs, which were not changed and have their separate gates.
+
+Runtime front door and finite program:
+- Core initializes exactly the actual nested owner-row tape, unary n and unary a. The other selector/key/helper banks and shared copy scratch start empty. F, M, occurrences, alphabet, binary powers, selected IDs, Env dictionary, query scores, row getters and budgets are absent from runtime operands/control.
+- Four actual included source programs execute in order: Occurrences21, Alphabet30, Selector63, SelectedKeys39. Each includes its literal nested procedure code through ValidationLink, with physical calls/returns. Runtime source/control is fixed before all typed networks/a.
+- The complete physical inventory is21+30+63+39+1=154. Component banks are disjoint sum inclusions; the one additional copy scratch is distinct from every input/destination. No alias shadow or component word is omitted.
+
+Eleven paid transfers:
+- Core's actual copyNext chain contains precisely seven selector-input transfers: occurrence stream, actual catalogue, square/cube/fourth binary words, retained unary n and internally acquired unary F. SelectorInput's trace charges5*sum(actual copied lengths)+28, and every real Copy restores its source/scratch.
+- Four subsequent transfers copy the actual stopped selector dictionary, nextKey, complete selected-prefix vector and retained occurrence stream into the39-role key-reader bank. KeyInput charges5*sum(actual copied lengths)+16. No native reserialization or uncharged reset installs that cache.
+- All acquired occurrence/alphabet/selector words remain retained throughout the later component calls. The next component's only populated input roles are exactly those supplied by the paid transfers.
+
+Whole trace and exact original keys:
+- Execution.source_trace composes all four actual calls and both actual copy chains. The original selector call uses the frozen closed acquired_source_run, not a supplied score/evaluator callback or native selector clock.
+- Projection equalities rewrite the already physically produced seven-input bank to the original selector source, and the already copied four-input key bank to the original complete selected Env25/source. They do not execute a native initializer inside the program.
+- Completeness of the key reader is discharged internally by original_complete. The common occurrence order is the existing canonical namespace/network_original_keys binding; original factor order, local-slot order, duplicates and empty-factor counting are preserved.
+- Execution includes the actual final halt. The additive timeBound accounts for each actual source cap, all11 actual copies, all4 real outer calls and halt (the final+5), with no transported old report clock.
+- Original.output_original is the entire vectorBits of the original IncidenceAcquisition.acquire.keys at radix64, not merely output length or pointwise membership. Retention theorems expose all four actual component banks, full selected Env25, acquired F, original n and unary a without replay.
+
+Honest scope/resource:
+- This is a prepared three-word row/n/a acquisition source. It does not claim those words are obtained from a binary N inside this module. Original.input_rows connects the actual row input ABI to the upstream original NetworkRows tape, leaving its physical upstream join explicit.
+- Alphabet construction is actually called once; its10000*(a+1)*(64^a+1) cost is retained. The approved final envelope R=rowTapeBytes+n+a+64^a+1 explicitly pays64^a. The actual selector/cache and39-resource bounds are handled by the separately frozen Bounds/Storage modules.
+- No caller height, selected prefix, F, frequency, score, known answer, or runtime cost supplier appears at the front door.
+
+Reviewed live source SHA256 pins:
+e6de89457c1d725bd11bd8f9413b0bb93ce5a30215bec057b3a8d0ca4047744a  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceSelectionAcquire.lean
+582bdbfd36901188b561c3fcb5cf6a42fe420f7d299cef0a1796bacfb571a8ed  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireCalls.lean
+a20c32ecc79dcc8eff7c39f82a1a1f64f73883bc271a0137ca6613175ab83c3f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireSelectorInput.lean
+0d4ce96a57a0886d261bc9f7dbde4884b43ed1a348c60fbbcd84ce277516d0aa  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireKeyInput.lean
+39823b1f6710ddcd83e047d9cac5d33ddd7e9d0d285668e94033c0f0df899b7d  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireEncoding.lean
+c68d19d174cbe734e535b6d94120f048f8e2ebc60c12287f25f3ebeeff4c16be  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireExecution.lean
+09ac2061c7a5d5a1565f310084cdb34cdc79e40e118de14033520b93101da82c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireOriginal.lean

@@ -1,0 +1,38 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeSourceHistogramRows",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramRows.lean",
+    "source_sha256": "7b280f8f279a2259114c95b3dc1efd5e7732d6364d5e9c8ce2236f2c3f240a04",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramRows.olean",
+    "canonical_sha256": "2fec217f83cb048bcc506b951ff02f747eb55d184892aeeb74465757f48700fc",
+    "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-rows-isolated/SemiprimeSourceHistogramRows.olean",
+    "isolated_sha256": "2fec217f83cb048bcc506b951ff02f747eb55d184892aeeb74465757f48700fc",
+    "returncode": 0,
+    "byte_equal": true,
+    "log": "/tmp/semiprime-histogram-acquisition-20261027/own-rows-isolated/SemiprimeSourceHistogramRows.log"
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceHistogramRowsBounds",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramRowsBounds.lean",
+    "source_sha256": "fab1014bd8bf3f3f3d518637f71a15445fc7377c7a3c67a6162bef980af7a7f1",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramRowsBounds.olean",
+    "canonical_sha256": "aca2a255424f7ccf8267a101eb1c1265a2a1ab1dddbbea6cc3267cae59ff4406",
+    "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-rows-isolated/SemiprimeSourceHistogramRowsBounds.olean",
+    "isolated_sha256": "aca2a255424f7ccf8267a101eb1c1265a2a1ab1dddbbea6cc3267cae59ff4406",
+    "returncode": 0,
+    "byte_equal": true,
+    "log": "/tmp/semiprime-histogram-acquisition-20261027/own-rows-isolated/SemiprimeSourceHistogramRowsBounds.log"
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceHistogramRowKeys",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramRowKeys.lean",
+    "source_sha256": "a019520042e48be1f8a13911b05943593211ee51fdcaa1f073769418f6a132c2",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramRowKeys.olean",
+    "canonical_sha256": "7aea333755929390691275526d20983b7aca86a4a6d146f67bc4ff4bedf52c23",
+    "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-rows-isolated/SemiprimeSourceHistogramRowKeys.olean",
+    "isolated_sha256": "7aea333755929390691275526d20983b7aca86a4a6d146f67bc4ff4bedf52c23",
+    "returncode": 0,
+    "byte_equal": true,
+    "log": "/tmp/semiprime-histogram-acquisition-20261027/own-rows-isolated/SemiprimeSourceHistogramRowKeys.log"
+  }
+]

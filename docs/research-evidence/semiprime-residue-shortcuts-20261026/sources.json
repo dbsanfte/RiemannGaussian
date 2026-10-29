@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-clock-phase-20261026/README.md",
+      "sha256": "4a82fdd83e30de80d9b98f0527d913dcbf6c17642a6f79f0b6977ac3e5718add"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-clock-phase-20261026/parity-cover-audit.md",
+      "sha256": "9b25bc33f7576b78c22e327b97db2634238d350a100e6162b92f8f0f741ee921"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-clock-phase-20261026/phase-recurrence.md",
+      "sha256": "8ca131869aaf32ade449099e8181a7540d39e77146c22b2bd4344c0da6f0aebc"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-weighted-20261026/unique-cover.md",
+      "sha256": "bc428cc2b5e91b3c0b2b848a70f49f6669f590fec851b679364db441bdfe9276"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-packed-residue-20261026/README.md",
+      "sha256": "ef9cade5700ea4b0f2dabd28c56fb209b917404c168be0b993a8784d6078330d"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-packed-residue-20261026/ward-cavity-contraction.md",
+      "sha256": "dcabf6fb3d52bd28a8ff6ad8580e946d0212ec4596c626dc9cad6ae2ad3fa073"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-rational-mixture-telescoping-20261024/rational-mixture.md",
+      "sha256": "632e88ef49be34bd0e698f9bf8b2b205221564d6558ea446a1e54074fda7e7f7"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "S. Ole Warnaar, Hall–Littlewood functions and the A2 Rogers–Ramanujan identities",
+      "url": "https://people.smp.uq.edu.au/OleWarnaar/pubs/A2-Hall-Littlewood.pdf",
+      "location": "Section 2, equations (2.5)–(2.8)",
+      "root_check": "Downloaded primary PDF and checked extracted formulas after web retrieval failures.",
+      "pdf_sha256": "4a5458ed83b5dd1c21daae624ee8c42e2d14abd06e2e0b3048a8d04fdaf32dfd",
+      "scope": "Finite Cauchy product context; no infinite partition evaluation or fast normal derivative imported."
+    },
+    {
+      "title": "Masatoshi Noumi, Kernel functions for Koornwinder’s q-difference operators",
+      "url": "https://www.maths.gla.ac.uk/island/island3/talks/noumi.pdf",
+      "location": "Printed Page 2, first Macdonald operator and finite type-II kernel",
+      "root_check": "Primary PDF text checked; independent report also derives the specialized rational identity by partial fractions.",
+      "scope": "Finite polynomial kernel identity specialized at equal parameters; no normal-jet algorithm imported."
+    },
+    {
+      "title": "Shaoshi Chen and Michael F. Singer, Residues and Telescopers for Rational Functions",
+      "url": "https://arxiv.org/html/1203.4200v1",
+      "location": "Section 2.3 and explicit infinite-order hypotheses",
+      "root_check": "Primary arXiv text checked after author-hosted PDF timeout.",
+      "scope": "Motivating orbit-residue language only; native finite-order recurrence derived directly."
+    }
+  ]
+}

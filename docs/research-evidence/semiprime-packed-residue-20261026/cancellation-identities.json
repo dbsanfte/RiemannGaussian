@@ -1,0 +1,142 @@
+{
+  "kind": "exact symbolic cleared identities over integer polynomial ring",
+  "variables": [
+    "A",
+    "D",
+    "W",
+    "s",
+    "Sw",
+    "S0",
+    "a",
+    "r",
+    "T",
+    "x",
+    "z",
+    "B",
+    "K",
+    "Kr",
+    "Kt",
+    "h",
+    "p",
+    "l",
+    "m",
+    "l2",
+    "lm",
+    "kappa",
+    "b",
+    "w1",
+    "w2",
+    "p1",
+    "pw",
+    "p11",
+    "p1w"
+  ],
+  "passed": 14,
+  "checks": [
+    {
+      "name": "Ward_unregulated_determinant",
+      "passed": true,
+      "scope": "universal cleared polynomial identity",
+      "lhs_monomials": 3,
+      "rhs_monomials": 3
+    },
+    {
+      "name": "Ward_regulated_Schur_numerator",
+      "passed": true,
+      "scope": "universal cleared polynomial identity",
+      "lhs_monomials": 2,
+      "rhs_monomials": 2
+    },
+    {
+      "name": "opposite_replica_sign",
+      "passed": true,
+      "scope": "universal cleared polynomial identity",
+      "lhs_monomials": 2,
+      "rhs_monomials": 2
+    },
+    {
+      "name": "adjacent_Casoratian",
+      "passed": true,
+      "scope": "universal cleared polynomial identity",
+      "lhs_monomials": 2,
+      "rhs_monomials": 2
+    },
+    {
+      "name": "Casoratian_finite_h3",
+      "passed": true,
+      "scope": "exact finite h=3 check in addition to universal adjacent rule",
+      "lhs_monomials": 8,
+      "rhs_monomials": 8
+    },
+    {
+      "name": "cone_Cayley_factorization_8",
+      "passed": true,
+      "scope": "universal cleared polynomial identity",
+      "lhs_monomials": 4,
+      "rhs_monomials": 4
+    },
+    {
+      "name": "full_q_Wronskian_1",
+      "passed": true,
+      "scope": "universal cleared polynomial identity",
+      "lhs_monomials": 1,
+      "rhs_monomials": 1
+    },
+    {
+      "name": "noncovariant_q_Wronskian_2",
+      "passed": true,
+      "scope": "universal cleared polynomial identity",
+      "lhs_monomials": 3,
+      "rhs_monomials": 3
+    },
+    {
+      "name": "DJ_log_jet_unweighted",
+      "passed": true,
+      "scope": "universal log-jet substitution; existence of physical log jets is paper proof",
+      "lhs_monomials": 1,
+      "rhs_monomials": 1
+    },
+    {
+      "name": "DJ_log_jet_weighted",
+      "passed": true,
+      "scope": "universal log-jet substitution; no growing leaf expansion",
+      "lhs_monomials": 1,
+      "rhs_monomials": 1
+    },
+    {
+      "name": "DJ_physical_two_leaf_determinant",
+      "passed": true,
+      "scope": "finite two-leaf physical diagnostic, not arbitrary-dimension validation",
+      "lhs_monomials": 3,
+      "rhs_monomials": 3
+    },
+    {
+      "name": "DJ_physical_two_leaf_selected_adjugate",
+      "passed": true,
+      "scope": "finite two-leaf physical diagnostic",
+      "lhs_monomials": 2,
+      "rhs_monomials": 2
+    },
+    {
+      "name": "DJ_gated_denominator",
+      "passed": true,
+      "scope": "formal P=0 substitution; unit/nonunit gate is not machine checked",
+      "lhs_monomials": 1,
+      "rhs_monomials": 1
+    },
+    {
+      "name": "DJ_gated_selected_numerator",
+      "passed": true,
+      "scope": "formal P=0 substitution; ratio inversion remains an external gate",
+      "lhs_monomials": 1,
+      "rhs_monomials": 1
+    }
+  ],
+  "not_checked": [
+    "native coverage, orders, norm/unit guards and complexity",
+    "general-rank determinant lemma or Wick theorem implementation",
+    "arbitrary-h physical product expansion; local universal rules and h=3 checked",
+    "Laurent principal parts on singular components and factor recovery"
+  ],
+  "dependencies": "Python standard library only"
+}

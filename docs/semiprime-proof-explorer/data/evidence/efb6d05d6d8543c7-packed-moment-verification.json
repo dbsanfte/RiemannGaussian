@@ -1,0 +1,136 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 6,
+    "declarations": 118,
+    "theorems": 99
+  },
+  "modules": {
+    "SemiprimeD1PackedMomentAlgebra": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedMomentAlgebra.lean",
+        "sha256": "488cc3d2c2ed2c34f6026e81cff416194da97adfe70b41efa56547a203ef15a7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedMomentAlgebra.olean",
+        "sha256": "ff42a043e7815bf043075c928237caa0a761c7ab33474952afe24fa92b632334"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-moment-frozen/SemiprimeD1PackedMomentAlgebra.olean",
+        "sha256": "ff42a043e7815bf043075c928237caa0a761c7ab33474952afe24fa92b632334"
+      }
+    },
+    "SemiprimeD1PackedMomentDigits": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedMomentDigits.lean",
+        "sha256": "6e92efded3c04960b7598192b45ec6f111e75ebc66c11ac748fe3804038493d7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedMomentDigits.olean",
+        "sha256": "4d94aba0bed27669a3c602510cd56c4c26ba226a94e13b2801e8cee7c0f4a406"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-moment-frozen/SemiprimeD1PackedMomentDigits.olean",
+        "sha256": "4d94aba0bed27669a3c602510cd56c4c26ba226a94e13b2801e8cee7c0f4a406"
+      }
+    },
+    "SemiprimeD1PackedMomentOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedMomentOriginal.lean",
+        "sha256": "b655610aa0db925f938fa20b5d7aded3c0e42257583b178a555647d51e5117e7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedMomentOriginal.olean",
+        "sha256": "749d96ae584dee12cc0e148d32f7494da104003721148088a3330320561a46ba"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-moment-frozen/SemiprimeD1PackedMomentOriginal.olean",
+        "sha256": "749d96ae584dee12cc0e148d32f7494da104003721148088a3330320561a46ba"
+      }
+    },
+    "SemiprimeD1PackedMomentSemiprime": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedMomentSemiprime.lean",
+        "sha256": "e99fa11304094c98632314ba3004b807353ef1e9087fae9943b063049a55491f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedMomentSemiprime.olean",
+        "sha256": "00e5e00e002ff6f9cfd16870d5296fedd749c4585135e5d8e8a3299c72428189"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-moment-frozen/SemiprimeD1PackedMomentSemiprime.olean",
+        "sha256": "00e5e00e002ff6f9cfd16870d5296fedd749c4585135e5d8e8a3299c72428189"
+      }
+    },
+    "SemiprimeD1PackedMomentRecovery": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedMomentRecovery.lean",
+        "sha256": "95814fd0c9ccfc168cd6430eb102f8f67706a27154b92487211b3c151fc33096"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedMomentRecovery.olean",
+        "sha256": "2378f39416ed46ac572dc72cc92c83228f04dd86bef8fe0019c5cb89736ee765"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-moment-frozen/SemiprimeD1PackedMomentRecovery.olean",
+        "sha256": "2378f39416ed46ac572dc72cc92c83228f04dd86bef8fe0019c5cb89736ee765"
+      }
+    },
+    "SemiprimeD1PackedMomentPrecision": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedMomentPrecision.lean",
+        "sha256": "33aedab0e3aef4f7a83000f6ae0b1bcb4752e13e49c1124f03b592b71ae76aee"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedMomentPrecision.olean",
+        "sha256": "17e2e4d65f9f9d68a2d317976ffbceafe58ffe6824c3e6539b7948634742cda5"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-moment-frozen/SemiprimeD1PackedMomentPrecision.olean",
+        "sha256": "17e2e4d65f9f9d68a2d317976ffbceafe58ffe6824c3e6539b7948634742cda5"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "source_canonical_writers_stopped": true,
+  "immutable_read_only": true,
+  "heartbeat": 200000,
+  "raised_heartbeats": false,
+  "strict_actual_terminal0": 41613,
+  "actual_imported_pins": {
+    "pairs": 17437,
+    "before": "/tmp/semiprime-explicit-rate-20261027/packed-moment-live-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/packed-moment-live-after.json",
+    "before_after_live_unchanged": true
+  },
+  "independent_review": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/packed-moment-independent-review.txt",
+    "sha256": "efc532ec5651a952d9ee92f218c5974ac27d5674552fbf772a6b58145cb92a1a",
+    "current_source_pins": 6,
+    "status": "PASS"
+  },
+  "scope": "Mathematical one-local-contraction replacement and exact arithmetic recovery ONLY, no acquisition/runtime certificate",
+  "results": [
+    "Original.public_contraction: FULL original local marked graph=count+b*factorSum for b\u00b2=0 via explicit operand-preserving model bijections",
+    "Semiprime.readout: canonical scalar modB\u00b2 returns exact count1/sumP for squares and count2/sum(p+q) for EVERY distinct semiprime, even factors included",
+    "Recovery.factorization: single specified scalar determines genuine nontrivial factors by discriminant arithmetic, no supplied factor or assignment",
+    "Precision.coefficient_fits: ALL locallyvalid source rows fit actual2ell-bit precision; numerical root budget fits existing pathCap with axes unchanged"
+  ],
+  "remaining": [
+    "Physical marked coefficient/table acquisition",
+    "Actual binary2ell metadata and generic-rootcontext/cache join",
+    "Actual scalar recursion/child graph-table factories, grid/Hermite row acquisition",
+    "Physical binary sqrt/discriminant/recovery",
+    "SAME original-input total memory/address/runtime theorem at requested paper rate"
+  ],
+  "higher_precision_rule": "Retain high B\u00b2 terms at EVERY larger-P intermediate integer lift; discard ONLY final scalar root modulus",
+  "failed_attempts_archived": "/tmp/semiprime-explicit-rate-20261027/packed-moment-failed-attempts",
+  "utc": "2026-10-29T00:36:24.235251+00:00",
+  "no_journal_registration_commit_push": true
+}

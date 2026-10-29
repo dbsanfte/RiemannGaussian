@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-10-26 22:54:58 UTC",
+  "status": "running",
+  "completed": 464,
+  "total": 2569,
+  "failed": {},
+  "active_modules": [
+    "OAI.Algorithms.SubexponentialSAT.ExecClauseRelationsProgram",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutCoefficientAlgorithmMagnitude",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutCoefficientRecurrence",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutRankBlocks",
+    "OAI.Algorithms.SubexponentialSAT.ExecSunflowerCodeTransport"
+  ],
+  "target": "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.Final",
+  "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "live_exec_session_id": 85099,
+  "last_live_observation": "write_stdin returned running with session_id 85099",
+  "state_path": "/tmp/semiprime-d1-audit-20261026/lean-build-state.json",
+  "log_directory": "/tmp/semiprime-d1-audit-20261026/lean-logs",
+  "output_directory": "/tmp/semiprime-d1-audit-20261026/lean-build",
+  "rule": "Re-poll the existing handle. A timeout is not terminal. This frozen snapshot does not claim later completion.",
+  "whole_endpoint_verified": false,
+  "comparator_run": false
+}

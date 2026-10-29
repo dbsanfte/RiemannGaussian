@@ -1,0 +1,225 @@
+{
+  "status": "FINAL",
+  "modules": [
+    "SemiprimeD1StackSourcePacketPadding",
+    "SemiprimeD1StackSourcePacketPaddingPrimitives",
+    "SemiprimeD1StackSourcePacketPaddingEncoding",
+    "SemiprimeD1StackSourcePacketPaddingCalls",
+    "SemiprimeD1StackSourcePacketPaddingBits",
+    "SemiprimeD1StackSourcePacketPaddingSetup",
+    "SemiprimeD1StackSourcePacketPaddingRaise",
+    "SemiprimeD1StackSourcePacketPaddingFinish",
+    "SemiprimeD1StackSourcePacketPaddingMeaning",
+    "SemiprimeD1StackSourcePacketPaddingExecution",
+    "SemiprimeD1StackSourcePacketPaddingBounds",
+    "SemiprimeD1StackSourcePacketPaddingStorage",
+    "SemiprimeD1StackSourcePacketPaddingOriginal"
+  ],
+  "source_and_canonical_writers": "STOPPED; immutable",
+  "physical_roles": 25,
+  "retained_frequency_roles": 21,
+  "new_roles": 4,
+  "whole_inputs": "ONLY actual raw-key vectorBits and already acquired unary a; no count/max/frequency/padding/clock supplier",
+  "source_API": "Core.initial rawvector unaryExponent; Label.start; Encoding.source keys a/result/done/inputSize; Execution.source_run/paddingInTime; Bounds.source_run_bounded/machineSource",
+  "roles": "frequencyStack maps all21 directly; aux.exponent retained; aux.cutTodo/prefixTodo empty; aux.padding compact binary result",
+  "program": "real Frequency21 whole source ONCE ->two preserving exponent copies+actualmaximum copy ->physical lowbit/EOF pops+finite OR ->actual real-ret counter only when lowtrue else paidhighcopy/drain ->literal a zeroBITS ->realreverse/trim ->halt",
+  "exact_original": "Original.packet_output_original equals entire old PacketPadding.acquire.padding on ALL original typed graphs; actual keys/a acquisition remains explicit caller",
+  "rounding": "ceiling to a MULTIPLE of2^a; zero remains zero for all a; a0 preserves compactmaximum; never next-power-of-maximum rule",
+  "binary_numerical_values": "maximum and padding stay binary; no unary maximum or unary 2^a expansion",
+  "clock": {
+    "own_same_program": true,
+    "time": "10^11*(vectorBytes+a+1)^5",
+    "all25_and_realreturns": "10^14*(vectorBytes+a+1)^5",
+    "native_clock_transport": false,
+    "near_linear_claim": false
+  },
+  "gates": {
+    "strict_modules": 13,
+    "source_default_heartbeats": 200000,
+    "raised_heartbeat_options": false,
+    "ordinary_RiemannGaussian_all15_lint": true,
+    "Elab_async": false,
+    "EVERY_generated_constants_std3": 322,
+    "generated_theorems": 161,
+    "independent_byte_equal": 13,
+    "actual_header_import_pairs": 18097,
+    "actual_header_source_object_files": 36194,
+    "before_after_current_unchanged": true,
+    "baseline_files_unchanged": 17054,
+    "historical_prefixes_unchanged": true,
+    "prior_frozen_unchanged": {
+      "source-key-frequency": {
+        "files": 30,
+        "changed": []
+      },
+      "source-selected-keys": {
+        "files": 32,
+        "changed": []
+      },
+      "source-incidence": {
+        "files": 50,
+        "changed": []
+      },
+      "source-alphabet64": {
+        "files": 38,
+        "changed": []
+      },
+      "root-phase-fresh-records": {
+        "files": 46,
+        "changed": []
+      },
+      "root-phase-parameters": {
+        "files": 36,
+        "changed": []
+      }
+    }
+  },
+  "compiled_controls": {
+    "exit_code": 0,
+    "cases": [
+      {
+        "case": "empty_a0_zero",
+        "occurrences": "0",
+        "actual_steps": "40",
+        "padding_bytes": "0",
+        "exponent": "0",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "empty_a4_zero",
+        "occurrences": "0",
+        "actual_steps": "108",
+        "padding_bytes": "0",
+        "exponent": "4",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "one_a0_identity",
+        "occurrences": "1",
+        "actual_steps": "186",
+        "padding_bytes": "1",
+        "exponent": "0",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "one_a3_round8",
+        "occurrences": "1",
+        "actual_steps": "251",
+        "padding_bytes": "4",
+        "exponent": "3",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "three_a2_round4",
+        "occurrences": "3",
+        "actual_steps": "984",
+        "padding_bytes": "3",
+        "exponent": "2",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "four_a2_exact4",
+        "occurrences": "4",
+        "actual_steps": "1472",
+        "padding_bytes": "3",
+        "exponent": "2",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "five_a2_round8",
+        "occurrences": "5",
+        "actual_steps": "2092",
+        "padding_bytes": "4",
+        "exponent": "2",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "eight_a1_exact8",
+        "occurrences": "8",
+        "actual_steps": "5694",
+        "padding_bytes": "4",
+        "exponent": "1",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "rawzero_traps_a2",
+        "occurrences": "6",
+        "actual_steps": "2680",
+        "padding_bytes": "3",
+        "exponent": "2",
+        "all25roles": "true",
+        "rawsource_exponent_retained": "true",
+        "all21frequencyroles_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      }
+    ],
+    "actual_steps": 13507,
+    "observer_constants": 26,
+    "same_machine_step": true,
+    "kernel_snapshot_identity": true
+  },
+  "pins": "/tmp/semiprime-explicit-rate-20261027/source-packet-padding-final-source-object-pins.json",
+  "failed_new_proofs_archive": "/tmp/semiprime-explicit-rate-20261027/source-packet-padding-failed-attempts",
+  "scope": "prepared rawkeys+actualunarya source; no N-only whole-pipeline claim",
+  "no_root_registration_journal_commit_push": true
+}

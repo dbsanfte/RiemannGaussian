@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7581,
+      "sha256": "e0600f90c755427955911a764e6a156383ebdf352fcb08bf5612cb241e5ca7fa"
+    },
+    {
+      "path": "composition-hybrid.md",
+      "bytes": 11776,
+      "sha256": "8081fbbfb7e0a22d22faafb6fac67a9c9fbd0d2d072414af7d6b88dafe8f5a76"
+    },
+    {
+      "path": "qbinomial-joint.md",
+      "bytes": 10231,
+      "sha256": "d288cb8f697e94e605a2d77e0b027f4010817a45a5df6590bde9ffd106689070"
+    },
+    {
+      "path": "review-composition.md",
+      "bytes": 5059,
+      "sha256": "03170587ef1a18e505ee50cd74dd1b2945557d05ff6fb2f3b5f5c548c7d60255"
+    },
+    {
+      "path": "review-qbinomial.md",
+      "bytes": 4829,
+      "sha256": "b2a2690e55e15f4dc25b90495acdb8c2a879aea85ed15fe7ffc3fa39291488a8"
+    },
+    {
+      "path": "review-singular.md",
+      "bytes": 5425,
+      "sha256": "4085c51c19ae2b1162e74d00f0374541933b9eb35a977ac5182b754f03783efd"
+    },
+    {
+      "path": "review-ternary.md",
+      "bytes": 5823,
+      "sha256": "dd1dd70a21d1f66ac3d0e786016155ebeadfa79f8ed4b64766c4e672c178f839"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2896,
+      "sha256": "3c6c1adcbdb2014eda7e2abeaa246f15a39237158ea31d096e4edf6bd52b7199"
+    },
+    {
+      "path": "singular-solve.md",
+      "bytes": 10665,
+      "sha256": "280dce10d9d699420e8845aeb1588b0c1d43dfd4abfc34f24bd50d5848624a5d"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 4576,
+      "sha256": "4bc8cc59671720772307a49b34d1caf926b28f1c6e834b992a51d742ab0dff3a"
+    },
+    {
+      "path": "ternary-fusion.md",
+      "bytes": 11442,
+      "sha256": "6b1c7764bcc2434ec68303e527f1702f6f7c6aff8e34ef21c5034af2fac75352"
+    }
+  ],
+  "manifest_excludes_itself": true
+}

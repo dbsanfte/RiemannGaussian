@@ -1,0 +1,78 @@
+PASS — all10 current sources /797 lines independently read in full. No source/canonical builds or edits by reviewers.
+
+Independent READONLY parent Node141 review PASS. Every body/all294 current lines Core/Calls/Execution/Original read fully. Noimports/builds/edits/controls. ALL4 assignment=before=after=currentflatSHA.
+Core is fixed141=ALL140 previousNode words plusONE initiallyEMPTY output. WholeWeight60 injects using realR36, all8inversecachefields, existingemptyprivateindices/read/parser words, originalinverse/power/scalar/q/W operands; old inverse-prefix shadow remainsallocatedempty. Weightoutput isONLYnewword; no q/array/scalar/Fits/result/clock advice. Onefixedprogram realNode140.start(orSAMEactualGrid-ready), realWeight60.start, truehalt; no Grid replay or coefficient callback.
+Calls physically compose complete140 and60 executions with actual nestedcall/return frames, fullinput andoutputDataRel. sixactualacquired operands feedWeightinitial directly; whole140 stopped cache is unchanged afterWeight because its privatefields wereempty andcleared, andallactual sourcewords kept. Execution uses additive budgets with exactlytwoactualcaller overheads+halt3, preservesarbitraryouterreturns intraces/clearsflagsandinternalframesattruehalt.
+Original binds ENTIRE output to nativeNode.acquireAt bytes, includingq0/W0/defaults/rawoperationorder; originalu<=M/paidNodeW dischargevalues/positivecanonicaldenominators/Valid/width internally. All140 actualsource/cache/shadow fields retainedexactly. Both fullfive-input andactualGrid-ready contracts concernSAMEliteralprogram/SAMEoutput. Preparedphase boundary andremainingN-onlyoutercaller/fullrecursivecounter explicitlyOPEN. No blocker found.
+
+BEFORE
+38e0a130d6d05992d31dc378cc40231f765d6da968d5c508050a2c389a8dcb70  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNode.lean
+6ea0842cf7d6f1e5978d8b1a85c94aa53cbf8e8265e1cdd449f6074dded14c68  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeCalls.lean
+6786e37b0fc4e21d6a78996af4b1d8a38d47195fd02cabf66547451c66657341  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeExecution.lean
+1797e54acaa64ee2f55d461d116edee3bd2524f234689ae3d5432529f4d1524c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeOriginal.lean
+
+AFTER
+38e0a130d6d05992d31dc378cc40231f765d6da968d5c508050a2c389a8dcb70  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNode.lean
+6ea0842cf7d6f1e5978d8b1a85c94aa53cbf8e8265e1cdd449f6074dded14c68  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeCalls.lean
+6786e37b0fc4e21d6a78996af4b1d8a38d47195fd02cabf66547451c66657341  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeExecution.lean
+1797e54acaa64ee2f55d461d116edee3bd2524f234689ae3d5432529f4d1524c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeOriginal.lean
+
+PASS — independent READ-ONLY owner review: ALL3 assigned RecoveryNode141 modules, ALL236 lines and every body read. Assignment=before=after=current SHA256 for every source.
+No imports/builds/source or canonical edits/controls/replays.
+
+Inventory: node inclusion is injective for ALL140 previous words. Complete58 helper aliases plus two scalar aliases have proved injectivity/disjointness, including rational template, all cached registers and work/output roles. Weight inverse/powers aliases are literal acquired Node140 words; one fresh output is the sole allocation. No implicit omitted shadow.
+View: complete old140 stopped store is retained except the one fresh output. Empty helper-register/private projection is proved from actual Node140 stopped source, with only inverse/powers outputs surviving. All six Weight60 inputs (actual inverse/powers, scalar signed/denominator, unary q and paid width) are projected using DataRel and acquired rational-image/scalar/q equalities, not supplied native fields in runtime. Its exact stopped store differs only at output, enabling whole140 retention.
+Encoding: all a/M/u/selected/raw arrays are erased proof specifications. afterNode/gridReady are honest actual cache-boundary views, not an extra whole-source input. Exact raw native inverse and power byte lineage is established from frozen Node140 producer identities, preserving recurrence order and padding. weight_initial derives real six-input store internally from actual stopped Affine/Node results; no array/rank/answer getter or native clock transport.
+No blocker found in assigned scope. Whole source/clock/storage wrappers and global caller are assigned elsewhere; no N-only recovery/full factorer completion claimed.
+
+CURRENT PINS (assignment=before=after):
+0dffb2ffe0b076c1ba085bdf28d4c27b1efc6d41bf35eb2be1807c9eb5c61667  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInventory.lean
+c14d17248b13b07c3dd07abe53414889b6dcfc697b6c6332f71d19263c099e01  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeView.lean
+20e1e3f57d53dda179ff4f8f82adabfdebf8a60d9dea0b076693c2d24f42256e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeEncoding.lean
+
+{
+  "status": "PASS",
+  "reviewer": "vertex_record_logger",
+  "utc": "2026-10-29T05:43:28.476275+00:00",
+  "scope": "Full read-only bodies of the three assigned quantitative modules; all 267 lines read in one nontruncated batch. No imports, builds, source/canonical edits or controls.",
+  "modules": [
+    {
+      "module": "SemiprimeD1StackRecoveryNodeBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeBounds.lean",
+      "sha256": "821528a4d9b9b3f733c91556023197c61501fd4c74a335712683898c38fa3036",
+      "lines": 68
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeStorage",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeStorage.lean",
+      "sha256": "c90c04e566f8823cc989c423a991ec558ff236e02e52949e983ebecd11ddb1c5",
+      "lines": 120
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeOriginalResources",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeOriginalResources.lean",
+      "sha256": "9c59d5913bdfa743d7b58bb9d127c9b53e1a51e02c27d5795a2e6e39ad4942a0",
+      "lines": 79
+    }
+  ],
+  "before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeBounds.lean": "821528a4d9b9b3f733c91556023197c61501fd4c74a335712683898c38fa3036",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeStorage.lean": "c90c04e566f8823cc989c423a991ec558ff236e02e52949e983ebecd11ddb1c5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeOriginalResources.lean": "9c59d5913bdfa743d7b58bb9d127c9b53e1a51e02c27d5795a2e6e39ad4942a0"
+  },
+  "after": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeBounds.lean": "821528a4d9b9b3f733c91556023197c61501fd4c74a335712683898c38fa3036",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeStorage.lean": "c90c04e566f8823cc989c423a991ec558ff236e02e52949e983ebecd11ddb1c5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeOriginalResources.lean": "9c59d5913bdfa743d7b58bb9d127c9b53e1a51e02c27d5795a2e6e39ad4942a0"
+  },
+  "all_assignment_before_after_current_sha256_match": true,
+  "findings": [
+    "No blocker found. Bounds.runBound_le pays the SAME actual two-source sum n+w+3. It combines independently proven Node-input R^30 and semantic acquired Weight R^20 caps; it never uses a preceding elapsed runtime as a later operand width.",
+    "The resource charges actual W and 2^(a+1) by VALUE. Whole and same-program Grid-ready entries use internally acquired arrays and scalar. Selected phase/index equality is an honest input-domain proposition, not an executed supplier.",
+    "Storage.prefix_fuel derives every prefix bound from the SAME actual halted run. All 141 Bool words plus the genuine none-label return list are counted, including ready retained Grid cells; exact run_correct transfers this bound to compiled configurations.",
+    "OriginalResources specializes the same run and space caps using the actual paid original W, u<=M, root metadata and actual binary phase-byte bound. Uniform coefficients precede N; the source remains a prepared five-word source, with N-only outer join and scalar counter explicitly open.",
+    "OriginalResources raises only proof-side numeral exponentiation threshold to1024; no maxHeartbeats change."
+  ],
+  "source_canonical_writes": false,
+  "replayed_controls": false
+}

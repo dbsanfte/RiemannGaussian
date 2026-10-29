@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 9012,
+      "sha256": "1c5edbdcc11a0fc81e2a4bce0ac54b92413d6e4dcc16d7b33b79484945c1c19f"
+    },
+    {
+      "path": "bispectral-review.md",
+      "bytes": 5056,
+      "sha256": "7ae3cff7a51dc906fcdf121bdf6993779075abd250fa800be945c561ffe729bb"
+    },
+    {
+      "path": "bispectral-string.md",
+      "bytes": 11026,
+      "sha256": "0fe0cb3392b0da83c8653023ef123145ab1c6a15cc831cacf90d2fbbfe6d7850"
+    },
+    {
+      "path": "cyclic-cover.md",
+      "bytes": 11966,
+      "sha256": "7a9bb82c4624741e3127244a4594a7938617fa72426dc3c2854ca0601c6a76a9"
+    },
+    {
+      "path": "exact-string.md",
+      "bytes": 15328,
+      "sha256": "4fa2338e0aaaf21159c018411584727fe3d06becdea11781d42e901f31f514d8"
+    },
+    {
+      "path": "group-polynomial.md",
+      "bytes": 8378,
+      "sha256": "8df97e2486c191ad989c97ac57da0e424820cd1e5541f08d2e19e5c87e06719e"
+    },
+    {
+      "path": "integration-review.md",
+      "bytes": 3287,
+      "sha256": "3f8ff25d3fa171d7be611c32750e6c72175a65a7ab1ccc68d1a9d2c8a77c2f4e"
+    },
+    {
+      "path": "native-group-review.md",
+      "bytes": 5136,
+      "sha256": "24eaf08638fea19df8b8381d7e3048b0438d2b676341746354b04d24812c7e42"
+    },
+    {
+      "path": "native-inversion.md",
+      "bytes": 11663,
+      "sha256": "e5afbd697f2620e010882888d07fec31fcb2d8c8730d8c9fad4a6499e7971d0f"
+    },
+    {
+      "path": "recurrence.md",
+      "bytes": 13526,
+      "sha256": "d99200de59c2d77d6616db741fd36bf2e679e520122b07aed4529d141664358a"
+    },
+    {
+      "path": "review-initial.md",
+      "bytes": 5715,
+      "sha256": "15a39922ee9f4f13886c880a49b312af31d58c356f1d7ce6122ad725a409f42d"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2872,
+      "sha256": "0e4aba486464ffe07062212c7136a755f5a0571013204c242f2133efa2b9b7a5"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 8395,
+      "sha256": "f9937e2fabe80fa4e500c35f419430d597e81fefe6ff0e6dc77287ef183da1e1"
+    },
+    {
+      "path": "string-fusion.md",
+      "bytes": 5465,
+      "sha256": "1d1f6d19d5e89ac565c3f06ec72d573a62d447049b5da89ccdd2ab84fd1a2ba3"
+    },
+    {
+      "path": "string-review.md",
+      "bytes": 6022,
+      "sha256": "75d7c9c20832cb587447ba61bb36ff05b698a61da0642ece690cad7a2579aeba"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "CPU std::exp, FP32 multiplication, std::fma; not CUDA/HIP or a GPU benchmark",
+  "cases": 100242,
+  "bit_comparisons": 1102662,
+  "mismatches": 0,
+  "command": "g++ -std=c++20 -O2 -ffp-contract=off -fno-fast-math check_scales.cpp -o /tmp/check_scales && /tmp/check_scales"
+}

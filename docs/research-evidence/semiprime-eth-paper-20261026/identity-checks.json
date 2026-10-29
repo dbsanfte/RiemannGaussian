@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "scope": "Finite FFT/carry/parameter identities only",
+  "paper_tensor_algorithm_implemented": false,
+  "factoring_algorithm_implemented": false,
+  "source_theorem_certified": false,
+  "checks": {
+    "principal_root_sums": 116,
+    "basis_transform_equalities": 120,
+    "inverse_equalities": 120,
+    "exact_convolutions": 24,
+    "integer_carry_equations": 720,
+    "graph_parameter_checks": 8
+  }
+}

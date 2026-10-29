@@ -1,0 +1,201 @@
+{
+  "utc": "2026-10-26T23:45:53.238949+00:00",
+  "pinned_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "strict_external_build_snapshot": {
+    "status": "running",
+    "completed": 1808,
+    "failed": 0
+  },
+  "files": [
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/ConditionalExpectation.lean",
+      "sha256": "2a88f461708a0a246d9f75cc4de2b365ad21da21a087216585e23b57ffdb5300",
+      "module": "OAI.Algorithms.SubexponentialSAT.ConditionalExpectation",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "d2f04a5a8e1bf9aecbce62e545cc4023aac411cbfe38cfd1afbd592353db3ea2"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/BlockPacking.lean",
+      "sha256": "2f0775dcffdd5bab7810c6b9311db5952d38eec3717ceedbafd4d9694e94d361",
+      "module": "OAI.Algorithms.SubexponentialSAT.BlockPacking",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "4de96700bf487cfb807dce6a2f928e4ea3a7a04a99bfc9522bdecdc0ffa3c722"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SubexpRowInterpolation.lean",
+      "sha256": "764ec288c71b20261e881ae136c5dedd05f11f961714fc6079d6c9cbe9acc2a1",
+      "module": "OAI.Algorithms.SubexponentialSAT.SubexpRowInterpolation",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "c20a8df80d6817ea27188e750b20d5acce7ff4ca7a2d5dec5a603506e9916dde"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingTheorem.lean",
+      "sha256": "53ef478dba29a34ad638dd3ad5836ba0b4dd65445182832fc5f036b6e5b8f18a",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.PackingTheorem",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "7b3b02302fd119af042cdb6f83d64c9002e3b294503de74c8232b68eb3717358"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingConcrete.lean",
+      "sha256": "51db59df0fbb823dde961322559aecb026d9f073de41c0493843ae0169553a5a",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.PackingConcrete",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "f1dd8bd9443a1ca9d7cd5e63b726d5f77cf39b1d303f63bab3950ee80458871c"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingWords.lean",
+      "sha256": "85c3ec8833c734df46a745709fdbfe0baa93808cdbdfdd9a21951f95301154a1",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.PackingWords",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "4541bd7deb68c619db6292daf962877e885476a9e48c6e44fd882d7fde51e3e3"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingSelection.lean",
+      "sha256": "f673a151986d5328152f85b76b594833c04dc1e778f7130493ab6a96cd4f53f6",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.PackingSelection",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "8455e0dd68b58548591ea3950f09d5af1f3f4779625ef014e0563c000c0c1369"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutInterface.lean",
+      "sha256": "ccc72542a29ebce8f9219431752fb6925b9af8438c439cec8939cb6e3467f8f5",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutInterface",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "de37d4c277567a996609d705285463f93f945d7e0d969ea9d8f5dbf27b75f577"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutUniversal.lean",
+      "sha256": "8d8a92678bf2b9abb10e849269590ee68d4373f5eb2fc1e6df9ebaa86f6741dd",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutUniversal",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "efdcee730cb11a4fa9775a133c83cf01e1069bb97817c78984d77f21e19f5fe8"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutBlocks.lean",
+      "sha256": "1523048be5227981a4b130a9964e34e5957df09054a8d70fa893c4ae37932eaa",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutBlocks",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "b4bb1a3fa9e49cb9788b1c3e9dda872be476d97e1ec230ba6fbd28401699d1ce"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutPullback.lean",
+      "sha256": "2f8b1a9980ac74a93e06473e193db59c6c33455f9f00eb6a5e8d5a6b9c6307e8",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutPullback",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "c575903c63a1ffea96585bfd3b2987bb2299f122c4e109f320fa47420058be5f"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutHeadPullback.lean",
+      "sha256": "e3048a8126875ee820434bfbe1fbceb6cb2b7fe41fc4bb65a767f20544fc9172",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutHeadPullback",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "662c9a70c95b656d3b28557aa6d4fa89806e60ef1ffac2ef3c886e59826bbe1b"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutExactBuckets.lean",
+      "sha256": "947ee8bad9f9ca64bbf0d70ef624353cbf233fd97c46a9727f55ca8264c7fbc9",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutExactBuckets",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "8545828d515c71b3fe3f0aa36365d8484969da28840684ffb58f270066be18c1"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutRowSelection.lean",
+      "sha256": "f3e08e33e14901dcd9d3e72f92a76b152f56f458bb99525590c90122e54b2c4d",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutRowSelection",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "0fe989a45944a90c99743a57a892e74b8baa5a52888a717ff02c8c44ac55b5fb"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutRank.lean",
+      "sha256": "d0f3dbfaf4074de941f4eb898b7ddab2fdff1ce807dcbf6b374dd45f4051d814",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutRank",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "5f5a671591a0ea9b850a3e0a94fdc056d8693777179049cc4d3b83875ef7302b"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutRankUniversal.lean",
+      "sha256": "e8e242b788fab34b1bce85d633679705af38608723ebbb6a1c4d723a22127980",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutRankUniversal",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "c7de2cb21ce57ee9ba8d1413e9fbbe1c340019f17fd1cf6ad8365d7854adc19a"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutNumerator.lean",
+      "sha256": "ae55281444576112eec473413fbeca313d35e6c5186c038c8f7836bed9eba97a",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutNumerator",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "07e54bbb6a70c5131400a78c9be97943e307db7c7545d564f138460d69496cb2"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutNumeratorBridge.lean",
+      "sha256": "bee6f54e5a1ec684733b9a4e3080071b5fec2da60e712cf722c0a52abbc6095b",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutNumeratorBridge",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "b7350fc2b667240c70dc338b4e2f589d8847b4c3fad04cb7f76b8105b92de941"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutSignatureBound.lean",
+      "sha256": "e8a5e2f6386a300e847c670b0c6d6a61f18448c4f75eceecc98f503d501c5c9f",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutSignatureBound",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "a0775dd8ed03e2c094ed7ed3a367f24d63391442d1f780d596eda287bc7538dd"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutProducedHeadsScope.lean",
+      "sha256": "ea6c70b00c609ad1133d0e93a34dc5f1e59321949bbc460eb9b5b6e6834f0851",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutProducedHeadsScope",
+      "strict_compiled_at_snapshot": false
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutProducedHeadsQuery.lean",
+      "sha256": "21123130de4b4c45ef86e5870f94fad755b713be0d70c409b37c75fcde4659e2",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutProducedHeadsQuery",
+      "strict_compiled_at_snapshot": false
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LeafParametersProgram.lean",
+      "sha256": "5b7b8e31ff55ac8e0102ebfb00665883792488d5632d22766322d705913817b4",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafParametersProgram",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "a89e831d8d62db9e74e38049b84d6f6816a53b0ed01318008919e1e6efd57a2d"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/AsymptoticLayoutParameters.lean",
+      "sha256": "5998d85aeb8ae58dc19188422b1348695be8d06cd1dacf5909fac79a51fe688d",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.AsymptoticLayoutParameters",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "1b755138fbfe3d2cccb3f47a0eea47252e1b536e1f04f026b14fa32802f22178"
+    },
+    {
+      "path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/LayoutSourceRowsProgramSemantics.lean",
+      "sha256": "78ba90b729d289bfb83922ccaa016d9e0721540d4288e750360523c671400d17",
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutSourceRowsProgramSemantics",
+      "strict_compiled_at_snapshot": true,
+      "isolated_olean_sha256": "9af3864481c50c17f74c3cd0eb64eabc2e45f533b8e38a6f3b5e6266f141dc62"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterCompose.lean",
+      "sha256": "2477bd0cc314e09c27de8308cc32ef87138eaf38dfa115a28e1595981a87f916"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterRate.lean",
+      "sha256": "fd9c6ee9dc18089748e85cb2eeba06b8181a230a855aec05d30b5939ac273054"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterTail.lean",
+      "sha256": "d2aa14210819ad7f7b6b720e601532820bf8f021ed9a8c92140af1c1534dea77"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-shared-counter-20261026/shared_layout.py",
+      "sha256": "9416354a1b17bbe7a3e4ce9f7d701cb11f116cae0e0c11871acc8ecf4ad5e300"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-shared-counter-20261026/shared_counter.py",
+      "sha256": "bcbd83396912173e5f597306565ed5a6faf675287bd5f32d6c22407954c5d417"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-shared-counter-20261026/shared_parameters.py",
+      "sha256": "530f800d84a4c1188c0716d8016bdcb21bdc28669434510d0ecb527907568fb4"
+    }
+  ]
+}

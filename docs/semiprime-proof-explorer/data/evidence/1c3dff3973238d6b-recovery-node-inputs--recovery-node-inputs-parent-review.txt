@@ -1,0 +1,16 @@
+Independent READONLY parent Node140 review PASS. Every body/all396 lines of Core/Encoding/Execution/Original read. No imports/builds/source/canonical edits/controls. All4 assignment=before=after=current flatSHA.
+Core is fixed140 = entire112 affine/Grid +20 inverseprivate +8 powersprivate; inverse shares ONLY R36/actual affine-array/acquiredq and powers sharesR36/actualGridargument/acquiredq. Every other role is explicit. Finite labels and original five physical words only, no supplied q/inverse/power/scalar/clock/getter/advice. Whole affine source calls actualGrid once then actualI58whole andP47whole; readyGrid SAMEprogram enters actualA.ready and does not replayGrid. Actual tensor precision is not confused with the retained rationalW template.
+Encoding is proof-side word lineage: real affine array codec equals exact two-field inverse tape, q exact unary output, argument exact acquired Grid sign/den, every35 R36private empty except exactW. Complete inverse/power outputs retain raw order/defaults/literalONE includingq0/W0; no value-only rewrite. Execution physically composes real included calls/returns and true halt, including arbitrary outer source traces and SAMEGrid-ready execution, with additive actual source clocks. No native report clock used as machine runtime.
+Original proves ALL112 retained and exact six acquired Weight-ready operands from SAME whole actual run. Original inverse/power validity/width derive from actual Grid argument/affine lineage, u<=M and paid Node width, not supplied Fit sequences. Scalar legality remains inherited from frozen Grid; no N-only or complete subsequentweight/counter/sourceV claim is made. All aliases/byte equality and input boundaries consistent; no blocker found.
+
+BEFORE
+16050535d9b00a6e10630bfad6b829c2eb5b11be8f546219d0a846d0eebdca5e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputs.lean
+de755bb2d0e4090cff6ea2d42e6653abe783dc9dbe8575ef6f42ca2822c9a263  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsEncoding.lean
+ac20c99cc30af583bf600776a87f92e3de43d7226cae85b4658acee1b572744c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsExecution.lean
+20315f50b142eb2f5f30889c1e2f04360e62aaa4fdf05bce4762433e32fa2623  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginal.lean
+
+AFTER
+16050535d9b00a6e10630bfad6b829c2eb5b11be8f546219d0a846d0eebdca5e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputs.lean
+de755bb2d0e4090cff6ea2d42e6653abe783dc9dbe8575ef6f42ca2822c9a263  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsEncoding.lean
+ac20c99cc30af583bf600776a87f92e3de43d7226cae85b4658acee1b572744c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsExecution.lean
+20315f50b142eb2f5f30889c1e2f04360e62aaa4fdf05bce4762433e32fa2623  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginal.lean

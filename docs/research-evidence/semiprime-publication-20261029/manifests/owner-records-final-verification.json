@@ -1,0 +1,329 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "default_heartbeats": 200000,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "combined_audit_read_only": true,
+  "counts": {
+    "modules": 20,
+    "declarations": 469,
+    "theorems": 256
+  },
+  "modules": {
+    "SemiprimeD1StackOwnerRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecord.lean",
+        "sha256": "cf0f990f7305cad4a190827aef5bbdb51f26039ad99b3ce1f76f12532590aaef"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecord.olean",
+        "sha256": "ac8b72154e6ca2f3b57b6aaccfd789787f697430d85d4de9cc743a184c39f87c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecord.olean",
+        "sha256": "ac8b72154e6ca2f3b57b6aaccfd789787f697430d85d4de9cc743a184c39f87c"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordComponents.lean",
+        "sha256": "414e3e6060ec84363c89cf148d223f11fc36ba063136d81813c6171a4fce8e00"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordComponents.olean",
+        "sha256": "fa05fc09f94c319c12ccc6aaf3e5d55f09364eaef5398e644280db8aa494f77f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordComponents.olean",
+        "sha256": "fa05fc09f94c319c12ccc6aaf3e5d55f09364eaef5398e644280db8aa494f77f"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordExecution.lean",
+        "sha256": "17b546c8fe9b4991576c0adce9c94e1b1a0faf8579f1c2ed22886902479871bd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordExecution.olean",
+        "sha256": "af67d1caa854fca615ba3bff7919d2456fb61ac24acd04be6636f6272778cdd3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordExecution.olean",
+        "sha256": "af67d1caa854fca615ba3bff7919d2456fb61ac24acd04be6636f6272778cdd3"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordBounds.lean",
+        "sha256": "26f1a70baaa6e0a4dbf2c5af535efc8fae4d78a4255f33f409faba588614cfc7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordBounds.olean",
+        "sha256": "bda45830561069b7a2cdad8d9f973fca64cef77f2286cf8c47c40cdc9bf29eff"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordBounds.olean",
+        "sha256": "bda45830561069b7a2cdad8d9f973fca64cef77f2286cf8c47c40cdc9bf29eff"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordOriginal.lean",
+        "sha256": "78f65a9926425f38a833933ebe72b4f6a28e62f2029ace682d8ff2d0a8fb8d06"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordOriginal.olean",
+        "sha256": "0bc972d720103a4d7ec33630a20f94b419a7c4f61bf1a0dee0a35ff47b826791"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordOriginal.olean",
+        "sha256": "0bc972d720103a4d7ec33630a20f94b419a7c4f61bf1a0dee0a35ff47b826791"
+      }
+    },
+    "SemiprimeD1StackOwnerRecords": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecords.lean",
+        "sha256": "4b9ac5160cb232dee0275ecb8599bd4e344c0cf0d46dc914e10ab4ca4a4fe461"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecords.olean",
+        "sha256": "7fde4df486292033631f4d8ea964bc49440a5a411bf4c6f5cb235f26a3f9ae80"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecords.olean",
+        "sha256": "7fde4df486292033631f4d8ea964bc49440a5a411bf4c6f5cb235f26a3f9ae80"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsView.lean",
+        "sha256": "ff32964b701debf8b07a23a7cde144da7cf504cdc907b88d96b3bdda6a9f8ce1"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsView.olean",
+        "sha256": "803c8814d3bedadadd130a5b3b3e7622762ac9c2d60ddf3b6a92f8f4c0b420bb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsView.olean",
+        "sha256": "803c8814d3bedadadd130a5b3b3e7622762ac9c2d60ddf3b6a92f8f4c0b420bb"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsCalls": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsCalls.lean",
+        "sha256": "b05822b9c9c449bbb628621df3e8d97510d21cba5e3d2f5feb782a9da148c44c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsCalls.olean",
+        "sha256": "88573c1f08bedf84f597ed39a6ee032044f772cdfcde15b9187688a63f3c4289"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsCalls.olean",
+        "sha256": "88573c1f08bedf84f597ed39a6ee032044f772cdfcde15b9187688a63f3c4289"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsRead": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsRead.lean",
+        "sha256": "6599402e5c65f8ec2a71b91861e79d9053caf8425b729940a87a6ed6c4990681"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsRead.olean",
+        "sha256": "3eddf0620da187560bd128e3c365860bb82cfbb5a8258fd0a53936288e99011c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsRead.olean",
+        "sha256": "3eddf0620da187560bd128e3c365860bb82cfbb5a8258fd0a53936288e99011c"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsEmit": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsEmit.lean",
+        "sha256": "7ba5252325fe66ca5102d396940692db6ab76b282a0115623f275dfb1b6944fa"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsEmit.olean",
+        "sha256": "c4656b8cd39419f4582f69d3d16383189a32209e279788e4a92ddf92db16d236"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsEmit.olean",
+        "sha256": "c4656b8cd39419f4582f69d3d16383189a32209e279788e4a92ddf92db16d236"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsLog": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsLog.lean",
+        "sha256": "3df2bcecb69ae454d90e65f09277d1faad3684d8ae197f84e91fbed55dc3924f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsLog.olean",
+        "sha256": "1c0dc925c537232fb4b2da44a88b8bb83646ced282e06dd1ac7ba45ed8230828"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsLog.olean",
+        "sha256": "1c0dc925c537232fb4b2da44a88b8bb83646ced282e06dd1ac7ba45ed8230828"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsLoop": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsLoop.lean",
+        "sha256": "0366437702dba264ca69e81f96aea9182d89dab3b41dd464b8c91ba97d7e7b4d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsLoop.olean",
+        "sha256": "2a69d3381f4e2336db5fde9f5b52d3f9d9cc37562c38ab08922f72cfb7f43047"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsLoop.olean",
+        "sha256": "2a69d3381f4e2336db5fde9f5b52d3f9d9cc37562c38ab08922f72cfb7f43047"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsAcquisition": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsAcquisition.lean",
+        "sha256": "f278db7258b50d98c45ed7cacdfe999b8ad1101e3f99eb43100b24a3aeef07c9"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsAcquisition.olean",
+        "sha256": "dcbbef23637bddcda48cdb6f09fb050b0a06a86bd8e4c0701a1a2a4a15a6ab63"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsAcquisition.olean",
+        "sha256": "dcbbef23637bddcda48cdb6f09fb050b0a06a86bd8e4c0701a1a2a4a15a6ab63"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsFinish": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsFinish.lean",
+        "sha256": "6d03f04388d7f9235757eb929cd93fbe8cccc3d3fc3c593a459cd21e42f10199"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsFinish.olean",
+        "sha256": "87071858aa1d14a16a498cb32a40f17aaadbd7038578a9c08e6b58465f5c1f28"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsFinish.olean",
+        "sha256": "87071858aa1d14a16a498cb32a40f17aaadbd7038578a9c08e6b58465f5c1f28"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsOriginal.lean",
+        "sha256": "b71b662d272d7a87d6a04865090ae54432c9e3788bbe96a982964dea17473236"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsOriginal.olean",
+        "sha256": "35fcdcd25b3c1281a7b4133d09b27fbeb177d16a286e87dad992f7de307de0f7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsOriginal.olean",
+        "sha256": "35fcdcd25b3c1281a7b4133d09b27fbeb177d16a286e87dad992f7de307de0f7"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsExecution.lean",
+        "sha256": "d9f86746d62eb39720033073283b0daba1ddf08048350913fdda0434d700a960"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsExecution.olean",
+        "sha256": "e4eb42bb918b3f48178f7a30bd6c8f6507df0770f17ad918b1ebd7e3051b0cf4"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsExecution.olean",
+        "sha256": "e4eb42bb918b3f48178f7a30bd6c8f6507df0770f17ad918b1ebd7e3051b0cf4"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsNumeric": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsNumeric.lean",
+        "sha256": "7d0f3d1c17b1535b677395fdc179f2ca264419bf425c34d2389653ab5b0cf868"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsNumeric.olean",
+        "sha256": "9cdc2887999b8ae2d831e541210cbd7959d92cb2a33a6028a284fb1f5f90bcfa"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/SemiprimeD1StackOwnerRecordsNumeric.olean",
+        "sha256": "9cdc2887999b8ae2d831e541210cbd7959d92cb2a33a6028a284fb1f5f90bcfa"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsBounds.lean",
+        "sha256": "ad3969208719320784056826de84ecbeef2b88091484ff33d5dbbc04700ad5b0"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsBounds.olean",
+        "sha256": "040d5ba24063c02196fa0eaa07722f5ea9609feaaa178eb8c28c69c621191433"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-resource-frozen/SemiprimeD1StackOwnerRecordsBounds.olean",
+        "sha256": "040d5ba24063c02196fa0eaa07722f5ea9609feaaa178eb8c28c69c621191433"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsResources.lean",
+        "sha256": "a90d731ddd07f3457b0875c76a3586ee1936d0a882ed93202917f78e5f6f219f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsResources.olean",
+        "sha256": "c327495de190eb6fe3a921c90773bcae39be43abad2bb29fc02091efe45f01bb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-resource-frozen/SemiprimeD1StackOwnerRecordsResources.olean",
+        "sha256": "c327495de190eb6fe3a921c90773bcae39be43abad2bb29fc02091efe45f01bb"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsPrefixResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsPrefixResources.lean",
+        "sha256": "74ffa3509412da3e54f685e4a8ceeb062cdfa746126fc02909f5cbfda4109c05"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsPrefixResources.olean",
+        "sha256": "c63e4d7f5ecc10c51f949cc10c018e1bcc7ed3b8701935c696eae5fdff4cc74a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-resource-frozen/SemiprimeD1StackOwnerRecordsPrefixResources.olean",
+        "sha256": "c63e4d7f5ecc10c51f949cc10c018e1bcc7ed3b8701935c696eae5fdff4cc74a"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/OwnerRecordsControl.lean",
+        "sha256": "a0419ff4965a61e3426a241c20079e00aba2e800c744db8ef611040f991dd6f9"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-frozen/control-0.log",
+        "sha256": "21d91041c5d1a59661f8936571ee5c87e96f6f0c7a532b52ec17c5b9bea8220b"
+      },
+      "expected": "true\ntrue"
+    }
+  ],
+  "component_groups": [
+    {
+      "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-source-verification.json",
+      "sha256": "244f2c0fecc1374a35b4f6f0553c06d3ded4acca2516be7471c6dc88941c5c80"
+    },
+    {
+      "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-resource-verification.json",
+      "sha256": "e85ceb14695cc6c5bfd0a79e90720ebdaf734d58fff0f3c814a756ce027c6b8d"
+    }
+  ],
+  "combined_audit": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-combined-audit.log",
+    "sha256": "915d7b221a389540ca0622a148769fe1e2a75a0ccbe3787f0e44463f07460e9c"
+  },
+  "actual_compiler_header_dependencies": 18339,
+  "live_dependency_source_object_pins_unchanged": true,
+  "protected_sources_unchanged": 17054,
+  "historical_journals_unchanged": true,
+  "full_goal_complete": false,
+  "stage": "COMPLETE actual original binary-N ALL-owner records: real routed fibres, actual prefix/table scan, actual M-ID-to-unary conversion, original ownerNode record bytes, own fixed polynomial and ALL344-role/return prefix bounds. Arbitrary caller prefix acquisition remains explicit; EMPTY-prefix standard initialization is N-only and physically seeds false."
+}

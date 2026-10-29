@@ -1,0 +1,210 @@
+{
+  "SemiprimeMacroFlagExtension": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeMacroFlagExtension.olean",
+      "RiemannGaussian/SemiprimeMacroFlagExtension.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "f741c0dfabaed3e029328ae6eccb3884e52eb6cea4bd08206677ba9d5853ce25",
+    "log_sha256": "d3f9cc0f825267025820562df04e45ef1b4ee5ae3944060423d8607cbda31994",
+    "olean_sha256": "bc8752a9e2f0c8d17c5e483a655e3d46d3c10c920ac2ebfb538439b0e101c030"
+  },
+  "SemiprimeMacroGraphSemantics": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeMacroGraphSemantics.olean",
+      "RiemannGaussian/SemiprimeMacroGraphSemantics.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "7f439b8fe274959f417b10123e5907dfd874283d5b2512818061c89fc8529df7",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "54796e1e011d7c2028281fbd008525c34332ca8072b8e53b7828f1424affe099"
+  },
+  "SemiprimeMacroGraphUnique": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeMacroGraphUnique.olean",
+      "RiemannGaussian/SemiprimeMacroGraphUnique.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "9774e108d86dc51d4d31ffec25b456a5d77c237b43b60ed6ea655a907230e3c1",
+    "log_sha256": "2df353e5c82bfbb7cbe60d8c85c960aa1a487c051faf39aa7db0f28051ddcaf3",
+    "olean_sha256": "6252bc21234acf9b8ffaaf3c066ba1607222944d8cec4b4ceef6355d1dc4c6ff"
+  },
+  "SemiprimeMacroGraphExtension": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeMacroGraphExtension.olean",
+      "RiemannGaussian/SemiprimeMacroGraphExtension.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "99c745e75a33ff6aadae7f27d0e0a15d886bc3d1b7c45ba30d63ff148b95c337",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "ffb68c9a9c879109856eea16b295426457602c3be8952a147e4aafa835e256e4"
+  },
+  "SemiprimeMacroParameters": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeMacroParameters.olean",
+      "RiemannGaussian/SemiprimeMacroParameters.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "c080bebe112924b24e809db8ce37854e17873223c7e14fe4cb3292e3644e3fff",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "d84e77a6844cd3e83ffd1092ffa5f03655e4552ebb2e4d44424f2e72715cf2dc"
+  },
+  "SemiprimePublicFactorCount": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimePublicFactorCount.olean",
+      "RiemannGaussian/SemiprimePublicFactorCount.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "3f9aa45ff0644b769f49f0906035f739009d208562dc30d9fc9bf18c9ff32608",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "c3147f509ae4413d9367d76bd51f4923c3966019f413539915d77aa26d350298"
+  },
+  "SemiprimeScheduledCounter": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeScheduledCounter.olean",
+      "RiemannGaussian/SemiprimeScheduledCounter.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "77370e194174b1e030d63f3d5c51de1668ef53940bb376550c35b00284550841",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "222b38389df47b7043d0fead6608be0da405d3afb8cb512f5abc0d769876c137"
+  },
+  "SemiprimeJetArray": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeJetArray.olean",
+      "RiemannGaussian/SemiprimeJetArray.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "da19ac336f17406ba971e0d6334bd15d24badd2da9f3e7bd76ab24bc4ea162d1",
+    "log_sha256": "8e7fafc811e2b1a8f92a855e2405996b09d8e6fa87fe23ccc2b89f9cec556398",
+    "olean_sha256": "06a7d22a9ae1116b9b859436e873d422c114521dcd5aa01d4ac001b214264293"
+  },
+  "SemiprimeJetArrayHeight": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeJetArrayHeight.olean",
+      "RiemannGaussian/SemiprimeJetArrayHeight.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "99865c9e2b0989b80222f7086cbd8e12238f3e4d2a4a54b725002a49b476b145",
+    "log_sha256": "2874fb375dc893856e84619d66ffd5d4878986317fc7550b1aa37a35758929b5",
+    "olean_sha256": "07fb48df98aa53736b407dd9f2934dd9fbdcdfcad16af361840896d8a27f0caf"
+  },
+  "SemiprimeCounterEnumeration": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeCounterEnumeration.olean",
+      "RiemannGaussian/SemiprimeCounterEnumeration.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "fb47659fbcb3c20618beac658c30fda10fbbc00f366371a0f9e7615c328408f3",
+    "log_sha256": "5e18c3a9e8646901fc6664e566a4791aebb05e5b25eaa3106326ce892bcd5005",
+    "olean_sha256": "247840deb8087d96e66f3d80ca5fd56911d21daf4d4473a5275e00f3d10289fb"
+  },
+  "SemiprimeSourceRowHeight": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeSourceRowHeight.olean",
+      "RiemannGaussian/SemiprimeSourceRowHeight.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "06806f80f9b36daf4cbd29c1ed1abd493cc8d93294f834742cfaf766e29257e8",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "f1a6a31cff4af5e283bb89210510184e77bb01078043f9af6220fd70bdd77559"
+  },
+  "SemiprimeTaylorHeight": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeTaylorHeight.olean",
+      "RiemannGaussian/SemiprimeTaylorHeight.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "669ba9e5313ecc5e71d48e4dd25750779a50975b0efdc5fd6a481f8d54c9445d",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "e1e431f16976fc41251e1985db8e4f7fef2557ab993b148b8c76c899191fe3ad"
+  },
+  "SemiprimeCardinalHeight": {
+    "command": [
+      "/home/dbsanfte/.elan/bin/lake",
+      "env",
+      "lean",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true",
+      "-o",
+      "/tmp/semiprime-executable-counter-20261027/strict-objects/SemiprimeCardinalHeight.olean",
+      "RiemannGaussian/SemiprimeCardinalHeight.lean"
+    ],
+    "exit_code": 0,
+    "source_sha256": "432c16f1b7139c1590e861218df6e7c7e086e312507a756213a89d80801ac1f7",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "14a81cb41398f5d93b24209462dbda5fd6f872fe9c3e9042f9d06e8da43a14ca"
+  }
+}

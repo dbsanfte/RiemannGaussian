@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "scope": "Generated explorer refresh after authorized documentation-only StreamingTensor/root metadata repair; historical independent UI review is separate and unchanged",
+  "inventory_sha256": "431d0ee06c5c63e1508d1f613483e97817fea0847a45417181f5d7046f990927",
+  "progress_sha256": "24ab222abb4a545d20cc8c5be230bca4ec24b40a2f403c936c1fa66c0dbed7bb",
+  "counts": {
+    "authored_source_declarations": 36154,
+    "groups": 82,
+    "modules": 3160,
+    "source_anchors": 29,
+    "stages": 15
+  },
+  "generated_sha256": {
+    "data/explorer.js": "f55c416cfcd6e09f9ff9d01af5529c515c6ffaa6278a6980e5be328a0cd8c00c",
+    "data/audit.json": "1190823ccdb6503bb574b7799629ade09a0b8635d131baa611195c27bd5be220",
+    "assets/preview.png": "752b627a896a4f37ca3de3b6431b2f50919a7c3c84cb91febc3f2d805bfa95b6",
+    "assets/preview.json": "310cdfc3d8c64e74f1b7bbfca2429a3d5b5921b40c1716a4d771bb24a814f71e"
+  },
+  "checks": [
+    "deterministic builder",
+    "8 unit tests",
+    "file desktop1440",
+    "file mobile390",
+    "HTTP desktop1440",
+    "HTTP mobile390",
+    "deterministic --check"
+  ],
+  "actual_exit": 0,
+  "ui_writers_stopped": true,
+  "lean_builds": false,
+  "git_actions": false
+}

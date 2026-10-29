@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b279058de593c7e6101630aa6f909524dc2c3be674a531950efdafefcde26a8c"
+    },
+    {
+      "path": "axis-two-orders.md",
+      "sha256": "cbc5cdc6ed6f1090c76776f0d40006009b802db1b7adee7607ce706d9c528f6b"
+    },
+    {
+      "path": "lattice-product.md",
+      "sha256": "354b7b9c6c5851cf48f1c18c3ac29d3c0474f6552114fbe4f38a2fe5ce2e9c9a"
+    },
+    {
+      "path": "primitive-asymmetry.md",
+      "sha256": "14c407d03c9d404a469034463a3ddc3d831750ba7b78ebf253d8e49479e7bbb7"
+    },
+    {
+      "path": "review-axis-two-orders.md",
+      "sha256": "ea908a2a320c970bd050300438daac87bf950561a849fc105edce337c67875c4"
+    },
+    {
+      "path": "review-lattice.md",
+      "sha256": "a84de77a35382553cbce240840099647e12e52fae3a70a1210f5e84394430661"
+    },
+    {
+      "path": "review-primitive-asymmetry.md",
+      "sha256": "8a1cd0e5a4542d0471efb0d0c5a25f30be14870e79156f16304a7b7a9d3c765c"
+    },
+    {
+      "path": "review.json",
+      "sha256": "f6a9f97c7390c7df2e24349f542c4a916315b8f1a231404ff5fbbe17d758b7ba"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "c5d4b9a489d5d3daefa6c9ab81d146d05efe9ece9961e5d57750b94aed513550"
+    }
+  ]
+}

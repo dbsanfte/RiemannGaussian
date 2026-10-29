@@ -1,0 +1,100 @@
+{
+  "sha": "252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee",
+  "node_id": "C_kwDOVatUZdoAKDI1MmQ0NGViMWMzZWM5MmEyY2U2YTdkYzVkYzE3Y2U0OWE1YTIyZWU",
+  "commit": {
+    "author": {
+      "name": "Emiel Wiedijk",
+      "email": "13463911+emielwiedijk@users.noreply.github.com",
+      "date": "2026-10-28T22:56:06Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-10-28T22:56:06Z"
+    },
+    "message": "Include date",
+    "tree": {
+      "sha": "925ce7732d3e9a0f6163b9e8431c1b6da1c14f81",
+      "url": "https://api.github.com/repos/bochum-crypto/subexponential-ecdl/git/trees/925ce7732d3e9a0f6163b9e8431c1b6da1c14f81"
+    },
+    "url": "https://api.github.com/repos/bochum-crypto/subexponential-ecdl/git/commits/252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq4n2HCRC1aQ7uu5UhlAAAQCcQAJ4pkR6RibvU5HaVqE1CA20A\nXWXMp0rRkfuW6ddG9kiaknw3UlUxUiEfNh6H1dW2Ct4EaHymdZnIhoLYzD7YrguQ\nGpFpGROS3rxu8VzGBo80xw3KoRkXA8ZgzxmG6HRz+jy59yW3TA5h+1Bjn4DRmARr\nwQELRO4H36t5EC0H/mi/LJGPZ4zN59z6kJTKW2T0up5Q/drunQ9v/K0pIIu1sytC\ngYjHW4qE3AksVJZ8XlWGRbcbcFOrmB6/NN4zAHunLDCcjwrB6hLLDI6NRmZDcqhi\nckodcSeL97k4lVEozlxwTiXEKnL1DVJwrzzTnYPszuKr0dH54OlSD2PdNoyWVpuk\nXbIeJE9V9bEKKEdaLrcxFwp3B7zsqIbFGWOl07WhhOoCSqGlf/yfW2jXSznB2HZQ\n1paRNwpERbyjlH4ScC+LWfA+goKprYejnPFO4d8hc18Ly9LRH0Smaw811iAYWVy0\nL2yBf0LMIofJ3sSjvzDDB/0soajZd5B1bzq1C5qkvigifrUb1bPk8phGTt92neNw\nA9z4wWg8YOH1G32DJzrWDiOrIEASqHYBnlhvBNFLaTeXc5b5MlDl20aQru6vVEW1\nkqEDtzS+eY6k8zyOIJwIW4CQxUO8Oqq2BGescrcgtDC1lIyZXIN5GhAScxzdu957\nDeOOHEi6VrbwUEdotJHg\n=4aOa\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 925ce7732d3e9a0f6163b9e8431c1b6da1c14f81\nparent 224a63458a84fdb1aafd9238d1a90876970e2742\nauthor Emiel Wiedijk <13463911+emielwiedijk@users.noreply.github.com> 1793228166 +0100\ncommitter GitHub <noreply@github.com> 1793228166 +0100\n\nInclude date",
+      "verified_at": "2026-10-28T22:56:07Z"
+    }
+  },
+  "url": "https://api.github.com/repos/bochum-crypto/subexponential-ecdl/commits/252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee",
+  "html_url": "https://github.com/bochum-crypto/subexponential-ecdl/commit/252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee",
+  "comments_url": "https://api.github.com/repos/bochum-crypto/subexponential-ecdl/commits/252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee/comments",
+  "author": {
+    "login": "emielwiedijk",
+    "id": 13463911,
+    "node_id": "MDQ6VXNlcjEzNDYzOTEx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13463911?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/emielwiedijk",
+    "html_url": "https://github.com/emielwiedijk",
+    "followers_url": "https://api.github.com/users/emielwiedijk/followers",
+    "following_url": "https://api.github.com/users/emielwiedijk/following{/other_user}",
+    "gists_url": "https://api.github.com/users/emielwiedijk/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/emielwiedijk/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/emielwiedijk/subscriptions",
+    "organizations_url": "https://api.github.com/users/emielwiedijk/orgs",
+    "repos_url": "https://api.github.com/users/emielwiedijk/repos",
+    "events_url": "https://api.github.com/users/emielwiedijk/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/emielwiedijk/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "224a63458a84fdb1aafd9238d1a90876970e2742",
+      "url": "https://api.github.com/repos/bochum-crypto/subexponential-ecdl/commits/224a63458a84fdb1aafd9238d1a90876970e2742",
+      "html_url": "https://github.com/bochum-crypto/subexponential-ecdl/commit/224a63458a84fdb1aafd9238d1a90876970e2742"
+    }
+  ],
+  "stats": {
+    "total": 0,
+    "additions": 0,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "3534a2dffa0b4cccd12c66f245344e930f24a18f",
+      "filename": "subexponential-ecdl.pdf",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/bochum-crypto/subexponential-ecdl/blob/252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee/subexponential-ecdl.pdf",
+      "raw_url": "https://github.com/bochum-crypto/subexponential-ecdl/raw/252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee/subexponential-ecdl.pdf",
+      "contents_url": "https://api.github.com/repos/bochum-crypto/subexponential-ecdl/contents/subexponential-ecdl.pdf?ref=252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "verdict": "PASS_READ_ONLY_NO_BLOCKER",
+  "reviewer": "/root/port_serializer_resume",
+  "assigned_sources_read": 20,
+  "lines_read": 1840,
+  "scope": "assigned middle physical loops and native byte interfaces only; not a final gate or full67-source review",
+  "writes": "this review artifact only; no source edits, imports, builds, canonical writes or repeated controls",
+  "pins": [
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridTransient.lean",
+      "sha256": "ff959dc4f02f3c50989ea2fd8c25dcc091d9dea592dc2cd2a288715de6201f41",
+      "lines": 100
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowCleanup.lean",
+      "sha256": "acdfe2985bcc7dd7e328b64768f29883940670c7a0156da4689030350cdf7c47",
+      "lines": 44
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPowerSeed.lean",
+      "sha256": "76b82fb761329f9e3e30d3c60bac0139e6fa1245043f48eab264a728859e55d0",
+      "lines": 66
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPowerLoop.lean",
+      "sha256": "49e11214feb24525a0233b6d65370d52b9039c9b54be816c78c1712828209636",
+      "lines": 124
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPower.lean",
+      "sha256": "126e1f0932183de9f9ba4c4519ca8ffa61a15b5440ba17573190486f3bef2488",
+      "lines": 50
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPowerSource.lean",
+      "sha256": "54c8756a52273155a082c41018fdd353df6b905dc4a8b7dffefe87172aaf526d",
+      "lines": 80
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowBases.lean",
+      "sha256": "2e6f3055757bf5ebb51b68fbd3dbff403d069a586e2dec25fcc30b7fefd6598c",
+      "lines": 94
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowStart.lean",
+      "sha256": "9678dff1db29baa8d533aafc166b72a3a3a5b963bf990bb4c17fccfe872a6ff9",
+      "lines": 101
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRipple.lean",
+      "sha256": "5271796f5987227634356665140c59aa3cb151d52b5f11009f927a88e3a052df",
+      "lines": 62
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridDecrement.lean",
+      "sha256": "64ce3d922e27cbfdfdd9b0c5fe513d391d1e142dbc75c94e387c5ffc126fbebb",
+      "lines": 141
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridCompare.lean",
+      "sha256": "a54d56655eef92d7886d60aa10973da2a4c5e94cc5c5edfbbc9e241e975396c3",
+      "lines": 83
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridMultiplicity.lean",
+      "sha256": "74af19760eb9c3741870d0c42b1821df23734de49f9831f07928004639c0f08f",
+      "lines": 130
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRepeats.lean",
+      "sha256": "8a495f791d2e06326ddf92a71561624ffbcf353ddc9c864663854bad8324f3c3",
+      "lines": 91
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowSlopes.lean",
+      "sha256": "f9c135d57bdaed065407cf12d0d7a45743cf08be5d74baeb40d2a16a81133167",
+      "lines": 100
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFront.lean",
+      "sha256": "fcbc1eca01183e9e1e15094fd38eeccdb67cf78e1a5856e0a5359b2f4f8332be",
+      "lines": 107
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridModel.lean",
+      "sha256": "f70c7399f758ef4318c6003495843e8c87b0f7f96f1ecfbe138efbae18a98022",
+      "lines": 92
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridResource.lean",
+      "sha256": "14b7dc9346f11f6ce4c9609adb3bc74902b8b63913a4e508d75fa07cd4fe021e",
+      "lines": 80
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLoopPrimitives.lean",
+      "sha256": "eddc477c55c9394111ce275d602a709055c52e20bada3b2e7816978430b22d73",
+      "lines": 95
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFinal.lean",
+      "sha256": "b2129cf284896aeb52a693fb8c3c3a84f53271771de63b0c21b9fd0f5be7f938",
+      "lines": 139
+    },
+    {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFinishMeaning.lean",
+      "sha256": "59a3e27a1c1e44dc14998fd1f164a579f6edf40847fb9ac2fbe6dd3e8e6a1a1f",
+      "lines": 61
+    }
+  ]
+}
+
+Read all twenty assigned sources in full. No logic blocker found. The16-field transient inventory covers BOTH signed/denominator fields of eight temporary registers; row cleanup additionally drains product and all10 actual geometry/shadow fields. Foreign caller words and retained final/cache words are preserved in whole-bank endpoints.
+
+Power seed physically drains both old accumulator fields and pushes exact oneWord (three cells), preserving the original a0/W0 exception. The actual unary exponent is copied from originalA or the physically acquired productm; only alpha receives one literal extra marker. Every repetition calls the real normalized/twice-fitted rational operation with ACCUMULATOR FIRST, BASE SECOND. Local call/return+2 and every marker/EOF are included in own clocks; no legacy power report supplies time.
+
+Front obtains TRUE geometric2^(a+1) independently of fitted rational alpha; actual binary subtraction yields q=N-1 with fixed a+2 padding. Each nonfinal advance pays a preserving copy, literalone, real subtraction, falseborrow pop, oldq drain, result copy and full residual drain. Decrement positivity is proved from actual counter value, not supplied control. Numeric equality copies actualq/t and consumes its real flag while restoring shared ripple. Fixed-width value injectivity establishes exact old index bytes, so padding is handled rather than equated silently with compactness.
+
+Actual row geometry controls center skip and supplies order. Multiplicity is physically acquired by copiedu/order paired marker pops (including leftover-order drain and saturating subtraction), copied actualh and real UnaryProduct. Original h/u/m VALUE expansion is charged. Both powers use the same acquiredm. Base orientations are center-q and node-q. Slope acquires alpha/(node-q), and each actual repeated marker triggers TWO preservingFrames plus TRUEtag. Identical repeated slopes commute only within one repeated row; descending-q prepending/right folds retain the intended original chronological row order. Numerator/denominator folds use NEWPOWER FIRST and accumulatedTAIL SECOND, including m0.
+
+Model/Payload are proof-only complete physical bank views; no evaluator, typed grid, report or native dimension is a machine operand. Resource explicitly pays emitted trueN=2^(a+1) and physical widthW by VALUE and all raw t padding; it does not claim polynomial in binaryN/W bit lengths. Loop primitives use actual todo peeks and actual binarydecrement, with fixed-width zero derived from value+width. Final operations are actual gridDen inverse -> gridNum multiplication and actual negativeNode -> center-minus-node -> inversealpha -> argument multiplication; sixteen transient drains and the entireq drain follow. FinishMeaning matches full104-word result structurally to the exact native byte operations, with original sources/retained center-alpha/node/grid caches and chronological slopes preserved.
+
+This review does not certify the separate parent27 quantitative/Core/original modules, owner20 acquisition/operation modules, pending OriginalResources, aggregate axioms/lints/byte reproducibility, or an N-only recursive producer join. Those remain separate review/gate obligations.

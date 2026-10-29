@@ -1,0 +1,138 @@
+# Executed two-mode diagonal deformation of the KM R-matrix
+
+26 October 2026. Scratch symbolic calculation; no numerical campaign or repository edits. CORRECTION: the full 16-state formal operator below is acquired, but it FAILS the Yang–Baxter equation for generic independent parameters. Simultaneous commutation with the Hecke braiding is insufficient: the proposed diagonal map must be a morphism in the ambient braided category, including separate naturality. The explicit defect is computed in §6. Its p=1 specialization remains the lawful independent tensor model with scalar K(t1)K(t2). The geometric specialization t2=p*t1 is invertible but is not a braid representation at the native parameters.
+
+## 1. Source convention and independent diagonal map
+
+Use Kashaev–Mangazeev arXiv:2505.15569v1, Theorem 2, equations (11)–(13), §5 equations (35)–(36), and §5.2: https://arxiv.org/html/2505.15569v1 . Write H=Lambda_p(span{e1,e2}), with ordered basis
+
+    f0=1, f1=e1, f2=e2, f3=e1e2.
+
+The input-generator braiding is
+
+    tau(1,2)=−p(2,1),
+    tau(2,1)=(p−1)(2,1)−(1,2),
+    tau(j,j)=−(j,j).
+
+Here (i,j) abbreviates f_i tensor f_j, except in this generator display where 1,2 mean e1,e2 as usual. Set phi(f1)=a f1, phi(f2)=b f2, phi(f3)=ab f3. The structural maps preserve total generator multidegree, so this map preserves the algebra, coalgebra, and simultaneous braiding action for units a,b,p. This does NOT make it an ambient braided-category morphism: separate naturality requires (1−p)(a−b)=0. Substituting it formally into source formulas (35)–(36) gives the operator below, not a licensed R-matrix unless the extra condition is proved. The source's scalar-phi Theorem 4 cannot simply be reused with t replaced by a matrix; the following calculation uses the structural maps directly.
+
+For example Delta(f3)=(3,0)+(0,3)+(1,2)−p(2,1). The right action on primitive inputs is
+
+    1▷f1=(1−a)f1,     1▷f2=(1−b)f2,
+    f1▷f2=(1−pb)f3,
+    f2▷f1=[a−1+(p−1)b]f3,
+    1▷f3=(1−a)(1−pb)f3.
+
+These show where the unequal-parameter mixed coefficient first enters.
+
+## 2. Full explicit formal operator (not generically a braiding)
+
+Let R denote rho in source equation (36). Its sixteen images are
+
+    R(0,0)=(0,0),
+    R(0,1)=(1−a)(0,1)+a(1,0),
+    R(0,2)=(1−b)(0,2)+b(2,0),
+    R(0,3)=(1−a)(1−pb)(0,3)
+             +a(1−b)(1,2)−pb(1−a)(2,1)+ab(3,0),
+
+    R(1,0)=(0,1),
+    R(1,1)=−a(1,1),
+    R(1,2)=(1−pb)(0,3)−pb(2,1),
+    R(1,3)=−a(1−pb)(1,3)+pab(3,1),
+
+    R(2,0)=(0,2),
+    R(2,1)=[a−1+(p−1)b](0,3)−a(1,2)+(p−1)b(2,1),
+    R(2,2)=−b(2,2),
+    R(2,3)=−b(1−pa)(2,3)+ab(3,2),
+
+    R(3,0)=(0,3),
+    R(3,1)=a(1,3),
+    R(3,2)=pb(2,3),
+    R(3,3)=pab(3,3).                                  (1)
+
+Setting a=b=t recovers every scattering, reflection and annihilation term of source §5.2. The asymmetric coefficient in R(2,1) is essential; replacing it by −(1−pb) is valid only when a=b.
+
+All coefficients lie in Z[p,a,b]; no denominator or scalar knot value has been divided. The multidegree blocks give
+
+    det R = p^4 (ab)^8.                                (2)
+
+For completeness, the (1,1)-multidegree block, on (0,3),(1,2),(2,1),(3,0), has determinant p*a²*b². The two one-generator, two-site blocks have determinants −a and −b; the (2,1) and (1,2) blocks have determinants −p*a²*b and −p*a*b²; the remaining one-dimensional blocks are 1,−a,−b,pab. Their product is (2). Thus (1) is invertible over the native composite ring whenever a,b,p are units. Invertibility does not supply the braid/Yang–Baxter identity. Section 6 computes its nonzero defect. The preceding generic braid-representation claim is withdrawn: only the formal operator and determinant calculation specialize as written over R. No generic cut-knot invariant is thereby defined.
+
+## 3. Execute geometric specialization and the obvious small quotients
+
+Take a=t1 and b=t2=p*a. To match adjacent desired native arguments choose p=q, a=eta^(2i+1), b=eta^(2i+3). Reversing the generator order can instead motivate b=p^(-1)*a; it is a different specialization of this fixed convention, and does not alter the conclusions below.
+
+There is no rank drop: (2) remains a unit. Explicitly the mixed coefficient becomes
+
+    a−1+(p−1)b = a(1+p²−p)−1    if b=p*a,
+    a−1+(p−1)b = a(2−p^(-1))−1 if b=p^(-1)*a.
+
+Neither vanishes identically under the geometric relation. More decisively, the two mixed outputs from (0,3) have coefficients a(1−b) and −pb(1−a). In the native short positive odd clock range both are units, since 1−a and 1−b are nonzero short odd-order differences. Therefore neither the proposed restriction to span{f0,f3} nor the quotient killing only f3 is a valid induced braid model: R(0,3) has nonzero outputs (1,2),(2,1) that are outside that restriction / survive that quotient. Merely deleting the highest exterior state does not produce a 3-state fused representation.
+
+For the structural algebra and formal operator there are genuine two-state quotients: kill the ideal generated by f2 (thus f2,f3), or by f1 (thus f1,f3). They give the ordinary one-mode Alexander braiding at a or b respectively. These lose one parameter and give K(a) or K(b), not the required product. These quotient one-mode operators independently satisfy YB; the generic four-state parent does not. This is not a classification of other representations or a no-go theorem for geometric fusion.
+
+The mixed coefficients in (1) involve only constant-many additions/multiplications and are acquired at O(1) ring cost per specified pair. Their units where asserted use p=q and the actual short-order guard; the arbitrary coefficient a−1+(p−1)b is **not** assumed unit and is never inverted. Negative-clock or differently recentered choices require the corresponding exponent checks; no all-purpose nonvanishing claim is made beyond the stated native short pair.
+
+## 4. Scalar normalization: proved decoupled case and missing interacting term
+
+At p=1 the underlying Hopf algebra is the ordinary super exterior Hopf algebra on two primitive odd generators. It is the braided tensor product of the two one-generator exterior Hopf algebras, and phi=phi_a tensor phi_b. The construction (35)–(36) is functorial under that tensor decomposition, with the Koszul reordering of factors. Applying the separately normalized one-generator long-knot scalar models gives
+
+    J_(p=1,a,b)(K)=K(a)K(b)*I_H.                       (3)
+
+This is an independent tensor-factor proof, including framing normalization inherited separately from the two normalized Alexander factors. It does not rely on an unproved higher-rank LG identification. The literal geometric constraint b=p*a becomes b=a at p=1, so its decoupled specialization gives an equal-argument square, not distinct neighboring odd arguments.
+
+For p≠1 and distinct native a,b, equations (1) fail YB as proved below. Thus a knot invariant from this operator is unavailable before any scalar-channel question. Even as a formal channel calculation, they do not decompose in that way. The specific missing step is a collision-safe normalized cut-knot evaluation that carries the mixed channel
+
+    (2,1) → [a−1+(p−1)b](0,3)
+
+together with the two decay coefficients from (0,3). An interacting tangle can leave a putative projected channel and return to it; its scalar contribution is not determined by the single-mode factors. Even when a local projection normalization is a unit, no theorem here makes these returned amplitudes unit factors of K(a)K(b). One must calculate them or prove a suitable global identity. Even a valid YB representation would supply neither scalarity nor the scalar product formula.
+
+The relevant general framework is Garoufalidis–Kashaev, *Multivariable knot polynomials from braided Hopf algebras with automorphisms*, Publ. RIMS 62 (2026),75–114, arXiv:2311.11528: https://ems.press/content/serial-article-files/52259?nt=1 . The rigid-R and long-knot results (Theorems 3.6–3.7 in the published paper) supply the representation-to-endomorphism machinery under their actual ambient-morphism and rigidity hypotheses. The generic diagonal substitution into the KM Hecke construction does not satisfy those hypotheses, so these theorems cannot be invoked to repair its failed YB equation. Their displayed omega=1 product is consistent with (3), but the published eq.(101) and the question mark in their summary table must not be treated as an unambiguous proved general product theorem. No reliance on that ambiguity is needed for the elementary decoupled proof above.
+
+## 5. Acquisition ledger and next constructive calculation
+
+For one pair (a,b) the complete R input is O(1), with inverse determinant normalization a known unit. A knot diagram with c crossings would permit an explicit 4-state tangle calculation, but the native sparse Seifert matrix does not automatically provide such a diagram at O(L) crossings or a cheap interacting two-variable invariant. Crossing expansion of a weighted Seifert realization is not free. Equation (3)'s scalar can be acquired from K coefficients in O(L), including zeros; that is the ordinary two-value product and does not fuse m distinct arguments.
+
+This operator cannot be the next knot-invariant input at b=p*a. A different lawful construction, such as the separate diagonal Nichols model in `coupled-parameters.md`, must first supply a valid R-matrix; then exhibit its normalized cut-knot endomorphism, and show either that its relevant scalar is unit times K(a)K(pa), or give an acquired formula for the mixed return amplitude. The unit must be proved over the actual finite ring and remain a unit at either collision. Recursing that rule along a geometric string must then charge its retained scalar corrections. This calculation supplies the complete formal two-mode operator and identifies why its proposed generic extension fails, while retaining the lawful p=1 case. It establishes no generic braid model, smaller scalar quotient, or faster native prefix evaluation.
+
+### Reciprocal adjacent-pair substitution (separate parameter-identification issue)
+
+The new reciprocal pairing can be evaluated in the explicit input without any expansion: put p=q, a=eta^(2i+1), b=eta^(−2i−3)=1/(p*a). Then abp=1 and (2) becomes det R=p^(−4), a unit. The mixed images specialize to
+
+    R(1,2)=(1−a^(-1))(0,3)−a^(-1)(2,1),
+    R(2,1)=[a−1+(p−1)/(p*a)](0,3)
+              −a(1,2)+(p−1)/(p*a)(2,1),
+
+and the two decay coefficients in R(0,3) remain a(1−1/(p*a)) and −a^(-1)(1−a), both certified units for the corresponding short nonzero native exponents. Thus the same obvious top-state truncation is not an induced quotient in this convention. This is compatible with a genuine rank-four resonant Y_1 representation in the GK construction: the current one-strand H already has rank four. It does not disprove a different scalar normalization or zero-preserving invariant relation on that resonance.
+
+An identification of this phi-diagonal p convention with the published Y_n/V_1 parameters must be established before equating their knot scalars. In particular abp=1 alone cannot import the p=1 product theorem: here p=q has large odd local order and is not 1. The remaining concrete question is whether the normalized resonant four-state cut-knot scalar preserves zeros of K(a)K(1/(p*a)); this report supplies its local mixed coefficients but not that global scalar identity.
+
+## 6. Direct symbolic Yang–Baxter defect and corrected interpretation
+
+The earlier generic-YB assertion was erroneous. The precise missing ambient naturality condition can already be read on e2 tensor e1:
+
+    [tau(phi⊗id)−(id⊗phi)tau](e2⊗e1)
+       =(p−1)(b−a) e2⊗e1.
+
+Simultaneous commutation of phi⊗phi with tau does hold, but is weaker. A braided Hopf f-object in the cited machinery needs the separate sliding/naturality condition; not every degree-preserving diagonal linear map is an admissible morphism there.
+
+There is also an independent direct check from the complete formal operator (1). Put A=1−pb and U=a−1+(p−1)b. Acting on (0,1,2), the coefficient of (0,0,3) in the two braid words is
+
+    coeff[R12 R23 R12] = (1−a) A,
+    coeff[R23 R12 R23] = (1−a) A²−pb(1−b) U.
+
+Subtracting gives exactly
+
+    defect = pb[(1−a)A+(1−b)U]
+           = p*b²*(p−1)*(a−b).                        (4)
+
+This uses only the sixteen displayed images and polynomial expansion, not a numerical campaign or an appeal to the categorical hypothesis. It proves failure when that coefficient is nonzero. At the requested geometric specializations,
+
+    b=p*a:       defect = −p³*a³*(p−1)²,
+    b=p^(−1)*a:  defect = a³*(p−1)²/p².
+
+For native p=q and positive adjacent clocks, both are units: p,a and p−1 are units. Thus the proposed geometric KM-Hecke extension is decisively invalid over the actual ring, not merely unproved. On the reciprocal specialization b=1/(p*a), a−b=(p*a²−1)/(p*a) is also a certified unit in the short native range, so its defect is likewise a unit.
+
+At p=1 the defect disappears and the ordinary super tensor-product proof in §4 supplies a lawful construction independently. At a=b the original KM scalar-phi source applies; no attempt is made to characterize every other accidental vanishing locus of all YB coefficients from this one necessary equation.
+
+Finally, `coupled-parameters.md` concerns the **different diagonal Nichols braiding** q_12=−1, q_21=−q, where crossing each generator pair is a scalar interchange. That braiding has no Hecke exchange term (p−1)e2⊗e1, so the specific obstruction above is absent. Its reciprocal resonance t1*t2*q=1 and explicit invariant vector are not invalidated by this calculation. They still require their own rotated-braiding/normalization and collision-scalar audit, as that report states. Equating that lawful diagonal Nichols model with this failed generic KM-Hecke operator would be a substantive mistake.

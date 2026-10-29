@@ -1,0 +1,29 @@
+{
+  "field_prime": 101,
+  "q": 2,
+  "h": 6,
+  "checks": {
+    "adjugate_column_recurrence": 42,
+    "synthetic_division": 36,
+    "top_coefficient_update": 36,
+    "second_coefficient_update": 36,
+    "scalar_newton_recurrence": 36,
+    "unique_hit_locator": 4,
+    "two_final_scalars_locator": 4,
+    "constant_numerator_identity": 5,
+    "tagged_numerator_identity": 5,
+    "finite_selected_inverse": 4,
+    "finite_reciprocity": 4,
+    "minimal_unmarked_residue": 1,
+    "frozen_numerator_ratio": 1,
+    "finite_pearson_endpoint_identity": 12,
+    "jacobi_terminal_denominator": 6,
+    "jacobi_terminal_numerator": 6,
+    "jacobi_terminal_zero": 6,
+    "jacobi_nonterminal_beta_unit": 19,
+    "top_two_do_not_close_arbitrary_states": 1
+  },
+  "total_checks": 264,
+  "verdict": "PASS",
+  "scope": "Finite exact identity diagnostics, including zero/repeated nonhit cases. Not native coverage, a complexity proof, or a factoring-success test."
+}

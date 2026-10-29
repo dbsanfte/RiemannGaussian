@@ -1,0 +1,276 @@
+{
+  "verdict": "PASS_READ_ONLY_NO_BLOCKER",
+  "reviewer": "/root",
+  "sources_read": 27,
+  "source_lines": 3029,
+  "scope": "Core/whole row+loop+execution/exactoriginalbytebridge/semanticwidth+fixedclock+all104space/originalValidFits+dimensions. Others40separatelyreviewed. No source/object edits, imports, builds orcontrols.",
+  "pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGrid.lean": "66c0b21a3f36d665d45cc15c17d998b8ce8b9b5c328204f6f84f1d63f75136de",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowWork.lean": "42652e220bd3a73062adef2ebcc96ede66e73a4b0da0e5c168d2bf5386f3aa88",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRow.lean": "a657d38c1d61af856d44cefcb1f20b5dadac5e48043ef57fe5523b8c88f66431",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLoop.lean": "7410d0ba58003c425499b5f91bb47b0221899a1c4d57fb73517d4c202a26361d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridExecution.lean": "f160d6aa1c7b48d494b65fd9d0fb73e88772c8ded66c99a4cc9065eab639b5c8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowMeaning.lean": "597921dd5b7c267caf0ba234d062042d21e7c47f16abee550384c9f179dc12bf",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOriginalStep.lean": "18ef3d0537f69cb9ff475518ca91a2f46995c9076a5db272f32d4d5c74a0790f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLoopMeaning.lean": "7d15bfbe88d14dfa784954584e5f6783b61abdeb41719a27c15a4aa5b62528a2",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOriginal.lean": "903246dfc5da2452a94218993cb5a768f85e385529c3bc1b2790b7b4aea1257d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridStateCaps.lean": "b21c5be1b58db537d064528bf3303ddfbd5d4f68f731820436c2239f8708db78",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridBoundaryCaps.lean": "32b84213b6ccd8354a14e2564c7c09c3373a35ae1d32f84b184e51e107830936",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPayloadBounds.lean": "2a3a14946d4c1e2213560b2e76636b4192cf8becf8d8c97374ccc32a9d413e34",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOperationBounds.lean": "418308d6cb6d2c62590c58806b5cb6ee29e9677185e7aa70b88a57fe5ef6d73f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPowerBounds.lean": "00476127238af80d8db8f530a6544756ae34f49ed451222911acfa6feb145775",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridModelBounds.lean": "a9b8de39e6fbf8c238bc27d5ee09e3c12619416698edf19f3182d5bad30bc40f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridStageBounds.lean": "9251797818621a21a3a40f4cce159154489559ef48e4369e504bc21079cedb3b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridWorkBounds.lean": "2b776d4590ab8ef9bddac5ef23a6fc6dda555fe1ecad0f9879cd0a7c1794d71d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridEnvelope.lean": "7ebf19d5865c228ad6bbaef1aab0da2c2040f53536f20be015da472f23bfaf8e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFrontBounds.lean": "63751ce0249028c2135af043b73a349d22daa14db7b88821c4c9a81427e415d1",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFrontClock.lean": "ba83b169863f73980c65f7156c055a8894e4886673d9595c87088b4caabe93af",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowBounds.lean": "159756c26edc523ba1f0e6c17d73c4e9c681c6241914fb9a90e4c27fbc8c2ebc",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLoopClock.lean": "31d9e8b383372b96fe064fd29a904695ce8ffd2828058db86d87f169b6f11a6d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFinalBounds.lean": "f7c0ab41ec2565ccf91f1467b8fe80dbd8ccdea0e42b47f79fd33b27f37eac55",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridBounds.lean": "0d8360cc522b662230a750c94025f2f3af220cd3c17b431aa3e5a438dfb61be8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridStorage.lean": "4c881ed092f4ca940f014acc5c15f308c7234236bad52e5572e658cfe49999dd",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridValues.lean": "18ea981e3ced91c20eb2bb356673b6062300773c34fb1c08428077d7dd1fbe34",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOriginalResources.lean": "2dcdebc24714d1d22a1ff7e63816c6b2178ed6efacae0bcc8a49355092cbf1be"
+  },
+  "findings": [
+    [
+      "Only5actualdatawords input; a/M/uUNARY VALUE andt/coefsBINARY. All104=R36+G10+Div6+Product4+Reg32+Aux16 includingG2displacedshadows counted.",
+      "Actualdoubling materializesrowtodo2^(a+1), independentofW; truegeometryalpha\u2192binaryq=N-1; decrementactualbinarycounter, center andnumericq=t skiponly; q0kept.",
+      "R36acquiresALL4operandsbeforedestinationoverwrite, actualsignpop/prepend, physical35rolecleanup excepttemplate; actualpowersliteraloneevenW0 andaccFIRST/baseSECOND.",
+      "Actualm=h*(u-order)viaUnaryProduct; repeatedrealFrame denFIRSTthenSIGNED/tag, qdescending+prepend matchesforwardrightfoldbyteorder; final6realRops and16transient/qcleanup.",
+      "No NativeNat/List/evaluator/getter/clock inSigma/program arguments. Fixedfinite labels/copyroutes/sweeps only."
+    ],
+    [
+      "All helper contracts discharged by actual source-state views and actualwholecalls, not suppliedoperations/answers; sign/cache nonemptiness and realreturns explicit.",
+      "Multiplicity is actualheight*(u-order); true center/numericq=t skipconditions and ownerwordretention; wholeloop followsactualtodo+q withunits/final0 exact.",
+      "Proof-side recursiveclock sums samephysicalstage traces; no runtimeNat/codecounter/clock supplier. Wholehalt afterfront+ALLrows+final6 withall104bank andtrueflagclear."
+    ],
+    [
+      "All helper contracts discharged by actual source-state views and actualwholecalls, not suppliedoperations/answers; sign/cache nonemptiness and realreturns explicit.",
+      "Multiplicity is actualheight*(u-order); true center/numericq=t skipconditions and ownerwordretention; wholeloop followsactualtodo+q withunits/final0 exact.",
+      "Proof-side recursiveclock sums samephysicalstage traces; no runtimeNat/codecounter/clock supplier. Wholehalt afterfront+ALLrows+final6 withall104bank andtrueflagclear."
+    ],
+    [
+      "All helper contracts discharged by actual source-state views and actualwholecalls, not suppliedoperations/answers; sign/cache nonemptiness and realreturns explicit.",
+      "Multiplicity is actualheight*(u-order); true center/numericq=t skipconditions and ownerwordretention; wholeloop followsactualtodo+q withunits/final0 exact.",
+      "Proof-side recursiveclock sums samephysicalstage traces; no runtimeNat/codecounter/clock supplier. Wholehalt afterfront+ALLrows+final6 withall104bank andtrueflagclear."
+    ],
+    [
+      "All helper contracts discharged by actual source-state views and actualwholecalls, not suppliedoperations/answers; sign/cache nonemptiness and realreturns explicit.",
+      "Multiplicity is actualheight*(u-order); true center/numericq=t skipconditions and ownerwordretention; wholeloop followsactualtodo+q withunits/final0 exact.",
+      "Proof-side recursiveclock sums samephysicalstage traces; no runtimeNat/codecounter/clock supplier. Wholehalt afterfront+ALLrows+final6 withall104bank andtrueflagclear."
+    ],
+    [
+      "Actualsourcewholebank agrees withlegacyacquire field-for-field; native reportsusedonlyvalue/bytes, no oldclocktransport.",
+      "Truegeometry/order/q0/center andnumericq=t semantics derivefromactualinputq value+width, actualindex/selectedT highpaddingproven.",
+      "Descendingactualq plusprepend repeatedslopes/orientedpowerFIRSTfold equalsoriginalList.range FORWARD rightfold byinduction; no commutativity shortcutunderfittedrawbyteoperations.",
+      "ArbitraryW inclW0/rawt paddingcovered; typedselectedFin/range isproofsideactualinputinterpretation, not a runtimeoperand."
+    ],
+    [
+      "Actualsourcewholebank agrees withlegacyacquire field-for-field; native reportsusedonlyvalue/bytes, no oldclocktransport.",
+      "Truegeometry/order/q0/center andnumericq=t semantics derivefromactualinputq value+width, actualindex/selectedT highpaddingproven.",
+      "Descendingactualq plusprepend repeatedslopes/orientedpowerFIRSTfold equalsoriginalList.range FORWARD rightfold byinduction; no commutativity shortcutunderfittedrawbyteoperations.",
+      "ArbitraryW inclW0/rawt paddingcovered; typedselectedFin/range isproofsideactualinputinterpretation, not a runtimeoperand."
+    ],
+    [
+      "Actualsourcewholebank agrees withlegacyacquire field-for-field; native reportsusedonlyvalue/bytes, no oldclocktransport.",
+      "Truegeometry/order/q0/center andnumericq=t semantics derivefromactualinputq value+width, actualindex/selectedT highpaddingproven.",
+      "Descendingactualq plusprepend repeatedslopes/orientedpowerFIRSTfold equalsoriginalList.range FORWARD rightfold byinduction; no commutativity shortcutunderfittedrawbyteoperations.",
+      "ArbitraryW inclW0/rawt paddingcovered; typedselectedFin/range isproofsideactualinputinterpretation, not a runtimeoperand."
+    ],
+    [
+      "Actualsourcewholebank agrees withlegacyacquire field-for-field; native reportsusedonlyvalue/bytes, no oldclocktransport.",
+      "Truegeometry/order/q0/center andnumericq=t semantics derivefromactualinputq value+width, actualindex/selectedT highpaddingproven.",
+      "Descendingactualq plusprepend repeatedslopes/orientedpowerFIRSTfold equalsoriginalList.range FORWARD rightfold byinduction; no commutativity shortcutunderfittedrawbyteoperations.",
+      "ArbitraryW inclW0/rawt paddingcovered; typedselectedFin/range isproofsideactualinputinterpretation, not a runtimeoperand."
+    ],
+    [
+      "BothR36outputs exactlyW; literalzero-powerONE boundW+1; RegisterCapcacheWidth independentofelapsedloopclock.",
+      "PeroperationtimefromactualfivecopiedwordR36 SIXTHdegree, foreignretainedmass paidadditively foractual35rolecleanup, realreturns included.",
+      "Powerloops nactualmarkers andfixedB/Lsemanticcaps, per-stepfitresetswidth; no repeatedraisingofsubtree/runtimepolynomials.",
+      "Payloadboundnum/denW+1, slopescount<=visited*h*u andeachslopeexactlyW fields; originalh*u<=3M+u andvisited<=actualN giveall104datacapO(R3). Geometrywordboundfromownfrozenactual14prefix notnativegeometryclock."
+    ],
+    [
+      "BothR36outputs exactlyW; literalzero-powerONE boundW+1; RegisterCapcacheWidth independentofelapsedloopclock.",
+      "PeroperationtimefromactualfivecopiedwordR36 SIXTHdegree, foreignretainedmass paidadditively foractual35rolecleanup, realreturns included.",
+      "Powerloops nactualmarkers andfixedB/Lsemanticcaps, per-stepfitresetswidth; no repeatedraisingofsubtree/runtimepolynomials.",
+      "Payloadboundnum/denW+1, slopescount<=visited*h*u andeachslopeexactlyW fields; originalh*u<=3M+u andvisited<=actualN giveall104datacapO(R3). Geometrywordboundfromownfrozenactual14prefix notnativegeometryclock."
+    ],
+    [
+      "BothR36outputs exactlyW; literalzero-powerONE boundW+1; RegisterCapcacheWidth independentofelapsedloopclock.",
+      "PeroperationtimefromactualfivecopiedwordR36 SIXTHdegree, foreignretainedmass paidadditively foractual35rolecleanup, realreturns included.",
+      "Powerloops nactualmarkers andfixedB/Lsemanticcaps, per-stepfitresetswidth; no repeatedraisingofsubtree/runtimepolynomials.",
+      "Payloadboundnum/denW+1, slopescount<=visited*h*u andeachslopeexactlyW fields; originalh*u<=3M+u andvisited<=actualN giveall104datacapO(R3). Geometrywordboundfromownfrozenactual14prefix notnativegeometryclock."
+    ],
+    [
+      "BothR36outputs exactlyW; literalzero-powerONE boundW+1; RegisterCapcacheWidth independentofelapsedloopclock.",
+      "PeroperationtimefromactualfivecopiedwordR36 SIXTHdegree, foreignretainedmass paidadditively foractual35rolecleanup, realreturns included.",
+      "Powerloops nactualmarkers andfixedB/Lsemanticcaps, per-stepfitresetswidth; no repeatedraisingofsubtree/runtimepolynomials.",
+      "Payloadboundnum/denW+1, slopescount<=visited*h*u andeachslopeexactlyW fields; originalh*u<=3M+u andvisited<=actualN giveall104datacapO(R3). Geometrywordboundfromownfrozenactual14prefix notnativegeometryclock."
+    ],
+    [
+      "BothR36outputs exactlyW; literalzero-powerONE boundW+1; RegisterCapcacheWidth independentofelapsedloopclock.",
+      "PeroperationtimefromactualfivecopiedwordR36 SIXTHdegree, foreignretainedmass paidadditively foractual35rolecleanup, realreturns included.",
+      "Powerloops nactualmarkers andfixedB/Lsemanticcaps, per-stepfitresetswidth; no repeatedraisingofsubtree/runtimepolynomials.",
+      "Payloadboundnum/denW+1, slopescount<=visited*h*u andeachslopeexactlyW fields; originalh*u<=3M+u andvisited<=actualN giveall104datacapO(R3). Geometrywordboundfromownfrozenactual14prefix notnativegeometryclock."
+    ],
+    [
+      "BothR36outputs exactlyW; literalzero-powerONE boundW+1; RegisterCapcacheWidth independentofelapsedloopclock.",
+      "PeroperationtimefromactualfivecopiedwordR36 SIXTHdegree, foreignretainedmass paidadditively foractual35rolecleanup, realreturns included.",
+      "Powerloops nactualmarkers andfixedB/Lsemanticcaps, per-stepfitresetswidth; no repeatedraisingofsubtree/runtimepolynomials.",
+      "Payloadboundnum/denW+1, slopescount<=visited*h*u andeachslopeexactlyW fields; originalh*u<=3M+u andvisited<=actualN giveall104datacapO(R3). Geometrywordboundfromownfrozenactual14prefix notnativegeometryclock."
+    ],
+    [
+      "Sameoperation/powerboundarycapscharged withtruephysicalsourcewidths andmVALUE; actual3base/2power/2slope/2fold calls+allcleanup paid.",
+      "Realframingnewbytes m*(4W+5) addedtooldtail<=L; temporary2L onlywithinrow, globalnextModelcap reset fromvisited*m semanticcount, not repeateddoubling.",
+      "FrontactualNrowtodo generation chargedbyN=2^(a+1)VALUE, actualheight/u metadata/indexfit/truegeometry/decrement/center+alpha powers all included; rawt bytespaid.",
+      "Fixedresource envelope givesR6site/R7power/R8body+front, uniformlychosenconstants beforeALLinputs; bothskippathsandunchosenconservativebody costs bounded. No nativeclocktransferorchildruntime-degree escalation."
+    ],
+    [
+      "Sameoperation/powerboundarycapscharged withtruephysicalsourcewidths andmVALUE; actual3base/2power/2slope/2fold calls+allcleanup paid.",
+      "Realframingnewbytes m*(4W+5) addedtooldtail<=L; temporary2L onlywithinrow, globalnextModelcap reset fromvisited*m semanticcount, not repeateddoubling.",
+      "FrontactualNrowtodo generation chargedbyN=2^(a+1)VALUE, actualheight/u metadata/indexfit/truegeometry/decrement/center+alpha powers all included; rawt bytespaid.",
+      "Fixedresource envelope givesR6site/R7power/R8body+front, uniformlychosenconstants beforeALLinputs; bothskippathsandunchosenconservativebody costs bounded. No nativeclocktransferorchildruntime-degree escalation."
+    ],
+    [
+      "Sameoperation/powerboundarycapscharged withtruephysicalsourcewidths andmVALUE; actual3base/2power/2slope/2fold calls+allcleanup paid.",
+      "Realframingnewbytes m*(4W+5) addedtooldtail<=L; temporary2L onlywithinrow, globalnextModelcap reset fromvisited*m semanticcount, not repeateddoubling.",
+      "FrontactualNrowtodo generation chargedbyN=2^(a+1)VALUE, actualheight/u metadata/indexfit/truegeometry/decrement/center+alpha powers all included; rawt bytespaid.",
+      "Fixedresource envelope givesR6site/R7power/R8body+front, uniformlychosenconstants beforeALLinputs; bothskippathsandunchosenconservativebody costs bounded. No nativeclocktransferorchildruntime-degree escalation."
+    ],
+    [
+      "Sameoperation/powerboundarycapscharged withtruephysicalsourcewidths andmVALUE; actual3base/2power/2slope/2fold calls+allcleanup paid.",
+      "Realframingnewbytes m*(4W+5) addedtooldtail<=L; temporary2L onlywithinrow, globalnextModelcap reset fromvisited*m semanticcount, not repeateddoubling.",
+      "FrontactualNrowtodo generation chargedbyN=2^(a+1)VALUE, actualheight/u metadata/indexfit/truegeometry/decrement/center+alpha powers all included; rawt bytespaid.",
+      "Fixedresource envelope givesR6site/R7power/R8body+front, uniformlychosenconstants beforeALLinputs; bothskippathsandunchosenconservativebody costs bounded. No nativeclocktransferorchildruntime-degree escalation."
+    ],
+    [
+      "Sameoperation/powerboundarycapscharged withtruephysicalsourcewidths andmVALUE; actual3base/2power/2slope/2fold calls+allcleanup paid.",
+      "Realframingnewbytes m*(4W+5) addedtooldtail<=L; temporary2L onlywithinrow, globalnextModelcap reset fromvisited*m semanticcount, not repeateddoubling.",
+      "FrontactualNrowtodo generation chargedbyN=2^(a+1)VALUE, actualheight/u metadata/indexfit/truegeometry/decrement/center+alpha powers all included; rawt bytespaid.",
+      "Fixedresource envelope givesR6site/R7power/R8body+front, uniformlychosenconstants beforeALLinputs; bothskippathsandunchosenconservativebody costs bounded. No nativeclocktransferorchildruntime-degree escalation."
+    ],
+    [
+      "Sameoperation/powerboundarycapscharged withtruephysicalsourcewidths andmVALUE; actual3base/2power/2slope/2fold calls+allcleanup paid.",
+      "Realframingnewbytes m*(4W+5) addedtooldtail<=L; temporary2L onlywithinrow, globalnextModelcap reset fromvisited*m semanticcount, not repeateddoubling.",
+      "FrontactualNrowtodo generation chargedbyN=2^(a+1)VALUE, actualheight/u metadata/indexfit/truegeometry/decrement/center+alpha powers all included; rawt bytespaid.",
+      "Fixedresource envelope givesR6site/R7power/R8body+front, uniformlychosenconstants beforeALLinputs; bothskippathsandunchosenconservativebody costs bounded. No nativeclocktransferorchildruntime-degree escalation."
+    ],
+    [
+      "Globalvisited+remaining<=N andBounded.step preservewidth/countinvariant acrossALLrows; ownloopR9 andfrontR8/finalfixedcalls absorbedbyfixed1e60R12, N/WpaidbyVALUE.",
+      "Everycompiledprefixall104words+actualnone-returnstackbound1e63R12 derivedfromSAMEactualsourcehalt andcompiler.run_correct; noW/Nvaluecostdropped.",
+      "Exactlegacybytebridge usedONLYvaluecorrectness: u<=M+actualNodeBits.width<=actualtemplate derivesValid/positiveD andscalar/argumentWidth, no suppliedFits sequence.",
+      "OriginaldimensionresourceR<=1e4*dimensions^5 yieldswholeclock1e110dim60/all104space1e113dim60; root_clock fixedpolyell600 explicitrawt.length<=a+2. Five-inputstage/callerjoin scopehonest; NOTN-onlyfactorer/runtimeproof."
+    ],
+    [
+      "Globalvisited+remaining<=N andBounded.step preservewidth/countinvariant acrossALLrows; ownloopR9 andfrontR8/finalfixedcalls absorbedbyfixed1e60R12, N/WpaidbyVALUE.",
+      "Everycompiledprefixall104words+actualnone-returnstackbound1e63R12 derivedfromSAMEactualsourcehalt andcompiler.run_correct; noW/Nvaluecostdropped.",
+      "Exactlegacybytebridge usedONLYvaluecorrectness: u<=M+actualNodeBits.width<=actualtemplate derivesValid/positiveD andscalar/argumentWidth, no suppliedFits sequence.",
+      "OriginaldimensionresourceR<=1e4*dimensions^5 yieldswholeclock1e110dim60/all104space1e113dim60; root_clock fixedpolyell600 explicitrawt.length<=a+2. Five-inputstage/callerjoin scopehonest; NOTN-onlyfactorer/runtimeproof."
+    ],
+    [
+      "Globalvisited+remaining<=N andBounded.step preservewidth/countinvariant acrossALLrows; ownloopR9 andfrontR8/finalfixedcalls absorbedbyfixed1e60R12, N/WpaidbyVALUE.",
+      "Everycompiledprefixall104words+actualnone-returnstackbound1e63R12 derivedfromSAMEactualsourcehalt andcompiler.run_correct; noW/Nvaluecostdropped.",
+      "Exactlegacybytebridge usedONLYvaluecorrectness: u<=M+actualNodeBits.width<=actualtemplate derivesValid/positiveD andscalar/argumentWidth, no suppliedFits sequence.",
+      "OriginaldimensionresourceR<=1e4*dimensions^5 yieldswholeclock1e110dim60/all104space1e113dim60; root_clock fixedpolyell600 explicitrawt.length<=a+2. Five-inputstage/callerjoin scopehonest; NOTN-onlyfactorer/runtimeproof."
+    ],
+    [
+      "Globalvisited+remaining<=N andBounded.step preservewidth/countinvariant acrossALLrows; ownloopR9 andfrontR8/finalfixedcalls absorbedbyfixed1e60R12, N/WpaidbyVALUE.",
+      "Everycompiledprefixall104words+actualnone-returnstackbound1e63R12 derivedfromSAMEactualsourcehalt andcompiler.run_correct; noW/Nvaluecostdropped.",
+      "Exactlegacybytebridge usedONLYvaluecorrectness: u<=M+actualNodeBits.width<=actualtemplate derivesValid/positiveD andscalar/argumentWidth, no suppliedFits sequence.",
+      "OriginaldimensionresourceR<=1e4*dimensions^5 yieldswholeclock1e110dim60/all104space1e113dim60; root_clock fixedpolyell600 explicitrawt.length<=a+2. Five-inputstage/callerjoin scopehonest; NOTN-onlyfactorer/runtimeproof."
+    ],
+    [
+      "Globalvisited+remaining<=N andBounded.step preservewidth/countinvariant acrossALLrows; ownloopR9 andfrontR8/finalfixedcalls absorbedbyfixed1e60R12, N/WpaidbyVALUE.",
+      "Everycompiledprefixall104words+actualnone-returnstackbound1e63R12 derivedfromSAMEactualsourcehalt andcompiler.run_correct; noW/Nvaluecostdropped.",
+      "Exactlegacybytebridge usedONLYvaluecorrectness: u<=M+actualNodeBits.width<=actualtemplate derivesValid/positiveD andscalar/argumentWidth, no suppliedFits sequence.",
+      "OriginaldimensionresourceR<=1e4*dimensions^5 yieldswholeclock1e110dim60/all104space1e113dim60; root_clock fixedpolyell600 explicitrawt.length<=a+2. Five-inputstage/callerjoin scopehonest; NOTN-onlyfactorer/runtimeproof."
+    ],
+    [
+      "Globalvisited+remaining<=N andBounded.step preservewidth/countinvariant acrossALLrows; ownloopR9 andfrontR8/finalfixedcalls absorbedbyfixed1e60R12, N/WpaidbyVALUE.",
+      "Everycompiledprefixall104words+actualnone-returnstackbound1e63R12 derivedfromSAMEactualsourcehalt andcompiler.run_correct; noW/Nvaluecostdropped.",
+      "Exactlegacybytebridge usedONLYvaluecorrectness: u<=M+actualNodeBits.width<=actualtemplate derivesValid/positiveD andscalar/argumentWidth, no suppliedFits sequence.",
+      "OriginaldimensionresourceR<=1e4*dimensions^5 yieldswholeclock1e110dim60/all104space1e113dim60; root_clock fixedpolyell600 explicitrawt.length<=a+2. Five-inputstage/callerjoin scopehonest; NOTN-onlyfactorer/runtimeproof."
+    ]
+  ],
+  "remaining_global_obligations": [
+    "N-only/current-node physicalcaller ofthisfive-inputsource",
+    "Canonicalaffine/inverse/Hermitefullrowweights andrightfoldnumerator/denominatorcaller joins",
+    "Literalwholeweightedrecursivecounter/actualtree/globalcost; subexponentialfactorer notcomplete"
+  ],
+  "reviewed_utc": "2026-10-29T02:06:35.519025+00:00",
+  "combined_all67_current_source_pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGrid.lean": "66c0b21a3f36d665d45cc15c17d998b8ce8b9b5c328204f6f84f1d63f75136de",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowWork.lean": "42652e220bd3a73062adef2ebcc96ede66e73a4b0da0e5c168d2bf5386f3aa88",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRow.lean": "a657d38c1d61af856d44cefcb1f20b5dadac5e48043ef57fe5523b8c88f66431",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLoop.lean": "7410d0ba58003c425499b5f91bb47b0221899a1c4d57fb73517d4c202a26361d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridExecution.lean": "f160d6aa1c7b48d494b65fd9d0fb73e88772c8ded66c99a4cc9065eab639b5c8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowMeaning.lean": "597921dd5b7c267caf0ba234d062042d21e7c47f16abee550384c9f179dc12bf",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOriginalStep.lean": "18ef3d0537f69cb9ff475518ca91a2f46995c9076a5db272f32d4d5c74a0790f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLoopMeaning.lean": "7d15bfbe88d14dfa784954584e5f6783b61abdeb41719a27c15a4aa5b62528a2",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOriginal.lean": "903246dfc5da2452a94218993cb5a768f85e385529c3bc1b2790b7b4aea1257d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridStateCaps.lean": "b21c5be1b58db537d064528bf3303ddfbd5d4f68f731820436c2239f8708db78",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridBoundaryCaps.lean": "32b84213b6ccd8354a14e2564c7c09c3373a35ae1d32f84b184e51e107830936",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPayloadBounds.lean": "2a3a14946d4c1e2213560b2e76636b4192cf8becf8d8c97374ccc32a9d413e34",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOperationBounds.lean": "418308d6cb6d2c62590c58806b5cb6ee29e9677185e7aa70b88a57fe5ef6d73f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPowerBounds.lean": "00476127238af80d8db8f530a6544756ae34f49ed451222911acfa6feb145775",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridModelBounds.lean": "a9b8de39e6fbf8c238bc27d5ee09e3c12619416698edf19f3182d5bad30bc40f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridStageBounds.lean": "9251797818621a21a3a40f4cce159154489559ef48e4369e504bc21079cedb3b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridWorkBounds.lean": "2b776d4590ab8ef9bddac5ef23a6fc6dda555fe1ecad0f9879cd0a7c1794d71d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridEnvelope.lean": "7ebf19d5865c228ad6bbaef1aab0da2c2040f53536f20be015da472f23bfaf8e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFrontBounds.lean": "63751ce0249028c2135af043b73a349d22daa14db7b88821c4c9a81427e415d1",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFrontClock.lean": "ba83b169863f73980c65f7156c055a8894e4886673d9595c87088b4caabe93af",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowBounds.lean": "159756c26edc523ba1f0e6c17d73c4e9c681c6241914fb9a90e4c27fbc8c2ebc",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLoopClock.lean": "31d9e8b383372b96fe064fd29a904695ce8ffd2828058db86d87f169b6f11a6d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFinalBounds.lean": "f7c0ab41ec2565ccf91f1467b8fe80dbd8ccdea0e42b47f79fd33b27f37eac55",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridBounds.lean": "0d8360cc522b662230a750c94025f2f3af220cd3c17b431aa3e5a438dfb61be8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridStorage.lean": "4c881ed092f4ca940f014acc5c15f308c7234236bad52e5572e658cfe49999dd",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridValues.lean": "18ea981e3ced91c20eb2bb356673b6062300773c34fb1c08428077d7dd1fbe34",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOriginalResources.lean": "2dcdebc24714d1d22a1ff7e63816c6b2178ed6efacae0bcc8a49355092cbf1be",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridInventory.lean": "343692c0704a56891799cbbccec1c8f03a4f4b2c700f0ef1e787837f14699416",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPrimitives.lean": "5b0b83a1983f3e9ef9f09d3906f1f7e05f5545ac23c8964a81480373eb06593c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridView.lean": "3af66fca5119618c8264aa948b58ce1e784a558df31a7c64d5e66e162d8adf51",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridCalls.lean": "cec7977661d7aba759f9f2bd57a764a49207c08ad7fe0d6d713d71a3e68e5539",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridGrowth.lean": "5f31c9c696ce44d6d57dd93aeeabb3c0d496af3be707968879d6b3a218ea5d07",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLiterals.lean": "f86f57c7057f812041fc293a5dfd78edca1ee6129e752e784862ba72cc3f5b3c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridSetup.lean": "934ad1a0401bc2238d45be442812cb1c62d8d7666de477f7983efa45f8fd79f4",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridHeight.lean": "52471d8905e377ca1672d890dac5446c0c3660ab44879e7d3264ef80cb30a90e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridNode.lean": "0af2af412c6e1dc4ac1dca460e31e135342a3e3fc6edf5b3ecb9fd6ef795a008",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridCleanup.lean": "e18659038348fc49247338fbaedbf9f0e5d4e106c3895f09d16d590e875f884b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridGeometry.lean": "40f19f454167a53aeff2d1596ffb7a2d8231559494ceb38913d82758c469cf14",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridAcquisition.lean": "ff641f22b900ff39cde6a4a57f5fa03e34a736971658f6e33cb5e1bf2d76fd36",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridEncoding.lean": "029c304294886f27373f2a1cfe308f80e89ae185ba0070d66783c64cf7c54f5b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridByteBounds.lean": "72a935a421aa29884d40f18377718ccb0be61554729101bcf39697163bb1718f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOperationInput.lean": "0fc22d3083bc3e4a31a27863e97b81fabb199b99f2de50480909f94764911a4c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOperationOutput.lean": "927b5427c38d47673811811340a1aed5971951a47e928cd536cae766ac2af88c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOperation.lean": "8d06f3756594abe05d8791da25dcc37990bcd66160ee3354438d4033d6c0265c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRegisters.lean": "6bdb750a6119125d253046eaf5ad64ca8e35d4f6bd2493ce0f516adb3f361d4b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridWordCaps.lean": "43c9fa3b5225aacbb7c9f215f86aeb1c4bcefb369390bded8b38935dd9260ca8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridSite.lean": "ac9b31f2ebc0117d103743992197bdd7a82a9af3b3fa2a9741d805810f5135be",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridTransient.lean": "ff959dc4f02f3c50989ea2fd8c25dcc091d9dea592dc2cd2a288715de6201f41",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowCleanup.lean": "acdfe2985bcc7dd7e328b64768f29883940670c7a0156da4689030350cdf7c47",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPowerSeed.lean": "76b82fb761329f9e3e30d3c60bac0139e6fa1245043f48eab264a728859e55d0",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPowerLoop.lean": "49e11214feb24525a0233b6d65370d52b9039c9b54be816c78c1712828209636",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPower.lean": "126e1f0932183de9f9ba4c4519ca8ffa61a15b5440ba17573190486f3bef2488",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPowerSource.lean": "54c8756a52273155a082c41018fdd353df6b905dc4a8b7dffefe87172aaf526d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowBases.lean": "2e6f3055757bf5ebb51b68fbd3dbff403d069a586e2dec25fcc30b7fefd6598c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowStart.lean": "9678dff1db29baa8d533aafc166b72a3a3a5b963bf990bb4c17fccfe872a6ff9",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRipple.lean": "5271796f5987227634356665140c59aa3cb151d52b5f11009f927a88e3a052df",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridDecrement.lean": "64ce3d922e27cbfdfdd9b0c5fe513d391d1e142dbc75c94e387c5ffc126fbebb",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridCompare.lean": "a54d56655eef92d7886d60aa10973da2a4c5e94cc5c5edfbbc9e241e975396c3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridMultiplicity.lean": "74af19760eb9c3741870d0c42b1821df23734de49f9831f07928004639c0f08f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRepeats.lean": "8a495f791d2e06326ddf92a71561624ffbcf353ddc9c864663854bad8324f3c3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRowSlopes.lean": "f9c135d57bdaed065407cf12d0d7a45743cf08be5d74baeb40d2a16a81133167",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFront.lean": "fcbc1eca01183e9e1e15094fd38eeccdb67cf78e1a5856e0a5359b2f4f8332be",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridModel.lean": "f70c7399f758ef4318c6003495843e8c87b0f7f96f1ecfbe138efbae18a98022",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridResource.lean": "14b7dc9346f11f6ce4c9609adb3bc74902b8b63913a4e508d75fa07cd4fe021e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLoopPrimitives.lean": "eddc477c55c9394111ce275d602a709055c52e20bada3b2e7816978430b22d73",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFinal.lean": "b2129cf284896aeb52a693fb8c3c3a84f53271771de63b0c21b9fd0f5be7f938",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridFinishMeaning.lean": "59a3e27a1c1e44dc14998fd1f164a579f6edf40847fb9ac2fbe6dd3e8e6a1a1f"
+  },
+  "other_review_artifacts": {
+    "recovery-grid-owner-independent-review.txt": "cecc7cdc0b2b166ee7487208e32a2d85465c8837f41a701be303af90e83ea778",
+    "recovery-grid-port-independent-review.txt": "d012c3a856194ed8ec01f82d98d30ad6a5bb9594d15586a7ed040e1757ae495f"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "status": "FINAL FROZEN",
+  "scope": "Only these five serializer modules. Exact binary occurrence-ID vector to unary metadata port tape; full all-semiprime factoring runtime theorem remains open.",
+  "source_edits_this_resume": false,
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeD1StackPortOrdinalStream",
+      "exit_code": 0,
+      "seconds": 4.136026750000383,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOrdinalStream.lean",
+      "source_sha256": "a989de88b7b8f0ab438ddcf256dc01de4cdd5c32a08abef5198036b3463fe786",
+      "canonical_object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOrdinalStream.olean",
+      "canonical_sha256": "6132b5d242a1cf1b0f9e731eae25daee91a30b540671d50560df148e67f63a46",
+      "independent_object": "/tmp/semiprime-explicit-rate-20261027/port-ordinal-independent/SemiprimeD1StackPortOrdinalStream.olean",
+      "independent_sha256": "6132b5d242a1cf1b0f9e731eae25daee91a30b540671d50560df148e67f63a46",
+      "object_bytes_match": true
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1StackPortOrdinalStreamComponents",
+      "exit_code": 0,
+      "seconds": 3.4744718049996663,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOrdinalStreamComponents.lean",
+      "source_sha256": "3405dec899218de41149a0aa69883362be6b865e48f4fa4fd36566d7b0074a71",
+      "canonical_object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOrdinalStreamComponents.olean",
+      "canonical_sha256": "76a2c3a85bfd20e269f82a72cb65f0fc23bfab69457b1bf97e614140975c4a1e",
+      "independent_object": "/tmp/semiprime-explicit-rate-20261027/port-ordinal-independent/SemiprimeD1StackPortOrdinalStreamComponents.olean",
+      "independent_sha256": "76a2c3a85bfd20e269f82a72cb65f0fc23bfab69457b1bf97e614140975c4a1e",
+      "object_bytes_match": true
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1StackPortOrdinalStreamExecution",
+      "exit_code": 0,
+      "seconds": 5.29211608300011,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOrdinalStreamExecution.lean",
+      "source_sha256": "0fe86f3f80d39a927d00dce3edda4f5bd0bff4234f6f8c0480b43d8a06ac1f66",
+      "canonical_object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOrdinalStreamExecution.olean",
+      "canonical_sha256": "0daeac9b025fcf16662e7ad85618119f4b2774f8743b78b6d57904bab97d9b67",
+      "independent_object": "/tmp/semiprime-explicit-rate-20261027/port-ordinal-independent/SemiprimeD1StackPortOrdinalStreamExecution.olean",
+      "independent_sha256": "0daeac9b025fcf16662e7ad85618119f4b2774f8743b78b6d57904bab97d9b67",
+      "object_bytes_match": true
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1StackPortOrdinalStreamBounds",
+      "exit_code": 0,
+      "seconds": 5.359322708000036,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOrdinalStreamBounds.lean",
+      "source_sha256": "6f724ef62fe1d874274cb7725fbcc1c9c5170956bceb1e93e62f800cdc136668",
+      "canonical_object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOrdinalStreamBounds.olean",
+      "canonical_sha256": "7066ac451211094d3c46f6d927f031ea76514d822644e3efb58ac17228e9a346",
+      "independent_object": "/tmp/semiprime-explicit-rate-20261027/port-ordinal-independent/SemiprimeD1StackPortOrdinalStreamBounds.olean",
+      "independent_sha256": "7066ac451211094d3c46f6d927f031ea76514d822644e3efb58ac17228e9a346",
+      "object_bytes_match": true
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeD1StackPortOrdinalStreamOriginal",
+      "exit_code": 0,
+      "seconds": 5.151383841000097,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOrdinalStreamOriginal.lean",
+      "source_sha256": "1a441705148ebb34b292d4653ace3b6cbfa9ceb459acf34d3c67c64d83f6e085",
+      "canonical_object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOrdinalStreamOriginal.olean",
+      "canonical_sha256": "bcc7ff4f9a6dab38e08b0488a134b1861c4a51d7b092a005403a3dd1ef38ce2e",
+      "independent_object": "/tmp/semiprime-explicit-rate-20261027/port-ordinal-independent/SemiprimeD1StackPortOrdinalStreamOriginal.olean",
+      "independent_sha256": "bcc7ff4f9a6dab38e08b0488a134b1861c4a51d7b092a005403a3dd1ef38ce2e",
+      "object_bytes_match": true
+    }
+  ],
+  "strict_canonical_pass": true,
+  "ordinary_root_explicit_imports": true,
+  "Elab.async": false,
+  "audit_heartbeats": 200000,
+  "linters_each": 15,
+  "all_generated_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "counts": {
+    "RiemannGaussian.SemiprimeD1StackPortOrdinalStream": {
+      "declarations": 187,
+      "theorem_constants": 54
+    },
+    "RiemannGaussian.SemiprimeD1StackPortOrdinalStreamComponents": {
+      "declarations": 34,
+      "theorem_constants": 27
+    },
+    "RiemannGaussian.SemiprimeD1StackPortOrdinalStreamExecution": {
+      "declarations": 22,
+      "theorem_constants": 10
+    },
+    "RiemannGaussian.SemiprimeD1StackPortOrdinalStreamBounds": {
+      "declarations": 15,
+      "theorem_constants": 14
+    },
+    "RiemannGaussian.SemiprimeD1StackPortOrdinalStreamOriginal": {
+      "declarations": 6,
+      "theorem_constants": 6
+    }
+  },
+  "total_declarations": 264,
+  "total_theorem_constants": 111,
+  "independent_objects_byte_identical": true,
+  "actual_imported_modules": 18057,
+  "all_imported_source_object_pairs_unchanged": true,
+  "all12_data_roles_and_actual_return_cells": "SemiprimeD1StackPortOrdinalStreamBounds.machine_prefix_cells",
+  "exact_original_binding": "SemiprimeD1StackPortOrdinalStreamOriginal.selected_portTape / whole_portTape",
+  "clock_bound": "timeBound <= 100*(words.length+1)*(M+1), assuming only each actual binary width and ordinal value <= M",
+  "toolchain": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
+}

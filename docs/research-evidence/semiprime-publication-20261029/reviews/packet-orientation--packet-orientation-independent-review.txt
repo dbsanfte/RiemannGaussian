@@ -1,0 +1,17 @@
+PASS: independent read-only review of PacketOrientation19.
+UTC: 2026-10-28T22:08:14.138643+00:00
+
+Reviewed Core, Execution, Clock, Storage, Layout and Original. No source edit, canonical build or repeated control was performed.
+The sole actual operands are the two acquired colour vectors and binary index. All19 roles (5 comparator+14 private) and real return labels are fixed finite. There is no supplied coordinate count, colour, ordering/equality flag, high word, packet or runtime clock.
+The real paired Field parsers consume vector tags, two actual strict numeric comparisons establish the three-way branch, and only numeric equality consumes a real index bit (missing bits give false). Ties preserve distinct raw padded operands; numeric equality is never used as raw-byte equality. Both unequal branches leave index bytes untouched.
+The inner/outer real Frame operations preserve raw field payloads, reverse chronology is implemented by real reversals, and the key ends with the remaining raw binary high word without a vector terminator. Original inputs are preserved; success and rejection cleanup are explicit actual instructions.
+Execution composes real input copies, the paired loop, exact layout, finish and success/halt. Layout proves exact entire original key and raw high suffix, including padding, with physical frame/slot lengths paid. Clock derives own10000*S linear time from the actual trace, not a native report. Storage counts every one of19 tapes and actual return cells at every successful prefix with1000000*S bound.
+Original binds exact old OrientationBits.acquire key, slots and high bytes. Its Pipeline statements honestly describe TWO real prepared executions with separate clocks and take second input directly from actual stopped Reader fields; they do not claim a literal combined inventory controller. Original selected-key lineage supplies original ID membership and equal coordinate lengths internally.
+
+Current six-source SHA256 pins:
+8962aa47cc36dd0cfee50fdc38c2d1e93217bfe058847bf458f1fed361d55057  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientation.lean
+ed9dba90cfd1e839e1bcaabe094a35351343821bec71b118cb6f9ec79c134c52  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationExecution.lean
+956e47c8cb32cf3e0654bc48d6e42c31349adea47293e1772eb4996db1639ec9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationClock.lean
+5498f54348430fb475f17aad0fb61e10cd353814899176963cd681de4457ac61  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationStorage.lean
+2ac338bfda2962937bad87d7846416a3c9f659100c255f6370b95fa3cc1fe87f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationLayout.lean
+95326755474de27384da842d471141d1322623a5e6cc1a370b4c7e2df019b64c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationOriginal.lean

@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-26",
+  "proposal_read_unchanged": true,
+  "primary_sources": [
+    {
+      "title": "Sagan, Congruence properties of q-analogs",
+      "url": "https://users.math.msu.edu/users/bsagan/Papers/Old/cpq-pub.pdf",
+      "checked": "Theorem 2.2; root-of-unity deformation parameter required. Actual zeta/q fails that specialization."
+    },
+    {
+      "title": "Nekrasov, BPS/CFT correspondence",
+      "url": "https://arxiv.org/html/1512.05388",
+      "checked": "Equations 127–128 and section 6.1, especially expectation in equation 146; finite arithmetic rectangle cancellation derived separately."
+    },
+    {
+      "title": "Bryan–Kool–Young, Trace identities for the Topological Vertex",
+      "url": "https://arxiv.org/html/1603.05271v2",
+      "checked": "Section 5, vertex commutation and formal infinite traces; no finite composite-ring acquisition theorem imported."
+    },
+    {
+      "title": "Kimura–Pestun, Quiver W-algebras",
+      "url": "https://arxiv.org/html/1512.08533v4",
+      "checked": "Sections 4.1–4.2, equations 4.2–4.7; finite screening retains endpoints and holes."
+    },
+    {
+      "title": "Marshakov–Semenyakin, Cluster integrable systems and spin chains",
+      "url": "https://arxiv.org/pdf/1905.09921",
+      "checked": "Section 3.1, equations 3.15–3.19; rank/site duality retains block and Casimir factors."
+    },
+    {
+      "title": "Awata et al., Toric Calabi–Yau threefolds as quantum integrable systems",
+      "url": "https://arxiv.org/pdf/1608.05351",
+      "checked": "Section 2.1 equation 13 and section 2.3 equations 44–46; Schur specialization and retained normalization."
+    }
+  ],
+  "local_source_pins": [
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/README.md",
+      "scope": "whole file",
+      "bytes": 10971,
+      "sha256": "394b0a33a7f43f76a3007463373535e0f7efdee7454cd9dfe981218f9650be02"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/coverage-selector.md",
+      "scope": "whole file",
+      "bytes": 12665,
+      "sha256": "1321fa7b44a146a01ad7888081e6d3a1fe187d6e70520bb998251ccdda6937d6"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/kernel-cover.md",
+      "scope": "whole file",
+      "bytes": 15808,
+      "sha256": "2fcd61bad1a66097eca3540c6fa63a85f3433d372c0b26f2e40fb4273e95699d"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/sources.json",
+      "scope": "whole file",
+      "bytes": 3342,
+      "sha256": "283d7cafe73daa75290b275ca11840ab1f1804f46380323471ad940819ef35b5"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "scope": "pre-turn prefix",
+      "bytes": 2414717,
+      "sha256": "fde12277ad3a89d976f5859a57c261682fd66385b4f4cfb7bf1fbbd99a05f9b6"
+    },
+    {
+      "path": "docs/semiprime-string-theory-research-proposal.md",
+      "scope": "whole file",
+      "bytes": 18615,
+      "sha256": "7ef81200148f3774e3ef03d0510202cc9efe42cf044f760bbbda257ea855de93"
+    }
+  ],
+  "import_scope": "Finite polynomial identities derived symbolically. No external factoring/acquisition theorem imported; source normalizations and finite-endpoint qualifications retained."
+}

@@ -1,0 +1,28 @@
+{
+  "SemiprimeHermiteEvaluationBits": {
+    "source_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteEvaluationBits.lean",
+    "source_sha256": "0534470a98c94fcc13a3a0487d645c9862d7085d36eded14ece3d22ba28db250",
+    "object_path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeHermiteEvaluationBits.olean",
+    "object_sha256": "f10bafdad8532517b3c79d8ae4128c1b43acbc43905dc0ad9513b6bf416871e9",
+    "isolated_object_path": "/tmp/semiprime-hermite-words-20261027/SemiprimeHermiteEvaluationBits.olean",
+    "isolated_sha256": "f10bafdad8532517b3c79d8ae4128c1b43acbc43905dc0ad9513b6bf416871e9",
+    "isolated_byte_identical": true
+  },
+  "SemiprimeHermiteEvaluationBitsBounds": {
+    "source_path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteEvaluationBitsBounds.lean",
+    "source_sha256": "9f7655d379c2a3afc5b4404225419d5c46dfd4990781609de63d45421fde99cb",
+    "object_path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeHermiteEvaluationBitsBounds.olean",
+    "object_sha256": "78c7c0cfeb9eec4bbc926eb6580728d07d77e8202c706517c2bb75bf861e1184",
+    "isolated_object_path": "/tmp/semiprime-hermite-words-20261027/SemiprimeHermiteEvaluationBitsBounds.olean",
+    "isolated_sha256": "78c7c0cfeb9eec4bbc926eb6580728d07d77e8202c706517c2bb75bf861e1184",
+    "isolated_byte_identical": true
+  },
+  "gates": {
+    "strict": "PASS EXIT0",
+    "root15": "PASS EXIT0",
+    "all_generated_transitive_axioms": "PASS standard3 only",
+    "declarations": 80,
+    "theorems": 52,
+    "smoke": "PASS EXIT0"
+  }
+}

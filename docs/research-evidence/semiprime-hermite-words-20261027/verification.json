@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "goal": "ACTIVE",
+  "slice": "EXECUTED_PHYSICAL_HERMITE_AND_ORIGINAL_SOURCE_COST_JOIN",
+  "prior_paper_factoring_bit_time": "N^o(1), permitting subexponential storage",
+  "complete_Lean_whole_program_bit_clock": "OPEN",
+  "prior_controller_mixed_report_subpower": "FROZEN_PROVED",
+  "new_controller_public_report_subpower": "OPEN",
+  "new_controller_all_input_correctness": true,
+  "physical_corrected_port_local_group_on_actual_path": true,
+  "source_and_encoding_work_retained": true,
+  "arbitrary_group_work_assumption_discharged": true,
+  "original_source_width_guards_derived": true,
+  "outer_arithmetic": "PHYSICAL_WORDS_ON_ACTUAL_CALLER_PATH",
+  "Hermite": "PHYSICAL_WORDS_ON_ACTUAL_CALLER_PATH",
+  "per_group_decode": false,
+  "completed_node_decode_only": false,
+  "final_scalar_count_decode_only": true,
+  "original_packet_common_height_derived": true,
+  "normalized_inverse_computed": true,
+  "cardinal_inputs_acquired": true,
+  "full_public_resource_and_bit_simulation_join": "OPEN",
+  "actual_source_derived_packet_width": true,
+  "source_production_and_encoding": "SCALAR_BOUNDARIES_OPEN",
+  "finite_address_control_clock": "OPEN",
+  "new_native_long_query_bound": false,
+  "practical_speedup_claimed": false,
+  "module_count": 19,
+  "generated_declarations": 498,
+  "theorem_constants": 338,
+  "strict_options": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "ordinary_root_import": true,
+  "scoped_linters_per_module": 15,
+  "all_generated_transitive_standard_axioms_only": true,
+  "isolated_objects_identical": true,
+  "dependency_checkpoint_unchanged": true,
+  "actual_compiler_imported_modules": 17636,
+  "dependency_list_provenance": "Lean environment header; no source-text import scanner",
+  "preserved_prior_files": 2874,
+  "preserved_concurrent_files": 24,
+  "preserved_append_only_prefixes": 2,
+  "commit_or_push": false,
+  "modules": {
+    "SemiprimeAffineJetBits": {
+      "source": "RiemannGaussian/SemiprimeAffineJetBits.lean",
+      "source_sha256": "f7b40da75e97d34b0aa29676a23f9a25d3c0ba761dfb889ec25b36caa4c5e873",
+      "object_sha256": "190e29f9dfd7a5c8e45f91070a7e6a5611a423fd786dd44924af0fb203a1d16e",
+      "declarations": 30,
+      "theorem_constants": 21
+    },
+    "SemiprimeNormalizedInverseBits": {
+      "source": "RiemannGaussian/SemiprimeNormalizedInverseBits.lean",
+      "source_sha256": "007d76431c36fe29e09b79a2439dd93b1007e4ec069be606aa2d5c6499bf7bd8",
+      "object_sha256": "f0b10b04f4874ef2e7bca9c9a53c1ffa2286317009cce8ed937d130c29359e38",
+      "declarations": 41,
+      "theorem_constants": 31
+    },
+    "SemiprimeNormalizedInverseBitsBounds": {
+      "source": "RiemannGaussian/SemiprimeNormalizedInverseBitsBounds.lean",
+      "source_sha256": "bdf95c036e489e18f5eca82312cf3de82d2cf38a7b12d22120f9f4720755c9a2",
+      "object_sha256": "8967008322f276541367ecf986a5014d1976d65643c017a35d78123e54d92a10",
+      "declarations": 7,
+      "theorem_constants": 6
+    },
+    "SemiprimeHermiteEvaluationBits": {
+      "source": "RiemannGaussian/SemiprimeHermiteEvaluationBits.lean",
+      "source_sha256": "0534470a98c94fcc13a3a0487d645c9862d7085d36eded14ece3d22ba28db250",
+      "object_sha256": "f10bafdad8532517b3c79d8ae4128c1b43acbc43905dc0ad9513b6bf416871e9",
+      "declarations": 67,
+      "theorem_constants": 40
+    },
+    "SemiprimeHermiteEvaluationBitsBounds": {
+      "source": "RiemannGaussian/SemiprimeHermiteEvaluationBitsBounds.lean",
+      "source_sha256": "9f7655d379c2a3afc5b4404225419d5c46dfd4990781609de63d45421fde99cb",
+      "object_sha256": "78c7c0cfeb9eec4bbc926eb6580728d07d77e8202c706517c2bb75bf861e1184",
+      "declarations": 13,
+      "theorem_constants": 12
+    },
+    "SemiprimeCardinalInputBits": {
+      "source": "RiemannGaussian/SemiprimeCardinalInputBits.lean",
+      "source_sha256": "b99ad37b40dba7f2b30fe3b261e172caee207246db4f6e32a8e4f98ae98aaa51",
+      "object_sha256": "96f05a2cbd2ac2fa55208c9548b8ae55eea50caa2451c409c21bbd15fbc10955",
+      "declarations": 108,
+      "theorem_constants": 60
+    },
+    "SemiprimeScalarWordSum": {
+      "source": "RiemannGaussian/SemiprimeScalarWordSum.lean",
+      "source_sha256": "be4b6c93ea0caae096a6fc289fa7e91e3ec77a1c111be8635206eabf65cde856",
+      "object_sha256": "d16b558155d364760750e66f5c7869e1f2539e9f4ec832c584789cc935287c14",
+      "declarations": 21,
+      "theorem_constants": 15
+    },
+    "SemiprimeHermiteWordWidth": {
+      "source": "RiemannGaussian/SemiprimeHermiteWordWidth.lean",
+      "source_sha256": "5c319a6ea888a9c683514bebf2582c5a9301c8d738db17695e0ad1611a7ce2b6",
+      "object_sha256": "59398433c0e79c10a789b7922c8bcdfec1693c0052a19a52bb41391f3267f924",
+      "declarations": 41,
+      "theorem_constants": 37
+    },
+    "SemiprimeHermiteNodeBits": {
+      "source": "RiemannGaussian/SemiprimeHermiteNodeBits.lean",
+      "source_sha256": "a365b6a9d33e85ffd724adec427a7c8ca5021af3ec0636724079f5a5c03fa788",
+      "object_sha256": "95394f8921926216b518b99b651021306aaa5e016e8958f22a3518d375215ef3",
+      "declarations": 2,
+      "theorem_constants": 0
+    },
+    "SemiprimeHermiteNodeBitsCorrectness": {
+      "source": "RiemannGaussian/SemiprimeHermiteNodeBitsCorrectness.lean",
+      "source_sha256": "af16c2325100152d8518909be5adb445d07ae6ce7f39dc336922a8ac76bf2b17",
+      "object_sha256": "749b92e4e63f689b6d3776ecee04ccfd3b7bac0da2d37e5abefbd6cdf90c9986",
+      "declarations": 4,
+      "theorem_constants": 4
+    },
+    "SemiprimeHermiteNodeBitsBounds": {
+      "source": "RiemannGaussian/SemiprimeHermiteNodeBitsBounds.lean",
+      "source_sha256": "8c0b78280db176f8772b502d208b352e181ddec80f438609b778df3f092a5af2",
+      "object_sha256": "f87a03c3e9187bd4aae4196daed7db6d70ef6fd46d35a369263e0aefa5b0c602",
+      "declarations": 8,
+      "theorem_constants": 6
+    },
+    "SemiprimeAcquiredHermiteBits": {
+      "source": "RiemannGaussian/SemiprimeAcquiredHermiteBits.lean",
+      "source_sha256": "fd9bdf2f2e5fd5cdc19e2e1cf9552bf6e6aac3b9a898779679e258dafb1eff80",
+      "object_sha256": "1a5772325434411b342d2fd58edfde7ec007b6f83d1aebfe1bfbe70e46ef4683",
+      "declarations": 15,
+      "theorem_constants": 12
+    },
+    "SemiprimeWordPacketHermiteInput": {
+      "source": "RiemannGaussian/SemiprimeWordPacketHermiteInput.lean",
+      "source_sha256": "d3125e19316034b3b6b538ef266a83f529f1214d9ca8b8e4acf25a0ddf8372de",
+      "object_sha256": "6c48f961a0b28be6285f152516fd7293f4c4b07c924cfbec389d5910a3969845",
+      "declarations": 9,
+      "theorem_constants": 7
+    },
+    "SemiprimeHermiteBitsCounter": {
+      "source": "RiemannGaussian/SemiprimeHermiteBitsCounter.lean",
+      "source_sha256": "f45a9c3e9effc142c9c6a14ea15fe40a818140b19f24ab3a026ee2f85cc4e4cb",
+      "object_sha256": "895c5b1c05134d2bdfa41f975f9a900e07fd7133198997bfb3790d6729634a65",
+      "declarations": 7,
+      "theorem_constants": 4
+    },
+    "SemiprimeHermiteBitsCounterBudget": {
+      "source": "RiemannGaussian/SemiprimeHermiteBitsCounterBudget.lean",
+      "source_sha256": "337382a300b370c9e6c770942d7d6bb0501857d66332a54396922226010d24c5",
+      "object_sha256": "bb5ff24137e8a60d924337a0863900d660724b2d1e38b6a20613927cc0494be4",
+      "declarations": 11,
+      "theorem_constants": 10
+    },
+    "SemiprimeHermiteBitsSetupCounter": {
+      "source": "RiemannGaussian/SemiprimeHermiteBitsSetupCounter.lean",
+      "source_sha256": "e7873a4233a314bbe854a7b4371de3c6157650b0681f1253076587afb32a5dbf",
+      "object_sha256": "3bd2d075f1bb07a0429df8a67c4f1777f0f4c51a8907b4846a2cb663b2520c08",
+      "declarations": 7,
+      "theorem_constants": 6
+    },
+    "SemiprimeHermiteBitsSetupBudget": {
+      "source": "RiemannGaussian/SemiprimeHermiteBitsSetupBudget.lean",
+      "source_sha256": "10b6ce85eb46f2ca90fdc92b1cc8fc276ac4c67d91b010bc0d4350c3fce74711",
+      "object_sha256": "fc2f23e495823378bec1c2232fc7eaf358fe41e44581c37b46741b761ba4a431",
+      "declarations": 13,
+      "theorem_constants": 9
+    },
+    "SemiprimeHermiteBitsPublicController": {
+      "source": "RiemannGaussian/SemiprimeHermiteBitsPublicController.lean",
+      "source_sha256": "d1f90eb2535aafb36633e33cf98db41ef907cd7fa8260e68ee4a6cdaf50938cb",
+      "object_sha256": "e2a1f6fd292c386632d6e4af023be3322165d3017903ce1064d976c01b480348",
+      "declarations": 46,
+      "theorem_constants": 25
+    },
+    "SemiprimeHermiteBitsScheduledController": {
+      "source": "RiemannGaussian/SemiprimeHermiteBitsScheduledController.lean",
+      "source_sha256": "49ccc998cfe08b844bcfc5830a4471c355a6629cea2c314049c1ebc598a869fa",
+      "object_sha256": "49325b632887d66313fc7ce59a95ac59fafbdf2366014c72dad7d99f0def2f7c",
+      "declarations": 48,
+      "theorem_constants": 33
+    }
+  }
+}

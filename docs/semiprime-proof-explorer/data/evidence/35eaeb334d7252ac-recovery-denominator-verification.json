@@ -1,0 +1,256 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 14,
+    "declarations": 577,
+    "theorems": 346
+  },
+  "modules": {
+    "SemiprimeD1StackRecoveryDenominator": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominator.lean",
+        "sha256": "d6174a4b83cc8d7d15c9cda1fb0782d812783e6af22cf23bc6a681272db5eb7a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominator.olean",
+        "sha256": "5989e271ab65360d5d3c65b1e45665c23a29e4b9dc2039232798821338882211"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominator.olean",
+        "sha256": "5989e271ab65360d5d3c65b1e45665c23a29e4b9dc2039232798821338882211"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorState": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorState.lean",
+        "sha256": "1b2f6ec8941e7e08ea9df0def7e536125bf95108c13809e5f33c913b12bfb3c7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorState.olean",
+        "sha256": "9bdbf1c5a4369c3e05ea97f89425371cc24e235702e0925aca8a32b47dcf1cc2"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorState.olean",
+        "sha256": "9bdbf1c5a4369c3e05ea97f89425371cc24e235702e0925aca8a32b47dcf1cc2"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorEncoding.lean",
+        "sha256": "17af583ad78c3813ac53d63131ffa7d3a8a44eb8e43765755fe826c14d41b19c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorEncoding.olean",
+        "sha256": "d722f66381c2ab308adb179e5a155efe09f4e42967a9c495b06cc6c465800604"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorEncoding.olean",
+        "sha256": "d722f66381c2ab308adb179e5a155efe09f4e42967a9c495b06cc6c465800604"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorPrimitives.lean",
+        "sha256": "3e812d172b721dc20ca57ef69b49ae12925011332f760e91524f22c44e66f68e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorPrimitives.olean",
+        "sha256": "c637338d5ff17065a99201af75f3264a3a81bdc858367b03a12b2602988e0c43"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorPrimitives.olean",
+        "sha256": "c637338d5ff17065a99201af75f3264a3a81bdc858367b03a12b2602988e0c43"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorOperators": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorOperators.lean",
+        "sha256": "1019e0a4a0f6f896f2ce5ddb1aa76c797752b4d04f4efffa9547e16f16d78a38"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorOperators.olean",
+        "sha256": "f948643327c8ef47db0bd2e4577cd7d746be340ce0182cdd60729ff46d855947"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorOperators.olean",
+        "sha256": "f948643327c8ef47db0bd2e4577cd7d746be340ce0182cdd60729ff46d855947"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorFields": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorFields.lean",
+        "sha256": "530d3d9a90bb3e176e7cfd96ed1cf78b131a4dd1a7d5eb53d057b802ce8f9380"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorFields.olean",
+        "sha256": "8daea88d994406f979d2dcd888e3591e498f54b1ac351b93e2d4e1b2d0c147eb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorFields.olean",
+        "sha256": "8daea88d994406f979d2dcd888e3591e498f54b1ac351b93e2d4e1b2d0c147eb"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorView.lean",
+        "sha256": "55ff75bc08dbdd82dae980064aa61af2ac31deca240d89bac157fd4aff7513f7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorView.olean",
+        "sha256": "f12724909c6719df078a3378d8c145be92b0deeaf78c00f8c45ed84a35dccd2f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorView.olean",
+        "sha256": "f12724909c6719df078a3378d8c145be92b0deeaf78c00f8c45ed84a35dccd2f"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorLoop": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorLoop.lean",
+        "sha256": "77e5d3a5fc7dcd101b47665e4a235abcef71191b9e7aadb99670876fdf9226b2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorLoop.olean",
+        "sha256": "799d6969ea8b5014a56fb2f279bfb827acbcf5a6407297009f18b32e9cbcfde6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorLoop.olean",
+        "sha256": "799d6969ea8b5014a56fb2f279bfb827acbcf5a6407297009f18b32e9cbcfde6"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorExecution.lean",
+        "sha256": "cd34d089b6dd0ce1d78870442a8c9ccaecd440401195a5131dbc3a91ea226f20"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorExecution.olean",
+        "sha256": "86aab9580e987f6ed97bd91b8e3d3200f69752417741732926a3572196dada31"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorExecution.olean",
+        "sha256": "86aab9580e987f6ed97bd91b8e3d3200f69752417741732926a3572196dada31"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorCapacities": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorCapacities.lean",
+        "sha256": "383339de57a5cc2e1183db54065da190a0753fb83e860459cc12c69d32955f57"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorCapacities.olean",
+        "sha256": "6f063565778eacf786d96b941f8caa77185db9dc666cbc52e8a8b7abfbb80096"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorCapacities.olean",
+        "sha256": "6f063565778eacf786d96b941f8caa77185db9dc666cbc52e8a8b7abfbb80096"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorBounds.lean",
+        "sha256": "507a14cb9f9ae248296dcb63baccdf4649548ec697d8b26d800f4bd74c18e362"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorBounds.olean",
+        "sha256": "201713e87e07aa202f7b22a3cc958e4149c542299d2fdf6227b866d62561b79f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorBounds.olean",
+        "sha256": "201713e87e07aa202f7b22a3cc958e4149c542299d2fdf6227b866d62561b79f"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorResources.lean",
+        "sha256": "baf4e2871b387aca661e6a0631fcbbeff10e20d672b5a0588493c4afdb42b921"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorResources.olean",
+        "sha256": "48d743ab9d4ba21e238387fecdafe0c46489f74dbdcf53399ea3c69507a5edae"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorResources.olean",
+        "sha256": "48d743ab9d4ba21e238387fecdafe0c46489f74dbdcf53399ea3c69507a5edae"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorSemantics": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorSemantics.lean",
+        "sha256": "2cbcfca61ccbfbd7a82b113c23eeaaf947b62d308a70f2286ba76e00ee88a8d8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorSemantics.olean",
+        "sha256": "cc4c1a801a16be4a1251120315b9424a2ff3653ac54ca46dd21f4f3eefa0fa19"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorSemantics.olean",
+        "sha256": "cc4c1a801a16be4a1251120315b9424a2ff3653ac54ca46dd21f4f3eefa0fa19"
+      }
+    },
+    "SemiprimeD1StackRecoveryDenominatorOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorOriginal.lean",
+        "sha256": "3f0dfeb8a273027611a118c3e257f29ec73aa41956a4c81be23188591fb0f010"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryDenominatorOriginal.olean",
+        "sha256": "61f579e30bdeb550fcf45d07858ef3a30326b7901d9a6b6b00ef142400ecde5f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/SemiprimeD1StackRecoveryDenominatorOriginal.olean",
+        "sha256": "61f579e30bdeb550fcf45d07858ef3a30326b7901d9a6b6b00ef142400ecde5f"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/RecoveryDenominatorControl.lean",
+        "sha256": "8f8fe071583a6bf6e9da060bbbb1589762be7adeeea894aa1707538cdda9e9b5"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/control-0.log",
+        "sha256": "3f7481a5f64e1058a8c119a6b2e3de7283073bccd10b503ee1c1d9a7e0c9cc59"
+      },
+      "expected": "[true, true, true, true, true, true]"
+    },
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/RecoveryDenominatorObserverAudit.lean",
+        "sha256": "77a82d685e09010346cd03ebfdbcd83aa1b41149bef1e5428eee0dab57faf0eb"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-frozen/control-1.log",
+        "sha256": "0806a895d0f6314151e7fa095807789e7cb3eea6a416318b1eb8ccf5ea78c9af"
+      },
+      "expected": "OBSERVER standard_axioms_only=true declarations=49"
+    }
+  ],
+  "full_goal_complete": false,
+  "independent_review": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/recovery-denominator-independent-review.txt",
+    "sha256": "3c2b5025943373ba812814299cf6c88f6654b22e164e2eb57368d04751116cd5",
+    "source_pins_verified": 7,
+    "status": "PASS"
+  },
+  "prior_final_source_object_hashes_unchanged": {
+    "jet-fold": 20,
+    "weighted-mode-core": 15,
+    "weighted-mode-catalogue": 10,
+    "fresh-bank-restore": 7,
+    "recovery-finish": 29
+  },
+  "actual_import_source_object_pairs": 17642,
+  "actual_imported_pins_before_after_equal": true,
+  "all_live_hashes_match": true,
+  "protected_sources": 17054,
+  "protected_sources_unchanged": true,
+  "source_writers_stopped": true,
+  "scope": "prepared actual tagged five-field row tape and physical width template; real streaming parsers/drains/denominator-first full products/one final real fit, exact original common-denominator bytes/value; canonical-row/template acquisition remains upstream"
+}

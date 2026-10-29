@@ -1,0 +1,49 @@
+Independent current FULL review PASS, all4 source modules/all237lines independently read. ALL assignment=before=after=currentSHA. No imports/builds/edits/controls by reviewers.
+
+OWNER
+VertexRecordSplice owner independent read-only review: PASS
+All55 assigned current Meaning lines FULL body read. Assignment=before=after=current SHA256 below. No imports/builds/edits/control reruns.
+Exact singleton records[v]=row(v)++[FALSE] follows full frame append preserving coefficient bits; universal source_vertex invokes actual physical two-word splicer on whole raw native singleton and arbitrary history. cons_stream/records_rows retain exact chronological byte concatenation, one final FALSE only. additive_clock is exact sum of actual component timeBounds 2*TOTALrowbytes+7*vertices, independent of previous history length. It expressly makes no whole supplier/stream-loop implementation claim. No mathematical, codec, cost or scope blocker found.
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceMeaning.lean 87b4500059f5aa1e1bed34ab2f92a674e4afc53d536c2987894d9bedadfff9d3
+
+PORT
+PASS — independent READ-ONLY review of ALL 70 current Execution lines and every proof body.
+Before (assignment) = after = current SHA256; no source/canonical writes, imports, builds, controls or observer replays.
+
+reverse_call includes the actual restoring-free two-word reverse with caller/return overhead, preserving arbitrary history tail and genuine outer returns. strip_run physically pops the newly front FALSE only; false EOF cancellation uses exact List.reverse_append, never a supplied row runtime getter. source_run composes both actual traces and real halt, cleared transient flags/frames at true halt. timeBound = 2*row.length+7 includes new EOF byte, call/return, strip and halt, independent of history length. source_trace keeps arbitrary outer frames/stale flags and machineSplice uses the SAME source clock. No blocker found; no N-only/full caller or full factorization claim.
+
+CURRENT SOURCE PINS
+1eed47777960bf8e8aee7de78843348ff287577af18d8b0cfe29a4c87f37102b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceExecution.lean
+
+VERTEX
+{
+  "verdict": "PASS",
+  "utc": "2026-10-29T05:17:07.990940+00:00",
+  "reviewer": "vertex_record_logger",
+  "scope": "READ ONLY all112 assigned source lines Core+Storage; no imports/builds/edits/controls",
+  "findings": [
+    "Actual fixed2role machine executes consuming reverse ONTO existing history; strips only actual leading FALSE and halts. No history scan/getter/parse/callback.",
+    "Clock2*newrowbytes+7 independent of retained history; all2 data words and actual return cells bounded at every SAME-machine prefix by30*(rowbytes+historybytes+1).",
+    "Prepared row++[FALSE] boundary is explicit. No whole N-only row supplier or full factorer claim."
+  ],
+  "sources": [
+    {
+      "module": "SemiprimeD1StackVertexRecordSplice",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVertexRecordSplice.lean",
+      "sha256": "c70ebaca198ebc6f1f49cd82276f3ea2bd7abc1a904eff766548b63edc5097ec",
+      "lines": 47,
+      "before": "c70ebaca198ebc6f1f49cd82276f3ea2bd7abc1a904eff766548b63edc5097ec",
+      "after": "c70ebaca198ebc6f1f49cd82276f3ea2bd7abc1a904eff766548b63edc5097ec",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackVertexRecordSpliceStorage",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceStorage.lean",
+      "sha256": "187a0059fee5d87aa553dce3c4cb7edfbd32faa2afb22b23688c90b070e6984c",
+      "lines": 65,
+      "before": "187a0059fee5d87aa553dce3c4cb7edfbd32faa2afb22b23688c90b070e6984c",
+      "after": "187a0059fee5d87aa553dce3c4cb7edfbd32faa2afb22b23688c90b070e6984c",
+      "all_lines_read": true
+    }
+  ]
+}

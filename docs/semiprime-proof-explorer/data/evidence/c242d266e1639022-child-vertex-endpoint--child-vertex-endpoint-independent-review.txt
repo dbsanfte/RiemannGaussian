@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "all3_current_bodies_fully_read": true,
+  "lines": 376,
+  "assignments": {
+    "owner": [
+      {
+        "module": "SemiprimeD1StackChildVertexEndpointBanks",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexEndpointBanks.lean",
+        "sha256": "3706e9680b8bd066120f1bb777624adb788fe8947f92fac1121d204aeee9d214",
+        "lines": 154
+      }
+    ],
+    "port": [
+      {
+        "module": "SemiprimeD1StackChildVertexEndpoint",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexEndpoint.lean",
+        "sha256": "26855a6cb47853a136794c8fdcddf7764e6a8f2cca1f788aa3d3f18761a7cb06",
+        "lines": 140
+      }
+    ],
+    "parent": [
+      {
+        "module": "SemiprimeD1StackChildVertexEndpointOriginal",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexEndpointOriginal.lean",
+        "sha256": "b8370cf7da066bfaefbf04eca1bd0ee461eb3b078686f04df26a136ba556a9e1",
+        "lines": 82
+      }
+    ]
+  },
+  "reviews": {
+    "owner": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-owner-review.txt",
+      "sha256": "f4ae1bf320cacd85ec4e038d755936bb834903dc3ffbd2a6714b399cbb929e2a",
+      "modules": 1,
+      "lines": 154,
+      "all_current_source_sha_pins_verified": true
+    },
+    "port": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-port-review.txt",
+      "sha256": "75c66c1cb92711cb4b141eec7599b21d645110bcff45b91a7a9313f73bef955f",
+      "modules": 1,
+      "lines": 140,
+      "all_current_source_sha_pins_verified": true
+    },
+    "parent": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-parent-review.txt",
+      "sha256": "20bc388a1f12300b4f6725f0fc3a47ed35b48506746d4ac100bd4182462d0c9c",
+      "modules": 1,
+      "lines": 82,
+      "all_current_source_sha_pins_verified": true
+    }
+  },
+  "no_import_build_edit_control_replay": true
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "date": "2026-10-26",
+  "scope": "Half-center query reductions and literature audits; external fulltexts excluded",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6429,
+      "sha256": "18f7fb131a7b1e93d28267f9076cf00d34dccb1b988d383879d6a00b55b86484"
+    },
+    {
+      "path": "check_halfcenter.py",
+      "bytes": 4254,
+      "sha256": "064cfeaff1ca18bd4232382d1f99068cf45c804a2064f88fd2a040a10e44bd2d"
+    },
+    {
+      "path": "halfcenter-algorithm.md",
+      "bytes": 8863,
+      "sha256": "8bf8c1610605469efb470e3b0d89b6b11fc0ce9a3480cf7ee49b618f1070023a"
+    },
+    {
+      "path": "halfcenter-review.md",
+      "bytes": 12615,
+      "sha256": "13c606ea86c83c8da4f34b07a0dc86cd1c7e288ec4300cb21df7087e76626544"
+    },
+    {
+      "path": "halfcenter-validation.txt",
+      "bytes": 261,
+      "sha256": "75d1e663b75e19a643a8094c2d4238d8e2211823ebd5ed973215b0c4bdcd4b83"
+    },
+    {
+      "path": "loop-rationality.md",
+      "bytes": 10254,
+      "sha256": "686779202d1ea6ab249f1cb2c4224dbee34d3aea7eb5c6f31cfd9985d9954b58"
+    },
+    {
+      "path": "review.json",
+      "bytes": 1331,
+      "sha256": "221867e6b072e80eb41a6de10a2460588228cadeafba34ed9b8e24feea655a6b"
+    },
+    {
+      "path": "row-cancellation.md",
+      "bytes": 16128,
+      "sha256": "bd9ee5627a1b424cc91b1d0926c26a26ddc0f7389e24aba37f627b59df58023c"
+    },
+    {
+      "path": "satellite-transfer.md",
+      "bytes": 12621,
+      "sha256": "c708f360ce73f79a23aac768d510797931c7e29c1f3c456e9214ad08a30ddbdc"
+    }
+  ]
+}

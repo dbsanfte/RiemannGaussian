@@ -1,0 +1,22 @@
+{
+  "strict": true,
+  "root15": true,
+  "all_generated_standard_axioms_only": true,
+  "declarations": 64,
+  "theorem_constants": 56,
+  "isolated_byte_equal": true,
+  "files": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetProgramBits.lean",
+      "sha256": "30c46ca89aced3d22da38904e9e2e9d0ff53266f654b60c0ab8b33a967b6ea1b"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetProgramBits.olean",
+      "sha256": "0172f40adc61893dc6225df5b1fe4725411b8d7a136384544d51e2ce345f931f"
+    },
+    {
+      "path": "/tmp/semiprime-source-machine-20261027/SourceOffsetProgramBits.isolated.olean",
+      "sha256": "0172f40adc61893dc6225df5b1fe4725411b8d7a136384544d51e2ce345f931f"
+    }
+  ]
+}

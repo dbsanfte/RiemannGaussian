@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-25",
+  "source_repository": "https://github.com/Llaminar/llaminar",
+  "branch": "feat/qwen-flash-next",
+  "source_commit": "f609b409b599ebdfbc48d60e6a77a782127ab3cd",
+  "checkout_clean": true,
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "source_hashes": {
+    ".agents/cuda-tuning/SKILL.md": "9b7aeec410eafdedcc09d1d66daaaf3ee81d75c9fd0686ef8158884ff9b948d3",
+    ".agents/rocm-tuning/SKILL.md": "3dbe4cb90e6b98d7f1df19ec7052b1ce4289e4be1252b11178f1e6eb97aa331e",
+    "AGENTS.md": "0875fabbb5e478509d2588f1c81f7c13d737dfebf43d72d369188a6417783d02",
+    "docs/v2/projects/2026-10/QFN_ATTENTION_STRUCTURE_COMPARISON.md": "6e94ee131917dc31c16b5049916298dfd65811eef6a56149f51aff0ef75ea968",
+    "src/v2/CMakeLists.txt": "2d7deb2e548574549213b27dc826b62f1a2b7a542a6f7b2df05988624e052a6e",
+    "src/v2/execution/compute_stages/stages/LMHeadStage.cpp": "53d7f7f4593205caefcd1dbfdeeb02f117c38babe0688536a183f6db26e08e33",
+    "src/v2/execution/compute_stages/stages/qwen4exp/Qwen4ExpSparseAttentionBuilder.cpp": "6a67e6666ea55b4faddd1acc321b6707a131d71bde091335cfe399b3937991b2",
+    "src/v2/execution/local_execution/orchestrators/DeviceGraphOrchestrator.cpp": "9ac1fdfb6dbe323036a024ce6b26f36ff788c3e673c46934146f4949a4a42b0f",
+    "src/v2/kernels/common/SamplingMath.h": "a04337f38b010a1ea501049f3781df4b6dadecd05304ea435740c10e3169e4f8",
+    "src/v2/kernels/cuda/attention/CUDAQwenSparseAttention.cu": "90574924cf4d9e886c73e0f9449709221ba29715244d75a2dad60c272f38b84d",
+    "src/v2/kernels/cuda/gemm/CUDAFloatingPointGemmKernel.cpp": "4b22f2d7eede2e24c38e5d9bf2c088aeb6203f41115d42dfa01cee20c126cd3b",
+    "src/v2/kernels/cuda/moe/CUDAMoEKernels.cu": "3d6b24f9ae1acab9bcd11f0c1a1952b5e90f72080477a3b042a61dde42b5e5e9",
+    "src/v2/kernels/qwen4exp/QwenSparseGPU.cuh": "b4ad107d8c5b4f83cca437783dc062b0ca82343e04b195830b4b72683da7c7a9",
+    "src/v2/kernels/rocm/attention/ROCmQwenSparseAttention.hip": "959a77d6978be3af2b91e32d5040b18972c977795a8d3b554a4d2d5ac719cdeb",
+    "src/v2/kernels/rocm/attention/ROCmQwenSparseFP16Attention.cuh": "31489be2c316710d5456877eb2e0ffbe391248a169faceaf351803f6138fdef6",
+    "src/v2/kernels/rocm/gemm/ROCmFloatingPointGemmKernel.cpp": "6f12daa8fccde3bce3632cee1197131842ec6911208d474ce6ae743d5989b8ee",
+    "src/v2/kernels/rocm/moe/ROCmMoEKernels.hip": "d280f60a8b94af0c15d3d3ad2e2bfac05ccbc71ec3c8319490807cd8cd408da8"
+  },
+  "artifact_hashes": {
+    "RebaseScales.lean": "ee6f6b176e8cdc0d0f06309e32f6612beb812870ba4555fc9bc350f910158ad1",
+    "RebaseScales.log": "1f486d6804301120f80531ae5313fbed61f07d9f984b30b9e2ef7a3e82cc43a4",
+    "cancellation-counterexample.json": "7744533ee8eebdf02a9b6e3aaaf197e495e94bf93198aa200f4bf04fbd368519",
+    "check_scales.cpp": "d9519296518c7cc2ac84f84478b0047b27e51ef13daf220e1310ad2cf5eb6a17",
+    "rocm-audit.txt": "80b96255d495bd829584382f533cf80a430ceece046edd49f21922f23ac666fb",
+    "sampling-audit.txt": "d26f7a7ca6fcea97ad3afd00fa05f818283002bc5b791bbfe73a37e3c81325db",
+    "scale-results.json": "75977f927d93f8215be7501c953ab5fc2f7051f3b31ac79ab76a1af3d1734051"
+  },
+  "validation": "Five terminal Lean endpoints compiled with warnings as errors and standard-axiom audit. CPU C++ recurrence check only; no GPU compilation, device parity test, profiling, model trace, or measured speedup. Llaminar checkout unchanged."
+}

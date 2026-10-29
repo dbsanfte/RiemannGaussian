@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-26",
+  "local_source_pins": [
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/hybrid-handoff.md",
+      "bytes": 10194,
+      "sha256": "cba1559069b42b1a6d12351eb5603298b6d485e1eaff14addf3d16a0458dddda",
+      "scope": "whole file"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/review-hybrid-handoff.md",
+      "bytes": 4958,
+      "sha256": "d359fa01b974b6cb082aa8e95cd0078e5738801e232689c161f410bf12bbde4b",
+      "scope": "whole file"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/parameterized-controller.md",
+      "bytes": 17202,
+      "sha256": "40dfd5a4f5e2081ddd79669bf2ce6199174258384293db97c1dd1f123dc4973c",
+      "scope": "whole file"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-unique-acquisition-20261024/unique-gcd.md",
+      "bytes": 13539,
+      "sha256": "8eba0f3676ef0de414f4b48fa463a54058aed4fed97db3a0557be0189ec8c862",
+      "scope": "whole file"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quotient-gradient-20261024/weak-readout.md",
+      "bytes": 11129,
+      "sha256": "6d324cd99fa32427de877666e82fb67cc60c857c49e2eecbaa9ad2526e1d9bd1",
+      "scope": "whole file"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/moment-locator.md",
+      "bytes": 12952,
+      "sha256": "86883bfe51b7d018e36df8f4a82dd8416385633ad6df9e3ec12f764ce1a130b9",
+      "scope": "whole file"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/topology-prefix.md",
+      "bytes": 14391,
+      "sha256": "01d19d4bbc28c3e593f4da1812a571954e4ce38de2df12fa917119d5058513df",
+      "scope": "whole file"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1548031,
+      "sha256": "ce5c9e306d09b1b2dc92f9e5b742aac1a15dceed8a4ed377f34eb1b08f22a1e5",
+      "scope": "pre-packet prefix"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "bytes": 2434336,
+      "sha256": "ff0a3b123652bd6c53d9091bffe0b949dec9bf2b8e84505f6d76dda3fe98d632",
+      "scope": "pre-packet prefix"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Villard, Kaltofen’s division-free determinant algorithm differentiated for matrix adjoint computation",
+      "url": "https://arxiv.org/html/0810.5647",
+      "checked": "Sections 2–6, supplied matrix/action, sequence and ring-precision costs; no missing native matrix supplied."
+    },
+    {
+      "title": "Bostan–Jeannerod–Mouilleron–Schost, On matrices with displacement structure: generalized operators and faster algorithms",
+      "url": "https://arxiv.org/html/1703.03734",
+      "checked": "Introduction, Sections 3 and 6; invertible displacement/generator input, field and randomized-solve scope; native diagonal kernel derived explicitly."
+    },
+    {
+      "title": "Chebotarev–Agaev, Forest matrices around the Laplacian matrix",
+      "url": "https://arxiv.org/html/math/0508178",
+      "checked": "Sections 3–4 and adjugate/forest identities; finite cycle specialization derived directly, no positivity imported."
+    },
+    {
+      "title": "Kenyon, Spanning forests and the vector bundle Laplacian",
+      "url": "https://arxiv.org/html/1001.4028",
+      "checked": "Sections 4–5 and 7; bundle/CRSF and determinantal-process context; no inverse/normalization or probabilistic factor selector imported."
+    }
+  ],
+  "limited_access_context": [
+    {
+      "title": "D’Andrea–Dickenstein, Explicit formulas for the multivariate resultant",
+      "url": "https://doi.org/10.1016/S0022-4049(00)00145-6",
+      "scope": "Primary indexed text only; publisher full text returned 403. All used univariate residue/duality identities are proved directly, no theorem or algorithm bound imported."
+    }
+  ],
+  "import_scope": "Finite identities, exact moment algorithms and scoped input/closure checks; no primary source supplies the missing soft-K projective readout."
+}

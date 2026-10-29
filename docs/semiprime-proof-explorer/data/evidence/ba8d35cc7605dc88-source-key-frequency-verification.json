@@ -1,0 +1,164 @@
+{
+  "status": "FINAL",
+  "modules": [
+    "SemiprimeD1StackSourceKeyFrequency",
+    "SemiprimeD1StackSourceKeyFrequencyPrimitives",
+    "SemiprimeD1StackSourceKeyFrequencyCalls",
+    "SemiprimeD1StackSourceKeyFrequencyCounter",
+    "SemiprimeD1StackSourceKeyFrequencyCounterEntry",
+    "SemiprimeD1StackSourceKeyFrequencyEncoding",
+    "SemiprimeD1StackSourceKeyFrequencyRead",
+    "SemiprimeD1StackSourceKeyFrequencyMaximum",
+    "SemiprimeD1StackSourceKeyFrequencyStore",
+    "SemiprimeD1StackSourceKeyFrequencyExecution",
+    "SemiprimeD1StackSourceKeyFrequencyMeaning",
+    "SemiprimeD1StackSourceKeyFrequencyBytes",
+    "SemiprimeD1StackSourceKeyFrequencyBounds",
+    "SemiprimeD1StackSourceKeyFrequencyStorage",
+    "SemiprimeD1StackSourceKeyFrequencyOriginal"
+  ],
+  "source_and_canonical_writers": "STOPPED; immutable",
+  "physical_roles": 21,
+  "source_input": "ONLY actual raw-key vectorBits; no count/max/dictionary/clock operands",
+  "source_API": "Core.initial bits; fixed program; Label.start; Encoding.source keys; Execution.source_run; Bounds.source_run_bounded/machineSource",
+  "output_ABI": "aux.maximum compact binary maximum; aux.dictionary OwnerLookup.records(coded newest-first overrides)[]; aux.source retained raw vector; allother18 words empty",
+  "sentinel_key": "actual OwnerEqualityKey3 raw++[true], physically acquired and injective for literal raw-byte identity, including all high-zero suffixes",
+  "dictionary": "one actual newest-first override per occurrence; ALL older records retained and charged",
+  "clock": {
+    "own_same_program": true,
+    "time": "10^9*(vectorBytes+1)^5",
+    "all21_and_realreturns": "10^12*(vectorBytes+1)^5",
+    "native_clock_transport": false,
+    "near_linear_claim": false
+  },
+  "semantics": "exact raw List.count for ALL keys, duplicates, empty/prefix/high-zero; exact compact CounterMaximum.maxState and original IncidenceAcquisition acquired count-state maximum",
+  "counter_entry": "Label.increment\u2192counterReturn REALret; CounterEntry.source_run <=40*(oldword.length+1)+1 actualsteps, arbitrary retained21 bank with7fresh counter operands; compact successor even allcarry/zero",
+  "gates": {
+    "strict_modules": 15,
+    "source_default_heartbeats": 200000,
+    "raised_heartbeat_options": false,
+    "ordinary_RiemannGaussian_all15_lint": true,
+    "Elab_async": false,
+    "EVERY_generated_constants_std3": 798,
+    "generated_theorems": 464,
+    "independent_byte_equal": 15,
+    "actual_header_import_pairs": 18084,
+    "actual_header_source_object_files": 36168,
+    "before_after_current_unchanged": true,
+    "baseline_files_unchanged": 17054,
+    "historical_prefixes_unchanged": true,
+    "prior_frozen_unchanged": {
+      "source-selected-keys": {
+        "files": 32,
+        "changed": []
+      },
+      "source-incidence": {
+        "files": 50,
+        "changed": []
+      },
+      "source-alphabet64": {
+        "files": 38,
+        "changed": []
+      },
+      "root-phase-fresh-records": {
+        "files": 46,
+        "changed": []
+      },
+      "root-phase-parameters": {
+        "files": 36,
+        "changed": []
+      }
+    }
+  },
+  "compiled_controls": {
+    "exit_code": 0,
+    "actual_steps": 12572,
+    "cases": [
+      {
+        "case": "empty_vector_zero",
+        "occurrences": "0",
+        "actual_steps": "13",
+        "maximum_bytes": "0",
+        "all21roles": "true",
+        "rawsource_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "empty_rawkey",
+        "occurrences": "1",
+        "actual_steps": "144",
+        "maximum_bytes": "1",
+        "all21roles": "true",
+        "rawsource_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "numeric_equality_traps",
+        "occurrences": "6",
+        "actual_steps": "2586",
+        "maximum_bytes": "2",
+        "all21roles": "true",
+        "rawsource_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "prefix_related_sentinel_keys",
+        "occurrences": "6",
+        "actual_steps": "2872",
+        "maximum_bytes": "2",
+        "all21roles": "true",
+        "rawsource_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "allcarry_growing_counter",
+        "occurrences": "8",
+        "actual_steps": "5599",
+        "maximum_bytes": "4",
+        "all21roles": "true",
+        "rawsource_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      },
+      {
+        "case": "strict_max_tie_retention",
+        "occurrences": "4",
+        "actual_steps": "1358",
+        "maximum_bytes": "2",
+        "all21roles": "true",
+        "rawsource_retained": "true",
+        "allhistoryrecords_retained": "true",
+        "allwork_clear": "true",
+        "exact_rawbytes_sentinel": "true",
+        "flags_clear": "true",
+        "exact_two_outer_returns": "true"
+      }
+    ],
+    "observer_constants": 26,
+    "same_machine_step": true,
+    "kernel_snapshot_identity": true
+  },
+  "pins": "/tmp/semiprime-explicit-rate-20261027/source-key-frequency-final-source-object-pins.json",
+  "failed_new_proofs_archive": "/tmp/semiprime-explicit-rate-20261027/source-key-frequency-failed-attempts",
+  "scope": "key-only prepared acquisition; original key acquisition/selector explicit caller; no N-only whole-pipeline claim",
+  "no_root_registration_journal_commit_push": true
+}

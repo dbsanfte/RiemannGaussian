@@ -1,0 +1,178 @@
+{
+  "CombinedSourceMachineAudit.lean": {
+    "source": "/tmp/semiprime-source-machine-20261027/CombinedSourceMachineAudit.lean",
+    "sha256": "e6190821e3f75350069f5e714c97c3a4248683c8ec9f958013d29c0b36c7da55"
+  },
+  "CombinedSourceMachineAudit.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/CombinedSourceMachineAudit.log",
+    "sha256": "059c4d9ff254b0372bc03557ad364c8dd0c48ad5e5858fdbcdf23fd0744f14ad"
+  },
+  "README.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/README.md",
+    "sha256": "1ce303d29eef5c189310f6bc7e6cc0d493e4cdc74bf088c21ce64a9cbf9dceb7"
+  },
+  "SemiprimeSourceEnumerationState.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceEnumerationState.lean",
+    "sha256": "ccde30c233be31eb3fc350af046b5464e8eec947dd607b64a77209c9e6be9f19"
+  },
+  "SemiprimeSourceMemoryBits.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceMemoryBits.lean",
+    "sha256": "be32d7fbf8d7afd260b51b5369c901c7559ad6cc9674d911fdb116ec385ce207"
+  },
+  "SemiprimeSourceOffsetProgramBits.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetProgramBits.lean",
+    "sha256": "30c46ca89aced3d22da38904e9e2e9d0ff53266f654b60c0ab8b33a967b6ea1b"
+  },
+  "SemiprimeSourceOffsetProgramBudget.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetProgramBudget.lean",
+    "sha256": "ff40d75999000b66e226a6aa63358b645e41f2298c99b916566fdcff11ea4f76"
+  },
+  "SemiprimeSourcePackingState.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourcePackingState.lean",
+    "sha256": "38a5529f3487a63541d37db5b82ed459f651afabefd02193c3c182831ef47c63"
+  },
+  "SemiprimeSourceParityState.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceParityState.lean",
+    "sha256": "fec349b9d819d6c815f0c0d9db7f5183af2e64417061c1f4ecbf2845a9e7e1c6"
+  },
+  "SemiprimeSourceProgramBits.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceProgramBits.lean",
+    "sha256": "a72092bea230ff7f5780baf75777de5466facc8f388918f22c8a40bbacd02e98"
+  },
+  "SemiprimeSourceProgramStorage.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceProgramStorage.lean",
+    "sha256": "0611a794b965cb91777c5319b3f2aa2c6dbc2bc38a4b3afd17902c92809dd38b"
+  },
+  "all-modules.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/all-modules.json",
+    "sha256": "d710c25eab67914125e11508713d680d44304304cf72d09d88fbb2d7139c11dc"
+  },
+  "archive_source_machine.py": {
+    "source": "/tmp/semiprime-source-machine-20261027/archive_source_machine.py",
+    "sha256": "c56d0d61c05b4b1ed758746cf3960d577d8b53cff886107174ab3b85c9080ead"
+  },
+  "compiler-imports.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/compiler-imports.json",
+    "sha256": "ec20f3e67adc1c0e5db1b08a2cbce7b3d8d65688dbb3cf3c540434369c0e29eb"
+  },
+  "enumeration-state-notes.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/enumeration-state-notes.md",
+    "sha256": "9e4f1309a12e6ca3a1bd40c678993ac4564a80095b40ce5ce8a2cb1b06ee897d"
+  },
+  "enumeration-state-verification.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/enumeration-state-verification.json",
+    "sha256": "fea292ada68279ff6f1f4f1a41b8ec6071d1be08be16dfa62c3e2faf2a55e077"
+  },
+  "final-isolated/SemiprimeSourceEnumerationState.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/SemiprimeSourceEnumerationState.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceMemoryBits.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/SemiprimeSourceMemoryBits.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceOffsetProgramBits.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/SemiprimeSourceOffsetProgramBits.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceOffsetProgramBudget.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/SemiprimeSourceOffsetProgramBudget.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourcePackingState.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/SemiprimeSourcePackingState.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceParityState.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/SemiprimeSourceParityState.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceProgramBits.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/SemiprimeSourceProgramBits.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceProgramStorage.log": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/SemiprimeSourceProgramStorage.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/dependencies-after.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/dependencies-after.json",
+    "sha256": "3eefa0c12042778645fca2e0d84911037e7b7c20ed501df0fde5dfd336b9cb13"
+  },
+  "final-isolated/dependencies-before.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/dependencies-before.json",
+    "sha256": "3eefa0c12042778645fca2e0d84911037e7b7c20ed501df0fde5dfd336b9cb13"
+  },
+  "final-isolated/results.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/results.json",
+    "sha256": "58fa9f8e8755def33302c28c6588d3383b416c0905d1b46d67ff8d839452f8fc"
+  },
+  "final-isolated/summary.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/final-isolated/summary.json",
+    "sha256": "5e73101ded31e23cebb26c163b4ad6e2da59e9a607158084b76f2d7565213a8f"
+  },
+  "journal-append.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/journal-append.md",
+    "sha256": "acdeb5dcb6acb226bb279e044ca861b7f35283b4b9cdcfb0e851a8e7a4bda23f"
+  },
+  "next-source-machine-join.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/next-source-machine-join.md",
+    "sha256": "0cab518c67531c2994408f75a6061ab91631c3995b1a2239a8da29ca5981e2bb"
+  },
+  "offset-program-notes.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/offset-program-notes.md",
+    "sha256": "62c36645928e007be96ace52909e36b6fbb058fb30c3db86d68e657bdc386838"
+  },
+  "offset-program-verification.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/offset-program-verification.json",
+    "sha256": "d034e280b289898a4b3be4b01b8527c72877094e589f1636490e3aeb36675d6a"
+  },
+  "packing-state-notes.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/packing-state-notes.md",
+    "sha256": "2cfdc921a36df310760aac0ce83555be173cf2d13220f83814d25f8469fe3f31"
+  },
+  "packing-state-verification.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/packing-state-verification.json",
+    "sha256": "a022bd092ec931d1e568141aadf89fa1740c6250905c4974a4fa1c69998acdc1"
+  },
+  "preservation-before.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/preservation-before.json",
+    "sha256": "8427c8b6af0cbf07604dbb73cafd04bebf29d0537fd456d8ea4a854be4fcf377"
+  },
+  "review-offset-simulator-sources.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/review-offset-simulator-sources.json",
+    "sha256": "69de0ef17d8b0ed83afd5dcf974c46b2eba9ab7ea40710d7f0b3a67ad3dfbd62"
+  },
+  "review-offset-simulator.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/review-offset-simulator.md",
+    "sha256": "86d2a7fb26917aaf9392de9a40db6698017ac78425cbaa73fa9d05bbd2485b41"
+  },
+  "review-source-machine-source-hashes.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/review-source-machine-source-hashes.json",
+    "sha256": "f8265e0d52badaad7a0b5ad2f321dd61213a00440338bd9a9d1a9027daac289a"
+  },
+  "review-source-machine.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/review-source-machine.md",
+    "sha256": "e4df7960e0b63695a6ac1d5e430c677c1cc5b687f96e16f8a524d939097542c6"
+  },
+  "review-source-structure-pins.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/review-source-structure-pins.json",
+    "sha256": "495f647e449ca8146ec604864fe67979f1af08ead83bfa3e6eb7cb65e7709abe"
+  },
+  "review-source-structure.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/review-source-structure.md",
+    "sha256": "b7154b2d6b8607b89ac5ac3a04440942bced431f3acf750942c7610a7c9a56d9"
+  },
+  "source-parity-state-notes.md": {
+    "source": "/tmp/semiprime-source-machine-20261027/source-parity-state-notes.md",
+    "sha256": "c112efbcb2713a610eec708d90190c6363afe6782d69c9ceb379cdc5c70f5c66"
+  },
+  "source-parity-state-source-hashes.json": {
+    "source": "/tmp/semiprime-source-machine-20261027/source-parity-state-source-hashes.json",
+    "sha256": "2432bb280dd74d79271df9221c1e1121a2e08ef32aa124d6b4933e5cbb2a3868"
+  },
+  "verify_source_machine.py": {
+    "source": "/tmp/semiprime-source-machine-20261027/verify_source_machine.py",
+    "sha256": "5ae724c7f194e4a55e45c3f5072a295f4b841ff12054f92bf322739d5f2fe235"
+  }
+}

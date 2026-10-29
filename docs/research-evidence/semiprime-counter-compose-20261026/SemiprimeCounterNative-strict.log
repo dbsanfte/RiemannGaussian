@@ -1,0 +1,19 @@
+'RiemannGaussian.SemiprimeCounterNative.native_taylor_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterNative.correctedProduct_coeff_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterNative.correctedProduct_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterNative.globalPolynomial_taylor_coeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterNative.correctedProduct_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeCounterNative.globalPolynomial_at_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterNative.globalPolynomial_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

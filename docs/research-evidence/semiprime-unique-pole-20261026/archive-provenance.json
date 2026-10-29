@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-26",
+  "note": "Agents authored three investigation reports and four independent reviews in scratch. Root authored hybrid handoff, exact diagnostic script, README, validation and integration metadata. Scratch-only statements describe derivation, not archival. No prior frozen packet was edited.",
+  "files": [
+    {
+      "archived": "check_pole_identities.py",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/check_pole_identities.py",
+      "source_sha256": "4eb05b8ac83805b01422fca402756f88ded5c22f6da94fec25b5cfc13c10eb0e",
+      "archive_sha256": "4eb05b8ac83805b01422fca402756f88ded5c22f6da94fec25b5cfc13c10eb0e",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "hybrid-handoff.md",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/hybrid-handoff.md",
+      "source_sha256": "e7aebd94d82a891706454a82449eb76b17a9cd62184db194f85986b397a8e8d3",
+      "archive_sha256": "e7aebd94d82a891706454a82449eb76b17a9cd62184db194f85986b397a8e8d3",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "pole-identity-checks.json",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/pole-identity-checks.json",
+      "source_sha256": "1a4b75fedafc4a4d27df5110608c2881f037efc76fe09424e53f8fb20c9d5671",
+      "archive_sha256": "1a4b75fedafc4a4d27df5110608c2881f037efc76fe09424e53f8fb20c9d5671",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "qpearson.md",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/qpearson.md",
+      "source_sha256": "de0095dfde748bccd47d90543119e98045eddf863960b89f0e33ba5351be829f",
+      "archive_sha256": "3fcf3fe6862f596b7637a4ea662395b11a6b5ffdabb1569dfb1b90cb71592e0f",
+      "copy": "absolute prior-repository links normalized to relative packet links"
+    },
+    {
+      "archived": "review-handoff.md",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/review-handoff.md",
+      "source_sha256": "1b6d729e3dea6c356efc0829b76b5cb6156b001fd2017f455eaf651760625094",
+      "archive_sha256": "1b6d729e3dea6c356efc0829b76b5cb6156b001fd2017f455eaf651760625094",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-qpearson.md",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/review-qpearson.md",
+      "source_sha256": "076fc77017fff41cb2815525216145432190d370e4dd61d424191810d97638d5",
+      "archive_sha256": "076fc77017fff41cb2815525216145432190d370e4dd61d424191810d97638d5",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-subresultant.md",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/review-subresultant.md",
+      "source_sha256": "832e1308d91e769f07332427148f89347bba60066736bceb14e250930aa0ee40",
+      "archive_sha256": "832e1308d91e769f07332427148f89347bba60066736bceb14e250930aa0ee40",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-weighted.md",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/review-weighted.md",
+      "source_sha256": "fce161fe39c80ef26781b67d7d5a58337efa699950c032297ddcbcc24d25cb33",
+      "archive_sha256": "fce161fe39c80ef26781b67d7d5a58337efa699950c032297ddcbcc24d25cb33",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "selected-subresultant.md",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/selected-subresultant.md",
+      "source_sha256": "b5dfcd477b934534bb77e8d8040a26bf0f461f613ea4f1d1274a485aa241129a",
+      "archive_sha256": "923bc7bfc5f35ed1d72d2a15896331e48711f6435e2d6eb8656568ba59b0e096",
+      "copy": "absolute prior-repository links normalized to relative packet links"
+    },
+    {
+      "archived": "weighted-contraction.md",
+      "scratch_source": "/tmp/semiprime-unique-pole-20261026/weighted-contraction.md",
+      "source_sha256": "75005fb73c58a97775749fd6a625848bfd90c9c9374a0d47936c83c8b90ed7a9",
+      "archive_sha256": "75005fb73c58a97775749fd6a625848bfd90c9c9374a0d47936c83c8b90ed7a9",
+      "copy": "verbatim"
+    }
+  ],
+  "root_authored": [
+    "hybrid-handoff.md",
+    "check_pole_identities.py",
+    "pole-identity-checks.json",
+    "README.md",
+    "validation.md",
+    "sources.json",
+    "review.json",
+    "archive-provenance.json",
+    "manifest.json"
+  ],
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

@@ -1,0 +1,8 @@
+AUDIT RiemannGaussian.SemiprimeCounterNative: declarations=33, theorems=27, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeCounterSeparation: declarations=13, theorems=9, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeCounterCompose: declarations=62, theorems=27, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeCounterTail: declarations=58, theorems=53, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeJetRecurrence: declarations=30, theorems=25, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeBooleanNetwork: declarations=217, theorems=142, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeCounterSearch: declarations=51, theorems=25, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeMacroBitNetwork: declarations=115, theorems=66, standard_axioms_only=true

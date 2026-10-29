@@ -1,0 +1,5 @@
+{
+  "command": "/home/dbsanfte/.elan/bin/lake env lean -DwarningAsError=true -o .lake/build/lib/lean/RiemannGaussian/SemiprimeMacroBitNetwork.olean RiemannGaussian/SemiprimeMacroBitNetwork.lean",
+  "exit_code": 0,
+  "source_sha256": "8d451c169141e7178288509d789f66fd0fb9ed1603b8da6d668503fb936f2f4e"
+}

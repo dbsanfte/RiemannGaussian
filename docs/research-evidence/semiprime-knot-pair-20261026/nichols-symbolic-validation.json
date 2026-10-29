@@ -1,0 +1,9 @@
+{
+  "ring": "Z[a^\u00b11,b^\u00b11]",
+  "YB_all_64_basis_words": true,
+  "R_inverse_both_orders": true,
+  "both_rotated_inverse_solves": true,
+  "both_curl_partial_traces": "identity",
+  "trefoil_full_cut_scalar": "1-(a+b)*(1-a)*(1-b)",
+  "trefoil_correction": "ab*(Delta(a)*Delta(b)+1-ab)"
+}

@@ -1,0 +1,107 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "modules": [
+    "SemiprimeD1StackSourceSelectedKeys",
+    "SemiprimeD1StackSourceSelectedKeysEncoding",
+    "SemiprimeD1StackSourceSelectedKeysPrimitives",
+    "SemiprimeD1StackSourceSelectedKeysView",
+    "SemiprimeD1StackSourceSelectedKeysLookup",
+    "SemiprimeD1StackSourceSelectedKeysLog",
+    "SemiprimeD1StackSourceSelectedKeysBody",
+    "SemiprimeD1StackSourceSelectedKeysParse",
+    "SemiprimeD1StackSourceSelectedKeysLoop",
+    "SemiprimeD1StackSourceSelectedKeysSetup",
+    "SemiprimeD1StackSourceSelectedKeysFinish",
+    "SemiprimeD1StackSourceSelectedKeysExecution",
+    "SemiprimeD1StackSourceSelectedKeysBytes",
+    "SemiprimeD1StackSourceSelectedKeysBounds",
+    "SemiprimeD1StackSourceSelectedKeysStorage",
+    "SemiprimeD1StackSourceSelectedKeysOriginal"
+  ],
+  "source_and_canonical_writers": "STOPPED",
+  "physical_roles": 39,
+  "retained_Env_roles": 25,
+  "private_roles": 14,
+  "private_work_empty_final": 12,
+  "source_input": "ONLY actual complete acquired Env25 bank +actual occurrence pair tape; other14private words fresh except source",
+  "program": "parameterless fixedCore.program/machine, Label.start",
+  "scope": "preparedphysicalselected-key source; actualselector/cache/occurrence acquisition bycaller; noN-onlypacket/factoringclaim",
+  "source_ABI": "OwnerLookup.records ordered(ownerCompactKey,n+factorCompactKey) pairs[]",
+  "output_ABI": "vectorBits(keys), one key per originaloccurrence inforwardorder inclrepeats; eachkey=frame(ownerSelectedID,factorSelectedID RAWtail), nosecondIDframe",
+  "key_zero": "zero/zerojointkey=[false]; singletonoutputvector=[true,true,false,false,false]",
+  "operations": [
+    "paid originalEnv.querysave/drain",
+    "paid source-tapecopyONCE",
+    "actualpairtag/twoFieldparsers/validpops",
+    "paidownerkeycopy\u2192realEnv.lookup\u2192actualTRUEfoundpop\u2192paidownerIDsave\u2192query/outputdrains",
+    "paidfactorkeycopy\u2192realEnv.lookup\u2192actualTRUEfoundpop\u2192paidrawfactorIDtailcopy\u2192query/outputdrains",
+    "realFrame ownerIDontoactualfactorIDtail; realFrame completejointkeyintooutervectorfield; literalTRUEtag",
+    "realrowreverse-log; fouractualprivatefielddrains; chronologicalinputreaderloop",
+    "literalFALSEoutputseed; ONEfinalhistoryreverse; paidoriginalqueryrestore/savedquerydrain/finalhalt"
+  ],
+  "no_replay": "selector/cache/frequency acquisition notrerun",
+  "complete_cache": "Encoding.Complete proof-onlyvalidnumericendpoints; Original.original_complete derivesitfromfullNativeD1run_length=n+F andoriginaltypedranges, no runtimefree-mask/countadvice",
+  "exact_original": "Original.keys_original/output_original/source_run_original entireIncidenceAcquisition.acquire.keys literal equality viaFeatureBits.jointBytes(2,2), Prefix.stored_eq andactualcompactoldvariablekeys",
+  "source_order_alignment": "Original.canonical_namespace =ports.map(numberKeyowner,numberKey(n+factor)); sharedactualOccurrence\u2192Metadata portorder lemma alreadystrict inAgent1SelectOccurrences, notimportedbeforeitsFINAL",
+  "cache_preservation": "ALL25Envwords EXACT inclarbitrarychosen/query/pfx/dictionary/nextkey; source tape exact; eachlookupwork physicallyfresh/cleared",
+  "clock": {
+    "own_whole": "10000000*S^3",
+    "S": "Encoding.inputSize=tapeBytes+Env.cacheSize(dict/key/chosen/query/prefix/+1)",
+    "same_actual_trace": true,
+    "old_native_report_clock_transport": false,
+    "nearlinear_claim": false,
+    "API": "Execution.source_run/selectedKeysInTime; Bounds.runBound_le/source_run_bounded/machineSource"
+  },
+  "storage": {
+    "all39_plus_realreturns_everycompiledprefix": "1000000000*S^3",
+    "API": "Storage.machine_prefix_cells"
+  },
+  "strict": {
+    "modules": 16,
+    "terminal_exit_code": 0,
+    "default_heartbeats": 200000,
+    "heartbeat_overrides": false,
+    "autoImplicit": false,
+    "warningAsError": true,
+    "results": "source-selected-keys-strict-results.json"
+  },
+  "controls": "source-selected-keys-controls-result.json (8whole8058steps+1negative87=8145; ALL39/Env25/flags/2realreturns positive; negativeonlyactualabort/nokey,28observerStd3/snapshotidentity)",
+  "failed_attempts_archived": [
+    "/tmp/semiprime-explicit-rate-20261027/source-selected-keys-failed-attempts/20261028T204501779457Z",
+    "/tmp/semiprime-explicit-rate-20261027/source-selected-keys-failed-attempts/20261028T205718025568Z"
+  ],
+  "failed_attempts_not_passed_gates": true,
+  "source_object_pins": "source-selected-keys-final-source-object-pins.json",
+  "preservation": "source-selected-keys-preservation.json",
+  "public_import": "SemiprimeD1StackSourceSelectedKeysOriginal",
+  "open": [
+    "N-onlysourcecompositionthroughactualSelector63",
+    "actualfrequency/max/roundpadding nextownedtask",
+    "PacketRows/orientation source Agent1",
+    "fullpacket/recursivecounter/fullfactoringgoal"
+  ],
+  "ordinary_root_import_audit": {
+    "all16_modules": true,
+    "all15_linters_each": true,
+    "Elab.async": false,
+    "default_heartbeats": 200000,
+    "EVERY_generated_standard3_only": 551,
+    "theorems": 252,
+    "terminal_exit_code": 0,
+    "log": "source-selected-keys-final-audit.log"
+  },
+  "independent_objects": {
+    "count": 16,
+    "all_byte_equal": true,
+    "terminal_exit_code": 0,
+    "results": "source-selected-keys-independent-results.json"
+  },
+  "live_import_preservation": {
+    "pairs": 18223,
+    "files": 36446,
+    "changed": [],
+    "missing": [],
+    "audit_terminal_exit_code": 0,
+    "independent_terminal_exit_code": 0
+  }
+}

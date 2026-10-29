@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-10-27 01:13:14 UTC",
+  "goal_status": "active",
+  "slice_status": "PROGRESS",
+  "totals": {
+    "modules": 13,
+    "declarations": 897,
+    "theorem_constants": 694
+  },
+  "modules": {
+    "SemiprimeMacroFlagExtension": {
+      "source": "RiemannGaussian/SemiprimeMacroFlagExtension.lean",
+      "source_sha256": "f741c0dfabaed3e029328ae6eccb3884e52eb6cea4bd08206677ba9d5853ce25",
+      "olean_sha256": "bc8752a9e2f0c8d17c5e483a655e3d46d3c10c920ac2ebfb538439b0e101c030",
+      "declarations": 54,
+      "theorems": 42,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeMacroGraphSemantics": {
+      "source": "RiemannGaussian/SemiprimeMacroGraphSemantics.lean",
+      "source_sha256": "7f439b8fe274959f417b10123e5907dfd874283d5b2512818061c89fc8529df7",
+      "olean_sha256": "54796e1e011d7c2028281fbd008525c34332ca8072b8e53b7828f1424affe099",
+      "declarations": 215,
+      "theorems": 165,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeMacroGraphUnique": {
+      "source": "RiemannGaussian/SemiprimeMacroGraphUnique.lean",
+      "source_sha256": "9774e108d86dc51d4d31ffec25b456a5d77c237b43b60ed6ea655a907230e3c1",
+      "olean_sha256": "6252bc21234acf9b8ffaaf3c066ba1607222944d8cec4b4ceef6355d1dc4c6ff",
+      "declarations": 9,
+      "theorems": 9,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeMacroGraphExtension": {
+      "source": "RiemannGaussian/SemiprimeMacroGraphExtension.lean",
+      "source_sha256": "99c745e75a33ff6aadae7f27d0e0a15d886bc3d1b7c45ba30d63ff148b95c337",
+      "olean_sha256": "ffb68c9a9c879109856eea16b295426457602c3be8952a147e4aafa835e256e4",
+      "declarations": 97,
+      "theorems": 75,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeMacroParameters": {
+      "source": "RiemannGaussian/SemiprimeMacroParameters.lean",
+      "source_sha256": "c080bebe112924b24e809db8ce37854e17873223c7e14fe4cb3292e3644e3fff",
+      "olean_sha256": "d84e77a6844cd3e83ffd1092ffa5f03655e4552ebb2e4d44424f2e72715cf2dc",
+      "declarations": 91,
+      "theorems": 79,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimePublicFactorCount": {
+      "source": "RiemannGaussian/SemiprimePublicFactorCount.lean",
+      "source_sha256": "3f9aa45ff0644b769f49f0906035f739009d208562dc30d9fc9bf18c9ff32608",
+      "olean_sha256": "c3147f509ae4413d9367d76bd51f4923c3966019f413539915d77aa26d350298",
+      "declarations": 36,
+      "theorems": 30,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeScheduledCounter": {
+      "source": "RiemannGaussian/SemiprimeScheduledCounter.lean",
+      "source_sha256": "77370e194174b1e030d63f3d5c51de1668ef53940bb376550c35b00284550841",
+      "olean_sha256": "222b38389df47b7043d0fead6608be0da405d3afb8cb512f5abc0d769876c137",
+      "declarations": 44,
+      "theorems": 39,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeJetArray": {
+      "source": "RiemannGaussian/SemiprimeJetArray.lean",
+      "source_sha256": "da19ac336f17406ba971e0d6334bd15d24badd2da9f3e7bd76ab24bc4ea162d1",
+      "olean_sha256": "06a7d22a9ae1116b9b859436e873d422c114521dcd5aa01d4ac001b214264293",
+      "declarations": 104,
+      "theorems": 54,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeJetArrayHeight": {
+      "source": "RiemannGaussian/SemiprimeJetArrayHeight.lean",
+      "source_sha256": "99865c9e2b0989b80222f7086cbd8e12238f3e4d2a4a54b725002a49b476b145",
+      "olean_sha256": "07fb48df98aa53736b407dd9f2934dd9fbdcdfcad16af361840896d8a27f0caf",
+      "declarations": 46,
+      "theorems": 44,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeCounterEnumeration": {
+      "source": "RiemannGaussian/SemiprimeCounterEnumeration.lean",
+      "source_sha256": "fb47659fbcb3c20618beac658c30fda10fbbc00f366371a0f9e7615c328408f3",
+      "olean_sha256": "247840deb8087d96e66f3d80ca5fd56911d21daf4d4473a5275e00f3d10289fb",
+      "declarations": 82,
+      "theorems": 48,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeSourceRowHeight": {
+      "source": "RiemannGaussian/SemiprimeSourceRowHeight.lean",
+      "source_sha256": "06806f80f9b36daf4cbd29c1ed1abd493cc8d93294f834742cfaf766e29257e8",
+      "olean_sha256": "f1a6a31cff4af5e283bb89210510184e77bb01078043f9af6220fd70bdd77559",
+      "declarations": 92,
+      "theorems": 84,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeTaylorHeight": {
+      "source": "RiemannGaussian/SemiprimeTaylorHeight.lean",
+      "source_sha256": "669ba9e5313ecc5e71d48e4dd25750779a50975b0efdc5fd6a481f8d54c9445d",
+      "olean_sha256": "e1e431f16976fc41251e1985db8e4f7fef2557ab993b148b8c76c899191fe3ad",
+      "declarations": 13,
+      "theorems": 12,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    },
+    "SemiprimeCardinalHeight": {
+      "source": "RiemannGaussian/SemiprimeCardinalHeight.lean",
+      "source_sha256": "432c16f1b7139c1590e861218df6e7c7e086e312507a756213a89d80801ac1f7",
+      "olean_sha256": "14a81cb41398f5d93b24209462dbda5fd6f872fe9c3e9042f9d06e8da43a14ca",
+      "declarations": 14,
+      "theorems": 13,
+      "strict_build": "PASS",
+      "root15_lint": "PASS",
+      "all_generated_transitive_axioms": "standard_only"
+    }
+  },
+  "strict_flags": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "all_generated_declarations": true,
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "independent_python_replays": {
+    "constructor_tests": 10,
+    "adapter_tests": 4,
+    "identical_results": true
+  },
+  "preserved": {
+    "protected": 1553,
+    "concurrent": 24,
+    "prefixes": 2
+  },
+  "local_markdown_links": 18,
+  "primitive_factoring_bit_time_proved": false,
+  "native_softK_acquisition_proved": false,
+  "commit_or_push": false
+}

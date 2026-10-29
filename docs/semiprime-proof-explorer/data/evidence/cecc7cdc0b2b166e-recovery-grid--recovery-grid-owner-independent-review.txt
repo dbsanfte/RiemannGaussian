@@ -1,0 +1,37 @@
+READ-ONLY INDEPENDENT RECOVERY GRID OWNER REVIEW: PASS
+Scope: ALL20 assigned owner front/operation files, plus read-only Core ABI/alias snippets and Node fit-call re-read to avoid truncated output. This is the assigned portion of the shared67-file review, not a standalone whole67 FINAL claim.
+No imports, builds, source/canonical edits, or control reruns. All20 current source SHA pins agree exactly with the before-read snapshot.
+
+Findings:
+1. Honest FIVE-word physical ABI: unary a/M/u markers, actual binary t, and actual retained width template W. Setup physically seeds/doubles 2^(a+1) markers and a+2 FALSE index template; growth loops pay actual output VALUE. No supplied grid size, height, geometry, multiplicity, slope vector, operation stream, decoder, answer, or clock in runtime control.
+2. Fixed104 inventory includes R36 +10 geometry fields (both displaced shadows) +6 actual unary-divider +4 actual unary-product +32 signed/denominator registers +16 Aux. Shared ripple aliases R36's four actual cells with serial lifetimes. Copy source/target/scratch injectivity is proved;35-role rational cleanup covers every non-template role and retains W;10 geometry cleanup covers shadows and preserves source aliases originalA/q. Proof-side Words/getReg/answer/pc/slot abstractions never occur in the actual finite Label/Instruction payload.
+3. All copies/calls are actual included traces. Copy5len+4, Frame6len+5 and drain len+1 include real returns/EOF; geometry, unary division/product and R36 whole normalization/two-fit sources are called physically. local_call explicitly pays call plus real ret and preserves every outer return cell. No native report clock is transported.
+4. Height derives (3M+u-1)/u from3 paidM copies, actualu, real marker removal/division and divisor/remainder drains. Zero-u is a physical peek branch with height0. Index fitting uses physically acquired a+2 template, separate from coefficient W; original binaryt is retained and exact legacy padded-index bytes follow from value/range plus fixedwidth injectivity, not an injected digit answer.
+5. Initial true geometry is acquired from actuala/q aliases and its shared point word physically drained; true OLD geometry remains distinct from fitted alpha/center registers. Original five tapes remain retained through acquisition. Geometry result preserves the two displaced shadows until actual geometry cleanup.
+6. OperationInput copies ALL four raw operands before any destination erasure, so aliased fold destinations cannot destroy needed inputs. Operation calls sealed real R36; OperationOutput drains both old destination fields, copies actual fitted magnitude/denominator, physically pops/pushes the actual sign (including negative zero/W0), then drains all35 private/shadow fields. Fixed operand orientation is retained; legacy equality is byte meaning only.
+7. Semantic byte caps use actual W-fitting, actual signed-byte lengths and actual unary metadata. Literal zero-power oneWord is explicitly allowed at W0 via W+1/W+2 caps. h*u<=3M+u and actual slope count<=visited indices*(h*u), including every repetition; slope framing charges sign, all bits, delimiters and tags. WordCaps preserves untouched actual tapes and actual mass includes ALL104. No repeated polynomial of recursive subtree runtimes supplies operand bounds.
+8. Encoding explicitly specifies all104 stopped roles, original numerator/denominator/scalar/argument/center/alpha/slopes raw bytes and preserved metadata/W. It uses legacy values, not legacy clocks. N-only row/W acquisition and the downstream recovery caller are outside this prepared five-input stage.
+
+No correctness/scope blocker found in this assigned portion. Parent and port reviews cover remaining loops/original resource closure; the separately pending OriginalResources compiler was not imported/read as a released dependency here.
+
+CURRENT REVIEWED SOURCE SHA256 PINS (20):
+343692c0704a56891799cbbccec1c8f03a4f4b2c700f0ef1e787837f14699416  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridInventory.lean
+5b0b83a1983f3e9ef9f09d3906f1f7e05f5545ac23c8964a81480373eb06593c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridPrimitives.lean
+3af66fca5119618c8264aa948b58ce1e784a558df31a7c64d5e66e162d8adf51  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridView.lean
+cec7977661d7aba759f9f2bd57a764a49207c08ad7fe0d6d713d71a3e68e5539  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridCalls.lean
+5f31c9c696ce44d6d57dd93aeeabb3c0d496af3be707968879d6b3a218ea5d07  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridGrowth.lean
+f86f57c7057f812041fc293a5dfd78edca1ee6129e752e784862ba72cc3f5b3c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridLiterals.lean
+934ad1a0401bc2238d45be442812cb1c62d8d7666de477f7983efa45f8fd79f4  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridSetup.lean
+52471d8905e377ca1672d890dac5446c0c3660ab44879e7d3264ef80cb30a90e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridHeight.lean
+0af2af412c6e1dc4ac1dca460e31e135342a3e3fc6edf5b3ecb9fd6ef795a008  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridNode.lean
+e18659038348fc49247338fbaedbf9f0e5d4e106c3895f09d16d590e875f884b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridCleanup.lean
+40f19f454167a53aeff2d1596ffb7a2d8231559494ceb38913d82758c469cf14  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridGeometry.lean
+ff641f22b900ff39cde6a4a57f5fa03e34a736971658f6e33cb5e1bf2d76fd36  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridAcquisition.lean
+029c304294886f27373f2a1cfe308f80e89ae185ba0070d66783c64cf7c54f5b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridEncoding.lean
+72a935a421aa29884d40f18377718ccb0be61554729101bcf39697163bb1718f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridByteBounds.lean
+0fc22d3083bc3e4a31a27863e97b81fabb199b99f2de50480909f94764911a4c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOperationInput.lean
+927b5427c38d47673811811340a1aed5971951a47e928cd536cae766ac2af88c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOperationOutput.lean
+8d06f3756594abe05d8791da25dcc37990bcd66160ee3354438d4033d6c0265c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridOperation.lean
+6bdb750a6119125d253046eaf5ad64ca8e35d4f6bd2493ce0f516adb3f361d4b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridRegisters.lean
+43c9fa3b5225aacbb7c9f215f86aeb1c4bcefb369390bded8b38935dd9260ca8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridWordCaps.lean
+ac9b31f2ebc0117d103743992197bdd7a82a9af3b3fa2a9741d805810f5135be  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryGridSite.lean

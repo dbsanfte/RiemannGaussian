@@ -1,0 +1,140 @@
+{
+  "goal_status": "active",
+  "goal_complete": false,
+  "previous_turn_classification": "progress",
+  "modules": {
+    "SemiprimeCounterNative": {
+      "source": "RiemannGaussian/SemiprimeCounterNative.lean",
+      "source_sha256": "4b403051f3a62aecaa460dad394900cb21098c24102387bf80770ff53caddec8",
+      "repo_olean_sha256": "d51630ae3afef9831534bc8a733b15773ca09ce27ea80bf46ca063727d11abf3",
+      "strict_isolated_olean_sha256": "d51630ae3afef9831534bc8a733b15773ca09ce27ea80bf46ca063727d11abf3",
+      "strict_source_compile": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 33,
+      "generated_theorems": 27,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeCounterSeparation": {
+      "source": "RiemannGaussian/SemiprimeCounterSeparation.lean",
+      "source_sha256": "65b5382457f4167a7978a650d574115cee558136a4cbf57d12884e5c8c3a36a6",
+      "repo_olean_sha256": "8ef25764eb3cfe0980bb9c58454054aa97527e2f9b14aa10b9704e076c582a9b",
+      "strict_isolated_olean_sha256": "8ef25764eb3cfe0980bb9c58454054aa97527e2f9b14aa10b9704e076c582a9b",
+      "strict_source_compile": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 13,
+      "generated_theorems": 9,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeCounterCompose": {
+      "source": "RiemannGaussian/SemiprimeCounterCompose.lean",
+      "source_sha256": "2477bd0cc314e09c27de8308cc32ef87138eaf38dfa115a28e1595981a87f916",
+      "repo_olean_sha256": "e101daae9d1b82d0ff3d264f8dcd10a3d3bf71dbe33ce585cc21f8d721263a0d",
+      "strict_isolated_olean_sha256": "e101daae9d1b82d0ff3d264f8dcd10a3d3bf71dbe33ce585cc21f8d721263a0d",
+      "strict_source_compile": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 62,
+      "generated_theorems": 27,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeCounterTail": {
+      "source": "RiemannGaussian/SemiprimeCounterTail.lean",
+      "source_sha256": "d2aa14210819ad7f7b6b720e601532820bf8f021ed9a8c92140af1c1534dea77",
+      "repo_olean_sha256": "c4ea0a00dd7c3b06c3c4a3660cc965953fcd32c9216acf2c001e302dc98aac65",
+      "strict_isolated_olean_sha256": "c4ea0a00dd7c3b06c3c4a3660cc965953fcd32c9216acf2c001e302dc98aac65",
+      "strict_source_compile": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 58,
+      "generated_theorems": 53,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeJetRecurrence": {
+      "source": "RiemannGaussian/SemiprimeJetRecurrence.lean",
+      "source_sha256": "51722c42900b4070247dd0f23c47210c4c9a235c9e65c08ff0fa0e36ee2fad32",
+      "repo_olean_sha256": "184cf6776685130ad939ea92d22a7d98e6e9e14277635c300b43c120a969823f",
+      "strict_isolated_olean_sha256": "184cf6776685130ad939ea92d22a7d98e6e9e14277635c300b43c120a969823f",
+      "strict_source_compile": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 30,
+      "generated_theorems": 25,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeBooleanNetwork": {
+      "source": "RiemannGaussian/SemiprimeBooleanNetwork.lean",
+      "source_sha256": "83885b2713252947c6113dd7917a2153f15e32a4a9f6bf4ff2e452b19ce9e9ca",
+      "repo_olean_sha256": "8d02574f127c0c5f6babfc0eb8eefd561b780844a506a66ea81139a8d679d826",
+      "strict_isolated_olean_sha256": "8d02574f127c0c5f6babfc0eb8eefd561b780844a506a66ea81139a8d679d826",
+      "strict_source_compile": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 217,
+      "generated_theorems": 142,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeCounterSearch": {
+      "source": "RiemannGaussian/SemiprimeCounterSearch.lean",
+      "source_sha256": "596fe86a9739d7ae684643299432c805dc144763b8fb92608fd3b1cb29c89fb3",
+      "repo_olean_sha256": "c6a43acdac468c5a1c3867293bd8088eacbd34a2f5a277937f92a80457d44e7d",
+      "strict_isolated_olean_sha256": "c6a43acdac468c5a1c3867293bd8088eacbd34a2f5a277937f92a80457d44e7d",
+      "strict_source_compile": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 51,
+      "generated_theorems": 25,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeMacroBitNetwork": {
+      "source": "RiemannGaussian/SemiprimeMacroBitNetwork.lean",
+      "source_sha256": "8d451c169141e7178288509d789f66fd0fb9ed1603b8da6d668503fb936f2f4e",
+      "repo_olean_sha256": "58eafe9c4aeca8665e8267ef909ca066e89cc6c90a5f52441d4404b9aef18c3a",
+      "strict_isolated_olean_sha256": "58eafe9c4aeca8665e8267ef909ca066e89cc6c90a5f52441d4404b9aef18c3a",
+      "strict_source_compile": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 115,
+      "generated_theorems": 66,
+      "every_declaration_axiom_audit": "standard_only"
+    }
+  },
+  "compiled_algebraic_counter_composition": true,
+  "compiled_actual_prefix_count_connection": true,
+  "numeric_schedule_tail_proved": true,
+  "jet_inverse_algebra_proved": true,
+  "compiled_complete_small_port_graph": false,
+  "compiled_quantitative_layout_producer": false,
+  "primitive_time_space_proved": false,
+  "factoring_runtime_proved": false,
+  "independent_reviews": [
+    "compose-separation-review.md",
+    "boolean-jet-review.md",
+    "macro-search-review.md"
+  ],
+  "constructor_reuse_requires_new_guards_and_representation": true,
+  "preservation": {
+    "protected": 1322,
+    "concurrent": 24,
+    "prefixes": 2,
+    "status": "PASS"
+  },
+  "external_build": {
+    "timestamp_utc": "2026-10-26 23:50:56 UTC",
+    "status": "running",
+    "completed": 1945,
+    "total": 2569,
+    "failed": {},
+    "active_modules": [
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.HashCircuitProgramInterpreter",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafProgramSourceReadyCore",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.BucketTupleProgramConcreteBaseline",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafQueryFrontendInputBudget",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafScopeResourceBoundsDecode"
+    ],
+    "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "live_exec_session_id": 85099,
+    "state_path": "/tmp/semiprime-d1-audit-20261026/lean-build-state.json",
+    "whole_endpoint_verified": false,
+    "comparator_run": false,
+    "dependency_of_these_eight_modules": false,
+    "rule": "Continue the verified live handle. Do not restart solely on observation timeout."
+  },
+  "local_links": 11,
+  "git_diff_check": "PASS",
+  "new_numerical_campaign": false,
+  "commit_or_push": false
+}

@@ -1,0 +1,14 @@
+'RiemannGaussian.SemiprimeJetRecurrence.recurrence_localQuotient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeJetRecurrence.packet_recurrence_localQuotient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeJetRecurrence.inverseCoeff_convolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeJetRecurrence.inversePolynomial_congruence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeJetRecurrence.jet_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeJetRecurrence.jet_mul' depends on axioms: [propext, Classical.choice, Quot.sound]

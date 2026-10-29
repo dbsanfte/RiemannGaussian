@@ -1,0 +1,17 @@
+{
+  "authored_anchors": 29,
+  "browser_page_errors": [],
+  "byte_exact_browser_snapshots": 3160,
+  "canonical_semiprime_sources": 3160,
+  "changed_module_status": "legacy-unclassified",
+  "displayed_full_theorem": "OPEN",
+  "documentation_comments_inserted": 3,
+  "linter_maxRecDepth": 32768,
+  "no_lean_build": true,
+  "previous_review_preserved_historical": "docs/research-evidence/semiprime-publication-20261029/fresh-publication/explorer-independent-review/review.txt",
+  "removing_comments_recovers_exact_original_bytes": true,
+  "research_status": "paused",
+  "reviewed_pins_stable": true,
+  "root_import_only_except_comments": true,
+  "status": "PASS"
+}

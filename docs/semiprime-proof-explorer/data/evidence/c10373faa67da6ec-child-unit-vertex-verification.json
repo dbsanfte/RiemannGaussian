@@ -1,0 +1,198 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 8,
+    "declarations": 196,
+    "theorems": 85
+  },
+  "modules": {
+    "SemiprimeD1StackChildUnitVertex": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertex.lean",
+        "sha256": "56b29e69eb52825b79a4916eda047a8fdf8488dd452223114f5f65ece45a221a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildUnitVertex.olean",
+        "sha256": "88217b84887059090b1700ec4b5fe6e3028477ff4e546d41430698b605f7697c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-frozen/SemiprimeD1StackChildUnitVertex.olean",
+        "sha256": "88217b84887059090b1700ec4b5fe6e3028477ff4e546d41430698b605f7697c"
+      }
+    },
+    "SemiprimeD1StackChildUnitVertexSpec": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexSpec.lean",
+        "sha256": "6199c00e872842f0c2186e5f7452115a7d99786a969034221c3ba461340eada6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildUnitVertexSpec.olean",
+        "sha256": "0ed8da403b5a35b9f984ff9d465dcfc77501cb07f1aef770a8ef6a2de066068e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-frozen/SemiprimeD1StackChildUnitVertexSpec.olean",
+        "sha256": "0ed8da403b5a35b9f984ff9d465dcfc77501cb07f1aef770a8ef6a2de066068e"
+      }
+    },
+    "SemiprimeD1StackChildUnitVertexCalls": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexCalls.lean",
+        "sha256": "7bc02c16b6818475f17c57b0f2804bfda4aa02caddf095bab4175a2fe4224614"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildUnitVertexCalls.olean",
+        "sha256": "9463886cfb345daf8c58e2b133743eb1255ad188a9d8550f358ae00b931b08cd"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-frozen/SemiprimeD1StackChildUnitVertexCalls.olean",
+        "sha256": "9463886cfb345daf8c58e2b133743eb1255ad188a9d8550f358ae00b931b08cd"
+      }
+    },
+    "SemiprimeD1StackChildUnitVertexFrames": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexFrames.lean",
+        "sha256": "4bf9e5cf8b6c4d430abd3ca8aaa12aa56096d8410dabd9234cead74057705761"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildUnitVertexFrames.olean",
+        "sha256": "0ce3ae07a6078d2e18a58cac2e6daa2b9257cb97923b212e40407cb781f9aacc"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-frozen/SemiprimeD1StackChildUnitVertexFrames.olean",
+        "sha256": "0ce3ae07a6078d2e18a58cac2e6daa2b9257cb97923b212e40407cb781f9aacc"
+      }
+    },
+    "SemiprimeD1StackChildUnitVertexOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexOriginal.lean",
+        "sha256": "d27c58e1f8c8f161caf440ccb6920009d2a84006a0e149f7c34ac137dfe32f55"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildUnitVertexOriginal.olean",
+        "sha256": "9dcb16fce0458d0406cc5909c55b1110294e202c8ebd219fc290531bd47ebc36"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-frozen/SemiprimeD1StackChildUnitVertexOriginal.olean",
+        "sha256": "9dcb16fce0458d0406cc5909c55b1110294e202c8ebd219fc290531bd47ebc36"
+      }
+    },
+    "SemiprimeD1StackChildUnitVertexBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexBounds.lean",
+        "sha256": "3316f83b64dedf50c941eec1a97370cae973cf7e0279d930b5873b1b8aa73584"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildUnitVertexBounds.olean",
+        "sha256": "aeeb5c6361fa458615c2152abe08a2bc965fa94496b606a6be8bab6d51fd3caa"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-frozen/SemiprimeD1StackChildUnitVertexBounds.olean",
+        "sha256": "aeeb5c6361fa458615c2152abe08a2bc965fa94496b606a6be8bab6d51fd3caa"
+      }
+    },
+    "SemiprimeD1StackChildUnitVertexStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexStorage.lean",
+        "sha256": "95487aaec1008524fe458ae0690999f925f41f4d3933a0f3659b558bed8a5fbd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildUnitVertexStorage.olean",
+        "sha256": "838667a20266ebd23ecaf04db01078cf97323b92e5a6d0230e8d84794d3caa8f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-frozen/SemiprimeD1StackChildUnitVertexStorage.olean",
+        "sha256": "838667a20266ebd23ecaf04db01078cf97323b92e5a6d0230e8d84794d3caa8f"
+      }
+    },
+    "SemiprimeD1StackChildUnitVertexMeaning": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexMeaning.lean",
+        "sha256": "f62b653b7045dcd68d1cf4296fcb4b0c08d03632244b5c72e61cc7ea9a11db88"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildUnitVertexMeaning.olean",
+        "sha256": "0e534a1aec2265dc652f488f36580c4446f048dd2fe1e6e79a0c46302886f16c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-frozen/SemiprimeD1StackChildUnitVertexMeaning.olean",
+        "sha256": "0e534a1aec2265dc652f488f36580c4446f048dd2fe1e6e79a0c46302886f16c"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "sealed_utc": "2026-10-29T05:08:37.710459+00:00",
+  "source_and_canonical_writers_stopped": true,
+  "source_and_canonical_mode": "0444; permanently immutable",
+  "default_200000_heartbeats": true,
+  "strict_root15_every_generated_std3_independent_byte_actual_terminal0_session": 41357,
+  "actual_after_live_header_terminal0_session": 89641,
+  "actual_imported_pins": {
+    "before_pairs": 18095,
+    "after_pairs": 18103,
+    "live_pairs": 18103,
+    "all_external_before_pairs_unchanged": true,
+    "all_current_actual_header_source_object_hashes_match": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-live-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-live-after.json",
+    "live": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-live.json"
+  },
+  "independent_read_only_review": {
+    "status": "PASS",
+    "all8_current_sources_fully_read": true,
+    "lines": 601,
+    "all_before_after_assignment_current_source_pins_match": true,
+    "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-independent-review.txt",
+    "sha256": "1daa419ca816cb0b1c44b128f60e3c539291dcd166a3ccb8232c78e67d6f2e2f",
+    "source_canonical_writes": false
+  },
+  "actual_controls": {
+    "status": "PASS",
+    "actual_terminal0_session": 76978,
+    "whole_cases": 3,
+    "steps": [
+      169,
+      1002,
+      513
+    ],
+    "actual_total_transitions": 1684,
+    "all32_data_words_exact": true,
+    "real_context_calls_per_case": 1,
+    "real_unit_calls_per_case": 1,
+    "actual_preserving_frame_calls_per_case": 1,
+    "two_displaced_caches_empty": true,
+    "framing_scratch_empty": true,
+    "flags_clear_two_real_outer_returns": true,
+    "observer_generated_standard3": 30,
+    "snapshot_identity_kernel_checked": true,
+    "source_object_pins_before_controls_match_current": true,
+    "source": "/tmp/semiprime-explicit-rate-20261027/ChildUnitVertexControls.lean",
+    "source_sha256": "4221f2fd96989f5c2f1911cb0a6ed26dfd40a63ca50c4d5a8c62f6ebb7696a3f",
+    "log": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-controls.log",
+    "log_sha256": "5b8d9127a95b94df0b7da239faca10fe3032170dbd80e3a3b4350eef0b82fc9a",
+    "no_frozen_control_replays": true
+  },
+  "scope": {
+    "physical_roles": 32,
+    "runtime_inputs": "ONLY actualaxesvector andbinaryprecision; J15acquiresrankandTRUEtensorprecisionVALUE; Unit15readsSAMEphysicalcaches, bothdisplacedshadowsEMPTY. Norank/unit/table/clock/Fits advice.",
+    "runtime_program": "wholeJ15 once thenwholeUnit15 once, actualFALSEleaftag/FALSEEOF, onepreservingtableFrame, actual3bitemptyportframe+TRUEvertex, truehalt/clearedflags; all32+actualreturns counted.",
+    "semantic": "ENTIRE nativeinactiveleftOne vertex andexistingrecords codec; actualinactive_child_empty+child_length deriveemptycanonicalports internally. Originalcontextheadersretained; no alignedparent acquisition/reverse coefficientloss/nativeclock transport.",
+    "clocks": "SAMEown<=10^8*(R+1)^2; ALL32+actualreturnsEVERYcompiledprefix<=10^11*(R+1)^2. Roriginalheaderbytes+axescount+rankVALUE+precisionVALUE+1. FraminginputfromsemanticGoodtable, no elapsedclockpower.",
+    "honest_frontier": "PREPARED2headers, NOToriginalN-onlyinitList. Actualactivationbranch/parentstreamzip/fullchildrightpacket/recursivecounter/sourceV/recoveryhandoff/globalbitbound remainOPEN."
+  },
+  "baseline_protected_files": {
+    "status": "PASS",
+    "files": 17054,
+    "historical_journals_whole_exact_append0": true
+  },
+  "api": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/child-unit-vertex-api.txt",
+    "sha256": "7f6894bf7de227b6b69f7e4f11c4c5a50023aa936de3c352f6afd01a264a1030"
+  },
+  "no_journal_registration_commit_push": true
+}

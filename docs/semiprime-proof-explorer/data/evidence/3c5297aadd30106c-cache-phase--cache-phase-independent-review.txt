@@ -1,0 +1,32 @@
+READ_ONLY_REVIEW_PASS_NOT_FINAL
+Independent reviewer: /root/port_serializer_resume.
+Read Core, Execution, Clock, Storage, RootOriginal, Original, Projection, InputBounds, FoldBound and Rejected. No source edits or canonical/object rebuilds.
+
+The parameterless fixed238-role program initializes only physical heap/counter/issuedref and literal nested child-result tape. Its real calls are Restore95, Fold111.prepared, and Blocks31.ready; ten explicit preserving copies carry four NEW-context words into the fold, four OLD-context words plus q into blocks, and the ACTUAL folded coefficient output into blocks. All banks, modes, contexts and native functions in proofs are specifications of physical inputs/outputs; they are absent from runtime control. The whole actual restore bank and stopped fold bank remain retained. Every allocated role and alias/shadow is included in the238 count.
+
+The restored phaseValid word is physically peeked. Accepted execution pays the real restore, guard, both copy sequences, literal child-tape fold, extraction and halt. Rejection pays actual restore, guard, false-vector push and halt while retaining the untouched literal child tape. ValidCache is a proof-side statement about actual restored OLD/NEW caches and q. RootOriginal discharges it from the actual Fresh result for every original accepted phase; rejected phases use the same physical bank's false marker. q positivity comes from the original actual good guard.
+
+OLD p and NEW P stay separate. NEW axes/rank/precision/width feed Fold111. OLD axes/rank/precision/width feed Blocks31. Block extraction copies raw coefficient words from the actual NEW-precision folded result in ascending j*oldrank+i order; no p=P premise or accidental width equality is introduced. Native JetBlockBits.extract is used only in the result identity. Both original contexts and the actual q are derived internally from restored cache fields, with no given rank/precision/solver operand.
+
+Clock.timeBound_le charges the SAME actual component/copy trace. Physical inputSize is heap/counter/reference/child-tape bytes, including cached unary rank/width materialization. restored_word_le comes from the actual restorer's run_data_bound, not a selected-bank-height supplier. Child maxima and work-node counts come from actual nested tape constructors; metadata/cache bytes pay rank and precision VALUES, so the claimed physical-input polynomial does not hide binary-value expansion. Own10^80*(S+1)^16 and all238/realreturns10^85*(S+1)^16 are fixed before all operands. Prefix storage follows actual halt plus run_data_bound/frame_bound and the full238 inventory.
+
+RootOriginal preserves the actual producer heap/counter/reference identities, uses its real selected record for both branches, and gives the same prepared consumer. Its doc scope correctly retains literal child-result acquisition as upstream work; it does not claim an N-only child solver or completed factoring pipeline. The separate Lineage module was reviewed additionally after its strict pass.
+
+No correctness or scope defect found in the reviewed sources. Parent owns final strict/default200k/root15/generated-Std3/independent-byte/live-pin/compiled-control gates; this report is not FINAL.
+
+Additional Lineage review PASS: producer_and_consumer retains the actual positive canonical-binary-N producer run with its own runBound, the physical heap/counter History and allocator Issued reference, and the complete actual consumer run with its own four-input polynomial clock. rootSource uses the same actual producer output bytes; the result does not overwrite a source reader or supply decoded banks/contexts as runtime operands. It explicitly proves two source executions and keeps the recursive controller and literal child acquisition join open. It does not call this a single N-only factoring program. No defect found; no source/canonical edits or builds were performed.
+
+Reviewed source SHA256 pins:
+{
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhase.lean": "74d0c363374392d950ad9c96c87aac97720ef5b5ddd37b60882faf67f7f1a2c7",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseExecution.lean": "8cefaf50fd30be5a0f4849f22c80c7fd4c89298057051b951ab8042f48d5112c",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseClock.lean": "c2e9c7a0348be51551848783f5b2b57abd39e7c9bffcc48eaa10689e35141ce8",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseStorage.lean": "1d7b437f96d4df53e787e42dc0cbb754e674b5415f80ef8affca428adcb72f37",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseRootOriginal.lean": "83e732e9b29e52af530735d7128fe8b62ef3b7795412a4b830613c7bcd5154d8",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseOriginal.lean": "4044312e75d1a37a9a5c1d2900c8ea7732a114a7147f58c3eb1071fb3bed8f82",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseProjection.lean": "3fcb2fe03cbe9c5aec1e6d759a3a95c16e9ab0235b1887d62a1bfb5948d86e60",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseInputBounds.lean": "cd7d179c42a0f25f278f781f26b8db2a83e69c31124c8a69e4d0777fcccc2df9",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseFoldBound.lean": "648cd5e12b58227515674e28ede2c515f2ef04cc5e7c7e4bb001ca65fee64d45",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseRejected.lean": "5cc0cd5e404817070cd85e46c80bf55d07953e4bbff282765b10144de327008a",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackCachePhaseLineage.lean": "847d67162fe7693d8f76a6902d3f544896fb04ffcce955420509ed5c50d76aac"
+}

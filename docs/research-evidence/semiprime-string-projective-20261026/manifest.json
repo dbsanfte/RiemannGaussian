@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-26",
+  "files": {
+    "README.md": {
+      "bytes": 7778,
+      "sha256": "acbee82d9c07101b2ae0b2aaf6a6e55ae65a1b447a30658ae0a59eb223915f20"
+    },
+    "axis-controller.md": {
+      "bytes": 13503,
+      "sha256": "3c20d574149bb1a0663980df645c6d23f47655664c4cf571ae8c9c4f073ef313"
+    },
+    "projective-closure.md": {
+      "bytes": 16931,
+      "sha256": "5c120f2b9cbc0644c1f00bb21f739e993568824ed1eb6b3fb20d4a747786671a"
+    },
+    "review-axis-integration.md": {
+      "bytes": 3869,
+      "sha256": "4ba7759737604e7adec0753765835bd54a21a859641afdc0b3da1940828a44a2"
+    },
+    "review-projective.md": {
+      "bytes": 5267,
+      "sha256": "24e1c68b6877327255b3b51c7f4d832543622367cf68f81fb4e5bdc94ea99276"
+    },
+    "review-singular.md": {
+      "bytes": 4522,
+      "sha256": "1cdd5c1f0e005f7e0a1df01aba5037e6854d9a80352e3077f109f2fbac31a6f9"
+    },
+    "review.json": {
+      "bytes": 3504,
+      "sha256": "aa5b272fda485873b5217be45ac899ac9be8c7e901badc8b6581544aca82afef"
+    },
+    "singular-recurrence.md": {
+      "bytes": 10883,
+      "sha256": "0b610a9995cb669fceb6f996f660b03febd2cea5c70f5b93f9072cd779c095cf"
+    },
+    "sources.json": {
+      "bytes": 4584,
+      "sha256": "b03f6f950be17bc2d4524dfdee7121b9476daf8f097f0da6462f37b69c518300"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Independent root AffineJetBits review
+
+PASS, reviewed read-only. Source/object exact pins: root-affine-review-hashes.json. Independent ordinary-root 15-linter and every-generated-declaration transitive-axiom audit EXIT0: 30 declarations,21 theorem constants, standard three axioms only. See RootAffineJetAudit.lean/root-affine-audit.log. No source edits or extra upstream build.
+
+`build` computes exactly one recursive suffix and then the physical truncated multiply of that suffix by #[oneWord,c]. `affine_decode` and the coefficient-to-array equality establish the SAME frozen buildAffine order, not an interchangeable reordered product assumption. Empty input is genuinely #[oneWord], size1 even at J=0; nonempty input is truncated to size J. `build_size` and the access-cost estimate explicitly preserve this exceptional singleton rather than assuming every intermediate size is J. Valid/Bounded proofs match both branches.
+
+The common slope representation d/d is original input data. `powers_fit` derives strict denominator and convolution-prefix numerator caps from d,J<=2^b and the public width; `build_correct` supplies every multiplyBits guard from that original bound and the proved suffix representation. No intermediate Fits, product value or inverse is an argument. `J=0` is handled by empty coefficient claims and the real runtime singleton/truncation behavior; it does not invalidate the arithmetic proof.
+
+The clock retains the suffix once, the actual multiplyBits report, literal factor construction/copy allowance 4W+10, actual input-array lookup costs and bounded slope widths. The cost proof uses suffix size<=J+1, explicitly covering the empty singleton. Input slope acquisition and literal machine-address/tape implementation remain separate. No full-counter clock/rate claim is inferred from this component. No substantive correction requested.

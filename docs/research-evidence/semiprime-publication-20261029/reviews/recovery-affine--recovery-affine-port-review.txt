@@ -1,0 +1,31 @@
+INDEPENDENT READ-ONLY REVIEW PASS — /root/port_serializer_resume
+UTC 2026-10-29T03:57:49.511667+00:00
+All22 assigned sources, ALL1368 current lines/full bodies read. Tool truncation in the initial combined read was resolved by fully rereading Factor/InnerClear/Pair; the remaining batches were untruncated. No imports, compiler builds, canonical/source edits or controls were performed by this review.
+
+Findings: actual descending current-k/remaining unary-marker loops retain EVERY convolution pair, including genuine factor-zero extensions. The finite unit/slope/zero progression corresponds exactly to factor indices n-k in original #[oneWord,c]; raw signed slopes are copied unchanged, so upstream negative signs/flips remain byte-for-byte rather than being replaced by a value-only claim. Product FIRST plus retained suffix SECOND matches the exact ascending native right fold, including all normalization/two-fit calls and W0. Actual array readers pay both preserving copies, both real Field parses/TRUE-valid pops, all skipped signed/denominator fields, selected unread-tail drains, EOF and missing literal ZERO. Empty denominator fields remain valid fields, never mistaken for array EOF. Cache writes commute only at distinct physical roles; each product/add pair then clears six actual transient fields while retaining the fitted suffix and clean R36 W bank. Actual coefficient q countdown constructs all requested rows; denominator/signed Frame calls and TRUE tags produce original chronological row order. Two REAL bit reversals move the entire new framed array after fully draining old bytes, restoring scratch and preserving every sign/padding byte. Slope parsing and all slope/suffix drains preserve complete source/caller caches. Raw native convolution/whole multiply-array codec equalities are exact word/tape equalities, not commutative rational-value substitutions. q0, empty arrays/slopes, u0-derived q and W0 follow actual marker/EOF/literal source branches, not a fit or count supplier. Native report clocks do not replace any actual machine clock in these22 files. No blocker found.
+
+Scope: only the assigned22 physical-middle/semantic-order sources are reviewed here; parent/other reviewer cover acquisition, global polynomial/storage and remaining original joins. N-only downstream scalar/counter completion is not asserted.
+
+Before-assignment pins equal AFTER/live pins for ALL22. Current flat SHA256 pins:
+05761f4a0ec73caae45a77994926fffceb34376d6cfabe65610fec77dc972c44  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineArrayMove.lean
+830c8c29882cfc610e2c724f91308f24d488486365c1f1dbbc823e0c17b3a0a6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineReadLoop.lean
+6eadbc8031457e9ceab031e3c99a035a20968541c0a2b408b1b5a70972c95a06  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineArrayRead.lean
+7a27214c20de0e3814aa05ce3657395a88abed8bd1a0191c347af501627f15f1  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineCache.lean
+0b04d407fc46dc5c6369bb6ce609c4cbd4302129f3fa68de378afcdc7d6eeae6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineFactor.lean
+f1bbbab6d3c71091b82e3583bab87ff995a8912997ac5aa1dad73bba0b297ae9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineInnerClear.lean
+34c8cda352d1b4bbae6da49f7eb84de6531b3759449be27c4697f02a74fab639  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffinePair.lean
+c14b56dc67f533957de74d0d3b2e9a9a8fbb6898b935246f2afb44e6d094e393  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffinePairMeaning.lean
+2b4c8b590f26711aadc727238f18402cc09e2121de17b9596a4fe0532c683755  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineInnerStep.lean
+d305d5fb7246880cd39addf6f02a7c2037a6a0472ab9a6f3f9f61a81cca6206e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineCoefficientSetup.lean
+e362d51ed6d1f6c3ec75b7d3d2afadab0a505fe60b7cb7bbbad138a8274e8eb7  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineCoefficientBuffers.lean
+96bb5fcd2c1c17cce2ca790b2afa5fd21965ce599da9484c99fcd75d2b1e52bd  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineCoefficientFrame.lean
+51e082e57d921548ef138fcd3d03020e91f5e4932788da54a7089ebb6ac15d44  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineConvolution.lean
+0a142c84fd586f01af1bb4b16548b4b8aa2bc1b2dc9f57311de51f62a3383dbc  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineInnerLoop.lean
+ed288eddd06a5f832a81495288115d18203a62d3239eb4ca7f7475e7890583d6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineCoefficient.lean
+6bbbe1664219c00742b753d6670692aab51d2d63420d25e29fae98dda8b0747b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineCoefficients.lean
+ba60066f47c91df1133aff0a944c23c24a69b21534e5e96f7d1a7e5e828c8834  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineConvolutionOriginal.lean
+d6b669252adc849c3df48283cea8a834d28fa3b4cc56ea4a88f88def6d3884ce  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineCoefficientsOriginal.lean
+4bb028f683a805073c3e4cd9abf84e564898d8fc3cbd176c8bf86c8dcfd72a72  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineSlopeDrain.lean
+dc612bfcdc91eb42a5aff70ca4a1a7d447d93122255e200acf7a93033590aa8d  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineSlopeStage.lean
+f47df28d70ccdc381d6191c128b61528d1f467437d32f54fad55199c11ebdfd2  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineSlopeRead.lean
+242ba7f3738406276c8d5a0cdeaa7afde85f3fa60a14ee9e61270119bc3fc628  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryAffineSlopeClear.lean

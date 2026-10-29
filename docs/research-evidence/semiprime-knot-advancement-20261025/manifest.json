@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "date": "2026-10-25",
+  "scope": "Local knot research, exact identities, independent reviews and finite validation; external fulltexts not bundled",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10461,
+      "sha256": "b041d953162b7f76bbf7c2652e7acf73981e55ee457477bb018c1a3e8459b3a6"
+    },
+    {
+      "path": "alexander-independent-review.md",
+      "bytes": 3550,
+      "sha256": "094cd294d0fbee09b167cf0d6b71e4f531d4e4cdd991aea5c6a2812d9c018b34"
+    },
+    {
+      "path": "alexander-realization.md",
+      "bytes": 12073,
+      "sha256": "241954ab812ac33020863fe05a6ccc61d7a60194fa027131ae6ac4103a27d1c5"
+    },
+    {
+      "path": "alexander-validation.txt",
+      "bytes": 214,
+      "sha256": "73d8485f6f0e9fabe8e4aa8cea6a2570e5c66d7a30b7143a3f4ebd37fa18dcd8"
+    },
+    {
+      "path": "check_alexander.py",
+      "bytes": 2489,
+      "sha256": "fa30862a7d544a32cb4f19c3022551c4cd0fb20486410164d590e40a24ce4c40"
+    },
+    {
+      "path": "check_prefix_consumer.py",
+      "bytes": 5564,
+      "sha256": "d1112d43153c58482566068feff75ffb0dc946fdc959dcee86843315d5015bb7"
+    },
+    {
+      "path": "check_quiver.py",
+      "bytes": 3381,
+      "sha256": "27864adaeb21ec9698b22554aa3311e29175552bef94bab255c0675f4e36c6fb"
+    },
+    {
+      "path": "descendant-advance.md",
+      "bytes": 13366,
+      "sha256": "db4263ca2b994657c47bead56160c109afa98fcb46abb906b2ccaad8bd67a9e9"
+    },
+    {
+      "path": "modular-reciprocity.md",
+      "bytes": 8147,
+      "sha256": "86da9d240020b71e0974a191cdb6ed80e455e382062b875cd044f4859838c038"
+    },
+    {
+      "path": "native-axis-review.md",
+      "bytes": 5985,
+      "sha256": "a65a4c65df779687509f15b9372e477ac4f4358f553ca1eae4b5807ea4b31e3b"
+    },
+    {
+      "path": "partial-torsion-leads.md",
+      "bytes": 10417,
+      "sha256": "ba24ab01431e3fc7aba82dd7507b4ee036aee49913f9af3114cf886d7f00ab8b"
+    },
+    {
+      "path": "prefix-consumer-review.md",
+      "bytes": 9556,
+      "sha256": "e8ac15a2a30d9acfc84024f0aeb63e10ff0fea332d4352c3a081857f9f2a4267"
+    },
+    {
+      "path": "prefix-query.md",
+      "bytes": 7698,
+      "sha256": "52e607cc6b2fbe212834cd13a83c11401fc13de72f209798174e2daec64f6397"
+    },
+    {
+      "path": "prefix-validation.txt",
+      "bytes": 171,
+      "sha256": "1f16e010eb8ab6ab7a687828c64317eb2acdb6f644c56aeeac100d3d60d111a7"
+    },
+    {
+      "path": "quiver-contraction.md",
+      "bytes": 18402,
+      "sha256": "82d7d745651621ebe4fe073f8d62a13cd3f257c073ac0e4562faa8cafa327077"
+    },
+    {
+      "path": "quiver-validation.txt",
+      "bytes": 166,
+      "sha256": "63d4f48892168a99e919ff5449b17a4ac50fc9ce3ff650c0d36a3537a5b58850"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2602,
+      "sha256": "27f3c04fe5832bcf0e36e9e48c87700ad087a1288d49e8302a2e464de905bbd0"
+    },
+    {
+      "path": "skein-selector.md",
+      "bytes": 14118,
+      "sha256": "f263f20c0d633e3042395ff1920e7d32dfaf327d5b3d2cbf17a6e7fad092a366"
+    },
+    {
+      "path": "weighted-pade-review.md",
+      "bytes": 6951,
+      "sha256": "63729ae58093f704bc5a696be0b6ff31f1c1e7bb931b454655095550682efa2f"
+    }
+  ]
+}

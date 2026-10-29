@@ -1,0 +1,126 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "BY2023",
+      "title": "Fast Computation of the N-th Term of a q-Holonomic Sequence and Applications",
+      "authors": [
+        "Alin Bostan",
+        "Sergey Yurkevich"
+      ],
+      "publication": "Journal of Symbolic Computation 115 (2023), 96–123",
+      "url": "https://doi.org/10.1016/j.jsc.2022.07.008",
+      "fulltext": "https://arxiv.org/abs/2012.08656",
+      "use": "Prior q-factorial/product-method credit; native composite-ring implementation and arithmetic screen derived explicitly."
+    },
+    {
+      "id": "HLN2006",
+      "title": "Twisted Alexander polynomials of periodic knots",
+      "authors": [
+        "Jonathan A. Hillman",
+        "Charles Livingston",
+        "Swatee Naik"
+      ],
+      "url": "https://doi.org/10.2140/agt.2006.6.145",
+      "fulltext": "https://msp.org/agt/2006/6-1/agt-v6-n1-p05-s.pdf",
+      "checked": [
+        "Theorem 2 (Murasugi)",
+        "Scope of Theorems 3–5"
+      ]
+    },
+    {
+      "id": "Kohli2018",
+      "title": "The Links–Gould invariant as a classical generalization of the Alexander polynomial?",
+      "url": "https://doi.org/10.1080/10586458.2016.1255860",
+      "fulltext": "https://arxiv.org/pdf/2505.08296",
+      "checked": [
+        "Proposition 2.18 negative-twist formula",
+        "Proposition 2.5 connected sums"
+      ],
+      "caution": "2025 is late arXiv upload, not original publication."
+    },
+    {
+      "id": "SkeinLGv4",
+      "title": "Skein theory for the Links–Gould polynomial",
+      "url": "https://arxiv.org/html/2505.19251v4",
+      "checked": [
+        "Remark 1.16 specialization warning"
+      ]
+    },
+    {
+      "id": "SilverWilliams2006",
+      "title": "Twisted Alexander polynomials detect the unknot",
+      "url": "https://arxiv.org/abs/math/0604084",
+      "checked": [
+        "Section 2 equation 2.1, Fox–Weber formula"
+      ]
+    },
+    {
+      "id": "HillarLevine",
+      "title": "Polynomial recurrences and cyclic resultants",
+      "url": "https://arxiv.org/abs/math/0411414",
+      "fulltext": "https://lionellevine.github.io/hillarlevineAMSrevised.pdf",
+      "checked": [
+        "Equation 1.1",
+        "Theorem 1.4 scope"
+      ]
+    },
+    {
+      "id": "DuzhinShkolnikov",
+      "title": "A formula for the HOMFLY polynomial of rational links",
+      "url": "https://arxiv.org/abs/1009.1800",
+      "fulltext": "https://amj.math.stonybrook.edu/html-articles/Files-2015-2024/15-13/",
+      "checked": [
+        "Lemma 5",
+        "Theorem 1"
+      ]
+    },
+    {
+      "id": "RosengrenSchlosser",
+      "title": "Elliptic determinant evaluations and the Macdonald identities for affine root systems",
+      "url": "https://www.mat.univie.ac.at/~schlosse/pdf/determinants-new.pdf",
+      "checked": [
+        "Section 2 equations 2.1–2.3",
+        "Proposition 3.4",
+        "Theorem 4.4"
+      ]
+    },
+    {
+      "id": "Borcherds1998",
+      "title": "Automorphic forms with singularities on Grassmannians",
+      "publication": "Inventiones Mathematicae 132 (1998),491–562",
+      "url": "https://math.berkeley.edu/~reb/papers/aut/aut.pdf",
+      "checked": [
+        "Theorem 13.3 and product multiplicities"
+      ]
+    },
+    {
+      "id": "python-flint",
+      "title": "fmpz_mod_poly documentation",
+      "url": "https://python-flint.readthedocs.io/en/latest/fmpz_mod_poly.html",
+      "installed_version": "0.9.0",
+      "use": "Arbitrary-modulus polynomial operations in isolated scratch venv."
+    },
+    {
+      "id": "FLINT",
+      "title": "fmpz_mod_poly documentation",
+      "url": "https://flintlib.org/doc/fmpz_mod_poly.html",
+      "use": "Remainder semantics; no binary-specific asymptotic guarantee asserted."
+    }
+  ],
+  "scratch_fingerprints": [
+    {
+      "scratch_path": "/tmp/semiprime-knot-lift-20261026/root-determinants.pdf",
+      "bytes": 294717,
+      "sha256": "6ce3745572b1729bc79faa429fc4053aca09cd349ce00b0b08244ceb2d442273",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-lift-20261026/root-determinants.txt",
+      "bytes": 116771,
+      "sha256": "379267cb8ffa01d992c5dc8b08fd072d5d1f230f98948e96aca6f3049e337c0b",
+      "archived": false
+    }
+  ]
+}

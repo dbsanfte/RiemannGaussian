@@ -1,0 +1,36 @@
+RiemannGaussian.SemiprimeWordPacketCounter.count_correct {n F : ℕ} {arity : Fin F → ℕ}
+  {rows : (e : Fin F) → Fin (arity e) → Fin n → Polynomial ℚ} (b Q J R den B : ℕ) (hJ : 0 < J)
+  (design :
+    (a : Fin Q) →
+      RiemannGaussian.SemiprimeIndexedNodeCertificate.Data arity fun e i v => Polynomial.eval (↑↑a + 1) (rows e i v))
+  (source :
+    (e : Fin F) →
+      Fin (arity e) →
+        Fin n →
+          RiemannGaussian.SemiprimeMaterializedSourceUniversal.Run
+            (Array RiemannGaussian.SemiprimeRationalBits.RationalWord))
+  (entries : (e : Fin F) → (Fin (arity e) → Bool) → RiemannGaussian.SemiprimeLocalBits.EntryWord)
+  (hvalid : ∀ (e : Fin F) (i : Fin (arity e)) (v : Fin n), RiemannGaussian.SemiprimeJetBits.Valid (source e i v).value)
+  (hd : 0 < den) (hdb : den ≤ 2 ^ b) (hBb : B ≤ 2 ^ b) (hQb : Q ≤ 2 ^ b) (hJb : J ≤ 2 ^ b) (hnb : n ≤ 2 ^ b)
+  (hsource :
+    ∀ (e : Fin F) (i : Fin (arity e)) (v : Fin n),
+      ∀ k ≤ R,
+        RiemannGaussian.SemiprimeJetArrayHeight.Representation
+          (RiemannGaussian.SemiprimeJetArray.coefficient (RiemannGaussian.SemiprimeJetBits.decode (source e i v).value)
+            k)
+          den B)
+  (hentries : ∀ (e : Fin F) (eta : Fin (arity e) → Bool), (entries e eta).bits.value.natAbs ≤ 1)
+  (hrows : ∀ (e : Fin F) (i : Fin (arity e)) (v : Fin n), (rows e i v).natDegree ≤ R)
+  (hcoeff :
+    ∀ (e : Fin F) (i : Fin (arity e)) (v : Fin n),
+      ∀ k ≤ R,
+        RiemannGaussian.SemiprimeJetArray.coefficient (RiemannGaussian.SemiprimeJetBits.decode (source e i v).value) k =
+          (rows e i v).coeff k)
+  (hdegree : (∑ e, arity e) * R < Q * J) (coordinate : (e : Fin F) → Fin (arity e) → Fin n)
+  (hrestore :
+    ∀ (e : Fin F) (i : Fin (arity e)) (v : Fin n),
+      Polynomial.eval 0 (rows e i v) = if v = coordinate e i then 1 else 0) :
+  (RiemannGaussian.SemiprimeWordPacketCounter.count b Q J R
+        (fun a => RiemannGaussian.SemiprimeNodeArrayExecution.runtimeDesign (design a)) source entries).value =
+    RiemannGaussian.SemiprimeCounterNative.originalContraction arity (fun e eta => ↑(entries e eta).bits.value)
+      coordinate

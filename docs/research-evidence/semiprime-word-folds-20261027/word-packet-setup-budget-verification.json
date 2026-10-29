@@ -1,0 +1,19 @@
+{
+  "module": "RiemannGaussian.SemiprimeWordPacketSetupBudget",
+  "paths": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeWordPacketSetupBudget.lean",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeWordPacketSetupBudget.olean",
+    "isolated": "/tmp/semiprime-word-folds-20261027/SemiprimeWordPacketSetupBudget.olean"
+  },
+  "sha256": {
+    "source": "bbce3239a04727f5c471121c68887f20a17e25491e07984162940d5c82697e5f",
+    "canonical": "6c33254dafc0fdcf3b05864afe628bb6a15db39a71b4fef37134fb8dbefd4a14",
+    "isolated": "6c33254dafc0fdcf3b05864afe628bb6a15db39a71b4fef37134fb8dbefd4a14"
+  },
+  "strict": true,
+  "isolated_equal": true,
+  "ordinary_root_linters": 15,
+  "generated_declarations": 13,
+  "theorem_constants": 9,
+  "standard_axioms_only": true
+}

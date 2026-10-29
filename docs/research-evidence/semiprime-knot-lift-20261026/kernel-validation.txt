@@ -1,0 +1,11 @@
+test_composite_zero_divisors_without_a_zero_leaf (test_frobenius_screen.ProductKernelTests) ... ok
+test_empty_and_single (test_frobenius_screen.ProductKernelTests) ... ok
+test_global_zero_factor_and_repeated_block_points (test_frobenius_screen.ProductKernelTests) ... ok
+test_public_formula_and_unverified_contract_flag (test_frobenius_screen.ProductKernelTests) ... ok
+test_remainder_tree_repeated_points_and_nonunit_differences (test_frobenius_screen.ProductKernelTests) ... ok
+test_tail_and_exact_square (test_frobenius_screen.ProductKernelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

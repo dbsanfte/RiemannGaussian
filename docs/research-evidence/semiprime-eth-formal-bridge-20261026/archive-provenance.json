@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/README.md",
+      "sha256": "b3e26f8ac7aeafbb56ed849186b01571440a70ea21a24bdbd438b3a59b83b0fe",
+      "copy": "verbatim"
+    },
+    {
+      "path": "precision.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/precision.md",
+      "sha256": "6ed1188c2c8b13c4c8c1c8682ea5954be74e9c476f346b6efb54a3a711f1be3f",
+      "copy": "verbatim"
+    },
+    {
+      "path": "check_precision.py",
+      "source": "/tmp/semiprime-d1-audit-20261026/check_precision.py",
+      "sha256": "260c77408d1b2260c8b07387033b4bbfe9df02bf11387cf9fda9b8443a7c8380",
+      "copy": "verbatim"
+    },
+    {
+      "path": "precision-checks.json",
+      "source": "/tmp/semiprime-d1-audit-20261026/precision-checks.json",
+      "sha256": "e00382d4b1431a21047fec62daf6165e9159b568172e241216d80645056dc607",
+      "copy": "verbatim"
+    },
+    {
+      "path": "modes.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/modes.md",
+      "sha256": "c6ba00a756f9a282c09bfa72cfc49b9e66aa048401f0808935b27552d66f3d1e",
+      "copy": "verbatim"
+    },
+    {
+      "path": "check_modes.py",
+      "source": "/tmp/semiprime-d1-audit-20261026/check_modes.py",
+      "sha256": "077da4513b62cf2b275c2bcbc868f1ba0120595e347d0a031e3b49fa8912f96e",
+      "copy": "verbatim"
+    },
+    {
+      "path": "mode-controls.json",
+      "source": "/tmp/semiprime-d1-audit-20261026/mode-controls.json",
+      "sha256": "fd492cae7c377c5ca4afaa5dee66b17370b24530986abb5833285dfe8ea3bc69",
+      "copy": "verbatim"
+    },
+    {
+      "path": "complexity.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/complexity.md",
+      "sha256": "d1691e68ccd6975b566354a3c29f27089d6fb33d26504c37d821e7922f4e3222",
+      "copy": "verbatim"
+    },
+    {
+      "path": "older-route-review.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/older-route-review.md",
+      "sha256": "bcc9423ea506b3a784256b2662d291cd42e870938acfb4dd3f33af8704d2c2f9",
+      "copy": "verbatim"
+    },
+    {
+      "path": "formal-bridge.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/formal-bridge.md",
+      "sha256": "d06ef0e14b1bf4bef51a0c0eef9474ef307d254d7f3f0e22e487097c1d845530",
+      "copy": "verbatim"
+    },
+    {
+      "path": "lean-specification.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/lean-specification.md",
+      "sha256": "8400680eb8d36dc305fc73eb45e746fa5af1dbece2afb93449c3377abfe09987",
+      "copy": "Adapted source links to pinned upstream URLs; prose unchanged",
+      "source_sha256": "3010f3863e01556f65c58a17a9f142481924ff35b4157f997a5d624cc9b3fe7d"
+    },
+    {
+      "path": "factor_network.py",
+      "source": "/tmp/semiprime-d1-audit-20261026/factor_network.py",
+      "sha256": "c107f5ec43b54bee0fcc008f0ffcde4af51de026a7140af4455e5a4ebaca6a92",
+      "copy": "verbatim"
+    },
+    {
+      "path": "test_factor_network.py",
+      "source": "/tmp/semiprime-d1-audit-20261026/test_factor_network.py",
+      "sha256": "b9be642bac52ad17047af85f38f3b23f1a6f826ac09642316265dbeb6b47e737",
+      "copy": "verbatim"
+    },
+    {
+      "path": "factor-network-notes.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/factor-network-notes.md",
+      "sha256": "e08d2079dc4ff9259a9e84822293ced19f0c5222365892ff303fd933ad2780eb",
+      "copy": "verbatim"
+    },
+    {
+      "path": "factor-network-validation.json",
+      "source": "/tmp/semiprime-d1-audit-20261026/factor-network-validation.json",
+      "sha256": "7dfc4dde37a6dd395755dca68a908289aacdeaf71d160f70b71cfb88fd1647e1",
+      "copy": "verbatim"
+    },
+    {
+      "path": "factor-network-independent-replay.json",
+      "source": "/tmp/semiprime-d1-audit-20261026/factor-network-independent-replay.json",
+      "sha256": "7dfc4dde37a6dd395755dca68a908289aacdeaf71d160f70b71cfb88fd1647e1",
+      "copy": "verbatim"
+    },
+    {
+      "path": "factor-network-independent-controls.json",
+      "source": "/tmp/semiprime-d1-audit-20261026/factor-network-independent-controls.json",
+      "sha256": "98de3e102b0672f0df726eaed38c44e20966dc6c91ef17ac0f12d72432e88291",
+      "copy": "verbatim"
+    },
+    {
+      "path": "review-factor-network-code.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/review-factor-network-code.md",
+      "sha256": "850f9deb9fb29eee6c2b6d220479e17f35fdef00f0e7a94faa506b0ca73009cf",
+      "copy": "verbatim"
+    },
+    {
+      "path": "streaming-repo-build.log",
+      "source": "/tmp/semiprime-d1-audit-20261026/streaming-repo-build.log",
+      "sha256": "f94d0a0b3008e423680d5f82f0693d00d164cde8c0ec44894f68a28fc4938294",
+      "copy": "verbatim"
+    },
+    {
+      "path": "streaming-repo-proof.md",
+      "source": "/tmp/semiprime-d1-audit-20261026/streaming-repo-proof.md",
+      "sha256": "e495e3eca022f2c14b99b7278fcc426304e310e28db1b51290990e0a686d71fe",
+      "copy": "verbatim"
+    },
+    {
+      "path": "build_lean_closure.py",
+      "source": "/tmp/semiprime-d1-audit-20261026/build_lean_closure.py",
+      "sha256": "9eccbef463dbcc93614ad05f16ce385162297b398d63a1fed2ad2e221c2dd0eb",
+      "copy": "verbatim"
+    },
+    {
+      "path": "lean-closure.json",
+      "source": "/tmp/semiprime-d1-audit-20261026/lean-closure.json",
+      "sha256": "a107c354c030f4bdcbf364cd3434b45ee59d5d234c513832030bd7c9f86f3903",
+      "copy": "verbatim"
+    },
+    {
+      "path": "SemiprimeStreamingTensor.lean",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeStreamingTensor.lean",
+      "sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+      "copy": "verified repository source snapshot"
+    }
+  ],
+  "note": "Goal resumed and broadened. Frozen research packet; external build continues separately. No frozen predecessor modified.",
+  "source_checkout_unmodified": true,
+  "repository_implementation": "RiemannGaussian/SemiprimeStreamingTensor.lean",
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

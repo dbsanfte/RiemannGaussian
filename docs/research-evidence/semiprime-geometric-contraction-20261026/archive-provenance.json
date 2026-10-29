@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "archived": "README.md",
+      "scratch_source": "/tmp/semiprime-geometric-contraction-20261026/README.md",
+      "source_sha256": "629fcfae90306b2280a5a967f01090b1a21cbde90901569061d0697773f1d448",
+      "archive_sha256": "629fcfae90306b2280a5a967f01090b1a21cbde90901569061d0697773f1d448",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "qdifference-contraction.md",
+      "scratch_source": "/tmp/semiprime-geometric-contraction-20261026/qdifference-contraction.md",
+      "source_sha256": "26a367baae272401223bc0a44589689deaeac74267c5b8dfe871a85f31dd60e8",
+      "archive_sha256": "26a367baae272401223bc0a44589689deaeac74267c5b8dfe871a85f31dd60e8",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-qdifference-contraction.md",
+      "scratch_source": "/tmp/semiprime-geometric-contraction-20261026/review-qdifference-contraction.md",
+      "source_sha256": "6a1b7f8803f774a7a539680f90e51d4b3b8d4117e393cc31537268414c3cc6db",
+      "archive_sha256": "6a1b7f8803f774a7a539680f90e51d4b3b8d4117e393cc31537268414c3cc6db",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "singular-pairing.md",
+      "scratch_source": "/tmp/semiprime-geometric-contraction-20261026/singular-pairing.md",
+      "source_sha256": "0b6f877ec7a82a58ac5686ac27d213cf95db4f2e2ba5ccfeaf474dd960e1b9cd",
+      "archive_sha256": "0b6f877ec7a82a58ac5686ac27d213cf95db4f2e2ba5ccfeaf474dd960e1b9cd",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-singular-pairing.md",
+      "scratch_source": "/tmp/semiprime-geometric-contraction-20261026/review-singular-pairing.md",
+      "source_sha256": "040119e3da6b94be9df13c2bbb4ac8e63b14c614bf52570a50c3e507854b1071",
+      "archive_sha256": "040119e3da6b94be9df13c2bbb4ac8e63b14c614bf52570a50c3e507854b1071",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "selected-condensation.md",
+      "scratch_source": "/tmp/semiprime-geometric-contraction-20261026/selected-condensation.md",
+      "source_sha256": "194f97928daa9fa5eb11e57d9ef96b1837466f3651f169611983a308953239d8",
+      "archive_sha256": "194f97928daa9fa5eb11e57d9ef96b1837466f3651f169611983a308953239d8",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-selected-condensation.md",
+      "scratch_source": "/tmp/semiprime-geometric-contraction-20261026/review-selected-condensation.md",
+      "source_sha256": "772f87e9345a351d2c9e60a7556cb516c411515bb239c26277c34287aee675d7",
+      "archive_sha256": "772f87e9345a351d2c9e60a7556cb516c411515bb239c26277c34287aee675d7",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-full-clock-certificate.md",
+      "scratch_source": "/tmp/semiprime-geometric-contraction-20261026/review-full-clock-certificate.md",
+      "source_sha256": "068982cc436587b02d6d2afa3a9e407135c3e845129758a7d30cd41ceae9c49f",
+      "archive_sha256": "068982cc436587b02d6d2afa3a9e407135c3e845129758a7d30cd41ceae9c49f",
+      "copy": "verbatim"
+    }
+  ],
+  "note": "Reports archived after independent reviews and root endpoint correction. No numerical campaign or implementation added.",
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

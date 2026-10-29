@@ -1,0 +1,77 @@
+-- Found 0 errors in 24 declarations (plus 45 automatically generated ones) in RiemannGaussian.SemiprimeD1StackVertexRecordSplice with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 5 declarations (plus 6 automatically generated ones) in RiemannGaussian.SemiprimeD1StackVertexRecordSpliceExecution with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 6 declarations (plus 8 automatically generated ones) in RiemannGaussian.SemiprimeD1StackVertexRecordSpliceMeaning with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 4 declarations (plus 4 automatically generated ones) in RiemannGaussian.SemiprimeD1StackVertexRecordSpliceStorage with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+AUDIT RiemannGaussian.SemiprimeD1StackVertexRecordSplice: declarations=69, theorems=17, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackVertexRecordSpliceExecution: declarations=11, theorems=10, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackVertexRecordSpliceMeaning: declarations=14, theorems=12, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackVertexRecordSpliceStorage: declarations=8, theorems=8, standard_axioms_only=true
+TOTAL modules=4, declarations=102, theorems=47, standard_axioms_only=true

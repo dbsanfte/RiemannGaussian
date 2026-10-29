@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceIncidencePairAverage",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceIncidencePairAverage.lean",
+      "source_sha256": "524d39b4e9056e91500d08bd0b77f5c20c838e363964a48fc5340f6833503f58",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceIncidencePairAverage.olean",
+      "object_sha256": "cbb69af17d35c140cd3dc925cdcf18bbef46ece87e62d3007c2fa749f6bd9339",
+      "isolated_object": "/tmp/semiprime-constraint-count-20261027/SemiprimeSourceIncidencePairAverage.olean",
+      "isolated_object_sha256": "cbb69af17d35c140cd3dc925cdcf18bbef46ece87e62d3007c2fa749f6bd9339",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 18,
+      "theorems": 17
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceIncidenceCountFormula",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceIncidenceCountFormula.lean",
+      "source_sha256": "e59f87eb0ca59f6e6687d5c3e347cbbd437d360e5bc69493ce78b2ec8094cb93",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceIncidenceCountFormula.olean",
+      "object_sha256": "5f38c61592cc8338411c881786610904d881e7333de60fb40bea6a7d98048f50",
+      "isolated_object": "/tmp/semiprime-constraint-count-20261027/SemiprimeSourceIncidenceCountFormula.olean",
+      "isolated_object_sha256": "5f38c61592cc8338411c881786610904d881e7333de60fb40bea6a7d98048f50",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 13,
+      "theorems": 8
+    }
+  ],
+  "scope": "Exact original incidence padded-count formula; physical callback implementation and whole primitive public clock not asserted.",
+  "note_sha256": "e0cf9bf99f1f1e0476cb7432b736e9f0c1d309bf02d0292d75f16609c19897f7"
+}

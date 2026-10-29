@@ -1,0 +1,88 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 4,
+    "declarations": 357,
+    "theorems": 191
+  },
+  "modules": {
+    "SemiprimeD1StackScheduleActive": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScheduleActive.lean",
+        "sha256": "6e70a6033aec31aff8739dc03dd376dcb3bb62071e2647a3044b67ac1e7d4b1f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScheduleActive.olean",
+        "sha256": "9366269c05bac83fe19074d74e76bf9d200cf12bd44a47f25c4df97db7c233ec"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/schedule-active-frozen/SemiprimeD1StackScheduleActive.olean",
+        "sha256": "9366269c05bac83fe19074d74e76bf9d200cf12bd44a47f25c4df97db7c233ec"
+      }
+    },
+    "SemiprimeD1StackScheduleActiveExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScheduleActiveExecution.lean",
+        "sha256": "6339e1f35cece959f77826259acd1ec559622793a7957a6083552d1a3050ef2f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScheduleActiveExecution.olean",
+        "sha256": "5a23ad7ec1454525f93f731e96211536579ca1b88e096de441a171b393f87a01"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/schedule-active-frozen/SemiprimeD1StackScheduleActiveExecution.olean",
+        "sha256": "5a23ad7ec1454525f93f731e96211536579ca1b88e096de441a171b393f87a01"
+      }
+    },
+    "SemiprimeD1StackScheduleActiveBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScheduleActiveBounds.lean",
+        "sha256": "db0703fc54081fc0f0ae0c27c8907da4d8bf640a5956c928981cca87caf09597"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScheduleActiveBounds.olean",
+        "sha256": "8a780123e7957232d1719cfc68b2ba4f964d637a9ccb713c81700319d42db174"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/schedule-active-frozen/SemiprimeD1StackScheduleActiveBounds.olean",
+        "sha256": "8a780123e7957232d1719cfc68b2ba4f964d637a9ccb713c81700319d42db174"
+      }
+    },
+    "SemiprimeD1StackScheduleActiveOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScheduleActiveOriginal.lean",
+        "sha256": "0d5c99e51e3ca6aededa07f2fe8db04aad3b851e62d02c0af4258bf083b0531b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScheduleActiveOriginal.olean",
+        "sha256": "3a74e814376cd084f3fa25892d782bd3af0a9f0d701f3efe09b06f3fc5318cfe"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/schedule-active-frozen/SemiprimeD1StackScheduleActiveOriginal.olean",
+        "sha256": "3a74e814376cd084f3fa25892d782bd3af0a9f0d701f3efe09b06f3fc5318cfe"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": "/tmp/semiprime-explicit-rate-20261027/ScheduleActiveControls.lean",
+      "source_sha256": "d73414c37ab6248532a0080c455a6821b90d861be6b977a302c9c732787a8248",
+      "log": "/tmp/semiprime-explicit-rate-20261027/schedule-active-controls.log",
+      "log_sha256": "ada2b3bd2dbb365905c7493c1ed655335f1410932ec1c5077a2d65c83497afa2",
+      "stdout": "SCHEDULE_ACTIVE cases=14 accepted=5 actual_transitions=20340 all10roles=true own_clock=true strict_leaf_boundary=true inclusive_level_bounds=true retained_parameters=true cleared_work=true real_outer_returns=true halt_flags_clear=true\nOBSERVER standard_axioms_only=true declarations=22\n",
+      "cases": 14,
+      "accepted": 5,
+      "actual_transitions": 20340,
+      "observer_generated_standard3": 22
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_source_object_pairs_unchanged": 17436,
+  "scope": "Prepared original active-call guard only; ALL original s/lam/depth/M. Actual fixed10role program, three real UnarySumLess calls with paid preservingcopies and physicalverdictreads. SAME ownclock\u2264200*(physicalParameterBytes+1); original\u226410000*(s+lam+M+1); ALL10+realreturns\u22641000000*(s+lam+M+1). Metadata acquisition/recursive caller remain explicit.",
+  "source_object_writers_stopped": true
+}

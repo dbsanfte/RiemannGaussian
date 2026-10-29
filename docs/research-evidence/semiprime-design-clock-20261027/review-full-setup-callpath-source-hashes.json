@@ -1,0 +1,46 @@
+{
+  "review": "review-full-setup-callpath.md",
+  "scope": "read-only semantic and retained-report callpath review; complete primitive bit/address clock not asserted",
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeRuntimeDesignCache.lean": {
+      "sha256": "663683217111173251109c043e9f2f7dbaae073b57576078f579f8b66910403f",
+      "bytes": 3057
+    },
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeRuntimeDesignCache.olean": {
+      "sha256": "eb6036aaa9634d81f84ac45d3c0f70e77a46aedf0a1a77d776c4ff08f93417cb",
+      "bytes": 193592
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidRuntimeDesign.lean": {
+      "sha256": "695ee47cc8663b82e9bdceb1e4e17582ceafcce5601066e89656702786d84957",
+      "bytes": 16496
+    },
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimePaidRuntimeDesign.olean": {
+      "sha256": "4342e97cc12064152f87f06d6ec4ecfc6841142cec837e399383edde8465c969",
+      "bytes": 1123536
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullSetupCounter.lean": {
+      "sha256": "e653870caa7f54cd7dad0aed5b41fb5e4b2c707500bee44671c589b4240b963f",
+      "bytes": 6401
+    },
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeFullSetupCounter.olean": {
+      "sha256": "6305499c78a16a32892b95857971f9833301261df347be8f2494ab8f3368c7bc",
+      "bytes": 204344
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullSetupPublicController.lean": {
+      "sha256": "796fe083b2324617070ed158c3c3ee484834d745222c59ccfc44522743ede204",
+      "bytes": 12456
+    },
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeFullSetupPublicController.olean": {
+      "sha256": "557cdd6cb1f3d606866caf697a78f0fe91e4be471d38bfc76a22c85ae4d181fe",
+      "bytes": 547496
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullSetupScheduledController.lean": {
+      "sha256": "c2f4d0db572a10bcdb91fd6c4b9389f635717b41d18f6656152442bd8a59c222",
+      "bytes": 7375
+    },
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeFullSetupScheduledController.olean": {
+      "sha256": "ade90b5636927b19822b2ecaca1c774d388cb5b3035c1d8f62a24364ea3fa51e",
+      "bytes": 470304
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "two trailing spaces only; no token/line/semantics or canonical object change",
+  "module": "SemiprimeSourceHistogramFeatureBitsBounds",
+  "lines": [
+    146,
+    149
+  ],
+  "source_sha256_before": "e309c597c41dc2c72ce802940361348328d01c15317a61c569deaced4c60a074",
+  "source_sha256_after": "c9221f4b4249cf3f774a2fcc883a4a2308b406e01dec3c05ef93da49cf50395f",
+  "canonical_strict_exit_code": 0,
+  "canonical_object_unchanged": true,
+  "object_sha256_before_and_after": "ad0365366e0e7d6517fffc3f084f1a154536f4c56c3c25e1dc64ea70e5c6d684",
+  "full_final_audit_and_isolates": "REPLAYED_AFTER_CLEANUP_BY_verify_histogram_acquisition.py",
+  "canonical_refresh_records": "precede this whitespace-only cleanup"
+}

@@ -1,0 +1,33 @@
+{
+  "modules": {
+    "SemiprimeMaterializedScoreEnvironment": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedScoreEnvironment.lean",
+      "source_sha256": "cbab7d5ac3faab08fc9662d2b440fa56e9b129b2c0563b6be9a1095d9bdcc7e8",
+      "object_sha256": "2afc824616fc0e32c3a63e3d753e4cc450f95302c41a502660c453c111126377",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimeMaterializedScoreSearch": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedScoreSearch.lean",
+      "source_sha256": "e514bc7a0cdedd222cd9248db71b8d6763e2333311bdc94b3c8ed6f8e74f1e3a",
+      "object_sha256": "ce46f655f3480912599dc30daf1a1379abe52e18cd2fc066abe1d7654db8ddba",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimeMaterializedSourceWords": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSourceWords.lean",
+      "source_sha256": "bf6539799d72b1e59c5a153c288482079f1f1b1d73ffa691a473a61ebff73271",
+      "object_sha256": "bf0828227c1b8f0919f58cca64abd1a7a4282b9f0e098b0364fb99b948caf3a9",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    }
+  },
+  "scope": "complete exact original-score label producer; selected scalar/array/list-control ledger; full primitive bit/address simulation separate",
+  "smoke_outputs": [
+    "(3959, 0, 1, 0)",
+    "true"
+  ]
+}

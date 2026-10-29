@@ -1,0 +1,14 @@
+{
+  "status": "final reviewed source pins after author freeze",
+  "sha256": {
+    "RiemannGaussian/SemiprimeAcquiredSourceCounter.lean": "fe3184d5922e835e7576d57979bfa6e8066c0c71b5c515cde574204ab0678f48",
+    "RiemannGaussian/SemiprimeSourceArrayAcquisition.lean": "21d243ec031c72784c7f0185c149b6291a8c3aac3402969ef047049d46686222",
+    "RiemannGaussian/SemiprimeSourceRuntimeDesignBridge.lean": "10897c148413518dfa56a0961110a4aa9adfd23654a39d1273f1a157de65ca45",
+    "RiemannGaussian/SemiprimeRuntimeDesignAcquisition.lean": "55b68f774a1a03512a9ef23354b99a55f3fb746ebe3438e26fff353422ad7350",
+    "RiemannGaussian/SemiprimeSourceConstraintAcquisition.lean": "ff9d79e4902c837d8f27bd7c121d432cf012caa6024b05151cc4622567977f78",
+    "RiemannGaussian/SemiprimeUniversalSourceExecution.lean": "2f7ce74e5906def018598837b692b33598280c522dbf2ce66ae2cde02ec94323",
+    "RiemannGaussian/SemiprimeNodeArrayExecution.lean": "fc92c69ec09a4ad2c013af317783010a40950f981e8c51d600e8ea00af33a0f3",
+    "/tmp/semiprime-source-acquisition-20261027/acquired-source-smoke.log": "eb2d5f8f8c44ee8003788b7c37279cdb86cc3800280103f8a9b5db8c0b15bc2d",
+    "/tmp/semiprime-source-acquisition-20261027/AcquiredSourceCounterSmoke.lean": "17c0a99af08e3d40dce07d3679505fc81b00ee0b414a8317d8fb4ab56a7727cf"
+  }
+}

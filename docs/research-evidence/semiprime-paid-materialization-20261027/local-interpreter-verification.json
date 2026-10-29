@@ -1,0 +1,37 @@
+{
+  "status": "final frozen",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeTernaryLocal",
+      "source": "RiemannGaussian/SemiprimeTernaryLocal.lean",
+      "source_sha256": "223fe42526e2d63ee548e4d03ae7fae478148b4646247d0fd869e681c2a315e0",
+      "object_sha256": "7509e895fd596438d749d90ca8b614fb4163d1b7381b0f39ee22ef5c41300021",
+      "declarations": 50,
+      "theorems": 32,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms_only": true
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeTernaryLocalPaid",
+      "source": "RiemannGaussian/SemiprimeTernaryLocalPaid.lean",
+      "source_sha256": "c0b21e303980fdefec71f716df9073b3324185ca0fc7eded9e3061feded863c7",
+      "object_sha256": "0b175103f5fd40cf1bb95a807e84d761ffd2cda3008a04690f2a7c9998aa0f11",
+      "declarations": 232,
+      "theorems": 77,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms_only": true
+    }
+  ],
+  "total_declarations": 282,
+  "total_theorems": 109,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "smoke": "LocalInterpreterSmoke.lean",
+  "smoke_log": "local-interpreter-smoke.log",
+  "backend_scope": "explicit semantic and reported-work contract; not an upstream Cmd40 producer or primitive bit interpreter"
+}

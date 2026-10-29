@@ -1,0 +1,24 @@
+Independent READ-ONLY review: PASS; no blocker found.
+Scope: all493 current source lines/every body in assigned Powers OperationOutput, Operation, Row, Encoding and Stages. No unsealed imports, compilers, canonical rebuilds, edits or controls were performed for this review.
+
+OperationOutput executes the whole sealed R36 multiplication on the actual four copied original operands BEFORE either aliased current field is drained. Both fitted fields are physically copied; actual singleton sign is popped and pushed, including negativezero/empty-width fields, with real abort on absent sign. Operation physically drains every35 non-template arithmetic word. The actual W and all11 foreign caller words are retained. Cleanup cost comes from SAME-source run_data_bound plus real inventory drains; there is no native-report-clock substitution.
+
+Row uses two preserving Frames in actual denominator-then-signed execution order, then literal TRUE and consuming reverse. Current/argument/q/history originals are retained; row buffer and frame scratch are empty at the next step. No accumulated history tail is recopied. Encoding records ALL47 allocated roles, exact original/current/count/history shapes, one FALSE array sentinel, and the recursive actual-operation budget with reached operands. Current-first/argument-second byte orientation is exact and no commutativity/rational-value-only replacement occurs in this reviewed operation path.
+
+Stages physically copies and tests q. q0 reaches the empty-vector terminal without a coefficient or arithmetic operation. Positive q pushes literal ONE in three instructions independentW, includingW0, and pays its actual acquired marker countdown. The single FALSE terminal is pushed only at the end; the real final consuming reversal gives chronological raw payload++FALSE and clears history. Both current fields/remaining markers are explicitly cleared by the loop endpoint assumed in finish. Generic source carries no supplied power array, result, coefficient, Fit witness, evaluator or runtime clock in these modules; concrete mathematical Fits/values and full-loop polynomial are separately reviewed modules, not extra instructions inferred here.
+
+All5 assignment hashes equal before-read=after-read=live hashes. Flat BEFORE and AFTER pins:
+
+BEFORE
+664a321fb12bc8c5d358f19ba506a7819e3381617646b572ed902771edf22a88  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOperationOutput.lean
+08e5bde36a804bc87b0a6c7b81cfb2c219b564876f0d7a6e0dd5be7b5514b85a  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOperation.lean
+6e8307b22efce7de2b78063a275f64f1b65e4714a4597a77d95a416c9761d051  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersRow.lean
+23e9ee40856e05acae7d66d089eb1324c459f2fb25d0fd8e146a6d7ffe4001fb  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersEncoding.lean
+dea8b16721568d7bd3c20c32a90df154c7810df6bd4bc377aacc39fc45e097ad  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersStages.lean
+
+AFTER
+664a321fb12bc8c5d358f19ba506a7819e3381617646b572ed902771edf22a88  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOperationOutput.lean
+08e5bde36a804bc87b0a6c7b81cfb2c219b564876f0d7a6e0dd5be7b5514b85a  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOperation.lean
+6e8307b22efce7de2b78063a275f64f1b65e4714a4597a77d95a416c9761d051  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersRow.lean
+23e9ee40856e05acae7d66d089eb1324c459f2fb25d0fd8e146a6d7ffe4001fb  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersEncoding.lean
+dea8b16721568d7bd3c20c32a90df154c7810df6bd4bc377aacc39fc45e097ad  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersStages.lean

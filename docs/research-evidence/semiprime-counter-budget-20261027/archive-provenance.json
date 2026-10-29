@@ -1,0 +1,310 @@
+{
+  "CombinedCounterBudgetAudit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/CombinedCounterBudgetAudit.lean",
+    "sha256": "19a758cdea1faf3fd17f9b62dbde841653a9c6a329cba4500eafe2dd98a721e6"
+  },
+  "CombinedCounterBudgetAudit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/CombinedCounterBudgetAudit.log",
+    "sha256": "87371805fa51dc0e4df6432d0704a21cbacb67c272db97cf2a1d2bfaf0b6632a"
+  },
+  "NativeCounterBudgetAudit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/NativeCounterBudgetAudit.lean",
+    "sha256": "8b87e6b651c8fc6dc4d8c1ffe74ffffd21aed9e8b8ace5cfdb8c0c2a8d1580db"
+  },
+  "PublicGrowthAudit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/PublicGrowthAudit.lean",
+    "sha256": "4e28a417195dccf98b8cef2785c8c7f090de755cb6c6856d3cf3aa2c15013a5c"
+  },
+  "README.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/README.md",
+    "sha256": "19501f1b7324f66b0779bd40499688f998e9065030abcc04220e587e830346f1"
+  },
+  "ReportGrowthAudit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/ReportGrowthAudit.lean",
+    "sha256": "0295c4f94b961ffb2e7adb9697b6c7c5170421ebd49abf02c8b700b353ec2c3b"
+  },
+  "ScheduledScalarBudgetAudit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/ScheduledScalarBudgetAudit.lean",
+    "sha256": "ed03c116ae6f36d3f00762618019496f6887b1ace3d927b1a173362c76d20434"
+  },
+  "SemiprimeFullCounterBudget.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullCounterBudget.lean",
+    "sha256": "4874859da22e6787153ad8b6858998b4a6b635e4ffa7a9db8db75e8ff6c9c87b"
+  },
+  "SemiprimeFullReportRate.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullReportRate.lean",
+    "sha256": "50cda342904cacf965fe9d5da9e8369575c6cd3d75bc4404fb773beaf19e76eb"
+  },
+  "SemiprimeFullSetupBudget.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullSetupBudget.lean",
+    "sha256": "cb233935d5dbca3fd73ee09336ff4195aafb46eb1df072c195b0a44d1a072c94"
+  },
+  "SemiprimeIndexedDesignResources.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeIndexedDesignResources.lean",
+    "sha256": "7f254e967f835c21efc3999f46200177fa0b18ff3386fa94a6bf265db9993c26"
+  },
+  "SemiprimeNativeCounterBudget.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeNativeCounterBudget.lean",
+    "sha256": "b6af4a3c79a362dc9234bc9d8000515aac0047bad7ecef6fc524d6a2bb815ac2"
+  },
+  "SemiprimePublicBudgetDimensions.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicBudgetDimensions.lean",
+    "sha256": "f7ed2cc3b9c9a10858c0fcaba05a22813556223f2b271cc58cee55181b599e31"
+  },
+  "SemiprimePublicCounterBudget.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicCounterBudget.lean",
+    "sha256": "da1f0e9db7c57073e3963bd6396086130ade7ad601c6d6c8a375436ab448ed7f"
+  },
+  "SemiprimePublicCounterResources.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicCounterResources.lean",
+    "sha256": "0338657aed49809acde7c3e0d3b3af81e91c9edb711cb18999726d54ca93cdfb"
+  },
+  "SemiprimePublicReportGrowth.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicReportGrowth.lean",
+    "sha256": "c112750e3137d50d0a2c5bf72e939e60deddcd6a373e0bb83bfedc9cbcb4ae25"
+  },
+  "SemiprimePublicReportPolynomial.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicReportPolynomial.lean",
+    "sha256": "3d1c0e5147c57a66c1e3a7cccc8b78afc6a67d20562b2bec57e4a990547a1018"
+  },
+  "SemiprimeReportPolynomialGrowth.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeReportPolynomialGrowth.lean",
+    "sha256": "e45831cf88ee74f5be36bb0e4d7b7d99c4f73982c1c49d10da20e691ca4194b6"
+  },
+  "SemiprimeScheduledScalarBudget.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeScheduledScalarBudget.lean",
+    "sha256": "f4a17ac1fd1281248e83104f0ebc46c7babedf47efa011c42010980474a5185b"
+  },
+  "SemiprimeSetupPolynomialEnvelope.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSetupPolynomialEnvelope.lean",
+    "sha256": "a60f2d6f16476d5b0d8f0c4d0287dc91626697b3ed0d6ccc6068f6270a247b87"
+  },
+  "SetupAudit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/SetupAudit.lean",
+    "sha256": "d31dd90084c914408d9024b91cff406746b4e408602d4bc36a5ab5f4b150e6ed"
+  },
+  "SetupPolynomialEnvelopeAudit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/SetupPolynomialEnvelopeAudit.lean",
+    "sha256": "afb9f05c423d64bb3331a5d223d30cf84c51fb105103ac4ce08d6296a8e5357d"
+  },
+  "all-modules.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/all-modules.json",
+    "sha256": "cfc70024e7bd5e0a29a5b8d91b782cc69b23a241907f03617ea746b2d9ace280"
+  },
+  "archive_counter_budget.py": {
+    "source": "/tmp/semiprime-counter-budget-20261027/archive_counter_budget.py",
+    "sha256": "fc86f112a13647aba991758d18a6da775f468e1207df8be839fe0b7e7e71a609"
+  },
+  "compiler-imports.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/compiler-imports.json",
+    "sha256": "a5d76188f286c47165b61dd92f771bb9767f98dbb0db6d4be865013f382f78fb"
+  },
+  "counter-rate-connection.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/counter-rate-connection.md",
+    "sha256": "e7556cb1bc3ab492d098277b847df05dec1b64288c5e586ff2e0fcd56cd177b3"
+  },
+  "final-isolated/SemiprimeFullCounterBudget.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimeFullCounterBudget.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeFullReportRate.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimeFullReportRate.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeFullSetupBudget.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimeFullSetupBudget.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeIndexedDesignResources.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimeIndexedDesignResources.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeNativeCounterBudget.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimeNativeCounterBudget.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePublicBudgetDimensions.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimePublicBudgetDimensions.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePublicCounterBudget.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimePublicCounterBudget.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePublicCounterResources.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimePublicCounterResources.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePublicReportGrowth.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimePublicReportGrowth.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePublicReportPolynomial.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimePublicReportPolynomial.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeReportPolynomialGrowth.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimeReportPolynomialGrowth.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeScheduledScalarBudget.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimeScheduledScalarBudget.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSetupPolynomialEnvelope.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/SemiprimeSetupPolynomialEnvelope.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/dependencies-after.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/dependencies-after.json",
+    "sha256": "ae2a5d21c338dd6bab45236df12eeddd4394295137e4a5466916995940c3f28d"
+  },
+  "final-isolated/dependencies-before.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/dependencies-before.json",
+    "sha256": "ae2a5d21c338dd6bab45236df12eeddd4394295137e4a5466916995940c3f28d"
+  },
+  "final-isolated/results.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/results.json",
+    "sha256": "c84c2c5e686512a1ee3a9b5ef5b06d0bbd73adda7a2e88afb4c9819a76f05dd2"
+  },
+  "final-isolated/summary.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/final-isolated/summary.json",
+    "sha256": "9b6613958bfc72e6ec0cceb0dbab2b6f0c0ae0ab19a331615d7b43bd28aee98e"
+  },
+  "indexed-design-audit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/indexed-design-audit.lean",
+    "sha256": "e8189078cdb723a595605200f2bd9266fb89d80a9818ffcae786d3bcd3f483a2"
+  },
+  "indexed-design-audit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/indexed-design-audit.log",
+    "sha256": "a62b63af3193ee8e784f0d53f31582725d7c11240f6762ff23f3ec644b19036e"
+  },
+  "indexed-design-resources-hashes.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/indexed-design-resources-hashes.json",
+    "sha256": "1b5a0864f5f0665373f139e6b2a3826c621fd8fa9fae8e7e79e48e64a5bb56e5"
+  },
+  "indexed-design-resources-notes.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/indexed-design-resources-notes.md",
+    "sha256": "ef17a7cf9b0e17e52989c0d3b83abcc296f2039fc7358f187cb84850dcf0c5bd"
+  },
+  "journal-append.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/journal-append.md",
+    "sha256": "0807e0a1c972f1f5c2de12a720bce06bc5907a55d48608092e3a69cf13856cbd"
+  },
+  "native-budget-audit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/native-budget-audit.log",
+    "sha256": "d4f991b9a449043cdaf6f2ef19e4c1a9e907b462ec796fc0bfb6bd6c5ef44834"
+  },
+  "native-counter-budget-hashes.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/native-counter-budget-hashes.json",
+    "sha256": "4a9293bc4dec9bd2685a889d6304e6e5d58853459614643cb7743aef330b2941"
+  },
+  "native-counter-budget-notes.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/native-counter-budget-notes.md",
+    "sha256": "5b452f58a9d9d3898b369823d93e5ae7ceb49aa40125069faf32f4154c80d6c3"
+  },
+  "next-primitive-clock-plan.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/next-primitive-clock-plan.md",
+    "sha256": "073554210a8dfc3d6a74d15be7fea79bce30c1e09cad29323830cd5b641fb33f"
+  },
+  "preservation-before.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/preservation-before.json",
+    "sha256": "b31248a4916a2094d2da444ec525360f38bd98348499060ce967c5b24cf495af"
+  },
+  "public-counter-resources-hashes.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/public-counter-resources-hashes.json",
+    "sha256": "80a36ba975a4c0a5ed22b3a2667bdccab0bb2f1ed74b3a03333e3fea66b88201"
+  },
+  "public-counter-resources-notes.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/public-counter-resources-notes.md",
+    "sha256": "5d30c695155f440fb16268cf27e3676a8251ab35d0d732854f7deab123584496"
+  },
+  "public-growth-audit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/public-growth-audit.log",
+    "sha256": "ff16321b06954fb920d64f48064321782663dee05532de58f495f2524af2a12f"
+  },
+  "public-growth-notes.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/public-growth-notes.md",
+    "sha256": "f0ac3de4c179d37adfba186470fc16f643889684382aa5a9c6abcb19142e3a24"
+  },
+  "public-growth-verification.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/public-growth-verification.json",
+    "sha256": "3dce391543d3b47f6b3f0a9252a2790c6ef485273f44f04ef5f6d7ab74b18215"
+  },
+  "public-resources-audit.lean": {
+    "source": "/tmp/semiprime-counter-budget-20261027/public-resources-audit.lean",
+    "sha256": "8fb790015920c5458f5c30f78b560363c7350ba490160694355b06f69932294b"
+  },
+  "public-resources-audit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/public-resources-audit.log",
+    "sha256": "1874c9aef21a0704bed584cc01b669c6547f8ea80c0e7ec867b32d9a87c068cb"
+  },
+  "report-growth-audit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/report-growth-audit.log",
+    "sha256": "5223130bff0a22399210ea25e3ff7d8ca44f850a46566c38b2fdd23cd69be206"
+  },
+  "report-growth-notes.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/report-growth-notes.md",
+    "sha256": "f4f19211b45e7583add7ddf06d24163fa2bcd4e0dbcc35e8227d23c99dca48ed"
+  },
+  "report-growth-verification.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/report-growth-verification.json",
+    "sha256": "f9243235309626d77d4399b5a25a57f428570e3e9e170552ec7eeb911478c6db"
+  },
+  "review-actual-counter-budget-source-hashes.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/review-actual-counter-budget-source-hashes.json",
+    "sha256": "7f824245c13b83b3762e89b35ad817e42ba3ef381fb60eb241598abc60a2a83e"
+  },
+  "review-actual-counter-budget.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/review-actual-counter-budget.md",
+    "sha256": "aba2772fe60046e31f6afee8f2b045d7dff16c0d781dee1760b79734f4c649c1"
+  },
+  "review-indexed-report-rate.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/review-indexed-report-rate.json",
+    "sha256": "8d80b241d7afc5b126a328762679f74c3593a1cfadac333d462bbf650fe1df46"
+  },
+  "review-indexed-report-rate.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/review-indexed-report-rate.md",
+    "sha256": "81996a8a8388340b5308e253959e6255ac3c89b1a576a1ac94e6d323115474f9"
+  },
+  "scheduled-scalar-audit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/scheduled-scalar-audit.log",
+    "sha256": "509406c7e640a0a2880499abe999a67c7f13d7b715faa2a03e3284adf0b2df3c"
+  },
+  "scheduled-scalar-budget-hashes.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/scheduled-scalar-budget-hashes.json",
+    "sha256": "42eda67a625c94f52a5f2ce8d177dbb6b4924c2144c1c8cb93e665c17ac0007d"
+  },
+  "scheduled-scalar-budget-notes.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/scheduled-scalar-budget-notes.md",
+    "sha256": "4ae2acf6acea84598e4af78593fd847b75ee93634ad9c29f45defda436f8b34d"
+  },
+  "setup-audit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/setup-audit.log",
+    "sha256": "ea88e60ec3977a77e3c522a1ecc25df696b7aad19e8c11db0834987e24583b8e"
+  },
+  "setup-budget-notes.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/setup-budget-notes.md",
+    "sha256": "9f087462070c099257b55a87711e9a479f2547b0d9c6c183094ed0e737284ec2"
+  },
+  "setup-envelope-audit.log": {
+    "source": "/tmp/semiprime-counter-budget-20261027/setup-envelope-audit.log",
+    "sha256": "00505ed92f88f96dc837678e1a49dd33922a02538f8034062bb2770fabbfaf84"
+  },
+  "setup-polynomial-envelope-hashes.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/setup-polynomial-envelope-hashes.json",
+    "sha256": "336fcbc9cc913e11ebaafca1aa24f5a1935dae6eb5ff32aa547e8e86b07819f5"
+  },
+  "setup-polynomial-envelope-notes.md": {
+    "source": "/tmp/semiprime-counter-budget-20261027/setup-polynomial-envelope-notes.md",
+    "sha256": "98381d1fc58f13a42a97e7c9b155caf41aa511dfb6ed53eaca600e6772aa8fe7"
+  },
+  "setup-verification.json": {
+    "source": "/tmp/semiprime-counter-budget-20261027/setup-verification.json",
+    "sha256": "787327ea2d59365c9a03b8d575b5e88ba6a6edf3005eaa2d43aaf504591a8da7"
+  },
+  "verify_counter_budget.py": {
+    "source": "/tmp/semiprime-counter-budget-20261027/verify_counter_budget.py",
+    "sha256": "983491ec5e6f9e9ec9eab5302db5ff8f39029ac0b172cce6b96e96be116257b2"
+  }
+}

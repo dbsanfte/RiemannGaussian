@@ -1,0 +1,13 @@
+{
+  "status": "SOURCE_AND_EVIDENCE_HASHES_PASS_NOT_A_LEAN_BUILD",
+  "checked_utc": "2026-10-29T19:11:08.918178+00:00",
+  "current_sources": 3160,
+  "evidence_files": 364,
+  "archived_sources": 3,
+  "historical_final_groups": 82,
+  "inventory_sha256": "431d0ee06c5c63e1508d1f613483e97817fea0847a45417181f5d7046f990927",
+  "progress_sha256": "24ab222abb4a545d20cc8c5be230bca4ec24b40a2f403c936c1fa66c0dbed7bb",
+  "fresh_Lean_or_Lake_build_performed": false,
+  "research_goal_resumed": false,
+  "publication_build_is_separate_parent_evidence": true
+}

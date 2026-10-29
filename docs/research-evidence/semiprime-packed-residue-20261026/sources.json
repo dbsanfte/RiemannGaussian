@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-six-domain-acquisition-20261026/README.md",
+      "sha256": "7f02576b9f1da50468198ba620001c547361d486ffd9e00ebc0944c2d7d482ad"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/pure-weighted-common-tag.md",
+      "sha256": "71c13ae4cf1d6cbb6d661bbbc6a3d3c2465d9f5618aa7e4e20fd7ddbef84b9d3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-primitive-pair-20261026/primitive-asymmetry.md",
+      "sha256": "14c407d03c9d404a469034463a3ddc3d831750ba7b78ebf253d8e49479e7bbb7"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/README.md",
+      "sha256": "c9162067ce905b1da19504b1bda10b753c5ee794cd1e4e70e0a37b3df1429d65"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/partial-order-supplier.md",
+      "sha256": "3f4af9ad6b28a215473fca9964d51cfa32cd41bb0ace1145a4ba576f162b94ff"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/polar-reciprocity.md",
+      "sha256": "f6e6e03cbbcd0efd33524ffdc0fc12a942b89a20cb2f4ff7c233560897847a89"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/README.md",
+      "sha256": "1ee6c274b505f9d02b54507dc65065fa736e9efb83cfa34058eca918f3469217"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/hybrid-integration.md",
+      "sha256": "ca544fc15dd4e08716dadf6a7b8ee231e3ea606bf795a4d908baa52709b1721c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/torus-query.md",
+      "sha256": "9dc670769b1427caa5349c7ec840fef7fea442f37608c68de6f8c4edd84956d2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/direct-graph-residue.md",
+      "sha256": "d3fab589f5e717e0a764fda8cb90a58cb1de6a5aace512db3eafe90d60a18477"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/README.md",
+      "sha256": "e9111d55e5f26c51f1c5cb5fb7ad324d9139c180870c2857d41d645a17705ee3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/parameterized-controller.md",
+      "sha256": "40dfd5a4f5e2081ddd79669bf2ce6199174258384293db97c1dd1f123dc4973c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/review-restricted-residue.md",
+      "sha256": "f754c0e9372750590a2f3b0ccc986e4bcdf55e864bef48d00a61ae438004d62e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/sources.json",
+      "sha256": "0bd5185f113aeff841571999ed9fdd3f6db8a68dbaf323d56ddd7bc274b38f98"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-twist-character-20261022/reports/cayley-paid-companion.md",
+      "sha256": "6001d061df7110140e0cf6a2d4285a4177d7309bde493ff79622786a561bf465"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-trace-20261026/farey-query.md",
+      "sha256": "0d70ff85ded98e6f7ef7cd9392267ae85abf2634ab9ed05cb44039ca00db85d4"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-string-native-boundary-20261026/native-boundary.md",
+      "sha256": "b4053cc7dd1883ffc02b5b6dce82518b507f164b70688a350d01d3727785a663"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "Chen–Singer, Residues and Telescopers for Rational Functions",
+      "url": "https://arxiv.org/html/1203.4200",
+      "scope": "Sections 2.3 and 4.1.3; characteristic-zero whole-q-orbit summability, not a finite modular window evaluator."
+    },
+    {
+      "title": "Arreche–Sitaula, discrete residues",
+      "url": "https://arxiv.org/html/2503.15636v1",
+      "scope": "Supplied-denominator additive-shift algorithms and their dispersion input; not a native clock-position oracle."
+    },
+    {
+      "title": "Caracciolo–Sokal–Sportiello, Algebraic/combinatorial proofs of Cayley-type identities",
+      "url": "https://arxiv.org/abs/1105.6270v2",
+      "scope": "Appendix A.5 finite Gaussian/Wick determinant context. Required native identities are derived directly with denominators cleared."
+    },
+    {
+      "title": "Harvey–Hittmeir, A log-log speedup for exponent one-fifth deterministic integer factorisation",
+      "url": "https://arxiv.org/html/2105.11105",
+      "scope": "Proposition 3.3 and Algorithm 4.3 via the pinned restricted-HH controller; all palette and interval starts charged."
+    },
+    {
+      "title": "Brion, Points entiers dans les polyèdres convexes",
+      "url": "https://www.numdam.org/article/ASENS_1988_4_21_4_653_0.pdf",
+      "scope": "Theorem 2.2 finite lattice polynomial via tangent cones; selected resolvent transform is an additional operation."
+    },
+    {
+      "title": "Beck–Haase–Matthews, Dedekind–Carlitz polynomials as lattice-point enumerators in rational polyhedra",
+      "url": "https://arxiv.org/abs/0710.1323",
+      "scope": "Finite enumerator/reciprocity context, not a modular selected-residue evaluator."
+    }
+  ],
+  "scope": "No cited theorem supplies the missing whole-family soft-K acquisition. Local finite identities and consumer are proved in this packet."
+}

@@ -1,0 +1,112 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 5,
+    "declarations": 72,
+    "theorems": 50
+  },
+  "modules": {
+    "SemiprimeD1StackPublicTransformTable": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicTransformTable.lean",
+        "sha256": "5fc8f6b24da8b821a32116e10839f8ca4642cc954558cae494223244d4724b34"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicTransformTable.olean",
+        "sha256": "1af1c14cc7eee762779989a56fb1c7b07b920cfd879b8e84151e17ccb21fdfed"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/transform-table-frozen/SemiprimeD1StackPublicTransformTable.olean",
+        "sha256": "1af1c14cc7eee762779989a56fb1c7b07b920cfd879b8e84151e17ccb21fdfed"
+      }
+    },
+    "SemiprimeD1StackPublicTransformTableTrace": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicTransformTableTrace.lean",
+        "sha256": "9263c0f67c45fb8c17f994a80ac18ef92987156f4c9ed557bd9f7dc30922e7ab"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicTransformTableTrace.olean",
+        "sha256": "f953fb0fb3a078b37c3e648d235334ef1f90ea08b2910115103b4b53f7e0ab92"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/transform-table-frozen/SemiprimeD1StackPublicTransformTableTrace.olean",
+        "sha256": "f953fb0fb3a078b37c3e648d235334ef1f90ea08b2910115103b4b53f7e0ab92"
+      }
+    },
+    "SemiprimeD1StackPublicTransformTableExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicTransformTableExecution.lean",
+        "sha256": "f80f28840ca559444f86ec75abaca2db7ebafae62b9cbe195a99d7247869bed9"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicTransformTableExecution.olean",
+        "sha256": "fe66bf070fc9f5ad8e5c3cea0b623ad766354e466862e706c8ccd2ab61d3c4ac"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/transform-table-frozen/SemiprimeD1StackPublicTransformTableExecution.olean",
+        "sha256": "fe66bf070fc9f5ad8e5c3cea0b623ad766354e466862e706c8ccd2ab61d3c4ac"
+      }
+    },
+    "SemiprimeD1StackPublicTransformTableBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicTransformTableBounds.lean",
+        "sha256": "4d21b9985b3fd59744d0fc5409d245fc3b543cd9c8e3c13b9c3d91c829598884"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicTransformTableBounds.olean",
+        "sha256": "e0467b6f596b0614e99fb4b5ccbd1226a3181260021acd3471eb3084da474985"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/transform-table-frozen/SemiprimeD1StackPublicTransformTableBounds.olean",
+        "sha256": "e0467b6f596b0614e99fb4b5ccbd1226a3181260021acd3471eb3084da474985"
+      }
+    },
+    "SemiprimeD1StackPublicTransformTableOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicTransformTableOriginal.lean",
+        "sha256": "4c16d5bba1f890173c85af13cfe9fe57a3e3bd5657cbc93a138fde28c5793dad"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicTransformTableOriginal.olean",
+        "sha256": "1c69f59695fc3f3c59587c2f526a8f591d99196ebd4020de79771bbab7723d3b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/transform-table-frozen/SemiprimeD1StackPublicTransformTableOriginal.olean",
+        "sha256": "1c69f59695fc3f3c59587c2f526a8f591d99196ebd4020de79771bbab7723d3b"
+      }
+    }
+  },
+  "controls": [
+    {
+      "scope": "PREPARED_INNER_COMPILER_LEAF_NOT_N_ONLY_SOURCE",
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/TransformTableControls.lean",
+        "sha256": "37344b0bfe00c20b86de1ef72fa1d16bfd017e13a4843b40195321220f0b73ff"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/transform-table-controls-final.log",
+        "sha256": "77d980f4901d53f8fdc57bfed0e8eb7bd1d62cbe866dd68bd1d2233b29bc1d37"
+      },
+      "expected": "PREPARED_LEAF_PASS second=false inverse=false actual_transitions=4541 table_bytes=4 all420roles=true checker204clear=true original_N_flags_bank_prefix_retained=true flags_clear=true exact_outer_return_retained=true\nPREPARED_LEAF_PASS second=false inverse=true actual_transitions=4715 table_bytes=4 all420roles=true checker204clear=true original_N_flags_bank_prefix_retained=true flags_clear=true exact_outer_return_retained=true\nPREPARED_LEAF_PASS second=true inverse=false actual_transitions=4541 table_bytes=4 all420roles=true checker204clear=true original_N_flags_bank_prefix_retained=true flags_clear=true exact_outer_return_retained=true\nPREPARED_LEAF_PASS second=true inverse=true actual_transitions=4741 table_bytes=4 all420roles=true checker204clear=true original_N_flags_bank_prefix_retained=true flags_clear=true exact_outer_return_retained=true\nSNAPSHOT_CONTROL_AXIOMS constants=25 standard3_only=true snapshot_identity_kernel_checked=true all420physicalroles_and_actualreturns=true",
+      "all_roles_and_exact_actual_outer_return_checked": true,
+      "observer_all_generated_standard3_constants": 25,
+      "kernel_snapshot_identity": true
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_pins": {
+    "count": 18211,
+    "file_count": 36422,
+    "unchanged": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/transform-table-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/transform-table-dependencies/imported-pins-after.json"
+  },
+  "writers_stopped": true,
+  "prior_owned_frozen_preserved": "/tmp/semiprime-explicit-rate-20261027/carry-scale-transform-prior-owned-preserved.json"
+}

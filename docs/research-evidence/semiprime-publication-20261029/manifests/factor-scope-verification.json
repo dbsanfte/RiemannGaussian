@@ -1,0 +1,92 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "modules": 12,
+  "declarations": 400,
+  "theorems": 218,
+  "strict": true,
+  "ordinary_root_15linters_default200k": true,
+  "all_generated_standard3": true,
+  "actual_compiled_controls": "PREPARED_PROJECTION_ONLY actual_transitions=823 all122roles=true all9fields_consumed=true discarded_payloads_erased=true source_retained=true flags_clear=true real_outer_return=true exact_factor_major_pairs=true\n",
+  "live_import_pairs": 18231,
+  "live_files": 36462,
+  "missing": [],
+  "changed": [],
+  "objects": {
+    "SemiprimeD1StackFactorScopePairs": {
+      "source_sha256": "4b3334ae9261cae06bc54208fea78423679ba24b9c03f3418780d13a85753706",
+      "canonical_sha256": "3db2f65bc437fce70e6fbd1ae6b26a9a922844b83b861f1e799a5ed3ee523b1c",
+      "independent_sha256": "3db2f65bc437fce70e6fbd1ae6b26a9a922844b83b861f1e799a5ed3ee523b1c",
+      "byte_equal": true
+    },
+    "SemiprimeD1FactorScopePairEncoding": {
+      "source_sha256": "3fd06bcf5fae329f0db7434f630a802c5aff14dfc990981487bd80d66011ca01",
+      "canonical_sha256": "a822565d9da4991c60efc143e6651b13237236719d9be54fbec67ff3313375fc",
+      "independent_sha256": "a822565d9da4991c60efc143e6651b13237236719d9be54fbec67ff3313375fc",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopePairView": {
+      "source_sha256": "9138208e5c100d8d7de966bbf8de12fc169677f001c273c2338f27c16978b0a4",
+      "canonical_sha256": "954e6520c2a663e0bb658105cd9c1e6e52b75edaf2e3eca2fe852f677c3c9f0a",
+      "independent_sha256": "954e6520c2a663e0bb658105cd9c1e6e52b75edaf2e3eca2fe852f677c3c9f0a",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopePairPrimitives": {
+      "source_sha256": "e6707b2bb85bfd5c8b17d1e4a2a6265fe4acbeca6a1db0a3b35daaeba4bbb284",
+      "canonical_sha256": "9841280cea2911af125f591b3ffc71faef9b4c7bdad7672677730b48e04a079e",
+      "independent_sha256": "9841280cea2911af125f591b3ffc71faef9b4c7bdad7672677730b48e04a079e",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopePairParse": {
+      "source_sha256": "13c7574671bab4441e95584cc21572e2a9376611e27859d28d2ee9c30bd69287",
+      "canonical_sha256": "c49645a1ab9d1d0185b116825f7a2655d38d6d470ebb8f5444e6e442c446ecc7",
+      "independent_sha256": "c49645a1ab9d1d0185b116825f7a2655d38d6d470ebb8f5444e6e442c446ecc7",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopePairEmit": {
+      "source_sha256": "2185df46914b0ae482cf1f68dc0bb6c98f80101ed18de24916dfbda4d5d51229",
+      "canonical_sha256": "412b7b6dbe77c07f7f84e93995e21d3dc4cc85b085b4c0bd73ee0472b18b1056",
+      "independent_sha256": "412b7b6dbe77c07f7f84e93995e21d3dc4cc85b085b4c0bd73ee0472b18b1056",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopePairScan": {
+      "source_sha256": "c81352b8a5c2a550779d9fd784902efc0546b4b6b48607e1227b8ab1742168e0",
+      "canonical_sha256": "22eca9ce2b384c27b6c36229c27b298b7cab8e9d365c270f5af08ce901ae844b",
+      "independent_sha256": "22eca9ce2b384c27b6c36229c27b298b7cab8e9d365c270f5af08ce901ae844b",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopePairExecution": {
+      "source_sha256": "02af38403bd501c2453ab9eecc45204bce6c3d531b70a312eb01eeeadda928fe",
+      "canonical_sha256": "98bf36685610d7682856854eb6d87c5540bea1eb348aeb42067687dd4382064c",
+      "independent_sha256": "98bf36685610d7682856854eb6d87c5540bea1eb348aeb42067687dd4382064c",
+      "byte_equal": true
+    },
+    "SemiprimeD1StackFactorScopePairBounds": {
+      "source_sha256": "cc475ee6899f5877f6cce87b8676eac6268f859c4f4c58d544a3f203ecd7fa88",
+      "canonical_sha256": "c296b6c6dcec62d94153b4be9217fc1b2aea3c0a265cbd78951dbe947c16d071",
+      "independent_sha256": "c296b6c6dcec62d94153b4be9217fc1b2aea3c0a265cbd78951dbe947c16d071",
+      "byte_equal": true
+    },
+    "SemiprimeD1FactorScopeIncidences": {
+      "source_sha256": "c4a798b0428f583bd54b19b83d74161d145bdea8d8a58b3410266757f3e9cff0",
+      "canonical_sha256": "e981bc36b35f4e0ba43b2ce6ef01728bdd3d48daf5860a426fca32a3563c2272",
+      "independent_sha256": "e981bc36b35f4e0ba43b2ce6ef01728bdd3d48daf5860a426fca32a3563c2272",
+      "byte_equal": true
+    },
+    "SemiprimeD1FactorScopeIncidencesOriginal": {
+      "source_sha256": "50601f061ec67b8d7a39ad017382624fb0a2a1a9c0101ea1204683a0724391c5",
+      "canonical_sha256": "ab37deeff4e8e2e49f5d9df10c97077af0f7558e2377b38f0e1b7b03fc791e21",
+      "independent_sha256": "ab37deeff4e8e2e49f5d9df10c97077af0f7558e2377b38f0e1b7b03fc791e21",
+      "byte_equal": true
+    },
+    "SemiprimeD1FactorScopePairOriginal": {
+      "source_sha256": "6f7b958d4a6c2aa6cc84c2001a3b197280cbb5708529861a63f2267ca9e47e41",
+      "canonical_sha256": "6e31293e051e5e59719a4a8d7fb7c4663e3edac8e5db6391454c98b408b4e67f",
+      "independent_sha256": "6e31293e051e5e59719a4a8d7fb7c4663e3edac8e5db6391454c98b408b4e67f",
+      "byte_equal": true
+    }
+  },
+  "protected_count": 17054,
+  "protected_changed": [],
+  "scope": "N-only original9field source projection, exactunary factor keys andpaddedM scopeIDs, genericFibre specialization foralloriginal factorNode.ports. Query acquisition iscaller work; composite137 follows separately.",
+  "writers_stopped": true
+}

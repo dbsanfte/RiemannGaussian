@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-separated-selector-20261026/README.md",
+      "sha256": "7b8f62435905f325cf9f7581adc12c39d8592417af2205b43d35c49625703167"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-separated-selector-20261026/higher-macdonald.md",
+      "sha256": "fc94a440998fc93c31044b2556b4b66c5ac8602adbc3dc9e69f468fbec69b996"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-separated-selector-20261026/separated-recurrence.md",
+      "sha256": "e316309fda1c515246540872695426a093aca7c6cb55246764c525a715966274"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-residue-shortcuts-20261026/content-cover.md",
+      "sha256": "312967a999516dcafa4006b3b36db3e5958c661de971b86d8ebe18ee7527acb9"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-clock-phase-20261026/parity-cover-audit.md",
+      "sha256": "9b25bc33f7576b78c22e327b97db2634238d350a100e6162b92f8f0f741ee921"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-scalar-acceleration-20261026/integrable-closure.md",
+      "sha256": "d5b0514ee2bf88776d4802e8c6cdc82ebce926f390d3af2257ccec93ac7b846e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-tensor-norm-20261024/geometric-generator.md",
+      "sha256": "8ff92a623b50d8698b34260ab01216f3d17ad89c26c5a88831561d3602aa581a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-tensor-norm-20261024/sylvester-elimination.md",
+      "sha256": "f3375df02a067a43230d1f4accddc476bbbe020a64c9145b90757ba5404720c2"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "R. P. Brent and H. T. Kung, Fast Algorithms for Manipulating Formal Power Series",
+      "url": "https://www.eecs.harvard.edu/~htk/publication/1978-jacm-brent-kung",
+      "alternate": "https://maths-people.anu.edu.au/~brent/pd/rpb045.pdf",
+      "publication": "JACM 25(4), 1978, 581–595",
+      "location": "Section 5, printed p.589, log and exp Newton operations",
+      "root_check": "Primary Harvard-hosted PDF text directly inspected after alternate-host timeout.",
+      "scope": "Formal series arithmetic only, with composite-ring unit denominators checked separately. No unit-point or selected norm algorithm imported."
+    },
+    {
+      "title": "Kirillov and Noumi, Affine Hecke algebras and raising operators for Macdonald polynomials",
+      "url": "https://arxiv.org/abs/q-alg/9605004",
+      "location": "Section 1",
+      "scope": "Prior operator context. Mixed pencil and finite Cauchy pairing derived here; no published fast selector claimed."
+    }
+  ],
+  "search_scope": "Focused q-resultant, quantum-dilogarithm and rational telescoping searches supplied no theorem used to complete the missing norm. They are not a literature-wide impossibility audit."
+}

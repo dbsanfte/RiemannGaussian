@@ -1,0 +1,73 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 3,
+    "declarations": 18,
+    "theorems": 16
+  },
+  "modules": {
+    "SemiprimeD1PackedNetworkOwners": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkOwners.lean",
+        "sha256": "8c2467321b08a151954daa0beb51981defc2c90c98fa6d159dc0838364698495"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedNetworkOwners.olean",
+        "sha256": "76598e81f14dac0ce60dbc1a44bce9e4dd44d438d11fe2bd09171509c207de7f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-network-original-frozen/SemiprimeD1PackedNetworkOwners.olean",
+        "sha256": "76598e81f14dac0ce60dbc1a44bce9e4dd44d438d11fe2bd09171509c207de7f"
+      }
+    },
+    "SemiprimeD1PackedNetworkFactors": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkFactors.lean",
+        "sha256": "e9e2654154c37e84cc3df705e5f9d8f89ee0496da7eeab7bab50c221510ff836"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedNetworkFactors.olean",
+        "sha256": "ede56cd39953c0c529b1d757510d60427347700c20ceb19e810d63b615d9e8aa"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-network-original-frozen/SemiprimeD1PackedNetworkFactors.olean",
+        "sha256": "ede56cd39953c0c529b1d757510d60427347700c20ceb19e810d63b615d9e8aa"
+      }
+    },
+    "SemiprimeD1PackedNetworkOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkOriginal.lean",
+        "sha256": "55a8ca97b9d35cca8517a98cd6ee9e81b9cd4756d099fe9878bb55a603498660"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedNetworkOriginal.olean",
+        "sha256": "1b2923910fe390c197390526b2a58b2c65b68181e8ce486ec92b68638dae1f72"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-network-original-frozen/SemiprimeD1PackedNetworkOriginal.olean",
+        "sha256": "1b2923910fe390c197390526b2a58b2c65b68181e8ce486ec92b68638dae1f72"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "source_and_canonical_writers_stopped": true,
+  "source_proofs_default_200000_heartbeats": true,
+  "actual_header_before_pairs": 18846,
+  "actual_header_after_live_pairs": 18849,
+  "external_before_after_live_pairs": 18846,
+  "external_before_after_live_unchanged": true,
+  "current_independent_all_source_pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkFactors.lean": "e9e2654154c37e84cc3df705e5f9d8f89ee0496da7eeab7bab50c221510ff836",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkOwners.lean": "8c2467321b08a151954daa0beb51981defc2c90c98fa6d159dc0838364698495",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkOriginal.lean": "55a8ca97b9d35cca8517a98cd6ee9e81b9cd4756d099fe9878bb55a603498660"
+  },
+  "review_artifact": "/tmp/semiprime-explicit-rate-20261027/packed-network-original-independent-review.txt",
+  "sealed_utc": "2026-10-29T03:27:14.843178+00:00",
+  "scope": "Actual named acquiredMarked2011 network FULLNatcontraction=originalpublicfull; ONLYfinal2ell rootval=packedValue for allpositiveN/allsemiprime count+sumchannels. Nativecounter theorem SEMANTIC ONLY, source_records times actualrecordacquisition ONLY. Actualprimitive wholecounter/sourceV bitruntime and fullfactorer OPEN."
+}

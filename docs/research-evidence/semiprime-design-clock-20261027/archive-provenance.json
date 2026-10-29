@@ -1,0 +1,274 @@
+{
+  "CombinedDesignAudit.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/CombinedDesignAudit.lean",
+    "sha256": "76c84f1e83a2d556d9c882a5fb2629e6b3e061ba9d3764964388fffdcb338e2f"
+  },
+  "CombinedDesignAudit.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/CombinedDesignAudit.log",
+    "sha256": "8e85cc4369c7f6e786bb84cf5d5d6ca9dccfe9d7463bebe351d04acf3cb7aa3a"
+  },
+  "EncodedSelectorAudit.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/EncodedSelectorAudit.lean",
+    "sha256": "5add7cd7ac9c39d3ffcbac6b259a56c97b2896a3dd3e8824825d60daaae90d6c"
+  },
+  "EncodedSelectorSmoke.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/EncodedSelectorSmoke.lean",
+    "sha256": "b95687d8c36749e75e7e2767b588b5dbd055186ba4da4823d1fcbbb732ca0350"
+  },
+  "FullSetupControllerAudit.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/FullSetupControllerAudit.lean",
+    "sha256": "dc88a4ecea97a9ff4e633db3f3236bec283a4bb5d9bbac7480213cbedb91f776"
+  },
+  "FullSetupControllerSmoke.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/FullSetupControllerSmoke.lean",
+    "sha256": "cb7aa7e015107f51cf2366258555ee6f296abd5a360a27c378eba7cbd3c70ed8"
+  },
+  "FullSetupCounterSmoke.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/FullSetupCounterSmoke.lean",
+    "sha256": "ae502be80a96cdab129d14db5fbfe0107f541552f5f14a90a45d39868cd4a525"
+  },
+  "MeasurementAudit.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/MeasurementAudit.lean",
+    "sha256": "744290b43b35a0f135084a98379383b178e28de841586a11b27f439d31032b5e"
+  },
+  "PaidRuntimeDesignSmoke.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/PaidRuntimeDesignSmoke.lean",
+    "sha256": "f93ed44c4db5e1524ad170dd2e0bf77db3876e4f5ebc5fb445a99ba8a39bfadb"
+  },
+  "README.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/README.md",
+    "sha256": "fe5844a43d0b621061d6ac33a9f9c3b8e6a727a2794e06caaa1a319456bbe07d"
+  },
+  "SemiprimeCachedRawConstraints.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCachedRawConstraints.lean",
+    "sha256": "7720357f5afdf45f8f0085b2d2a249bf15b2edce1faf88ed191c2555f0e316f9"
+  },
+  "SemiprimeEncodedRowSelection.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEncodedRowSelection.lean",
+    "sha256": "c6c2d7654bf4a132fe565f34bbc293bc4c74804d52ffc46c25fb9a5fcd52487f"
+  },
+  "SemiprimeFullSetupCounter.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullSetupCounter.lean",
+    "sha256": "e653870caa7f54cd7dad0aed5b41fb5e4b2c707500bee44671c589b4240b963f"
+  },
+  "SemiprimeFullSetupPublicController.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullSetupPublicController.lean",
+    "sha256": "796fe083b2324617070ed158c3c3ee484834d745222c59ccfc44522743ede204"
+  },
+  "SemiprimeFullSetupScheduledController.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullSetupScheduledController.lean",
+    "sha256": "c2f4d0db572a10bcdb91fd6c4b9389f635717b41d18f6656152442bd8a59c222"
+  },
+  "SemiprimePaidMeasurementBound.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidMeasurementBound.lean",
+    "sha256": "bd5fee5b0f167e7f6222f9d58a78d14602c253ea728329f62ddf4f9638284212"
+  },
+  "SemiprimePaidRawAcquisition.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidRawAcquisition.lean",
+    "sha256": "0481f6ab14b91469279d260f6b391ea0cd21d34a0f1e12aeff98690093c70828"
+  },
+  "SemiprimePaidRuntimeDesign-audit.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/SemiprimePaidRuntimeDesign-audit.lean",
+    "sha256": "e8dd2de45477c350d832a115f4cb2e13dcbe0a77b580a81ac75b3640c720df19"
+  },
+  "SemiprimePaidRuntimeDesign-audit.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/SemiprimePaidRuntimeDesign-audit.log",
+    "sha256": "fa806c7a130a34d9a659a03f47cc1ad323098af7cdc74c9ce3db688e1fb77b87"
+  },
+  "SemiprimePaidRuntimeDesign.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidRuntimeDesign.lean",
+    "sha256": "695ee47cc8663b82e9bdceb1e4e17582ceafcce5601066e89656702786d84957"
+  },
+  "SemiprimePaidSourceMetadata.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidSourceMetadata.lean",
+    "sha256": "234ff20244bd4307e68d0fdb5292131c5cd4c4a8625a8564dbed3df2ed6b3078"
+  },
+  "SemiprimeRuntimeDesignCache-audit.lean": {
+    "source": "/tmp/semiprime-design-clock-20261027/SemiprimeRuntimeDesignCache-audit.lean",
+    "sha256": "df0a6df26ae00592248649d1f5686a7c4ecceb9e82f2901a54fa9493065cecee"
+  },
+  "SemiprimeRuntimeDesignCache-audit.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/SemiprimeRuntimeDesignCache-audit.log",
+    "sha256": "6fc5890cf762634f5163c02f038fface47f04b22dd35427ac27ccbe382c38e20"
+  },
+  "SemiprimeRuntimeDesignCache.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeRuntimeDesignCache.lean",
+    "sha256": "663683217111173251109c043e9f2f7dbaae073b57576078f579f8b66910403f"
+  },
+  "all-modules.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/all-modules.json",
+    "sha256": "618d4284d35feb8aa114400de25071b00a7c66519a295ac7adafb705c6b0cf4b"
+  },
+  "archive_design.py": {
+    "source": "/tmp/semiprime-design-clock-20261027/archive_design.py",
+    "sha256": "32fafa907b0f8eba83b251c62042d1dcb4076ae46b0e56797a6926bb9769fadf"
+  },
+  "compiler-imports.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/compiler-imports.json",
+    "sha256": "eb060d9dce791e407c737bdb4d2e9c5c9badb56f650ed6a7d193ed9eeac5d683"
+  },
+  "encoded-selector-audit.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/encoded-selector-audit.log",
+    "sha256": "d041e20a589f538a396e520866e79c834f2d14869423f08353807e2a17af8aa3"
+  },
+  "encoded-selector-hashes.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/encoded-selector-hashes.json",
+    "sha256": "ed866d5fbe350b1ec459e008a4c83586ea66cb76a165049f82e94f8963323a1c"
+  },
+  "encoded-selector-notes.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/encoded-selector-notes.md",
+    "sha256": "e2cf8f1cf617a6dd128413e71fe46703668bdd2b367b22405d98029a39abbcc5"
+  },
+  "encoded-selector-smoke.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/encoded-selector-smoke.log",
+    "sha256": "b50d2a06c63dfa09777a3895ac25d82c181a375fdadde9ce43c279176737cff6"
+  },
+  "final-isolated/SemiprimeCachedRawConstraints.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimeCachedRawConstraints.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeEncodedRowSelection.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimeEncodedRowSelection.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeFullSetupCounter.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimeFullSetupCounter.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeFullSetupPublicController.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimeFullSetupPublicController.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeFullSetupScheduledController.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimeFullSetupScheduledController.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePaidMeasurementBound.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimePaidMeasurementBound.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePaidRawAcquisition.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimePaidRawAcquisition.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePaidRuntimeDesign.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimePaidRuntimeDesign.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimePaidSourceMetadata.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimePaidSourceMetadata.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeRuntimeDesignCache.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/SemiprimeRuntimeDesignCache.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/dependencies-after.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/dependencies-after.json",
+    "sha256": "8eee5b21569b1637455bdffac2222d31e316e6af8c5953a4f87c68f1d4d9da56"
+  },
+  "final-isolated/dependencies-before.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/dependencies-before.json",
+    "sha256": "8eee5b21569b1637455bdffac2222d31e316e6af8c5953a4f87c68f1d4d9da56"
+  },
+  "final-isolated/results.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/results.json",
+    "sha256": "1daa3048c8cfb13891330542334bb8f7d8520bd912951b2d5e958ebf0b653e43"
+  },
+  "final-isolated/summary.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/final-isolated/summary.json",
+    "sha256": "dd1464f60d1d63ba98026b6c709bf2f3bb01f77ec55f784b164d8ad7e9620bc9"
+  },
+  "full-counter-smoke.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/full-counter-smoke.log",
+    "sha256": "d3eafc64a5682f6dddbfbe02f8b8bc675735b5aa4dd51bccc58cf486608d0198"
+  },
+  "full-setup-controller-audit.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/full-setup-controller-audit.log",
+    "sha256": "e0b93b5cb9e97b170c21e6ca15815252cf652378be3d73f85e1237ee173fceb3"
+  },
+  "full-setup-controller-hashes.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/full-setup-controller-hashes.json",
+    "sha256": "cba26e30239eed6dd6bc52a063bd077958aced39171f03eb82a6d124e0c5fa78"
+  },
+  "full-setup-controller-notes.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/full-setup-controller-notes.md",
+    "sha256": "83183e34aa4324667f498b5e5a08b0e1b0be8ad1fbddc91aa13710c5450b3972"
+  },
+  "full-setup-controller-smoke.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/full-setup-controller-smoke.log",
+    "sha256": "01df8897002d4dac017250c495e1d9fec5a99bd7beae9e6b05c7a77eb3b2c55f"
+  },
+  "integration-frontier.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/integration-frontier.md",
+    "sha256": "5ae81ba5495f0140bbedc9929f18d3acbd872725c72bd203f6a1ebd6a202fdff"
+  },
+  "journal-append.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/journal-append.md",
+    "sha256": "8a48e919de7e0f1284fca36ec019870c8520933b61b8e969588889ce55af0805"
+  },
+  "measurement-audit.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/measurement-audit.log",
+    "sha256": "1ebf8351e5927bb722980d83be8a50f4737860e935b6c6c9b0fbf126c83db91f"
+  },
+  "measurement-bound-notes.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/measurement-bound-notes.md",
+    "sha256": "9ce0fa674bf82af15feed650e5e668660e7bbecaf1ab1fb72f893e46808c6cac"
+  },
+  "measurement-verification.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/measurement-verification.json",
+    "sha256": "b968acc67f1604f370695374429ddcdb2553504b8e865124124e951718f7be28"
+  },
+  "next-counter-budget-plan.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/next-counter-budget-plan.md",
+    "sha256": "997fcd5b7fbde9f385c84d7ef298da2f1af7accd80f063154780a1529352ecdb"
+  },
+  "original-raw-notes.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/original-raw-notes.md",
+    "sha256": "74dc003c1d589a951936d4f0fd1cdc98ec6b763a0a2efb05920d8f6710f2f8e1"
+  },
+  "paid-runtime-design-notes.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/paid-runtime-design-notes.md",
+    "sha256": "cf941193813ab6d8aa8dccd22152efb024ab0745d576e796a619733d1186ef93"
+  },
+  "paid-runtime-design-smoke.log": {
+    "source": "/tmp/semiprime-design-clock-20261027/paid-runtime-design-smoke.log",
+    "sha256": "d1ae51caef3f0a319f95edb68b92beec0b97786635f44b6d2f518c59ddcaca5e"
+  },
+  "paid-runtime-design-source-hashes.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/paid-runtime-design-source-hashes.json",
+    "sha256": "5c0b17d46172a2ec548ae62e686101e51ac8ebb9c0c6bc3019f1762c801c047c"
+  },
+  "preservation-before.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/preservation-before.json",
+    "sha256": "b47446cf1568f69a3b5508ba1ec0efdb119815979dea5ce00e506372d6e458d7"
+  },
+  "review-encoded-row-selection-hashes.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/review-encoded-row-selection-hashes.json",
+    "sha256": "1b0e3f64a2c53282b6f4973f66dddfc49f10fa28c19688c14dba0d345dc42fd9"
+  },
+  "review-encoded-row-selection.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/review-encoded-row-selection.md",
+    "sha256": "296e49bfd8c8959bda466a69992136998263648c630519cecfe81bf13be2ae60"
+  },
+  "review-full-setup-callpath-source-hashes.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/review-full-setup-callpath-source-hashes.json",
+    "sha256": "4b3dbab1a7cf045024bbd082bb9eea0bf3e0a033f8b54aa5beff929a09b45574"
+  },
+  "review-full-setup-callpath.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/review-full-setup-callpath.md",
+    "sha256": "d28338cb3cf466d2820390bc1dbd40d93d96e502ee3e4e08ed838c2ca655f567"
+  },
+  "review-original-raw-acquisition.json": {
+    "source": "/tmp/semiprime-design-clock-20261027/review-original-raw-acquisition.json",
+    "sha256": "dbf9b0e4a3c15693411235236f8fcefc21f3796ede16131a2e29bc03e345855e"
+  },
+  "review-original-raw-acquisition.md": {
+    "source": "/tmp/semiprime-design-clock-20261027/review-original-raw-acquisition.md",
+    "sha256": "c29b21532339e7ab3add930f2ad4e8d076ccfaf840cbb3d998131be92aab684a"
+  },
+  "verify_design.py": {
+    "source": "/tmp/semiprime-design-clock-20261027/verify_design.py",
+    "sha256": "b5531883645a8ddafac659b5db53103e6c83bc2cac8bcaca130c5d5642aea653"
+  }
+}

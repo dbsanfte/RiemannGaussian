@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Three executed norm-contraction candidates retain an unpaid selected rational functional. Formal coefficient-strip acquisition is improved; no whole-family rate gain.",
+  "previous_goal_turn": "progress: archived exact packed-to-norm mapping, paid higher responses and conditional cyclotomic supplier; goal remains open.",
+  "independent_reviews": [
+    {
+      "path": "review-qdifference-contraction.md",
+      "scope": "formal solve, reciprocal strips, actual quotient correction",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-singular-pairing.md",
+      "scope": "mixed pencil, singular modes, exact Cauchy pairing and moved center",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-selected-condensation.md",
+      "scope": "sections 1–6 and coefficient-strip combination",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-full-clock-certificate.md",
+      "scope": "root review of corrected section 7 and native endpoint decoder",
+      "verdict": "PASS"
+    }
+  ],
+  "corrections_resolved": [
+    "Restricted all-precision series claim to certified integer/q-gap range.",
+    "Made both-axis moment footprint explicitly safe under doubled original-base exponents for K>=54.",
+    "Replaced erroneous F(q^(h-1)) gate in full-clock certificate by F(q^h), with actual extended mixed label and original-scale alias bound."
+  ],
+  "paid_operations": [
+    "First and last M marked block coefficients in soft(J+M), M~sqrt(h) within budget.",
+    "Fixed-line mixed higher pencil and known singular endpoint projector, soft J after stated gates.",
+    "Two-axis unit weights, short moments, full boundary evaluations and compact mixed numerator, soft(J+b+c).",
+    "Explicit full-clock forced Pearson numerator; legal short numerator preconditioning."
+  ],
+  "acquisition": {
+    "uniform_bound": "soft O(K^(5/4))",
+    "uniform_exponent_improved": false,
+    "target": "Selected marked norm/residue in soft(J^(3/2)+sqrt(h)) on the retuned unique family.",
+    "missing": "Interior rational-functional evaluation or equivalent giant-grid quotient correction, preserving a nonzero good pole amplitude."
+  },
+  "validation": {
+    "type": "Independent finite paper derivations, primary-source check and repository preservation.",
+    "new_numerical_tests": 0,
+    "new_native_examples": 0,
+    "new_Lean_lemmas": 0,
+    "limits": "No complexity benchmark, coverage experiment, implementation or full sixth-rate proof."
+  },
+  "preservation": {
+    "protected_prior_files": 1164,
+    "append_only_prefixes": 2,
+    "concurrent_files": 24,
+    "prearchive": "PASS",
+    "postarchive": "PASS"
+  },
+  "not_claimed": [
+    "Fast selected norm",
+    "General norm/selector lower bound",
+    "Uniform arithmetic supplier",
+    "Complete bit or Lean theorem"
+  ],
+  "commit_or_push": false,
+  "integration_checks": {
+    "local_markdown_links": 9,
+    "git_diff_check": "PASS"
+  }
+}

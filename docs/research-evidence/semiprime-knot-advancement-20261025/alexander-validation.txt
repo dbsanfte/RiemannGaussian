@@ -1,0 +1,5 @@
+Deterministic seed: 25
+Sizes: n=1,...,7; 10 coefficient lists per size
+Evaluation points: 2, 3, -1, -2
+Sparse-entry bound and standard skew-part checks passed.
+Exact integer/rational determinant checks passed: 280

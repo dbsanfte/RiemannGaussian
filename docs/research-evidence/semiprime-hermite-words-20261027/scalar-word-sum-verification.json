@@ -1,0 +1,14 @@
+{
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeScalarWordSum.lean",
+  "source_sha256": "be4b6c93ea0caae096a6fc289fa7e91e3ec77a1c111be8635206eabf65cde856",
+  "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeScalarWordSum.olean",
+  "object_sha256": "d16b558155d364760750e66f5c7869e1f2539e9f4ec832c584789cc935287c14",
+  "isolated_object": "/tmp/semiprime-hermite-words-20261027/SemiprimeScalarWordSum.olean",
+  "isolated_sha256": "d16b558155d364760750e66f5c7869e1f2539e9f4ec832c584789cc935287c14",
+  "byte_identical": true,
+  "strict": "PASS EXIT0",
+  "root15_all_generated": "PASS EXIT0 standard3 only",
+  "declarations": 21,
+  "theorems": 15,
+  "smoke": "PASS EXIT0"
+}

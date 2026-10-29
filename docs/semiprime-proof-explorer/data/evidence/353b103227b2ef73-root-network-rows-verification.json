@@ -1,0 +1,130 @@
+{
+  "status": "FINAL",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 6,
+    "declarations": 165,
+    "theorems": 100
+  },
+  "modules": {
+    "SemiprimeD1StackRootNetworkRows": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRows.lean",
+        "sha256": "01a2fb7349fec17aeaeef6cae09bd5b79176b2063a4c29db4aa4074e4bac4884"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRows.olean",
+        "sha256": "7c766d97963f3a1d6a273eb0b654219386cbb7d908c4e5fec5b55527e1ecc358"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-rows-frozen/SemiprimeD1StackRootNetworkRows.olean",
+        "sha256": "7c766d97963f3a1d6a273eb0b654219386cbb7d908c4e5fec5b55527e1ecc358"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRowsComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRowsComponents.lean",
+        "sha256": "ff826974daa5e139a47c20dd581f2036fa00684784ea65c314aef6d938c477b7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRowsComponents.olean",
+        "sha256": "7666e539cfc674c5531ece75954f43790c5986cb75ec107aa6e92bb2c895e8bf"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-rows-frozen/SemiprimeD1StackRootNetworkRowsComponents.olean",
+        "sha256": "7666e539cfc674c5531ece75954f43790c5986cb75ec107aa6e92bb2c895e8bf"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRowsExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRowsExecution.lean",
+        "sha256": "384f8c8659af118f6e959d9e13043b20c2d810d1bebbdf536f236be8d57a6605"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRowsExecution.olean",
+        "sha256": "044d2d41bb802c36172971e13eb8046f95824388b3ec3d251e4570b4407fb324"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-rows-frozen/SemiprimeD1StackRootNetworkRowsExecution.olean",
+        "sha256": "044d2d41bb802c36172971e13eb8046f95824388b3ec3d251e4570b4407fb324"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRowsBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRowsBounds.lean",
+        "sha256": "af213a6d003c8a8f3e829649e60c7a279af899992740c55dc7ee2d6e7994ebfd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRowsBounds.olean",
+        "sha256": "1fb245da92735f72cd268ccc7518829f308e3d7b47901a49d74d1dcb8352daaf"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-rows-frozen/SemiprimeD1StackRootNetworkRowsBounds.olean",
+        "sha256": "1fb245da92735f72cd268ccc7518829f308e3d7b47901a49d74d1dcb8352daaf"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRowsResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRowsResources.lean",
+        "sha256": "e1bf4e7ba7436a6b280fe9011ee855baedfc8557837524178f7e55c779682576"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRowsResources.olean",
+        "sha256": "4532088d4487c2b61da66b98b02d2064b2e1fe06a4029c44a70d16b189037cb3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-rows-frozen/SemiprimeD1StackRootNetworkRowsResources.olean",
+        "sha256": "4532088d4487c2b61da66b98b02d2064b2e1fe06a4029c44a70d16b189037cb3"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRowsOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRowsOriginal.lean",
+        "sha256": "69744a17a13ceb89270b3a228a38eb4ab1a6cd001a9079fb37c24db8a1b97378"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRowsOriginal.olean",
+        "sha256": "b8d063f1152a8b00affcb620e52ce39c64e23fb3604eedf80cfd44c458416b10"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-rows-frozen/SemiprimeD1StackRootNetworkRowsOriginal.olean",
+        "sha256": "b8d063f1152a8b00affcb620e52ce39c64e23fb3604eedf80cfd44c458416b10"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "source_and_canonical_writers": "STOPPED; all six source/canonical objects read-only",
+  "all_source_default_heartbeats": 200000,
+  "actual_header_import_pairs": 18747,
+  "actual_import_pairs_unchanged": true,
+  "physical_roles": 1852,
+  "source_roles_retained": 1821,
+  "new_private_roles": 31,
+  "no_duplicate_index_bank": true,
+  "actual_source": "Binary N alone ->actualRoot1821 ONCE->SAME Rows48.ready at .local.copyFactors, all17indexroles shared ->halt. Actualcallerprescriptions/tails also proved.",
+  "output": "EXACT original factor-major/local-slot binary-owner nested row tape +actual unary n,F,M, all original record/table/source/index caches retained. Empty factors and repeated owners retained.",
+  "clock": "fixedcoefdegree before all canonicalN; own A*(ell+1)^d*2^(57*scopeBoundell). Cubic row source charged to actualRoot1804 record/count bytes via SAME actualsource trace; originalIndexquadratic cap included separately.",
+  "memory": "ALL1852data roles including every retained source/inputshadow and queryshadow +actualreturncells every compiledprefix;1853*(inputbytes+samewholeownbound), fixedmonomial57B envelope",
+  "compiled_controls": {
+    "entry": "PREPARED actual acquired-index handoff ONLY; universal N-only proof is the wholefamily result",
+    "cases": 6,
+    "actual_transitions": 19761,
+    "actual_fibre_calls": 8,
+    "actual_terminal_exit_code": 0,
+    "all1852_roles": true,
+    "all1821_source_words_retained": true,
+    "no_root_reacquisition": true,
+    "no_index_rerun": true,
+    "actual_nFM": true,
+    "two_real_outer_return_frames": true,
+    "observer_generated_standard3": 39,
+    "log": "/tmp/semiprime-explicit-rate-20261027/root-network-rows-controls.log"
+  },
+  "independent_read_only_review": "PASS; root-network-rows-independent-review.txt",
+  "finalized_utc": "2026-10-28T19:34:13.598251+00:00"
+}

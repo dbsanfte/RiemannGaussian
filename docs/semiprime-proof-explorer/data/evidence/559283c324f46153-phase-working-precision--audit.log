@@ -1,0 +1,191 @@
+-- Found 0 errors in 75 declarations (plus 171 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecision with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 16 declarations (plus 9 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionArithmetic with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 7 declarations (plus 4 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionPrimitives with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 6 declarations (plus 2 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionCounter with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 8 declarations (plus 1 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionConvert with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 9 declarations (plus 3 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionShifts with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 16 declarations (plus 19 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionComponents with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 9 declarations (plus 9 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionExecution with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 9 declarations (plus 4 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionBounds with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 13 declarations (plus 0 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionOriginal with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecision: declarations=246, theorems=95, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionArithmetic: declarations=25, theorems=19, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionPrimitives: declarations=11, theorems=10, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionCounter: declarations=8, theorems=8, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionConvert: declarations=9, theorems=8, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionShifts: declarations=12, theorems=12, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionComponents: declarations=35, theorems=26, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionExecution: declarations=18, theorems=14, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionBounds: declarations=13, theorems=13, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPhaseWorkingPrecisionOriginal: declarations=13, theorems=12, standard_axioms_only=true
+TOTAL modules=10, declarations=390, theorems=217, standard_axioms_only=true

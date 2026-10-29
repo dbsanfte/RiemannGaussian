@@ -1,0 +1,69 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "BerstelLauveReutenauerSaliola2008",
+      "title": "Combinatorics on Words: Christoffel Words and Repetitions in Words",
+      "url": "https://webpages.math.luc.edu/~lauve/papers/wordsbook.pdf",
+      "checked": "Part I, Chapters 3 and 7",
+      "scope": "Continued-fraction and standard word factorization; no multiplicative prefix-product scalar complexity theorem imported."
+    },
+    {
+      "id": "BarvinokWoods2002",
+      "title": "Short rational generating functions for lattice point problems",
+      "url": "https://arxiv.org/abs/math/0211146",
+      "checked": "Theorem 1.7 and fixed-dimension hypotheses",
+      "scope": "Additive integer-point generating functions; formal log-to-product conversion requires its own cost and specialization proof."
+    },
+    {
+      "id": "BoussicaultLuque2008",
+      "title": "Staircase Macdonald polynomials and the q-Discriminant",
+      "url": "https://arxiv.org/abs/0801.2443",
+      "checked": "Theorem 3.2 / equation (7), and prior journal audit at lines 34818 onward",
+      "scope": "Old literature credit. New report only derives a certified finite regularized coefficient interface; it does not acquire that coefficient."
+    },
+    {
+      "id": "FrohmanGelca1998",
+      "title": "Skein Modules and the Noncommutative Torus",
+      "url": "https://arxiv.org/abs/math/9806107",
+      "checked": "Inherited torus slope/skein framework, primary abstract",
+      "scope": "Motivation and prior credit for slope shears; the new native phase and coverage equations are independently derived."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-colourquery-20261026/README.md",
+      "bytes": 8255,
+      "sha256": "3f9289c1147e11e65764c55ce1068822a4f90f9e8390a07218da69552790ec82"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-colourquery-20261026/colour-selector.md",
+      "bytes": 10337,
+      "sha256": "e02cf9030f066ff7538af5bafe19195d736c6f26ee9f11c62277b1e2a9631eaf"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-trace-20261026/trace-recurrence.md",
+      "bytes": 14978,
+      "sha256": "5f2e5f20ee433389e6d0cc93a109b2809e40f4b7dbb9bee3af3ed5e80f202343"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-trace-20261026/farey-query.md",
+      "bytes": 18396,
+      "sha256": "0d70ff85ded98e6f7ef7cd9392267ae85abf2634ab9ed05cb44039ca00db85d4"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-collective-20261026/conic-exchange.md",
+      "bytes": 12439,
+      "sha256": "7aeed458da0d2d13d4fdba9130cae3efebf741052c0c5224809b98aed2c2dbac"
+    }
+  ],
+  "scratch_source_pins": [
+    {
+      "local_path": "/tmp/semiprime-knot-shiftcoverage-20261026/q-discriminant.pdf",
+      "bytes": 208238,
+      "sha256": "5db94e2bc8a1e4cc92951ae838aae77f287632ae3e6857f3549caa161fc6b983"
+    }
+  ],
+  "prior_credit": "q-Dyson, q-discriminant and generic Macdonald normalization audits were already in the journal; they are not new acquisition progress."
+}

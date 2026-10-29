@@ -1,0 +1,15 @@
+# Independent ScheduledFactorExecution elaboration isolation
+
+Scratch-only probes; no canonical source or dependency objects were changed. Coordinated with the author to avoid duplicate probes. All probes disable asynchronous elaboration, so a trailing interleaved profiler message is not mistaken for the active command.
+
+* ScheduledPrecisionProbe.lean: the actual public indexed-arity sum, precision wrapper and original precision_valid argument complete in 6.90 seconds, max RSS6,901,140 KiB. EXIT0. The sum binder/refine Nat.succ_pos/indexed_incidence_count/Nat.lt_mul_div_succ prefix is not independently stalled.
+* ScheduledRunProbe.lean: current public runtime run definition (through its positive-N, positive-groups, NeZero and guard branches) completes in7.39 seconds, max RSS6,920,196 KiB. EXIT0. The runtime guard/positive-group definition itself is not independently stalled.
+* ScheduledSoundCurrentProbe.lean: the current explicit-branch sound proof, with the interval correction, returns diagnostics in7.01 seconds, max RSS6,920,764 KiB. This stage was NOT strictPASS: it still reported deprecated conditional names/letI style and an Option.noConfusion universe mismatch in the impossible N0 branch. The author fixed those afterwards. Crucially it did not stall, and its interval/source-sized application was no longer a reduction obstruction.
+
+A concrete earlier proof mismatch was found: TailInterval.intervalStart_end_le proves A+R<=Q, but factor_sound/factor_none_iff require A<=Q. Passing the former directly invites expensive definitional reduction of actual scheduled expressions while trying to unify unequal propositions. An explicitly typed `(Nat.le_add_right _ _).trans hend`/opaque guard_interval supplies the correct proposition. Explicit named branch cases also avoid broad simplification of the public factor program.
+
+The author then ran a low-heartbeat sequential fullfile probe and identified the remaining actual whnf timeout at `simp [epsilon,groups,sourceEpsilon]` in the rational-to-real guard conversion, rather than precision or runtime definition. Its repair is a generic reciprocal-cast identity on two ABSTRACT natural arguments, instantiated afterwards; this prevents simplification/norm_cast from unfolding the public graph's wire-count/enumeration/schedule descriptors. Attribution: the exact hcast timeout was found by the quantum author, after the independent prefix probes above.
+
+A further lexical issue was caught in that continuation: `<=`'s Unicode form adjacent to `scheduledDegree` was parsed as the registered `≤s` graph notation followed by `cheduledDegree`. A space after the relation is required. The Option.noConfusion diagnostic is cheaply avoided by `cases hn` on `none=some p`.
+
+These are elaboration/interface repairs, not changes to the intended algorithm or a new running-time claim. The final canonical wholefile compile and audit remain the author's gates; this report certifies only the stated probe observations and exact diagnosed mismatches.

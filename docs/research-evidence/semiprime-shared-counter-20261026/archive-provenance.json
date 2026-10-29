@@ -1,0 +1,110 @@
+{
+  "README.md": {
+    "source": "/tmp/semiprime-counter-20261026/README.md",
+    "sha256": "6e650c4f2c37397f8dbcabdbf93de85f0692290ddeaebdcb849341a7875c6ea0"
+  },
+  "shared_layout.py": {
+    "source": "/tmp/semiprime-counter-20261026/shared_layout.py",
+    "sha256": "9416354a1b17bbe7a3e4ce9f7d701cb11f116cae0e0c11871acc8ecf4ad5e300"
+  },
+  "shared_counter.py": {
+    "source": "/tmp/semiprime-counter-20261026/shared_counter.py",
+    "sha256": "bcbd83396912173e5f597306565ed5a6faf675287bd5f32d6c22407954c5d417"
+  },
+  "shared_parameters.py": {
+    "source": "/tmp/semiprime-counter-20261026/shared_parameters.py",
+    "sha256": "530f800d84a4c1188c0716d8016bdcb21bdc28669434510d0ecb527907568fb4"
+  },
+  "factor_solver.py": {
+    "source": "/tmp/semiprime-counter-20261026/factor_solver.py",
+    "sha256": "4c35d5087409c9c5e685391355da521cb913155941fda7d320e30b149e2a72d7"
+  },
+  "factor_network.py": {
+    "source": "/tmp/semiprime-counter-20261026/factor_network.py",
+    "sha256": "c107f5ec43b54bee0fcc008f0ffcde4af51de026a7140af4455e5a4ebaca6a92"
+  },
+  "test_shared_counter.py": {
+    "source": "/tmp/semiprime-counter-20261026/test_shared_counter.py",
+    "sha256": "dc4c4eb9dcfa7f3790c849475a1dd17f458718f53c59162843cc0b0e897b7ee1"
+  },
+  "test_parameters_solver.py": {
+    "source": "/tmp/semiprime-counter-20261026/test_parameters_solver.py",
+    "sha256": "663263ec305cb1aeb66b18675ac28771d29bcae438fa71a36bf3d166b1b3f3af"
+  },
+  "tests/test_shared_layout.py": {
+    "source": "/tmp/semiprime-counter-20261026/tests/test_shared_layout.py",
+    "sha256": "b598fa603c17ac0223350dd8ea5c18a085e98d91849017221b31bfbbac9f5da7"
+  },
+  "tests/layout-notes.md": {
+    "source": "/tmp/semiprime-counter-20261026/tests/layout-notes.md",
+    "sha256": "922b4a62de548e57b27e9a41b6f2b6211e9cbf987dca9b3dddb2800e0a6f47ac"
+  },
+  "counter-notes.md": {
+    "source": "/tmp/semiprime-counter-20261026/counter-notes.md",
+    "sha256": "e5d4b4fbefd428e066294c00792cdebb29cd2743eb1ac30a71c25657474dfb26"
+  },
+  "resource-derivation.md": {
+    "source": "/tmp/semiprime-counter-20261026/resource-derivation.md",
+    "sha256": "922726f030629dcc57ab87a4bc7a716cd7d74381f1b120d5fac9939474755ea7"
+  },
+  "review-counter-integration.md": {
+    "source": "/tmp/semiprime-counter-20261026/review-counter-integration.md",
+    "sha256": "2863728c7d1e83abb06f25dec912bc3257dcaa056feb11a563f63324d37d6081"
+  },
+  "review-source-hashes.json": {
+    "source": "/tmp/semiprime-counter-20261026/review-source-hashes.json",
+    "sha256": "5d81b733a89858b2b7d82f975546d495904af649908c0ee8e74e41ea615d6f93"
+  },
+  "independent-counter-controls.json": {
+    "source": "/tmp/semiprime-counter-20261026/independent-counter-controls.json",
+    "sha256": "d088ccc7dfef890c4a27b43a0fd9d9b7891edf8c3458e336ddbfafc87a5c6af8"
+  },
+  "layout-checks.json": {
+    "source": "/tmp/semiprime-counter-20261026/layout-checks.json",
+    "sha256": "e97b66bf5ef8b870a3a9a50f1696c8456c0b76a0bfe8a43496cf9bc1704c1b61"
+  },
+  "shared-counter-validation.json": {
+    "source": "/tmp/semiprime-counter-20261026/shared-counter-validation.json",
+    "sha256": "079dd9bb5a96e8826dbfc8e85b1280d99aee20e2c89c5ac0d6e06a72f6f428d1"
+  },
+  "shared-counter-validation.txt": {
+    "source": "/tmp/semiprime-counter-20261026/shared-counter-validation.txt",
+    "sha256": "e9efddf8264a94d2c82ecb16527ef1d4d25244d182a95d281eb1e2d88bf65dfb"
+  },
+  "streaming-height-proof.md": {
+    "source": "/tmp/semiprime-counter-20261026/streaming-height-proof.md",
+    "sha256": "9aa0aee465e3125803ef2a9c8c4d181ae6fc42dc1ffeb56508081b6edff6e1ea"
+  },
+  "height-build.log": {
+    "source": "/tmp/semiprime-counter-20261026/height-build.log",
+    "sha256": "3baef68fe41eb7b96b3345dd6e76aae8cb63da7c679d6b02422bc02eecefff90"
+  },
+  "height-root-audit.lean": {
+    "source": "/tmp/semiprime-counter-20261026/height-root-audit.lean",
+    "sha256": "0c14ff95aad140d18e2ff0f99911b5db478874e76fc410939fdea62cce681dba"
+  },
+  "height-root-audit.log": {
+    "source": "/tmp/semiprime-counter-20261026/height-root-audit.log",
+    "sha256": "f245c7dcc33dcb065e26b6c15b5590e0fd1ca67664847dccc6a7e6c30c58ca85"
+  },
+  "ExternalGenericAudit.lean": {
+    "source": "/tmp/semiprime-counter-20261026/ExternalGenericAudit.lean",
+    "sha256": "5f857c1b295007fb3347031ca4a283eebd1bc690e9afc7770f386393193cae6a"
+  },
+  "audit_external_generic.py": {
+    "source": "/tmp/semiprime-counter-20261026/audit_external_generic.py",
+    "sha256": "4f7cffd4cf4bb2baeedd109bb69240e11fb507507c845bba1f83b8f4fd0fbe5a"
+  },
+  "external-generic-audit.log": {
+    "source": "/tmp/semiprime-counter-20261026/external-generic-audit.log",
+    "sha256": "5788bbb0483ee686779a24d1a71b9c59784ed3a50404c7af12179608f954b305"
+  },
+  "external-generic-audit.json": {
+    "source": "/tmp/semiprime-counter-20261026/external-generic-audit.json",
+    "sha256": "e4fe28f709a25b507dc83b96b5b9fde7d891fc8a1f12ee369d29c1187b2e419a"
+  },
+  "SemiprimeStreamingTensorHeight.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeStreamingTensorHeight.lean",
+    "sha256": "53ad9850b3909dd40230ed533b10f4f6c19d7431ef7190316cb5289b73dd355d"
+  }
+}

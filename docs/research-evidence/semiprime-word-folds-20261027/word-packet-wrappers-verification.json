@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "modules": {
+    "SemiprimeWordPacketSetupCounter": {
+      "paths": {
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeWordPacketSetupCounter.lean",
+        "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeWordPacketSetupCounter.olean",
+        "isolated": "/tmp/semiprime-word-folds-20261027/SemiprimeWordPacketSetupCounter.olean"
+      },
+      "sha256": {
+        "source": "2ae5a3a20101ff1e1e99dad08d0a72fae1c7cc8446de0164f89037ca7b8be267",
+        "canonical": "62d45455e005a7709808cfe363eb25db678a5be64d9f7ae6d0f6f30285ef9168",
+        "isolated": "62d45455e005a7709808cfe363eb25db678a5be64d9f7ae6d0f6f30285ef9168"
+      },
+      "strict": true,
+      "ordinary_root_linters": 15,
+      "standard_axioms_only": true,
+      "isolated_equal": true,
+      "generated_declarations": 7,
+      "theorem_constants": 6
+    },
+    "SemiprimeWordPacketPublicController": {
+      "paths": {
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeWordPacketPublicController.lean",
+        "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeWordPacketPublicController.olean",
+        "isolated": "/tmp/semiprime-word-folds-20261027/SemiprimeWordPacketPublicController.olean"
+      },
+      "sha256": {
+        "source": "236afead34df3a91c50456bd86b7037972a150afbecb86163ccff6ef4c99bab1",
+        "canonical": "f3bf943964ff91b1b75e55fa2b0096d8196fdeb2cb30ee3d81377214f4ac632d",
+        "isolated": "f3bf943964ff91b1b75e55fa2b0096d8196fdeb2cb30ee3d81377214f4ac632d"
+      },
+      "strict": true,
+      "ordinary_root_linters": 15,
+      "standard_axioms_only": true,
+      "isolated_equal": true,
+      "generated_declarations": 46,
+      "theorem_constants": 25
+    },
+    "SemiprimeWordPacketScheduledController": {
+      "paths": {
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeWordPacketScheduledController.lean",
+        "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeWordPacketScheduledController.olean",
+        "isolated": "/tmp/semiprime-word-folds-20261027/SemiprimeWordPacketScheduledController.olean"
+      },
+      "sha256": {
+        "source": "fb51c21640ac46b54c4ba0ce3eaea62813d85d2fea77b33f1bfa7896ec63e4a7",
+        "canonical": "c05c4c9b8c861ea11258b1cbc4f6e3f6193d7511c14b662c173aa373484e0c95",
+        "isolated": "c05c4c9b8c861ea11258b1cbc4f6e3f6193d7511c14b662c173aa373484e0c95"
+      },
+      "strict": true,
+      "ordinary_root_linters": 15,
+      "standard_axioms_only": true,
+      "isolated_equal": true,
+      "generated_declarations": 48,
+      "theorem_constants": 33
+    }
+  },
+  "generated_declarations": 101,
+  "theorem_constants": 64
+}

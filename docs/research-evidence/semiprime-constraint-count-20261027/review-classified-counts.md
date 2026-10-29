@@ -1,0 +1,13 @@
+# Independent complete classified-callback review
+
+PASS. Root read-only review of SourceClassifiedCounts and SourceClassifiedCountsClock, authored separately from this review. No source changes or reviewer rebuilds.
+
+localCount dispatches the original descriptor to the concrete physical head or incidence classifier. It never calls the old local completion recursion. local_original supplies the appropriate exact original paddedLocal theorem. Incidence requires the four cross-namespace inequalities through Separated; this property is proved for every original compiled descriptor by the actual complete index construction. Head descriptors are unrestricted. No new promise about the original network is assumed.
+
+evaluate computes each local word once, recurses once through the original program suffix, and uses the proper physical lane adder. Both the chosen local report and adder report remain. It preserves every original descriptor occurrence, including identical terms. evaluate_original identifies both lanes with the actual old finite evaluator; evaluate_eq is semantic equality only, not an attempt to transfer an old work field. The new runtime contains no Word-valued environment, native count result, completion push or unary padding construction.
+
+sequential initializes and copies the actual physical prefix IDs, then evaluates the exact original remaining range. Its zero-override initial environment supplies all required valid-menu and key bounds. score reuses physical cached weights and performs the existing physical multiply/add combination. score_eq gives exact previous scalar score on every acquired-menu prefix and separated original program family, while score_valid is unconditional.
+
+Every actual local payload is bounded by the acquired power width W=8Q(r+1)+1. Each lane suffix has width at most W+T from actual adder growth. This is structural, with no desired count/Fits premise. The clock module derives local work from the actual head and incidence budgets, then sums all local and lane-adder work, copies the initial prefix and performs weighted combination. Its original score bound discharges physical payload and read conditions using actual bank membership; it does not license a callback-cost oracle. Power/weight/bank setup is intentionally paid once by the outer search.
+
+The report still includes native support/range/descriptor/control stages. Current program count T=M^2+Q*n^2 and adder padding are explicit resources; no near-linear bit bound or elimination of the quadratic term-list acquisition is claimed here. No whole public primitive-machine clock follows from these modules alone. No correctness or scope defect found.

@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "ordinary_root_linters": 15,
+  "standard_axioms_only": true,
+  "total_declarations": 125,
+  "total_theorems": 66,
+  "modules": {
+    "SemiprimeRationalWordAcquisition": {
+      "paths": {
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeRationalWordAcquisition.lean",
+        "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeRationalWordAcquisition.olean",
+        "isolated": "/tmp/semiprime-native-bit-join-20261027/SemiprimeRationalWordAcquisition.olean"
+      },
+      "sha256": {
+        "source": "51484a1e427d9156d2e5d0b86625ce76423f02346b45b8338d734acc5666aa29",
+        "canonical": "9117ff17c42c88e5cabdee4dfe1c490997f87dd88a4422302299f300763a13f5",
+        "isolated": "9117ff17c42c88e5cabdee4dfe1c490997f87dd88a4422302299f300763a13f5"
+      },
+      "strict": true,
+      "isolated_equal": true,
+      "generated_declarations": 58,
+      "theorem_constants": 26
+    },
+    "SemiprimeSourceWordAcquisition": {
+      "paths": {
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordAcquisition.lean",
+        "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordAcquisition.olean",
+        "isolated": "/tmp/semiprime-native-bit-join-20261027/SemiprimeSourceWordAcquisition.olean"
+      },
+      "sha256": {
+        "source": "d4f0dd238771d79135d72435b0d5d39c59ed07e00d4670396af14f83e36afeed",
+        "canonical": "f58f173dcf45f22389e4885267da4e096587d2a76eb14f583e524211177a3347",
+        "isolated": "f58f173dcf45f22389e4885267da4e096587d2a76eb14f583e524211177a3347"
+      },
+      "strict": true,
+      "isolated_equal": true,
+      "generated_declarations": 56,
+      "theorem_constants": 31
+    },
+    "SemiprimeNativeInputBits": {
+      "paths": {
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeNativeInputBits.lean",
+        "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeNativeInputBits.olean",
+        "isolated": "/tmp/semiprime-native-bit-join-20261027/SemiprimeNativeInputBits.olean"
+      },
+      "sha256": {
+        "source": "ca6d925c060baa719cd81b7e3b368cbaf84f8094cd0f874a58f5ba5ce1be44f4",
+        "canonical": "9364d262f88e6dbd6301b66b3303e0b885c69b7c86c9cef7bd243fc736aad629",
+        "isolated": "9364d262f88e6dbd6301b66b3303e0b885c69b7c86c9cef7bd243fc736aad629"
+      },
+      "strict": true,
+      "isolated_equal": true,
+      "generated_declarations": 11,
+      "theorem_constants": 9
+    }
+  }
+}

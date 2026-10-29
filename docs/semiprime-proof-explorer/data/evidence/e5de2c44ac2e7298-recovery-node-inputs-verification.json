@@ -1,0 +1,454 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 14,
+    "declarations": 262,
+    "theorems": 179
+  },
+  "modules": {
+    "SemiprimeD1StackRecoveryNodeInputs": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputs.lean",
+        "sha256": "16050535d9b00a6e10630bfad6b829c2eb5b11be8f546219d0a846d0eebdca5e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputs.olean",
+        "sha256": "00e07ddb089d7d7b0cbfe94735c8778a09209ed90f06d6e3d963ba7a676b0c0d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputs.olean",
+        "sha256": "00e07ddb089d7d7b0cbfe94735c8778a09209ed90f06d6e3d963ba7a676b0c0d"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsInventory": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsInventory.lean",
+        "sha256": "d054f11ae4f23b118f42570da2c042ff1e291cf95aa0ecd4f8c3e8146d15ab76"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsInventory.olean",
+        "sha256": "13695e170bc4393447ee45b84012bb49474d2c9201b5402cb721840f01655358"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsInventory.olean",
+        "sha256": "13695e170bc4393447ee45b84012bb49474d2c9201b5402cb721840f01655358"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsView.lean",
+        "sha256": "c267b6970b1d46ec906456ec6b0d9ca669bdbf7c30f775aab914be802a83621a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsView.olean",
+        "sha256": "faec8d88ecb9316a789c483e645faf3842055438625478e3b5f30c05d7bf5f07"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsView.olean",
+        "sha256": "faec8d88ecb9316a789c483e645faf3842055438625478e3b5f30c05d7bf5f07"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsCodec": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsCodec.lean",
+        "sha256": "bf044d89c18b48f93f6e5ed18602bda4c731b496884fdc9dc7fca9a0021516b4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsCodec.olean",
+        "sha256": "775f8c6946d0ba732704b03305bc052c631676590c8ad440a45afa82fcf5a70e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsCodec.olean",
+        "sha256": "775f8c6946d0ba732704b03305bc052c631676590c8ad440a45afa82fcf5a70e"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsEncoding.lean",
+        "sha256": "de755bb2d0e4090cff6ea2d42e6653abe783dc9dbe8575ef6f42ca2822c9a263"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsEncoding.olean",
+        "sha256": "af2d4bef6e8fd7ade81aab054792627771b8b95a9a15f01448099d6bdde23f4c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsEncoding.olean",
+        "sha256": "af2d4bef6e8fd7ade81aab054792627771b8b95a9a15f01448099d6bdde23f4c"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsAffineReady": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsAffineReady.lean",
+        "sha256": "a0ffefcab70946a8775958f77fb8133a2da6ff97db9371fe9fa56368ce7a4ad5"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsAffineReady.olean",
+        "sha256": "a3af8fe467c0ba1874d08b84619134fb6653a90c8b812256b8896ba6719b4019"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsAffineReady.olean",
+        "sha256": "a3af8fe467c0ba1874d08b84619134fb6653a90c8b812256b8896ba6719b4019"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsCalls": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsCalls.lean",
+        "sha256": "faeea97ee80739c24e5d66f8794164ceda32487a80d5daa36318decbd72af214"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsCalls.olean",
+        "sha256": "95e152df4b3a1db8ac5eb51806d1d532e791d5e604c2bfd595a72f659d1822a8"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsCalls.olean",
+        "sha256": "95e152df4b3a1db8ac5eb51806d1d532e791d5e604c2bfd595a72f659d1822a8"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsReadyCall": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsReadyCall.lean",
+        "sha256": "af0c227cbdc361777c32d8a8355227c726c4a571efa8e991428fb66a888bacd6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsReadyCall.olean",
+        "sha256": "2c205989f80160a1d419b5728f09bca1ad29c4433ffeab158d05152ccbba5a86"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsReadyCall.olean",
+        "sha256": "2c205989f80160a1d419b5728f09bca1ad29c4433ffeab158d05152ccbba5a86"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsExecution.lean",
+        "sha256": "ac20c99cc30af583bf600776a87f92e3de43d7226cae85b4658acee1b572744c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsExecution.olean",
+        "sha256": "bb5e754d835168ab60774f2d847a5d940c80247184397257255a8d77df22f866"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsExecution.olean",
+        "sha256": "bb5e754d835168ab60774f2d847a5d940c80247184397257255a8d77df22f866"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsResource": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsResource.lean",
+        "sha256": "f046fec5dd7f21d763573ede2e4f14529ae753412ad09569bb78eb6401c98192"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsResource.olean",
+        "sha256": "51bc8df929a92c9f99aa9d2ea48ecd43260aacebe4abd4ebf72d1b0ef2e5cb13"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsResource.olean",
+        "sha256": "51bc8df929a92c9f99aa9d2ea48ecd43260aacebe4abd4ebf72d1b0ef2e5cb13"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsBounds.lean",
+        "sha256": "4980db938e88e5d8e263314281a6e31704cdce15279fad86a5950f312a5c9952"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsBounds.olean",
+        "sha256": "ebe39128bdc03babafe0edc105dd8b2041206f0eedd7eca41ca586c6091778d3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsBounds.olean",
+        "sha256": "ebe39128bdc03babafe0edc105dd8b2041206f0eedd7eca41ca586c6091778d3"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsStorage.lean",
+        "sha256": "383c19b181f226012e52e6a294093f8a091f8fa8b9a6a375c1d11097b5616b88"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsStorage.olean",
+        "sha256": "227e10ef281b8321d85bc328aaf637c0c37464d6cd195cfa8b0a64cf5a56a257"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsStorage.olean",
+        "sha256": "227e10ef281b8321d85bc328aaf637c0c37464d6cd195cfa8b0a64cf5a56a257"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginal.lean",
+        "sha256": "20315f50b142eb2f5f30889c1e2f04360e62aaa4fdf05bce4762433e32fa2623"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginal.olean",
+        "sha256": "8d4feb5cd87df1b8f32de67610524b23961ce292c89cf0005f2e809bb6058724"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsOriginal.olean",
+        "sha256": "8d4feb5cd87df1b8f32de67610524b23961ce292c89cf0005f2e809bb6058724"
+      }
+    },
+    "SemiprimeD1StackRecoveryNodeInputsOriginalResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginalResources.lean",
+        "sha256": "6fb507d675277ef11bba49842aec9c13b1cc4a6ccc97ffeb87f4a73f197ab20e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginalResources.olean",
+        "sha256": "ffc652dbe86cdef82f432890aa6713b4b71981b878e7807ab7936db0d5300a7c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-frozen/SemiprimeD1StackRecoveryNodeInputsOriginalResources.olean",
+        "sha256": "ffc652dbe86cdef82f432890aa6713b4b71981b878e7807ab7936db0d5300a7c"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "sealed_utc": "2026-10-29T05:22:56.879718+00:00",
+  "source_and_canonical_writers_stopped": true,
+  "source_proofs_default_200000_heartbeats": true,
+  "all_source_canonical_permissions": "0444",
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 19272,
+    "files": 38544,
+    "before": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-dependencies/imported-pins-after.json",
+    "live_bytes_revalidated": true
+  },
+  "baseline_protected_files": {
+    "status": "PASS",
+    "protected_files": 17054,
+    "baseline": "/tmp/semiprime-explicit-rate-20261027/resumed-preservation-before.json",
+    "all_current_bytes_match": true
+  },
+  "prior_frozen_files": {
+    "status": "PASS",
+    "groups": [
+      "source-selected-keys-verification.json",
+      "packed-moment-verification.json",
+      "phase-child-fresh-verification.json",
+      "phase-geometry-guard-verification.json",
+      "network-rows-verification.json",
+      "child-lift-vertex-verification.json",
+      "packed-network-original-verification.json",
+      "network-owner-index-verification.json",
+      "binary-square-root-verification.json",
+      "recovery-powers-verification.json",
+      "packed-moment-readout-verification.json",
+      "recovery-width-verification.json",
+      "child-table-entry-verification.json",
+      "root-packet-padding-verification.json",
+      "packet-rows-verification.json",
+      "vertex-record-splice-verification.json",
+      "marked-public-input-verification.json",
+      "phase-cache-fresh-verification.json",
+      "descriptor-record-verification.json",
+      "static-record-verification.json",
+      "source-alphabet64-verification.json",
+      "phase-working-precision-verification.json",
+      "packed-root-input-verification.json",
+      "packed-network-semantics-verification.json",
+      "root-selection-acquire-verification.json",
+      "packet-orientation-verification.json",
+      "child-lift-table-verification.json",
+      "packed-root-context-verification.json",
+      "root-scale-leaf-verification.json",
+      "recovery-grid-verification.json",
+      "source-incidence-verification.json",
+      "packet-inventory-verification.json",
+      "cache-phase-bank-verification.json",
+      "packed-root-cache-reuse-verification.json",
+      "packed-factor-recovery-verification.json",
+      "marked-public-input-table-verification.json",
+      "euclid-gcd-verification.json",
+      "cache-phase-verification.json",
+      "phase-bank-restore-verification.json",
+      "child-unit-vertex-verification.json",
+      "root-network-records-verification.json",
+      "source-incidence-select-verification.json",
+      "marked-root-records-verification.json",
+      "recovery-affine-verification.json",
+      "jet-blocks-verification.json",
+      "phase-child-context-verification.json",
+      "packed-root-metadata-verification.json",
+      "normalized-inverse-verification.json",
+      "source-environment-verification.json",
+      "rational-normalize-verification.json",
+      "source-selection-acquire-verification.json",
+      "phase-working-metadata-verification.json",
+      "rational-operation-verification.json",
+      "phase-geometry-verification.json",
+      "static-input-table-verification.json",
+      "port-ordinal-verification.json",
+      "boundary-record-verification.json",
+      "product-table-original-verification.json",
+      "product-record-verification.json",
+      "carry-table-verification.json",
+      "scale-table-verification.json",
+      "transform-table-verification.json",
+      "carry-record-verification.json",
+      "scale-record-verification.json",
+      "transform-record-verification.json",
+      "root-schedule-verification.json",
+      "root-owner-index-verification.json",
+      "root-network-rows-verification.json",
+      "source-occurrences-verification.json",
+      "root-source-occurrences-verification.json",
+      "source-key-frequency-verification.json",
+      "source-packet-padding-verification.json",
+      "owner-recipe-verification.json",
+      "owner-records-final-verification.json",
+      "boolean-factor-clock-verification.json",
+      "root-controller-metadata-verification.json",
+      "all-descriptor-record-verification.json",
+      "recovery-coordinate-verification.json",
+      "factor-scope-verification.json",
+      "boolean-descriptor-verification.json",
+      "full-factor-catalogue-resource-verification.json",
+      "stack-product-table-verification.json",
+      "root-phase-parameters-inventory-verification.json",
+      "root-phase-parameters-verification.json",
+      "boolean-factor-correctness-verification.json",
+      "fresh-bank-restore-verification.json",
+      "packet-mode-acquire-verification.json",
+      "owner-arithmetic-verification.json",
+      "boolean-factor-acquisition-verification.json",
+      "weighted-mode-core-verification.json",
+      "full-factor-catalogue-final-verification.json",
+      "owner-lookup-verification.json",
+      "root-packet-inventory-verification.json",
+      "root-recovery-width-verification.json",
+      "port-owner-routing-verification.json",
+      "recursive-controller-schedule-verification.json",
+      "root-recursive-control-verification.json",
+      "selectors-carry-verification.json",
+      "source-selection-acquire-projection-verification.json",
+      "owner-fibre-catalogue-final-verification.json",
+      "selected-arithmetic-verification.json",
+      "owner-recipe-final-verification.json",
+      "all-descriptor-root-envelope-verification.json",
+      "weighted-mode-catalogue-verification.json",
+      "recovery-denominator-verification.json",
+      "owner-records-resource-verification.json",
+      "factor-scope-fibre-verification.json",
+      "recovery-finish-verification.json",
+      "owner-catalogue-final-verification.json",
+      "owner-fibre-verification.json",
+      "schedule-active-verification.json",
+      "zero-boundary-readonly-verification.json",
+      "recursive-schedule-verification.json",
+      "boolean-record-verification.json",
+      "owner-catalogue-verification.json",
+      "root-record-coordinates-verification.json",
+      "product-table-control-verification.json",
+      "root-parameters-verification.json",
+      "owner-madd-bounds-verification.json",
+      "root-phase-grid-verification.json",
+      "jet-fold-verification.json",
+      "owner-records-source-verification.json",
+      "port-owner-routing-final-verification.json",
+      "schedule-successor-verification.json",
+      "product-table-output-rate-verification.json",
+      "owner-routing-final-verification.json",
+      "root-phase-fresh-records-verification.json",
+      "source-selection-acquire-bounds-storage-verification.json",
+      "boolean-descriptor-reject-verification.json",
+      "full-factor-catalogue-source-verification.json",
+      "boolean-factor-indices-verification.json",
+      "recovery-entries-verification.json",
+      "owner-fibre-catalogue-verification.json"
+    ],
+    "total_source_object_files": 2412
+  },
+  "independent_read_only_review": {
+    "status": "PASS",
+    "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-independent-review.txt",
+    "sha256": "c093f431ccba08a160146013bd2965815bb2fb8932b1bd0dd50af3e7f915b916",
+    "all14_current_source_pins_match": true,
+    "all1115_lines_read": true,
+    "partitions": [
+      {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-parent-review.txt",
+        "sha256": "1c3dff3973238d6ba9b7995276b5613ed25de007837269d18322d434d6ae2109",
+        "modules": 4,
+        "lines": 396
+      },
+      {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-owner-review.txt",
+        "sha256": "6455de5e809d7520bcc49f379964fc3d5db83dbaa4bdfe91b9be7969425f37b4",
+        "modules": 4,
+        "lines": 247
+      },
+      {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-vertex-review.txt",
+        "sha256": "ea6d13b7ff1c3399252b8b417b31c019854e55e82f944f58e4587fa8457189ff",
+        "modules": 6,
+        "lines": 472
+      }
+    ],
+    "source_and_canonical_writes": false
+  },
+  "actual_controls": {
+    "status": "PASS",
+    "whole_cases": 4,
+    "actual_acquired_Grid_ready_continuations": 1,
+    "steps": [
+      4370,
+      8931,
+      120853,
+      140098,
+      88332
+    ],
+    "actual_total_transitions": 362584,
+    "all_roles": 140,
+    "all112_affine_Grid_cache_words_retained": true,
+    "all5_physical_inputs_retained": true,
+    "all26_other_private_words_clear": true,
+    "exact_native_inverse_and_power_array_bytes": true,
+    "actual_Grid_inverse_powers_call_counts_checked": true,
+    "ready_Grid_calls": 0,
+    "snapshot_identity_kernel_checked": true,
+    "observer_generated_constants_standard3": 41,
+    "initial_stale_flags_and_exact_two_real_outer_returns": true,
+    "source": "/tmp/semiprime-explicit-rate-20261027/RecoveryNodeInputsControls.lean",
+    "source_sha256": "67c43c8177a2d3e8db445014dabca3c1d6c6f27eed5d93d473ef4858bbf14501",
+    "log": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-controls.log",
+    "log_sha256": "b1364a22c40a028e8205c9353cb65f90498e12cb513faefd026f7269ab92cd83",
+    "core_source_object_unchanged": true,
+    "no_frozen_control_repeats": true,
+    "cases": "a0q0W0; a0q3W0; a0q3nonzeroWwithpadding; a1nontrivialslopes; SAMEactualGridcache-ready continuation"
+  },
+  "scope": {
+    "physical_roles": 140,
+    "allocated_banks": "entireAffine112/Grid104 source/cache once +inversePrivate20 +powersPrivate8; NO duplicate alias banks",
+    "program": "ONE fixed parameterless finite literal program, three real complete source calls and finalhalt; SAME actualGrid-ready entry omits Grid replay",
+    "runtime_inputs": "ONLY physically encoded unary a/M/u, originalBINARYt (allpaddingcharged), actualWtemplate; no q/denominator/inverse/power/scalar/argument/Fits/clock/getter/evaluator/AST/callback supplier",
+    "whole": "realAffine112.start includes realGrid104 ONCE; actualacquired denominator/q directly feedWHOLEI58; actualretainedGridargument/q/W directly feedWHOLEP47; completeactualper-coefficient reads/mul/add/normalization/fits/framing/drains/returns paid by thoseactualcalls",
+    "ready": "actualENTIREGrid104 stoppedcache with all8affine+28new wordsEMPTY; runsactualq/affine/acquiredinverse/powers onSAMEprogram WITHOUTGridreplay",
+    "original": "exactWHOLE nativeinverse/powers arrays inclq0/W0/literalONE/missingZERO/highpadding and allrawrightfold/operandorders; originalu<=M+actualW>=Node.width implyinverse/powerValid+Bounded+originalvalues internally",
+    "retention": "ALL112 acquiredGrid/affine fields retainedBYTEEXACT; ONLYinverse/power outputsnewlypopulated; all26othernewwordsphysicallyEMPTY; allflags/internalreturnsnone",
+    "honest_frontier": "PREPARED fivephysicaloriginalphase-word sourceconfiguration (oractualGridcache-ready), NOT N-onlyTuring.initList/scalarcounter. LiteralN-onlymetadata/Gridcaller and subsequentcompleteweight-array consumer are separatejoins; fullfactorerOPEN"
+  },
+  "clocks": {
+    "whole": "10^150*R^30",
+    "all140_plus_actual_returns": "10^153*R^30",
+    "R": "a+M+u+tBytes+WBytes+2^(a+1)+1, physicalgrid and W VALUESfullycharged; coefficientnumericsstayBINARY",
+    "operand_caps": "denominatorWordTape<=10^9R^3, inverseinputS<=10^10R^3, argumentfields<=a+WBytes+4, powersinput<=10R, allsemanticbytebounds independentelapsedexecution",
+    "original_dimension_clock": "10^270*D^150",
+    "original_dimension_storage": "10^273*D^150",
+    "D": "a+M+tBytes+2^(a+1)+1 with actualW=Node.width(a,M)",
+    "root_specialization": "fixedglobalCoefficient*(ell+1)^1500 onactualoriginala/M andboundedbinarytpadding, SAMEpreparedsource notNonlyinitList",
+    "provenance": "sumofTHISactualcompleteAffine/Grid+Inverse+Powerscalls andreturns+halt; no native/reportclocktransport; readyownsumOMITSGrid"
+  },
+  "api": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/recovery-node-inputs-api.txt",
+    "sha256": "0819609040e0bd04ac749aa825a039eed9698bc096c1d171d10683cfdb126f23"
+  }
+}

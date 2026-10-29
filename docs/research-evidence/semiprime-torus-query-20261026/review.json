@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Positive hybrid/interface integration; uniform acquisition unchanged",
+  "catalogue": {
+    "domains": 10,
+    "named_forms_or_readout_interfaces": 15,
+    "independent_algorithms": false
+  },
+  "positive_results": [
+    "Complete torus-only weighted query with arbitrary nonliteral alias recovery",
+    "Gated singleton readout from row values; no clock derivatives or Lambert normalizer",
+    "Variable-window support union: soft(K+sqrt(S)), with cheap-first bin scheduling",
+    "Finite barycentric rank-one reset matches the gated readout"
+  ],
+  "uniform_acquisition": "soft O(K^(5/4))",
+  "target_soft_K_proved": false,
+  "full_sixth_root_bit_proof_complete": false,
+  "other_agent_scalar_C": "Definition not supplied or located; no identification claimed",
+  "reviews": [
+    {
+      "reviewer": "knot_qholonomic",
+      "target": "torus-query.md",
+      "status": "PASS; cheap-first scheduling applied"
+    },
+    {
+      "reviewer": "knot_skein_transfer",
+      "target": "exotic-forms.md",
+      "status": "PASS"
+    },
+    {
+      "reviewer": "knot_quantum_dilog",
+      "target": "joint-lambert.md and hybrid-integration.md",
+      "status": "PASS; T_j^-1 pullback corrected"
+    },
+    {
+      "reviewer": "knot_qholonomic",
+      "target": "direct-graph-residue.md",
+      "status": "PASS"
+    },
+    {
+      "reviewer": "knot_skein_transfer",
+      "target": "direct-selected-residue.md",
+      "status": "PASS; coupled bank and gate acquisition clarified"
+    },
+    {
+      "reviewer": "root",
+      "target": "All reports, Lucas finite parts and actual source contracts",
+      "status": "PASS; Lucas completion uses row values only"
+    }
+  ],
+  "checks": {
+    "structural_fixtures": 116,
+    "root_replay_rows_and_csv_equal": true,
+    "root_replay_seconds": 7.913452950015198,
+    "character_graph_cases": 30,
+    "rank_one_source_identities": 60,
+    "lucas_regular_parameter_checks": 112,
+    "lucas_finite_part_flags": 7,
+    "symbolic_euclid_checks": 2,
+    "empty_gate_diagnostic": true,
+    "all_source_pins_and_file_formats_pass": true
+  },
+  "preservation_required": {
+    "protected_prior_files": 1020,
+    "document_prefixes": 2,
+    "concurrent_files": 23
+  },
+  "scope": "Paper derivations and exact algebra/native-bank support diagnostics. No factoring-success campaign, general lower bound, new exponent or Lean proof claim.",
+  "preservation_verified": {
+    "protected_prior_files": 1020,
+    "document_prefixes": 2,
+    "concurrent_files": 23
+  }
+}

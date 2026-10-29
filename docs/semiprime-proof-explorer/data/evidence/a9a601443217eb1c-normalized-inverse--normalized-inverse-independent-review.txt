@@ -1,0 +1,251 @@
+Combined independent READ-ONLY review: PASS, no blockers.
+ALL56 current sources/every body/all4243lines independently read: parent18/1337 +owner12/1142 +vertex26/1764.
+No source/canonical writes, imports/builds or control reruns by reviewers.
+All56 live source SHA pins match assignment and the independently reviewed source bytes.
+The three original reports remain preserved verbatim and are SHA-pinned below.
+
+parent: 18 modules/1337 lines, reportSHA256=a1fde02bd3d5e6db5932f37d8a9f73db67c076295ea91b0fd3c2df73f68a16c5  /tmp/semiprime-explicit-rate-20261027/normalized-inverse-parent-review.txt
+owner: 12 modules/1142 lines, reportSHA256=cac6f7f48cc53c590ae2573da04802c4d1c77975877dc9e4ed222415b4462345  /tmp/semiprime-explicit-rate-20261027/normalized-inverse-owner-review.txt
+vertex: 26 modules/1764 lines, reportSHA256=cbec54956197676d7eb74b12280b95481024619516064580adb2de3049759064  /tmp/semiprime-explicit-rate-20261027/normalized-inverse-vertex-review.txt
+
+ALL56 CURRENT SOURCE PINS
+7f5d82329fe2ee0a9c87f9e38f7b9b4965a76d2f702929cc47545388d91704b6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseSpec.lean
+8a1bec2a5a53ba6be63fb8cd166b0606b760cf10171312bfcbcffd30fb9bafa3  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverse.lean
+0672b86535dcab3eeaaff3ffcb7adcc16880f58ea34f3b73d7e81415d2305700  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseView.lean
+f10c0326fd68d380cdb9d67c74052a76637a72d2c5a97b27d47ac244c39de6a6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadBuffers.lean
+8b690d4d808dc859e5381b955bf05a3b3d768ac2f6e480acccf8270f1620c9ec  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseInventory.lean
+1d6c33ff758595c831ebe56bfd38586e14900f85d0ed95d247c6436d3ff65411  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePrimitives.lean
+b849456683db43f7effff638ada9140ff3bf735881c4b8fdcbef85c816e71370  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseIndices.lean
+6b54b40f5df0177432b987584483b3642baaf1b3571e209cfcda87196a21483e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePrepare.lean
+fd87abbdbf625671217119fc962831269f862d456e2d0d4c2bf5c4ba16e6391c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCalls.lean
+40fa1d8ca1e6c25cd4fa4fdf85f36077d52dc7da0568cb7f32d488162f22f451  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationInput.lean
+def9aa0dc40127d3458777c140fe46c3163572d860dcb225f7d4d068445cce56  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationOutput.lean
+4be1d27a84fb28f10586d193868bf20634ef61df68635db57dad37cd2f07b3e0  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCleanup.lean
+d72e6ac311e546239003f543af4a5cd848e6712e2880d569132eabb4b10c1b78  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperation.lean
+0de59aaad07ebef4a33dcea4739c19b617808c6d22e72939352727140105a8bf  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationCall.lean
+9c791eecc6777c1345a1ef4f90a9fd27f3e77fe89b6a58130ced97f7a6c12634  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseRegisterAlgebra.lean
+f234f614af05ee4467304f994a9cb6495f1ff346e2463e56509b7036f19c7555  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseRegisterClear.lean
+fc8b5c82e32068ba8050b86df4c7415f2b660639af0c6dee1513cbcd5003210e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePairSpec.lean
+661233a86cdb866d6531522a1037c73830e74451fa5689b8b013b430baf5f90f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadFields.lean
+199652ac96254e002db85a27af66672e9e9e41650bd583db7e763f4caa595b82  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadSteps.lean
+2a52d0a7e1a65c3b8a4c8d520761919d715d3465ed1862f204e1907a1958551e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadHeads.lean
+46b69befa0399b76fe5a0c716f0b5255a309bdbbbbcf49d318b5c2e11518e8c2  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadLoop.lean
+c4a36066014ed04ee21262f21ac63a590747b61ed20ce22d7d07450cc97ddb94  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadCall.lean
+70a2ebeb98ef0a146661dacc37d2c0e852fe80d607c1eaa914ef23367f23f660  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePair.lean
+4eb8b5c7de431f6c29cd0c9f9a349809e3243894c6a0bc7cfe6eb20c475ee91c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseRecurrence.lean
+8c62c2470db5f7ef749a6f46bf040c880466117adf9cd953b4b71e432438d670  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseInner.lean
+4a548de5a58f3153995f0680b466738177c1c4c7796f89e813c261986e150f39  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficientFrame.lean
+edeaadf54198e201fc6a90c8ab183c6ff550c5366a74c58ad283e0fc256ed4e4  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseNegate.lean
+024603d933b3a936e045f9e2195c84cdf4fcc117d59967d526ce069638fa3261  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficient.lean
+00610509319df57610d6c6d0f3407b03f06f7a7cef35a8fde1260b2015f6e661  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuterView.lean
+50d4fc0115c677717f188e95896f7afca9a4e0721d9ecd78b6e9d18893c9e984  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseSeed.lean
+f31ea373680dd8c6fe0df330b1ff6e6948d8ab81407abd0434d157ddaad98e62  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBootstrap.lean
+a1f6ad78040d2ab03678c12d0b7782f031ffa345d5e4adb43ae1de4be5e1bc70  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuter.lean
+418a26c41a24ea6a3100f5d57ed16df9c79ec87be0c34ec24bf2f6a6dea53e54  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseMeaning.lean
+fc08e44ee75d2176f1e1db660f308ab929454d8a3e9cdbd7c3dc51c62fb6df04  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseAcquisition.lean
+b5f2448f1ea2c0ebcd018b420c585c8213acd19767ab68aa11615059edcdbc42  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseWidths.lean
+25cd673e7ada271cbb4aac59fa50ae1ef814301a308fb0843bedeabf48400be5  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationBounds.lean
+6624c6602c1b1740ba558377d1ab8607965a609c2a5ed8d785a028bf29c0aea5  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBankBounds.lean
+2c5d0a3e594bd5d981d06512e663ab80af7b6ab32d87506bbbe7fc22176e6b1e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseStateBounds.lean
+d7fd476cb7fd7dffb75bda7d0e1af1eb19baf02c57509a79268acf3f73b3a406  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePairBounds.lean
+14e4d8a6246f83f4c61037c77b16f030b13a7b01060d1858aa9c230950c7fd09  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseInnerBounds.lean
+a1f9e38d3320c2dc0d71b103e132887f2ccf750fa0421b34614276b4393ba0f5  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFramedBounds.lean
+4220e03daa24f90201277fd6da59b6952f7f6486989249837cf41d4b0db28e10  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseNegateBounds.lean
+f7de0876f5add0854f2f7e5858f444376fc2f083518894c8d065af8e01e465fb  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficientBounds.lean
+96fb601b9540a76d589efd8f889fe99ed4cbc173bf29acdd1926d0952f5efeb7  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuterBounds.lean
+452d9572930170aabea03e65f1ace959f1a3540304d67a6f0e6f3a8f459b0ee8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishBuffers.lean
+f3a5a5d71c42eed789789ce7a2e9d0f4890323bedaeedff8a2bc63e4fc4dff48  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishFields.lean
+d74546db9791648a6241e47086bd592fb65be62c47eb073335c7c07c24364bca  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishRow.lean
+20b1681fe4ba847a17f28754a44e047775c563306c7ccdf4f98439f94942c8ff  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishLoop.lean
+4c0532389174c3dc85188e4401f51e8671c0982ceac20b8e5c19d2b9b0033904  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinalCleanup.lean
+143c259f99e162c13b084329ae60b5c4517c8ac473df6717e63028fa3149ef20  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseEncoding.lean
+2e4126e04419ebdf72fb151ae2fcddedace11f222c0ac92e8c56f12e61aefdbe  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOutputBounds.lean
+2c5eab036a2b6f9a8325fd7761b9c9b4691c060f1106dbcefdd35001994982c5  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseExecution.lean
+47bddd3667f5cc31e20522d5a98766ba1f6776b10f277b2ccbd94ab3e6307377  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBounds.lean
+2074e1d0704765caf3b43d39011f31f02ff864356df64a25823a5692fb259695  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseLegacy.lean
+a909668b0bb2b440a1b3388a2ce2b9c7489476aaeccfd97db7dea48b7ce4a753  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseStorage.lean
+d8f15a93541c54076913f954a477e891f8d1082020db6628cf3a0be425bfd1b4  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOriginal.lean
+
+REVIEW REPORTS
+
+----- parent -----
+Independent READ-ONLY parent review: PASS; no blocker found.
+Read EVERY body/all1337 lines of assigned18 current modules: Spec, Core, Pair, Recurrence, Inner, Coefficient, OuterView, Seed, Bootstrap, Outer, Meaning, Acquisition, Encoding, Execution, Bounds, Legacy, Storage, Original. No edits, imports/builds, canonical rebuilds or controls performed for this review.
+
+Core is a fixed58-role R36+8register+14aux source, exactly3 prepared physical inputs: typed denominator-array tape, true-unaryq and W. Data-valued indices never enter finite control. Literal positiveq ONE row is independentW/a0, includingW0; q0 reaches exact empty FALSE codec. Newest-first acquired prefix and built markers drive the inner loop's paid copies. Both coefficient reads use actual two-field parsers, skip/counter/default/drain stages and actual valid flag pops. Pair executes multiply(leftA_i+1,rightB_rev_i), then add(productFIRST,suffixSECOND). Four copies precede destructive destination clearing, including accumulator alias. Entire35 R36 work roles are physically drained after each operation. Pair6/cache8/final54 cleanup sweeps are real instructions, with every retained input and actual outer return preserved.
+
+Spec and Recurrence prove the descending physical fold equals native raw RIGHT fold, not merely equal rational value or a commutative/associative replacement. Entire-word next_prefix/more_original show each computed and framed row is the exact next native inverse coefficient. Inner indices are actually decreasing n..1 and n-1..0, and new coefficients are framed BEFORE register erasure/built-marker increment. Source_trace/source_run compose real bootstrap, complete coefficient loop, final row reversal, all54 private drains, true halt, cleared flags/returns. They accept no precomputed inverse, Fit supplier, operation stream, native clock or runtime getter.
+
+Own clock10^42*S^10 and all58+real return prefix bound10^45*S^10 follow SAME-source loops and semantic byte/count caps. Prefix storage uses actual own termination and primitive one-step growth, with no recursively powered child runtime. Legacy/Original give exact native output for all typed raw arrays (including zeroD, padding, W0) and derive original decode/Valid/Bounded from original u<=M and actual paid Node width. These are prepared-array source contracts. Literal upstream Affine-to-Inverse caller composition, original-N-only whole counter, scalar acquisition/handoff and global bound remain OPEN as their interfaces explicitly state.
+
+All18 assignment=before-read=after-read=current flat sourceSHA256 pins; all1337 source lines read. PASS.
+
+BEFORE
+7f5d82329fe2ee0a9c87f9e38f7b9b4965a76d2f702929cc47545388d91704b6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseSpec.lean
+8a1bec2a5a53ba6be63fb8cd166b0606b760cf10171312bfcbcffd30fb9bafa3  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverse.lean
+70a2ebeb98ef0a146661dacc37d2c0e852fe80d607c1eaa914ef23367f23f660  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePair.lean
+4eb8b5c7de431f6c29cd0c9f9a349809e3243894c6a0bc7cfe6eb20c475ee91c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseRecurrence.lean
+8c62c2470db5f7ef749a6f46bf040c880466117adf9cd953b4b71e432438d670  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseInner.lean
+024603d933b3a936e045f9e2195c84cdf4fcc117d59967d526ce069638fa3261  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficient.lean
+00610509319df57610d6c6d0f3407b03f06f7a7cef35a8fde1260b2015f6e661  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuterView.lean
+50d4fc0115c677717f188e95896f7afca9a4e0721d9ecd78b6e9d18893c9e984  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseSeed.lean
+f31ea373680dd8c6fe0df330b1ff6e6948d8ab81407abd0434d157ddaad98e62  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBootstrap.lean
+a1f6ad78040d2ab03678c12d0b7782f031ffa345d5e4adb43ae1de4be5e1bc70  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuter.lean
+418a26c41a24ea6a3100f5d57ed16df9c79ec87be0c34ec24bf2f6a6dea53e54  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseMeaning.lean
+fc08e44ee75d2176f1e1db660f308ab929454d8a3e9cdbd7c3dc51c62fb6df04  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseAcquisition.lean
+143c259f99e162c13b084329ae60b5c4517c8ac473df6717e63028fa3149ef20  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseEncoding.lean
+2c5eab036a2b6f9a8325fd7761b9c9b4691c060f1106dbcefdd35001994982c5  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseExecution.lean
+47bddd3667f5cc31e20522d5a98766ba1f6776b10f277b2ccbd94ab3e6307377  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBounds.lean
+2074e1d0704765caf3b43d39011f31f02ff864356df64a25823a5692fb259695  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseLegacy.lean
+a909668b0bb2b440a1b3388a2ce2b9c7489476aaeccfd97db7dea48b7ce4a753  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseStorage.lean
+d8f15a93541c54076913f954a477e891f8d1082020db6628cf3a0be425bfd1b4  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOriginal.lean
+
+AFTER
+7f5d82329fe2ee0a9c87f9e38f7b9b4965a76d2f702929cc47545388d91704b6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseSpec.lean
+8a1bec2a5a53ba6be63fb8cd166b0606b760cf10171312bfcbcffd30fb9bafa3  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverse.lean
+70a2ebeb98ef0a146661dacc37d2c0e852fe80d607c1eaa914ef23367f23f660  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePair.lean
+4eb8b5c7de431f6c29cd0c9f9a349809e3243894c6a0bc7cfe6eb20c475ee91c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseRecurrence.lean
+8c62c2470db5f7ef749a6f46bf040c880466117adf9cd953b4b71e432438d670  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseInner.lean
+024603d933b3a936e045f9e2195c84cdf4fcc117d59967d526ce069638fa3261  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficient.lean
+00610509319df57610d6c6d0f3407b03f06f7a7cef35a8fde1260b2015f6e661  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuterView.lean
+50d4fc0115c677717f188e95896f7afca9a4e0721d9ecd78b6e9d18893c9e984  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseSeed.lean
+f31ea373680dd8c6fe0df330b1ff6e6948d8ab81407abd0434d157ddaad98e62  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBootstrap.lean
+a1f6ad78040d2ab03678c12d0b7782f031ffa345d5e4adb43ae1de4be5e1bc70  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuter.lean
+418a26c41a24ea6a3100f5d57ed16df9c79ec87be0c34ec24bf2f6a6dea53e54  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseMeaning.lean
+fc08e44ee75d2176f1e1db660f308ab929454d8a3e9cdbd7c3dc51c62fb6df04  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseAcquisition.lean
+143c259f99e162c13b084329ae60b5c4517c8ac473df6717e63028fa3149ef20  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseEncoding.lean
+2c5eab036a2b6f9a8325fd7761b9c9b4691c060f1106dbcefdd35001994982c5  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseExecution.lean
+47bddd3667f5cc31e20522d5a98766ba1f6776b10f277b2ccbd94ab3e6307377  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBounds.lean
+2074e1d0704765caf3b43d39011f31f02ff864356df64a25823a5692fb259695  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseLegacy.lean
+a909668b0bb2b440a1b3388a2ce2b9c7489476aaeccfd97db7dea48b7ce4a753  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseStorage.lean
+d8f15a93541c54076913f954a477e891f8d1082020db6628cf3a0be425bfd1b4  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOriginal.lean
+
+
+----- owner -----
+NormalizedInverse58 independent read-only owner review: PASS
+All12 assigned FULL current source bodies read,1142 lines total. Scope: View, Inventory, Primitives, Prepare, Calls, OperationInput, OperationOutput, Cleanup, Operation, OperationCall, RegisterAlgebra, RegisterClear. No builds/imports/edits/control reruns.
+Full58-word view includes36 arithmetic,8 signed/denominator register fields,14 caller words. Static inventory injectivity/completeness includes all shadows and exact35/54 cleanup sets; W, original array/q, output retention excluded explicitly. Real Copy/Field/Frame and local-call contracts preserve foreign fields and actual outer-return stack, charging call/ret and real TRUE validity pops. Counters derive via paid copies of acquired prefix unary count; predecessor and literal ZERO seeding are real. All FOUR operand copies finish before any aliased destination erase. The actual included R36 call is fixed-site multiplication/addition, with exact legacy byte order; proof-side getReg/acquired functions are specifications only. Sign singleton physically consumed/reinserted, including negativezero/W0. All35 arithmetic EOF drains retain W and all foreign caches; actual trace_mass uses SAME executed fragment and counts58 roles, not native report clocks. Full operation includes success marker, actual local ret, and checked TRUE pop. Register algebra commutes disjoint proof writes only and does not reorder runtime arithmetic. Pair6/register8 real sweeps preserve accumulator and sources as stated.
+Prepared boundary stays honest: actual array, unary q and physical W required; no N-only or acquisition completion asserted by these files. No runtime/native-answer supplier or uncharged return found. No blocker.
+Current flat SHA256 pins all before=after=assignment:
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseView.lean 0672b86535dcab3eeaaff3ffcb7adcc16880f58ea34f3b73d7e81415d2305700
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseInventory.lean 8b690d4d808dc859e5381b955bf05a3b3d768ac2f6e480acccf8270f1620c9ec
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePrimitives.lean 1d6c33ff758595c831ebe56bfd38586e14900f85d0ed95d247c6436d3ff65411
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePrepare.lean 6b54b40f5df0177432b987584483b3642baaf1b3571e209cfcda87196a21483e
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCalls.lean fd87abbdbf625671217119fc962831269f862d456e2d0d4c2bf5c4ba16e6391c
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationInput.lean 40fa1d8ca1e6c25cd4fa4fdf85f36077d52dc7da0568cb7f32d488162f22f451
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationOutput.lean def9aa0dc40127d3458777c140fe46c3163572d860dcb225f7d4d068445cce56
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCleanup.lean 4be1d27a84fb28f10586d193868bf20634ef61df68635db57dad37cd2f07b3e0
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperation.lean d72e6ac311e546239003f543af4a5cd848e6712e2880d569132eabb4b10c1b78
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationCall.lean 0de59aaad07ebef4a33dcea4739c19b617808c6d22e72939352727140105a8bf
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseRegisterAlgebra.lean 9c791eecc6777c1345a1ef4f90a9fd27f3e77fe89b6a58130ced97f7a6c12634
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseRegisterClear.lean f234f614af05ee4467304f994a9cb6495f1ff346e2463e56509b7036f19c7555
+
+
+----- vertex -----
+{
+  "verdict": "PASS",
+  "utc": "2026-10-29T04:42:42.795015+00:00",
+  "reviewer": "/root/vertex_record_logger",
+  "all_assigned_lines_read": 1764,
+  "modules": [
+    "SemiprimeD1StackNormalizedInverseReadBuffers",
+    "SemiprimeD1StackNormalizedInverseIndices",
+    "SemiprimeD1StackNormalizedInversePairSpec",
+    "SemiprimeD1StackNormalizedInverseReadFields",
+    "SemiprimeD1StackNormalizedInverseReadSteps",
+    "SemiprimeD1StackNormalizedInverseReadHeads",
+    "SemiprimeD1StackNormalizedInverseReadLoop",
+    "SemiprimeD1StackNormalizedInverseReadCall",
+    "SemiprimeD1StackNormalizedInverseCoefficientFrame",
+    "SemiprimeD1StackNormalizedInverseNegate",
+    "SemiprimeD1StackNormalizedInverseWidths",
+    "SemiprimeD1StackNormalizedInverseOperationBounds",
+    "SemiprimeD1StackNormalizedInverseBankBounds",
+    "SemiprimeD1StackNormalizedInverseStateBounds",
+    "SemiprimeD1StackNormalizedInversePairBounds",
+    "SemiprimeD1StackNormalizedInverseInnerBounds",
+    "SemiprimeD1StackNormalizedInverseFramedBounds",
+    "SemiprimeD1StackNormalizedInverseNegateBounds",
+    "SemiprimeD1StackNormalizedInverseCoefficientBounds",
+    "SemiprimeD1StackNormalizedInverseOuterBounds",
+    "SemiprimeD1StackNormalizedInverseFinishBuffers",
+    "SemiprimeD1StackNormalizedInverseFinishFields",
+    "SemiprimeD1StackNormalizedInverseFinishRow",
+    "SemiprimeD1StackNormalizedInverseFinishLoop",
+    "SemiprimeD1StackNormalizedInverseFinalCleanup",
+    "SemiprimeD1StackNormalizedInverseOutputBounds"
+  ],
+  "scope": "Full26 assigned source bodies; fixed Core read as extra wiring context. No imports/builds/edits/canonical writes/controls. Complementary18 parent+12 owner sources independently assigned. This is read-only source/interface review, not a claim final gates have completed.",
+  "source_sha256_before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadBuffers.lean": "f10c0326fd68d380cdb9d67c74052a76637a72d2c5a97b27d47ac244c39de6a6",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseIndices.lean": "b849456683db43f7effff638ada9140ff3bf735881c4b8fdcbef85c816e71370",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePairSpec.lean": "fc8b5c82e32068ba8050b86df4c7415f2b660639af0c6dee1513cbcd5003210e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadFields.lean": "661233a86cdb866d6531522a1037c73830e74451fa5689b8b013b430baf5f90f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadSteps.lean": "199652ac96254e002db85a27af66672e9e9e41650bd583db7e763f4caa595b82",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadHeads.lean": "2a52d0a7e1a65c3b8a4c8d520761919d715d3465ed1862f204e1907a1958551e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadLoop.lean": "46b69befa0399b76fe5a0c716f0b5255a309bdbbbbcf49d318b5c2e11518e8c2",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadCall.lean": "c4a36066014ed04ee21262f21ac63a590747b61ed20ce22d7d07450cc97ddb94",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficientFrame.lean": "4a548de5a58f3153995f0680b466738177c1c4c7796f89e813c261986e150f39",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseNegate.lean": "edeaadf54198e201fc6a90c8ab183c6ff550c5366a74c58ad283e0fc256ed4e4",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseWidths.lean": "b5f2448f1ea2c0ebcd018b420c585c8213acd19767ab68aa11615059edcdbc42",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationBounds.lean": "25cd673e7ada271cbb4aac59fa50ae1ef814301a308fb0843bedeabf48400be5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBankBounds.lean": "6624c6602c1b1740ba558377d1ab8607965a609c2a5ed8d785a028bf29c0aea5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseStateBounds.lean": "2c5d0a3e594bd5d981d06512e663ab80af7b6ab32d87506bbbe7fc22176e6b1e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePairBounds.lean": "d7fd476cb7fd7dffb75bda7d0e1af1eb19baf02c57509a79268acf3f73b3a406",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseInnerBounds.lean": "14e4d8a6246f83f4c61037c77b16f030b13a7b01060d1858aa9c230950c7fd09",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFramedBounds.lean": "a1f9e38d3320c2dc0d71b103e132887f2ccf750fa0421b34614276b4393ba0f5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseNegateBounds.lean": "4220e03daa24f90201277fd6da59b6952f7f6486989249837cf41d4b0db28e10",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficientBounds.lean": "f7de0876f5add0854f2f7e5858f444376fc2f083518894c8d065af8e01e465fb",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuterBounds.lean": "96fb601b9540a76d589efd8f889fe99ed4cbc173bf29acdd1926d0952f5efeb7",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishBuffers.lean": "452d9572930170aabea03e65f1ace959f1a3540304d67a6f0e6f3a8f459b0ee8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishFields.lean": "f3a5a5d71c42eed789789ce7a2e9d0f4890323bedaeedff8a2bc63e4fc4dff48",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishRow.lean": "d74546db9791648a6241e47086bd592fb65be62c47eb073335c7c07c24364bca",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishLoop.lean": "20b1681fe4ba847a17f28754a44e047775c563306c7ccdf4f98439f94942c8ff",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinalCleanup.lean": "4c0532389174c3dc85188e4401f51e8671c0982ceac20b8e5c19d2b9b0033904",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOutputBounds.lean": "2e4126e04419ebdf72fb151ae2fcddedace11f222c0ac92e8c56f12e61aefdbe"
+  },
+  "source_sha256_after_current": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadBuffers.lean": "f10c0326fd68d380cdb9d67c74052a76637a72d2c5a97b27d47ac244c39de6a6",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseIndices.lean": "b849456683db43f7effff638ada9140ff3bf735881c4b8fdcbef85c816e71370",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePairSpec.lean": "fc8b5c82e32068ba8050b86df4c7415f2b660639af0c6dee1513cbcd5003210e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadFields.lean": "661233a86cdb866d6531522a1037c73830e74451fa5689b8b013b430baf5f90f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadSteps.lean": "199652ac96254e002db85a27af66672e9e9e41650bd583db7e763f4caa595b82",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadHeads.lean": "2a52d0a7e1a65c3b8a4c8d520761919d715d3465ed1862f204e1907a1958551e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadLoop.lean": "46b69befa0399b76fe5a0c716f0b5255a309bdbbbbcf49d318b5c2e11518e8c2",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseReadCall.lean": "c4a36066014ed04ee21262f21ac63a590747b61ed20ce22d7d07450cc97ddb94",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficientFrame.lean": "4a548de5a58f3153995f0680b466738177c1c4c7796f89e813c261986e150f39",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseNegate.lean": "edeaadf54198e201fc6a90c8ab183c6ff550c5366a74c58ad283e0fc256ed4e4",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseWidths.lean": "b5f2448f1ea2c0ebcd018b420c585c8213acd19767ab68aa11615059edcdbc42",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOperationBounds.lean": "25cd673e7ada271cbb4aac59fa50ae1ef814301a308fb0843bedeabf48400be5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseBankBounds.lean": "6624c6602c1b1740ba558377d1ab8607965a609c2a5ed8d785a028bf29c0aea5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseStateBounds.lean": "2c5d0a3e594bd5d981d06512e663ab80af7b6ab32d87506bbbe7fc22176e6b1e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInversePairBounds.lean": "d7fd476cb7fd7dffb75bda7d0e1af1eb19baf02c57509a79268acf3f73b3a406",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseInnerBounds.lean": "14e4d8a6246f83f4c61037c77b16f030b13a7b01060d1858aa9c230950c7fd09",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFramedBounds.lean": "a1f9e38d3320c2dc0d71b103e132887f2ccf750fa0421b34614276b4393ba0f5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseNegateBounds.lean": "4220e03daa24f90201277fd6da59b6952f7f6486989249837cf41d4b0db28e10",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseCoefficientBounds.lean": "f7de0876f5add0854f2f7e5858f444376fc2f083518894c8d065af8e01e465fb",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOuterBounds.lean": "96fb601b9540a76d589efd8f889fe99ed4cbc173bf29acdd1926d0952f5efeb7",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishBuffers.lean": "452d9572930170aabea03e65f1ace959f1a3540304d67a6f0e6f3a8f459b0ee8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishFields.lean": "f3a5a5d71c42eed789789ce7a2e9d0f4890323bedaeedff8a2bc63e4fc4dff48",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishRow.lean": "d74546db9791648a6241e47086bd592fb65be62c47eb073335c7c07c24364bca",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinishLoop.lean": "20b1681fe4ba847a17f28754a44e047775c563306c7ccdf4f98439f94942c8ff",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseFinalCleanup.lean": "4c0532389174c3dc85188e4401f51e8671c0982ceac20b8e5c19d2b9b0033904",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackNormalizedInverseOutputBounds.lean": "2e4126e04419ebdf72fb151ae2fcddedace11f222c0ac92e8c56f12e61aefdbe"
+  },
+  "assignment_before_after_current_match": true,
+  "findings": [
+    "Read EVERY body / ALL1,764 assigned lines across26 modules, plus entire fixed Core as wiring context. No imports, builds, source/object edits or control executions.",
+    "Actual reader copies the retained physical array and paid unary index to two distinct work words. TRUE/FALSE/EOF branches consume actual markers/tags; BOTH full signed/denominator Field parsers and their TRUE validity pops execute. Selected paths drain the entire unread tail and remaining copied query; skipped paths drain both cache fields; missing entries acquire literal unfitted ZERO evenW0. Actual source/index/cache invariants preserve every foreign word and restore buffers/scratch/validity.",
+    "Indices.terms/aIndex/bIndex are proof descriptions of actual unary tapes. Both decreasing index pops execute, including zero-prefix EOF. The i+1 denominator read and reversed-prefix i read match the native descending dot order; no native numeric address, list indexing or coefficient evaluator is an instruction.",
+    "PairSpec preserves exact raw signed/magnitude/denominator bytes. Product is acquired leftFIRST/rightSECOND. Sum is acquired productFIRST/oldSuffixSECOND; old suffix is retained until copies finish. No associativity/value-only replacement or commuted raw operation is used. Six real parsed/product drains preserve only the acquired accumulator.",
+    "CoefficientFrame executes denominator Frame then signed Frame and rowTRUE BEFORE any cache clear. Negate seeds actual right ZERO, invokes actual normalized/twice-fitted R36.neg, frames exact output bytes and then drains ALL8 cache fields. LiteralONE is unfitted and retained for indexzero evenW0; missing/initialZERO is literal. q0/q1 behavior is explicit in fixed Core and complementary acquisition proofs.",
+    "Widths is semantic physical-byte bookkeeping independent of Valid/Fits: BOTH every real operation outputs are exactly W plus actual sign; literalONE3 cachebytes and ZERO2 are included evenW0. Native build byte descriptions are used only to bound the same actual prefix invariant, not as answers or clocks. Every current accumulator stays fitted; there is no elapsed-prefix operand-width recurrence.",
+    "OperationBounds charges SAME real R36 own sixth-degree source cost, ALL4 input copies, destination drains, result/sign acquisition and actual private cleanup; retained source/prefix mass appears only additively. BankBounds counts complete36 arithmetic+8 coefficient+14 controller allocation including shadows. StateBounds pays actual denominator tape bytes, actual unaryq cells and actualW cells; all58 boundary mass is bounded by300*S\u00b2.",
+    "Pair/Inner/Negate/Coefficient/Outer bounds sum ONLY actual reader/operation/drain/tag/counter/call-return traces. Full actual pair repeats include both full physical array scans and two complete R36 calls; descending terms consume actual markers. Final coefficient negation and framing have own cost. All coefficients have bounded fitted widths; actual cached prefix length<=14*S\u00b2. Whole acquisition cap1e41*S8 here sums physical inputs/loops; no native report clock, supplied cached result, count or Fits stream.",
+    "FinishFields/Row physically parse BOTH signed and denominator fields, pop actual validity, reframe denominator then signed then rowTRUE into actual output, and drain BOTH parsed fields before the next row. FinishLoop is a real row-order reversal preserving every raw coefficient byte, not a free whole-list reverse or field-byte reverse. It includes actualFALSE pop and unread-reader EOFpeek; complete finishTime<=20*tapeBytes.",
+    "FinalCleanup identifies EXACT54 private roles as all58 except physical retained denominator/q/W/output and executes all54 actual drain loops throughEOF. OutputBounds pays chronological framed output quadratically, includes ALL58 data words before final sweep, and charges complete reversal against SAME acquired prefix bytes.",
+    "Honest prepared3word boundary remains explicit: actual denominator-array tape, actual unaryq and paidWtemplate; literal original-N caller composition is separate. Original-family Valid/Fits/input acquisition and whole source/compiled storage joins are complementary parent/owner review scope. No whole N-only counter/scalar/publicfactorer claim."
+  ],
+  "blockers": []
+}
+

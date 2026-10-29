@@ -1,0 +1,36 @@
+{
+  "SemiprimeSourceCodeArrayHeight": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceCodeArrayHeight.lean",
+    "source_sha256": "d01f4e30f024e4a4842fe4a0a80c6d8686690b71851b5ab31087f0e775cda5cd",
+    "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceCodeArrayHeight.olean",
+    "object_sha256": "6dc3c05574550c01b3ca16985a8fe73a5e481021503d2f74530ab4bac1071ab4",
+    "isolated": "/tmp/semiprime-source-state-20261027/SemiprimeSourceCodeArrayHeight.olean",
+    "isolated_sha256": "6dc3c05574550c01b3ca16985a8fe73a5e481021503d2f74530ab4bac1071ab4",
+    "byte_identical": true
+  },
+  "SemiprimeSourceInterpolationHeight": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceInterpolationHeight.lean",
+    "source_sha256": "15de84136628cd9485b6a67ef2c2b6e74ab0d2560d95f5057409e61b172606c5",
+    "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceInterpolationHeight.olean",
+    "object_sha256": "9fbda07970e2cf7b3d41870c71e27064ab90d59c866efd65dcba78108f26cf1c",
+    "isolated": "/tmp/semiprime-source-state-20261027/SemiprimeSourceInterpolationHeight.olean",
+    "isolated_sha256": "9fbda07970e2cf7b3d41870c71e27064ab90d59c866efd65dcba78108f26cf1c",
+    "byte_identical": true
+  },
+  "SemiprimeSourceInterpolationBits": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceInterpolationBits.lean",
+    "source_sha256": "2c68d438fe5d65e68f610b277e4e2c9e74f0c36c790a6b9b648879a93a12307a",
+    "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceInterpolationBits.olean",
+    "object_sha256": "180c4327b2575156ad35ad37dec70e649e12fd63819cf3f95e0bd2f82a14583e",
+    "isolated": "/tmp/semiprime-source-state-20261027/SemiprimeSourceInterpolationBits.olean",
+    "isolated_sha256": "180c4327b2575156ad35ad37dec70e649e12fd63819cf3f95e0bd2f82a14583e",
+    "byte_identical": true
+  },
+  "gates": {
+    "strict": "PASS terminalEXIT0 all3",
+    "root15_allgenerated": "PASS terminalEXIT0 standard3 only",
+    "declarations": 115,
+    "theorems": 82,
+    "isolated": "PASS terminalEXIT0 all3 byte-identical"
+  }
+}

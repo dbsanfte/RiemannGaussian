@@ -1,0 +1,135 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "GK2026",
+      "title": "Multivariable Knot Polynomials from Braided Hopf Algebras with Automorphisms",
+      "authors": [
+        "Stavros Garoufalidis",
+        "Rinat Kashaev"
+      ],
+      "published": "2026-02-17",
+      "url": "https://doi.org/10.4171/PRIMS/62-1-3",
+      "checked": [
+        "published Sections 3 and 7, Proposition 7.4, equations 101 and 110-116, Table 2, equation 124b"
+      ],
+      "caution": "Equation 101 and Table 2 use conflicting status labels; 124b proof is deferred."
+    },
+    {
+      "id": "KM2025",
+      "title": "On braided Hopf structures on exterior algebras",
+      "url": "https://arxiv.org/html/2505.15569v1",
+      "checked": [
+        "primitive braiding, multigrading, Sections 4 and 5"
+      ],
+      "caution": "Our independent-weight generic deformation is invalid; source scalar-weight construction remains valid."
+    },
+    {
+      "id": "KPM2017",
+      "title": "Other quantum relatives of the Alexander polynomial through the Links-Gould invariants",
+      "url": "https://arxiv.org/abs/1606.02538",
+      "checked": [
+        "Theorem 4.1, Propositions 4.2-4.4, Remark 4.5"
+      ]
+    },
+    {
+      "id": "DIL2005",
+      "title": "Infinitely many two-variable generalisations of the Alexander-Conway polynomial",
+      "url": "https://msp.org/agt/2005/5-1/agt-v5-n1-p18-p.pdf",
+      "checked": [
+        "Theorems 4.2-4.3"
+      ]
+    },
+    {
+      "id": "coloredLGv3",
+      "title": "On the colored Links-Gould polynomial",
+      "url": "https://arxiv.org/html/2509.10911v3",
+      "version_date": "2025-12-17",
+      "checked": [
+        "Theorems 1.1-1.3, equation 8"
+      ]
+    },
+    {
+      "id": "GKcyclic2015",
+      "title": "Evaluation of state integrals at rational points",
+      "url": "https://arxiv.org/abs/1411.6062",
+      "checked": [
+        "Section 1.2, equations 9-10 and cyclic functional equation"
+      ]
+    },
+    {
+      "id": "BF2014",
+      "title": "Metabelian SL(n,C) representations of knot groups IV: twisted Alexander polynomials",
+      "url": "https://arxiv.org/abs/1209.4244",
+      "checked": [
+        "Section 1.1 and Lemma 5"
+      ],
+      "caution": "The integral Seifert determinant is directly derived; no singular rational torsion inversion is used."
+    },
+    {
+      "id": "BY2020",
+      "title": "Fast Computation of the N-th Term of a q-Holonomic Sequence and Applications",
+      "url": "https://homepage.univie.ac.at/sergey.yurkevich/data/Alin%20Bostan%2C%20Sergey%20Yurkevich_2020_Fast%20Computation%20of%20the%20N-th%20Term%20of%20a%20q-Holonomic%20Sequence%20and%20Applications.pdf",
+      "checked": [
+        "scalar square-root baseline; native monic implementation separately stated"
+      ]
+    },
+    {
+      "id": "Pollard1974",
+      "title": "Theorems on factorization and primality testing",
+      "url": "https://doi.org/10.1017/S0305004100049252",
+      "use": "prior credit for the conditional smooth-order branch; branch proof is explicit in this packet"
+    },
+    {
+      "id": "CH2012",
+      "title": "Faster deterministic integer factorization",
+      "url": "https://arxiv.org/abs/1201.2116",
+      "use": "prior credit for the familiar wheel improvement"
+    }
+  ],
+  "scratch_fingerprints": [
+    {
+      "scratch_path": "/tmp/semiprime-knot-power-20261026/source/gk-published.pdf",
+      "url": "https://ems.press/content/serial-article-files/52259?nt=1",
+      "bytes": 644713,
+      "sha256": "934f681006c3d23cd7613ea6f7b06863fdaaf001c3547e7facf0b989bcf76626",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-power-20261026/source/gk-published.txt",
+      "url": null,
+      "bytes": 92815,
+      "sha256": "f45f1fb39aa6b6f6f2b5ade03dbd7045dfecbdc32f4c6bb8a5c03eeef56615b6",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-power-20261026/source/kpm.pdf",
+      "url": "https://arxiv.org/pdf/1606.02538",
+      "bytes": 230601,
+      "sha256": "4b6e05cf47819045f8dec3684d08197adc27333d8408e197055e3e7937418079",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-power-20261026/source/kpm.txt",
+      "url": null,
+      "bytes": 51152,
+      "sha256": "bd09bd532d39cb7d69804b183b3731089b1413797833ac9977911b27e9bf89bc",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-power-20261026/cyclic.pdf",
+      "url": "https://arxiv.org/pdf/1411.6062",
+      "bytes": 247341,
+      "sha256": "5abd328d027de43ccd396626dcde4f50d0937558a2c639b98cb5b35688f6b8d6",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-power-20261026/cyclic.txt",
+      "url": null,
+      "bytes": 66992,
+      "sha256": "2ebfc286e52855f876d12fdeeda564fdeb2d43bbe246281574c6497945d2f457",
+      "archived": false
+    }
+  ]
+}

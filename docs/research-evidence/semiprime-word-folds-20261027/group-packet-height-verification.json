@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "modules": {
+    "SemiprimeNativeGroupBitsHeight": {
+      "paths": {
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeNativeGroupBitsHeight.lean",
+        "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeNativeGroupBitsHeight.olean",
+        "isolated": "/tmp/semiprime-word-folds-20261027/SemiprimeNativeGroupBitsHeight.olean"
+      },
+      "sha256": {
+        "source": "a685ac01105c338011e07540ce8b77479a0a9d9fe38b880211becada5283bc39",
+        "canonical": "94601931f52af432fbcde26d25ea36803a3fde3c89c5ca5b3bdb8c4833bd97a6",
+        "isolated": "94601931f52af432fbcde26d25ea36803a3fde3c89c5ca5b3bdb8c4833bd97a6"
+      },
+      "strict": true,
+      "ordinary_root_linters": 15,
+      "standard_axioms_only": true,
+      "isolated_equal": true,
+      "generated_declarations": 22,
+      "theorem_constants": 18
+    },
+    "SemiprimeWordPacketWidth": {
+      "paths": {
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeWordPacketWidth.lean",
+        "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeWordPacketWidth.olean",
+        "isolated": "/tmp/semiprime-word-folds-20261027/SemiprimeWordPacketWidth.olean"
+      },
+      "sha256": {
+        "source": "9a3fc7384fde5694765b49e7e5ba34c275a495ca832df905b548e8e5fa7a75ab",
+        "canonical": "3256807990c69e00866dab99cbf3a86303024a740c252875b90fe11610895595",
+        "isolated": "3256807990c69e00866dab99cbf3a86303024a740c252875b90fe11610895595"
+      },
+      "strict": true,
+      "ordinary_root_linters": 15,
+      "standard_axioms_only": true,
+      "isolated_equal": true,
+      "generated_declarations": 34,
+      "theorem_constants": 31
+    }
+  },
+  "generated_declarations": 56,
+  "theorem_constants": 49
+}

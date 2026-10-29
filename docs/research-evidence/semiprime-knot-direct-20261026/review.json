@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "previous_goal_turn_classification": "progress",
+  "turn_result": "Reviewed direct-candidate exclusions; no full-query improvement",
+  "all_semiprime_sixth_exponent_established": false,
+  "whole_query_bound_improved": false,
+  "current_whole_query_bound": "soft O(J+sqrt(J*m))",
+  "target_whole_query_bound": "soft O(J+sqrt(m))",
+  "verified_results": [
+    "Actual finite-ring coefficient-functional transform equals K_J*F(z1*X); it retains the long grid.",
+    "Actual full moment rank is at least m+1-J, ruling out the proposed collapse to J states.",
+    "Admissible positive scaling and oppose-scale-oppose cannot shorten an actual negative nonaxis witness.",
+    "The tested known-prime nilpotent shifted state does not specialize to native unit clock shifts."
+  ],
+  "qualifications": [
+    "Generic J=1 gcd diagnostic is not an attained native catalogue counterexample; no conic-specific gcd theorem is established.",
+    "Individual small Hankel minors may cancel; auxiliary saturated zeros are not original leaves.",
+    "No universal lower bound for knot algorithms or factoring is claimed.",
+    "Stationary partial-order window condition is not a proved short cover or acquired aggregate.",
+    "Source theorem inputs and normalized shifted-prefix coefficient were clarified after review."
+  ],
+  "mathematical_reviews": [
+    "core-review.md",
+    "native-cover-review.md",
+    "fast-query-review.md"
+  ],
+  "final_summary_review": "Independent review passed formulas/costs; requested generic-versus-native gcd scope qualification incorporated.",
+  "preservation": {
+    "protected_files_verified": 791,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1519867,
+        "sha256": "a7e2d74500e0e0b51198f2883cbee5ac5ae01ccb31c0a4705bf7938e642abd78"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2377324,
+        "sha256": "ddb16e469764b21e72cf9d25dc70cd3bd3e43a44a16568616cd9e1c563c349de"
+      }
+    },
+    "concurrent_files_unchanged": 22,
+    "scratch_baseline_sha256": "b65ad688db92d956ff6e4d3a5afae318357d94a5ac5d8f7740aa248383d02368"
+  },
+  "validation": {
+    "source_entries": 4,
+    "internal_source_pins": 6,
+    "local_links_checked": 10,
+    "json_and_whitespace_checks": true,
+    "git_diff_check": true
+  },
+  "numerical_campaign": false,
+  "new_executable_research_implementation_or_tests": false,
+  "lean_or_public_assets": false,
+  "commit_or_push": false
+}

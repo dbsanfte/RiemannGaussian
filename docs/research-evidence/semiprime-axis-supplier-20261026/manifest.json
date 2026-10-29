@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10013,
+      "sha256": "e9111d55e5f26c51f1c5cb5fb7ad324d9139c180870c2857d41d645a17705ee3"
+    },
+    {
+      "path": "hybrid-handoff.md",
+      "bytes": 10194,
+      "sha256": "cba1559069b42b1a6d12351eb5603298b6d485e1eaff14addf3d16a0458dddda"
+    },
+    {
+      "path": "joint-information-review.md",
+      "bytes": 6092,
+      "sha256": "122bda75821bf301b0eeb9dff07c9d8e17ca6852aff955d8c16f7b661580cd49"
+    },
+    {
+      "path": "order-residue-supplier.md",
+      "bytes": 14850,
+      "sha256": "a078f852e35d022f8a412791e332624e098806995cca0414c9111da83dce79be"
+    },
+    {
+      "path": "parameterized-controller.md",
+      "bytes": 17202,
+      "sha256": "40dfd5a4f5e2081ddd79669bf2ce6199174258384293db97c1dd1f123dc4973c"
+    },
+    {
+      "path": "residue-recursion.md",
+      "bytes": 9294,
+      "sha256": "cc875dea82e481be36dd517335cedb75c2a2e031a253b55f7f97345989288f03"
+    },
+    {
+      "path": "retrospective-colours.md",
+      "bytes": 13390,
+      "sha256": "4bc4add24359a91f71eb0359b20f8394d220b5b6a8be8172599289991e11864e"
+    },
+    {
+      "path": "retrospective-intervals.md",
+      "bytes": 12289,
+      "sha256": "f26853e1dbd71c825fb15b5dd05c4d739e1058ba620aa2073f5b2e7632431c5f"
+    },
+    {
+      "path": "retrospective-provenance.md",
+      "bytes": 12987,
+      "sha256": "b68928eb768e419bca9185498e3dd8bb282b54c5605e6dcd6957de83df4ebc3d"
+    },
+    {
+      "path": "review-hybrid-handoff.md",
+      "bytes": 4958,
+      "sha256": "d359fa01b974b6cb082aa8e95cd0078e5738801e232689c161f410bf12bbde4b"
+    },
+    {
+      "path": "review-integration.md",
+      "bytes": 5185,
+      "sha256": "d373cac534186c4c71b83aafa9e9acef765548635cbf602a9fa8897dcf4cdbfc"
+    },
+    {
+      "path": "review-order-gate.md",
+      "bytes": 5431,
+      "sha256": "37dcdc704ef11ca8fd447181856c533910c7bcb3d974ecce549c1cf047db6f4e"
+    },
+    {
+      "path": "review-restricted-residue.md",
+      "bytes": 4496,
+      "sha256": "f754c0e9372750590a2f3b0ccc986e4bcdf55e864bef48d00a61ae438004d62e"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2532,
+      "sha256": "dcd930b011062e23ceeaa3068da05969fbe21997fe445c2a7f210735014876fd"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 4900,
+      "sha256": "0bd5185f113aeff841571999ed9fdd3f6db8a68dbaf323d56ddd7bc274b38f98"
+    },
+    {
+      "path": "two-monic-review.md",
+      "bytes": 9275,
+      "sha256": "d5d9355f2b2d1a77303603767462f58892190edaef727dd5a133391013756b7f"
+    }
+  ],
+  "manifest_excludes_self": true
+}

@@ -1,0 +1,6 @@
+'RiemannGaussian.SemiprimeConstructedCounter.constructed_prefix_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeConstructedCounter.constructed_search_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

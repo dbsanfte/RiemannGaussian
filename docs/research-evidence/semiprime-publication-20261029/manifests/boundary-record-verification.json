@@ -1,0 +1,131 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 5,
+    "declarations": 143,
+    "theorems": 90
+  },
+  "modules": {
+    "SemiprimeD1StackBoundaryRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBoundaryRecord.lean",
+        "sha256": "70e406f5be35360e7a00a6b4ced9f5964a6a7b92cd3fcdc3e372b45bd2eb5067"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBoundaryRecord.olean",
+        "sha256": "186bfb317c3b41cd19d2a4e24875c1157e3dc986b3f66375a03105a2811f3706"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boundary-record-frozen/SemiprimeD1StackBoundaryRecord.olean",
+        "sha256": "186bfb317c3b41cd19d2a4e24875c1157e3dc986b3f66375a03105a2811f3706"
+      }
+    },
+    "SemiprimeD1StackBoundaryRecordComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBoundaryRecordComponents.lean",
+        "sha256": "7bba957913e621713b67a904873f9532620ef108dfef835cddaac46deb83f891"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBoundaryRecordComponents.olean",
+        "sha256": "50de889550b91814a2b00d2e878fe2c3ff7e71061a7e1fdb8b9454f008145e1b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boundary-record-frozen/SemiprimeD1StackBoundaryRecordComponents.olean",
+        "sha256": "50de889550b91814a2b00d2e878fe2c3ff7e71061a7e1fdb8b9454f008145e1b"
+      }
+    },
+    "SemiprimeD1StackBoundaryRecordExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBoundaryRecordExecution.lean",
+        "sha256": "e38247015b2121fb534cc54d176d3b6538e02143a58c96d22f8e665f216f5812"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBoundaryRecordExecution.olean",
+        "sha256": "212aedaab0b51ad00372a3ca1bebc784c2a79680446be52099fa630e1f29012f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boundary-record-frozen/SemiprimeD1StackBoundaryRecordExecution.olean",
+        "sha256": "212aedaab0b51ad00372a3ca1bebc784c2a79680446be52099fa630e1f29012f"
+      }
+    },
+    "SemiprimeD1StackBoundaryRecordBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBoundaryRecordBounds.lean",
+        "sha256": "aabbb75803d58975162430d2f17bc6ac8339b331036b318a9ead137df63f1437"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBoundaryRecordBounds.olean",
+        "sha256": "a0ad5def26f1be73aa9236409ec918659e70f84502935061a25f73d866cf45f6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boundary-record-frozen/SemiprimeD1StackBoundaryRecordBounds.olean",
+        "sha256": "a0ad5def26f1be73aa9236409ec918659e70f84502935061a25f73d866cf45f6"
+      }
+    },
+    "SemiprimeD1StackBoundaryRecordOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBoundaryRecordOriginal.lean",
+        "sha256": "a49f7bd90744446e322e4134e67aca41741f20ed15dc1831a7b7ee2b7376fd3f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBoundaryRecordOriginal.olean",
+        "sha256": "bc8b7ef34949cb12ea41d5f46ce207f72bee91fb9b11fba3ca0cb7ebcc6cebb1"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boundary-record-frozen/SemiprimeD1StackBoundaryRecordOriginal.olean",
+        "sha256": "bc8b7ef34949cb12ea41d5f46ce207f72bee91fb9b11fba3ca0cb7ebcc6cebb1"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/BoundaryRecordControls.lean",
+        "sha256": "a408a72932b7a05104b55c5c0d699705971b6914a95e0f049e3ce85cb0a52a49"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boundary-record-frozen/control-0.log",
+        "sha256": "6951c2cb3e025502c17bdbc5954fffe7fa2229620ea630e45e38563dfdd56d92"
+      },
+      "expected": "some (2819, true, true, true, true, 1, [], [], [false, true])"
+    }
+  ],
+  "full_goal_complete": false,
+  "scope": "Compiler-internal actual binary N plus acquired binary scope-ID vector and caller accumulators. Complete whole-graph scope routing and full factoring runtime theorem remain open.",
+  "writers_stopped": true,
+  "audit_heartbeats": 200000,
+  "Elab.async": false,
+  "actual_compiler_imported_modules": 18153,
+  "all_imported_source_object_pairs_unchanged": true,
+  "import_pins": {
+    "before": "/tmp/semiprime-explicit-rate-20261027/boundary-record-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/boundary-record-dependencies/imported-pins-after.json"
+  },
+  "readonly_zero_boundary_revalidation": "/tmp/semiprime-explicit-rate-20261027/zero-boundary-readonly-verification.json",
+  "compiled_control": {
+    "steps": 2819,
+    "all48_roles_match": true,
+    "stale_flags_cleared": true,
+    "outer_return_frame_preserved": true,
+    "aliased_ports_table_consumed": true,
+    "caller_output_preserved": true,
+    "source": "/tmp/semiprime-explicit-rate-20261027/BoundaryRecordControls.lean"
+  },
+  "key_apis": [
+    "SemiprimeD1StackBoundaryRecordExecution.source_run",
+    "SemiprimeD1StackBoundaryRecordExecution.boundaryRecordInTime",
+    "SemiprimeD1StackBoundaryRecordBounds.timeBound_le",
+    "SemiprimeD1StackBoundaryRecordBounds.machine_prefix_cells",
+    "SemiprimeD1StackBoundaryRecordOriginal.source_run_original",
+    "SemiprimeD1StackBoundaryRecordOriginal.record_bytes_original",
+    "SemiprimeD1StackBoundaryRecordOriginal.history_original",
+    "SemiprimeD1StackBoundaryRecordOriginal.reverse_original"
+  ],
+  "clock": "publicAcq(bits) +61*2^acquiredDepth +110*(scopeCount+1)*(M+1)+20, requiring only each ID width/value <= M",
+  "frozen_sources_edited": false
+}

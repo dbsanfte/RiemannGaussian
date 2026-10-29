@@ -1,0 +1,93 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "Manin2003",
+      "title": "Functional equations for quantum theta functions",
+      "authors": "Yuri I. Manin",
+      "url": "https://arxiv.org/abs/math/0307393",
+      "pdf": "https://arxiv.org/pdf/math/0307393",
+      "checked": [
+        "Introduction 0.1 and Sections 1.1.1-1.1.2, quantum-torus/Heisenberg framework"
+      ],
+      "scope": "Functional equations for quantum theta functions in the stated lattice/module setting. This investigation supplies no specialization evaluating the finite native multiplicative collision query."
+    },
+    {
+      "id": "BostanYurkevich2020",
+      "title": "Fast Computation of the N-th Term of a q-Holonomic Sequence and Applications",
+      "authors": "Alin Bostan and Sergey Yurkevich",
+      "url": "https://arxiv.org/abs/2012.08656",
+      "checked": [
+        "Primary abstract and author fulltext discussion of arithmetic and bit models",
+        "Existing square-root-index recurrence baseline"
+      ],
+      "scope": "Existing fast q-holonomic evaluation. Output-size-optimal integer binary splitting is not a new short modular output bound."
+    },
+    {
+      "id": "Chesebro2020",
+      "title": "Farey recursion and the character varieties for 2-bridge knots",
+      "authors": "Eric Chesebro",
+      "url": "https://arxiv.org/abs/1902.01968",
+      "checked": [
+        "Inherited specified-node Farey recurrence scope from prior packet"
+      ],
+      "scope": "Motivation and prior credit; not a colour-subtree union or interval-location oracle."
+    },
+    {
+      "id": "ElzenaarMartinSchillewaert2026",
+      "title": "The combinatorics of Farey words and their traces",
+      "authors": "Alex Elzenaar, Gaven J. Martin, Jeroen Schillewaert",
+      "url": "https://ems.press/content/serial-article-files/52234",
+      "doi": "10.4171/GGD/832",
+      "checked": [
+        "Prior packet Theorem 4.4 coefficient qualification and Section 6 fan-transfer scope"
+      ],
+      "scope": "Initialized trace/fan computation; the new phase and image-mask equations are independently derived arithmetic."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-trace-20261026/README.md",
+      "bytes": 7709,
+      "sha256": "eb09b748e6a713d0147b5a0f22e74a169ce22740305614869c2c4f9921246f85"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-trace-20261026/trace-recurrence.md",
+      "bytes": 14978,
+      "sha256": "5f2e5f20ee433389e6d0cc93a109b2809e40f4b7dbb9bee3af3ed5e80f202343"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-trace-20261026/farey-query.md",
+      "bytes": 18396,
+      "sha256": "0d70ff85ded98e6f7ef7cd9392267ae85abf2634ab9ed05cb44039ca00db85d4"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-trace-20261026/mixed-trace.md",
+      "bytes": 10135,
+      "sha256": "078f8f272af4c59704bc4b8049628e6a508486d8f643cc7872b2d56709f74543"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-collective-20261026/conic-exchange.md",
+      "bytes": 12439,
+      "sha256": "7aeed458da0d2d13d4fdba9130cae3efebf741052c0c5224809b98aed2c2dbac"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-adams-20261026/shared-label-roots.md",
+      "bytes": 11935,
+      "sha256": "91d94b6aa69200c9b9b0c611c98110fdea01e31710b9b156f0d332328f2e311d"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue.md",
+      "bytes": 10140,
+      "sha256": "9ded79850c2f200069a7da67502d0de579d1df0457cb06c865fb3d39c9654058"
+    }
+  ],
+  "scratch_source_pins": [
+    {
+      "local_path": "/tmp/semiprime-arithmetic-locator-20261024/sources/farey_cover.py",
+      "bytes": 12342,
+      "sha256": "1a44eefa5d114ef464f9ace0557a7711e37f4c5445d8761b43436bb9047c66bd"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "excludes": [
+    "manifest.json"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6127,
+      "sha256": "88c6c043d20b373a1d12426d87579e87436d5cd31b223eaa1bd8dfe1139d878b"
+    },
+    {
+      "path": "corner-query-review.md",
+      "bytes": 4180,
+      "sha256": "9d7a5e8f1dff147780d592e83ef9c0e01a55d1d7880509ec1d6969083420c6c2"
+    },
+    {
+      "path": "corner-query.md",
+      "bytes": 5256,
+      "sha256": "1acccb9ab4856c33edf26568f00cf5549142f2a4cf94f23390e6ead20e4996b7"
+    },
+    {
+      "path": "difference-query-review.md",
+      "bytes": 4497,
+      "sha256": "6e5a86c4369b1a88989e0097c0494345d7f73d01ffaed2fae99399286db54910"
+    },
+    {
+      "path": "difference-query.md",
+      "bytes": 12271,
+      "sha256": "bdae9b97bc4b00ae3842cee8ba25a7e0ec70dfcc4de6b508c8f75a14f6b297bd"
+    },
+    {
+      "path": "phase-index-review.md",
+      "bytes": 3095,
+      "sha256": "4cec4164168a2bceed1709f1cbe5cfbf1dee0333f1c7b05aa4406ce8311d247e"
+    },
+    {
+      "path": "phase-index.md",
+      "bytes": 4794,
+      "sha256": "7c39e9b6fc0dbacf79be0a5837ced21526fb148ca2cde88d419bd9d7cd9d91ad"
+    },
+    {
+      "path": "recursive-products-review.md",
+      "bytes": 4945,
+      "sha256": "b533426ace8ed9f70555cd16c05e91cef45d96c7c49422c20c5987194aff19db"
+    },
+    {
+      "path": "recursive-products.md",
+      "bytes": 9352,
+      "sha256": "d013b726c929c4fcef60c5e38e0ca2bdae1961b7fc52a15861ce2aed7993eea2"
+    },
+    {
+      "path": "review.json",
+      "bytes": 4602,
+      "sha256": "8c3a1418ca070b5cf3d7c4d975b857b16e9e6cdf962ba4409f42151eb9b900a9"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 2657,
+      "sha256": "e48080e6f69e902e6a1168aeb2f4a4c24a382f578ddfff6eaecf1c26b026a710"
+    },
+    {
+      "path": "sparse-projection-review.md",
+      "bytes": 4107,
+      "sha256": "18501e35ecf6d7de9a510c2aaff98ea90139419d707b624c616597ecae18bb2f"
+    },
+    {
+      "path": "sparse-projection.md",
+      "bytes": 9016,
+      "sha256": "5b32e101bf86de85f9c85b2138cba2cb71f0aa08b982359dcde22ff4bd850bec"
+    }
+  ]
+}

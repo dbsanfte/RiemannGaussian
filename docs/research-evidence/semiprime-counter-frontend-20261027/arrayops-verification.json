@@ -1,0 +1,13 @@
+{
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeArrayOps.lean",
+  "sha256": "8869e717acad41be9112e0baf9e78aa73b4dff684d5b88f036aaba90f2e4bbbb",
+  "strict_compile": "PASS",
+  "root15_lint": "PASS",
+  "all_declarations": 32,
+  "theorem_constants": 28,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-26",
+  "task": "User-requested paper applicability study",
+  "goal_status": "paused",
+  "goal_resumed": false,
+  "verdict": "Useful compatible-potential and aggregation techniques identified; finite transfers tested algebraically; no new factoring rate.",
+  "reviews": [
+    {
+      "path": "review-determinant.md",
+      "verdict": "PASS after normalization clarification"
+    },
+    {
+      "path": "review-current.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-multiscale.md",
+      "verdict": "PASS as scoped study"
+    }
+  ],
+  "exact_finite_results": [
+    "Rank-one homotopy/cofactor identity with native unit denominators.",
+    "Paid homotopy contractions on acquired A and I-M operators; endpoint projector scope retained.",
+    "Two-dimensional discrete cofactor divergence and shifted edge-minor identity.",
+    "Dirichlet Green boundary pair and four-state transfer at the retained acquisition cost.",
+    "Native discriminant realization of Phi and scoped integral-transport reflection calculation.",
+    "Coherent norm residue pair on the unique-hit family, without an acquisition claim."
+  ],
+  "proposed_only": "Two-scale maximal aggregate and exceptional-carry contraction of the section/quotient circuit.",
+  "uniform_query_bound": "soft O(K^(5/4))",
+  "exponent_improved": false,
+  "validation": {
+    "type": "Paper derivation and independent review",
+    "experiments": 0,
+    "implementations": 0,
+    "Lean_changes": 0,
+    "full_PDE_proof_certified": false,
+    "full_factoring_bit_proof": false
+  },
+  "preservation": {
+    "protected_files": 1189,
+    "concurrent_files": 24,
+    "append_only_prefixes": 2,
+    "result": "PASS"
+  },
+  "integration": {
+    "local_links": 8,
+    "git_diff_check": "PASS"
+  },
+  "commit_or_push": false
+}

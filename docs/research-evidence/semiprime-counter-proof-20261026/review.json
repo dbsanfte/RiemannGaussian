@@ -1,0 +1,118 @@
+{
+  "goal_status": "active",
+  "goal_complete": false,
+  "previous_turn_classification": "progress",
+  "modules": {
+    "SemiprimeBooleanDiagonal": {
+      "source": "RiemannGaussian/SemiprimeBooleanDiagonal.lean",
+      "source_sha256": "149dd6487b7ed4af9b31ce84fa8313cee5824d68cdfc00c31268d03f1626a525",
+      "olean_sha256": "9cfc548210e088832b3c4da665fe689ff894b738144e127b5133460d1a6f6875",
+      "strict_build": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 24,
+      "generated_theorems": 22,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeCounterFiltration": {
+      "source": "RiemannGaussian/SemiprimeCounterFiltration.lean",
+      "source_sha256": "154cdbe955a199ada7719199ff0a19d23ed6c20c6da0ac3941b2d3c92ad452a5",
+      "olean_sha256": "56c4ffcec90559302a71c7017310f5f33293a6d31b0f22a047d9cdde2f14fffc",
+      "strict_build": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 17,
+      "generated_theorems": 13,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeCountRecovery": {
+      "source": "RiemannGaussian/SemiprimeCountRecovery.lean",
+      "source_sha256": "a32861288e90f02481274446e0bb50000da922f961741df7928e0dcd15430b1e",
+      "olean_sha256": "3da86add4a18db8608698c4abf0d37e4102201d53ee0a00cb3fbf24271a10921",
+      "strict_build": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 64,
+      "generated_theorems": 27,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeHermiteRecovery": {
+      "source": "RiemannGaussian/SemiprimeHermiteRecovery.lean",
+      "source_sha256": "781cc951d325e38f6c96d5c95c665c9c66b098f2d06d9f45c39382db093c1871",
+      "olean_sha256": "6ec5d31a6e439ea513900e486961f1b1932918216cde655cc10c729f2bed62f8",
+      "strict_build": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 31,
+      "generated_theorems": 26,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeSharedSummary": {
+      "source": "RiemannGaussian/SemiprimeSharedSummary.lean",
+      "source_sha256": "4639d628d18f4dd14ecd083de53d488a193cbcb9a3313aece1ccd94b16a99901",
+      "olean_sha256": "22cf96f5d8c347a62c471cf771089cfeb8b58a5f35a887c60d590c500af7f898",
+      "strict_build": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 2,
+      "generated_theorems": 2,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeCounterRate": {
+      "source": "RiemannGaussian/SemiprimeCounterRate.lean",
+      "source_sha256": "fd9c6ee9dc18089748e85cb2eeba06b8181a230a855aec05d30b5939ac273054",
+      "olean_sha256": "818f45ad6deb879ffe447706ec01655945b9b721bdd869f96b10bddc0f7d93e5",
+      "strict_build": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 49,
+      "generated_theorems": 42,
+      "every_declaration_axiom_audit": "standard_only"
+    },
+    "SemiprimeMacroFermatNetwork": {
+      "source": "RiemannGaussian/SemiprimeMacroFermatNetwork.lean",
+      "source_sha256": "40ad2cafa780142e7400fd99e502e55cff69e17a4f2548a14135037fe85055ed",
+      "olean_sha256": "551e321c834b1bec4566783b05a6fe71242e411e05c83f54bac90836ef4aaeec",
+      "strict_build": "PASS",
+      "scoped_root_lint": "PASS",
+      "all_generated_declarations": 75,
+      "generated_theorems": 69,
+      "every_declaration_axiom_audit": "standard_only"
+    }
+  },
+  "independent_reviews": [
+    "proof-integration-review.md",
+    "arithmetic-recovery-review.md",
+    "algebra-counter-review.md"
+  ],
+  "compiled_counter_composition": false,
+  "compiled_boolean_graph": false,
+  "numeric_guard_tail_proved": false,
+  "primitive_time_space_proved": false,
+  "analytic_envelope_only": "subpower; not an algorithm runtime theorem",
+  "external_build": {
+    "timestamp_utc": "2026-10-26 23:25:35 UTC",
+    "status": "running",
+    "completed": 1275,
+    "total": 2569,
+    "failed": {},
+    "active_modules": [
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.BucketProgramControllerPreprocess",
+      "OAI.Algorithms.SubexponentialSAT.Subexp.PackingOutputSemantics",
+      "OAI.Algorithms.SubexponentialSAT.Subexp.PairPreparationBounds",
+      "OAI.Algorithms.SubexponentialSAT.Subexp.ScoreBuilderProgram",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafStatisticsProgramBounds"
+    ],
+    "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "live_exec_session_id": 85099,
+    "state_path": "/tmp/semiprime-d1-audit-20261026/lean-build-state.json",
+    "rule": "Continue the verified live handle. Observation timeouts are not terminal.",
+    "whole_endpoint_verified": false,
+    "comparator_run": false,
+    "dependency_of_these_seven_modules": false
+  },
+  "preservation": {
+    "protected": 1274,
+    "concurrent": 24,
+    "prefixes": 2,
+    "status": "PASS"
+  },
+  "local_links": 12,
+  "git_diff_check": "PASS",
+  "new_numerical_campaign": false,
+  "commit_or_push": false
+}

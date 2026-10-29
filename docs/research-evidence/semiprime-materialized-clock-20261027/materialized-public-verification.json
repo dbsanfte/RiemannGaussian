@@ -1,0 +1,33 @@
+{
+  "modules": {
+    "SemiprimeMaterializedAcquiredCounter": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedAcquiredCounter.lean",
+      "source_sha256": "54edbdd04177235565bd96f0f3f3fbe154a2d1fe43187fb1c36bdf768467a9dc",
+      "object_sha256": "892685d2ba237094c5c9ab74401c986d16d8048add76b5cff4273e39bbaa0430",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimeMaterializedPublicExecution": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedPublicExecution.lean",
+      "source_sha256": "9ea02561619a03d8082b6620a97d952d91c3cd09025c3ffbd2c7e1bcb395d237",
+      "object_sha256": "e9e3c8428da1fccf7094bc81dd6d6c49e6842efa121176625ab3d30f54367e44",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimeMaterializedScheduledExecution": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedScheduledExecution.lean",
+      "source_sha256": "4d36ede8fbabe873a408c1e65a7d8cc43307a7938e7e48322aeaa576589f943b",
+      "object_sha256": "1b63683690ef98c98197862f21ccc9ccd22ff91839a8fb7c4f0a657d6574aec1",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    }
+  },
+  "scope": "complete N-only semantic join; preprocessing and full primitive bit clock not inferred from output equivalence",
+  "smoke_outputs": [
+    "none",
+    "some 2"
+  ]
+}

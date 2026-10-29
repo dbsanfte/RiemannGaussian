@@ -1,0 +1,258 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 16,
+    "declarations": 423,
+    "theorems": 235
+  },
+  "modules": {
+    "SemiprimeD1StackOwnerFibreCatalogue": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogue.lean",
+        "sha256": "516630004206f8875a4ed65e487fe6cade7f51ce37aec8fcab0a19fbfe9b6c6b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogue.olean",
+        "sha256": "4255f015c8a34ac8534e7681dfcde27044d23cd29adefee2c61c840437c84cc0"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogue.olean",
+        "sha256": "4255f015c8a34ac8534e7681dfcde27044d23cd29adefee2c61c840437c84cc0"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreRetained": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreRetained.lean",
+        "sha256": "f1dea4734146d14b217d352bfc9d0790aaa501d4964a038e02854e104951f546"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreRetained.olean",
+        "sha256": "18c1fd95d61608750eafa70663b13fee53300bbe7dabc15da23763bf96bba0cc"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreRetained.olean",
+        "sha256": "18c1fd95d61608750eafa70663b13fee53300bbe7dabc15da23763bf96bba0cc"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueSource": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueSource.lean",
+        "sha256": "7f9a58bc8ade95f878e6629fecc553708e3fcb9420b649d13598d6a61f350dca"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueSource.olean",
+        "sha256": "556a7db65bacdeb36d56acfda60afe374074ecb8ce396754bd03c2b919d39d40"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueSource.olean",
+        "sha256": "556a7db65bacdeb36d56acfda60afe374074ecb8ce396754bd03c2b919d39d40"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueView.lean",
+        "sha256": "ee56bf794a15321f04d3222410c5fcf8a6023867b90bcee0b69e975ee14b0d37"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueView.olean",
+        "sha256": "e4b2ba8671d1803c5cfb138709a7ec634d5d8a4e4d800faa5d534829a7bf2387"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueView.olean",
+        "sha256": "e4b2ba8671d1803c5cfb138709a7ec634d5d8a4e4d800faa5d534829a7bf2387"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueCalls": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueCalls.lean",
+        "sha256": "7274d22bb047c2a2c693f22df05021b93280f4fa3958ea51bb568dfbc4a20f81"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueCalls.olean",
+        "sha256": "711c1ed232f16beb9dc7467a2bb26f7ceabbd9dd9c1a577a39654d35e1fadcc5"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueCalls.olean",
+        "sha256": "711c1ed232f16beb9dc7467a2bb26f7ceabbd9dd9c1a577a39654d35e1fadcc5"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueRead": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueRead.lean",
+        "sha256": "86994d2851b888eaf14e8131806706af4d929ffb537f4517cc695e8c36f6b13b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueRead.olean",
+        "sha256": "eae3bb6ee2d0338975dea556343d08291d8d3c4f384b1604ad9f817ba7edb77d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueRead.olean",
+        "sha256": "eae3bb6ee2d0338975dea556343d08291d8d3c4f384b1604ad9f817ba7edb77d"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueEmit": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueEmit.lean",
+        "sha256": "c95966744f0a3a417acee4181a5b89fed96b4a2f2a8480175ee8d802e5a88681"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueEmit.olean",
+        "sha256": "7123ff541336c946b267ee77d2ba820175b4af91970b2a7071425856db912139"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueEmit.olean",
+        "sha256": "7123ff541336c946b267ee77d2ba820175b4af91970b2a7071425856db912139"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueClear": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueClear.lean",
+        "sha256": "292d84cbf1274bbce6c5563abf91a654e2a535cbf0c82df6e8ae6a85b74cae14"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueClear.olean",
+        "sha256": "a139c4fb4e61492b568d5eb295f67371c69ef1d52c257bd3a9e2d9f6957b2adb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueClear.olean",
+        "sha256": "a139c4fb4e61492b568d5eb295f67371c69ef1d52c257bd3a9e2d9f6957b2adb"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueRow": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueRow.lean",
+        "sha256": "d679c46d575c8df051d0d68028fba82ce471519018e02086059cda8edb289030"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueRow.olean",
+        "sha256": "707edd4aff97f610c4117b96045be5afd168633e0edb34e1c826548a9ba72ee6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueRow.olean",
+        "sha256": "707edd4aff97f610c4117b96045be5afd168633e0edb34e1c826548a9ba72ee6"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueLoop": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueLoop.lean",
+        "sha256": "0b2cad0240966948d6d62253cca3fba9027ca940fd81efac13d221f1059a7eaa"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueLoop.olean",
+        "sha256": "afa24c9952b66c55c5f6d3c9c78abc93e2162a6988e5e25d2c1080a54e6eaed1"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueLoop.olean",
+        "sha256": "afa24c9952b66c55c5f6d3c9c78abc93e2162a6988e5e25d2c1080a54e6eaed1"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueOriginal.lean",
+        "sha256": "e9b35ad04aa1d4c9e43a3d9aef698eb1ed39935e1535a9ae208e1bc230986f20"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueOriginal.olean",
+        "sha256": "46e5609498fe8a5f65476b376a23045cc213b18141cb7c33827d042b4bc01657"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueOriginal.olean",
+        "sha256": "46e5609498fe8a5f65476b376a23045cc213b18141cb7c33827d042b4bc01657"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueFinish": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueFinish.lean",
+        "sha256": "f7e4b62dce33bc9eb8fa6b8a668769aaa6be55ed54f94d1f7dea82ecc8ba6de8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueFinish.olean",
+        "sha256": "250d0a7f7429cefb3f243ac1f7b68243109c48f82dd5a710d1df7145ecab241d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueFinish.olean",
+        "sha256": "250d0a7f7429cefb3f243ac1f7b68243109c48f82dd5a710d1df7145ecab241d"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueExecution.lean",
+        "sha256": "2217d74281957b2b566be5256d34a166caf8be194c6f82ae6273fa8890bea042"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueExecution.olean",
+        "sha256": "89e2923d7081fd1bdcfeb2d165c580ad2f6f1f76ee3c69cc964983be5c08006a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueExecution.olean",
+        "sha256": "89e2923d7081fd1bdcfeb2d165c580ad2f6f1f76ee3c69cc964983be5c08006a"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueNumeric": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueNumeric.lean",
+        "sha256": "619b3a7734443271ca97c8323d78e7da8a013aeb025b4b231534925c64d05971"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueNumeric.olean",
+        "sha256": "94a38d8b5b0a20a541921e543ab4646464e203fcca697253d0dfba39aa44cd59"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueNumeric.olean",
+        "sha256": "94a38d8b5b0a20a541921e543ab4646464e203fcca697253d0dfba39aa44cd59"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueBounds.lean",
+        "sha256": "bbfefe38daec6097fdd779617999810bf20f9354a215a24ca58ab6ddc331270c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueBounds.olean",
+        "sha256": "8f96ec07a6ffe0a88a06f9f0b68dd5defacd08ed3bfa0b8fcbc6766111839961"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueBounds.olean",
+        "sha256": "8f96ec07a6ffe0a88a06f9f0b68dd5defacd08ed3bfa0b8fcbc6766111839961"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreCatalogueResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueResources.lean",
+        "sha256": "e6978cf2663b5511d0b7b3138eddd2d1d3b325ba2a9658aa3b2cd7e0f62cad7f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreCatalogueResources.olean",
+        "sha256": "a3ab307b17f604ebc00388c9bc30b44ae268888742abf8bdc3304d9de29ba3d1"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/SemiprimeD1StackOwnerFibreCatalogueResources.olean",
+        "sha256": "a3ab307b17f604ebc00388c9bc30b44ae268888742abf8bdc3304d9de29ba3d1"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/OwnerFibreCatalogueControl.lean",
+        "sha256": "e3750e8b7d34fc95c123333200dfe315bba68a7ff0cf08f3121dc2ecb46bf4f9"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-catalogue-frozen/control-0.log",
+        "sha256": "21d91041c5d1a59661f8936571ee5c87e96f6f0c7a532b52ec17c5b9bea8220b"
+      },
+      "expected": "true\ntrue"
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_compiler_header_dependencies": 18312,
+  "live_dependency_source_object_pins_unchanged": true,
+  "protected_sources_unchanged": 17054,
+  "historical_journals_unchanged": true,
+  "stage": "COMPLETE original binary-N ALL-E owner fibre catalogue; actual table/ordinal/logger join underway with caller prefix explicit"
+}

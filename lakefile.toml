@@ -28,6 +28,15 @@ rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 [[lean_lib]]
 name = "RiemannGaussian"
 
+# Pinned generic layout lemmas used by the semiprime counter bridge.
+# This library does not import the published SAT machine endpoint.
+[[lean_lib]]
+name = "OpenAISemiprime"
+srcDir = "vendor/openai-semiprime"
+roots = ["OpenAISemiprime"]
+globs = ["OpenAISemiprime", "OpenAISemiprime.+"]
+moreLeanArgs = ["-DautoImplicit=false", "-DwarningAsError=true"]
+
 # Expensive numerical data and the cover checker are explicitly opt-in.
 # Keep this target out of defaultTargets and out of RiemannGaussian imports.
 [[lean_lib]]

@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "archived": "README.md",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/README.md",
+      "source_sha256": "541983e8f535bf76538772a771f77592770a1ba7e0e6ab87f0e87266fc10a6c7",
+      "archive_sha256": "541983e8f535bf76538772a771f77592770a1ba7e0e6ab87f0e87266fc10a6c7",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "sectioned-newton.md",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/sectioned-newton.md",
+      "source_sha256": "b885aa27a027cde73e5e8dca2611ddddc46d6059f85166b9a2a87656bbd18553",
+      "archive_sha256": "008b34518bb30d753dab6fcc43cb2e9134fa7c5b4bf8f74343d51104154f70c2",
+      "copy": "formula indentation and inline code formatting normalized; no algebra changed"
+    },
+    {
+      "archived": "integrable-closure.md",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/integrable-closure.md",
+      "source_sha256": "0539d82e361f21e4fcadab7e702ae2d7044d04145e2f0c2cf84ab89aad8a5f65",
+      "archive_sha256": "d5b0514ee2bf88776d4802e8c6cdc82ebce926f390d3af2257ccec93ac7b846e",
+      "copy": "absolute prior-repository links normalized to relative packet links"
+    },
+    {
+      "archived": "native-thinning.md",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/native-thinning.md",
+      "source_sha256": "f02ec75bea6d5f644fc32abe79ce5e3bf59028beb864ae8718fb2a0712f577d1",
+      "archive_sha256": "f02ec75bea6d5f644fc32abe79ce5e3bf59028beb864ae8718fb2a0712f577d1",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "native-thinning-review.md",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/native-thinning-review.md",
+      "source_sha256": "cb624c9ea762ba9d0e0021a3159a6a85328f6a6282191b2f617dc3c8c7d858cd",
+      "archive_sha256": "cb624c9ea762ba9d0e0021a3159a6a85328f6a6282191b2f617dc3c8c7d858cd",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "algebra-review.md",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/algebra-review.md",
+      "source_sha256": "5e845b84478f3047932e767e75f668eb1a0024707a89ac7f8a98fc83724ea4e8",
+      "archive_sha256": "5e845b84478f3047932e767e75f668eb1a0024707a89ac7f8a98fc83724ea4e8",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "pole-kernel-handoff.md",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/pole-kernel-handoff.md",
+      "source_sha256": "8953772424a18b1b55cce7577ab2dd05cfa5ad5774a0dcbf274689db1c247924",
+      "archive_sha256": "8953772424a18b1b55cce7577ab2dd05cfa5ad5774a0dcbf274689db1c247924",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "coupled-section.md",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/coupled-section.md",
+      "source_sha256": "d6c1f40c4ea91848f815db725007810262b52c5cd6aa6cd82ff55c3431652d41",
+      "archive_sha256": "53d18199858b1494b4ae68116971f5115a711f7ae9e60967859ec5000407f0dc",
+      "copy": "formula indentation normalized as Markdown code; no algebra changed"
+    },
+    {
+      "archived": "check_scalar_reductions.py",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/check_scalar_reductions.py",
+      "source_sha256": "957ecd8d219cb797e0f1510eb087f11ec1a389fb7acce121446c5758bef85713",
+      "archive_sha256": "957ecd8d219cb797e0f1510eb087f11ec1a389fb7acce121446c5758bef85713",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "scalar-reduction-checks.json",
+      "scratch_source": "/tmp/semiprime-scalar-acceleration-20261026/scalar-reduction-checks.json",
+      "source_sha256": "b25bf5bfc64d36df2a23a08328e9dc359f73afc3cfc6aa13c8fefe6c7a67d1a1",
+      "archive_sha256": "b25bf5bfc64d36df2a23a08328e9dc359f73afc3cfc6aa13c8fefe6c7a67d1a1",
+      "copy": "verbatim"
+    }
+  ],
+  "note": "Reports and reviews were authored in scratch. Their scratch-only/no-repository-edit statements describe derivation, before this archival. Root authored README, pole-kernel handoff and integration metadata. Existing evidence packets were not edited.",
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

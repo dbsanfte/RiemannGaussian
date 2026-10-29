@@ -1,0 +1,267 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 17,
+    "declarations": 539,
+    "theorems": 322
+  },
+  "modules": {
+    "SemiprimeD1StackPortOwnerRouting": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRouting.lean",
+        "sha256": "29c4d4a6463b5ab7c65877ef3afaf683c7d629cdb4b88a8f0363f9210f71e33c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRouting.olean",
+        "sha256": "a351eb254029580437061e1fb349ddecf2c691145d0e6638714008d31e209b0b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRouting.olean",
+        "sha256": "a351eb254029580437061e1fb349ddecf2c691145d0e6638714008d31e209b0b"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingAcquisition": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingAcquisition.lean",
+        "sha256": "06d5d5a09159f39d356a0a6a2983c112392be3f6a1de1d4f74c90c570fa00789"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingAcquisition.olean",
+        "sha256": "6fd590cbb86737c30076b98b2f2d33ad37968ec788fbcd7ca4af8e23334550d8"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingAcquisition.olean",
+        "sha256": "6fd590cbb86737c30076b98b2f2d33ad37968ec788fbcd7ca4af8e23334550d8"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingView.lean",
+        "sha256": "c5c0f48e842935bb308a1a468439b5072a73c21cfcd04438215098de31eb62f3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingView.olean",
+        "sha256": "7e9780d872771f020dcd2a0b2cc1e0f1e7719f907f7ae4e2b36254636338d6e8"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingView.olean",
+        "sha256": "7e9780d872771f020dcd2a0b2cc1e0f1e7719f907f7ae4e2b36254636338d6e8"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingSource": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingSource.lean",
+        "sha256": "56f256bd1da3a9a5fffd36187f92ba11259b611c2c84455c4635b480d680daf8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingSource.olean",
+        "sha256": "2efb39e9be39db6078752528566c0d41e6945ec6ce2570ba593a616015705abe"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingSource.olean",
+        "sha256": "2efb39e9be39db6078752528566c0d41e6945ec6ce2570ba593a616015705abe"
+      }
+    },
+    "SemiprimeD1PortOwnerRoutingSpec": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PortOwnerRoutingSpec.lean",
+        "sha256": "fd683f92aa588013441e4d16bf878d092685e6c1ab1d29f2b90ac2f9df9496d4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PortOwnerRoutingSpec.olean",
+        "sha256": "a41cb8a160937d84324f050288a88d724978419a003a290ad11b5434c8a7a3ee"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1PortOwnerRoutingSpec.olean",
+        "sha256": "a41cb8a160937d84324f050288a88d724978419a003a290ad11b5434c8a7a3ee"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingKey": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingKey.lean",
+        "sha256": "26bbf723213dbaf08adfd859f2e21ee9e6e47a2b5ebb722f5095494019518471"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingKey.olean",
+        "sha256": "b3ff6e042fefc9c42264da3c582376f0eaa6b12f789dd50e45777d3210fa2915"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingKey.olean",
+        "sha256": "b3ff6e042fefc9c42264da3c582376f0eaa6b12f789dd50e45777d3210fa2915"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingParse": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingParse.lean",
+        "sha256": "2135095488f291632ee276d596c464bc14c6b6f713f1312113802c454598cd0c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingParse.olean",
+        "sha256": "3e9a158b92bf15c096eadd12e1f00d01b75b4321da777abb98271ae8b034b987"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingParse.olean",
+        "sha256": "3e9a158b92bf15c096eadd12e1f00d01b75b4321da777abb98271ae8b034b987"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingLookup": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingLookup.lean",
+        "sha256": "1aacf6cc6b65e9c620e6f4111a5e6eaedb989c1f74a21cc965e5ae435d64c199"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingLookup.olean",
+        "sha256": "d44666e78f88863a1604372abbe978b426e046f5b16eccd4360e66ca1809a340"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingLookup.olean",
+        "sha256": "d44666e78f88863a1604372abbe978b426e046f5b16eccd4360e66ca1809a340"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingEmit": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingEmit.lean",
+        "sha256": "488ba67dfebf9a0bcd8ced3fdb83f512bed12d1d963f3595334c4ed4e63ca24b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingEmit.olean",
+        "sha256": "110241f5483ff39c7f819698b1e259b3bacf32849cbec514efdfdced554e4061"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingEmit.olean",
+        "sha256": "110241f5483ff39c7f819698b1e259b3bacf32849cbec514efdfdced554e4061"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingClear": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingClear.lean",
+        "sha256": "1231963b3ba2aacc37fe48f7d217a557068fcf44f28cf8ce5816f7dacd90e2c5"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingClear.olean",
+        "sha256": "c27e8dc755c721a71c5a157123c2192430fb0aa7f1a53e0c2ecf5e11f83207c3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingClear.olean",
+        "sha256": "c27e8dc755c721a71c5a157123c2192430fb0aa7f1a53e0c2ecf5e11f83207c3"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingRow": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingRow.lean",
+        "sha256": "8d3d6100ffee409ae09def8d416824a28a11ea1cf0f71fec7f0934cdd0004ca6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingRow.olean",
+        "sha256": "65322e7368ff661d4e0dac7a14cbec2413cea6f1e8f457b06d1a2eedcaf0df54"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingRow.olean",
+        "sha256": "65322e7368ff661d4e0dac7a14cbec2413cea6f1e8f457b06d1a2eedcaf0df54"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingLoop": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingLoop.lean",
+        "sha256": "0fe6a63ca0094001ccc719a7ce939991110b16a54d4115e6fe2d80ff4dd77584"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingLoop.olean",
+        "sha256": "5c218a0cf426f3ebab5199c06dabd5015dff12faffd3fe4c62a82972074ce882"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingLoop.olean",
+        "sha256": "5c218a0cf426f3ebab5199c06dabd5015dff12faffd3fe4c62a82972074ce882"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingFinish": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingFinish.lean",
+        "sha256": "9de85e15e9a3f64b22d6768f01c6f5becb2a97ccc7c45cf69eca6553ac64da27"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingFinish.olean",
+        "sha256": "5e46c226059f0bb3afa367f95a18b91a8a85ef3b1ec1e51d852c15c2ecafae58"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingFinish.olean",
+        "sha256": "5e46c226059f0bb3afa367f95a18b91a8a85ef3b1ec1e51d852c15c2ecafae58"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingExecution.lean",
+        "sha256": "24c7c91ea4bda798559141ed13dd889d5de0ae4d462495a4a967f7692ba62e06"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingExecution.olean",
+        "sha256": "2f329987976fa79c2ace367ca58d0947987c07002796cf0c5b59d349599df3bf"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingExecution.olean",
+        "sha256": "2f329987976fa79c2ace367ca58d0947987c07002796cf0c5b59d349599df3bf"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingNumeric": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingNumeric.lean",
+        "sha256": "89b4c89feaa9c15ee24e58adb4c9964e6a33d9d8d5e57f9e571d3d1b340584e8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingNumeric.olean",
+        "sha256": "a0a4fd45264e0b7849a1efca26266f7da6fc5b4eb9330359fc4cbc908ecdd406"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingNumeric.olean",
+        "sha256": "a0a4fd45264e0b7849a1efca26266f7da6fc5b4eb9330359fc4cbc908ecdd406"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingBounds.lean",
+        "sha256": "b11d11526092be108b589970c1638d00a41f71340995e32ff7ed1a666837100e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingBounds.olean",
+        "sha256": "86e9a6246a9cdbad00af07467e8da83c1c4ceae3e937d3c1fbdc7fb90514c6e4"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingBounds.olean",
+        "sha256": "86e9a6246a9cdbad00af07467e8da83c1c4ceae3e937d3c1fbdc7fb90514c6e4"
+      }
+    },
+    "SemiprimeD1StackPortOwnerRoutingResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingResources.lean",
+        "sha256": "2ff66996612fd6b716f35509b39f76350589c5bbc6967372f657f6f915ebb441"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerRoutingResources.olean",
+        "sha256": "5788c1f5eb6e89603ba7975e33cea8cd264c16d6ba4e8c36ff6077599302b880"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/SemiprimeD1StackPortOwnerRoutingResources.olean",
+        "sha256": "5788c1f5eb6e89603ba7975e33cea8cd264c16d6ba4e8c36ff6077599302b880"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PortOwnerRoutingControl.lean",
+        "sha256": "2f0bef3b01275ec9cc510d08e2d7e54260e2f11829b04c1de39c716df2250ed6"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/port-owner-routing-frozen/control-0.log",
+        "sha256": "21d91041c5d1a59661f8936571ee5c87e96f6f0c7a532b52ec17c5b9bea8220b"
+      },
+      "expected": "true\ntrue"
+    }
+  ],
+  "full_goal_complete": false
+}

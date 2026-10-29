@@ -1,0 +1,18 @@
+'OAI.Algorithms.SubexponentialSAT.GlobalPolynomial.eval_zero_interpolatedGlobalPolynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.Algorithms.SubexponentialSAT.GlobalPolynomial.natDegree_compose_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.Algorithms.SubexponentialSAT.Separation.weighted_separation_equiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.Algorithms.SubexponentialSAT.Separation.coset_row_group_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutExactBuckets.integer_kernel_of_rational_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutExactBuckets.killsIntegerKernel_of_rational_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

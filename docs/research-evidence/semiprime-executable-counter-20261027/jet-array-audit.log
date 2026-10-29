@@ -1,0 +1,19 @@
+-- Found 0 errors in 42 declarations (plus 62 automatically generated ones) in RiemannGaussian.SemiprimeJetArray with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+Checked 104 declarations, 54 theorems; only standard axioms.

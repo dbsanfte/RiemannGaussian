@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-26",
+  "local_source_pins": [
+    {
+      "path": "docs/semiprime-string-theory-research-proposal.md",
+      "scope": "whole file",
+      "bytes": 18615,
+      "sha256": "7ef81200148f3774e3ef03d0510202cc9efe42cf044f760bbbda257ea855de93"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-string-projective-20261026/axis-controller.md",
+      "scope": "whole file",
+      "bytes": 13503,
+      "sha256": "3c20d574149bb1a0663980df645c6d23f47655664c4cf571ae8c9c4f073ef313"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-scalar-20261026/primitive-coverage.md",
+      "scope": "whole file",
+      "bytes": 17207,
+      "sha256": "f7da8cff60b84fc4f71cff60f5d293e11b2988e3069a19505652c99d8a484a97"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/inventory.md",
+      "scope": "whole file",
+      "bytes": 17326,
+      "sha256": "ca1272113bbd15c3d4989e50633ddb342fb545c0262b7820f00c23858b2a6462"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/coverage-selector.md",
+      "scope": "whole file",
+      "bytes": 12665,
+      "sha256": "1321fa7b44a146a01ad7888081e6d3a1fe187d6e70520bb998251ccdda6937d6"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-string-supplier-20261026/multisection.md",
+      "scope": "whole file",
+      "bytes": 15184,
+      "sha256": "16af4dc438647ac2ee4c19791635cfd2481a69db64a2a12057696a74cb8bb20c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-string-native-boundary-20261026/finite-weighting.md",
+      "scope": "whole file",
+      "bytes": 11212,
+      "sha256": "eb116c4e14d2d0e0c98fe3c5e70b1e6566bb19c318df3d63a8b478eaf459d782"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/signed-two-weight-query.md",
+      "scope": "whole file",
+      "bytes": 11374,
+      "sha256": "b36e44e9d5e2c897caac87d6ad6339548fd9d438bd21352bd50971ff236efc93"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/symmetric-supplier-audit.md",
+      "scope": "whole file",
+      "bytes": 7892,
+      "sha256": "e31daf2b017109cd844bda3b5814cac84bd000ac223a7571efe13c615ff1ac62"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quotient-gradient-20261024/weak-readout.md",
+      "scope": "whole file",
+      "bytes": 11129,
+      "sha256": "6d324cd99fa32427de877666e82fb67cc60c857c49e2eecbaa9ad2526e1d9bd1"
+    },
+    {
+      "path": "AGENTS.md",
+      "scope": "pre-turn prefix",
+      "bytes": 1544978,
+      "sha256": "80119b2a2b6e190935cb0f94ca8c9a4fd35c6ebf3e3fec3b5e252d8d4fdfe2d2"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "scope": "pre-turn prefix",
+      "bytes": 2428840,
+      "sha256": "3aa40f263b4ea2fd7e16fc08248fdb504d70739c059d8517c469cabd84dd0dde"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Harvey–Hittmeir, A log-log speedup for exponent one-fifth deterministic integer factorisation",
+      "url": "https://arxiv.org/html/2105.11105",
+      "checked": "Proposition 3.3; Algorithms 4.1 and 4.3; Proposition 4.4; explicit adaptation with restricted residue/interval lists and corrected match counting.",
+      "pdf_sha256": "431794fc9aa69b3304cb3df02e4e54f01fbd0125437fa9195295772d2a745d53",
+      "extracted_text_sha256": "8a273176d64f823bb9a740cb031fa62b8bfb2742ed4cf2e2f1a9ba74f52f2591"
+    },
+    {
+      "title": "Gao–Feng–Hu–Pan, On Factoring and Power Divisor Problems via Rank-3 Lattices and the Second Vector",
+      "url": "https://arxiv.org/html/2512.19076",
+      "checked": "Sections 4–5 stated scales compared only; Lemma 4.4 not independently certified or imported into positive proof."
+    },
+    {
+      "title": "Pollack, Bounds for the first several prime character nonresidues",
+      "url": "https://arxiv.org/html/1508.05035",
+      "checked": "Theorem 1.1 for nonprincipal composite-modulus characters; orientation scan is already prior credit."
+    },
+    {
+      "title": "Lau–Wu, On the least quadratic non-residue",
+      "url": "https://hkumath.hku.hk/~imr/IMRPreprintSeries/2007/IMR2007-4.pdf",
+      "checked": "Theorem 1 cubefree modulus exponent; rechecked primary statement, old signed-weight preparation already uses it."
+    }
+  ],
+  "inherited_primary_context": [
+    {
+      "title": "Bostan–Yurkevich q-holonomic/geometric-factorial baseline",
+      "url": "https://arxiv.org/html/2012.08656",
+      "scope": "Previously checked initialized baseline; no new acceleration imported."
+    }
+  ],
+  "import_scope": "New residue/interval restrictions, finite torus/valuation/marker identities and validation derived in packet; no source supplies a soft-K coefficient acquisition."
+}

@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-residue-shortcuts-20261026/README.md",
+      "sha256": "736f06a3a2fb18141cb2f6c8c976c15aaa0a2acfaeca79d265bda058bd9a9831"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-residue-shortcuts-20261026/content-cover.md",
+      "sha256": "312967a999516dcafa4006b3b36db3e5958c661de971b86d8ebe18ee7527acb9"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-residue-shortcuts-20261026/collective-character.md",
+      "sha256": "618b871d6b719e2839db9f422551b8209f3751bb1aa80619a6c354049ab00876"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/review-restricted-residue.md",
+      "sha256": "f754c0e9372750590a2f3b0ccc986e4bcdf55e864bef48d00a61ae438004d62e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-six-domain-acquisition-20261026/README.md",
+      "sha256": "7f02576b9f1da50468198ba620001c547361d486ffd9e00ebc0944c2d7d482ad"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/composition-hybrid.md",
+      "sha256": "8081fbbfb7e0a22d22faafb6fac67a9c9fbd0d2d072414af7d6b88dafe8f5a76"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "Rene Schoof, Four primality testing algorithms",
+      "url": "https://arxiv.org/html/0801.3840",
+      "location": "Section 3, Proposition 3.3(i); Proposition 3.1 and cyclotomic conventions",
+      "pdf_sha256": "8eb76903b4d3637926cc0e0fcfd6fcfe31d2f8cd2104de1d3354ea65ec54139a",
+      "root_check": "Primary HTML hypotheses and definitions directly checked; independent reviewer inspected supplied PDF/text.",
+      "scope": "Conditional primitive Gauss congruence implies a 3-adic factor relation; no guaranteed pass imported."
+    },
+    {
+      "title": "David Harvey and Markus Hittmeir, A log-log speedup for exponent one-fifth deterministic integer factorisation",
+      "url": "https://arxiv.org/html/2105.11105",
+      "location": "Proposition 3.3, Algorithm 4.3 and Proposition 4.4",
+      "root_check": "Primary algorithm and cost inspected, together with frozen restricted-residue review.",
+      "scope": "Restricted to a supplied covering palette; original preparation and amended exact recovery retained."
+    },
+    {
+      "title": "Bernstein, De Feo, Leroux and Smith, Faster computation of isogenies of large prime degree",
+      "url": "https://velusqrt.isogeny.org/velusqrt-20200616.pdf",
+      "alternate": "https://arxiv.org/abs/2003.10118",
+      "location": "Sections 3.1–3.3, Lemma 3.4 and Proposition 3.5",
+      "pdf_sha256": "d18c20ebca34b14e51055f7367ff5577435191c245dc98ae0c1443dfcb73490a",
+      "root_check": "Downloaded primary PDF text checked after web PDF retrieval failure.",
+      "scope": "Split-monic two-GP resultant and safe standard completion; no fused tangent norm speedup imported."
+    },
+    {
+      "title": "Kirillov and Noumi, Affine Hecke algebras and raising operators for Macdonald polynomials",
+      "url": "https://arxiv.org/abs/q-alg/9605004",
+      "location": "Section 1, higher subset operators and generating determinant",
+      "scope": "Operator context; explicit finite formula, balanced conversion and native gates derived and independently reviewed here."
+    },
+    {
+      "title": "Noumi, Kernel functions for Koornwinder q-difference operators",
+      "url": "https://www.maths.gla.ac.uk/island/island3/talks/noumi.pdf",
+      "location": "Page 2, finite type-II kernel",
+      "scope": "Previously inspected kernel context; no infinite kernel evaluation or residue acquisition imported."
+    },
+    {
+      "title": "Bostan and Yurkevich, Fast Computation of the N-th Term of a q-Holonomic Sequence and Applications",
+      "url": "https://arxiv.org/html/2012.08656",
+      "location": "Sections 3.3–3.4",
+      "scope": "Comparator only; growing order/degree costs retained."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "date": "2026-10-26",
+  "scope": "Retained knot corrections and complete-family quadratic-character/axis-wheel query",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6287,
+      "sha256": "9f79178fe2b0fbc1a99067d804cb7c72ec5d71f18b2a8ea100952ba2cad8cb40"
+    },
+    {
+      "path": "axis-continuation.md",
+      "bytes": 5161,
+      "sha256": "3d6a844b02819b74a96c9fffd2f5f097db2ccd943e2a41623392c2c9f364a7aa"
+    },
+    {
+      "path": "character-review.md",
+      "bytes": 4779,
+      "sha256": "18f5f2b5d3cc6a0219ed80f8507bcd2147ae8ebbd57e95e6712c1e4f9329fd49"
+    },
+    {
+      "path": "conic-character-filter.md",
+      "bytes": 9424,
+      "sha256": "41177ffe6ca34789fd1b27a6dc2f6efe0ed6b3f6c283bff73d7da0f68d45e904"
+    },
+    {
+      "path": "dimer-screen.md",
+      "bytes": 1852,
+      "sha256": "34b5b7d58996af7acc307673bcbdf666d2bd77515ba07ede6af0824992451f6f"
+    },
+    {
+      "path": "full-family-wheel-review.md",
+      "bytes": 4782,
+      "sha256": "c43bb565ff093243c83be42d3057a546d41c1843e90fc0db986e85880bf80356"
+    },
+    {
+      "path": "full-family-wheel.md",
+      "bytes": 7759,
+      "sha256": "904ba0815c8a3af5cb9e30be29eced07d6e7524e9aaa1b92b11df5204e236b00"
+    },
+    {
+      "path": "fusion-correction.md",
+      "bytes": 8484,
+      "sha256": "27de8910f5af12536e509cf46347673949f3fc460d81fa9b6989d8a356706403"
+    },
+    {
+      "path": "fusion-review.md",
+      "bytes": 4647,
+      "sha256": "70f9e9ab2fe593d18f133cac61e66950da700bc5263801efe6f8fbb8d64d7483"
+    },
+    {
+      "path": "multihook-correction.md",
+      "bytes": 13296,
+      "sha256": "08785c8449e5ab779392377ec9cabea085454fba41d2a213ef838e626c4928f7"
+    },
+    {
+      "path": "multihook-review.md",
+      "bytes": 7413,
+      "sha256": "fe48fe3dc9fcaed1b8dbb928dda4a0126fef0bf941152e72b29d8e145e1f7561"
+    },
+    {
+      "path": "review.json",
+      "bytes": 3276,
+      "sha256": "f55e3885a0a88db4c8600528af6c00190104b4f2d0f4dacb5655912b9bd59dd3"
+    }
+  ]
+}

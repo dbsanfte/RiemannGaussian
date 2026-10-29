@@ -1,0 +1,130 @@
+{
+  "status": "FINAL",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 6,
+    "declarations": 180,
+    "theorems": 114
+  },
+  "modules": {
+    "SemiprimeD1StackRootSourceOccurrences": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootSourceOccurrences.lean",
+        "sha256": "be35a3d1d7da0196fa306aa0d041fefa58a9041262c845abc6e403c5c4971689"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootSourceOccurrences.olean",
+        "sha256": "b98edeec6c86104c5754569b25bc1bf344733630e69eb43d1710282fdfced6aa"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-source-occurrences-frozen/SemiprimeD1StackRootSourceOccurrences.olean",
+        "sha256": "b98edeec6c86104c5754569b25bc1bf344733630e69eb43d1710282fdfced6aa"
+      }
+    },
+    "SemiprimeD1StackRootSourceOccurrencesComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesComponents.lean",
+        "sha256": "bbfd2d18b947aac1455481cf86cc64972b17633676f8c9515a34fd58963d7a95"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesComponents.olean",
+        "sha256": "e9401fba49813964e0a69625eea41afbe634ac4e88b3c1188cf12f784e056f26"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-source-occurrences-frozen/SemiprimeD1StackRootSourceOccurrencesComponents.olean",
+        "sha256": "e9401fba49813964e0a69625eea41afbe634ac4e88b3c1188cf12f784e056f26"
+      }
+    },
+    "SemiprimeD1StackRootSourceOccurrencesExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesExecution.lean",
+        "sha256": "fb9acd035c6eb79db1e7399aa6b915c3fba7dc38a169a33386e6530f5f309a77"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesExecution.olean",
+        "sha256": "746acd3c0f4a419ce3bd208e15468d3dab7217e4d5cbb31b14db9af2184add2f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-source-occurrences-frozen/SemiprimeD1StackRootSourceOccurrencesExecution.olean",
+        "sha256": "746acd3c0f4a419ce3bd208e15468d3dab7217e4d5cbb31b14db9af2184add2f"
+      }
+    },
+    "SemiprimeD1StackRootSourceOccurrencesBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesBounds.lean",
+        "sha256": "2d0e327cd91f10e56a52d73458a115982783e4a0a9f09eb2fa0f61814e992d34"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesBounds.olean",
+        "sha256": "62488f6b8943a7b3de7783d809574e3fa2d871a7234f4f0effa282589d4f1ef2"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-source-occurrences-frozen/SemiprimeD1StackRootSourceOccurrencesBounds.olean",
+        "sha256": "62488f6b8943a7b3de7783d809574e3fa2d871a7234f4f0effa282589d4f1ef2"
+      }
+    },
+    "SemiprimeD1StackRootSourceOccurrencesResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesResources.lean",
+        "sha256": "b89c101ae08c27bf2fa71f3fdc460ed83bcc52081a594181487a4dfed538ef48"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesResources.olean",
+        "sha256": "fe3ccb23cc4b05dea89c3580d1e805b1f6a09fb3345c66b8bac6d133bb0adf1c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-source-occurrences-frozen/SemiprimeD1StackRootSourceOccurrencesResources.olean",
+        "sha256": "fe3ccb23cc4b05dea89c3580d1e805b1f6a09fb3345c66b8bac6d133bb0adf1c"
+      }
+    },
+    "SemiprimeD1StackRootSourceOccurrencesOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesOriginal.lean",
+        "sha256": "7fc6b0d399a6b6167ff129a970781f3361bdfc28d7820234dbe13ddde76922e0"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootSourceOccurrencesOriginal.olean",
+        "sha256": "a586837a2a2ab3e3906794fc635c07faa0d8e3bc3c3f8765aaa35c70ae11419f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-source-occurrences-frozen/SemiprimeD1StackRootSourceOccurrencesOriginal.olean",
+        "sha256": "a586837a2a2ab3e3906794fc635c07faa0d8e3bc3c3f8765aaa35c70ae11419f"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "source_and_canonical_writers": "STOPPED; all six source/canonical objects read-only",
+  "all_source_default_heartbeats": 200000,
+  "actual_header_import_pairs": 18766,
+  "actual_import_pairs_unchanged": true,
+  "physical_roles": 1873,
+  "retained_root_roles": 1852,
+  "unused_shared_input_shadows": 2,
+  "source_input": "ORIGINAL canonical binary N alone. Actualcallerprescription/tail entry also proved.",
+  "actual_acquisition": "ActualRoot1852 once acquiresalloriginalrows/counts/records/index/tables. ONLYitsactualoutputrowtape andretainednword aliasQ21.rows/number. RealQ21wholewidth/Fprescan/ninit/orderedowner/factorkeys/Mtallies/reverse/cleanup/halt. No graph/count/owner/key/arity/counterwidth/callback/result/clock supplier.",
+  "clock": "SAMEwholeliteralprogram Root1852.timeBound+Q21.timeBound+3. ActualRoot1852 source run_data_bound pays BOTHphysicalinputwordlengths. Q21quadratic cap squares actualroot57Bto114B; fixedA,d beforeALLcanonicalN andALLphysicalprefixes, poly(ell+prefixBytes)*2^(114scopeBoundell).",
+  "memory": "ALL1873allocatedwords includingbothunusedinputshadows+ALLactualreturncells everycompiledprefix, fixedmonomial114B; genuine N-only Turing.initList machine certificate.",
+  "output": "EXACT originalfactor-major/local-slot compactbinary(owner,n+factor) stream OwnerLookup.records(...,[]) +actualF/M; all1852priorrootwordsretained. Emptyfactorsadvancefactorordinal,repeatedownersretained.",
+  "compiled_controls": {
+    "entry": "PREPAREDactualroot-row/count\u2192keysourcehandoffONLY; universaloriginalNproofprimaryresult",
+    "cases": 5,
+    "actual_transitions": 7116,
+    "all1873_roles": true,
+    "all1852_root_cells_retained": true,
+    "two_unused_input_shadows_empty": true,
+    "no_root_reacquisition": true,
+    "all_occurrence_work_clear": true,
+    "two_real_outer_returns": true,
+    "observer_generated_standard3": 26,
+    "actual_terminal_exit_code": 0,
+    "log": "/tmp/semiprime-explicit-rate-20261027/root-source-occurrences-controls.log"
+  },
+  "independent_read_only_review": "PASS;root-source-occurrences-independent-review.txt",
+  "original_whnf_failure": "Preservedattempt3; fixedgenericfinal_projection BEFOREactualNgraphinstantiation; noheartbeatraise. All13otherFINALsourcegroupsuntouched.",
+  "finalized_utc": "2026-10-28T20:15:27.197551+00:00"
+}

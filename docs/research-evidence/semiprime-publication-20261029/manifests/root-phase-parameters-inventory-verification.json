@@ -1,0 +1,29 @@
+{
+  "status": "FINAL_FROZEN",
+  "strict": true,
+  "ordinary_root_all15_default200k": true,
+  "every_generated_standard3_only": true,
+  "declarations": 31,
+  "theorems": 23,
+  "independent_object_byte_equal": true,
+  "actual_import_pairs": 17593,
+  "actual_import_files": 35186,
+  "missing": 0,
+  "import_files_changed": [],
+  "source_object_writers_stopped": true,
+  "files": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPhaseParametersInventory.lean",
+      "sha256": "6e178e9171b8c7d29dc21031b74d6c98787372a7cf6d8ed01ffa29cbf3f4602d"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPhaseParametersInventory.olean",
+      "sha256": "0a0a150b40d4a9310d1d54a69c7ceb9491f71cbcca1104201790cd0574468db9"
+    },
+    "independent": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackRootPhaseParametersInventory.independent.olean",
+      "sha256": "0a0a150b40d4a9310d1d54a69c7ceb9491f71cbcca1104201790cd0574468db9"
+    }
+  },
+  "abi": "roles:List P48.Stack, length48/Nodup/complete; role:Fin48\u2192P48.Stack; Input fivewordonly theorem. Serialformat48consecutive frame(words)[], NO vector tags. Source188notyetFINAL."
+}

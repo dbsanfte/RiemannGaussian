@@ -1,0 +1,35 @@
+# Whole-entry preparation and flat binary implementation cost
+
+This is a constructive paper-level bit-complexity argument around the **actual** checker in `SemiprimeMacroEntryBitCheck.lean`. The file proves literal full-table equality and a polynomial bound on every assembled primitive backend clock. It also proves finite input-width, gather-loop and syntax/literal-cell bounds. This note accounts for the preparation omitted from that backend clock. It is not a Lean Turing-machine compilation theorem.
+
+Write L=Nat.size N, n=transformLength L and W=n+1, with N>0. The public parameter theorems imply n²<64L, n>=4 and n<=64L; put X=64L+2. All parameters below are public binary integers, not decoded factor-field data.
+
+## Public descriptor preparation
+
+Scan the public binary word N once to determine L. Double a binary candidate n from four until n²>=16L; ordinary schoolbook multiplication/comparison suffices. The proved least-dyadic characterization identifies this loop's result with `transformLength`. Determine the dyadic axes by splitting its exponent, and b=n/4, d=ceil(L/b), by binary shifts/division of these small public integers. Even an implementation that scans its entire descriptor on every such operation is polynomial in X; no real logarithm oracle or unit-cost arbitrary integer arithmetic is used.
+
+Build the physical modulus with the existing `fermatModulusBits` on an n-cell false template. Its exact value is 2^n+1, width W and charged construction clock 3n+2. The constants zero, one, two, four are fixed Boolean lists. The inverse-root expression is `powerExpr fourExpr (n-1)`, and inverse-normalizer expression is zero minus `powerExpr twoExpr (n-(depth+1))`. Their values, canonical validity and linear syntax bounds are proved in the new file. There is no search for a modular inverse.
+
+The target digits are literal contiguous b-bit chunks of N, zero padded to n slots. One can prepare them by repeated existing `splitTemplateBits` and `fitBits`; their exact low/high split equation and fixed-width fitting show that slot i has value `(N / (2^b)^i) % 2^b`, the precise public `targetDigit` definition. Equivalently the already compiled `configTargets` is the canonical BitVec encoding of these same digits, with exact width/value proof. For a flat input tape, simply scan N to extract each chunk; at most n scans of L bits suffice. Thus no arbitrary Config target is supplied for free: for public N all target cells are obtained from its actual bits, in polynomial work. The full target array contains n*b <= n² cells. The formal `Targets` descriptor invariants express these input-data facts, not an assumed local arithmetic evaluator.
+
+## Actual input lookup and gathers
+
+`arity_flat_bound` proves A=arity(v)<=4(n+1)² for every literal vertex. Use a flat binary port word with this length, not a free random-access array. Source flags have offset W, first/second block roles have the exact word-before-bit offsets j*W+bit and size*W+k*W+bit; scale/product/carry roles have the literal offsets in `localSlotFinEquiv`. Compute an offset with schoolbook binary arithmetic and scan at most A cells to read it. Charging a coarse 8X^4 bit operations per lookup safely pays both arithmetic on O(log X)-bit indices and a full flat scan.
+
+The actual generator has at most `size²+3*size` source-dependent word gathers in a DFT branch: size inputs and size outputs for the canonical gates, and size*(size input words plus one output word) for the equations. Other branches have at most six gathers. `gatherBound` records these branch counts, and `gatherBound_polynomial` proves <=4(n+2)². Each word gather reads at most W bits. Consequently even the deliberately linear-lookup implementation uses at most 32X^7 bit operations for gathering. This bound permits recomputation of closures; it does not assume memoized Fin functions. The gather bound is a source-loop count justified by the displayed generator, not a separately instrumented Lean-source reduction theorem.
+
+## Syntax and constants at each entry
+
+`transformNodes_polynomial` gives <=16(n+2)^5 expanded syntax nodes for a DFT output comparison, including normalization. There are at most n outputs; `allOutputSyntax_polynomial` bounds their total by 32(n+2)^6. Scale/product syntax is smaller. The `nodes` count expands repeated children rather than treating shared subexpressions as free.
+
+Every actual literal has at most W cells: physical input words have width W; root constants use at most three; zero/one/two and the normalizer respect this bound. The new `Sized`/`dotExpr_sized`/root/normalizer theorems establish this structurally. `literalCells_le` proves <=nodes*W, so all expanded local syntax, literal cells and constructor/reference records occupy O(X^7) cells. A direct constructor-by-constructor implementation with flat public-index arithmetic uses O(X^9) preparation bit work. It may share the fixed modulus/root descriptor, but these bounds do not require sharing.
+
+Canonicality gates run before modular arithmetic. If one fails, the arithmetic body is not evaluated. A malformed word is therefore handled with the same preparation envelope and strictly less backend execution, not an assumed valid-word oracle. Integer carry checks remain exact integer equations, with all strict physical bounds checked, and flags are actual borrow/Boolean gates.
+
+## Charged backend and a full polynomial simulation
+
+`publicBitEntry_correct` proves that every final Boolean answer equals the actual frozen public tensor entry, for every input port word. `publicBitEntry_polynomial` proves its assembled backend clock is <=2^20 X^10. This charges all actual carry/borrow/modular-product/restoring-division runs, guarded branches, comparisons, AND traversal and report operations, not a unit-cost field/ring oracle.
+
+To remove free references as well, store all syntax, word cells and backend records on a flat binary tape with explicit binary object addresses. The number of allocated cell/reference operations is bounded by the backend clock plus the O(X^9) preparation count. Encoding every address/counter needs O(log X) bits; replacing this by X is safe. A conservative workspace bound is 2^40 X^14 bits. Simulating each primitive reference/cell operation by a full scan (or even a quadratic scan) of this flat workspace is deterministic and polynomial. With the coarse constants above, 2^120 X^40 bit operations and 2^40 X^14 space safely bound the entire local entry algorithm, including preparation and binary loop/address bookkeeping. These constants are intentionally loose; no subexponential exponent depends on optimizing them.
+
+Thus the actual full local Boolean entry has a constructive polynomial bit algorithm without a supplied fast-local oracle or hidden field operations. The Lean source certifies its data/answer and detailed backend ledger; the flat-tape simulation and compiled-program correspondence in this note remain paper-level. This does **not** assert a completed formal TM/runtime theorem for the whole counter, whose layout, rational height/storage and global enumeration interfaces are separate.

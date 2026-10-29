@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "excludes": [
+    "manifest.json"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8384,
+      "sha256": "ace2967474daad4896c0cd2e688cce4efe63794c886039713d09de65ebe2207a"
+    },
+    {
+      "path": "arithmetic-selector.md",
+      "bytes": 10628,
+      "sha256": "23f61e124b8d3d53c902f14b210fde5efc3ac9a9557e189f65eb893ba02e5b28"
+    },
+    {
+      "path": "cyclic-reciprocity.md",
+      "bytes": 16547,
+      "sha256": "cf80ce37bcc42b1fe161353cbd1858ab5a37c34db33ed93605b328f465a74fff"
+    },
+    {
+      "path": "multisection.md",
+      "bytes": 15184,
+      "sha256": "16af4dc438647ac2ee4c19791635cfd2481a69db64a2a12057696a74cb8bb20c"
+    },
+    {
+      "path": "review-arithmetic-selector.md",
+      "bytes": 5154,
+      "sha256": "9b153640e37e8a5bdcc4dda5a683cc7e899cb6ce6794b7625a164d9d71082749"
+    },
+    {
+      "path": "review-integration.md",
+      "bytes": 2862,
+      "sha256": "d597dd819e2e1632bdb8c46d1218b2e152246ddfe1f70d2a4002b4af70d60cee"
+    },
+    {
+      "path": "review-multisection.md",
+      "bytes": 3486,
+      "sha256": "279173c856ddc0e312257c83cdc1daff9755c0c374dca457f116d6225963975b"
+    },
+    {
+      "path": "review-schur-boundary.md",
+      "bytes": 3543,
+      "sha256": "ea248797826734d9787626c774c2af898bc58c4464f98178fe45febde381467b"
+    },
+    {
+      "path": "review.json",
+      "bytes": 3339,
+      "sha256": "9f201c3bd3f4f0e1f0551a4c99d6089d15c73ec5763483a9584e30c497c6abe2"
+    },
+    {
+      "path": "schur-boundary-operator.md",
+      "bytes": 7591,
+      "sha256": "4c3784a6e5d9a312bd79db7151b60e8b12c5d8443ff9bdbdf484968d71f696a6"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 3258,
+      "sha256": "dd31569f5cc32ee3f4c83e05b8d9369a98a18e1851af37c837a404d80bef50ac"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 5,
+    "declarations": 173,
+    "theorems": 77
+  },
+  "modules": {
+    "SemiprimeD1StackRootRecursiveControl": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootRecursiveControl.lean",
+        "sha256": "6214a24612c5301d6919e04d93b776cbb833dcb67643433dd049bfe1a8dfd5e4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootRecursiveControl.olean",
+        "sha256": "00d1fedf66685cf73823d8181569f5c6e27b1456c7469d453785d88118158bd7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-recursive-control-frozen/SemiprimeD1StackRootRecursiveControl.olean",
+        "sha256": "00d1fedf66685cf73823d8181569f5c6e27b1456c7469d453785d88118158bd7"
+      }
+    },
+    "SemiprimeD1StackRootRecursiveControlEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootRecursiveControlEncoding.lean",
+        "sha256": "78049891e1e6e4dd804fb8f41cc10fba99ced09ccb81d172bc35a3dda69f10bb"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootRecursiveControlEncoding.olean",
+        "sha256": "be8366f2f3fe957a0d8a0224072740dd63bc3b6ecc28c2f30fc348886550d7f2"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-recursive-control-frozen/SemiprimeD1StackRootRecursiveControlEncoding.olean",
+        "sha256": "be8366f2f3fe957a0d8a0224072740dd63bc3b6ecc28c2f30fc348886550d7f2"
+      }
+    },
+    "SemiprimeD1StackRootRecursiveControlExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootRecursiveControlExecution.lean",
+        "sha256": "a2882bca2864e1222e86adc4baa5bed85922e0c472f6673947524732b16359ca"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootRecursiveControlExecution.olean",
+        "sha256": "032660593273f77d2dfc5e770a56afa655cc0ca01ee5d40ec41b5d1d820c986a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-recursive-control-frozen/SemiprimeD1StackRootRecursiveControlExecution.olean",
+        "sha256": "032660593273f77d2dfc5e770a56afa655cc0ca01ee5d40ec41b5d1d820c986a"
+      }
+    },
+    "SemiprimeD1StackRootRecursiveControlBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootRecursiveControlBounds.lean",
+        "sha256": "1eb7e8bae31dfdeed3ebce6ec7896d3278919682bcfafaef8c06b10002d12632"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootRecursiveControlBounds.olean",
+        "sha256": "30330f2024230dd750259e3065e2eda8e78daa32581036a4966b63026a9b35cb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-recursive-control-frozen/SemiprimeD1StackRootRecursiveControlBounds.olean",
+        "sha256": "30330f2024230dd750259e3065e2eda8e78daa32581036a4966b63026a9b35cb"
+      }
+    },
+    "SemiprimeD1StackRootRecursiveControlOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootRecursiveControlOriginal.lean",
+        "sha256": "e3a1c807142a18b0b79c05cba6c5c10328e2a5f9ddb2fea637bf0cfe8599dec9"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootRecursiveControlOriginal.olean",
+        "sha256": "3761c451091ced2c3f144f0763ccaa2dd53b10046527a98674cf4c215347b353"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-recursive-control-frozen/SemiprimeD1StackRootRecursiveControlOriginal.olean",
+        "sha256": "3761c451091ced2c3f144f0763ccaa2dd53b10046527a98674cf4c215347b353"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": "/tmp/semiprime-explicit-rate-20261027/RootRecursiveControlControls.lean",
+      "source_sha256": "a70e0fc661ad6c53c7836f7e65bb2db9d2220c86062d0796afc491c80a50bde5",
+      "log": "/tmp/semiprime-explicit-rate-20261027/root-recursive-control-controls.log",
+      "log_sha256": "ba8d29b20298a2848989e7b82d5ff11c79de9ca939c1fe2042621eb7462ca076",
+      "stdout": "ROOT_RECURSIVE_CONTROL_PREPARED cases=14 active=5 actual_transitions=26557 all119roles=true all108source_cells_retained=true five_acquired_aliases=true eleven_fresh_roles=true inactive_child_empty=true active_exact_child=true actual_nested_return=true real_outer_frames_preserved=true halt_flags_clear=true own_gate_clock=true\nOBSERVER standard_axioms_only=true declarations=27\n",
+      "scope": "PREPARED119 gate-entry fixtures ONLY; full N-only whole-family correctness/time/storage proved universally in the five source modules, not inferred from these controls.",
+      "cases": 14,
+      "active_cases": 5,
+      "actual_transitions": 26557,
+      "observer_generated_standard3": 27
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_source_object_pairs_unchanged": 18204,
+  "default_heartbeat_limit": 200000,
+  "live_owned_source_canonical_and_isolated_hashes_match": true,
+  "all_owned_writers_stopped": true,
+  "scope": "One fixed computable119role program, binaryN only, actualRoot108source call then actualRoot16guard/conditionalsuccessor call and actualhalt. ALLpositive canonicalN/allprescribedrootprefixes. Sameactualprogram clock<=10^55*(ell+1)^10, ALL119data+realreturncells<=10^58*(ell+1)^10. Full recursivephases/coefficients/heap/search/recovery/wholefactorclock remainOPEN; noold/nativeclock transported.",
+  "checked_utc": "2026-10-28T16:02:38.017186+00:00",
+  "independent_read_only_review": {
+    "agent": "vertex_record_logger",
+    "model": "gpt-6.1-sol",
+    "status": "PASS_NO_BLOCKING_FINDINGS",
+    "path": "/tmp/semiprime-explicit-rate-20261027/root-recursive-control-independent-review.txt"
+  }
+}

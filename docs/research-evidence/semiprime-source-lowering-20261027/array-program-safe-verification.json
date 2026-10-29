@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "strict_exit": 0,
+  "audit_exit": 0,
+  "isolated_exit": 0,
+  "declarations": 61,
+  "theorems": 61,
+  "standard_axioms_only": true,
+  "isolated_byte_identical": true,
+  "hashes": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramSafe.lean": "70c722e201edfb36d480c974cd7f7eca1c89f26ac66351d6e26bbe24d060dbcf",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramSafe.olean": "4dd106ab8889d358fc846ae6e3fb7a4fed9d688ee2a38ddcfd471527406448fd",
+    "/tmp/semiprime-source-lowering-20261027/SourceArrayProgramSafe.isolated.olean": "4dd106ab8889d358fc846ae6e3fb7a4fed9d688ee2a38ddcfd471527406448fd",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayCompilerSafe.lean": "f05fd8d54fe8f2da2165cb4f7b50f949284f8da3f007ca3ac3f6bfecaacc7996",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayCompilerSafe.olean": "f6b21e11200235d5a814d813a5a36cb5cd30a75e9e8888d8b1b440778b7530e4",
+    "/tmp/semiprime-source-lowering-20261027/SourceArrayCompilerSafe.isolated.olean": "f6b21e11200235d5a814d813a5a36cb5cd30a75e9e8888d8b1b440778b7530e4"
+  },
+  "final_dependencies": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramIR.lean": "ccbf2d701a54e21eccce26d3390a199f46b183bb9376d79f47ff7f74d431b6b6",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramIR.olean": "7cb0506286e69805fd44275dc7d834b9f66b17dcb70245c4ed1f02c092046699",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramBlocks.lean": "f7cc60b34b4316968467cc590f6706e031cca894fc0b6a649fe7c31675102931",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramBlocks.olean": "b91145c11b0b5a5db6d93ebdf54671690d02010066773cf9933cdd0ca9f048d4",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramCompiler.lean": "a074225270d9cdd3d9981ef9f494f7c3c39b4564fa9bd307e421edf8fae7f475",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramCompiler.olean": "cd1800ef6d4717e2a053a203e05d8be7c98abca94783e4228b6ed050502719f8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramLowering.lean": "0eb183c9163d9c5d51ec30186cb76aba9c30a8670254724ab009e21915b942ab",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramLowering.olean": "fc93127a23e8a3e64edcd71dba04f70bd491ec64338622518de0cb22c254edfc"
+  },
+  "final_dependency_refresh_strict_exit": 0,
+  "final_dependency_refresh_isolated_exit": 0
+}

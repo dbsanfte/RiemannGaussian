@@ -1,0 +1,149 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 5,
+    "declarations": 153,
+    "theorems": 97
+  },
+  "modules": {
+    "SemiprimeD1StackProductRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductRecord.lean",
+        "sha256": "5f5f1ef1bfe90f16bd8e7ef6933f341d580ab6853485b71c69de6fdb4b97cf22"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductRecord.olean",
+        "sha256": "99eecb52b53d2f5e0458642c44b9c1ce7d489a9e819ff460d3446df9ce8242fe"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/product-record-frozen/SemiprimeD1StackProductRecord.olean",
+        "sha256": "99eecb52b53d2f5e0458642c44b9c1ce7d489a9e819ff460d3446df9ce8242fe"
+      }
+    },
+    "SemiprimeD1StackProductRecordComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductRecordComponents.lean",
+        "sha256": "97c9af10bdf79358adee31fef7bd6ca8039488ea7bc3b271d4d132146baee1bb"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductRecordComponents.olean",
+        "sha256": "ea5283eb86ccf155e5af74e000fc959c8703b0c61236b29ff24a7c376ceb1da5"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/product-record-frozen/SemiprimeD1StackProductRecordComponents.olean",
+        "sha256": "ea5283eb86ccf155e5af74e000fc959c8703b0c61236b29ff24a7c376ceb1da5"
+      }
+    },
+    "SemiprimeD1StackProductRecordExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductRecordExecution.lean",
+        "sha256": "4ff083cb63677490634e5affff63e8e325857ec64307688651ad7d0ebb3b537c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductRecordExecution.olean",
+        "sha256": "bd2ea880d3bbbc9837e06bdabf0e2d4c0adf0b9e8d5d156aaf207937b68b6312"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/product-record-frozen/SemiprimeD1StackProductRecordExecution.olean",
+        "sha256": "bd2ea880d3bbbc9837e06bdabf0e2d4c0adf0b9e8d5d156aaf207937b68b6312"
+      }
+    },
+    "SemiprimeD1StackProductRecordBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductRecordBounds.lean",
+        "sha256": "99c43d1f2a1c48200daa941c1ef993d772775a5217affa0558c49e9610cbd914"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductRecordBounds.olean",
+        "sha256": "52042f6e6e67a0e4049665b8ecda57c37af06fd6f474c9f738ee59a03f72a1d5"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/product-record-frozen/SemiprimeD1StackProductRecordBounds.olean",
+        "sha256": "52042f6e6e67a0e4049665b8ecda57c37af06fd6f474c9f738ee59a03f72a1d5"
+      }
+    },
+    "SemiprimeD1StackProductRecordOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductRecordOriginal.lean",
+        "sha256": "cac26d2902ef32ac4881259f48bd94a92b48cbbb33ed2f940260822b16a5ddf4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductRecordOriginal.olean",
+        "sha256": "f01b8e5f4aa06009eb0143e178640c79174fed5c1529e5e39a5054d23caf6cda"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/product-record-frozen/SemiprimeD1StackProductRecordOriginal.olean",
+        "sha256": "f01b8e5f4aa06009eb0143e178640c79174fed5c1529e5e39a5054d23caf6cda"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/ProductRecordControls.lean",
+        "sha256": "a4b83411944ed453eed5b8a09df5755715b3681436bfafe8b066ee4283672ce7"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/product-record-frozen/control-0.log",
+        "sha256": "0810e19431b933658d7858516b009cb40ed74c4cbcb1da1e43136892ffcc7b46"
+      },
+      "expected": "PREPARED_SCOPE_LOG_PASS table_bytes=0 actual_transitions=633 all99roles=true aliases_consumed=true original_N_depth_bank_retained=true caller_output_retained=true flags_clear=true outer_return_retained=true\nPREPARED_SCOPE_LOG_PASS table_bytes=4 actual_transitions=645 all99roles=true aliases_consumed=true original_N_depth_bank_retained=true caller_output_retained=true flags_clear=true outer_return_retained=true\nSNAPSHOT_CONTROL_AXIOMS constants=25 standard3_only=true snapshot_identity_kernel_checked=true"
+    }
+  ],
+  "full_goal_complete": false,
+  "scope": "Compiler-internal actual binary N plus acquired binary occurrence scope-ID bank and actual caller history/output accumulators. Program runs N-only ProductTable83, paid binary-ID-to-unary serializer12, directly aliased record logger4, then halt. No table/arity/raw/decoded-index/verdict/clock input. Complete original scope routing, whole-graph acquisition and full factoring runtime theorem remain open.",
+  "source_status": "FINAL FROZEN; writers stopped",
+  "ordered_fresh_canonical_rebuild_after_root16_final": true,
+  "audit_heartbeats": 200000,
+  "Elab.async": false,
+  "actual_compiler_imported_modules": 18201,
+  "all_imported_source_object_pairs_unchanged": true,
+  "import_pins": {
+    "before": "/tmp/semiprime-explicit-rate-20261027/product-record-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/product-record-dependencies/imported-pins-after.json"
+  },
+  "all99_roles_and_real_returns": "SemiprimeD1StackProductRecordBounds.machine_prefix_cells; includes2unusedalias-shadows; finiteBoolean/returnflags, allalphabets, compileddepth<=4",
+  "actual_clock": "RootTable.timeBound + OrdinalStream.timeBound + recordTime(actualPorts,actualTable) +4; bounded by RootTable.runBound +21*2^actualArity +110*(scopeCount+1)*(M+1)+20",
+  "original_binary_width_clock": "(10^30+21)*(ell+1)^3*2^(48*(Nat.sqrt ell+1)) +110*(scopeCount+1)*(M+1)+20, ell=bitLength(bitValue bits), assuming only supplied acquired ID widths/values <= M; paddedBank.idAt discharges these",
+  "original_semantics": "ALLcanonicalpositiveN/ALLoriginalproductindices, EXACTBooleanRootTablesOriginal.reference, originalorderednumericports->oldunaryportTape, frozenVertexProduct.records rowbytes, chronologicalhistory, laterphysicalfinalreverse; scope bounds/arity are caller routing proofs only",
+  "integer_coefficients": "Original.Entry exports frozen literal_entry_coefficient/literal_original_coefficient/literal_entry_reduce: individualinteger0/1 and arbitraryprecision before network multiplication",
+  "prepared_compiled_controls": {
+    "scope": "Prepared serializer->direct-alias logger stage; not a duplicate N-only full table sweep",
+    "actual_transitions": [
+      633,
+      645
+    ],
+    "empty_and_mixed_table_bytes": [
+      0,
+      4
+    ],
+    "all99_roles_match": true,
+    "both_alias_fields_consumed": true,
+    "original_N_depth_binary_bank_caller_output_retained": true,
+    "caller_history_retained_as_suffix": true,
+    "stale_flags_cleared": true,
+    "nonempty_real_outer_return_retained": true,
+    "snapshot_identity_kernel_checked": true,
+    "snapshot_control_generated_constants_standard3": 25,
+    "observer": "Eager Array+return arguments into separate noinline storeconstructor, imperative actual-machine.step loop"
+  },
+  "key_apis": [
+    "SemiprimeD1StackProductRecordExecution.source_run",
+    "SemiprimeD1StackProductRecordExecution.productRecordInTime",
+    "SemiprimeD1StackProductRecordBounds.timeBound_le",
+    "SemiprimeD1StackProductRecordBounds.machine_prefix_cells",
+    "SemiprimeD1StackProductRecordOriginal.table_original",
+    "SemiprimeD1StackProductRecordOriginal.record_bytes_original",
+    "SemiprimeD1StackProductRecordOriginal.history_original",
+    "SemiprimeD1StackProductRecordOriginal.reverse_original",
+    "SemiprimeD1StackProductRecordOriginal.selected_sqrt_timeBound",
+    "SemiprimeD1StackProductRecordOriginal.machineOriginal",
+    "SemiprimeD1StackProductRecordOriginal.source_run_original"
+  ],
+  "old_sources_or_old_canonical_objects_written": false
+}

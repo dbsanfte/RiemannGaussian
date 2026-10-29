@@ -1,0 +1,2011 @@
+{
+  "kind": "public amended parity-cover structural validation",
+  "source_credit": "docs/research-evidence/semiprime-unique-weighted-20261026/check_unique_cover.py",
+  "fixtures": 3,
+  "elapsed_seconds": 0.018232750007882714,
+  "rows": [
+    {
+      "K": 54,
+      "e": 3,
+      "N": 24794911295,
+      "B": 131072,
+      "H": 2916,
+      "phiK": 18,
+      "catalogue_J": 52,
+      "selected_J": 16,
+      "high_directions": [
+        {
+          "direction": [
+            1,
+            -1
+          ],
+          "pair": [
+            6,
+            -6
+          ],
+          "v3": 1
+        }
+      ],
+      "rectangle_caps": [
+        24,
+        17
+      ],
+      "original_clock": {
+        "M0": 2247,
+        "h": 4495,
+        "unchanged": false,
+        "q_exponent": 2916,
+        "shortened_Q_exponent": 5832,
+        "native_scale": true,
+        "h_lt_16H": true
+      },
+      "acquisition_operations": {
+        "unit_inverses": 18,
+        "bounding_pair_candidates": 1632,
+        "ellipse_pairs": 352,
+        "conic_pair_tests": 352,
+        "root3_lift_candidates": 352,
+        "color_lift_candidates": 84,
+        "phase_rows": 52,
+        "direction_pair_keys": 11,
+        "selected_support_marks": 18
+      },
+      "validation_operations": {
+        "enabled": true,
+        "direct_polynomial_tests": 936,
+        "selected_support_tests": 288,
+        "axis_checks": 0,
+        "parity_lift_tests": 120
+      },
+      "acquisition_seconds": 0.002841237001121044,
+      "total_seconds": 0.0035296520218253136,
+      "selected_support_partition": [
+        {
+          "row": {
+            "a": 6,
+            "b": -6,
+            "j": 17,
+            "ell": -960,
+            "g": 6,
+            "axis": false
+          },
+          "support": [
+            17,
+            35
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6551292,
+            "barpi": -148769467764
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 6,
+            "b": -6,
+            "j": 1,
+            "ell": -12,
+            "g": 6,
+            "axis": false
+          },
+          "support": [
+            1
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6549324,
+            "barpi": -148769467764
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 6,
+            "b": -6,
+            "j": 53,
+            "ell": 12,
+            "g": 6,
+            "axis": false
+          },
+          "support": [
+            53
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6549348,
+            "barpi": -148769467764
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 6,
+            "b": -6,
+            "j": 19,
+            "ell": 960,
+            "g": 6,
+            "axis": false
+          },
+          "support": [
+            19,
+            37
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6553212,
+            "barpi": -148769467764
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 4,
+            "b": 8,
+            "j": 5,
+            "ell": 1148,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            5
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6550484,
+            "barpi": 198359290364
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": 5,
+            "j": 7,
+            "ell": -1256,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            7
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6550996,
+            "barpi": 123974556476
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 8,
+            "b": 4,
+            "j": 11,
+            "ell": -1148,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            11
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6548188,
+            "barpi": 99179645188
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": -7,
+            "j": 13,
+            "ell": 1108,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            13
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6553360,
+            "barpi": -173564379064
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 5,
+            "b": 1,
+            "j": 23,
+            "ell": -1256,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            23
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6550996,
+            "barpi": 24794911300
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": -1,
+            "j": 25,
+            "ell": 1108,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            25
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6553360,
+            "barpi": -24794911288
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": -1,
+            "j": 29,
+            "ell": -1108,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            29
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6551144,
+            "barpi": -24794911288
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 5,
+            "b": 1,
+            "j": 31,
+            "ell": 1256,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            31
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6553508,
+            "barpi": 24794911300
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": -7,
+            "j": 41,
+            "ell": -1108,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            41
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6551144,
+            "barpi": -173564379064
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 8,
+            "b": 4,
+            "j": 43,
+            "ell": 1148,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            43
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6550484,
+            "barpi": 99179645188
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": 5,
+            "j": 47,
+            "ell": 1256,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            47
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6553508,
+            "barpi": 123974556476
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 4,
+            "b": 8,
+            "j": 49,
+            "ell": -1148,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            49
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6548188,
+            "barpi": 198359290364
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        }
+      ]
+    },
+    {
+      "K": 162,
+      "e": 4,
+      "N": 18075490334783,
+      "B": 4194304,
+      "H": 26244,
+      "phiK": 54,
+      "catalogue_J": 176,
+      "selected_J": 48,
+      "high_directions": [
+        {
+          "direction": [
+            1,
+            -1
+          ],
+          "pair": [
+            6,
+            -6
+          ],
+          "v3": 1
+        },
+        {
+          "direction": [
+            1,
+            5
+          ],
+          "pair": [
+            3,
+            15
+          ],
+          "v3": 1
+        },
+        {
+          "direction": [
+            5,
+            1
+          ],
+          "pair": [
+            15,
+            3
+          ],
+          "v3": 1
+        }
+      ],
+      "rectangle_caps": [
+        36,
+        35
+      ],
+      "original_clock": {
+        "M0": 11666,
+        "h": 23333,
+        "unchanged": false,
+        "q_exponent": 26244,
+        "shortened_Q_exponent": 52488,
+        "native_scale": true,
+        "h_lt_16H": true
+      },
+      "acquisition_operations": {
+        "unit_inverses": 54,
+        "bounding_pair_candidates": 5040,
+        "ellipse_pairs": 1100,
+        "conic_pair_tests": 1100,
+        "root3_lift_candidates": 1540,
+        "color_lift_candidates": 264,
+        "phase_rows": 176,
+        "direction_pair_keys": 36,
+        "selected_support_marks": 54
+      },
+      "validation_operations": {
+        "enabled": true,
+        "direct_polynomial_tests": 9504,
+        "selected_support_tests": 2592,
+        "axis_checks": 0,
+        "parity_lift_tests": 416
+      },
+      "acquisition_seconds": 0.00869300402700901,
+      "total_seconds": 0.014023203984834254,
+      "selected_support_partition": [
+        {
+          "row": {
+            "a": 6,
+            "b": -6,
+            "j": 53,
+            "ell": -8736,
+            "g": 6,
+            "axis": false
+          },
+          "support": [
+            53,
+            107
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306127524,
+            "barpi": -108452942008692
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 6,
+            "b": -6,
+            "j": 1,
+            "ell": -12,
+            "g": 6,
+            "axis": false
+          },
+          "support": [
+            1
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306162492,
+            "barpi": -108452942008692
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 6,
+            "b": -6,
+            "j": 161,
+            "ell": 12,
+            "g": 6,
+            "axis": false
+          },
+          "support": [
+            161
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306162516,
+            "barpi": -108452942008692
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 6,
+            "b": -6,
+            "j": 55,
+            "ell": 8736,
+            "g": 6,
+            "axis": false
+          },
+          "support": [
+            55,
+            109
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306144996,
+            "barpi": -108452942008692
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 3,
+            "b": 15,
+            "j": 101,
+            "ell": -4980,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            101
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306157524,
+            "barpi": 271132355021748
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 3,
+            "b": 15,
+            "j": 7,
+            "ell": -3768,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            7,
+            115
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306132492,
+            "barpi": 271132355021748
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 3,
+            "b": 15,
+            "j": 47,
+            "ell": 3768,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            47,
+            155
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306140028,
+            "barpi": 271132355021748
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 3,
+            "b": 15,
+            "j": 61,
+            "ell": 4980,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            61
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306167484,
+            "barpi": 271132355021748
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 15,
+            "b": 3,
+            "j": 85,
+            "ell": -4980,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            85
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306157524,
+            "barpi": 54226471004364
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 15,
+            "b": 3,
+            "j": 23,
+            "ell": -3768,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            23,
+            131
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306132492,
+            "barpi": 54226471004364
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 15,
+            "b": 3,
+            "j": 31,
+            "ell": 3768,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            31,
+            139
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306140028,
+            "barpi": 54226471004364
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 15,
+            "b": 3,
+            "j": 77,
+            "ell": 4980,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            77
+          ],
+          "kind": "maximal_direction_phase",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306167484,
+            "barpi": 54226471004364
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": -13,
+            "j": 5,
+            "ell": 10460,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            5
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306172964,
+            "barpi": -234981374352172
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 8,
+            "b": 4,
+            "j": 11,
+            "ell": 4684,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            11
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306167188,
+            "barpi": 72301961339140
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": -7,
+            "j": 13,
+            "ell": 4024,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            13
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306166528,
+            "barpi": -126528432343480
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 5,
+            "b": 13,
+            "j": 17,
+            "ell": -1628,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            17
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306134632,
+            "barpi": 234981374352184
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 13,
+            "b": 5,
+            "j": 19,
+            "ell": -1628,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            19
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306134632,
+            "barpi": 90377451673928
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": -1,
+            "j": 25,
+            "ell": 4024,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            25
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306166528,
+            "barpi": -18075490334776
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 10,
+            "b": 14,
+            "j": 29,
+            "ell": 12380,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            29
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306174884,
+            "barpi": 253056864686972
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": 11,
+            "j": 35,
+            "ell": -3244,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            35
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306159260,
+            "barpi": 198830393682620
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 11,
+            "b": 7,
+            "j": 37,
+            "ell": -3244,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            37
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306159260,
+            "barpi": 126528432343492
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 16,
+            "b": -4,
+            "j": 41,
+            "ell": -16,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            41
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306136244,
+            "barpi": -72301961339116
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 5,
+            "b": -11,
+            "j": 43,
+            "ell": 5888,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            43
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306168392,
+            "barpi": -198830393682608
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 11,
+            "b": -5,
+            "j": 49,
+            "ell": 5888,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            49
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306168392,
+            "barpi": -90377451673904
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 4,
+            "b": 8,
+            "j": 59,
+            "ell": -4684,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            59
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306157820,
+            "barpi": 144603922678268
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 13,
+            "b": -7,
+            "j": 65,
+            "ell": 10460,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            65
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306172964,
+            "barpi": -126528432343468
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 14,
+            "b": 10,
+            "j": 67,
+            "ell": 12380,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            67
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306174884,
+            "barpi": 180754903347844
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": -19,
+            "j": 71,
+            "ell": 668,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            71
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306163172,
+            "barpi": -343434316360876
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": 17,
+            "j": 73,
+            "ell": -12296,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            73
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306150208,
+            "barpi": 307283335691312
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 4,
+            "b": -16,
+            "j": 79,
+            "ell": 16,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            79
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306136276,
+            "barpi": -289207845356524
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 4,
+            "b": -16,
+            "j": 83,
+            "ell": -16,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            83
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306136244,
+            "barpi": -289207845356524
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": 17,
+            "j": 89,
+            "ell": 12296,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            89
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306174800,
+            "barpi": 307283335691312
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": -19,
+            "j": 91,
+            "ell": -668,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            91
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306161836,
+            "barpi": -343434316360876
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 14,
+            "b": 10,
+            "j": 95,
+            "ell": -12380,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            95
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306150124,
+            "barpi": 180754903347844
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 13,
+            "b": -7,
+            "j": 97,
+            "ell": -10460,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            97
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306152044,
+            "barpi": -126528432343468
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 4,
+            "b": 8,
+            "j": 103,
+            "ell": 4684,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            103
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306167188,
+            "barpi": 144603922678268
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 11,
+            "b": -5,
+            "j": 113,
+            "ell": -5888,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            113
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306156616,
+            "barpi": -90377451673904
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 5,
+            "b": -11,
+            "j": 119,
+            "ell": -5888,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            119
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306156616,
+            "barpi": -198830393682608
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 16,
+            "b": -4,
+            "j": 121,
+            "ell": 16,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            121
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306136276,
+            "barpi": -72301961339116
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 11,
+            "b": 7,
+            "j": 125,
+            "ell": 3244,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            125
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306165748,
+            "barpi": 126528432343492
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": 11,
+            "j": 127,
+            "ell": 3244,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            127
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306165748,
+            "barpi": 198830393682620
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 10,
+            "b": 14,
+            "j": 133,
+            "ell": -12380,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            133
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306150124,
+            "barpi": 253056864686972
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": -1,
+            "j": 137,
+            "ell": -4024,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            137
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306158480,
+            "barpi": -18075490334776
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 13,
+            "b": 5,
+            "j": 143,
+            "ell": 1628,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            143
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306137888,
+            "barpi": 90377451673928
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 5,
+            "b": 13,
+            "j": 145,
+            "ell": 1628,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            145
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 11666,
+          "shifted_root_exponents": {
+            "pi": 306137888,
+            "barpi": 234981374352184
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": -7,
+            "j": 149,
+            "ell": -4024,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            149
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306158480,
+            "barpi": -126528432343480
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 8,
+            "b": 4,
+            "j": 151,
+            "ell": -4684,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            151
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306157820,
+            "barpi": 72301961339140
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": -13,
+            "j": 157,
+            "ell": -10460,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            157
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 11667,
+          "shifted_root_exponents": {
+            "pi": 306152044,
+            "barpi": -234981374352172
+          },
+          "common_Q_exponent": 52488,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        }
+      ]
+    },
+    {
+      "K": 54,
+      "e": 3,
+      "N": 24794911295,
+      "B": 1,
+      "H": 2916,
+      "phiK": 18,
+      "catalogue_J": 36,
+      "selected_J": 18,
+      "high_directions": [],
+      "rectangle_caps": [
+        3272827,
+        0
+      ],
+      "original_clock": {
+        "M0": 2247,
+        "h": 4495,
+        "unchanged": false,
+        "q_exponent": 2916,
+        "shortened_Q_exponent": 5832,
+        "native_scale": true,
+        "h_lt_16H": true
+      },
+      "acquisition_operations": {
+        "unit_inverses": 18,
+        "bounding_pair_candidates": 0,
+        "ellipse_pairs": 0,
+        "conic_pair_tests": 2,
+        "root3_lift_candidates": 0,
+        "color_lift_candidates": 0,
+        "phase_rows": 36,
+        "direction_pair_keys": 0,
+        "selected_support_marks": 18
+      },
+      "validation_operations": {
+        "enabled": true,
+        "direct_polynomial_tests": 648,
+        "selected_support_tests": 324,
+        "axis_checks": 36,
+        "parity_lift_tests": 72
+      },
+      "acquisition_seconds": 0.00014834001194685698,
+      "total_seconds": 0.0006150819826871157,
+      "selected_support_partition": [
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 1,
+            "ell": -108,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            1
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6549228,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 5,
+            "ell": -540,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            5
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6548796,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 7,
+            "ell": -756,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            7
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6548580,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 11,
+            "ell": -1188,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            11
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6548148,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 13,
+            "ell": -1404,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            13
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6547932,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 17,
+            "ell": 1080,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            17
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6553332,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 19,
+            "ell": 864,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            19
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6553116,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 23,
+            "ell": 432,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            23
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6552684,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 25,
+            "ell": 216,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            25
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6552468,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 29,
+            "ell": -216,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            29
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6552036,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 31,
+            "ell": -432,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            31
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6551820,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 35,
+            "ell": -864,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            35
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6551388,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 37,
+            "ell": -1080,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            37
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 0,
+          "shortened_length": 2248,
+          "shifted_root_exponents": {
+            "pi": 6551172,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": false
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 41,
+            "ell": 1404,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            41
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6550740,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 43,
+            "ell": 1188,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            43
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6550524,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 47,
+            "ell": 756,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            47
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6550092,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 49,
+            "ell": 540,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            49
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6549876,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        },
+        {
+          "row": {
+            "a": 108,
+            "b": 0,
+            "j": 53,
+            "ell": 108,
+            "g": 54,
+            "axis": true
+          },
+          "support": [
+            53
+          ],
+          "kind": "singleton_fallback",
+          "public_row_phase": 1,
+          "shortened_length": 2247,
+          "shifted_root_exponents": {
+            "pi": 6549444,
+            "barpi": 108
+          },
+          "common_Q_exponent": 5832,
+          "padding_to_M0_plus_1_requires_endpoint_unit_gate": true
+        }
+      ]
+    }
+  ],
+  "not_checked": [
+    "factor-field/group-order preparation",
+    "semiprime coverage by fixtures",
+    "fast acquisition of the selected long query",
+    "factoring success",
+    "endpoint unit gates required for optional length padding"
+  ]
+}

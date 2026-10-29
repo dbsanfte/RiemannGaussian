@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-26",
+  "proposal_read_unchanged": true,
+  "local_source_pins": [
+    {
+      "path": "docs/semiprime-string-theory-research-proposal.md",
+      "scope": "whole file",
+      "bytes": 18615,
+      "sha256": "7ef81200148f3774e3ef03d0510202cc9efe42cf044f760bbbda257ea855de93"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-trace-20261026/trace-recurrence.md",
+      "scope": "whole file",
+      "bytes": 14978,
+      "sha256": "5f2e5f20ee433389e6d0cc93a109b2809e40f4b7dbb9bee3af3ed5e80f202343"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue.md",
+      "scope": "whole file",
+      "bytes": 10140,
+      "sha256": "9ded79850c2f200069a7da67502d0de579d1df0457cb06c865fb3d39c9654058"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-string-supplier-20261026/README.md",
+      "scope": "whole file",
+      "bytes": 8384,
+      "sha256": "ace2967474daad4896c0cd2e688cce4efe63794c886039713d09de65ebe2207a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-string-supplier-20261026/sources.json",
+      "scope": "whole file",
+      "bytes": 3258,
+      "sha256": "dd31569f5cc32ee3f4c83e05b8d9369a98a18e1851af37c837a404d80bef50ac"
+    },
+    {
+      "path": "AGENTS.md",
+      "scope": "pre-turn prefix",
+      "bytes": 1540186,
+      "sha256": "3e56cd0b6b2ffa851177134c78952520a402e56026b5541310588ff6ad83f27c"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "scope": "pre-turn prefix",
+      "bytes": 2419148,
+      "sha256": "273123f1221353ab5e5a70aa8e935a206af6a235b6fbd95eda715ef38b4d1b64"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Bennett–Martin–O'Bryant–Rechnitzer, Explicit bounds for primes in arithmetic progressions",
+      "url": "https://arxiv.org/pdf/1802.00085",
+      "published_url": "https://personal.math.ubc.ca/~bennett/BeMaObRe-IJM-2018.pdf",
+      "checked": "Theorem 1.2 and equations 1.10–1.12, modulus 12; open dyadic intervals follow once the theta increment exceeds log(2x).",
+      "pdf_sha256": "e51f8b8f63486c2259efe076d367504f08dda0fe9e99dc35bf36de544ffc0601",
+      "text_sha256": "7b1a464bf90d262175fde611df0c2e51ffd8cbaf7101be823ffcda605b7a5323"
+    },
+    {
+      "title": "Kimura–Pestun, Quiver W-algebras",
+      "url": "https://arxiv.org/html/1512.08533v4",
+      "checked": "Reread Sections 4.1–4.2, equations 4.6–4.7; the stated screening state and weighting matter. Finite arithmetic endpoints and hole corrections derived separately."
+    }
+  ],
+  "import_scope": "Primary arithmetic progression bound supplies actual-prime existence only. Finite boundary and Hasse identities are derived here; no source supplies a factoring acquisition theorem. Other string sources retain the preceding packet’s reviewed scope."
+}

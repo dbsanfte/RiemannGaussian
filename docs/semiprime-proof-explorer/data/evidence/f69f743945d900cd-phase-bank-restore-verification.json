@@ -1,0 +1,130 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 5,
+    "declarations": 244,
+    "theorems": 161
+  },
+  "modules": {
+    "SemiprimeD1StackPhaseBankRestore": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseBankRestore.lean",
+        "sha256": "8cd6049123245d7cc915921b2f8bf5cfff9afdd0b17714f9cc47433b5835747e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseBankRestore.olean",
+        "sha256": "19f2b21435a7e98db0aa38e63afe16805cd461800c50fa25002dd965512951dd"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-frozen/SemiprimeD1StackPhaseBankRestore.olean",
+        "sha256": "19f2b21435a7e98db0aa38e63afe16805cd461800c50fa25002dd965512951dd"
+      }
+    },
+    "SemiprimeD1StackPhaseBankRestorePrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseBankRestorePrimitives.lean",
+        "sha256": "5fcc06e9fae7725acd5ab90601d979aec8f0470e5e902b324d60bb0ced247e55"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseBankRestorePrimitives.olean",
+        "sha256": "b656359281ebf6f6e066cc34131bb0cc8d24b300bb9e0b3de26e726bd7d5f1fb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-frozen/SemiprimeD1StackPhaseBankRestorePrimitives.olean",
+        "sha256": "b656359281ebf6f6e066cc34131bb0cc8d24b300bb9e0b3de26e726bd7d5f1fb"
+      }
+    },
+    "SemiprimeD1StackPhaseBankRestoreFields": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseBankRestoreFields.lean",
+        "sha256": "3b8d9c00fd2593a67a0de49b62185c64959df5cebba8211f2d3522300f28a787"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseBankRestoreFields.olean",
+        "sha256": "eabe9446dbb5529b9a6eb9d3cc0b0d68d38bb0f0917e4473d6d99daf62039c65"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-frozen/SemiprimeD1StackPhaseBankRestoreFields.olean",
+        "sha256": "eabe9446dbb5529b9a6eb9d3cc0b0d68d38bb0f0917e4473d6d99daf62039c65"
+      }
+    },
+    "SemiprimeD1StackPhaseBankRestoreExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseBankRestoreExecution.lean",
+        "sha256": "13db5571a8c639b4c27f2b7a682c425bdbc2d4d950d000409eeae728911d4cff"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseBankRestoreExecution.olean",
+        "sha256": "1fb2d3b15cf6e8990a160315a61172a990acf581dc11f9554deb5879f681213d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-frozen/SemiprimeD1StackPhaseBankRestoreExecution.olean",
+        "sha256": "1fb2d3b15cf6e8990a160315a61172a990acf581dc11f9554deb5879f681213d"
+      }
+    },
+    "SemiprimeD1StackPhaseBankRestoreBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseBankRestoreBounds.lean",
+        "sha256": "6e03844d18e8b1dacb6eaf287c1ae404ce189132e2472001ea49b15d30f26ae6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseBankRestoreBounds.olean",
+        "sha256": "3616e8dd74a5f18dac95f08d2af11c2bad792e5100b3a16c50bdc4ceaf4ec5b2"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-frozen/SemiprimeD1StackPhaseBankRestoreBounds.olean",
+        "sha256": "3616e8dd74a5f18dac95f08d2af11c2bad792e5100b3a16c50bdc4ceaf4ec5b2"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "source_and_canonical_writers_stopped": true,
+  "source_and_audit_heartbeats": 200000,
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 17605,
+    "files": 35210,
+    "before": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-dependencies/imported-pins-after.json"
+  },
+  "actual_controls": {
+    "status": "PASS",
+    "scope": "PREPARED ACTUAL PHYSICAL CACHE READ; universal actual-source proof separate",
+    "records": 5,
+    "malformed_rejects": 3,
+    "actual_primitive_steps": 414118,
+    "observer_constants": 31,
+    "all_roles": 58,
+    "source": "/tmp/semiprime-explicit-rate-20261027/PhaseBankRestoreControls.lean",
+    "source_sha256": "9f37de961951f9cb9edc79ab3bcb8f22e96f28457835e5cd981e6b836685fadd",
+    "log": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-controls.log",
+    "log_sha256": "a9e03a41e528f1f3a2aa5b43140d3130c8c053c689ae2c624299d8206a797239",
+    "both_accept_and_reject_halts_executed": true,
+    "two_real_outer_returns_preserved": true,
+    "all48_restored_and_all10_heap_roles_exact": true
+  },
+  "independent_read_only_review": {
+    "status": "PASS_NO_LOGIC_BLOCKERS",
+    "reviewer": "/root/vertex_record_logger",
+    "path": "/tmp/semiprime-explicit-rate-20261027/phase-bank-restore-independent-review.txt",
+    "sha256": "db4865bd78f91ce48325d96340c7b4bf9fdb130079a71b818fbeb8a325b32d72"
+  },
+  "scope": {
+    "runtime_roles": 58,
+    "inputs": "actual heap bytes, allocation-count and issued-reference words ONLY",
+    "runtime": "realHeapRead10 ->consumeactualvalid ->48realFieldparsers ->consume48flags ->actualEOFpeek ->halt",
+    "outputs": "ENTIRE actualP48bank incloriginal/rejected/work words; allheap/counter/ref exact andallreaderworkempty",
+    "clock": "readTimeAt+8*selectedWordMass+388 <=1000*(heapBytes+counterBytes+refBytes+1)",
+    "all_reached_storage": "ALL58data+actualreturncells<=60000*(heapBytes+counterBytes+refBytes+1)",
+    "producer_abi": "Inventory.roles foldr(frame word)[]:48consecutiveframes, NO vectortags",
+    "caller": "Root188heap physicallyread/decoded; CacheFresh143 actual alias intoFresh.phaseReady next",
+    "no_full_N_factoring_claim": true
+  },
+  "sealed_utc": "2026-10-28T18:04:21.577498+00:00"
+}

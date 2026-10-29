@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-26",
+  "primary_literature": [
+    {
+      "title": "Superfast inversion of two-level Toeplitz matrices using Newton iteration and tensor-displacement structure",
+      "authors": "Olshevsky, Oseledets, Tyrtyshnikov",
+      "year": 2007,
+      "url": "https://www2.math.uconn.edu/~olshevsky/papers/tyrtyshnikovIWOTA2005.pdf",
+      "access_scope": "Primary indexed excerpt for section 3.3 and Lemma 3.1, plus primary metadata/early text. Full PDF retrieval later timed out; no retained full-PDF download is claimed.",
+      "mathematical_scope": "Supplied linked generators for a trace/Frobenius product. Native rectangular displacement/trace identities are directly proved. No numerical tensor-rank approximation or generic inversion theorem transferred."
+    },
+    {
+      "title": "Residues and Telescopers for Rational Functions",
+      "authors": "Chen, Singer",
+      "version": "arXiv:1203.4200v1",
+      "version_date": "2012-03-19",
+      "url": "https://arxiv.org/abs/1203.4200",
+      "mathematical_scope": "Rational q-summability and q-discrete residues in characteristic zero with non-root-of-unity q. Not a finite-ring bounded-orbit membership or Laurent-projection cost theorem."
+    },
+    {
+      "title": "Integrable Systems and Rank One Conditions for Rectangular Matrices",
+      "authors": "Gekhtman, Kasman",
+      "version": "arXiv:math-ph/0408038v1",
+      "url": "https://arxiv.org/html/math-ph/0408038",
+      "mathematical_scope": "Inherited explicitly computed finite q-bispectral core from the preceding packet; the complex tau-function existence theorem is not a singular-solve algorithm."
+    }
+  ],
+  "repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/README.md",
+      "sha256": "e0600f90c755427955911a764e6a156383ebdf352fcb08bf5612cb241e5ca7fa"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/qbinomial-joint.md",
+      "sha256": "d288cb8f697e94e605a2d77e0b027f4010817a45a5df6590bde9ffd106689070"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/composition-hybrid.md",
+      "sha256": "8081fbbfb7e0a22d22faafb6fac67a9c9fbd0d2d072414af7d6b88dafe8f5a76"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/ternary-fusion.md",
+      "sha256": "6b1c7764bcc2434ec68303e527f1702f6f7c6aff8e34ef21c5034af2fac75352"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/singular-solve.md",
+      "sha256": "280dce10d9d699420e8845aeb1588b0c1d43dfd4abfc34f24bd50d5848624a5d"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/pure-modulus-preparation.md",
+      "sha256": "6c47cbd393eb3288db7e5f6cdf5342f23a90663339ab993ad80cce05eca04eaa"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fast-projective-20261026/separation-review.md",
+      "sha256": "51169a3fba92a4037b796f83bebc6e730de439de60e4bbb38bfcf93c921226d4"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fast-projective-20261026/projective-advance.md",
+      "sha256": "255c6c87647b15482f561756f8cf6e8e6b8525f73a3edce5c5e99b142f510bb2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fast-projective-20261026/rational-certificate.md",
+      "sha256": "116375c120af7289264c730cb5ad566c27ed29c6d2d43115e1c797a7fd61bb34"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/hybrid-handoff.md",
+      "sha256": "cba1559069b42b1a6d12351eb5603298b6d485e1eaff14addf3d16a0458dddda"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/retrospective-provenance.md",
+      "sha256": "b68928eb768e419bca9185498e3dd8bb282b54c5605e6dcd6957de83df4ebc3d"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/parameterized-controller.md",
+      "sha256": "40dfd5a4f5e2081ddd79669bf2ce6199174258384293db97c1dd1f123dc4973c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/signed-two-weight-query.md",
+      "sha256": "b36e44e9d5e2c897caac87d6ad6339548fd9d438bd21352bd50971ff236efc93"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/symmetric-supplier-audit.md",
+      "sha256": "e31daf2b017109cd844bda3b5814cac84bd000ac223a7571efe13c615ff1ac62"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quadratic-ideal-20261024/torus-order-supplier.md",
+      "sha256": "1f3033cc85c1b6798a188daa7b7c32d702b87d2cb3401e3e1f1afe6cb3a4e9bc"
+    }
+  ],
+  "proof_scope": "Finite coefficient/phase algebra and actual initialized native-ring constructions. No generic circuit, factoring, scalar-contraction or primitive-row lower bound.",
+  "prior_credit": "The signed weighted family, pure preparation, short-unit/order screens, shared geometric-product engine, restricted HH consumer, valuation tags and prior coefficient transform retain their original credit."
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "status": "PASS_REVIEWED_INITIAL_PUBLICATION_BASELINE_REFRESH",
+  "manifest": "docs/research-evidence/semiprime-publication-20261029/preserved-whitespace.json",
+  "manifest_before_sha256": "6609d03d4da267d5abed9fe7ed6bae37de7aba7a701e20155193d185019ae454",
+  "manifest_after_sha256": "75e5b4a3f2a7a2572dbf78c2eb5dff9dc39be7afd6e996abf24673f462e772da",
+  "single_entry_before": {
+    "path": "RiemannGaussian/SemiprimeStreamingTensor.lean",
+    "sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+    "findings": [
+      {
+        "line": 178,
+        "kind": "blank-at-eof"
+      }
+    ]
+  },
+  "single_entry_after": {
+    "path": "RiemannGaussian/SemiprimeStreamingTensor.lean",
+    "sha256": "e2b8dc86cf1c8d353109cc63bb13d700fcc2c6c52989d772e72674d113528142",
+    "findings": [
+      {
+        "line": 181,
+        "kind": "blank-at-eof"
+      }
+    ]
+  },
+  "other_106_entries_unchanged": true,
+  "other_106_entries_sha256": "594d4e8bdd6efec31520e4411c868cc3caff03d8556f0e33216ec70a8ed79678",
+  "all_other_existing_top_level_fields_unchanged": true,
+  "added_top_level_note": {
+    "reviewed_initial_publication_documentation_refresh": {
+      "source": "RiemannGaussian/SemiprimeStreamingTensor.lean",
+      "scope": "Explicit reviewed precommit refresh of the initial publication baseline only; not a blanket permit for future edits. Exactly three documentation comments were inserted; removing them recovers the archived original bytes. No whitespace finding was added: the same original blank EOF line moved from 178 to 181. The baseline_log remains the unmodified original observation.",
+      "source_change_manifest": "docs/research-evidence/semiprime-publication-20261029/source-before-documentation/manifest.json",
+      "independent_review": "docs/research-evidence/semiprime-publication-20261029/fresh-publication/explorer-documentation-update-review/review.txt",
+      "before_source_sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+      "after_source_sha256": "e2b8dc86cf1c8d353109cc63bb13d700fcc2c6c52989d772e72674d113528142",
+      "before_finding": {
+        "line": 178,
+        "kind": "blank-at-eof"
+      },
+      "after_finding": {
+        "line": 181,
+        "kind": "blank-at-eof"
+      }
+    }
+  },
+  "source_comment_removal_proof": {
+    "comments_removed": 3,
+    "removed_exact_comments": [
+      "/-- Embed a Boolean input as zero or one in the coefficient ring. -/",
+      "/-- Number of leaf evaluations in the complete binary recursion on the arity. -/",
+      "/-- Recursion depth of the streaming evaluator on the given arity. -/"
+    ],
+    "recovered_bytes_equal_archived_original": true,
+    "archived_original_sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+    "current_source_sha256": "e2b8dc86cf1c8d353109cc63bb13d700fcc2c6c52989d772e72674d113528142",
+    "original_lines": 178,
+    "current_lines": 181,
+    "original_blank_eof_retained": true
+  },
+  "checker_and_tests_unchanged_sha256": {
+    "scripts/check_staged_whitespace.py": "3468f58714520bbf2740e2c55bdbf308671e53c6cc6afe3bdfb23b0317e55ce0",
+    "scripts/test_staged_whitespace.py": "577d6cae1ab51e6011a01a72ed9d8a5b1660807a5f6ae9b60f5c7c3c6760a1b2"
+  },
+  "pure_manifest_schema_validation": "PASS",
+  "no_staged_gate_run": true,
+  "no_git_mutation": true,
+  "no_source_or_lean_build_changes": true
+}

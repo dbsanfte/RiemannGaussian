@@ -1,0 +1,250 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 10,
+    "declarations": 390,
+    "theorems": 217
+  },
+  "modules": {
+    "SemiprimeD1StackPhaseWorkingPrecision": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecision.lean",
+        "sha256": "185b5861052aa5a53d2e5ea02e725aa1b4e4d4d484d548754b68aad4ec2f1b27"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecision.olean",
+        "sha256": "05de82ba747989c5dccfc43247b60323793764ff95a9c8a27335590a31ada75e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecision.olean",
+        "sha256": "05de82ba747989c5dccfc43247b60323793764ff95a9c8a27335590a31ada75e"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionArithmetic": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionArithmetic.lean",
+        "sha256": "435d71752280198e725f0021f8733ab8c5f3d8860682cb0fbb3a8d7e0e4c3c1e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionArithmetic.olean",
+        "sha256": "196bea74a9acf45538488a4499a16238f96726a4f014ffb733e98248a1f2a11a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionArithmetic.olean",
+        "sha256": "196bea74a9acf45538488a4499a16238f96726a4f014ffb733e98248a1f2a11a"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionPrimitives.lean",
+        "sha256": "cc0d55a8cfef94c22991345d9101b87a2ed025112551d10fd2c70329d1f54878"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionPrimitives.olean",
+        "sha256": "dbec795cb918f862d8d9d2e362f79c529a515c246f7de4c3a98e1416a533e197"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionPrimitives.olean",
+        "sha256": "dbec795cb918f862d8d9d2e362f79c529a515c246f7de4c3a98e1416a533e197"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionCounter": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionCounter.lean",
+        "sha256": "734fe60a18b57f615ada8bc9d4c4e8e6c827f50f85b950a9bc47776c9e7f83d4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionCounter.olean",
+        "sha256": "6f45e49d978067b761711bf7936612ba94bb01a26791ed945f457eca80637788"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionCounter.olean",
+        "sha256": "6f45e49d978067b761711bf7936612ba94bb01a26791ed945f457eca80637788"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionConvert": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionConvert.lean",
+        "sha256": "c9675b511fa5be0a64d71f31710b1c9cc52a935550ec9fd10d6717589c22640b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionConvert.olean",
+        "sha256": "c19fab683833bbb9df91882ea2967f7c6c77eadc2a84cde71d491dc91c74e1f3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionConvert.olean",
+        "sha256": "c19fab683833bbb9df91882ea2967f7c6c77eadc2a84cde71d491dc91c74e1f3"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionShifts": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionShifts.lean",
+        "sha256": "3277f2b786dd62b42b0ece81b0102ddc1a665566847eef21aa278af9a70ae84c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionShifts.olean",
+        "sha256": "9c7a52b957f8aef8fc057373653ee127bee004ba3014b7bc9050ce101e2226a4"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionShifts.olean",
+        "sha256": "9c7a52b957f8aef8fc057373653ee127bee004ba3014b7bc9050ce101e2226a4"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionComponents.lean",
+        "sha256": "6594437979f43ccb135985d431f4b5ea86b5ae240044396fa86a76f3eac0abb1"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionComponents.olean",
+        "sha256": "80dc52e71bbad83ce0ede8131f1ebce9cdce5fea6f7f1c0dcd677c8cce2f1cc0"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionComponents.olean",
+        "sha256": "80dc52e71bbad83ce0ede8131f1ebce9cdce5fea6f7f1c0dcd677c8cce2f1cc0"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionExecution.lean",
+        "sha256": "c6ba89d95b2d1c5522e4d10077df057c50f88906e98bd9d3d2b31d211485a095"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionExecution.olean",
+        "sha256": "5c55839915a6172c0d7c2ee96c4554e7dcc445d0cab845046a7d5763db2baa8f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionExecution.olean",
+        "sha256": "5c55839915a6172c0d7c2ee96c4554e7dcc445d0cab845046a7d5763db2baa8f"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionBounds.lean",
+        "sha256": "1ea688fa89b7c319badd0cc9dce89fac1673af924b89f42e2e219cab1c78309a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionBounds.olean",
+        "sha256": "56d4ae0678d693ef0952d4a4ba6279a5bfd18d3174e1dabeb2a091d3b8b49928"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionBounds.olean",
+        "sha256": "56d4ae0678d693ef0952d4a4ba6279a5bfd18d3174e1dabeb2a091d3b8b49928"
+      }
+    },
+    "SemiprimeD1StackPhaseWorkingPrecisionOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionOriginal.lean",
+        "sha256": "3206234536880f78472d87ecae354dc8307a3794424df831f07630d1897ba8d2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseWorkingPrecisionOriginal.olean",
+        "sha256": "74f6f74715a437d05d4cdf06530b5f95200849572fd8deec8d3c535bba82f57b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-frozen/SemiprimeD1StackPhaseWorkingPrecisionOriginal.olean",
+        "sha256": "74f6f74715a437d05d4cdf06530b5f95200849572fd8deec8d3c535bba82f57b"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PhaseWorkingPrecisionControls.lean",
+        "sha256": "a3dd240a20294a04ee1c22398636b6dfe887c7107f4eee30b387cf69d1d0030b"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-controls.log",
+        "sha256": "cb05a6fcb862236b73c4af18daa5e9f2ae80004a2cc4a95499b0558d41584101"
+      },
+      "status": "PASS",
+      "full_original_only_cases": 10,
+      "actual_transitions": [
+        115,
+        290,
+        179,
+        283,
+        360,
+        4552,
+        9713,
+        22220,
+        580,
+        70132
+      ],
+      "total_actual_transitions": 108424,
+      "large_case": "a64,u1,M1,t1,p100bits:70132actualinstructions; D65bits=18446744073709551616; P101bits=1267650600670951259265732444679; h3/q3",
+      "all48fields": true,
+      "all37cache_retained": true,
+      "original_binary_p_retained": true,
+      "no_supplied_order_height_products_precision_power_or_clock": true,
+      "accepted_and_rejected": true,
+      "zero_height_product_and_padding_carry": true,
+      "actual_flags_and_exact_outer_returns": true,
+      "observer_generated_constants_standard3": 20,
+      "snapshot_identity_kernel_checked": true
+    }
+  ],
+  "full_goal_complete": false,
+  "runtime_scope": {
+    "stack_roles": 48,
+    "preserved_metadata_guard_geometry_roles": 37,
+    "fresh_binary_work_output_roles": 11,
+    "initial_inputs": "original physical unary a/u/M and original BINARY t/p ONLY",
+    "program_parameters": "none; one fixed finite literal source",
+    "whole_pipeline": "actual frozenMetadata37call; retainedguardphysicalpeek; bounded h/r\u2192binary via physicallyallocated n+1bitcounter and n REAL frozenIncrement calls; actualdelta-marker binarylowzeroD/h shifts; 3actualzero shifts; two REAL frozenbinaryAdder calls with paidoriginalpcopy and partialsumcopy/cleanup; actualhalt",
+    "acquired_outputs": "original unaryh=(3M+u\u22121)/u,q=h*(u\u2212i); BINARY D=2^(a\u2212i), BINARY P=p+8*h*D+8*M*(a+1); completeold37cache+alloriginalsretained",
+    "rejected_outputs": "newbinaryD/P EMPTY; no conversion/shift/adder branch",
+    "padding": "binarycounter hasfullypaid n+1width; Pmaycontainpolynomialpadding; exactbitwords Arithmetic.precisionWord/counterWord/shift; no numeric2^a orp unaryexpansion",
+    "native_semantic_bridge": "EXACT originalModeRate.workingPrecision andoriginalorderFuel/phaseconjunction ALLoriginalgridparams (no extra u\u2264M needed for sourceclock)",
+    "ready_entry": "SAME fixedfinite machine .branch usesACTUALLYacquiredMetadata37 cache, no secondmetadata/geometry acquisition",
+    "frontier": "FULL requested physical phase working-precision operand pipeline complete; caller N-only parameter/index/context acquisition and full factoring theorem remain outside this local group"
+  },
+  "clocks": {
+    "whole_actual_time": "1000000000000*(M+a+u+tBytes+pBytes+1)^4",
+    "ready_actual_time": "1000000000*(M+a+u+tBytes+pBytes+1)^4",
+    "all48_roles_plus_actual_returns_whole_and_ready": "1000000000000000*(M+a+u+tBytes+pBytes+1)^4",
+    "actual_bounded_metadata_binary_conversion": "200*(n+1)^2"
+  },
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 17592,
+    "files": 35184,
+    "before": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/phase-working-precision-dependencies/imported-pins-after.json"
+  },
+  "prior_owned_frozen_files": {
+    "status": "PASS",
+    "groups": {
+      "static-input-table": 34,
+      "port-ordinal": 10,
+      "boundary-record": 10,
+      "product-table-original": 2,
+      "product-record": 10,
+      "carry-table": 10,
+      "scale-table": 10,
+      "transform-table": 10,
+      "carry-record": 10,
+      "scale-record": 10,
+      "transform-record": 10,
+      "root-schedule": 20,
+      "root-scale-leaf": 22,
+      "phase-geometry": 20,
+      "phase-geometry-guard": 12,
+      "phase-working-metadata": 18
+    },
+    "total_source_object_files": 218
+  },
+  "frozen_actual_metadata_source": {
+    "verification": "/tmp/semiprime-explicit-rate-20261027/phase-working-metadata-verification.json",
+    "modules": 9,
+    "generated_declarations": 344,
+    "theorems": 163,
+    "roles_retained": 37
+  },
+  "source_and_canonical_writers_stopped": true
+}

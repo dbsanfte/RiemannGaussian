@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "all_semiprime_sixth_exponent_established": false,
+  "whole_query_bound_improved": false,
+  "current_whole_query_bound": "soft O(J+sqrt(J*m)), J=2L",
+  "target_whole_query_bound": "soft O(J+sqrt(m))",
+  "positive_results": [
+    "Exact finite string residue Jacobian and its division-free retained-norm factorization.",
+    "Entire degree-at-most-J auxiliary epsilon core acquired by balanced division-free recursion in soft O(J).",
+    "All 2J+1 weighted moments acquired by one scalar factorial and one convolution in soft O(J+sqrt(m)).",
+    "After k-roughening, any genuine smaller-side order loss drops below k^2; continuing paid short-label cleaning is automorphic there."
+  ],
+  "remaining_bottleneck": "The determinant still contains product_(i=2)^m F(z_i). No target-cost full norm or guaranteed zero predicate is supplied.",
+  "scope": [
+    "Small core and moment acquisition are auxiliary, not a new factoring exponent.",
+    "Physical singular Bethe norm identification is not assumed from polynomial TQ closure.",
+    "Generic pencil normalization removes the target determinant and cannot be specialized by inversion at collisions.",
+    "Fusion test is specific to the displayed normalization, not an impossibility theorem for all fusion.",
+    "Cyclic completion is paid for an acquired index set; no short guaranteed native cover is proved.",
+    "Full Fourier expansion and literal group-exponent costs are scoped interface audits, not general lower bounds.",
+    "First-drop extraction requires paid short-label inputs/localization, not an arbitrary huge annihilator."
+  ],
+  "mathematical_reviews": [
+    "review-initial.md",
+    "string-review.md",
+    "bispectral-review.md",
+    "native-group-review.md",
+    "integration-review.md"
+  ],
+  "final_readonly_summary_review": "Independent agent checked README and integration review after corrections; pass with no further changes.",
+  "preservation": {
+    "protected_files_verified": 775,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1517437,
+        "sha256": "dd8f07783ecbeab8616d730e967e4b21272cff2cedf44f4eb198d0727822e225"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2372397,
+        "sha256": "f6f2d9be4eb909d83d107d6b4abc1b1bcd6bad9402deea26272e2520429c9578"
+      }
+    },
+    "concurrent_files_unchanged": 22,
+    "scratch_baseline_sha256": "45f2df65ff80d0e191428e66e46eceecc9817ae655414e26ccb95b321da8af1d"
+  },
+  "validation": {
+    "primary_source_entries": 14,
+    "internal_source_pins": 7,
+    "local_links_checked": 15,
+    "json_and_whitespace_checks": true,
+    "git_diff_check": true
+  },
+  "numerical_native_coverage_campaign": false,
+  "new_executable_research_implementation_or_tests": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

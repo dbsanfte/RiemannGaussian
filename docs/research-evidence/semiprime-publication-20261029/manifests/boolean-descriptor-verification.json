@@ -1,0 +1,145 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 7,
+    "declarations": 352,
+    "theorems": 223
+  },
+  "modules": {
+    "SemiprimeD1StackBooleanDescriptorRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecord.lean",
+        "sha256": "e97cf39e51b61b5f62e2e15c0c7c9270b516064758ef61ed3143faf19268e198"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecord.olean",
+        "sha256": "9cb7d01d81e01197524f24436a2e1f371c367b72b19577bc22fe6c7c7fedf5f7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-frozen/SemiprimeD1StackBooleanDescriptorRecord.olean",
+        "sha256": "9cb7d01d81e01197524f24436a2e1f371c367b72b19577bc22fe6c7c7fedf5f7"
+      }
+    },
+    "SemiprimeD1StackBooleanDescriptorRecordEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordEncoding.lean",
+        "sha256": "94b9a0a1152ab73aca1cc64f0da1752e6180f099aa6d127f0e83172c4a41aec2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordEncoding.olean",
+        "sha256": "691d85c6f80ce53d52025cb2299a15c45271e066627d8ac51fcda3923e3d4f81"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-frozen/SemiprimeD1StackBooleanDescriptorRecordEncoding.olean",
+        "sha256": "691d85c6f80ce53d52025cb2299a15c45271e066627d8ac51fcda3923e3d4f81"
+      }
+    },
+    "SemiprimeD1StackBooleanDescriptorRecordView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordView.lean",
+        "sha256": "4f6d4dea82021c40c71228337d9ddc9da8ccf086fc60cf45b800fb321b36b947"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordView.olean",
+        "sha256": "5ff08ac330332fbbdf9cf41b9572baf19e5d83d6fb20421fc88c958e854a537a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-frozen/SemiprimeD1StackBooleanDescriptorRecordView.olean",
+        "sha256": "5ff08ac330332fbbdf9cf41b9572baf19e5d83d6fb20421fc88c958e854a537a"
+      }
+    },
+    "SemiprimeD1StackBooleanDescriptorRecordPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordPrimitives.lean",
+        "sha256": "99567edfe63d8c710c517ed5cf88cf5803ce5e91972ddd9433392de85e20a63c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordPrimitives.olean",
+        "sha256": "30952c2b25d5d1b8ec41ac036dff3dca5cc21184ff05adaef37b621509a35113"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-frozen/SemiprimeD1StackBooleanDescriptorRecordPrimitives.olean",
+        "sha256": "30952c2b25d5d1b8ec41ac036dff3dca5cc21184ff05adaef37b621509a35113"
+      }
+    },
+    "SemiprimeD1StackBooleanDescriptorRecordExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordExecution.lean",
+        "sha256": "c91883b4ae0f1ebc02eb6b4bda47ad7983cc4659af29881fc7373291335b35cb"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordExecution.olean",
+        "sha256": "310ecd8b4f0033c56e315fa9c69e5396ea6f34db7e9f05f35a332543398d8a76"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-frozen/SemiprimeD1StackBooleanDescriptorRecordExecution.olean",
+        "sha256": "310ecd8b4f0033c56e315fa9c69e5396ea6f34db7e9f05f35a332543398d8a76"
+      }
+    },
+    "SemiprimeD1StackBooleanDescriptorRecordBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordBounds.lean",
+        "sha256": "8bee462ef996dad16e3286da41af934e70b96433fd65efde6b8498c20f0fa05b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordBounds.olean",
+        "sha256": "e3b515e8e15bcfad2e02527a912b3dd4fe0e2e5185635cfbeaeef8d6cfc7aac8"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-frozen/SemiprimeD1StackBooleanDescriptorRecordBounds.olean",
+        "sha256": "e3b515e8e15bcfad2e02527a912b3dd4fe0e2e5185635cfbeaeef8d6cfc7aac8"
+      }
+    },
+    "SemiprimeD1StackBooleanDescriptorRecordOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordOriginal.lean",
+        "sha256": "e0a0d03d335d18b29beb0b0e2e3a4600dcdf64a66f1a740469e5f1497664069f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordOriginal.olean",
+        "sha256": "9037a2b847ca8a43d1d372ef442860f6123f713a541c4f6d8505f2c7f47ff394"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-frozen/SemiprimeD1StackBooleanDescriptorRecordOriginal.olean",
+        "sha256": "9037a2b847ca8a43d1d372ef442860f6123f713a541c4f6d8505f2c7f47ff394"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/BooleanDescriptorControls.lean",
+        "sha256": "4e129c18682ac94a1d61f2379f258c84b8123f3d561c052bb3315e87f128966f"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-frozen/control-0.log",
+        "sha256": "cdfba3af74ba1b387a31806ed46f371060e69dde5fd5eaaa6079fab4222b712a"
+      },
+      "expected": "tag=8 transitions=720 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=9 transitions=384 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=10 transitions=560 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=11 transitions=574 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=12 transitions=588 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=13 transitions=602 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=14 transitions=616 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=15 transitions=630 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=16 transitions=644 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\ntag=17 transitions=658 all27roles=true suffix=true fields=true scope=true chronology=true flags=true return_cells=true bound=true\nunsupported_tag=7 transitions=176 all27roles=true no_record=true flags=true return_cells=true\nunsupported_tag=21 transitions=372 all27roles=true no_record=true flags=true return_cells=true"
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_source_object_pin_bracket": {
+    "pairs": 18224,
+    "unchanged": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-dependencies/imported-pins-after.json"
+  },
+  "control_constant_audit": {
+    "constants": 13,
+    "standard3_only": true,
+    "file": "/tmp/semiprime-explicit-rate-20261027/BooleanDescriptorControlAudit.lean",
+    "sha256": "56e50f60cb93e29acc17456ab48b58d625480b352a7c465c152a2147deb0f0dd",
+    "log": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-control-audit.log"
+  },
+  "preservation": {
+    "recovered_baseline_paths": 17054,
+    "unchanged": true,
+    "historical_journals_append_bytes": 0
+  }
+}

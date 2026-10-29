@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-26",
+  "previous_turn_classification": "progress: paid Schur boundary operator and inverse, with long diagonal still unacquired",
+  "current_turn_classification": "scoped mathematical progress: native-support cancellation audited; actual unbalanced stationary coverage obligation proved; finite divisor-retaining deformation and paid all-input consumer established, acquisition unchanged",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft O(J+sqrt(Jh))=soft O(k^(5/4)); not a general factoring record",
+  "native_boundary": {
+    "cost": "soft O(k)",
+    "credit": "Two further differences of the OLD clock-endpoint kernel; actual support/carry/deletion integration only",
+    "missing": "Original interior collision divisor or an independently covered boundary"
+  },
+  "coverage": {
+    "result": "Q-kP>H(M+1), sufficient Q>=25kP, excludes all original nonaxis stationary certificates from the old clock",
+    "actual_family": "Fixed gamma in (0,1/2), primes 11 mod12 in stated dyadic intervals; native k and P/H diverging",
+    "scope": "Compatible size and odd orders, not a forced controller branch; no exclusion of accidental modular hits",
+    "axis_completion": "Deleted full-catalogue nonliteral leaves restored as units; smaller phase-family completion is only a safe overcover"
+  },
+  "finite_weight": {
+    "first_slice": "A_p product_hits(1-Yx_i); normalization is OLD reciprocal monic gcd target",
+    "consumer": "soft O(J+d+sqrt(h)+T_ext)=soft O(k), arbitrary multiplicity, after inherited paid alias guard",
+    "initialized_execution": "soft O((d+1)^2 (J+sqrt(Jh)))",
+    "missing": "Soft-k acquisition of the first slice or sufficient original-row statistic",
+    "handoff": "Affine clock or non-character Mobius row transform; old two-generator recurrence cannot be reused unchanged"
+  },
+  "reviews": [
+    "review-native-boundary.md",
+    "review-finite-weighting.md",
+    "review-boundary-coverage.md",
+    "review-integration.md"
+  ],
+  "author_self_audit": "boundary-self-audit.md",
+  "corrections_integrated": [
+    "Unused J<p inference removed; Hasse coefficients need no factorial divisions",
+    "Jet rank (d+1)^2 handles zero precision",
+    "Phase tiling distinguishes unit restoration from safe overcover",
+    "Prime interval proof excludes a lone possible upper-endpoint prime",
+    "Boundary credit explicitly reduces to old endpoint kernel"
+  ],
+  "preservation": {
+    "protected_files_verified": 902,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1540186,
+        "sha256": "3e56cd0b6b2ffa851177134c78952520a402e56026b5541310588ff6ad83f27c"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2419148,
+        "sha256": "273123f1221353ab5e5a70aa8e935a206af6a235b6fbd95eda715ef38b4d1b64"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "2427ab79a67274f9bd62b154d5cb70c5141062f823595625756c0876be9b2b1a"
+  },
+  "validation": {
+    "mathematical": "Three cross/integration paper reviews and primary-agent coverage review; not Lean",
+    "local_links_checked": 9,
+    "local_source_pins": 7,
+    "primary_sources_checked": 2,
+    "json_and_whitespace": true,
+    "git_diff_check": true
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

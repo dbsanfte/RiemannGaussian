@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-unique-weighted-20261026/README.md",
+      "sha256": "e13635416f2ab692012487fac3d5561a79016c9dc6be5554e0f974c88c48bac9"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-weighted-20261026/unique-cover.md",
+      "sha256": "bc428cc2b5e91b3c0b2b848a70f49f6669f590fec851b679364db441bdfe9276"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-weighted-20261026/unique-lambert.md",
+      "sha256": "ac7a0070a08bd52ee458cc25a7bf5fbb1da38cce5d3e52e92f141df904752082"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-weighted-20261026/review-unique-cover.md",
+      "sha256": "1094e7b3804c0a84529857165057b911e0feb94f02d2d5e5a815202af5a36b03"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/partial-order-supplier.md",
+      "sha256": "3f4af9ad6b28a215473fca9964d51cfa32cd41bb0ace1145a4ba576f162b94ff"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/polar-reciprocity.md",
+      "sha256": "f6e6e03cbbcd0efd33524ffdc0fc12a942b89a20cb2f4ff7c233560897847a89"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/joint-lambert.md",
+      "sha256": "a1f83b9a68482e9d5c8f61199f3d5d9c3578f565490b602f6d442deaafe19bcd"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/direct-selected-residue.md",
+      "sha256": "77f83e6aee04a72aed7331e92b92c699840388393df44cde7364bf8cf3b70cea"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-descent-query-20261016/reports/literature-audit.md",
+      "sha256": "d061b65e80fb82481b5585e2be126496714aca0fc8acee067ef88d058c2c35b9"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-direct-20261026/fast-query.md",
+      "sha256": "0a58861751c076616c845ea9af219fb0bde13cfc53dbc2879708f33b3f867ee1"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "Aldenhoven–Koelink–de los Ríos, Matrix-Valued Little q-Jacobi Polynomials",
+      "url": "https://arxiv.org/html/1308.2540v2",
+      "scope": "Section 2.2 scalar weights and recurrence; finite specialization derived with exceptional initial coefficient and guarded denominators. Positive measure is not imported."
+    },
+    {
+      "title": "Barnett, A Note on the Bezoutian Matrix",
+      "url": "https://doi.org/10.1137/0122009",
+      "scope": "Companion/Bezout relationship as context; identities proved with explicit column convention in the report."
+    },
+    {
+      "title": "Heinig–Rost, Bezoutians",
+      "url": "https://www.tu-chemnitz.de/mathematik/preprint/2008/PREPRINT_09.pdf",
+      "scope": "Theorem 6.2 and Section 6.3 functional-calculus context; actual numeric displacement generators are still required."
+    },
+    {
+      "title": "Bostan–Schost, Polynomial evaluation and interpolation on special sets of points",
+      "url": "https://cs.uwaterloo.ca/~eschost/publications/BostanSchost.pdf",
+      "scope": "Finite geometric Newton conversion for already acquired short input; unit differences checked explicitly."
+    }
+  ],
+  "scope": "No external theorem supplies soft-K selected-pole acquisition. Prior truncated-resultant and modular-factorial audits retain their credit."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "mode": "read-only mathematical/interface review; no rebuild",
+  "full_report_rate_scope": "actual retained mixed-operation report; primitive bit/address clock OPEN",
+  "modules": {
+    "SemiprimeIndexedDesignResources": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeIndexedDesignResources.lean",
+      "source_sha256": "7f254e967f835c21efc3999f46200177fa0b18ff3386fa94a6bf265db9993c26",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeIndexedDesignResources.olean",
+      "object_sha256": "3a1f1475766f2cfb896df251e2df07708f38a48f96cd1260ccc7c47d689eba46"
+    },
+    "SemiprimePublicCounterResources": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicCounterResources.lean",
+      "source_sha256": "0338657aed49809acde7c3e0d3b3af81e91c9edb711cb18999726d54ca93cdfb",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimePublicCounterResources.olean",
+      "object_sha256": "8409fdcaeca2dd24d2a5aad41451e9b543a4e3536c4f55c423e16559817f488f"
+    },
+    "SemiprimeScheduledScalarBudget": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeScheduledScalarBudget.lean",
+      "source_sha256": "f4a17ac1fd1281248e83104f0ebc46c7babedf47efa011c42010980474a5185b",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeScheduledScalarBudget.olean",
+      "object_sha256": "f7679e1eb58da11afc64a364987c9d3fdfa11ee88e1d265664961aae44d42dab"
+    },
+    "SemiprimePublicBudgetDimensions": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicBudgetDimensions.lean",
+      "source_sha256": "f7ed2cc3b9c9a10858c0fcaba05a22813556223f2b271cc58cee55181b599e31",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimePublicBudgetDimensions.olean",
+      "object_sha256": "43237e3c8e329f5731fdc8048643973e10dae57a904ef91210596bbe169723ff"
+    },
+    "SemiprimeFullReportRate": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullReportRate.lean",
+      "source_sha256": "50cda342904cacf965fe9d5da9e8369575c6cd3d75bc4404fb773beaf19e76eb",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeFullReportRate.olean",
+      "object_sha256": "2a691fc8aa4b10b660d889057449a4a54a9c8b5fa11bbfd8321ecc68e0a1666a"
+    }
+  }
+}

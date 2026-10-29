@@ -1,0 +1,400 @@
+-- Found 0 errors in 128 declarations (plus 220 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecovery with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 21 declarations (plus 2 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryEncoding with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 10 declarations (plus 15 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryArithmetic with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 15 declarations (plus 0 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryPrimitives with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 6 declarations (plus 1 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryCompaction with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 4 declarations (plus 0 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryCopies with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 4 declarations (plus 0 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryCount with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 2 declarations (plus 2 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoverySources with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 7 declarations (plus 1 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryDiscriminant with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 9 declarations (plus 1 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryFactorChecks with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 7 declarations (plus 1 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryHalves with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 9 declarations (plus 0 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryValidation with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 11 declarations (plus 8 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryStageCosts with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 9 declarations (plus 1 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryViews with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 11 declarations (plus 5 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryExecution with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 10 declarations (plus 3 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryMeaning with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 9 declarations (plus 9 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryWidths with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 6 declarations (plus 15 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryClock with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 2 declarations (plus 1 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryFamily with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 6 declarations (plus 4 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryStorage with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+-- Found 0 errors in 10 declarations (plus 2 automatically generated ones) in RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryOriginal with 15 linters
+
+/- OK: The statements of all declarations type-check with default reducibility settings. -/
+/- OK: no definitions with an underscore in their name found. -/
+/- OK: no `deprecated` tags without `since` dates. -/
+/- OK: No definitions are missing documentation. -/
+/- OK: No instance has arguments that are impossible to infer -/
+/- OK: No instances of non-classes -/
+/- OK: No commutativity lemma is marked simp. -/
+/- OK: All left-hand sides of simp lemmas are in simp-normal form. -/
+/- OK: no structures that should be in Prop found. -/
+/- OK: all names are correct -/
+/- OK: No declarations are syntactic tautologies. -/
+/- OK: No tactics sharing the same user-facing name. -/
+/- OK: No tactics are missing documentation. -/
+/- OK: No unused arguments. -/
+/- OK: No declarations have unused term mode have statements. -/
+-- All linting checks passed!
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecovery: declarations=348, theorems=119, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryEncoding: declarations=23, theorems=12, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryArithmetic: declarations=25, theorems=25, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryPrimitives: declarations=15, theorems=11, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryCompaction: declarations=7, theorems=5, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryCopies: declarations=4, theorems=4, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryCount: declarations=4, theorems=4, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoverySources: declarations=4, theorems=4, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryDiscriminant: declarations=8, theorems=5, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryFactorChecks: declarations=10, theorems=7, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryHalves: declarations=8, theorems=5, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryValidation: declarations=9, theorems=4, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryStageCosts: declarations=19, theorems=19, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryViews: declarations=10, theorems=9, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryExecution: declarations=16, theorems=9, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryMeaning: declarations=13, theorems=7, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryWidths: declarations=18, theorems=16, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryClock: declarations=21, theorems=20, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryFamily: declarations=3, theorems=3, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryStorage: declarations=10, theorems=8, standard_axioms_only=true
+AUDIT RiemannGaussian.SemiprimeD1StackPackedFactorRecoveryOriginal: declarations=12, theorems=11, standard_axioms_only=true
+TOTAL modules=21, declarations=587, theorems=307, standard_axioms_only=true

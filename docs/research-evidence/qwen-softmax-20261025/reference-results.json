@@ -1,0 +1,442 @@
+{
+  "scope": "Synthetic Python CPU floating model; math.exp narrowed to FP32, fixed pairwise FP32 reduction, one FP32 reciprocal then FP32 products. No Qwen traces or GPU timing. Memoization preserves the same leaves and reduction tree; grouped reduction is deliberately not used.",
+  "memoization": [
+    {
+      "n": 10,
+      "sigma": 1,
+      "origin": "bf16",
+      "exp_calls": 10,
+      "memo_exp_calls": 10,
+      "normalization_muls": 10,
+      "memo_normalization_muls": 10,
+      "tiled_memo_exp_calls": {
+        "32": 10,
+        "128": 10,
+        "1024": 10
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 10,
+      "sigma": 1,
+      "origin": "fp32",
+      "exp_calls": 10,
+      "memo_exp_calls": 10,
+      "normalization_muls": 10,
+      "memo_normalization_muls": 10,
+      "tiled_memo_exp_calls": {
+        "32": 10,
+        "128": 10,
+        "1024": 10
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 10,
+      "sigma": 4,
+      "origin": "bf16",
+      "exp_calls": 10,
+      "memo_exp_calls": 10,
+      "normalization_muls": 10,
+      "memo_normalization_muls": 10,
+      "tiled_memo_exp_calls": {
+        "32": 10,
+        "128": 10,
+        "1024": 10
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 10,
+      "sigma": 4,
+      "origin": "fp32",
+      "exp_calls": 10,
+      "memo_exp_calls": 10,
+      "normalization_muls": 10,
+      "memo_normalization_muls": 10,
+      "tiled_memo_exp_calls": {
+        "32": 10,
+        "128": 10,
+        "1024": 10
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 10,
+      "sigma": 16,
+      "origin": "bf16",
+      "exp_calls": 10,
+      "memo_exp_calls": 10,
+      "normalization_muls": 10,
+      "memo_normalization_muls": 10,
+      "tiled_memo_exp_calls": {
+        "32": 10,
+        "128": 10,
+        "1024": 10
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 10,
+      "sigma": 16,
+      "origin": "fp32",
+      "exp_calls": 10,
+      "memo_exp_calls": 10,
+      "normalization_muls": 10,
+      "memo_normalization_muls": 10,
+      "tiled_memo_exp_calls": {
+        "32": 10,
+        "128": 10,
+        "1024": 10
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 128,
+      "sigma": 1,
+      "origin": "bf16",
+      "exp_calls": 128,
+      "memo_exp_calls": 123,
+      "normalization_muls": 128,
+      "memo_normalization_muls": 123,
+      "tiled_memo_exp_calls": {
+        "32": 127,
+        "128": 123,
+        "1024": 123
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 128,
+      "sigma": 1,
+      "origin": "fp32",
+      "exp_calls": 128,
+      "memo_exp_calls": 128,
+      "normalization_muls": 128,
+      "memo_normalization_muls": 128,
+      "tiled_memo_exp_calls": {
+        "32": 128,
+        "128": 128,
+        "1024": 128
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 128,
+      "sigma": 4,
+      "origin": "bf16",
+      "exp_calls": 128,
+      "memo_exp_calls": 121,
+      "normalization_muls": 128,
+      "memo_normalization_muls": 121,
+      "tiled_memo_exp_calls": {
+        "32": 126,
+        "128": 121,
+        "1024": 121
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 128,
+      "sigma": 4,
+      "origin": "fp32",
+      "exp_calls": 128,
+      "memo_exp_calls": 128,
+      "normalization_muls": 128,
+      "memo_normalization_muls": 128,
+      "tiled_memo_exp_calls": {
+        "32": 128,
+        "128": 128,
+        "1024": 128
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 128,
+      "sigma": 16,
+      "origin": "bf16",
+      "exp_calls": 128,
+      "memo_exp_calls": 120,
+      "normalization_muls": 128,
+      "memo_normalization_muls": 120,
+      "tiled_memo_exp_calls": {
+        "32": 126,
+        "128": 120,
+        "1024": 120
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 128,
+      "sigma": 16,
+      "origin": "fp32",
+      "exp_calls": 128,
+      "memo_exp_calls": 128,
+      "normalization_muls": 128,
+      "memo_normalization_muls": 128,
+      "tiled_memo_exp_calls": {
+        "32": 128,
+        "128": 128,
+        "1024": 128
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 2048,
+      "sigma": 1,
+      "origin": "bf16",
+      "exp_calls": 2048,
+      "memo_exp_calls": 1019,
+      "normalization_muls": 2048,
+      "memo_normalization_muls": 1019,
+      "tiled_memo_exp_calls": {
+        "32": 2019,
+        "128": 1931,
+        "1024": 1382
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 2048,
+      "sigma": 1,
+      "origin": "fp32",
+      "exp_calls": 2048,
+      "memo_exp_calls": 2048,
+      "normalization_muls": 2048,
+      "memo_normalization_muls": 2048,
+      "tiled_memo_exp_calls": {
+        "32": 2048,
+        "128": 2048,
+        "1024": 2048
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 2048,
+      "sigma": 4,
+      "origin": "bf16",
+      "exp_calls": 2048,
+      "memo_exp_calls": 1029,
+      "normalization_muls": 2048,
+      "memo_normalization_muls": 1029,
+      "tiled_memo_exp_calls": {
+        "32": 2022,
+        "128": 1913,
+        "1024": 1370
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 2048,
+      "sigma": 4,
+      "origin": "fp32",
+      "exp_calls": 2048,
+      "memo_exp_calls": 2048,
+      "normalization_muls": 2048,
+      "memo_normalization_muls": 2048,
+      "tiled_memo_exp_calls": {
+        "32": 2048,
+        "128": 2048,
+        "1024": 2048
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 2048,
+      "sigma": 16,
+      "origin": "bf16",
+      "exp_calls": 2048,
+      "memo_exp_calls": 1041,
+      "normalization_muls": 2048,
+      "memo_normalization_muls": 1041,
+      "tiled_memo_exp_calls": {
+        "32": 2029,
+        "128": 1939,
+        "1024": 1394
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 2048,
+      "sigma": 16,
+      "origin": "fp32",
+      "exp_calls": 2048,
+      "memo_exp_calls": 2048,
+      "normalization_muls": 2048,
+      "memo_normalization_muls": 2048,
+      "tiled_memo_exp_calls": {
+        "32": 2048,
+        "128": 2048,
+        "1024": 2048
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 248320,
+      "sigma": 1,
+      "origin": "bf16",
+      "exp_calls": 248320,
+      "memo_exp_calls": 3020,
+      "normalization_muls": 248320,
+      "memo_normalization_muls": 3020,
+      "tiled_memo_exp_calls": {
+        "32": 244887,
+        "128": 234811,
+        "1024": 167150
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 248320,
+      "sigma": 1,
+      "origin": "fp32",
+      "exp_calls": 248320,
+      "memo_exp_calls": 244782,
+      "normalization_muls": 248320,
+      "memo_normalization_muls": 244782,
+      "tiled_memo_exp_calls": {
+        "32": 248320,
+        "128": 248320,
+        "1024": 248294
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 248320,
+      "sigma": 4,
+      "origin": "bf16",
+      "exp_calls": 248320,
+      "memo_exp_calls": 3048,
+      "normalization_muls": 248320,
+      "memo_normalization_muls": 3048,
+      "tiled_memo_exp_calls": {
+        "32": 244886,
+        "128": 234647,
+        "1024": 167392
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 248320,
+      "sigma": 4,
+      "origin": "fp32",
+      "exp_calls": 248320,
+      "memo_exp_calls": 245291,
+      "normalization_muls": 248320,
+      "memo_normalization_muls": 245291,
+      "tiled_memo_exp_calls": {
+        "32": 248319,
+        "128": 248318,
+        "1024": 248310
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 248320,
+      "sigma": 16,
+      "origin": "bf16",
+      "exp_calls": 248320,
+      "memo_exp_calls": 3037,
+      "normalization_muls": 248320,
+      "memo_normalization_muls": 3037,
+      "tiled_memo_exp_calls": {
+        "32": 244869,
+        "128": 234798,
+        "1024": 167501
+      },
+      "fp32_bit_mismatches": 0
+    },
+    {
+      "n": 248320,
+      "sigma": 16,
+      "origin": "fp32",
+      "exp_calls": 248320,
+      "memo_exp_calls": 245357,
+      "normalization_muls": 248320,
+      "memo_normalization_muls": 245357,
+      "tiled_memo_exp_calls": {
+        "32": 248320,
+        "128": 248317,
+        "1024": 248309
+      },
+      "fp32_bit_mismatches": 0
+    }
+  ],
+  "lower_precision_without_certificate": [
+    {
+      "n": 2,
+      "exp_storage": "fp16",
+      "fp32_mismatches": 2,
+      "bf16_output_mismatches": 0
+    },
+    {
+      "n": 2,
+      "exp_storage": "bf16",
+      "fp32_mismatches": 2,
+      "bf16_output_mismatches": 0
+    },
+    {
+      "n": 10,
+      "exp_storage": "fp16",
+      "fp32_mismatches": 10,
+      "bf16_output_mismatches": 0
+    },
+    {
+      "n": 10,
+      "exp_storage": "bf16",
+      "fp32_mismatches": 10,
+      "bf16_output_mismatches": 2
+    },
+    {
+      "n": 128,
+      "exp_storage": "fp16",
+      "fp32_mismatches": 128,
+      "bf16_output_mismatches": 3
+    },
+    {
+      "n": 128,
+      "exp_storage": "bf16",
+      "fp32_mismatches": 128,
+      "bf16_output_mismatches": 36
+    },
+    {
+      "n": 2048,
+      "exp_storage": "fp16",
+      "fp32_mismatches": 2048,
+      "bf16_output_mismatches": 101
+    },
+    {
+      "n": 2048,
+      "exp_storage": "bf16",
+      "fp32_mismatches": 2048,
+      "bf16_output_mismatches": 510
+    }
+  ],
+  "casting_counterexample": {
+    "logits": [
+      256.0,
+      256.5
+    ],
+    "bf16_logits": [
+      256.0,
+      256.0
+    ],
+    "original": [
+      0.3775406777858734,
+      0.622459352016449
+    ],
+    "after_cast": [
+      0.5,
+      0.5
+    ]
+  },
+  "regrouping_counterexample": {
+    "weights": [
+      1,
+      5.960464477539063e-08,
+      5.960464477539063e-08
+    ],
+    "sequential": 1.0,
+    "regrouped": 1.0000001192092896
+  }
+}

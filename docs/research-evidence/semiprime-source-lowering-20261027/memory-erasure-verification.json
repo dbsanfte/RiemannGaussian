@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "strict_exit": 0,
+  "audit_exit": 0,
+  "isolated_exit": 0,
+  "smoke_exit": 0,
+  "declarations": 121,
+  "theorems": 60,
+  "standard_axioms_only": true,
+  "isolated_byte_identical": true,
+  "hashes": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceMemoryTrace.lean": "eea6b8a4a11cfe127ffe8bde0ebb86c138ea1b6d308bf5b0678ca0fe273545b9",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceMemoryTrace.olean": "a96541390160881db449c4a33b0ca79c502d74ac3234694146b0e8e899586345",
+    "/tmp/semiprime-source-lowering-20261027/SourceMemoryTrace.isolated.olean": "a96541390160881db449c4a33b0ca79c502d74ac3234694146b0e8e899586345",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceProgramErasure.lean": "aae2f357aead0906d08a2e354ca5bfc46f9cd925aeed2d1a3381a131a96815be",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceProgramErasure.olean": "7bb2e5ddf20639a6559208f8c6d0268f51dc3375443a7d5067217a4ecefff077",
+    "/tmp/semiprime-source-lowering-20261027/SourceProgramErasure.isolated.olean": "7bb2e5ddf20639a6559208f8c6d0268f51dc3375443a7d5067217a4ecefff077"
+  }
+}

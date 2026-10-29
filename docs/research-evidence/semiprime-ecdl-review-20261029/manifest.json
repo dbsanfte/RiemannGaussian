@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "scope": "Bounded literature review; no new algorithm or rate theorem claimed.",
+  "paper": {
+    "title": "A Subexponential Time Algorithm for Elliptic Curve Discrete Logarithm",
+    "commit": "252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee",
+    "url": "https://github.com/bochum-crypto/subexponential-ecdl/blob/252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee/subexponential-ecdl.pdf",
+    "sha256": "cd251dc0ed83bd283663aaaeb135bf6aed5bd2b015bdfa52591d9d6667754d27"
+  },
+  "assessment": "No blocking flaw found in the reviewed arithmetic and randomized reduction, conditional on the assumed OpenAI D.1 tensor-contraction theorem. The assumed theorem was not independently certified by this review.",
+  "comparison": "ECDLP expected randomized 2^O(b/(log b)^(1/4)) does not improve the deterministic semiprime target 2^O(ell/sqrt(log ell)). The recursive acquisition algorithm is already specified in this repository; complete primitive-machine implementation and total runtime certification remain unfinished.",
+  "provenance": "Reports copied byte-for-byte from the completed scratch review. Absolute paths in them record the historical review environment. The PDF and extracted full text are not redistributed.",
+  "files": {
+    "source.json": "b59c8567d1326474c25017ebb06386a7da3819f9948a7217cfa3418a407b6fcb",
+    "commit.json": "7dbdcaf88329b80f76824dd0fcfd92e1737d4884a76e0a931b899a5d3a916e85",
+    "tree.json": "a8fa3fb793f1cc5dc46414f2306255d6c65ed1060e1e8f08a424a2b7e8593d0a",
+    "issues.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "arithmetic-tensor-owner-audit.txt": "b194338f3f01adb686cb8d810aabeccbc235e874f9145679abd4d944af023834",
+    "arithmetic-tensor-owner-audit-pins.json": "f4f4542fb8178c04c57f79780a79802a2c0dd89a3718ba35f090c59cb11826f0",
+    "probability-and-cost-review.txt": "ad8160e2282dd1ff112cd38c379375b8d95fb79d90a6e8d4a17735f7fe31264a",
+    "probability-and-cost-review.json": "e9caa114d023e15d36c5ed827182bde5bc4603f9af428edc9d0fc90ee7f6b68f",
+    "transfer-audit-vertex.json": "aa02267f79d3dc5c388aab1c6bf5bcd5e01cff5de008fd4adb8d6f5bb3142eec"
+  }
+}

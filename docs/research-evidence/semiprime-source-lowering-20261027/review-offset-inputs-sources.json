@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "review": "read-only semantic and scope review, no rebuild",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceOffsetInputsCore",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetInputsCore.lean",
+      "source_sha256": "294a3220822e3f25966183a7aa997495f37cac8ce051d9e2cf6e078a92e03cc6",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetInputsCore.olean",
+      "object_sha256": "07b696abfc6ff051a9d927b75b01cf0ece23f46e77f6c0a5a264d0f1cc06f4fd"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceOffsetInputsScales",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetInputsScales.lean",
+      "source_sha256": "1ac6fac38e8fb5cd1b26081cb7ab22f556df6c3bb2e774ed3da50a7446983169",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetInputsScales.olean",
+      "object_sha256": "c0024ce83cf9dd3f414fbb2d1cb26aedaae0f2cb17c033cbf6cdcfeacbfb9818"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceOffsetInputs",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetInputs.lean",
+      "source_sha256": "5ed5d0a26881309880dfc9f434af0f3b0b60c7bd7b304400758d245243c27788",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetInputs.olean",
+      "object_sha256": "b0f56539084fd4ff6516bc9283ee17a6796e9427241838ac37b35e92ada0d576"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceOffsetInputsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetInputsBounds.lean",
+      "source_sha256": "2c3fb2d80625dc1dd354116903ae4ed4449484d9ae1f67f384f323f82e6accd5",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetInputsBounds.olean",
+      "object_sha256": "b663375291602e70b889c07bc66083f9dae45fa42c9126e7a2ca88b687251d6e"
+    }
+  ]
+}

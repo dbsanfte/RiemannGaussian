@@ -1,0 +1,4 @@
+PASS: 5 exact half-center fixtures; 95 identity/predicate checks
+PASS: 4 negative-only recovery cases, including mixed CRT and repeated roots
+PASS: harmless public half-center row check
+Reference arithmetic only; no fast prefix oracle or native coverage claim.

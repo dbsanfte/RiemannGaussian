@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "reviewer": "vertex_record_logger",
+  "utc": "2026-10-29T05:43:28.476275+00:00",
+  "scope": "Full read-only bodies of the three assigned quantitative modules; all 267 lines read in one nontruncated batch. No imports, builds, source/canonical edits or controls.",
+  "modules": [
+    {
+      "module": "SemiprimeD1StackRecoveryNodeBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeBounds.lean",
+      "sha256": "821528a4d9b9b3f733c91556023197c61501fd4c74a335712683898c38fa3036",
+      "lines": 68
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeStorage",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeStorage.lean",
+      "sha256": "c90c04e566f8823cc989c423a991ec558ff236e02e52949e983ebecd11ddb1c5",
+      "lines": 120
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeOriginalResources",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeOriginalResources.lean",
+      "sha256": "9c59d5913bdfa743d7b58bb9d127c9b53e1a51e02c27d5795a2e6e39ad4942a0",
+      "lines": 79
+    }
+  ],
+  "before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeBounds.lean": "821528a4d9b9b3f733c91556023197c61501fd4c74a335712683898c38fa3036",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeStorage.lean": "c90c04e566f8823cc989c423a991ec558ff236e02e52949e983ebecd11ddb1c5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeOriginalResources.lean": "9c59d5913bdfa743d7b58bb9d127c9b53e1a51e02c27d5795a2e6e39ad4942a0"
+  },
+  "after": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeBounds.lean": "821528a4d9b9b3f733c91556023197c61501fd4c74a335712683898c38fa3036",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeStorage.lean": "c90c04e566f8823cc989c423a991ec558ff236e02e52949e983ebecd11ddb1c5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeOriginalResources.lean": "9c59d5913bdfa743d7b58bb9d127c9b53e1a51e02c27d5795a2e6e39ad4942a0"
+  },
+  "all_assignment_before_after_current_sha256_match": true,
+  "findings": [
+    "No blocker found. Bounds.runBound_le pays the SAME actual two-source sum n+w+3. It combines independently proven Node-input R^30 and semantic acquired Weight R^20 caps; it never uses a preceding elapsed runtime as a later operand width.",
+    "The resource charges actual W and 2^(a+1) by VALUE. Whole and same-program Grid-ready entries use internally acquired arrays and scalar. Selected phase/index equality is an honest input-domain proposition, not an executed supplier.",
+    "Storage.prefix_fuel derives every prefix bound from the SAME actual halted run. All 141 Bool words plus the genuine none-label return list are counted, including ready retained Grid cells; exact run_correct transfers this bound to compiled configurations.",
+    "OriginalResources specializes the same run and space caps using the actual paid original W, u<=M, root metadata and actual binary phase-byte bound. Uniform coefficients precede N; the source remains a prepared five-word source, with N-only outer join and scalar counter explicitly open.",
+    "OriginalResources raises only proof-side numeral exponentiation threshold to1024; no maxHeartbeats change."
+  ],
+  "source_canonical_writes": false,
+  "replayed_controls": false
+}

@@ -1,0 +1,21 @@
+{
+  "review": "boolean-jet-review.md",
+  "disposition": "PASS finite relation/count and exact coefficient recurrence semantics; compiler/imperative/resource scope limits retained",
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeBooleanNetwork.lean": {
+      "sha256": "83885b2713252947c6113dd7917a2153f15e32a4a9f6bf4ff2e452b19ce9e9ca",
+      "bytes": 22096,
+      "role": "independently reviewed stable source"
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeJetRecurrence.lean": {
+      "sha256": "51722c42900b4070247dd0f23c47210c4c9a235c9e65c08ff0fa0e36ee2fad32",
+      "bytes": 6344,
+      "role": "independently reviewed stable source"
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroFermatNetwork.lean": {
+      "sha256": "40ad2cafa780142e7400fd99e502e55cff69e17a4f2548a14135037fe85055ed",
+      "bytes": 24559,
+      "role": "supporting arithmetic read"
+    }
+  }
+}

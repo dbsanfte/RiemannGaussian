@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "date": "2026-10-25",
+  "scope": "Local literature reports and finite identity validation; external papers not bundled",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7091,
+      "sha256": "5ed363000a72c2b936d2b229f7dd6ff031f20390da5788cb00b6ffecd670d829"
+    },
+    {
+      "path": "check_finite_descendant.py",
+      "bytes": 1300,
+      "sha256": "5d5ec540358e2f06936ca65e76be5226b29bb13472feb60a72d44ec6231c0a33"
+    },
+    {
+      "path": "reports/alexander-coloring.md",
+      "bytes": 3379,
+      "sha256": "8d338af234bfcf939ac0ec6cc351adce0b72b3952d42f921b2f4e544a39feb11"
+    },
+    {
+      "path": "reports/qholonomic.md",
+      "bytes": 10311,
+      "sha256": "6f591c95683feab5fbc118825b1d116062189e9eba7b1785fc86fb46fbd130e4"
+    },
+    {
+      "path": "reports/quantum-dilog.md",
+      "bytes": 12400,
+      "sha256": "50cb483a13d07fa7e5640b92b8e3f467242bdf7ef55d42269c9061812ff63cbd"
+    },
+    {
+      "path": "reports/skein-transfer.md",
+      "bytes": 13648,
+      "sha256": "56bdcf0f9737093b8a120316a067a42b2a8d7f748e753504bffabd731041db36"
+    },
+    {
+      "path": "review.json",
+      "bytes": 450,
+      "sha256": "4cd5c84562ef07beb822965f8f1cabab4a8852ed79b943caa08355035a54b18c"
+    },
+    {
+      "path": "sources/qholonomic-metadata.md",
+      "bytes": 2396,
+      "sha256": "204e4d77d9d27a6642ada155f76b7e5b6823091766bebf39f16d9ddde6099775"
+    },
+    {
+      "path": "validation.txt",
+      "bytes": 93,
+      "sha256": "d169cc840625562c58cf2eacbc24d4b9559f48919effa88267fc80ee2eb6e318"
+    }
+  ]
+}

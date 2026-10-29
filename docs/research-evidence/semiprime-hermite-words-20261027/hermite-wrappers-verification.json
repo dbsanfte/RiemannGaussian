@@ -1,0 +1,63 @@
+{
+  "strict": true,
+  "root15": true,
+  "all_generated_standard_axioms_only": true,
+  "declarations": 101,
+  "theorem_constants": 64,
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeHermiteBitsSetupCounter",
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteBitsSetupCounter.lean",
+          "sha256": "e7873a4233a314bbe854a7b4371de3c6157650b0681f1253076587afb32a5dbf"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeHermiteBitsSetupCounter.olean",
+          "sha256": "3bd2d075f1bb07a0429df8a67c4f1777f0f4c51a8907b4846a2cb663b2520c08"
+        },
+        {
+          "path": "/tmp/semiprime-hermite-words-20261027/HermiteBitsSetupCounter.isolated.olean",
+          "sha256": "3bd2d075f1bb07a0429df8a67c4f1777f0f4c51a8907b4846a2cb663b2520c08"
+        }
+      ]
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeHermiteBitsPublicController",
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteBitsPublicController.lean",
+          "sha256": "d1f90eb2535aafb36633e33cf98db41ef907cd7fa8260e68ee4a6cdaf50938cb"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeHermiteBitsPublicController.olean",
+          "sha256": "e2a1f6fd292c386632d6e4af023be3322165d3017903ce1064d976c01b480348"
+        },
+        {
+          "path": "/tmp/semiprime-hermite-words-20261027/HermiteBitsPublicController.isolated.olean",
+          "sha256": "e2a1f6fd292c386632d6e4af023be3322165d3017903ce1064d976c01b480348"
+        }
+      ]
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeHermiteBitsScheduledController",
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteBitsScheduledController.lean",
+          "sha256": "49ccc998cfe08b844bcfc5830a4471c355a6629cea2c314049c1ebc598a869fa"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeHermiteBitsScheduledController.olean",
+          "sha256": "49325b632887d66313fc7ce59a95ac59fafbdf2366014c72dad7d99f0def2f7c"
+        },
+        {
+          "path": "/tmp/semiprime-hermite-words-20261027/HermiteBitsScheduledController.isolated.olean",
+          "sha256": "49325b632887d66313fc7ce59a95ac59fafbdf2366014c72dad7d99f0def2f7c"
+        }
+      ]
+    }
+  ]
+}

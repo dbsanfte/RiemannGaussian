@@ -1,0 +1,296 @@
+[
+  {
+    "module": "SemiprimeSourceCompactBits",
+    "exit_code": 0,
+    "seconds": 4.083146231947467,
+    "source_sha256": "370aece6af15538f78a5169bd917d7a3defce823af040aad4ee463b8cd7e1c9b",
+    "object_sha256": "c77e755fc9af6681fe447675101c9177f507d6707a69c84364978ccb0908914a"
+  },
+  {
+    "module": "SemiprimeSourceCompactWordIds",
+    "exit_code": 0,
+    "seconds": 7.201567202922888,
+    "source_sha256": "409d600957e0298e4117bb7994787e42d6d6be0a83ac84bcbda4b90b9bf76553",
+    "object_sha256": "c9c4ef93c8b6663ee966a01b474abee3d2082c6534c2136c9abd6eab8e077ea0"
+  },
+  {
+    "module": "SemiprimeSourceCompactWordBank",
+    "exit_code": 0,
+    "seconds": 6.537776878918521,
+    "source_sha256": "1a9effc213be2194cca8624113ace8d31c5f09cacc572abbf076191ecc296537",
+    "object_sha256": "b82ef6982c4a86bcd1758a6a4fd6bd98cf9bd080d76f575b0cce9d0db0cfadfe"
+  },
+  {
+    "module": "SemiprimeSourceHistogramGrouping",
+    "exit_code": 0,
+    "seconds": 6.842212378047407,
+    "source_sha256": "0893cf0cc57dc7d3bfcdd6bc8e4f34fd45cbf59688d70f3f7539b247d8f7ff60",
+    "object_sha256": "1966277b6bd78e75d7441a9417703604e0966fe9dd7b4f6a64b9c4eb394d5179"
+  },
+  {
+    "module": "SemiprimeSourceIncidenceHistogram",
+    "exit_code": 0,
+    "seconds": 7.350492883007973,
+    "source_sha256": "0d48db87d64e8f53e680fd1ecabd51509af04d2dfc190f02b1655e2b200cf70e",
+    "object_sha256": "da35f9b0d1b473f94f9273ae6206623af726b2d2b802e6d8d097e599313fa9d9"
+  },
+  {
+    "module": "SemiprimeSourceHistogramOriginalSums",
+    "exit_code": 0,
+    "seconds": 6.871863124077208,
+    "source_sha256": "077cc16ed39d4612cdeea6bc6ceca1ffb3042776bdd15355e58b9af7364295d3",
+    "object_sha256": "a9f1fe6c099bb9215251596017342af0c4a5d720aa04e85d0a4480933adba777"
+  },
+  {
+    "module": "SemiprimeSourceHistogramMetadata",
+    "exit_code": 0,
+    "seconds": 7.397799265105277,
+    "source_sha256": "6685c6e1437727b66cff2f63e9e8ff7b9847f32dcac6fb54ceccffe582d3cdc8",
+    "object_sha256": "efe19dab72ddf9723bd2a38cb62f5ebb24f075f196b3a3a067fab38008d1f32f"
+  },
+  {
+    "module": "SemiprimeSourceHistogramAcquiredSums",
+    "exit_code": 0,
+    "seconds": 6.691301754093729,
+    "source_sha256": "cb765288162d73f18bab1385cfc596b96d679c393a2fa19c2a475297143fc426",
+    "object_sha256": "34f717b5648e67612673f176a6093c032f0867a5cf19308994c8fb2aecfc9f22"
+  },
+  {
+    "module": "SemiprimeSourceHistogramCountInput",
+    "exit_code": 0,
+    "seconds": 4.217024683021009,
+    "source_sha256": "e992c45af54cc4f7a26a2fc24f82fc2a592752c2980346469d0ca60ecaed5ac3",
+    "object_sha256": "a12f492aefe5fcf7b47eb8c115c000a33d932928007756953f0e2a5801929b88"
+  },
+  {
+    "module": "SemiprimeSourceHistogramScales",
+    "exit_code": 0,
+    "seconds": 6.996952864108607,
+    "source_sha256": "53eda48128d4910a50ab43f09bfc152bf31fc2a68f26e13cb08ee1df1a4954d9",
+    "object_sha256": "da3e3c7b197d383fe463533ba3eac682745410778a1ff3b7ca95cf97e960e436"
+  },
+  {
+    "module": "SemiprimeSourceHistogramTrie",
+    "exit_code": 0,
+    "seconds": 4.065199464908801,
+    "source_sha256": "2c648125a8d6e254052db131adf7c568486c5bbdc03432c2d00f33fef1e8649e",
+    "object_sha256": "6471a0976529abbae2862fd08cd4909891fee857b557f2799b5dfc0256207ca0"
+  },
+  {
+    "module": "SemiprimeSourceHistogramSquares",
+    "exit_code": 0,
+    "seconds": 6.702609537052922,
+    "source_sha256": "e7971ba2e8efa42e44c5e2aee1933d1db38b52e11775416020e18e41525aa1f5",
+    "object_sha256": "4055051e3ade8624d614f97ebd0a31eff764213f081a5699903a13a3515f3501"
+  },
+  {
+    "module": "SemiprimeSourceHistogramArithmetic",
+    "exit_code": 0,
+    "seconds": 7.198504452942871,
+    "source_sha256": "08c30da452d2207b9a841fb4ddb612d286d316bb007a9ab7b4725e40ae3c78bb",
+    "object_sha256": "b575f88cafde9948d4c91d76a0f85e52736c141713af39801ae210287f0ca8d7"
+  },
+  {
+    "module": "SemiprimeSourceHistogramArithmeticBounds",
+    "exit_code": 0,
+    "seconds": 39.78249379200861,
+    "source_sha256": "b9637a77f5e1a8730def039c75172f911bec3460405fe214743924378ff3faea",
+    "object_sha256": "b7ffab4e9278212cf66b6c9182e14b4686abaaeb822e7cce9b2beb7bce8a4dc8"
+  },
+  {
+    "module": "SemiprimeSourceHistogramTrieBounds",
+    "exit_code": 0,
+    "seconds": 4.066726100048982,
+    "source_sha256": "19af2c5c3c86d3140cce56da3aba7f48f4ed346fa9751d4adf568edecef0ecb8",
+    "object_sha256": "65576ad44ce2f3e92ac6a0c67a7268ea18c9d69623724eada954c1eb518c3abf"
+  },
+  {
+    "module": "SemiprimeSourceHistogramTrieStore",
+    "exit_code": 0,
+    "seconds": 3.8406270450213924,
+    "source_sha256": "0a3e501c1d96d9861a43bf7986748cf43a8b1532fe8f45b69fd78b8dadac04c3",
+    "object_sha256": "03aec8a496aa9c351934206f6f940e3d28a0c4d2048ba17b5796b96d86eb53b1"
+  },
+  {
+    "module": "SemiprimeSourceHistogramPrefix",
+    "exit_code": 0,
+    "seconds": 7.7417989070527256,
+    "source_sha256": "80a9258f509959f089733be444f844e398bc780c75583c02c7534c6e08a7bf6c",
+    "object_sha256": "fd09b2215de2750798523b47c59306ffa15ab6603e6f856a13c492fa41af7d66"
+  },
+  {
+    "module": "SemiprimeSourceHistogramPortKeys",
+    "exit_code": 0,
+    "seconds": 7.401736555038951,
+    "source_sha256": "a67c512ef76830b90c0c54ee35a2114e06fb2590cf858eb78415d3386263439f",
+    "object_sha256": "835be0b1ef28a9badd0b971296b9cf93fcf72c84858fa02c8dc4d055ebb09ae1"
+  },
+  {
+    "module": "SemiprimeSourceHistogramKeyBits",
+    "exit_code": 0,
+    "seconds": 3.990723922965117,
+    "source_sha256": "74547196939247a7bc567ceeb58f73090fc3004a3f5271cc987e117d6377eda0",
+    "object_sha256": "948a652ed3bed3c95ec7c820c9cb03b9659289ca0546e77e1f6d92d1cfa95cfa"
+  },
+  {
+    "module": "SemiprimeSourceHistogramFeatureBits",
+    "exit_code": 0,
+    "seconds": 6.910386360017583,
+    "source_sha256": "43a60aa1f7823d64d4c2646526afa6c893a17df88c81be4b2af69bcd36b348b3",
+    "object_sha256": "c7d198fb8de2b2ef778cd842b36101efeb6f27b73d48211215c12276024b9d00"
+  },
+  {
+    "module": "SemiprimeSourceHistogramDictRefinement",
+    "exit_code": 0,
+    "seconds": 6.897370381047949,
+    "source_sha256": "8b89144ac1c25583952bc9c62451073ab7121a305c6129b4c5bab6c81d4f9f8b",
+    "object_sha256": "6e476ec2d58e582548006f38948887da8d94abb634b3a13b216be92cf6d3ca2f"
+  },
+  {
+    "module": "SemiprimeSourceHistogramDifferences",
+    "exit_code": 0,
+    "seconds": 6.8956974080065265,
+    "source_sha256": "2881b2ad6732122dc3520acae6bad2b1f6fe93b939074b74cf127d09e95df82a",
+    "object_sha256": "c365dd9be651268ea864bbafc05cb94213f0d65584b85550b3b3ba0b6abd4791"
+  },
+  {
+    "module": "SemiprimeSourceHistogramSquaresBounds",
+    "exit_code": 0,
+    "seconds": 7.729444735916331,
+    "source_sha256": "04d707d0d4def4e9d7920dc624039577bb7263690ea1e9390c8381a597a33f91",
+    "object_sha256": "1bb62572ad76130e0eb307a75f376565213f121919c6efdb61be1795df41b75e"
+  },
+  {
+    "module": "SemiprimeSourceHistogramFeatureBitsBounds",
+    "exit_code": 0,
+    "seconds": 7.00140211195685,
+    "source_sha256": "e309c597c41dc2c72ce802940361348328d01c15317a61c569deaced4c60a074",
+    "object_sha256": "ad0365366e0e7d6517fffc3f084f1a154536f4c56c3c25e1dc64ea70e5c6d684"
+  },
+  {
+    "module": "SemiprimeSourceHistogramHeadAggregate",
+    "exit_code": 0,
+    "seconds": 7.250169467064552,
+    "source_sha256": "b8f1168be808bfb4a3f062cb5dafb36913fc50345f84fa74fcd0796670dea8b2",
+    "object_sha256": "db18c3a2c98d91509ca64ed36e22eec3da33c9a7d3bbeded4630afb6e7dc136f"
+  },
+  {
+    "module": "SemiprimeSourceHistogramRows",
+    "exit_code": 0,
+    "seconds": 7.366807378013618,
+    "source_sha256": "7b280f8f279a2259114c95b3dc1efd5e7732d6364d5e9c8ce2236f2c3f240a04",
+    "object_sha256": "2fec217f83cb048bcc506b951ff02f747eb55d184892aeeb74465757f48700fc"
+  },
+  {
+    "module": "SemiprimeSourceHistogramRowsBounds",
+    "exit_code": 0,
+    "seconds": 7.822645772015676,
+    "source_sha256": "fab1014bd8bf3f3f3d518637f71a15445fc7377c7a3c67a6162bef980af7a7f1",
+    "object_sha256": "aca2a255424f7ccf8267a101eb1c1265a2a1ab1dddbbea6cc3267cae59ff4406"
+  },
+  {
+    "module": "SemiprimeSourceHistogramRowKeys",
+    "exit_code": 0,
+    "seconds": 7.5376280199270695,
+    "source_sha256": "a019520042e48be1f8a13911b05943593211ee51fdcaa1f073769418f6a132c2",
+    "object_sha256": "7aea333755929390691275526d20983b7aca86a4a6d146f67bc4ff4bedf52c23"
+  },
+  {
+    "module": "SemiprimeSourceHistogramHeadBits",
+    "exit_code": 0,
+    "seconds": 6.812645035912283,
+    "source_sha256": "81a56f53a3dc3d659597c8c55503c3caf9b34c11cac4c2670d14ca0a1f75b287",
+    "object_sha256": "82f96b771e294b81b6207d4ac9b6ccc48519919e29e7d587704e4a85797efe53"
+  },
+  {
+    "module": "SemiprimeSourceHistogramHeadRefinement",
+    "exit_code": 0,
+    "seconds": 6.504394926945679,
+    "source_sha256": "453cc50ce0d56ab7c4f9dea96eb2ae53568e9c7674fddc89f112ad809f090b4e",
+    "object_sha256": "a7aac1582191a3875126d1b7c856a47acbeb2f087f9728757f7c4a2c8fd31e04"
+  },
+  {
+    "module": "SemiprimeSourceHistogramHeadQueryBounds",
+    "exit_code": 0,
+    "seconds": 7.044504577992484,
+    "source_sha256": "4112efd3ac3e0eff9491a386297f933b9b4fa0f094a4ed2becd0a89cecc5289f",
+    "object_sha256": "3d4bb390b78c53c3f797884d45b90eaf0785c6726d9d6366d910b221c2650c8c"
+  },
+  {
+    "module": "SemiprimeSourceHistogramHeadBounds",
+    "exit_code": 0,
+    "seconds": 12.693566631060094,
+    "source_sha256": "e93489bbfaa105f38f8e4221d0d4f8d900f8e9446a10132dd5396ce7aa02a447",
+    "object_sha256": "7f4e098e14f29993a8439a0ae699e292da8126e0daab8d3fb4b6950731d5a63e"
+  },
+  {
+    "module": "SemiprimeSourceHistogramHeadOriginal",
+    "exit_code": 0,
+    "seconds": 6.598378904047422,
+    "source_sha256": "ba7f5452e401b47b945e89a93f99fb8a5790bcc625c188adc09d0527e74ba19e",
+    "object_sha256": "7365330fe172eb4255de2f6a573cd186276cff0a889ea6db306cfa0733b27e04"
+  },
+  {
+    "module": "SemiprimeSourceHistogramSetup",
+    "exit_code": 0,
+    "seconds": 6.589056144002825,
+    "source_sha256": "37d4623f713e61c046ef0e6a374210a9983e969f8b5458336471d13cecfb476b",
+    "object_sha256": "aa55f0cf749c20b0ba44b1bbbbf7200e635e8f18ff2a15a6d4318bbdb582f899"
+  },
+  {
+    "module": "SemiprimeSourceHistogramQuery",
+    "exit_code": 0,
+    "seconds": 7.318212153040804,
+    "source_sha256": "d68e70b83541acf300c120ea8d7379653561fa720ea5abbf5b2f53f41731f2f4",
+    "object_sha256": "1ea21ea41feff9fdfceeccabb773d2b6fc186fd97b5003b307acb165c99b340f"
+  },
+  {
+    "module": "SemiprimeSourceHistogramScalesBounds",
+    "exit_code": 0,
+    "seconds": 7.883705721003935,
+    "source_sha256": "393dcfc92f04211c9aa306ec00f26560a5c75a8905ec1141d70813c375a5ae51",
+    "object_sha256": "723bade18a04fd716d43cde288ca8f241c9ab231b447b2b2d704dca7a2d5f16b"
+  },
+  {
+    "module": "SemiprimeSourceHistogramSetupBounds",
+    "exit_code": 0,
+    "seconds": 7.502944029984064,
+    "source_sha256": "f2580063ce31a4627e1ac01179dcafc5188257965e6b175afaa82a4d51251b64",
+    "object_sha256": "c9050004dd0acc69e1d950dc59932766e9a10d23d0b758a701029a37ddebe3de"
+  },
+  {
+    "module": "SemiprimeSourceHistogramQueryBounds",
+    "exit_code": 0,
+    "seconds": 7.16054451209493,
+    "source_sha256": "d0ae9cf972a5ff6aadf8e0dcc1275d4e20365916d397401d5040e23313f1c5c9",
+    "object_sha256": "ade47703155feb66efb4d133861a61eb1269edd2feb034146e10d270ade5235f"
+  },
+  {
+    "module": "SemiprimeSourceHistogramQueryCorrectness",
+    "exit_code": 0,
+    "seconds": 7.2477191359503195,
+    "source_sha256": "c78440e4e376b66436c099ffd64324dc9d905934d19480c3fd4a30b2b1965450",
+    "object_sha256": "cafd16cb65e243b70af515bca3ad23e6274d684c21b2e6a2b5dbb1c6dfbbe790"
+  },
+  {
+    "module": "SemiprimeSourceHistogramSearch",
+    "exit_code": 0,
+    "seconds": 7.219125057919882,
+    "source_sha256": "dc0b011fe1f95ccccfa4ebd7bd919086d79df8029e07ebfda0aa6197ede032fb",
+    "object_sha256": "3da6affce89f57f27d8bdf75ec35bfc120935391fc6cbce254755df6f66117d4"
+  },
+  {
+    "module": "SemiprimeSourceHistogramSearchBudget",
+    "exit_code": 0,
+    "seconds": 6.661160912946798,
+    "source_sha256": "1c4a9991b2dccd5e25084208b6ce878b7555b8fc5283a0558b2b5843be48e174",
+    "object_sha256": "4fb3ce4362e65ecce98fd1b64c56a05fdb8a41242ca226d71954bc7e239bf6fc"
+  },
+  {
+    "module": "SemiprimeSourceHistogramResources",
+    "exit_code": 0,
+    "seconds": 8.060091336956248,
+    "source_sha256": "94d983e8fe2d24b8f20d1b8ffbcc5045f08caa919498303cebd8c7cb7c5b14bb",
+    "object_sha256": "09c4140b26994a84b370678a23e9eb1e91b81871c669b0e22f2839e93338f151"
+  }
+]

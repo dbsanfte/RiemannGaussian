@@ -1,0 +1,16 @@
+{
+  "algorithm": "sha256",
+  "excludes_self": true,
+  "files": {
+    "README.md": "c99fd4f50f72b4478929c175f1e503a6044064f5a189c33975315fe7c5a2795a",
+    "archive-provenance.json": "c1d279e4c4dae0fc8c226ca1826b745848425dc8749e6b9a5654ea009b96167b",
+    "current-localization.md": "73d5d82a690252b3e39212f1873bfdc4f3e673eb7633ae13b02194a34127002c",
+    "determinant-cancellation.md": "484c374b3521abb6dd9de6b2a4afd37819bd0981d13de89ce958eaf09c2712db",
+    "multiscale-propagation.md": "0bc80f08042d3492b61313850e1ab824fa0feefe03f2bddec2ae2fdbd323702e",
+    "review-current.md": "6ed432c7af3e06ebf07c919d3fb771ee0b576a163a0bb1acf36364461ccd95c8",
+    "review-determinant.md": "68cefa11b699c9314a9e4046bbee018afe531732b2489d7ef88b4c5bc086e32d",
+    "review-multiscale.md": "ff752f5c2f2bb63d146cc465258349c8e86cc574bf3ee00766cc56c562ad52d6",
+    "review.json": "8d179dfa0173c7afc512037df3dd520ecdd950380d96adcadf4ad3d22dcd8ca4",
+    "sources.json": "a08b065206b9e52aced19f7fa1e59a1c2f30e37ba05c7457f06d668d4561f5c1"
+  }
+}

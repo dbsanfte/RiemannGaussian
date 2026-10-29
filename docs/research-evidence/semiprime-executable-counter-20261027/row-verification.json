@@ -1,0 +1,14 @@
+{
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceRowHeight.lean",
+  "sha256": "06806f80f9b36daf4cbd29c1ed1abd493cc8d93294f834742cfaf766e29257e8",
+  "bytes": 31127,
+  "strict_compile": "PASS",
+  "root15_lint": "PASS",
+  "all_declarations": 92,
+  "theorem_constants": 84,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

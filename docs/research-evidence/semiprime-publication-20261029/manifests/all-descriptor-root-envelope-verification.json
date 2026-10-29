@@ -1,0 +1,70 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 2,
+    "declarations": 76,
+    "theorems": 71
+  },
+  "modules": {
+    "SemiprimeD1StackAllDescriptorRecordUniformBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackAllDescriptorRecordUniformBounds.lean",
+        "sha256": "93d0db8ba26cd9c24c7d744f828da94455b1ba5d449b520c6d74d27d33de343d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackAllDescriptorRecordUniformBounds.olean",
+        "sha256": "612d2f65362a5e5cc7bca5c5f0607359fb50e708f00a49f482243524a55bb7f7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/all-descriptor-root-envelope-frozen/SemiprimeD1StackAllDescriptorRecordUniformBounds.olean",
+        "sha256": "612d2f65362a5e5cc7bca5c5f0607359fb50e708f00a49f482243524a55bb7f7"
+      }
+    },
+    "SemiprimeD1StackAllDescriptorRecordRootBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackAllDescriptorRecordRootBounds.lean",
+        "sha256": "06def737c12b2dd89bae885ac65455b22819ffcef7a32890efade94fb5868071"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackAllDescriptorRecordRootBounds.olean",
+        "sha256": "704e91f326b903527ae30e09dcf0503cfe84b389cedc9a57ce668f1181607032"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/all-descriptor-root-envelope-frozen/SemiprimeD1StackAllDescriptorRecordRootBounds.olean",
+        "sha256": "704e91f326b903527ae30e09dcf0503cfe84b389cedc9a57ce668f1181607032"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "actual_imported_source_object_pairs_unchanged": 18575,
+  "default_heartbeat_limit": 200000,
+  "all_owned_source_object_writers_stopped": true,
+  "live_owned_hashes_match": true,
+  "scope": "Uniform and whole-original-family bounds for the SAME frozen AllDescriptor1263 actual source body, all18 tags. Exact actualSpec.timeBound andClock.runBound <=1e130*((1e20*(ell+1)^6+histBytes+outBytes+1)^18*2^scopeBound(ell)). ActualDsource_run included for every original typedfactor. scopeBound^4<=512^4*ell^3. Zero-history sameactualtime <=(10^130*(10^21)^18)*(ell+1)^108*2^scopeBound(ell). ParentN-only whole factorcatalogue loop and fullfactorbitclock are separate obligations, not claimed by this pointwise body bound.",
+  "new_executable_program": false,
+  "runtime_control_scope": "Proof-only modules. Existing frozen actual18-family program and prior compiledcontrols are unchanged; no additional row/control replay is needed. Universalactualrun theorem supplies wholeoriginalfamily coverage.",
+  "independent_read_only_review": {
+    "agent": "owner_routing_resume",
+    "status": "PASS_NO_DOMAIN_OR_COST_SCOPE_FINDINGS",
+    "findings": "All18 actualfamily clocks; exactphysicalN/descriptor/scope sources; occurrenceM=2E; genuineell3/4 cap; callerhistory/outputexplicit; no nativeoldreport clock transport or operand advice.",
+    "path": "/tmp/semiprime-explicit-rate-20261027/all-descriptor-root-envelope-independent-review.txt",
+    "sha256": "782ba15fd5a36ac845807c2e34b31301b22f825c396549fb78176e72eafc8c60"
+  },
+  "prior_failed_final_gate_attempts": [
+    {
+      "path": "/tmp/semiprime-explicit-rate-20261027/all-descriptor-root-envelope-attempt1/status.json",
+      "reason": "Unused DecidableEq loader assumption."
+    },
+    {
+      "path": "/tmp/semiprime-explicit-rate-20261027/all-descriptor-root-envelope-attempt2/status.json",
+      "reason": "Downstream unused DecidableEq prepare assumption after first removal."
+    }
+  ],
+  "checked_utc": "2026-10-28T16:54:51.282638+00:00"
+}

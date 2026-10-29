@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "date": "2026-10-26",
+  "scope": "Scalar knot acquisition candidates and scoped stationary-event descriptor proof",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5953,
+      "sha256": "1ee1bbb5205ac62c22d75f7e87c340f092e35aacf82c595c4e83bf6d22257bf0"
+    },
+    {
+      "path": "character-norm.md",
+      "bytes": 13150,
+      "sha256": "9793584cd6ad930e5b86e8ca6b8ed639524707ce24661acda97f2202d9f8dbf8"
+    },
+    {
+      "path": "character-review.md",
+      "bytes": 6517,
+      "sha256": "93acd13385963d8e6212775cd4d53970a60eea926025d43257bfcee19b56ae37"
+    },
+    {
+      "path": "coverage-review.md",
+      "bytes": 6298,
+      "sha256": "949a9ab4d7ff81f61877d87861fa8d51a2ecebe327145eb88f960f971a4d6139"
+    },
+    {
+      "path": "event-count.md",
+      "bytes": 7391,
+      "sha256": "26f7e2bf6d6c5e92662546c18fd79c4f9d087d4a64dc20fe80d13c3183dad2d4"
+    },
+    {
+      "path": "event-review.md",
+      "bytes": 4652,
+      "sha256": "f0ccf7bc4aa1ff6dbb75320c9c2005177c7e89d4e34d9a0fdaa3e5250091af2c"
+    },
+    {
+      "path": "induced-norm.md",
+      "bytes": 11532,
+      "sha256": "ad88eb72642ec627608720dc87d966d74a04584ead0bf5cb1438019238a75201"
+    },
+    {
+      "path": "induction-review.md",
+      "bytes": 3481,
+      "sha256": "4f84c052f353bf60aebe5f1ed69da34379bc9150010a8de5b15d1ecacac33160"
+    },
+    {
+      "path": "primitive-coverage.md",
+      "bytes": 17207,
+      "sha256": "f7da8cff60b84fc4f71cff60f5d293e11b2988e3069a19505652c99d8a484a97"
+    },
+    {
+      "path": "quantum-frobenius-audit.md",
+      "bytes": 4078,
+      "sha256": "123ac8d3a701a2ef70dffd048ab657bfd365f000581b5ba291625fbf8cfe5a6a"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2275,
+      "sha256": "3a311a64e38b44a966b23aab9a12310cc99b7e87d790c6272209407f02bca59c"
+    }
+  ]
+}

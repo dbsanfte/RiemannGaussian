@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-26",
+  "note": "Agents authored scratch reports and the constructor. Root archived them and authored README/precomputation audit/integration metadata. Scratch-only and no-repository-edit statements describe agent derivation, not this archival operation. No frozen prior report was rewritten.",
+  "files": [
+    {
+      "archived": "character-source.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/character-source.md",
+      "source_sha256": "449ea58b4d58d15dc4eb809e7c01cf5788c859d31a3d3d30bc26b18f4775bd02",
+      "archive_sha256": "449ea58b4d58d15dc4eb809e7c01cf5788c859d31a3d3d30bc26b18f4775bd02",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "check_unique_cover.py",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/check_unique_cover.py",
+      "source_sha256": "71377a44b5ee8d51bcb0aee8c39fa67da41bb738c5c2c8b4830dc51fd8c046c5",
+      "archive_sha256": "71377a44b5ee8d51bcb0aee8c39fa67da41bb738c5c2c8b4830dc51fd8c046c5",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "completed-qsum.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/completed-qsum.md",
+      "source_sha256": "838c48d7d142d2bad2af2d015ac7c0167fce7a84f9679230fabda944c6b0d250",
+      "archive_sha256": "ff1ad1adca3fff39792d0a0e03cedeef789204c18a7bc54287609c22f576ab9d",
+      "copy": "Root normalized absolute prior-repository links to packet-relative links."
+    },
+    {
+      "archived": "completed-source.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/completed-source.md",
+      "source_sha256": "c632e31e752933912dab3af5820bd5bb730821d5853c76ba8613b6621bec064f",
+      "archive_sha256": "70e105ed2ae7fa0f658fc55adb8469a867e074b772151394cede0e6b4feab41a",
+      "copy": "Root normalized absolute prior-repository links to packet-relative links."
+    },
+    {
+      "archived": "native-overlap.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/native-overlap.md",
+      "source_sha256": "8959d813aa436f1ebea76d419b0e60e581396611d8ec764c5a8a63db1e0923f0",
+      "archive_sha256": "8959d813aa436f1ebea76d419b0e60e581396611d8ec764c5a8a63db1e0923f0",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-ellipse.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/review-ellipse.md",
+      "source_sha256": "82194c1744a057826d77c1cd89f164cf8065894e98beb9832b929974391e577c",
+      "archive_sha256": "82194c1744a057826d77c1cd89f164cf8065894e98beb9832b929974391e577c",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-incidence.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/review-incidence.md",
+      "source_sha256": "22807d65d20c919a9a4cbaac8210b12949dbc2d1353eaa2c8000c5a4b65f1d39",
+      "archive_sha256": "22807d65d20c919a9a4cbaac8210b12949dbc2d1353eaa2c8000c5a4b65f1d39",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-unique-cover.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/review-unique-cover.md",
+      "source_sha256": "1094e7b3804c0a84529857165057b911e0feb94f02d2d5e5a815202af5a36b03",
+      "archive_sha256": "1094e7b3804c0a84529857165057b911e0feb94f02d2d5e5a815202af5a36b03",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-unique-readout.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/review-unique-readout.md",
+      "source_sha256": "212ebdbc6ccf4f401a835a838ed5de43ed8ec66beb7b65179da27bbf29adf60c",
+      "archive_sha256": "212ebdbc6ccf4f401a835a838ed5de43ed8ec66beb7b65179da27bbf29adf60c",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "unique-cover-check.json",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/unique-cover-check.json",
+      "source_sha256": "099c0b3a79d9a1ad98a69d46bf00e09bbc27c7bb215d21303f57f887c08c3e02",
+      "archive_sha256": "099c0b3a79d9a1ad98a69d46bf00e09bbc27c7bb215d21303f57f887c08c3e02",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "unique-cover-single-check.json",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/unique-cover-single-check.json",
+      "source_sha256": "2475e4bc8e04e8b15c84f341d8ffaf44f78ddd1d61869197e0387426ce598b39",
+      "archive_sha256": "2475e4bc8e04e8b15c84f341d8ffaf44f78ddd1d61869197e0387426ce598b39",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "unique-cover.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/unique-cover.md",
+      "source_sha256": "bc428cc2b5e91b3c0b2b848a70f49f6669f590fec851b679364db441bdfe9276",
+      "archive_sha256": "bc428cc2b5e91b3c0b2b848a70f49f6669f590fec851b679364db441bdfe9276",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "unique-lambert.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/unique-lambert.md",
+      "source_sha256": "cbe72c452c8de0e27064aca4e6dde0ab1997af2afb71e414e2bfff86576f66b8",
+      "archive_sha256": "ac7a0070a08bd52ee458cc25a7bf5fbb1da38cce5d3e52e92f141df904752082",
+      "copy": "Root normalized source links and added integration note linking proved cover and explicit wrong-bin saturated-norm failure guard."
+    },
+    {
+      "archived": "validation-unique-cover.md",
+      "scratch_source": "/tmp/semiprime-native-moment-20261026/validation-unique-cover.md",
+      "source_sha256": "38462315fff72766d893b355422771820c46f6c553163f14c36aaf18b7637326",
+      "archive_sha256": "569e3dc754a40318506db6c9efbe7d429c53800f2f7276b4a51eb1eb5ad6d2ff",
+      "copy": "Root normalized archived CLI/replay paths; replay outputs remain outside the packet."
+    }
+  ],
+  "root_authored": [
+    "README.md",
+    "precomputation-audit.md",
+    "sources.json",
+    "review.json",
+    "archive-provenance.json",
+    "manifest.json"
+  ],
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

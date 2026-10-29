@@ -1,0 +1,224 @@
+{
+  "status": "FINAL_WHOLE_BOOLEAN_FACTOR_ACQUISITION_COMPONENT",
+  "full_goal_complete": false,
+  "program": "RiemannGaussian.SemiprimeD1StackBooleanFactorCatalogue.program",
+  "machine": "RiemannGaussian.SemiprimeD1StackBooleanFactorCatalogue.machine",
+  "original_binary_N_only": true,
+  "all_ten_original_boolean_families_all_canonical_positive_N": true,
+  "all_eighteen_actual_descriptors_physically_parsed": true,
+  "arithmetic_rows_acquired_by_this_component": false,
+  "exact_original_boolean_records_in_source_order": true,
+  "same_program_total_clock": "10^170*(bitLengthN+1)^40",
+  "actual_transition_fundamental_command_depth": 4,
+  "physical_boolean_data_roles": 218,
+  "all_real_return_cells_in_prefix_bound": true,
+  "same_actual_machine_prefix_bound": "219*(bitLengthN+10^170*(bitLengthN+1)^40)",
+  "actual_scope_domain_bound": "M<=12800*bitLengthN; occurrenceIDs distinct from EwireIDs",
+  "strict": true,
+  "ordinary_root_all15_default200k": true,
+  "every_generated_constant_standard3_only": true,
+  "all_independent_objects_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 12,
+    "declarations": 385,
+    "theorems": 231
+  },
+  "import_pin_brackets": [
+    {
+      "pairs": 18273,
+      "unchanged": true,
+      "before": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-dependencies/imported-pins-before.json",
+      "after": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-dependencies/imported-pins-after.json"
+    },
+    {
+      "pairs": 18276,
+      "unchanged": true,
+      "before": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-dependencies/imported-pins-before.json",
+      "after": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-dependencies/imported-pins-after.json"
+    }
+  ],
+  "modules": {
+    "SemiprimeD1StackBooleanDescriptorRecordAll": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordAll.lean",
+        "sha256": "fff9bfa2ae63601b04097424e03e48e76306ac9686bef257727c90672aca13ed"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordAll.olean",
+        "sha256": "f3d0ebe5de522f90dac8d611d041164b21a22e8fb3187f64169f8daba0ee7cdb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanDescriptorRecordAll.olean",
+        "sha256": "f3d0ebe5de522f90dac8d611d041164b21a22e8fb3187f64169f8daba0ee7cdb"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogue": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogue.lean",
+        "sha256": "730ca8096435f43d271a278c401a2183ddb5e9ed7e2c030423e768de3d93edb9"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogue.olean",
+        "sha256": "0b9353b17d0b7c54af3f80240e7b5d67b000d3465c9831d5a5c45a364744e30c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanFactorCatalogue.olean",
+        "sha256": "0b9353b17d0b7c54af3f80240e7b5d67b000d3465c9831d5a5c45a364744e30c"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueView.lean",
+        "sha256": "ee90a304d3ec6bc3e75424f5f7dceb9d0cbe3d4329a77c8cfaa2a853bd79954d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueView.olean",
+        "sha256": "ff3ecb9f10217362ec8a39d4ebdc3e0641ddde92a427a2698712afeb0924799e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanFactorCatalogueView.olean",
+        "sha256": "ff3ecb9f10217362ec8a39d4ebdc3e0641ddde92a427a2698712afeb0924799e"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueSource": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueSource.lean",
+        "sha256": "6c8953835618980a47997cbdd49e52d236135a835df95690d571187807f19519"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueSource.olean",
+        "sha256": "b11f6551f0fb525fa9564d5d5923a0e948fdf45d15dd5feca0472cf2f7c7791d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanFactorCatalogueSource.olean",
+        "sha256": "b11f6551f0fb525fa9564d5d5923a0e948fdf45d15dd5feca0472cf2f7c7791d"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCataloguePrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCataloguePrimitives.lean",
+        "sha256": "75beb1b919a5e7881cfe406ba0f3e3029a666ddcb4c338c55c74e17fffa47dbb"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCataloguePrimitives.olean",
+        "sha256": "2398414dbab68a10257be425f8a2cde493b1690916052207fc9980a4b9b1215e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanFactorCataloguePrimitives.olean",
+        "sha256": "2398414dbab68a10257be425f8a2cde493b1690916052207fc9980a4b9b1215e"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueFinish": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueFinish.lean",
+        "sha256": "6ece0d606120ab68c2a5b6ee879bfcfc7382a872a1287615d8ae2409b5cdb54e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueFinish.olean",
+        "sha256": "18a824fc95783eb3a9d8dcb598bf6da656e87c41aec3a913077f9015181ddee5"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanFactorCatalogueFinish.olean",
+        "sha256": "18a824fc95783eb3a9d8dcb598bf6da656e87c41aec3a913077f9015181ddee5"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueLoop": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueLoop.lean",
+        "sha256": "f9f517d33a94bd5df8bca16997c893f7e6ac93ff28a4bc798ce2ced166dfb05a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueLoop.olean",
+        "sha256": "479d9a4abe1f7058f4e3ff3a50903b7c98f771155eb3cf3f3e2981ee2bd0b497"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanFactorCatalogueLoop.olean",
+        "sha256": "479d9a4abe1f7058f4e3ff3a50903b7c98f771155eb3cf3f3e2981ee2bd0b497"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueExecution.lean",
+        "sha256": "8bf6eb4b483eff0fb7d30bc2cd3644c7a17f4f0dc3c6e8c3ae0ec9f62ca979c9"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueExecution.olean",
+        "sha256": "e945846e7025a02ceb99f0c380fe9091cc107decd369f726e07861626ed752d3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanFactorCatalogueExecution.olean",
+        "sha256": "e945846e7025a02ceb99f0c380fe9091cc107decd369f726e07861626ed752d3"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueOriginal.lean",
+        "sha256": "5456f1e4e8f3d06e57cef1fb1ba3887de0f4fe317942060474d94d90e982b0ee"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueOriginal.olean",
+        "sha256": "61e7d551cf0333092e538c01311a06e70ed3a9c5a58349e8bd26aa2594f5c2ea"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-correctness-frozen/SemiprimeD1StackBooleanFactorCatalogueOriginal.olean",
+        "sha256": "61e7d551cf0333092e538c01311a06e70ed3a9c5a58349e8bd26aa2594f5c2ea"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueHistory": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueHistory.lean",
+        "sha256": "ff306c8b2b4fa96d4fbd809e596d84a6add942ce1c8eff1d605af68c6a802272"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueHistory.olean",
+        "sha256": "4ccd19c32197ba0c61b964dab129d7ee10a7cb56f556196f28163d998d0e624b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-frozen/SemiprimeD1StackBooleanFactorCatalogueHistory.olean",
+        "sha256": "4ccd19c32197ba0c61b964dab129d7ee10a7cb56f556196f28163d998d0e624b"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueBounds.lean",
+        "sha256": "76d55339fcde62d48d55522a8575738ed220c049f9dd088ba343c91af6fe6397"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueBounds.olean",
+        "sha256": "08dda191ed37835636a787a80b6cb39f02de741ac0c0ed15e41369abf06a0730"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-frozen/SemiprimeD1StackBooleanFactorCatalogueBounds.olean",
+        "sha256": "08dda191ed37835636a787a80b6cb39f02de741ac0c0ed15e41369abf06a0730"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueClosed": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueClosed.lean",
+        "sha256": "d737183db1593efce9dbfb161819353a9afbd5df668deb674eb30b6776c78b69"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueClosed.olean",
+        "sha256": "d0dc4356eed1061e8b0c945406c739021d92b5fec7179aff3b010cc9d2d93dd0"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-frozen/SemiprimeD1StackBooleanFactorCatalogueClosed.olean",
+        "sha256": "d0dc4356eed1061e8b0c945406c739021d92b5fec7179aff3b010cc9d2d93dd0"
+      }
+    }
+  },
+  "compiled_internal_control": {
+    "scope": "PREPARED4descriptor/3record controller; does not replace universalNonlyproof",
+    "transitions": 5834,
+    "output_bytes": 226,
+    "all218roles_flags_and_actual_outer_return": true,
+    "source": "/tmp/semiprime-explicit-rate-20261027/BooleanFactorCatalogueControls.lean",
+    "log": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-catalogue-controls.log"
+  },
+  "remaining": [
+    "Complete original arithmetic-record/metadata branch joins and all-owner records.",
+    "Whole actual recursive WordTape controller, source/coefficient/heap/address/publicprefix/factor recovery joins.",
+    "Apply fixed explicit quantitative rate only after a WHOLEsameoriginalNmachine/globalclock is proved."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "review": "read-only semantic and scope review; no builds/edits",
+  "owner_final_gates": "strict/root15/all-generated standard3 PASS205 declarations126 theorem constants",
+  "modules": [
+    {
+      "module": "SemiprimeSourceWordIdEnvironment",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdEnvironment.lean",
+      "source_sha256": "7fea1f5aec0f9c38aa1a5b11139062904789df45f7e79aeeb61711c4335a8262",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdEnvironment.olean",
+      "object_sha256": "8bbcbdb8cad294e072e64ba3c1d0ad425d89d15179c8bacbc10a76a2b6dcff77"
+    },
+    {
+      "module": "SemiprimeSourceWordIdEnvironmentBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdEnvironmentBounds.lean",
+      "source_sha256": "dc44492aa1a1b09e3bb63ca69b2180ca57056959efb575afca9a7f272eaecd5e",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdEnvironmentBounds.olean",
+      "object_sha256": "5e356c282d7a6334ddaae8ab44070b19f32c00575db3ec5b456446427aa7629d"
+    },
+    {
+      "module": "SemiprimeSourceWordIdPredicate",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdPredicate.lean",
+      "source_sha256": "225c85157e100f5253d92ae4f54f0b64baa46cb530fdfa48b83e28d2670e77cb",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdPredicate.olean",
+      "object_sha256": "d488bf631e1d14522cadc46e2ce61a07b96903d166ce5307bbfdd2ffe88df68b"
+    },
+    {
+      "module": "SemiprimeSourceWordIdPredicateBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdPredicateBounds.lean",
+      "source_sha256": "53260dfe4875179064d6aae33be8b78660b36557d9684c1aa2f603052e5c5ea8",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdPredicateBounds.olean",
+      "object_sha256": "5368312d5a03fcdfe627e5235c551cfa3aab53aec6b40d7339039a95a12a5de2"
+    }
+  ]
+}

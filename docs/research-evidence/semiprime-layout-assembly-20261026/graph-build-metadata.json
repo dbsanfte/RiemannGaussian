@@ -1,0 +1,5 @@
+{
+  "command": "/home/dbsanfte/.elan/bin/lake env lean -DautoImplicit=false -DwarningAsError=true -o .lake/build/lib/lean/RiemannGaussian/SemiprimeMacroGraph.olean RiemannGaussian/SemiprimeMacroGraph.lean",
+  "exit_code": 0,
+  "source_sha256": "91919748fae18f1340d2f4be1f79faa61dca323c8cad0f8762dbf16f88cf46e3"
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "whole-project-lint",
+    "command": [
+      "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "scripts/LintProject.lean"
+    ],
+    "startedAt": "2026-10-29T19:17:08.140567+00:00",
+    "status": "passed",
+    "exitCode": 0,
+    "elapsedSeconds": 71.21833777427673
+  },
+  {
+    "name": "project-dashboard",
+    "command": [
+      "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "scripts/GenerateProjectStatus.lean"
+    ],
+    "startedAt": "2026-10-29T19:18:19.359604+00:00",
+    "status": "passed",
+    "exitCode": 0,
+    "elapsedSeconds": 14.094587802886963
+  },
+  {
+    "name": "theorem-graph-export",
+    "command": [
+      "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "scripts/ExportTheoremGraph.lean"
+    ],
+    "startedAt": "2026-10-29T19:18:33.455632+00:00",
+    "status": "passed",
+    "exitCode": 0,
+    "elapsedSeconds": 570.4695961475372
+  },
+  {
+    "name": "theorem-explorer",
+    "command": [
+      "python3",
+      "scripts/build_theorem_explorer.py",
+      "--node",
+      "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+    ],
+    "startedAt": "2026-10-29T19:28:03.939919+00:00",
+    "status": "passed",
+    "exitCode": 0,
+    "elapsedSeconds": 7.621002435684204
+  },
+  {
+    "name": "theorem-graph-check",
+    "command": [
+      "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node",
+      "scripts/check_theorem_graph.cjs"
+    ],
+    "startedAt": "2026-10-29T19:28:11.561659+00:00",
+    "status": "passed",
+    "exitCode": 0,
+    "elapsedSeconds": 5.090153932571411
+  },
+  {
+    "name": "cached-certificate-explorer",
+    "command": [
+      "python3",
+      "scripts/build_numerical_certificate_explorer.py",
+      "--check",
+      "--node",
+      "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+    ],
+    "startedAt": "2026-10-29T19:28:16.652529+00:00",
+    "status": "failed",
+    "exitCode": 1,
+    "elapsedSeconds": 0.8493857383728027
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "goal": "ACTIVE",
+  "slice": "SUBSTANTIVE_PAPER_TIME_RESULT",
+  "paper_factoring_bit_time": "N^o(1), using subexponential storage",
+  "complete_Lean_whole_machine_bit_clock": "OPEN",
+  "practical_speedup_claimed": false,
+  "original_native_long_query_bound": "unchanged soft K^1.25",
+  "module_count": 7,
+  "generated_declarations": 409,
+  "theorem_constants": 202,
+  "strict_options": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "ordinary_root_import": true,
+  "scoped_linters_per_module": 15,
+  "all_generated_transitive_standard_axioms_only": true,
+  "isolated_objects_identical": true,
+  "dependency_checkpoint_unchanged": true,
+  "source_resolved_dependency_modules": 18156,
+  "original_upstream_closure": {
+    "status": "PASS",
+    "modules": 2569,
+    "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "rebuilt": false
+  },
+  "independent_paper_review": "PASS",
+  "independent_implementation_review": "PASS",
+  "focused_python_tests": 7,
+  "python_tests_pass": true,
+  "tests_are_scaling_evidence": false,
+  "preserved_prior_files": 2157,
+  "preserved_concurrent_files": 24,
+  "preserved_append_only_prefixes": 2,
+  "commit_or_push": false,
+  "modules": {
+    "SemiprimeTernaryFactor": {
+      "source": "RiemannGaussian/SemiprimeTernaryFactor.lean",
+      "source_sha256": "10ec3618679852c52d3b94fac9e4c15d8d36a5f72198855c1cdf30565bd835cf",
+      "olean_sha256": "b6e111edb94d1904806b63e0d24f15e5110efe87af52b606883dcbe6fcb317f4",
+      "declarations": 69,
+      "theorem_constants": 49
+    },
+    "SemiprimeTernaryPublicFactor": {
+      "source": "RiemannGaussian/SemiprimeTernaryPublicFactor.lean",
+      "source_sha256": "bf3c2d7f583c5581be7ad23df7a24b572d411851799ff08122e17c4caa03529d",
+      "olean_sha256": "8aeb98e4e1cd3e9be4c30d48e80c875064f54c6bfa3fde2fd214362a83275afa",
+      "declarations": 16,
+      "theorem_constants": 11
+    },
+    "SemiprimeTernaryLocal": {
+      "source": "RiemannGaussian/SemiprimeTernaryLocal.lean",
+      "source_sha256": "223fe42526e2d63ee548e4d03ae7fae478148b4646247d0fd869e681c2a315e0",
+      "olean_sha256": "7509e895fd596438d749d90ca8b614fb4163d1b7381b0f39ee22ef5c41300021",
+      "declarations": 50,
+      "theorem_constants": 32
+    },
+    "SemiprimeTernaryLocalPaid": {
+      "source": "RiemannGaussian/SemiprimeTernaryLocalPaid.lean",
+      "source_sha256": "c0b21e303980fdefec71f716df9073b3324185ca0fc7eded9e3061feded863c7",
+      "olean_sha256": "0b175103f5fd40cf1bb95a807e84d761ffd2cda3008a04690f2a7c9998aa0f11",
+      "declarations": 232,
+      "theorem_constants": 77
+    },
+    "SemiprimeBooleanRingFactor": {
+      "source": "RiemannGaussian/SemiprimeBooleanRingFactor.lean",
+      "source_sha256": "fd4c4b4e398f033d7ba07619d35a5adc93a3820a3bdd65a8781d7911ba7c6494",
+      "olean_sha256": "b8b7d313a798d4f883366db6ad8bdae091984d1fb5bdf3d8528c6d6e176af20f",
+      "declarations": 21,
+      "theorem_constants": 16
+    },
+    "SemiprimeParametricFactorLoop": {
+      "source": "RiemannGaussian/SemiprimeParametricFactorLoop.lean",
+      "source_sha256": "98951fc9ec417886656f9260f3ddff7ec1bd79eaef8911f6ef43956e69c806f8",
+      "olean_sha256": "f318ad16e8ebdab50666509c8bf6ec0a73f07dd2122fc8a9b36254e1550f619f",
+      "declarations": 17,
+      "theorem_constants": 13
+    },
+    "SemiprimeParametricFactorFrame": {
+      "source": "RiemannGaussian/SemiprimeParametricFactorFrame.lean",
+      "source_sha256": "e1f8fbafee75bfc109a523f1dc6db94fee35f461970a879b3b2cd12d2c066871",
+      "olean_sha256": "ce052380d105468a57c63ce06fc54021f3e1edb69aef309b2e478ce7c4025d16",
+      "declarations": 4,
+      "theorem_constants": 4
+    }
+  }
+}

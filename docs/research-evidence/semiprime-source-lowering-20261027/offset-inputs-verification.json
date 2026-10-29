@@ -1,0 +1,79 @@
+{
+  "status": "FINAL FROZEN; canonical strict + ordinary-root15 + all-generated standard3 PASS",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceOffsetInputsCore",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetInputsCore.lean",
+      "source_sha256": "294a3220822e3f25966183a7aa997495f37cac8ce051d9e2cf6e078a92e03cc6",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetInputsCore.olean",
+      "object_sha256": "07b696abfc6ff051a9d927b75b01cf0ece23f46e77f6c0a5a264d0f1cc06f4fd",
+      "declarations": 73,
+      "theorems": 30
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceOffsetInputsScales",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetInputsScales.lean",
+      "source_sha256": "1ac6fac38e8fb5cd1b26081cb7ab22f556df6c3bb2e774ed3da50a7446983169",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetInputsScales.olean",
+      "object_sha256": "c0024ce83cf9dd3f414fbb2d1cb26aedaae0f2cb17c033cbf6cdcfeacbfb9818",
+      "declarations": 45,
+      "theorems": 37
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceOffsetInputs",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetInputs.lean",
+      "source_sha256": "5ed5d0a26881309880dfc9f434af0f3b0b60c7bd7b304400758d245243c27788",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetInputs.olean",
+      "object_sha256": "b0f56539084fd4ff6516bc9283ee17a6796e9427241838ac37b35e92ada0d576",
+      "declarations": 35,
+      "theorems": 16
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceOffsetInputsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceOffsetInputsBounds.lean",
+      "source_sha256": "2c3fb2d80625dc1dd354116903ae4ed4449484d9ae1f67f384f323f82e6accd5",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceOffsetInputsBounds.olean",
+      "object_sha256": "b663375291602e70b889c07bc66083f9dae45fa42c9126e7a2ca88b687251d6e",
+      "declarations": 45,
+      "theorems": 40
+    }
+  ],
+  "evidence": {
+    "offset-inputs-core-build.log": {
+      "path": "/tmp/semiprime-source-lowering-20261027/offset-inputs-core-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "offset-inputs-scales-build.log": {
+      "path": "/tmp/semiprime-source-lowering-20261027/offset-inputs-scales-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "offset-inputs-build.log": {
+      "path": "/tmp/semiprime-source-lowering-20261027/offset-inputs-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "offset-inputs-bounds-build.log": {
+      "path": "/tmp/semiprime-source-lowering-20261027/offset-inputs-bounds-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "offset-inputs-audit.lean": {
+      "path": "/tmp/semiprime-source-lowering-20261027/offset-inputs-audit.lean",
+      "sha256": "79b1e9a9bb8ebf1628fe15ec2912c7979550a619a0158b8ee5b747f9ba4fcf8a"
+    },
+    "offset-inputs-audit.log": {
+      "path": "/tmp/semiprime-source-lowering-20261027/offset-inputs-audit.log",
+      "sha256": "ec4488f5a6485752b15dc8b959be38f3151efc3bf630f61ef8df3ff0d322436a"
+    },
+    "OffsetInputsSmoke.lean": {
+      "path": "/tmp/semiprime-source-lowering-20261027/OffsetInputsSmoke.lean",
+      "sha256": "2b093a59a805fd650f3cb620de67e6b1e69f34b807261997caea5fb734971b69"
+    },
+    "offset-inputs-smoke.log": {
+      "path": "/tmp/semiprime-source-lowering-20261027/offset-inputs-smoke.log",
+      "sha256": "67a2130b196bde615f2c0d4b4a5bb971a79b9eb17426c58b7bd220808000438f"
+    },
+    "offset-inputs-notes.md": {
+      "path": "/tmp/semiprime-source-lowering-20261027/offset-inputs-notes.md",
+      "sha256": "27e4bcfca34ca021fa2c6c5a3cf6973f818a0f2c9a9d29ac6d27bc89d26f797a"
+    }
+  }
+}

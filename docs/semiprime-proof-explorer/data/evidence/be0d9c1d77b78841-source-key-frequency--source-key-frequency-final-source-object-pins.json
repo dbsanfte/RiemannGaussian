@@ -1,0 +1,152 @@
+{
+  "SemiprimeD1StackSourceKeyFrequency": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequency.lean",
+      "sha256": "9661f01c333ca29c094c45fe03d92094055c4825b14bd1a3764a5e7844bfdfce"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequency.olean",
+      "sha256": "e4b4f08bbdb61b7217bc461effb8d631b8b3ae17ffa41668628e3eda357b709c"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyPrimitives": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyPrimitives.lean",
+      "sha256": "ba87029273adf8e263ebb4b31f7ee4f7eb7271d28fe55334b40db67ead99b949"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyPrimitives.olean",
+      "sha256": "eed64d3eedd44b4b364d3d2402d5cb4dca1eff633e7385554eb492435e748bd2"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyCalls": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyCalls.lean",
+      "sha256": "3f1cf8d3508c3873f414684bc719afafd46a8938bb4843857084995bf8c61590"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyCalls.olean",
+      "sha256": "885330611eb399a408fbcd3eaa1341ecf2220f6d30a2dd534e45dd820caf4f7f"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyCounter": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyCounter.lean",
+      "sha256": "cb2f6c6caffcaf8b0c9b567347987a830644016c814e7aab874363598cfc8d91"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyCounter.olean",
+      "sha256": "da4f4b42e4050e9faf9a724920e1a585ebe3f9165ce6fb00e34799a6949804f6"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyCounterEntry": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyCounterEntry.lean",
+      "sha256": "809e60d9f9a950c6a03b02646191ae272d57c173da5c8f9512edabe74c9605e2"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyCounterEntry.olean",
+      "sha256": "c0766bd2df16f1306e79d5b028a41d464933d3f17ce387a51319112432d23c54"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyEncoding": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyEncoding.lean",
+      "sha256": "e86eeec4e26f59d0877e2d6c7d110b3e119050227c4eb190807255e55307d0a0"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyEncoding.olean",
+      "sha256": "1552227c62384cc333d5fa75775ab2402b940c17b5706a1be72ca8105bf1823d"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyRead": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyRead.lean",
+      "sha256": "e7175ad17544233b361742feba3add9549af8b4f2288b7bd40a2f208278486b1"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyRead.olean",
+      "sha256": "aaaff36003e391194800d1ef2f8d10f6bdb421ef1ca130e17e22ea1c6ce2f8ca"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyMaximum": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyMaximum.lean",
+      "sha256": "8ce09c8c689b7c09cafd990e992b9a4ef94ea5a2263bac469f892dcc15e7d091"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyMaximum.olean",
+      "sha256": "74b1199e8a376ae57af4ded0af6dd52068e36b14b598064d0d34594aaafd54ea"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyStore": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyStore.lean",
+      "sha256": "6b1d02ff9e41d45906d41ee18ba5ec45725a912aa3258d133a2c107062da31cb"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyStore.olean",
+      "sha256": "a06cac4e81dc5cfafe90db26a3437faf1b59daba2d12920dc7ea3c88cfeb3945"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyExecution": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyExecution.lean",
+      "sha256": "1b26447402edc71127c8a1492854327d618959067872823efecc97467cbcd79d"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyExecution.olean",
+      "sha256": "a9dd61feba827fdfa6f63e2615b65c120e9d22424c4d9ad4d6d980f4bbfbbf49"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyMeaning": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyMeaning.lean",
+      "sha256": "b85df9511ca672d418e5a7456545d7b74c044002118ea9493113e1f9e693e6e0"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyMeaning.olean",
+      "sha256": "e394a302ccf5e464f27d4108f0e0f36c661f8261af9add2b063a3f80bd6bd319"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyBytes": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyBytes.lean",
+      "sha256": "c5027e3c5f96d7c0c63a04a85df93de13a53cb8992e3faad9da2fe2db6b01b4f"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyBytes.olean",
+      "sha256": "0cacc5171c42007c2bbbb15e41279a73672bc3b46fa43d030c2d6c06eafbca92"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyBounds": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyBounds.lean",
+      "sha256": "92248903a1cbe08aff8edb84c78a489f5ac93ab738e980ea01e8ee7624d8a1f9"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyBounds.olean",
+      "sha256": "f4a5af26ef1709eb52b3abaa61606b69e1651dfdc6be390285a2297e2e297f66"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyStorage": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyStorage.lean",
+      "sha256": "e0e39f163e2cc3c6ab7afe84e1f98075336090b18443c22376472b25032ca0c8"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyStorage.olean",
+      "sha256": "44b9015890df52e3edafc391c3fac205e5480fe8b736ebe0c7fee462f88eb028"
+    }
+  },
+  "SemiprimeD1StackSourceKeyFrequencyOriginal": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyOriginal.lean",
+      "sha256": "ed0452d2778e28a5bacbb45f3542480bdb908229c35002387b8e87463be648ad"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSourceKeyFrequencyOriginal.olean",
+      "sha256": "0d6c0cfc0eb626527a2c92a90d85c6cde68aff9966ed98d16d1a4ee239cfde47"
+    }
+  }
+}

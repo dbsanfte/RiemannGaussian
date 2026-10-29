@@ -544,3 +544,10 @@ those measurements establish a net benefit.
 The recommended first implementation batch is 4, 5, 7, and 9. Measure context
 cache locality for 6, then evaluate 8's reconstruction cost on top of the ring.
 Treat 10 and 11 as trace-driven research experiments.
+
+The [softmax exact-result follow-up](qwen-softmax-exact-result-proposal.md)
+adds proposals 12 and 13: reuse repeated exponential arguments while
+preserving the original reduction, and certify rounded outputs through
+adaptive interval bounds. It includes retained Lean proofs and synthetic
+experiments, with mathematical rounding and existing-kernel equality kept
+as separate contracts.

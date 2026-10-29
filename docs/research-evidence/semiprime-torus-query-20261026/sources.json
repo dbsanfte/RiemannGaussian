@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-26",
+  "public_sources": [
+    {
+      "title": "Finite Pad\u00e9 and orthogonality",
+      "authors": "Allen, Chui, Madych, Narcowich, Smith",
+      "url": "https://doi.org/10.1017/S0004972700040879",
+      "date": "1974",
+      "scope": "Context for formal orthogonality; the finite error identity is derived directly. Positivity is not imported."
+    },
+    {
+      "title": "Skein Modules and the Noncommutative Torus",
+      "authors": "Frohman, Gelca",
+      "url": "https://arxiv.org/abs/math/9806107",
+      "date": "1998",
+      "scope": "Context for torus skein product-to-sum; only elementary classical commuting SL2 trace identities are used."
+    },
+    {
+      "title": "A Determinantal Formula for Supersymmetric Schur Polynomials",
+      "authors": "Moens, Van der Jeugt",
+      "url": "https://www-igm.univ-mlv.fr/~fpsac/FPSAC02/ARTICLES/Moens.pdf",
+      "date": "2002 / journal 2003",
+      "scope": "Rectangular Berele-Regev factorization and polynomial Jacobi-Trudi form. No divided alternant is inverted at a hit."
+    },
+    {
+      "title": "Algebraic/combinatorial proofs of Cayley-type identities for derivatives of determinants and pfaffians",
+      "authors": "Caracciolo, Sokal, Sportiello",
+      "url": "https://arxiv.org/abs/1105.6270v2",
+      "date": "2012 revision",
+      "scope": "Appendix A.5 Gaussian determinant identity; native finite product is derived without factorial divisions."
+    },
+    {
+      "title": "On the Ihara expression for the generalized weighted zeta function",
+      "authors": "Ishikawa, Morita",
+      "url": "https://arxiv.org/html/2210.13262",
+      "date": "2023 v3",
+      "scope": "Weighted edge-to-vertex determinant reduction. The needed cleared finite identity is also proved directly; no analytic cycle product or Q-algebra theorem is blindly specialized."
+    },
+    {
+      "title": "Free Fermionic Schur Functions",
+      "authors": "Naprienko",
+      "url": "https://arxiv.org/abs/2301.12110v3",
+      "date": "2023",
+      "scope": "Supersymmetric/free-fermionic Cauchy and Yang-Baxter context. The finite dual-Cauchy polynomial identity is used, not a free transfer contraction."
+    },
+    {
+      "title": "Fast in-place accumulation",
+      "authors": "Dumas, Grenet",
+      "url": "https://arxiv.org/abs/2302.13600v7",
+      "date": "2025 revision / JSC 2026",
+      "scope": "Fast accumulation and modular remainder contracts require an acquired numerator. Does not generate the implicit geometric factorial."
+    },
+    {
+      "title": "Fast Computation of the N-th Term of a q-Holonomic Sequence and Applications",
+      "authors": "Bostan, Yurkevich",
+      "url": "https://arxiv.org/abs/2012.08656",
+      "date": "2020 preprint / JSC 2022",
+      "scope": "Existing q-factorial baby/giant context; no new degree-independent full-family bound inferred."
+    }
+  ],
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/README.md",
+      "sha256": "c9162067ce905b1da19504b1bda10b753c5ee794cd1e4e70e0a37b3df1429d65"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/partial-order-supplier.md",
+      "sha256": "3f4af9ad6b28a215473fca9964d51cfa32cd41bb0ace1145a4ba576f162b94ff"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/polar-reciprocity.md",
+      "sha256": "f6e6e03cbbcd0efd33524ffdc0fc12a942b89a20cb2f4ff7c233560897847a89"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/even-recurrence.md",
+      "sha256": "484a72a77e99582b5fb6e68f4f4de331300c9e5d83c9511ebd58e2fd9be44f10"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/pure-weighted-common-tag.md",
+      "sha256": "71c13ae4cf1d6cbb6d661bbbc6a3d3c2465d9f5618aa7e4e20fd7ddbef84b9d3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-detector-acquisition-20261023/reports/norm-detector.md",
+      "sha256": "76eb4616864bd506d78e1c9bbf877e62877b3f47b79b4d2e6ee243a45e664131"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-zero-query-20261024/diagonal-product.md",
+      "sha256": "dc386bc0f06035786cf964ecff43c7145b43d2ac54191c52adbf8ffb533f68a7"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    },
+    {
+      "path": "scripts/probe_semiprime_sparse_residue_gauss.py",
+      "sha256": "537891607c283a9254d4e5711de9784b60ce17ae8705275e6be77864d33c02f3"
+    }
+  ],
+  "scope": "Literature context and exact finite derivations. Not all listed formulae are new. No external theorem supplies the missing soft-K acquisition."
+}

@@ -1,0 +1,30 @@
+PASS — independent read-only owner review of RecoveryWeights60 assigned 12 sources, ALL 854 lines and complete theorem/proof bodies read.
+No imports, compilation, canonical writes, edits or controls were performed. Assignment SHA = before SHA = after/current SHA for all twelve sources below.
+
+Scope checked:
+* Included.called_fragment executes the literal included helper fragment, its final real ret, and outer actual call; arbitrary foreign tapes/actual outer returns are preserved by DataRel rather than omitted.
+* Primitives proves real restoring copies, frame calls, pushes/pops/peeks and byte/EOF drains on this fixed source. Time includes actual call/ret and restores; helpers are proof composition, not runtime operands.
+* View gives all 58 reused helper roles plus two acquired scalar inputs. Six-input original store is explicit: inverse/powers tapes, signed scalar, scalar denominator, unary q, width. Words/getReg/list arguments are erased proof views, not machine inputs.
+* Calls includes actual zero-extended array scans, actual TRUE-valid pop, four physical operation-input copies before aliased writes, full normalized operation and private drains. Both scalar inputs and retained power tape are foreign to included helper traces.
+* Inventory deliberately excludes immutable power input from old inverse cleanup: exact 53-role coverage/disjointness is proved; every remaining private/shadow role included. No dropped unused allocation.
+* Cleanup runs each literal pop-until-EOF sweep on this program, preserving powers, inverse, q, width, output and original two scalar words. Pair six/register eight/final 53 drains are real executions and bounded by physical mass; old cleared-store identities specify data only, no native-clock transport.
+* Indices/Subtract/CounterInput acquire q-j and both coefficient indexes by real copies, paired unary pops and predecessor pops. No decoded q-j/index count is a runtime operand. EOF/zero index branches and positive original q decomposition are explicit; both retained original markers survive.
+* Seed physically pushes unfitted rational ZERO, including W=0. Setup physically emits output false sentinel and copies q. FinishView proves the complete endpoint and private emptiness including both scalar fields and retained powers.
+
+No blocker found within assigned scope. Whole semantic/quantitative wrappers and upstream acquisition are assigned elsewhere; this review does not assert an N-only recovery or full factoring runtime.
+
+Current source pins (all assignment=before=after):
+ff19d45d73455d8771830d6679b851f8806561c398916620a054b279310bced0  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsIncluded.lean
+657d0525f46b773d40605ce5619dbaf08b59d9822e574401d05c1d24d891d348  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsPrimitives.lean
+297521d7205a3ca6b0f509300f287aec1a7466bcfe8e05f8db5dd4740a805a85  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsView.lean
+03ae0c1875231327c1ed1061f9f9e47415e0cb516b580684fae6ac9df5ff93e6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsCalls.lean
+8fd1e1754be415bac2e78d66e1f98d15d175f7468aaedcf7ef4c685164b8e181  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsInventory.lean
+1ed26e506c5447b1d3fbbacf29178c580b9d6cd3dd8e6ed9274876d556e2948f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsCleanup.lean
+f54bba7728e3b315cf65a5cf84e84dcae843d6b156f06a416da626f6680cf427  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsIndices.lean
+cfb02ff3d1e44601d31a47102f604d64902967c40f4e5d01ea4bb5bd202662c6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsSubtract.lean
+fdcc819276af01de141409b509417b06931c4b9c2b33537d70f8a8f6746ad50d  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsCounterInput.lean
+0ede4bca204a67b68e0d9e91100ad46b4c1ad9f7b9f7ea4d437d04275ee8e1ea  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsSeed.lean
+f3694f77465ff06bd11100b3d15979dd1c654ea6c73e4331c5ec50cae9a6b6a6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsSetup.lean
+359efc64ff873a93a20b4ffa664b899991eec9c8293a2384979a8936e9005187  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWeightsFinishView.lean
+
+Checked UTC 2026-10-29T05:26:31.888054+00:00

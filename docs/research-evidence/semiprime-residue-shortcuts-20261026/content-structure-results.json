@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": {
+    "cylinder_rows": 324,
+    "cylinder_iff_checks": 1134,
+    "phase_rows": 42,
+    "phase_root_lifts": 1266,
+    "periodicity_checks": 1266
+  },
+  "scope": "small public arithmetic identities only; no coverage/factoring campaign"
+}

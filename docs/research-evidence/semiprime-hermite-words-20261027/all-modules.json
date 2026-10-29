@@ -1,0 +1,21 @@
+[
+  "SemiprimeAffineJetBits",
+  "SemiprimeNormalizedInverseBits",
+  "SemiprimeNormalizedInverseBitsBounds",
+  "SemiprimeHermiteEvaluationBits",
+  "SemiprimeHermiteEvaluationBitsBounds",
+  "SemiprimeCardinalInputBits",
+  "SemiprimeScalarWordSum",
+  "SemiprimeHermiteWordWidth",
+  "SemiprimeHermiteNodeBits",
+  "SemiprimeHermiteNodeBitsCorrectness",
+  "SemiprimeHermiteNodeBitsBounds",
+  "SemiprimeAcquiredHermiteBits",
+  "SemiprimeWordPacketHermiteInput",
+  "SemiprimeHermiteBitsCounter",
+  "SemiprimeHermiteBitsCounterBudget",
+  "SemiprimeHermiteBitsSetupCounter",
+  "SemiprimeHermiteBitsSetupBudget",
+  "SemiprimeHermiteBitsPublicController",
+  "SemiprimeHermiteBitsScheduledController"
+]

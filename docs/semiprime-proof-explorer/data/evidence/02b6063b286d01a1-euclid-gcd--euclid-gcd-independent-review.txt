@@ -1,0 +1,20 @@
+PASS: independent read-only review of EuclidGCD18 source and resources.
+UTC: 2026-10-28T22:18:53.442026+00:00
+
+Reviewed Core, Spec, Calls, Setup, Loop, Execution, Bounds and Storage. No source edits, canonical/scratch builds or repeated controls were performed.
+The source accepts ONLY two original binary words, including arbitrary high-zero padding. All18 physical roles (Divider11+Aux7), fixed labels and real return alphabets are allocated. Fuel, natural values, quotient/remainder/GCD answers and operation clocks are not input operands or control values.
+Setup physically copies and scans both original words, pushes two true fuel markers per actual byte plus one seed, copies both actual operands, then reverses/trims the divisor. Numeric zero is tested by actual EOF only after trim. The original two binary words remain retained.
+The positive branch physically backs up Y, executes the entire real Divider11, erases quotient, copies saved Y into X, drains backup, and reverses/trims the actual remainder into Y. The terminal branch actually normalizes X, drains remaining fuel and halts. Spec and Loop explicitly exclude insufficient-fuel execution through answer_stopped; no claimed result is supplied on the real abort branch.
+Legacy correspondence is used ONLY for termination/value, with sufficient fuel derived from actual original byte lengths. The output byte ABI is exactly compact normalization of legacy gcdBits, not equality to arbitrarily padded legacy output. It represents Nat.gcd even for00 and padded zeros.
+Loop proves actual word widths do not grow and bounds real division/copy/drain/trim step times. Bounds composes actual setup+loop+halt clocks to its OWN10^8*(originalByteLengths+1)^4 cap. Storage pays all18 tapes and real returns at every genuine compiled prefix by10^10*the same quartic. No native report clock is transported.
+This is a prepared two-original-word arithmetic primitive for subsequent canonical rational-weight acquisition. It does not supply an original-N canonical-row or full factorization theorem.
+
+Current eight-source SHA256 pins (must be rechecked by finalizer):
+2a6413738186c338a11282a98f3d7eb867789bffda0432b7f79ef696cae4f302  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackEuclidGCD.lean
+1b38a8d79c3543635ba1d8fc4dfbf2ae5765e2f6b7570a009ffc1f9f21fa04a7  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackEuclidGCDSpec.lean
+bfe56407fd96b6285d9f3a27c8eea78c66e545959890aaae1965836990a47886  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackEuclidGCDCalls.lean
+3016385e3baaade0730e0fe1f5e9593d70afa81c5b957513ee456127b249196c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackEuclidGCDSetup.lean
+91405d6e3558fb944fd8c0b7f35bcf2693a514b3322734c84aafa1a33c7af8f8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackEuclidGCDLoop.lean
+06e6c1640791b6c41c28138b6f41f7e28a861ae0cd2f82f2583d902fd44377ce  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackEuclidGCDExecution.lean
+965179126b5d331f111a14b1c53850192d4e048ee51aa916b6fb7fe253fccb83  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackEuclidGCDBounds.lean
+36b0bd48f03b0da6ede32369d3cc32a1c621ac1a590d7cff4bf7a3d5dfa2f745  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackEuclidGCDStorage.lean

@@ -1,0 +1,14 @@
+{
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeScheduledCounter.lean",
+  "sha256": "77370e194174b1e030d63f3d5c51de1668ef53940bb376550c35b00284550841",
+  "bytes": 17212,
+  "strict_compile": "PASS",
+  "root15_lint": "PASS",
+  "all_declarations": 44,
+  "theorem_constants": 39,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8427,
+      "sha256": "ab575b0ef9731bdb097915575a1bd6c08d9a83aa053914360d86a9c81de79a99"
+    },
+    {
+      "path": "direct-residue.md",
+      "bytes": 9271,
+      "sha256": "17ed7c648778cbb1d78e1ec0cada5b39f36b85d9426e88397d48a3bed6e63885"
+    },
+    {
+      "path": "hierarchical-contraction.md",
+      "bytes": 10474,
+      "sha256": "eaecc3129707f658426dc43ed319cbd73b5391eb7ec93070de48ed54b3156be1"
+    },
+    {
+      "path": "pure-weighted-common-tag.md",
+      "bytes": 11716,
+      "sha256": "71c13ae4cf1d6cbb6d661bbbc6a3d3c2465d9f5618aa7e4e20fd7ddbef84b9d3"
+    },
+    {
+      "path": "quadratic-lifts.md",
+      "bytes": 14275,
+      "sha256": "87891fa454bbc7f03b5d363931c93649ed6ac197199fb8bd643eff2544b946c2"
+    },
+    {
+      "path": "review-hierarchy.md",
+      "bytes": 4323,
+      "sha256": "2280882bfb0498e4467c282a71058765f90fdd7eeb5c410b56472eaba55d3357"
+    },
+    {
+      "path": "review-pure-weighted.md",
+      "bytes": 7437,
+      "sha256": "0e074802ba8c851163125cfb90a49622e36dfc0f19048e8a10d5cf0a8ff22a83"
+    },
+    {
+      "path": "review-quadratic.md",
+      "bytes": 7506,
+      "sha256": "c38db380664886ff3736c69073a198cacdc115a37dc8da0047c84954b4f38ccd"
+    },
+    {
+      "path": "review-residue.md",
+      "bytes": 5586,
+      "sha256": "997115304c9ed3cf7ea1dfae27211c143b6dc4340fdb6a6fc3cfea9aa7b7ee98"
+    },
+    {
+      "path": "review-trace.md",
+      "bytes": 5081,
+      "sha256": "c6c473b3cad3821037c4a132e710b74a3ab6545e9528fa563e7a9d8d5f261cf1"
+    },
+    {
+      "path": "review.json",
+      "bytes": 3249,
+      "sha256": "be98e9d346a1874f3a27f32941223840c276351381e7fd3c9ed53f5e7de5fa7b"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 5170,
+      "sha256": "b2d667287d0a9b57963c0be911a0f75d9fbb886a5516b71e4d849f11b5b3149a"
+    },
+    {
+      "path": "structured-trace.md",
+      "bytes": 11778,
+      "sha256": "9cfabc665ddd01423bdb818af092d45353beb5c188aa8413b481ee1b4ff9a18e"
+    }
+  ],
+  "manifest_excludes_itself": true
+}

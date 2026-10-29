@@ -1,0 +1,123 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "modules": [
+    "SemiprimeD1StackSourceIncidenceSpec",
+    "SemiprimeD1StackSourceIncidence",
+    "SemiprimeD1StackSourceIncidencePrimitives",
+    "SemiprimeD1StackSourceIncidenceView",
+    "SemiprimeD1StackSourceIncidenceCalls",
+    "SemiprimeD1StackSourceIncidenceLookup",
+    "SemiprimeD1StackSourceIncidenceEdgeFinish",
+    "SemiprimeD1StackSourceIncidenceEdges",
+    "SemiprimeD1StackSourceIncidenceEncoding",
+    "SemiprimeD1StackSourceIncidenceLoopView",
+    "SemiprimeD1StackSourceIncidenceTermControl",
+    "SemiprimeD1StackSourceIncidenceTerm",
+    "SemiprimeD1StackSourceIncidenceAddition",
+    "SemiprimeD1StackSourceIncidenceParse",
+    "SemiprimeD1StackSourceIncidenceInner",
+    "SemiprimeD1StackSourceIncidenceOuter",
+    "SemiprimeD1StackSourceIncidenceSetup",
+    "SemiprimeD1StackSourceIncidenceFinish",
+    "SemiprimeD1StackSourceIncidenceExecution",
+    "SemiprimeD1StackSourceIncidenceBytes",
+    "SemiprimeD1StackSourceIncidenceInnerBound",
+    "SemiprimeD1StackSourceIncidenceOuterBound",
+    "SemiprimeD1StackSourceIncidenceBounds",
+    "SemiprimeD1StackSourceIncidenceStorage",
+    "SemiprimeD1StackSourceIncidenceOriginal"
+  ],
+  "source_and_canonical_writers": "STOPPED; ALL25 source/canonical objects immutable",
+  "physical_roles": 47,
+  "environment_roles": 25,
+  "private_roles": 22,
+  "private_roles_empty_at_halt": 17,
+  "initial_operands": "actual acquired prefix-cache25 bank (canonicallookupReady, arbitrarychosen/query/prefix retained); actual occurrence pair tape; actual BINARY square/cube/fourth words; remaining17privatework wordsEMPTY",
+  "scope": "Prepared physical incidence-only query, notN-onlyselector/packet frontdoor; actualEnv25/Occurrences21/Alphabet30 lineage provided by concretecaller",
+  "fixed_program": true,
+  "runtime_control": "fixedfiniteLabels/actualBoolreads/statuses/callreturns only; noN/row/count/graph/evaluator/decodedID/free-mask/score/clock supplier",
+  "public_import": "RiemannGaussian.SemiprimeD1StackSourceIncidenceOriginal",
+  "entry": "Label.start",
+  "stack_API": "Stack=Env.Stack\u2295Aux22; environmentStack/aux; source=aux.source; output=aux.total; square/cube/fourth=aux.*",
+  "input_API": "Encoding.Inputs(ids,chosen,query,pfx,rows,square,cube,fourth) isproof-only; source i=Core.initial(environment i)(OwnerLookup.records rows[])square cube fourth",
+  "exact_output": "Spec.total i.ids i.square i.cube i.fourth i.rows; orderednestedfoldl ofactualaddBits, allM\u00b2 pairs incldiagonals/repeatedoccurrences",
+  "semantics": "Spec.term_formula/Original.classified_value atALL valid originalprefix ranges; Agent1SelectMeaning separatelybinds numericIDoriginalword semantics toD1IncidenceSearch.query/run",
+  "physical_pipeline": [
+    "paid originalquery save/drain",
+    "paid outertape copyonce",
+    "actualtwoFieldowner/factor parser+validitypops",
+    "paidcompleteinnercopy EVERYouterrecord",
+    "preservingactualWordEqual endpointkeys; loopstable",
+    "actualEnv.lookup physicallycomputedfound, fixedzerodistinctfromfree",
+    "actualfixedIDspreservedinequality.left/right, secondlookup, actualWordEqual IDs",
+    "physicalBoolstatuspushesandpops; realCopy selectedL\u00b2/L\u00b3/L\u2074 orliteralemptyzero",
+    "paidtotalcopy+oldtotaldrain+realrippleAdder+innerkeydrains",
+    "realinner/outerEOFchecksandouterkeydrains",
+    "paid originalquery restore+savedquerydrain+realhalt"
+  ],
+  "cache_contract": "ALL25Envwords EXACTLY restored incldictionary/nextKey/chosen/query/prefix; found/output/lookupwork physicallycleared betweenqueries",
+  "clock": {
+    "own_whole": "1000000000*S^6",
+    "S": "Encoding.inputSize = occurrenceTapeBytes + Env.cacheSize(dict,key,chosen,query,prefix,+1) + squareBytes+cubeBytes+fourthBytes",
+    "API": "Execution.source_run/queryInTime ownrunBound; Bounds.runBound_le/source_run_bounded/machineQuery",
+    "old_native_clock_transport": false,
+    "old_near_linear_query_claim": false
+  },
+  "storage": {
+    "all47_and_realreturns_everycompiledprefix": "1000000000000*S^6",
+    "API": "Storage.machine_prefix_cells",
+    "includes": "all25cachecells, bothreaderpositions, unusedequalityscratch, savedquery/IDs, growingbinarytotal, allactualreturncells"
+  },
+  "strict": {
+    "modules": 25,
+    "terminal_exit_code": 0,
+    "autoImplicit": false,
+    "warningAsError": true,
+    "heartbeats": 200000,
+    "heartbeat_overrides": false,
+    "results": "source-incidence-strict-results.json"
+  },
+  "ordinary_import_audit": {
+    "import": "RiemannGaussian+all25ownedquerymodules; excludesAgent1Select*",
+    "Elab.async": false,
+    "heartbeats": 200000,
+    "linters_each": 15,
+    "generated_constants_every": 961,
+    "theorems": 549,
+    "standard3_axioms_only": true,
+    "terminal_exit_code": 0,
+    "log": "source-incidence-final-audit.log"
+  },
+  "independent_objects": {
+    "count": 25,
+    "all_byte_equal": true,
+    "terminal_exit_code": 0,
+    "results": "source-incidence-independent-results.json"
+  },
+  "live_import_preservation": {
+    "pairs": 17716,
+    "files": 35432,
+    "changed": [],
+    "missing": [],
+    "bracketed_audit_exit_code": 0,
+    "independent_objects": 25
+  },
+  "preservation": "source-incidence-preservation.json;17054baseline,2historicalprefixes,Alphabet19+Root34523+Root18818 unchanged",
+  "controls": {
+    "whole_prepared_cases": 12,
+    "actual_machine_transitions": 31317,
+    "all47": true,
+    "all25Env_exactretained": true,
+    "flags": true,
+    "two_real_outer_returns": true,
+    "snapshot_kernel_identity": true,
+    "observer_generated_std3": 56,
+    "results": "source-incidence-controls-result.json"
+  },
+  "source_object_pins": "source-incidence-final-source-object-pins.json",
+  "remaining_open": [
+    "fullpreparedselector63 actualcontroller/meaningcomposition (Agent1)",
+    "actualN-onlyselector acquisitionjoin",
+    "packingreplay/packetconstruction/fullfactoringpipeline"
+  ]
+}

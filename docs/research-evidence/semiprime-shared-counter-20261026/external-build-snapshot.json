@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-10-26 23:07:52 UTC",
+  "status": "running",
+  "completed": 844,
+  "total": 2569,
+  "failed": {},
+  "active_modules": [
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.CostAssemblyGuards",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafProgramNodeSemanticsCount",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafProgramStored",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.PerturbationProgram",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.CostAssemblyCodeParameters"
+  ],
+  "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "live_exec_session_id": 85099,
+  "state_path": "/tmp/semiprime-d1-audit-20261026/lean-build-state.json",
+  "rule": "Re-poll the existing live session; observation timeout is not terminal.",
+  "whole_endpoint_verified": false,
+  "comparator_run": false
+}

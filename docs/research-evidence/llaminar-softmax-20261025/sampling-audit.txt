@@ -1,0 +1,335 @@
+LLAMINAR QwenFlashNext vocabulary / sampling / routed MoE audit
+Date: 2026-10-25
+Checkout: /tmp/llaminar-qwen-flash-next-audit-20261025
+Pin verified: f609b409b599ebdfbc48d60e6a77a782127ab3cd
+Scope: source audit only. No checkout/formal-repo edits, model trace, compiler/ISA,
+GPU benchmark, test, or executable equivalence proof. git status --short clean.
+Read root AGENTS.md; no nested src AGENTS.md found. Source line numbers below
+are relative to pinned checkout. Formal proposal was read as comparison input.
+
+Principal findings
+------------------
+1. The SGLang BF16-origin vocabulary alphabet assumption DOES NOT TRANSFER.
+   LLAMINAR persistent logits are FP32 outputs from FP32 accumulation. Native
+   BF16 weights are expanded/multiplied into FP32 sums, not a BF16 output that
+   is subsequently widened. Quantized weights also produce FP32 logits.
+   Actual post-transform argument duplication must be measured; source proves
+   no small-alphabet bound. Casting those logits to BF16 changes the contract.
+2. Production ordinary stochastic sampling and stochastic MTP target sampling
+   already select top K raw adjusted logits first, then evaluate only K<=256
+   exponentials. V=248320 does NOT imply V exp calls for ordinary sampling.
+   Greedy ordinary sampling and actual production MTP draft sampling have zero
+   vocabulary-softmax exp calls. Actual MTP drafts are greedy, q is one-hot.
+3. Routed MoE is different: production CUDA/ROCm computes all E=512 exp calls,
+   full FP32 softmax, then selected K=10 renormalization. The SGLang baseline
+   'only 10 exp already' is false here. Raw-top10-only softmax is real-algebra
+   equivalent when weights normalize, but is not bitwise equivalent to this
+   two-stage floating computation and can change rounded top-k ties.
+4. Strongest strictly bit-preserving small hook: SamplingMath sorted-K helper
+   can reuse the evaluator for adjacent equal ACTUAL shifted FP32 argument
+   bits while retaining every ordered add and the same normalization stages.
+   Cost is a previous-argument comparison/cache rather than global grouping;
+   upside is bounded by K, duplicates unknown, may not pay. Larger MoE 512->10
+   savings need a new arithmetic contract or a certificate of the existing
+   rounded result, not just real cancellation.
+
+Geometry / model wiring
+------------------------
+models/qwen4exp/Qwen4ExpConfig.cpp:163-164 declares/admissibly checks 512
+experts and 10 selected; :219 V=248320. GraphConfigBuilder.cpp:86-92 installs
+those counts, shared expert, norm_topk_prob=true. Thus every active routed-MoE
+row per routed layer pays 512 exponentials today (plus separate sigmoid-like
+shared expert gate arithmetic, outside this softmax count).
+Qwen4ExpSchema.h:20,33 reuses Qwen35MoE schema; Qwen35MoESchema.h:92 reuses
+Qwen35 schema storage. Qwen35Schema.h:382-383 has FP32 MTP logits/gathered
+logits, :389-390 has FP32 ordinary logits/local logits. Additional QFN arena
+metadata accepts fp32/float32/int32 scalar contracts only
+(Qwen4ExpBufferLayout.cpp:159-161).
+
+Actual LM-head output precision
+-------------------------------
+execution/compute_stages/stages/LMHeadStage.cpp:161-174 calls prepared GEMM
+with the FP32 graph output tensor. No post-head BF16 narrowing then widening.
+Its grouped decode-equivalent verifier method explicitly rejects non-FP32
+hidden/logits (:204-212).
+kernels/cuda/gemm/CUDAFloatingPointGemmKernel.cpp:346-359 requires FP32 input
+and output. :464-469 explicitly states BF16/FP16 persistent weights pair with
+FP32 hidden rows and FP32 projection outputs. :518-533 dispatches native16
+weights to fixed FP32x16 projection; WeightDtype determines expansion, not
+output format. kernels/cuda/gemm/CUDATinyFP32ProjectionKernels.cu:279-333
+forms float partial sums/reduction and stores float result directly; :181-203
+is another fixed FP32 tree with direct FP32 store. CuBLASGemmKernel.cu:342-343,
+382 also has FP32 output/compute descriptors.
+kernels/rocm/gemm/ROCmFloatingPointGemmKernel.cpp:357-370 similarly enforces
+FP32 I/O; :477-480 explicitly states FP32 projections for native16 weights;
+:502-504 dispatches fixed FP32x16. CUDAQuantisedGemmKernel.cpp:136-243 declares
+NativeVNNI GEMV/prefill outputs float*, so quantized weights do not establish a
+BF16-origin output alphabet either. This is an output-storage/accumulation
+claim, not an accuracy claim about the quantized operands.
+
+Prefill / decode / grouped row economics
+---------------------------------------
+LMHeadStage.cpp:128-145 computes only last requested activation row during
+ordinary prefill; writes row zero logits. Ordinary decode has one row. Do not
+multiply vocabulary sampling work by prompt length in the default path.
+QwenGraphBase.cpp:194-248 resolves compact row-indexed heads, all-position
+verifier heads, and one-row terminal scratch. :259-267 enables grouped
+serial-decode-equivalent head arithmetic for multiple verifier rows. Request
+batch prefill selects terminal rows as needed, not every padded row.
+LMHeadStage.cpp:147-174 uses the grouped decode-equivalent route when required;
+:215-225 calls multiply_fused_verifier_rows_decode_equivalent with device row
+range. No production serial row replay is implied. MTP target builder does
+K exps per active verifier/bonus row, not per capacity row.
+QFN predictor builder appendVocabulary at
+execution/compute_stages/stages/qwen4exp/Qwen4ExpPredictorBuilder.cpp:120-140
+uses the same LMHeadStage, compute_all_positions=true and grouped equivalent
+projection for physicalRows()>1. This predictor head is also FP32.
+
+Production ordinary sampling
+-----------------------------
+execution/compute_stages/stages/OrdinaryGenerationSamplingStage.cpp:69-94:
+apply durable penalties once -> BuildTopKTopPDistribution -> SampleDistribution
+with per-request seed/device logical position -> publish ordinary result.
+:95-109 greedy path uses argmax, fused history-aware reduction when penalties
+are present. No exp or softmax is needed there.
+utils/Sampler.h:126-128 is_greedy means temperature==0 or top_k==1 && top_p>=1.
+Sampling policy admission bounds stochastic K<=sampling_math::kMaxTopK=256
+(OrdinaryGenerationSamplingStage.cpp:45-48; SamplingMath.h:77).
+CUDA/ROCm top-k selection works directly on FP32 logits, descending by value,
+lower token id for ties. Partial and final merges do not evaluate exp.
+CUDA kernels CUDASamplingKernels.cu:923,1232,1417,1860 call canonical
+SamplingMath build_topk_topp_distribution_from_sorted. Wide K=65..256 uses
+common/SamplingWideTopKDevice.inl:23-24,50-57,143-208: bounded 16 lane lists,
+up to 32 partitions, common final sorted merge then identical helper in lane0.
+CUDA width32/ROCm width64 affects merge mechanics, not canonical math order.
+
+Canonical top-k/top-p exact arithmetic
+-------------------------------------
+kernels/common/SamplingMath.h:2270-2330:
+  temp = temperature>0 ? temperature : 1
+  max = sorted_logits[0]
+  for i=0..K-1, valid token: w[i]=expf((logit[i]-max)/temp); total += w[i]
+  nucleus prefix chosen by repeated cumulative += w[i]/total; stop >= top_p
+  (only when 0<top_p<1 and total>0)
+  recompute nucleus_total = sequential sum w[0..nucleus-1]
+  write valid prefix probabilities w[i]/nucleus_total, inactive ids=-1, probs=0.
+Thus K valid entries -> K exp calls, K sequential accumulation steps, up to
+K divisions/adds for cutoff, nucleus-length accumulation, nucleus divisions.
+The helper does NOT multiply each weight by one common reciprocal in source.
+Changing cutoff to cumulative_raw >= top_p*total changes operation order.
+Changing first normalization to an algebraic fused formula changes rounding.
+Changing sum order, K-wide parallelization, or dropping tiny weights can change
+cutoff, stored probabilities, MTP acceptance, and seeded output.
+The direct sampler helper at :2332-2392 similarly computes K weights and
+cutoff but thresholds against raw nucleus_total; it is not automatically bit
+identical to build-compact-table then re-sum stored probabilities.
+Sampling compact distributions at :2228-2268 re-sums positive stored probs,
+uses clamp(threshold)*total and an ordered positive-probability scan with <=.
+Skipping this re-sum because probabilities 'sum to one' changes semantics.
+
+MTP actual production vs available primitives
+---------------------------------------------
+DeviceGraphOrchestrator.cpp:57699-57774 sampleStochasticDraftProposalOnDeviceImpl
+explicitly ignores sampling params and threshold and publishes captured greedy
+proposal. Comment identifies q=one-hot. No proposal softmax or full q matrix is
+built. MTPDraftTokenPublicationStage owns the captured argmax path.
+execution/compute_stages/stages/MTPStochasticTargetDistributionStage.cpp:85-138
+applies verifier-row penalties then builds compact top-k/top-p rows, with
+active_rows_device. K exp calls per live row, including needed bonus rows.
+MTPStochasticOutcomeStage.cpp:125-214 consumes compact tables for both
+SerialEquivalent and OneHotProbabilityRejection. Serial mode samples target
+rows keyed by logical positions and compares against verifier input draft
+ids; rejection mode uses target p(draft), q=1, recovered residual probabilities.
+No additional exp needed by compact probability rejection. Recovery draws
+may call logf for inverse exponential noise; that is RNG transform work, not
+another softmax exp.
+
+Available backend primitives that are NOT current full-temperature production
+call sites (rg src finds definitions/declarations only; tests invoke them):
+  enqueueSoftmaxAndSampleTemperatureLogitsF32Device
+  enqueueScaleAndSampleTemperatureLogitsF32Device
+  enqueueSoftmaxProcessedLogitsF32Device
+CUDA CUDASamplingKernels.cu:2426-2548 temperature-softmax primitive computes
+V exp in strided denominator pass + V exp in contiguous output-probability
+pass, then samples stored probabilities. :2558-2680 low-memory scaled-logit
+primitive computes 2V + one initial selected exp + scanned chosen-chunk exp
+(repeated chunk visits possible at rounding boundary). For V=248320 and 256
+threads, chunk=970; ordinary exact scan traverses at most one selected chunk,
+but boundary fallthrough can scan later chunks. It persists scaled logits
+rather than full probabilities. Processed-row stats :2320-2405 evaluates A
+active exp, standalone output softmax :3191-3235 evaluates another A.
+Corresponding ROCm functions :2176,2308,2855,2897,2929 have the same phases.
+These are useful baseline experiments only, not evidence of current QFN hot
+production 2V exp work. Processed-logit building also exists in orchestrator
+:56573 and writes selected logits after K-exp cutoff; captured production
+outcome admission :34630-34707 requires compact target rows.
+
+Routed MoE actual semantics / obstacles
+---------------------------------------
+CUDA kernels/cuda/moe/CUDAMoEKernels.cu:
+  prefill/grouped softmax_topk_kernel :14145; :14230-14247 raw-logit selection;
+  :14250-14291 all E exponentials, fixed256-thread strided local sums, binary
+  block sum tree, divide every exponential by full denominator, overwrite
+  logits with full probabilities; :14294-14313 sequential selected sum then
+  selected probability / selected sum when normalize_weights.
+  decode runtime :14344 and unique-owner runtime :14520 compute full softmax
+  FIRST then top-k over rounded probabilities (:14404-14426 and14558-14586).
+  Thus raw-logit top-k and rounded-probability top-k can differ on near ties;
+  lower expert id tie rule applies at the actual comparison values.
+ROCm kernels/rocm/moe/ROCmMoEKernels.hip:
+  wave64 decode :14867, full E exp at14940; wave/shared FP32 sum, inv_sum=1/Z,
+  E multiplies into full probability rows, select rounded probabilities, then
+  sequential selected sum -> inv_topk_sum=1/S -> K selected multiplies.
+  grouped decode-equivalent rows :15144-15310 mirrors that wave arithmetic.
+  unique-owner :15015 also full E exp. Other decode and K-part paths remain
+  full softmax too (:14698,:15329).
+CUDA does per-value divisions whereas ROCm performs reciprocal/multiplications;
+backend math references must therefore be named separately. For E=512,K=10,
+full-all-experts softmax uses 512 exp per row rather than 10 on both backends.
+The final normalized selected weights mathematically cancel the full Z, but
+round(exp_i/Z), round(sum selected rounded probabilities), and final
+round(divide or reciprocal-multiply) retain its influence. Full logits output
+is also overwritten with probabilities: consumer/snapshot observability must
+be checked before eliminating that side effect.
+
+RNG and bitwise contract
+------------------------
+SamplingMath.h:2126-2178 splitmix64/uniform01 takes top24 random bits, scales
+by2^-24. Draw is keyed by logical position and purpose, eight purposes per
+position. Clamp max threshold=0.99999994. No stateful CUDA/ROCm RNG substitute
+is semantics-preserving. Serial-equivalent MTP can differ if a single compact
+probability bit moves a threshold across a prefix. Rejection acceptance uses
+stored p/q and exact <= or < branch of the named helper; don't interchange.
+:2188-2194 inverse exponential uses clamped uniform, -logf, floor1e-20, inverse.
+:2625-2680 one-hot recovered draw derives seed^domain then position*V+token,
+maximizes residual_probability*inverse_noise with lower-token tie break.
+Penalties use shared explicit RN multiply/divide/subtract (:35-52), so grouping
+must use post-penalty/post-temperature actual exp arguments, not original
+weights/logits. Equal tokens can split under history penalties.
+
+Build/precision concern: src/v2/CMakeLists.txt:284-289 globally adds CUDA
+--use_fast_math --ftz=true --prec-div=false --prec-sqrt=false. No per-source
+sampling override found in CMake scans. Thus expf/division source is not a
+correctly-rounded libm exp/division spec; need pinned compiler flags, ISA,
+FTZ, and generated instruction evidence. ROCm evaluator/reduction is a
+separate reference. A correctly rounded REAL softmax certificate does not
+establish agreement with these current FP32 approximate pipelines.
+
+Recommended implementation experiments, ordered by contract
+----------------------------------------------------------
+A. Current-output-bit contract: instrument post-transform shifted argument
+   cardinality only in actual K-sized selected tables and E-sized MoE rows.
+   Collect all-equal/near-tie/extreme/penalty cases plus real model traces.
+   Adjacent run memoization inside shared SamplingMath helper preserves serial
+   summation, per-term top-p divisions, nucleus sum, probability divisions;
+   only identical actual argument bit patterns share exp. Can similarly reuse
+   normalization result by identical numerator bits and same denominator.
+   Even ordinary FP32 collisions can occur after subtraction/scaling, but
+   no source-backed substantial repetition rate exists. No global V histogram
+   or 65536 BF16 lookup should be designed on the SGLang synthetic evidence.
+B. Router arithmetic redesign: raw-top10 then selected softmax is the largest
+   concrete fewer-exp opportunity (512->10 per routed row), but requires an
+   explicit new mathematical contract and complete serial/grouped/backend
+   validation, or a rigorous certificate that outputs and route ids match
+   the existing rounded implementation. It is not a drop-in bitwise rewrite.
+   Check full-probability-row consumers before removing their production writes.
+C. Certified low precision: target FP32 stored compact probabilities, prefix
+   cutoff and seeded decisions, or router selected FP32 weights/ids. BF16
+   output rounding cells are irrelevant here. Enclosures of exact REAL
+   softmax alone miss existing approximate exp/reduction/normalization error.
+   FP32 output cells are much narrower than BF16: refinement may dominate.
+   For no more than256 or512 exps per row, certificate/lookup overhead is a
+   substantial obstacle; benchmark end-to-end, no claimed speedup.
+D. Full-temperature primitive redesign, only if later selected by production:
+   store each first-pass exp once and reuse in original reduction/output
+   schedule to remove the repeated V evals without depending on duplicates.
+   Needs persistent graph-owned scratch, no hot allocation; ~993280 bytes
+   extra FP32 storage per V=248320 row. Saving SFU work can lose to memory
+   bandwidth. Do not present this as an optimization of today's production
+   greedy MTP draft lane.
+
+Follow-up: production anchors / tests / cheap hooks
+--------------------------------------------------
+There are NO repeated same-position exp evaluations inside live compact
+SamplingMath nucleus loops: scratch_weights[K] already retains each exp and
+reuses it for cutoff, nucleus sum and final probabilities. MoE also stores
+values[E] and reuses them. Adjacent-argument reuse therefore means duplicates
+across different selected tokens, not removing an accidental repeated call.
+The row is already sorted for sampling, so no new full-vocabulary sorting is
+needed for the adjacent-run hook. Exact reuse still executes every ordered
+addition and cutoff division. Low duplicate rate can make comparisons costlier
+than the saved exp; cardinality collection is the justified first experiment.
+
+Model default recommendation is stochastic K=20, not K=40 or full V:
+models/ModelGenerationPolicy.cpp:114-123 sets top_k=20 for recommendation;
+:182-184 Qwen38FlashNext sets thinking T=1,p=.95,presence=0 and nonthinking
+T=.7,p=.8,presence=1.5. Identity match/admission and explicit request override
+still matter. Greedy requests bypass this softmax under Sampler.h:126-128;
+MTP drafts are greedily generated independently of stochastic target defaults.
+MoE default operand policy is ALREADY low precision for QFN:
+config/MoERouterArithmeticPolicy.h:3-10 and :43 selects FP16 weights/hidden
+operands for qwen4exp while retaining FP32 accumulation, softmax and route
+weights. This does not imply a 16-bit alphabet of dot-product output values.
+
+Actual decode routing dispatch:
+kernels/cuda/moe/CUDAMoEKernel.cpp:5404-5432 chooses unique-owner softmax-topk
+or general softmax-topk runtime; both normalize before selecting. Ready-
+rebalance route also uses general runtime at5578. ROCmMoEKernel.cpp:5295,5317
+chooses unique-owner/wave64 softmax variants; rebalance at5587 uses wave64.
+These are live backend methods, not just isolated kernel definitions.
+Prefill CUDA raw-logit top-k vs decode normalized-probability top-k is a
+near-tie concern, NOT an asserted observed QFN correctness defect. A reference
+countermodel is E512 with logit10=2^-25, logits0..9=0, others=-100: FP32 RN exp
+collapses the first11 weights to1, so probability top10 picks0..9 whereas raw
+top10 includes10 and0..8. Actual expf fast-math evaluator/device behavior and
+an admitted QFN trace need testing before asserting a bug.
+
+Saved cancellation-counterexample.json illustrates normalization-order issue
+independently: logits FP32(-i/100),i=0..511, top10 IDs0..9, ideal exp rounded to
+FP32 then CUDA fixed256 source sum tree. Full denominator99.90023803710938;
+full-normalize then renormalize differs from selected-only at4 of10 positions
+(2,3,4,7), each by1 ulp in this simulator. This is NOT a CUDA ISA experiment.
+
+Typed existing workspace/graph hooks:
+- OrdinaryGenerationSamplingStage.h:46-58 Workspace borrows compact values,
+  indices, partial values/indices plus capacities; owned by BufferArena/PMA.
+- MTPStochasticTargetDistributionStage.h:50-90 Params carries FP32 logits,
+  live active_rows_device, target id/prob rows, admitted partial buffers.
+- execution/moe/MoEWorkspaceRequirements.h:188-197 routing() declares
+  ROUTE_LOGITS rows*E*sizeof(float),256 alignment. Workspaces must be extended
+  through this typed authority if an experiment needs scratch; no hot allocate.
+- SamplingWideTopKDevice.inl:50-57 derives partitions from admitted scratch;
+  :200-208 calls canonical helper, so editing that helper reaches both backends
+  and all supported K paths without new graph topology.
+
+Relevant existing correctness gates (not run by this read-only audit):
+tests/v2/CMakeLists.txt:23269 V2_Integration_GPUSamplingKernels_CUDA and :23333
+V2_Integration_GPUSamplingKernels_ROCm register common backend-parametrized
+integration/backends/Test__GPUSamplingKernels.cpp. Key tests:
+  :12018 TopKTopPDistributionMatchesCPUSampler
+  :12125 BatchedTopKTopPDistributionMatchesSerialCPUOracle
+  :12531 TopKTopP_Qwen36VocabTopK40_GraphCapturedDistributionAndSampleMatchCPU
+  :12706 TopKTopP_Qwen36TopK20RepeatedGraphReplayIsStable
+  :12869 TopKTopP_Qwen36RealLogitStyleRowsSeededSamplesMatchCPU
+  :15603 CompactOneHotDraftVLLMSpeculativeVerifyMatchesReferenceAndCaptures.
+CMake:23275 grouped stochastic resident draw gate explicitly filters
+BatchedTopKTopPDistributionsAreSerialRowByteExactForEveryMTPDepth,
+FusedSerialEquivalentOutcomeIsByteExactForEverySupportedMTPDepth,
+CompactTargetSerialSamplesUseResidentPositionAndMatchSerialDecodeByteExact,
+and ProbabilityRejectionStageReplaysEveryModeDepthAndCarry. Repetition/ordinary
+captured sampling gates at23259-23265 join ProductionTestPreflight.
+CUDA MoE test Test__CUDAMoEKernel.cpp:18012
+RouteVerifierRowsDecodeEquivalentMatchesSerialDecodeRouter. ROCm MoE tests
+Test__ROCmMoEKernel.cpp:23358 SoftmaxTopKParallelSelectionPreservesTieOrder,
+:23436 SoftmaxTopKPublishesProbabilitiesAndZerosInactiveRows,
+:23521 SoftmaxTopKQwen36ActiveRowsAreByteExactAcrossPaddedGraphBucket,
+:23654 VerifierRowsRouteUsesDecodeEquivalentRouterAndMatchesHostReference,
+:23788 VerifierRowsRouteMatchesSerialDecodeRouter. Full logits publication is
+therefore an explicitly tested behavior, not an unexamined dead store.
+Existing router performance harnesses:
+tests/v2/performance/kernels/moe/Perf__CUDAMoERouterSoftmaxTopK.cpp:368
+CUDA_Qwen36ExactAndPaddedGraphReplay and ROCm peer. Existing Qwen36 geometry
+must be supplemented with QFN E512,K10 before making a QFN economy claim.
+tests/v2/performance/kernels/rocm/sampling/Perf__ROCmTopKTopPVerifierRows.cpp
+is registered as V2_Perf_ROCmSamplingVerifierRows at CMake:19305. Full primitive
+GPUSpeculativeSummary timings do not prove use in production QFN drafts.

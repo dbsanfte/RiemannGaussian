@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Paid all-orders short responses, exact compact selected-norm inputs, and a conditional arithmetic supplier. Uniform sixth-rate remains open.",
+  "independent_reviews": [
+    {
+      "path": "review-higher-macdonald.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-higher-marked-jets.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-separated-recurrence.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-packed-to-norm.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-cyclotomic-selector.md",
+      "verdict": "PASS"
+    }
+  ],
+  "root_review": "Read all reports/reviews and both scripts; checked primary Schoof/HH and BDFLS conventions; exact scratch replays PASS. Packed-report wording suggestion applied before archive.",
+  "acquisition": {
+    "retained_uniform_query_bound": "soft O(K^(5/4))",
+    "uniform_exponent_improved": false,
+    "paid_operations": [
+      "All J+1 higher Macdonald response coefficients and fixed-rank marked jets in soft J after stated gates.",
+      "Original packed-residue compact norm input from acquired D and A_w; formal delta extraction remains unpaid.",
+      "Retuned unique-family two-GP constant-rank marked norm input and explicit tail in soft(J+sqrt(h)).",
+      "Fixed rank-12 cubic certificate with verified factor, conditional covering palette or decline."
+    ],
+    "conditional_bound": "Certificate pass and n>=ceil(cuberoot(K)), with native preparation, imply a soft-K restricted-HH handoff.",
+    "missing": "Uniform selected norm/residue acquisition, e.g. soft(J^(3/2)+sqrt(h)) for the retuned unique family, with its complete bit analysis."
+  },
+  "diagnostics": {
+    "higher_responses": {
+      "checks": 33,
+      "fixtures": 4,
+      "scope": "Tiny exact polynomial identities; includes interior collisions, composite unit gates and zero adjacent-q difference. Naive arithmetic, not fast implementation."
+    },
+    "cubic": {
+      "exact_integer_Gauss_identity": true,
+      "prime_Frobenius_controls": 3,
+      "scope": "Structural factor/palette/decline controls only; no HH implementation, preparation or semiprime coverage campaign."
+    },
+    "root_scratch_replays": "Three exact JSON comparisons PASS",
+    "root_archived_replays": "Three exact JSON comparisons PASS"
+  },
+  "preservation": {
+    "protected_prior_files": 1144,
+    "append_only_prefixes": 2,
+    "concurrent_files": 24,
+    "prearchive_check": "PASS",
+    "postarchive_check": "PASS"
+  },
+  "not_claimed": [
+    "Uniform soft-K acquisition",
+    "General acquisition lower bound",
+    "Guaranteed cyclotomic pass",
+    "Full sixth-rate bit theorem",
+    "Lean formalization",
+    "Literature-wide novelty"
+  ],
+  "commit_or_push": false,
+  "integration_checks": {
+    "local_markdown_links": 14,
+    "git_diff_check": "PASS"
+  }
+}

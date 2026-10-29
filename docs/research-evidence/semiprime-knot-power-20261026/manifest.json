@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5467,
+      "sha256": "7b0150a6a5ae3ae2182e3d61222eb94c9c6b61859e14e86e94015670ce24db2b"
+    },
+    {
+      "path": "axis-review.md",
+      "bytes": 5326,
+      "sha256": "8dd16dfae753232203186805d2d3890752508a40354d4dbf19a5b7acf4edd94e"
+    },
+    {
+      "path": "axis-shortfactorial.md",
+      "bytes": 9353,
+      "sha256": "33dfe4468b641afaf50b0a668b4bf683f78c05fa52015100b0e7bf0eabeadd9b"
+    },
+    {
+      "path": "character-compression.md",
+      "bytes": 7443,
+      "sha256": "ab379147ee7ce146e0a664e9142e7652cd95a494cc4deada1e5029e547585325"
+    },
+    {
+      "path": "character-review.md",
+      "bytes": 4282,
+      "sha256": "2e0c6bac105878498d0862c3206a31a9391351e6bb8586fea43b0c3057763e32"
+    },
+    {
+      "path": "coupled-parameters.md",
+      "bytes": 4730,
+      "sha256": "4ec7e2a0ead40daf0a28c3ea34c2a944d99f5e6734606b223d8c66bfeba9bcc4"
+    },
+    {
+      "path": "coupled-review.md",
+      "bytes": 3726,
+      "sha256": "1c7a838319e17c15a9784dde6c69a6127b3d33ff70b98a28d3c3f93b4d3b313a"
+    },
+    {
+      "path": "independent-weights-review.md",
+      "bytes": 6872,
+      "sha256": "9e6cf9d23732a8227b582bdf9ccfe1cefe9648a24d41b6310358b9800583435a"
+    },
+    {
+      "path": "independent-weights.md",
+      "bytes": 11490,
+      "sha256": "808726bdaa7dcaa1ebd043b328cbfc3e69dcf69d95759d16045d0e519c63f8a8"
+    },
+    {
+      "path": "review.json",
+      "bytes": 1843,
+      "sha256": "ca8d804784c7d9419b200a3abeace51d46ad0d54ee531ca76148b232730844f3"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 4904,
+      "sha256": "a8e15eb8d68f9401987104dc15b84460741b6fc54f84eb9d28153a838628eb6e"
+    },
+    {
+      "path": "supergroup-product.md",
+      "bytes": 10331,
+      "sha256": "15ca28157c434e7d01eb04dbd4eaee96486e455c5414683eef961cf9de659fa7"
+    },
+    {
+      "path": "supergroup-review.md",
+      "bytes": 7533,
+      "sha256": "5fa261fe8c79ff013f96835e3efd4252d5e28a5dfff6bd1c33a54d9eff400e8b"
+    },
+    {
+      "path": "two-mode-deformation.md",
+      "bytes": 14052,
+      "sha256": "7195a660d432857155cd3c36f538a67923b885cd859dc9e3da73fdd73d5bd7c3"
+    },
+    {
+      "path": "verify_symbolic.py",
+      "bytes": 3484,
+      "sha256": "515a1153c7e58f667ea337b6f980ec9b67c0516d97fe33d301f4fa84f7701929"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "algorithm": "sha256",
+  "excludes_self": true,
+  "files": {
+    "README.md": "b3e26f8ac7aeafbb56ed849186b01571440a70ea21a24bdbd438b3a59b83b0fe",
+    "SemiprimeStreamingTensor.lean": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+    "archive-provenance.json": "1853562d494af8cfad77cbed400c146f9903adf7945479c69297009cea4eb398",
+    "build_lean_closure.py": "9eccbef463dbcc93614ad05f16ce385162297b398d63a1fed2ad2e221c2dd0eb",
+    "check_modes.py": "077da4513b62cf2b275c2bcbc868f1ba0120595e347d0a031e3b49fa8912f96e",
+    "check_precision.py": "260c77408d1b2260c8b07387033b4bbfe9df02bf11387cf9fda9b8443a7c8380",
+    "complexity.md": "d1691e68ccd6975b566354a3c29f27089d6fb33d26504c37d821e7922f4e3222",
+    "external-build-snapshot.json": "7293187379a1ba8fcc907dc7e9bba29ca1562a871a476f1e62b2b57771e600eb",
+    "factor-network-independent-controls.json": "98de3e102b0672f0df726eaed38c44e20966dc6c91ef17ac0f12d72432e88291",
+    "factor-network-independent-replay.json": "7dfc4dde37a6dd395755dca68a908289aacdeaf71d160f70b71cfb88fd1647e1",
+    "factor-network-notes.md": "e08d2079dc4ff9259a9e84822293ced19f0c5222365892ff303fd933ad2780eb",
+    "factor-network-validation.json": "7dfc4dde37a6dd395755dca68a908289aacdeaf71d160f70b71cfb88fd1647e1",
+    "factor_network.py": "c107f5ec43b54bee0fcc008f0ffcde4af51de026a7140af4455e5a4ebaca6a92",
+    "formal-bridge.md": "d06ef0e14b1bf4bef51a0c0eef9474ef307d254d7f3f0e22e487097c1d845530",
+    "lean-closure.json": "a107c354c030f4bdcbf364cd3434b45ee59d5d234c513832030bd7c9f86f3903",
+    "lean-specification.md": "8400680eb8d36dc305fc73eb45e746fa5af1dbece2afb93449c3377abfe09987",
+    "mode-controls.json": "fd492cae7c377c5ca4afaa5dee66b17370b24530986abb5833285dfe8ea3bc69",
+    "modes.md": "c6ba00a756f9a282c09bfa72cfc49b9e66aa048401f0808935b27552d66f3d1e",
+    "older-route-review.md": "bcc9423ea506b3a784256b2662d291cd42e870938acfb4dd3f33af8704d2c2f9",
+    "precision-checks.json": "e00382d4b1431a21047fec62daf6165e9159b568172e241216d80645056dc607",
+    "precision.md": "6ed1188c2c8b13c4c8c1c8682ea5954be74e9c476f346b6efb54a3a711f1be3f",
+    "review-factor-network-code.md": "850f9deb9fb29eee6c2b6d220479e17f35fdef00f0e7a94faa506b0ca73009cf",
+    "review.json": "be5183bbba9bc227582d72427195343500fd898b0ec666a79393d1d4395db8d7",
+    "sources.json": "b5b86a2a02e0facc0edf52fc134835f54bec33e54862b49a7b45f8b3c3bc8dfb",
+    "streaming-repo-build.log": "f94d0a0b3008e423680d5f82f0693d00d164cde8c0ec44894f68a28fc4938294",
+    "streaming-repo-proof.md": "e495e3eca022f2c14b99b7278fcc426304e310e28db1b51290990e0a686d71fe",
+    "test_factor_network.py": "b9be642bac52ad17047af85f38f3b23f1a6f826ac09642316265dbeb6b47e737"
+  }
+}

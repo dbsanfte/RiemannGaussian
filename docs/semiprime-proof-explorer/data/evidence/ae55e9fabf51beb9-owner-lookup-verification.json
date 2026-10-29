@@ -1,0 +1,99 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 5,
+    "declarations": 234,
+    "theorems": 119
+  },
+  "modules": {
+    "SemiprimeD1StackOwnerLookup": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerLookup.lean",
+        "sha256": "b6b68f1ad6e689040cd557c910693d765671b8ec70617823727770b845722bb6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerLookup.olean",
+        "sha256": "cf003cf6dfe20a9e719380d7bd3d39de94a9510f0c6fe01ae6bb8a8a5a0ca6cf"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-lookup-frozen/SemiprimeD1StackOwnerLookup.olean",
+        "sha256": "cf003cf6dfe20a9e719380d7bd3d39de94a9510f0c6fe01ae6bb8a8a5a0ca6cf"
+      }
+    },
+    "SemiprimeD1StackOwnerLookupComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerLookupComponents.lean",
+        "sha256": "9a525a1bd569347b458edafb03364e04565770fc19da9eef69a32baae466f6e3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerLookupComponents.olean",
+        "sha256": "ca217331bbadd69a3a0f7ecda319d3213a5a3c4ffd1bae1efc036ceddf63a90f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-lookup-frozen/SemiprimeD1StackOwnerLookupComponents.olean",
+        "sha256": "ca217331bbadd69a3a0f7ecda319d3213a5a3c4ffd1bae1efc036ceddf63a90f"
+      }
+    },
+    "SemiprimeD1StackOwnerLookupExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerLookupExecution.lean",
+        "sha256": "bc9b1f6e02d2bc194626458d37670d4cbccd4ebe97c4659fc137e2299ac3df53"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerLookupExecution.olean",
+        "sha256": "e7bfba9d413b705296999e4788b0f3f78a3f7b237fe23ca45e5c096377274c0a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-lookup-frozen/SemiprimeD1StackOwnerLookupExecution.olean",
+        "sha256": "e7bfba9d413b705296999e4788b0f3f78a3f7b237fe23ca45e5c096377274c0a"
+      }
+    },
+    "SemiprimeD1StackOwnerLookupBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerLookupBounds.lean",
+        "sha256": "e1dce9f368f7330d53854044d1a62defa328e3784d02dc287d30364b4d8c5bca"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerLookupBounds.olean",
+        "sha256": "2be8e4d3d62708e5c9994b2576cbcc6b0031665d66de817887577688f2fcf262"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-lookup-frozen/SemiprimeD1StackOwnerLookupBounds.olean",
+        "sha256": "2be8e4d3d62708e5c9994b2576cbcc6b0031665d66de817887577688f2fcf262"
+      }
+    },
+    "SemiprimeD1StackOwnerLookupOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerLookupOriginal.lean",
+        "sha256": "6fc4b221086003575a1ff2d8dffa929b43672be3977b68fc6f4624eb8695d0ca"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerLookupOriginal.olean",
+        "sha256": "afa4486adaa17e27a04dc96b3bd601edda445672d57790a7d188df6c8e9cd6d3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-lookup-frozen/SemiprimeD1StackOwnerLookupOriginal.olean",
+        "sha256": "afa4486adaa17e27a04dc96b3bd601edda445672d57790a7d188df6c8e9cd6d3"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/OwnerLookupControls.lean",
+        "sha256": "4afd1595c8d6639f7329ce4fc66bb24c5438f06050fee241ac6bbf1fb9472d8a"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-lookup-frozen/control-0.log",
+        "sha256": "835d6ef7079df2ae5aed96e205d8a3dadb4ca10539995c6ba4e08b59d4b9cce3"
+      },
+      "expected": "some ([true, false, false], [false, true, false])\nsome ([true, false, false], [false, true, false])\nsome ([], [true, false])"
+    }
+  ],
+  "full_goal_complete": false
+}

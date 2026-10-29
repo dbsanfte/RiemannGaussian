@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "SHA-256",
+  "scope": "All packet files except manifest.json itself",
+  "files": {
+    "README.md": "541983e8f535bf76538772a771f77592770a1ba7e0e6ab87f0e87266fc10a6c7",
+    "algebra-review.md": "5e845b84478f3047932e767e75f668eb1a0024707a89ac7f8a98fc83724ea4e8",
+    "archive-provenance.json": "c85399855249e9514444c79747aac5805f661774134a13cb3652f45631432c6c",
+    "check_scalar_reductions.py": "957ecd8d219cb797e0f1510eb087f11ec1a389fb7acce121446c5758bef85713",
+    "coupled-section.md": "53d18199858b1494b4ae68116971f5115a711f7ae9e60967859ec5000407f0dc",
+    "integrable-closure.md": "d5b0514ee2bf88776d4802e8c6cdc82ebce926f390d3af2257ccec93ac7b846e",
+    "native-thinning-review.md": "cb624c9ea762ba9d0e0021a3159a6a85328f6a6282191b2f617dc3c8c7d858cd",
+    "native-thinning.md": "f02ec75bea6d5f644fc32abe79ce5e3bf59028beb864ae8718fb2a0712f577d1",
+    "pole-kernel-handoff.md": "8953772424a18b1b55cce7577ab2dd05cfa5ad5774a0dcbf274689db1c247924",
+    "review.json": "7dfa32cdc7f330565803af2c59dc21a0459119031144aa716b6ed3bcd56cb50a",
+    "scalar-reduction-checks.json": "b25bf5bfc64d36df2a23a08328e9dc359f73afc3cfc6aa13c8fefe6c7a67d1a1",
+    "sectioned-newton.md": "008b34518bb30d753dab6fcc43cb2e9134fa7c5b4bf8f74343d51104154f70c2",
+    "sources.json": "23517284390fc16c048e9105b6513bb34052c81420aea0ba618dee9eb9dd6995"
+  }
+}

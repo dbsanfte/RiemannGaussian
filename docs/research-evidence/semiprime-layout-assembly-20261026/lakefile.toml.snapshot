@@ -1,0 +1,51 @@
+name = "RiemannGaussian"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["RiemannGaussian"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+warningAsError = true # source and tactic lints are a hard build gate
+
+[[require]]
+name = "Zeta23"
+path = "vendor/zeta23"
+
+[[require]]
+name = "LeanCert"
+git = "https://github.com/alerad/leancert.git"
+rev = "7f91b6eb3567437f6cfac03ed279706603ee22f4"
+
+[[require]]
+name = "OpenAIQuasiRH"
+path = "vendor/openai-quasi-rh"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[[lean_lib]]
+name = "RiemannGaussian"
+
+# Pinned generic layout lemmas used by the semiprime counter bridge.
+# This optional library does not import the published SAT machine endpoint.
+[[lean_lib]]
+name = "OpenAISemiprime"
+srcDir = "vendor/openai-semiprime"
+roots = ["OpenAISemiprime"]
+globs = ["OpenAISemiprime", "OpenAISemiprime.+"]
+moreLeanArgs = ["-DautoImplicit=false", "-DwarningAsError=true"]
+
+# Expensive numerical data and the cover checker are explicitly opt-in.
+# Keep this target out of defaultTargets and out of RiemannGaussian imports.
+[[lean_lib]]
+name = "NumericalCertificate"
+
+# Keep the memory setting local to generated data. Ordinary proofs retain
+# their established elaboration mode and compiler-generated helper inventory.
+[[lean_lib]]
+name = "NumericalCertificateData"
+roots = ["RiemannGaussian.CertificateData"]
+globs = ["RiemannGaussian.CertificateData.+"]
+weakLeanArgs = ["-DElab.async=false"]

@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-26",
+  "local_source_pins": [
+    {
+      "path": "docs/semiprime-string-theory-research-proposal.md",
+      "scope": "whole file",
+      "bytes": 18615,
+      "sha256": "7ef81200148f3774e3ef03d0510202cc9efe42cf044f760bbbda257ea855de93"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-string-native-boundary-20261026/README.md",
+      "scope": "whole file",
+      "bytes": 8168,
+      "sha256": "97179318d288343c9bf4b52e9f66b2decd58483f106a160f6a7c97a4484275f2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-string-native-boundary-20261026/finite-weighting.md",
+      "scope": "whole file",
+      "bytes": 11212,
+      "sha256": "eb116c4e14d2d0e0c98fe3c5e70b1e6566bb19c318df3d63a8b478eaf459d782"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-string-native-boundary-20261026/boundary-coverage.md",
+      "scope": "whole file",
+      "bytes": 13831,
+      "sha256": "56c5c19935cfb79154ca705fd337e3a290bb036598cf99ed46128d3f8c51cc89"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-string-native-boundary-20261026/boundary-self-audit.md",
+      "scope": "whole file",
+      "bytes": 5224,
+      "sha256": "bd45fca28305e2948b27ce886e24440daa46959bdfc6bdaae9ea0eaf8bc4e967"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/kernel-cover.md",
+      "scope": "whole file",
+      "bytes": 15808,
+      "sha256": "2fcd61bad1a66097eca3540c6fa63a85f3433d372c0b26f2e40fb4273e95699d"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hybrid-audit-20261026/coverage-selector.md",
+      "scope": "whole file",
+      "bytes": 12665,
+      "sha256": "1321fa7b44a146a01ad7888081e6d3a1fe187d6e70520bb998251ccdda6937d6"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-trace-20261026/trace-recurrence.md",
+      "scope": "whole file",
+      "bytes": 14978,
+      "sha256": "5f2e5f20ee433389e6d0cc93a109b2809e40f4b7dbb9bee3af3ed5e80f202343"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-scalar-20261026/primitive-coverage.md",
+      "scope": "whole file",
+      "bytes": 17207,
+      "sha256": "f7da8cff60b84fc4f71cff60f5d293e11b2988e3069a19505652c99d8a484a97"
+    },
+    {
+      "path": "AGENTS.md",
+      "scope": "pre-turn prefix",
+      "bytes": 1542562,
+      "sha256": "cf9d3ad92f22abf0c852673f48ed1a6c1b6b3a069c9c8a763ce2e4e5b63d675e"
+    },
+    {
+      "path": "docs/semiprime-factorisation-investigation.md",
+      "scope": "pre-turn prefix",
+      "bytes": 2424003,
+      "sha256": "3847e42591164fff03b4d096ed4c979dc7a7104861a9ba0e91fdd471e2f7addf"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Bostan–Yurkevich, Fast Computation of the N-th Term of a q-Holonomic Sequence and Applications",
+      "url": "https://arxiv.org/html/2012.08656",
+      "checked": "Section 3.4, Theorem 5: growing coefficient degree is charged; rank-one specialization retains the old sqrt(Jh) scale."
+    },
+    {
+      "title": "Chen–Kauers–Singer, Desingularization of Ore Operators",
+      "url": "https://arxiv.org/html/1408.5512",
+      "checked": "Introduction and Theorem 6: characteristic-zero field, supplied order increase, leading-factor removal. No finite-composite-ring acquisition theorem imported."
+    },
+    {
+      "title": "Bennett–Martin–O'Bryant–Rechnitzer, Explicit bounds for primes in arithmetic progressions",
+      "url": "https://arxiv.org/pdf/1802.00085",
+      "checked": "Previously inspected Theorem 1.2 and equations 1.10–1.12, now specialized to modulus 36. Exact open-interval deduction derived in the report.",
+      "download_pins": "docs/research-evidence/semiprime-string-native-boundary-20261026/boundary-self-audit.md"
+    }
+  ],
+  "attribution_only": [
+    {
+      "title": "Baur–Strassen, The complexity of partial derivatives",
+      "url": "https://doi.org/10.1016/0304-3975(83)90110-X",
+      "scope": "Publisher full text unavailable in bounded search. Actual commutative-ring reverse gate proof supplied directly; no unexamined field theorem imported."
+    }
+  ],
+  "inherited_primary_context": {
+    "method": "Known-factor-residue and integer AP factoring routines",
+    "reviewed_local_source": "docs/research-evidence/semiprime-knot-scalar-20261026/primitive-coverage.md",
+    "urls": [
+      "https://doi.org/10.1090/mcom/3313",
+      "https://arxiv.org/pdf/2105.11105"
+    ]
+  },
+  "import_scope": "Finite matrix, covariance, Hasse, AP and axis-transport identities derived algebraically. No outside theorem supplies the missing all-semiprime acquisition or residue selector."
+}

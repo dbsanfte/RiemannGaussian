@@ -1,0 +1,51 @@
+{
+  "status": "independent read-only semantic/report/scope review PASS; pins taken AFTER parent ordered23 canonical refresh terminalPASS with all writers stopped",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdControl",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdControl.lean",
+      "source_sha256": "199886f7c92633f7de4270ef90beaab1f313e1caf2bd2b44b96dd6174014ed10",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdControl.olean",
+      "object_sha256": "cd63d7cfc4e197ba0141d5239971f1a11ec837e82b1466e7839c0a92f111d4df"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordMenuOrder",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordMenuOrder.lean",
+      "source_sha256": "58a76c9271e564d788023aa4b8fb509f1ec4e83364b0d1c8920f9018a8bf0010",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordMenuOrder.olean",
+      "object_sha256": "d6acc7d713cd2540c0bf81d491ec4846e1d1424705e62b094b27e4d55e15f3f6"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdMetadata",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdMetadata.lean",
+      "source_sha256": "b0f5017317c14c085c953b5eb09cd841511336911f6b6674303002326d04e94a",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdMetadata.olean",
+      "object_sha256": "38828cb55c2e28f1e680c46e762e1f6d9492bb60fe7aa9ec35658835b1a33f39"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdMenu",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdMenu.lean",
+      "source_sha256": "25de89ffb1e5acc657809ae4238bffc0ad163dbc1c6a73c1d6775bf4c7a75470",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdMenu.olean",
+      "object_sha256": "c8c5214de945b3799ab3f22bd0ef83558f534550b624d2508c8d2a106a1ed619"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdSearch",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdSearch.lean",
+      "source_sha256": "29b2a412219373153446eb350f4ed1f5a8fdf27cac65fd8dcccfee488909f701",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdSearch.olean",
+      "object_sha256": "ce81a066bbb67bb4def8e75aa029054142bd19e9b21026bd7127cdf16c5c66d7"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdCaller",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdCaller.lean",
+      "source_sha256": "da1e60ae1d76f0f69eca0db7ed22b52b0398775a98602d744475646a042bb5e4",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdCaller.olean",
+      "object_sha256": "3e276bd871d9ffa9e63c132aec544194627b4af90c146c2c4d31b476c3e60e05"
+    }
+  ],
+  "review": {
+    "path": "/tmp/semiprime-word-bank-20261027/review-id-selection.md",
+    "sha256": "17dc6a17fea6aabb2fdfd68d3eb22fbda8905245edc526b146ce90e1da888e69"
+  }
+}

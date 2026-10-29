@@ -1,0 +1,42 @@
+[
+  {
+    "module": "SemiprimeMaterializedSourceUniversal",
+    "source_sha256": "8f7885ef1c05256a945a7a397ceff872856d08ee08e21a96f6c47a3ca485646d",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "isolated_sha256": "24f555bb7dfb6946a8961d4826d82c67e5689a972cb4e2adf79fb74c03b61998",
+    "dependency_sha256": "24f555bb7dfb6946a8961d4826d82c67e5689a972cb4e2adf79fb74c03b61998",
+    "seconds": 8.453252615989186,
+    "identical_object": true
+  },
+  {
+    "module": "SemiprimeMaterializedSourceRows",
+    "source_sha256": "1b810554397568f592291284428cd83d390ecb0b51d3af0e2fbe7528e8f48e7e",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "isolated_sha256": "8473d921481d50638534fe1f1394147b56ff8c8681042c46ab2cc5e885877006",
+    "dependency_sha256": "8473d921481d50638534fe1f1394147b56ff8c8681042c46ab2cc5e885877006",
+    "seconds": 8.750084842031356,
+    "identical_object": true
+  },
+  {
+    "module": "SemiprimeMaterializedSourceCache",
+    "source_sha256": "1e98fd77da2dcf4bdd9def48ac87129ba1daa13e5f2f3b6ebec3e7eff90e84b8",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "isolated_sha256": "baaf7878b2dff49a43945016181493f0c2ada617a1b339fd28da9d838895ab1b",
+    "dependency_sha256": "baaf7878b2dff49a43945016181493f0c2ada617a1b339fd28da9d838895ab1b",
+    "seconds": 7.724580275011249,
+    "identical_object": true
+  },
+  {
+    "module": "SemiprimeMaterializedSourcePullback",
+    "source_sha256": "1cd1404b33f54eb6bc217531334aca106582073aa9c8139a5a2134bc9808b407",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "isolated_sha256": "c72677689e95cdf9aebaa421f2ab5fe2edeec463f81ad46b7d57b9ab3414ea22",
+    "dependency_sha256": "c72677689e95cdf9aebaa421f2ab5fe2edeec463f81ad46b7d57b9ab3414ea22",
+    "seconds": 7.729915066971444,
+    "identical_object": true
+  }
+]

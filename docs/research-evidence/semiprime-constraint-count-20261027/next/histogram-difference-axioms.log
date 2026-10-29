@@ -1,0 +1,8 @@
+'SourceHistogramShortcut.after_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceHistogramShortcut.after_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceHistogramShortcut.vertexI_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceHistogramShortcut.vertexH_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceHistogramShortcut.vertex_weighted_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceHistogramShortcut.factor_weighted_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceHistogramShortcut.order_of_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SourceHistogramShortcut.tie_of_difference' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,22 @@
+{
+  "verdict": "PASS_ALL11_CURRENT_INDEPENDENT_READ_ONLY_REVIEWS",
+  "pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedRootRetained.lean": "bb2bc14b6a82d63be6d1a31541e4f99500d838d9b727ad7eb0629fe9dee627fd",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputEncoding.lean": "d0e7a3322c40a19370c2db9be10a08c969adede2c0d50f937f040971c0bcb77e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputPrimitives.lean": "76c84770bdc08db8666786ef231e50e50ca6fdb014475e23c868cd903ae17c73",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputBounds.lean": "d0dd8ed65b025e5bef9603988d23ac78b97802a0757129a19d45eec4cd9d7124",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputStorage.lean": "e1e880a54aeaee9306ae1301f958a4e430bf2be0f5b2f877aa66f8bce3ac2524",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputResources.lean": "83d4d9b5f88d8df40ec85b451943a9015136153619c5f49ae8a8559e3fb80423",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInput.lean": "189fd88ca649c140e508131f86096dd66f29f49188fa94b85339c1d19a73ce48",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputView.lean": "592e16aed55611e2d2130e85537a395ba6116d480c241e977c33fe036e09b1d8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputCalls.lean": "82e5ee21b62cb3908ab1f597c40204bc11343e767a1d79c3e99a56d352e9bfc1",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputExecution.lean": "6bcf46fe72d76902558e1976a94390093f9215db3b509c7a3d0398b6e54aac2f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootInputOriginal.lean": "f983b8ece42e5c0ae4ddee171222c9c8278fc02cfdddd87bd2fcc5576047add1"
+  },
+  "artifacts": [
+    "packed-root-input-owner-review.txt",
+    "packed-root-input-vertex-review.txt",
+    "packed-root-input-port-review.txt"
+  ],
+  "scope": "Actual N-only marked-root/input/context acquisition, fixed wholefamily source time and all2505+realreturns. Actual current-node weightedtable-bearing routes/recursive contraction/sourceV acquisition and factorrecovery remain OPEN."
+}

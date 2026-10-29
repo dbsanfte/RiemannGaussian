@@ -1,0 +1,20 @@
+PASS: independent read-only review of RecoveryFinish35.
+UTC: 2026-10-28T21:55:39.328342+00:00
+
+Reviewed the actual finite program and seven source modules. No source edit, canonical compilation or control repetition was performed.
+
+The sole physical operands are sign::binary magnitude, a positive binary denominator (padding allowed), and unary WIDTH. Control, stack addresses and return symbols are fixed finite; valuation, quotient, inverse, result and clock are absent from the runtime ABI.
+The low-bit loop reads and consumes actual denominator/numerator bits, records actual discarded one bits, and performs a real increment exactly for negative nonintegral division. This implements floor for arbitrary signed numerators, including negative zero and missing high magnitude bits; no divisibility assumption is introduced.
+The inverse loop is driven by actual unary WIDTH markers. Every round executes three real modular products and one real modular sum in the original order. Sign application, final product, sixteen real helper drains and the final halt occur in the same program.
+Execution.source_trace/source_run establish this whole source; output_original binds exact original RecoveryStripBits.finish bytes, with independent projections before original operand instantiation. The actual retained words and all 35 roles, including the allocated scalar-add WIDTH shadow, are included.
+Bounds.timeBound_le derives its own 10^12*(actual input bytes+1)^4 clock from actual stage clocks. Resources bounds every successful prefix, all 35 tapes and actual return cells by 10^14*(actual input bytes+1)^4. The compiled certificate starts from prepared three-word configuration, as stated.
+Original supplies denominator positivity from canonical entry/template bounds and binds the output to PhysicalRun bytes and residue, with the original child precision premise. It explicitly leaves acquisition of entries, weights, numerator and common denominator upstream. No native or mixed clock equality is used; no original-N factorization theorem is claimed.
+
+Current source SHA256 pins:
+03a5207ca7a242d16391185403913ffb8d21d97b3bdb18a7706cd78746116ae6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryFinish.lean
+7f479cbd6d47798fcd060245b21dfdd78c438f3569a3906bbc887fea635b805b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryFinishWords.lean
+5fb591dd47c1142f583cef92c473edb806f26e995a9d4a8177ea9da0e42c72ae  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryFinishFloor.lean
+a91d43edba93f320449a38dbdc94a45eaf41176c4d07db54887b48878667360c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryFinishExecution.lean
+69878a4259dcf8db74fb4aeb6cbc4007be58ce00c073c0257f7c60ffc732bced  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryFinishBounds.lean
+b811fee201e923669b68e9cef71455576fe33584cb0cfc42e93d664283db7dd4  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryFinishResources.lean
+12e40d3344de5b78bdb83b9b2ca9059787170630cd6f2edcd75df54bd148a0b3  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryFinishOriginal.lean

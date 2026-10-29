@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "counts": {
+    "cauchy_polynomials": 84,
+    "cauchy_local_coefficients": 17472,
+    "valuation_counts": 46,
+    "precision_weights": 378,
+    "hermite_reconstructions": 6
+  },
+  "cases": [
+    {
+      "a": 1,
+      "u": 1,
+      "M": 3,
+      "total_multiplicity": 18,
+      "degree": 9,
+      "max_actual_weight_loss": 25,
+      "reconstruction_error_v2": 172
+    },
+    {
+      "a": 2,
+      "u": 1,
+      "M": 3,
+      "total_multiplicity": 36,
+      "degree": 21,
+      "max_actual_weight_loss": 60,
+      "reconstruction_error_v2": 305
+    },
+    {
+      "a": 2,
+      "u": 2,
+      "M": 3,
+      "total_multiplicity": 50,
+      "degree": 21,
+      "max_actual_weight_loss": 57,
+      "reconstruction_error_v2": 144
+    },
+    {
+      "a": 3,
+      "u": 1,
+      "M": 3,
+      "total_multiplicity": 72,
+      "degree": 45,
+      "max_actual_weight_loss": 131,
+      "reconstruction_error_v2": 547
+    },
+    {
+      "a": 3,
+      "u": 2,
+      "M": 3,
+      "total_multiplicity": 100,
+      "degree": 45,
+      "max_actual_weight_loss": 126,
+      "reconstruction_error_v2": 229
+    },
+    {
+      "a": 3,
+      "u": 3,
+      "M": 3,
+      "total_multiplicity": 102,
+      "degree": 45,
+      "max_actual_weight_loss": 95,
+      "reconstruction_error_v2": 143
+    }
+  ],
+  "scope": "exact rational finite controls; universal proof reconstructed separately; no D1 implementation"
+}

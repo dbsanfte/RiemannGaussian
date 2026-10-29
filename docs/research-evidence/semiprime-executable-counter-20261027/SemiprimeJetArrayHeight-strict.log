@@ -1,0 +1,10 @@
+'RiemannGaussian.SemiprimeJetArrayHeight.cached_inverse_heights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeJetArrayHeight.cached_dotPrefix_heights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeJetArrayHeight.cached_inverse_bit_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeJetArrayHeight.quotient_heights' depends on axioms: [propext, Classical.choice, Quot.sound]

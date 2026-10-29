@@ -1,0 +1,17 @@
+# Exact local collision-query shortcut, 2026-10-27
+
+Status: **local completion enumeration eliminated in an executed exact original source selector; full primitive-bit sixth scaling remains open**.
+
+This is a constructive query improvement. For L=r^Q, every original incidence term's padded completion count is one of 0,L^2,L^3,L^4. Owner and factor keys occupy disjoint original namespaces, so each active nonloop equality consumes exactly one independent word choice; fixed conflicts give zero. For head terms, uniform coordinate fibres give L^4, r^(4Q-1), or zero. The theorems simplify the actual original recursive counter for every prefix, including aliases, defaults, overrides, repeated terms and ties.
+
+The new physical callback classifies those constraints and copies acquired Boolean powers. It performs no candidate-completion sweep or unary L^4 padding. Powers come from actual multiplications with linear physical padding growth. The weight initializer reuses the acquired U word, eliminating unary U construction and re-encoding. The [original-input caller](SemiprimeSourceClassifiedCaller.lean) acquires setup once and preserves the exact original labels and candidate tie order.
+
+The [actual report bound](SemiprimeSourceClassifiedSearchBudget.lean) and [uniform resource theorem](SemiprimeSourceClassifiedResources.lean) cover bank/power/weight setup, every classified score, comparison and copy. One fixed polynomial bounds the executed report from nine original resources n,F,r,Q,lambda,M,L,T,V, with M=sum arity, T=M^2+Q*n^2 and V=n+F. Materialized L is explicit. See the [query derivation and cost scope](classified-query-notes.md).
+
+The current runtime still acquires the T descriptor list. Near-linear bit acquisition, remaining native metadata/control, packing/cache/pullback/public composition and the complete primitive-machine clock are open. The earlier Hermite retained-report rate is preserved; this checkpoint does not establish a full original-input factorization exponent or switch the existing N-only public caller.
+
+The separate [histogram research supplement](next/README.md) contains checked candidate-difference/order identities, duplicate-preserving sparse grouping and an original all-prefix head aggregate. The partially free incidence aggregate, maintained histogram state and paid dictionary runtime remain to be connected. Supplemental declarations are separate from the canonical-module totals below.
+
+All 17 canonical modules pass strict compilation, ordinary-root 15-linter checks and every-generated standard-axiom audits: 334 declarations and 244 theorem constants. All isolated objects are byte-identical. Actual compiler environment headers pin 17657 transitive imports and both their source and object bytes. See [verification](verification.json) and the [manifest](manifest.json).
+
+Read the [incidence derivation](constraint-count-shortcut.md), [head formula](head-count-notes.md), [physical head counter](head-bits-notes.md), [incidence budgets](incidence-bits-bounds-notes.md), [complete classified callback](classified-counts-notes.md), and [next integration plan](next-whole-bit-join.md). Independent reviews cover the [head identity](review-head-formula.md), [incidence identity](review-incidence-formula.md), [physical incidence classifier](review-incidence-count-bits.md), [complete callback](review-classified-counts.md), [original selection and budget](review-classified-selection.md), and [uniform envelope](review-classified-resources.md).

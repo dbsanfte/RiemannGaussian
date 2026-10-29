@@ -1,0 +1,22 @@
+[
+  {
+    "module": "SemiprimeMaterializedOriginalSource",
+    "exit_code": 0,
+    "seconds": 6.513815329992212
+  },
+  {
+    "module": "SemiprimeCachedSourceCounter",
+    "exit_code": 0,
+    "seconds": 6.514094485028181
+  },
+  {
+    "module": "SemiprimeCachedSourcePublicExecution",
+    "exit_code": 0,
+    "seconds": 6.646420034987386
+  },
+  {
+    "module": "SemiprimeCachedSourceScheduledExecution",
+    "exit_code": 0,
+    "seconds": 6.720140473044012
+  }
+]

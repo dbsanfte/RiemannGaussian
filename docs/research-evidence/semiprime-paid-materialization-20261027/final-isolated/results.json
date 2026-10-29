@@ -1,0 +1,65 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeTernaryFactor",
+    "exit_code": 0,
+    "seconds": 7.252490409009624,
+    "source_sha256": "10ec3618679852c52d3b94fac9e4c15d8d36a5f72198855c1cdf30565bd835cf",
+    "isolated_sha256": "b6e111edb94d1904806b63e0d24f15e5110efe87af52b606883dcbe6fcb317f4",
+    "canonical_sha256": "b6e111edb94d1904806b63e0d24f15e5110efe87af52b606883dcbe6fcb317f4",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeTernaryPublicFactor",
+    "exit_code": 0,
+    "seconds": 9.90774410503218,
+    "source_sha256": "bf3c2d7f583c5581be7ad23df7a24b572d411851799ff08122e17c4caa03529d",
+    "isolated_sha256": "8aeb98e4e1cd3e9be4c30d48e80c875064f54c6bfa3fde2fd214362a83275afa",
+    "canonical_sha256": "8aeb98e4e1cd3e9be4c30d48e80c875064f54c6bfa3fde2fd214362a83275afa",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeTernaryLocal",
+    "exit_code": 0,
+    "seconds": 7.749303632997908,
+    "source_sha256": "223fe42526e2d63ee548e4d03ae7fae478148b4646247d0fd869e681c2a315e0",
+    "isolated_sha256": "7509e895fd596438d749d90ca8b614fb4163d1b7381b0f39ee22ef5c41300021",
+    "canonical_sha256": "7509e895fd596438d749d90ca8b614fb4163d1b7381b0f39ee22ef5c41300021",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeTernaryLocalPaid",
+    "exit_code": 0,
+    "seconds": 8.747516289993655,
+    "source_sha256": "c0b21e303980fdefec71f716df9073b3324185ca0fc7eded9e3061feded863c7",
+    "isolated_sha256": "0b175103f5fd40cf1bb95a807e84d761ffd2cda3008a04690f2a7c9998aa0f11",
+    "canonical_sha256": "0b175103f5fd40cf1bb95a807e84d761ffd2cda3008a04690f2a7c9998aa0f11",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeBooleanRingFactor",
+    "exit_code": 0,
+    "seconds": 6.947620710998308,
+    "source_sha256": "fd4c4b4e398f033d7ba07619d35a5adc93a3820a3bdd65a8781d7911ba7c6494",
+    "isolated_sha256": "b8b7d313a798d4f883366db6ad8bdae091984d1fb5bdf3d8528c6d6e176af20f",
+    "canonical_sha256": "b8b7d313a798d4f883366db6ad8bdae091984d1fb5bdf3d8528c6d6e176af20f",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeParametricFactorLoop",
+    "exit_code": 0,
+    "seconds": 9.289322156982962,
+    "source_sha256": "98951fc9ec417886656f9260f3ddff7ec1bd79eaef8911f6ef43956e69c806f8",
+    "isolated_sha256": "f318ad16e8ebdab50666509c8bf6ec0a73f07dd2122fc8a9b36254e1550f619f",
+    "canonical_sha256": "f318ad16e8ebdab50666509c8bf6ec0a73f07dd2122fc8a9b36254e1550f619f",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeParametricFactorFrame",
+    "exit_code": 0,
+    "seconds": 6.823291654000059,
+    "source_sha256": "e1f8fbafee75bfc109a523f1dc6db94fee35f461970a879b3b2cd12d2c066871",
+    "isolated_sha256": "ce052380d105468a57c63ce06fc54021f3e1edb69aef309b2e478ce7c4025d16",
+    "canonical_sha256": "ce052380d105468a57c63ce06fc54021f3e1edb69aef309b2e478ce7c4025d16",
+    "object_matches": true
+  }
+]

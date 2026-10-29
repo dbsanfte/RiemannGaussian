@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "modules": 5,
+  "declarations": 322,
+  "theorem_constants": 178,
+  "standard_axioms_only": true,
+  "strict": true,
+  "root15_lint": true,
+  "isolated_byte_equal": true,
+  "records": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceCompactBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceCompactBits.lean",
+      "source_sha256": "370aece6af15538f78a5169bd917d7a3defce823af040aad4ee463b8cd7e1c9b",
+      "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceCompactBits.olean",
+      "canonical_sha256": "c77e755fc9af6681fe447675101c9177f507d6707a69c84364978ccb0908914a",
+      "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceCompactBits.olean",
+      "isolated_sha256": "c77e755fc9af6681fe447675101c9177f507d6707a69c84364978ccb0908914a",
+      "returncode": 0,
+      "byte_equal": true,
+      "log": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceCompactBits.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramTrie",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramTrie.lean",
+      "source_sha256": "2c648125a8d6e254052db131adf7c568486c5bbdc03432c2d00f33fef1e8649e",
+      "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramTrie.olean",
+      "canonical_sha256": "6471a0976529abbae2862fd08cd4909891fee857b557f2799b5dfc0256207ca0",
+      "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceHistogramTrie.olean",
+      "isolated_sha256": "6471a0976529abbae2862fd08cd4909891fee857b557f2799b5dfc0256207ca0",
+      "returncode": 0,
+      "byte_equal": true,
+      "log": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceHistogramTrie.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramTrieBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramTrieBounds.lean",
+      "source_sha256": "19af2c5c3c86d3140cce56da3aba7f48f4ed346fa9751d4adf568edecef0ecb8",
+      "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramTrieBounds.olean",
+      "canonical_sha256": "65576ad44ce2f3e92ac6a0c67a7268ea18c9d69623724eada954c1eb518c3abf",
+      "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceHistogramTrieBounds.olean",
+      "isolated_sha256": "65576ad44ce2f3e92ac6a0c67a7268ea18c9d69623724eada954c1eb518c3abf",
+      "returncode": 0,
+      "byte_equal": true,
+      "log": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceHistogramTrieBounds.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramTrieStore",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramTrieStore.lean",
+      "source_sha256": "0a3e501c1d96d9861a43bf7986748cf43a8b1532fe8f45b69fd78b8dadac04c3",
+      "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramTrieStore.olean",
+      "canonical_sha256": "03aec8a496aa9c351934206f6f940e3d28a0c4d2048ba17b5796b96d86eb53b1",
+      "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceHistogramTrieStore.olean",
+      "isolated_sha256": "03aec8a496aa9c351934206f6f940e3d28a0c4d2048ba17b5796b96d86eb53b1",
+      "returncode": 0,
+      "byte_equal": true,
+      "log": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceHistogramTrieStore.log"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramPrefix",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramPrefix.lean",
+      "source_sha256": "80a9258f509959f089733be444f844e398bc780c75583c02c7534c6e08a7bf6c",
+      "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramPrefix.olean",
+      "canonical_sha256": "fd09b2215de2750798523b47c59306ffa15ab6603e6f856a13c492fa41af7d66",
+      "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceHistogramPrefix.olean",
+      "isolated_sha256": "fd09b2215de2750798523b47c59306ffa15ab6603e6f856a13c492fa41af7d66",
+      "returncode": 0,
+      "byte_equal": true,
+      "log": "/tmp/semiprime-histogram-acquisition-20261027/own-isolated/SemiprimeSourceHistogramPrefix.log"
+    }
+  ],
+  "evidence": {
+    "/tmp/semiprime-histogram-acquisition-20261027/HistogramTrieAudit.lean": "e6d6386aed713ee78e952f2b506b9786c28315273c17f69ba8ab1476ea73fc8b",
+    "/tmp/semiprime-histogram-acquisition-20261027/histogram-trie-audit.log": "960cc1ed627569215a0d232a3548739439de8ae00ed2194bf4eacacbe7769174",
+    "/tmp/semiprime-histogram-acquisition-20261027/HistogramTrieStoreAudit.lean": "e3aa7b1e835a7f8e67d6fd53155e0464f7e0fe2b66be83efa97afed84cb3cfa4",
+    "/tmp/semiprime-histogram-acquisition-20261027/histogram-trie-store-audit.log": "4e70bf172d1f8c401c787c9fa5f6ae6fc0615cf132f5ef98453ad964dd980daa",
+    "/tmp/semiprime-histogram-acquisition-20261027/HistogramPrefixAudit.lean": "9d1fac162703f50112c1eb675814c2b42ca1bbc997d7dc1ccdca6dee7304a15a",
+    "/tmp/semiprime-histogram-acquisition-20261027/histogram-prefix-audit.log": "82719408718c20a2e6e4152ad70afc60df89c906e24bd6e99cc9e09441887181",
+    "/tmp/semiprime-histogram-acquisition-20261027/HistogramTrieSmoke.lean": "3592af854045a397f8bff3c0e3c617b7abbf68d7c9c797f40a9a4d3a78a5b797",
+    "/tmp/semiprime-histogram-acquisition-20261027/histogram-trie-smoke.log": "0de5826e5da31eb618dd2bdf323df97e3567910b873bebba7a994666d4bcd32c",
+    "/tmp/semiprime-histogram-acquisition-20261027/prefix-smoke.lean": "98c3deb790bf57b8c8d05221f6133a2ac95509e2e562f592b5c6f9b8972ee77b",
+    "/tmp/semiprime-histogram-acquisition-20261027/prefix-smoke.log": "fccaf45fceddd350f6b5de58243be636490cb2abc33dcdb77c3d4a735acb3234",
+    "/tmp/semiprime-histogram-acquisition-20261027/histogram-trie-prefix-notes.md": "f18477da19fbb7698ce54962fc5713020d06561b820c4293a1d241cc1949fc92"
+  }
+}

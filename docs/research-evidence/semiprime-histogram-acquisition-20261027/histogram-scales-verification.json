@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramCountInput",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramCountInput.lean",
+      "source_sha256": "e992c45af54cc4f7a26a2fc24f82fc2a592752c2980346469d0ca60ecaed5ac3",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramCountInput.olean",
+      "object_sha256": "a12f492aefe5fcf7b47eb8c115c000a33d932928007756953f0e2a5801929b88",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceHistogramCountInput.olean",
+      "isolated_sha256": "a12f492aefe5fcf7b47eb8c115c000a33d932928007756953f0e2a5801929b88",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 21,
+      "theorems": 14
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramScales",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramScales.lean",
+      "source_sha256": "53eda48128d4910a50ab43f09bfc152bf31fc2a68f26e13cb08ee1df1a4954d9",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramScales.olean",
+      "object_sha256": "da3e3c7b197d383fe463533ba3eac682745410778a1ff3b7ca95cf97e960e436",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceHistogramScales.olean",
+      "isolated_sha256": "da3e3c7b197d383fe463533ba3eac682745410778a1ff3b7ca95cf97e960e436",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 44,
+      "theorems": 21
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramScalesBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramScalesBounds.lean",
+      "source_sha256": "393dcfc92f04211c9aa306ec00f26560a5c75a8905ec1141d70813c375a5ae51",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramScalesBounds.olean",
+      "object_sha256": "723bade18a04fd716d43cde288ca8f241c9ab231b447b2b2d704dca7a2d5f16b",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceHistogramScalesBounds.olean",
+      "isolated_sha256": "723bade18a04fd716d43cde288ca8f241c9ab231b447b2b2d704dca7a2d5f16b",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 43,
+      "theorems": 34
+    }
+  ],
+  "notes_sha256": "7f53716e931c892b83cf7592031c483f545cfb9eff277a7989b61643506d1a0c",
+  "smoke_source_sha256": "ab6236cd280f974c5aa27f94ef56f85946c08a907712f90865c22072fb26f88e",
+  "smoke_log_sha256": "933a616b7e9ac25b80275519351bd7dd9035f8a8c4957e625865446583e772d4",
+  "scope": "Actual original list-count driven compact scales/weights and full setup report; native r/lambda encoder boundary and complete public physical caller composition explicit."
+}

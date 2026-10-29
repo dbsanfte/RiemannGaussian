@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-26",
+  "primary_source": {
+    "title": "Local smoothing for the Euclidean wave equation",
+    "author": "OpenAI",
+    "manuscript_date": "2026-10-25",
+    "pages": 59,
+    "url": "https://github.com/openai/math/blob/main/preprints%2FLocal-smoothing-for-the-Euclidean-wave-equation-October-25-2026%2Fpaper.pdf",
+    "raw_url": "https://raw.githubusercontent.com/openai/math/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+    "pdf_sha256": "9ca156c552f2d940528f7131716326ef0d67a5829e723e1d294d74560c8636ff",
+    "extracted_text_sha256": "3c9f2596ef04a9402d44082074642e7b407e672eb044b9393814f29687fc979b",
+    "retrieval": "Raw PDF downloaded after connector rate limit; text extracted locally with pdftotext -layout.",
+    "scope": "Mechanism and applicability study, not independent certification of all claimed PDE results."
+  },
+  "reading_coverage": {
+    "root": "Sections 1–8, Appendix A, central portions of B, D, E; source and native-transfer review.",
+    "determinant_reader": "Sections 3–4 and Appendix D.",
+    "current_reader": "Sections 2, 5 and Appendix E.",
+    "multiscale_reader": "Sections 6–12 and Appendices A–C."
+  },
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-pole-transport-20261026/README.md",
+      "sha256": "eb810f072d96a5024b6c14ad3bdc84959593c04a78bdcfc67e676b9cfa73bae6"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-pole-transport-20261026/retuned-composition.md",
+      "sha256": "3bbfc8c9a725842296e2803095104532d45918acd9d737b04e061f08b164a60a"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-packed-residue-20261026/packed-source.md",
+      "sha256": "9122787f26aff82c4eb1188bd57ae477af7b5d943603d47ddc9a72a1c6894fdf"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-packed-residue-20261026/ward-cavity-contraction.md",
+      "sha256": "dcabf6fb3d52bd28a8ff6ad8580e946d0212ec4596c626dc9cad6ae2ad3fa073"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-separated-selector-20261026/higher-macdonald.md",
+      "sha256": "fc94a440998fc93c31044b2556b4b66c5ac8602adbc3dc9e69f468fbec69b996"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-geometric-contraction-20261026/singular-pairing.md",
+      "sha256": "0b6f877ec7a82a58ac5686ac27d213cf95db4f2e2ba5ccfeaf474dd960e1b9cd"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-six-domain-acquisition-20261026/README.md",
+      "sha256": "7f02576b9f1da50468198ba620001c547361d486ffd9e00ebc0944c2d7d482ad"
+    }
+  ]
+}

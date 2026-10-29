@@ -1,0 +1,211 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 11,
+    "declarations": 408,
+    "theorems": 175
+  },
+  "modules": {
+    "SemiprimeD1StackPacketModeAcquire": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquire.lean",
+        "sha256": "537f33ac94033673de73c44f7f133e132f0ea5cf9d22650c70ac167a24988ca3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquire.olean",
+        "sha256": "e399c99ac7c97c2a14fda1974468b07edd6a4035546e190d5ec779ca88a98d52"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquire.olean",
+        "sha256": "e399c99ac7c97c2a14fda1974468b07edd6a4035546e190d5ec779ca88a98d52"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquirePrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquirePrimitives.lean",
+        "sha256": "39898fde66109627f19309e20ccb8a651cfefb1186d06b10ba231d25066e5c89"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquirePrimitives.olean",
+        "sha256": "8365298714366bbcf7b02d97b199842deae2060d9aed38af6d409ef82c498bf8"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquirePrimitives.olean",
+        "sha256": "8365298714366bbcf7b02d97b199842deae2060d9aed38af6d409ef82c498bf8"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireEncoding.lean",
+        "sha256": "b672109232eff9041a048de6ef5d74245438c1f1b6a70e531152b584eb2027f8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireEncoding.olean",
+        "sha256": "aaf6adb6d35777f64cfa1090aa15809a2ffa631c62b525c0504bd9d2840224f6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireEncoding.olean",
+        "sha256": "aaf6adb6d35777f64cfa1090aa15809a2ffa631c62b525c0504bd9d2840224f6"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireCount": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireCount.lean",
+        "sha256": "d6dfd243d8d5cb8fbbd0e5a323f39afda7fe8eea49365d93d3767dc7e25391f9"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireCount.olean",
+        "sha256": "fd4c62c486efe48c27c93b65236cee8064a042877db95cdd3e3a0dd9a4a4b675"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireCount.olean",
+        "sha256": "fd4c62c486efe48c27c93b65236cee8064a042877db95cdd3e3a0dd9a4a4b675"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireDouble": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireDouble.lean",
+        "sha256": "6739e1d3cdedf11749d41f7aea53eb3c8c886c4dd14897dc34f2ccf68dcbc58b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireDouble.olean",
+        "sha256": "fc3ace4a37ea41a44eade18cce871b9319efaef52406d46a683de46b058ae6fd"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireDouble.olean",
+        "sha256": "fc3ace4a37ea41a44eade18cce871b9319efaef52406d46a683de46b058ae6fd"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireOrder": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireOrder.lean",
+        "sha256": "7b7f74461a08c6e2afeafc6194092ee977fa13174b08f2f9e67edd81782b2cb8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireOrder.olean",
+        "sha256": "d4eb023b1e9c4bc3f4adb44653cd4b5c117377efccc0fb9557c9db5f1a2be833"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireOrder.olean",
+        "sha256": "d4eb023b1e9c4bc3f4adb44653cd4b5c117377efccc0fb9557c9db5f1a2be833"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireExecution.lean",
+        "sha256": "203a2b6e9aa0e0fccabcdb12f4c1fc0ca3fd3ab0cf9017b431da640c05ac0575"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireExecution.olean",
+        "sha256": "60f4c62bf7694a7ca381622cf5b952f7d816d45bff13ce38a6491f902165bad7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireExecution.olean",
+        "sha256": "60f4c62bf7694a7ca381622cf5b952f7d816d45bff13ce38a6491f902165bad7"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireBounds.lean",
+        "sha256": "16c38bb4734059fcf3be2c3fd6ffd061e816591e8e134caec0390510b454ac93"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireBounds.olean",
+        "sha256": "ece1b8d93c2f6660b16e1054d0c57471ac59adf6789c29a4f08fae72a08fabe3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireBounds.olean",
+        "sha256": "ece1b8d93c2f6660b16e1054d0c57471ac59adf6789c29a4f08fae72a08fabe3"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireResources.lean",
+        "sha256": "cf2f0b31585b6e95d9c5725b598ba6425e2a76b355fe23b61b3cc6ee597a2f71"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireResources.olean",
+        "sha256": "8aca20482317fc1312bd5952d739c5c0365eb2ef4a9891d848cb102c01c1cf81"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireResources.olean",
+        "sha256": "8aca20482317fc1312bd5952d739c5c0365eb2ef4a9891d848cb102c01c1cf81"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireMonomial": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireMonomial.lean",
+        "sha256": "b0c818eb88f8dce7d8fd64cc649ec10ff74b45c3379752a5a37b191a2fd2b768"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireMonomial.olean",
+        "sha256": "6d70705d4474f1b703e11589140e397c335abc4b6de9351a5ac1a0e4674cc491"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireMonomial.olean",
+        "sha256": "6d70705d4474f1b703e11589140e397c335abc4b6de9351a5ac1a0e4674cc491"
+      }
+    },
+    "SemiprimeD1StackPacketModeAcquireOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireOriginal.lean",
+        "sha256": "7cfa48bdc575a5b24dfa107288fd73a29867bd8f05667cdb20829c69a82e796b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketModeAcquireOriginal.olean",
+        "sha256": "c342281352863a9161fd9d7d614628a0a7b5f1d80a5d9c28336319b91e8c30a7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/SemiprimeD1StackPacketModeAcquireOriginal.olean",
+        "sha256": "c342281352863a9161fd9d7d614628a0a7b5f1d80a5d9c28336319b91e8c30a7"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PacketModeAcquireControls.lean",
+        "sha256": "2bde1346434787c2e8ae44c04b5d020589d806282b3598ddeff52871af0f229f"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-frozen/control-0.log",
+        "sha256": "d4a35d80f88e94a68286a470b40d17210c742cfe3f759f75890295f863a6ab85"
+      },
+      "expected": "PACKET_MODE packets=0 i=0 WIDTH=0 actual_transitions=124 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true\nPACKET_MODE packets=0 i=2 WIDTH=3 actual_transitions=226 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true\nPACKET_MODE packets=1 i=0 WIDTH=1 actual_transitions=187 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true\nPACKET_MODE packets=1 i=0 WIDTH=2 actual_transitions=2121 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true\nPACKET_MODE packets=4 i=1 WIDTH=2 actual_transitions=143980 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true\nPACKET_MODE packets=1 i=2 WIDTH=2 actual_transitions=27717 all44=true counted=true doubled=true catalogue_calls=1 within_own_clock=true\nPACKET_MODE_CONTROLS cases=6 actual_transitions=174355 all44=true counts_acquired=true tile_value_paid=true flags_clear=true two_real_outer_returns=true\nPACKET_MODE_OBSERVER declarations=30 standard3_only=true"
+    }
+  ],
+  "full_goal_complete": false,
+  "explicit_final": true,
+  "final_utc": "2026-10-28T23:19:15.320808+00:00",
+  "source_canonical_writers_stopped": true,
+  "canonical_objects_read_only": true,
+  "default_heartbeats": 200000,
+  "elab_async": false,
+  "actual_import_pairs": 17784,
+  "actual_import_pins_before_after_live_equal": true,
+  "import_pins_before": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-live-before.json",
+  "import_pins_after": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-live-after.json",
+  "independent_review": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/packet-mode-acquire-independent-review.txt",
+    "sha256": "943f9d5cea861ace35190be4b18303ec88e7e7220d8291b83835b182f02527a0",
+    "source_pins": 11,
+    "live_pins_verified": true
+  },
+  "whole_compiled_controls": {
+    "cases": 6,
+    "actual_transitions": 174355,
+    "all_roles": 44,
+    "two_actual_outer_returns": true,
+    "flags_clear": true,
+    "actual_packet_count_and_tile_doublings_checked": true,
+    "catalogue_calls_per_case": 1,
+    "observer_generated_standard3": 30
+  },
+  "scope": "THREE actual prepared physical tapes: packet vector, unary phase order i, unary WIDTH. Actual packet parser/count + actualtile2^(i+1) construction +wholeCatalogue35/feasibleDFS+truehalt. Exact original mode bytes/order. Original packet/WIDTH producers and literal N-only caller join OPEN.",
+  "cost": "Own fixed polynomial in packetVectorBytes+i+2^(i+1)+WIDTH+1 per SAME actual weighted feasible visit. Tile count paid by VALUE. ALL44 data roles and actual returns; no old native clock transport."
+}

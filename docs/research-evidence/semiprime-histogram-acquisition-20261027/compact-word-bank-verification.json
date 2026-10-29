@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceCompactWordIds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceCompactWordIds.lean",
+      "source_sha256": "409d600957e0298e4117bb7994787e42d6d6be0a83ac84bcbda4b90b9bf76553",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceCompactWordIds.olean",
+      "object_sha256": "c9c4ef93c8b6663ee966a01b474abee3d2082c6534c2136c9abd6eab8e077ea0",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceCompactWordIds.olean",
+      "isolated_sha256": "c9c4ef93c8b6663ee966a01b474abee3d2082c6534c2136c9abd6eab8e077ea0",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 41,
+      "theorems": 33
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceCompactWordBank",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceCompactWordBank.lean",
+      "source_sha256": "1a9effc213be2194cca8624113ace8d31c5f09cacc572abbf076191ecc296537",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceCompactWordBank.olean",
+      "object_sha256": "b82ef6982c4a86bcd1758a6a4fd6bd98cf9bd080d76f575b0cce9d0db0cfadfe",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceCompactWordBank.olean",
+      "isolated_sha256": "b82ef6982c4a86bcd1758a6a4fd6bd98cf9bd080d76f575b0cce9d0db0cfadfe",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 27,
+      "theorems": 25
+    }
+  ],
+  "notes_sha256": "b8dd062080011c6275953a1b60b8dc4070565e5bf44ee4356921afb60dcaa394",
+  "smoke_source_sha256": "f611c681fb62bd739eb151907111247c04fb30938fb83619f9179da3f8393f49",
+  "smoke_log_sha256": "a8a4075755de8fc39a8b9e0b29ee01cb54dbebd892e9dab30b3cb19ab1ed033f",
+  "scope": "Direct compact IDs and actual row bank from r,Q with original ordered menu/coordinate semantics and paid logarithmic-ID acquisition. Old public controller, key framing and whole primitive machine join remain separate."
+}

@@ -1,0 +1,13 @@
+# Executed normalized word inverse — final
+
+Two NEW source modules are frozen after canonical strict builds (`autoImplicit=false`, `warningAsError=true`), ordinary-root fifteen-linter and every-generated-declaration axiom audits. Core: 41 declarations/31 theorems; bounds: 7/6. All transitive axioms are standard propext/Classical.choice/Quot.sound. Source/object pins are in normalized-inverse-source-hashes.json.
+
+`NormalizedInverseBits.build template a J` uses exactly one cached recursive prefix. Index zero appends literal one. Index n>0 materializes the n actual source/prefix word pairs, executes dotBits, executes physical negation, and pushes the single result. Runtime never decodes a rational coefficient or calls the scalar inverse. Source inputs and cached coefficients are read through explicit word accesses; the report pays pair creation, both scans, prefix copying/push and all physical arithmetic reports.
+
+`build_correct` proves every prefix n<=J decodes to `JetArray.buildInverse (decode a) 1 n` and is Valid. Hypotheses are ORIGINAL normalized source coefficient representations d/B, source validity, and literal common numeric capacity envelopes. Each dot multiplication/suffix and negation is justified from these via dotBits_correct and the existing common normalized-inverse representations. There is no intermediate Fits or output-value oracle.
+
+`inverseWidth b J = b*(J+1)+J+b+(J+b+3)*J+1` is polynomial in precision/input bit bound. `build_correct_dyadic` derives all capacity bounds from d,B<=2^b. `build_correct_of_width` supports an arbitrary larger shared template, allowing the actual Hermite caller to reuse its width. `build_size` and `build_bounded` hold structurally; the latter needs positive template width. Bounds `build_clock` gives at every n<=J the actual report upper bound `1+n*stepBudget W A J`, where A bounds the original source-array size. stepBudget is polynomial in W,A,J and retains physical dot/negation work plus finite pair/read/push/control ledgers. No inverse coefficient is recomputed.
+
+Tiny exact algebra controls (not native coverage/factoring tests) produced empty precision0, `[1]`, inverse(1-X) `[1,1,1]`, inverse(1+X) `[1,-1,1]`. The last executed report clock was88923. See NormalizedInverseSmoke.lean and normalized-inverse-smoke.log.
+
+Scope: original source word production, complete physical natural-number/index/tape bookkeeping, and the final Hermite/controller composition remain separate. This supplies a real normalized inverse arithmetic loop and its polynomial physical arithmetic/cell ledger, not a full machine clock or a sixth-rate conclusion.

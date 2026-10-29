@@ -8,11 +8,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Cold semiprime proofs share large imported environments. Bound concurrent
+    # elaboration so their private heaps fit alongside the common proof closure.
+    env:
+      LEAN_NUM_THREADS: "2"
 
     steps:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 2
+      - name: Allow the full Lean import closure to map its compiled regions
+        # The expanded root exceeds Linux's common 65,530-mapping default.
+        # This is independent of RAM/swap and leaves every proof gate intact.
+        run: |
+          lean_map_limit=$(sysctl -n vm.max_map_count)
+          if (( lean_map_limit < 262144 )); then
+            sudo sysctl -w vm.max_map_count=262144
+          else
+            sysctl vm.max_map_count
+          fi
       - name: Keep exhaustive numerical verification out of ordinary builds
         run: |
           python3 scripts/numerical_certificate.py
@@ -23,10 +37,17 @@ jobs:
       - name: Reject unfinished Lean proofs
         shell: bash
         run: |
-          if git grep -nE '\<(sorry|admit|sorryAx)\>' -- '*.lean'; then
-            echo 'Lean sources contain a forbidden proof placeholder.' >&2
-            exit 1
-          fi
+          python3 scripts/test_lean_placeholders.py
+          python3 scripts/check_lean_placeholders.py
+      - name: Check whitespace while preserving pinned historical evidence
+        run: |
+          python3 scripts/test_staged_whitespace.py
+          python3 scripts/check_staged_whitespace.py --commit HEAD
+      - name: Free unused SDKs for the expanded proof library
+        # This job uses Lean, Python and Node; these preinstalled SDKs are unused.
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup
+          df -h /
       # Path dependencies keep their artifacts outside the root `.lake`, which
       # is the only directory cached by lean-action.  Key this external proof
       # closure by every compiler, dependency, configuration, and source input;
@@ -80,6 +101,8 @@ jobs:
           node scripts/check_theorem_graph.cjs
       - name: Check the cached optional certificate explorer without exhaustive verification
         run: python3 scripts/build_numerical_certificate_explorer.py --check
+      - name: Check semiprime algorithm progress and evidence freshness
+        run: python3 scripts/build_semiprime_proof_explorer.py --check
       - name: Verify the current RH campaign and this commit's latest update
         run: |
           THEOREM_GRAPH_METADATA=docs/rh-proof-explorer/metadata.json \
@@ -107,6 +130,7 @@ jobs:
           .lake/browser-venv/bin/python scripts/test_theorem_explorer.py
           .lake/browser-venv/bin/python scripts/test_numerical_certificate_explorer.py
           .lake/browser-venv/bin/python scripts/test_rh_proof_explorer.py
+          .lake/browser-venv/bin/python scripts/test_semiprime_proof_explorer.py --browser
       - name: Check README with the live GitHub math renderer
         shell: bash
         env:
@@ -142,6 +166,6 @@ jobs:
       group: theorem-explorer-pages
       cancel-in-progress: false
     steps:
-      - name: Deploy the three verified theorem explorers
+      - name: Deploy the proof explorers and algorithm progress view
         id: deployment
         uses: actions/deploy-pages@v4

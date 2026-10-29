@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "guaranteed_exponent_improvement": false,
+  "positive_result": "Specified native twist knot and soft-O(L) acquisition of complete fixed-u deformed coefficient polynomial; not all values or full orbit product.",
+  "scope": [
+    "Universal arbitrary-knot zero-preserving substitution disproved; no attained native catalogue counterexample claimed.",
+    "Raw R convention is distinct from source-polynomial identity; universal same-parameter identification not established.",
+    "Initialized original block remains soft O(L+b); no whole-family query improvement."
+  ],
+  "reviews": [
+    "nichols-review.md",
+    "scalar-review.md",
+    "twist-review.md",
+    "block-review.md",
+    "integration-review.md"
+  ],
+  "symbolic_validation": [
+    {
+      "command": "python3 check_nichols_symbolic.py",
+      "exit_code": 0,
+      "output": "nichols-symbolic-validation.json",
+      "scope": "Universal Laurent algebra, all 64 YB basis words, ordinary and rotated inverses, curls, full trefoil scalar."
+    },
+    {
+      "command": "python3 check_pair_symbolic.py",
+      "exit_code": 0,
+      "output": "pair-symbolic-validation.txt",
+      "scope": "Exact monic integer remainder and Bareiss resultant 25."
+    },
+    {
+      "command": "python check_nichols_review.py",
+      "requires": "SymPy",
+      "exit_code": 0,
+      "output": "nichols-review-validation.txt",
+      "scope": "Independent symbolic determinant and rotated inverse audit; both trefoil orientations."
+    }
+  ],
+  "preservation": {
+    "protected_files_verified": 720,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1510005,
+        "sha256": "42d19884211eb5c5a10fcdc81251f798386dbe2e0c2c38461e2e39084f9fa65e"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2356716,
+        "sha256": "2228bdfbaf75f08e5e321b97c54c8928b45f5d90efcf8c25b870b28b985c14df"
+      }
+    },
+    "scratch_baseline_sha256": "89c0f3f51068c6491ce9d2b4392aff4d3e5d0fdf42053aa6fd2bcf6cd9254e6d"
+  },
+  "integration_corrections": [
+    "Superseded twist acquisition paragraph updated to point to completed construction.",
+    "Cimasoni author-PDF title and connected-sum Corollary 3.5 corrected."
+  ],
+  "local_links_checked_before_manifest": 13,
+  "json_and_whitespace_checks": true,
+  "git_diff_check": true,
+  "lean_or_public_asset_changes": false,
+  "numerical_coverage_campaign": false,
+  "commit_or_push": false
+}

@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "goal": "ACTIVE",
+  "slice": "ACTUAL_PHYSICAL_HERMITE_REPORT_SUBPOWER_AND_SOURCE_SCORE_PREFIX_HEIGHT",
+  "prior_paper_factoring_bit_time": "N^o(1), permitting subexponential storage",
+  "complete_Lean_whole_program_bit_clock": "OPEN",
+  "prior_controller_mixed_report_subpower": "FROZEN_PROVED",
+  "new_controller_public_report_subpower": "PROVED_ACTUAL_RETAINED_REPORT",
+  "new_controller_public_report_sixth": "PROVED_ACTUAL_RETAINED_REPORT",
+  "runtime_changed": false,
+  "rate_theorem": "RiemannGaussian.SemiprimeHermiteFullReportRate.run_report_subpower",
+  "source_score_prefix_height": "ORIGINAL_SCALE_DERIVED",
+  "source_all_preprocessing_state_bound": "OPEN",
+  "new_controller_all_input_correctness": true,
+  "physical_corrected_port_local_group_on_actual_path": true,
+  "source_and_encoding_work_retained": true,
+  "arbitrary_group_work_assumption_discharged": true,
+  "original_source_width_guards_derived": true,
+  "outer_arithmetic": "PHYSICAL_WORDS_ON_ACTUAL_CALLER_PATH",
+  "Hermite": "PHYSICAL_WORDS_ON_ACTUAL_CALLER_PATH",
+  "per_group_decode": false,
+  "completed_node_decode_only": false,
+  "final_scalar_count_decode_only": true,
+  "original_packet_common_height_derived": true,
+  "normalized_inverse_computed": true,
+  "cardinal_inputs_acquired": true,
+  "full_public_resource_join": "PROVED_ACTUAL_REPORT",
+  "full_bit_simulation_join": "OPEN",
+  "actual_source_derived_packet_width": true,
+  "source_production_and_encoding": "SCALAR_BOUNDARIES_OPEN",
+  "finite_address_control_clock": "OPEN",
+  "new_native_long_query_bound": false,
+  "practical_speedup_claimed": false,
+  "module_count": 8,
+  "generated_declarations": 124,
+  "theorem_constants": 101,
+  "strict_options": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "ordinary_root_import": true,
+  "scoped_linters_per_module": 15,
+  "all_generated_transitive_standard_axioms_only": true,
+  "isolated_objects_identical": true,
+  "dependency_checkpoint_unchanged": true,
+  "actual_compiler_imported_modules": 17661,
+  "dependency_list_provenance": "Lean environment header; no source-text import scanner",
+  "preserved_prior_files": 3045,
+  "preserved_concurrent_files": 24,
+  "preserved_append_only_prefixes": 2,
+  "commit_or_push": false,
+  "modules": {
+    "SemiprimeHermiteWidthPolynomial": {
+      "source": "RiemannGaussian/SemiprimeHermiteWidthPolynomial.lean",
+      "source_sha256": "0f6f525acf6fee2a25d1be7801e557cd6c7b29ab329b75157a107b65c8c5ae58",
+      "object_sha256": "a1d7c20f475de04fb05c924edef4eaf85b092988a29806cac6de3dd329b7e5ce",
+      "declarations": 18,
+      "theorem_constants": 17
+    },
+    "SemiprimeHermiteReportStagePolynomial": {
+      "source": "RiemannGaussian/SemiprimeHermiteReportStagePolynomial.lean",
+      "source_sha256": "4425acfb49c65886800e6a90258a848657d935ac6615fd44c148e408830cc523",
+      "object_sha256": "af6e6fee1c46386352d825abae2095edd332d93ca78e078fa40baf08446751a5",
+      "declarations": 34,
+      "theorem_constants": 28
+    },
+    "SemiprimeHermiteReportEnvelope": {
+      "source": "RiemannGaussian/SemiprimeHermiteReportEnvelope.lean",
+      "source_sha256": "20241533d9b8b30b75b8eb89f65753727675aef06e372d2d8c9f5f31e706e4b5",
+      "object_sha256": "abb00a0448a1ca46ad3f19260a9ee601b10a026777b8cc96b9bb5a77040a1cd2",
+      "declarations": 22,
+      "theorem_constants": 16
+    },
+    "SemiprimePublicHermiteCounterBudget": {
+      "source": "RiemannGaussian/SemiprimePublicHermiteCounterBudget.lean",
+      "source_sha256": "e5ac1d8a8d546a244d3c6ee632b36beaa3d05b78dfef1fa54beb454dfdd002a4",
+      "object_sha256": "31cf3c84c2d9b7d5220d367b3ba076d81f3dc9ba0218bdf4e870b1ad7f5dba8c",
+      "declarations": 14,
+      "theorem_constants": 9
+    },
+    "SemiprimePublicHermiteReportPolynomial": {
+      "source": "RiemannGaussian/SemiprimePublicHermiteReportPolynomial.lean",
+      "source_sha256": "9cd2f416d48018641f36cdfee49ab2d71145608e070719e02cb98d441776260e",
+      "object_sha256": "70d747aceb8d5f00864eb4a3152c4e25cf2cbab74073d5d2b5b7b950661cdc0a",
+      "declarations": 10,
+      "theorem_constants": 7
+    },
+    "SemiprimePublicResourceRate": {
+      "source": "RiemannGaussian/SemiprimePublicResourceRate.lean",
+      "source_sha256": "f53eb4b6396b63e2e221c6dfaab3188c678703c47e5f431f3a9067c48ab4b72b",
+      "object_sha256": "f37e3fb652ada439bb15c69ed6222f1d9f974bce03ceea056d8b078df2f41989",
+      "declarations": 2,
+      "theorem_constants": 2
+    },
+    "SemiprimeHermiteFullReportRate": {
+      "source": "RiemannGaussian/SemiprimeHermiteFullReportRate.lean",
+      "source_sha256": "042b859eb7f3b773d4f40a7782f7ac70a20ad3f4ba60ec0ad2969b683d34a33a",
+      "object_sha256": "a5e56aaf7ec39309b52d71dec5e0ebdb273e152cc50930d01b9fa8088f109f07",
+      "declarations": 2,
+      "theorem_constants": 2
+    },
+    "SemiprimeSourceScorePrefixHeight": {
+      "source": "RiemannGaussian/SemiprimeSourceScorePrefixHeight.lean",
+      "source_sha256": "987bf0258442f66761b92eb479bfae4a3ad4eca20535c343955672df0fa54eb6",
+      "object_sha256": "75d5c09691009523fbcee250ec6c81eedabefdca19822422f75b2760dd3bbcb7",
+      "declarations": 22,
+      "theorem_constants": 20
+    }
+  }
+}

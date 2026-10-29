@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Reviewed public per-row parity mask on an amended covered family; constant horizon improvement, no acquisition exponent improvement.",
+  "independent_reviews": [
+    {
+      "path": "parity-cover-audit.md",
+      "verdict": "PASS",
+      "covers": [
+        "native-phase.md",
+        "complete ellipse",
+        "unique support partition",
+        "explicit horizon and alias guards",
+        "paid common-clock padding",
+        "full-fibre iff and forced scaling"
+      ]
+    },
+    {
+      "path": "review-phase-recurrence.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-knot-phase.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-symmetric-character.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "README.md",
+      "verdict": "PASS",
+      "note": "Final independent integration check returned in agent message; public row parity, constant gain and unpaid group gates are distinguished."
+    }
+  ],
+  "paper_results": [
+    "Determinant-2K parity lattice covers every colour within an enlarged ellipse; completed bank has fewer than 44K rows and admits a unique-support selection with J<=K/3.",
+    "Every actual good hit satisfies i=(ell+a+cN)/4 modulo 2, a public row-dependent bit independent of the support colour.",
+    "Paid endpoint unit gates give one common q^2 clock after row-dependent shifts.",
+    "Constant phase on every lift modulo dyadic b is equivalent to b|2a and cN=a*r*(r+K) modulo Kb; it forces b/2 scaling of a parity-lattice row.",
+    "Paired alternating transfer cancels delta in its off-diagonal; a paid polynomial antidifference leaves a moving denominator.",
+    "Finite character response, legal reciprocal trace fold and q-Dixon specialization preserve precisely stated targets, but leave long scalar readouts."
+  ],
+  "acquisition": {
+    "target": "soft O(K)",
+    "retained_complete_bound": "soft O(J+sqrt(Jh))=soft O(K^(5/4))",
+    "exponent_improved": false,
+    "constant_horizon_gain": "Leading bound approximately 1/sqrt(2), before rounding and changed row count.",
+    "missing": "Further useful phase restriction without proportional clock growth, or faster collective evaluation of the remaining response."
+  },
+  "diagnostics": {
+    "command": "python3 docs/research-evidence/semiprime-clock-phase-20261026/check_parity_cover.py --output /tmp/parity-cover-replay.json",
+    "fixtures": 3,
+    "direct_support_tests": 11088,
+    "selected_support_tests": 3204,
+    "parity_lift_tests": 608,
+    "verdict": "PASS",
+    "constructor_only_path": "PASS",
+    "root_scratch_replay": "PASS after excluding only acquisition_seconds, total_seconds and elapsed_seconds",
+    "root_archived_replay": "PASS after excluding only acquisition_seconds, total_seconds and elapsed_seconds",
+    "scope": "Public structural metadata only; exhaustive validator is separate O(K^2), not the constructor complexity."
+  },
+  "preservation": {
+    "protected_prior_files": 1115,
+    "append_only_prefixes": 2,
+    "concurrent_files": 24,
+    "prearchive_check": "PASS",
+    "postarchive_check": "PASS"
+  },
+  "not_claimed": [
+    "Whole-family soft-K acquisition",
+    "Factoring success from the structural fixtures",
+    "General lower bound",
+    "Complete all-semiprime sixth-rate bit proof",
+    "Lean formalization",
+    "Literature-wide novelty"
+  ],
+  "commit_or_push": false,
+  "local_markdown_links": {
+    "checked": 12,
+    "verdict": "PASS"
+  },
+  "git_diff_check": "PASS"
+}

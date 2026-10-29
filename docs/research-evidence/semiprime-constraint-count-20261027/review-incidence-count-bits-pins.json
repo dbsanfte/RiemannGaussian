@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "review": "review-incidence-count-bits.md",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceIncidenceCountBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceIncidenceCountBits.lean",
+      "source_sha256": "8ff186abc7198c74745a3fc96197fc85f6592e9d65b727670aa3e27704a0ecee",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceIncidenceCountBits.olean",
+      "object_sha256": "ecc9dc73f9da304e2fbc364fe4ee43ca40f949b8d4118894d8af5a5433955e84"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceCountPowers",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceCountPowers.lean",
+      "source_sha256": "0bc68905cad5d1158e4d642e9888ee0a8b834f81491c2a2a9b9d2f7830760678",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceCountPowers.olean",
+      "object_sha256": "5bcaa2ea06b01ce38f30588a142d70b03900dbeeb64b5c1547a84c3ba5df68b5"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceIncidenceNamespaces",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceIncidenceNamespaces.lean",
+      "source_sha256": "c062a4fc9eb0322dc77937c48406f3898b71234f266e954dd7caee111d1ab93f",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceIncidenceNamespaces.olean",
+      "object_sha256": "93e9279decd9df4b63cf13d21b596b7be394e5b2849b7c82aa245ba2b254739f"
+    }
+  ]
+}

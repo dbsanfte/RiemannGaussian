@@ -1,0 +1,110 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 5,
+    "declarations": 39,
+    "theorems": 27
+  },
+  "modules": {
+    "SemiprimeD1StackPublicCarryRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicCarryRecord.lean",
+        "sha256": "110db8ed2e30bd1f43eeb243ca865db42031919b95280c467ed73f9b354572db"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicCarryRecord.olean",
+        "sha256": "42b711a43f60257f22701ed724c0227be86ad10845fd91517851c7d20d01e57a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/carry-record-frozen/SemiprimeD1StackPublicCarryRecord.olean",
+        "sha256": "42b711a43f60257f22701ed724c0227be86ad10845fd91517851c7d20d01e57a"
+      }
+    },
+    "SemiprimeD1StackPublicCarryRecordExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicCarryRecordExecution.lean",
+        "sha256": "7a59b01bbcd9953bf9ecd8619b6135e4b8eb9df5aa98bca5efd48b6d2b63c962"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicCarryRecordExecution.olean",
+        "sha256": "75c490d2138242874a006601a32b295267956a9a2e9981bc4218bfe0a5622e58"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/carry-record-frozen/SemiprimeD1StackPublicCarryRecordExecution.olean",
+        "sha256": "75c490d2138242874a006601a32b295267956a9a2e9981bc4218bfe0a5622e58"
+      }
+    },
+    "SemiprimeD1StackPublicCarryRecordBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicCarryRecordBounds.lean",
+        "sha256": "1f1f3afaee131a7c50616b932ab60bf5ab11d34b82ab9521b828219c7aed858b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicCarryRecordBounds.olean",
+        "sha256": "1ddbfb66e397d80d36210ee09b4cba14a19afba4275c4e31aaa2c1045617c78f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/carry-record-frozen/SemiprimeD1StackPublicCarryRecordBounds.olean",
+        "sha256": "1ddbfb66e397d80d36210ee09b4cba14a19afba4275c4e31aaa2c1045617c78f"
+      }
+    },
+    "SemiprimeD1StackPublicCarryRecordOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicCarryRecordOriginal.lean",
+        "sha256": "64297f49ba68341e8e08288dd20ff31ff62742ac075195a6988599669a02a655"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicCarryRecordOriginal.olean",
+        "sha256": "a2bc0934db37da75fa092cb4359fae0126f7bdf362e00011c09f69dcfdd409fd"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/carry-record-frozen/SemiprimeD1StackPublicCarryRecordOriginal.olean",
+        "sha256": "a2bc0934db37da75fa092cb4359fae0126f7bdf362e00011c09f69dcfdd409fd"
+      }
+    },
+    "SemiprimeD1StackPublicCarryRecordClock": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicCarryRecordClock.lean",
+        "sha256": "f9ec674ed2431cfdd193d3293101347f8b29450070a915debb72a95ed544ee47"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicCarryRecordClock.olean",
+        "sha256": "074beb409325a69e12f747d108367a54f5e7c40d613b790d2cc6c05f85dbdf03"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/carry-record-frozen/SemiprimeD1StackPublicCarryRecordClock.olean",
+        "sha256": "074beb409325a69e12f747d108367a54f5e7c40d613b790d2cc6c05f85dbdf03"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/CarryRecordControls.lean",
+        "sha256": "6f53f67bbc143c60ad24587e253cc1b49d1c31e62b169069e9efd43a180e0cd6"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/carry-record-controls.log",
+        "sha256": "e41592c9eab5b11fb8b26cb7283b77e85e204e6e7014bdebf1e6f9248020a65f"
+      },
+      "expected": "FULL_RECORD_PASS case=target_one_empty_scope actual_transitions=2833 scopes=0 history_bytes=18 all130roles=true all3shadows=true checker51clear=true original_N_index_scope_retained=true count_restored=true consumed_outputs=true caller_history_order=true caller_output_retained=true flags_clear=true real_outer_return_retained=true\nFULL_RECORD_PASS case=target_zero_nontrivial_scope actual_transitions=11530 scopes=2 history_bytes=64 all130roles=true all3shadows=true checker51clear=true original_N_index_scope_retained=true count_restored=true consumed_outputs=true caller_history_order=true caller_output_retained=true flags_clear=true real_outer_return_retained=true\nSNAPSHOT_CONTROL_AXIOMS constants=24 standard3_only=true identity_kernel_checked=true",
+      "scope": "FULL_SOURCE_SMALL_SCOPE_FIXTURES_ALL130_ROLES",
+      "all_generated_observer_standard3_constants": 24,
+      "kernel_snapshot_identity": true
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_pins": {
+    "count": 18228,
+    "file_count": 36456,
+    "unchanged": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/carry-record-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/carry-record-dependencies/imported-pins-after.json"
+  },
+  "writers_stopped": true
+}

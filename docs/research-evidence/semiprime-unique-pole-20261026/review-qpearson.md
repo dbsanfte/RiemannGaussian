@@ -1,0 +1,17 @@
+# Independent review: finite q-Pearson and little-q-Jacobi execution
+
+26 October 2026. Paper-only review of `qpearson.md` §§1–4; no new tests, implementation or frozen-file edits. **PASS; no substantive correction required.**
+
+The c_i ratio and both vanishing endpoints give equation (1) with the displayed signs. Its monomial specialization is exactly (1−rho^(m+1))*mu_(m+1)=(1−rho^(h+m))*mu_m. The initial kappa and O(J) unit-ratio moments are actually acquired; the full h-entry clock-weight list is not.
+
+The modified polynomial Pearson pair in (2) has the correct A_delta(X/rho) versus A_delta(rho X) arguments. Substituting Gamma(D*p)=Lambda(A*p) gives the two Lambda expressions in the report, which are precisely equation (1) for test A(X)A(X/rho)f(X). Thus this PARTICULAR closure is redundant. Both factors vanish on the row-root Dirac terms, so it supplies no missing support condition. This is a direct finite proof and does not rely on generic counterexamples or a characteristic-zero impossibility theorem.
+
+The rational equation (3) is different and correct: it retains the shifted denominator D_delta(rho X). Applying it to one row, polynomial division gives the same mu_0/T contact on both sides and hence (A−rho^h*T)F_(rho T)=(A−T)F_T. The exact finite Lambert solution (5) has numerator kappa*A^(h−1). Interior poles are transported rather than erased. The regular start at T=0 is supplied by the finite functional; no uniqueness theorem for a non-root-of-unity q-equation is imported at the native finite-field specialization, and finite multiplicative transport does not reach a nonzero T from zero.
+
+For the scalar little-q-Jacobi weights, a=rho^(h−1), b=rho^-h gives the stated c_i exactly and terminates at i=h. The separately cancelled A0=(1−rho^h)/(1−rho), C0=0 is necessary; the n>=1 formula would indeed have the wrong factor two at n=0. The displayed A_n,C_n have the proper sign. For 1<=n<h all their numerator and denominator factors are certified short units, including 1+rho^n through its product identity. C_h=0 and beta_h=0 are exact, not unit pivots. The original h bound gives 2h+1<16H on native K>=54, so no long order guard is imported.
+
+The monic recurrence uses b_n=A_n+C_n and beta_n=A_(n−1)C_n, with Q0=0,Q1=kappa. Its length-h ratio is exactly kappa*z^(h−1)/W_h(z), consistent with the finite partial fractions and monic terminal polynomial. This is an algebraic terminating specialization; the cited real positive-weight regime is not assumed over B.
+
+The short prefix/suffix algorithm is genuinely initialized: O(J) explicit coefficients and degree-one transfer factors have total degree O(J); balanced polynomial multiplication and monic multipoint/fixed-jet evaluation cost soft J. Transfer determinants beta_1,...,beta_(h−1) are certified units independent of spectral z, so homogeneous coordinates do avoid chart divisions. The zero terminal beta_h is correctly handled by starting the suffix with [1,z−b_(h−1)], rather than inverting the last map.
+
+The remaining tail equation has the correct minus beta_(n+1) term and g_h=0. Unit prefix transfer cannot erase its unknown projective input. No finite tail or selected singular connection is declared acquired from its short descriptors. If h<=2s the report correctly charges the whole transfer as degree O(J); otherwise neither prefix nor suffix alone closes the gap. The retained soft K^(5/4) completion and the absence of a soft-K supplier are stated accurately.

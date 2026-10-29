@@ -1,0 +1,9 @@
+# Acquired integer matrix to actual physical row selector
+
+`SemiprimeEncodedRowSelection` acquires each original integer callback once, caches both the original integers and their actual denominator-one word encodings, constructs the zero width template and original row IDs, and executes `SemiprimeRowSelectionBits.run` once. `select_correct` identifies the selected original IDs with `RowSelectionExecution.selectedIndices`; no input words, template, pivot advice, or intermediate Fits premise is supplied. Fits follow from the original bound `|C[j,v]| ≤ 2^bits` and the prior actual-state minor argument.
+
+The record retains exactly `m*n` callback calls and their declared work sum, digit extraction work, cache/template/ID preparation, and the physical selector's complete reported clock. `select_work` supplies a fixed polynomial mixed ledger in dimensions, input bit bound, and callback work. The callback work is not assumed to be a free matrix oracle. The separate `selectMatrix` wrapper deliberately counts one logical read per cell and makes no physical memory claim.
+
+The encoder uses executed scalar sign, `Int.natAbs`, division by two, and remainder to produce `bits+1` magnitude bits, preserving the inclusive endpoint. Its digit ledger is not yet a literal bit-cost proof for those scalar operations. The downstream selector executes physical RationalBits primitives and list traversal. Literal metadata/address/tape compilation and a whole factoring bit clock remain separate.
+
+Strict ordinary Lean compilation and the root fifteen-linter/all-generated-axiom audit passed: 170 declarations, 59 theorems, only the standard three axioms. `EncodedSelectorSmoke.lean` checks zero, negative and inclusive endpoint encodings, an actual negative integer callback through the selector, and the empty-column case. The smoke results are functional controls, not an asymptotic experiment.

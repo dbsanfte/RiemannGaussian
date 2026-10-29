@@ -1,0 +1,14 @@
+{
+  "source": "RiemannGaussian/SemiprimeStreamingTensor.lean",
+  "before": {
+    "path": "docs/research-evidence/semiprime-publication-20261029/source-before-documentation/SemiprimeStreamingTensor.lean.txt",
+    "sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0"
+  },
+  "after": {
+    "sha256": "e2b8dc86cf1c8d353109cc63bb13d700fcc2c6c52989d772e72674d113528142",
+    "lines": 181,
+    "bytes": 7414
+  },
+  "change": "Exactly three documentation comments; removing those comments recovers the original bytes. No definitions, theorem statements or proof bodies changed.",
+  "status": "legacy-unclassified; no FINAL source pin changed"
+}

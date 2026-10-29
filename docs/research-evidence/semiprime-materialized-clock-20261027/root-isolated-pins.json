@@ -1,0 +1,29 @@
+[
+  {
+    "module": "SemiprimeMaterializedWords",
+    "exit_code": 0,
+    "seconds": 7.6594887130195275,
+    "source_sha256": "44b9f3dbfbf3ebd29ff2da43ceb09eea4b1e50260492d1b0f9eef2b383fb6e8d",
+    "isolated_sha256": "566665d3212f3b553051746aa82861861e8ef078881968d132bc7eec08841fef",
+    "canonical_sha256": "566665d3212f3b553051746aa82861861e8ef078881968d132bc7eec08841fef",
+    "object_matches": true
+  },
+  {
+    "module": "SemiprimeMaterializedWordSearch",
+    "exit_code": 0,
+    "seconds": 7.984775706951041,
+    "source_sha256": "51c532e993e0f0096eff36dc0f68161c2e9e25e30bd6349865a05b2bfe143989",
+    "isolated_sha256": "ace030302e5341d72361fb6aa340f54eb43b0683af10ed8afdd6f0975573863a",
+    "canonical_sha256": "ace030302e5341d72361fb6aa340f54eb43b0683af10ed8afdd6f0975573863a",
+    "object_matches": true
+  },
+  {
+    "module": "SemiprimeMaterializedPacking",
+    "exit_code": 0,
+    "seconds": 7.837254102982115,
+    "source_sha256": "359b7220f5478236e7202280d3808f8c5af1f2fdb24c39949bf4f138638ea20b",
+    "isolated_sha256": "42f0c16fc3328c104ba070668f815d1885310d46b76fa28b9bb07d92b514cab0",
+    "canonical_sha256": "42f0c16fc3328c104ba070668f815d1885310d46b76fa28b9bb07d92b514cab0",
+    "object_matches": true
+  }
+]

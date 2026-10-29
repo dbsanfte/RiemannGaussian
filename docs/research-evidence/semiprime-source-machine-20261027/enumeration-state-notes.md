@@ -1,0 +1,12 @@
+# Actual source enumeration state
+
+`SemiprimeSourceEnumerationState.lean` follows the actual frozen paid list constructors. No source callback or desired state bound is supplied.
+
+* `copyCells` is the literal `collect` output converted to an array. `copyWord_lookup` is definitional equality to its lookup. Copy prefix/suffix sizes and Fin colour bounds cover every coordinate. `copyWord_work_exact` is `5*coordinates.length+3`.
+* `words_member_copy` follows actual product/collect membership; `words_arrayBacked` therefore connects every nonempty generated word to its actual copied array. The zero-coordinate singleton is treated separately. The named copy allocation ledger counts two coordinate payload representations, spines and constant headers; `wordCopyAllocations_le_work` attaches it to the literal old report. Every generation prefix/suffix coordinate view is at most `Q*r^Q`.
+* `universal_member_words` follows the actual products and slot constructor. Each descriptor head and slot refers to the acquired array-backed word bank. The universal constructor shares these references; it does not freshly allocate `2Q` cells per descriptor. The indexed producer separately invokes its own word bank and the universal producer's word bank. `indexed_retains_word_copies` retains BOTH ledgers.
+* `indexedPayload_eq` gives the exact conservative expanded container view `2M+(2Q+3)U+4(M²+Q*n²)+(n+F)+(Q+3)L+5`, where `L=r^Q,U=r^(2Q)`. Four fields per score is a conservative bound including its sum tag; this is a view, not exact distinct heap residency. Actual incidence/index ID ranges and every metadata list prefix/suffix have original finite bounds.
+
+The theorem does not identify a concrete machine heap, peak simultaneous allocation, reference encoding, pointer address cost, closure header layout, or GC behavior. The constructor's word closure is related to its actual cached coordinate array; subsequent array lookup still requires the instruction/address model. The literal zero candidate is a constant closure, and is not asserted to have allocated Q coordinate cells. No global Boolean assignment sweep or `2^n` enumeration is introduced. The measured original finite-list/report accounting is distinct from a complete bit/Turing-machine clock.
+
+Status: FINAL FROZEN. Canonical strict, all15 root linters and every generated declaration/transitive-axiom audit PASS (78 declarations,65 theorems,standard3 only). Independent isolated strict rebuild is byte-identical. Exact pins in enumeration-state-verification.json.

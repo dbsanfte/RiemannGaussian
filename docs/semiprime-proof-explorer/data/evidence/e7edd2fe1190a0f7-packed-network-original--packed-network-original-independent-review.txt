@@ -1,0 +1,10 @@
+{
+  "verdict": "PASS_ALL3_CURRENT_FULL_SOURCE_INDEPENDENT_REVIEW",
+  "pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkFactors.lean": "e9e2654154c37e84cc3df705e5f9d8f89ee0496da7eeab7bab50c221510ff836",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkOwners.lean": "8c2467321b08a151954daa0beb51981defc2c90c98fa6d159dc0838364698495",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkOriginal.lean": "55a8ca97b9d35cca8517a98cd6ee9e81b9cd4756d099fe9878bb55a603498660"
+  },
+  "artifact": "packed-network-original-owner-review.txt",
+  "scope": "ActualNatmarkedrow coefficient and canonicalport/copy contraction to packedValue; nativecounter semantics only. No primitive wholecounter/sourceV runtime claim."
+}

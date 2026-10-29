@@ -1,0 +1,27 @@
+{
+  "SemiprimeHermiteReportStagePolynomial": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteReportStagePolynomial.lean",
+    "source_sha256": "4425acfb49c65886800e6a90258a848657d935ac6615fd44c148e408830cc523",
+    "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeHermiteReportStagePolynomial.olean",
+    "object_sha256": "af6e6fee1c46386352d825abae2095edd332d93ca78e078fa40baf08446751a5",
+    "isolated": "/tmp/semiprime-hermite-report-rate-20261027/SemiprimeHermiteReportStagePolynomial.olean",
+    "isolated_sha256": "af6e6fee1c46386352d825abae2095edd332d93ca78e078fa40baf08446751a5",
+    "isolated_byte_identical": true
+  },
+  "SemiprimeHermiteReportEnvelope": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteReportEnvelope.lean",
+    "source_sha256": "20241533d9b8b30b75b8eb89f65753727675aef06e372d2d8c9f5f31e706e4b5",
+    "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeHermiteReportEnvelope.olean",
+    "object_sha256": "abb00a0448a1ca46ad3f19260a9ee601b10a026777b8cc96b9bb5a77040a1cd2",
+    "isolated": "/tmp/semiprime-hermite-report-rate-20261027/SemiprimeHermiteReportEnvelope.olean",
+    "isolated_sha256": "abb00a0448a1ca46ad3f19260a9ee601b10a026777b8cc96b9bb5a77040a1cd2",
+    "isolated_byte_identical": true
+  },
+  "gates": {
+    "strict": "PASS terminal EXIT0 both",
+    "ordinary_root15_allgenerated": "PASS terminal EXIT0 both; standard3 only",
+    "declarations": 56,
+    "theorems": 44,
+    "isolated": "PASS terminal EXIT0 both byte-identical"
+  }
+}

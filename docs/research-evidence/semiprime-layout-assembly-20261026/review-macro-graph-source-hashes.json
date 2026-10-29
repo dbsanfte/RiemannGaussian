@@ -1,0 +1,15 @@
+{
+  "review": "review-macro-graph.md",
+  "disposition": "PASS structural ordered graph/occurrence/subdivision semantics; predicate/public-input/primitive-resource composition remains",
+  "scope": "independent semantic review; author compile/axiom audit not replayed here",
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroGraph.lean": {
+      "bytes": 54887,
+      "sha256": "91919748fae18f1340d2f4be1f79faa61dca323c8cad0f8762dbf16f88cf46e3"
+    },
+    "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-shared-counter-20261026/factor_network.py": {
+      "bytes": 12343,
+      "sha256": "c107f5ec43b54bee0fcc008f0ffcde4af51de026a7140af4455e5a4ebaca6a92"
+    }
+  }
+}

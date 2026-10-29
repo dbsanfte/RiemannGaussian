@@ -1,0 +1,119 @@
+{
+  "goal_status": "active",
+  "goal_complete": false,
+  "previous_turn_classification": "progress",
+  "implementation": "complete reference algorithm; not compiled end-to-end theorem",
+  "proposed_time": "poly(L)*2^O(L*(log log L)^2/sqrt(log L))",
+  "bit_model_derivation": "independently reviewed; not Lean machine proof",
+  "boolean_entries_required_for_stated_space": true,
+  "validation": {
+    "status": "PASS",
+    "tests": 30,
+    "failures": 0,
+    "errors": 0,
+    "scope": "archive-location implementation replay; not a rate or coverage proof"
+  },
+  "module": {
+    "path": "RiemannGaussian/SemiprimeStreamingTensorHeight.lean",
+    "sha256": "53ad9850b3909dd40230ed533b10f4f6c19d7431ef7190316cb5289b73dd355d",
+    "olean_sha256": "439cd16a73bc53e8d7881e4bb21b42928b7538e611bdd996f7e134bbf8c6004b",
+    "strict_build": "PASS",
+    "scoped_root_lint": "PASS",
+    "theorem_axioms": {
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_prod_le": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.sum_product_polynomialNumerator_map": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_sum_product_polynomialNumerator_le": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.polynomialNumerator_map": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.eval_polynomialNumerator": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_mul_le": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_polynomialNumerator_le": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.abs_sum_product_numerator_le": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.product_numerator_cast": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.sum_product_numerator_cast": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.numerator_cast": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensorHeight.abs_numerator_le": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "external_generic_baseline": {
+    "theorems": 6,
+    "strictly_built_dependency_modules": 14,
+    "axiom_audit": "PASS"
+  },
+  "external_endpoint": {
+    "timestamp_utc": "2026-10-26 23:07:52 UTC",
+    "status": "running",
+    "completed": 844,
+    "total": 2569,
+    "failed": {},
+    "active_modules": [
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.CostAssemblyGuards",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafProgramNodeSemanticsCount",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafProgramStored",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.PerturbationProgram",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.CostAssemblyCodeParameters"
+    ],
+    "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "live_exec_session_id": 85099,
+    "state_path": "/tmp/semiprime-d1-audit-20261026/lean-build-state.json",
+    "rule": "Re-poll the existing live session; observation timeout is not terminal.",
+    "whole_endpoint_verified": false,
+    "comparator_run": false
+  },
+  "preservation": {
+    "protected": 1240,
+    "concurrent": 24,
+    "prefixes": 2,
+    "status": "PASS"
+  },
+  "local_links": 14,
+  "git_diff_check": "PASS",
+  "commit_or_push": false
+}

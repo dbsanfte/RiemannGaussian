@@ -1,0 +1,14 @@
+{
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteArrayHeight.lean",
+  "sha256": "e93b413e78a12dcfeff5e7c19d090cd0997d727a421a2c8dabdafc61ad5ffbed",
+  "bytes": 46643,
+  "strict_compile": "PASS",
+  "root15_lint": "PASS",
+  "all_declarations": 205,
+  "theorem_constants": 150,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

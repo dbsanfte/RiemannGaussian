@@ -1,0 +1,24 @@
+PASS: independent parent read-only RationalOperation36 source/interface review; no blocker found.
+
+Reviewed the nine critical source/interface files pinned below, including oriented-product/normalizer/fit call projections. No source edits, builds or repeated controls were performed by reviewer; owner separately supplies strict/root/Std3/independent-byte/header gates.
+
+The actual front door has exactly five physical tapes (left sign-prefixed numerator/denominator, right sign-prefixed numerator/denominator, actual template), with one finite operation entry among add/mul/neg/inv. Runtime sigma contains only fixed labels, operation/sign/borrow bits and real returns. The entire Normalize22 bank, five additional multiplier words and nine caller words are counted in36; shared Adder4/Multiplier9 maps are injective and input aliases are physically cleaned before reuse.
+
+Raw products preserve authoritative operand orientation and raw padding. Signed add executes actual adder/subtractor calls, pops real borrow, drains wrapped differences before reversed subtraction, and preserves the legacy cancellation/tie sign. Negation toggles the parsed actual sign; inversion copies the two actual words in swapped order. Raw arithmetic is executed from the original tapes, not provided as an input or evaluated by a runtime semantic function.
+
+After real magnitude/cross-product cleanup, the actual bank is exactly Normalize22 honest entry. A complete real normalization call is followed by TWO real WordFit5 calls. The actual normalized sign survives verbatim, including negativezero; both output magnitudes acquire exact template width. Zero denominator and W0 are handled by exact legacy byte semantics, without an unconditional positive-denominator/value claim. The value theorem has only honest Valid/Fits semantic proof premises, to be discharged by the future canonical coefficient caller.
+
+The SAME actual source clock includes signed copies, every raw arithmetic branch, full normalization, both fits, all drains and true halt. Raw physical width is proved linear from the exact legacy byte bridge before the real normalizer quartic is used. The sixth-degree own cap is in the sum of FIVE actual input lengths plus1; numeric coefficients/denominators remain binary, and W is paid by actual template cells. All36-role/real-return genuine compiled prefixes have the corresponding fixed cap. Original output byte equality and per-operation fitted lengths close the persistent-padding recurrence, without transporting old native report clocks.
+
+Scope remains five-tape prepared rational operations. Acquiring operand values, operation order, canonical grid/slopes/Hermite rows, and the complete original-input recursive factorer remains upstream work.
+
+Current reviewed source SHA256 pins (must be rechecked by finalizer):
+45572165ba6ba3aa789d4f83e9fdff362c76909d362badeced371ebca31a3288  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperation.lean
+28ed819f40260efd47387b4bd69b7d60747a195a34c236fe2f18d3d8046a13a4  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperationCalls.lean
+3ecb74015a568daa0878a41da0f08efaf33a405f826ac9a6536b9642a2f16057  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperationRaw.lean
+50fee4f3410b7666a6e25ac8c0d751aec37a7346d42056567b248da815fade0d  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperationAdd.lean
+198ef323e059af4b4931aa5739cb9600aedbc3b695d5f53aaed7001dfbeb8813  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperationFinish.lean
+4a85dd4d22d50cd4df32607f607431646b9add209151def5fac154ff41269f5f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperationExecution.lean
+100e708f2b9a765b3dc1cfa2a28f6976b28f7a39be1c9b9828ea79e8331f734c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperationBounds.lean
+bf982e8ec77c9d71ba8002c49419318c8a27314e0dbc0fe3730f65833108ed0c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperationStorage.lean
+895590ce110bf2af2c2b41959ad4121b2cc4a90eb1fb347d96a8c26b23411390  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalOperationOriginal.lean

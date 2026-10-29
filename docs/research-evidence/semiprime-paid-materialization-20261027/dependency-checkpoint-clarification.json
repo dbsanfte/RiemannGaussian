@@ -1,0 +1,17 @@
+{
+  "status": "CLARIFICATION",
+  "prior_manifest_sha256": "23f44e6ceebb09d9b93730774357144a4812e8e19d212592157a8358df1d94d1",
+  "supersedes_label": "verification.json source_resolved_dependency_modules and corresponding journal wording",
+  "dependency_checkpoint_entries": 18156,
+  "entries_with_source_paths": 18107,
+  "entries_with_object_paths": 18115,
+  "interpretation": "The text-based dependency scanner over-approximates imports and includes comment tokens. 18156 counts checkpoint entries, not actual resolved/imported modules. The before/after checkpoint is unchanged. The separate compiler-root lint/all-generated axiom audit and seven isolated object comparisons passed; this clarification changes no theorem or time claim.",
+  "independent_final_review": {
+    "manifest_verified": true,
+    "canonical_source_objects_verified": 7,
+    "original_sources_and_objects_rehashed": 2569,
+    "prior_files_preserved": 2157,
+    "concurrent_files_preserved": 24,
+    "append_prefixes_preserved": 2
+  }
+}

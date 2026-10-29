@@ -1,0 +1,31 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 1,
+    "declarations": 23,
+    "theorems": 19
+  },
+  "modules": {
+    "SemiprimeD1StackPortOwnerMaddBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPortOwnerMaddBounds.lean",
+        "sha256": "4cf78dca2f8e5985aeae1d9d67c25ebf3d586bba5b2c4b422a83200f2498f399"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPortOwnerMaddBounds.olean",
+        "sha256": "6b89148d3f8ffa3feffa72dbe1938ef237717071b64710a1099503f005ab9c30"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-madd-bounds-frozen/SemiprimeD1StackPortOwnerMaddBounds.olean",
+        "sha256": "6b89148d3f8ffa3feffa72dbe1938ef237717071b64710a1099503f005ab9c30"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false
+}

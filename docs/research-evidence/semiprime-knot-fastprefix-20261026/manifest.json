@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "date": "2026-10-26",
+  "scope": "Native-content and knot fast-prefix investigations; external fulltexts excluded",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5890,
+      "sha256": "baa5e108748d83e57a0584e4dcda5daaad01617f065a806d8c06f288b7b4d823"
+    },
+    {
+      "path": "boundary-validation.txt",
+      "bytes": 126,
+      "sha256": "52e7b0c8ab9a1959095768367e7d34b2b64cf10b6cecab12f02953ea1dde23f4"
+    },
+    {
+      "path": "check_boundary.py",
+      "bytes": 1888,
+      "sha256": "6e90529b65a24de667562eb0a88b5529e99ef11335d8375506ff94d3f29ed649"
+    },
+    {
+      "path": "check_unit_pattern.py",
+      "bytes": 4600,
+      "sha256": "5c1bde8dd0105bbf13ec0b311c8e71df00ba981fc37639d730717cedf87aab0e"
+    },
+    {
+      "path": "native-contraction.md",
+      "bytes": 14762,
+      "sha256": "2c15f756f83a9ea67209c7ee3f26b3eb8fa87e6bdb2039b1623333bee75d2ed8"
+    },
+    {
+      "path": "native-review.md",
+      "bytes": 3481,
+      "sha256": "6797f12630a7f21b1261c1cfa203b6007f85f448873e1abfa433394d41d5aa07"
+    },
+    {
+      "path": "recurrence.md",
+      "bytes": 8840,
+      "sha256": "7c1fa95ca12c7d27b123d40a1a140e6dd442e2f1d22fa5d698bd7dfe72a61b03"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2069,
+      "sha256": "fd0359a7f1818513fc275d2aaa5bb5067ff834545e9945ce44f3b082cc37054c"
+    },
+    {
+      "path": "surgery-construction.md",
+      "bytes": 13770,
+      "sha256": "7ff92f56728d7c1da711204bc59b4359bd8bde857af5f0675f88081664496023"
+    },
+    {
+      "path": "unit-pattern-infection.md",
+      "bytes": 15028,
+      "sha256": "071222ed0641a02870881b47c8f053181b67b583a7d98c925d6ed89a06fc202a"
+    },
+    {
+      "path": "unit-pattern-review.md",
+      "bytes": 10393,
+      "sha256": "19ed12b11aa2e4397cf9a1b55f6769e3a3cd4117ccb7aefe0c8186b7a2e55a27"
+    },
+    {
+      "path": "unit-pattern-validation.txt",
+      "bytes": 352,
+      "sha256": "b923f6b5593894c8172a93e1ae3eb3ca12ca8011865026aace51c9a9da5aa822"
+    }
+  ]
+}

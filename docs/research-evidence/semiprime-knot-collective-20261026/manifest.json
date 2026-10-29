@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7995,
+      "sha256": "d60ac8254622d35a4d341136056a0304725be27ced213ac51e2defd4ed28a988"
+    },
+    {
+      "path": "conic-exchange.md",
+      "bytes": 12439,
+      "sha256": "7aeed458da0d2d13d4fdba9130cae3efebf741052c0c5224809b98aed2c2dbac"
+    },
+    {
+      "path": "exchange-review.md",
+      "bytes": 5028,
+      "sha256": "34cd344a5cb0480914e29165cdf8e47107e14baabe6af0ab2da8dd3364a8b812"
+    },
+    {
+      "path": "quantum-torus-review.md",
+      "bytes": 5417,
+      "sha256": "724e88fcd4c118e701873b526fbb91ea66ee18116321524b8dc6547c5d3c8b1b"
+    },
+    {
+      "path": "quantum-torus.md",
+      "bytes": 14772,
+      "sha256": "f202a37096723d41c5a9d65fac163643d5672c9ed79f134519b3050b127d3c45"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2489,
+      "sha256": "303f68f8557d5d706d0dd21c8b20997a438d4d7f425a4ed6f65ad60ed2f551d6"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 3840,
+      "sha256": "19703bc51d6b453954cec88092db1c76f08833d24552bd47e0a117249a1bb46e"
+    },
+    {
+      "path": "torsion-conic-review.md",
+      "bytes": 3704,
+      "sha256": "d3cf6c604fcefbf1e7360b61ea8d43998c4ad55d04a11a0ab1a35fe5d6d85b13"
+    },
+    {
+      "path": "torsion-conic.md",
+      "bytes": 8928,
+      "sha256": "9964f870e125b1413bc889729093c795e0ad6d762cede3b559b3aedbd48030af"
+    }
+  ]
+}

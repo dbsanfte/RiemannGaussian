@@ -1,0 +1,14 @@
+{
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroParameters.lean",
+  "sha256": "c080bebe112924b24e809db8ce37854e17873223c7e14fe4cb3292e3644e3fff",
+  "bytes": 19775,
+  "strict_compile": "PASS",
+  "root15_lint": "PASS",
+  "all_declarations": 91,
+  "theorem_constants": 79,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

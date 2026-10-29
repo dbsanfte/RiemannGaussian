@@ -1,0 +1,31 @@
+PASS: independent read-only PacketModeAcquire44 review; no blocker found.
+UTC: 2026-10-28T23:16:06.019828+00:00
+
+Read all11 current sources, especially Core/Count/Double/Order/Execution/Bounds/Resources/Original. No source edits, canonical/scratch compilation, controls or repeated observations were performed. This review does not assert parent-owned gate/compiler terminal statuses.
+
+Honest source front door is THREE physically acquired words: packet-key vector, unary phase-order markers, and actual unary WIDTH. No packet count, tile count, weights/catalogue, evaluator, tuple list or cost answer is initialized. Core contains only fixed finite labels, actual byte heads and real included-helper returns. The complete mode35 subbank plus all nine input/parser/doubling words are included in44, with no dropped alias shadow.
+
+Counting starts with a paid preserving packet-tape copy. Every vector TRUE entry executes the actual Field parser, pops actual validTRUE, physically drains ALL raw packet payload bytes, then pushes one true marker into the real catalogue multiplier input. Empty raw keys are counted once; arbitrary false/raw padding bytes are not numerically normalized or confused with absent entries. The actual vector FALSE terminator is popped and followed by an actual reader EOF peek; trailing bytes/malformed flags abort instead of being silently accepted. Count.row_run/nil_run and countTime account for parser/copy/valid/drain/count/EOF work.
+
+Order is physically copied. TWO literal seed pushes make tile2 at i0. Every actual TRUE order marker executes real reversal consuming the old tile word, then actual pop plus two pushes per old tile marker. The final acquired input is exactly2^(i+1), not2^i. FALSE order/tile markers abort outside the honest unaryTRUE input family. Order.loop_run/loopTime and Double.double_run pay all real reversals/calls/returns/output bytes, explicitly including tile VALUE.
+
+Only after both counts are physically acquired does enumerate_call invoke the complete frozen catalogue35 source ONCE. Its actual paired count words and actual WIDTH form the exact callee initial bank; DataRel preserves all caller packet/order words. Whole source_trace/source_run compose this same program's input copies, field counting, actual doublings, catalogue/feasibleDFS call and final halt. The entire35-role stopped bank and original packet/order words are retained literally.
+
+Authoritative OriginalModeAcquisition.acquire was also checked: it calls acquireModes(packetState.packets.length)(2^(i+1))(precision-1). output_acquireModes/output_original_family match exactly that complete tuple order and byte vector. The original packets and working precision terms are proof interpretations of the THREE source words, not executing native acquisition/report code. Their literal upstream producers and the original-N-only caller join remain explicitly OPEN.
+
+Bounds derives source count from actual vector bytes, includes actual i and materialized2^(i+1) plus unary precision in inputSize, pays acquisition with a uniform polynomial, and includes the SAME frozen catalogue source's own polynomial-per-actual-feasible-visit cap. No native catalogue/report clock is transported. WeightedTuples.visits/leaves are only mathematical cardinality bounds for the actual traversal. All fixed coefficients/degrees precede input families; the feasible-visit factor stays explicit. Resources includes ALL44 actual words plus real return cells at every genuine compiled prefix, from the honest three-input configuration, and retains SAME whole-source clock. No Turing.initList/N-only claim is made.
+
+Scope remains acquired packet/order/unary-WIDTH to exact feasible tuples. Actual packet inventory, unary precision acquisition, literal original-N integration and full recursive factorer remain separate obligations.
+
+Current reviewed source SHA256 pins (must be rechecked by finalizer):
+537f33ac94033673de73c44f7f133e132f0ea5cf9d22650c70ac167a24988ca3  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquire.lean
+39898fde66109627f19309e20ccb8a651cfefb1186d06b10ba231d25066e5c89  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquirePrimitives.lean
+b672109232eff9041a048de6ef5d74245438c1f1b6a70e531152b584eb2027f8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireEncoding.lean
+d6dfd243d8d5cb8fbbd0e5a323f39afda7fe8eea49365d93d3767dc7e25391f9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireCount.lean
+6739e1d3cdedf11749d41f7aea53eb3c8c886c4dd14897dc34f2ccf68dcbc58b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireDouble.lean
+7b7f74461a08c6e2afeafc6194092ee977fa13174b08f2f9e67edd81782b2cb8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireOrder.lean
+203a2b6e9aa0e0fccabcdb12f4c1fc0ca3fd3ab0cf9017b431da640c05ac0575  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireExecution.lean
+16c38bb4734059fcf3be2c3fd6ffd061e816591e8e134caec0390510b454ac93  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireBounds.lean
+cf2f0b31585b6e95d9c5725b598ba6425e2a76b355fe23b61b3cc6ee597a2f71  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireResources.lean
+b0c818eb88f8dce7d8fd64cc649ec10ff74b45c3379752a5a37b191a2fd2b768  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireMonomial.lean
+7cfa48bdc575a5b24dfa107288fd73a29867bd8f05667cdb20829c69a82e796b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketModeAcquireOriginal.lean

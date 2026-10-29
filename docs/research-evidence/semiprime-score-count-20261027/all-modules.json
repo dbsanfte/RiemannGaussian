@@ -1,0 +1,22 @@
+[
+  "SemiprimeSourceScoreCounts",
+  "SemiprimeSourceScoreCountsPadding",
+  "SemiprimeSourceScoreCountsObjective",
+  "SemiprimeSourceScoreCountsBounds",
+  "SemiprimeSourceScoreCancellation",
+  "SemiprimeSourceChoiceOrder",
+  "SemiprimeSourceScoreChoice",
+  "SemiprimeSourceScoreCountOrder",
+  "SemiprimeSourceScoreWeightBits",
+  "SemiprimeSourceScoreWeightAcquisition",
+  "SemiprimeSourceScorePredicateBits",
+  "SemiprimeSourceScorePredicateBitsBounds",
+  "SemiprimeSourceScoreCountBitsCore",
+  "SemiprimeSourceScoreCountBits",
+  "SemiprimeSourceScoreCountBitsBudget",
+  "SemiprimeSourceScoreCountBitsBounds",
+  "SemiprimeSourceScorePhysicalSearch",
+  "SemiprimeSourceScorePhysicalCaller",
+  "SemiprimeSourceScorePhysicalBudget",
+  "SemiprimeSourceScorePhysicalResources"
+]

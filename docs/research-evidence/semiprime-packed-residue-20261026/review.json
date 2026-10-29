@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Exact cancellation decompositions and weaker sufficient moment; no whole-family acquisition improvement",
+  "identified_side_scalar": "C=Res sum_(j,i)(K/2+[j^2]_n)/(delta+1-T_j*rho^i)",
+  "new_sufficient_outputs": "Any one M_r=Res sum_(j,i)(canonical [j^2]_n)^r/(delta+1-T_j*rho^i), r=1,2,3",
+  "consumer_cost": "soft O(K), conditional on acquisition and original correct-bin contracts; one shared restricted-HH palette call",
+  "uniform_query_bound": "soft O(K^(5/4)) for the retained query route, not a general factoring record",
+  "whole_family_soft_K_acquisition_proved": false,
+  "complete_sixth_rate_bit_proof": false,
+  "reviews": [
+    {
+      "reviewer": "knot_qholonomic",
+      "target": "side packed-C consumer and new moment consumer",
+      "verdict": "PASS; independent finite HH parameter refinement integrated"
+    },
+    {
+      "reviewer": "knot_skein_transfer",
+      "target": "moment consumer and HH primary parameter contract",
+      "verdict": "PASS"
+    },
+    {
+      "reviewer": "knot_skein_transfer",
+      "target": "deformation-cancellation.md",
+      "verdict": "PASS; chain rule, endpoint cases, tangent implementation and cost"
+    },
+    {
+      "reviewer": "knot_qholonomic",
+      "target": "ward-cavity-contraction.md",
+      "verdict": "PASS; see correlated-wronskian.md section 4"
+    },
+    {
+      "reviewer": "knot_quantum_dilog",
+      "target": "cone-reciprocity.md",
+      "verdict": "PASS; explicit short nonzero addition-index qualification integrated"
+    },
+    {
+      "reviewer": "knot_quantum_dilog",
+      "target": "README.md, hybrid-integration.md, chebyshev-decimation.md",
+      "verdict": "PASS; see review-integration.md"
+    },
+    {
+      "reviewer": "root",
+      "target": "all derivations, consumer proof and symbolic checker",
+      "verdict": "PASS within stated scope; monomial short-index guard made explicit"
+    }
+  ],
+  "symbolic_validation": {
+    "exact_coefficient_checks": 14,
+    "root_replay_matches": true,
+    "engine": "standard-library sparse multivariate polynomials over Z",
+    "scope": "Cleared identities; finite h=3 and two-leaf diagnostics labelled separately. Not coverage, order/unit gates, Laurent specialization, arbitrary-rank determinant proof or bit complexity."
+  },
+  "preservation_verified": {
+    "protected_prior_files": 1043,
+    "document_prefixes": 2,
+    "concurrent_files": 24
+  },
+  "formal_Lean": false,
+  "factoring_success_campaign": false,
+  "commit_or_push": false,
+  "scope": "No general acquisition lower bound. The count/divisor consumer weakens the output requirement; cancellation identities do not themselves pay their surviving selected coefficients."
+}

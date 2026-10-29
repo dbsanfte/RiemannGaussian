@@ -1,0 +1,92 @@
+{
+  "status": "FINAL FROZEN; own strict/root15/all-generated standard3 PASS150decl92theorems; runtime smoke PASS; object pins taken AFTER parent ordered23 canonical refresh terminalPASS and all writers stopped",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdCountsCore",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdCountsCore.lean",
+      "source_sha256": "88a1b2c4d4238ed74f27bcfa99f6b732771cb5f2e650a614c7c5a45bba7bd247",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdCountsCore.olean",
+      "object_sha256": "fcae567588e838f0805bf09fa543057b53f10eb846777c77232c3d160e481d08",
+      "declarations": 68,
+      "theorems": 32
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdCountsBudget",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdCountsBudget.lean",
+      "source_sha256": "a0089ad934953c6119d06492ad657ae36725c2fef6a74fbcea1ee3abc0be7250",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdCountsBudget.olean",
+      "object_sha256": "5b803e39edffacb22520730379fb72dc62c4fd4049f0012bdbef1f115750ae08",
+      "declarations": 29,
+      "theorems": 18
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdCounts",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdCounts.lean",
+      "source_sha256": "716af7c17d1b67e6cf0d412e9c25a552cfdfddc84c89ca5ef97c49f0b53a6ad7",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdCounts.olean",
+      "object_sha256": "8d2b4017a561b81b33826c25b0dce2eb55db52758a545f782dd09ce7cf4b66cb",
+      "declarations": 11,
+      "theorems": 8
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdCountsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdCountsBounds.lean",
+      "source_sha256": "9e2c0c4f3aaa0fe901ac2aff685cd7ffca55d38fe195e31d284c8df3692ded1f",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdCountsBounds.olean",
+      "object_sha256": "17b3b6ab0463a7d261a38d2935cf9fbe5148df4cebc95b1e4bdf1a8bbe493112",
+      "declarations": 8,
+      "theorems": 6
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceWordIdCountsClock",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdCountsClock.lean",
+      "source_sha256": "ae208eb47cdce4180112e266e9834fed60971b5db61da9fbe4786e017b98e63d",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdCountsClock.olean",
+      "object_sha256": "434e511ebc1c4e8ac713b90fbba4df3410cf29053565ddbe2a3fc6400cfa70c3",
+      "declarations": 34,
+      "theorems": 28
+    }
+  ],
+  "evidence": {
+    "id-count-core-build.log": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-core-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "id-count-budget-build.log": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-budget-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "id-count-build.log": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "id-count-bounds-build.log": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-bounds-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "id-count-clock-build.log": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-clock-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "id-count-audit.lean": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-audit.lean",
+      "sha256": "1ca758a2e9e746585f49515665150c4f75a82662929725ad959bb44898e33b93"
+    },
+    "id-count-audit.log": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-audit.log",
+      "sha256": "6019d1e7975a9d380a8f8c2e6b24068ad12d256678dae7306f256a916a797664"
+    },
+    "WordIdCountsSmoke.lean": {
+      "path": "/tmp/semiprime-word-bank-20261027/WordIdCountsSmoke.lean",
+      "sha256": "8221495cc7616965959751a20ae94d272c99eb3bbdaf739736a2c458b95f523c"
+    },
+    "id-count-smoke.log": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-smoke.log",
+      "sha256": "08a42ab1b927240e44203c20e7daeebd5b0aecd7065768b76c049f850fc3217d"
+    },
+    "id-count-notes.md": {
+      "path": "/tmp/semiprime-word-bank-20261027/id-count-notes.md",
+      "sha256": "4212b35bf6bfbdd653ce6b581eeabf958a558b3a4f9acb3ca1fef8edcbe63eb8"
+    }
+  }
+}

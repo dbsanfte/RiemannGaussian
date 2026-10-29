@@ -1,0 +1,27 @@
+@RiemannGaussian.SemiprimeNodeArrayExecution.fibre : {n F : ℕ} →
+  {arity : Fin F → ℕ} →
+    ℚ →
+      RiemannGaussian.SemiprimeNodeArrayExecution.RuntimeDesign n F →
+        ℕ →
+          ℕ →
+            ((e : Fin F) → Fin (arity e) → Fin n → Array ℚ) →
+              ((e : Fin F) → (Fin (arity e) → Bool) → RiemannGaussian.SemiprimeLocalArrayFrontend.EntryReport) →
+                Finset (Fin n) → Finset (Fin n) → RiemannGaussian.SemiprimeFibreArrayExecution.Run
+@RiemannGaussian.SemiprimeNodeArrayExecution.node : {n F : ℕ} →
+  {arity : Fin F → ℕ} →
+    ℚ →
+      RiemannGaussian.SemiprimeNodeArrayExecution.RuntimeDesign n F →
+        ℕ →
+          ℕ →
+            ((e : Fin F) → Fin (arity e) → Fin n → Array ℚ) →
+              ((e : Fin F) → (Fin (arity e) → Bool) → RiemannGaussian.SemiprimeLocalArrayFrontend.EntryReport) →
+                RiemannGaussian.SemiprimeFibreArrayExecution.Run
+@RiemannGaussian.SemiprimeNodeArrayExecution.count : {n F : ℕ} →
+  {arity : Fin F → ℕ} →
+    (Q : ℕ) →
+      ℕ →
+        ℕ →
+          (Fin Q → RiemannGaussian.SemiprimeNodeArrayExecution.RuntimeDesign n F) →
+            ((e : Fin F) → Fin (arity e) → Fin n → Array ℚ) →
+              ((e : Fin F) → (Fin (arity e) → Bool) → RiemannGaussian.SemiprimeLocalArrayFrontend.EntryReport) →
+                RiemannGaussian.SemiprimeAcquiredHermite.ScalarRun

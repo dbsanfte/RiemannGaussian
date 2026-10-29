@@ -1,0 +1,106 @@
+{
+  "goal_status": "active",
+  "goal_complete": false,
+  "current_slice": "progress",
+  "modules": {
+    "SemiprimeSourceLayout": {
+      "source": "RiemannGaussian/SemiprimeSourceLayout.lean",
+      "source_sha256": "e30bb1c4baed9a5c6a505d6d3301e0c1e28a7af77304acec0b68e8e5dee7e22c",
+      "olean_sha256": "7e159466eaca0cdeacc3188611ca0eac513d3d02eca45b29adeb0f40f3b41f4f",
+      "strict_build": "PASS",
+      "root_lint": "PASS",
+      "declarations": 64,
+      "theorems": 29,
+      "transitive_axioms": "standard_only"
+    },
+    "SemiprimeSourceLayoutHeight": {
+      "source": "RiemannGaussian/SemiprimeSourceLayoutHeight.lean",
+      "source_sha256": "a0af31d8682fd21b95d442a4f36ce2925cce924d019096d2901c3f69f222b0bf",
+      "olean_sha256": "ce44122745cecc2fb9ea9684ca2c38427da746044f2d8dce74b59091ea4a78b4",
+      "strict_build": "PASS",
+      "root_lint": "PASS",
+      "declarations": 19,
+      "theorems": 19,
+      "transitive_axioms": "standard_only"
+    },
+    "SemiprimeSourceLayoutRate": {
+      "source": "RiemannGaussian/SemiprimeSourceLayoutRate.lean",
+      "source_sha256": "5bd9f80b8e361b6c1a4a5755a0aa6e10a3638a52eaa68f4b3c16ebd4e1bd69c5",
+      "olean_sha256": "befc481d579f2c13e20ae257bed96fd0693aa66e217640ec5c51ba289eb17127",
+      "strict_build": "PASS",
+      "root_lint": "PASS",
+      "declarations": 48,
+      "theorems": 44,
+      "transitive_axioms": "standard_only"
+    },
+    "SemiprimeLayoutCertificates": {
+      "source": "RiemannGaussian/SemiprimeLayoutCertificates.lean",
+      "source_sha256": "5aad35042964d39bb610b1b4380107a5ca4e4c57b8e7166250c7e2d1cd79c044",
+      "olean_sha256": "9224fd39dd898f2274183c04dc824653ccb5377a68ff7efc451a849158785579",
+      "strict_build": "PASS",
+      "root_lint": "PASS",
+      "declarations": 45,
+      "theorems": 31,
+      "transitive_axioms": "standard_only"
+    },
+    "SemiprimeLayoutSelection": {
+      "source": "RiemannGaussian/SemiprimeLayoutSelection.lean",
+      "source_sha256": "a6ab20cbdeaec8a15ede4dabe7d3c745936913c2f631725ef0121690736e4f28",
+      "olean_sha256": "e90ec8b90816b8bb5d8f3f4eefece7d01416d861e9de4b83c297659cb51dda62",
+      "strict_build": "PASS",
+      "root_lint": "PASS",
+      "declarations": 38,
+      "theorems": 15,
+      "transitive_axioms": "standard_only"
+    },
+    "SemiprimeMacroGraph": {
+      "source": "RiemannGaussian/SemiprimeMacroGraph.lean",
+      "source_sha256": "91919748fae18f1340d2f4be1f79faa61dca323c8cad0f8762dbf16f88cf46e3",
+      "olean_sha256": "72d924c6df48bfbadecdbdb4bb6ed65ad292be90daf4ce357bc54f3466fd2424",
+      "strict_build": "PASS",
+      "root_lint": "PASS",
+      "declarations": 889,
+      "theorems": 601,
+      "transitive_axioms": "standard_only"
+    },
+    "SemiprimeConstructedCounter": {
+      "source": "RiemannGaussian/SemiprimeConstructedCounter.lean",
+      "source_sha256": "a08925f266e025f1099046ebb783372311a625b7627c8058762396200beb0e35",
+      "olean_sha256": "269d0af9c0b379fd1944af85bf2391a54dc4b1ad2293263103d369dc5757ba6e",
+      "strict_build": "PASS",
+      "root_lint": "PASS",
+      "declarations": 57,
+      "theorems": 31,
+      "transitive_axioms": "standard_only"
+    }
+  },
+  "actual_layout_counter_connected": true,
+  "actual_ordered_graph_proved": true,
+  "graph_predicate_to_factor_count_proved": false,
+  "public_input_rate_composed": false,
+  "primitive_factoring_runtime_proved": false,
+  "native_long_query_improved": false,
+  "external_build": {
+    "timestamp_utc": "2026-10-27 00:27:12 UTC",
+    "status": "complete",
+    "completed": 2569,
+    "total": 2569,
+    "failed": 0,
+    "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "exact_expected_endpoint_typechecked": true,
+    "every_source_declaration_audited": true,
+    "configured_Main_comparator_run": false,
+    "extra_Main_dependency_modules": 522,
+    "primitive_factoring_runtime_proved": false
+  },
+  "preservation": {
+    "protected": 1394,
+    "concurrent": 24,
+    "prefixes": 2,
+    "status": "PASS"
+  },
+  "local_links": 4,
+  "git_diff_check": "PASS",
+  "new_finite_campaign": false,
+  "commit_or_push": false
+}

@@ -1,0 +1,365 @@
+{
+  "status": "PASS",
+  "files": {
+    "CombinedWordBankAudit.lean": {
+      "bytes": 5244,
+      "sha256": "db031c22fbd67e66dd4350a56012210008b49b098daf5561f635c2af8d7c21c4"
+    },
+    "CombinedWordBankAudit.log": {
+      "bytes": 25523,
+      "sha256": "56df1a0856f8912a93647092bf36af0b517d46051006d3d295a28d537b913ae9"
+    },
+    "README.md": {
+      "bytes": 4007,
+      "sha256": "0aa56187cf9d077614f272ec6b2ff0fa1ea870b80a26a649ed7b41338dea8961"
+    },
+    "SemiprimeSourceWordBank.lean": {
+      "bytes": 4546,
+      "sha256": "d55e7e12905932ae38fdc973fce695acc3eef51437f4fb2c8934da272ba7cfca"
+    },
+    "SemiprimeSourceWordBankAcquisitionBudget.lean": {
+      "bytes": 8847,
+      "sha256": "779ddea7da141885b2899b10baab93252aa0d60675bedd708fc6f5032d622d1b"
+    },
+    "SemiprimeSourceWordBankBounds.lean": {
+      "bytes": 4334,
+      "sha256": "6eef6c400c9973456d03868de515dae7d144be16653ec4b6318f84ed2e6af32f"
+    },
+    "SemiprimeSourceWordBankIndexed.lean": {
+      "bytes": 3162,
+      "sha256": "ef1dfc536167786d702431c90169398a00cdb212ca5d133a584a3bb61d8b82d2"
+    },
+    "SemiprimeSourceWordBankRows.lean": {
+      "bytes": 3973,
+      "sha256": "0da09dfb9f80afb4215b9be8711c1cc1c30804907b36aa3d9d9daf353510ae80"
+    },
+    "SemiprimeSourceWordBankSemantics.lean": {
+      "bytes": 6089,
+      "sha256": "a88ad4d464b45b18093ecc22df371bc93aa71223c607751cf707556c276ab16b"
+    },
+    "SemiprimeSourceWordIdCaller.lean": {
+      "bytes": 4613,
+      "sha256": "da1e60ae1d76f0f69eca0db7ed22b52b0398775a98602d744475646a042bb5e4"
+    },
+    "SemiprimeSourceWordIdControl.lean": {
+      "bytes": 9620,
+      "sha256": "199886f7c92633f7de4270ef90beaab1f313e1caf2bd2b44b96dd6174014ed10"
+    },
+    "SemiprimeSourceWordIdCounts.lean": {
+      "bytes": 9487,
+      "sha256": "716af7c17d1b67e6cf0d412e9c25a552cfdfddc84c89ca5ef97c49f0b53a6ad7"
+    },
+    "SemiprimeSourceWordIdCountsBounds.lean": {
+      "bytes": 3227,
+      "sha256": "9e2c0c4f3aaa0fe901ac2aff685cd7ffca55d38fe195e31d284c8df3692ded1f"
+    },
+    "SemiprimeSourceWordIdCountsBudget.lean": {
+      "bytes": 5767,
+      "sha256": "a0089ad934953c6119d06492ad657ae36725c2fef6a74fbcea1ee3abc0be7250"
+    },
+    "SemiprimeSourceWordIdCountsClock.lean": {
+      "bytes": 14771,
+      "sha256": "ae208eb47cdce4180112e266e9834fed60971b5db61da9fbe4786e017b98e63d"
+    },
+    "SemiprimeSourceWordIdCountsCore.lean": {
+      "bytes": 10101,
+      "sha256": "88a1b2c4d4238ed74f27bcfa99f6b732771cb5f2e650a614c7c5a45bba7bd247"
+    },
+    "SemiprimeSourceWordIdEnvironment.lean": {
+      "bytes": 15104,
+      "sha256": "7fea1f5aec0f9c38aa1a5b11139062904789df45f7e79aeeb61711c4335a8262"
+    },
+    "SemiprimeSourceWordIdEnvironmentBounds.lean": {
+      "bytes": 7512,
+      "sha256": "dc44492aa1a1b09e3bb63ca69b2180ca57056959efb575afca9a7f272eaecd5e"
+    },
+    "SemiprimeSourceWordIdMenu.lean": {
+      "bytes": 3900,
+      "sha256": "25de89ffb1e5acc657809ae4238bffc0ad163dbc1c6a73c1d6775bf4c7a75470"
+    },
+    "SemiprimeSourceWordIdMetadata.lean": {
+      "bytes": 5387,
+      "sha256": "b0f5017317c14c085c953b5eb09cd841511336911f6b6674303002326d04e94a"
+    },
+    "SemiprimeSourceWordIdPredicate.lean": {
+      "bytes": 10379,
+      "sha256": "225c85157e100f5253d92ae4f54f0b64baa46cb530fdfa48b83e28d2670e77cb"
+    },
+    "SemiprimeSourceWordIdPredicateBounds.lean": {
+      "bytes": 9829,
+      "sha256": "53260dfe4875179064d6aae33be8b78660b36557d9684c1aa2f603052e5c5ea8"
+    },
+    "SemiprimeSourceWordIdResources.lean": {
+      "bytes": 7259,
+      "sha256": "3d3eb24d33fe18d1a1069a1eed14f8e7d273505996449d4f85b2ac19e3de0f20"
+    },
+    "SemiprimeSourceWordIdSearch.lean": {
+      "bytes": 6627,
+      "sha256": "29b2a412219373153446eb350f4ed1f5a8fdf27cac65fd8dcccfee488909f701"
+    },
+    "SemiprimeSourceWordIdSearchBudget.lean": {
+      "bytes": 7476,
+      "sha256": "72721f5961164366f10d785712210b6614afa15489e7fb8dfa96f26b336a0c60"
+    },
+    "SemiprimeSourceWordMenuOrder.lean": {
+      "bytes": 3308,
+      "sha256": "58a76c9271e564d788023aa4b8fb509f1ec4e83364b0d1c8920f9018a8bf0010"
+    },
+    "WordBankSmoke.lean": {
+      "bytes": 618,
+      "sha256": "b447d53ae8df9ffb0077ec8268f0d4df2673e161580632916673d94894953ff1"
+    },
+    "WordIdCountsSmoke.lean": {
+      "bytes": 740,
+      "sha256": "8221495cc7616965959751a20ae94d272c99eb3bbdaf739736a2c458b95f523c"
+    },
+    "WordIdSmoke.lean": {
+      "bytes": 1464,
+      "sha256": "43266ebf5d942690769aa1915f681d283480b75a4ffd9bc674392d80b34d817a"
+    },
+    "all-modules.json": {
+      "bytes": 841,
+      "sha256": "36b6015b906d41dca2d27e90de86f1facbfa8ac9e248cc3a6e2ce68b16c7e9c5"
+    },
+    "archive-provenance.json": {
+      "bytes": 19007,
+      "sha256": "8790e6094c299daed3def3c4ce1f6395ef5ba5540ae2025190190f8b030d5b01"
+    },
+    "archive_word_bank.py": {
+      "bytes": 8402,
+      "sha256": "8059a14207f4d13c9d27fbb7db9a785125709d1754d42e97a3e7e37bb3d8bd2a"
+    },
+    "compiler-imports.json": {
+      "bytes": 811801,
+      "sha256": "1aca6ad628bca7bcde642a62f3f030488ed08b3000a04928b24f959ab623b6f5"
+    },
+    "final-isolated/SemiprimeSourceWordBank.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordBankAcquisitionBudget.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordBankBounds.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordBankIndexed.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordBankRows.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordBankSemantics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdCaller.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdControl.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdCounts.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdCountsBounds.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdCountsBudget.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdCountsClock.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdCountsCore.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdEnvironment.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdEnvironmentBounds.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdMenu.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdMetadata.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdPredicate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdPredicateBounds.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdResources.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdSearch.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordIdSearchBudget.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/SemiprimeSourceWordMenuOrder.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "final-isolated/dependencies-after.json": {
+      "bytes": 8686266,
+      "sha256": "59cb07d7eda3295a4e558ab3b2da0e79cec3fd29ac688ace9fc4862243b0f566"
+    },
+    "final-isolated/dependencies-before.json": {
+      "bytes": 8686266,
+      "sha256": "59cb07d7eda3295a4e558ab3b2da0e79cec3fd29ac688ace9fc4862243b0f566"
+    },
+    "final-isolated/results.json": {
+      "bytes": 9814,
+      "sha256": "9c630f45913702c2e06c8713115b3a6a6d22bfe1be765a5d959d5cd9c0b540ad"
+    },
+    "final-isolated/summary.json": {
+      "bytes": 259,
+      "sha256": "cdf2264016bb017c59d190c7c6f563ef50525aa1e332e5fa32ecc519c597a40a"
+    },
+    "id-count-notes.md": {
+      "bytes": 5539,
+      "sha256": "4212b35bf6bfbdd653ce6b581eeabf958a558b3a4f9acb3ca1fef8edcbe63eb8"
+    },
+    "id-count-smoke.log": {
+      "bytes": 12,
+      "sha256": "08a42ab1b927240e44203c20e7daeebd5b0aecd7065768b76c049f850fc3217d"
+    },
+    "id-count-verification.json": {
+      "bytes": 4865,
+      "sha256": "98f533ce634a17582f3bfd8e581789e8d84335001f09092439a06a17a350c02e"
+    },
+    "id-resources-verification.json": {
+      "bytes": 800,
+      "sha256": "a38c920a0936a8c0c9c1aae82a3a84e089efe6a7dbd099cfb1a07f0b8da9b8ea"
+    },
+    "id-selection-notes.md": {
+      "bytes": 5719,
+      "sha256": "b274b96ba7befb6bf1af3394ed8244f467237ddfca18a4ed9f25fd709a74e230"
+    },
+    "journal-append.md": {
+      "bytes": 5720,
+      "sha256": "97c7bc809b355451a1c000fe85d14aef595fb3d0b0cc1aadd12acd2b43f06a6b"
+    },
+    "next-whole-bit-join.md": {
+      "bytes": 4242,
+      "sha256": "ef4de4312cc3f5d95933b59a66fc6e2756df6dd0727379944818077d500fe477"
+    },
+    "preservation-before.json": {
+      "bytes": 577763,
+      "sha256": "bdd15115b941c62eda0937e45f2cf91b83140d062e46856293567425a4851ef8"
+    },
+    "refresh_word_bank.py": {
+      "bytes": 1204,
+      "sha256": "05671fb250f887051f697928cf916d9d0167d1004595c0d4ce2ef7f9ca0a226e"
+    },
+    "resources-notes.md": {
+      "bytes": 2481,
+      "sha256": "930367a9eb242c93e14c6393cd522f91f10f94c9cc0da6cd14028291460d0a20"
+    },
+    "review-id-counts-pins.json": {
+      "bytes": 784,
+      "sha256": "6c96ff7047fc9b01dcaa85cd575f26017f4051c07edff881797c4e1a540ff65b"
+    },
+    "review-id-counts.md": {
+      "bytes": 2658,
+      "sha256": "f4a41bed7d1e885bfb1bcc727ab65a37b6a3ea436dc9da727ecc77ca67f55361"
+    },
+    "review-id-environment-pins.json": {
+      "bytes": 2136,
+      "sha256": "f1dcf8a280749c6554b3bd6c77c17e8dff3d4ae1625c81a600585ee5cbe7b8a3"
+    },
+    "review-id-environment.md": {
+      "bytes": 3725,
+      "sha256": "1e2c8b406ecede69590b0320ec01ca628f8c026a79e62e9e27ed43236148cf53"
+    },
+    "review-id-resources-pins.json": {
+      "bytes": 618,
+      "sha256": "6a7b3dbf0929ce477fe6cc121b8a4ab5d9c359cc62f0b34417536e3f7cf4c667"
+    },
+    "review-id-resources.md": {
+      "bytes": 2197,
+      "sha256": "3abe3f2e73749f2cb711e1ebc44cc34e204afb43b86713a8769964638d4e481f"
+    },
+    "review-id-search-budget-pins.json": {
+      "bytes": 596,
+      "sha256": "4e3329888f30aa41294e026df0f0e69c087e3d8929dfd9bb2c4ab09956aa58c7"
+    },
+    "review-id-search-budget.md": {
+      "bytes": 2509,
+      "sha256": "b46ee8de2e38aedadcb2aa679845673e5ca22c955dcb96ed124a7a140d927676"
+    },
+    "review-id-selection-pins.json": {
+      "bytes": 3212,
+      "sha256": "b0510b03fdca72660012ec35826ad03a77c8106d719e7344e50daf816ce06686"
+    },
+    "review-id-selection.md": {
+      "bytes": 5249,
+      "sha256": "17dc6a17fea6aabb2fdfd68d3eb22fbda8905245edc526b146ce90e1da888e69"
+    },
+    "review-word-bank-pins.json": {
+      "bytes": 934,
+      "sha256": "3a01471ea7edc68a6e4ae5d01a40b1ab23e10ccbb72b8d09b3b52e7ab17cb56d"
+    },
+    "review-word-bank.md": {
+      "bytes": 1878,
+      "sha256": "086237fb18039a83774ce39a189ea8a2044890be49b239a8012a770eca063f87"
+    },
+    "verification.json": {
+      "bytes": 10831,
+      "sha256": "69f74b113188702ce5ee783a68a2000db5b3a8c0fe7706bc10c05ef363dae6f4"
+    },
+    "verify_word_bank.py": {
+      "bytes": 4748,
+      "sha256": "e205b28e06a03a39c97620fceaedd8be9f1193aba4a4484ef6a433fd11535418"
+    },
+    "word-bank-notes.md": {
+      "bytes": 4654,
+      "sha256": "c64c43b25a762378abf97e2ac42e6b6a19ffe1f991990ab88c7eb03e20af5621"
+    },
+    "word-bank-smoke.log": {
+      "bytes": 74,
+      "sha256": "b4a2223abccd42d62f14a60c3b4b814f12869e257b46d8c1527bd21fbc742809"
+    },
+    "word-bank-verification.json": {
+      "bytes": 5142,
+      "sha256": "13fd6ff6ffd6801c009c69e60e2a213da5eff6abc88dcac4d7bac2e1b0e614ee"
+    },
+    "word-id-environment-notes.md": {
+      "bytes": 3252,
+      "sha256": "eea88deed0e4c8cd6597ca80fe7361cf4ff3e094ffa9643284104fadeefceaf8"
+    },
+    "word-id-environment-verification.json": {
+      "bytes": 2206,
+      "sha256": "4a3d0fc16421ca69462d63b401a9e032c29f5bea58c4180c7dc9cfb8e6928a1d"
+    },
+    "word-id-smoke.log": {
+      "bytes": 109,
+      "sha256": "d24d2e9878afe90b3387d92d89393050c7b6106e57fe3308cca4fe84cd7098fa"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "classification": "Executed fast-readout tests; scoped rational-block and summation-certificate degree results, paid paired inverses; no query speedup",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft K^(5/4) native weighted query; soft K^(3/2) two-monic fallback",
+  "new_evidence": [
+    "Under 6P>Hb, reduced degree of the actual fixed-start variable-block tag ratio is at least J(b-1)/2. Conditional balanced length-Theta(K) blocks have Omega(K\u00b2) degree; no scalar/circuit lower bound.",
+    "Regular paired full-list cross differences have paid soft-K factor-or-unit certificates, guarded fast Bezout projectors, and paid ordinary geometric-clock traces.",
+    "Good-family row separation uniformly licenses old soft-J discriminant/tag interpolation operation.",
+    "Three-adic sibling determinant has exact public H/9 phase correction; other symmetric coefficients and long contraction remain.",
+    "Both endpoint strips are paid in soft J or a legal soft-K factor branch.",
+    "Every admissible rational q-Gosper certificate with numerator and denominator degree <=5J forces endpoint-strip membership; unit strips exclude it on every row/local component.",
+    "Executed multisection has B parameters and literal JB section coefficients; no joint scalar algorithm lower bound.",
+    "Parameterized endpoint-support corollary: any chosen 1<=L<=H costs soft(J+L) and excludes admissible numerator/denominator degrees <=L after unit continuation; nearly linear degree allowances can be screened at nearly linear cost."
+  ],
+  "remaining": "Direct collision-retaining scalar or norm-variation acquisition in soft K, with whole-family recovery and bit costs; alternatives not excluded by the scoped degree results.",
+  "reviews": [
+    "separation-review.md",
+    "review-projective-degree.md",
+    "review-paired-contraction.md",
+    "review-hypergeometric.md",
+    "review-rational-certificate.md"
+  ],
+  "validation": {
+    "mathematical": "Independent cross-reviews plus primary-agent audit; specialized-degree, admissible-denominator, direct sibling divisibility and fast-GCD wording integrated. Paper only.",
+    "status": "pass",
+    "local_links_checked": 17,
+    "source_pins_checked": 13,
+    "git_diff_check": true,
+    "json_and_whitespace": true,
+    "preservation_hashes": true
+  },
+  "preservation": {
+    "protected_files_verified": 961,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1553384,
+        "sha256": "1faf999cf603fbe8efec7cf8e9cc56e5cf426c8fff6622d6554ac8ab983aae8c"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2443285,
+        "sha256": "60ab3a00b7a75a54e3199e457c24e9b0f632785f6b458131d2fdf24114030b97"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "06ce93e73f09ed876c3047d8f9dbc3663def9d9f647f80e16fb81ba862ae3bda"
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

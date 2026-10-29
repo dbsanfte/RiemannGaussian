@@ -1,0 +1,20 @@
+{
+  "review": "FINAL semantic PASS; dimension caching resolved; scalar/list/flat-cell scope; no oracle cost advice in actual specialization",
+  "modules": {
+    "SemiprimeCachedRawConstraints": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCachedRawConstraints.lean",
+      "sha256": "7720357f5afdf45f8f0085b2d2a249bf15b2edce1faf88ed191c2555f0e316f9",
+      "canonical_olean_sha256": "b3f369a11d8eb5bce3aa58f1dc01804d5449ab76c906582b02fde70fefdf66ca"
+    },
+    "SemiprimePaidSourceMetadata": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidSourceMetadata.lean",
+      "sha256": "234ff20244bd4307e68d0fdb5292131c5cd4c4a8625a8564dbed3df2ed6b3078",
+      "canonical_olean_sha256": "dfd943770bb29c6783070729ee33e746202b805c4acdc6812bbb55038146123c"
+    },
+    "SemiprimePaidRawAcquisition": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidRawAcquisition.lean",
+      "sha256": "0481f6ab14b91469279d260f6b391ea0cd21d34a0f1e12aeff98690093c70828",
+      "canonical_olean_sha256": "93611ad7be1c9012f221bb9cbe678de8961925af0f82bb217e03b7f662600223"
+    }
+  }
+}

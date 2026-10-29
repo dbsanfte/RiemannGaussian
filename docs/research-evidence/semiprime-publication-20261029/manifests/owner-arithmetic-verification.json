@@ -1,0 +1,31 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 1,
+    "declarations": 98,
+    "theorems": 84
+  },
+  "modules": {
+    "SemiprimeD1PortOwnerArithmeticSpec": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PortOwnerArithmeticSpec.lean",
+        "sha256": "2429ea42eb77318d113bdf113ab944bb5642e90835d4aeef037879367ff2b2f8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PortOwnerArithmeticSpec.olean",
+        "sha256": "0a6f49008c120072b17ee353ffba8cc23cdf7834867b97054eaaf813856082d2"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-arithmetic-frozen/SemiprimeD1PortOwnerArithmeticSpec.olean",
+        "sha256": "0a6f49008c120072b17ee353ffba8cc23cdf7834867b97054eaaf813856082d2"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false
+}

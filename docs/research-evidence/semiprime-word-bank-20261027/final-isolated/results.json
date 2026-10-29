@@ -1,0 +1,209 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordBankRows",
+    "exit_code": 0,
+    "seconds": 6.831371732056141,
+    "source_sha256": "0da09dfb9f80afb4215b9be8711c1cc1c30804907b36aa3d9d9daf353510ae80",
+    "isolated_sha256": "619af6bbce1e1b13585052bc44269df4ab0e2c79c059b190fca6bc5ffc43e4bb",
+    "canonical_sha256": "619af6bbce1e1b13585052bc44269df4ab0e2c79c059b190fca6bc5ffc43e4bb",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordBank",
+    "exit_code": 0,
+    "seconds": 6.725736454012804,
+    "source_sha256": "d55e7e12905932ae38fdc973fce695acc3eef51437f4fb2c8934da272ba7cfca",
+    "isolated_sha256": "96134d35ae32020f205e9ffea8c92e66d56c3dd2850c111a255f12a5f78e2335",
+    "canonical_sha256": "96134d35ae32020f205e9ffea8c92e66d56c3dd2850c111a255f12a5f78e2335",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordBankSemantics",
+    "exit_code": 0,
+    "seconds": 6.7674405130092055,
+    "source_sha256": "a88ad4d464b45b18093ecc22df371bc93aa71223c607751cf707556c276ab16b",
+    "isolated_sha256": "f533973b8df305d7655354465e17ddf39a279e9a192e27c7b77148212671b358",
+    "canonical_sha256": "f533973b8df305d7655354465e17ddf39a279e9a192e27c7b77148212671b358",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordBankBounds",
+    "exit_code": 0,
+    "seconds": 8.780171377933584,
+    "source_sha256": "6eef6c400c9973456d03868de515dae7d144be16653ec4b6318f84ed2e6af32f",
+    "isolated_sha256": "df97e65dddfcf1ee209f5d3ec60818d37a207c183bd1971b7a843e96dd6a867e",
+    "canonical_sha256": "df97e65dddfcf1ee209f5d3ec60818d37a207c183bd1971b7a843e96dd6a867e",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordBankAcquisitionBudget",
+    "exit_code": 0,
+    "seconds": 8.55512327409815,
+    "source_sha256": "779ddea7da141885b2899b10baab93252aa0d60675bedd708fc6f5032d622d1b",
+    "isolated_sha256": "fd2b985b07517782e090b23604029ccae1f61afbc0c3a40c596c0f8e30db6818",
+    "canonical_sha256": "fd2b985b07517782e090b23604029ccae1f61afbc0c3a40c596c0f8e30db6818",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordMenuOrder",
+    "exit_code": 0,
+    "seconds": 6.612282360903919,
+    "source_sha256": "58a76c9271e564d788023aa4b8fb509f1ec4e83364b0d1c8920f9018a8bf0010",
+    "isolated_sha256": "d6acc7d713cd2540c0bf81d491ec4846e1d1424705e62b094b27e4d55e15f3f6",
+    "canonical_sha256": "d6acc7d713cd2540c0bf81d491ec4846e1d1424705e62b094b27e4d55e15f3f6",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordBankIndexed",
+    "exit_code": 0,
+    "seconds": 6.674540340085514,
+    "source_sha256": "ef1dfc536167786d702431c90169398a00cdb212ca5d133a584a3bb61d8b82d2",
+    "isolated_sha256": "61005c95899f5a7753978514172b52f9fc1da01bf445be5833336ca4682e5f1d",
+    "canonical_sha256": "61005c95899f5a7753978514172b52f9fc1da01bf445be5833336ca4682e5f1d",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdEnvironment",
+    "exit_code": 0,
+    "seconds": 7.094993281993084,
+    "source_sha256": "7fea1f5aec0f9c38aa1a5b11139062904789df45f7e79aeeb61711c4335a8262",
+    "isolated_sha256": "8bbcbdb8cad294e072e64ba3c1d0ad425d89d15179c8bacbc10a76a2b6dcff77",
+    "canonical_sha256": "8bbcbdb8cad294e072e64ba3c1d0ad425d89d15179c8bacbc10a76a2b6dcff77",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdEnvironmentBounds",
+    "exit_code": 0,
+    "seconds": 10.35491907200776,
+    "source_sha256": "dc44492aa1a1b09e3bb63ca69b2180ca57056959efb575afca9a7f272eaecd5e",
+    "isolated_sha256": "5e356c282d7a6334ddaae8ab44070b19f32c00575db3ec5b456446427aa7629d",
+    "canonical_sha256": "5e356c282d7a6334ddaae8ab44070b19f32c00575db3ec5b456446427aa7629d",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdPredicate",
+    "exit_code": 0,
+    "seconds": 6.845192054985091,
+    "source_sha256": "225c85157e100f5253d92ae4f54f0b64baa46cb530fdfa48b83e28d2670e77cb",
+    "isolated_sha256": "d488bf631e1d14522cadc46e2ce61a07b96903d166ce5307bbfdd2ffe88df68b",
+    "canonical_sha256": "d488bf631e1d14522cadc46e2ce61a07b96903d166ce5307bbfdd2ffe88df68b",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdPredicateBounds",
+    "exit_code": 0,
+    "seconds": 7.875281648011878,
+    "source_sha256": "53260dfe4875179064d6aae33be8b78660b36557d9684c1aa2f603052e5c5ea8",
+    "isolated_sha256": "5368312d5a03fcdfe627e5235c551cfa3aab53aec6b40d7339039a95a12a5de2",
+    "canonical_sha256": "5368312d5a03fcdfe627e5235c551cfa3aab53aec6b40d7339039a95a12a5de2",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdCountsCore",
+    "exit_code": 0,
+    "seconds": 7.1332396869547665,
+    "source_sha256": "88a1b2c4d4238ed74f27bcfa99f6b732771cb5f2e650a614c7c5a45bba7bd247",
+    "isolated_sha256": "fcae567588e838f0805bf09fa543057b53f10eb846777c77232c3d160e481d08",
+    "canonical_sha256": "fcae567588e838f0805bf09fa543057b53f10eb846777c77232c3d160e481d08",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdCountsBudget",
+    "exit_code": 0,
+    "seconds": 6.868130230112001,
+    "source_sha256": "a0089ad934953c6119d06492ad657ae36725c2fef6a74fbcea1ee3abc0be7250",
+    "isolated_sha256": "5b803e39edffacb22520730379fb72dc62c4fd4049f0012bdbef1f115750ae08",
+    "canonical_sha256": "5b803e39edffacb22520730379fb72dc62c4fd4049f0012bdbef1f115750ae08",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdCounts",
+    "exit_code": 0,
+    "seconds": 6.538929770002142,
+    "source_sha256": "716af7c17d1b67e6cf0d412e9c25a552cfdfddc84c89ca5ef97c49f0b53a6ad7",
+    "isolated_sha256": "8d2b4017a561b81b33826c25b0dce2eb55db52758a545f782dd09ce7cf4b66cb",
+    "canonical_sha256": "8d2b4017a561b81b33826c25b0dce2eb55db52758a545f782dd09ce7cf4b66cb",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdCountsBounds",
+    "exit_code": 0,
+    "seconds": 6.574475406087004,
+    "source_sha256": "9e2c0c4f3aaa0fe901ac2aff685cd7ffca55d38fe195e31d284c8df3692ded1f",
+    "isolated_sha256": "17b3b6ab0463a7d261a38d2935cf9fbe5148df4cebc95b1e4bdf1a8bbe493112",
+    "canonical_sha256": "17b3b6ab0463a7d261a38d2935cf9fbe5148df4cebc95b1e4bdf1a8bbe493112",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdCountsClock",
+    "exit_code": 0,
+    "seconds": 14.264905775082298,
+    "source_sha256": "ae208eb47cdce4180112e266e9834fed60971b5db61da9fbe4786e017b98e63d",
+    "isolated_sha256": "434e511ebc1c4e8ac713b90fbba4df3410cf29053565ddbe2a3fc6400cfa70c3",
+    "canonical_sha256": "434e511ebc1c4e8ac713b90fbba4df3410cf29053565ddbe2a3fc6400cfa70c3",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdControl",
+    "exit_code": 0,
+    "seconds": 8.347584145958535,
+    "source_sha256": "199886f7c92633f7de4270ef90beaab1f313e1caf2bd2b44b96dd6174014ed10",
+    "isolated_sha256": "cd63d7cfc4e197ba0141d5239971f1a11ec837e82b1466e7839c0a92f111d4df",
+    "canonical_sha256": "cd63d7cfc4e197ba0141d5239971f1a11ec837e82b1466e7839c0a92f111d4df",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdMetadata",
+    "exit_code": 0,
+    "seconds": 7.261169475968927,
+    "source_sha256": "b0f5017317c14c085c953b5eb09cd841511336911f6b6674303002326d04e94a",
+    "isolated_sha256": "38828cb55c2e28f1e680c46e762e1f6d9492bb60fe7aa9ec35658835b1a33f39",
+    "canonical_sha256": "38828cb55c2e28f1e680c46e762e1f6d9492bb60fe7aa9ec35658835b1a33f39",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdMenu",
+    "exit_code": 0,
+    "seconds": 6.801539556006901,
+    "source_sha256": "25de89ffb1e5acc657809ae4238bffc0ad163dbc1c6a73c1d6775bf4c7a75470",
+    "isolated_sha256": "c8c5214de945b3799ab3f22bd0ef83558f534550b624d2508c8d2a106a1ed619",
+    "canonical_sha256": "c8c5214de945b3799ab3f22bd0ef83558f534550b624d2508c8d2a106a1ed619",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdSearch",
+    "exit_code": 0,
+    "seconds": 6.6141601640265435,
+    "source_sha256": "29b2a412219373153446eb350f4ed1f5a8fdf27cac65fd8dcccfee488909f701",
+    "isolated_sha256": "ce81a066bbb67bb4def8e75aa029054142bd19e9b21026bd7127cdf16c5c66d7",
+    "canonical_sha256": "ce81a066bbb67bb4def8e75aa029054142bd19e9b21026bd7127cdf16c5c66d7",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdCaller",
+    "exit_code": 0,
+    "seconds": 7.61597285408061,
+    "source_sha256": "da1e60ae1d76f0f69eca0db7ed22b52b0398775a98602d744475646a042bb5e4",
+    "isolated_sha256": "3e276bd871d9ffa9e63c132aec544194627b4af90c146c2c4d31b476c3e60e05",
+    "canonical_sha256": "3e276bd871d9ffa9e63c132aec544194627b4af90c146c2c4d31b476c3e60e05",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdSearchBudget",
+    "exit_code": 0,
+    "seconds": 6.740790248964913,
+    "source_sha256": "72721f5961164366f10d785712210b6614afa15489e7fb8dfa96f26b336a0c60",
+    "isolated_sha256": "56cbe60ff88283818473a51ba2b4d60593f1f2079467614aa8c7de7ec0733320",
+    "canonical_sha256": "56cbe60ff88283818473a51ba2b4d60593f1f2079467614aa8c7de7ec0733320",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceWordIdResources",
+    "exit_code": 0,
+    "seconds": 16.679527422995307,
+    "source_sha256": "3d3eb24d33fe18d1a1069a1eed14f8e7d273505996449d4f85b2ac19e3de0f20",
+    "isolated_sha256": "906e1c6985a17ce7c72495143a2091a6138c28971937b81002f82aedf2c778fd",
+    "canonical_sha256": "906e1c6985a17ce7c72495143a2091a6138c28971937b81002f82aedf2c778fd",
+    "object_matches": true
+  }
+]

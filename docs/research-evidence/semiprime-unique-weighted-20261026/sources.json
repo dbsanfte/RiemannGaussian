@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-six-domain-acquisition-20261026/README.md",
+      "sha256": "7f02576b9f1da50468198ba620001c547361d486ffd9e00ebc0944c2d7d482ad"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/pure-weighted-common-tag.md",
+      "sha256": "71c13ae4cf1d6cbb6d661bbbc6a3d3c2465d9f5618aa7e4e20fd7ddbef84b9d3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/quadratic-lifts.md",
+      "sha256": "87891fa454bbc7f03b5d363931c93649ed6ac197199fb8bd643eff2544b946c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/review-quadratic.md",
+      "sha256": "c38db380664886ff3736c69073a198cacdc115a37dc8da0047c84954b4f38ccd"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-packed-residue-20261026/README.md",
+      "sha256": "ef9cade5700ea4b0f2dabd28c56fb209b917404c168be0b993a8784d6078330d"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-packed-residue-20261026/packed-source.md",
+      "sha256": "9122787f26aff82c4eb1188bd57ae477af7b5d943603d47ddc9a72a1c6894fdf"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/README.md",
+      "sha256": "c9162067ce905b1da19504b1bda10b753c5ee794cd1e4e70e0a37b3df1429d65"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/polar-reciprocity.md",
+      "sha256": "f6e6e03cbbcd0efd33524ffdc0fc12a942b89a20cb2f4ff7c233560897847a89"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/direct-selected-residue.md",
+      "sha256": "77f83e6aee04a72aed7331e92b92c699840388393df44cde7364bf8cf3b70cea"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/direct-graph-residue.md",
+      "sha256": "d3fab589f5e717e0a764fda8cb90a58cb1de6a5aace512db3eafe90d60a18477"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/joint-lambert.md",
+      "sha256": "a1f83b9a68482e9d5c8f61199f3d5d9c3578f565490b602f6d442deaafe19bcd"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/parameterized-controller.md",
+      "sha256": "40dfd5a4f5e2081ddd79669bf2ce6199174258384293db97c1dd1f123dc4973c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/review-restricted-residue.md",
+      "sha256": "f754c0e9372750590a2f3b0ccc986e4bcdf55e864bef48d00a61ae438004d62e"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/hybrid-handoff.md",
+      "sha256": "cba1559069b42b1a6d12351eb5603298b6d485e1eaff14addf3d16a0458dddda"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-colourquery-20261026/README.md",
+      "sha256": "3f9289c1147e11e65764c55ce1068822a4f90f9e8390a07218da69552790ec82"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "Bernstein–Lange, Computing small discrete logarithms faster",
+      "url": "https://cr.yp.to/elliptic/cuberoot-20120812.pdf",
+      "section": "3",
+      "pdf_sha256": "9d8841ecde41f7edfea911349e5110de5e08d8f202f26e7a138ae3129aa01517",
+      "extracted_text_sha256": "671bae98ec1abbacd2f2c896ec9e5a1868da3e47f101656d10fae080043af0fc",
+      "scope": "Heuristic random-walk preprocessing tradeoff only; not a deterministic aggregate query modulo an unknown factor. PDF and extracted text retained in scratch, not copied into the repository."
+    }
+  ],
+  "scope": "New finite arithmetic is proved in this packet. No cited theorem supplies the missing whole-family soft-K query."
+}

@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "all8_current_sources_fully_read": true,
+  "lines": 687,
+  "reviews": {
+    "parent": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-choice-parent-review.txt",
+      "sha256": "39146acf0862814085e2fdfa5971207f6f2cfb97d63bd82b01f7ba89b0b340a5",
+      "modules": 3,
+      "lines": 275,
+      "all_current_body_sha_pins_verified": true
+    },
+    "owner": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-choice-owner-review.txt",
+      "sha256": "4e15f06eb791901ebd71e151c216c171f10eaa7ae7beeae220c977f11161156b",
+      "modules": 2,
+      "lines": 178,
+      "all_current_body_sha_pins_verified": true
+    },
+    "port": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-choice-port-review.txt",
+      "sha256": "2985eefc538a05eabdd17fa7625bd436dc2b2c684f7de387a6f47b14d3d92500",
+      "modules": 3,
+      "lines": 234,
+      "all_current_body_sha_pins_verified": true
+    }
+  },
+  "assignments": {
+    "parent": [
+      {
+        "module": "SemiprimeD1StackChildVertexChoice",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexChoice.lean",
+        "sha256": "46caf9ebf66c56538dae589b1f213c44e938c242f61b1bbc9563a921e0c2bdcd",
+        "lines": 88
+      },
+      {
+        "module": "SemiprimeD1StackChildVertexChoiceExecution",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexChoiceExecution.lean",
+        "sha256": "e11da9b0fde21d3f5c88b4ae07c7967d5966dcc6dc58eab07c736d2bb6f36c0c",
+        "lines": 82
+      },
+      {
+        "module": "SemiprimeD1StackChildVertexChoiceOriginal",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexChoiceOriginal.lean",
+        "sha256": "7c44b5eda5d1ecbbc69efcd6e719b6da92be96a085ef1cabd00d3a9ab3893585",
+        "lines": 105
+      }
+    ],
+    "owner": [
+      {
+        "module": "SemiprimeD1StackChildVertexChoiceView",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexChoiceView.lean",
+        "sha256": "95a0a3ada0409975e0481ee3b717d2718971ea5da887d6b7b6f502e143031ff8",
+        "lines": 100
+      },
+      {
+        "module": "SemiprimeD1StackChildVertexChoiceSpec",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexChoiceSpec.lean",
+        "sha256": "d03fb30163abebb26d6a9f2a3269525bdc6e96db31d45dfe7dccfc8931ad1f12",
+        "lines": 78
+      }
+    ],
+    "port": [
+      {
+        "module": "SemiprimeD1StackChildVertexChoiceSource",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexChoiceSource.lean",
+        "sha256": "dc8db8ebe4217049c1ce512409c1c4f88db253b7a6f6a0e83af17f3eb29aece0",
+        "lines": 61
+      },
+      {
+        "module": "SemiprimeD1StackChildVertexChoiceBounds",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexChoiceBounds.lean",
+        "sha256": "bc5e23b8c0e9e94bf4e17339c88119e507c0f1f6c37731cf25592ed0e569edb3",
+        "lines": 71
+      },
+      {
+        "module": "SemiprimeD1StackChildVertexChoiceStorage",
+        "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexChoiceStorage.lean",
+        "sha256": "aac591a2b46f0d80df36d5b6dad46ef2865deb045b9bc2353cc3c664ed87b63e",
+        "lines": 102
+      }
+    ]
+  },
+  "no_import_build_edit_or_control_replays": true
+}

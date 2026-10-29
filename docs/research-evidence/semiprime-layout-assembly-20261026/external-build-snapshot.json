@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-10-27 00:27:12 UTC",
+  "status": "complete",
+  "completed": 2569,
+  "total": 2569,
+  "failed": 0,
+  "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "exact_expected_endpoint_typechecked": true,
+  "every_source_declaration_audited": true,
+  "configured_Main_comparator_run": false,
+  "extra_Main_dependency_modules": 522,
+  "primitive_factoring_runtime_proved": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard_axioms": true,
+  "declarations": 20,
+  "theorems": 14,
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayBackendBudget",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayBackendBudget.lean",
+      "source_sha256": "6613c9701c7ed6280c799a4b3a9706746ed6ce3d7345338d0a5d1221bc57b815",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayBackendBudget.olean",
+      "object_sha256": "9cb2dc528d3c68d3a1fff83d3898329f1ed45d8f2ae753c05979c2fc1a194882",
+      "isolated": "/tmp/semiprime-source-lowering-20261027/backend-budget-isolated/SemiprimeSourceArrayBackendBudget.olean",
+      "isolated_sha256": "9cb2dc528d3c68d3a1fff83d3898329f1ed45d8f2ae753c05979c2fc1a194882",
+      "byte_equal": true
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceInterpolationProgramBudget",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceInterpolationProgramBudget.lean",
+      "source_sha256": "853b4e3fa965320dbeac1b307028c2fac9dfbe02a4f5993ba46e127dab75dc96",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceInterpolationProgramBudget.olean",
+      "object_sha256": "6dd4fe70f2ccec708aed03dd11cf1f933bd18bb244edf5925eda36a1ee98b866",
+      "isolated": "/tmp/semiprime-source-lowering-20261027/backend-budget-isolated/SemiprimeSourceInterpolationProgramBudget.olean",
+      "isolated_sha256": "6dd4fe70f2ccec708aed03dd11cf1f933bd18bb244edf5925eda36a1ee98b866",
+      "byte_equal": true
+    }
+  ]
+}

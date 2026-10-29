@@ -1,0 +1,257 @@
+{
+  "status": "PASS",
+  "scope": "structural algebra and small exact tensor counts; no factoring campaign",
+  "tests": [
+    {
+      "test": "independent_dense_projectors",
+      "Q": 2,
+      "R": 1,
+      "entries": 64
+    },
+    {
+      "test": "independent_dense_projectors",
+      "Q": 3,
+      "R": 2,
+      "entries": 1536
+    },
+    {
+      "test": "one_complete_copy",
+      "n": 4,
+      "M": 16,
+      "block_count": 1,
+      "leftovers": 0,
+      "value": "11",
+      "setup": {
+        "counts": {
+          "integer_difference_terms": 16,
+          "row_interpolation_terms": 16,
+          "constraint_elimination_rows": 4,
+          "raw_constraint_rows": 16,
+          "selected_measurement_rows": 4
+        },
+        "maximum_numerator_bits": 1,
+        "maximum_denominator_bits": 2
+      },
+      "counter": {
+        "interpolation_nodes": 2,
+        "mobius_pairs": 162,
+        "measurement_tuples": 4050,
+        "representative_boolean_scans": 18144,
+        "fibre_boolean_scans": 11664,
+        "separated_group_evaluations": 1728,
+        "jet_additions": 70308,
+        "factor_jet_evaluations": 3456,
+        "jet_scalings": 13986,
+        "local_boolean_entry_evaluations": 55296,
+        "jet_multiplications": 158440,
+        "jet_unit_inversions": 2,
+        "maximum_recorded_numerator_bits": 28,
+        "maximum_recorded_denominator_bits": 9,
+        "algebraic_design_valid": true,
+        "balanced_groups": true,
+        "summary_count_bound": false,
+        "quantitative_promises_valid": false,
+        "n": 4,
+        "factors": 4,
+        "scope_degree_bound": 16,
+        "Taylor_order_q": 8,
+        "jet_precision": 9,
+        "diagnostics_invoked": false,
+        "truth_tables_materialized": false,
+        "fibre_lists_materialized": false,
+        "only_boolean_entry_values_observed": true,
+        "resource_contract": "Boolean entries or a common polynomial-bit entry denominator/height bound"
+      }
+    },
+    {
+      "test": "complete_plus_leftover",
+      "n": 4,
+      "M": 17,
+      "block_count": 1,
+      "leftovers": 1,
+      "value": "5",
+      "setup": {
+        "counts": {
+          "integer_difference_terms": 16,
+          "row_interpolation_terms": 16,
+          "constraint_elimination_rows": 6,
+          "raw_constraint_rows": 18,
+          "selected_measurement_rows": 6
+        },
+        "maximum_numerator_bits": 1,
+        "maximum_denominator_bits": 2
+      },
+      "counter": {
+        "interpolation_nodes": 2,
+        "mobius_pairs": 162,
+        "measurement_tuples": 12150,
+        "representative_boolean_scans": 52812,
+        "fibre_boolean_scans": 15552,
+        "separated_group_evaluations": 2016,
+        "jet_additions": 84672,
+        "factor_jet_evaluations": 4896,
+        "jet_scalings": 17154,
+        "local_boolean_entry_evaluations": 66240,
+        "jet_multiplications": 187060,
+        "jet_unit_inversions": 2,
+        "maximum_recorded_numerator_bits": 27,
+        "maximum_recorded_denominator_bits": 7,
+        "algebraic_design_valid": true,
+        "balanced_groups": true,
+        "summary_count_bound": false,
+        "quantitative_promises_valid": false,
+        "n": 4,
+        "factors": 5,
+        "scope_degree_bound": 17,
+        "Taylor_order_q": 8,
+        "jet_precision": 9,
+        "diagnostics_invoked": false,
+        "truth_tables_materialized": false,
+        "fibre_lists_materialized": false,
+        "only_boolean_entry_values_observed": true,
+        "resource_contract": "Boolean entries or a common polynomial-bit entry denominator/height bound"
+      }
+    },
+    {
+      "test": "identity_leftovers_repeated_owner",
+      "n": 3,
+      "M": 4,
+      "block_count": 0,
+      "leftovers": 4,
+      "value": "2",
+      "setup": {
+        "counts": {
+          "conditional_incidence_terms": 336,
+          "conditional_head_terms": 378,
+          "word_candidates": 20,
+          "integer_difference_terms": 16,
+          "row_interpolation_terms": 16,
+          "raw_constraint_rows": 8,
+          "selected_measurement_rows": 6,
+          "constraint_elimination_rows": 2
+        },
+        "maximum_numerator_bits": 10,
+        "maximum_denominator_bits": 9
+      },
+      "counter": {
+        "interpolation_nodes": 2,
+        "mobius_pairs": 38,
+        "measurement_tuples": 1026,
+        "representative_boolean_scans": 4085,
+        "fibre_boolean_scans": 1824,
+        "separated_group_evaluations": 384,
+        "jet_additions": 2878,
+        "factor_jet_evaluations": 352,
+        "jet_scalings": 742,
+        "local_boolean_entry_evaluations": 1408,
+        "jet_multiplications": 2372,
+        "jet_unit_inversions": 2,
+        "maximum_recorded_numerator_bits": 7,
+        "maximum_recorded_denominator_bits": 1,
+        "algebraic_design_valid": true,
+        "balanced_groups": true,
+        "summary_count_bound": false,
+        "quantitative_promises_valid": false,
+        "n": 3,
+        "factors": 2,
+        "scope_degree_bound": 4,
+        "Taylor_order_q": 2,
+        "jet_precision": 3,
+        "diagnostics_invoked": false,
+        "truth_tables_materialized": false,
+        "fibre_lists_materialized": false,
+        "only_boolean_entry_values_observed": true,
+        "resource_contract": "Boolean entries or a common polynomial-bit entry denominator/height bound"
+      }
+    },
+    {
+      "test": "empty_factor",
+      "n": 2,
+      "M": 2,
+      "block_count": 0,
+      "leftovers": 2,
+      "value": "2",
+      "setup": {
+        "counts": {
+          "conditional_incidence_terms": 68,
+          "conditional_head_terms": 136,
+          "word_candidates": 16,
+          "integer_difference_terms": 16,
+          "row_interpolation_terms": 16,
+          "raw_constraint_rows": 4,
+          "selected_measurement_rows": 4
+        },
+        "maximum_numerator_bits": 9,
+        "maximum_denominator_bits": 10
+      },
+      "counter": {
+        "interpolation_nodes": 2,
+        "mobius_pairs": 10,
+        "measurement_tuples": 90,
+        "representative_boolean_scans": 250,
+        "fibre_boolean_scans": 160,
+        "separated_group_evaluations": 64,
+        "jet_additions": 342,
+        "factor_jet_evaluations": 64,
+        "jet_scalings": 74,
+        "local_boolean_entry_evaluations": 160,
+        "jet_multiplications": 276,
+        "jet_unit_inversions": 2,
+        "maximum_recorded_numerator_bits": 4,
+        "maximum_recorded_denominator_bits": 1,
+        "algebraic_design_valid": true,
+        "balanced_groups": true,
+        "summary_count_bound": false,
+        "quantitative_promises_valid": false,
+        "n": 2,
+        "factors": 2,
+        "scope_degree_bound": 2,
+        "Taylor_order_q": 1,
+        "jet_precision": 2,
+        "diagnostics_invoked": false,
+        "truth_tables_materialized": false,
+        "fibre_lists_materialized": false,
+        "only_boolean_entry_values_observed": true,
+        "resource_contract": "Boolean entries or a common polynomial-bit entry denominator/height bound"
+      }
+    },
+    {
+      "test": "conditional_mean_exhaustive_completion",
+      "history": [
+        "289/512",
+        "289/512",
+        "7/16",
+        "7/16"
+      ]
+    },
+    {
+      "test": "invalid_guard_precedes_all_auxiliary_allocation",
+      "accepted": true
+    },
+    {
+      "test": "strong_guard_exact_integer_only",
+      "n_bit_length": 100001,
+      "accepted": true
+    },
+    {
+      "test": "early_invalid_guard_fallback",
+      "result": {
+        "method": "explicit_invalid_guard_exhaustive_fallback",
+        "guard": {
+          "accepted": false,
+          "reasons": [
+            "small logarithm"
+          ]
+        },
+        "result": {
+          "method": "diagnostic_direct_boolean_sum",
+          "value_numerator": 2,
+          "value_denominator": 1,
+          "stats": {
+            "diagnostic_boolean_assignments": 4
+          }
+        }
+      }
+    }
+  ]
+}

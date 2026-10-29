@@ -1,0 +1,6 @@
+ROOT_INVENTORY_PREPARED keys=0 a=0 actual_transitions=56 all2270=true within_own_clock=true all_foreign_retained=true copies=2 inventory_source=1 real_class_edge_bumps=true
+ROOT_INVENTORY_PREPARED keys=1 a=0 actual_transitions=829 all2270=true within_own_clock=true all_foreign_retained=true copies=2 inventory_source=1 real_class_edge_bumps=true
+ROOT_INVENTORY_PREPARED keys=2 a=0 actual_transitions=2039 all2270=true within_own_clock=true all_foreign_retained=true copies=2 inventory_source=1 real_class_edge_bumps=true
+ROOT_INVENTORY_PREPARED keys=3 a=0 actual_transitions=3614 all2270=true within_own_clock=true all_foreign_retained=true copies=2 inventory_source=1 real_class_edge_bumps=true
+ROOT_INVENTORY_CONTROLS cases=4 actual_transitions=6538 all2270=true prepared_continuations_only=true within_own_clock=true all_foreign_words_retained=true flags_clear=true two_real_outer_returns=true
+ROOT_INVENTORY_OBSERVER declarations=35 standard3_only=true

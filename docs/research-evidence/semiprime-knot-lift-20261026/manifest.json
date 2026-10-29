@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5065,
+      "sha256": "b3e4783e8ac1a6da6dee0055e5ae217741d2deaf7a659f8dda8ec59fbe98c630"
+    },
+    {
+      "path": "cyclic-native-coverage.md",
+      "bytes": 7294,
+      "sha256": "4d395fdae3942fd2c93a44a8e1b6f24c55f1d4d82446b45c8e1c0950826db6af"
+    },
+    {
+      "path": "finite-root-system.md",
+      "bytes": 10817,
+      "sha256": "7dabcdbf8a27c5ca04ea38185c2511889847a0a69362605ffe922e44d7a26148"
+    },
+    {
+      "path": "fractional-review.md",
+      "bytes": 5194,
+      "sha256": "95ada1c73b160283cdbede3f5cefd8569dd9f92ac3f8ad7fc31ae3733e6d0aa7"
+    },
+    {
+      "path": "fractional-twist.md",
+      "bytes": 11286,
+      "sha256": "762d9f3e2eef9b32c12c18b1807c1f63553642dd53a89684bb9371aff4c19d7c"
+    },
+    {
+      "path": "frobenius-periodicity-review.md",
+      "bytes": 4070,
+      "sha256": "d12196de160259a70da501d5765995997fd5b80dbdfef099c75a7bb79edd54a8"
+    },
+    {
+      "path": "frobenius-screen-review.md",
+      "bytes": 5337,
+      "sha256": "aa71fdbdce6839547a195cbf838e5b40114792bc2cda0410d4d390296084b026"
+    },
+    {
+      "path": "frobenius-screen.md",
+      "bytes": 6840,
+      "sha256": "bdd7215381aea65a37ffbd172cd004f068b5c062016a9060c541f80c2652fb56"
+    },
+    {
+      "path": "frobenius_screen.py",
+      "bytes": 4481,
+      "sha256": "c9b83a814c3027d07dd91c62b70537adef87124b351e5d764d223a76df898872"
+    },
+    {
+      "path": "implementation-notes.md",
+      "bytes": 4031,
+      "sha256": "d003f21a887e2556e8881edce3112a3ab1368cc8aec1dcf816ba001d3375eaaa"
+    },
+    {
+      "path": "integration-review.md",
+      "bytes": 2424,
+      "sha256": "b680ad43ad744e65b526ad1ae74d9d1bfae7b3bacb1a55aa6905d31212ff8b19"
+    },
+    {
+      "path": "kernel-validation.txt",
+      "bytes": 655,
+      "sha256": "14fbc8834de5cd63c273409af57e93119db0e9287774632884050cfc1b0ef1eb"
+    },
+    {
+      "path": "lift-collision.md",
+      "bytes": 12108,
+      "sha256": "8a9e538ed61be8c4043904f2d3f30a87ae72c64948bf9e3a489ee192177e335f"
+    },
+    {
+      "path": "periodicity-scope.md",
+      "bytes": 2887,
+      "sha256": "aa7533dc6b0536e9ef2a0ced20099140e342a201c808cd01bcbb7904034c41e8"
+    },
+    {
+      "path": "powered-tangle-review.md",
+      "bytes": 1610,
+      "sha256": "d73560426710e4fe1309233b7d42b4fb7055b191c9a61a70a6f9a9dddee268d2"
+    },
+    {
+      "path": "powered-tangle.md",
+      "bytes": 7773,
+      "sha256": "71f35512a0957e3bfcdaa6101e8e12f8153d1c27da3c026996f480a135b3ba5c"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2250,
+      "sha256": "ce5c02e1d0bed6e37623b1d77cf3c7c2b2b5aedaad21ef4e4f486b34ffb58fa5"
+    },
+    {
+      "path": "skein-recovery-review.md",
+      "bytes": 2388,
+      "sha256": "7fb00e3b53540cbd843437320a89a436ba6f3451a90d146370cc7aa5a2a380b6"
+    },
+    {
+      "path": "skein-recovery.md",
+      "bytes": 10408,
+      "sha256": "e4eb8f6dc9b616e48762135780f880d08ba8ff8ad2754551fa1efa3af0fdc779"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 4281,
+      "sha256": "3c6303bca2c03975cae2e2ae689f49d16db0e5939685933aa0a77b2668c9df5f"
+    },
+    {
+      "path": "test_frobenius_screen.py",
+      "bytes": 2622,
+      "sha256": "b50778a461b1e0793c0e62cd4052d87848c8ce4c27ad8951095bedb80a2000b8"
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "modulus": 1009,
+  "scope": "exact algebra identities, no native coverage/exponent claim",
+  "case_count": 30,
+  "all_passed": true,
+  "rank_one_source_checks": 60,
+  "lucas": {
+    "rows": 7,
+    "regular_parameter_checks": 112,
+    "finite_part_flags_checked": 7,
+    "all_passed": true
+  },
+  "graph_determinant_misses_native_zero_count": 10,
+  "cases": [
+    {
+      "J": 1,
+      "h": 2,
+      "T": [
+        2
+      ],
+      "rho": 7,
+      "native_product": 13,
+      "nonbacktracking_determinant": 1,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 1,
+      "h": 2,
+      "T": [
+        2
+      ],
+      "rho": 7,
+      "native_product": 13,
+      "nonbacktracking_determinant": 1,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 1,
+      "h": 2,
+      "T": [
+        1
+      ],
+      "rho": 7,
+      "native_product": 0,
+      "nonbacktracking_determinant": 1,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 1,
+      "h": 2,
+      "T": [
+        2
+      ],
+      "rho": 11,
+      "native_product": 21,
+      "nonbacktracking_determinant": 1,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 1,
+      "h": 2,
+      "T": [
+        2
+      ],
+      "rho": 11,
+      "native_product": 21,
+      "nonbacktracking_determinant": 1,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 1,
+      "h": 2,
+      "T": [
+        1
+      ],
+      "rho": 11,
+      "native_product": 0,
+      "nonbacktracking_determinant": 1,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 2,
+      "T": [
+        2,
+        3
+      ],
+      "rho": 7,
+      "native_product": 520,
+      "nonbacktracking_determinant": 672,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 2,
+      "T": [
+        2,
+        2
+      ],
+      "rho": 7,
+      "native_product": 169,
+      "nonbacktracking_determinant": 729,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 2,
+      "T": [
+        1,
+        2
+      ],
+      "rho": 7,
+      "native_product": 0,
+      "nonbacktracking_determinant": 169,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 2,
+      "T": [
+        2,
+        3
+      ],
+      "rho": 11,
+      "native_product": 335,
+      "nonbacktracking_determinant": 189,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 2,
+      "T": [
+        2,
+        2
+      ],
+      "rho": 11,
+      "native_product": 441,
+      "nonbacktracking_determinant": 840,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 2,
+      "T": [
+        1,
+        2
+      ],
+      "rho": 11,
+      "native_product": 0,
+      "nonbacktracking_determinant": 441,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 3,
+      "T": [
+        2,
+        3
+      ],
+      "rho": 7,
+      "native_product": 558,
+      "nonbacktracking_determinant": 316,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 3,
+      "T": [
+        2,
+        2
+      ],
+      "rho": 7,
+      "native_product": 946,
+      "nonbacktracking_determinant": 842,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 3,
+      "T": [
+        1,
+        2
+      ],
+      "rho": 7,
+      "native_product": 0,
+      "nonbacktracking_determinant": 359,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 3,
+      "T": [
+        2,
+        3
+      ],
+      "rho": 11,
+      "native_product": 385,
+      "nonbacktracking_determinant": 677,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 3,
+      "T": [
+        2,
+        2
+      ],
+      "rho": 11,
+      "native_product": 256,
+      "nonbacktracking_determinant": 499,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 2,
+      "h": 3,
+      "T": [
+        1,
+        2
+      ],
+      "rho": 11,
+      "native_product": 0,
+      "nonbacktracking_determinant": 18,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 2,
+      "T": [
+        2,
+        3,
+        4
+      ],
+      "rho": 7,
+      "native_product": 751,
+      "nonbacktracking_determinant": 248,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 2,
+      "T": [
+        2,
+        2,
+        2
+      ],
+      "rho": 7,
+      "native_product": 179,
+      "nonbacktracking_determinant": 810,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 2,
+      "T": [
+        1,
+        2,
+        3
+      ],
+      "rho": 7,
+      "native_product": 0,
+      "nonbacktracking_determinant": 780,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 2,
+      "T": [
+        2,
+        3,
+        4
+      ],
+      "rho": 11,
+      "native_product": 837,
+      "nonbacktracking_determinant": 232,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 2,
+      "T": [
+        2,
+        2,
+        2
+      ],
+      "rho": 11,
+      "native_product": 180,
+      "nonbacktracking_determinant": 314,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 2,
+      "T": [
+        1,
+        2,
+        3
+      ],
+      "rho": 11,
+      "native_product": 0,
+      "nonbacktracking_determinant": 320,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 4,
+      "T": [
+        2,
+        3,
+        4
+      ],
+      "rho": 7,
+      "native_product": 982,
+      "nonbacktracking_determinant": 158,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 4,
+      "T": [
+        2,
+        2,
+        2
+      ],
+      "rho": 7,
+      "native_product": 707,
+      "nonbacktracking_determinant": 374,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 4,
+      "T": [
+        1,
+        2,
+        3
+      ],
+      "rho": 7,
+      "native_product": 0,
+      "nonbacktracking_determinant": 602,
+      "native_collision": true,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 4,
+      "T": [
+        2,
+        3,
+        4
+      ],
+      "rho": 11,
+      "native_product": 236,
+      "nonbacktracking_determinant": 8,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 4,
+      "T": [
+        2,
+        2,
+        2
+      ],
+      "rho": 11,
+      "native_product": 155,
+      "nonbacktracking_determinant": 161,
+      "native_collision": false,
+      "passed": true
+    },
+    {
+      "J": 3,
+      "h": 4,
+      "T": [
+        1,
+        2,
+        3
+      ],
+      "rho": 11,
+      "native_product": 0,
+      "nonbacktracking_determinant": 55,
+      "native_collision": true,
+      "passed": true
+    }
+  ]
+}

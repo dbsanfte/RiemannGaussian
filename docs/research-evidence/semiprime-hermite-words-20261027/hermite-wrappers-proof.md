@@ -1,0 +1,9 @@
+# Original-input Hermite word wrappers
+
+Three new modules mirror the frozen original-input WordPacket wrappers, replacing the counter call by `HermiteBitsCounter.count`. The prior source files are unchanged. All three strictly compile. Ordinary-root 15-linter and every-generated-declaration transitive standard-axiom checks pass: 101 declarations, 64 theorem constants. Independent strict objects are byte-identical; pins are in hermite-wrappers-verification.json.
+
+`HermiteBitsSetupCounter.count` actually acquires paid indexed enumeration, original encoded source, original integer constraint matrix, and all physical selected designs. Its source getters pass those cached words to the new physical packet-and-Hermite counter. Every setup report plus the new counter report is retained. `count_correct` transports only mathematical design values through the original physical-design bridge and derives source validity/common representation/dimension guards from the existing original-source acquisition.
+
+`HermiteBitsPublicController` keeps original same-scope prefix checking, exact count-to-Nat recovery, zero-first prefix search and the physical operand decoder. `HermiteBitsScheduledController` is an N-only public schedule/guard wrapper, with the original finite fallback and soundness/completeness statements. The generic budget theorem is conditional on a bound for its actual new counter report; the prior public subpower report bound is not automatically transferred.
+
+Physical Hermite arithmetic removes the former rational Hermite backend from the new runtime call path. Source production, scalar parameter operations, indexing/address control and final decoding retain their explicit model boundaries. These wrappers do not themselves prove a complete primitive bit-clock or a new public subpower rate.

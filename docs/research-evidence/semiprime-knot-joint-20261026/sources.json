@@ -1,0 +1,183 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "CFK2006",
+      "title": "Higher spin vertex models with domain wall boundary conditions",
+      "authors": "A. Caradoc; O. Foda; N. Kitanine",
+      "url": "https://arxiv.org/pdf/math-ph/0601061",
+      "checked": [
+        "v2; printed pages 2–6; Eq. (3), footnote 3, Eq. (4)"
+      ],
+      "use": "Finite fusion normalization; explicit adjacent comparison factors are removed by the normalized endpoint scalar."
+    },
+    {
+      "id": "NepomechieWang2014",
+      "title": "Twisting singular solutions of Bethe’s equations",
+      "authors": "Rafael I. Nepomechie; Chunguang Wang",
+      "url": "https://arxiv.org/pdf/1409.7382",
+      "checked": [
+        "v3; Section 2 around Eq. (16); Section 3 Eqs. (26)–(33)"
+      ],
+      "use": "Singular XXX/XXZ solutions need physicality conditions and regularization; no automatic physical norm for the engineered polynomial TQ identity."
+    },
+    {
+      "id": "Korepin1982",
+      "title": "Calculation of norms of Bethe wave functions",
+      "authors": "V. E. Korepin",
+      "url": "https://doi.org/10.1007/BF01212176",
+      "checked": [
+        "Model-specific norm determinant framework; bibliographic/theorem-scope check"
+      ],
+      "use": "Background norm determinant, not an imported finite-ring singular-normalization theorem."
+    },
+    {
+      "id": "FabriciusMcCoy2001",
+      "title": "Completing Bethe’s equations at roots of unity",
+      "authors": "K. Fabricius; B. M. McCoy",
+      "url": "https://arxiv.org/abs/cond-mat/0012501",
+      "checked": [
+        "Root-of-unity complete-string hypotheses"
+      ],
+      "use": "Native q has order greater than the queried open string; this does not justify periodic closure."
+    },
+    {
+      "id": "Warnaar1999",
+      "title": "q-Trinomial identities",
+      "authors": "S. Ole Warnaar",
+      "url": "https://people.smp.uq.edu.au/OleWarnaar/pubs/qTrinomials.pdf",
+      "checked": [
+        "Equation (1), finite q-binomial theorem; finite quadratic sums"
+      ],
+      "use": "Finite polynomial summation used directly with checked local units; finite sum weights do not automatically contract the sparse native product."
+    },
+    {
+      "id": "BerkovichWarnaar2005",
+      "title": "Positivity preserving transformations for q-binomial coefficients",
+      "authors": "Alexander Berkovich; S. Ole Warnaar",
+      "url": "https://arxiv.org/abs/math/0302320",
+      "checked": [
+        "v1; finite transformation formulas and iterates"
+      ],
+      "use": "Bounded quadratic q-sums retain specified weights and boundary terms; no native product specialization is asserted."
+    },
+    {
+      "id": "ChenSinger2012",
+      "title": "Residues and telescopers for rational functions",
+      "authors": "Shaoshi Chen; Michael F. Singer",
+      "url": "https://arxiv.org/abs/1203.4200",
+      "checked": [
+        "Rational q-summability/telescoper hypotheses; author PDF https://singer.math.ncsu.edu/papers/YAAMA1465.pdf"
+      ],
+      "use": "Characteristic-zero non-root-of-unity framework; no initialized finite-ring multiplicative norm algorithm follows automatically."
+    },
+    {
+      "id": "MTV2006",
+      "title": "Bispectral and (gl_N,gl_M) dualities, discrete versus differential",
+      "authors": "Evgeny Mukhin; Vitaly Tarasov; Alexander Varchenko",
+      "url": "https://arxiv.org/html/math/0605172",
+      "checked": [
+        "Special trigonometric Gaudin and special XXX Bethe correspondences; integral-transform construction"
+      ],
+      "use": "Motivates small dual data; not a theorem for every multiplicative XXZ polynomial residue Jacobian."
+    },
+    {
+      "id": "ClaeysVanNeckDeBaerdemacker2017",
+      "title": "Inner products in integrable Richardson–Gaudin models",
+      "authors": "Pieter W. Claeys; Dimitri Van Neck; Stijn De Baerdemacker",
+      "url": "https://arxiv.org/html/1706.05511",
+      "checked": [
+        "Sections 3–5; Cauchy/dual-state determinant normalizations"
+      ],
+      "use": "Small determinant input and scalar normalization both require acquisition."
+    },
+    {
+      "id": "ClaeysEtAl2015",
+      "title": "An eigenvalue-based method and determinant representations for general integrable XXZ Richardson–Gaudin models",
+      "authors": "Pieter W. Claeys; Stijn De Baerdemacker; Mario Van Raemdonck; Dimitri Van Neck",
+      "url": "https://arxiv.org/html/1501.05827",
+      "checked": [
+        "Sections IV.1–IV.3; Eqs. (49), (50), (67)"
+      ],
+      "use": "Dual-state normalization product and ratio are distinguished; no unproved singular finite-ring specialization."
+    },
+    {
+      "id": "SilverWilliams2002",
+      "title": "Torsion numbers of augmented groups: with applications to knots and links",
+      "authors": "Daniel S. Silver; Susan G. Williams",
+      "url": "https://arxiv.org/pdf/math/0202197",
+      "checked": [
+        "Cyclic-cover resultant and torsion interpretation; prior packet source verification retained"
+      ],
+      "use": "Periodic-return context differs from a marked common-target hit; non-pure cases retain Betti corrections."
+    },
+    {
+      "id": "DoyleFiliHyde2022",
+      "title": "Dynatomic polynomials, necklace operators, and universal relations for dynamical units",
+      "authors": "John R. Doyle; Paul Fili; Trevor Hyde",
+      "url": "https://nyjm.albany.edu/j/2022/28-21p.pdf",
+      "checked": [
+        "Definition 2.15; Lemma 2.16; Theorem 3.1; Corollary 1.3"
+      ],
+      "use": "Polynomial iterate-minus-variable and necklace hypotheses do not apply to marked linear dynamics by renaming its factors."
+    },
+    {
+      "id": "Pippenger1980",
+      "title": "On the Evaluation of Powers and Monomials",
+      "authors": "Nicholas Pippenger",
+      "url": "https://doi.org/10.1137/0209022",
+      "checked": [
+        "Simultaneous monomial evaluation; author exposition https://cr.yp.to/papers/pippenger-20020118-retypeset20220327.pdf"
+      ],
+      "use": "Batch powering retains exponent length; products of group images add exponents."
+    },
+    {
+      "id": "BunzFischSzepieniec2020",
+      "title": "Transparent SNARKs from DARK Compilers",
+      "authors": "Benedikt Bünz; Ben Fisch; Alan Szepieniec",
+      "url": "https://eprint.iacr.org/2019/1229",
+      "checked": [
+        "Technical overview; integer-encoding commitment construction; full text https://core.ac.uk/download/pdf/579864042.pdf"
+      ],
+      "use": "Succinct evaluation verification does not acquire the honest prover’s long exponent or native aggregate at verifier cost."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-adams-20261026/shared-label-roots.md",
+      "bytes": 11935,
+      "sha256": "91d94b6aa69200c9b9b0c611c98110fdea01e31710b9b156f0d332328f2e311d"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-adams-20261026/extra-divisor-elimination.md",
+      "bytes": 11274,
+      "sha256": "9b48516632f5b632fc8e8513564ce5222a1251216bcbc07d93bcdd21b525f3e2"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-adams-20261026/cyclic-resultant-followup.md",
+      "bytes": 8030,
+      "sha256": "8d5c5b0f882e1cc322cb4d1ccc3ab415322ea16f74a3f89c417009e3eee68393"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-prefix-20261025/README.md",
+      "bytes": 6429,
+      "sha256": "18f7fb131a7b1e93d28267f9076cf00d34dccb1b988d383879d6a00b55b86484"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue.md",
+      "bytes": 10140,
+      "sha256": "9ded79850c2f200069a7da67502d0de579d1df0457cb06c865fb3d39c9654058"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/symmetric-supplier-audit.md",
+      "bytes": 7892,
+      "sha256": "e31daf2b017109cd844bda3b5814cac84bd000ac223a7571efe13c615ff1ac62"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    }
+  ]
+}

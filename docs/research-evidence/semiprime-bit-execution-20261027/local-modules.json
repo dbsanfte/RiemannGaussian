@@ -1,0 +1,20 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeLocalBits",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLocalBits.lean",
+    "source_sha256": "967f32afa30d50911426b53442cd3ce8318a44cde9ae25256bc03900264e759a",
+    "olean_sha256": "c4c7b53980d804e09261a9275cc8e50bb4e9d1331cdfa6177beae2cd01ef30aa"
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeLocalBitsCorrectness",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLocalBitsCorrectness.lean",
+    "source_sha256": "fda71ed2a7516f9e3a9762a4de186e5643d0082b989a3c484cb813fb7af5658b",
+    "olean_sha256": "887faf9a407cb53355c627e3a2cd41a72d682f8a61657c90abf7bce84b530361"
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeLocalBitsBounds",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeLocalBitsBounds.lean",
+    "source_sha256": "7cfd1941e361afb8eef03944d1c7d12b53641700b0cf1fbfd7aead98c42ca09c",
+    "olean_sha256": "e119086ad9ceb2d5c3539ccd31dedb5b9413239fd6ead5d136048ffd87b59213"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "previous_turn_classification": "progress",
+  "current_turn_classification": "progress through executed collective-query tests, exact finite filters, and corrected arithmetic claims; no complete-query exponent gain",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "current_query_bound": "soft O(J+sqrt(Jh))",
+  "target_query_bound": "soft O(J+sqrt(h))",
+  "principal_result": "Supplied-shift factor-or-exact-literal-overlap certificate, covering hidden local aliases and saturation, with full-family cost soft k.",
+  "extractor_accounting": {
+    "continuing_certificate": "soft O(J)",
+    "general_factor_or_certificate": "soft O(J+N^(31/192))",
+    "terminating_extractor_calls_at_most": 1,
+    "whole_family": "soft O(k)"
+  },
+  "additional_results": [
+    "Exact three-adic child phase/clock law, including K=6.",
+    "Complete AP-filtered query at the inherited old bound, including nonunit coefficient cases and axes.",
+    "Unit-row mask equals the inherited intrinsic conic-square condition; no additional colour information.",
+    "Fixed primitive phase determines one public colour; scoped admitted coarse-cell phase counts and exact axis case.",
+    "Explicit rational factor-cell constructor cost and clipping ledger.",
+    "Formal quadratic-exponent map corrects earlier mixed-trace wording; its comparison is branchwise redundant at a linear hit."
+  ],
+  "scope": [
+    "No supplied short shift family is proved to encounter a native witness-related nonliteral same-field edge.",
+    "Fixed-shift modular-alias certification is not a full-prefix zero query.",
+    "AP grouping assumes a common original window or prefix; row-specific windows require paid segmentation.",
+    "Total incidence/piece counts are bounded; a single row can have many colour tags.",
+    "Coarse phase counts and Taylor interval budgets apply to specified constructors, not arbitrary factoring algorithms.",
+    "The prior mixed-trace archive remains frozen; the standalone correction supersedes its broad formal-map statement."
+  ],
+  "reviews": [
+    "colour-selector-review.md",
+    "colour-lift-review.md",
+    "farey-cover-review.md"
+  ],
+  "incorporated_qualifications": [
+    "Saturated short-label extraction charged separately from polynomial certificate work.",
+    "Source-node shifted-gcd orientation and target-subset notation.",
+    "Positive parent clock 9i-L versus negative -9i-L.",
+    "Inverse precision 9H before exact division; bottom-level denominator retained.",
+    "Native axes separately have exactly d coarse-cell phases.",
+    "Factor-cell windows clipped to inherited horizon.",
+    "Unit-row intrinsic-mask equivalence and prior credit."
+  ],
+  "preservation": {
+    "protected_files_verified": 821,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1525485,
+        "sha256": "da6912959d8120d6dc2636cdab33aed00271eaf77257a0dad12379bdae156112"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2388590,
+        "sha256": "a163961b17b94d61e31f59e4cc5f2031f04c1a1fbc65445b220d2973bc4d2a56"
+      }
+    },
+    "concurrent_files_unchanged": 22,
+    "scratch_baseline_sha256": "a9fbbfa984484ad5d0f1661d76d9d58c5f88146b7588e602f0ed0b8f44eb1247"
+  },
+  "validation": {
+    "primary_sources": 4,
+    "source_pins": 8,
+    "local_links": 11,
+    "json_and_whitespace": true,
+    "git_diff_check": true,
+    "mathematical_validation": "Independent symbolic paper reviews; no kernel-checked proof or numerical coverage campaign."
+  },
+  "numerical_campaign": false,
+  "new_executable_research_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

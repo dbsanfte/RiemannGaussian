@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "scratch_source": "/tmp/semiprime-eth-paper-20261026/README.md",
+      "scratch_sha256": "ea2739c4f1562c0878676106fd9696e12ef66344d9f61fbf512915359f0a013c",
+      "archived_sha256": "ea2739c4f1562c0878676106fd9696e12ef66344d9f61fbf512915359f0a013c",
+      "adaptations": []
+    },
+    {
+      "path": "implications.md",
+      "scratch_source": "/tmp/semiprime-eth-paper-20261026/implications.md",
+      "scratch_sha256": "de1920f2a5ad252033e165483990e93b403b0b1c8b8f0afe995245a4297359e4",
+      "archived_sha256": "de1920f2a5ad252033e165483990e93b403b0b1c8b8f0afe995245a4297359e4",
+      "adaptations": []
+    },
+    {
+      "path": "shared-summaries.md",
+      "scratch_source": "/tmp/semiprime-eth-paper-20261026/shared-summaries.md",
+      "scratch_sha256": "1db67186329168cf12eac9cc0aad403837fa44e3ba4ea4059f0913c12fe71191",
+      "archived_sha256": "13aec7b9e596f6b61fb32953d089930cb85d363d9eb619a45d2619aa261ed61f",
+      "adaptations": [
+        {
+          "before": "[PDF](/tmp/semiprime-eth-paper-20261026/paper.pdf)",
+          "after": "[PDF](https://raw.githubusercontent.com/openai/math/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf)"
+        },
+        {
+          "before": "[layout text](/tmp/semiprime-eth-paper-20261026/paper.txt)",
+          "after": "`pdftotext -layout` extraction (hash in [sources.json](sources.json))"
+        }
+      ]
+    },
+    {
+      "path": "tensor-counting.md",
+      "scratch_source": "/tmp/semiprime-eth-paper-20261026/tensor-counting.md",
+      "scratch_sha256": "c5386aec9a5d42b39c44e3a9886e7b02c9e9e5128a8e328944dda946df294cc5",
+      "archived_sha256": "02663401281340b865b800fee40e77d86a99c69ae24991ae7d64365967664245",
+      "adaptations": [
+        {
+          "before": "[paper.pdf](paper.pdf)",
+          "after": "[paper.pdf](https://raw.githubusercontent.com/openai/math/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf)"
+        }
+      ]
+    },
+    {
+      "path": "review-factor-network.md",
+      "scratch_source": "/tmp/semiprime-eth-paper-20261026/review-factor-network.md",
+      "scratch_sha256": "9508c71ef14692ae7230508dfcf156a1bfe76e9d171e7ea0e69127b45c14e0a9",
+      "archived_sha256": "9508c71ef14692ae7230508dfcf156a1bfe76e9d171e7ea0e69127b45c14e0a9",
+      "adaptations": []
+    },
+    {
+      "path": "check_fft_bridge.py",
+      "scratch_source": "/tmp/semiprime-eth-paper-20261026/check_fft_bridge.py",
+      "scratch_sha256": "a9d8c7789558429d8a2b9ebde073b7fdab25ba4c1a8a6633fd502828854c8b27",
+      "archived_sha256": "a9d8c7789558429d8a2b9ebde073b7fdab25ba4c1a8a6633fd502828854c8b27",
+      "adaptations": []
+    },
+    {
+      "path": "identity-checks.json",
+      "scratch_source": "/tmp/semiprime-eth-paper-20261026/identity-checks.json",
+      "scratch_sha256": "1d8611edc22540c58e736ffccf34f2f242e0d5e1ed972c26383ec0b1de778e7a",
+      "archived_sha256": "1d8611edc22540c58e736ffccf34f2f242e0d5e1ed972c26383ec0b1de778e7a",
+      "adaptations": []
+    }
+  ],
+  "note": "Requested study while persistent goal paused. Source PDF and full extracted text remain in scratch; source URLs and hashes are pinned. Source-link adaptations are explicit above.",
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

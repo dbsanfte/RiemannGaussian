@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "module": "SemiprimeSourceWordIdResources",
+  "declarations": 21,
+  "theorem_constants": 18,
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byteequal": true,
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdResources.lean",
+  "source_sha256": "3d3eb24d33fe18d1a1069a1eed14f8e7d273505996449d4f85b2ac19e3de0f20",
+  "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdResources.olean",
+  "object_sha256": "906e1c6985a17ce7c72495143a2091a6138c28971937b81002f82aedf2c778fd",
+  "isolated": "/tmp/semiprime-word-bank-20261027/bank-isolated/SemiprimeSourceWordIdResources.olean",
+  "isolated_sha256": "906e1c6985a17ce7c72495143a2091a6138c28971937b81002f82aedf2c778fd"
+}

@@ -1,0 +1,18 @@
+Independent parent source/interface review: PASS for the prepared two-unary-input component.
+The actual finite program accepts only acquired unary a and occurrence count M. An actual marker loop materializes N=2^(a+1); a fixed64-gate DAG then uses literal finite constants, real preserving copies and actual unary multiplication to acquire every intermediate. No runtime natural evaluator, AST, W/template answer or clock is an input. Every input/register/output/scratch role is included in the72-role bank.
+Proof-only gate interpretation is linked gate by gate to the static DAG and exactly to the authoritative width polynomial. All intermediates have a common degree-five VALUE bound, rather than a log-width bound. Actual marker emission produces exactly W false cells, and the source physically drains all64 registers before genuine halt.
+The own full source clock and all72-role/real-return cap are fixed twelfth degree in a+M+2^(a+1)+1. Original uses the ACTUAL retained Root2139 exponent and incidence-count words (M, not Boolean-wire count). M is bounded from the same metadata producer trace; schedule bounds pay N by value, yielding fixed original-bitlength degree120.
+Scope remains a prepared width execution paired with retained metadata; there is no new literal original-N-only composite in this group. Upstream source copying/call and physical rational coefficient construction remain separate work. No blocking issues found in the files reviewed below. Remaining ordinary-root/Std3/header/byte-identity gates are checked by the owner separately.
+
+Current reviewed source SHA256 pins:
+239d33b200bf96e898d54002444ffdba19fcf7d915cb8be2097b16f90434ac3f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidth.lean
+59561d70f22b71474d0cfb793e7a06b0d7c86fe87f6f9262daf067a1bee98882  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthCircuit.lean
+0c109d119b99f82ab99af47d6f83f60ed661c3d597ca30ec5aa68b46edc996df  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthPolynomial.lean
+56d79f05b4a37882207dfecebdc50eb9cc6fe345e101617ff2014f9c32a8b984  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthSetup.lean
+66a816db050f410b6df4496f1265d82568d4d4fec807462c3e54f45d2186a74b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthGates.lean
+35c58b007a7b2b6b30379ffda4fbd5a6e69408b26529fa2969942047b3ef5d60  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthLoop.lean
+938b3df6c5221f711b6a112c552b7b0c7098a721b1acd882f82e99415e154e61  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthFinish.lean
+f1aa21077ce87af29e5e36713792131e1f8c99b3316d79c9fa6ef06b21b498c1  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthExecution.lean
+3748c5fb0c0b2c496b9d3c766d259aede3e6e93d75e4ace47d167314c431300b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthBounds.lean
+a675c23d6031f90c617da86a3a9dd972debcb2e4cf465f6b317a92f7108a24f1  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthStorage.lean
+6f3b85493ed981096e73eada2be2ce5b3f2d573528d4b2372b7171ba482acf8d  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryWidthOriginal.lean

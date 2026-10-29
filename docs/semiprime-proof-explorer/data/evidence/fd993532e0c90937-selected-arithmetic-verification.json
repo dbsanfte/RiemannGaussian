@@ -1,0 +1,241 @@
+{
+  "status": "FINAL_11_MODULES_SOURCE_CANONICAL_WRITERS_STOPPED",
+  "strict": true,
+  "ordinary_root_all15_default200k": true,
+  "every_generated_standard3_only": true,
+  "counts": {
+    "modules": 11,
+    "declarations": 214,
+    "theorems": 130
+  },
+  "independent_objects_byte_equal": true,
+  "actual_import_pairs": 18343,
+  "actual_import_files": 36686,
+  "missing_imports": [],
+  "changed_import_files": [],
+  "protected17054_unchanged": true,
+  "all_prior_frozen_groups_unchanged": [
+    "static-input-table",
+    "static-record",
+    "descriptor-record",
+    "selectors-carry",
+    "carry-table",
+    "scale-table",
+    "transform-table",
+    "carry-record",
+    "scale-record",
+    "transform-record"
+  ],
+  "modules": {
+    "SemiprimeD1StackSelectedDescriptorRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecord.lean",
+        "sha256": "f6da69faf6cdbb74fb2efa3ef932438d427ea706e95cc112bef7010bdd115a34"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecord.olean",
+        "sha256": "8625cc8b6ae02391ff59f36561b1b153dc539fca314a2f82db98d1474e4598a0"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackSelectedDescriptorRecord.independent.olean",
+        "sha256": "8625cc8b6ae02391ff59f36561b1b153dc539fca314a2f82db98d1474e4598a0"
+      }
+    },
+    "SemiprimeD1StackSelectedDescriptorRecordComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecordComponents.lean",
+        "sha256": "a77ba6c0a5b94cbec7bdf37e214be6ba2dada99a323371fb0c0b906b5be98887"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecordComponents.olean",
+        "sha256": "103de608eb2a9d080b5bfec262e84672b581885620224c0f628b2268e2a7c1f7"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackSelectedDescriptorRecordComponents.independent.olean",
+        "sha256": "103de608eb2a9d080b5bfec262e84672b581885620224c0f628b2268e2a7c1f7"
+      }
+    },
+    "SemiprimeD1StackSelectedDescriptorRecordExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecordExecution.lean",
+        "sha256": "16319c22d8658f37dfaf559c5ba741aee571b072da7999d82f74f7f1b8835c67"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecordExecution.olean",
+        "sha256": "a093ff774383a83484ba6d26f60248f5cd563cf67c0636b6121fadc5f6d9bf39"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackSelectedDescriptorRecordExecution.independent.olean",
+        "sha256": "a093ff774383a83484ba6d26f60248f5cd563cf67c0636b6121fadc5f6d9bf39"
+      }
+    },
+    "SemiprimeD1StackSelectedDescriptorRecordBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecordBounds.lean",
+        "sha256": "17a84e1cf15fd8a6b613e4964378d37198149c7804312538197f3d83b4e0f717"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecordBounds.olean",
+        "sha256": "acade063a3ca554a864dde78ed58e6b375005f975a5f0d9f1292ee89bfd41867"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackSelectedDescriptorRecordBounds.independent.olean",
+        "sha256": "acade063a3ca554a864dde78ed58e6b375005f975a5f0d9f1292ee89bfd41867"
+      }
+    },
+    "SemiprimeD1StackSelectedDescriptorRecordReject": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecordReject.lean",
+        "sha256": "a07d4070e108b22702f319d1424a0fa61d05a12b4455f4a1838232ee93a74794"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackSelectedDescriptorRecordReject.olean",
+        "sha256": "d185542498ebba09901a807c76fb58e7903082bc7f32fbccc63c005cac13b14e"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackSelectedDescriptorRecordReject.independent.olean",
+        "sha256": "d185542498ebba09901a807c76fb58e7903082bc7f32fbccc63c005cac13b14e"
+      }
+    },
+    "SemiprimeD1StackScaleDescriptorRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScaleDescriptorRecord.lean",
+        "sha256": "950c0f1a692a3a2fc689d8d8a99a6c691cad600cfc4ef61e9fbe452ed0a3e8f9"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScaleDescriptorRecord.olean",
+        "sha256": "c7ea6c62250d88ea8986390ab85668e92c3326b8c2f99f0b46bc071fb48a9261"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackScaleDescriptorRecord.independent.olean",
+        "sha256": "c7ea6c62250d88ea8986390ab85668e92c3326b8c2f99f0b46bc071fb48a9261"
+      }
+    },
+    "SemiprimeD1StackScaleDescriptorRecordBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScaleDescriptorRecordBounds.lean",
+        "sha256": "a64618a75626d294dcc8adbffc729b89d744b4e4301250fc8fe5876cc3da0cdd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScaleDescriptorRecordBounds.olean",
+        "sha256": "4a6deca1e091da854de97f3a359b651906f22193c13033b5782b08a0d358455d"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackScaleDescriptorRecordBounds.independent.olean",
+        "sha256": "4a6deca1e091da854de97f3a359b651906f22193c13033b5782b08a0d358455d"
+      }
+    },
+    "SemiprimeD1StackScaleDescriptorRecordOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScaleDescriptorRecordOriginal.lean",
+        "sha256": "82cf81e61d4f13e8a26916c729eecdd5bc12803b5fd86550a9290452d96618a1"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScaleDescriptorRecordOriginal.olean",
+        "sha256": "ae6c99ade45a59350ce93fab81e9f577c577690f8d74d37315a622f56cf4daed"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackScaleDescriptorRecordOriginal.independent.olean",
+        "sha256": "ae6c99ade45a59350ce93fab81e9f577c577690f8d74d37315a622f56cf4daed"
+      }
+    },
+    "SemiprimeD1StackTransformDescriptorRecord": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformDescriptorRecord.lean",
+        "sha256": "673befc313d16fc44516014d3aa56e00457b3103075a9731e6718daf6b89ad2b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformDescriptorRecord.olean",
+        "sha256": "a535c434eab3894891114097dc0fce40436efba53ca808ddc4abe92ea0cbadf4"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformDescriptorRecord.independent.olean",
+        "sha256": "a535c434eab3894891114097dc0fce40436efba53ca808ddc4abe92ea0cbadf4"
+      }
+    },
+    "SemiprimeD1StackTransformDescriptorRecordBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformDescriptorRecordBounds.lean",
+        "sha256": "6cc6f636f43dc621ff5aa6900561d4094b64b1f6b0ee0de833a6abf4ff729529"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformDescriptorRecordBounds.olean",
+        "sha256": "49d3ee1f79c0667f9ee43b368cbbf3a1261a29b8227110327a4656cca7771435"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformDescriptorRecordBounds.independent.olean",
+        "sha256": "49d3ee1f79c0667f9ee43b368cbbf3a1261a29b8227110327a4656cca7771435"
+      }
+    },
+    "SemiprimeD1StackTransformDescriptorRecordOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackTransformDescriptorRecordOriginal.lean",
+        "sha256": "cf86babb8046faf1d24f4f48620243bbd0e4045be90334736e631aa30d637e01"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackTransformDescriptorRecordOriginal.olean",
+        "sha256": "51948ef73a5032bb29e1c1ab50fdc69faddb6e05fd3b21b4eb3784db3579e0e4"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackTransformDescriptorRecordOriginal.independent.olean",
+        "sha256": "51948ef73a5032bb29e1c1ab50fdc69faddb6e05fd3b21b4eb3784db3579e0e4"
+      }
+    }
+  },
+  "controls": {
+    "scale": {
+      "all_roles": 362,
+      "scope": "INTERNAL acquiredscope0 complete physical selector->template->table->serializer->logger component; not N-only graph acquisition or an original-arity positive control",
+      "successful": [
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Scale second=false tr=0 actual_steps=10391 selector_steps=33 template_steps=1146 scopes=0 all362roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty160template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true",
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Scale second=false tr=1 actual_steps=10397 selector_steps=39 template_steps=1146 scopes=0 all362roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty160template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true",
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Scale second=false tr=2 actual_steps=10577 selector_steps=45 template_steps=1146 scopes=0 all362roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty160template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true"
+      ],
+      "rejected": [
+        "ACTUAL_DESCRIPTOR_ABORT_PASS family=Scale case=unknown_tag0 actual_steps=14 all362roles=true old_template_scope_history_output_untouched=true selectors_empty=true original6fields_retained=true flags_clear=true exact_real_outer_return=true",
+        "ACTUAL_DESCRIPTOR_ABORT_PASS family=Scale case=tag_overflow18 actual_steps=121 all362roles=true old_template_scope_history_output_untouched=true selectors_empty=true original6fields_retained=true flags_clear=true exact_real_outer_return=true",
+        "ACTUAL_DESCRIPTOR_ABORT_PASS family=Scale case=tr_overflow3 actual_steps=48 all362roles=true old_template_scope_history_output_untouched=true selectors_empty=true original6fields_retained=true flags_clear=true exact_real_outer_return=true",
+        "ACTUAL_DESCRIPTOR_ABORT_PASS family=Scale case=false_marker actual_steps=19 all362roles=true old_template_scope_history_output_untouched=true selectors_empty=true original6fields_retained=true flags_clear=true exact_real_outer_return=true"
+      ],
+      "snapshot_identity_kernel_checked": true,
+      "all_generated_observer_standard3": 40
+    },
+    "transform": {
+      "all_roles": 450,
+      "scope": "INTERNAL acquiredscope0 complete physical selector->template->table->serializer->logger component; not N-only graph acquisition or an original-arity positive control",
+      "successful": [
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Transform second=false tr=0 actual_steps=23991 selector_steps=27 template_steps=1456 scopes=0 all450roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty204template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true",
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Transform second=false tr=1 actual_steps=23997 selector_steps=33 template_steps=1456 scopes=0 all450roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty204template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true",
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Transform second=false tr=2 actual_steps=34979 selector_steps=39 template_steps=1456 scopes=0 all450roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty204template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true",
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Transform second=true tr=0 actual_steps=24003 selector_steps=39 template_steps=1456 scopes=0 all450roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty204template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true",
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Transform second=true tr=1 actual_steps=24009 selector_steps=45 template_steps=1456 scopes=0 all450roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty204template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true",
+        "ACTUAL_DESCRIPTOR_SOURCE_PASS family=Transform second=true tr=2 actual_steps=36591 selector_steps=51 template_steps=1456 scopes=0 all450roles=true all5shadows=true original6fields_retained=true stale_selectors_erased=true dirty204template_drained=true loaded_template_only_original_inputs=true actual_full_table_source=true scope_and_caller_history_order_retained=true consumed_outputs=true flags_clear=true exact_real_outer_return=true own_source_clock=true internal_scope_control=true"
+      ],
+      "rejected": [
+        "ACTUAL_DESCRIPTOR_ABORT_PASS family=Transform case=unknown_tag0 actual_steps=14 all450roles=true old_template_scope_history_output_untouched=true selectors_empty=true original6fields_retained=true flags_clear=true exact_real_outer_return=true",
+        "ACTUAL_DESCRIPTOR_ABORT_PASS family=Transform case=tag_overflow18 actual_steps=121 all450roles=true old_template_scope_history_output_untouched=true selectors_empty=true original6fields_retained=true flags_clear=true exact_real_outer_return=true",
+        "ACTUAL_DESCRIPTOR_ABORT_PASS family=Transform case=tr_overflow3 actual_steps=48 all450roles=true old_template_scope_history_output_untouched=true selectors_empty=true original6fields_retained=true flags_clear=true exact_real_outer_return=true",
+        "ACTUAL_DESCRIPTOR_ABORT_PASS family=Transform case=false_marker actual_steps=19 all450roles=true old_template_scope_history_output_untouched=true selectors_empty=true original6fields_retained=true flags_clear=true exact_real_outer_return=true"
+      ],
+      "snapshot_identity_kernel_checked": true,
+      "all_generated_observer_standard3": 40
+    }
+  },
+  "physical_roles": {
+    "generic": "2*K+42, including five alias shadows",
+    "scale": 362,
+    "transform": 450
+  },
+  "own_clock": "actualSelector clock +actual charged complete-template loader clock +actual entire concreteRecord sourceclock +4 real join/gate/halt transitions; concrete bound uses frozen concrete-checker own clock, not report transport",
+  "actual_inputs": "six original acquired fields[N,tag,coord0,coord1,coord2,coord3], physical binary scope, caller history/output, charged arbitrary old template/selectors; no newly supplied singleton, mode, count, table, assignment, predicate or verdict",
+  "original_meaning": "ALLcanonicalpositiveN/ALL original scale tr,j,k/first tr,j/second tr,k: exact whole old tensor row and unchanged numeric-port order, chronological old-record history and one final actual logger reversal",
+  "rejection": "generic actual unknown bounded constructor source_abort_run proves empty-selector physical gate halts before any metadata/table/record instruction; actual compiled overflow/false controls also pass",
+  "artifacts": [
+    "/tmp/semiprime-explicit-rate-20261027/SelectedArithmeticAudit.lean",
+    "/tmp/semiprime-explicit-rate-20261027/selected-arithmetic-audit-final.log",
+    "/tmp/semiprime-explicit-rate-20261027/ScaleDescriptorRecordControls.lean",
+    "/tmp/semiprime-explicit-rate-20261027/scale-descriptor-record-controls.log",
+    "/tmp/semiprime-explicit-rate-20261027/TransformDescriptorRecordControls.lean",
+    "/tmp/semiprime-explicit-rate-20261027/transform-descriptor-record-controls.log"
+  ]
+}

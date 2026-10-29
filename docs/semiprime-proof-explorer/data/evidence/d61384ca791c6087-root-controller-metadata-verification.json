@@ -1,0 +1,88 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 4,
+    "declarations": 121,
+    "theorems": 66
+  },
+  "modules": {
+    "SemiprimeD1StackRootControllerMetadata": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootControllerMetadata.lean",
+        "sha256": "be55de57602ded4005e8b49d045146d74801c478dd781b1b002fcfcce598f8f7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootControllerMetadata.olean",
+        "sha256": "2703bb870dc57be0c0202fad76e6902f18bf622f8cea8e4af7a36d276fe5e089"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-controller-metadata-frozen/SemiprimeD1StackRootControllerMetadata.olean",
+        "sha256": "2703bb870dc57be0c0202fad76e6902f18bf622f8cea8e4af7a36d276fe5e089"
+      }
+    },
+    "SemiprimeD1StackRootControllerMetadataExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootControllerMetadataExecution.lean",
+        "sha256": "663a6b7af9c2cf5d8f91c5a271349af87e95256950f1a722385ef8e40f0f2179"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootControllerMetadataExecution.olean",
+        "sha256": "6297bddc09e8ca591cf7b6aef81670e18986ed7d4eee1a465ca736ad29a676af"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-controller-metadata-frozen/SemiprimeD1StackRootControllerMetadataExecution.olean",
+        "sha256": "6297bddc09e8ca591cf7b6aef81670e18986ed7d4eee1a465ca736ad29a676af"
+      }
+    },
+    "SemiprimeD1StackRootControllerMetadataBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootControllerMetadataBounds.lean",
+        "sha256": "6071b4c35d63482154371f013be64d0a3fb56ebdab320aab32b43856d047541a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootControllerMetadataBounds.olean",
+        "sha256": "858cade183f83ec47d878a15aaa07e0607bf14b2c32fc918176c4de323aa9013"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-controller-metadata-frozen/SemiprimeD1StackRootControllerMetadataBounds.olean",
+        "sha256": "858cade183f83ec47d878a15aaa07e0607bf14b2c32fc918176c4de323aa9013"
+      }
+    },
+    "SemiprimeD1StackRootControllerMetadataOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootControllerMetadataOriginal.lean",
+        "sha256": "1febaeeea700463119da16d9b74491a6caee35b11cc5de6935fdb2c499e1b89d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootControllerMetadataOriginal.olean",
+        "sha256": "3d9a4263aeb13e2e74fd4e5ee5307044bdc68d11da6d75c873dcd48dafaffdfc"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-controller-metadata-frozen/SemiprimeD1StackRootControllerMetadataOriginal.olean",
+        "sha256": "3d9a4263aeb13e2e74fd4e5ee5307044bdc68d11da6d75c873dcd48dafaffdfc"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": "/tmp/semiprime-explicit-rate-20261027/RootControllerMetadataControls.lean",
+      "source_sha256": "aff8f716e9e3ccb3e3c931951611f309be59321ced84b63b99e8b2b26ea4a3d0",
+      "log": "/tmp/semiprime-explicit-rate-20261027/root-controller-metadata-controls.log",
+      "log_sha256": "f5cc53cba45d91eb330a7f665ddbf65baaa9a53ced5e53c992480e86ebe060cd",
+      "stdout": "ROOT_CONTROLLER_METADATA_PREPARED cases=8 actual_transitions=38079 all98roles=true all83source_cells_retained=true shared_binary_N=true input_shadow_empty=true M6_E3_retained=true exact_original_schedule=true no_source_replay=true own_clock=true actual_nested_return=true outer_frames_preserved=true halt_flags_clear=true\nOBSERVER standard_axioms_only=true declarations=24\n",
+      "scope": "PREPARED cache-reuse entry; universal whole N-only theorem is primary",
+      "cases": 8,
+      "actual_transitions": 38079,
+      "observer_generated_standard3": 24
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_source_object_pairs_unchanged": 18172,
+  "scope": "ONE fixed98role machine fromONLYcanonical positivebinaryN: actualRootScope83acquisition thenactualRootSchedule15, directsharedNalias. RetainsactualsourceM/Ecounters/fullbank; NO Mbankrescan/NOduplicatedNinput. Ownactualmachineclock\u22641e50*(ell+1)^10/all98+actualreturncells\u22641e53*(ell+1)^10,allcompiledstepsdepth\u22644. ExactM=rootnetworkedgeCount foralloriginalfixedprefix includingduplicates/conflicts; exact\u03bb/rootlevels/exponent/minimum; ENTIRE83sourcecache retained. Scale/sqrt/leaf acquisition andwholefactoring remain OPEN.",
+  "source_object_writers_stopped": true
+}

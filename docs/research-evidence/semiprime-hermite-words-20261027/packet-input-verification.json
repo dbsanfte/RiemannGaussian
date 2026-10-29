@@ -1,0 +1,22 @@
+{
+  "strict": true,
+  "root15": true,
+  "all_generated_standard_axioms_only": true,
+  "declarations": 9,
+  "theorem_constants": 7,
+  "isolated_byte_equal": true,
+  "files": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeWordPacketHermiteInput.lean",
+      "sha256": "d3125e19316034b3b6b538ef266a83f529f1214d9ca8b8e4acf25a0ddf8372de"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeWordPacketHermiteInput.olean",
+      "sha256": "6c48f961a0b28be6285f152516fd7293f4c4b07c924cfbec389d5910a3969845"
+    },
+    {
+      "path": "/tmp/semiprime-hermite-words-20261027/WordPacketHermiteInput.isolated.olean",
+      "sha256": "6c48f961a0b28be6285f152516fd7293f4c4b07c924cfbec389d5910a3969845"
+    }
+  ]
+}

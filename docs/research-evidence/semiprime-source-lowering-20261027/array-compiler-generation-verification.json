@@ -1,0 +1,102 @@
+{
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramIR",
+      "declarations": 91,
+      "theorem_constants": 55,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms_only": true,
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramIR.lean",
+          "sha256": "ccbf2d701a54e21eccce26d3390a199f46b183bb9376d79f47ff7f74d431b6b6"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramIR.olean",
+          "sha256": "7cb0506286e69805fd44275dc7d834b9f66b17dcb70245c4ed1f02c092046699"
+        },
+        {
+          "path": "/tmp/semiprime-source-lowering-20261027/SourceArrayProgramIR.isolated.olean",
+          "sha256": "7cb0506286e69805fd44275dc7d834b9f66b17dcb70245c4ed1f02c092046699"
+        }
+      ]
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramBlocks",
+      "declarations": 49,
+      "theorem_constants": 41,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms_only": true,
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramBlocks.lean",
+          "sha256": "f7cc60b34b4316968467cc590f6706e031cca894fc0b6a649fe7c31675102931"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramBlocks.olean",
+          "sha256": "b91145c11b0b5a5db6d93ebdf54671690d02010066773cf9933cdd0ca9f048d4"
+        },
+        {
+          "path": "/tmp/semiprime-source-lowering-20261027/SourceArrayProgramBlocks.isolated.olean",
+          "sha256": "b91145c11b0b5a5db6d93ebdf54671690d02010066773cf9933cdd0ca9f048d4"
+        }
+      ]
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramCompiler",
+      "declarations": 76,
+      "theorem_constants": 47,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms_only": true,
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramCompiler.lean",
+          "sha256": "a074225270d9cdd3d9981ef9f494f7c3c39b4564fa9bd307e421edf8fae7f475"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramCompiler.olean",
+          "sha256": "cd1800ef6d4717e2a053a203e05d8be7c98abca94783e4228b6ed050502719f8"
+        },
+        {
+          "path": "/tmp/semiprime-source-lowering-20261027/SourceArrayProgramCompiler.isolated.olean",
+          "sha256": "cd1800ef6d4717e2a053a203e05d8be7c98abca94783e4228b6ed050502719f8"
+        }
+      ]
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramGeneration",
+      "declarations": 224,
+      "theorem_constants": 112,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms_only": true,
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramGeneration.lean",
+          "sha256": "4da28d229258653ccf71ae3900d28e3ff98367cfad73388b19cf8a8c6eb9e9f3"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramGeneration.olean",
+          "sha256": "b8adf9cf32ddc9f24d3d64fb2ea969ff60e2733a6b670f433b64e5c6c7cb3035"
+        },
+        {
+          "path": "/tmp/semiprime-source-lowering-20261027/SourceArrayProgramGeneration.isolated.olean",
+          "sha256": "b8adf9cf32ddc9f24d3d64fb2ea969ff60e2733a6b670f433b64e5c6c7cb3035"
+        }
+      ]
+    }
+  ],
+  "declarations": 440,
+  "theorem_constants": 255,
+  "notes": {
+    "path": "/tmp/semiprime-source-lowering-20261027/array-compiler-generation-notes.md",
+    "sha256": "5bb1acc96fe74e97d346df035c8ba3900476724b2e8f3312cddb6a09c438818b"
+  }
+}

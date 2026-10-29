@@ -1,0 +1,7 @@
+# Fixed monomial growth — completed
+
+NEW `SemiprimeReportPolynomialGrowth` supplies `Bound f := ∃ C k, ∀ S, f S ≤ C*(S+1)^k` with kernel-checked constant, identity, sum, product and fixed-power closure. `setup_native_monomial` proves the requested bound for the SUM of the exact `SetupPolynomialEnvelope.polynomialEnvelope` and `NativeCounterBudget.polynomialEnvelope`. `entry_decoder_monomial` similarly covers the exact public entry and decoder expressions. No polynomiality, cost, output or asymptotic hypothesis is supplied.
+
+All fixed definitions of the concrete envelopes are explicitly unfolded. The local syntax-directed `boundArithmetic` tactic builds a proof using only the five closure theorems; its generated proofs are checked by Lean. It eta-expands partial arithmetic functions before examining the expression, avoiding inappropriate expansion of natural-number recursion or giant ring normalization. The coefficients and exponents need not be small or optimal, but are fixed natural witnesses independent of S. This is a uniform numeric growth theorem, not itself a primitive bit-clock or a completed rate composition.
+
+Final strict compile, ordinary-root fifteen linters and all-generated transitive standard-three-axiom audit PASS: 20 declarations, 15 theorem constants. Isolated object byte-identical to canonical. Source/object pins: report-growth-verification.json. Public controller/scalar-resource polynomial closure is deliberately left to a NEW downstream helper so this core can freeze independently.

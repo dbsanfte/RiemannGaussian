@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Reviewed finite cancellations and conditional retuned row-index consumer. No improved complete query rate.",
+  "independent_reviews": [
+    {
+      "path": "review-collective-character.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-deformed-telescoping.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-content-cover.md",
+      "verdict": "PASS"
+    }
+  ],
+  "acquisition": {
+    "retained_complete_bound": "soft O(K^(5/4))",
+    "exponent_improved": false,
+    "paid_operations": [
+      "All-row finite Cauchy boundary normalization, with prior normalization credit retained.",
+      "Geometric-clock specialization of the first Macdonald relative operator action.",
+      "Retuned complete parity cover and unique-support partition at Kprime=Theta(K^(2/3)).",
+      "Validation of a supplied row-index pair and one-row localization in soft K."
+    ],
+    "missing": "Initialized selected-response evaluator with separated dependence, for example soft(J^(3/2)+sqrt(h)) at J=O(K^(2/3)),h=O(K²)."
+  },
+  "diagnostics": {
+    "command": "python3 docs/research-evidence/semiprime-residue-shortcuts-20261026/check_content_structure.py --output /tmp/content-structure-replay.json",
+    "cylinder_iff_checks": 1134,
+    "exact_content_rows": 42,
+    "periodic_root_checks": 1266,
+    "root_scratch_replay": "Exact JSON equality PASS",
+    "root_archived_replay": "Exact JSON equality PASS",
+    "scope": "Small public arithmetic identity diagnostics; no coverage, group-order, factoring-success or scaling proof by fixtures."
+  },
+  "preservation": {
+    "protected_prior_files": 1131,
+    "append_only_prefixes": 2,
+    "concurrent_files": 24,
+    "prearchive_check": "PASS",
+    "postarchive_check": "PASS"
+  },
+  "not_claimed": [
+    "Acquired soft-K marked response",
+    "General acquisition lower bound",
+    "Complete sixth-rate bit proof",
+    "Lean formalization",
+    "Literature-wide novelty"
+  ],
+  "commit_or_push": false,
+  "local_markdown_links": {
+    "checked": 11,
+    "verdict": "PASS"
+  },
+  "git_diff_check": "PASS",
+  "root_integration_check": "PASS: finite-size original-family fallback and explicit wrong-bin saturated weak-denominator rejection are present after review."
+}

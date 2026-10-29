@@ -1,0 +1,13 @@
+# Independent review of deformed-telescoping.md
+
+26 October 2026. **PASS for the identities and retained acquisition bound, with two scope clarifications communicated to the author.** No source edits made by this reviewer.
+
+1. Covariance is D_(qt)(q^i)=q^J D_t(q^(i-1)). The signed factor count is zero for even h and one for odd h. Hence the displayed endpoint ratio/product and the odd q^J factor in (1) are correct. Differentiation gives q A_h(qt)+A_h(t), not A_h(qt)+A_h(t). Under t=q^k the residue of q A_h(qt) is a_(k+1), so (3) has no extra q scaling. For a hitting row T=q^I its two impulses are at -1-I and h-1-I, with the displayed interior alternating signs. The short finite interval has no order wrap; this does not exclude other rows elsewhere on the same full orbit.
+
+2. The moving-root derivative is JD-XD'. At the unique hit it is -q^I D'(q^I), nonzero. Thus the first t derivative of the FULL physical product is nonzero in the good field, and N_h(1)=(-1)^I P_h'(1) is correct. The fraction-free transfer and its initialized block/MPE cost are valid. A derivative norm can be saturated in a wrong bin: that attempt must decline, not invoke a multiplicative annihilator decoder for an additive pivot. The report's later bounded-failure rule supplies this, but stating it directly at the derivative gate would remove ambiguity.
+
+3. The quoted h<=8K^(3/2)+9 is the old-family bound. For the unthinned amended parity family replace it by h<=8sqrt(2)K^(3/2)+9. Alternatively after the PAID parity endpoint gate/padding, use q_new=q² and h_new=L=M0+1; this shortened amended clock does satisfy the old looser 8K^(3/2)+9 bound. One cannot silently use the old bound on the unthinned amended family. Either version retains the unit and alias margins; the clock order remains large enough. The actual endpoint screens extend by only one original step, with the existing explicit mixed-label recovery and short order margin.
+
+4. No zero initial orbit valuations are acquired from the endpoint polynomials; the report correctly retains that missing bounded orbit-position input. The reference to rational q-residue theory is motivic, not an import of infinite-order hypotheses into the finite native field. Prior additive orbit-invariant and original phase-transfer credit is explicit. No general algorithm lower bound is inferred.
+
+Final reread: both requested scope fixes are now present in the source. Section 1 explicitly distinguishes the original, amended unthinned and consistently renamed padded clocks; section 4 explicitly declines a wrong-bin saturated additive derivative norm without invoking the mixed-label decoder. **Final disposition: PASS; no outstanding correction.**

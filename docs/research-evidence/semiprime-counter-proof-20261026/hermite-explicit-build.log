@@ -1,0 +1,34 @@
+'RiemannGaussian.SemiprimeHermiteRecovery.localQuotient_truncate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.explicit_hermite_at_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.explicit_hermite_reconstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.inverseJet_congruence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.localQuotient_congruence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.localQuotient_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.cardinalFactor_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.zero_of_taylor_packets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.eq_of_taylor_packets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.samplePoints_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.eq_of_counter_packets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeHermiteRecovery.counter_precision_sufficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

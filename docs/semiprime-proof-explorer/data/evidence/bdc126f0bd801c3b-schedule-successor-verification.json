@@ -1,0 +1,87 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 4,
+    "declarations": 214,
+    "theorems": 95
+  },
+  "modules": {
+    "SemiprimeD1StackScheduleSuccessor": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScheduleSuccessor.lean",
+        "sha256": "c5a5099e6d66b69eaa8fdcbaa7ae43aa80cd071516ea68415bea124e86fda0fb"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScheduleSuccessor.olean",
+        "sha256": "9ec927731d818c8a11c2ec108a3d021997f725b3cbc7670075c9692d5d9cbaf4"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/schedule-successor-frozen/SemiprimeD1StackScheduleSuccessor.olean",
+        "sha256": "9ec927731d818c8a11c2ec108a3d021997f725b3cbc7670075c9692d5d9cbaf4"
+      }
+    },
+    "SemiprimeD1StackScheduleSuccessorExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScheduleSuccessorExecution.lean",
+        "sha256": "31f9b8ab338e0cc5e6351c30357cfea866f7d5f4d24fc3a5102e8607fbe70a90"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScheduleSuccessorExecution.olean",
+        "sha256": "18ef97f82d254a573527a611b2f8dc94115d743525285a88f1c8cec83651666d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/schedule-successor-frozen/SemiprimeD1StackScheduleSuccessorExecution.olean",
+        "sha256": "18ef97f82d254a573527a611b2f8dc94115d743525285a88f1c8cec83651666d"
+      }
+    },
+    "SemiprimeD1StackScheduleSuccessorBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScheduleSuccessorBounds.lean",
+        "sha256": "56bdea8d3e4da9deb9ab1e6b3d5aa520320c7e5d5674619eaf84a1ac9706e32a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScheduleSuccessorBounds.olean",
+        "sha256": "1a208088c525c4207e5ff5fd6b170414141025f4b4c445b899fcb042bf9125e6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/schedule-successor-frozen/SemiprimeD1StackScheduleSuccessorBounds.olean",
+        "sha256": "1a208088c525c4207e5ff5fd6b170414141025f4b4c445b899fcb042bf9125e6"
+      }
+    },
+    "SemiprimeD1StackScheduleSuccessorOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackScheduleSuccessorOriginal.lean",
+        "sha256": "07c65fbc938840480ea67bb31712f51ec7a75a97f45f30f85709564b30dcc4f0"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackScheduleSuccessorOriginal.olean",
+        "sha256": "7591ba2d7e8253807933b0acfd17fdf5b6bb0eff0ee52e3d5c9d3171950d7cd3"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/schedule-successor-frozen/SemiprimeD1StackScheduleSuccessorOriginal.olean",
+        "sha256": "7591ba2d7e8253807933b0acfd17fdf5b6bb0eff0ee52e3d5c9d3171950d7cd3"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": "/tmp/semiprime-explicit-rate-20261027/ScheduleSuccessorControls.lean",
+      "source_sha256": "07ee7a673deb65f7b23b29d18ead0a6cc795ff1cc3ce3768afef1cb6b72c9467",
+      "log": "/tmp/semiprime-explicit-rate-20261027/schedule-successor-controls.log",
+      "log_sha256": "3b41381ff59e52c5d08b9193bfd269053a6be24e7d06bf7ffd88c213c36e3ef4",
+      "stdout": "SCHEDULE_SUCCESSOR cases=12 actual_transitions=783 all6roles=true exact_clock=true arbitrary_markers=true retained_parent=true cleared_scratch=true real_outer_returns=true halt_flags_clear=true\nOBSERVER standard_axioms_only=true declarations=13\n",
+      "cases": 12,
+      "actual_transitions": 783,
+      "observer_generated_standard3": 13
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_source_object_pairs_unchanged": 17428,
+  "scope": "Prepared original dyadic schedule successor only. Fixed six-role actual program; exact ALL lam/depth successor, own clock \u226420*(aBytes+uBytes+1) and original \u2264120*(lam+1); ALL6+realreturn prefix \u22641000*(lam+1). Root N-only metadata acquisition and recursive caller remain open.",
+  "source_object_writers_stopped": true
+}

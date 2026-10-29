@@ -1,0 +1,79 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "Cherednik2014",
+      "title": "DAHA-Jones polynomials of torus knots",
+      "url": "https://arxiv.org/abs/1406.3959",
+      "checked": "Primary PDF Theorem 1.2(ii), equations (1.28)-(1.29), and slope-automorphism context; independently checked by two agents and parent.",
+      "scope": "A1 source weight resonance is specialized explicitly, then tested against an actual admitted native row. No native whole-product or efficient evaluation theorem is imported."
+    },
+    {
+      "id": "Thomas2008",
+      "title": "The Character of the Weil Representation",
+      "url": "https://arxiv.org/abs/math/0610644",
+      "checked": "Primary abstract and finite/local-field scope, cross-checked with journal metadata.",
+      "scope": "Representation character formula with specified field/additive-character inputs; no composite-ring multiplicative-query algorithm imported."
+    },
+    {
+      "id": "FrohmanGelca1998",
+      "title": "Skein Modules and the Noncommutative Torus",
+      "url": "https://arxiv.org/abs/math/9806107",
+      "checked": "Inherited torus-slope framework; prior credit.",
+      "scope": "Motivates the specified slope actions. Exact arithmetic congruences are derived directly."
+    },
+    {
+      "id": "FareyPriorAudit",
+      "title": "Farey-word recurrences: primary source from the prior trace audit",
+      "url": "https://ems.press/content/serial-article-files/52234",
+      "checked": "Inherited source and prior qualifications; no new theorem imported.",
+      "scope": "Specified trace/slope recurrences do not supply a colour-subtree product functional."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-rectanglequery-20261026/README.md",
+      "bytes": 6127,
+      "sha256": "88c6c043d20b373a1d12426d87579e87436d5cd31b223eaa1bd8dfe1139d878b"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-rectanglequery-20261026/phase-index.md",
+      "bytes": 4794,
+      "sha256": "7c39e9b6fc0dbacf79be0a5837ced21526fb148ca2cde88d419bd9d7cd9d91ad"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-rectanglequery-20261026/sparse-projection.md",
+      "bytes": 9016,
+      "sha256": "5b32e101bf86de85f9c85b2138cba2cb71f0aa08b982359dcde22ff4bd850bec"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-rectanglequery-20261026/difference-query.md",
+      "bytes": 12271,
+      "sha256": "bdae9b97bc4b00ae3842cee8ba25a7e0ec70dfcc4de6b508c8f75a14f6b297bd"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-rectanglequery-20261026/corner-query.md",
+      "bytes": 5256,
+      "sha256": "1acccb9ab4856c33edf26568f00cf5549142f2a4cf94f23390e6ead20e4996b7"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-rectanglequery-20261026/recursive-products.md",
+      "bytes": 9352,
+      "sha256": "d013b726c929c4fcef60c5e38e0ca2bdae1961b7fc52a15861ce2aed7993eea2"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/README.md",
+      "bytes": 3765,
+      "sha256": "0d408f3310b0951f70e352d30988cef1972ba9b8d3114bfa6a1458acd9293c0c"
+    }
+  ],
+  "scratch_source_pins": [
+    {
+      "local_path": "/tmp/semiprime-knot-colourcontraction-20261026/cherednik.pdf",
+      "bytes": 509866,
+      "sha256": "18c5c809ef74ab72c37d200223f753102994f7b5f09b9675dd0fbd0062b6aa0e"
+    }
+  ],
+  "prior_credit": "Exact phase image and common beta^G direction, old Gauss coverage, monic geometric-product backend, and the polylog-bit short-annihilator interface remain inherited. Explicit unimodular normalization, finite-domain transport and executed specializations are this pass."
+}

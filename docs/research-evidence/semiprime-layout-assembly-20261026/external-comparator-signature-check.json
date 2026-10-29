@@ -1,0 +1,8 @@
+{
+  "same_signature_whitespace_normalized": true,
+  "source_path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean",
+  "comparator_path": "/tmp/semiprime-d1-audit-20261026/openai-math/lean/ComparatorChallenges/SubexponentialSAT.lean",
+  "source_sha256": "040360a8465957622d934e5f1bb4f2cce8dab950e78f52033fbf70da493184f5",
+  "comparator_sha256": "4183b2057cff350d66848215ff7167196dfc20e1891b598fdddea59077a76685",
+  "comparison_kind": "literal theorem signature only; supporting constants are existing pinned source declarations in generated endpoint check"
+}

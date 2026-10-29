@@ -1,0 +1,154 @@
+{
+  "status": "FINAL_BOOTSTRAP_PREPARED_SNAPSHOT_AND_FULL_N_ONLY_N1_PASS",
+  "compiled_machine": "RiemannGaussian.SemiprimeD1StackProductTable.machine",
+  "machine_modified": false,
+  "repo_sources_modified": false,
+  "snapshot_identity": "ProductTableControl.snapshot_eq",
+  "snapshot_next_step_identity": "ProductTableControl.step_snapshot",
+  "all_snapshot_control_constants": 33,
+  "standard3_only": true,
+  "strict": true,
+  "default_heartbeat_limit": 200000,
+  "snapshot_inventory": 83,
+  "snapshot_interval_actual_steps": 32,
+  "bootstrap_controls": [
+    {
+      "binary_N": [
+        true
+      ],
+      "actual_transitions": 1232,
+      "acquired_arity": 15
+    },
+    {
+      "binary_N": [
+        false,
+        true
+      ],
+      "actual_transitions": 2765,
+      "acquired_arity": 27
+    }
+  ],
+  "prepared_internal_controls": [
+    {
+      "case": "n0_empty_prefix",
+      "transitions": 3340,
+      "output_bytes": 6
+    },
+    {
+      "case": "n0_allzero_assignment",
+      "transitions": 3535,
+      "output_bytes": 6
+    },
+    {
+      "case": "n0_product3x5_eq15",
+      "transitions": 3924,
+      "output_bytes": 6
+    },
+    {
+      "case": "n1_zero_prefix",
+      "transitions": 7072,
+      "output_bytes": 11
+    },
+    {
+      "case": "n1_nonzero_prefix",
+      "transitions": 6348,
+      "output_bytes": 11
+    },
+    {
+      "case": "n2_wrong_guard_trueproduct15",
+      "transitions": 12698,
+      "output_bytes": 21,
+      "answers_false_first": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "c_values": [
+        7,
+        23,
+        15,
+        31
+      ]
+    }
+  ],
+  "all83roles_flags_actual_return_cells_checked": true,
+  "full_run_handle": 95128,
+  "full_run_pid": 43442,
+  "host_memory_baseline": {
+    "snapshot_only_maxRSS_KB": 9931632,
+    "full_run_stableRSS_KB": 9923000,
+    "finding": "Import/elaboration baseline, no observed memory growth."
+  },
+  "files": {
+    "ProductTableSnapshot.lean": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/ProductTableSnapshot.lean",
+      "sha256": "b8185830da7a224355bf495d20bc5a05b1a563d9dce8c972241691160381d7ac"
+    },
+    "ProductTableFinalControls.lean": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/ProductTableFinalControls.lean",
+      "sha256": "3567d735cd373eb783296d301ecba53f9a5217f4060103342c85b1a5c6419e15"
+    },
+    "product-table-final-controls.log": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/product-table-final-controls.log",
+      "sha256": "add464a9245859da7aa6519651b37de5484cc01a3470613269831ecb06928270"
+    },
+    "product-table-snapshot-baseline.log": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/product-table-snapshot-baseline.log",
+      "sha256": "8e448bf1a50d35aeda338b48b62ec3d6e7876750f3bb10643af6fa35ab8dfa55"
+    },
+    "ProductTableBenchmark.lean": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/ProductTableBenchmark.lean",
+      "sha256": "8216928acd05632974d18b6675d438da7b3639221fd88d673bf18374f245b8d9"
+    },
+    "product-table-benchmark.log": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/product-table-benchmark.log",
+      "sha256": "b8c471334ba60ab7a6ce4802e4c653ba6ce6f0adce5fb7856b0901f45dcc58c4"
+    },
+    "ProductTableControls.lean": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/ProductTableControls.lean",
+      "sha256": "f1cd0dc73241592dcd9ead79897cd160c66c38c7ddd9a0da4413104faba28c90"
+    },
+    "product-table-controls.log": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/product-table-controls.log",
+      "sha256": "60cdccf6c437150126fff18f8874ddd09304306106fe424abd7ba37e64b58a92"
+    },
+    "product-table-full-control-result.json": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/product-table-full-control-result.json",
+      "sha256": "51d51e9e1e4cf5f505c2a6d7e82824169544cd1f8d3a7bd3dfa094e6f8fae00a"
+    },
+    "product-table-control-core-spec-pins.json": {
+      "path": "/tmp/semiprime-explicit-rate-20261027/product-table-control-core-spec-pins.json",
+      "sha256": "4d6189271133caf2c87ac991681a8afded3a03dee70ca1fe7db507a9a59876a0"
+    }
+  },
+  "full_run_and_clean_audited_runtime_definitions_identical": true,
+  "runtime_definitions_sha256": "dcde513b1ac6e5749cde3b5311d91f20199a9fea987b29ac9d467bda1006bef3",
+  "legacy_full_run_file_note": "The legacy long-run source has separate example/audit command errors after all runtime definitions. The actual full N-only run completed and wrote its success JSON. ProductTableFinalControls.lean strictly passes and audits the IDENTICAL runtime definitions, including snapshot, same-machine walker, role checker and checkFull. No duplicate full run was performed.",
+  "core_spec_pins_file": "/tmp/semiprime-explicit-rate-20261027/product-table-control-core-spec-pins.json",
+  "fresh_readonly_final_root16_helper_audit": true,
+  "core_spec_pins_unchanged_after_root16_final": true,
+  "host_only_prepared_benchmark": {
+    "actual_transitions": 12698,
+    "elapsed_ms": 1567,
+    "scope": "Internal prepared n2 subtree, import/audit excluded; host validation throughput, not a program bit-clock bound."
+  },
+  "full_run_active": false,
+  "full_run_completed_normally_at_actual_halt": true,
+  "full_n_only_control": {
+    "output_bytes": 164417,
+    "frames_empty": true,
+    "flags_clear": true,
+    "exact_original_order_full_tree": true,
+    "elapsed_ms": 9590536,
+    "all83roles": true,
+    "actual_transitions": 83772735,
+    "acquired_arity": 15,
+    "N": 1,
+    "exact_halting_pass_log": "FULL_N_ONLY_PASS N=1 actual_transitions=83772735 acquired_arity=15 output_bytes=164417 all83roles=true checker76_clear=true original_N_retained=true acquired_depth_retained=true flags_clear=true real_frames_empty=true exact_false_first_full_tree=true elapsed_ms=9590536",
+    "driver_process_exit_code": 1,
+    "driver_exit_note": "The legacy file exited1 solely for separate later example/audit command errors; FULL_N_ONLY_PASS and result JSON come from the actual complete halt, with runtime definitions byte-identical to the clean strict/audited final control source.",
+    "runtime_definitions_identical_to_clean_strict_audited_source": true,
+    "core_spec_source_canonical_pins_unchanged_at_halt": true
+  }
+}

@@ -21,17 +21,17 @@
       "changeReason": "The user requested integration of OpenAI's checked 7/8 baseline and the Lean 4.34.1 upgrade. This discharges the restricted frozen Riesz terminal while the active global Gaussian/Weil–Suzuki branch and its independent arithmetic obligation remain."
     },
     "latestUpdate": {
-      "sequence": 155,
-      "id": "publish-local-suzuki-semiprime-recurrence-checkpoint",
-      "kind": "theorem",
-      "title": "Local Suzuki cancellation and semiprime recurrence checkpoint.",
-      "body": "Publishes the checked local Suzuki cancellation identities, conditional RH transfer, and explicit three-eighths arithmetic bound, together with the accumulated semiprime coverage and recurrence audits. The research evidence preserves corrections and distinguishes proved components from open acquisition claims.",
-      "next": "The subpolynomial prime estimate and guaranteed sixth-exponent factorization remain open. The proved zero-free endpoint is unchanged.",
+      "sequence": 156,
+      "id": "publish-semiprime-algorithm-proof-explorer",
+      "kind": "maintenance",
+      "title": "Semiprime algorithm and formal verification checkpoint.",
+      "body": "Publishes the deterministic subexponential factoring construction, recursive acquisition specification, checked machine components and accumulated research evidence. A dedicated algorithm explorer separates proved identities, verified components and unfinished integration.",
+      "next": "The complete semiprime bit-complexity theorem remains open. The RH direction and proved zero-free endpoint are unchanged.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
         "globalSuzukiCriterionTheorem"
       ],
-      "documentation": "docs/suzuki-local-cancellation.md"
+      "documentation": "docs/research-evidence/semiprime-histogram-acquisition-20261027/next-explicit-rate-target.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",

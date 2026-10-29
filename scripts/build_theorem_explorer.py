@@ -376,6 +376,11 @@ def main():
         (args.site / "rh-proof/release.js").write_bytes(
             b"window.PROOF_RELEASE=" + json_bytes(release) + b";\n")
         shutil.copy2(ROOT / "docs/proof-status.json", args.site / "rh-proof/proof-status.json")
+        subprocess.run(["python3", str(ROOT / "scripts/build_semiprime_proof_explorer.py"),
+                        "--check"], cwd=ROOT, check=True)
+        shutil.copytree(ROOT / "docs/semiprime-proof-explorer", args.site / "semiprime-proof")
+        (args.site / "semiprime-proof/release.js").write_bytes(
+            b"window.PROOF_RELEASE=" + json_bytes(release) + b";\n")
     print("Theorem explorer assets and source/audit links are consistent.")
 
 

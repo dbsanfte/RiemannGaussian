@@ -1,0 +1,5 @@
+Exact symbolic Laurent ring: Z[z,z^-1]; no floating arithmetic or dependencies.
+Both T(2,4) relators, Fox derivatives, Fox contraction, axis spectrum: passed.
+Per odd pair: numerator determinant=4; meridian determinant=2; base torsion=2.
+Rank 2m direct sum: base torsion=2^m by block multiplicativity.
+Companion reciprocal determinant checks passed: 3

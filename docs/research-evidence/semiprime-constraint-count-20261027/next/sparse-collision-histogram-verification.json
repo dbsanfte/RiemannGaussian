@@ -1,0 +1,19 @@
+{
+  "scope": "scratch research supplement, not canonical packet declarations or whole histogram runtime",
+  "strict": true,
+  "root15": true,
+  "standard_axioms_only": true,
+  "declarations": 23,
+  "theorems": 20,
+  "isolated_byte_identical": true,
+  "files": {
+    "/tmp/semiprime-constraint-count-20261027/next/SparseCollisionHistogram.lean": "606d2d055be4e9c8a6013254160b31fa4402a93f3d051da18af16dd6f069456d",
+    "/tmp/semiprime-constraint-count-20261027/next/SparseCollisionHistogram.olean": "5f3b7978601d247bee8075d8f397284cf87154ab7f5708a3c383c45de7c5bed2",
+    "/tmp/semiprime-constraint-count-20261027/next/isolated/SparseCollisionHistogram.olean": "5f3b7978601d247bee8075d8f397284cf87154ab7f5708a3c383c45de7c5bed2",
+    "/tmp/semiprime-constraint-count-20261027/next/HistogramAudit.lean": "7ba8f30be889cfe8b2624d6bcb4f986655a52166d1b403b3a6a453e5b224b74d",
+    "/tmp/semiprime-constraint-count-20261027/next/histogram-build.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/tmp/semiprime-constraint-count-20261027/next/histogram-audit.log": "34a100f97dcf4e195730f026a7af6734bb500046a5c8676f3bc2a002e93bc7f9",
+    "/tmp/semiprime-constraint-count-20261027/next/histogram-isolated.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/tmp/semiprime-constraint-count-20261027/next/sparse-collision-histogram.md": "2970a7a1fa6eff9e21dba1ee5b3ee85acf67bd4acd6a280337df9418c1bb2934"
+  }
+}

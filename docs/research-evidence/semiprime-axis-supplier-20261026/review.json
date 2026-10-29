@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-26",
+  "classification": "Weaker acquired-information requirement and uniform two-coefficient torus target; no complete-query speedup",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft O(k^(5/4)); not a general factoring record",
+  "positive_results": [
+    "Restricted HH: one actual factor residue modulo k^(1/3), or O(k^(2/3)) palette modulo k, has paid soft-k consumer",
+    "Joint residue/interval menu: A=softk and Delta/n<=k^(-1/3) sufficient",
+    "Paired AP certificates at both factors with paid order guards",
+    "Uniform two-monic unique-hit refinement and two FIRST-order factor-tag coefficients",
+    "Multiple-hit content-sector and exact torus-axis provenance; one shared HH palette"
+  ],
+  "missing": "Soft-K acquisition of coefficient pairs or a covered factor-information menu",
+  "reviews": [
+    "review-restricted-residue.md",
+    "joint-information-review.md",
+    "review-order-gate.md",
+    "review-integration.md",
+    "two-monic-review.md",
+    "review-hybrid-handoff.md"
+  ],
+  "corrections_integrated": [
+    "Additive S ceiling term",
+    "All giant matches counted before exact recovery/deletion",
+    "Fixed-residue norm is a filter, not the whole query",
+    "Scalar aliases distinguished from exact torus axis provenance",
+    "Conductor K kept distinct; no assumed small divisor near K^(1/3)",
+    "Generic divisor function retained then bounded uniformly; all bins retained"
+  ],
+  "preservation": {
+    "protected_files_verified": 924,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1544978,
+        "sha256": "80119b2a2b6e190935cb0f94ca8c9a4fd35c6ebf3e3fec3b5e252d8d4fdfe2d2"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2428840,
+        "sha256": "3aa40f263b4ea2fd7e16fc08248fdb504d70739c059d8517c469cabd84dd0dde"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "edbadbfdd9c5702d9bcb8f601939305bb24deb869122cb7ae48030e24fb3eb5e"
+  },
+  "validation": {
+    "mathematical": "Independent paper reviews; not Lean",
+    "json_and_whitespace": true,
+    "git_diff_check": true,
+    "local_links_checked": 33,
+    "preservation_hashes": true
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false,
+  "next_investigation": "Alternative expressions and algorithms for the uniform first-order U,V pair"
+}

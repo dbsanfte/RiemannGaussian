@@ -1,0 +1,35 @@
+test_actual_constructed_layout_interface (test_shared_counter.CounterControls) ... ok
+test_diagnostic_output_is_explicitly_separate (test_shared_counter.CounterControls) ... ok
+test_empty_groups_unused_variables_and_constant_factors (test_shared_counter.CounterControls) ... ok
+test_exact_hermite_higher_jets (test_shared_counter.CounterControls) ... ok
+test_general_rational_entries_are_algebraic_not_automatic_space_claim (test_shared_counter.CounterControls) ... ok
+test_invalid_kernel_rejected (test_shared_counter.CounterControls) ... ok
+test_invalid_restoration_degree_partition_and_measurement (test_shared_counter.CounterControls) ... ok
+test_measurement_representatives_need_not_satisfy_forced_bits (test_shared_counter.CounterControls) ... ok
+test_nontrivial_rational_taylor_mobius (test_shared_counter.CounterControls) ... ok
+test_second_order_taylor_and_size_two_mobius_sets (test_shared_counter.CounterControls) ... ok
+test_actual_scope_statistics (test_parameters_solver.ParameterTests) ... ok
+test_all_guard_terms (test_parameters_solver.ParameterTests) ... ok
+test_exact_log_endpoints (test_parameters_solver.ParameterTests) ... ok
+test_streamed_tail_against_closed_form (test_parameters_solver.ParameterTests) ... ok
+test_conditional_recovery_and_query_count (test_parameters_solver.RecoveryTests) ... ok
+test_counter_error_is_not_silently_masked (test_parameters_solver.RecoveryTests) ... ok
+test_live_counter_adapter_and_recovery (test_parameters_solver.RecoveryTests) ... ok
+test_square_and_empty (test_parameters_solver.RecoveryTests) ... ok
+test_uniform_wrapper_reports_fallback (test_parameters_solver.RecoveryTests) ... ok
+test_M0_polynomial_swap_independent (test_shared_layout.LayoutTests) ... ok
+test_Q3_R2_and_R1 (test_shared_layout.LayoutTests) ... ok
+test_actual_kernel_restoration_integral (test_shared_layout.LayoutTests) ... ok
+test_conditional_history_against_independent_exhaustive_average (test_shared_layout.LayoutTests) ... ok
+test_duplicate_variable_embeddings_and_empty_factor (test_shared_layout.LayoutTests) ... ok
+test_orthogonal_basis_and_swap_eigenvalues (test_shared_layout.LayoutTests) ... ok
+test_remark_44 (test_shared_layout.LayoutTests) ... ok
+test_repeat_deterministic_and_history (test_shared_layout.LayoutTests) ... ok
+test_scheduled_small_fallback (test_shared_layout.LayoutTests) ... ok
+test_supplied_labels_checked (test_shared_layout.LayoutTests) ... ok
+test_tail_exact_enumeration_and_strict_guard (test_shared_layout.LayoutTests) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 1.150s
+
+OK

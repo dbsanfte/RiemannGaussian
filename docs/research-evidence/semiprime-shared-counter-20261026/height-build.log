@@ -1,0 +1,36 @@
+'RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_prod_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.sum_product_polynomialNumerator_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_sum_product_polynomialNumerator_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.polynomialNumerator_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.eval_polynomialNumerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_mul_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_polynomialNumerator_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.abs_sum_product_numerator_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.product_numerator_cast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.sum_product_numerator_cast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.numerator_cast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensorHeight.abs_numerator_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

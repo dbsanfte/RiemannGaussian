@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "e13635416f2ab692012487fac3d5561a79016c9dc6be5554e0f974c88c48bac9"
+    },
+    {
+      "path": "archive-provenance.json",
+      "sha256": "632f145e14076e80ee8d8d2da8b747ab610b69a78acad024f47cd09f5def3e10"
+    },
+    {
+      "path": "character-source.md",
+      "sha256": "449ea58b4d58d15dc4eb809e7c01cf5788c859d31a3d3d30bc26b18f4775bd02"
+    },
+    {
+      "path": "check_unique_cover.py",
+      "sha256": "71377a44b5ee8d51bcb0aee8c39fa67da41bb738c5c2c8b4830dc51fd8c046c5"
+    },
+    {
+      "path": "completed-qsum.md",
+      "sha256": "ff1ad1adca3fff39792d0a0e03cedeef789204c18a7bc54287609c22f576ab9d"
+    },
+    {
+      "path": "completed-source.md",
+      "sha256": "70e105ed2ae7fa0f658fc55adb8469a867e074b772151394cede0e6b4feab41a"
+    },
+    {
+      "path": "native-overlap.md",
+      "sha256": "8959d813aa436f1ebea76d419b0e60e581396611d8ec764c5a8a63db1e0923f0"
+    },
+    {
+      "path": "precomputation-audit.md",
+      "sha256": "ee999ffcf06477c5c67a451ff83312a4cb837a37afebba0142d3b48e0d0f27d2"
+    },
+    {
+      "path": "review-ellipse.md",
+      "sha256": "82194c1744a057826d77c1cd89f164cf8065894e98beb9832b929974391e577c"
+    },
+    {
+      "path": "review-incidence.md",
+      "sha256": "22807d65d20c919a9a4cbaac8210b12949dbc2d1353eaa2c8000c5a4b65f1d39"
+    },
+    {
+      "path": "review-unique-cover.md",
+      "sha256": "1094e7b3804c0a84529857165057b911e0feb94f02d2d5e5a815202af5a36b03"
+    },
+    {
+      "path": "review-unique-readout.md",
+      "sha256": "212ebdbc6ccf4f401a835a838ed5de43ed8ec66beb7b65179da27bbf29adf60c"
+    },
+    {
+      "path": "review.json",
+      "sha256": "e679f6867be251d6277fa964e6a5cfacb36386ff971b49eaafb532b6ccb42e97"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "0a90b1b97d6cf89e642a8cb884dfacdb94c6ccdc9938c05c9346492ba1a93be9"
+    },
+    {
+      "path": "unique-cover-check.json",
+      "sha256": "099c0b3a79d9a1ad98a69d46bf00e09bbc27c7bb215d21303f57f887c08c3e02"
+    },
+    {
+      "path": "unique-cover-single-check.json",
+      "sha256": "2475e4bc8e04e8b15c84f341d8ffaf44f78ddd1d61869197e0387426ce598b39"
+    },
+    {
+      "path": "unique-cover.md",
+      "sha256": "bc428cc2b5e91b3c0b2b848a70f49f6669f590fec851b679364db441bdfe9276"
+    },
+    {
+      "path": "unique-lambert.md",
+      "sha256": "ac7a0070a08bd52ee458cc25a7bf5fbb1da38cce5d3e52e92f141df904752082"
+    },
+    {
+      "path": "validation-unique-cover.md",
+      "sha256": "569e3dc754a40318506db6c9efbe7d429c53800f2f7276b4a51eb1eb5ad6d2ff"
+    }
+  ]
+}

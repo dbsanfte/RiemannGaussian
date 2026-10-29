@@ -1,0 +1,3 @@
+PASS: determinants R,T,U; both printed rotated inverse solves; enhancement partial traces; full trefoil scalar and correction.
+Mirror scalar: (a**2*b**2 - a**2*b + a**2 - a*b**2 + 2*a*b - a + b**2 - b)/(a**2*b**2)
+PASS: negative trefoil is J(a^-1,b^-1).

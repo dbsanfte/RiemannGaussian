@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "review": "root read-only independent mathematical/call-path/resource review",
+  "modules": {
+    "SemiprimeSourceIncidenceCountBitsBounds": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceIncidenceCountBitsBounds.lean",
+      "source_sha256": "116c09fd39e82111c3d5e38d8383f8ef4896c6c682bdd4858b30658b480e839d",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceIncidenceCountBitsBounds.olean",
+      "object_sha256": "068056c9b6bf4dd7d327af29dd914be63143af20dee1609b0a2a71e912a3ccb1"
+    }
+  }
+}

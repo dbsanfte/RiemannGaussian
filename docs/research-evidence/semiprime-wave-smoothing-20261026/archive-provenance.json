@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "scratch_source": "/tmp/semiprime-wave-smoothing-20261026/README.md",
+      "sha256": "c99fd4f50f72b4478929c175f1e503a6044064f5a189c33975315fe7c5a2795a",
+      "copy": "verbatim"
+    },
+    {
+      "path": "determinant-cancellation.md",
+      "scratch_source": "/tmp/semiprime-wave-smoothing-20261026/determinant-cancellation.md",
+      "sha256": "484c374b3521abb6dd9de6b2a4afd37819bd0981d13de89ce958eaf09c2712db",
+      "copy": "verbatim"
+    },
+    {
+      "path": "current-localization.md",
+      "scratch_source": "/tmp/semiprime-wave-smoothing-20261026/current-localization.md",
+      "sha256": "73d5d82a690252b3e39212f1873bfdc4f3e673eb7633ae13b02194a34127002c",
+      "copy": "verbatim"
+    },
+    {
+      "path": "multiscale-propagation.md",
+      "scratch_source": "/tmp/semiprime-wave-smoothing-20261026/multiscale-propagation.md",
+      "sha256": "0bc80f08042d3492b61313850e1ab824fa0feefe03f2bddec2ae2fdbd323702e",
+      "copy": "verbatim"
+    },
+    {
+      "path": "review-determinant.md",
+      "scratch_source": "/tmp/semiprime-wave-smoothing-20261026/review-determinant.md",
+      "sha256": "68cefa11b699c9314a9e4046bbee018afe531732b2489d7ef88b4c5bc086e32d",
+      "copy": "verbatim"
+    },
+    {
+      "path": "review-current.md",
+      "scratch_source": "/tmp/semiprime-wave-smoothing-20261026/review-current.md",
+      "sha256": "6ed432c7af3e06ebf07c919d3fb771ee0b576a163a0bb1acf36364461ccd95c8",
+      "copy": "verbatim"
+    },
+    {
+      "path": "review-multiscale.md",
+      "scratch_source": "/tmp/semiprime-wave-smoothing-20261026/review-multiscale.md",
+      "sha256": "ff752f5c2f2bb63d146cc465258349c8e86cc574bf3ee00766cc56c562ad52d6",
+      "copy": "verbatim"
+    }
+  ],
+  "note": "Requested paper study while the persistent goal was paused. PDF and extracted full text remain in scratch; primary source and hashes are pinned.",
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

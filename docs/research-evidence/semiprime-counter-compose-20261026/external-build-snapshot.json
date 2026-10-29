@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-26 23:50:56 UTC",
+  "status": "running",
+  "completed": 1945,
+  "total": 2569,
+  "failed": {},
+  "active_modules": [
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.HashCircuitProgramInterpreter",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafProgramSourceReadyCore",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.BucketTupleProgramConcreteBaseline",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafQueryFrontendInputBudget",
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LeafScopeResourceBoundsDecode"
+  ],
+  "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "live_exec_session_id": 85099,
+  "state_path": "/tmp/semiprime-d1-audit-20261026/lean-build-state.json",
+  "whole_endpoint_verified": false,
+  "comparator_run": false,
+  "dependency_of_these_eight_modules": false,
+  "rule": "Continue the verified live handle. Do not restart solely on observation timeout."
+}

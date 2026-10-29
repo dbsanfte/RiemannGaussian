@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8231,
+      "sha256": "618da9b9b4ef668611419dd4dc5a1b0e84ae5981cf77f4c68768ad9a4f126f7f"
+    },
+    {
+      "path": "initial-chart.md",
+      "bytes": 10132,
+      "sha256": "acfdbf8fb13c619097a00addd0810b6ae759263ae505725367ce2abd7ebef980"
+    },
+    {
+      "path": "modular-algorithm.md",
+      "bytes": 10644,
+      "sha256": "468c242a09ad89f79d903e6e0c1a9a204d0801afad2a90faee3f3e9b212449f9"
+    },
+    {
+      "path": "paired-monic.md",
+      "bytes": 13891,
+      "sha256": "e7ef3438d577f048bab486e071c6068c9af00b018a1a26a49f0cb29606404673"
+    },
+    {
+      "path": "projective-closure.md",
+      "bytes": 11304,
+      "sha256": "ea2343ef8dccb1a67837799761e77ab8c97b6f7f55f4d6154450291975ad4f6f"
+    },
+    {
+      "path": "pure-modulus-preparation.md",
+      "bytes": 10678,
+      "sha256": "6c47cbd393eb3288db7e5f6cdf5342f23a90663339ab993ad80cce05eca04eaa"
+    },
+    {
+      "path": "review-initial-chart.md",
+      "bytes": 5410,
+      "sha256": "76e0a545134ff8b9904f0e58f6cb55efe2b230011cf4f8e2a578f77a5d0af0f4"
+    },
+    {
+      "path": "review-projective.md",
+      "bytes": 3687,
+      "sha256": "c4416213d6c732384986026c6b48f51843a97d2e899659eeb8951cc987c997ee"
+    },
+    {
+      "path": "review-pure-pairing.md",
+      "bytes": 5767,
+      "sha256": "2b022711982fa04f2a2be84d710611c9e60fa54e48893c4cfb751ba41ffaebd6"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2618,
+      "sha256": "1e8c9b93ec99c7fda9828bf4ab69dcac335cca1d8134faf0279e22ea945b50f8"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 4310,
+      "sha256": "5364e8ea69b7b917e5c746ab96c53c2d07e14403fe6ce264edfb69c52464ef9f"
+    }
+  ],
+  "manifest_excludes_self": true
+}

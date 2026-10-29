@@ -1,0 +1,382 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 17,
+    "declarations": 722,
+    "theorems": 335
+  },
+  "modules": {
+    "SemiprimeD1StackPacketOrientation": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientation.lean",
+        "sha256": "8962aa47cc36dd0cfee50fdc38c2d1e93217bfe058847bf458f1fed361d55057"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientation.olean",
+        "sha256": "a31f3916ce3fff68ea0a5c78c1ed5aa767cd65b8a5b78b5be9f12d909e2fb21a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientation.olean",
+        "sha256": "a31f3916ce3fff68ea0a5c78c1ed5aa767cd65b8a5b78b5be9f12d909e2fb21a"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationEncoding.lean",
+        "sha256": "cb98911ea312b5231b43f2ba8024a5de7fc00ae89e3ad6e7b77a743934016ea2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationEncoding.olean",
+        "sha256": "985af7f259a2e037abf308ea6a135f5a83f425845466a47cb52effe29ac3a198"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationEncoding.olean",
+        "sha256": "985af7f259a2e037abf308ea6a135f5a83f425845466a47cb52effe29ac3a198"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationPrimitives.lean",
+        "sha256": "ecc9e6c2803b78103670a6050e2b4f7128dd9d97a9d75238847089af14dcdf93"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationPrimitives.olean",
+        "sha256": "2ba009c06830b533d78fcd3b11918335a0183297489a0d846cae6024c27881ff"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationPrimitives.olean",
+        "sha256": "2ba009c06830b533d78fcd3b11918335a0183297489a0d846cae6024c27881ff"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationView.lean",
+        "sha256": "0e299d87bf47b2e44e53d0ecfc5aba60d02d89beecbba6dd6436a730cf2cc0cc"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationView.olean",
+        "sha256": "b2938779fa86ff6f82bb3d562603041d7fb54836d2a89c5cc19970e0d47db309"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationView.olean",
+        "sha256": "b2938779fa86ff6f82bb3d562603041d7fb54836d2a89c5cc19970e0d47db309"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationCompare": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationCompare.lean",
+        "sha256": "0a2d5490b8c6ea6c96ad8dae2a4542d0afb60307b4ee351e6a30ec248d3c5b91"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationCompare.olean",
+        "sha256": "922653671497a59f248c47e08b267787a0337713b04a6689329ef9cb24fecff0"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationCompare.olean",
+        "sha256": "922653671497a59f248c47e08b267787a0337713b04a6689329ef9cb24fecff0"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationRowView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationRowView.lean",
+        "sha256": "b9f9cb42bfc63a5680c92204caecc16f952994c23f871a6699fab4ae5b09475a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationRowView.olean",
+        "sha256": "81e589c3a69ba44c4fc365103fb504e3b6b9fb0afeb6dac663e02b38b86415ba"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationRowView.olean",
+        "sha256": "81e589c3a69ba44c4fc365103fb504e3b6b9fb0afeb6dac663e02b38b86415ba"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationLog": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationLog.lean",
+        "sha256": "a7cee0fb77890ff14ce091da0ceb62e4310a2b909ba8266b72ebd357e989dc14"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationLog.olean",
+        "sha256": "33847bc67eadb9826a04ca02ff0b8fc2f774f7e36f8ff27b3136a7d6e8e58760"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationLog.olean",
+        "sha256": "33847bc67eadb9826a04ca02ff0b8fc2f774f7e36f8ff27b3136a7d6e8e58760"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationCoordinate": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationCoordinate.lean",
+        "sha256": "51a7b598d40f1e9f8dbddd25f9b79044dd432bd4e1f7aea9771976cd8a07981b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationCoordinate.olean",
+        "sha256": "1041899ddf5e64c7cf85fddbac47594b0d40bc4bf4676901801b41285de0e4bd"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationCoordinate.olean",
+        "sha256": "1041899ddf5e64c7cf85fddbac47594b0d40bc4bf4676901801b41285de0e4bd"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationClassify": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationClassify.lean",
+        "sha256": "309d72168d84cd65cae701b598588a3a1f8f3a1a33662c504fa94de1ee326bb3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationClassify.olean",
+        "sha256": "8c894cff37f7dfd67f1af0641493f1ea38209059fd9216bf38ad9b93a1ad17ac"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationClassify.olean",
+        "sha256": "8c894cff37f7dfd67f1af0641493f1ea38209059fd9216bf38ad9b93a1ad17ac"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationPrepare": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationPrepare.lean",
+        "sha256": "40002ba93dbec1de8a17decd8418909b63d22d6a979ace854c043c5f53179a89"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationPrepare.olean",
+        "sha256": "96bca2934e1cbccc33c49a3f5d671f6f697690fbac0c562b9cf2cb9665be5080"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationPrepare.olean",
+        "sha256": "96bca2934e1cbccc33c49a3f5d671f6f697690fbac0c562b9cf2cb9665be5080"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationFinish": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationFinish.lean",
+        "sha256": "e23639dd8912ce8656789e8c0e974d9c794cd266734f7dbc415ff55a08fa2da1"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationFinish.olean",
+        "sha256": "d895655089763f97dbdcf40475f01802d7390496a3ee021b42fc5eba184ae952"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationFinish.olean",
+        "sha256": "d895655089763f97dbdcf40475f01802d7390496a3ee021b42fc5eba184ae952"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationLoop": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationLoop.lean",
+        "sha256": "2d04c545f6ddb056cd0a5372b7f10031547833353c5538b2f62497a16ed7ac78"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationLoop.olean",
+        "sha256": "8b6986af359fa0b93946bedce93dcc1db6198149631675ce003e68e9ca8589d1"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationLoop.olean",
+        "sha256": "8b6986af359fa0b93946bedce93dcc1db6198149631675ce003e68e9ca8589d1"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationLayout": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationLayout.lean",
+        "sha256": "2ac338bfda2962937bad87d7846416a3c9f659100c255f6370b95fa3cc1fe87f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationLayout.olean",
+        "sha256": "48f7454ca5bd1f03b82ef7652bb0aea1150af6b9c21d41bc8cb4d449360f4251"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationLayout.olean",
+        "sha256": "48f7454ca5bd1f03b82ef7652bb0aea1150af6b9c21d41bc8cb4d449360f4251"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationExecution.lean",
+        "sha256": "ed9dba90cfd1e839e1bcaabe094a35351343821bec71b118cb6f9ec79c134c52"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationExecution.olean",
+        "sha256": "d60d9cf79f0b49231a61c0484f181518bc6caf834742efae9b50c95e184c8877"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationExecution.olean",
+        "sha256": "d60d9cf79f0b49231a61c0484f181518bc6caf834742efae9b50c95e184c8877"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationClock": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationClock.lean",
+        "sha256": "956e47c8cb32cf3e0654bc48d6e42c31349adea47293e1772eb4996db1639ec9"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationClock.olean",
+        "sha256": "158f26c5956e78889ab6d59141042abcbca135dfe51764d4c786e4de5000c3df"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationClock.olean",
+        "sha256": "158f26c5956e78889ab6d59141042abcbca135dfe51764d4c786e4de5000c3df"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationStorage.lean",
+        "sha256": "5498f54348430fb475f17aad0fb61e10cd353814899176963cd681de4457ac61"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationStorage.olean",
+        "sha256": "5218134123b762fa1b4a009952222f312e7f19203ff233e9aeb10e3b50448507"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationStorage.olean",
+        "sha256": "5218134123b762fa1b4a009952222f312e7f19203ff233e9aeb10e3b50448507"
+      }
+    },
+    "SemiprimeD1StackPacketOrientationOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketOrientationOriginal.lean",
+        "sha256": "95326755474de27384da842d471141d1322623a5e6cc1a370b4c7e2df019b64c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketOrientationOriginal.olean",
+        "sha256": "ea8f758e4b4bfb3d141e0b535e8d2e6b810230253cc6cfeb09dfa9a1f2b13457"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/SemiprimeD1StackPacketOrientationOriginal.olean",
+        "sha256": "ea8f758e4b4bfb3d141e0b535e8d2e6b810230253cc6cfeb09dfa9a1f2b13457"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PacketOrientationControls.lean",
+        "sha256": "8949a4ffb62d6d9b0cfd146770e04c1192d11db137f0870e25d04369c298004d"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/control-0.log",
+        "sha256": "569482b43adcf827327b101f3159c504b7661a7094a4f631cbcb7300b55b98c6"
+      },
+      "expected": "PACKET_ORIENTATION_PASS case=empty_rows_keep_padded_high actual_steps=107 success=true all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=empty_colour_equal_EOF_zero actual_steps=166 success=true all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=less_no_index_consumption actual_steps=242 success=true all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=greater_no_index_consumption actual_steps=400 success=true all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=numeric_tie_unequal_padding actual_steps=451 success=true all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=numeric_zero_unequal_padding actual_steps=325 success=true all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=allties_missing_bits_are_false actual_steps=795 success=true all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=mixed_compares_two_ties_exact_high actual_steps=1358 success=true all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=mismatched_lengths_clear actual_steps=197 success=false all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_PASS case=reverse_mismatched_lengths_clear actual_steps=186 success=false all19=true three_inputs_only=true numeric_not_byte_equality=true cursor_consumed_only_on_ties=true raw_high_preserved=true exact_old_key_slots_high=true allwork_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_ORIENTATION_OBSERVER_STD3 constants=28"
+    }
+  ],
+  "full_goal_complete": false,
+  "sealed_utc": "2026-10-28T22:14:02.829741+00:00",
+  "source_and_canonical_writers_stopped": true,
+  "source_proofs_default_200000_heartbeats": true,
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 18282,
+    "files": 36564,
+    "before": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-dependencies/imported-pins-after.json"
+  },
+  "baseline_protected_files": {
+    "status": "PASS",
+    "protected_files": 17054,
+    "baseline": "/tmp/semiprime-explicit-rate-20261027/resumed-preservation-before.json",
+    "all_current_bytes_match": true
+  },
+  "prior_frozen_files": {
+    "status": "PASS",
+    "groups": {
+      "static-input-table": 34,
+      "port-ordinal": 10,
+      "boundary-record": 10,
+      "product-table-original": 2,
+      "product-record": 10,
+      "carry-table": 10,
+      "scale-table": 10,
+      "transform-table": 10,
+      "carry-record": 10,
+      "scale-record": 10,
+      "transform-record": 10,
+      "root-schedule": 20,
+      "root-scale-leaf": 22,
+      "phase-geometry": 20,
+      "phase-geometry-guard": 12,
+      "phase-working-metadata": 18,
+      "phase-working-precision": 20,
+      "phase-child-context": 16,
+      "phase-child-fresh": 16,
+      "phase-bank-restore": 10,
+      "phase-cache-fresh": 10,
+      "network-owner-index": 24,
+      "network-rows": 30,
+      "source-alphabet64": 38,
+      "root-owner-index": 14,
+      "root-network-rows": 12,
+      "source-occurrences": 26,
+      "source-environment": 26,
+      "source-incidence": 50,
+      "root-source-occurrences": 12,
+      "source-selected-keys": 32,
+      "source-incidence-select": 56,
+      "source-key-frequency": 30,
+      "source-packet-padding": 26,
+      "cache-phase": 38,
+      "packet-rows": 34,
+      "source-selection-acquire": 24
+    },
+    "total_source_object_files": 706
+  },
+  "independent_read_only_review": {
+    "status": "PASS",
+    "reviewer": "/root",
+    "path": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-independent-review.txt",
+    "sha256": "59f33452858e67402e477eba9886128e03eec37ebf06bc52d3d69ff2905c863a",
+    "six_current_source_pins_match": true,
+    "source_and_canonical_writes": false
+  },
+  "actual_controls": {
+    "status": "PASS",
+    "whole_cases": 10,
+    "actual_steps": 4227,
+    "case_steps": [
+      107,
+      166,
+      242,
+      400,
+      451,
+      325,
+      795,
+      1358,
+      197,
+      186
+    ],
+    "all_roles": 19,
+    "alias_shadows": 0,
+    "observer_generated_constants_standard3": 28,
+    "snapshot_identity_kernel_checked": true,
+    "all19_and_three_inputs_and_work_and_flags_and_two_real_outer_returns": true,
+    "numeric_ties_unequal_rawpadding_and_zero_padding_and_missing_indexbits_and_unequal_coords_no_indexconsumption_and_mixed_trichotomy_and_mismatched_lengths": true,
+    "source": "/tmp/semiprime-explicit-rate-20261027/PacketOrientationControls.lean",
+    "source_sha256": "8949a4ffb62d6d9b0cfd146770e04c1192d11db137f0870e25d04369c298004d",
+    "log": "/tmp/semiprime-explicit-rate-20261027/packet-orientation-frozen/control-0.log",
+    "log_sha256": "569482b43adcf827327b101f3159c504b7661a7094a4f631cbcb7300b55b98c6"
+  },
+  "scope": {
+    "physical_roles": 19,
+    "shared_comparator_roles": 5,
+    "private_aux_roles": 14,
+    "alias_shadows": 0,
+    "program": "one parameterless fixed finite literal program before every row and binaryindex",
+    "runtime_inputs": "ONLY actual leftColourVector, rightColourVector and BINARYindex j; allother16rolesEMPTY",
+    "real_pipeline": "three preservinginputcopies; realpairedvectortag/Field/validpops; realcopiedWordLess forward, onlyiffalse realcopiedWordLess backward; equalityonlyactualindexpop/EOFfalse; realslotpush; realhighcolourcopy plusinnerFrame(low,highRAWtail); realouterFrame/Reversekeylogger; realcolour/pairdrains; actualEOFchecks; tworealremaininghighcopies; realkey/slotsreverse; cursoractualdrain; truepush/halt",
+    "numeric_equality": "realcomparators implement exactold numeric equality/order for arbitrary colourpadding, never inferrawbyteequality; ties preserveleft/rightrawcopydirection",
+    "original": "EXACT entire OrientationBits.acquire key/slots/high/valid forALLphysicalcolourwords andbinaryindex/equal rowlengths; Pipeline/source_pipeline_original/source_pipeline_selected retain TWOactual executions/ownclocks withorientationinputDIRECTfromstoppedReader19, alloriginalselectedkeymembershipsdischargedinternally",
+    "output": "oldnestedoutercoordinatefields followedbyactualremaininghighRAWtail (NOvectorterminator); rawchronologicalslotbits (NOvectorterminator); exactbinaryhigh; actualsuccess[true]; original3inputsretained, other12workEMPTY, flagsnone/framesempty",
+    "negative_scope": "compiled mismatch/aborthalts physicallyclearall16noninputroles andreturnsuccessfalse; no universal malformedinputclock asserted",
+    "frontier": "complete prepared actual orientation source plus honest two-execution reader lineage; outer literalinventory/replay controller and N-only caller joins remainopen; fullfactoring theoremOPEN"
+  },
+  "clocks": {
+    "resource": "S=actualLeftVectorBytes+actualRightVectorBytes+actualBINARYindexBytes+1",
+    "whole_time": "10000*S",
+    "all19_plus_realreturns": "1000000*S",
+    "coordinate": "1000*(leftColourBytes+rightColourBytes+1)",
+    "provenance": "ownSAMEactualcopy/Field/WordLess/physicalbranch/indexpop/Frame/Reverse/logger/drain/halt traces; no numericcolour/indexVALUEunaryexpansion/no oldNativeclocktransport"
+  }
+}

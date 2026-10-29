@@ -1,0 +1,21 @@
+PASS — independent READ-ONLY owner review of ALL8 assigned KernelLinear29 modules, ALL787 lines/every body read in two nontruncated batches (519+268). All assignment=before=after=current SHA256. No imports/builds/source/canonical edits/controls/replays.
+
+Spec: power/width/fit/sum/displacement/difference/factor are erased word specifications, not runtime results. Fixed-width injectivity proves exact digits under range, not merely value equality. Actual displacement borrow is derived from x<2^a. Negative difference uses real borrow and second subtraction; zero cannot carry negative sign. Strip handles every physical zero including all-zero padding, and exact content/suffix bytes agree with frozen stripping. Positive divisor licenses exact old divideLoop quotient bytes. High-zero padding and truncation stay explicit.
+Primitives/Calls: preserving copies restore borrowed scratch and charge real call+ret. Local helpers execute actual call, concrete fragment, actual ret while retaining arbitrary real outer frames. Pop/drain include EOF, adder/subtractor expose exact raw result/borrow with all foreign fields retained. Five-role WordFit and eleven-role Divider DataRel are complete including real input consumption, retained width, remainder/quotient and every unused/foreign role. No selected arithmetic answer or native clock is supplied.
+View: all29 tapes are represented by shared Divider11 (Adder4+7 other divider roles) plus18 actual source/cache/private fields. Every update preserves the complementary physical bank. Words/sourceWords are proof views; actual four original words plus all25 EMPTY roles are exposed. No record/selector/evaluator lives in control.
+Power: real original-a preserving copies and one pop+false push per physical marker derive binary2^a and paid length(a)+1 template. No unary expansion of the numeric power. Both zero/one source-marker branches and EOF costs are actual.
+Sum/Fit: actual center/y operand copies precede real full adder, output copy and physical drain. Displacement copies actual sum/x, invokes real subtractor, physically pops tested borrow and calls real fit. Template/current/scratch freshness is explicit. Original t is copied and fitted with its full physical input length paid. Original source words survive all calls.
+Acquisition: joins these actual fragments, copies/left-shifts actual center into alpha, and reaches normalization-ready cache. Source only accepts actual a/t/x/y words; no j/displacement/power/template/factor/result argument is a runtime operand. Range hypothesis derives the actual executed false-borrow branch; no supplied verdict. Own clock is a literal sum of real copy/add/sub/fit/drain costs, never transported from native reports.
+No blocker found in assigned scope. Remaining normalization/complete source/resource/original wrappers are assigned to other reviewers; no global N-only recovery/full factoring completion is asserted.
+
+CURRENT PINS (assignment=before=after):
+632a1a0703865940d2a2a65efbd737e16557e0a1c6d5c9ca991b0e5b611f7250  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearSpec.lean
+309955e70eb5ab7e43833716b4ebc79fc2d97a7735448137a2e0f8847da7e2bf  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearPrimitives.lean
+b8b32ae95ff619aab44297426239d274474e8d073de42cfd2fbef16a80fba091  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearCalls.lean
+caa894e9077b99fe3f8439bcb9891a97ecf5b499540d6f73166f9dbf0d25a940  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearView.lean
+9e3d20b0fed840dbee11e84ad7419f4a866e7e390203a555d2963cb3c2bcecea  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearPower.lean
+a41af371b1a5c28c2c425956725c896e337bcc24e91c7ae1b6baa4ea5dd611f7  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearSum.lean
+74abef7015ee016870f217577f57c9be98cacb53616165e9cadedc31217ec8ab  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearFit.lean
+fc6cb1317e25b3f9acb07d59e7931d4493ac8433c3b0eec8aafccb4af538ee2c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackKernelLinearAcquisition.lean
+
+Checked UTC 2026-10-29T06:19:50.519297+00:00

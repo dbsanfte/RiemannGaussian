@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-26",
+  "primary_literature": [
+    {
+      "title": "Partial fraction decomposition proofs of some q-series identities",
+      "authors": "Nancy S. S. Gu; Helmut Prodinger",
+      "version_date": "2011-08-29",
+      "url": "https://www.finanz.math.tugraz.at/~prodinger/Guo-Rice.pdf",
+      "access_scope": "Primary PDF section 2, Theorem 2.1 proof and equation (2.1), read by author and root.",
+      "mathematical_scope": "Finite q-series partial-fraction mechanism. This packet proves its exact specialized finite pole identity directly; no infinite analytic tail or modular evaluator is imported."
+    },
+    {
+      "title": "Expansions in the Askey-Wilson Polynomials",
+      "authors": "Mourad E. H. Ismail; Dennis Stanton",
+      "version_date": "2014-03-21",
+      "url": "https://www-users.cse.umn.edu/~stant001/PAPERS/AndrewsFormFinal.pdf",
+      "access_scope": "Equation (2.4) read and frozen in the preceding primitive-pair packet; retained context.",
+      "mathematical_scope": "The previous finite connection has prior credit. This packet proves its lowering identity by direct endpoint multiplication, without importing orthogonality or analytic normalization."
+    },
+    {
+      "title": "Order Computations in Generic Groups",
+      "authors": "Andrew V. Sutherland",
+      "year": 2007,
+      "url": "https://math.mit.edu/~drew/sutherland-phd.pdf",
+      "access_scope": "Primary thesis chapter 7, Algorithm 7.3 and cost discussion, read including root check.",
+      "mathematical_scope": "Prior complementary-power product-tree operation, attributed there to Celler and Leedham-Green. Used only in the secondary conditional partial-factor method; not needed for the main native transfer."
+    },
+    {
+      "title": "Generating subgroups of ray class groups with small prime ideals",
+      "authors": "Benjamin Wesolowski",
+      "url": "https://msp.org/obs/2019/2-1/obs-v2-n1-p28-p.pdf",
+      "access_scope": "Primary Theorem 1.2 investigated by the author and checked by root; this alternative was not used.",
+      "mathematical_scope": "ERH ray-class generation is not a supplied Cayley-parameter generator algorithm. No ERH, class-group conversion or generator premise enters the proved native transfer/projection."
+    }
+  ],
+  "repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-primitive-pair-20261026/README.md",
+      "sha256": "b279058de593c7e6101630aa6f909524dc2c3be674a531950efdafefcde26a8c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-primitive-pair-20261026/primitive-asymmetry.md",
+      "sha256": "14c407d03c9d404a469034463a3ddc3d831750ba7b78ebf253d8e49479e7bbb7"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-primitive-pair-20261026/axis-two-orders.md",
+      "sha256": "cbc5cdc6ed6f1090c76776f0d40006009b802db1b7adee7607ce706d9c528f6b"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/README.md",
+      "sha256": "ab575b0ef9731bdb097915575a1bd6c08d9a83aa053914360d86a9c81de79a99"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/pure-weighted-common-tag.md",
+      "sha256": "71c13ae4cf1d6cbb6d661bbbc6a3d3c2465d9f5618aa7e4e20fd7ddbef84b9d3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/pure-modulus-preparation.md",
+      "sha256": "6c47cbd393eb3288db7e5f6cdf5342f23a90663339ab993ad80cce05eca04eaa"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quadratic-ideal-20261024/torus-order-supplier.md",
+      "sha256": "1f3033cc85c1b6798a188daa7b7c32d702b87d2cb3401e3e1f1afe6cb3a4e9bc"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-large-order-recurrence-20261024/rough-torus-working.md",
+      "sha256": "6333f318c8bc1c1e88a398aaeff94efb83b0d2e6ead3d64d455317b41036dcda"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/qbinomial-joint.md",
+      "sha256": "d288cb8f697e94e605a2d77e0b027f4010817a45a5df6590bde9ffd106689070"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/signed-two-weight-query.md",
+      "sha256": "b36e44e9d5e2c897caac87d6ad6339548fd9d438bd21352bd50971ff236efc93"
+    }
+  ],
+  "proof_scope": "Actual native factor-or-preparation algorithm from a short norm-one annihilator; full original-bank singleton blocks; exact finite Lambert and AW identities. No improved whole-query bound or generic lower bound.",
+  "prior_credit": "Scalar first-nonunit detector, unbalanced Burgess-based annihilator extractor, rough scalar/torus preparation, common-tag theorem, shared row-product engine and restricted HH consumer retain their prior credit. The native transfer and complete N+1 gate compose these paid inputs."
+}

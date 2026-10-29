@@ -1,0 +1,9 @@
+# Actual physical source counts and weighted callback
+
+SourceScoreCountBitsCore executes the same finite alphabet/override recursion as the original count, returning a literal one/zero word at each physical terminal and calling addBits at every branch sum. No native count integer drives the recursion. Its padding acquires the actual alphabet cardinality power by unary cell replication, acquires that actual length with Boolean-increment natBits, then executes mulBits. SourceScoreCountBits binds the internal terminal refinement to the concrete SourceScorePredicateBits.terminal_original theorem. Both lane accumulators are actual Boolean additions in original program order, preserving multiplicity.
+
+sequential_value identifies both actual physical lanes with quantum's original sequentialCounts. score then executes the cached physical integer weighting and wraps denominator one. score_value identifies the result with the exact weighted original counts, and score_valid holds without assumptions. Truth/count/weight data use actual bit circuits; original typed-word/environment/control construction is still a native interface, paid by reports, not an erased whole-machine implementation.
+
+The physical count width is bounded without cancellation or a desired-count oracle: raw word length≤1+mL, normalized local length≤3+8L+L^4, lane length≤3+8L+L^4+T. These bounds cover all recursive suffixes. Per-callback closed work bounds are in the new budget modules, derived from the concrete predicate's original metadata bound; no count-answer, Fits or hypothetical score budget should survive that endpoint.
+
+Core and main strict/ordinary-root15/all-generated standard3 checks PASS82 declarations/43 theorem constants; both isolated objects byte-identical. Exact pins in count-bits-verification.json. The optional weight-acquisition evaluate Nat-count encoder remains a separate transitional path; the actual CountBits score callback does not call it.

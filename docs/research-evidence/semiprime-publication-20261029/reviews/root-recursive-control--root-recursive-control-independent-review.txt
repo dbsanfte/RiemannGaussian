@@ -1,0 +1,19 @@
+Root119 independent read-only review (Sol6.1 vertex_record_logger), 2026-10-28.
+No correctness or blocking findings.
+
+Checked all five source files plus actual P108 acquisition, GS16 guard/successor,
+and count provenance. N-only initial_eq is literal. Both real included calls
+retain actual frames. Five shared operands are injective; eleven fresh roles
+include the unused successor-level shadow, hence119 allocated data roles.
+
+The edges word is the physically acquired occurrence count M=2E, with TWO pushes
+per edge, never wireCount E. occurrence_count/root_edges licenses all original
+fixed prefixes, including repeated and conflicting pins. Runtime branches only
+on the actual singleton guard output via peek. Native activeTest and parameter
+values occur solely in mathematical specifications/proofs.
+
+Own clock is actual P.runBound + GS.runBound +3. Gate words are bounded from an
+actual successful P source run; GS<=300*(5C+1). Constants1e55 for time and1e58 for
+storage suffice. Prefix bounds count119 data roles plus actual return cells and
+use this same machine.run_correct. Scope remains root guard and conditional next
+metadata; full recursive phases, coefficient construction and recovery stayOPEN.

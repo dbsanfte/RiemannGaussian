@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-26",
+  "research_date": "2026-10-25",
+  "status": "PASS (scoped)",
+  "previous_turn_classification": "progress: exact uniform reduction, independent review and finite validation completed before interruption",
+  "goal_status": "OPEN; no sixth-exponent algorithm",
+  "independent_review": "halfcenter-review.md",
+  "scope": [
+    "Actual-family opposite closure and paid lambda=0 unit pruning",
+    "Exact half-center identities and squarefree zero equivalence",
+    "Negative-only prefix and one-sided original-leaf recovery",
+    "Paid ordinary Alexander recentering, including zero-exponent exception",
+    "Representation/query costs remain distinct"
+  ],
+  "validation": {
+    "script": "check_halfcenter.py",
+    "result": "halfcenter-validation.txt",
+    "fixtures": 5,
+    "identity_and_predicate_checks": 95,
+    "recovery_cases": 4,
+    "scope": "Exact small-ring algebra/control flow, not native coverage or fast implementation"
+  },
+  "preservation": {
+    "protected_prior_files": 645,
+    "journal_and_guide_prefixes": 2,
+    "result": "unchanged"
+  },
+  "limitations": [
+    "No full external-paper proof audit or Lean certificate",
+    "No additive soft O(J+sqrt(m)) prefix oracle",
+    "No generic algorithmic lower bound",
+    "No commit or push; concurrent engineering files unchanged"
+  ]
+}

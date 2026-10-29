@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramArithmetic",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramArithmetic.lean",
+      "source_sha256": "08c30da452d2207b9a841fb4ddb612d286d316bb007a9ab7b4725e40ae3c78bb",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramArithmetic.olean",
+      "object_sha256": "b575f88cafde9948d4c91d76a0f85e52736c141713af39801ae210287f0ca8d7",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceHistogramArithmetic.olean",
+      "isolated_sha256": "b575f88cafde9948d4c91d76a0f85e52736c141713af39801ae210287f0ca8d7",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 107,
+      "theorems": 70
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramArithmeticBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramArithmeticBounds.lean",
+      "source_sha256": "b9637a77f5e1a8730def039c75172f911bec3460405fe214743924378ff3faea",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramArithmeticBounds.olean",
+      "object_sha256": "b7ffab4e9278212cf66b6c9182e14b4686abaaeb822e7cce9b2beb7bce8a4dc8",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceHistogramArithmeticBounds.olean",
+      "isolated_sha256": "b7ffab4e9278212cf66b6c9182e14b4686abaaeb822e7cce9b2beb7bce8a4dc8",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 43,
+      "theorems": 41
+    }
+  ],
+  "notes_sha256": "de04e20e440f42946d4a755f41ecc45f07a7a945fcd3da95b2fe266e4bf07b9c",
+  "smoke_source_sha256": "b7ee32dab40623ab72909ffca3ab090d702d4f6ac6330128408696ec22ab1cad",
+  "smoke_log_sha256": "4b81deeb1a446b2486003ea1d714bd1b75a17a21d3b9faf1c051f5eabbae9a51",
+  "scope": "Actual signed sixteen-feature/head/weighted physical arithmetic with all producer clocks retained and derived fixed-polynomial input-width overhead. Original callback/key acquisition/public-machine composition separate."
+}

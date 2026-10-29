@@ -1,0 +1,61 @@
+'RiemannGaussian.SemiprimeCounterRate.tendsto_rho_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_polynomial_exp_rho_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_constant_polynomial_exp_rho_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_polynomial_counter_with_arity_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_constant_polynomial_counter_with_arity_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_log_polynomial_counter_subpower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_log_polynomial_counter_sixth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_full_counter_bound_subpower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.integer_dimension_budget' depends on axioms: [propext, Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.scheduled_dimension_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.scheduled_dimension_budget_input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.tendsto_incidence_load_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_incidence_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.scheduled_dimension_square_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_scheduled_incidence_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.scheduled_group_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.scheduled_parameter_ranges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.tendsto_clog_two_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_scheduled_parameter_ranges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.interval_numerator_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.interval_contained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_scheduled_interval_contained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterRate.eventually_non_tail_schedule_checks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

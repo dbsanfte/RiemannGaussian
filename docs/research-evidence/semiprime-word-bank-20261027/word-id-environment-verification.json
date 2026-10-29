@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "strict_exit": 0,
+  "audit_exit": 0,
+  "isolated_exit": 0,
+  "smoke_exit": 0,
+  "declarations": 205,
+  "theorems": 126,
+  "standard_axioms_only": true,
+  "isolated_byte_identical": true,
+  "hashes": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdEnvironment.lean": "7fea1f5aec0f9c38aa1a5b11139062904789df45f7e79aeeb61711c4335a8262",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdEnvironment.olean": "8bbcbdb8cad294e072e64ba3c1d0ad425d89d15179c8bacbc10a76a2b6dcff77",
+    "/tmp/semiprime-word-bank-20261027/SourceWordIdEnvironment.isolated.olean": "8bbcbdb8cad294e072e64ba3c1d0ad425d89d15179c8bacbc10a76a2b6dcff77",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdPredicate.lean": "225c85157e100f5253d92ae4f54f0b64baa46cb530fdfa48b83e28d2670e77cb",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdPredicate.olean": "d488bf631e1d14522cadc46e2ce61a07b96903d166ce5307bbfdd2ffe88df68b",
+    "/tmp/semiprime-word-bank-20261027/SourceWordIdPredicate.isolated.olean": "d488bf631e1d14522cadc46e2ce61a07b96903d166ce5307bbfdd2ffe88df68b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdEnvironmentBounds.lean": "dc44492aa1a1b09e3bb63ca69b2180ca57056959efb575afca9a7f272eaecd5e",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdEnvironmentBounds.olean": "5e356c282d7a6334ddaae8ab44070b19f32c00575db3ec5b456446427aa7629d",
+    "/tmp/semiprime-word-bank-20261027/SourceWordIdEnvironmentBounds.isolated.olean": "5e356c282d7a6334ddaae8ab44070b19f32c00575db3ec5b456446427aa7629d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdPredicateBounds.lean": "53260dfe4875179064d6aae33be8b78660b36557d9684c1aa2f603052e5c5ea8",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdPredicateBounds.olean": "5368312d5a03fcdfe627e5235c551cfa3aab53aec6b40d7339039a95a12a5de2",
+    "/tmp/semiprime-word-bank-20261027/SourceWordIdPredicateBounds.isolated.olean": "5368312d5a03fcdfe627e5235c551cfa3aab53aec6b40d7339039a95a12a5de2"
+  }
+}

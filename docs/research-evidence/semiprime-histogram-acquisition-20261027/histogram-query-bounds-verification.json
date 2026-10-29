@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "modules": 1,
+  "declarations": 26,
+  "theorem_constants": 21,
+  "strict": true,
+  "ordinary_root_namespace15_lint": true,
+  "standard_axioms_only": true,
+  "isolated_byte_equal": true,
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramQueryBounds.lean",
+  "source_sha256": "d0ae9cf972a5ff6aadf8e0dcc1275d4e20365916d397401d5040e23313f1c5c9",
+  "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramQueryBounds.olean",
+  "canonical_sha256": "ade47703155feb66efb4d133861a61eb1269edd2feb034146e10d270ade5235f",
+  "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-query-isolated/SemiprimeSourceHistogramQueryBounds.olean",
+  "isolated_sha256": "ade47703155feb66efb4d133861a61eb1269edd2feb034146e10d270ade5235f",
+  "evidence": {
+    "/tmp/semiprime-histogram-acquisition-20261027/HistogramQueryBoundsAudit.lean": "9efb3af176f89058c0ae55af1616d7cf5548578497f991f90cb24c279983a97c",
+    "/tmp/semiprime-histogram-acquisition-20261027/histogram-query-bounds-audit.log": "d16005774525d3588f7fe27c12c7b76e95946f1189bb3d051821adb54c228297",
+    "/tmp/semiprime-histogram-acquisition-20261027/histogram-query-bounds-build.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/tmp/semiprime-histogram-acquisition-20261027/histogram-query-bounds-notes.md": "dea98f24f453992ea60e51e3857528d151f6b10947a4eaa2729d25e07ed28d69",
+    "/tmp/semiprime-histogram-acquisition-20261027/own-query-isolated/SemiprimeSourceHistogramQueryBounds.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

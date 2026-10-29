@@ -1,0 +1,13 @@
+# Actual public Hermite resource and report bound
+
+`PublicHermiteCounterBudget` calls the actual new `HermiteBitsSetupBudget.count_work`. It derives the executed design bounds from the indexed source enumeration and physical design value equality. The source tie order is never identified with default enumeration. The literal selected head ceiling, each measurement count and the complete indexed summary bound are exported by `actual_design_resources`.
+
+The original public graph supplies occurrence two, total incidence exactly twice the wire count and the actual growing scope bound. Physical restricted callbacks have literal one-bit words; their clock is bounded by `2*entryEnvelope(wireCount)+4`. The entry budget includes the actual same-scope prefix checks. Source validity, row widths and representations are discharged inside the attached setup theorem. There is no externally advised design, summary or counter report bound.
+
+The first module proves uniform `counter_work` and `run_work` for every positive fast-guard input, retaining every reachable prefix query, all repeated setup, physical query/Hermite arithmetic and operand decoder reports. Its actual physical designs may occur in the intermediate bound; the second module removes them using parameter-only numeric envelopes.
+
+`PublicHermiteReportPolynomial` uses exactly the frozen `PublicReportPolynomial.resources N` numeric resource sum. It inflates S to `10*(S+1)^2` to cover the physical checker and constants, then instantiates the new full setup/physical-Hermite resource polynomial. Head/support/local truth/summary factors remain separate resources; no full 2^n assignment table or exponentially large width is introduced. `controllerEnvelope_monomial` fixes its coefficient and exponent before quantifying over S.
+
+Only old numeric dimension/resource estimates are reused. No old/new clock equality or prior controller rate transfer is assumed. These are bounds on the new actual retained mixed report, not a complete single-tape primitive bit/address theorem. Original source/scalar parameter/control/final scalar decode boundaries remain explicit. Strict/gate records separately pin the completed modules.
+
+Final validation: both owned modules are frozen. CounterBudget has 14 declarations/9 theorem constants; ReportPolynomial has 10/7. Each passes strict compilation, ordinary-root 15 linters, every-generated-declaration transitive standard-axiom checks, and an isolated byte-identical object. Exact pins are `public-hermite-budget-verification.json` and `public-hermite-polynomial-verification.json`. The latter exports the actual `run_work` resource-polynomial bound and fixed `controllerEnvelope_monomial` witnesses, ready for the separate rate composition.

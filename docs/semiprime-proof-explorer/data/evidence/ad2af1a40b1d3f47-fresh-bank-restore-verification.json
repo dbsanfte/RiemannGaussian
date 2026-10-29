@@ -1,0 +1,140 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 7,
+    "declarations": 287,
+    "theorems": 198
+  },
+  "modules": {
+    "SemiprimeD1StackFreshBankRestore": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackFreshBankRestore.lean",
+        "sha256": "93b3c5e931357a6a3439a4be18b7b97fbbceda1e7600fedd5f6dc9a39847cf21"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackFreshBankRestore.olean",
+        "sha256": "fee61d9e4433202766f4e849680e51167500365695890dfa329736fad817193a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-frozen/SemiprimeD1StackFreshBankRestore.olean",
+        "sha256": "fee61d9e4433202766f4e849680e51167500365695890dfa329736fad817193a"
+      }
+    },
+    "SemiprimeD1StackFreshBankRestorePrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackFreshBankRestorePrimitives.lean",
+        "sha256": "f4235bc8d1fb03524d75f4cdeb10bcff88a20590280b9bd50a732856461590d6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackFreshBankRestorePrimitives.olean",
+        "sha256": "2f3365c3e2ca133faead69489246d364b4c3eb61e6cec17ed8cc7b51d0c9eadb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-frozen/SemiprimeD1StackFreshBankRestorePrimitives.olean",
+        "sha256": "2f3365c3e2ca133faead69489246d364b4c3eb61e6cec17ed8cc7b51d0c9eadb"
+      }
+    },
+    "SemiprimeD1StackFreshBankRestoreFields": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackFreshBankRestoreFields.lean",
+        "sha256": "90248653955732eea4fd1494615ecc083110038392bcf2f3ce3af349b1ac07d2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackFreshBankRestoreFields.olean",
+        "sha256": "a41acc3a727738f96831a4390efa3f21870b954caf4f6cec76fbe2e68d746bb4"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-frozen/SemiprimeD1StackFreshBankRestoreFields.olean",
+        "sha256": "a41acc3a727738f96831a4390efa3f21870b954caf4f6cec76fbe2e68d746bb4"
+      }
+    },
+    "SemiprimeD1StackFreshBankRestoreExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackFreshBankRestoreExecution.lean",
+        "sha256": "740e531216e80021d5e7c361fb94cc83fe5bffe2d77a72834fb482ac1e42d36b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackFreshBankRestoreExecution.olean",
+        "sha256": "8757cf38ce2e4f23ba82aa2007ab13ff56f6a0b4dacb90ee633fbe7ef395337f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-frozen/SemiprimeD1StackFreshBankRestoreExecution.olean",
+        "sha256": "8757cf38ce2e4f23ba82aa2007ab13ff56f6a0b4dacb90ee633fbe7ef395337f"
+      }
+    },
+    "SemiprimeD1StackFreshBankRestoreBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackFreshBankRestoreBounds.lean",
+        "sha256": "8b7bea505f5d82ce8dc49484f5fdb52fd565a651026acecc5586dbbed954fe66"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackFreshBankRestoreBounds.olean",
+        "sha256": "4fabf3d7b110c43975b46c1e8f8f8f8bfa94c1d230cb986827036c990dee397c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-frozen/SemiprimeD1StackFreshBankRestoreBounds.olean",
+        "sha256": "4fabf3d7b110c43975b46c1e8f8f8f8bfa94c1d230cb986827036c990dee397c"
+      }
+    },
+    "SemiprimeD1StackFreshBankRestoreLineage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackFreshBankRestoreLineage.lean",
+        "sha256": "4d63a5c58e0efddd0946b4a0408edba6cf1a41c1d32ad7851cf428cf302559e2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackFreshBankRestoreLineage.olean",
+        "sha256": "0b2cc6f3b27bf6268f2434350a8042b3db0ded563472ac798f3d5e670075c034"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-frozen/SemiprimeD1StackFreshBankRestoreLineage.olean",
+        "sha256": "0b2cc6f3b27bf6268f2434350a8042b3db0ded563472ac798f3d5e670075c034"
+      }
+    },
+    "SemiprimeD1StackFreshBankRestoreOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackFreshBankRestoreOriginal.lean",
+        "sha256": "bcb9b5158ec756af7095a5889846bb1448e75fc3214b06fb17b63174d3b27f9c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackFreshBankRestoreOriginal.olean",
+        "sha256": "e00b8984cdfac0d98509fc172eb5987934c9be12f8e00f5ef15a2eea7421fc7c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-frozen/SemiprimeD1StackFreshBankRestoreOriginal.olean",
+        "sha256": "e00b8984cdfac0d98509fc172eb5987934c9be12f8e00f5ef15a2eea7421fc7c"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/FreshBankRestoreEagerControl.lean",
+        "sha256": "47521106e89c44f590de96bd2d673b3692f6cbf6ec6d0c25ed6826481444b928"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-frozen/control-0.log",
+        "sha256": "d42af51c8de60324d640e912e6822525e011dc9f3f1fbc6ed279b4384edda616"
+      },
+      "expected": "[true, true, true, true, true]"
+    }
+  ],
+  "full_goal_complete": false,
+  "prior_final_source_object_hashes_unchanged": {
+    "jet-fold": 20,
+    "weighted-mode-core": 15,
+    "weighted-mode-catalogue": 10
+  },
+  "superseded_observers_preserved": "/tmp/semiprime-explicit-rate-20261027/fresh-bank-restore-superseded-observers.json",
+  "actual_import_source_object_pairs": 18327,
+  "actual_imported_pins_before_after_equal": true,
+  "all_live_hashes_match": true,
+  "protected_sources": 17054,
+  "protected_sources_unchanged": true,
+  "source_writers_stopped": true,
+  "scope": "prepared actual heap/counter/issued-reference consumer; exact Root345 chronological lineage and all85 fields; no regeneration or joined producer call claimed"
+}

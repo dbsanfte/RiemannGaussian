@@ -1,0 +1,30 @@
+Independent READ-ONLY parent review: PASS; no blocker found.
+Scope: every body/all778 lines of assigned9 current modules: Core, Spec, Loop, Execution, Bounds, Storage, Values, Original, OriginalResources. First4/373 lines read before context checkpoint; remaining5/405 lines fully read in this continuation (the truncated combined read was discarded and all5 reread). No source edits, imports/builds, canonical rebuilds or controls performed for this review.
+
+The literal source has exactly47 roles (R36 plus Aux11), four physical words and no supplied power array/Fits/runtime. q0 empty vector, positiveq literalONE evenW0, q-1 multiplications. Actual orientation is currentFIRST argumentSECOND; all4 operand copies precede alias erasure, actual sign pop handles raw sign, every35 non-template R36 role is drained. Each row is physically framed twice, tagged and reversed onto chronological reverse history; next-loop states retain all4 inputs, update actual remaining markers, and final current/history are consumed by the actual final reverse/halt. Spec.array_native proves raw whole-array equality without validity/capacity assumptions; source_run and powersInTime use the SAME finite primitive program rather than native clocks.
+
+The complete loop bound uses semantic fitted-width/current/history lengths and q marker VALUE. Fixed own clock10^40*S^10 and all47+actual return bound10^43*S^10 are derived from this source's actual entry/halt trace. Prefix proof uses true halted-program nonextension; no recursive child-clock powering. Original Grid argument, retainedq, validity/positive denominators and width are internally derived from actual Grid lineage, u<=M and paid Node width. Original resource contains2^(a+1) byVALUE; dimension50/root500 estimates are bounds on this prepared source. OriginalResources and Original explicitly leave physical Grid/affine/width caller composition and original-N-only acquisition open; no full factoring or recursive-counter runtime claim.
+
+All9 assignment=before-read=after-read=current flat source SHA256 pins. All778 lines read. No blocker found. The separately noted Cleanup comment nit does not change reviewed runtime/theorems.
+
+BEFORE
+32719c79764d48247815123f995c4e1f1563ecbe5a2e557de8bfd17ba79fabe8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowers.lean
+aa8fabcaeee44f7371650fdabb0783b524c32d5f71e287479b3889b311016111  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersSpec.lean
+32a33a373a87dce64c6e11e67c683319d5967754edd4af65373beb1bbf2dd889  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersLoop.lean
+c678561c1cc3f06ccd0decb57e17bde049a09b1f8d6ac0cba804864684cf9fc6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersExecution.lean
+f627f5673c2402a69764e5f28e5fb4128501445df118884c477f0f216a4ff788  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersBounds.lean
+c280a08876124ce314a9e52d70e576182b74d152801f14852a0be62684c73ea8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersStorage.lean
+4fc4f948d844bf0c0f695cdef2ab476879c7e569279fafa780abf22447ad93bd  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersValues.lean
+c2d0e192df9680a4608314d6c98c3ea57e800abce2af1adcce4f10d11bd31359  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOriginal.lean
+47bcaa35aec55d42d6bf237a859f7f0938e3305e08f3b6da49a035b12ee5c8cd  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOriginalResources.lean
+
+AFTER
+32719c79764d48247815123f995c4e1f1563ecbe5a2e557de8bfd17ba79fabe8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowers.lean
+aa8fabcaeee44f7371650fdabb0783b524c32d5f71e287479b3889b311016111  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersSpec.lean
+32a33a373a87dce64c6e11e67c683319d5967754edd4af65373beb1bbf2dd889  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersLoop.lean
+c678561c1cc3f06ccd0decb57e17bde049a09b1f8d6ac0cba804864684cf9fc6  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersExecution.lean
+f627f5673c2402a69764e5f28e5fb4128501445df118884c477f0f216a4ff788  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersBounds.lean
+c280a08876124ce314a9e52d70e576182b74d152801f14852a0be62684c73ea8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersStorage.lean
+4fc4f948d844bf0c0f695cdef2ab476879c7e569279fafa780abf22447ad93bd  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersValues.lean
+c2d0e192df9680a4608314d6c98c3ea57e800abce2af1adcce4f10d11bd31359  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOriginal.lean
+47bcaa35aec55d42d6bf237a859f7f0938e3305e08f3b6da49a035b12ee5c8cd  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOriginalResources.lean

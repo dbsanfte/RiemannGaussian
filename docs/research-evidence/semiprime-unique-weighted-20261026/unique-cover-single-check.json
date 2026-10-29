@@ -1,0 +1,359 @@
+{
+  "kind": "public native unique-cover structural validation",
+  "fixtures": 1,
+  "elapsed_seconds": 0.0017791040008887649,
+  "rows": [
+    {
+      "K": 54,
+      "e": 3,
+      "N": 24794911295,
+      "B": 131072,
+      "H": 2916,
+      "phiK": 18,
+      "catalogue_J": 52,
+      "selected_J": 16,
+      "high_directions": [
+        {
+          "direction": [
+            1,
+            -1
+          ],
+          "pair": [
+            3,
+            -3
+          ],
+          "v3": 1
+        }
+      ],
+      "rectangle_caps": [
+        17,
+        12
+      ],
+      "original_clock": {
+        "M0": 1590,
+        "h": 3181,
+        "unchanged": true,
+        "q_exponent": 2916,
+        "native_scale": true,
+        "h_lt_16H": true
+      },
+      "acquisition_operations": {
+        "unit_inverses": 18,
+        "bounding_pair_candidates": 816,
+        "ellipse_pairs": 168,
+        "conic_pair_tests": 168,
+        "root3_lift_candidates": 340,
+        "color_lift_candidates": 72,
+        "phase_rows": 52,
+        "direction_pair_keys": 11,
+        "selected_support_marks": 18
+      },
+      "validation_operations": {
+        "enabled": false,
+        "direct_polynomial_tests": 0,
+        "selected_support_tests": 0,
+        "axis_checks": 0
+      },
+      "acquisition_seconds": 0.0017564059817232192,
+      "total_seconds": 0.0017630410147830844,
+      "selected_support_partition": [
+        {
+          "row": {
+            "a": 3,
+            "b": -3,
+            "j": 19,
+            "ell": -978,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            19,
+            37
+          ],
+          "kind": "maximal_direction_phase",
+          "normalized_root_exponents": {
+            "pi": 4635462,
+            "barpi": -74384733882
+          }
+        },
+        {
+          "row": {
+            "a": 3,
+            "b": -3,
+            "j": 1,
+            "ell": -6,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            1
+          ],
+          "kind": "maximal_direction_phase",
+          "normalized_root_exponents": {
+            "pi": 4636434,
+            "barpi": -74384733882
+          }
+        },
+        {
+          "row": {
+            "a": 3,
+            "b": -3,
+            "j": 53,
+            "ell": 6,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            53
+          ],
+          "kind": "maximal_direction_phase",
+          "normalized_root_exponents": {
+            "pi": 4636446,
+            "barpi": -74384733882
+          }
+        },
+        {
+          "row": {
+            "a": 3,
+            "b": -3,
+            "j": 17,
+            "ell": 978,
+            "g": 3,
+            "axis": false
+          },
+          "support": [
+            17,
+            35
+          ],
+          "kind": "maximal_direction_phase",
+          "normalized_root_exponents": {
+            "pi": 4637418,
+            "barpi": -74384733882
+          }
+        },
+        {
+          "row": {
+            "a": 2,
+            "b": 4,
+            "j": 5,
+            "ell": 574,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            5
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4637014,
+            "barpi": 99179645182
+          }
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": 5,
+            "j": 7,
+            "ell": -1256,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            7
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4635184,
+            "barpi": 123974556476
+          }
+        },
+        {
+          "row": {
+            "a": 4,
+            "b": 2,
+            "j": 11,
+            "ell": -574,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            11
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4635866,
+            "barpi": 49589822594
+          }
+        },
+        {
+          "row": {
+            "a": 8,
+            "b": -2,
+            "j": 13,
+            "ell": -1450,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            13
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4634990,
+            "barpi": -49589822582
+          }
+        },
+        {
+          "row": {
+            "a": 5,
+            "b": 1,
+            "j": 23,
+            "ell": -1256,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            23
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4635184,
+            "barpi": 24794911300
+          }
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": -1,
+            "j": 25,
+            "ell": 1108,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            25
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4637548,
+            "barpi": -24794911288
+          }
+        },
+        {
+          "row": {
+            "a": 7,
+            "b": -1,
+            "j": 29,
+            "ell": -1108,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            29
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4635332,
+            "barpi": -24794911288
+          }
+        },
+        {
+          "row": {
+            "a": 5,
+            "b": 1,
+            "j": 31,
+            "ell": 1256,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            31
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4637696,
+            "barpi": 24794911300
+          }
+        },
+        {
+          "row": {
+            "a": 8,
+            "b": -2,
+            "j": 41,
+            "ell": 1450,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            41
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4637890,
+            "barpi": -49589822582
+          }
+        },
+        {
+          "row": {
+            "a": 4,
+            "b": 2,
+            "j": 43,
+            "ell": 574,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            43
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4637014,
+            "barpi": 49589822594
+          }
+        },
+        {
+          "row": {
+            "a": 1,
+            "b": 5,
+            "j": 47,
+            "ell": 1256,
+            "g": 1,
+            "axis": false
+          },
+          "support": [
+            47
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4637696,
+            "barpi": 123974556476
+          }
+        },
+        {
+          "row": {
+            "a": 2,
+            "b": 4,
+            "j": 49,
+            "ell": -574,
+            "g": 2,
+            "axis": false
+          },
+          "support": [
+            49
+          ],
+          "kind": "singleton_fallback",
+          "normalized_root_exponents": {
+            "pi": 4635866,
+            "barpi": 99179645182
+          }
+        }
+      ]
+    }
+  ],
+  "not_checked": [
+    "factor-field/group-order preparation",
+    "semiprime coverage by fixtures",
+    "fast acquisition of the selected long query",
+    "factoring success"
+  ]
+}

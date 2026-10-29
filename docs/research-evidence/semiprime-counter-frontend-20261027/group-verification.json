@@ -1,0 +1,13 @@
+{
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeNativeGroupExecution.lean",
+  "sha256": "5c17653d773c3ad9aa773d4a4176763162a393d3b7491f6ad87404eab9f11a2d",
+  "strict_compile": "PASS",
+  "root15_lint": "PASS",
+  "all_declarations": 20,
+  "theorem_constants": 14,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

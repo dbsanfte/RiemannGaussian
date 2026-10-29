@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "review": "root read-only independent mathematical/call-path/resource review",
+  "modules": {
+    "SemiprimeSourceHeadFibres": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHeadFibres.lean",
+      "source_sha256": "f60857e7dd901b4f2c18e0603944dc29cb19a0b3c5fdbcf54bc0e0cc3b621fee",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHeadFibres.olean",
+      "object_sha256": "1f96d749b350e13a5c39555c685de053a3fa0d2ba6e71b11bf0c7d780b8e82e3"
+    },
+    "SemiprimeSourceHeadCountFormula": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHeadCountFormula.lean",
+      "source_sha256": "0058106f9ae4575a01da826753741178a5fc2d636688c76543875386860f6ad5",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHeadCountFormula.olean",
+      "object_sha256": "4819c36f0d7a25ad740156e0d78144a95a393a177d41ba213480f5a356334daa"
+    }
+  }
+}

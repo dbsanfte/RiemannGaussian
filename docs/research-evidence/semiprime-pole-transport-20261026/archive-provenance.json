@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "archived": "README.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/README.md",
+      "sha256": "eb810f072d96a5024b6c14ad3bdc84959593c04a78bdcfc67e676b9cfa73bae6",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "pole-transfer.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/pole-transfer.md",
+      "sha256": "b4830d161ff6ec467e81748ea5b56c75a268f076b4db90d313836a87b452e4d9",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "retuned-composition.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/retuned-composition.md",
+      "sha256": "3bbfc8c9a725842296e2803095104532d45918acd9d737b04e061f08b164a60a",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "arithmetic-transport.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/arithmetic-transport.md",
+      "sha256": "99263907f72060a727c8483334a58f990ad0751125a385f456e4c10b0586cd83",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "divisor-cover.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/divisor-cover.md",
+      "sha256": "31ea8b4caf13851004b48568791d4eff9f8ab57dcdb44e1235c81034cdfb9724",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-pole-transfer.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/review-pole-transfer.md",
+      "sha256": "581b6c25f3547c8f6a7a9637d446187d468d4bfab59639466b98ccdce2dadab4",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-retuned-composition.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/review-retuned-composition.md",
+      "sha256": "cf24166501a03d061671e83c807b15a2e8299c31a0b86ef923a5717172829a0a",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-arithmetic-transport.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/review.md",
+      "sha256": "e0d9797f96bc68b4de840bb90dedee6b07a71299866474cafcd85f74b0809bd5",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-divisor-cover.md",
+      "scratch_source": "/tmp/semiprime-pole-transport-20261026/review-divisor-cover.md",
+      "sha256": "7516669404ca232ce9505f6626a0b5e399d7bfb403e2cd3a15b311e6ec8f27d8",
+      "copy": "verbatim"
+    }
+  ],
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ],
+  "note": "Reviewed paper derivations. Scratch source PDFs and archive script are not copied."
+}

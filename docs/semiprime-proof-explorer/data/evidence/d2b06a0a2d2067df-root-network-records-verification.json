@@ -1,0 +1,173 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 8,
+    "declarations": 336,
+    "theorems": 184
+  },
+  "modules": {
+    "SemiprimeD1StackRootNetworkRecords": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRecords.lean",
+        "sha256": "b6246af428bd5135796345bc58db9861a7c36467054f51a3078187c2f04c39e8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRecords.olean",
+        "sha256": "531e13f303c7412b00054c8ebe5a1038363bb6e522a95614b13a443da937671b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-frozen/SemiprimeD1StackRootNetworkRecords.olean",
+        "sha256": "531e13f303c7412b00054c8ebe5a1038363bb6e522a95614b13a443da937671b"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRecordsPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsPrimitives.lean",
+        "sha256": "27716d454f7723b85e8fdafa35dd93a6bee594ba090f18142373c6b1ce57b328"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsPrimitives.olean",
+        "sha256": "5dcd70f4e40783d395f9011f9554223b2190474d2bd5857782683b6253a7c2a7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-frozen/SemiprimeD1StackRootNetworkRecordsPrimitives.olean",
+        "sha256": "5dcd70f4e40783d395f9011f9554223b2190474d2bd5857782683b6253a7c2a7"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRecordsAcquisition": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsAcquisition.lean",
+        "sha256": "43dd570d51d708e729acda38f1d7807c93f6ba34f05c19d37392c93104b4b85d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsAcquisition.olean",
+        "sha256": "bb270d0629ae4dda2d07ffc91c1314cc1589fe8e6f91e8d0fd518845d2870a1c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-frozen/SemiprimeD1StackRootNetworkRecordsAcquisition.olean",
+        "sha256": "bb270d0629ae4dda2d07ffc91c1314cc1589fe8e6f91e8d0fd518845d2870a1c"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRecordsJoin": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsJoin.lean",
+        "sha256": "24065bdaad17011a7b509ff0d8870566256ac9505500941cbe4043753dd4cbb3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsJoin.olean",
+        "sha256": "469b21b51c7d6491096e11c33b9f53340c7810201fc47a03d295f8b3b1b09ae7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-frozen/SemiprimeD1StackRootNetworkRecordsJoin.olean",
+        "sha256": "469b21b51c7d6491096e11c33b9f53340c7810201fc47a03d295f8b3b1b09ae7"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRecordsExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsExecution.lean",
+        "sha256": "ae8b2208f9ed27991863b2f215116e24f670e522fe929cbfcbc4dea8b476c582"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsExecution.olean",
+        "sha256": "c461b44e91647ed7be12cbfb341fc73d3efb1f64b4b2a960e9aa5130ba396707"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-frozen/SemiprimeD1StackRootNetworkRecordsExecution.olean",
+        "sha256": "c461b44e91647ed7be12cbfb341fc73d3efb1f64b4b2a960e9aa5130ba396707"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRecordsBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsBounds.lean",
+        "sha256": "12fdcace4184a711ac8716acb085497eafae8c5641795ba301724da391aee619"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsBounds.olean",
+        "sha256": "6d709e849ddd84acf34b46f6615f38325bb77f740e69e6dbdce610b76ae58226"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-frozen/SemiprimeD1StackRootNetworkRecordsBounds.olean",
+        "sha256": "6d709e849ddd84acf34b46f6615f38325bb77f740e69e6dbdce610b76ae58226"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRecordsResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsResources.lean",
+        "sha256": "5597c19c29b01c03acc3d6a731e61761acb4bfc78be6258760500ee42c98fa97"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsResources.olean",
+        "sha256": "0bb8cb0040775683b9be917dc18b2f7c9ff53a30a005839c825980a3604d6fd9"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-frozen/SemiprimeD1StackRootNetworkRecordsResources.olean",
+        "sha256": "0bb8cb0040775683b9be917dc18b2f7c9ff53a30a005839c825980a3604d6fd9"
+      }
+    },
+    "SemiprimeD1StackRootNetworkRecordsOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsOriginal.lean",
+        "sha256": "0df11c0ba4a0204f6bc85043534dc9dd7a268edaa3cd5a77b3555c410d6168ec"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootNetworkRecordsOriginal.olean",
+        "sha256": "0b7c0bf6c697fdf8b0f99e1b1296558164ae426f5c7c113addcddb4b6006c688"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-frozen/SemiprimeD1StackRootNetworkRecordsOriginal.olean",
+        "sha256": "0b7c0bf6c697fdf8b0f99e1b1296558164ae426f5c7c113addcddb4b6006c688"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "source_and_canonical_writers_stopped": true,
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 18707,
+    "files": 37414,
+    "before": "/tmp/semiprime-explicit-rate-20261027/root-network-records-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/root-network-records-dependencies/imported-pins-after.json"
+  },
+  "actual_controls": {
+    "status": "PASS",
+    "scope": "PREPARED JOIN ONLY; universal N-only and physical-prefix acquisition proved separately",
+    "cases": 5,
+    "actual_primitive_steps": 4028,
+    "all_roles": 1804,
+    "all_retained_source_roles": 1798,
+    "observer_constants": 28,
+    "source": "/tmp/semiprime-explicit-rate-20261027/RootNetworkRecordsControls.lean",
+    "source_sha256": "7ec1b2937adea21c9e768ad806002b5aee7f321e613264479b14dac81be89028",
+    "log": "/tmp/semiprime-explicit-rate-20261027/root-network-records-controls.log",
+    "log_sha256": "5b3b1a4f05f5f1c482dd73180990c30b314c27b30cd3a4dcefcf077a70508bb3",
+    "exact_clock_including_halt": "5*factorTapeBytes+9*ownerPayloadBytes+23",
+    "real_outer_returns": 2,
+    "padding_repeated_ports_internal_false_and_empty_rows_preserved": true
+  },
+  "independent_read_only_review": {
+    "status": "PASS_NO_LOGIC_BLOCKERS",
+    "reviewer": "/root/vertex_record_logger",
+    "path": "/tmp/semiprime-explicit-rate-20261027/root-network-records-independent-review.txt",
+    "sha256": "6bb2177d926d011c62ee774bde4672265a4c69304037db363de0141fc45bca54"
+  },
+  "scope": {
+    "runtime_roles": 1804,
+    "fixed_program_before_N": true,
+    "sole_standard_input": "canonical original binary N",
+    "prefix_entry": "actual binary N and physical prescription/tail bytes, both source banks initially empty",
+    "execution": "real owner344 +fullfactor1454 sources; paid copies N twice/prefix/two outputs; physical reverse/false-marker pop/reverse; actual halt",
+    "outputs": "exact records(TensorNetwork.vertices(RootStateResources.root N hN fixed)), owners before factors, for every original prefix including repeats/conflicts",
+    "source_cache_retention": "all1454factor/all344owner plus originalN/prefix",
+    "uniform_source_clock": "fixed coef,degree before all N; coef*(ell+1)^degree*2^(19*scopeBound ell); arbitrary physical prefix polynomial in n+prescriptionBytes+1",
+    "all_reached_storage": "all1804 data words +actual fixed-alphabet return cells <=1805*(inputBytes+own whole source bound)",
+    "genuine_initList_machine": true,
+    "whole_factoring_frontier": "recursive mode/packet/child/phase/recovery controller and public prefix search/factor decoding must still join under one whole actual clock"
+  },
+  "sealed_utc": "2026-10-28T17:45:05.161776+00:00"
+}

@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "scope": "tiny exact local algebra controls; not a full D.4 proof or factoring campaign",
+  "ring": "(Z/2^p)[u]/(u^2+u+1)",
+  "crossing_entry_checks": 288,
+  "contraction_fixtures": [
+    {
+      "t": 1,
+      "zeta": [
+        1,
+        0
+      ],
+      "precision": 6,
+      "active_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "modes": 10,
+      "mode_weight_tuples": 50,
+      "crossing_entry_checks": 8,
+      "direct": [
+        32,
+        0
+      ],
+      "children": [
+        32,
+        0
+      ],
+      "local_only": [
+        48,
+        0
+      ],
+      "forced": false
+    },
+    {
+      "t": 1,
+      "zeta": [
+        0,
+        1
+      ],
+      "precision": 6,
+      "active_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "modes": 10,
+      "mode_weight_tuples": 50,
+      "crossing_entry_checks": 8,
+      "direct": [
+        48,
+        16
+      ],
+      "children": [
+        48,
+        16
+      ],
+      "local_only": [
+        0,
+        0
+      ],
+      "forced": true
+    },
+    {
+      "t": -1,
+      "zeta": [
+        1,
+        1
+      ],
+      "precision": 6,
+      "active_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "modes": 10,
+      "mode_weight_tuples": 50,
+      "crossing_entry_checks": 8,
+      "direct": [
+        11,
+        26
+      ],
+      "children": [
+        11,
+        26
+      ],
+      "local_only": [
+        43,
+        58
+      ],
+      "forced": true
+    },
+    {
+      "t": 2,
+      "zeta": [
+        0,
+        1
+      ],
+      "precision": 6,
+      "active_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "modes": 4,
+      "mode_weight_tuples": 36,
+      "crossing_entry_checks": 8,
+      "direct": [
+        52,
+        62
+      ],
+      "children": [
+        52,
+        62
+      ],
+      "local_only": [
+        28,
+        6
+      ],
+      "forced": true
+    },
+    {
+      "t": 2,
+      "zeta": [
+        1,
+        0
+      ],
+      "precision": 6,
+      "active_slots": [
+        0,
+        1,
+        3
+      ],
+      "modes": 4,
+      "mode_weight_tuples": 18,
+      "crossing_entry_checks": 6,
+      "direct": [
+        42,
+        0
+      ],
+      "children": [
+        42,
+        0
+      ],
+      "local_only": [
+        2,
+        0
+      ],
+      "forced": true
+    },
+    {
+      "t": 2,
+      "zeta": [
+        0,
+        1
+      ],
+      "precision": 6,
+      "active_slots": [
+        0,
+        1
+      ],
+      "modes": 4,
+      "mode_weight_tuples": 6,
+      "crossing_entry_checks": 4,
+      "direct": [
+        41,
+        12
+      ],
+      "children": [
+        41,
+        12
+      ],
+      "local_only": [
+        1,
+        0
+      ],
+      "forced": true
+    }
+  ],
+  "creation_time_lift": {
+    "nonmultiplicative_example": [
+      7,
+      2,
+      6,
+      14
+    ],
+    "reduction_consistent": true
+  }
+}

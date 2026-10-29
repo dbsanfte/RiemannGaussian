@@ -1,0 +1,17 @@
+RiemannGaussian.SemiprimeRationalWordAcquisition 0 True
+RiemannGaussian.SemiprimeSourceWordAcquisition 0 True
+RiemannGaussian.SemiprimeNativeInputBits 0 True
+RiemannGaussian.SemiprimeCorrectedPortBits 0 True
+RiemannGaussian.SemiprimeCorrectedPortBitsBounds 0 True
+RiemannGaussian.SemiprimeNativeLocalBits 0 True
+RiemannGaussian.SemiprimeNativeGroupBits 0 True
+RiemannGaussian.SemiprimeNativeGroupBitsBudget 0 True
+RiemannGaussian.SemiprimeMaterializedGroupAdapter 0 True
+RiemannGaussian.SemiprimePrefixEntryWords 0 True
+RiemannGaussian.SemiprimeNativeBitsCounter 0 True
+RiemannGaussian.SemiprimeNativeBitsCounterBudget 0 True
+RiemannGaussian.SemiprimeNativeBitsSetupCounter 0 True
+RiemannGaussian.SemiprimeNativeBitsSetupBudget 0 True
+RiemannGaussian.SemiprimeNativeBitsPublicController 0 True
+RiemannGaussian.SemiprimeNativeBitsScheduledController 0 True
+{'complete': True, 'strict_pass': True, 'all_objects_match': True, 'dependency_snapshot_unchanged': True, 'count': 16, 'actual_compiler_imported_modules': 17613, 'resolved_sources': 17613, 'source_of_module_list': 'Lean environment header'}

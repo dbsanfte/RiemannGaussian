@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-26",
+  "primary_source": {
+    "title": "The Exponential Time Hypothesis Is False",
+    "author": "OpenAI",
+    "manuscript_date": "2026-10-17",
+    "revision_date": "2026-10-25",
+    "pages": 67,
+    "url": "https://github.com/openai/math/blob/main/preprints%2FThe-Exponential-Time-Hypothesis-is-False-October-25-2026%2Fpaper.pdf",
+    "raw_url": "https://raw.githubusercontent.com/openai/math/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+    "pdf_sha256": "5b1612dc2eebb2cad5b4cbe62d1fed2982f01ab1908c26f70010a651487e8123",
+    "extracted_text_sha256": "2d81f871c3d05d530ad9bd1651d6887d56796068913c23c95ceef97671c62a94",
+    "pdf_bytes": 887884,
+    "retrieval": "Raw PDF downloaded and read using pdftotext -layout. GitHub page checked with web tool.",
+    "certification": "Paper result treated as a dependency; full proof not independently certified."
+  },
+  "companion_primary_source": {
+    "title": "Integer multiplication in time O(n log n)",
+    "authors": [
+      "David Harvey",
+      "Joris van der Hoeven"
+    ],
+    "url": "https://annals.math.princeton.edu/2021/193-2/p04",
+    "year": 2021,
+    "role": "Bit-model comparison only; the new reduction uses direct finite Fourier identities and does not depend on this multiplication algorithm."
+  },
+  "reading_coverage": {
+    "root": "Theorems and mechanisms throughout Sections 1–6 and Appendices B–D; exact macro-FFT construction and complexity proof.",
+    "shared_summaries_reader": "Sections 3–5, followed by independent complete macro-FFT reduction audit.",
+    "tensor_reader": "Appendices B and D, degree-bound discrepancy and adversarial implicit-entry interface audit.",
+    "implications_reader": "Sections 1 and 6, Appendices A and C, and independent derivation of macro-FFT factoring implication."
+  },
+  "preceding_packet": {
+    "path": "docs/research-evidence/semiprime-wave-smoothing-20261026/README.md",
+    "sha256": "c99fd4f50f72b4478929c175f1e503a6044064f5a189c33975315fe7c5a2795a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "strict": true,
+  "root15": true,
+  "standard_axioms_only": true,
+  "declarations": 94,
+  "theorems": 50,
+  "isolated_byte_identical": true,
+  "smoke": "port-keys-smoke.log",
+  "files": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramPortKeys.lean",
+      "sha256": "a67c512ef76830b90c0c54ee35a2114e06fb2590cf858eb78415d3386263439f"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramPortKeys.olean",
+      "sha256": "835be0b1ef28a9badd0b971296b9cf93fcf72c84858fa02c8dc4d055ebb09ae1"
+    },
+    "isolated": {
+      "path": "/tmp/semiprime-histogram-acquisition-20261027/isolated/SemiprimeSourceHistogramPortKeys.olean",
+      "sha256": "835be0b1ef28a9badd0b971296b9cf93fcf72c84858fa02c8dc4d055ebb09ae1"
+    }
+  }
+}

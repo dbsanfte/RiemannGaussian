@@ -1,0 +1,25 @@
+# Independent review: topology-prefix.md
+
+26 October 2026. Read-only algebra/interface audit; no tests or repository edits. **PASS:** the executed cyclic/Cauchy hybrid preserves the original prefix predicate on its paid unit branch, and its remaining core numerator is accurately identified. No general no-go is inferred.
+
+The ordinary knot factor K(T)=u*T^-L*F(T) has only certified monomial/unit normalization at the physical clock. The product/resultant sign is (-1)^(Jm), as stated. Unit equivalence holds for EACH prefix. Under the original known globally-zero endpoint, a zero-only prefix predicate can locate a nonunit leaf: the first globally-zero prefix need not have a globally-zero LAST factor, but that factor must vanish at the previously missing prime. The proper-gcd/saturated original-leaf consumer covers both cases. Under only nonunit endpoint coverage, the stronger nonunit prefix predicate is required.
+
+For A_ell=T^ell-c, det F(U)=(-1)^(ell*J)*prod_a(v_a^ell-c); the unspecified unit sign is harmless. With c=1 the localized exponent ell*e_a is nonzero after the central literal screen and has O(log N) bits for the stated ell. A saturated branch pays T_ext, not polylogarithmic work. Over R, factor-aware polynomial Euclid classifies nonzero nonunits by proper gcd and trims globally-zero leading coefficients. On the unit-resultant branch it supplies the claimed inverse/action descriptor at soft(J+ell), without generic field pivots.
+
+The norm of Q_m(U) is likewise (-1)^(ell*m)*prod_i(z_i^ell-1), one geometric product in q^ell. With odd local beta order and eta²=q, ord(eta^ell)=ord(q^ell). A paid screen ord(q^ell)>16H therefore makes every z_i^ell-1 nonzero locally, since z_i=eta^(2i+1) and 0<2i+1<16H. This screen and any terminating extractor must retain their inherited whole-family soft-k cost; norm acquisition alone does not give Q_m's inverse action.
+
+At n=m<P,Q, A_n is etale. In a splitting algebra its internal differences and the physical short-clock differences are units, and z_i^n-1 unit excludes every cross equality. Thus the square Cauchy matrix is invertible there. Its displacement D_a*C-C*D_z=11^t and the telescoped polynomial displacement (4) have the printed signs and rank at most J. Extension or dense-matrix acquisition is correctly not counted as free.
+
+The canonical operator multiplication by Q_m*A_n^-1 modulo F has determinant Res(F,Q_m)/Res(F,A_n). The denominator is the screened cyclic scalar up to the known resultant sign. No F(z_i) is inverted, so the core preserves EXACT zero and nonunit bits through collisions. When native roots are separated, its diagonal entries Q_m(v_a)/(v_a^n-1) are correct. No identity between this canonical operator and every possible determinant-lemma core is asserted.
+
+Useful initialization precision: A_n modF can be acquired in soft J by binary modular powering of T, and its inverse modF on the certified unit branch is also soft J. This is different from the large m-coefficient inverse F^-1 modA_n. The unpaid part of the canonical core is specifically Q_m modF / the off-grid Q_m(v_a), not its A_n denominator. The report's claim is consistent with this distinction.
+
+A small ell-by-m Cauchy matrix is rectangular and cannot serve as an invertible full-clock basis change. Several auxiliary full root orbits do not cover the physical interval cheaply under the q^ell guard: different physical nodes have distinct ell-th powers, so one orbit contains at most one per prime. The defective arithmetic-q wrap retains its Pochhammer amplitude; rank one alone gives no scalar value. These are scoped checks of this hybrid, not lower bounds on all implicit core algorithms.
+
+The Bethe/moment interface is also accurately separated: small Hankel minors are subset sums; the full support determinant or its short dual retains Q_m(v_a). Normalizing the TQ pencil by its native F-diagonal block divides out the desired product. Neither its small epsilon core nor its cheap moment alphabet is currently an initialized action/determinant for the canonical quotient core with only a proved unit correction.
+
+Conclusion: this is a lawful finite pipeline conditional on acquiring the indicated core prefix bits. It exposes a concrete missing cross-norm, rather than proving that a bit algorithm must compute every norm value. Its local/global, prefix, endpoint, and nonzero-annihilator scopes are correct.
+
+## Own coverage-selector audit
+
+Re-read coverage-selector.md for ambiguity. Its new Section 5 is a SUFFICIENT consumer only: the residue readout is not acquired, uniqueness is not imported, and all literal h=Cb incidences are omitted directly. The all-b AP subquery costs soft k because V*(W/k+1)=O(k²), independent of any order of q^k. Its remaining T_ext is charged once. I clarified that the hypothetical readout must itself fit soft k to establish a soft-k hybrid, and that the cited cubic/explicit-support bounds are executed-method costs, not lower bounds on every implicit composition. No mathematical correction to the consumer was needed.

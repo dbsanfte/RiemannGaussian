@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byteequal": true,
+  "declarations": 95,
+  "theorems": 69,
+  "modules": [
+    {
+      "module": "SemiprimeSourceScoreWeightBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreWeightBits.lean",
+      "source_sha256": "e73d991eb36e6ec67a1ba75f2b16ca570002803127cd9d969c8e6f3d6f96a125",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreWeightBits.olean",
+      "object_sha256": "9423e2f09800fac74ff2d620df88fbf4b4f8db7a109c9f15be752e93ab2c4c1c",
+      "isolated": "/tmp/semiprime-score-count-20261027/weight-isolated/SemiprimeSourceScoreWeightBits.olean",
+      "isolated_sha256": "9423e2f09800fac74ff2d620df88fbf4b4f8db7a109c9f15be752e93ab2c4c1c"
+    },
+    {
+      "module": "SemiprimeSourceScoreWeightAcquisition",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreWeightAcquisition.lean",
+      "source_sha256": "0caae3a13d9ab89ecf1641aa239f27fc8b65adef6964b4210a468f388e679c02",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreWeightAcquisition.olean",
+      "object_sha256": "338342221ec97016b28675f9cd32ff0382ef7545e555924e40930382cc409c39",
+      "isolated": "/tmp/semiprime-score-count-20261027/weight-isolated/SemiprimeSourceScoreWeightAcquisition.olean",
+      "isolated_sha256": "338342221ec97016b28675f9cd32ff0382ef7545e555924e40930382cc409c39"
+    }
+  ]
+}

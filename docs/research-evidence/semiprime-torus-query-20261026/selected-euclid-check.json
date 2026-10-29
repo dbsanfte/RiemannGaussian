@@ -1,0 +1,1 @@
+{"symbolic_hit_remainder": "(s-r)(s-r^2)*(X-1)", "symbolic_checks": 2, "empty_block_integer_example": {"clock": [1, 2, 4], "rows": [6, 7], "A": 50, "B": -260, "resultant": 3600}, "scope": "formal identity and empty-gating diagnostic only; no native counterexample"}

@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "goal": "ACTIVE",
+  "slice": "PHYSICAL_INTEGER_COUNT_SCORE_AND_ORIGINAL_LABEL_PRODUCER",
+  "complete_Lean_whole_program_bit_clock": "OPEN",
+  "new_controller_public_report_subpower": "PREVIOUSLY_PROVED_ACTUAL_RETAINED_REPORT",
+  "actual_original_count_identity": "PROVED_ALL_PREFIXES_NO_COUNT_ADVICE",
+  "scheduled_score_cancellation": "PROVED_POSITIVE_AFFINE_ORDER_AND_TIES",
+  "physical_terminal_count_padding_weight_pipeline": "PROVED_CONCRETE_ORIGINAL_INPUTS",
+  "original_score_acquisition_and_labels": "PROVED_PHYSICAL_DATA_NATIVE_METADATA",
+  "original_score_producer_compiler": "PROVED_STATED_HOST_METADATA_SCOPE",
+  "original_source_descriptor_acquisition": "PROVED_EXECUTED_NATIVE_INDEX_SCANS",
+  "new_search_rational_scales_offset_and_GCD_arithmetic": "ELIMINATED_FROM_RUNTIME",
+  "actual_original_family_report": "PROVED_UNIFORM_FIXED_POLYNOMIAL_ORIGINAL_RESOURCES",
+  "physical_candidate_word_ID_bank": "OPEN_COMPLETE_CALLER_ADAPTER",
+  "source_Nat_Word_descriptor_label_metadata_bit_refinement": "OPEN",
+  "original_parity_prescription_AST_construction_bit_refinement": "OPEN",
+  "source_cache_packing_pullback_public_composition": "OPEN",
+  "primitive_internal_report_erasure": "OPEN",
+  "complete_auxiliary_heap_and_pointer_encoding": "OPEN",
+  "source_all_reachable_machine_state": "OPEN",
+  "full_bit_simulation_join": "OPEN",
+  "new_simulator_functions": true,
+  "existing_public_caller_changed": false,
+  "whole_program_machine_rate_claimed": false,
+  "new_native_long_query_bound": false,
+  "subexponential_storage_allowed": true,
+  "practical_speedup_claimed": false,
+  "commit_or_push": false,
+  "module_count": 20,
+  "generated_declarations": 652,
+  "theorem_constants": 423,
+  "strict_options": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "ordinary_root_import": true,
+  "scoped_linters_per_module": 15,
+  "all_generated_transitive_standard_axioms_only": true,
+  "isolated_objects_identical": true,
+  "dependency_checkpoint_unchanged": true,
+  "actual_compiler_imported_modules": 17628,
+  "dependency_list_provenance": "Lean environment header; no source-text import scanner",
+  "preserved_prior_files": 3353,
+  "preserved_concurrent_files": 24,
+  "preserved_append_only_prefixes": 2,
+  "modules": {
+    "SemiprimeSourceScoreCounts": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCounts.lean",
+      "source_sha256": "f32288b044bc95aac07a67ac5e052d6b20f75250186426c94fc05487ce3ed002",
+      "object_sha256": "ee505831d1cd62db61b782e758b77ed6364f7bb8fb026684517c548f6c1d415f",
+      "declarations": 45,
+      "theorem_constants": 29
+    },
+    "SemiprimeSourceScoreCountsPadding": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCountsPadding.lean",
+      "source_sha256": "6a4d298ff39ce64ce56344ca99d6568711d45824e26d9d7b19c60c71a010b461",
+      "object_sha256": "66a831cc4865a5be80e61b35b264221674bcfde29fff01215aac3de421eaa7d1",
+      "declarations": 26,
+      "theorem_constants": 19
+    },
+    "SemiprimeSourceScoreCountsObjective": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCountsObjective.lean",
+      "source_sha256": "fd28593dfa1a3de5d2669748b8ae4178f57619fe1b3b953d398c2fc26f8840c8",
+      "object_sha256": "3184063ba6dbfb2225ea636f3403a674d41d431163151dc8de84d97c96812521",
+      "declarations": 44,
+      "theorem_constants": 21
+    },
+    "SemiprimeSourceScoreCountsBounds": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCountsBounds.lean",
+      "source_sha256": "cfe9327d36171a4c9057fb73657cd79c054921edccb90f6074db107d783d236c",
+      "object_sha256": "f846cef6637c106697e9b4742c584250bc350ec8eb0fd4ef6671434eae92fc24",
+      "declarations": 22,
+      "theorem_constants": 19
+    },
+    "SemiprimeSourceScoreCancellation": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCancellation.lean",
+      "source_sha256": "ddfe3ce83558c0e85e23967aa47af08ae5e7398a0c686d3f5ab85bbab2522fc7",
+      "object_sha256": "399188e028c3da6f596823e71253f75a1b6affc37510a83a9c9c04e6b3514cd0",
+      "declarations": 11,
+      "theorem_constants": 8
+    },
+    "SemiprimeSourceChoiceOrder": {
+      "source": "RiemannGaussian/SemiprimeSourceChoiceOrder.lean",
+      "source_sha256": "ce650a3c1f9e9fdd454aa8873b97bdf1414386586cf755b70717c4a8223b439e",
+      "object_sha256": "a6a396fdecd11cf4221f2003b1cf52ffd43393f596b91de073f516f06d791645",
+      "declarations": 3,
+      "theorem_constants": 3
+    },
+    "SemiprimeSourceScoreChoice": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreChoice.lean",
+      "source_sha256": "11ca32b5625583c939c14b50239e762fff4bdde09043f8b9f06b28c032f5ea8a",
+      "object_sha256": "006176af59621aaf1afcb546787bcfc70fa6dd015cc5bef915d720625aae4f45",
+      "declarations": 28,
+      "theorem_constants": 16
+    },
+    "SemiprimeSourceScoreCountOrder": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCountOrder.lean",
+      "source_sha256": "164a564f8fad899c43cad64e5814c6c514d1902872a0fd3c7f54d5d45340d788",
+      "object_sha256": "926d6024569d8bda562c26df54dfcb1e3c2997169d7e7399a594fdfc535f56ef",
+      "declarations": 5,
+      "theorem_constants": 4
+    },
+    "SemiprimeSourceScoreWeightBits": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreWeightBits.lean",
+      "source_sha256": "e73d991eb36e6ec67a1ba75f2b16ca570002803127cd9d969c8e6f3d6f96a125",
+      "object_sha256": "9423e2f09800fac74ff2d620df88fbf4b4f8db7a109c9f15be752e93ab2c4c1c",
+      "declarations": 51,
+      "theorem_constants": 30
+    },
+    "SemiprimeSourceScoreWeightAcquisition": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreWeightAcquisition.lean",
+      "source_sha256": "0caae3a13d9ab89ecf1641aa239f27fc8b65adef6964b4210a468f388e679c02",
+      "object_sha256": "338342221ec97016b28675f9cd32ff0382ef7545e555924e40930382cc409c39",
+      "declarations": 44,
+      "theorem_constants": 39
+    },
+    "SemiprimeSourceScorePredicateBits": {
+      "source": "RiemannGaussian/SemiprimeSourceScorePredicateBits.lean",
+      "source_sha256": "f937dfbbef80e0cda78a45e9ca3e8baa1562005a0219589f3e72bf98519b4ea1",
+      "object_sha256": "a6f2d2dfbfc5f775d1dd57ea54f2079b8b1fd3bfeddb1ab6bbc2217e85cdfabe",
+      "declarations": 112,
+      "theorem_constants": 55
+    },
+    "SemiprimeSourceScorePredicateBitsBounds": {
+      "source": "RiemannGaussian/SemiprimeSourceScorePredicateBitsBounds.lean",
+      "source_sha256": "ce05b2f9f9077a188388a67ee06113fa9d516230249725d1aeec728719ffea86",
+      "object_sha256": "64bc39280a27a29414c845ee846b8dfa48a6dfe8db4b50fa7299a920a61f9719",
+      "declarations": 79,
+      "theorem_constants": 65
+    },
+    "SemiprimeSourceScoreCountBitsCore": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCountBitsCore.lean",
+      "source_sha256": "5465dc594fee0a1d13ffdf44609284efe2e8e1afee027bc31186ded08765337e",
+      "object_sha256": "c5250bc855a84e21ee7198ae39bfbf014093b1f13775df5df89d56345a7ca1ca",
+      "declarations": 35,
+      "theorem_constants": 22
+    },
+    "SemiprimeSourceScoreCountBits": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCountBits.lean",
+      "source_sha256": "d88dd0c6f2c739911287920d32dd5a455e04bd4990a8c5b4701473672294aba3",
+      "object_sha256": "c23f9be0d195fb23d729eb4c9b8ac7cada02edde0fa15f9f418309ae32b1ac39",
+      "declarations": 47,
+      "theorem_constants": 21
+    },
+    "SemiprimeSourceScoreCountBitsBudget": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCountBitsBudget.lean",
+      "source_sha256": "7c357f0c561707f1e272647ac6df884be542e2c6aa8023913a0fedcab84b1662",
+      "object_sha256": "ff0dcb72e009560f2feefd722d6992c1bf769a1c58fa22d5be0f13ed50ee4231",
+      "declarations": 22,
+      "theorem_constants": 11
+    },
+    "SemiprimeSourceScoreCountBitsBounds": {
+      "source": "RiemannGaussian/SemiprimeSourceScoreCountBitsBounds.lean",
+      "source_sha256": "806faae650379157dd6c4e958538475f22adf7fd30321abe6960fb346efd89c1",
+      "object_sha256": "809a12da8c5ee1a6082236e2ce650c1d2269889d0657d9d4e15bb68d1e30a512",
+      "declarations": 49,
+      "theorem_constants": 42
+    },
+    "SemiprimeSourceScorePhysicalSearch": {
+      "source": "RiemannGaussian/SemiprimeSourceScorePhysicalSearch.lean",
+      "source_sha256": "86686122e36f780bf396d4c8cbf28c05574cf774de682dc6db5370841e8f0669",
+      "object_sha256": "fbaac4a332bf7cf883d64ee6100cab731498edfd5dd971e420f49e9c47f0b333",
+      "declarations": 6,
+      "theorem_constants": 4
+    },
+    "SemiprimeSourceScorePhysicalCaller": {
+      "source": "RiemannGaussian/SemiprimeSourceScorePhysicalCaller.lean",
+      "source_sha256": "2c54e4cc5fbcadc8ec2a82030c71f4dca2fa0fc14ce8f707acb5f46781d4a630",
+      "object_sha256": "4d71c3e1c9b0fbb77803cbc1ec35a5ff4c6b1a921e1dd0e4bddbc4afff303b34",
+      "declarations": 8,
+      "theorem_constants": 5
+    },
+    "SemiprimeSourceScorePhysicalBudget": {
+      "source": "RiemannGaussian/SemiprimeSourceScorePhysicalBudget.lean",
+      "source_sha256": "56d8b77eca88ddf2b49ed34e3b8ad30288fd3a2cedc005e419210293ceb32b85",
+      "object_sha256": "311bb9cf37e17555985cab232c12621c5142923476fc9fe58977e1c2c5f8df87",
+      "declarations": 7,
+      "theorem_constants": 3
+    },
+    "SemiprimeSourceScorePhysicalResources": {
+      "source": "RiemannGaussian/SemiprimeSourceScorePhysicalResources.lean",
+      "source_sha256": "bc8feacb04b70be5a47216ed5160ca374d382ec69755d7d7ce0d9a0a0943bb80",
+      "object_sha256": "61381df2969310cda1735754d7db9fb1c74bae1e2f9a1f1042c54f94a32bd721",
+      "declarations": 8,
+      "theorem_constants": 7
+    }
+  }
+}

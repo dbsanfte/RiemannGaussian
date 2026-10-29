@@ -1,0 +1,37 @@
+# Independent review: supergroup-product.md
+
+26 October 2026. Verdict: the quoted Alexander specializations and their distinction between one/equal/distinct arguments are correct. No substantive theorem correction is needed. Native variable conventions are now consistent with the ordinary Seifert Alexander polynomial. The exact independent-mode tensor construction supplies no new scalar complexity bound.
+
+## Primary checks
+
+* De Wit–Ishii–Links, AGT 5 (2005), Theorems 4.2–4.3, printed pp.413–414: https://msp.org/agt/2005/5-1/agt-v5-n1-p18-p.pdf . Their rank label is m rather than the report's n. Theorem 4.3 really permits every integer r with gcd(r,n)=1; there is no additional r-odd hypothesis to insert. It gives LG^(n,1)(tau,exp(pi*i*r/n))=Delta(tau^(2n)), one Alexander evaluation. Its skein proof uses coefficient tau^n−tau^(−n), confirming the ordinary Alexander variable tau^(2n).
+* Kohli–Patureau-Mirand, arXiv:1606.02538v1, Theorem 4.1 and Propositions 4.2–4.4, printed pp.10–12: https://arxiv.org/pdf/1606.02538 . The theorem gives Delta(tau²)^n. Proposition 4.2 identifies every factor with the same V_(q_aux^(−alpha)); all k_i² act by the same a². The proof explicitly aligns pivots and twist-rescaled braidings and concludes d=c^n after the reduced partial trace. Therefore the report is right not to infer independent mode arguments from this minimal module.
+* Garoufalidis–Harper–Kashaev–Kohli–Wagner, author PDF dated 10 September 2025, Theorem 1.3: https://guests.mpim-bonn.mpg.de/stavros/publications/colored-LG-polynomial.pdf . The formula LG^(n)(q_aux^alpha,1)=Delta(q_aux^(2alpha))² is independent of n; its representations have dimension 4n. Keeping x=q_aux^alpha as a formal independent variable before specializing q_aux=1 is essential and correctly stated. The cabling theorem is a sum with multiplicities and modified-dimension ratios, not an independent-argument product.
+
+These are specialized reduced invariants, with framing conventions already normalized in their definitions/proofs. Applying their Alexander right sides is a polynomial-specialization use. It does not license inversion of a vanishing generic modified dimension or imply the generic auxiliary representation matrices are numerically regular over R.
+
+## Native conventions, finite arithmetic and cost
+
+For the ordinary reciprocal Seifert polynomial K(T), the equal-argument theorem requires tau²=T. The choice tau=s0^(2i+1), s0²=eta, gives exactly T=eta^(2i+1), as written. Reciprocity handles inverse-T conventions. The new colored theorem uses x²=T in the same way. In any direct Laurent evaluation tau must be a unit; the native choices satisfy that requirement.
+
+For n≥1, K(T)^n has the same unit/nonunit status as K(T). Its zero status is also identical over the actual squarefree R=Z/NZ. That last implication would need qualification over a ring with nilpotents, but this task has none. It still supplies only one argument's predicate. Binary exponentiation and Horner evaluation justify softly O(L+log n) at an acquired native T, including its inexpensive exponent initialization. No auxiliary cyclotomic algebra or 2^n-state expansion is needed to use the specialized scalar right sides.
+
+The independently parameterized tensor construction is exact for a **cut knot tangle**: tensor its normalized Alexander functors and partial closures, reorder factors, and multiply the resulting scalar endomorphisms. This proves the displayed product without relying on typical-module irreducibility at finite-ring specializations. Equivalently the integral Seifert scalar evaluation proves it and retains collisions. It must not be reinterpreted as a theorem about a one-color arbitrary link or a multiplicative satellite evaluation on the annular skein. The report keeps these distinctions.
+
+The acquired K is naturally a Laurent polynomial supported in [−L,L]; T^L K(T) is the degree-2L reciprocal polynomial. This minor terminology clarification leaves all quoted costs unchanged. Explicitly listing m arguments costs O(m), and the known compressed geometric-product query costs softly O(L+sqrt(Lm)). Neither the tensor identity nor the binary descriptor computes that scalar at a better rate. No denominator depending on a collision value is introduced by this implementation.
+
+## Extra variables and one narrowly actionable construction
+
+Remark 4.5 in Kohli–Patureau-Mirand is accurately scoped: its q_1,...,q_c label **link components**, and the extension at auxiliary −1 is stated as a proof that “should adapt,” not as their Theorem 4.1. The displayed normalization product must not be divided after specialization without unit certification. Converting component colors into one knotted cable would require its own satellite and boundary calculation.
+
+Kashaev–Mangazeev, arXiv:2505.15569v1 §5, equations (34)–(36), explicitly uses phi_t(f_E)=t^|E|, and its LG identification is conjectural: https://arxiv.org/html/2505.15569v1 . The report accurately attributes only the one-common-parameter formula to that paper.
+
+**Correction to the proposed generic diagonal extension.** The multigraded map phi_vec(f_E)=(product_(j in E)t_j)f_E preserves multiplication, coproduct, and simultaneous braiding commutation. This is insufficient for a morphism in the ambient braided category used by the GK/KM construction. Separate naturality is also required. In the KM Hecke two-generator case it forces (1−p)(t_1−t_2)=0. Direct substitution into the general action formula otherwise produces an invertible formal operator which fails YB: its input (0,1,2) to output (0,0,3) defect is p*t_2²*(p−1)*(t_1−t_2). See the corrected `two-mode-deformation.md` §6 for the explicit short-path calculation. The earlier assertion that the generic diagonal map supplied an admissible braided Hopf automorphism is withdrawn.
+
+The p=1 ordinary super exterior construction remains lawful and gives the independent Alexander tensor product already proved in the source report. The distinct diagonal Nichols construction in `coupled-parameters.md` has no Hecke exchange term, so its separate naturality and finite resonance are a different question and are not invalidated by this defect. Neither surviving construction has an acquired faster scalar contraction here.
+
+No further literature result inspected supplies independent Alexander arguments inside the published minimal LG module while preserving a proved cheap scalar algorithm. The report's conclusion—exact encoding available, acquisition unpaid—is mathematically sound, with the above source/specialization boundaries retained. No numerical campaign or repository changes.
+
+## Latest colored-LG version check
+
+Also checked arXiv:2509.10911v3, dated **17 December 2025**, rather than only the September author PDF: https://arxiv.org/html/2509.10911v3 . The relevant numbering and conclusions are unchanged: Theorem 1.1 is the parallel/cabling sum (equations (1)–(3)); Theorem 1.2 is the modified-trace categorical decomposition; Theorem 1.3, equation (8), still gives LG^(n)(x,1)=Delta(x²)² for every n≥1. Its introductory module indexing remains V(n,alpha) of dimension 4(n+1), hence LG^(n) has dimension 4n. The text emphasizes 0-framed parallels and explicitly records the modified-dimension ratios. No new independently adjustable Alexander mode arguments or geometric-prefix contraction appears in this version. Update source metadata to cite v3 when archiving; no substantive conclusion in the report changes.

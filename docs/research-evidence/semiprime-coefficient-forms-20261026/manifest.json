@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8005,
+      "sha256": "2537154926cd99b7a879afa0744b5618ed9059ce973d849c63186d09f082c007"
+    },
+    {
+      "path": "combinatorial-expressions.md",
+      "bytes": 13545,
+      "sha256": "7b764935b5e1a874fa10eea2160eefface047735bef523bd69a5ea28b2517503"
+    },
+    {
+      "path": "residue-expressions.md",
+      "bytes": 10950,
+      "sha256": "32516600ec513888e205a20d0c966f55906df1eca927ac64bf6ced9ddc8a825c"
+    },
+    {
+      "path": "review-expressions.md",
+      "bytes": 5738,
+      "sha256": "bc530d630c42b32d1eff51903c1c9934653c444411dc867a90e6966fd0e0f5ea"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2055,
+      "sha256": "ba4fc3abd4318e4d5f3853e51986890b08230bff8c3e377abe24599ed3713e6f"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 4086,
+      "sha256": "e8fced3d6cbb4809b3a47452d4e4967fabf7b071f4439146e170400412b5bed7"
+    },
+    {
+      "path": "structured-expressions.md",
+      "bytes": 10901,
+      "sha256": "bf2ca79bcc8360d016ebddd8f7650761e1caa5f96857ffef8c52493c9d4bce60"
+    }
+  ],
+  "manifest_excludes_self": true
+}

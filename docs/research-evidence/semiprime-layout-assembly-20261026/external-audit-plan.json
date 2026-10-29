@@ -1,0 +1,29 @@
+{
+  "runner_sha256": "c73108a003ab0235c54069d982ce542c28f31996cfbd08ba23523eba33d49786",
+  "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "target": "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.Final",
+  "source_modules": 2569,
+  "comparator_config": {
+    "challenge_module": "ComparatorChallenges.SubexponentialSAT",
+    "solution_module": "OAI.Algorithms.SubexponentialSAT.Main",
+    "theorem_names": [
+      "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+    ],
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "enable_nanoda": false
+  },
+  "generated": {
+    "ExternalEveryDeclaration.lean": "4184475543f9df804252c62f780d6aa0e20ba8145312cc1a56cb76e4e02e596b",
+    "ExternalComparatorEndpoint.lean": "866a9ec213f47ea17acbbd06408908cdc42f203298fc1dfe56bd799b7bf5f25b"
+  },
+  "snapshot": {
+    "status": "complete",
+    "completed": 2569,
+    "failed": 0
+  }
+}

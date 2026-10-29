@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "SemiprimeSourceHeadCountBits",
+      "declarations": 7,
+      "theorem_constants": 6,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHeadCountBits.lean",
+      "source_sha256": "9ab9f09b31468e4e77244e10f75538731c7c42e67f33bd7ca7cf7f5eb7e7a3a3",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHeadCountBits.olean",
+      "object_sha256": "f1c2deb28ea88cc7c3dc1a294ff2d39e3d949166273b2ed4cd22fb0d6a81cd22",
+      "isolated": "/tmp/semiprime-constraint-count-20261027/head-isolated/SemiprimeSourceHeadCountBits.olean",
+      "isolated_sha256": "f1c2deb28ea88cc7c3dc1a294ff2d39e3d949166273b2ed4cd22fb0d6a81cd22",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "isolated_byteequal": true
+    },
+    {
+      "module": "SemiprimeSourceHeadCountBitsBounds",
+      "declarations": 14,
+      "theorem_constants": 13,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHeadCountBitsBounds.lean",
+      "source_sha256": "e279d65a076eeb13a742f1cd752c53acf245b32278c42164d18022f92891e255",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHeadCountBitsBounds.olean",
+      "object_sha256": "5f881a8605453b087f59424f89351b29c21737cf264f5d547be1959c8718c722",
+      "isolated": "/tmp/semiprime-constraint-count-20261027/head-isolated/SemiprimeSourceHeadCountBitsBounds.olean",
+      "isolated_sha256": "5f881a8605453b087f59424f89351b29c21737cf264f5d547be1959c8718c722",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "isolated_byteequal": true
+    }
+  ],
+  "declarations": 21,
+  "theorem_constants": 19
+}

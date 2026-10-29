@@ -1,0 +1,12 @@
+'RiemannGaussian.SemiprimeCounterFiltration.filtered_correctedProduct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterFiltration.correctedProduct_taylor_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterFiltration.filtered_evaluate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCounterFiltration.filtered_inputPort' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

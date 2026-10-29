@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+    "env",
+    "lean",
+    "-DwarningAsError=true",
+    "RiemannGaussian.lean"
+  ],
+  "exitCode": 134,
+  "maxMapCount": 65530,
+  "peak": {
+    "mapCount": 65532,
+    "pid": "886219",
+    "status": [
+      "VmSize:\t18237392 kB",
+      "VmRSS:\t 3154912 kB",
+      "VmData:\t17914900 kB",
+      "Threads:\t5"
+    ],
+    "observedAt": "2026-10-29T17:57:31.461130+00:00",
+    "availableMemory": [
+      "MemAvailable:   50723776 kB"
+    ]
+  }
+}

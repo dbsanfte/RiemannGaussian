@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "scope": "adapter and exact small diagnostic counter; no factoring benchmark",
+  "tests": [
+    {
+      "test": "actual_compiler_input_coverage_and_same_scope_prefix",
+      "coverage": {
+        "public_bits_per_operand": 7,
+        "covered": true,
+        "policy": "frozen designated original endpoint restriction"
+      },
+      "edges": 7118,
+      "supplied_witness_only": true
+    },
+    {
+      "test": "production_guard_before_layout_explicit_trial_fallback",
+      "result": {
+        "N": 91,
+        "network": {
+          "n": 7118,
+          "M": 14236,
+          "B": 2,
+          "w": 136
+        },
+        "input_coverage": {
+          "public_bits_per_operand": 7,
+          "covered": true,
+          "policy": "frozen designated original endpoint restriction"
+        },
+        "guard": {
+          "accepted": false,
+          "reasons": [
+            "schedule range"
+          ]
+        },
+        "status": "factored",
+        "factors": [
+          7,
+          13
+        ],
+        "method": "explicit_invalid_guard_trial_division",
+        "count_queries": 0
+      }
+    },
+    {
+      "test": "diagnostic_actual_counter_prefix_recovery",
+      "factors": [
+        2,
+        3
+      ],
+      "queries": 4,
+      "same_layout_reused": true,
+      "not_a_production_guard_fixture": true
+    },
+    {
+      "test": "synthetic_guard_resource_exit_no_counter_no_result",
+      "result": {
+        "N": 91,
+        "network": {
+          "n": 7118,
+          "M": 14236,
+          "B": 2,
+          "w": 136
+        },
+        "input_coverage": {
+          "public_bits_per_operand": 7,
+          "covered": true,
+          "policy": "frozen designated original endpoint restriction"
+        },
+        "guard": {
+          "accepted": true,
+          "synthetic_control_only": true
+        },
+        "status": "resource_limit_no_result",
+        "factors": null,
+        "count_queries": 0,
+        "method": "no_counter_or_trial_division_executed",
+        "reason": "test explicit cap"
+      }
+    }
+  ]
+}

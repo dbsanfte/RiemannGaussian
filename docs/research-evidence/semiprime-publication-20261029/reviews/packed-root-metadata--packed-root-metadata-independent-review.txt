@@ -1,0 +1,27 @@
+Independent read-only source logic review: PASS; no blocker found.
+Reviewer /root/owner_routing_resume; 2026-10-29T00:45:52.551857+00:00
+Reviewed all8 current Core/Encoding/Primitives/Calls/Loop/Execution/Storage/Original. No Lean imports/builds/canonical writes/source edits/control reruns.
+
+Runtime: ONE fixed13-role program starts with original binaryN ONLY. Four Bootstrap roles, four allocated Adder roles and Aux5 all remain counted. The real adderLEFT aliases Aux.precision, so the separately allocated Adder.left shadow stays EMPTY and is not silently removed. Every label/copy site is fixed finite; no ell, precision, base, decoded count, result or clock is a runtime operand. NumericN and the running precision remain BINARY; only bit-count markers are visited.
+
+Actual acquisition: one real BinaryBootstrap.scan=false call restores exact original bits and obtains its actual width markers, including padded/zero/empty raw inputs. Source then pushes literal baseONE and performs a real preserving width copy. Each actual marker pop triggers exactly one baseFALSE push, TWO templateFALSE pushes, actual right operand construction [false,true]=binaryTWO, ONE real whole Adder call, actual restoring sum copy and actual sum drain before the next marker. Actual EOF drives the final halt. No list-length/getter, add/shift result or fake native evaluator instruction appears.
+
+Bank/returns: Work/loop views describe actual physical words only. add_call's DataRel covers the alias precision, all mapped Adder words and the unused left shadow; the ENTIRE Bootstrap bank and every other Aux word are retained. Real primitive copies restore scratch; actual consumed precision is replaced only by real copied sum; all helper/shadow words are empty at every completed loop boundary. Genuine calls/ret steps are included in boot_call/addTime/copy/drain clocks. source_run and ready_run are SAMEprogram entries; ready begins at the exact real B.done boundary and does not reacquire width or accept an advised counter.
+
+Values: precisionWord is an actual repeated addBits trace specification, with value2*n and physical length<=3*n. baseWord is exactlynFALSE followed byTRUE, so value2^n and lengthn+1. Template is exactly2*nFALSE cells (a width template; not claimed to be a TRUE unary context-width cache). The original compact-length theorem, not a supplied ell, identifies n=bitLength(bitValue bits). This handles canonical zero[] as well; positive semiprimes need no exceptional source behavior.
+
+Own clock: stepTime sums actual pop/push/add/copy/drain steps; stepTime_le and loopTime_le bound this actual executed marker loop, not a legacy report. readyBound charges literal seed, width copy, WHOLE loop and final halt; runBound additionally charges ONE actual Bootstrap call. Source and cache-ready entries share fixed1000*(physicalInputBytes+1)^2 from SAME traces, with no transported native runtime.
+
+All prefixes/initList: input_single proves original binaryN is the only initialized operand. initial_eq is a true Turing.initList equality for the actual compiled machine. Storage bounds every one of13 data roles plus the actual none-labelled return stack; halt determinism controls all successful prefix fuel, then real run_data_bound/run_frame_bound and word_sum yield100000*(bytes+1)^2. Both source and actual-ready prefixes are covered, including the displaced Adder.left shadow and all actual inner returns. machine_cells_at/run_correct and machineOriginal give genuine compiled certificates.
+
+Original scope: retained_N/retained_bootstrap retain literal supplied bits and ALL4 stopped Bootstrap words. Compact input discharges exactly original precision2ell, B=2^ell and actual2ellFALSE template in the SAME bounded execution. This does NOT install a new old/new JetContext cache, assert a generic-ready arbitrary cache without real bootstrap lineage, or complete any scalar contraction/root/counter/factorer join. Those remain explicit OPEN. Owner strict/Root15/allgeneratedStd3/independentbytes/headerpins/controls/final release remain separate obligations.
+
+CURRENT reviewed source SHA256 pins:
+ade47f673e5daefaf1ccab000036ef67839a8ae3b737a78581bec1e57efd1f47  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadata.lean
+ea33835d0d4910f623e2dddd7a95bf32ecb24e32d05154b336f06d479bfc6367  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataEncoding.lean
+2760477777c63e2886eecd8be755256ce5af3f0f2f301423731b4b4dee7dd848  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataPrimitives.lean
+e4ff163c8faca3e7083b58b28efae2275d6595fed8bbc59ec23ebf7bd7c287d2  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataCalls.lean
+1fa8522f6fb579e1e43c47d0045157cdc31cdbb1a2406dc3f492c25bca1ebb1a  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataLoop.lean
+4825933a3a0b8585d5bbc4aa5b5e0b30039fc5207660dc077bca5b16833ab142  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataExecution.lean
+f56ba642e316e7d77242f9d6c164238ff074a67c37716342742bf2a057964f06  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataStorage.lean
+de4a869cc74fda2cdc8f0436479a07a807d9cb2b149eaeda18f43fe959a86476  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataOriginal.lean

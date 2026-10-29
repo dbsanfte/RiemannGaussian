@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "c9162067ce905b1da19504b1bda10b753c5ee794cd1e4e70e0a37b3df1429d65"
+    },
+    {
+      "path": "even-recurrence.md",
+      "sha256": "484a72a77e99582b5fb6e68f4f4de331300c9e5d83c9511ebd58e2fd9be44f10"
+    },
+    {
+      "path": "partial-order-supplier.md",
+      "sha256": "3f4af9ad6b28a215473fca9964d51cfa32cd41bb0ace1145a4ba576f162b94ff"
+    },
+    {
+      "path": "polar-reciprocity.md",
+      "sha256": "f6e6e03cbbcd0efd33524ffdc0fc12a942b89a20cb2f4ff7c233560897847a89"
+    },
+    {
+      "path": "review-even-recurrence.md",
+      "sha256": "832b686af8caaf6a16f3ad713bf8b547990ffaea165de464353ac02e622f166c"
+    },
+    {
+      "path": "review-polar-reciprocity.md",
+      "sha256": "c5e9b2cdf761338a54ce8df2b3ec28f1815f5aad7eea776bfc2671c2a39a6240"
+    },
+    {
+      "path": "review-torus-transfer.md",
+      "sha256": "9d3cdbb257f0212a8f3f6d6b50a7f27f7b5b222dd3379a63ced1760b7564561f"
+    },
+    {
+      "path": "review.json",
+      "sha256": "fe8c7e7943c1b13dec34c30ec76d71182f87b1ccab996b2d9b420c65173d4ca1"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "7a7e1fb1d6a5c4c52bcd496b8203aa025c457475661d7d5bb086ef1b145630ab"
+    }
+  ]
+}

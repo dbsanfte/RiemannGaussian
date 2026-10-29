@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "excludes": [
+    "manifest.json"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10971,
+      "sha256": "394b0a33a7f43f76a3007463373535e0f7efdee7454cd9dfe981218f9650be02"
+    },
+    {
+      "path": "coverage-selector.md",
+      "bytes": 12665,
+      "sha256": "1321fa7b44a146a01ad7888081e6d3a1fe187d6e70520bb998251ccdda6937d6"
+    },
+    {
+      "path": "integration-notes.md",
+      "bytes": 2644,
+      "sha256": "5e776f5076dae3e82abfa9a49d4379058680157bfb2babe34200b3ddc7943ddd"
+    },
+    {
+      "path": "inventory.md",
+      "bytes": 17326,
+      "sha256": "ca1272113bbd15c3d4989e50633ddb342fb545c0262b7820f00c23858b2a6462"
+    },
+    {
+      "path": "kernel-cover.md",
+      "bytes": 15808,
+      "sha256": "2fcd61bad1a66097eca3540c6fa63a85f3433d372c0b26f2e40fb4273e95699d"
+    },
+    {
+      "path": "moment-locator.md",
+      "bytes": 12952,
+      "sha256": "86883bfe51b7d018e36df8f4a82dd8416385633ad6df9e3ec12f764ce1a130b9"
+    },
+    {
+      "path": "review-coverage-selector.md",
+      "bytes": 5568,
+      "sha256": "307229e0f8fb06fe98d84efb45f09e78c000c4f5d3617d6b0c640c8ff9b6908d"
+    },
+    {
+      "path": "review-integration.md",
+      "bytes": 3619,
+      "sha256": "b7fff5d9689fc0b24c3591b33ceb3ec84e31abb085c4b1d0ddcaafc75870a98f"
+    },
+    {
+      "path": "review-moment-locator.md",
+      "bytes": 4076,
+      "sha256": "0da9d9a0b6f725033046c75415e592c729f460ba2fd49f47eff4f2f588fe307e"
+    },
+    {
+      "path": "review-shared-slices.md",
+      "bytes": 4556,
+      "sha256": "494ed47ad54ad3d533551a5ff88e97432fe39889d6f8191d030f5edc6e889c03"
+    },
+    {
+      "path": "review-topology-prefix.md",
+      "bytes": 5045,
+      "sha256": "b3961e46618ffc8bf28edfddb1d5a84728713a14bae4536e40faea49e568e9c8"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2710,
+      "sha256": "5f52a2d5650f01d306b9221ec4b50699f3f8013600943511fa2ebc8a13f70455"
+    },
+    {
+      "path": "shared-recurrence.md",
+      "bytes": 10667,
+      "sha256": "b76337d1fa843e6424ff356be9ce34c867e33089784e9b96193306d9a9137b06"
+    },
+    {
+      "path": "slice-union.md",
+      "bytes": 8505,
+      "sha256": "aed4cad79168246ef335777a4025626026174093f01fa6594107ed4b03eee016"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 3342,
+      "sha256": "283d7cafe73daa75290b275ca11840ab1f1804f46380323471ad940819ef35b5"
+    },
+    {
+      "path": "topology-prefix.md",
+      "bytes": 14391,
+      "sha256": "01d19d4bbc28c3e593f4da1812a571954e4ce38de2df12fa917119d5058513df"
+    }
+  ]
+}

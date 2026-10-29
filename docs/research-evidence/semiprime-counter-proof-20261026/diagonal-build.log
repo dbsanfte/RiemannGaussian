@@ -1,0 +1,14 @@
+'RiemannGaussian.SemiprimeBooleanDiagonal.retained_taylor_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeBooleanDiagonal.boolean_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeBooleanDiagonal.mobius_eval_eq_zero_of_totalDegree_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeBooleanDiagonal.eval_indicator_eq_sum_mobius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeBooleanDiagonal.sum_mobius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeBooleanDiagonal.mobius_eq_zero_of_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

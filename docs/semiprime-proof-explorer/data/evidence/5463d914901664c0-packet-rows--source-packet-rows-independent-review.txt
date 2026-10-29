@@ -1,0 +1,34 @@
+Independent read-only source review: PacketRows19
+Result: PASS; no integration blocker found in the six reviewed sources.
+
+Scope: source inspection only. No PacketRows source was edited, no PacketRows canonical object was compiled/rebuilt, and no duplicate control run was started. Source/canonical final gates remain Agent1-owned. The source theorem is a prepared two-word reader, not an N-only selector/acquisition claim.
+
+Physical input and key ABI:
+- Core initializes exactly the joint key and actual alphabet catalogue. IDs, colour rows, dimension a, coordinate count, validity, reports and clocks are absent from runtime operands/control.
+- A real owner Field consumes frame(ownerID, factorID RAWTAIL); the actual unconsumed tail is copied as the factor query. No second framed-ID interpretation is introduced. Both original inputs are retained.
+
+Presence, empty fields and order:
+- Both lookups execute actual preserving catalogue copies plus the frozen real first-match procedure. A found row always leaves a nonempty unread records suffix, even for the last/empty payload (at least [false]); absence consumes the catalogue terminator and leaves []. Core physically peeks this reader before accepting either payload. Thus a=0/fixed zero and a missing key are distinguished.
+- Paired physical EOF controls coordinate iteration. A leading false on a nonempty row is passed to the real Field parser as an EMPTY colour field; it is not mistaken for EOF. Opposite row EOF rejects. Every parser validity singleton is physically popped.
+- The frame/reverse logger emits one chronological vector entry per actual colour field, retaining empty colours. The final reversals preserve left/right direction and original coordinate order, with literal false vector terminators.
+
+Actual code, clock and full inventory:
+- All19 Bool roles are physical: lookup11+Aux8. Comparison inputs/output and parser/discard work are reused sequentially with distinct operand injections. No shadow or return stack is omitted. The explicit rejection sweep visits exactly the17 non-input roles before returning [false].
+- Execution.source_trace/source_run compose the real acquisition, paired loop, framing, reversals, actual success push and halt. Native List/Nat functions appear only in semantic trace specifications, not sigma/program operands.
+- Clock.timeBound_le derives the new actual clock from actual key/catalogue byte lengths and literal payload/unread-suffix slices, plus real loop/log lengths. Its 100000*S^2 cap does not transport the old PacketRows report clock. Storage bounds the SAME run and every compiled prefix, counting all19 data words plus real none-labelled return cells, by 10000000*S^2.
+- These clock/storage theorems are scoped to successful wellformed catalogue/payload pairs. This matches Original's internally discharged family; no universal malformed-input polynomial theorem is asserted by the reviewed APIs.
+
+Original bridge:
+- Meaning.lookup_expected uses compact-ID numeric injectivity, so the real numeric map agrees with the old literal-ID trie on actual catalogue IDs. Actual catalogue membership supplies presence, including zero-dimensional empty payloads.
+- Meaning.original_lookup/fields_original discharge actual payload serialization, true presence and equal original dimension from the acquired radix64 bank. catalogue_original binds that map exactly to the frozen Alpha30 stopped output.
+- Original.source_run_original proves both entire output vectors equal the old PacketRows.read left/right fields and its valid flag. selected_key_lineage derives both ID memberships and the exact frame(ownerID, raw factorID) key from the frozen original selector; source_run_selected closes those hypotheses internally for every original selected port.
+
+Six source SHA256 pins (captured after inspection; source writers were reported stopped):
+d44ee4aafb6bf38f4bc97c983694dbc1148204a1a090b63ec70b9a2a2b139397  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketRows.lean
+4714abb14cc6f7afe7e24d765c03906ac6af1f54acab21443676c2194c0dceef  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketRowsExecution.lean
+055d65d6ff68aea48d77f1ff2c68ba9d3de637c2bb80ac1bc8b102fb5915e1e8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketRowsClock.lean
+7f083c316b55bea6bc461d7ffc5f38f65f96ac6316b0d9bd9547017ac8c5f883  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketRowsStorage.lean
+17436f40dd2341bf05187f18505e308b54f9745f88e6ddfa000922c6cfbcc8f8  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketRowsMeaning.lean
+d8b5ab8a3ef91b64de41aaf739167537b4e9063b4c4ff45a6de05b774ad18da9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketRowsOriginal.lean
+
+No frozen dependency, owned parent source, journal, registry, commit or push was changed.

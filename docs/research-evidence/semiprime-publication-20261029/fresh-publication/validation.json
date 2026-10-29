@@ -1,0 +1,642 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-29T19:48:32.856463+00:00",
+  "scope": "Fresh local ordinary-library publication build and gates before commit; historical FINAL records remain separate.",
+  "researchGoal": "paused and incomplete",
+  "fullOriginalInputBitComplexityTheorem": "OPEN",
+  "leanToolchain": "leanprover/lean4:v4.34.1",
+  "sourceInventorySha256": "431d0ee06c5c63e1508d1f613483e97817fea0847a45417181f5d7046f990927",
+  "progressSha256": "24ab222abb4a545d20cc8c5be230bca4ec24b40a2f403c936c1fa66c0dbed7bb",
+  "ordinaryBuildExitCode": 0,
+  "rootMappingLimit": 262144,
+  "buildRetryExplanation": "All individual modules compiled in the first full attempt. Its root exhausted vm.max_map_count=65530. The monitored failure reached 65532 mappings with over 48 GiB RAM available. Raising the host limit to 262144 allowed the unchanged root and ordinary build to pass; retained diagnostics distinguish this failed setup attempt from the successful retry.",
+  "lintRepairs": "The lint command retains all linters and uses maxRecDepth 32768, matching the deep machine-address source. Three documentation comments were added to the legacy StreamingTensor module; the original snapshot and exact comment-only comparison are retained in source-before-documentation/manifest.json. No finalized source pin, theorem statement or proof body changed.",
+  "publicationGateCount": 23,
+  "cachedCertificateAssetRepair": "The shared taxonomy/footer update made cached certificate presentation assets stale. They were regenerated from the existing verified snapshot without --refresh or optional Lean execution; the initial failed freshness check and successful regeneration log are retained.",
+  "plotAuditRepair": "The fresh compiled dashboard and shared explorer audit files changed input hashes referenced by both plot audits. Their builders regenerated only those audit records; the initial failed freshness checks and generation logs are retained.",
+  "preservedWhitespaceFiles": 109,
+  "preservedWhitespaceFindings": 241,
+  "checks": [
+    {
+      "name": "whole-project-lint",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/LintProject.lean"
+      ],
+      "startedAt": "2026-10-29T19:17:08.140567+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 71.21833777427673
+    },
+    {
+      "name": "project-dashboard",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/GenerateProjectStatus.lean"
+      ],
+      "startedAt": "2026-10-29T19:18:19.359604+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 14.094587802886963
+    },
+    {
+      "name": "theorem-graph-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportTheoremGraph.lean"
+      ],
+      "startedAt": "2026-10-29T19:18:33.455632+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 570.4695961475372
+    },
+    {
+      "name": "theorem-explorer",
+      "command": [
+        "python3",
+        "scripts/build_theorem_explorer.py",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:28:03.939919+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 7.621002435684204
+    },
+    {
+      "name": "theorem-graph-check",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node",
+        "scripts/check_theorem_graph.cjs"
+      ],
+      "startedAt": "2026-10-29T19:28:11.561659+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 5.090153932571411
+    },
+    {
+      "name": "cached-certificate-explorer",
+      "command": [
+        "python3",
+        "scripts/build_numerical_certificate_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:29:17.443225+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 1.4204254150390625
+    },
+    {
+      "name": "rh-graph-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportTheoremGraph.lean"
+      ],
+      "startedAt": "2026-10-29T19:29:18.864278+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 745.5029191970825
+    },
+    {
+      "name": "rh-explorer",
+      "command": [
+        "python3",
+        "scripts/build_rh_proof_explorer.py",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:41:44.381476+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 18.049922227859497
+    },
+    {
+      "name": "zero-free-plot-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportZeroFreePlot.lean"
+      ],
+      "startedAt": "2026-10-29T19:42:02.432317+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 9.011686325073242
+    },
+    {
+      "name": "zero-free-plot-check",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/plot-venv/bin/python",
+        "scripts/build_zero_free_plot.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T19:43:11.158836+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 1.5980384349822998
+    },
+    {
+      "name": "certificate-plot-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportNumericalCertificatePlot.lean"
+      ],
+      "startedAt": "2026-10-29T19:43:12.757610+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 5.318810701370239
+    },
+    {
+      "name": "certificate-plot-check",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/plot-venv/bin/python",
+        "scripts/build_numerical_certificate_plot.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T19:43:29.985822+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 0.7765729427337646
+    },
+    {
+      "name": "quasi-rh-pin",
+      "command": [
+        "python3",
+        "scripts/verify_openai_quasi_rh.py"
+      ],
+      "startedAt": "2026-10-29T19:43:30.762990+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 0.28986406326293945
+    },
+    {
+      "name": "quasi-rh-build",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "build",
+        "OAI.NumberTheory.DirichletL.RowCompletion.ZeroFreeRegion",
+        "--wfail"
+      ],
+      "startedAt": "2026-10-29T19:43:31.067295+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 3.235551118850708
+    },
+    {
+      "name": "quasi-rh-integration",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/CheckQuasiRHIntegration.lean"
+      ],
+      "startedAt": "2026-10-29T19:43:34.304518+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 17.736687183380127
+    },
+    {
+      "name": "optional-build-config",
+      "command": [
+        "python3",
+        "scripts/test_numerical_certificate_build_config.py"
+      ],
+      "startedAt": "2026-10-29T19:43:52.056013+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 3.579634189605713
+    },
+    {
+      "name": "theorem-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/bin/python",
+        "scripts/test_theorem_explorer.py"
+      ],
+      "startedAt": "2026-10-29T19:43:55.650532+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 9.607450723648071
+    },
+    {
+      "name": "certificate-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/bin/python",
+        "scripts/test_numerical_certificate_explorer.py"
+      ],
+      "startedAt": "2026-10-29T19:44:05.272818+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 3.078636407852173
+    },
+    {
+      "name": "rh-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/bin/python",
+        "scripts/test_rh_proof_explorer.py",
+        "--refresh-preview"
+      ],
+      "startedAt": "2026-10-29T19:44:08.352910+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 218.48395109176636
+    },
+    {
+      "name": "github-readme",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/bin/python",
+        "scripts/test_github_readme.py"
+      ],
+      "startedAt": "2026-10-29T19:47:46.838230+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 8.915969610214233
+    },
+    {
+      "name": "theorem-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_theorem_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:47:55.755704+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 7.693412780761719
+    },
+    {
+      "name": "rh-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_rh_proof_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:48:03.450514+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 19.330220937728882
+    },
+    {
+      "name": "semiprime-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_semiprime_proof_explorer.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T19:48:22.796444+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 9.971674680709839
+    }
+  ],
+  "logs": [
+    {
+      "path": "logs/ordinary-build.log.gz",
+      "sha256": "5f72ade5ba6822be43372264f74803cadc9bb28d4377941e68bb4249c49f46e3",
+      "bytes": 26328,
+      "encoding": "gzip",
+      "uncompressedSha256": "c43c52bb38dee1bef81647d8151795258951e7450f257a6d43e66f6eda6df90f",
+      "uncompressedBytes": 252302
+    },
+    {
+      "path": "ordinary-build-result.json",
+      "sha256": "b2037af54ec9cf2dc2dd35f5e75f9762f788c744f25e5d02c1cef07b12b697b1",
+      "bytes": 534
+    },
+    {
+      "path": "gates-result.json",
+      "sha256": "be9103b8f5e2e98306abb6adf4446340d2f7cb979c31ad4e05d15d8af66fa850",
+      "bytes": 8654
+    },
+    {
+      "path": "openai-semiprime-pin-result.json",
+      "sha256": "ecc3cd658b30edc9b271b45e84b2dc1d63840328dbe93c6538be61858abfaef4",
+      "bytes": 287
+    },
+    {
+      "path": "logs/lake-build-vma-limit-failure.log.gz",
+      "sha256": "fbcc7b7e801b5977fa64139be49c2c051b9ac249ee861946687751dc10ac8e63",
+      "bytes": 33003,
+      "encoding": "gzip",
+      "uncompressedSha256": "96281edd342c831466c15df74e2943b299d3664f4072e1a120040bc5416edf72",
+      "uncompressedBytes": 305195
+    },
+    {
+      "path": "logs/lake-build-vma-limit-failure.json",
+      "sha256": "e8f2b94ca9286f616f6a8cbcd7ab92d25c024b34bc64b738cc150a00e81fef79",
+      "bytes": 249
+    },
+    {
+      "path": "logs/root-map-limit-result.json",
+      "sha256": "77558fefa2ccf3c81048b9e1d7d8135bb1ae99b969c409000b4b20757b27367f",
+      "bytes": 509
+    },
+    {
+      "path": "logs/root-map-limit.log.gz",
+      "sha256": "fb499d8548b0793b8dad93aa13fc967c6d89c1f71ddf6bd8b84963749886a18c",
+      "bytes": 89,
+      "encoding": "gzip",
+      "uncompressedSha256": "0476729d89ccebeaab38ba5a73e055ebae14b87efaff35f0e11421de282505b8",
+      "uncompressedBytes": 88
+    },
+    {
+      "path": "logs/root-allocation.strace.gz",
+      "sha256": "3b36d90f2106db7f4090c758b6ce43f7f4fb0e8c1925c952315199714806433e",
+      "bytes": 2277,
+      "encoding": "gzip",
+      "uncompressedSha256": "86076dc3d81ce87faa16ba3629ea5bbfebc66330cff0210762932268190f82bf",
+      "uncompressedBytes": 29643
+    },
+    {
+      "path": "logs/whole-project-lint-initial.log.gz",
+      "sha256": "a56ca6a4ef7317f094746f5f15615a5c6ab5f4d5809fa34161cfb912827dc57e",
+      "bytes": 458,
+      "encoding": "gzip",
+      "uncompressedSha256": "825bcec43982cea2212704cf8ce9f7ade2c638a8c1bdf60a21507b179a1dfd09",
+      "uncompressedBytes": 1013
+    },
+    {
+      "path": "logs/publication-gates-initial-lint-failure.json",
+      "sha256": "3aa28e0a7acc5d3d8885e693cd5a6ff8c899122a551473245fcfe6ea17edf06c",
+      "bytes": 349
+    },
+    {
+      "path": "logs/cached-certificate-explorer-initial.log.gz",
+      "sha256": "4baa422f6a50c5c4cb7df6a29315b9f315a423c1b41c7f246e99c391f405375c",
+      "bytes": 239,
+      "encoding": "gzip",
+      "uncompressedSha256": "425e0ed6492bb01e231a0d9e8e9b17445413dbd98f10574e111e9dcac2f276ef",
+      "uncompressedBytes": 424
+    },
+    {
+      "path": "logs/publication-gates-initial-certificate-failure.json",
+      "sha256": "f06d208e85e32e40c9c1bb54dd596d44a5153a7c2050e3842ac9706c27b67175",
+      "bytes": 2229
+    },
+    {
+      "path": "logs/cached-certificate-explorer-regenerate.log.gz",
+      "sha256": "99ce95664d99dc59fb7f444d0df7666f09dc13071010070d18d54bb007563c1d",
+      "bytes": 163,
+      "encoding": "gzip",
+      "uncompressedSha256": "c0f8ab95b9c4929beda368153c564d2c8c961451e8891ee50cc807c6f8d67d11",
+      "uncompressedBytes": 198
+    },
+    {
+      "path": "logs/zero-free-plot-check-initial.log.gz",
+      "sha256": "57d1e658bc173ff44b0d5da8a6a76afbdf8cadcdfae480164d84ed10755f963a",
+      "bytes": 107,
+      "encoding": "gzip",
+      "uncompressedSha256": "87da2319eb629d30ff696a9bd92c99e33c3fe19be7cf852e9569464cfdb73c9d",
+      "uncompressedBytes": 106
+    },
+    {
+      "path": "logs/publication-gates-initial-zero-free-plot-failure.json",
+      "sha256": "6e9fc855ca857905b9cf7e036d580b4c05fb813b564b2add07d41c59aac90699",
+      "bytes": 3647
+    },
+    {
+      "path": "logs/zero-free-plot-regenerate.log.gz",
+      "sha256": "d322a0b73c091112552006a5fd30f173bcb10e00214ce1e3ec3c954b7c9e9d93",
+      "bytes": 88,
+      "encoding": "gzip",
+      "uncompressedSha256": "e66e40150eaf7176755129f1980b04d3093972712b897cc9df97d320f3e54188",
+      "uncompressedBytes": 78
+    },
+    {
+      "path": "logs/certificate-plot-check-initial.log.gz",
+      "sha256": "f182307153bc7be4a3953d9210b4ad42a82acafa6d79027d7e54050ab2786e72",
+      "bytes": 237,
+      "encoding": "gzip",
+      "uncompressedSha256": "14635794f622071fb985d5465e9230686a10b7f5747baa32ec43e1c80ad538a3",
+      "uncompressedBytes": 401
+    },
+    {
+      "path": "logs/publication-gates-initial-certificate-plot-failure.json",
+      "sha256": "5fe784a9599e8cc085f425c97dfa04a554be49266357821fdadd59450a6d9a57",
+      "bytes": 4360
+    },
+    {
+      "path": "logs/certificate-plot-regenerate.log.gz",
+      "sha256": "9afc68dc1dd10a35439af5f3c984961815d1c304582ee67c0cdf8f7a9bd16440",
+      "bytes": 97,
+      "encoding": "gzip",
+      "uncompressedSha256": "68f544ee021c6d0ea1b3db08861ead30aa9d3ca8e8dc02473dd029282c807bd5",
+      "uncompressedBytes": 93
+    },
+    {
+      "path": "logs/streaming-documentation-build-result.json",
+      "sha256": "cf8f4d9eab6b4a945e99fe4ed33ca6f75374fe5d99fe8bc443202f2cba827b36",
+      "bytes": 617
+    },
+    {
+      "path": "logs/whole-project-lint.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "encoding": "gzip",
+      "uncompressedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "uncompressedBytes": 0
+    },
+    {
+      "path": "logs/project-dashboard.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "encoding": "gzip",
+      "uncompressedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "uncompressedBytes": 0
+    },
+    {
+      "path": "logs/theorem-graph-export.log.gz",
+      "sha256": "e9860ddb48f7361999e8e95b4e00e9f695c40e67be593e9f59e6bf2881933c55",
+      "bytes": 68,
+      "encoding": "gzip",
+      "uncompressedSha256": "51c248f804df522ee05ff768d3f336518aa8e92757302d3040d3fe107595d6f2",
+      "uncompressedBytes": 48
+    },
+    {
+      "path": "logs/theorem-explorer.log.gz",
+      "sha256": "5ea8960995e1790db0cf0923a800ae91e23a71696c6c106dd8ce5a81c74e1c24",
+      "bytes": 80,
+      "encoding": "gzip",
+      "uncompressedSha256": "a2487e6a21b8bb5be04aeff20f0cf849af7cb31dd08c44faaee67a58c0e7563a",
+      "uncompressedBytes": 63
+    },
+    {
+      "path": "logs/theorem-graph-check.log.gz",
+      "sha256": "f4c89d5660b44f0a6b6e11009631ad0b9f4c8c4066b186683971408f631e249d",
+      "bytes": 105,
+      "encoding": "gzip",
+      "uncompressedSha256": "638a0c5942b9e032fce08fac0f1ce0681fb6caaec57537a5c08345a636777a59",
+      "uncompressedBytes": 93
+    },
+    {
+      "path": "logs/cached-certificate-explorer.log.gz",
+      "sha256": "99ce95664d99dc59fb7f444d0df7666f09dc13071010070d18d54bb007563c1d",
+      "bytes": 163,
+      "encoding": "gzip",
+      "uncompressedSha256": "c0f8ab95b9c4929beda368153c564d2c8c961451e8891ee50cc807c6f8d67d11",
+      "uncompressedBytes": 198
+    },
+    {
+      "path": "logs/rh-graph-export.log.gz",
+      "sha256": "36a673ae3a00a2286e260fa011182d46f5744012bb986c4b728cbb605b26bbce",
+      "bytes": 69,
+      "encoding": "gzip",
+      "uncompressedSha256": "14a0932eed8fc3942dbce8dab0625e3fb1a9d4e60e7194d293acd32fc72b58fe",
+      "uncompressedBytes": 49
+    },
+    {
+      "path": "logs/rh-explorer.log.gz",
+      "sha256": "40c8aade941201f921569bad7c51afb18f3838487dc99604a49e5e8c3df8684c",
+      "bytes": 163,
+      "encoding": "gzip",
+      "uncompressedSha256": "fc2d75acbdc980760c96968c299fbb242e12ee114c7c45d5dce940e1ac5fb519",
+      "uncompressedBytes": 190
+    },
+    {
+      "path": "logs/zero-free-plot-export.log.gz",
+      "sha256": "6a4370df8e9ac6bf45b884fc5776dbcd46a0b64e29d519305fe7082fbff347c4",
+      "bytes": 86,
+      "encoding": "gzip",
+      "uncompressedSha256": "5bfb52178eb9fdac3fde1f3e7b50cdbcda1fc754933128ab0bbb7b6617ff0394",
+      "uncompressedBytes": 70
+    },
+    {
+      "path": "logs/zero-free-plot-check.log.gz",
+      "sha256": "d322a0b73c091112552006a5fd30f173bcb10e00214ce1e3ec3c954b7c9e9d93",
+      "bytes": 88,
+      "encoding": "gzip",
+      "uncompressedSha256": "e66e40150eaf7176755129f1980b04d3093972712b897cc9df97d320f3e54188",
+      "uncompressedBytes": 78
+    },
+    {
+      "path": "logs/certificate-plot-export.log.gz",
+      "sha256": "8ecece2a0c366d9df7c4073a05978d0b376411867312740458fd5c42dd1e0e42",
+      "bytes": 82,
+      "encoding": "gzip",
+      "uncompressedSha256": "35bb3090568f9076eb60ddc1c0d0c370a20c231d13efca875a4e3419bc0f72d4",
+      "uncompressedBytes": 67
+    },
+    {
+      "path": "logs/certificate-plot-check.log.gz",
+      "sha256": "9afc68dc1dd10a35439af5f3c984961815d1c304582ee67c0cdf8f7a9bd16440",
+      "bytes": 97,
+      "encoding": "gzip",
+      "uncompressedSha256": "68f544ee021c6d0ea1b3db08861ead30aa9d3ca8e8dc02473dd029282c807bd5",
+      "uncompressedBytes": 93
+    },
+    {
+      "path": "logs/quasi-rh-pin.log.gz",
+      "sha256": "ca530224680ac87ae5dac84dc42be7653804677f667014dc8a02f14e9f2326c4",
+      "bytes": 101,
+      "encoding": "gzip",
+      "uncompressedSha256": "fd0bd89db2520e662fb614ddf8cd2fed10d74be1e614b559cd2b8213acdad130",
+      "uncompressedBytes": 89
+    },
+    {
+      "path": "logs/quasi-rh-build.log.gz",
+      "sha256": "38deffe6c681db2452690de8b36553ff790b3bc21627de8ba861211ef2bdfbe4",
+      "bytes": 62,
+      "encoding": "gzip",
+      "uncompressedSha256": "cc87acb6b2b9080ca50d34d07c4e9cf35c23cabe2eb3fad1e3c4f60171bff6e0",
+      "uncompressedBytes": 42
+    },
+    {
+      "path": "logs/quasi-rh-integration.log.gz",
+      "sha256": "adff6a132bbfe66ad1f42e26f0814047321d5ff8bc9daacb611a3ab605281dd4",
+      "bytes": 717,
+      "encoding": "gzip",
+      "uncompressedSha256": "da16e931a9a77743c7ae32997ad207931e00cbe8e7f23d9c7e7d30fde2c57bdc",
+      "uncompressedBytes": 2529
+    },
+    {
+      "path": "logs/optional-build-config.log.gz",
+      "sha256": "3a234d4dd69a4696c491f420235ee55a0e8dd75d581e31722e10d2062fa0a70d",
+      "bytes": 272,
+      "encoding": "gzip",
+      "uncompressedSha256": "cdd4d8db676485de45aca7c94409028307d31ef47da52fb3ba682712e69df54b",
+      "uncompressedBytes": 457
+    },
+    {
+      "path": "logs/theorem-explorer-browser.log.gz",
+      "sha256": "32b38bd706d325fd6619ded07974482bfd73a5ed696340c07836152a40ef833f",
+      "bytes": 1128,
+      "encoding": "gzip",
+      "uncompressedSha256": "5969c8e8ac7cebf557bd9e2651528d20211b8381a60cc7f125bd2e13e0f95cc1",
+      "uncompressedBytes": 2530
+    },
+    {
+      "path": "logs/certificate-explorer-browser.log.gz",
+      "sha256": "dfbc474806f82b76561a1a7897c880dff6c5cd022b4278bfe5dcf0d5ae57fc27",
+      "bytes": 389,
+      "encoding": "gzip",
+      "uncompressedSha256": "19e0996bee8135f84ff556ca98e69bba87c370a9a9f56b2f694890c4fafe6709",
+      "uncompressedBytes": 912
+    },
+    {
+      "path": "logs/rh-explorer-browser.log.gz",
+      "sha256": "e16cef31a8066f5e56fefdfe6bdebd6114e28caad315095bf34620f9556e4dc5",
+      "bytes": 904,
+      "encoding": "gzip",
+      "uncompressedSha256": "50066572cd1180858bf09840b77b6ea5f46200ede55ff1d506746883f29354cc",
+      "uncompressedBytes": 3533
+    },
+    {
+      "path": "logs/github-readme.log.gz",
+      "sha256": "3bc425abbd0b9f322b85f9ddbcb436d45cace5ec1198d7f2aa6774522d2698f2",
+      "bytes": 564,
+      "encoding": "gzip",
+      "uncompressedSha256": "35dc912486e58c56b615ad08b14e5cf0c8e6f80013c35e5a3e69b04f2b0d0481",
+      "uncompressedBytes": 2783
+    },
+    {
+      "path": "logs/theorem-explorer-freshness.log.gz",
+      "sha256": "5ea8960995e1790db0cf0923a800ae91e23a71696c6c106dd8ce5a81c74e1c24",
+      "bytes": 80,
+      "encoding": "gzip",
+      "uncompressedSha256": "a2487e6a21b8bb5be04aeff20f0cf849af7cb31dd08c44faaee67a58c0e7563a",
+      "uncompressedBytes": 63
+    },
+    {
+      "path": "logs/rh-explorer-freshness.log.gz",
+      "sha256": "40c8aade941201f921569bad7c51afb18f3838487dc99604a49e5e8c3df8684c",
+      "bytes": 163,
+      "encoding": "gzip",
+      "uncompressedSha256": "fc2d75acbdc980760c96968c299fbb242e12ee114c7c45d5dce940e1ac5fb519",
+      "uncompressedBytes": 190
+    },
+    {
+      "path": "logs/semiprime-explorer-freshness.log.gz",
+      "sha256": "0a06a05048fb936b9efda81b3378b9653be74a25bbc57e4711c564c8ca6fe617",
+      "bytes": 111,
+      "encoding": "gzip",
+      "uncompressedSha256": "35274231f4f05d9f2098ea2fefb2f19164c144b93f1a89362ed0e500ce94b5cb",
+      "uncompressedBytes": 106
+    }
+  ],
+  "compiledDashboardSha256": "ee892cda9f0b526e5c987b364213e041a096ed25a629bdbb911d65b3493ea4e3",
+  "historicalObjectHashEqualityClaimed": false,
+  "exhaustiveOptionalNumericalCertificateRerun": false,
+  "remoteRelease": "The deployed explorer release.js pins the exact commit and its GitHub Actions publication workflow; this local record does not assert a remote workflow result."
+}

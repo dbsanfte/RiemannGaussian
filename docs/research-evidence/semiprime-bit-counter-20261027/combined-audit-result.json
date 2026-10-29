@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "modules": 11,
+  "declarations": 1081,
+  "theorem_constants": 739,
+  "linters_per_namespace": 15,
+  "all_11_namespaces_lint_passed": true,
+  "all_generated_constants_audited": true,
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "local_dependency_count": 141,
+  "dependencies_unchanged_through_combined_audit": true,
+  "per_module": {
+    "RiemannGaussian.SemiprimeRationalBits": {
+      "declarations": 129,
+      "theorems": 67
+    },
+    "RiemannGaussian.SemiprimeDotBits": {
+      "declarations": 20,
+      "theorems": 13
+    },
+    "RiemannGaussian.SemiprimeCounterPacketHeight": {
+      "declarations": 54,
+      "theorems": 43
+    },
+    "RiemannGaussian.SemiprimeFibreAccumulatorHeight": {
+      "declarations": 34,
+      "theorems": 25
+    },
+    "RiemannGaussian.SemiprimeLocalPrefixHeight": {
+      "declarations": 16,
+      "theorems": 14
+    },
+    "RiemannGaussian.SemiprimeHermiteArrayHeight": {
+      "declarations": 205,
+      "theorems": 150
+    },
+    "RiemannGaussian.SemiprimeMacroEntryExecution": {
+      "declarations": 117,
+      "theorems": 87
+    },
+    "RiemannGaussian.SemiprimeMacroEntryBitPrimitives": {
+      "declarations": 180,
+      "theorems": 89
+    },
+    "RiemannGaussian.SemiprimeMacroEntryBitCheck": {
+      "declarations": 301,
+      "theorems": 231
+    },
+    "RiemannGaussian.SemiprimeSubdividedEntry": {
+      "declarations": 10,
+      "theorems": 7
+    },
+    "RiemannGaussian.SemiprimePublicConstructedCount": {
+      "declarations": 15,
+      "theorems": 13
+    }
+  },
+  "auditor_sha256": "912fb86a43b14d4b46b46be413a4c79c0a66c5169d93977a1fd8bdea2a5fd922",
+  "log_sha256": "1a2b33d53dc51452bd8263f9421b742a6d4874cd0f18179e6284dc72266371cc",
+  "ordinary_root_import": true,
+  "root_facade_source_sha256": "27e776b8804ad77806c145c84f35f7a206d9a50bf57d820cb759b59db855f63a",
+  "root_facade_olean_sha256": "1eb63aa2a2b0c4aa33b5212f68f75c1ef4c31163b3821d255596db5cf8d7d548",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
+}

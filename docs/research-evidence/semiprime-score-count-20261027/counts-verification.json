@@ -1,0 +1,79 @@
+{
+  "status": "FINAL FROZEN; strict/root15/all-generated standard3 PASS137decl88theorems; smoke PASS",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScoreCounts",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCounts.lean",
+      "source_sha256": "f32288b044bc95aac07a67ac5e052d6b20f75250186426c94fc05487ce3ed002",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreCounts.olean",
+      "object_sha256": "ee505831d1cd62db61b782e758b77ed6364f7bb8fb026684517c548f6c1d415f",
+      "declarations": 45,
+      "theorems": 29
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScoreCountsPadding",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountsPadding.lean",
+      "source_sha256": "6a4d298ff39ce64ce56344ca99d6568711d45824e26d9d7b19c60c71a010b461",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreCountsPadding.olean",
+      "object_sha256": "66a831cc4865a5be80e61b35b264221674bcfde29fff01215aac3de421eaa7d1",
+      "declarations": 26,
+      "theorems": 19
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScoreCountsObjective",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountsObjective.lean",
+      "source_sha256": "fd28593dfa1a3de5d2669748b8ae4178f57619fe1b3b953d398c2fc26f8840c8",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreCountsObjective.olean",
+      "object_sha256": "3184063ba6dbfb2225ea636f3403a674d41d431163151dc8de84d97c96812521",
+      "declarations": 44,
+      "theorems": 21
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScoreCountsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountsBounds.lean",
+      "source_sha256": "cfe9327d36171a4c9057fb73657cd79c054921edccb90f6074db107d783d236c",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreCountsBounds.olean",
+      "object_sha256": "f846cef6637c106697e9b4742c584250bc350ec8eb0fd4ef6671434eae92fc24",
+      "declarations": 22,
+      "theorems": 19
+    }
+  ],
+  "evidence": {
+    "counts-build.log": {
+      "path": "/tmp/semiprime-score-count-20261027/counts-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "counts-padding-build.log": {
+      "path": "/tmp/semiprime-score-count-20261027/counts-padding-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "counts-objective-build.log": {
+      "path": "/tmp/semiprime-score-count-20261027/counts-objective-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "counts-bounds-build.log": {
+      "path": "/tmp/semiprime-score-count-20261027/counts-bounds-build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "counts-audit.lean": {
+      "path": "/tmp/semiprime-score-count-20261027/counts-audit.lean",
+      "sha256": "c7301a87f3c68defa34d23f86c190fab9de062095c14a9943ee4cb9cda5bae82"
+    },
+    "counts-audit.log": {
+      "path": "/tmp/semiprime-score-count-20261027/counts-audit.log",
+      "sha256": "6ea434cf5e2151cdeb713adcbcf086a811cb4b41350ecc2bbd9cd6b1be34e91a"
+    },
+    "ScoreCountsSmoke.lean": {
+      "path": "/tmp/semiprime-score-count-20261027/ScoreCountsSmoke.lean",
+      "sha256": "a1098f5f058620ea40512e5823577d0867568265e60048183784b0da29b234fb"
+    },
+    "counts-smoke.log": {
+      "path": "/tmp/semiprime-score-count-20261027/counts-smoke.log",
+      "sha256": "8dcb1aa9ba49bd257403062d0a188628e66c69e9f6374155c38a50b00984c064"
+    },
+    "counts-notes.md": {
+      "path": "/tmp/semiprime-score-count-20261027/counts-notes.md",
+      "sha256": "9f4b645a5980d62d80c16f2795302a1181e9be371efac7b43e91912585a68eee"
+    }
+  }
+}

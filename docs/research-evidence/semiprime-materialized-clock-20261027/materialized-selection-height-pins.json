@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "isolated_object_identical": true,
+  "generated_declarations": 37,
+  "theorem_constants": 29,
+  "hashes": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSelectionHeight.lean": "4196598601b9754e518d8fc1f59dbbe46a4d5848b2b1d7ff3779a908536bbc90",
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeMaterializedSelectionHeight.olean": "ee80deb3780e50d8b4393b376c734eafaa2a11a8f324a46e9169e86b1505d67b",
+    "/tmp/semiprime-materialized-clock-20261027/SemiprimeMaterializedSelectionHeight.olean": "ee80deb3780e50d8b4393b376c734eafaa2a11a8f324a46e9169e86b1505d67b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeRowSelectionExecution.lean": "c135e2f8b0e5c79f7de1eece0145167d9b36097af549af783dcdd176573c36cc",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeRowSelectionTracked.lean": "f90224c3a79c59371dee1590a20f7e7177d41757e801178d9ccc230137df96a1",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeRuntimeDesignAcquisition.lean": "55b68f774a1a03512a9ef23354b99a55f3fb746ebe3438e26fff353422ad7350"
+  }
+}

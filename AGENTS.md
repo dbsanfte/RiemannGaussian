@@ -23362,3 +23362,3665 @@ generated-asset/browser checks, and verify the exact pushed revision and CI.
 Do not invoke exhaustive optional numerical-certificate verification.
 No guaranteed sixth-exponent factorization or complete RH proof is claimed.
 The semiprime research goal remains active after this publication.
+
+## User-directed knot literature search, 2026-10-25
+
+Packet docs/research-evidence/semiprime-knot-literature-20261025. Bounded
+literature task; no factoring exponent improvement or automatic-goal status
+change. Current complete sixth-scale query is still soft k^(5/4).
+Habiro kernel C_M(Z)=prod_(r=1..M)(Z-q^r-q^-r) matches the centered native
+product (x-1)x^M C_M(x+x^-1). Reciprocal folding is OLD credit.
+Finite descendants D_m^[L]=sum_(j<=L) C_j q^(mj) satisfy exactly
+q^(m+1)D_(m+1)+(1-Zq^m)D_m+q^(m-1)D_(m-1)
+=1-q^(m(L+1))C_(L+1). At L=M-1,m=0 three descendants extract C_M;
+their acquisition is OPEN. Do not drop the boundary using the infinite
+figure-eight equation. Proof is telescoping; composite tests only check
+conventions. Original lambda is uncentered: opposite signs give H-E when
+lambda!=0, not always -E. Direct trace list degree<=J, no automatic J/2.
+Explicit inverse adjunction <=2J maps hits by i->-i; retain CRT signs and
+labels and charge interval localization. Prioritize finite descendants,
+affine-slope skein recurrence mapping and finite quiver cancellation.
+Relative-Habiro jets do not yet supply high-order-q evaluation. Existing
+q-dilation obstruction/fast recurrence costs are duplicate background.
+No Lean/public asset changes or commit/push; preserve frozen packets,
+all prefixes and concurrent Qwen/engineering work.
+
+## Sparse knot realization and scalar prefix target, 2026-10-25
+
+Packet docs/research-evidence/semiprime-knot-advancement-20261025. Goal
+remains full guaranteed all-semiprime sixth exponent, active and OPEN.
+Current complete query stillsoft k^(5/4); no exponent improvement.
+After central gcd/annihilator screen, G(2)unit for
+G(Z)=prod_j(Z-x_j-x_j^-1). Acquire f(w)=G(w+2)/G2 by divisionfree
+Taylor shift softJ, lift f_i individually to O(logN)-bit integers, f0=1.
+E=diag(f1,-f2,...), Q upper shift, F=e1e1^T gives
+V=[[E,Q],[Q^T-I,F]], standard skew, <=4J-1nonzeros, bandwidth3.
+T^-J det(V-TV^T)=f(T+T^-1-2). Classical Seifert realization gives
+genuine knot; matrix acquiredsoftJ, expanded crossings NOT cheap.
+ModuloN Delta(t)=G(t+t^-1)/G2
+=prod_j (x_j-t)(x_j-t^-1)/(x_j-1)^2 exactly. Native swapcoverage
+gives A_M=0 for A_m=prod_(i<=m)Delta(q^i); central branch alreadyhandled.
+Exact prefix NONUNIT or ZERO-only Boolean oracle suffices. Firstzero
+A_i with A_(i-1)!=0 forces Delta(q^i)nonunit; previousprefix needNOTunit.
+Scan signed original leaves; saturated exponents E_j±Hi!=0 bywhole-row
+deletion, inheritedextractor applies. O(logM)prefixqueries, sameG,
+no arbitraryshiftedwindow or fullremainder required. Prefixcost
+soft(J+sqrtm) wouldclose acquisition, but IS NOT SUPPLIED.
+Sparse rank1 atonepoint gives m independentupdates overprefix.
+FinitePfaff/Heine weights legal; rationalgauge1/(1-v) retainsboundary.
+Actualnativeaxis count excludes softJ-degree rationalPade onfullG,
+raw andweighted; NOT a generalalgorithmic/no-selector lowerbound.
+Gluing/tanglepapers give exactcomposition; Dehnshear changescharacter,
+so no fixedmatrixpower acceleration. Priorweakselector/tracefold credit
+preserved. NoLean/assets/commit/push; preserveprefixes, frozenpackets,
+and concurrentQwenwork. Seek actualfastprefixalgorithm next.
+
+## Half-center / one-sided native query, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-prefix-20261025 archives
+interrupted25Oct work. Uniformconstantfactor improvement ONLY;
+fullquery stillsoftk1.25, sixthgoal active/open. λ0only4axisrows
+(k²/4|ab impossible0<|ab|<k,k>16); paytheir fullquerysoftsqrtM,
+factororunitcertificate permitsdrop. Remainingopposites E'=H-E,
+y=q/x; actualzero/swap/diagonalpruning preservesclosure. Central
+screenscertifyx-1,x-q. Gh(W)=prod_pairs(W-x-q/x), degreeJ/2,
+D(t)=Gh(t+q/t)/Gh(1+q), unitdenom, D(q/t)=D(t), D1=Dq=1.
+Delta_old(t)=D(t)D(qt). A_m=B_m B_(m-1), B_m=prod_i2..m+1 D(qi).
+SameNONUNITpredicate; sameZERO requiresactualsquarefreeN.
+Fpoint=t^(J/2)Gh(t+q/t); B_m=unit*prod_i1..mFpoint(q^-i).
+Thusnegative-onlyprefix, firstzero→nonunitnewF, scanONLYx-q^-m;
+saturated E+Hm!=0 originallicense. PreviousprefixmaybenonzeroZD.
+eta=β^(H/2) hasordeta=ordq byoddβorders. Extra x-eta screen:
+properfactor/nonzeroannihilator; exactintegerE=H/2 publicaxisPAIR
+hasalloriginalleavesunit, deleteonlyit (notverticalpartners).
+Rebuildonretainedlist; swapclosuremaybreakbutpredicatepreserved.
+v=x/eta nowinversepaired,v-1unit. OrdinaryKnotK withLpairnodes,
+Seifertsize2L, <=4L-1nonzeros softJ. OddstrideprodK(eta^(2i+1))
+samepredicateupunit. Acquisitionstillmissingsoft(J+sqrtm).
+Keepknottedkeychainmcomponentspaid; Mortonbinarytwist givessums,
+notprefixproducts. Logresiduecounts target legal belowp; rational
+antidifference failspositiveorbitresidues onlyscopedroute.
+Preserveallfrozenpackets/prefixes/concurrentwork; noLean/assets/push.
+
+## Native-content and unit-pattern prefix attempts, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-fastprefix-20261026.
+Sixth goal remains active/open; full query still soft k^(5/4).
+Actual shortest virtual Gauss witness has d=gcd(|a|,|b|)|k by strict
+shortening; public filter preserves coverage and swap/opposites. Use the
+same filtered family at every prefix; old/new predicates need not agree.
+For d|k, lambda=d*(lambda0+t H/d^2), t=0..d-1; rho=beta^(H/d), rho^d=q.
+Finite d-lift tile has length dm; all content classes plus axes still cost
+soft(k+sqrt(km)). Primitive d=1 has Omega(k) rows, not a selector lower bound.
+A_m=eta^(m+2) Sym^(m-1)(diag(eta,eta^-1)) gives odd-stride Seifert norm
+up to known unit, but expanded rank m remains unpaid.
+Fixed T(2,4) pattern has C^2=-I, Fox block 2I, C-I unit, base torsion
+2^m. Unknotted commutator axis has eigenvalues eta^w for odd |w|=3..2m+1.
+Omitting +/-1 is an actual invariant normalizer summand. Explicit
+Z_m=diag(2I_m,V tensor I_(2m)-V^T tensor G_m) has det=2^m P_m^2;
+finite identity includes zeros and squarefree N preserves zero predicate.
+Generic based-field infection torsion agrees. Raw infection Fox minor and
+full unit-pivot reduction at singular composite inputs NOT supplied;
+no claim acyclic torsion exists at collisions. Unit background repaired,
+not fast norm evaluation. Expansion order (4L+1)m, O(Lm) nonzeros.
+Bezout transfer B0=H, Bnext=(C-a_next I)B is initialized and division free.
+H full rank L excludes only constant separated-channel compression;
+clock Loewner determinant always unit. No general algorithm lower bound.
+Cubic Fourier/Bloch and stationary lift retain boundary and norm costs.
+Reviews plus small exact checks archived; no Lean/assets/commit/push.
+Preserve prior packets, both prefixes and concurrent engineering work.
+
+## Scalar character and stationary-event acquisition, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-scalar-20261026. Goal active;
+no exponent gain. Constant-many acquired q-strings would give additive
+soft(J+sqrt m) query, but native E=bN+a+lambda has integer strings <=2.
+Mandatory shift0 D'(x_j), then shift1 D(q*x_j) or D'(q*x_j) when an exact
+integer successor exists, cost softJ and resolve every nonunit through
+original labels/global-annihilator consumer. Continuing roots are locally
+separated with strings <=2. Longer-distance sharing remains open.
+Index-two induction and safe 2-primary Graeffe completion are exact;
+clock length stays m. Explicit halving doubles degree; no norm speedup.
+Higgins quantum Frobenius requires a separate torsion parameter and gives
+power-sum threading, not the acquired native determinant norm.
+Alternate HH source has R=soft(kr), width~sqrtN/(kr)^1.5, single phase
+using sigma inverse MOD k^2, lift-independent by stationarity. Swaps keep
+same phase/center and full-zero endpoint; bigger labels checked for the
+licensed nonzero annihilator consumer. Cost optimization is known N^1/5.
+New reviewed descriptor theorem: full independent unit-tag sigma and
+continuous t in [1,4] cover under aN=b*sigma² modk, |at-b|<=delta requires
+k<=C1 delta²+C2 delta sqrt(R tau(k)). At delta=C sqrt(k/r), large r gives
+R=Omega(kr/logk). This excludes literal full-domain event deduplication,
+NOT actual-semiprime-point covers or implicit contraction/factoring.
+Preserve this precise scope. Reviews resolved mandatory shift0 issue.
+No new test campaign, Lean/assets/commit/push; preserve prior packets,
+both prefixes and concurrent engineering work.
+
+## Executed finite fusion and factor-correlated menus, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-fusion-20261026. Sixth goal
+active/open; no acquisition exponent gain, native query still soft k^1.25.
+Felderhof DW product with alpha=(iota*t_i,-iota/v_j), iota^2=-1,
+encodes native prefix up to odd-order-certified unit factors. v_j are
+RECENTERED roots x_native/eta of ordinary K, not original x_j.
+Expanded line count m+2L remains unpaid. Adjacent-clock projector has
+unit amplitude; explicit diag(f,g) transfer retains correction s-d^2/s.
+Conditional f=0 makes correction zero with s unit. Scope is this transfer
+and conditional collision, NOT attained catalogue or all knot fusion.
+Racah alpha=beta_R=q,gamma=q^-m,delta_R=q^(m+2), grid0..m-1:
+legal denominators/Vandermonde units; cleared terminal is exactly
+q^m*(q^(m+3);q)_m*C_m(W), W=X+q/X. Scalar prefactor paid softsqrtm,
+remaining kernel not. Last legal row endpoint known only at supplied
+integer grid x; off-grid row residues/coupled norm remain unacquired.
+Use mu=qW in final monic recurrence, derive its scalar-unit coefficients;
+do not import normalized R_m across its zero denominator.
+Lenstra correlated cover: perunitj s=N/j modk,C=(N-js)/k,
+Euclid(k,g=s/j modk), c_i=B_i*C/j modk, tau=k*c_i+A_i*j+B_i*s.
+Parity-aware remainder convention; tau^2=4ABN modH, lambda=-tau modH.
+mu=ceil sqrt(N/k^3) gives softk descriptors, O(mu) clock menus and
+swaps at commonindex. |I|<=2mu+3 and orderguard justify exactzero-row
+deletion. Firstodd menus mass Omega(k*mu); fixedE modH has <=4
+descriptors, so integer q-reanchoring/dedup no power gain. Scoped to
+literal constructor, not all factor-correlated coverage.
+Safe odd-stage filter T>=ceil sqrt(4ABN) is paid softk; firstoddwidth
+mu0*(1-sqrt(g/k))^2+O1 stillOmega(k^1.5) forTheta(k)tags.
+Open concrete target: simultaneous integer square points in
+w^2=D0+2*tau*z+H*z^2, or coverage-safe softk^2 total interval selection.
+Reviews incorporated; preserve680priorfiles/bothprefixes/concurrentwork.
+No numerical campaign, Lean/assets/commit/push. Do not claim a speedup
+from another small tensor descriptor without acquiring its scalar.
+
+## Retained TQ/multi-hook corrections and collective character masks, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-correction-20261026. Goal
+active/open; no full-family exponent improvement or sixth theorem.
+Paid NONAXIS sieve on actual complete native catalogue: integer
+f_j(I)=H I^2-2lambda I+(lambda^2-4abN)/H square at witness.
+For ell>3,ell∤abN, allowedcount=(ell+chi(abN))/2; ell|ab retainsall.
+Catalogue #rows(D|ab)<=softk*tau(D)/D for squarefreeDcoprime6.
+ONE common modulus B productt primes~logk gives sumdensities<=softk2^-t.
+Explicit CRT masks/APs charged; commonbaseq^B, oldvariablewindowcost
+soft(k+kB2^-t+sqrt(k(M+B)2^-t)). Swaps SAME mask/physicalI;
+fixedmasks clippedacrossprefixes, originalleaf recovery retained.
+t=(1/4-o1)logk/loglogk gives NONAXIS subpowersaving
+exp(-(log2/8+o1)logk/loglogk), NOT new exponent/fullquery.
+Axes identicallysquare. Sufficient Hermite condition3k²P⁴>4N²
+gives nonaxis witnessoldhorizon. Public boundedsearchthrough
+ceil((4N²/(3k²))^1/4) safelydischargesaxes butcostsoftk1.25;
+notnecessary/sharpthreshold. Axisfineorbitstilllengthkm.
+Full-family-wheel followup AVOIDS thatprepass for logarithmicfilter:
+commonprimorialB, horizontal eps*k,lambda=tk has gcd(eps(kI-t),B)=1;
+vertical inherits SAME virtualhorizontalmask, NOTQcandidate. Opposite
+carrypreservesP*. Allactualprimewitnessespass. TotaldensityO(k/log y),
+y=c logk,c<1/4; CRTstartsO(kB/log y), supportO(k(M+B)/log y).
+Completekernelk1.25/sqrt(loglogk), familiarwheelcredit NOTnewexponent.
+FilteredprefixneedNOTequaloldaccidentalzeros; fixedmaskcoverage,
+monotonicity, originalleafdecoder suffice.
+TQseed d2L,zetaeta^(d+1), F_j=S_j/(q^j-zeta) paidsoftL;
+oddshortetaexponents certifycoefficientpivots. F(qz)-zetaF=S.
+FullBetheQ=S givesCLEARED T_full(z)=eta^d S(z/q); targetnorm
+retained, oldcost. RootsF/physicaleigenvectorsnotacquired;
+F(qzi)zerosNOToriginalannihilators. Keep rationalcleareddistinction.
+Multihook lambda=((m+1)^m,m), diagonalhooksodd3..2m1.
+AnnularGiambelli ≠ satelliteevaluationmultiplicativity. Explicitm2
+jointcorrectionE2 unacquired; weightedhookdetcanmissproductzero.
+QUANTUM s0=beta^(H/4), brackets[h]=s0^h-s0^-h; ordinaryK_s=K(eta^s).
+UsefiniteSchurpresentationh_r up to2m1, NOTfullcolorfactorialinverse.
+Normalizedjointformula retainsreduced-invariantregularityhypothesis.
+Conditionaldiagnosticsnotattainednativeinstances/generalobstructions.
+Reviewsincorporated; preserve691priorfiles/prefixes/concurrentwork.
+No numericalcampaign, Lean/assets, commit/push. Nextneedsactualfast
+coupledamplitude or cheapaxisbranch, not another descriptor alone.
+
+
+## Independent knot weights / reviewed finite-color candidate, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-power-20261026. Goal active/open;
+no guaranteed acquisition improvement, native soft k^1.25 unchanged.
+Ordinary p=1 exterior tensor product gives prod_i K(eta^(2i+1)); integral
+Seifert det(D)^(-L)det(V tensor D-V^T tensor I) preserves collisions but
+order2Lm / tensorstate2^m do not supply cheap scalar contraction.
+IMPORTANT corrected KM-Hecke attempt: multigraded diagonal phi commutes
+SIMULTANEOUSLY with braiding, but fails separate ambient naturality when
+(p-1)(t_i-t_j)!=0. Formal16image operator has exact YBdefect
+p*b²*(p-1)*(a-b); b=p*a,p=q makesunit -p³*a³*(p-1)². Genericindependent
+R claim WITHDRAWN. p1 tensor and originalequalweightKM remainvalid.
+Separate DIAGONAL Nichols model GK2026 has lawfulindependentweights:
+q12=-1,q21=-q, t1=eta^(2i+1),t2=eta^(-2i-3), t1*t2*q=1;
+v=x1x2+t2*x2x1 gives free4span/action/coaction via finiteidentities.
+RotatedR/normalization, zero-preserving scalar and composablefastquery
+remainunacquired. Do not equate this lawfulmodel withfailedHeckeoperator.
+GKpublished Eq101 vsTable2 has conflictingproductstatus;124bproofdeferred.
+Use independentp1tensorproof, notanunprovednormalizationidentification.
+Cyclicdilog exactoffrootboundaryretainssingularinteriorquotient. Known
+Pollard scan toB^.4 costssoftk andfactors ifoneorder<=B isB^.4smooth;
+coprimeorders ARElicensedbypinnedcontroller. Residualprime/twolargeprime
+orders unhandled. CharacterGaussformula legaln>0,n*ell<orders; powerlevel
+CRT B≫M leaves nonconstantcarry/cutoff, nofreeperiodnormsubstitution.
+Source/symbolicreviews complete; dependency-freechecker polynomialonly.
+Preserve704priorfiles/prefixes/concurrentengineeringwork. NoLean/assets/push.
+
+
+## Acquired native twist family and adjacent-scalar test, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-pair-20261026. Sixth-exponent goal
+active/open; original whole-query exponent unchanged at soft k^(5/4).
+Positive result: choose c_j=-v_j/(v_j-1)^2, negative lifts n_j=cbar_j-N,
+and actual connected sum C of Kohli twist knots T_(n_j). Delta_C modN=K;
+binary twist input O(L logN), no diagram expansion. The independent V_n matrix
+realizes the same polynomial; this does not identify its topology with T_n.
+For native a_i=eta^(2i+1), b_i=eta^(-2i-3), u=ab=q^-1 is constant.
+Kohli negative twist -s gives F_s(B)=1+(1+u^-1)A_s B+u^-1 H_s B^2,
+B=(a-1)(b-1), U_s=u^s, A_s=sum_(r<s)u^r,
+H_s=A_s+2sum_(r=1..s-1)sum_(h<r)u^h.
+Concatenation: U_(r+s)=U_r U_s, A_(r+s)=A_r+U_r A_s,
+H_(r+s)=H_r+U_r H_s+2s A_r. O(log s) operations, no u-1 inverse.
+Product of L quadratics acquires complete deformed F(B) in softL bit cost.
+This does NOT acquire all orbit values/product or collision coverage/extraction.
+Original pair P_-s=1-s(u-1)^2/u+s(1+u^-1)B+s^2 B^2/u;
+F_s-P_-s has unit constant coefficient natively, not necessarily unit values.
+Integer twist lifts affect LG despite identical modular Alexander polynomials.
+Figure-eight symbolic audit: f=eta^6-3eta^3+1, cleared LG remainder
+r=-6eta^5+8eta^4+3eta^3+2eta^2-3eta-1, Res(f,r)=25.
+If f=0 and5unit, original pairzero but LGunit. This refutes a universal
+arbitrary-knot replacement, NOT an attained native-catalogue instance.
+Full lawful diagonal Nichols R/YB/rotated inverses/curls now exact checked;
+only a,b units inverted. Positive trefoil J=1-(a+b)(1-a)(1-b),
+negative trefoil J(a^-1,b^-1) matches Kohli. Universal same-variable raw-R
+identification unproved; separately sourced invariant formulas remain valid.
+Trefoil Alexander zeros have even order6, not native odd-order witnesses.
+Original block Q_b(Y)=prod_(i<b)(1-q^iY) gives known-unit times
+prod_j Q_b(z/v_j)Q_b(zv_j), z=eta^3*q^s, costsoft(L+b).
+Doubling retains shifted arguments; pairing doubles degree/halves positions.
+No power gain. Next needs actual native arithmetic contraction, not more backend.
+Preserve720 prior files, both prefixes, concurrent engineering; no Lean/assets,
+commit/push. Current Cimasoni author-PDF citation is Corollary3.5, not3.8.
+
+
+## Target-scale Frobenius screen and native skein recovery, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-lift-20261026. Positive paid
+prepass; full sixth-exponent goal active/open, whole query exponent unchanged.
+For actual N=PQ,P<Q,N<=k^6,rP=ordP(q),rQ=ordQ(q)>16k², compute
+A=16k²+1,B=floor(N/A²),w=q^N,Z=prod_(j=1..B)(w^j-1).
+gcd(Z,N)=Q iff P|rQ, otherwise1; NEVER N on contract. AtP N-power preserves
+rP; atQ order rQ or rQ/P, latter<=B. B<k²/256. Entire Z paidsoftsqrtB<=softk:
+b=ceil sqrtB, producttree F_b(X)=prod_(r=1..b)(w^r X-1), MONIC remainder
+MPE at w^(hb), then tail. F_b needNOTmonic; pointdivisors AREmonic. Repeats
+and zero divisors allowed; no collision inverse. Classical engine credited.
+Failedscreen certifies gcd(N,rP*rQ)=1, also for beta/eta since order quotient
+dividesH and gcd(N,H)=1. N-power is local subgroup automorphism; NO inverse
+exponent/log acquired. This removes lift subgroup-loss case in target time.
+Python/FLINT prototype plus6 focused kernel tests pass; no native coverage
+campaign, no hidden input-contract verification, no formal binary complexity
+claim. Two independent mathematical reviews. Properfactor recovery direct.
+Twist lifts F_(s+tN)=gamma+alpha u^s(u^N)^t have known row/orientation targets.
+Do NOT treat N-th power as additive Frobenius: target^N=target^Q modP does
+not distribute through rational sums. Actual P-th power is the Frobenius.
+Three fixed skein states recover original pairs, but products grow channels.
+Fractional skein J_v=(B-B(v))*ell_v forces knownroots withoutlogs. Full
+J_native=C P_native E_native, degree4L with explicitextra degree2L, all
+coefficients softL. Extra orbit/scalar-zero decoder unpaid; safe cancellation
+beforeevaluation restores oldquery. Removed erroneous degree/pullback argument;
+only precise fixed-q-shift generic-pole mismatch retained. No broad no-go.
+Cyclic native menu condition ordP(beta)|(rHI-C), HI=aP+bQ+lambda. Nonzero
+labels essential for extractor; no uniform smallmenu coverage established.
+Murasugi periodicity obstruction ONLY ordinaryfixedaxis, 0<2L<p-1, eventual
+native scale; not arbitrarytwisted/free actions. Finite root-system trial
+retains cutoffs and theta boundary. Next: actual remaining-group contraction
+or coverage, not more local representation. Preserve739priorfiles/prefixes,
+concurrentwork; no Lean/assets/commit/push. Full guarantee remains unproved.
+
+
+## Cabling/shared-label roots and complete skein correction, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-adams-20261026. Sixth goal active
+and OPEN; whole query remains soft(L+sqrt(Lm)), native soft k^(5/4).
+New factor-or-roots for arbitrary acquired nonzero signed short labels e_j:
+M=prod|e_j|, T=ceil log2N, R=M^T, b=beta^R, beta_j=beta^(R/e_j).
+Complement exponent tree pays all residues softL, not L wide powers.
+T-1 valuation margin removes all M-primary order from every root; local
+orders match b and are coprime to all labels. Test q^R at cap16H; first-drop
+binary search gives PREVIOUS projected q_D with short |e_j| annihilator.
+Use q_D, NOT automatically beta^D; wide R never passed to short extractor.
+Coprime scalar local orders make common small order1. Total soft(L+k).
+Derivative MPE plus one scan factors or certifies unit-separated nodes;
+saturated distinct roots use short e_j-e_l after exact label deduplication.
+Native q_j=beta_j^H obeys q_j^E_j=b^H, NOT b. Collision target is q_j^i=b;
+saturated leaf uses original nonzero E_j-Hi, never wide multiplied gap.
+EXACT fallback at each prime: q_j^i=b iff (b^H)^i=b^E_j. Acquire newcommon
+base/targetssoftL, retain old complete bound and signed decoder. Predicate
+only, not numerical equality. Coverage forces H,I coprime cleaned orders;
+no I or public thinner clock acquired. Old small-coindex roots retain credit.
+N-screen plus separated interpolation pays inverse on FINITE root alphabet,
+not off-alphabet clocks or additive N-power automorphism. Factor branches
+soft(L+k). Optional numerical Frobenius-deflated unit NOT needed for
+zero/nonunit query; do not prioritize it as a missing mandatory backend.
+Morton–Manchon theorem13/cor14 in SECTION7. Rank-one Hillar–Levine relation
+has no supplied efficient unique step or prefix; eliminant support can grow.
+Norm-one torus screen A=16H+1,B=floor((N+A)/A²) returns Q iffP|ordQW,else1,
+neverN. Normone split zero means wholeidentity. Costsoftk; preserve actual
+quadratic supplier k and decoder. Coupled N-power transport preservesnorm
+zero masks; pi^(N²+1)=pi^(P²+Q²) gives no acquired shorter exponent.
+Common-extra skein H_v=B(B-w_v), bothorientations Hnative=B^(2L)D^-1 Pnative.
+All physical B_hunits; COMPLETE correction D^-n Uclock^(2L) paidsoft(L+sqrtm)
+with Uclock=(eta³;q²)_n*(eta^-5;q^-2)_n. No extra zeros/decoder gap remain.
+Actual opposite-row mapping sends apparent m+1 to legal -m; oddtailkept.
+Interactionnorm still old query; finite linear skein combination notsingleknot.
+No numericalcampaign, newcode, Lean/assets/commit/push. Preserve761priorfiles,
+bothprefixes/concurrentwork. Next needs actual whole-query gain/coverage,
+not more alphabet preparation or optional numerical unit acquisition.
+
+
+## Exact-string small core and retained collision norm, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-joint-20261026. Goal active/open;
+complete bound remains soft(J+sqrt(Jm)), J=2L=soft k, m=O(k^1.5).
+For Q=long physical clock and a=(z-z_m)F,
+d_epsilon=epsilon*(z-z_1)F(qz), the acquired TQ transfer polynomial is
+soft J. Cleared polynomial residue Jacobian is a clock-unit normalization
+of a tridiagonal pencil; its exact determinant retains
+prod_(i=2)^m F_i * C(epsilon)*T_J(epsilon).
+C=(epsilon*q^(J+1-2m);q)_(m-J), deg T_J<=J. Balanced division-free
+basis conversion acquires all T_J coefficients soft J; one C evaluation
+soft sqrt m. No long Q/C coefficient list is acquired. C zeros are
+universal auxiliary zeros, not collisions. Optional numeric clock-unit
+Omega acquisition is not the bottleneck. At epsilon=0 full determinant
+is the original product. Generic A^-1 normalization divides that out
+and is illegal at native collisions. Fixed eigenvalue language requires
+regular generic pencil; confluent rows need not carry Q factors.
+All moments t=0..2J acquired soft(J+sqrt m) by one factorial and convolution;
+small Hankel gives subset scalar, correct full-support short resultant
+still needs unpaid Q_n(v_a). No auxiliary saturated additive zero decoder.
+CFK finite two-stack fusion removes (1-X)(1-qX); normalized endpoint
+loses comparison zeros. Cleared strip recurrence is valid, division at
+collisions is not. Physical singular Bethe norms remain model-specific.
+After k-roughening, r_P<k^3 with primes>k: ANY smaller-side loss leaves
+r'_P<k². Paid short-label first-drop factors; continuing cleanup preserves
+smaller order. Huge aggregate exponent alone is not a short annihilator.
+Auxiliary axis cleaning labels allowed regardless of query pruning.
+Group-polynomial coefficients/images cost soft k; useful aggregated
+projection and short-index coverage remain unpaid. No generic lower bound.
+Twisted cover q_j^i=b needs boundary b^d, supplied-set scalar costs
+soft(J+|S|+k), full interval soft(J+m). Shared provenance essential.
+Fourier test corrected to (7,1)/(5,1) according to N mod3; avoids both
+diagonals. Full Fourier expansion fails, compressed algorithms remain open.
+Preserve 775 prior files, journal/agent prefixes and concurrent work.
+No numerical campaign, new executable research code, Lean/assets/commit/push.
+Next needs actual complete query gain, not more auxiliary representations.
+
+
+## Direct core-query and scaling tests, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-direct-20261026. No complete
+query gain; sixth goal active/open, old soft(J+sqrt(Jm)) bound retained.
+Exact coefficient-functional conversion for S=C*T gives
+[eps^r]S=C_r H_T(q^r)/D_J(q^r), r=0..m-J, and H_T(X)=K_J F(z1X).
+D_J=prod_(h=1)^J(X-q^(m-J+h)), K_J=prod_(h=1)^J(1-q^(m-J+h)).
+All bulk denominators are clock units. Proof uses J+1 separated bulk
+nodes when m>2J; otherwise old evaluator softJ. The J-1 residual requested
+positions are paid softJ; long bulk unchanged. Generic J=1 gcd diagnostic
+is NOT native catalogue counterexample; no native gcd(C,T) criterion
+proved or disproved by that diagnostic alone.
+Actual moment rank >=m+1-J>J+1: collisions cannot cause J-state collapse.
+Individual small minors can cancel. Extra endpoint removed for true large
+Hankel detector; its long readout is unpaid.
+For actual negative nonaxis I, admitted scaling gives
+I_d=dI-floor(dlambda/H)<=I; oppose-scale-oppose gives
+1+dI-ceil(dlambda/H)<=I. Only those shortening operations are rejected.
+Stationary center incidence needs lattice aP-bQ=0 modk AND windows
+(Hell*t-H,Hell*t]; no added selection/aggregate theorem supplied.
+Tal TR26-211 was checked: known-prime nilpotent shift state modulo p²
+cannot specialize to native Z=q-1, a unit with a retained Hasse tail.
+Uniform factorial refinement is logarithmic; divisor/character branches
+retain their hypotheses. Legal parity split has old JB+m/B cost.
+Preserve 791 prior protected files, prefixes and concurrent work. No
+numerical campaign, research code, Lean/assets/commit/push. Next needs
+collective native arithmetic/coverage, not repeating these conversions.
+
+
+## Collective conic exchanges and literal mass bound, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-collective-20261026. Full goal
+active/open; no whole-query exponent gain. Native reflection R_a preserves
+E modH and gives admitted q-adjacent pairs, delta=-1,0,1. Cleared exchange
+and zero-safe length-m+1 merge retain original endpoints (m>=1; m0 separate).
+Second reflection has large acquired shifts; closed walks supply no scalar.
+NEW complete-family bound for ORIGINAL LITERAL INTEGER interval grouping:
+different b implies |delta|>=N/H-1-2k/H>16H>m, so windows disjoint;
+same b labelspan<2H -><=2labels/residue after exact dedup. Mass>=Jdistinct*m/2.
+Actual b1,positive1<a<k,aN1mod3 subset has4phases each andOmega(k)distinctE:
+fixedE gives(mu+N)^2=NE modS withmuspan<k/2, atmost2descriptions. Both
+original/swaplabels>N>HM; ±diagonals avoided. MassOmega(km) excludes power
+gain via full-family literal interval merging, NOT modular aliases, all
+folded representations, arbitrary algorithms or new coverage subsets.
+Auxiliary ell=k/2 cyclicnorm fullypaidsoftJ:
+det F(U)=(-1)^(ellJ)prod(v_j^ell-a^ell); centralinputsa,c mustbeacquiredinR.
+Paidq^ell screen givesonephysicalpointmax perauxorbitperlocalfield.
+Arithmeticq wrapdefect c(1-q^r)e0e_last^T unit; cyclicclosure needsactual
+(xq;q)_r. Allblocknormalizations costsoft(r+Jm/r+J); oldoptimizer mayexceed
+rankO(k). No normalizer inverse atcollisions or free root choices.
+AuxiliaryS-rankone conicmatrix isunitdetoverR. Correctexponential2x2leaf
+hasunit eliminatedbottompivot; remainingSchurfactor iscollision andmayvanish.
+Carries/fullFouriermodesretained; no sparse-mask product contraction.
+Ishibashi2610.23572 Oct16correction addsphase/liftdata; unitphases do notfixclock.
+Preserve801priorfiles,prefixes,concurrentwork. No numericalcampaign,researchcode,
+Lean/assets/commit/push. Nextneedsdifferentcontraction/provedsmallercover.
+
+
+## Stationary-colour trace and public Gauss cover, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-trace-20261026. Full sixth goal
+active/open; complete query still soft(J+sqrt(Jm)), J=soft k,m=O(k^1.5).
+NEW exact colour lattice Lambda_j: a*j²=bN modk, j unitmodk;
+lambda_j=-aj-bN*jinv modH is lift-independent ONLambda_j and actualroot.
+Truecolour Pmodk givesstationaryphase. Swapcolour=Njinvmodk, notsamej.
+Explicit hyperbolapairs +unitquadratic modk/g +g lifts acquireallincidences
+softk, axesincluded. Two-generator unwrappedcharacter exact, canonical
+trace product-to-sum retainsqcarry; nativeT=q^(-tau)*Ttilde in tracefile.
+Fareyfile tau hasoppositesign bydefinition; donotmix conventions.
+Public O(k)colours xO(logN)dyadicfactorweights, exactGauss reduction:
+covolkN, |ab|<=k/sqrt3, true |aP+bQ|<4sqrt(kN). Selectedphase/swaps/
+opposites giveuniform softkacquiredcoverage, oldintegerceilM retained.
+Correctpaircannotbezero-rowdeleted; nonzero-phaseaxes retained; allspecial
+row/centre/negativefoldguards preserved. PriorvirtualGauss/contentcredit.
+ThisdoesNOTimprovequeryexponent; oldcataloguealreadysoftkacquired.
+Samecolour Bsum(ZW)=W*Bv(Z)+Xv*Bw(W) propagatesintersection forward,
+not subtreeunion/reverseselector; intervalMinkowskysums/carriesremain.
+OrdinaryFareyphasefailsLITERALintegerclockshift viaS|det²; modularaliases
+notexcluded. Fixed(s,lambda)oneunorderedpair; formalcommonChebexpansion
+Omega(k²)onactualNONDEGENERATEpairs; diagonalconstantmaybenonunit.
+Commonmixedrank2family h0+h1D paid; fullswapnormh0²+t*h0h1+h1² removes
+orientation. Half-list GLOBAL OR onlyactualstationarywitness, notanynormzero.
+Frickecandidatez²-3tz+2t²+1 hasknownpurebranches, nomixedvalueacquired.
+EMSTheorem4.4 equalalpha constant2(alpha+alpha^-1)²; 8onlyparabolic,
+qualifyCor4.5. Threeindependentreviews; no numericalcampaign/code/Lean/
+assets/commit/push. Preserve811priorfiles,prefixes,22concurrentfiles.
+Nextneedsactualjointcolourpredicateorcontraction, notmoretracepreparation.
+
+
+## Collective colour-query tests and quadratic correction, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-colourquery-20261026. Fullgoal
+active/open; noqueryrateadvance, oldsoft(J+sqrt(Jh)) retained.
+Fixedsuppliedshift s: derivativeguard then monicF(q^s*y_j), propergcdor
+saturatedgloballookup/scans givefactorORexactlocal iffE_l-E_j=Hs literal.
+FullshiftgcdproductoverSOURCE nodes, nofieldgcdoracle. CertificateworksoftJ;
+factorbranchADDS T_ext=softN31/192, notpolylogjustbecauselabelshort.
+Onlyoneextractorcallbeforetermination; wholefamilysoftk. At s1 localchains
+<=2 oncontinuation. Nochosenpolylogshiftfamilyhasprovedcoverage; native
+cross-primecommonclockwitnessdoesnotforcechosensamefieldedge.
+Colourlift K->3K: D=(aj²-bN)/K, childiffD+2ajt0mod3; unitaONEchild.
+Exactrationalphaseusesprecision9H anddenominatorj(j+Kt), retainatK6.
+λchild=λ+HL: positiveparentI=9i-L, negative=-9i-L. Complete3coset
+interlacesstride3length3m, nofreemasssaving. Finalcolourindeximagequadratic
+modR=K/2; allvaluationcasesOlogkAPs, unitsquarelimdensity3/8, axesfull.
+COMMONwindow/prefix groupcostsoft(J_d+sqrt(J_d(h+d))), totaloldbound.
+No per-rowpolylogtagbound: axescanTheta(k)tags, totalsoftk. Row-specific
+windowsneedpaidsegmentation. Coarse d3power,d²|k, admittedunitprimitivecore
+has>=d/3phasevalues; nativeaxesSEPARATEexactlyd. Taylorcellconstructor
+O(kT)preparation,O(kh+kT)UPPERmass, cliptooldhorizon; nogenerallowerbound.
+CORRECTION frozenmixed-trace§5: quadraticexponentFORMALmap ISacquired:
+β^((aP-bQ)²)=β^[-N(a+b)²]γ^[(N+1)(a²+b²)]δ^[(N+1)(a²-b²)].
+Numericmixedδunknown; quadraticrelationredundantatlinearbranchhit.
+Standalonequadratic-orientation.md supersedespassage; keepoldarchivefrozen.
+Threeindependentreviews, nocampaign/code/Lean/assets/commit/push.
+Preserve821priorfiles,prefixes,22concurrent. Nextactualjointpredicateor
+provedtestfamilycoverage, notmorebackend/phasepreparation.
+
+Integration clarification for the colour-query packet: for unit rows the image mask is EXACTLY the prior intrinsic conic-square condition I in c/(2lambda)-(2lambda)^-1 Squares(R), c=(lambda²-4abN)/H. It adds no independent colour information; coefficients can be acquired from the row alone. Parent derivation and author check agree.
+
+
+## Knot shift coverage and weighted rectangles, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-shiftcoverage-20261026.
+Full sixth goal active/open; no complete query gain, oldsoft(J+sqrt(Jm)).
+Opposition gives actual SAMEFIELD edge s=1+2i; swap same s at Q.
+Retain ALL lambda!=0 rows including axes; m<=M_int gives2m+1<16H.
+All oddshift3..2m+1 leafgaps nonzero; matched subproduct oldqueryunit.
+Ratio multiplicities FORMAL only, no native distinctalphabet lowerbound.
+Congruence shear(a,b)->(a+ksb,b) exact Ishift=s*b*(P-j)/k-carry.
+Admittedb1pairs allcolours give forcedshift -(P-j)/k-c, possiblyk²;
+complete fallback softN1/4. No general mutation lowerbound.
+Any integer row-coordinate cancellation A=B=0 gives ONLYliteralglobal
+relations; noncancelling supplieds gives AP²+(L-Hs)P+BN=0, cheaptest
+including A0degeneration. No shortcandidatevalue cover acquired.
+NEW uniform AUXILIARY rectangles: dyadicB<=k,A=ceil(2k²/B), Lambda_j
+points in[0,A)x[0,B), k..3kpoints. True rho=k sqrt(P/Q)>16, choose
+rho/2<B<=rho, allI<5k²+1 -> distinctpairgap0<=s<=6k; nonzerogap
+(P-1)(Delta b Q-Delta a), since|Delta a|<2H<Q. Notold|ab|<krows.
+PUBLICfilter A<=H/g,g=gcd(j-1,k): all within-cell distinctpointedges
+s0..6k nonliteral; rejectedcell hasorigin->(H/g,0)literalshift1.
+Truecellpasses via ordP(q)>16H ->g<rho/16. AddTRANSPOSEcells same
+phases: samegap atQ, everytransposeedge nonliteraltoo. Bareproduct
+within cells, exclude selfpairs, givesGLOBALZERO; no crosscellmixing.
+Descriptionssoftk, explicit incidencessoftk². Canonicalqcarry RETAIN.
+Fastscalar with cell/shiftprefixes and gcdNONUNIT status suffices for
+localization; materializeonlyselectedO(k)cell thenfixedshiftconsumer.
+Globalzerobit alone is not this localizationcontract. AcquisitionOPEN.
+Christoffel product firstquotient +OLDjointGP soft(tau+sqrtk), tau min
+slope/complement/inverse variants. Reflection OMITa0 thenrestore1-z,
+nozero division; materializedallcolour startsOmega(k²) scopedonly.
+Shortwords/additiveBarvinokGF notmultiplicativescalar. Newrecursive
+batching mustpay changingnormalizers/carries/endpoints.
+Macdonaldqdisc OLDcredit; h1certificate enables epsilondeflation
+[eps^r]D_(m+1)=U0 W_m, U0unit, r<=J/2. Coefficientunacquired.
+T_extsoftN31/192 retained, atmostoneterminatingextractor. Independent
+paperreviews; no tests/campaign/code/Lean/assets/commit/push.
+Preserve832priorfiles,bothprefixes,22concurrent. Next needs ACTUALjoint
+querygain; newcoveragealone doesnotcloseacquisition orbitcomplexity.
+
+
+## Carry-free Cartesian query and native phase index, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-rectanglequery-20261026.
+Full sixth goal active/open; no query-rate gain. Retain original
+soft(J+sqrt(Jm))=soft k^(5/4); tested new completions soft k^2.
+Canonical pair difference has c in {-1,0}, new n=s-c in0..6k+1.
+Guaranteed close edge has Delta b!=0 (else gap>P/k-1>6k), and a!=0
+follows from |b|<B<=k. Nonaxis difference OVERSUPERSET may use ALL
+cells without old gcd filter: every label bN+O(k^3) nonzero. Safe
+transposes give same n at Q; scalar equality/reverse predicate unclaimed.
+Separate NEW Gauss-grid family: public p0 in[8H,sqrtN], both basis
+lengths>=sqrt(2N), product in[kN,2kN/sqrt3]. NO thin branch. R=2k sqrtN,
+A=ceil(R/ell1),B=ceil(R/ell2),2sqrt3k<=AB<7k+1,A,B<2k. Acquire ONLY
+generator phases, X,Y; actual nodes X^rY^s have UNWRAPPED linear phases.
+True J-span<8sqrt2 k^2+4k -> gap0..4k. Public a_span<=H and a_span<H/g
+passes true cell via a_span<H/2,g*a_span<H/2; removes ALL literal leaves.
+Pure signed difference product over |r|<A,|s|<B,omit(r,s)0 BEFORE eval.
+NONUNIT at P guaranteed; NO transpose/global-zero claim for Gauss grids
+(vertical differences can make transpose literal). Cell/shift-prefix
+gcd status localizes; expand only selected O(k)cell. Descriptors softk,
+explicit incidences softk^2. Labels O(kN+kH), licensed once-only T_ext.
+Carry-envelope string refinement: c(t) in[0,t], common clockO(k) has
+nonzero labels even for added leaves. Shared G_L kernel for<=2 lengths
+cost soft(Ld+BK/d+B+L), optimized soft(B+L+sqrt(LBK))=softk PER CELL.
+Cartesian H_cell degreeO(k) likewise paidsoftk/cell; whole softk^2.
+Exact phase image chi_j(Lambda_j)=g^2 Z/H, imageL=(k/g)^2. Basis
+(k,0),([Nj^-2]_k,1), factor4 and v3(j-1) prove equality, j1 separate.
+Literal q-wraps C,D require L|CD for ANY basis; period sublattice same.
+Exactly k/6 colours g2 have L=H/4, too large for O(k)grid asymptotically.
+Explicit separate closed-orbit tabulation>=k^3/24; NOT general implicit
+norm/circuit/modular-alias/shared-state/factoring lower bound.
+Finite Nekrasov corner identity on actual punctured box F=H0P retains
+4 hole strings. Endpoint z1 universally0=0: H0(1),P(X),P(Y),P(XY) have
+known factors. Formal2-copy regularization leaves3 unacquired bulk values.
+8 boundary strings/cell screened softk across family after literal-index
+omission and length grouping; NO guaranteed boundary coverage. Screen
+omissions do NOT numerically regularize original identity terms for free.
+T_ext=softN31/192 at most once before termination, including shortprefix
+factor branches. Five paper reviews plus integration audit, not Lean.
+Preserve847priorfiles,2prefixes,23concurrentfiles including string proposal.
+No numericalcampaign/newfactoringcode/Lean/assets/commit/push. Next needs
+actual joint scalar acquisition or a cheaper uniformly covered query.
+
+
+## Common-character transport and colour-query tests, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-colourcontraction-20261026.
+Full sixth goal active/open; no rate gain. Oldsoft(J+sqrt(Jm))=softk^1.25;
+tested Cartesian completions stillsoftk^2. NEW explicit common basis:
+G=gcd(j-1,k)^2,L=H/G, B_j=((k,0),([Nj^-2]_k,1)), canonical labels e.
+a=[e1/G]_L,b=[e2/G]_L,d=gcd(a,b) unitmodL, au+bv=d;
+C0=((u,-b/d),(v,a/d)); r=d modL,s=d^-1modL,t=(rs-1)/L;
+D=((s,L),(t,r)); C=C0D det1; eC=(G+Hf,Hc). L1 useidentity.
+Map j TO j' is B_j' C_j' C_j^-1 B_j^-1: rational ambient det1,
+integral bijection on supplied lattice, character preservedmodH.
+Not claimed ambientSL2Z/DAHA operator. Common beta^G itself oldcredit.
+Actual Gauss coordinates n=P_j z,P_j=(B_j C_j)^-1 U_j. MUST use actual
+e_G P_j^-1=(G+HF_j,H Cclock_j), including independent canonical H-lifts.
+Leaf q^(h-F_j n1-Cclock_j n2)-(beta^G)^n1, original finite parallelogram,
+z!=0,h0..4k. Preserve origin/source filter/nonzero-label certificate.
+Fixed n1 has n2 interval, split atorigin; clock intervals merge if
+|Cclock|<=4k+1, else keep gaps. No claimlargeC necessary. Actualpoint
+enumeration O(k)/cell, no huge boundingbox scan, wholesoftk^2. No proved
+small collective support/mass. All descriptor coords O(logN)bits.
+Swap quotient j->N/j with scales[8H,N/(8H)] keeps either P OR Q witness.
+k/6+O1 colourfamilies, scale logarithmic length doubles: NO netfactor2
+runtime claim. b_span<=H/2, labels O(HN+kH), licensedpolylogbitextractor.
+Signed−j baseline MUST be−a−bN+lambda_-j=−Ej+Hepsilon; character−chi_j
+samephaseindex. Overcover[-8k,8k]safe, ordinary/signedstatesdistinct.
+AmbientintegerM requires lattice-kernel equivalence modk and character
+agreement on(k,0),(a0,1)modH. OrdinaryDehnshear forcesj'=j,c multipleH/g;
+same for specified half/quarterframings. Charge M inputheight. Doesnot
+exclude rational lattice isomorphism above or other nonunit transforms.
+Cherednik1406.3959 Thm1.2(ii) A1 Q^(m+n+2kappa)=1 at kappa=-k/2 pairs
+j,k-j as sourceweights. Actual B2,A H rowa=[Nj^-2]_k,b1 has nativephase
+gapH−2lambda nonzeroabs<H; node difference unitbothprimes. Directnative
+leafidentificationfails; no wholeproduct/DAHA generalno-go.
+True cheapcorner |rIu+sIw−h|<16H -> integerquadratic factorcondition.
+Usefulhits exclude knownliteralindices (originhole0=0 omitted). Homothetic
+pushneedsrayalignment andscaledclock; no smallcornercoverage proved.
+OLD generatorcover longclockO(k^1.5) costssoftk^1.25; exhaustiveinterior
+shortclock costssoftk^2. No newcoveragecredit foroldGaussbound.
+Four paperreviews, notLean; T_extsoftN31/192 atmostonce inclshortprefixes.
+Preserve861priorfiles,2prefixes,23concurrentfiles. No numericalcampaign,
+newfactoringcode/Lean/assets/commit/push. Next actual collective slice
+scalar/prefix acquisition, not more descriptor preparation alone.
+
+
+## Cross-representation audit and kernel residue consumer, 2026-10-26
+
+Packet docs/research-evidence/semiprime-hybrid-audit-20261026.
+User asked inventory24–26Oct and same-wall/different-wall hybrid audit.
+34 organizational groups, not independent algorithm count. Oldroute
+softk^1.25 retained; sixth acquisition/recovery/bit/Lean goal OPEN.
+Moment/oldtorus overlap valid under old conditional good orientation.
+nu_i=(q;q)_m x_i^-m/G'(x_i); alignedmu_(m+s)=0 forJ+s<m.
+FULL Hankel projectivegradient gives locator; shortmoments do not.
+TQ retained product is i2..n, INCLUDES lastendpoint; cheapcorederivative
+omits useful D_gP_ret. Weakeroutputspec only, no complexity separation.
+Cyclic paid small inverse/CauchyrankJ bridge gives canonical quotient
+Q_m/(T^m-1) modF, normRes(F,Q_m)/Res(F,T^m-1), unitdenominator after
+screen. OffgridQ_m(v_a) stillunpaid. Smallrank bridge rectangular.
+Exactkernel (k/g){(a,b):aj=bN modk}; HNF canonical q,q^C_j,
+C_j=ceil((N+[N/j]_k)/(kg)), <=2perg. No roughnessneeded for
+ordP(q)|(P-1)/g: q^((P-1)/g)=beta^((H/g)(P-1))=1.
+Universal subkernel k/2 gives SINGLE colourfree twoGP cover:
+Z=prod|b|<=V prod|h|<=W,h!=Cb(1-q^(Cb-h)), C=ceilN/(2k),
+V=O(sqrtk),W=O(sqrt(N/k)+sqrtk). Proof vector from INNERindexk
+lattice; H(Cb-h)=(P-1)(k/2)(bQ-a)!=0. UniformNONUNIT, notglobalzero.
+ReadoutsoftN1/4 worseoldroute. Generator-onlyshortscreen notcovered.
+NEW consumer: supplied usefulhmodk (orpolylogcoverpalette) restricts
+allV starts to AP, totalmassO(k²), wholeeval/recoverysoftk. Alternative
+suppliedb andhmodR,R>=ceil(W/k²) also sufficient. NOresiduesupplier.
+Oldindexpalette/factorresidue has no proved witness transport; torus
+uniqueness import leaves W^[-2(a+bN)], loses sharedscalarseeds.
+Nativefixedscaleg2 supportOmega(k³)distinct INTEGER labels; basis
+clockminimum nonzero gcd(Eu,Ew)/G attained. Onlyliteral-unionmass
+obstruction, no implicit runtime/smallercover/factoring lowerbound.
+SharedfinitePochhammer kernelpaidsoftk; naivefullresidue envelope
+Omega(N/G), doesnotgivequerygain. Fivepaperreviews, noLean.
+T_extsoftN31/192 atmostonce. Preserve873prior,2prefix,23concurrent.
+No newfactoringcode/tests/campaign/Lean/assets/commit/push.
+
+
+## String proposal specialization and residue suppliers, 2026-10-26
+
+Packet docs/research-evidence/semiprime-knot-string-supplier-20261026.
+Previoushybridaudit=progress; sixthfullgoalactive/open. Noqueryexponentgain.
+Userpointednewstringproposal, read/preserved. ExecuteduniversalRECTANGLE
+packages, notalloriginalphasedYoungDk. Oldsoftk^1.25; kernelsoftN^.25.
+Base3 supplier initialized butfirstcoarsequerysoftN^.25; finalhmodk
+consumer doesn'tpayselection. Puncturetransition-F'/a_b correct.
+Phasefilterfaithfulonlyiflocalqordercoprimed; without, phasehit still
+givesnonzero dH(Cb-h) factor/extractorlabel, notfaithfulresidue. Actual
+Q=zeta/q notrootunity, qLucas specializationinvalid. No roughnessassumed.
+Factorlifts P=j+ku,Q=c+kv,a=kt+cb,R=k/2 giveh=Cb+(P-1)(t-bv)/2.
+ModuloR h=alpha+gamma*u,gamma=b(j-1)cj^-1/2. j2mod3,b3unit=>bijection
+onR forNECESSARYcongruences; notactualdivisors/no-generalselectorbound.
+NEWpaidSchurboundary: r=V,s=2W+1,A=C-W-1>r, lambda_i=A+(C-1)(r-i).
+ClearedJT K=diag(Z_i)U, Zi originalrowproducts; entriesU r-1 endpoints.
+detU=q^eta ∏d1..r−1(1−q^Cd)^(r−d)∏t1..r−1(1−q^(s+t))^t.
+Formalpolynomialidentity, NOlongDunitneeded. Uentriessoft r²=softk,
+det/gateO(r)shortfactors incllicensedonceT_ext. ActualUinverseaction
+O(r²): interpolateatq^(A+C(r-i)), evaluateatq^t, triangularsolveP_j.
+Pivotatj=r−t is∏a1..t(1−q^a)∏a=s+t+1..s+r−1(1−q^a), allcertified.
+No denseinverseclaim. Kstillunacquired; K U^-1=diagZi notcheapreadout.
+C>W+V+1 provenhardbranch, originonlyliteral. b0factorA0 stillneededfor
+coverage; costsoftsqrtW canexceedsoftk, ZaloneNOTcovered.
+Nekrasovvaluationboundary=mixeddifferenceofhitcounts; retainedgcdflag
+notacquired. FiniteqqWard retainsendpoints/holes, noamplitudeinitialization.
+Sixprimarysources, fourpaperreviews, noLean/numericalcampaign/newcode.
+T_extsoftN31/192 atmostonce. Preserve890prior,2prefix,23concurrent,
+includingstringproposal. Noassets/commit/push. Needrealhitstatistic
+supplier/globalarithmeticrestriction, notadditionalnormalizationcredit.
+
+
+## Native string boundary and retained collision divisor, 2026-10-26
+
+Packet docs/research-evidence/semiprime-string-native-boundary-20261026.
+Full sixth goal active/open; no query exponent gain. Original signed/axes/
+phase/deleted stationary-colour support, not universal rectangle. Retain
+oldsoft(J+sqrt(Jh))=softk^1.25; T_extsoftN31/192 once terminating.
+Actualleaf1-X^tY^bZ^(tau+i), Z=q^-1. B=(1-X)(1-Y)[(1-Z)K] has<=8Jc
+monomials, softk. Bracket OLD clock-endpoint kernel; no independent new
+acquisition. Eight long translates remain; valuation alternatinghitcounts.
+Ownnonzerobeta-label boundaryscreen licensed, no coverage; literal screen
+omission is NOT regularization/division of identity.
+NONAXIS |aP+bQ+lambda|>=Q-kP-H. Q-kP>H(M+1), sufficientQ>=25kP,
+forces OLD stationaryproof ontoaxes. Doesnotexclude accidentalhits or
+force actualcontroller continuation. ACTUALprimefamily gamma in(0,1/2):
+P(64k^(2+gamma),128k^(2+gamma)),Q(k^(4-gamma)/32768,k^(4-gamma)/16384),
+both11mod12. BMOR Thm1.2 dyadic existence; N(k6/512,k6/128) ensures
+actualnativek; P/H→infinity,Q/(kP)→infinity; oddorders compatible, no
+crossprimecoprimalityclaim. Fullaxis kphases/sign, notfour scalarrows.
+Restoredeletedrow NONLITERAL leaves asunits via2M<16H; smallerunit-tag
+completion onlysafeovercover. Tilingoldsoftsqrt(kM), adaptivegammafamily
+softsqrtP; methodUPPERcosts, nolowerbound. Radiald requiresray+I'=dI-c;
+publicprimitive/squaretagcounts notfixedNfactorcounterexamples.
+Explicitfiniteweight f=1-(1-delta)y/x-deltaYy. Firstlocalslice
+A_p∏hits(1-Yx), A_p!=0. Unequalfirstorderspropergcd; equalnormalizeunit
+->OLDreciprocalmonicgcd. MPEatinverserowroots+ONEsaturatedrowquery gives
+softk consumer forarbitraryhitcount; localclockindicesmaydiffer.
+Paidaliasguardretained; Hasse nofactorials; s_p<=h<p, noJ<pinference.
+Initializedtriangularjet costsoft((d+1)^2*(J+sqrtJh)); overbudget.
+Keepcharacter=>affineclock z_next=q^-1z+(1-q^-1)deltaY. KeepGPclock=>
+psi(y)=(1-delta)y/(1-deltaYy) noncharacter; firstmixed1+Y(xy-x-y).
+No old2generatorclosure unchanged; expanded/projectivestate notexcluded.
+Nextneed paidcollisionretainingclosure ornewaxis-awarecoveredfamily;
+moreunweightedendpointdifferences notnewqueryinfo. Threecross/integration
+reviews+rootcoverageaudit, paperonly. Preserve902prior,2prefixes,23concurrent.
+No newfactoringcode/tests/campaign/Lean/assets/commit/push.
+
+
+## Projective closure, hit masks and axis transport, 2026-10-26
+
+Packet docs/research-evidence/semiprime-string-projective-20261026.
+Prior turn progress; fullsixth goal active/open, no completequery gain.
+RetainC=soft(J+sqrtJh)=softk^1.25; T_extsoftN31/192 once terminating.
+psi(y)=ay/(1-by),a1-delta,bdeltaY admits EXACT commutingPGL2
+T_c=[[c,0],[kappa(1-c),1]],kappa=b/a. CarryT_(q^-tau), automorphyunits.
+MixedclockS_d commutatorlowerleftkappa(1-c)(d-1)/(cd); endpointreadout
+only. Two-sidedpsi makestruehit identically0delta, nofirstslice.
+STRONGER covariance f(cy,x;Y/c)=f(y,x/c;Y); actualcarry shiftsclock
+q^tau, markingq^-tau. Clearedf(x_h)P_y=f(x0)P_(y/q)(qY). ENTIRE
+interiormarkedfactor delta(1-Yx_i) cancels; exactsmallparameterclosure
+isnotmissingscalaracquisition. ComparisonPochhammer remainsunacquired.
+UnivariatePdelta=sum a_n delta^n: firstnonzeroA=a_d propergcdorunit.
+Equalorders e_j=-y_j/A * partial_yj a_(d-1) are CRT0/1 hitindicators;
+yindependentformalinputs,qfixed. Mixedindicatorfactors, elseproduct
+selected(1-Yy_j)=reciprocalgcd. ActualmonicblockMPE+reversegatescost
+soft((d+1)C+T_ext), improvesnaivequadraticprecision. Fullmaskrestriction
+costsoft(J+sqrt(max(1,t)Jh)+T_ext),tunionhitcount. Notfactoringgain:
+one nonunitpath alreadyoldC. NoJ<p/factorials/singularinverseassumption.
+Oddaxis t, e=t+1-kI!=0, rho=beta^k, P<=publicB,M_B=ceilB/k+1.
+ANYusefulrho^e=1 ->q^(e/2)=1 ->kernelb0,h=e/2!=0,inverseleafsamebit.
+|h|<=(B+3k)/2; originalinclusionneeds<=W, elseboundedb0extension.
+Oddm|k: h=(t+1)/2 modm, NOstationarity/tag assumption. Suppliedphase
+residueconsumer softsqrt(B/m); Spalette soft(S+sqrt(S(B+k)/m)+T_ext),
+PLUSsupplier. Iresidueownconsumersoft(k+sqrt(B/m)), nothresiduealone.
+FullWconsumerneedsm>=W/k²; shortenedaxisboundnotallproofvectors.
+OLDpublic +/-1 APcontrollers coverP<=c k²g_odd,g_odd=maxgcd(P±1,k/2),
+logm3powers. Nmodk permitslowramifiedpair via mod9 seeds2,4,5,7.
+Actualgammafamily primes23mod36 hasg_odd3 andP/H→infinity; BMOR36
+intervalproof preservesnativek/oddordercompatibility. Certificatefailure
+only, notAPunitoutput/factoringlowerbound/forcedcontrollercontinuation.
+Threepaperreviewsinclroot, primaryBY/CKSchecked; noLean. Preserve914prior,
+2prefixes,23concurrent. No code/tests/campaign/assets/commit/push.
+Next actualresiduesupplier/globalrestriction orfastercollisionstatistic;
+moreprojectivegroupnormalization alone repeatsacquiredendpointdata.
+
+
+## Restricted-residue HH and uniform torus weak coefficients, 2026-10-26
+
+Packet docs/research-evidence/semiprime-axis-supplier-20261026.
+Progress in INPUT/output requirements, NOT whole-query exponent gain.
+Retain old softk^(5/4) complete route; full sixth goal active/open.
+Restricted HH: supplied S actual-factor residues modn|k, cost
+soft(S*r+sqrtN/(n*r)^1.5+S+1). Ifn>=S*k^(1/3), r=ceil16k/S
+makesSrO(k),babies<k. q_s=(beta^(n²))^(H/n²) givesBOTHlocalorders.
+ONEcorrectresidue n~k1/3 orSk2/3 atn=k suffices; no supplier.
+ALLglobalmatches exactquadratic BEFOREdeletion, includea0/b0/literal0;
+remaining saturateddifferencegcdproper. NoT_extneededthisconsumer.
+Jointrectangles(sigma,[L,U]),U<=2L: A+rDelta starts,Delta=sum(U-L)/L.
+Asoftk,Delta/n<=k^-1/3 sufficient; dyadicDhat exactO(logN)bits,
+r=ceil32k/Dhat. Same rectangle mustcarryfactor ANDresidue.
+PaidAP1,NmodM throughsqrtN excludes1atBOTHfactors orpropergcd.
+M3^(2e+1) softsqrtk makesq3coprime;M3^(e+1) softk equalnativeorders.
+Fixed-rho cyclotomicnorm isrhoFILTER; onlyALLchannels wholepredicate.
+Axisrecurrence stillm longseeds; initializedsoft(m+sqrtB), notsupplier.
+Retrospective oldrow/Euclidean jointmenusretainDeltaOmegak; oldendpoint
+cancelsENTIREnewinteger-tag mark. Scopedtests, nolowerbound.
+POSITIVEuniformTORUShandoffusesactualconductorK~N1/6 (notblindly2*3^e).
+OldoneD/point/oddroughorders alreadypaid; pi=betaW,barpi=beta/W.
+AtwhicheverR nonsplit ordpi>256H²,pi^R=barpi,H=K²; HHusesbeta.
+Twofamilies perunitj: A b1,a=[N/j²]_K; B a1,b=[j²/N]_K.
+D_j=(aj²-bN)/K,t=[D_j/j]_K,ell=[-2aj+Kt]_Hcentered,
+y=pi^ell barpi^(a+bN). AgoodifR=P,BifR=Q; T<=KP+Q<17H²/16.
+OwnI in[0,2H]; anygoodhitgap<4H² henceexact. Unita forcesj=RmodK,
+qguarduniqueindex. UniformUNIQUEHITrefinement; oldweightedcoverage
+alreadyorientationfree, no newpoint-suppliercredit.
+Mark1-y/q^i+delta(1-Y[j]_n), anyn|K>=K1/3 (nKalwaysavailable).
+V=[delta]atY0,U=-[deltaY] satisfyU/V=Rmodn atONEprime,Vnonzero.
+NormV then taucoordinate thenn integergcds validate; HH+complement
+softK. OnlytwoFIRSTORDERcoefficients needed; ACQUISITIONUNPAID.
+Constant-rankdualringoldfallbacksoftK1.5, slowerthanoldbestK1.25.
+Shortweightedalternativegroupg=gcd(a,K)=gcd(b,K)<=sqrtK, n_g=K/g:
+EVERYgoodbinhit hasR=jmodn_g. FirstsliceA(1-Yr)^d givesU=dAr,V=dA,
+d<=Jsector<=K<R. PrimitiveTORUSaxesalsoFULLtagR=jmodK (notaliases).
+Allbins/sectors scanΣK/g<=KlogK, liftatmostO(logN)(1+sqrtK*tauK)
+residuesmodK; uniformtau_eps ε1/12+logbound<=C K2/3. ONEsharedHH.
+DoNOTdiscardlatercorrectbin afterplausiblewrongoutput; noarbitraryτ
+polylogclaim. Leading-slice/d acquisitionstillpaidprecisionoverhead.
+Preserved924prior,2prefixes,23concurrentinclstringproposal. Paperreviews,
+no factoringcode/tests/campaign/Lean/assets/commit/push.
+User now requests alternative expressions for TWO FIRSTORDERcoefficients,
+includingnewdomains. Active scratch /tmp/semiprime-coefficient-forms-20261026:
+residue/resultant, combinatorial/one-defect, structuredmatrix investigations.
+NeedactualcheaperprojectiveU/V, notanotheruninitializeddeterminant.
+
+
+## Alternative expressions for uniform factor-tag coefficients, 2026-10-26
+
+Packet docs/research-evidence/semiprime-coefficient-forms-20261026.
+User requested newexpressions/domains forpreviousuniformtwo-monicU,V.
+Expression/input progress only; noqueryspeedup. Fullgoalactive; retain
+bestnativeK1.25, monicfirstjetfallbackK1.5. Sameconductor-awareK/prep.
+G(X)=prod_i(1-Xq^-i), R_j=G(y_j), C_j=prod_l!=j R_l.
+EXACTleafjet V=Σ(hR_j-y_jG')C_j,U=Σw_j(hR_j-y_jG')C_j.
+REPLACEMENT V0=ΣC_j,U0=Σw_jC_j hasgoodoneprime ratioactualtag,
+denominatornonzero; discardsG' (notcomplexitysavingclaim).
+Fprod(X-yj), H0=XF'-JF=ΣyjF/(X-yj), Hw=ΣwjyjF/(X-yj)
+fullyacquiredsoftJ byweightedproducttree,noVandermonde inverses.
+Pair[eps]Res(F,g+epsH0/Hw),g=GmodF, samegoodratioevenrepeatednonhits.
+gandtwodirectionalvalues remainunacquired; oldadjugate/subresultantcredit.
+RowM=diag(R_j)+11t: M^-1*1=e_hit atgoodfield, butunknownR_jinput;
+M*1-J*1 givesfullRvector. Rank2commutatorEyM-MEy independentR;
+operatorannihilatesALLdiagonals. InvertibleoperatorrepairreintroducesR.
+FlatL=diag_(j,i)(1-yjq^-i): ordinary/taggedmoments through2J acquired
+softJ fromp_t(y),weightedp_t,c_t=(1-q^-ht)/(1-q^-t),onefactorialconv.
+All2J<=2K pivotsguarded. RankoneregularizedmomentsC/(1-zC),E/(1-zC)
+alsoacquiredshortseries, NOTsingular/infinityreadout. Oneclockrowh
+valuesdistinct; multiplicityeach<=J<goodchar. Fulltracerecurrencefroms0
+hasdegree>=h; eventualafterzero transient>=h-1. NoshortKrylovclosure,
+onlyscopedthisrepresentation (notgenericlowerbound).
+Cycle-tree V omitsoneedge,Utagomittededge. ClearedseriesneedsR_j
+andhR_j-yG'; inversesofsumsnotfree. FlatnormalizedStein
+Z-diag(y)Zdiag(q^-i)=(1-s)11t,s=sumZ, uniquehitonehot; unpaid solve.
+Actualclock3stateblockF,xF',xG_w initialized, oldadvancementcost.
+RationalcoboundaryXF'/F=A(qX)-A(X) impossiblegoodfield: nonzero
+q-orbit differentialresidues sum1..J<characteristic. Onlyglobalrational
+endpointshortcutexcluded; nootheralgorithmexcluded.
+PrimaryVillard/BJMS2017/forestpaperschecked; DAndreaDickensteinpublisher
+403 onlycontext, usedunivariateidentitiesproveddirect. Papercrossreview.
+Preserved941files,2prefixes,23concurrent. Noimplementation/tests/numerics/
+Lean/assets/commit/push. Nextneeddirectcofactors/directionalnormpair or
+newpaidzeroeigenspacefunctional fromknownF,q/shortmoments, notfullmatrix.
+
+
+## Paid projective starts and pure-modulus paired structure, 2026-10-26
+
+Packet docs/research-evidence/semiprime-projective-readout-20261026.
+Continuation of user coefficient-expression/domain search. Two constructive
+input results; NO whole-query exponent gain. Full sixth goal active/open.
+Retain best native weighted softK^(5/4); monic first-jet fallback softK^1.5.
+New initialization: f=prod(1-yjX), v=sum omitted-row-products,
+u=sum wj omitted-row-products; degrees J,J-1,J-1. First5J clock values
+and raw(P,V,U) from(1,0,0) acquired softJ by monic MPE and recurrence.
+Any original prefix leaf nonunit factors or supplies global beta^(2E)=1,
+E=ell+a+bN-Hi>N-5K³-H/2>0; O(logN)-bit label, T_ext once terminating.
+On unit continuation E_cross=v(X)u(rhoX)-u(X)v(rhoX) is NONZERO:
+otherwise u/v rho-invariant degree<ordq => constant average n/2, whereas
+unique-hit value is actual unit residue Rmodn. Complete tags and n>2 used.
+If all adjacent normalized-vector determinants vanish, internal nonzero
+states<=2J-2, zero-zero edges<=J-1, hence5J<=5J-4, contradiction.
+Scan raw D_i=U_next V-U V_next: proper gcd or one certified unit D.
+Three charts c=0,1,2 yield BOTH V+cU endpoint units, hence adjacent
+ratios with GLOBAL UNIT increment. At hit1+cr<=2n-1<R, chart valid.
+This RESOLVES initial-chart/increment acquisition; future pivots and
+fast long advancement remain OPEN. No additive-zero annihilator decoder.
+HH consumer still needs n>=K^(1/3), not merely n>2; same fixed constants.
+PureK=2*3^e now licensed for these two monic families: original scalar/
+torus/rough suppliers use size ofD, not conductor divisibility. Retain
+D scan, |D|<=K/2 guard and OLD finite-exception fallback; rerun ALL
+changed-base screens. SoftK factor-or-prepared, no new effective threshold.
+Old chi_D-coloured rows cannot silently inherit this change. Both coefficient
+images are z=Nmod6,1<=z<K, each exactly +/-j; n nearK^(1/3) 3-power dividesK.
+j*=N/j swaps families with SAME centeredell; twist barpi^((a-1)(N-1)).
+Paired quadratics: cB PA-cA PB=(cB-cA)(1-cA cB z²). Twist gate and
+exceptiona1 softK; correction twoGP starts acquired, longcostK^1.5,
+coverage NOT proved. Unit-factor predicate equivalence not jet equality.
+Conjugate-cross W closure rank6 initialized but ALL states zero at hit;
+loses tag. Global joint rational q-certificate forces n/2, wrong actual
+residue; scoped failure only. Same mean argument proves useful prefix.
+New modular-composition/nearlinear-series primary theorems require supplied
+outer input. Exact q-tail aJ X^J B has UNIT prefactor modF; truncation
+cannot certify BmodF=0. No claim accidental vanishing impossible.
+Initialized q-hypergeometric/rational-recurrence contraction still unpaid.
+Three independent reviews plus root audit; paper, not Lean. Preserved949
+prior files,2prefixes,23concurrent. No code/tests/numericalcampaign/assets/
+commit/push. Next need fast interval-sensitive readout from paid starts
+or AP-paired contraction retaining its correction, not more formal closure.
+
+
+## Fast projective tests: degree growth and paid paired inverses, 2026-10-26
+
+Packet docs/research-evidence/semiprime-fast-projective-20261026.
+Prior turn=progress (paid charts/puremodulus). Current full sixth goal
+active/open; NO full-query gain. BestweightedsoftK^1.25, monicsoftK^1.5.
+Executedcommuting firstjetblock: T=fI+ranknilpotents, allTcommute;
+A_b,B_b,C_b acquireddegreeJb, initializedcostsoft(J+Jb+h/b).
+NATIVEscopeddegree theorem forFIXEDSTART ratio, notjustrawproduct:
+goodorientationsexponentsQ+c_jP+ell_j, pureKcoeffAPstep6, +/-phases.
+If6P>Hb, allJb nodesq^t/y_j distinct (integergap<4H²<ordpi).
+AtnodesR_b=(A U+C P)/(A(V+cU)+(B+cC)P)=w_j/(1+c w_j), no pole,
+forANYfixedP!=0 includingpaidprefix/threecharts. R_b(qX)-R_b(X)
+hasJ(b-1) distinctzeros, numeratornonzero byq-invariance/degree<ordq
+and>=2labels. REDUCEDdegree d>=J(b-1)/2 afterallcancellation.
+PreparedP>=c0K³, b=etaK,eta<6c0 =>OmegaK²; b~sqrtK=>OmegaK^1.5.
+Conditionalnativebranch; noforcedcontroller/infiniteattainmentclaim.
+Rulesoutboundeddegreedenseblock/interpolationthere, NOTscalar/circuit
+lowerbound. PenskoiWinternitzinvertible-superposition hitsrank1reset.
+PaidcrossA/B rootseparation softK: MPE FB(yA), localizeONE nonunit,
+scanB once. E=ellA-ellB+aA-1-(aB-1)N !=0 aftera1exceptions;
+propergcdorglobalbeta^(2E)label, T_extonce. GuardedFASThalfGCD gives
+RAFA+RBFB=1 andCRTprojectors; ordinaryGPclocksumsoftK viaunitq^d-1.
+Projectorsare0/1ONROOTS only; offrootclockcontributions/one-defect
+weightsunpaid. Wholecompanionnormmayzeroelsewhere; neverinvertit.
+Goodfamily allrowsdistinctfromgap6P-H; F' MPEdiscriminant norm
+properorunit, paysW(yj)=wj softJ. Oldinterpolation/screencodereceives
+priorcredit; newuniformnativepromise. BadfamilycanboundedFAIL.
+3siblingsj+sK/3: choosemiddlecoefficienta_c, sum a_s=3a_c.
+Producty_s=y_c³(pi^(H/9))^L, publicinteger|L|<=27. Divisibility
+frompublicphaseexpansion directly,sumk_s-3k_c=0; nofactorliftneeded.
+Retainauxa1entryforconstantboundarytriples. Other2symmetriccoeffs
+remain; notrootunityorbit/clocknorm. Pairedphysicalindices nonalign
+regulara: v_l((a-1)(S-R))=2v_l(a-1)<2v_lK forsome l, so Hnmid.
+HypergeomstrideB givesBparameters perweight andJBsectionnumerators;
+literalcompletionB~K softK², nojointcontractionlowerbound.
+NEWtwoendpoint rationalqGosper result: screenfirst+lastL=5Jindices
+softJ orfactor; ALLoriginalmonicleaflabels E=ell+a+bN-Hi>
+N-2H²-H/2>0. Rational identitytheta(A-z)R(rhoz)-(1-rhoz)R(z)=1-rhoz.
+Nonzerofinitepoles needrhoorbit arcD-h-1; localD>16H suffices>L.
+Ifden,numdegrees<=L, zero-poleordm forces theta=q^(h-m)laststrip;
+elsepolynomialdegd>=1 forces theta=q^(d-1)firststrip. Constantsimpossible.
+Thus unitstrips excludeSMALLADMISSIBLEcertificate forALLrows/components.
+Specializeddenominatoridenticallyzero isNOTcertificate; singularlocator
+strategyunexcluded/unpaid. GoodhitcorollaryIinterior givesm=h-I,d=I+1.
+Nohigherdegree/sparse/matrix/finite-grid/scalaralgorithmexcluded.
+Independentcrossreviews+root, paperonly. Preserve961prior,2prefixes,
+23concurrent. Noimplementation/tests/numerics/Lean/assets/commit/push.
+Nextactualscalar/jointcontractioncostbound, notmoreboundeddegree
+projectiveexpansion or automaticqHyperdegreeoracle.
+
+Parameterizedcorollary: ANY1<=L<=H endpointstrips costsoft(J+L),
+excludeadmissiblerationalnum/dendegrees<=L afterunit continuation.
+D>16H givesD-h-1>L; ALLwindowlabelspositive. L=softJ therefore
+fitsnearlinearbounds; 5J isnotanessentialconstant. No generalalgorithm
+lowerbound orclaimthatendpointsalwaysfactor.
+
+
+## Acquired joint coefficient transform and direct residue target, 2026-10-26
+
+Packet docs/research-evidence/semiprime-direct-contraction-20261026.
+Full sixth goal remains active/open; no whole-query gain. Best weighted
+soft K^1.25, uniform monic soft K^1.5. Previous turn=progress.
+
+NEW acquired operation: B=K,M=2K,h=BM+1, rho=q^-1,A=rho^h,
+C_s,e=a_(Bs+e)=alpha_s A^e(A^-1 Z_s;rho)_e/(rho Z_s;rho)_e.
+ONE q-factorial block polynomial/MPE/prefix pays ALL alpha_s soft K;
+both tails h-1,h retained. Cleared mixed-prefix/suffix conversion pays
+common kernel AND transpose actions soft K, certified short units only.
+For b_t=ell(X^t modF)=sum lambda_j y_j^t, remaining scalar is weighted
+SAME-ROOT diagonal V_B^t diag(alpha) Kernel V_1. All actions paid;
+diagonal unpaid; literal soft JK. Linear-in-ell transposition consequence
+only for fixed F, ell-independent linear circuit, not nonlinear readout.
+
+C(S-AI)-Z C((rho S-I)Q)=d e_last^t,
+d_s=-(1-rho^(B(s+1)))a_(B(s+1)). Invertible triangular operators and
+unit-separated Sylvester spectra. Finite generating boundary telescopes
+on U=V^B; both tails restore q-difference. Thus do NOT repeat "outer
+coefficient input missing": actual actions/generators now acquired.
+U_j=y_j^K and inverse graph H(U_j)=y_j soft J, using K-roughness.
+NSSV2026 actual large-bidegree direct cost J^((omega+4)/3), not 1.343.
+Need fused relation reduction with polynomial-coefficient matched actions;
+source genericity and composite-ring pivots also not automatically paid.
+For p=r+f_B t, shift correction f_B(rho^B U_j)t(rho^B U_j) mandatory.
+Native shifted f_B values soft-J factor-or-units. Correction OPERATOR has
+row rank J, but actual special columns/scalar may cancel; no lowerbound.
+Actual correction and transpose STILL have soft-K actions by C action,
+monic quotient and shifted MPE. Correlated diagonal remains unpaid.
+
+Complete ternary hierarchy: delta=K/3, y_r=p U^r q0^c_r, |c_r|<=7
+with public integer carries. ALL cubic coefficients now explicit; old
+determinant-only gap closed. U is GP (B under inverse-colour permutation);
+good orientation uses smaller-factor quotient. Cross-level U_delta=
+U_epsilon³ q_epsilon^(-3 digit), actual inverse-colour digit in B.
+Integer child-hit relation requires GOOD original-window exact-gap bound.
+Entire finite hierarchy soft K; cubic Adams/coarse first jets lawful but
+long clock retained. Literal9h envelope is not optimized-parent lowerbound;
+tighter balanced rebuilt windows scale~3, maintaining mass. Keep a1 aux.
+
+Componentwise Laurent Pi=b[delta^0]delta sum_i(1-q^-i X+delta b)^-1
+is exact hit idempotent; ordinary/tag traces (1,w_hit) at good field.
+Simple pole regardless of multiple hit rows elsewhere. NOT acquired;
+mixed-component inverses lack unit starts. Normalized singular system
+agrees only at GOOD unique-hit field, not globally with multiple hits.
+GK q-bispectral core explicitly computed: T_x(F)/F, T_x=z^J+
+(q^J-x)sum f_r z^r/(q^r-x), x=q^h short units, soft J.
+(sigma_q-q^h)T=(q^J-q^h)F: linear q-antiderivative, not clock mask.
+
+Four cross-reviews plus root, paper only. Preserve974prior,2prefixes,
+23concurrent. No code/tests/numerics/Lean/assets/commit/push. Next need
+actual matched diagonal/fused reduction retaining quotient correction,
+or direct simple Laurent residue. Cheap actions and full hierarchy are
+inputs for that algorithm, not proof of long acquisition or sixth rate.
+
+
+## Short whole-bin residue target and finite chirp contraction, 2026-10-26
+
+Packet docs/research-evidence/semiprime-fused-readout-20261026.
+Previous turn=progress (acquired joint coefficient actions). Full sixth
+goal active/open; NO exponent gain. Retained query soft K^1.25.
+
+STRONGER OUTPUT TARGET: original signed-two-weight-query already uses
+ALL unit j and FIXED barpi, no chi_D(j). Original-source audit licenses
+its rebuild with pure K=2*3^e preparation; rerun actual suppliers/screens,
+retain D-size and finite-guard conventions. Weighted Gauss bins cover
+the NONSPLIT R, either factor, h=O(K^1.5), every good-bin hit exactinteger.
+Nonaxis g=gcd(a,K)=gcd(b,K), g²<=|ab|<=K/sqrt3, so v3g<=floor(e/2).
+All hits have R=j modK/g, axes fullK; hence n*=3^ceil(e/2)~sqrtK
+divides EVERY tag modulus. One common w_j=j modn* for ALL rows.
+Whole-bin simple-pole pair (V,U)=res_delta sum_(j,t)(1,w_j)/
+(1-T_j q^-t+delta) equals (d,dr), 1<=d<=J<R, r=R modn*.
+NO sector palettes, uniquehit, root separation, product amplitude or
+unknown Hasse degree needed. Actual residue acquisition still unpaid.
+Keep bins separate; wrong-bin aliases lack integer/tag provenance.
+Validator+restrictedHH softK for O(logN) pairs, n*²|H scalar-order guard.
+Completed purebank baseline: divisionfree all-rowproducts softK^1.25;
+norm/coordinate classify properfactor or GLOBAL0/unit (nonsplit field);
+sumflags/tagflags gives EXACT pair, thenHH. No T_ext/rootindex/oldchi
+saturated-leaf consumer needed on this complete baseline.
+
+Actual CHIRP CONTRACTION: fixed(a,b) contentg, n=K/g, parityepsilon1
+ifn even else2. Lift j=j0+epsilon n t, t<g/epsilon. Integer inversev
+modH andd=(BNv²-A)/n for(a,b)=g(A,B) give phase difference(H/g)*
+[epsilon d t-epsilon²BNv³t²] modH. Cubicterms vanish because
+epsilon³K/g² integer; do NOT claimg²|K for eveng. Effectivephase
+m=3^v3g, qhat=pi^(H/m), qhat^m=q. Complete each DISTINCT acquired
+pair toALLvalidunitcolours: #pairs_g<=O((K/g²)logK), totalrowssoftK
+by bounded sum_g1/g. Addedrows retainweightedbound/tagprovenance;
+publiccount<16H ensures d<R, finitefallbackretained. Axesseparate.
+After canonical e∈[0,m), recompute carryk∈{-1,0}; normalized T=q^M0y,
+Z0=q^M0y0. Screen raw t=-1,0,h-1,h with physicali=t-M0. Nonaxis
+E=ell+a+bN-H(t-M0) nonzero bybNdominance; propergcdoronceT_ext,
+elseallendpointsunits. Carryremoval preservespredicate/residues only,
+not rawscalar equality. Square strata give AP e=e0+Dv,D=3^(2r+1),
+L=m/D,multiplicity2*3^r; zero singleton multiplicity3^floor(v3g/2).
+Map(v,i)->v-Li collapsesL×h rectangletoONElengthLh GPstring,
+baseqhat^D, suppliedstartZ0 qhat^(e0-DL(h-1)). No rootunity trick.
+Lh<16H; smoothpowers+roughness retainorder. Batched by(g,r),
+J_gr<=soft(K/g²), costsoft(J_gr+sqrt(J_gr Lh)); sumsoftK^1.25.
+Allstringvalues + norm/coordinateflags + multiplicities giveactualpairs.
+Primitiveg1 retainsoldscale inNONAXISsum; separatelyretainedaxes can
+also retainit. No reductionofallremaininginputstoprimitiveonly, nolowerbound.
+
+TERNARY cancellation: parent I0=F(u)/(j+nu), childd selectedbyu modg.
+nP B=(a0+nd)P²-N and exact difference v[B+(a0+nd)v]/(P+nv)
+show I0(u+gt)+d(u+gt)=I0(u)+du modg². Thusg classes,parenttableK,
+NOTg²/Kg. Stronger digit prerequisite withdrawn. Automaticmatched
+phase congruence doesnotselectunknownclass; integralclockstillunpaid.
+Parent-bin enginecostsoft(n+sqrt(N/(nL)+L)), scopedmethodcostonly.
+
+Explicit COEFFICIENT Cauchy basis nowpaid: T=(S-AI)R^-1,
+R=(rho S-I)Q,P=R Toeplitz(s), s_r=A^-r(A rho;rho)_r/(rho;rho)_r,
+T P=P diag(A rho^-k). CP_s,k=d_s s_(B-1-k)/(eta_k-Z_s).
+P/P^-1 softB, unitcrossgaps. Generalh=BM+r allstarts/tails paid
+soft(J+B+M). DualSylvester/linkedtrace actualexecution costsJ(B+M).
+FiniteCD kernelrestorestheoriginalq-shift equation, no endpointscalar.
+Suppliedrowweights permitrepeatedroots; arbitraryquotientfunctional
+spectralconversion stillneedsseparation. Nonlinearresidueunpaid.
+
+Five paper crossreviews plusroot; originalsourceandnativeguardschecked.
+Preserve986prior,2prefixes,23concurrent. No code/tests/numerics/Lean/
+assets/commit/push. Nextfocus shortwhole-bin additive residues or
+primitive pairedrows aftercompletedchirpbank, notsector/Hassedepth
+bookkeeping alreadyremoved. No fullbitcost/sixth theorem established.
+
+
+## Even paired readouts and polar coefficients, 2026-10-26
+
+Packet docs/research-evidence/semiprime-primitive-pair-20261026.
+Previous turn=progress (common-tag target and finite chirp contraction).
+Current progress: weaker sufficient symmetric outputs; NO acquisition
+exponent gain. Goal remains active; weighted route still soft K^1.25.
+
+UNIVERSAL EVEN TARGET: use canonical w2_j=[j²]modn*, n*=3^ceil(e/2).
+Every good-bin hit, including nonprimitive rows and axes, gives same u.
+Acquired pole pair(d,d*u), 1<=d<R, plus existing validator => two public
+Hensel roots +/-R modn*. Constant HH menu costs softK. Thus no odd
+orientation jet is required. Counts for completed banks still require
+actual public J_completed<16H<R guard. Symmetric paired delta-log
+derivative is a precise target, NOT an acquired residue.
+
+PRIMITIVE SWAP/SIGN INVARIANT: m=3^e, kappa=[(j+N/j)²]_m
+=[N(a+b)²/(ab)]_m. Compute canonical integer modm BEFORE embedding
+in B; unreduced N-expression in B loses information. At g1 goodhit,
+kappa=[(P+Q)²]_m. Quartic j^4+(2N-kappa)j²+N²=0 modm has at most
+4*3^floor(e/2) unitroots. Complete-square Delta=kappa(kappa-4N),
+ramification-safe 3adic tree worstcase softsqrtK; unique odd liftsmodK.
+RestrictedHH with nK and S=O(sqrtK), actual constantC, costssoftK.
+No acquired kappa pair; primitivebank maymisswitness. Full-m invariant
+doesnotextend automaticallytoallcontents. Swappedrows neednewweighted
+window/tagproof; symmetry alone isnot permissiontoaugmentthebank.
+
+ACTUAL AW CONNECTION: normalized roots c*x,c/x, rho=q^-1. In finite
+Ismail-Stanton Eq2.4 choose acquired d=rho^-r/x, r<=K. Sumtruncates
+to r+1, but EVERYterm retains L_r=(cx rho^r;rho)_(h-r)
+*(c/x;rho)_(h-r). Shortsum computes exactly the two removedfringes.
+Wholebankfringes softK; residualclock h-r stilllong. Formalpolynomial
+cancellation doesnotlicense native inverseofL_r orremovalofitspoles.
+Allqbinomialdivisionsactualshortunits; normalizephysicalindexi=t-M0.
+
+AXES: retain centered phasecarry, x=j+K(i-k_j), verticalreciprocal
+colour[N/j]_K. Publicbinunitexponents aretwo step6 APovercovers with
+explicitstarts/tails. Lengthmayexceed16H: noglobalonehit/shortunit
+promise there. Goodfieldordpi>256H² and x,R,S<N/(16H) giveinteger
+decoder; scalarengine stillsoftsqrtB. Bothnumericordersunknown.
+NEW conditionalconsumer: acquired d>1 dividing EITHER goodlocalbeta/W
+order suffices. Kroughness=>d>K; P in {+1,-1,+N,-N}modd. Fourinteger
+APsthroughsqrtN haveO(K²)entries; monicfactorialenginecostsoftK.
+NoQdividesanypositiveleaf<=sqrtN, sosaturatedproductimpossible.
+No full/commonorder required, but no one-prime d supplier established.
+
+LATTICE: l=ell-Hi,D=4abN-l². Everygoodexacthit gives
+D=-(aR-bS)²=-H u²,u!=0. Hdivisibility followsconic+exacthit,
+NOT fullcolourR=jmodK fornonprimitive rows. StandardIgusa f(D)=0
+below-1 deletesallnativewitnesses; scopedseedfailureonly. Appell
+Av^aF has algebraic D=-k² support; Kfilter=(1+T^K)/(1-T^K).
+Laurentchambers distinct; nativekcannegative, noonechambercoverageclaim.
+Finite denominator1-(pi barpi^s)^K haswitnesss=-R. Alternativewinding
+(s+R)(as+bS)=0; actualg1shortestgcd(a,b)=1, integersecondonlya=+/-1.
+Complementtargetpi^N yields s=-S but isdifferentFourierspecialization.
+These areSAMEaxisFrobeniuscontrollers; combinedN1/4 covernotnewbest
+bound (HH N1/5 retained). NeitherAppellsum norfiniteweightedpole acquired.
+
+Three independentpaperreviews plusroot andprimaryformulas checked.
+Preserve1000prior,2prefixes,23concurrent. No factoringcode/tests/numerics/
+Lean/assets/commit/push. Nexttarget symmetricadditivepole supplierthat
+removesactualbulk, orone-primeorderdivisor; maintainallfamilycoverage.
+
+
+## Torus transfer and symmetric singleton blocks, 2026-10-26
+
+Packet docs/research-evidence/semiprime-even-acquisition-20261026.
+Previous turn=progress (weaker even/Casimir consumers). Current: complete
+native torus-annihilator transfer and N+1 preparation, plus full-family
+symmetric singleton blocks. Query exponent UNCHANGED soft K^1.25; goalopen.
+
+NEW TORUS TRANSFER: actual W^M=1 globally, nonzero O(logN)-bitM, is
+now consumable softK without factoringM. At SPLIT primeS, t=ord_S W
+>16H dividesS−1 andM. Thus ord_S(beta^M) divides(S−1)/gcd(S−1,M)
+<S/(16H)<N/(256H²)<=K²/256<16H. Actuallyscreenbeta^M through16H.
+One smalllocalorder forcesfactor orEXACTcommonorder; inheritedbeta
+coprimalityforcescommon1. Henceoriginalbeta^M=1; licensedunbalanced
+Text costssoftN31/192<K once on terminatingbranch. No newanalytic
+premise orfactorization; inheritedBurgess finitefallbackunchanged.
+Norm(W^M−1) zero detectsWHOLElocalidentityevenatsplitprime. Therefore
+a testedlocaltorusannihilator givesproperfactor oractualglobalpremise.
+Do NOT applythis toarbitraryadditivezero/non-normoneexpression.
+
+N+1 projection NOW COMPLETE: V=W^(N+1) ordersdivide(R+1)/g,(S−1)/g,
+g=gcd(R+1,S−1), hencecoprime. Actualtorusshortscreen=>factor/largeorders
+orcommon1. LastbranchW^(N+1)=1 resolvedbytransferabove. V remainsodd,
+Krough, bothorders>16H oncontinuation. Rebuildpi=betaV,barpi=beta/V,
+q=pi^H; RERUNcoupledshortunits andREACQUIREnative roots. CostsoftK.
+Oldtorussupplier'sexcludedN+1 gate is superseded bythispaidcomposition.
+No numericorderdivisor isproduced onsuccessbranch.
+
+MIXED LABELS: actualglobalbeta^u W^v=1, nonzerointegerpair, shortlabels
+factorssoftK: u!=0 normgivesbeta^(2u), elseW^v transfer. Equivactual
+pi^A barpi^B=1 with(A,B)!=(0,0), sinceu=A+B,v=A−B. Zero scalarlabel
+isno longerunhandledwhen toruslabelnonzero. Literalbothzerorelations,
+additivezeros andunlocalizedproductzeros remainexcluded. Nativebounded
+leafE=ell+a+bN−Hi,F=ell−a−bN−Hi: ifE0,F=−2(a+bN)!=0.
+
+ORIGINAL BANK SINGLETON PARTITION: oneGaussrowperunitj, samechoice±j.
+n=3^ceil(e/2),L=K/(2n)=3^floor(e/2), block=floor(min(j,K−j)/n).
+Eachblockcontainsphi(n)/2 complete±pairs, exactlyONEpair foreachpublic
+unitsquareumodn: oppositeoffsetsr,n−r haveoppositeparity. Allgoodhits
+j=Rmodn=>sameu=R²; ±cannotbothhit. Henceeveryblock≤ONE goodleafhit,
+includingnonprimitive/axes; someblockhits. SetupsoftK,reusablebins.
+NOTvalidforcompletedcatalogueswithmultiplerowspercolour.
+
+FINITE LAMBERT: rho=q^-1,G(z)=(z;rho)_h, f=(rho;rho)_(h−1),
+c_i=(−1)^i rho^(i(i+1)/2)[h−1 choosei]_rho areactualunits.
+sum_i c_i/(1−zrho^i)=f/G(z). Regulateby z=T/(1+delta) anddivide1+delta.
+Blockpolepair weightedbycanonical[j²]modn gives(0,0)or(A,A*u) goodfield,
+Aunit; NO longcofactornormalization orunknownHassedepth needed.
+SUMofinversepairedrows hasglobalsimplepoles; inversePAIRPRODUCTcan
+havepoleorder2 elsewhereandisdifferent. Normscanselect FIRSTunitblock
+PERBIN, properfactorterminate, saturateddecline. Goodbinmustsucceed;
+wrongbinfailedvalidation/HH continues. OnlyoneHHcallperbinsoftK.
+
+Blockrationalinputs r_b(X)=sum1/(1−T_jX),s_b=sumw_j/(1−T_jX),
+degreeO(sqrtK)each,totaldegreeO(K), producttreeacquiredsoftK without
+separation. Shortmomentsmu_t=(rho^(t+1);rho)_(h−1) acquiredsoftK;
+h+d<=8K^1.5+9+K/3<16H forK>=16. Fullh-entryc_i listNOTacquired.
+Shortpolynomialmoments doNOTevaluate rationalinputatnativepoles.
+SecondarymultisetmomentbankusesD0=min(J,h),Vandermonded0<=D0,
+notunprovedJ<=h. PreferredoriginalblocktargetneedsjustO(sqrtK)pairs.
+
+AWloweringexactfiniteidentity: differenceP_h(c,rho^½x)−P_h(c,rho^−½x)
+=c rho^−½(1−rho^h)(x−x^-1)P_(h−1)(c rho^½,x), withactualpi^(-H/2).
+Regulateddifferencehasextrafactor1+delta. Neighbouringproductsretain
+originalbulk; noquerygain. Sharedrowproducts+constantfirstjets compute
+actualLambertpairssoftK^1.25; separateblockcallsK^1.5. No hiddenarray,
+singularinverse orlargeblockdirectproductchargedasconstantrank.
+
+Threeindependentreviews+root, originalText/screencontractsreadandpinned.
+Preserve1010prior,2prefixes,23concurrent. Paperonly,no factoringcode/
+tests/numerics/Lean/assets/commit/push. NextacquirejointblockLambert
+polesorusecompletecoprimetoruspreparationtofindactualrelationscheaply.
+
+
+## Long-query domains and direct residue hybrid, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-torus-query-20261026.
+Fifteen forms/interfaces grouped into ten domains; not independent algorithms
+or fifteen discoveries. Uniform acquisition remains soft K^(5/4); goal open.
+
+Keep TWO branches distinct. ORIGINAL beta-coupled roots retain squared tags
+and singleton blocks. New value-only readout: A_j=G_h(T_j),
+D_b=product(A_j+delta+epsilon*w_j). Its d0 MUST be zero-gated with norm AND
+coordinates; unit d1 then licenses dw/d1. Empty good blocks cannot pass.
+Multiply (A_j,1,w_j) triples: no G', kappa or c_i array needed. Public integer
+metadata interpolation is old Oct23 machinery; the resultant still has an
+unpaid G_h(Y_b) composition.
+
+TORUS-ONLY roots W^(ell-a-bN), clock q0=W^H, have their OWN actual short
+screen and completed projected-W supplier. Own exponent=-(R+1)(a+bS)!=0.
+Literal-zero rows can be omitted by short gaps. Other aliases are consumable
+by the paid torus-annihilator transfer. Do NOT inherit coupled tags or
+singleton blocks. Common scalar Lucas order-two recurrence is initialized.
+AP union and E~-E folding have query cost soft(K+sqrt(S)). Acquire ALL bin
+metadata and try qualifying cheap bins FIRST. A qualifying correct bin gives
+a conditional soft-K execution; no uniform S<=softK² theorem. Inversion
+alone saves at most two in mass.
+
+116 exact structural fixtures K54..39366: ordinary union retains 0.8765..1
+of Jh; inversion saves nothing further in sampled correct bins. Root replay
+matches JSON rows/CSV. These are support diagnostics, not a factor campaign
+or asymptotic proof. Exact character/graph, rank-one reset, Lucas finite-part
+and gated-Euclid checks pass.
+
+Direct residue focus: full-resolvent/moment/tensor barriers are NOT general
+barriers to a selected residue. Finite barycentric reset gives two fixed
+rank-one determinant values equal the gated row-jet pair; no fast evaluator.
+Lucas V=(D*finitepart(T)-endpoint)/(c-2), D,c-2 units: endpoints paid,
+finitepart still unpaid. Row values alone suffice for old-cost completion.
+Selected first subresultants need an empty gate; guarded Euclid supplies
+both together ONCE short remainders are supplied. The other agent's quoted
+scalar C has no exact supplied definition here; no equality claimed.
+Preserve 1020 prior files, 2 prefixes, 23 concurrent files.
+
+
+## Selected-residue decompositions and one-moment consumer, 2026-10-26
+
+Packet docs/research-evidence/semiprime-packed-residue-20261026.
+The user supplied the side report semiprime-six-domain-acquisition-20261026:
+its C is now IDENTIFIED as Res sum(K/2+[j^2]_n)/(delta+1-T_j*rho^i).
+This supersedes the prior packet's missing-definition status; do not edit
+that frozen history. Side source preserved and pinned. Packed consumer PASS.
+
+NEW weaker interface: any ONE M_r=Res sum([j^2]_n)^r/(delta+a_ji),
+r=1,2,3, suffices for ORIGINAL one-row-per-colour coupled bank. Form the
+canonical integer tag BEFORE its power. Good c=d*u^r, 1<=d<=D0=3^floor(e/2),
+n=3^ceil(e/2), c<D0*n^r<=3K^2/4<both primes. Blocked scalar recovery and
+trial factoring SMALL c cost softK. Reject zero/wrong bounds first. Enumerate
+v|c with v=u^r, count c/v<=D0, unit-square u; Hensel +/- roots plus N/root
+make S<=4*tau(c) covering either nonsplit orientation. ONE shared restricted
+HH call, NOT one per divisor. tau(c)<=324^4096*c^(1/12) gives S=O(K^(1/6)).
+ACTUAL t=ceil(16*ceil(cuberoot(K^4))/n) has kappa<=K/8+3<K, S*t=O(K);
+huge divisor constant is proof-only. beta^(n^2) retains large orders since
+n^2|H. No count coefficient required. Two independent reviews PASS. This
+is sufficient output, NOT cheaper acquisition; arbitrary Lambert amplitudes
+or raw torus aliases do not have c=d*u^r provenance.
+
+EXACT CANCELLATIONS: adjacent reciprocal identity splits paid endpoints
+from T0=sum1/(a_i*a_i+1) with unit residue per interior hit. Geometric clock
+weight telescopes but erases hit. Clock Euler derivative at FIXED T gives
+J_h(T)-J_h(rho*T)+h*1_(T*rho^h=1); chain-rule row derivative essential.
+Full Wronskian erases shared factor; noncovariant one retains selected
+log-residue. Opposite regulators give CT sum w*delta^2/(delta^2-a^2).
+Regulated Ward Schur removes regular contacts but keeps S_w coefficient1.
+Singleton squared-mass reset det=P^2+kappa(P1^2-P*P11), numerator=
+kappa(P1*Pw-P*P1w); mandatory P=0 gate deletes second jets, then unit P1
+licenses Pw/P1. Physical jets are not numerically row-value jets even when
+ratios agree. ALL surviving acquisition remains unpaid at softK.
+
+RAW TORUS separate: endpoint-gated F(x)=(1+x)/(1-x) makes F(x)/tau scalar,
+F(x)+F(y)=2(1-xy)/((1-x)(1-y)); genuine labelled additive collisions.
+Signed clock folding is constant gain. Chebyshev negative square-root
+branch is unit by odd order with paid prepower roots, but BOTH parity
+clock cosets survive, reassembling same length. No new uniform rate.
+
+14 exact cleared polynomial checks PASS and root replay matches; unit,
+coverage, Laurent and bit-cost statements remain paper-reviewed. Preserve
+1043 prior files,2 prefixes,24 concurrent files including side README.
+No new Lean/factoring campaign/commit/push. Current query remains softK^1.25;
+whole-family softK acquisition and complete sixth-rate proof remain OPEN.
+
+
+## Globally unique short weighted cover, 2026-10-26
+
+Packet docs/research-evidence/semiprime-unique-weighted-20261026.
+Previous turn progressed selected-residue/one-moment interfaces. This turn
+proves a PUBLIC whole-bin unique-hit weighted cover, with original
+h=O(K^1.5), softK setup and J_selected<=phi(K). Query remains softK^1.25;
+full all-semiprime sixth-rate bit/Lean goal is OPEN.
+
+COMPLETE ELLIPSE: all signed nonaxis (a,b) obeying
+3(a²B^4+b²N²)²<=4K²B^4N², all unit stationary colours; add ONLY filtered
+primitive axes (+/-K,0),(0,+/-K) obeying sameellipse. SemiaxesAB=2K/sqrt3;
+contentg paircount<=4AB/g², colours<=2g, sum1/g<9/4. Thus nonaxisJ<21K,
+wholeJ<23K; actual enumeration usesO K boundingrectangle, notK²colourtable.
+Everyaddedrowretainsoriginalnormmargin, exacthitprovenance andcoarse tag.
+Nonaxiscanonical mark ispairconstant u=[N(b/g)/(a/g)]_n BEFOREembedding.
+CompletedwholeM1 c=d*u<23Kn<4H (n<=K/6), padding<16H; olddivisorHHconsumer
+fitssoftK withoutnewfinitefallback. This completedmomentisNOToriginalM1.
+
+INCIDENCE: f_j(j)=H*d, f'_j(j)=K*c. Fornonaxis g=gcd(a,K)=gcd(b,K),
+r=j+(K/g)t isrootcolour iff g|t((a/g)t+c), withunit/paritychecks.
+AtanyrootK|f'_j(r), sorootmembershipdependsONLYRmodK, notRmodH. Rootsets
+haveO(sqrtg)entries; contentg rowsO(K/g), totalsparseincidencesO K. Axes
+separatelysingleton. Withinfixed(a,b), rootsetsEXACTLYequalcanonicalphase
+classes ofthecompletecolourfibre. Publicm_r,c_r acquiredbutunknownRnotselected.
+
+ARITHMETIC SELECTION: orientprimitiveintegerdirections a0>0. Forpair
+v=d(a0,b0), bothcores3units, eligibleunitcolours satisfy r²=N*b0/a0
+mod3^(e-v3d); mod2condition independentofoddr. Domainsnestwithv3d.
+ChooseANYexistingmaxv3pairperdirection. For directionsmaxv3>=1, whole
+domainsDISJOINTacrossdirections: sharedcolourwouldmakedetnonzeromultiple3K,
+contradicting|det|<=2K/sqrt3. In each such direction chooseoneACTUALrowper
+maxpairphaseclass; selectALLclasses, includingsingletons. Markdomains.
+EveryuncoveredcolourhasitsGausswitness; itcannotbe3ramified, so g1/g2or
+filteredaxiswithsingletonrootset. Chooseonefallbackrowthere. The resulting
+supportsPARTITIONALLunitcolours; henceEXACTLYONEleafhitinthecorrectgoodfield.
+No phase-classnestingpremise needed; nounknownfactorused. AllselectionsoftK.
+Selectedrowsetneednotretainold +/- symmetry ororiginalsingletonblockformula.
+
+NEW WHOLEBIN TARGETS: constant-clockM1goodvalueu; arbitraryUNITamplitude
+TWO-residuepair(A,A*u)cannotcancel (onehit), allowingonewholebinLambertpair.
+A singlearbitraryA*u isNOTintegerM1. WholephysicalfirstjetsP_delta,P_epsilon
+suffice WITHOUTacquiredP0emptygate; correctbincoverage givesnonzeroP_delta
+atgoodfield. Likewise two canonicalfirstsubresultantcoeffs aX+b suffice:
+theta=-b/a, H_u(theta)/D_row'(theta)=u; uniquehitrowmakesD'nonzero there.
+Allinversesactuallynorm/unitgated; saturatedwrongbinattemptsdecline.
+WrongbinsmayarbitraryratiosandboundedHHfailure;continuebins. This doesNOT
+licenseomittingemptygatesintheoldermany-blockinterface.
+
+DIRECT MOMENT TEST: shortLambertmoments, D_delta,N0,Nu andrecurrenceprefixes
+paidsoftK. Yetdelta^-1*lambda*((1+delta)/T_j)^k giveshomogeneous simple
+rankonepolesforANYrow. Actualfiniteclockconditionselectsthetruepole;
+testedexecutionstillneedsimplicitqfactorialremainderK^1.25. Scopedfailure,
+notnativecounterexample/generalno-go. Cubiccharacterconstantwithinpairs;
+Fourierfusioncubesclockbutkeepsh. PrecomputedrandomwalkDLnotdeterministic
+modularlycompatiblequerysupplier.
+
+PaperconstructionandreadoutreviewsPASS. Publicconstructor18structuralfixtures,
+442080catalogue+167544selectedsupportchecks;rootreplaymetadata/countersequal.
+ValidatorO K²separatefromconstructorsoftK; nofactorfield/order/factoringtests.
+Preserve1065priorfiles,2prefixes,24concurrent. NoLean/assets/commit/push.
+NextactualacquisitiontargetONEwholebinfirst-jet/subresultant/projectivepole
+ontheNEWselectedshortclockfamily, not anothermultiplicitybackend.
+
+
+## Unique-pole contraction and scalar recurrence, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-unique-pole-20261026. Previous goal
+turn was progress: the globally unique short weighted cover was proved and
+implemented. This pass executes three acquisition candidates. The complete
+query remains soft K^(5/4); all-semiprime sixth-rate bit/Lean goal remains OPEN.
+
+PAID CROSS-ROW CANCELLATION: D=product(Z-T_j). D' MPE and one localized row
+scan either certify every row difference a unit or expose an ORIGINAL mixed
+relation. Its labels have size O(KN), hence O(log N) bits; the existing mixed
+scalar/torus decoder factors in soft K. A saturated difference norm supplies
+local equality at the nonsplit prime, not necessarily global split equality.
+Literal duplicate labels cannot occur in the selected support partition.
+Then alpha_j=T_j^(J-1)/D'(T_j) are actual units and sum alpha_j/(A-T_j X)
+=A^(J-1)/D_A(X). Interpolate Q(T_j)=u_j*T_j^(J-1). All-component simple poles
+license numerator freezing only: use 1 and R(X)=X^(J-1)Q(1/X), retain D_A.
+Drop the common unit kappa from BOTH outputs. Normalized finite L_h(f) is
+[X^(h-1)](X^(h-1)*f mod W_h); moments are [h+k-1 choose k]_rho, starting1.
+Target pair Res L_h(1/D_A), Res L_h(R/D_A) is still UNACQUIRED at soft K.
+Its ratio gives the true tag after actual norm/unit gates; wrong bins may fail.
+
+SCALAR ALGORITHM: column companion C, v_t=adj(W_t(C))*1 has nonzero top
+coefficient at the unique good hit, even if other roots repeat. Unit-free
+update v_next=(-1)^(J+1)*Q_a(C)v, Q_a=(D(X)-D(a))/(X-a). Top update needs
+eta_t=v_t(a_t). This DOES close as a scalar recurrence:
+E0=1; E_n=-sum_{k=1}^{min(J,n)} B_k(a_n)*prod_{i=n-k+1}^{n-1}D(a_i)*E_{n-k},
+a_n=q^n, B_k=D[a_{n-k},...,a_n], B_J=1, eta_n=(-1)^(Jn)E_n.
+First J regular values via geometric Newton conversion are paid soft J;
+short-prefix collisions take factor/tag branch. No D(a_i) or E_i is inverted
+in recurrence. Final theta=a_last+D(a_last)*E_prev/E_last (PLUS sign), with
+only final denominator norm gate and subsequent short-cofactor gate. Direct
+cost soft Jh, O(J) state, worse than inherited joint K^1.25. Highest-lag tail
+is explicit; no general minimal-order/no-go claim. Matrix generators remain
+unacquired if an alternative structured solver presupposes W_h mod D.
+
+PEARSON: Lambda((1-X)f)=Lambda((rho^h-rho X)f(rho X)) includes finite endpoints.
+Natural polynomial Pearson after A_delta/D_delta modification is a CONSEQUENCE
+of Gamma(D_delta p)=Lambda(A_delta p); it adds no clock support. Rational
+version retains shifted denominators. Exact single-row connection
+(A-rho^h*T)F_{rho T}=(A-T)F_T transports the pole; T=0 start does not give a
+finite multiplicative path to nonzero T. Finite little-q-Jacobi specialization
+a=rho^(h-1), b=rho^-h has explicit guarded coefficients, exceptional A0,
+terminal beta_h=0. Prefix/suffix of length O(J) are paid; middle tail remains.
+No positivity, hidden root, missing terminal inverse or constant-order bound.
+
+Paper reviews PASS; 264 exact finite-field identity diagnostics and archived
+root replay PASS. These test algebra, not native coverage or scaling.
+Preserve1085 prior files,2 prefixes,24 concurrent files. No Lean/commit/push.
+Next acquisition targets are normalized selected inverse coefficient or the
+FINAL TWO values of the exact scalar recurrence, with all startup costs paid.
+
+
+## Pole coefficients and coupled clock sections, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-scalar-acceleration-20261026.
+Reviewed paper derivations, not Lean theorems. Uniform query remains soft
+K^(5/4); the all-semiprime sixth-rate bit/Lean goal remains OPEN.
+
+For the selected unique-hit family, regularize the SHORT polynomial as
+D_delta=D+delta. F_m=[1,q,...,q^m](1/D_delta) has at most simple poles in
+EVERY component. R_m=Res F_m gives theta=q^(h-1)+R_(h-2)/R_(h-1), with
+actual final norm and short tag/cofactor gates. This changes the requested
+output; it is not numerical equality with physical-row deformation or
+original packed C. No long tau normalization is requested.
+
+Euler conversion gives (D(L)+delta)C=1 mod z^h, L=(1+z)S_q. For the GOOD
+unique hit, c=Res C=lambda*z^I*B(z), B the finite q-Euler series, and
+D(L)c=0 has a one-dimensional good-field kernel. Final pair yields
+ theta=q^(h-1)+q^(h-2)*c_(h-2)/c_(h-1).
+A compact operator does not acquire a nonzero kernel vector. Two tested
+scalar Graeffe products retain certified cross-parity terms. Coupled
+sections DO close as (I+Z_b(u))*diag(q^e)*S_(q^b), u=z^b, retaining wrap.
+B^-1*c has ONE active phase I mod b, but that phase is not supplied.
+
+CONCRETE SUFFICIENT SHORTCUT: choose the least dyadic b>=max(1,h/K).
+An acquired actual r=I mod b, or polylogarithmic covering palette, lets us
+keep only ORIGINAL indices r+b*t, at most K per phase. Explicit monic
+clock product plus MPE at J<=K/3 roots, then inherited guarded recovery,
+cost soft K. No extra q^b-order assumption is needed. Artificially scaling
+i to b*i lengthens the clock and provides no saving. Next work should
+acquire this genuine phase information or the final kernel/pole pair.
+
+NATIVE SELECTION: completed supports are laminar, including fine phase
+classes within each primitive direction. Sparse DP finds exact minimum
+full-window mass S_opt in soft K; incomplete child covers are forbidden,
+duplicates keep cheapest rows, empty windows keep support metadata. All
+cheap bins must run before expensive fallback. Balanced full-bin,
+all-colour partitions from THIS catalogue have S_opt=Omega(K^(5/2));
+this is not a direct scalar-query or arbitrary factoring lower bound.
+
+Christoffel/Toda calculations retain unpaid final frontier data; prescribed
+zero initial pivots forbid naive ratio initialization. The actual D(qX)
+root screen factors or certifies its unit resultant with D in soft K.
+Independent paper reviews PASS; 231 meaningful exact algebra diagnostics
+and root replay PASS. Preserve 1101 prior files, 2 prefixes, 24 concurrent
+files. No Lean, commit or push in this pass.
+
+
+## Public row parity and finite character cancellations, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-clock-phase-20261026. Previous
+goal turn progressed smaller pole/kernel targets and a conditional coarse
+clock consumer. This pass supplies an ACTUAL PUBLIC PER-ROW PARITY MASK
+on an amended covered family. Reviewed paper result, not a Lean theorem.
+The query remains soft K^(5/4); the full sixth-rate goal is OPEN.
+
+Use lattice a*r*(r+K)=cN mod2K, determinant2K: old stationarity plus
+4|(a+cN). Complete ellipse a²B⁴+c²N² <=(4/sqrt3)KB²N, with ONLY filtered
+axes ±(2K,0),±(0,2K). Pure K=2*3^e still forces g²<K despite |ac|<=2K/sqrt3.
+High-direction determinant bound4K/sqrt3<3K preserves disjointness.
+The complete bank has <44K rows; selected phase classes partition every
+unit colour with J<=K/3. Coverage and support selection remain soft K.
+
+Explicit Dceil=ceil sqrt(2KN), M0=ceil(4Dceil/H)+2, h=2M0+1<16H.
+Correct-bin true signed hits have |i|<M0; numeric aliases are excluded by
+the actual order margin. Since ell=0mod4, R^-1=Rmod8 and H=4mod8,
+i=(ell+a+cN)/4 mod2 for EVERY support colour. This is row-dependent;
+it does NOT identify old-family global I or the hitting row. Normalize
+r_j=M0+(ell+a+cN)/4 mod2, Q=q²,T'_j=T_j*q^-r_j. Two lengths M0+1,M0.
+Screen the extra endpoint of every shorter row via ACTUAL mixed labels
+(ell-H*(M0+1),a+cN), second nonzero. Factor or certify global units, THEN
+pad to common L=M0+1. Single-W/qNewton/subresultant formulas now apply.
+Padding preserves hits/projective ratios, not arbitrary amplitudes.
+Horizon grows sqrt2 then halves: constant leading gain only.
+
+FULL-FIBRE higher-bit iff: phase constant on EVERY R=r+Ks modulo dyadic b
+iff b|2a and cN=a*r*(r+K) modKb. For b>=2 this forces (a,c)=(b/2)(a',c')
+with (a',c') in the parity lattice. Forced clock growth cancels extra
+thinning. This is NOT a factor-only selector or collective lower bound.
+
+Alternating scalar residue is (-1)^I; actual coordinate/±1 checks validate
+it. Paired transfer diagonal(D+delta)(Dq+delta), offdiagDq-D: delta cancels.
+Paid H=sum d_r X^r/(1+q^r) has H(q²X)-H(X)=Dq-D, but reciprocal offsets
+move. Initialized cost stays soft(J+sqrt(Jh)). Knot character source
+Bq(z)/Bq(zeta*z) multiplies unique pole by zeta^I; final response unpaid.
+Auxiliary cyclotomic decoder uses base denominator gate and coordinate
+gcds, not an assumed extension norm oracle. Published cyclic phase
+correction retained. Reciprocal trace rebuild plus finite Dixon and
+Schur-Q tests give exact scoped identities, no new query exponent.
+
+Independent paper reviews PASS. Constructor has three structural fixtures:
+11088 direct support,3204 selected-support,608 parity-lift tests; replay
+ignores only three timing fields. Group preparation/padding not implemented.
+Preserve1115 prior files,2 prefixes,24 concurrent. No Lean/commit/push.
+Next target: stronger factor-specific phase restriction, or selected long
+character/pole response without constructing the full convolution.
+
+
+## Residue-preserving telescopes and a retuned hybrid, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-residue-shortcuts-20261026. Previous
+goal turn progressed the acquired parity mask. This pass gives reviewed
+finite decompositions and a conditional hybrid consumer; NO additional
+complete rate improvement. Query remains soft K^(5/4); sixth-rate OPEN.
+
+Collective Cauchy product prod(a-t*T_j*q^-i)/(a-T_j*q^-i), a=1+delta,
+telescopes at t=q to two ACTUALLY gated endpoints per row. Unit kappa is
+paid soft K. Alternating normal mark t_i=q+epsilon*(-1)^(i-1) retains
+Res d_epsilon K=-kappa/q*(-1)^I; row mark gives its tag. This is a concrete
+realization of OLD paid endpoint/normalization and Ward/cavity capability,
+not first credit. Moving the clock to retain the telescope adds the
+opposite unknown residue. No normal derivative seed is acquired.
+
+First Macdonald action at equal parameters is ACTUALLY paid soft K:
+c_j=D(qT_j)/((q-1)T_j D'(T_j)), row differences first gated, and
+S_X=sum c_j*q^h*(T_j-q^-1)/(T_j-q^(h-1)). Finite type-II identity gives
+S_X+[h]_q*D(q^h)/D(q^(h-1))=[J+h]_q. Differentiating restores selected
+leave-one-out/cofactor data; cheap relative action is not a query supplier.
+
+Moving-root D_t=t^J D(X/t), L_i=d_t logD_t(q^i), alternating R_h yields
+Res d_t logR_h=(-1)^I. R_h(qt)R_h(t) is endpoint ratio for evenh,
+q^J endpoint product for oddh. Residues obey a_(k+1)+a_k=e_k; endpoint
+polynomials paid, their bounded orbit positions unpaid. Correct chain q,
+finite boundaries and wrong-bin saturated derivative rejection retained.
+
+Imposed exact3-content g has phase fibres<=2*3^floor(v3(g)/2), NOT its
+larger stationary domain. Genuine m-colour cylinder needs m² scalar
+content: determinant2Km³, J<=K/(3m), h~K^1.5*m^1.5; old engine worsens.
+After literal label division this is ORDINARY PARITY at K'=K/m with the
+original stronger preparation, not independent coverage novelty.
+
+CONDITIONAL HYBRID: choose largest3-power m with m³<=K/1024. Then
+K'=Theta(K^2/3), J=O(K^2/3), h=O(K²); original K guards still hold.
+The complete retuned ellipse retains the unique-support partition:
+metadata proof independent of N<=(K')^6. Do NOT import that false smaller
+size hypothesis into numeric bounds; use original K. Distinct INTEGER
+row marks1..J allow a supplied weak pair U/V=j* to be validated by
+norm/coordinate gates and gcd(c-j,N) scan softJ. Then query ONLY rowj*
+in softsqrt(h)<=softK and localize an actual leaf; original decoder once.
+No small-K' HH call. A supplied pole root can likewise identify the row.
+Thus an initialized selector costing soft(J^1.5+sqrt(h)) would suffice
+here although too expensive on old J~K. NO such selector yet constructed.
+For the unpartitioned cylinder cover require a hereditary product/nonunit
+oracle or actual-leaf output instead; do not import weak unique jets.
+
+Independent paper reviews PASS. Structural diagnostic1134 cylinder iff,
+42 exact-content rows,1266 periodic-root checks; exact replays PASS.
+Preserve1131 prior files,2 prefixes,24 concurrent. No Lean/commit/push.
+Next research: separated-dependence selected marked response on retuned
+unique family, using finite character/operator structure if it helps.
+
+
+## Compact selected norm and all higher responses, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-separated-selector-20261026.
+Reviewed paper derivations, not Lean theorems. Uniform query remains soft
+K^(5/4); full sixth-rate acquisition/bit goal remains OPEN.
+
+ALL HIGHER RESPONSES ARE PAID. With D=sum d_s X^s, b=q^(h-1),
+chi(u)=D(b)^-1 sum_s d_s b^s (u;q)_s (u q^(h+s);q)_(J-s).
+Balanced two-Newton conversion returns ALL J+1 coefficients softJ, also
+fixed-rank physical marked jets. Matrix action/transpose softJ. Actual
+row-separation and both endpoint gates required; no qT_i-T_j inversion.
+Retuned Q^(m²)=q_original² gives global unit gaps via factorization;
+2(h+J)<16H follows conservative m³<=K/1024 and original K guards.
+detA and chi(1) are units: this A is NOT singular W_h(C). All these jets
+are regular through interior collisions. The u1 logarithmic marker has
+amplitudes b/[T_j(T_j-b)] on EVERY row; it is not a hit projection.
+No general information/complexity impossibility is inferred.
+
+DIRECT ORIGINAL PACKED C: acquire D(Y)=prod(Y-Tj) and weighted companion
+A_w=sum wj prod_(k!=j)(Y-Tk) softJ, including repetitions. Set
+E=D((1+delta)X)+epsilon X A_w((1+delta)X), epsilon²=0.
+Q=prod_i E(q^i) has C=[delta^-1](partial_epsilon Q)/Q EXACTLY;
+q^(Jh(h-1)/2) cancels. This is component Laurent identity, NOT unit-start
+division. Q is two nested split-monic GP resultants plus literal tail.
+Formal compact input size soft(J+sqrt h) does not acquire delta expansion.
+
+RETUNED UNIQUE FAMILY: F=prod_j(X-Tj+epsilon0+epsilon1*j) over rank3 jets.
+Two derivatives U,V of clock product satisfy U/V=j* at good unique hit.
+Two GP polynomials of degrees b,c~sqrt h and F acquired soft(J+sqrt h).
+Tail evaluated in same budget. Full rectangle jet combines exactly;
+WEAK rectangle pair requires actual tail-unit gate/localization FIRST.
+Ordinary completion materializes degreeJb, costs soft(J+sqrt(Jh)), at most
+K^(4/3) retuned; keep old K^(5/4) fallback. h~J³ only maximal J~K' regime.
+Desired fused tangent norm soft(J^1.5+b+c) still unconstructed; all inputs
+now explicit, composite-ring-safe and within budget.
+
+CONDITIONAL CUBIC BRANCH: rank12 (Z/N)[z,t]/(Phi7,Phi3), tau*conj(tau)=7.
+sigma_N fixes z, t->t^N. Actual gamma=sigma_N(tau)*tau^-N globally equal
+to t or t² licenses Schoof3.3(i): every p|N has p²=N^(2lambda_p) inZ3.
+For n=3^min(v3(N²-1),e), supplied palette {±1}modn covers both factors.
+At n>=ceil(cuberootK), r=ceil(16ceil(cuberootK4)/n) gives Sr=O(K),
+nr>=16K4/3, kappa<K. Existing restricted-HH recovery fits softK with
+original beta^H order (n²|H); no T_ext. Certificate and threshold NOT
+universally promised. cubic_gate.py supplies factor/palette/decline only,
+not HH or preparation. Growing Gauss vector already paid Oct22; its
+unknown complementary C_Q remains, so prior credit is retained.
+
+Five independent paper reviews PASS. Higher-response diagnostic33 checks,
+four fixtures including zero adjacent-q difference; cubic structural tests
+and exact root replay PASS. No native success campaign or scaling proof.
+Preserve1144 prior files,2 prefixes,24 concurrent. No Lean/commit/push.
+Next target: fused selected tangent norm retaining both geometric factors,
+or a singular row-selecting pairing of the acquired higher marked jets.
+
+
+## Executed selected-norm cancellations, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-geometric-contraction-20261026.
+Previous turn progressed explicit compact norm inputs and all higher
+responses. This pass executes three proposed contractions. No whole-family
+rate gain: uniform query remains soft K^(5/4); sixth-rate acquisition,
+full bit proof and Lean goal remain OPEN.
+
+PAID FORMAL OPERATION. For fixed-rank physical jets F and block length b,
+R_b(S)=prod_(u<b) F(q^u S) is F(0)^b times the exponential of
+sum_n log(F/F0)_n * (1-q^(bn))/(1-q^n) * S^n. First and last M coefficients
+are acquired in soft(J+M), including M near sqrt(h), using certified unit
+constants, integers and q gaps. This is not evaluation at unit points.
+If R_b=r+G_c*t, the exact quotient equation retains
+F(S)r(qS)-F(q^b S)r(S)=-F(S)G_c(qS)t(qS) mod G_c.
+For b>1, G_c(qS) is a global unit on the giant grid; it does not erase the
+shifted quotient. Completion still costs soft(J+sqrt(Jh)).
+
+SINGULAR PAIRING. Xi=det(I-uA-vM) has a two-Newton formula with parameters
+u+v and u*q^h+v. Every fixed affine line and fixed jet is paid in soft J.
+On v=1-u, modes f_k=prod_(r<k)(X-q^(h+r)) and singular values
+u_k=(q^-k-1)/(q^h-1) are acquired. The u0 projector is evaluation at zero,
+not the physical intersection. Pairing it with the clock projector
+collapses the row alphabet to a weighted 1/D(q^i) sum; reverse collapse
+uses 1/W_h(T_j). Boundary normalizers are paid; the interior Cauchy sum is
+unpaid. Centering at the actual hit restores a long affine-clock ratio.
+
+TWO-AXIS PEARSON. Unit weights alpha=x^(b-1)/B', beta=y^(c-1)/G' and short
+Gaussian-binomial moments are acquired. The full doubled original-base
+moment footprint is <4H<16H for K>=54 under the conservative retuning.
+Exact double summation by parts has b+c-1 actual boundary values, with
+paid factor-or-unit gates. The interior four-shift rational correction
+retains the alpha_u*beta_v pole. Use paired sources F'/(F+delta) and
+H_w/(F+delta) for the common nonzero F'(theta) amplitude; pairing 1/(F+delta)
+with H_w/(F+delta) has the wrong normalization. The degree-O(J) mixed
+numerator is acquired, but its rational functional remains unpaid.
+
+COMBINATION TEST. In p/(F+delta)=P_<M+t^M E_M/(F+delta), deg E_M<J and
+ theta^M E_M(theta)=p(theta) at a physical hit. The paid zero/infinity
+strips are delta-regular; the remainder retains the entire pole. Weak
+numerator-pair preconditioning is legal but does not acquire evaluation.
+No general information or complexity lower bound is claimed.
+
+FULL-CLOCK CERTIFICATE. The finite Pearson relation is
+L[(1-X)g]=L[(q^h-qX)g(qX)]. The tested same-denominator ansatz has forced
+numerator P0=Ap*(F-F(1))/((X-1)D(1)) mod D, D=F+delta, paid in soft J.
+The full identity would force P mod D=0 and Ap mod D=0 after actual gates,
+contradicting a preserved good pole. The corrected gate requires F(q^h),
+not F(q^(h-1)): the linear zero X=q^(h-1) maps through qX to q^h.
+Its extended rooted/padded label is (ell'+H'(M0-phase-2h), A+CN), with
+physical index at most M0+3. Nonzero second label and the original-K
+alias margin license the original mixed decoder. No N<=(K')^6 premise
+is imported. This conclusion restricts only the tested certificate.
+
+Three independent reviews and root section-7 review PASS. No numerical
+campaign, implementation or Lean lemmas. Preserve 1164 prior files,
+2 append-only prefixes and 24 concurrent files. No commit or push.
+A selected-pole contraction or proved transport to an acquired boundary
+is still required; formal startup and regular responses alone do not
+establish the requested acquisition advance.
+
+
+## Finite pole transport and correlated reductions, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-pole-transport-20261026.
+No whole-family rate improvement: uniform query stays soft K^(5/4).
+The all-semiprime sixth-rate acquisition, bit proof and Lean remain OPEN.
+
+FINITE JUMP: for barycentric L_h with omega_i=(q^i)^(h-1)/W_h'(q^i),
+K_d(X)=prod_(s=1)^d (q^h-q^s X)/(1-q^s X) gives
+L_h[f]=sum_(i<d)omega_i f(q^i)+L_h[K_d(X)f(q^d X)].
+The last d nodes vanish exactly. After an actual prefix-unit gate,
+K_d p(q^d X) reduced modulo F(q^d X)+delta has degree<J and preserves
+the residue. Its denominator resultant equals the original prefix
+product times q^(-Jd(d-1)/2). Separated-row interpolation is safe;
+do not assume every Euclidean pivot is unit from the final resultant.
+Moving quotient substitution P_d(q^e X) is VALID and paid. At doubling,
+the missing K_d(X) at the NEW modulus tests the next original strip.
+No fixed-modulus quotient-carry objection applies to this substitution.
+
+Shared-product initialization costs soft(J+sqrt(Jd)); d=K^(4/3) fits
+soft K when J=O(K^(2/3)), but no coverage theorem places the hit there.
+Adaptive completion still costs soft(J+sqrt(Jh)). On the unique native
+bank one may drop the common amplitude and rebase a weak pair, after
+accounting for the prefix. This does NOT preserve packed C on multiple
+hits. A shortened clock is exactly the suffix; a common-h overhang is
+excluded by original integer provenance and the <48H² alias margin.
+
+ADJOINT: C L-Z C R=d v^t and L Q^t-R Q^t Z=E^t yield
+<C,E>=v^t Q^t d. Bidiagonal pivots are actual short-gap units. Known
+completion still costs J soft-K actions or h scalar steps. All f-adic
+correction powers are paid soft K; their correlation with implicit
+columns remains unacquired. Explicit short modular composition was
+already affordable; NSSV v2 supplies no new implicit-input algorithm.
+
+ARITHMETIC: fixed scaled parent coefficients at conductor K/g give
+quadratic child phases Q(s)=kappa*s-cNv³s² mod g with carries -1/0.
+Complete canonical phase cosets become GP strings, including axes.
+Original-conductor coverage and endpoints hold; product/localization
+cost is soft(K^(5/4)g^(1/4)), with no singleton promise. Retuned growing
+g needs an actual original-scale guard; constant g alone is insufficient.
+
+DIVISOR COVER: Umans--Wang conditional framework and Oct16 prefactoring
+removal are prior credit. Native smaller scalar order r<K³ is K-rough,
+so any prime loss leaves order<K². A short supplied projection is paid,
+but a prime-divisor difference cover does not produce an immediate group
+collision. Its batched test introduces another long clock. Shared short
+label-product cleaning was already paid; interior labels remain missing.
+
+Four paper reviews/source checks PASS; no implementation, native examples,
+Lean, commit or push. Preserve1176 prior files,2 prefixes,24 concurrent.
+Next target: share actual prefix work or retain its boundary residue
+cheaply, preserving both cases of the unknown collision position.
+
+
+## Requested local-smoothing paper study, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-wave-smoothing-20261026.
+USER REQUESTED this paper study while the persistent factoring goal was
+PAUSED; the goal was not resumed. Read the 59-page OpenAI draft dated
+October25. Applicability/identity study, not a certification of all PDE
+claims. No new whole-family rate: retained query soft K^(5/4).
+
+Useful mechanisms: compatible cofactor divergence and determinant-energy
+correction (Sections3–4), rank-one linearization (AppendixD), passive Phi
+current (Section2), and one maximal admissible aggregate depending on two
+scales (AppendixB B.7). PDE existence/norm estimates supply no bit-cost
+or modular selector. Positivity and real Gaussian decay are not imported.
+
+EXACT FINITE TESTS: rank-one homotopy integral equals detD/(J+1) plus
+v^t adj(D)u/[J(J+1)]. Native integer denominators are units. Acquired A/M
+operators give this scalar in softJ, but their projector is the known
+endpoint mode. D=diag(W_h(Tj)) gives physical weak cofactors still unpaid;
+its determinant differs from the physical product by the explicit unit
+(-1)^(Jh) q^(Jh(h-1)/2). Two-dimensional forward cofactor divergence is
+valid; boundary flux uses shifted products, not the continuum product rule.
+
+Finite Dirichlet 2u_i-u_(i-1)-u_(i+1)=p(q^(i-1))/(F(q^(i-1))+delta)
+has u1+uh=sum sources and uh=sum i*source/(h+1). Boundary residues retain
+the unique-hit amplitude and clock index. An explicit four-state cleared
+transfer costs soft(J+sqrt(Jh)); the singular source remains the query.
+Regular polynomial sources give cheap boundary values but no pole.
+
+Phi=(ell²-4acN)/(4a) is a public rational native discriminant. Holding
+it and a fixed under ell->ell-HI requires c_I=c+HI(HI-2ell)/(4aN).
+Native short bounds force only the possible centered-endpoint reflection.
+Axes and retuned physical-index conversion are retained. This scopes one
+flow, not every conic transformation. Coherent delta*U_w*conj(U0) preserves
+a unique-hit ratio; long amplitudes remain unpaid and packed C is distinct.
+
+Best unexecuted lead: a single coarse section/quotient contribution with
+explicit exceptional carry operators, paying the SAME-root contraction
+once across admissible depths. Exact residue preservation and total cost
+remain required. Three reviews PASS after physical-product normalization;
+preserve1189 prior files,2 prefixes,24 concurrent. No implementation,
+native success campaign, Lean, commit or push. Goal remains paused.
+
+
+## Requested ETH paper study: conditional positive factoring bridge, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-eth-paper-20261026.
+Persistent factoring goal remains PAUSED. This was a requested paper study.
+The supplied 67-page OpenAI draft is dated October17/revised October25.
+
+CONDITIONAL POSITIVE RESULT: assuming THEOREM D.1 (p53, proof SectionD.4),
+an explicit uniform O(L)-BIT-EDGE tensor encoding of integer multiplication
+gives deterministic 2^O(L/sqrt(logL)) factoring, polynomial space, where
+L=ceil(log2(N+1)). This is N^o(1), asymptotically below N^(1/6). Source
+theorem NOT fully independently certified, implemented or Lean-checked.
+Do not present the conditional corollary as an unconditional solved goal.
+
+BRIDGE: n=leastpower2>=4sqrtL, b=n/4, d=ceil(L/b)<=n/4. Auxiliary
+R=Z/(2^n+1), omega4 is a PRINCIPAL n-th root; words use n+1 bits.
+Convolution degree< n, coefficients<2^n+1. Two Cooley–Tukey macro stages
+per DFT give constant-stage O(n²)=O(L) bit interfaces; entry predicates
+use direct polynomial-time arithmetic. Maxdegree O(L^.75) fits D.1's
+s^.9; s1024L suffices with fixed constants. Integer carry chain and
+canonical residues give UNIQUE internal assignments. OR flags exclude
+trivial factors; independent review alternatively subtracts trivial pairs.
+Subdivide every bit edge for bipartiteness. Count modulo2^(2L+1), ell1,
+then O(L) bit-prefix queries recover a divisor. No unknown prime oracle,
+explicit tensor table, gate expansion, or odd-ring-to-2-adic embedding.
+
+Generic SAT route has sufficient threshold v=o(L sqrtlogL); a granted
+v=O(L logL) multiplier does not suffice. High-arity implicit entry
+evaluation is the specific extra permission in THEOREM D.1. Existing
+native long query and retained soft K^(5/4) rate remain unchanged; this
+conditional alternative bypasses that query for factoring.
+
+Useful mechanisms: shared-summary fibres, paid low-Taylor-degree diagonal
+recovery, commuting involution replacements, shared global nilpotent
+truncation, Cauchy wire deformation, precision-weighted mode truncation,
+tapered Hermite recovery and fixed-denominator bit bounds. Native odd-N
+ring does not inherit 2-adic truncation. Source has local degree-cap
+errors in AppendixB.2 and EQUATION(D.1) SectionD.3; corrected k*(a+2(ell-1))
+retains fixed-k asymptotics. These are separate from THEOREM D.1 and are
+not used in this multiplication reduction. See explicit nonzero control.
+
+Independent arithmetic/interface reviews PASS conditionally. Finite
+FFT/carry/parameter diagnostic PASS; not a factoring implementation or
+source-theorem validation. Full D.1 proof audit is the next foundational
+dependency. Preserve1200 prior files,24 concurrent,2 append-only prefixes.
+No commit, push or goal resumption.
+
+
+## Active scaling goal: ETH formal bridge, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-eth-formal-bridge-20261026.
+USER RESUMED and broadened goal to "pursue the 1/6 (or better!) scaling goal".
+Goal ACTIVE, not complete. Prior paper study classified as PROGRESS.
+
+POSITIVE SECOND ROUTE: paperProp3.4+Lemma4.7 suffice for O(L)-wire
+macroFFT network WITHOUT AppendixD. Use n=edgecount,b2,totalincidence2n,
+w=O(n^.75); genuine Boolean multilinear extensions have global degree2n.
+Reuse beta1 numericalschedule, but VERIFY4.7 rather than citing4.8's
+inapplicablepolylogscopepremise:2(b+w)D²=O(n^(49/64))<2n, taildependsb.
+Streaming2^w actualBooleanentries evaluates nonBooleanTaylorinputs.
+Fixeddenominator((R-1)!Q!)^(2n) and polybitheights are paid. Two manual
+derivations give 2^O(L(loglogL)^2/sqrtlogL), polynomialspace, henceN^o1.
+This is NOT yet a compiled full counter/factoring rate theorem.
+
+SOURCE LEAN FOUND via user's lead. Pin openai/math
+7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a, Apache2.0. Catalogue378 formalizes
+fixed-width SAT/counting on actualprimitiveTM at earlier rho rate; NOT D1.
+Specification auditPASS: fixedmachinebeforeallinputs, realcount/answer,
+everyprefixvisitedspace. Challenge'ssorry isexpectedstatementplaceholder;
+solutionclosure2569files hasnotextualsorry/customaxiom/native_decide.
+FULL STRICT BUILD STILL RUNNING, not certified/comparator-checked.
+LIVE EXEC SESSION85099; re-poll withwrite_stdin, neverrestartontimeout.
+State /tmp/semiprime-d1-audit-20261026/lean-build-state.json; logs lean-logs;
+isolatedoutputs lean-build; pinnedcheckout openai-math under same scratch.
+MatchinglocalLean4.34.1/mathlibd13f23b. No sourcecheckout modifications.
+
+COMPILED NEW MODULE RiemannGaussian/SemiprimeStreamingTensor.lean:
+evaluateTracked_eq_sum andevaluateTracked_at_boolean attach exact
+multilinear/Booleanvalues tosame recursion's2^w leafcalls/depthw.
+natDegree_evaluate_le provesdegreewR; natDegree_sum_product_evaluate_le
+provesdegree(sum arities)R, yielding2nR. Mathlib-only; strictbuildPASS,
+onlypropext/Classical.choice/Quot.sound. Fullbitspace/oraclecost NOT proved.
+EarlierexternalTotalIncidence draftsuperseded bythisdirectcompiledproof.
+
+EXECUTABLE factor_network.py nowgivesactualbitports, canonicalmacroDFTs,
+integercarries/ORflags/equalitysubdivision, prefixrestrictions andsupplied
+witnessvalidation. Explicit twiddlevertices givepreedges
+(13nfft+1)(nfft+1)+4d-2; finaldouble. O(L)/degreeOL^.75 constantscovered.
+IndependentcodereviewPASS,10structuraltests+fixedcontrolsPASS, no factor
+search orcontractionsolver implemented. D1'sprecision/modes/packing/time
+manualaudits foundnoessentialgap; noLeanD1certification claimed.
+
+NEXT: continueexistingexternalbuild; composegenericlayoutguard, streamed
+evaluatorbitcost/coefficientheight/precision andprimitivecounterwrapper;
+formalizenetworkcompilerandrecovery. OldnativequerysoftK^1.25unchanged.
+Preserve1211priorfiles,24concurrent,2prefixes. No commit/push/completion.
+
+
+## Executable shared-summary factoring route, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-shared-counter-20261026.
+Goal ACTIVE: pursue the 1/6 (or better!) scaling goal. Previous turn PROGRESS.
+Full kernel-checked all-input factoring/rate theorem remains OPEN.
+
+ACTUAL CODE now constructs deterministic replacement rows/measurements from
+scopes, streams exact Boolean multilinear jets and shared-summary fibres,
+performs Mobius Taylor correction and rational Hermite recovery, and connects
+macroFFT network to L+1 prefix-count factor recovery. Exact integer schedule
+guard selects counter or explicitly reported direct divisor-scan fallback.
+No truth tables/fibre lists, hidden diagnostic counter or unknown factor input.
+Resource derivation and independent review support proposed ordinary-bit bound
+poly(L)*2^O(L(loglogL)^2/sqrtlogL), polynomial space, for Boolean entries.
+Arbitrary rational callbacks need a common polynomial-bit denominator; per-entry
+bit bounds alone are insufficient. Conservative eventual threshold is not a
+practical speed assertion. Old native long-query softK^1.25 unchanged.
+
+COMPILED SemiprimeStreamingTensorHeight: polynomialNumerator_map and global
+sum_product_polynomialNumerator_map give exact denominator d^(sum arities).
+abs_coeff_sum_product_polynomialNumerator_le bounds signed accumulator coeffs
+by cardX*J^cardE*[J(|d|+2B)]^(sum arities), J>=1, |weights|<=1, including empty
+products. Twelve theorem axiom reports standard only; strict build and scoped
+root-import lint PASS. Algebraic polynomial model is not a compiled jet machine.
+
+30 focused code controls PASS (11 layout,10 counter,9 wrapper), plus independent
+nonlinear/Hermite and live counter-to-recovery checks. They are implementation
+validation, NOT new semiprime coverage or rate evidence. All-input code/resource
+review PASS with formal compiler/machine boundary retained.
+
+PINNED EXTERNAL BASELINE: six generic algebra theorems from GlobalPolynomial,
+Separation, SqrtLog.LayoutExactBuckets now audited standard-axiom-only after
+their full14module closure strictly built, all source/object hashes checked.
+Pin/license unchanged from preceding checkpoint. Full2569module SAT endpoint
+build remains LIVE exec85099, no failures at checkpoint; NOT complete or
+comparator checked. Re-poll same handle; state/logs under
+/tmp/semiprime-d1-audit-20261026. Never restart merely on observation timeout.
+
+NEXT: formalize actual network correctness/unique extensions/prefixes, connect
+constructed rows+generic counter identities to streamed arrays, prove eventual
+guard/entry+Hermite+enumeration bit/space costs and full machine recovery. Six
+external algebra theorems or fixed-k SAT endpoint alone do not close this.
+Preserve1240 prior files,24 concurrent,2 append-only prefixes. No commit/push.
+
+
+## Formal counter, arithmetic network and rate slice, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-counter-proof-20261026.
+Goal ACTIVE: pursue the 1/6 (or better!) scaling goal. Previous turn PROGRESS.
+Full all-input factoring bit-time/kernel theorem remains OPEN.
+
+SEVEN NEW STRICTLY COMPILED MODULES:
+SemiprimeBooleanDiagonal proves full Boolean Mobius diagonal with true degree
+cutoff, signs/forcedbits; SemiprimeCounterFiltration derives (3.9) for actual
+scalar bases + positive-z linear ports + streamed tensor product (no assumed
+filtration premise). SemiprimeSharedSummary proves arbitrary-group measurement
+fibre sum, unforced representatives, empty fibres and local forced bits.
+SemiprimeHermiteRecovery constructs finite geometric inverse/cardinal factors,
+proves full explicit Hermite reconstruction and eval0 from retained packets.
+The code's truncated-array inverse recurrence still needs execution refinement.
+
+SemiprimeMacroFermatNetwork proves literal composite-ring root4 principal
+characters, compiler-indexed macro FFT, convolution/canonical inverse, integer
+carry existence/uniqueness and arithmetic_network_iff for digit multiplication.
+compiler_quarter_strict_bound/compiler_carry_capacity give strict <2^n words.
+This is arithmetic-stage correctness, NOT Boolean bit-port compiler correctness
+or uniqueness of every full internal BIT extension. Nontrivial flags, actual
+parameter selection, finite graph count/arity and target digits remain interfaces.
+
+SemiprimeCountRecovery uses only ORIGINAL-network prefix restriction counts,
+not an arbitrary-global-predicate oracle. Actual recursive selector has one
+common accepted witness and <=L+1 count calls. Counting bit cost is not free.
+SemiprimeCounterRate proves exact r/Q floor schedule D^128<2n, growing-arity
+incidence balance, explicit group balance, eventual r>=2/R>=32/6R<=Q/R<Q,
+tau denominator and exact centered-interval checks. BINOMIAL TAIL remains OPEN.
+Analytic C*L^d*exp(A*L*rho+B*L^.75) envelope is subpower; actual runtime,
+binary-log/linear-wire substitution and machine-cost connection remain OPEN.
+
+Combined ordinary-root7module scoped lint/all-generated-declaration transitive
+axiom audit PASS, only propext/Classical.choice/Quot.sound. Independent reviews
+PASS stated algebra interfaces; no finite success/rate campaign. Public proof
+pieces do not yet compose into a single executed counter correctness theorem.
+
+NEXT: native forms -> global H restoration/degree -> concrete corrected ports
+and coefficients; row-span verification -> group invariance; compose Mobius,
+fibre sum and explicit Hermite into counter correctness, refine loops/arrays.
+Then Boolean graph/compiler, exact binomial tail, primitive time/space and full
+factor recovery. Old native long-query softK^1.25 bound unchanged.
+
+EXTERNAL full2569module SAT build remains LIVE exec85099, no failures at snapshot;
+not endpoint/comparator verified. Re-poll SAME handle; state/logs under
+/tmp/semiprime-d1-audit-20261026. Seven new modules do NOT import external SAT.
+Preserve1274 prior files,24 concurrent,2 append-only prefixes. No commit/push.
+
+
+## Composed exact counter and remaining compiler bridge, 2026-10-26
+
+Packet: docs/research-evidence/semiprime-counter-compose-20261026.
+Goal ACTIVE: pursue the 1/6 (or better!) scaling goal. Previous turn PROGRESS.
+Complete all-input factoring bit-time/kernel theorem remains OPEN.
+
+SUBSTANTIVE COMPOSITION NOW COMPILED: CounterNative derives original H(0),
+true total-incidence degree and native Taylor/Mobius identity. CounterSeparation
+proves actual streamed group invariance FROM off-group row-span certificates.
+CounterCompose.counterValue_eq_original joins native rows, forced Boolean
+cancellation, actual measurement fibres and retained packets to explicit Hermite
+and original contraction. NodeCertificate has local partition/readout/rowspan/
+representative fields, NO aggregate identity/count/packet premises; certificates
+needed only at samplePoints Q. Quantitative layout construction remains OPEN.
+
+CounterSearch prefixCounter_eq_accepted supplies actual same counter to original
+prefix search, no count-correctness oracle premise. Every-occurrence checks keep
+all scopes/arity/incidences; coordinate coverage gives original restrictions.
+Nat.floor reads proved natural-valued rational count; search <=L+1 calls.
+CounterTail eventually_exact_schedule_guard CLOSES prior mathematical tail gap:
+actual Q trials, exact interval, integer numerator*(2r²lambda)<=(2r)^Q, growing
+w<=C*n^.75, all numeric checks eventual. Integer-loop execution still separate.
+JetRecurrence proves literal inverse coefficient recurrence, retained add/mul,
+and denominator-first-truncated recurrence inverse = Hermite localQuotient;
+cached-loop O(J²)/primitive bit cost NOT inferred from well-founded recursion.
+
+BooleanNetwork gives finite literal-bit local relation count = ordered bounded
+nontrivial INTEGER factor-pair count, unique coefficient/carry/flag extensions.
+MacroBitNetwork gives canonical actual macro stages, inverse normalization,
+unique intermediates/output-predicate count preservation, digit/OR semantics,
+actual tagged signal-family bit count (13n+1)(n+1)+4d-2, subdivision doubling,
+and macro arities. WHOLE GRAPH ASSEMBLY/PORT BIJECTION still OPEN. Signal count
+alone is NOT occurrence2 or full compiler proof. Boolean carry n-bit vs Python
+n+1-bit requires proved zero-highbit embedding; input top padding remains too.
+
+NEXT MOST PROMISING LAYOUT: generic pinned source Packing.correlated_packing ->
+LayoutUniversal.data -> LayoutBlocks.data -> LayoutHeadPullback.pullback; allows
+growing w, not fixed-k SAT wrapper. DIFFERENT from Python partialcopy/eigenbasis
+constructor: full blocks+leftover identity, cleared-defect rows. Needs STRONGER
+4(2+w)D²(r*lambda)²<=2n,16Qr²<=n and source Q-1-centered width guard; current
+exactScheduleGuard does NOT directly imply these. Same schedule has asymptotic
+margin (not yet compiled conversions). Actual selected integer rows avoid
+rational-basis denominator explosion: W<=4(8Q)^(2R), c<=4n/(r*lambda), log range
+O(lambda), proposed summary exponent O(n/r), retained rho rate. Need original
+incidence adapter, guard conversions, kernel-annihilation->rational-row-span,
+row/copy height bound, explicit finite integer boxes and representative scans.
+Read layout-bridge-map.md and macro-assembly-next.md before next implementation.
+
+All8 strict source checks autoImplicit=false/warningAsError=true; ordinary-root
+scoped lint and EVERY generated declaration transitive-axiom audit PASS, only
+propext/Classical.choice/Quot.sound. Independent semantic reviews PASS stated
+scope. Pin/license of adapted finite Chernoff source checked/archived. No finite
+coverage/rate campaign. Full array execution, primitive time/space, constructor,
+actual graph-size/binarylength rate substitution remain OPEN. Native softK^1.25
+query unchanged; alternative factoring route, NOT solved goal.
+
+External full2569module SAT build remains separate LIVE exec85099/no failures
+at snapshot; not complete/endpoint/comparator verified. Continue SAME live
+handle; state/logs /tmp/semiprime-d1-audit-20261026. These8 do NOT import endpoint.
+Preserve1322 prior files,24 concurrent,2 append-only prefixes. No commit/push.
+
+
+## Constructed layout counter and concrete macro graph, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-layout-assembly-20261026.
+Goal ACTIVE, current slice PROGRESS. Full uniform factoring bit-time remains OPEN.
+
+SourceLayout constructs actual computed words/complete blocks/universal rows/
+identity leftovers/original-owner pullback; derives restoration/degree/head/rank.
+SourceLayoutHeight derives W=B*2*(8Q)^(2R), injective copies then bounded owner
+fibre sum. LayoutCertificates derives rational span FROM integer-kernel locality;
+LayoutSelection selects ACTUAL integer rows, preserving height and rank, and
+constructs bounded signed summaries/representatives. ConstructedCounter applies
+this to Sigma original ports, producing CounterSearch.Problem and exact prefix
+counts/common-witness/noneiff/<=length+1 search WITHOUT supplied layout, row span,
+certificate or counting-correctness oracle. Actual summary cardinality is linked
+to constructed rows; <=(2*n*W+1)^c with c their true total rank.
+
+SourceLayoutRate proves stronger eventual source load/head/Q-1-width guards,
+W<=2^(lambda+2), box<=2^(6lambda), c*logbox<=24nlog2/r from actual rank budget,
+and inverse-floor binary-rate envelope. Final network/schedule/primitive-time
+composition not inferred. This source complete-block/cleared-defect construction
+DIFFERS from frozen Python partial-copy/eigenbasis implementation.
+
+MacroGraph closes actual ORDERED endpoint bijections, per-vertex scopes,
+occurrence exactly two/no repeated scope variable, equality subdivision and
+exact edge/port/vertex/arity counts. Physical n+1 carry words checked<2^n are
+uniquely zero extensions. Missing: actual local entry predicates composed into
+factor-pair semantics, padding/top-bit/target/public-N parameter proof, and
+bit/space execution. Boolean-variable n differs from macro FFT word dimension.
+
+Seven strict new modules: SourceLayout, SourceLayoutHeight, SourceLayoutRate,
+LayoutCertificates, LayoutSelection, MacroGraph, ConstructedCounter. Root15lint,
+all generated declaration transitive axioms, isolated/root object hashes PASS.
+Standard propext/Classical.choice/Quot.sound only. Independent semantic reviews
+PASS. Noncomputable finite/Boolean/basis choices still need execution refinement;
+integer constraint height is not a bound on all rational intermediates.
+
+NEW optional vendor/openai-semiprime: 63 upstream generic modules at
+7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a, Apache2 license. ONLY import module
+prefix/path OAI->OpenAISemiprime changed; namespaces/proofs unchanged. All63
+source transformations verified; all2764 declarations/2023 theorems standard-only.
+Optional library registered in lakefile; default targets/root imports/manifest
+unchanged. Do not conflate source reuse with certification of Python code.
+
+EXTERNAL full2569module Final source closure COMPLETE strict PASS; exact
+comparator expected theorem signature typechecked against Final; EVERY original
+declaration audited standard-only. Main configured wrapper not run:522 extra
+dependencies. Actual theorem is primitive bit-tape exact count/SAT for EACH FIXED
+k, older n(loglogn)^2/sqrt(logn) rate, polynomial visited space. It is not the
+generic growing-arity tensor/AppendixD.1 theorem or a factoring complexity proof.
+
+NEXT: actual graph predicate->factor count plus public size/arity/schedule
+bridge; executable selected-row/word enumerations, cached jet/contraction/Hermite
+loops and full primitive rational bit/space costs; compose factor recovery and
+fallback into uniform all-input bound. Native longquery softK^1.25 unchanged.
+Preserved1394 prior files,24 concurrent,2 append-only prefixes. No commit/push.
+
+
+## Public factor count and cached counter execution, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-executable-counter-20261027.
+Goal ACTIVE; current slice PROGRESS. Guaranteed factoring bit-time still OPEN.
+
+Thirteen NEW modules close actual ordered graph local-table semantics, full
+converse and unique extension, public digit/target coverage and ordinary ordered
+nontrivial factor count, public E=Theta(L)/w=O(L^.75), scheduled actual rank and
+summary budget, exact eventual executable guards, cached jet arrays, streamed
+support enumeration and native row/Taylor/cardinal input heights. Public factor
+count has NO supplied graph/count/coverage premise; squares/orientations included.
+N>0 endpoint counts integer factor pairs, not just prime pairs. Boolean edge E
+is distinct from macro FFT word dimension. E<=6400L; w<=512L^.75; occurrence2.
+
+Actual ternary stream equals subset-pair sum, callback count sum_j<=q 2^j choose(E,j),
+nodes<=(E+1)Cq, depth E; inclusive entropy and actual width J=q+1. Cached array
+quotient is correct and has <=3J^2+J+1 rational operations. Actual inverse outputs,
+ALL inverse dot-prefix sums and quotient outputs have derived fraction bounds.
+Native rows share delta=2^(R-1)*(Q!)^(Q+1), with constructor-derived bounded
+integer numerators/degree, no universal-dimension height factor. Integer Taylor
+shifts preserve delta; actual normalized cardinal input shares (Q!)^(QJ), has
+coefficient abs<=2^(QJ), constant1, explicit polynomial logarithmic bounds.
+
+NEW source_layout.py implements pinned complete buckets/cleared defect/owner
+pullback and selects ACTUAL integer measurement rows. New factor entry reuses
+one constructed layout across <=L+1 original-scope prefix counts. Invalid guard
+uses labelled trial division; optional cap returns no result. Frozen code intact.
+Ten structural/algebra and four adapter checks independently replayed PASS;
+small/guard-disabled/synthetic fixtures explicitly diagnostic, not rate evidence.
+
+Concrete rational-operation ledger covers support pairs/summary boxes/head scans/
+2^w local expansions/setup/Hermite/prefixes: poly(E)*2^(O(E*(loglogE)^2/sqrtlogE)+w),
+hence 2^o(L) with actual public sizes. Ledger is not the complete executed
+primitive-bit/space theorem. ALL intermediate corrected-input/global/product/
+convolution/Hermite accumulator heights and explicit finite-choice/word-reader/
+normalizer/row-selection/control/allocation refinements still need attachment.
+Then compose guard+finite fallback+factor recovery into all-input bit theorem.
+Python is independently implemented; no extraction/compiler-ID correspondence
+is claimed. Native original longquery softK^1.25 remains unchanged.
+
+All13 independently strict compiled; ordinary-root15lint and all897 declarations/
+694 theorem constants standard-only PASS; root/isolated objects match final
+dependencies. Independent semantic reviews PASS. Prior1553 protected files,
+24 concurrent files and2 append-only prefixes preserved. External published
+fixed-k SAT endpoint remains previously verified; no repeat/wider build.
+No commit/push. Next: complete height/execution composition, not another
+representation search or finite factoring campaign.
+
+
+## Native counter bit heights and actual entry execution, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-bit-counter-20261027.
+Goal ACTIVE; slice PROGRESS. Whole-family guaranteed factoring bit-time OPEN.
+
+Eleven NEW modules independently strict compiled; ordinary-root15 lint all11
+PASS; all1081 generated declarations/739 theorem constants standard3-only.
+Root/isolated objects byte-identical,141 local dependency sources/objects stable.
+Prior1683 files,24 concurrent files and2 append-only prefixes preserved.
+
+RationalBits executes actual Boolean-word reduction/GCD/exactdivision/copy and
+add/mul/neg/inv; cost<=20000(W+1)^3 including rawwidth. DotBits executes one
+suffix once and derives all product/sum Fits from common representations;
+cost<=len*(40000(W+1)^3+4)+4. Physical word/report model, not wholeTMcompiler.
+
+CounterPacketHeight derives actual source-row corrected ports and raw/node/Taylor
+packet bounds over delta^M. FibreAccumulatorHeight proves actual measurement/
+forced/group/representative-prefix expansions, records<=labels.card*2^n, varying
+groups and recordwise masks. LocalPrefixHeight attaches actual truth subtotals
+and selected-port leaf products to same-arity padded integer numerators. Bounds
+are cancellation-independent, not small-final-count arguments or fit oracles.
+
+HermiteArrayHeight builds cardinal jets AND full cardinal-at-zero intrinsically,
+then cached inverse/quotient/eval/node sum. Common all-node denominator
+dL*(dH*dL^J), all relevant suffix/prefix representations, polynomial binary
+envelope b+16(Q+J+1)^5. H packet array ACQUISITION is still a separate frontend.
+
+EntryExecution+BitPrimitives+BitCheck execute literal decoder/normalizer, modular
+expressions, integercarry and every original vertex predicate, malformedinputs
+included. New SubdividedEntry adds actual2bit equality, giving exactly the
+FULL counter graph table. Public backendclock<=2^20*(64L+2)^10. Preparation
+note pays publicdigit/descriptors,gathers,syntax/literalcells,flatbinaryaccess;
+loose2^120*(64L+2)^40 fullbitbound is PAPER-level simulation, not LeanTMcompile.
+
+PublicConstructedCount joins actual scheduled sourcecounter directly to
+OrdinaryFactors cardinal under sourceguard. Actual coverage derived from
+occurrence2; no count/coverage premise. Includes generic finite-set/Boolean
+reindexing, restricted counts, positivity and searchcallbound. Runtime and
+original-input recovery execution still separate.
+
+Independent completebit audit found NO additional exponential operation after
+two repairs: partialsortedGaussian scratch needs O(K²(logA+logK)+inputbits),
+not completedrow's tightminorbound; localtruth expansion needs explicitl1
+factorization <=[J(delta+2P)]^arity. Actual conditional-score common denominator
+4*r²*b²*D² (epsilon=a/b), actualPython streamingstate polynomial. Numerical
+constant16435 explicitly UNPINNED; independent finitegeneratingfunction gives
+Cq=exp(o n), preserving candidateN^o1 without that constant. Manual audit
+supportsordinarybitargument, not completedformalwholeexecution.
+
+NEXT: explicit computable finite enumerations (wrapper defaultEnumerations still
+noncomputable), paid actual originalrow Gaussian/binomial solver, complete H
+array/interpreter correspondence, rational/entry/control/storage costcomposition,
+then guard+finitefallback+publicprefixrecovery+rate inONEallinput theorem.
+Logicalexpandedheightrecords mustNOTbe executed/materialized. Pythonproduction
+source_factor_search uses no directcountoracle; optionalcaps excluded. Native
+longquery softK^1.25 unchanged. External fixed-k SAT kernel audit stays frozen.
+No commit/push, no new semiprime-success campaign, no goal completion.
+
+
+## Executed coefficient-to-count frontend, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-counter-frontend-20261027.
+Goal ACTIVE; slice PROGRESS. Whole-family guaranteed factoring bit-time OPEN.
+
+17 new modules strict+ordinary-root15lint PASS; all1073 generated declarations/
+572 theorem constants transitive-standard3-only. Independent strict objects
+match root objects; 140 local dependency sources/objects stable. Prior1797 files,
+24 concurrent files and2 append-only prefixes preserved. No commit/push.
+
+Explicit finite enumerations construct source alphabets and packing adapters;
+r^Q/r^(2Q) lists are polynomial ONLY under scheduled D. MixedRadix scans full
+summary codes without materializing Y tuples. Computed original-row RREF selector
+closes span/LI/rank/inSpan; tracked SAME state costs <=8m(n+1)^2 rational calls
+and <=mn pivot tests. Minor/scratch bit bounds remain constructive paper-level.
+ExecutedNodeDesign computes selected original integer rows and native locality;
+lazy fields may recompute polynomial preprocessing, so cache or pay explicitly.
+
+RepresentativeExecution/FibreArrayExecution/PacketArrayExecution execute actual
+false-first reps, forced measurement scans, separate local group products,
+full summary sweep and signed support traversal. NativeLocal shifts SOURCE
+coefficient arrays by Horner, caches corrected ports, streams paid truth entries.
+NativeGroup supplies actual groupValue; no group/fibre/H output oracle remains
+at the coefficient-array interface. AcquiredHermite invokes each node once,
+copies J coefficients and retains all callback work in actual scalar recovery.
+NodeArrayExecution.count_correct reaches originalContraction using only source
+coefficient correctness, native row design, degree/restoration and precision.
+
+Executable caller audit caught proof-only polynomial rows leaking into the
+first runtime API. Repaired RuntimeDesign has ONLY finite data; fibre/node/count
+signatures contain no Polynomial/Data index. Actual Lean eval yields1/2/0 on
+one-variable table controls (diagnostic executability, not asymptotic evidence).
+Independent review explicitly records prior missed issue and repaired interface.
+
+Work envelope remains poly(dimensions)*Cq*Y*2^H*2^W plus Hermite polynomial cost.
+No global2^n traversal or retained huge summary/fibre/truth table. Displayed work
+is scalar/read/selected-control ledger, NOT primitive bits: div/mod, finite-set
+ops, closure/index access, source/design supplier generation and physical rational
+arithmetic still need composition. Suffix truth tensors need generic restricted-
+table height bounds, not verbatim full-T mask theorem. CandidateN^o1 unchanged;
+original long query softK^1.25 unchanged. External fixed-k SAT audit frozen.
+
+NEXT: complete actual source coefficient arrays/binomial solve; materialize
+computed design; attach EVERY new interpreter prefix height and primitive
+bit/control/storage execution; instantiate public graph/entry/prefix recovery;
+compose guard+finite fallback+rate in ONE all-input factoring bit theorem.
+
+
+## Actual source acquisition and source-to-scalar counter, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-source-acquisition-20261027.
+Goal ACTIVE; slice PROGRESS. Guaranteed all-input factoring bit-time OPEN.
+
+20 new modules strict+ordinary-root15lint PASS; every573 generated declaration/
+361 theorem constant has only standard3 transitive axioms. All20 independent
+isolated objects byte-identical; full source-resolved dependency checkpoint
+unchanged. Prior1913 files,24 concurrent files and2 append-only prefixes preserved.
+No commit/push. Published external SAT audit remains frozen.
+
+BinomialExecution computes integer parity coefficients by cached Pascal rows,
+explicit lower solution and reverse unitriangular solve. B=L*U and uniqueness
+prove literal source equality; no inverse/vector oracle. Tracked arithmetic
+A(R+1)+A+R+R², reads2A(R+1)+R², all-prefix integer height polynomial in A,R.
+Core convenience wrapper still repeats ordinary target powers; pay them.
+
+UniversalNumerator uses sorted commuting differences; SourceInterpolation/CodeArrays
+compute actual universal coefficient arrays. SourceArrayAcquisition searches
+packing, assembles complete blocks and leftover identities, pulls back to original
+variables and caches M*n arrays. SourceExpressionBound proves actual syntax nodes
+<=6Q²+8Q+3 and explicit array arithmetic/read bounds. Source constants/finite
+search/packing/index work is NOT included in those array reports.
+
+PaddedBlock/Constraint acquisition uses explicit (block×universal)⊕incidence
+indices, at most2M rows. Every old source row appears; every padded row is zero
+or literally old. Kernels/row spaces/rank preserved. RuntimeDesignAcquisition
+executes original-row selection and caches selected entries without runtime
+Layout/Polynomial indices. SourceRuntimeDesignBridge derives native locality
+and exact selected source rank from actual row covers.
+
+AcquiredSourceCounter.count_correct now constructs ALL source arrays, integer
+constraints and node designs internally and returns originalContraction from
+original indexed network/table inputs. Only owner bound, Q/interval, positiveJ
+and precision guards remain; no coeff/constraint/locality/Taylor/count answer
+premise. Actual whole-source Lean controls1/2/0 PASS (executability, not rate).
+
+LocalExecutionHeight/BitBounds attach source Horner, corrected-port prefixes,
+restricted truth branches/tail ports, products and all convolution subtotals to
+common-denominator bounds; polynomial binary Fits derived without cancellation.
+
+Independent source-preprocessing review gives fixed polynomial overhead under
+scheduled D=r^(2Q),r>=2: subset difference leaves<=3^Q<=D. Repeated lazy word/
+packing/selection calls are explicitly paid; let-records are NOT global caches.
+AST occurrence-denominator and matrix-minor/scratch bounds support polynomial
+bits. Aggregate preprocessing runtime is PAPER-level, no numerical polynomial
+exponent asserted. Counter .work still omits source/design preprocessing;
+not even a complete formal scalar-operation clock for the new wrapper yet.
+
+NEXT: attach all source/design and counter arithmetic/read/control/storage to
+actual bit primitives in one executed run; public equality-subdivided graph and
+paid entries; original Boolean/prefix recovery; guard+finitefallback+schedule
+in ONE all-input factoring bit theorem. CandidateN^o1 remains unproved here.
+Older native longquery softK^1.25 unchanged; no new softK acquisition theorem.
+
+
+## Physical local execution and original-input factor recovery, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-bit-execution-20261027.
+Goal ACTIVE; slice PROGRESS. Whole-input guaranteed factoring bit-time OPEN.
+
+11 new modules strict+ordinary-root15lint PASS; all490 generated declarations/
+328 theorem constants standard3-only. All11 isolated strict objects identical;
+full source-resolved dependency checkpoint unchanged. Prior2066 files,
+24 concurrent files and2 append-only prefixes preserved. No commit/push.
+
+JetBits executes rational-word add/scale/convolution; PolynomialCodeBits compiles
+actual physical-constant expressions. Structural budgets derive intermediate
+capacity and initialized width from original constant words; no output-Fits
+oracle. Source constants and width/template acquisition remain separate.
+
+LocalBits executes actual bounded integer callbacks and BOTH restricted truth
+branches with cached lo/hi and physical word arithmetic. Correctness derives
+all intermediate representations from initial ports. Wbits=(2b+3)(w+1)+3
+suffices from J,d,B<=2^b. Actual local clock<=2^w*(E+(w+1)*nodeBudget(J,Wbits)).
+This is a scoped Boolean arithmetic/flat-cell ledger, not a complete tape clock.
+
+MeasurementBits executes signed-word dots, subtraction and zero scans, including
+signed zero, and preserves the EXACT previous false-first representative.
+Each test costs polynomial(m,n,W); matrix/target generation, callback listing
+and outer traversal/control/physical addressing remain to compose.
+
+SupportRate proves actual inclusive weightedCount=sum2^j*choose(n,j) is
+subexponential whenever cutoff/n->0. ScheduledSupportRate proves this for
+floor(2nR/Q), retaining rounded R/Q and without unpinned constant16435.
+This is literal callback count, not a global execution clock.
+
+AcquiredPrefixSearch uses actual source counter for each every-occurrence
+restriction. PublicAcquiredExecution preserves exact B=2, reindexes actual
+ordered graph, and proves original proper-factor count and common-witness
+binary recovery. <=wireCount+1 actual acquired queries; every query repeats
+source/design acquisition unless future caching is explicitly implemented.
+
+ScheduledFactorExecution supplies N-only run with computed parameters,
+decidable numerical guard and complete finite trial fallback. All-input
+soundness/completeness includes zero, one, primes and squares. Actual fast
+guard passes eventually and runtime eventually uses the same source-counter
+branch. These are correctness/branch theorems, NOT whole-run bit complexity.
+
+Read-only upstream reuse audit located arbitrary-scope primitive packing with
+fixed-polynomial scalarSize clock, actual integer parity cache/numerator, and
+generic opaque-byte row emitter. scalarEntry_eq_entry supplies the semantic
+numerator identity. Need exact tolerance/order/serialization/word adapters;
+finite fixed-width represented ring is not an unconditional rational backend.
+An alternative remains viable: upstream unramified ring over Z/(3^t), t=n+1,
+exact count decoding and residue-distinct unit nodes in d=O(logQ). Rebuild the
+source/interpolation directly in that ring; no unrestricted rational reduction.
+This may reuse more existing machine code; growing-scope callback/controller
+and input/setup/rate joins remain unproved for our factor network.
+Published SAT closure audit remains frozen; no new external rebuild claimed.
+
+NEXT: reuse upstream packing/cache/numerator via exact adapters, acquire
+physical source/corrected-port words, join group/fibre/support/Hermite bits and
+all preprocessing/control/storage to SAME public run, then prove its rate.
+Candidate N^o1 and original all-semiprime sixth goal remain OPEN; native long
+query still softK^1.25, no new softK acquisition theorem.
+
+
+## Paid materialization gives a paper bit-time result, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-paid-materialization-20261027.
+Goal ACTIVE. Substantive positive paper-level result: explicit deterministic
+factoring algorithm with N^o(1) ordinary bit time and subexponential storage.
+Complete Lean whole-program machine-clock refinement remains OPEN. Current
+schedule crossover is enormous; no practical timing improvement is asserted.
+
+NEW paid_integer_counter.py acquires source/layout from N via frozen compiler
+and source constructor, then keeps original scopes through prefix recovery.
+Caches each original Boolean truth table once per query and all head assignment
+measurement fibres per node; product ranges over attained summary KEYS <=Y.
+Head sums are multiplied without enumerating their global assignment product.
+Homogeneous integer jets carry acquired common denominator Delta to declared
+port-incidence degree, at most M=2n. Addition requires same degree. Actual LCM
+of finite source denominators divides the proved source delta. Known rational
+source elimination and Hermite remain; their actual intermediate minor/common-
+denominator bounds, not the diagnostic Meter, prove polynomial bit lengths.
+
+Independent paper and actual-code reviews PASS. Fixed-depth source search,
+3^Q<=r^(2Q) difference expansion, polynomial matrix elimination, explicit
+Cq/Y/2^h/2^w loops, all indexing/copies and even full-tape scans give fixed
+polynomial time in S=poly(n)+Cq+Y+2^h+2^w. Scheduled logS=o(n), n=Theta(logN)
+therefore gives paper N^o1. No unpinned numerical polynomial exponent. Finite
+guard-failure lengths use explicit trial division. No count/source oracle,
+optional cap, silent no-result branch, or polynomial-space claim. Seven focused
+algebra/control tests PASS; small N-only smoke exercises fallback only, not rate.
+
+Seven NEW Lean modules strict+ordinary-root15 lint PASS; all409 generated
+declarations/202 theorem constants standard3-only. All7 isolated strict objects
+identical; source-resolved18156-module dependency checkpoint unchanged; original
+2569-module SAT source/object pins verified without rebuilding that closure.
+Pure and original-OAI branches do not mix the renamed vendored SAT namespace.
+Prior2157 files,24 concurrent files,2 append-only prefixes preserved. No push.
+
+TernaryFactor/PublicFactor give original and prefix count-preserving reject2
+encoding; TernaryLocal gives exact3point interpolant. TernaryLocalPaid supplies
+actual finite neg/add/mul interpreter and cached Boolean extension with2^w
+checker calls and2w+3(2^w-1) scalar calls; physical backend remains a contract.
+BooleanRingFactor uses original Bool directly, proves graph-count/ring decoding
+at t=n+1; restoring rows and ring setup are still explicit future construction.
+ParametricFactorLoop/Frame execute generic callback iteration/setup/cleanup and
+preserve upper registers; no macro Cmd40 callback is silently supplied.
+
+The rational materialization result does NOT require completing the alternative
+finite-ring source/controller route. Next priority is one simple verified
+finite-list/integer controller for the ACTUAL materialized algorithm and its
+whole bit-cost refinement, using the already proved semantic identities and
+height bounds. Do not restart broader representation searches or insist on
+polynomial space unless separately requested. Native longquery remains soft
+K^1.25; paper factoring-time improvement follows the factor-count detour.
+
+Dependency-checkpoint terminology clarification for this packet:18156 is the
+conservative text-scanner entry count, not an actual imported-module count;
+18107 entries have resolved source paths and18115 have object paths. Comment
+tokens are included in that over-approximation. Its before/after equality and
+the separate compiler-root/standard-axiom/isolated-object checks remain PASS.
+See dependency-checkpoint-clarification.json; no mathematical claim changed.
+
+
+## Materialized source execution and formal resource rate, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-materialized-clock-20261027.
+Goal ACTIVE; substantive formal execution PROGRESS. The prior independently
+reviewed paper-level N^o(1) bit-time result, with subexponential storage, remains.
+The complete kernel-checked original-input primitive bit clock remains OPEN.
+No practical speedup or new native soft-K acquisition bound is claimed.
+
+24 NEW modules pass strict autoImplicit=false/warningAsError=true compilation,
+ordinary-root fifteen-linter checks and all-generated transitive standard-axiom
+audits: 1236 declarations, 763 theorem constants. All 24 isolated objects are
+byte-identical. Dependency pins use 17575 ACTUAL Lean environment imported
+module names, with every source/object resolved and unchanged before/after;
+no source-text/comment scanner count. The checker was corrected to include the
+zeta23 and toolchain Lake source roots, then the complete new-leaf checks were
+rerun. Existing upstream dependencies were pinned, not rebuilt. Prior 2223
+files, 24 concurrent files and 2 append-only prefixes are preserved. No push.
+
+MaterializedWords/WordSearch execute actual local expectations, all active
+support scans and original deterministic comparisons. New ScoreEnvironment,
+ScoreSearch and SourceWords remove the generic terminal/label contracts:
+compiled numeric support descriptors, cached word-coordinate arrays, explicit
+reverse-prefix and short override scans, original collision/head scores and
+literal offset-power acquisition produce the SAME original computedWords.
+No terminal-score, optimal assignment or final-label answer is supplied.
+The bounded support has size at most four; the entire selected scalar/list
+ledger is polynomial in the actual alphabet and network dimensions.
+
+MaterializedPacking acquires incidence labels once, buckets once, their common
+minimum once, and actual first-position addresses by finite cached scans.
+SourceUniversal/Rows/Cache/Pullback/Acquisition acquire every universal source
+array and original incidence-by-variable pullback, including leftovers.
+MaterializedOriginalSource joins the actual searched labels to these arrays,
+with original builtLayout coefficient equality and the attached work retained.
+
+The final N-only endpoint is SemiprimeCachedSourceScheduledExecution.run.
+It literally calls CachedSourcePublicExecution -> CachedSourceCounter ->
+MaterializedOriginalSource, not the old SourceArrayAcquisition.acquire supplier.
+The lower counter report includes source.work + native-count.work. Exact
+all-natural equality, proper-factor soundness, completeness and eventual fast
+branch are proved. Initial finite-enumeration construction and legacy raw/build
+constraint/design generation remain outside this source ledger. The public
+prefix wrapper projects values/query counts; summing all per-query work and
+floor/decoding/controller work is still an explicit top-clock obligation.
+
+MaterializedFibre/Packet/Native cache local head words/measurements once per
+node outside support enumeration; complete summary keys and per-head sums are
+processed separately without enumerating all global Boolean assignments.
+Original paid local truth callbacks still execute inside that traversal and
+are charged there. This Lean trace does not claim Python's once-per-query truth
+cache. Actual native factors and Hermite reconstruction supply the exact count.
+
+MaterializedSelectionHeight derives actual prefix Cramer ratios with one
+nonzero integer original pivot-minor denominator. Stored canonical numerators
+and denominators are <=2^[n(n+b)] for b-bit integer entries. SelectionTemporaries
+bounds every actual residual, normalization and back-update scalar expression
+by an explicit polynomial width. Physical normalizeWords executes inverse and
+multiply with derived Fits and cost <=40002*(W+1)^3. Complete physical selector
+arrays, residual/update/pivot loops and the whole counter/controller bit
+refinement remain to join; no output-width advice is assumed.
+
+MaterializedRate proves every fixed polynomial in the actual inclusive support
+count, acquired summary/head bounds and public growing scopes is eventually
+below N^epsilon for every epsilon>0, including 1/6. This is the resource-rate
+half, not a bound on an uninstrumented whole program. Independent live-callpath,
+packing and scope reviews PASS. Focused executable controls verify new data
+flow and edge conventions; they are not scaling evidence or finite coverage.
+
+NEXT: charge initial finite enumerations and actual raw/build constraint/design
+acquisition; join physical integer/rational arithmetic, complete finite-memory
+address/control work and aggregated prefix/fallback execution into one closed
+bit clock; then apply the already proved rate theorem. Do not revert to new
+representations or numerical campaigns. Native long query remains soft K^1.25.
+
+
+## Paid acquisition, physical selection and aggregated controller, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-acquisition-clock-20261027.
+Goal ACTIVE; substantive formal execution/cost PROGRESS. Prior paper-level
+N^o(1) factoring bit-time with subexponential storage remains. The complete
+kernel-checked original-input primitive bit clock is still OPEN. Native long
+query remains softK^1.25; no practical timing improvement is claimed.
+
+15 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+885 declarations/504 theorem constants. All15 isolated objects byte-identical.
+17585 ACTUAL compiler-imported module source/object pairs fully resolved,
+unchanged before/after. Dependencies pinned, not rebuilt; old SAT audit frozen.
+Prior2349 files,24 concurrent files,2 append-only prefixes preserved. No push.
+
+PaidFiniteEnumerationLists/Enumerations build actual finite menus, cached word
+coordinate arrays and full zero scans; exact old ordering and polynomial
+indexed-work bound. PaidEnumeratedSource/Constraints attach indexed acquisition
+to actual original coefficient/integer-family producers; no supplied list,
+label, packing, row or coefficient answer. Public Macro graph lists are a
+SEPARATE setup obligation, not silently paid by this source enumerator.
+
+PaidConstraintCache/Rows/PackingSnapshot/Acquisition/OriginalConstraints acquire
+actual chosen labels, buckets/minimum/addresses, cached universal numerators,
+all padded row names and the Q*r*p*n integer table. Native acquisition has a
+closed fixed-polynomial envelope using2^(2Q)<=D and blocks<=M; every owner scan
+and universal/address/label read is retained. Four literal list reads return
+exact old matrix entries ON HEAD COLUMNS. Stored rows are untruncated; future
+builder must select those columns or mask. Source/constraints currently repeat
+label/packing acquisition; pay both unless actual shared storage is supplied.
+
+RowSelectionBitArithmetic/Bits execute full original-row selector on physical
+rational words: cached residual, firstpivotbit scan, normalization, backupdate,
+flags and selectedIDs. run_decoded_eq proves exact old whole-state equality.
+run_clock gives explicit fixedpoly m,n,W,rowcount; intermediate Fits derive
+from original C bound and actualpivot minors, no state/minor/output advice.
+Original integerword encoding and template acquisition remain to execute.
+Clock combines bitprimitive work and finite-list/metadata control; literal
+bitaddress/tape simulation remains separate. Independent reviews PASS.
+
+PaidPrefix/Decoder/Public/ScheduledController retain every actual counter
+report once/query, actual index scans/finite range lists/decoding/fallback.
+N-only run accepts onlyN; all-natural exact output/soundness/completeness.
+Uniform fast bound remains conditional on B for actual CachedSourceCounter
+report; paid terminal callback budget derived. Current finalcounter STILL
+uses old raw/build and initial enum outside its source/native report. New
+acquisition/physicalselector replacement is not yet joined there. No whole
+bit theorem inferred from generic hb or report-retention identities.
+
+NEXT: execute bounded integerword encoding and cached head/group/design build;
+feed acquired integerfamily into physicalselector once pernode/head; substitute
+actualcomplete setup into ONE counter and derive uniform B; charge public graph,
+schedule/guard and all source/native/Hermite/controller arithmetic/memory/control
+primitive costs; only then apply existing MaterializedRate for formal1/6.
+Do not restart representations/numerical campaigns or require polynomialspace.
+
+
+## Acquired raw rows and physical designs in the actual counter, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-design-clock-20261027.
+Goal ACTIVE; substantive actual-runtime integration PROGRESS. Prior reviewed
+paper-level N^o(1) bit time allowing subexponential storage remains. The complete
+formal original-input primitive bit clock is still OPEN; native long query
+softK^1.25 and practical timing claims unchanged. No commit or push.
+
+10 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+456 declarations/242 theorem constants. All10 isolated objects byte-identical.
+17591 ACTUAL compiler-imported module names with every source/object resolved
+and unchanged before/after; dependencies pinned, not rebuilt. Prior2443 files,
+24 concurrent files and2 append-only prefixes preserved. Independent original
+raw, encoder and full public-callpath reviews PASS.
+
+CachedRawConstraints/PaidSourceMetadata/PaidRawAcquisition acquire the original
+padded row menu in EXACT order, all head/assignment metadata (including unowned
+indices), integer family, cached row count and executed bound power. Both
+dimension lengths and original chosen labels are explicitly cached. Raw reads
+zero-mask outside-head columns, retain actual list-read reports and are proved
+equal to the ENTIRE former raw record. Acquisition has a closed polynomial
+selected-operation envelope; padded count<=M*D+M. Separate source/raw searches
+are both paid; no unimplemented shared-search saving is taken.
+
+PaidMeasurementBound gives bits=B+2+2R(Q+3), actual measurementBound<=2^bits.
+EncodedRowSelection acquires each original integer once, caches signed binary
+words AND original integers, creates its template/IDs and executes the physical
+selector. Inclusive +/-2^bits handled; selected IDs equal the former exact
+original-row selection. No encoded/basis/minor/intermediate-Fits answer input.
+Scalar digit extraction and physical rational selector reports are retained;
+this mixed ledger is not yet a literal metadata/address/bit machine.
+
+RuntimeDesignCache/PaidRuntimeDesign filter canonical head columns, select ONCE
+per head, copy selected ORIGINAL rows from the SAME cache, and acquire grouping
+in BOTH directions, assignments, bounds and matrix values. build_eq proves the
+actual result equals the old build. build_work retains one explicit polynomial
+selector budget/head plus columns/cache and stated metadata allowances. Shape
+metadata and grouping acquisition still require the literal primitive model.
+
+FullSetupCounter now ACTUALLY replaces legacy raw/build execution. It executes
+paid indexed enumeration, original coefficient source, paid raw acquisition,
+physical designs and native counter/Hermite, retaining en+source+raw+all-designs
++native reports. Exact count_correct reuses original occurrence/interpolation
+guards. FullSetupPublicController and FullSetupScheduledController retain every
+actual query/decoder report, all-natural correctness and eventual full-setup
+branch. Old raw/build/selectedIndices appear only in semantic comparison proofs.
+Actual empty-network full counter returns(1,2361); selector/design/fallback
+controls pass. These are functional connections, not scaling examples.
+
+NEXT: discharge uniform B for the ACTUAL full counter using acquired setup,
+actual head/rank/summary bounds and native/Hermite costs; retain repeated setup
+per prefix query. Then close public graph/scopes/coordinate and schedule/guard
+acquisition, scalar encoding/native rational/floor arithmetic, finite address/
+metadata/control and controller/fallback primitive costs. Source array reads
+still use an enumeration-inverse index search. Only apply MaterializedRate after
+a whole-program fixed-polynomial resource bound is proved. Do not restart
+representation/numerical campaigns or assume polynomial space.
+
+
+## Actual counter budget and retained-report subpower rate, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-counter-budget-20261027.
+Goal ACTIVE; substantive uniform-cost/rate PROGRESS. Full original-input
+primitive bit/address clock OPEN. Prior reviewed paper-level N^o(1) bit-time
+route allowing subexponential storage remains. No native softK improvement,
+practical speedup, commit or push.
+
+13 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+213 declarations/182 theorem constants. All13 isolated objects byte-identical.
+17608 ACTUAL compiler-imported names with every source/object fully resolved
+and unchanged before/after; dependencies pinned, not rebuilt. Prior2524 files,
+24 concurrent files,2 append-only prefixes preserved. Independent actual-cost
+callpath and indexed/rate mathematical reviews PASS.
+
+MAJOR CLOSED OBLIGATION: FullReportRate.run_report_subpower proves for every
+real epsilon>0, eventually for every naturalN, the ACTUAL N-only
+FullSetupScheduledController.run(N).work<=N^epsilon. run_report_sixth gives1/6.
+This is the retained mixed scalar/list/physical-subroutine REPORT, not the
+complete primitive bit runtime. No unproved counterB/rank/head/summary oracle
+is an assumption of the public theorem. Constants precede eventualinputN.
+
+FullSetupBudget supplies a fixed polynomial for ACTUAL paidindexed+source+raw
++everyphysicaldesign+joining work, and exact setup/native additive split.
+FullCounterBudget transports only native-phase work after exact acquired
+design-value equality; physical setup stays paid. NativeCounterBudget retains
+support,summary,head,localtable,Hermite resources in one explicit envelope.
+Separate source/raw searches and repeated per-prefix setup remain charged.
+
+IndexedDesignResources instantiates enumeration-parametric layout theorems at
+actual FiniteEnumerations.indexed; no equality with default/tie-order layout
+is assumed. Actual balancedheads and selected totalrank give H=ceil(3n/(2r)),
+(sum m_g)(r*lambda)<=4n, Y=(2n*measurementBound2QR+1)^[4n/(r*lambda)].
+Denominatorpositive, inclusivefloor, originalW and selected-rank bridges proved.
+Candidate row counts used only polynomially, never as summary exponent.
+
+PublicBudgetDimensions derives factorCount<=wireCount and polynomial entry/
+decoder envelopes from actualgraph data. PublicCounterBudget.counter_work,
+run_work andeventually_run_work DISCHARGE the formerly assumed counterB.
+Actual occurrence2, localchecker/prefix bounds, schedule and packed resources
+supply every hypothesis. FullSetupScheduledController algorithm unchanged.
+
+SetupPolynomialEnvelope and NativeCounterBudget diagonalize explicit fixed
+polynomials. ReportPolynomialGrowth constructs monomial witnesses by proved
+arithmetic closure; its tactic emits ordinary proof terms. ScheduledScalarBudget
+bounds actual scalarresource sum by20n+2n^2+5+entry/scope/decoder polynomials;
+actual guard bounds both sourcealphabets. PublicReportPolynomial keeps the
+four large terms separately: weightedCount,Y,2^H,2^actualScope.
+PublicCounterResources pays the headceiling, matches exact J-1 cutoff and
+bounds literal Y/head/scope by existing rateenvelopes. PublicReportGrowth and
+FullReportRate compose fixedconstants with MaterializedRate at actualN.size.
+No finite numerical factoring campaign is used as scaling evidence.
+
+NEXT: attach a complete executed primitive-bit/finite-memory refinement to
+this bounded report/resources: actual public graph/schedule acquisition,
+source and native rational arithmetic/widths, integer encoding/floor, all
+finite index/address/metadata/control, decoder/fallback costs. Source inverse
+index scans and declared cache allowances are not free bit operations.
+Preserve subexponential-space allowance; do not restart representation or
+numerical campaigns. Goal remains open until whole primitive clock is bounded
+by a fixed polynomial of these same resources and the rate theorem applied.
+
+
+## Executed native bit path joined to the public controller, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-native-bit-join-20261027.
+Goal ACTIVE; substantive executed-native-path PROGRESS. Full original-input
+primitive bit/address clock OPEN. Frozen old FullReportRate results remain
+valid for OLD FullSetupScheduledController retained mixed report; new public
+report-rate composition remains OPEN. No native softK exponent improvement,
+practical speedup, polynomial-space requirement, commit or push.
+
+16 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+493 declarations/331 theorem constants. All16 isolated objects byte-identical;
+ACTUAL compiler-imported module names have every source/object resolved and
+pinned unchanged before/after. Prior2617 files,24 concurrent files and2
+append-only prefixes preserved. Independent executed-callpath and cost/width
+reviews PASS. Complete verification/provenance/manifest are in the packet.
+
+ACTUAL new path: NativeBitsScheduledController.run -> NativeBitsPublicController
+factor/search/prefixRun/counter -> NativeBitsSetupCounter.count ->
+NativeBitsCounter.count/group -> NativeGroupBits.run -> NativeLocalBits ->
+CorrectedPortBits and LocalBits. Native group products execute physical jets.
+All-natural value/soundness/completeness and eventual new fast branch proved.
+No old/new native cost equality is assumed. Old modules stay frozen.
+
+RationalWordAcquisition performs actual canonical numerator/denominator digit
+extraction, explicitly SCALAR. SourceWordAcquisition calls actual original
+source ONCE, caches every original R+1 coefficient once, pays original-index
+scans/encoding and retains producer.work separately. NativeInputBits derives
+positive polynomial b from original n,B,Q,R,J, bounding original common source
+denominator/numerator, dimensions and emitted words. No encoded/source/Fits
+answer is supplied. NativeBitsCounter caches ALL paid source getter reports
+once, sums their actual costs, and encodes each positive node once.
+
+CorrectedPortBits executes word Horner/constant-copy/mask/corrected-column
+addition with exact array refinements. Original common representations derive
+ALL arithmetic fits, including convolution prefixes. Bounds charge actual
+word operations/read/control ledgers. NativeLocalBits caches acquired ports,
+executes both original Boolean branches and retains actual checker costs.
+PrefixEntryWords directly emits the original accepted bit after original
+checker plus every-occurrence prefix gate; no scalar integer encoding pass.
+NativeGroupBits uses actual gated factor order and physical suffix products;
+common representations give polynomial groupWidth in b,R,F,totalarity.
+Only LOCAL2^arity is executed, never2^totalarity.
+
+NativeGroupBitsBudget bounds actual local/group clocks plus explicit rational
+boundary allowance. MaterializedGroupAdapter retains NEW callback Run through
+original head/summary/support/Hermite loops. NativeBitsCounterBudget DISCHARGES
+actualgroupcost C. NativeBitsSetupBudget has EXACT work split: old ACTUAL
+setupWork + actual extra encodingWork +1 + new ACTUAL nativeWork. Its closed
+bound derives source widths/sizes/getter sums from original constructor and
+retains actualdesign H/cap, arity and originalentry clock/onecell premises.
+There is no arbitrary source/Fits/group-cost budget input. Scalar source,
+encoding, outer arithmetic, finite control and decodeWork are NOT a proven
+whole-machine bit clock; the decode allowance is explicitly only a boundary.
+
+NEXT: instantiate new original-input cost bound with actual public indexed
+head/rank/summary and entry bounds, proving NEW controller report rate; old
+FullReportRate cannot transfer by output equality. Execute word-valued outer
+fibre/summary/support folds, then actual Hermite operations, preserving common
+denominators. New corollary must expose group shared Representation: local
+and productList proofs contain it, but current run_spec projects to equality
+and Valid. Then close original source score/word/coefficient producer, graph/
+schedule/floor/fallback, finite memory/address/control and whole primitive
+clock. Retain subexponential storage allowance and existing resource envelope;
+do not restart representation or finite-example campaigns.
+
+
+## Executed word-valued node packets joined to the caller, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-word-folds-20261027.
+Goal ACTIVE; actual word-valued outer-query PROGRESS. Full original-input
+primitive bit/address clock OPEN. New public report-rate composition OPEN;
+frozen FullReportRate applies only to the older mixed-report controller.
+No native long-query softK exponent improvement or practical speedup claimed.
+Subexponential storage allowance retained. No commit or push this checkpoint.
+
+13 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+385 declarations/281 theorem constants. All13 isolated objects byte-identical;
+ACTUAL compiler-imported names have every source/object resolved and pinned
+unchanged before/after. Prior2753 files,24 concurrent files and2 append-only
+prefixes preserved. Independent common-denominator, caller and retained-cost
+reviews PASS. Packet contains exact pins, provenance and manifest.
+
+ACTUAL new path: WordPacketScheduledController.run -> WordPacketPublicController
+factor/search/prefixRun/counter -> WordPacketSetupCounter.count ->
+WordPacketCounter.count/node -> MaterializedWordFibre word head/summary/support
+folds -> WordPacketCounter.group -> original physical NativeGroupBits.run.
+Group results remain words throughout the completed node; no per-group decode.
+Only the completed node enters toScalarRun and existing scalar Hermite.
+All-natural value/soundness/completeness and eventual fast branch proved;
+no output equality is used as a cost equality or public rate theorem.
+
+NativeGroupBitsHeight exposes original-input common group representations,
+derived from actual source denominator/numerator and Boolean entry bounds.
+WordPacketWidth computes polynomial-resource width from original dimensions,
+actual headCap=1+sum_g2^(h_g), actual summaryY and weightedCount n(J-1).
+HeadCap<=1+r*2^H. WordPacketWidthBudget proves fixed monomial growth for both
+arbitrary parameter width and actual source-derived inputBits width. No global
+truth-table count or exponential-in-Y width is introduced.
+
+WordFoldArithmetic/Bounds physically execute sums, products, gates and literal
+signs. Original common representations prove every partial arithmetic fit:
+head and summary/support sums hold a shared denominator; group products use
+its group-count power; traversal counts multiply numerator bounds. Rejected
+gates skip bodies but retain actual tests. MaterializedWordFibre preserves
+same local head/summary order and ternary support cutoff; commonD proofs and
+exact actual callback counts prevent spurious denominator/callback growth.
+Its bounds pay cached tests/reps/head acquisition, original group reports,
+physical word arithmetic and sign/support metadata. Smoke is functional only.
+
+WordPacketCounter caches every paid source getter report once and positive
+node encoder once. node_spec and count_correct establish exact original
+contraction with no intermediate Fits/value/height advice. CounterBudget
+DISCHARGES actualgroupcost by group_clock_le_legacy plus the old ORIGINAL-input
+physical budget. Old per-group decode allowance is harmless overestimation;
+the runtime never decodes those groups. nodeControl and one completed-node
+decode allowance are retained, as are all node encoders/getters/Hermite work.
+WordPacketSetupBudget EXACTLY splits existing actual setup + additional actual
+encoding +1 +actualnewcounter. Its original-source assumptions internally
+derive all source sizes/widths/getter bounds; actualdesign head/measurement and
+original entry/scope resources remain explicit. No old-native work equality.
+
+NEXT: replace actual Hermite reconstruction with word arithmetic, reusing
+intrinsic cardinal/common-denominator and every-prefix inverse/dot bounds;
+see packet next-hermite-handoff.md. Normalized cardinal inverse has L0=1,
+so no inverse/pivot oracle is needed. Connect every primitive temporary to
+proved fits, retain actual packet callbacks once, final chronological sum and
+all encoding/traversal reports. Also compose NEW public original-resource
+counter bound/rate, without transferring old FullReportRate by value equality.
+Source production/canonical encoding, scalar cached-head tests, graph/schedule/
+floor/fallback, finite metadata/control/address and complete primitive-memory
+execution remain OPEN. Current nodeControl/decodeWork ledgers are not already
+proved full machine clocks. Preserve older sources/packets; do not restart
+representation or finite numerical campaigns.
+
+
+## Executed physical Hermite reconstruction joined to the caller, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-hermite-words-20261027.
+Goal ACTIVE; actual physical Hermite/caller PROGRESS. Complete original-input
+primitive bit/address clock OPEN. NEW public resource/rate composition OPEN;
+old FullReportRate remains frozen for its older mixed-report controller only.
+No native long-query exponent improvement, practical speedup, polynomial-space
+requirement, commit or push. Subexponential storage allowance retained.
+
+19 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+498 declarations/338 theorem constants. All19 isolated objects byte-identical;
+ACTUAL compiler-imported module names resolve every source/object and remain
+pinned unchanged before/after. Prior2874 files,24 concurrent files and2 full
+append-only prefixes preserved. Independent affine/node/callpath/cost reviews
+PASS. Exact dependency pins, provenance and manifest are in the sealed packet.
+
+ACTUAL path: HermiteBitsScheduledController.run -> HermiteBitsPublicController
+factor/search/prefixRun/counter -> HermiteBitsSetupCounter.count ->
+HermiteBitsCounter.count -> AcquiredHermiteBits.reconstruct -> physical
+WordPacketCounter.node plus HermiteNodeBits.node. Source getters and node
+encoders cache once. All rational jet/Hermite arithmetic remains words; no
+per-group or per-node rational decode. Only FINAL scalar count crosses the
+existing rational/floor boundary, retaining its single decodeWork allowance.
+All-natural value/soundness/completeness and eventual fast branch proved;
+no old/new report equality or transferred public rate is asserted.
+
+CardinalInputBits acquires original slopes exactly: index words, physical
+signed subtraction/reciprocal, literal self-node zero, actual copies of J
+repetitions, cached target negative evaluation point. Original Q! shared
+representations, exact order/length/validity, width Q+2 and polynomial paid
+acquisition proved. Natural index/digit extraction remains a scalar boundary.
+AffineJetBits executes exact same scalar suffix product order, including its
+singleton empty product; every convolution fit comes from original common
+slope representations. NormalizedInverseBits caches each inverse prefix once,
+then actual dot/negation/push. L0=1 is proved from intrinsic cardinal data;
+no inverse coefficient/pivot advice. All partial fits and polynomial word
+width/clock bounds derive from original packet/cardinal representations.
+
+HermiteEvaluationBits executes actual affine-at-zero products and cached-power
+ascending evaluation. ScalarWordSum acquires each chronological callback once,
+retains its complete clock and proves all-prefix common-denominator invariants.
+HermiteWordWidth combines explicit original-dimension/dyadic stage bounds;
+no intermediate Fits inputs. HermiteNodeBitsCorrectness proves the WHOLE actual
+physical node equals intrinsic Hermite and its common Representation. Node
+bounds sum input+cardinal+affine+inverse+quotient+evaluation+finalmultiply+control.
+AcquiredHermiteBits executes the full streamed reconstruction and proves
+exact value/Valid/common numerator+denominator, alongside separate ACTUAL work.
+Tiny controls are functional checks only, not asymptotic evidence.
+
+WordPacketHermiteInput derives common H bounds from the actual original query
+nodes, even when node layouts/r differ. Runtime packetBits=2*sum nodeWidth+1.
+Proof-only product denominator clears all nodes; product/cofactor bounds show
+commonD and numerator<=2^packetBits. That huge denominator is NEVER computed
+by runtime. Original source guards alone yield actualnodeValid,sizeJ and all
+common representations. No supplied packet/cardinal/inverse value/height.
+
+HermiteBitsCounterBudget derives physical packet width from nodeWidth<=sum
+nodeWidth<=packetBits<=countWidth and exact sizeJ, then sums actual wordnode
+reports+NEW physicalHermite+onefinaldecode. Source/getter/node encoders and
+control costs stay paid. HermiteBitsSetupBudget EXACT split: existing ACTUAL
+setup + additional ACTUAL sourceencoding +1 +ACTUALnewcounter. Original source
+sizes/widths/getter bounds derive internally. Repeated source/raw acquisition
+remains retained. Original scope/head/rank/entry resources remain explicit;
+new public budget/rate substitution is still not proved.
+
+NEXT: uniform public resource and whole-bit-simulation join, not more leaf-only
+word backends. See packet next-whole-clock-handoff.md. Discharge actual indexed
+head/rank/scope/entry caps for NEW counter and compose its resource/rate bound.
+Derive preprocessing-prefix heights and total allocated/control cells from
+original source/row/Taylor/selection bounds. Supply a concrete finite state/
+operation encoding and fixed polynomial schoolbook/linear-access simulation
+bound including actual source production/encoding, integer schedule/guards/
+widths, cached-head tests, indices/addressing/allocations, report bookkeeping,
+final word decode/Nat.floor and fallback. Existing height/report theorems are
+inputs, not already a full primitive interpreter theorem. Fixed-polynomial
+bit overhead with subexponential total space/time resources would suffice;
+prove that bound and substitute the schedule, then derive eventual N^(1/6).
+Keep all earlier sources/packets frozen. Do not restart representation or
+finite-example campaigns, and do not mark the goal achieved before this join.
+
+
+## Actual physical-Hermite report subpower rate, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-hermite-report-rate-20261027.
+Goal ACTIVE; substantive ACTUAL NEW CALLER REPORT-RATE PROGRESS. New
+HermiteBitsScheduledController.run.work has proved eventual N^epsilon for
+EVERY epsilon>0, hence eventual N^(1/6). Complete original-input primitive
+bit/address clock remains OPEN. This is a retained-report theorem, not the
+finished goal. No native long-query exponent/practical speedup claimed;
+subexponential space allowance unchanged; no commit or push.
+
+8 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+124 declarations/101 theorem constants. All8 isolated objects byte-identical;
+ACTUAL compiler-import header source/object pairs resolved and pinned unchanged
+before/after. Prior3045 files,24 concurrent files and2 full journal prefixes
+preserved. Independent rate-chain and resource/source-scope reviews PASS.
+Exact dependency pins/provenance/manifest are in the packet.
+
+HermiteWidthPolynomial bounds ACTUAL computed Hermite width by an explicit
+monotone fixed polynomial, replacing each clog only in the bound.
+HermiteReportStagePolynomial retains local truth 2^w, local heads 2^H, summaryY
+and weighted support Cq as separate actual resources, never 2^S. Original
+inputBits is bounded by NativeInputBits.polynomial; b<=S is NOT assumed.
+Group/node/nodeWidth envelopes derive from literal physical reports and
+actual layout dimensions. HermiteReportEnvelope bounds actual packetBits,
+countWidth, native/encoding/fullSetup budgets by one fixed polynomial and
+constructs uniform monomial witnesses. No measured-time/count oracle.
+
+PublicHermiteCounterBudget proves actual indexed design r/head/m/summary
+bounds and original prefix checker cost/onebit width. The public counter
+budget discharges original source, selected resource and entry premises.
+All repeated source/raw acquisition, row/design setup, physical native and
+Hermite work, input/node encoders, control and final decode remain paid.
+PublicHermiteReportPolynomial uses the SAME numerical public resource sum
+with fixed inflation10*(S+1)^2 for physical entry constants, proves actual
+NEW scheduled caller report<=controllerEnvelope(resources N), and derives
+fixed C,k independent of N. No old-native or old-controller work equality.
+
+PublicResourceRate applies frozen numerical resource/schedule estimates to
+ANY fixed resource polynomial; only resources_le and the analytic schedule
+bounds are reused. HermiteFullReportRate instantiates this with NEW actual
+run_work and NEW fixed monomial witnesses. run_report_subpower and
+run_report_sixth are proved for HermiteBitsScheduledController.run.work.
+Old FullReportRate stays frozen for its older caller; value equality never
+transfers a runtime bound. Primitive bit time is NOT identified with .work.
+
+SourceScorePrefixHeight closes an additional ACTUAL source-preprocessing
+scratch invariant. Original x/y representations imply terminal0,x^2,y^2
+bounds and shared denominator/numerator for every expectation recursion,
+every child partial sum AND actual right-recursive suffix accumulator.
+Support<=4 homogenizes local terms; all objective sum suffixes and the final
+offset-subtracted score have derived representations. Empty alphabet cases
+are algebraic; reduced bounds use the actual nonempty wordFirst::wordTail.
+Offset construction scratch is expressly NOT inferred from final offset.
+Original scale lemma derives x=eps*M/U,y=n/(2r), commonD=de*U*2r and
+B=Be*M*2r+n*de*U from original epsilon representation. Scheduled eps=1/(r*lambda)
+gives dimension-only scales. Crucial distinction: universal bank U=r^(2Q)
+versus averaging word alphabet L=r^Q; support-four denominator is D^2*L^4.
+Actual constructor positivity/length wrapper is still a separate join.
+
+NEXT: packet whole-clock-critical-path-audit.md identifies concrete runtime
+functions/invariants. Prove original-source preprocessing state bounds for
+MaterializedSourceWords.offsetRun/powNatRun; MaterializedSourceUniversal
+actual difference/contribution/sumRuns suffixes and parity supply; actual
+SourceInterpolationExecution/SourceCodeArrays AST subtrees and convolution
+prefixes, then pullback/cached raw sums. Reuse existing all-prefix binomial
+and physical selector bounds; do not reopen elimination or Hermite backends.
+Derive total stored/control cells and attach deterministic polynomial-overhead
+bit simulation including source/canonical encoding, schedule/guards, indices,
+allocation/addressing, report bookkeeping and final word decoding/Nat.floor.
+No generic theorem merely assuming these state resources closes the gap.
+The NEW PublicResourceRate.polynomial_subpower is ready to apply once that
+ACTUAL full simulation budget is proved. Keep the goal ACTIVE until then.
+Preserve earlier sources/packets and avoid finite-example/representation restarts.
+
+
+## Original-source preprocessing states and binary heights, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-source-state-20261027.
+Goal ACTIVE; substantive ORIGINAL-SOURCE STATE PROGRESS. The prior actual
+physical-Hermite retained-report subpower/sixth theorem remains proved. Complete
+original-input primitive-bit/address time remains OPEN. These are actual source
+state proofs, not another representation campaign or final-only row-height
+argument. No runtime replacement, practical speedup, commit or push claimed.
+
+12 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+424 declarations/330 theorem constants. Exact isolated object identities and ACTUAL compiler-import header source/object pins
+are in verification.json. Prior3120 protected files,24 concurrent files and2 full
+journal prefixes preserved. Independent original-caller, binary-height and
+integer/control reviews PASS. New source files only; earlier packets frozen.
+
+SourceOffsetHeight bounds every actual power prefix and all fixed offset scalar
+stages, including raw rational cross-products. The actual offset representation
+and scheduled scale inputs are derived internally. Original word alphabet L=r^Q
+and universal bank U=r^(2Q) are proved distinct-size constructor facts, with
+positivity from original group/lambda conditions. SourceScoreState joins the
+actual compileAll/sequential/offsetRun(card I,n) objective, converting cardinal
+to actual enumeration length explicitly. Every candidate prefix score, its
+canonical fields and both raw comparison cross-products have original-derived
+bounds. No score/offset answer or desired intermediate-height premise remains.
+
+SourceUniversalHeight covers actual delta0/1, two-branch difference frames,
+contribution products, EVERY inner/outer/right-recursive integer-sum suffix,
+actual acquired parity/kernel/target/solve/dot prefixes, and exact QD^2 table
+payload cells. SourceConstraintHeight/State propagate through the ACTUAL
+acquired clearing denominator, cached read, block/leftover copy, owner-filtered
+sum suffix, original dense table, four-scan getter/defaults and raw head mask.
+Exact original dense payload count Q*r*indices.length*n and dyadic exponents
+are proved without a coefficient/packing/label oracle.
+
+SourceCodeArrayHeight covers every actual compiled AST subtree, convolution
+slice/dot prefix and every ascending cached multiplication array prefix.
+SourceInterpolationHeight specializes ORIGINAL constants using shared
+D0=2^(R-1)*Q!, acquired parity numerators and actual quadratic AST node cap
+6Q^2+8Q+3. SourceInterpolationBits proves full common denominator/numerator
+bounds <=2^stateBits with a fixed polynomial bit exponent in ORIGINAL A,Q,R.
+It does not regard the exponential scalar magnitudes as polynomial resources.
+
+SourcePullbackHeight covers actual cache lookup/defaults, assembled addresses,
+right-recursive array suffixes and immutable copying. SourceAcquiredArrayState
+discharges its cache premise via the actual interpolation constructor, then
+joins every original-row suffix/frame, acquired immutable grid and literal
+original-incidence reader. Rational payload counts are D^2(R+1) and Mn(R+1);
+all callback/returned-array frame payloads have exact (2M+1)(R+1) count before
+sharing. SourceAcquiredArrayBits derives suffix/reader dyadic and canonical
+binary-length bounds with exponent M+1+stateBits and fixed original-resource
+monomial witnesses. These scalar/frame payload counts are NOT a whole heap.
+
+SourceSearchState bounds original acquired numeric IDs/support descriptors,
+actual candidate/prefix recursion frames, cached environment colour slots and
+local override IDs/depth. It proves exact indexed dimensions N=n+F,
+T=M^2+Q*n^2,L=r^Q,U=r^(2Q). Its coordinate-allocation measure follows the SAME
+expectation/extend recursion and is bounded by the ACTUAL retained expectation
+and sequential reports. No arbitrary total-allocation/work oracle is supplied.
+
+NEXT: read packet next-whole-bit-join.md. Assemble these actual pointwise/frame
+invariants into ONE reachable-source-state envelope; attach Pascal/target
+acquisition internal stages and simultaneous caches. Bound remaining finite
+word/enumeration/packing/block/address/AST/container descriptors and all
+simultaneously live or conservatively allocated cells. Source search coordinates
+and rectangular payloads are now bounded, but total metadata/heap/stack is not.
+Attach a concrete deterministic scalar/finite-address instruction encoding and
+polynomial-overhead schoolbook/GCD/rational/scan simulation to the ACTUAL source
+and public programs. Include integer schedule/guards/graph construction, final
+word decode/floor, prefix/operand decoder and finite fallback correctness.
+Then substitute the actual public resource bounds into the COMPLETE simulation
+budget and apply PublicResourceRate.polynomial_subpower. No additional leaf
+Hermite/elimination backend is required; a generic theorem merely assuming
+desired state resources is insufficient. Keep goal ACTIVE until full join.
+
+
+## Addressed source simulation and original source structure, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-source-machine-20261027.
+Goal ACTIVE; constructive ACTUAL SOURCE SIMULATION-BLOCK PROGRESS. The prior
+actual physical-Hermite retained-report subpower/sixth result is preserved.
+Whole original-input primitive-bit/TM time remains OPEN. NEW executable memory/
+instruction simulator and one original source-offset refinement are proved;
+the existing public caller is UNCHANGED. No practical speedup/commit/push.
+
+8 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+502 declarations/343 theorem constants. All8 isolated objects byte-identical;
+ACTUAL compiler-import headers resolve all source/object dependency pins,
+unchanged before/after. Prior3190 protected files,24 concurrent files and2 full
+journal prefixes preserved. Independent structure/model/offset reviews PASS.
+Keep earlier sources/packets frozen; only new proof/simulation modules added.
+
+SourcePackingState bounds ACTUAL label/bucket/minimum/position/place/snapshot
+and block/name IDs, all address/name lists and original producer specialization.
+Blocks/positions derive from original incidence counts, not packing answers.
+Same-recursion label/bucket/bank/block-name/name allocation measures are paid by
+ACTUAL reports. Principal retained field views have an explicit polynomial in
+M,D,Q; arbitrary original-ID representation and full heap remain separate.
+
+SourceParityState covers EVERY acquired Pascal depth/sign/target cache prefix,
+raw Pascal update, target NEXT and *-2, solve/dot products/add/subtraction and
+zero extension. ScalarFrame has a derived ORIGINAL polynomial bit exponent.
+Conservative all-return/simultaneous supplier payload is bounded by
+10*(A+R+2)^2 and by a fixed polynomial of ACTUAL acquiredParity arithmetic/reads.
+All actual metadata report fields have prefix bounds. No second solver built.
+
+SourceEnumerationState follows actual copyCells/copyWord/words construction,
+including every generated word's concrete backing array and zero-word case.
+Universal types have two actual acquired word arrays. Copy-allocation measures
+are bounded by ACTUAL words.work. Indexed field dimensions/prefix IDs/payloads
+are exact; two executed word producers (standalone bank and universal private
+bank) remain paid. Expanded universal references are NOT falsely called fresh
+allocation. Original L=r^Q and U=r^(2Q) remain distinct.
+
+SourceMemoryBits executes Boolean-address nonzero scans/decrements, copies
+EVERY visited rational payload and returns bounded valid zero on out-of-range
+access. Exact lookup/width/clock and full persistent memory-copy bounds proved.
+SourceProgramBits executes original rational Boolean/GCD/fitting operations
+using those reads, prepends one new register and copies the old store. The
+finite interpreter has exact semantics under an explicit Safe invariant,
+structural width/register growth and a derived physical report budget. Generic
+Safe is NOT treated as an original-source theorem: actual blocks must discharge
+it internally. SourceProgramStorage records ACTUAL step stores, proves every
+state's width/count and conservatively counts ALL complete persistent versions,
+plus instruction/address payload. Its fixed-polynomial budget does not include
+all scan/address-decrement/circuit auxiliary heap or a tape implementation.
+
+SourceOffsetProgramBits discharges Safe for the ACTUAL12-instruction source
+offset block from original SourceOffsetHeight scratch plus positive-natural
+reciprocal bounds. No intermediate Fits answer. Literal4-bit addresses,
+7 initial registers and19 final registers; returned word equals ORIGINAL
+MaterializedSourceWords.offsetRun. All operand/circuit/persistent-copy reports
+are included. Scheduled caller_safe derives x/y bounds internally.
+SourceOffsetProgramBudget closes ACTUAL original-resource substitution: with
+U=r^(2Q), scheduled d=r*lambda*U*2r and B=M*2r+n*r*lambda*U are polynomial in
+resourceS, hence the conservative width=height+1 and actualrun.clock have fixed
+monomial bounds. Log-height sharpening is unnecessary for this resource-rate
+join; arbitrary binary-sized magnitudes are NOT assumed polynomial resources.
+Initial7 physical words remain an acquisition interface; no whole caller switch.
+
+NEXT: packet next-source-machine-join.md is authoritative. Compile actual source
+AST/array or parity blocks to the new finite instructions, with a correct
+register map under prepending, paid code/address construction and ORIGINAL
+length/width/Safe bounds. Acquire the physical initial constants/scales/parity
+values, not an advised compiled code or input-answer bank. Add physical score
+comparison and branch/finite-loop control for actual choose/assign without
+exponentially expanding all paths. Attach scan/copy-return/address-decrement
+and arithmetic/GCD auxiliary state, list/tag/pointer/tape encoding and either
+paid or proved-erased report bookkeeping. Bind original graph/enumeration,
+schedule/guard, row/control, final word decode/floor/prefix/operand decoder.
+The source-offset numeric resource bound is NOW achieved, not a missing premise.
+Apply PublicResourceRate.polynomial_subpower only to the COMPLETE new simulation
+bound, not merely these block reports. No new finite success campaign or extra
+leaf Hermite/elimination backend closes this compiler/state gap. Goal stays ACTIVE.
+
+
+## Original source compiler, acquired offset inputs and dynamic control, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-source-lowering-20261027.
+Goal ACTIVE; constructive ORIGINAL-SOURCE COMPILATION/ACQUISITION PROGRESS.
+Full original-input primitive-bit/TM sixth scaling remains OPEN. Prior actual
+physical-Hermite retained-report subpower/sixth result is preserved. Existing
+public caller UNCHANGED; no practical speedup, new query exponent, commit/push.
+
+24 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+1183 declarations/697 theorem constants. Final isolated identities and ACTUAL
+compiler-import header source/object pins are in verification.json. Baseline
+3245 protected files,24 concurrent files,2 complete journal prefixes preserved.
+Independent compiler, physical-array/control and offset-input reviews PASS.
+
+SourceArrayProgramIR/Blocks/Compiler generate the ACTUAL cached source-array
+program. Each AST child is compiled once; J-coefficient add emits J ops,
+convolution emits J(J+1), keeping each product and accumulator. Stable IDs have
+initialized-operand proofs and exact original SourceCodeArrays.compile coefficient
+semantics. Bank is literally0::1::constants(original p); no supplied code,
+constant-table or output answer. Bank<=nodes+2; code<=nodes*(J*(J+1)+J).
+SourceArrayProgramGeneration executes original leaf collection ONCE, actual
+literal-position scans, finite output-ID Shape.read, cached lengths and paid
+append/code construction. generate_block/bank join the original compiler.
+generate_work has fixed polynomial original nodes/J bound; native Nat/Rat
+metadata stages remain explicitly scalar, not silently primitive bit work.
+
+SourceArrayProgramLowering proves exact stable-ID to prepend-relative addresses,
+full Represents preservation, instruction semantics/Safe transfer and actual
+interpreter clock. Initial ID address=next-initial+id; generated ID=next-1-id.
+Address digit work is retained; all addresses have B=initial+code.length+1 bits.
+SourceArrayProgramSafe/SourceArrayCompilerSafe derive ALL actual outputs from
+ORIGINAL leaf/subtree/convolution representations, including individual products
+and every accumulator prefix. Actual interpolation width=stateBits(A,Q,R)+1;
+original bank literals fit too. No intermediate Fits answer remains.
+
+SourceArrayProgramAcquisition/Bits join literal encoding, physical instruction
+execution and paid output scans. SourceInterpolationProgramBits/Budget are the
+reference backend/original resource substitution; SourceArrayBackendBudget is
+the pure numeric monotonicity helper, avoiding elaboration of runtime values.
+FINAL actual entry is SourceInterpolationGeneratedBits.acquire, via
+SourceArrayGeneratedBits.coefficient: generate ONCE, use acquired bank/code/size
+and paid Shape.read, then execute/read physically. Exact original coefficient,
+Valid/Width have no encoded-bank/code/Fits premises. SourceInterpolationGeneratedBudget
+joins actual generator and backend reports, substitutes original A/Q/R syntax
+and binary-height bounds and proves fixed C,k. Native source parity/prescription/
+AST construction and scalar metadata bit refinement remain separate costs.
+
+SourceOffsetInputsCore/Scales/Inputs/Bounds now CLOSE the seven-word interface
+of the prior physical offset block. Runtime constructs U by actual unary
+replication, encodes six original natural dimensions by Boolean increments,
+executes8 scale operations, performs7 addressed normalized acquisitions and
+executes the frozen12-op offset program. runOffset_correct needs only positive
+r/lambda, not scale/encoded-bank/Fits advice. All initializer+interpreter reports
+remain paid and fixed-polynomial in ORIGINAL dimensions and materialized U.
+Actual caller enumeration cardinality and scale substitutions are proved.
+Host Nat dimensions/control still need the complete input/machine refinement.
+
+SourceComparisonBits compares signed physical cross-products directly, handling
+signedzero and original left-on-tie without GCD/fit or rational decoding.
+SourceChoiceBits/ChoiceRefinement execute tail-first choice and dynamic unary-token
+assignment, retaining both score producer clocks, every comparison, selected-ID
+and prefix copies. Actual original choice/assign semantics and decoder composition
+are proved. Only the selected branch executes; no exponential branch expansion.
+The ORIGINAL score producer is still an explicit compiler interface.
+
+SourceMemoryTrace/ProgramErasure record visited nonempty read frames with actual
+payload/address/decrement/return data and expanded pending-tail views, plus all
+copy-return frames. Program aggregation bounds this explicit auxiliary inventory
+and stored report fields by a fixed polynomial. High-level clock-erased scan/copy/
+step/run returns the SAME physical store on all inputs. Primitive circuit scratch,
+primitive-internal clock aggregation and complete pointer/tape heap are NOT thereby
+proved erased/bounded. Read empty default is a fixed return, not a recorded frame.
+
+NEXT: next-whole-bit-join.md is authoritative. Compile the actual score producer
+and parity/prescription/native syntax and metadata stages; bind physical original
+labels/row-data, original caller composition and complete finite state/auxiliary
+heap/pointer/control/report erasure. Include public graph/enumeration/schedule/
+guards/selection and final word decode/floor/prefix/operand decoder. Initial
+offset words and actual interpolation-code Safe are NOW achieved, not open
+interfaces. Apply PublicResourceRate.polynomial_subpower only after a COMPLETE
+original-input primitive-machine budget, not the joined mixed scalar/bit reports.
+
+
+## Physical integer-count source selection and exact cancellation, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-score-count-20261027.
+Goal ACTIVE; substantive ORIGINAL SOURCE SCORE/CALLER PROGRESS. Full original-input
+primitive-bit/TM sixth scaling remains OPEN. Prior actual retained-report subpower
+theorem and all earlier source/compiler/Hermite evidence remain preserved.
+Existing N-only public caller unchanged; no new query exponent/commit/push claimed.
+
+20 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+652 declarations/423 theorem constants. All isolated identities and ACTUAL
+compiler-import header source/object pins are in verification.json. Baseline3353
+protected files,24 concurrent files and2 full journal prefixes are preserved.
+Independent count-identity, predicate, physical count/weight and caller reviews PASS.
+
+SourceScoreCounts/Padding/Objective/Bounds implement the ACTUAL ordered finite
+true-completion count. Per-term active support m<=4 is acquired by original
+activeRun, then count C is padded by L^(4-m). Original duplicate candidates/terms,
+override order, reverse prefixes and zero-active terms are preserved. Actual I/H
+lanes give EXACT old score=(y²I+x²H)/L⁴-offset at EVERY prefix; both counts and
+all program take-prefixes have cap T*L⁴. No count/score-answer premise. Explicit
+native recurrence work is derived, not supplied as a terminal budget.
+
+SourceScoreCancellation proves U=r^(2Q)=L² and L⁴=U², and EXACTLY
+4*r²*lambda²*U⁴*(score+offset)=W where W=n²*lambda²*U²*I+4*M²*H.
+The common positive factor and common offset cancel from comparison, preserving
+equality/ties. Only r/lambda/U positivity is needed; M,n may be zero.
+SourceScoreCountOrder binds this arithmetic to ACTUAL acquired source counts and
+actual source enumeration cardinalities. W<=T*U²*(n²lambda²U²+4M²), hence
+W<=S⁹+4S⁵ under original caps. No intermediate Fits or rational score advice.
+
+SourceScorePredicateBits/Bounds physically acquire actual cached colour rows,
+fixed reverse-prefix keys and newest-first overrides. Key comparison, lazy default
+lookup/copies, coordinate-address memory scans and signedzero-safe Boolean
+equality all execute and retain their work. terminal_original_value equals the
+original hit predicate; terminal_original_work derives the complete displayed
+budget from ORIGINAL metadata/ID/colour bounds, not encoded/truth/work advice.
+
+SourceScoreWeightBits/Acquisition acquire original dimensions/U and compute two
+cached integer weights with seven Boolean products, then two products+one adder
+combine actual count bits. Valid denominator-one output and all lengths/clocks
+are derived. The original initializer's U comes from executed unary replication.
+The final physical callback does NOT encode a supplied/native count result.
+
+SourceScoreCountBitsCore/Main/Budget/Bounds execute concrete physical terminal
+truth, branch addBits, acquired normalization padding, lane additions and cached
+integer weighting. Native count values occur ONLY in proofs. All true/count/
+weight fields are Boolean-word data; no GCD-backed rational score arithmetic.
+Actual branch words, every program suffix and every original prefix have derived
+width/work bounds. TerminalCap is internal and discharged by original predicate
+metadata; no callback/score/count oracle survives at the original endpoint.
+
+SourceChoiceOrder permits order-only refinement of the physical-ID controller.
+SourceScoreChoice executes physical comparisons with ORIGINAL finite label/native
+loop metadata. All repeated score callbacks/comparators and selected source
+prefixes remain paid; only the actual branch is traversed. SourceScorePhysicalSearch
+acquires weights ONCE and drives that control with the concrete physical score.
+Its run_refines returns EXACT original deterministic labels, for ANY common
+proof-only offset. Runtime neither acquires rational scales nor constructs offset.
+
+SourceScorePhysicalCaller constructs the actual original descriptors and uses
+actual en fields/cardinalities. producer_refines identifies EVERY original
+incidence label with the old source producer, not merely an equal objective.
+No encoded label/score program/count/Fits answer is supplied. The existing paid
+labelAt constructor reads the acquired selected-list cache.
+
+SourceScorePhysicalBudget/Resources derive the full ACTUAL source-call report
+from original descriptor ID bounds, physical predicate/count/weight widths,
+all candidate callbacks/comparisons and cached setup. caller_work substitutes
+original M,n,r,Q,lambda,U,L,T,N sizes; envelope_monomial gives FIXED C,k uniform
+over the entire original family. This is a mixed physical/native-metadata report,
+not a completed primitive clock or a new N-only public endpoint.
+
+NEXT: next-whole-bit-join.md is authoritative. Replace typed label/cacheWord/
+index/control metadata by one actually acquired physical word/ID bank, use
+SourceChoiceBits with the proved order-only bridge, compose new original label
+producer with packing/universal coefficient cache/pullback and actual public
+counter. Native parity/prescription/source-AST construction, remaining metadata,
+all primitive scratch/reference/allocator state and report erasure/encoding still
+need the complete machine join. Original score ACQUISITION AND EXACT LABELS are
+NOW achieved at physical-data/native-metadata scope. Do not reopen an abstract
+score-answer interface. Apply PublicResourceRate.polynomial_subpower only after
+the WHOLE actual original-input primitive-machine budget is proved.
+
+
+## Acquired physical source word bank and ID-only original selection, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-word-bank-20261027.
+Goal ACTIVE; substantive ORIGINAL PHYSICAL BANK/ID SOURCE-CALLER PROGRESS.
+Full original-input primitive-bit/TM sixth scaling remains OPEN. Prior physical
+Hermite retained-report subpower/sixth and all earlier evidence remain preserved.
+The existing N-only public caller is unchanged; no new native long-query exponent,
+complete machine clock, practical speedup, commit or push is claimed.
+
+23 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+595 declarations/383 theorem constants. All23 isolated objects are
+byte-identical. ACTUAL compiler environment header pins 17646 imported modules
+with source/object hashes unchanged before/after. Baseline3449 protected files,
+24 concurrent files and2 full journal prefixes preserved. Independent bank,
+ID-environment/predicate, physical-count, original-selection and budget reviews PASS.
+
+SourceWordBankRows/Bank/Semantics/Bounds/AcquisitionBudget/Indexed actually acquire
+the complete candidate coordinate bank and ascending Boolean IDs from ORIGINAL
+r,Q only. Colours use the Boolean encoder; head-major Cartesian row stages cache
+their acquired tails and pay all row/payload copies. IDs are copied/incremented
+physically. readRow executes Boolean address tests/decrements and copies every
+visited row. Original ordered coordinate semantics, valid bounded payloads,
+acquired ID membership/injectivity and original acquisition/read budgets are
+derived, not supplied as BankRep/Fits/work/menu advice. Q=0 is covered.
+
+SourceWordMenuOrder proves EXACT canonical head-major order equals the actual
+indexed zero-first/filter-tail menu. SourceWordIdMenu connects physical first/tail
+to it; literal defaultID=[] is acquired and decodes to the zero original word.
+This is the actual PaidFiniteEnumerations.indexed family, not an assertion about
+every arbitrary permutation allowed by generic Enumerations.
+
+SourceWordIdEnvironment/Bounds store ONLY physical default/fixed IDs and physical
+key/ID overrides. All prefix/push copies, reverse-prefix lookup and newest-first
+override scans execute. ValidIds is preserved from the actual acquired menu.
+SourceWordIdPredicate/Bounds acquire physical descriptor keys/coordinates and
+derive exact original hit truth. Incidence needs ONLY TWO physical ID equalities,
+using acquired decode injectivity; it avoids full row lookups. Head terms still
+perform actual row/coordinate scans. Native Word/cacheWord/decoded environments
+occur only in proofs. Descriptor/lookup/equality budgets close from original
+metadata and actually acquired bank dimensions; no truth/work oracle survives.
+
+SourceWordIdCountsCore/Budget/Main/Bounds/Clock execute physical acquired-key
+branching, copied key/ID pushes, actual terminal truth, Boolean count additions,
+acquired normalization padding, lane accumulation and cached integer weights.
+The concrete callback fixes bank.ids, actual environment extension and terminal;
+no Word-valued extension or native count encoding supplies an answer. Actual
+all-prefix width and clock bounds discharge the internal fixed-depth-four Cap
+using original valid-menu/descriptor metadata. The prior exact positive-factor
+and common-offset cancellation remains in force, preserving every tie.
+
+SourceWordIdControl proves reachable acquired-menu contracts for the EXISTING
+SourceChoiceBits controller, whose runtime is unchanged. Score/order/width work
+is required only for actual menu IDs and prefixes, rather than arbitrary external
+bitstrings. Every score call, comparison, selected-ID and full-prefix copy remains
+paid. SourceWordIdMetadata actually constructs original incidences, terms and
+complete indices WITHOUT any native Word/menu/universal fields.
+
+SourceWordIdSearch acquires bank and weights ONCE and runs physical-ID selection
+with the concrete callback. run_refines returns EXACT original indexed scalar
+labels after proof-only decoding, for any common proof-only offset. The runtime
+constructs no rational scales/offset. SourceWordIdCaller.indexed acquires metadata
+and original descriptors itself; indexed_refines/indexed_original prove exact
+old caller/computedList semantics from original arity/owner data, positive r and
+lambda. No selected labels, encoded bank, menu, scores/counts/Fits are supplied.
+
+SourceWordIdSearchBudget derives the ACTUAL original indexed caller report from
+bank/weight acquisition, concrete score budgets and every controller operation.
+With M=sum arity,L=r^Q,U=r^(2Q),T=M²+Qn²,V=n+F, indexed_work substitutes the
+actual original dimensions, using completeness of acquired indices to bound
+all descriptor keys. SourceWordIdResources proves ten-resource monotonicity,
+indexed_report_actual and envelope_monomial with FIXED C,k before the entire
+family. L/U are actual materialized cardinalities, not polynomial-in-log answers.
+The sole tail-length subtraction is bounded by a proved nonnegative majorant.
+
+NEXT: next-whole-bit-join.md is authoritative. Acquired physical bank/IDs and
+concrete ID-based score selection are NOW achieved; do not reopen an abstract
+score-answer/native-Word menu interface. Physically read selected incidence IDs
+and colours, compose original label packing/universal coefficient cache/pullback
+and the public counter. Encode remaining arity/owner/index/support/descriptor,
+native control and report stages. Original parity/prescription/AST construction,
+primitive scratch/allocation/reference/pointer/tape state and report erasure still
+need the complete original-input primitive-machine join. Apply the existing
+PublicResourceRate.polynomial_subpower only after that WHOLE budget is proved.
+
+
+## Exact local source collision classifiers, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-constraint-count-20261027.
+Goal ACTIVE; constructive ORIGINAL QUERY ACQUISITION improvement. Full original-
+input primitive-bit/TM sixth scaling remains OPEN. Prior bank/source/compiler/
+Hermite evidence and retained-report subpower/sixth remain preserved. Existing
+N-only public caller unchanged; no complete-machine exponent or commit/push claimed.
+
+17 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+334 declarations/244 theorem constants. All17 isolated objects are
+byte-identical; ACTUAL compiler-header 17657 dependency source/object pins
+unchanged before/after. Baseline3563 protected files,24 concurrent files and2 full
+journal prefixes preserved. Independent formula/runtime/resource reviews PASS.
+
+SourceHeadFibres/HeadCountFormula prove exact complete-word coordinate fibres
+r^(Q-1), ordered pair collisions r^(2Q-1), and ACTUAL original paddedLocal for
+EVERY Nodup remaining list/environment. Let L=r^Q. Same variable gives L^4;
+distinct with anyactive gives r^(4Q-1); fixed/fixed gives actual colour indicator
+times L^4. Q=0 has no head; r1/aliases/default/overrides/repeatedterms retained.
+
+SourceIncidenceNamespaces proves all original compiler owner/factor keys are
+cross-disjoint using actual complete index scans and sum-type separation.
+SourceIncidencePairAverage/CountFormula prove exact actual original paddedLocal:
+fixedconflict gives0; otherwise d active nonloop equalities among the two
+independent pairs give L^(4-d). Hence ONLY0,L²,L³,L⁴. This covers ALL original
+compiled descriptors, not an extra source-family promise or sampled experiment.
+The original counter/list/prefix/normalization bridge is compiled, not assumed.
+
+SourceCountPowers physically acquires r and multiplies to four cached constants.
+Fixed LEFT multiplier gives width<=2*k*base.length+1, so actual power payloads
+have width W=8Q(r+1)+1 and originalrQ polynomial reports. No native power answer,
+unary L^4 or exponent-as-binary-input complexity assumption supplies the data.
+
+SourceHeadCountBits/Bounds copy fourth/head constants for loop/free cases, and
+execute actual bank-coordinate truth only for fixed/fixed. SourceIncidenceCountBits/
+Bounds classify two edges with actual membership/key acquisition/environment ID
+reads and physical ID comparisons, then copy square/cube/fourth or literalzero.
+Valid-menu decode injectivity supplies original word equality. Every actual read,
+scan, copy/comparison remains paid; no local completion enumeration or unary
+padding executes. Count/Fits/truth/callback answers are not runtime inputs.
+
+SourceClassifiedCounts/Clock execute the concrete two local classifiers once per
+original descriptor, physical lane additions, copied ID prefix and weighted score.
+Exact original counts/old score hold at every reached prefix. Structural lane
+width W+T follows actual adder growth; no L^4 width premise. Internal separation,
+valid-menu and support bounds are discharged by actual original metadata/caller.
+Native descriptor equality/membership/support/control/report stages stay explicit.
+
+SourceClassifiedWeights reuses acquired powers.square=U=r^(2Q) in actual seven
+weight products, ELIMINATING old unary U expansion/re-encoding. ClassifiedSearch
+acquires bank,powers,weights ONCE and runs unchanged SourceChoiceBits with the
+concrete classified callback. SourceClassifiedCaller acquires original metadata
+and descriptors; indexed_original preserves EXACT original labels and every
+candidate/tie for positive r/lambda, including zero scores. Old callback/Word
+and unary initializer occur ONLY in proof-side semantic comparisons.
+
+SourceClassifiedSearchBudget derives ACTUAL original setup/callback/controller
+report with original M=sum arity,L=r^Q,T=M²+Qn²,V=n+F. ClassifiedResources proves
+nine-resource monotonicity, indexed_report_actual and fixedCk envelope_monomial,
+constants before the entire family. No separate U cap remains in this cost path;
+materialized L is still counted explicitly. This is a mixed physical/native
+report, not the complete primitive-bit/public runtime theorem.
+
+NEXT acquisition target is T itself: current actual Metadata/compileAll still
+constructs M²+Qn² terms. Weighted whole-word/colour histograms and exact candidate-
+independent quadratic cancellation suggest sparse per-incidence/coordinate
+queries. Separate scratch helpers prove candidate-difference/order and sparse
+duplicate/weighted grouping, including an original all-prefix HEAD aggregate;
+partiallyfree incidence aggregation/state and paid dictionary execution are OPEN.
+These supplemental declarations are not in the17 canonical totals. Preserve parallelport squares,
+lambda/zero-weight ties and actual candidate order; zip acquired IDs/rows during
+a sweep to avoid an extra L factor from repeated linear bank reads.
+
+next-whole-bit-join.md is authoritative. Do not reopen abstract score/nativeWord
+interfaces or solved local completion trees. Finish histogram acquisition, actual
+selected incidence labels/packing/universal cache/pullback/public counter, native
+metadata/parity/prescription/AST and complete scratch/reference/pointer/tape/report
+refinements. Apply polynomial_subpower only after the WHOLE original-input
+primitive-machine budget is proved. Near-linear query bit complexity remains OPEN.
+
+
+## Actual sparse histogram source acquisition and exact selector, 2026-10-27
+
+Packet: docs/research-evidence/semiprime-histogram-acquisition-20261027.
+Goal ACTIVE; constructive ORIGINAL QUERY AND CALLER ACQUISITION progress.
+Complete original-input primitive-bit/TM sixth scaling remains OPEN. Previous
+retained physical-Hermite report subpower/sixth remains preserved; no retained
+mixed report is identified with full bit time. Existing N-only public caller
+unchanged; no new native long-query exponent/practical speedup or commit/push.
+
+42 NEW modules strict+ordinary-root15+all-generated standard3 PASS:
+1691 declarations/1043 theorem constants. All42 isolated objects byte-identical;
+ACTUAL compiler environment headers pin 17682 imported module source/object
+pairs unchanged before/after. Baseline3683 protected files,24 concurrent
+files and2 full journal prefixes preserved. Independent original-query,
+original-selector and acquisition/resource reviews PASS.
+
+SourceIncidenceHistogram proves the original all-prefix equality kernel
+P=L*K=J+(L-1)Dfree+L*Cfixed-Ffixed, L=r^Q. The four features are actual
+constant/all, variable-key/free, selected-word/fixed and constant/fixed masks,
+with coefficients1,L-1,L,-1. Joint owner/factor feature histograms give ORIGINAL
+I=L^2*sum_fg(c_f*c_g*sum_z h_fg(z)^2). Owner/factor namespaces derive from the
+actual original complete index scans; all ordered diagonals, duplicate ports,
+parallel incidences, arbitrary original remaining prefixes and fixed conflicts
+remain. Sixteen is constant; no score-pair list or full matrix/resolvent executes.
+
+HistogramOriginalSums/AcquiredSums attach these occurrence-preserving identities
+to ACTUAL original compiled/evaluateCounts lanes. HeadAggregate proves ORIGINAL
+H=L^4*(C+Q*f)+r^(4Q-1)*Q*(2*p*f+f*(f-1)). C derives from one joint coordinate/
+colour histogram of actual fixed vertices x actual coordinates; p/f are actual
+fixed/free counts. Coordinate tags prevent cross-coordinate collisions. Free
+key injectivity derives the diagonal correction. Q0,r1,empty partitions and
+f0 are covered, with signed f^2-f justified by f*(f-1)+f=f^2.
+
+CompactBits/HistogramTrie/Bounds/Store execute actual normalized binary words,
+key paths, physically copied old counts, insertions, increments and lookup.
+Square accumulation updates S by2*k+1 from ONE actual counter bump, avoiding a
+bucket catalogue/pair sweep. Intrinsic counter/output widths follow actual
+stream length. Actual node inventory is bounded by visited key-path lengths.
+KeyBits uses paid injective tuple framing, including empty/prefix-related keys.
+Square report is O(M*(B+log(M+1)+1)) in actual acquired key width B, not a full
+primitive-address/heap/tape theorem.
+
+CompactWordIds/Bank acquire ascending compact IDs DIRECTLY, preserving exact
+original menu order and actual physical bank rows. No padded L^2 ID acquisition
+and trim executes. Rows/RowKeys zip actual IDs/rows once, encode/insert each row
+once and acquire coordinate tags once. HeadBits reads ONE selected ID and ONE
+physical row for each fixed vertex and parses all Q colours once. Free vertices
+perform actual counter increments. HeadOriginal derives actual physical C,p,f;
+no colour/count/width oracle or supplied histogram is an endpoint premise.
+
+HistogramMetadata actually acquires vertices/factors/ports/coordinates/indices,
+without obsolete T=M^2+Q*n^2 terms or native Word fields. PortKeys proves direct
+owner.val and n+factor.val original codes and actually encodes their keys.
+Prefix acquires the selected reverse-prefix dictionary tail-first with actual
+compact keys/payloads; DictRefinement discharges its exact original labels and
+candidate equality using actual acquired-bank membership/default/decode
+injectivity. FeatureBits masks actual original ports before any selected-label
+read, emits framed physical joint keys and executes all16 histograms.
+
+CountInput/Scales acquire M,n,Q by actual list-driven binary increments and
+r/lambda by paid native encoders, then execute compact powers/products and the
+original n^2*lambda^2*L^4,4*M^2 weight words once. Arithmetic executes fixed-depth
+signed denominator-one binary operations without GCD reduction/native count
+encoding. Original zero weights and negative intermediate corrections remain.
+Setup acquires sparse graph/keys/vertices, compact bank/rows/dictionaries,
+coordinates and scales ONCE. Query acquires prefix ONCE and retains all16
+incidence,1head and weighting reports; head counters/producer/histogram work
+are retained exactly once rather than re-executed or silently dropped.
+
+QueryCorrectness.incidence_original/head_original recover both ORIGINAL count
+lanes, and score_original returns the exact original scheduled integer objective.
+U=r^(2Q) and L=r^Q are distinguished via U^2=L^4; neither n nor M is cancelled.
+Search.run installs the concrete Query.score callback into the existing physical
+comparison/copy controller, preserving compact first/tail order. run_refines,
+indexed_refines/indexed_original prove exact original labels and ALL ties for
+the entire original family and every shared proof-side offset (positive r/lambda
+for original scalar order). Old T/compiler/counts/native Word occur only in
+mathematical specifications, never on this new selector runtime path.
+
+QueryBounds derives actual original input/output widths and every per-query
+producer cost. SetupBounds retains conservative native metadata/key/r/lambda
+encoder and actual bank/row setup reports. SearchBudget derives all reachable
+query contracts and retains setup once plus all reported queries/comparisons/
+prefix copies. Resources.run_report_actual/envelope_monomial prove ACTUAL new
+selector report bounded by fixedC,k before all graphs/owners in SEVEN original
+resources n,F,r,Q,lambda,M=sumarity,L=r^Q. Neither T nor separate U initialization
+is required. Materialized L is still counted explicitly; no log-L replacement
+is applied to original setup cardinality.
+
+SCOPE: this is a mixed physical/native retained report. The frozen callback's
+native tokens.length argument evaluation, interval/code/natural/control/report
+arithmetic and immutable references/allocations remain explicit host-lowering
+obligations. Setup is conservative original-resource polynomial, NOT a whole-
+family near-linear binary acquisition or complete primitive query/controller
+clock. Physical query selected-ID/row reads are NOW achieved. Remaining selected
+incidence-label reads are FOR PACKING, then universal parity/prescription/AST,
+physical coefficient-cache/pullback and original public counter/factor decoder
+composition. Complete scratch/heap/reference/address/tape/report-erasure proofs
+are OPEN. Apply polynomial_subpower only after the WHOLE actual original-input
+primitive-machine budget is proved. Preserve all earlier sources/packets.
+
+NEXT: this packet's next-whole-bit-join.md is authoritative. Do not reopen generic
+score/count/Word suppliers, local completion trees or quadratic descriptor/matrix
+acquisition. Pairing selected compact IDs before reading colours is only a next
+packing proposal, not an achieved theorem. Finish actual downstream/public joins
+and full native/machine costs; more successful finite examples do not replace them.
+
+UPDATED USER GOAL after this checkpoint: prove deterministic semiprime factoring
+from ORIGINAL binary input with TOTAL bit complexity
+2^(C*ell/sqrt(log(ell+2)))*(ell+1)^d, ell=ceil(log2(N+1)), fixedC,d beforeallN;
+full kernel-checked acquisition/preprocessing/coefficient/memory/address/factor
+recovery costs, with subexponential space allowed. This explicit paper-rate
+target supersedes sixth scaling as completion. Full runtime N^o(1) is only a
+milestone. Existing retained-report subpower alone proves neither full bit time
+nor this quantitative rate. next-explicit-rate-target.md overrides the older
+rate criterion; the completed histogram/source and remaining pipeline joins
+remain applicable. Investigate actual schedule exponents/logarithmic losses,
+not only polynomial_subpower. Successor work is scratch-only until this packet
+is sealed/preserved.
+
+
+## Semiprime algorithm publication and progress explorer, 2026-10-29
+
+The user authorized committing and pushing all accumulated repository progress
+and adding an algorithm proof explorer. This is a publication task; the research
+goal remains paused and incomplete. The acquisition algorithm is already
+specified, with native recursive correctness and the packed factor readout.
+The complete original-binary finite-machine runtime theorem at
+2^(C*ell/sqrt(log(ell+2)))*(ell+1)^d remains OPEN.
+
+The new docs/semiprime-proof-explorer indexes 3160 current semiprime sources and
+82 historical FINAL groups. Its 15 algorithm stages are a curated reading guide,
+not a Lean-extracted dependency graph. Mathematical results, finalized machine
+components, nine unsealed OldVertexStream drafts and older unclassified records
+are distinguished. Source hashes, 29 declaration anchors, historical evidence,
+local source snapshots and exact deployment revision links are checked.
+
+All current new native proof modules are registered in the ordinary root.
+Three unused historical original-OAI bridge experiments are preserved byte for
+byte as .lean.txt snapshots under the publication packet's external-bridges
+folder. Their manifest records the original source paths and pinned upstream
+requirements; they are not represented as part of the fresh ordinary build.
+The only draft proof repair adds the missing true-branch simplification in
+OldVertexStreamSpec, using the current ite_eq_left theorem name. Previously
+FINAL source bytes are preserved.
+
+Packet: docs/research-evidence/semiprime-publication-20261029. Historical FINAL
+checks and generated-object hashes remain distinct from fresh publication
+checks. Read-only generated artifacts were backed up before the Lake rebuild;
+the backup is /tmp/semiprime-publication-20261029/readonly-build-artifacts.json.
+The ordinary build, whole-project lint/axiom audits, existing explorer gates and
+new desktop/mobile explorer checks remain publication requirements. The new
+placeholder scanner ignores literal text/comments, checks interpolation code
+and staged index blobs, and retains the compiled axiom audit as a separate gate.
+No exhaustive numerical certificate rerun is required for this publication.
+
+The ECDLP review and bounded factoring literature search are retained under
+docs/research-evidence/semiprime-ecdl-review-20261029. Neither proves the assumed
+OpenAI D.1 theorem or a stronger factoring rate. Rudich--Rousseau's external
+qualitative subexponential Lean result is recorded with its explicit sharper
+rate conjecture; no code from that development has been integrated.
+
+Publication verification follow-up: the combined root exceeded Linux's default
+vm.max_map_count=65530 despite ample available RAM. A monitored failure reached
+65532 mappings; after raising the limit to 262144 the same root and full ordinary
+build passed. README and CI now record the mapping requirement. The first whole
+lint then found a deep type recheck needing the source's existing 32768 recursion
+allowance and three missing documentation strings in the legacy StreamingTensor
+module. All linters remain enabled. Exactly three comments were added there;
+source-before-documentation/manifest.json records the original snapshot and the
+checked comment-only delta. No FINAL source pin, theorem statement or proof body
+changed. The refreshed inventory has 439184 lines across the same 3160 sources;
+the explorer's renewed tests and independent documentation-update review passed.
+Fresh final ordinary-build, lint and publication results are recorded separately
+in the publication packet's fresh-publication directory when complete.
+
+The final ordinary build and all 23 publication gates passed locally. The compiled
+dashboard audits 5,936 project modules and 197,152 declarations, with zero project
+axioms and zero placeholder-dependent declarations. The generated certificate
+view and plot audits were refreshed against current shared metadata/dashboard
+hashes without rerunning the exhaustive optional certificate. Actual desktop/
+mobile explorer and live GitHub README checks passed. The fresh-publication
+record preserves exact compressed/raw log hashes and prior failed setup/stale-
+asset checks separately. These are local results; exact-SHA CI/Pages remains the
+post-push publication gate. The full semiprime bit-time goal remains OPEN.

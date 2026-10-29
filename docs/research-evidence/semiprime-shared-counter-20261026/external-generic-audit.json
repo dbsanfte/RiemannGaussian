@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "external_baseline": true,
+  "scope": "six reusable algebra theorems; not complete counter or SAT endpoint",
+  "built_dependency_modules": 14,
+  "dependency_hashes": {
+    "OAI.Algorithms.SubexponentialSAT.CosetCardinality": {
+      "source_sha256": "01e6b33554dc18b22f4ff21f8cac5c94a3f86cdb594ecb6a6d4f53e6515c29c3",
+      "olean_sha256": "34343dd20f32c394c1475bab5a76019b0873ea612257dced53f61fba74d7edc2"
+    },
+    "OAI.Algorithms.SubexponentialSAT.CosetInvariance": {
+      "source_sha256": "0b949d69cc8632363ad62ba123b2759b7741b4340ac0c5cd8160c5a58bbf5aff",
+      "olean_sha256": "1125bd44584b4dd3929790ff395c1d6dc7d9e81895d67ef7ac3ccdc7070c586d"
+    },
+    "OAI.Algorithms.SubexponentialSAT.Factor": {
+      "source_sha256": "fd091440873c984ca6e9b6bb85705721be34754e9e085e31d74bbe80635036a5",
+      "olean_sha256": "dc5449b192d04c625f5478aa1b12242033c86ecb1486a88aa06a6e355d83298b"
+    },
+    "OAI.Algorithms.SubexponentialSAT.GlobalPolynomial": {
+      "source_sha256": "454a4bf5eac47fd448f497def32b6591662c9cf125e37ba1a529f59e982f1dcb",
+      "olean_sha256": "fa7ab70fce252a7a474c1bfc1c5575b2accd6959f7917c3eebdb6d6fe427556c"
+    },
+    "OAI.Algorithms.SubexponentialSAT.LeanCompat": {
+      "source_sha256": "51cb1c46b186fd52e15a5435e5ee5c2585fb999195f3fa009d726156b7a8037c",
+      "olean_sha256": "683bc903cb3ff98ea3d1c857f0196d00b9e4fef4d718a3cc24dc09d6d6772a61"
+    },
+    "OAI.Algorithms.SubexponentialSAT.LiftRing": {
+      "source_sha256": "2e959228a2da5307ec628891fd7357348c8dfeb294ffe4b79a19d5822bc123fa",
+      "olean_sha256": "4d59ff8f6a71bc29224940b73531e0e9aaef6e2c2182fb257ec7f9a27a0b1340"
+    },
+    "OAI.Algorithms.SubexponentialSAT.Moments": {
+      "source_sha256": "874b45d6d634a4094643a5c40629c725f9d2be594d8d7b441bb7aee77436b929",
+      "olean_sha256": "99a981b591c29b1fa02655b9899ab2625f71f412b2d0c2e429376584ccddeb81"
+    },
+    "OAI.Algorithms.SubexponentialSAT.NilpotentDefect": {
+      "source_sha256": "99123ca49c19ce411f027a6f3cf77134c049049e89211baac12c4d72a2bfe38d",
+      "olean_sha256": "0094c1579039fbbf80d055db47d1b9e50609201bcd103e2352df21a275129d1a"
+    },
+    "OAI.Algorithms.SubexponentialSAT.Separation": {
+      "source_sha256": "c21dfa8aa92a248bb022468ba58f82d3e478a6122ae30dd6f45b1a976b26dab5",
+      "olean_sha256": "5d9edc4425b8b67e2e6e83e03827316e754215e281310bb58d411888f8524735"
+    },
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutExactBuckets": {
+      "source_sha256": "947ee8bad9f9ca64bbf0d70ef624353cbf233fd97c46a9727f55ca8264c7fbc9",
+      "olean_sha256": "8545828d515c71b3fe3f0aa36365d8484969da28840684ffb58f270066be18c1"
+    },
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutPullback": {
+      "source_sha256": "2f8b1a9980ac74a93e06473e193db59c6c33455f9f00eb6a5e8d5a6b9c6307e8",
+      "olean_sha256": "c575903c63a1ffea96585bfd3b2987bb2299f122c4e109f320fa47420058be5f"
+    },
+    "OAI.Algorithms.SubexponentialSAT.TableInterpolation": {
+      "source_sha256": "7b22b8127f37251f98f14ddf2f52937d7b9b56c9727a004781756bf3b6830670",
+      "olean_sha256": "6c8c438340cae05df66906166673beccfb5d1c9e438e48bf5dc8a00af4c59361"
+    },
+    "OAI.Algorithms.SubexponentialSAT.Truncation": {
+      "source_sha256": "6590e9745ee680c34b252eeabda00e6f3d11ad4c48ad154942a59fc860adfeb3",
+      "olean_sha256": "1db924c16709c2d52992c87cb35734044c3a01635062c58970e1ab88095a0f0d"
+    },
+    "OAI.Algorithms.SubexponentialSAT.WeightedSupport": {
+      "source_sha256": "4286e531fd8d151649c976579f34ff34763fa83c0a5622b953bfd65f3ee0c2ed",
+      "olean_sha256": "c02ea9825d4b8a1bea7084aab0931837bbf8a836f9eef1a48f37dd96acd8104c"
+    }
+  },
+  "theorem_axioms": {
+    "OAI.Algorithms.SubexponentialSAT.GlobalPolynomial.eval_zero_interpolatedGlobalPolynomial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.Algorithms.SubexponentialSAT.GlobalPolynomial.natDegree_compose_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.Algorithms.SubexponentialSAT.Separation.weighted_separation_equiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.Algorithms.SubexponentialSAT.Separation.coset_row_group_separation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutExactBuckets.integer_kernel_of_rational_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutExactBuckets.killsIntegerKernel_of_rational_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "full_endpoint_verified": false,
+  "proof_license": "Apache-2.0; see prior pinned-source provenance"
+}

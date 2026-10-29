@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "goal_complete": false,
+  "previous_turn_classification": "progress",
+  "mathematical_derivation": {
+    "status": "independently reviewed, not a full compiled rate theorem",
+    "rate": "poly(L)*2^O(L*(log log L)^2/sqrt(log L))",
+    "dependencies": [
+      "Paper Proposition3.4",
+      "Paper Lemma4.7",
+      "explicit bit-cost derivation",
+      "macroFFT network correctness"
+    ],
+    "appendix_D_required": false
+  },
+  "repository_proof": {
+    "path": "RiemannGaussian/SemiprimeStreamingTensor.lean",
+    "sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+    "snapshot": "SemiprimeStreamingTensor.lean",
+    "strict_build": "PASS",
+    "compiler": "Lean4.34.1",
+    "axiom_reports": {
+      "RiemannGaussian.SemiprimeStreamingTensor.natDegree_evaluate_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensor.natDegree_sum_product_evaluate_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensor.evaluateTracked_eq_sum": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensor.evaluateTracked_at_boolean": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensor.evaluateTracked_eq": [
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensor.boolean_recovery": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensor.evaluate_eq_sum": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensor.leafCount_eq": [
+        "propext"
+      ],
+      "RiemannGaussian.SemiprimeStreamingTensor.recursionDepth_eq": [
+        "propext"
+      ]
+    },
+    "full_factoring_time_or_space": false
+  },
+  "independent_reviews": [
+    "precision.md",
+    "modes.md",
+    "complexity.md",
+    "older-route-review.md",
+    "lean-specification.md",
+    "review-factor-network-code.md"
+  ],
+  "compiler_controls": {
+    "author": {
+      "status": "PASS",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "scope": "compiler/verifier structural controls; no contraction or factoring search"
+    },
+    "independent": {
+      "status": "PASS",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "scope": "compiler/verifier structural controls; no contraction or factoring search"
+    }
+  },
+  "external_source_build": {
+    "timestamp_utc": "2026-10-26 22:54:58 UTC",
+    "status": "running",
+    "completed": 464,
+    "total": 2569,
+    "failed": {},
+    "active_modules": [
+      "OAI.Algorithms.SubexponentialSAT.ExecClauseRelationsProgram",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutCoefficientAlgorithmMagnitude",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutCoefficientRecurrence",
+      "OAI.Algorithms.SubexponentialSAT.SqrtLog.LayoutRankBlocks",
+      "OAI.Algorithms.SubexponentialSAT.ExecSunflowerCodeTransport"
+    ],
+    "target": "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.Final",
+    "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "live_exec_session_id": 85099,
+    "last_live_observation": "write_stdin returned running with session_id 85099",
+    "state_path": "/tmp/semiprime-d1-audit-20261026/lean-build-state.json",
+    "log_directory": "/tmp/semiprime-d1-audit-20261026/lean-logs",
+    "output_directory": "/tmp/semiprime-d1-audit-20261026/lean-build",
+    "rule": "Re-poll the existing handle. A timeout is not terminal. This frozen snapshot does not claim later completion.",
+    "whole_endpoint_verified": false,
+    "comparator_run": false
+  },
+  "code_contraction_implemented": false,
+  "native_query_bound": "retained soft O(K^(5/4))",
+  "preservation": {
+    "protected_files": 1211,
+    "concurrent_files": 24,
+    "append_only_prefixes": 2,
+    "result": "PASS"
+  },
+  "local_links": 17,
+  "git_diff_check": "PASS",
+  "commit_or_push": false
+}

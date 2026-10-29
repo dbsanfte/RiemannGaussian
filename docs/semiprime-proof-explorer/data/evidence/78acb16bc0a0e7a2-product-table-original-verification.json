@@ -1,0 +1,51 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 1,
+    "declarations": 14,
+    "theorems": 13
+  },
+  "modules": {
+    "SemiprimeD1ProductTableOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1ProductTableOriginal.lean",
+        "sha256": "35bf2cde9cb5192a25ef24a12a5f6476d6e09991475c8441c27dde417a8636a5"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1ProductTableOriginal.olean",
+        "sha256": "11b60a98acd55e7b11ac2267c1537d92847b27bce21079b44aefbfe5364822fe"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/product-table-original-frozen/SemiprimeD1ProductTableOriginal.olean",
+        "sha256": "11b60a98acd55e7b11ac2267c1537d92847b27bce21079b44aefbfe5364822fe"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "scope": "Entire original product tensor byte equality for every canonical positive binary N and every original product index; original false-first local port order. Individual entry literal integer0/1 and reduction at arbitrary precision, before network multiplication. No native clock transfer or runtime getter; complete factoring goal remains open.",
+  "writers_stopped": true,
+  "audit_heartbeats": 200000,
+  "Elab.async": false,
+  "actual_compiler_imported_modules": 18110,
+  "all_imported_source_object_pairs_unchanged": true,
+  "import_pins": {
+    "before": "/tmp/semiprime-explicit-rate-20261027/product-table-original-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/product-table-original-dependencies/imported-pins-after.json"
+  },
+  "key_apis": [
+    "SemiprimeD1ProductTableOriginal.tree_entry",
+    "SemiprimeD1ProductTableOriginal.original_arity",
+    "SemiprimeD1ProductTableOriginal.leaf_original",
+    "SemiprimeD1ProductTableOriginal.output_original",
+    "SemiprimeD1ProductTableOriginal.literal_entry_coefficient",
+    "SemiprimeD1ProductTableOriginal.literal_original_coefficient",
+    "SemiprimeD1ProductTableOriginal.literal_entry_reduce"
+  ],
+  "frozen_sources_or_stack_product_table_sources_edited": false
+}

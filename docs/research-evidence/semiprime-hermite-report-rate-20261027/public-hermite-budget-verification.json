@@ -1,0 +1,22 @@
+{
+  "strict": true,
+  "root15": true,
+  "all_generated_standard_axioms_only": true,
+  "declarations": 14,
+  "theorem_constants": 9,
+  "isolated_byte_equal": true,
+  "files": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicHermiteCounterBudget.lean",
+      "sha256": "e5ac1d8a8d546a244d3c6ee632b36beaa3d05b78dfef1fa54beb454dfdd002a4"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimePublicHermiteCounterBudget.olean",
+      "sha256": "31cf3c84c2d9b7d5220d367b3ba076d81f3dc9ba0218bdf4e870b1ad7f5dba8c"
+    },
+    {
+      "path": "/tmp/semiprime-hermite-report-rate-20261027/PublicHermiteCounterBudget.isolated.olean",
+      "sha256": "31cf3c84c2d9b7d5220d367b3ba076d81f3dc9ba0218bdf4e870b1ad7f5dba8c"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "MortonManchon",
+      "title": "Geometrical relations and plethysms in the Homfly skein of the annulus",
+      "authors": [
+        "H. R. Morton",
+        "P. M. G. Manchon"
+      ],
+      "url": "https://arxiv.org/pdf/0707.2851",
+      "checked": [
+        "Section 7, Theorem 13 and Corollary 14"
+      ],
+      "use": "Annular cabling and power-sum operation; not a long arithmetic norm algorithm."
+    },
+    {
+      "id": "Ohtsuki2004",
+      "title": "A cabling formula for the 2-loop polynomial of knots",
+      "author": "Tomotada Ohtsuki",
+      "url": "https://ems.press/content/serial-article-files/40872",
+      "checked": [
+        "Section 4, classical Alexander cabling formula in the proof of Theorem 4.1"
+      ],
+      "use": "Argument substitution under cabling distinguished from root-alphabet powering."
+    },
+    {
+      "id": "Kohli2018",
+      "title": "The Links–Gould invariant as a classical generalization of the Alexander polynomial?",
+      "author": "Ben-Michael Kohli",
+      "url": "https://arxiv.org/pdf/2505.08296",
+      "publication_url": "https://doi.org/10.1080/10586458.2016.1255860",
+      "checked": [
+        "Proposition 2.18 negative-twist formula"
+      ],
+      "use": "Fixed three-state polynomial formulas; common-extra elimination is derived in this packet.",
+      "caution": "The 2025 arXiv upload is not the original publication date."
+    },
+    {
+      "id": "CarusoLeBorgne2017",
+      "title": "Fast multiplication for skew polynomials",
+      "authors": [
+        "Xavier Caruso",
+        "Jérémy Le Borgne"
+      ],
+      "url": "https://arxiv.org/pdf/1702.01665",
+      "checked": [
+        "Section 1.1",
+        "Proposition 1.6"
+      ],
+      "use": "Requires an actual finite-order algebra automorphism and supplied basis data; native multiplicative powering does not supply those inputs. No deterministic composite-ring theorem imported."
+    },
+    {
+      "id": "HillarLevine2007",
+      "title": "Polynomial recurrences and cyclic resultants",
+      "authors": [
+        "Christopher J. Hillar",
+        "Lionel Levine"
+      ],
+      "url": "https://lionellevine.github.io/hillarlevineAMSrevised.pdf",
+      "arxiv": "https://arxiv.org/abs/math/0411414",
+      "checked": [
+        "Theorem 1.5",
+        "Section 2 proof",
+        "Section 4 cyclic-resultant applications"
+      ],
+      "use": "Rank-one short algebraic relation tested explicitly; no efficient initialized unique-step prefix algorithm follows."
+    },
+    {
+      "id": "SilverWilliams2002",
+      "title": "Torsion numbers of augmented groups: with applications to knots and links",
+      "authors": [
+        "Daniel S. Silver",
+        "Susan G. Williams"
+      ],
+      "url": "https://arxiv.org/pdf/math/0202197",
+      "checked": [
+        "Proposition 2.2",
+        "Proposition 2.5 and equation 2.2",
+        "Resultant and torsion recurrence discussion"
+      ],
+      "use": "Cyclic-cover interpretation with non-pure torsion/Betti correction; not the required common-target finite-ring interval product."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-lift-20261026/frobenius-screen.md",
+      "bytes": 6840,
+      "sha256": "bdd7215381aea65a37ffbd172cd004f068b5c062016a9060c541f80c2652fb56"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-query-continuation-20261022/reports/shared-coindex-roots.md",
+      "bytes": 5869,
+      "sha256": "3537f30b23dbb4808d6d31ced12fee8bb82e5fa8533d6ebb64bf1cc95c2a1beb"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/unbalanced-extractor.md",
+      "bytes": 9993,
+      "sha256": "a7765a14e4d0bc82339229f5f3bb445ad8f1f95bd22c49d631259d4e039195be"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/symmetric-supplier-audit.md",
+      "bytes": 7892,
+      "sha256": "e31daf2b017109cd844bda3b5814cac84bd000ac223a7571efe13c615ff1ac62"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue.md",
+      "bytes": 10140,
+      "sha256": "9ded79850c2f200069a7da67502d0de579d1df0457cb06c865fb3d39c9654058"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-prefix-20261025/README.md",
+      "bytes": 6429,
+      "sha256": "18f7fb131a7b1e93d28267f9076cf00d34dccb1b988d383879d6a00b55b86484"
+    }
+  ]
+}

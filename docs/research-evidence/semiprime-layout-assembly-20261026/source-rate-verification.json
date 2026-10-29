@@ -1,0 +1,36 @@
+{
+  "strict_compile": "PASS",
+  "autoImplicit": false,
+  "warnings_as_errors": true,
+  "ordinary_root_scoped_lint": "PASS",
+  "linters": 15,
+  "all_declarations": 48,
+  "theorem_constants_including_generated": 44,
+  "only_standard_axioms": true,
+  "stronger_source_guards_closed": true,
+  "literal_height_and_summary_budgets_closed": true,
+  "actual_constructor_height_instantiation_proved": false,
+  "full_factoring_runtime_proved": false,
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceLayoutRate.lean": {
+      "bytes": 20784,
+      "sha256": "5bd9f80b8e361b6c1a4a5755a0aa6e10a3638a52eaa68f4b3c16ebd4e1bd69c5"
+    },
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceLayoutRate.olean": {
+      "bytes": 1278008,
+      "sha256": "befc481d579f2c13e20ae257bed96fd0693aa66e217640ec5c51ba289eb17127"
+    },
+    "/tmp/semiprime-layout-assembly-20261026/source-rate-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/tmp/semiprime-layout-assembly-20261026/source-rate-root-audit.lean": {
+      "bytes": 1385,
+      "sha256": "f1b636f118b45f6a3b6008ef0820ed204efb402b42dd6bde2482213b67aab47b"
+    },
+    "/tmp/semiprime-layout-assembly-20261026/source-rate-root-audit.log": {
+      "bytes": 1499,
+      "sha256": "4496031dfd84fbbdc5e6e7f007923e2cd81386ebb2b8d1a9ac628fa0566926b7"
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 16,
+    "declarations": 496,
+    "theorems": 268
+  },
+  "modules": {
+    "SemiprimeD1StackProcedureReturns": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProcedureReturns.lean",
+        "sha256": "a356c0fc9d282b22c60b2d0051b37c327cd42da4762ae392566c8be3d9cde5b3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProcedureReturns.olean",
+        "sha256": "3abc8c33ec9160d96b6ee13a938ea45576da482d35c35b13f28944b9121791a6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProcedureReturns.olean",
+        "sha256": "3abc8c33ec9160d96b6ee13a938ea45576da482d35c35b13f28944b9121791a6"
+      }
+    },
+    "SemiprimeD1StackProductTable": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTable.lean",
+        "sha256": "c6ace46372e91fe0bf5bc5970229a7d74bc60cda74d677b81a42c0d1a53acde3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTable.olean",
+        "sha256": "8da6cb2f3b8943de9c7d33e35d67fc242f17e552102e5deea19df5abe9e64498"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTable.olean",
+        "sha256": "8da6cb2f3b8943de9c7d33e35d67fc242f17e552102e5deea19df5abe9e64498"
+      }
+    },
+    "SemiprimeD1StackProductTableSpec": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableSpec.lean",
+        "sha256": "0fe661002a2d458d4a32a24d33259fe734e29ba2e07693fd54b2a1f13daf0110"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableSpec.olean",
+        "sha256": "5b375c5ffeb95040d44a8e316a9f72e5501dd5e37399936fbcfd56a7934da829"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableSpec.olean",
+        "sha256": "5b375c5ffeb95040d44a8e316a9f72e5501dd5e37399936fbcfd56a7934da829"
+      }
+    },
+    "SemiprimeD1StackProductTablePrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTablePrimitives.lean",
+        "sha256": "72565cbb3ee76d916dbb1a320323818e7bf10628bd4333e9c87c22182fb92986"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTablePrimitives.olean",
+        "sha256": "63c8533bbc5330ac3ec929a6ed02f2c843d8b4ef62bff8e935ff47d846b32772"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTablePrimitives.olean",
+        "sha256": "63c8533bbc5330ac3ec929a6ed02f2c843d8b4ef62bff8e935ff47d846b32772"
+      }
+    },
+    "SemiprimeD1StackProductTableCleanup": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableCleanup.lean",
+        "sha256": "ed1d549c7139840e5f810b39a035f9b495b3fef30c73a636846dcd07b96686b5"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableCleanup.olean",
+        "sha256": "75d35dc3e5f0c29ce0bbffc2a38f50c70f958036ab905b69aea76ad1d07ce766"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableCleanup.olean",
+        "sha256": "75d35dc3e5f0c29ce0bbffc2a38f50c70f958036ab905b69aea76ad1d07ce766"
+      }
+    },
+    "SemiprimeD1StackProductTableState": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableState.lean",
+        "sha256": "b86105b4ddf64915f1bae70c15aa2a24232e38a07bd330cf743e9e1625d86990"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableState.olean",
+        "sha256": "a6e005f5a81e3223d79de1cb80d9ba50c3d53484a4b019e9ed2b746efc600627"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableState.olean",
+        "sha256": "a6e005f5a81e3223d79de1cb80d9ba50c3d53484a4b019e9ed2b746efc600627"
+      }
+    },
+    "SemiprimeD1StackProductTableLeafCalls": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableLeafCalls.lean",
+        "sha256": "8f86527836686a7a8acedd6fbcb024d2972d3a7ee11e6ef03c4a39661b6fac69"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableLeafCalls.olean",
+        "sha256": "83dca88a30e8b8e8a664f485217efb9a1273d413650b87a878b00c8fd7671c49"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableLeafCalls.olean",
+        "sha256": "83dca88a30e8b8e8a664f485217efb9a1273d413650b87a878b00c8fd7671c49"
+      }
+    },
+    "SemiprimeD1StackProductTableLeafCode": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableLeafCode.lean",
+        "sha256": "5a224593a477185e36c30253d83d66aea9b20f9e66b969f729f685ddd44170f1"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableLeafCode.olean",
+        "sha256": "5f6eaa1401b3254c6c983d800ae942fe384c3bcaa16401ca9b444cc964f7624f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableLeafCode.olean",
+        "sha256": "5f6eaa1401b3254c6c983d800ae942fe384c3bcaa16401ca9b444cc964f7624f"
+      }
+    },
+    "SemiprimeD1StackProductTableLeaf": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableLeaf.lean",
+        "sha256": "283a3197ff5985d3681b8cb5c7a9e70401cf9cd48a6c2067749010b32d4f367b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableLeaf.olean",
+        "sha256": "98cdee32c663a4ec72ec492803f52a35129668fec1b98e0db3eeb5dc73b8ed07"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableLeaf.olean",
+        "sha256": "98cdee32c663a4ec72ec492803f52a35129668fec1b98e0db3eeb5dc73b8ed07"
+      }
+    },
+    "SemiprimeD1StackProductTableDFSParts": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableDFSParts.lean",
+        "sha256": "0163d5d66698cff2e0869ac07b77a492b84cbf50ebfee9e78b4b275673d09185"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableDFSParts.olean",
+        "sha256": "473fadef0098fe5332b5d29ef7c7bc2be62fd1b92fa3f46840cef10286f88643"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableDFSParts.olean",
+        "sha256": "473fadef0098fe5332b5d29ef7c7bc2be62fd1b92fa3f46840cef10286f88643"
+      }
+    },
+    "SemiprimeD1StackProductTableDFS": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableDFS.lean",
+        "sha256": "b5312839dd21d4bd82c0f043cf543477d30d3bd6aae2c377e91d5b75ea43f42c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableDFS.olean",
+        "sha256": "fee029c3b2b63c20c14a54e34b574f7f4592da1b953788f1eff54795d82afbbb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableDFS.olean",
+        "sha256": "fee029c3b2b63c20c14a54e34b574f7f4592da1b953788f1eff54795d82afbbb"
+      }
+    },
+    "SemiprimeD1StackProductTableBootstrapParts": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableBootstrapParts.lean",
+        "sha256": "5f2ed190983cd7c20c6a12e33c13b2b84e2f5d9d7064729b6238e602ee64090b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableBootstrapParts.olean",
+        "sha256": "e550af2844ff26c165b575e8a39b13ca73f928606f4a60a0836bf45ee6187260"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableBootstrapParts.olean",
+        "sha256": "e550af2844ff26c165b575e8a39b13ca73f928606f4a60a0836bf45ee6187260"
+      }
+    },
+    "SemiprimeD1StackProductTableBootstrap": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableBootstrap.lean",
+        "sha256": "3abaf3fe049f66716bfea01aa0982e4afbfbf9ed119bb372b388f015808946ba"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableBootstrap.olean",
+        "sha256": "4d155a412c59fe1824b87ba848aa581bed7dccfc9c3f7a9a21b8302c1441eb2e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableBootstrap.olean",
+        "sha256": "4d155a412c59fe1824b87ba848aa581bed7dccfc9c3f7a9a21b8302c1441eb2e"
+      }
+    },
+    "SemiprimeD1StackProductTableExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableExecution.lean",
+        "sha256": "7fc6c359f2dba57fd08be419f0789ca88727457f5dd3aeef86dcfbd4a6a17fe5"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableExecution.olean",
+        "sha256": "d453e16eb98c2b75e27f702d97a80292836804f616e53799c2b5c3ef5109ec24"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableExecution.olean",
+        "sha256": "d453e16eb98c2b75e27f702d97a80292836804f616e53799c2b5c3ef5109ec24"
+      }
+    },
+    "SemiprimeD1StackProductTableBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableBounds.lean",
+        "sha256": "68b22b26aa62ecaf4d631e41b106fe85d45241f8b28931ab7174a4203060177a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableBounds.olean",
+        "sha256": "ee3fd05bec85a251b4b1fb3c99a56839e7265237ad8bd2b5af2a74d6e3de756a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableBounds.olean",
+        "sha256": "ee3fd05bec85a251b4b1fb3c99a56839e7265237ad8bd2b5af2a74d6e3de756a"
+      }
+    },
+    "SemiprimeD1StackProductTableOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackProductTableOriginal.lean",
+        "sha256": "f5891614fb09cd6710db863357fecc4872af1a5031071d814eab7e5177e9f8e1"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackProductTableOriginal.olean",
+        "sha256": "e3497d54a4608440a4b6f4b18a00194a4d6fd3302768d405609a953943e53654"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/stack-product-table-frozen/SemiprimeD1StackProductTableOriginal.olean",
+        "sha256": "e3497d54a4608440a4b6f4b18a00194a4d6fd3302768d405609a953943e53654"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "prepared_execution_control_report": "product-table-control-verification.json",
+  "control_status": "FINAL bootstrap+prepared+fullcanonicalN1 actual83machinePASS;83,772,735transitions/164,417outputbytes",
+  "full_N1_control_manifest": "/tmp/semiprime-explicit-rate-20261027/product-table-control-verification.json",
+  "full_N1_control_result": "/tmp/semiprime-explicit-rate-20261027/product-table-full-control-result.json"
+}

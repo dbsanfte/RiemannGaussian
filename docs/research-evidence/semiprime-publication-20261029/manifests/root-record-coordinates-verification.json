@@ -1,0 +1,39 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 1,
+    "declarations": 28,
+    "theorems": 27
+  },
+  "modules": {
+    "SemiprimeD1RootRecordCoordinates": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1RootRecordCoordinates.lean",
+        "sha256": "481ecff5ed1eb410cf64eac6227a206bd2256a4ac051eacba0b327ba95bec2e6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1RootRecordCoordinates.olean",
+        "sha256": "9117aecdcc6bbe7bfbf2baee6a59c1d3da659e67408c78c1b4976189f651ab64"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-record-coordinates-frozen/SemiprimeD1RootRecordCoordinates.olean",
+        "sha256": "9117aecdcc6bbe7bfbf2baee6a59c1d3da659e67408c78c1b4976189f651ab64"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "default_heartbeats": 200000,
+  "strict_default_heartbeats": 200000,
+  "actual_compiler_header_dependencies": 18699,
+  "live_dependency_source_object_pins_unchanged": true,
+  "protected_sources_unchanged": 17054,
+  "historical_journals_unchanged": true,
+  "frozen_full_factor15_and_owner20_unchanged": true,
+  "stage": "EXACT semanticbyte-layout identity: TensorNetwork.vertices(originaltypedroot N hN fixed)=OwnerRecordsOriginal.vertices N hN fixed ++ FullFactorCatalogueOriginal.factorVertices N hN(indices N), for ALLpositiveN and arbitrary repeated/conflictingfixedprefixlists. OrderedoccurrenceedgeIDs and whole literalTable values agree; no nativeclocktransport."
+}

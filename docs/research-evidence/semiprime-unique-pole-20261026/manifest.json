@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b674f7fb73d1d2624b94f204fdfe07f1871f7abc46f2853c31a76f79343cdf1f"
+    },
+    {
+      "path": "archive-provenance.json",
+      "sha256": "fa3f2680983d7bbc544004dd5fd440a1d78a767c96c4ccb772cc93aaead931a7"
+    },
+    {
+      "path": "check_pole_identities.py",
+      "sha256": "4eb05b8ac83805b01422fca402756f88ded5c22f6da94fec25b5cfc13c10eb0e"
+    },
+    {
+      "path": "hybrid-handoff.md",
+      "sha256": "e7aebd94d82a891706454a82449eb76b17a9cd62184db194f85986b397a8e8d3"
+    },
+    {
+      "path": "pole-identity-checks.json",
+      "sha256": "1a4b75fedafc4a4d27df5110608c2881f037efc76fe09424e53f8fb20c9d5671"
+    },
+    {
+      "path": "qpearson.md",
+      "sha256": "3fcf3fe6862f596b7637a4ea662395b11a6b5ffdabb1569dfb1b90cb71592e0f"
+    },
+    {
+      "path": "review-handoff.md",
+      "sha256": "1b6d729e3dea6c356efc0829b76b5cb6156b001fd2017f455eaf651760625094"
+    },
+    {
+      "path": "review-qpearson.md",
+      "sha256": "076fc77017fff41cb2815525216145432190d370e4dd61d424191810d97638d5"
+    },
+    {
+      "path": "review-subresultant.md",
+      "sha256": "832e1308d91e769f07332427148f89347bba60066736bceb14e250930aa0ee40"
+    },
+    {
+      "path": "review-weighted.md",
+      "sha256": "fce161fe39c80ef26781b67d7d5a58337efa699950c032297ddcbcc24d25cb33"
+    },
+    {
+      "path": "review.json",
+      "sha256": "802f3e6602933c41ed8a1b99c3fadcfac9780fdcdb224f6dcdcb09c4a4e29cdb"
+    },
+    {
+      "path": "selected-subresultant.md",
+      "sha256": "923bc7bfc5f35ed1d72d2a15896331e48711f6435e2d6eb8656568ba59b0e096"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "f69b1a4752e18b4c459b106ea32ef65be219a5544a2136af103154f1cbf89ebb"
+    },
+    {
+      "path": "validation.md",
+      "sha256": "44c9e46bcf68b27f4ba6486a927d4b7b979866eb9d765a0ac702ac45b814efdc"
+    },
+    {
+      "path": "weighted-contraction.md",
+      "sha256": "75005fb73c58a97775749fd6a625848bfd90c9c9374a0d47936c83c8b90ed7a9"
+    }
+  ]
+}

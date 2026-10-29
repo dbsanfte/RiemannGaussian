@@ -1,0 +1,19 @@
+{
+  "review": "compose-separation-review.md",
+  "root_sources_stable_compile_confirmed": true,
+  "independent_semantic_review": "Compose/Separation PASS; Tail interface consistency self-audit",
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterCompose.lean": {
+      "bytes": 14014,
+      "sha256": "2477bd0cc314e09c27de8308cc32ef87138eaf38dfa115a28e1595981a87f916"
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterSeparation.lean": {
+      "bytes": 7914,
+      "sha256": "65b5382457f4167a7978a650d574115cee558136a4cbf57d12884e5c8c3a36a6"
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterTail.lean": {
+      "bytes": 21065,
+      "sha256": "d2aa14210819ad7f7b6b720e601532820bf8f021ed9a8c92140af1c1534dea77"
+    }
+  }
+}

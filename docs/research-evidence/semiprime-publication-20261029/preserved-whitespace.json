@@ -1,0 +1,1676 @@
+{
+  "schema_version": 1,
+  "policy": "exact-historical-blob-and-findings",
+  "rationale": "One-time publication preservation of already accumulated, byte-pinned Lean proofs and historical evidence. Reformatting would invalidate finalized source SHA256 pins, source reviews, byte-exact copied evidence and literal CRLF CSV payloads. These exceptions preserve only the exact staged historical blobs and exact Git finding lists recorded on 2026-10-29; they do not waive whitespace checks on later changes, other files, conflict markers or unknown diagnostics. The checker has no baseline-update operation. Existing repository .gitattributes rules retain their prior independent scope. Compiled proof, axiom and placeholder gates remain mandatory.",
+  "recorded_date": "2026-10-29",
+  "baseline_log": {
+    "origin": "/tmp/semiprime-publication-20261029/staged-whitespace.log",
+    "sha256": "892823245cc5d58a8305a14c0b3d38834f76298e1e019f6d57c59e2ec795b664",
+    "findings": 236,
+    "files": 107,
+    "kinds": {
+      "blank-at-eof": 86,
+      "trailing-whitespace": 150
+    }
+  },
+  "git_whitespace": "blank-at-eol,blank-at-eof,space-before-tab",
+  "files": [
+    {
+      "path": "RiemannGaussian/SemiprimeCounterCompose.lean",
+      "sha256": "2477bd0cc314e09c27de8308cc32ef87138eaf38dfa115a28e1595981a87f916",
+      "findings": [
+        {
+          "line": 284,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1ChildWordOriginalClock.lean",
+      "sha256": "e3572bb969c3e20943adca6c4249f39519a8cd106c01d857541616d48c3e9424",
+      "findings": [
+        {
+          "line": 41,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 153,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1JetKernelBitsBounds.lean",
+      "sha256": "f4c02c46e2ccda298efea9798d24be20a99f302c3213b1907fa53e8c80af071a",
+      "findings": [
+        {
+          "line": 172,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 196,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1JetWordModeBounds.lean",
+      "sha256": "d60e051107959b3097958e3207038b64804cc2713e0b828dd21f840ef0e8c4f3",
+      "findings": [
+        {
+          "line": 45,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1JetWordModeScalarBounds.lean",
+      "sha256": "010911eff2d4b57a7842eac8cb962ffbf123a8915cb52b5bb09c10e65a28ed4b",
+      "findings": [
+        {
+          "line": 77,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1PathRate.lean",
+      "sha256": "541ecc742f11929535b574da82f4bd4515e740ce24765416cc2fa77699744c2c",
+      "findings": [
+        {
+          "line": 39,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 127,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackCachePhaseCopyBounds.lean",
+      "sha256": "247a708f7f707b9a96dcb817bc4a51a125a0e72e661a1d8c8a6c92ae583f10e8",
+      "findings": [
+        {
+          "line": 70,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackCachePhaseOldCache.lean",
+      "sha256": "5dc2c3056db1b6f445db833fda3cc446b6fd04c76d64d207cc23235ba40ed3ae",
+      "findings": [
+        {
+          "line": 79,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackChildVertexEndpoint.lean",
+      "sha256": "26855a6cb47853a136794c8fdcddf7764e6a8f2cca1f788aa3d3f18761a7cb06",
+      "findings": [
+        {
+          "line": 31,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 33,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 57,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 113,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 133,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackEdgeCatalogueComponents.lean",
+      "sha256": "f7d569f3a17c975927609061115f3945e59368e07e73cda2d70193138e7d1edc",
+      "findings": [
+        {
+          "line": 164,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackEdgeCatalogueEmit.lean",
+      "sha256": "c27ba44700abd0bb9da47646a50fd10e1a6f4bd3f9d53781f08497e2108e404b",
+      "findings": [
+        {
+          "line": 169,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackJetMulExecution.lean",
+      "sha256": "54228e0bc8a77bf7bcbb60303a1212e4a998e2d04f20b639ff37004d53e05559",
+      "findings": [
+        {
+          "line": 248,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputBody.lean",
+      "sha256": "b182983f89222f18a20170c55a826e5b213727480de723fa7a916a8304617fbe",
+      "findings": [
+        {
+          "line": 81,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputBounds.lean",
+      "sha256": "8d9a7ca123200c2b896c18a125d9ba967927613541616f7812407339044d7fdb",
+      "findings": [
+        {
+          "line": 33,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputCalls.lean",
+      "sha256": "2859421c7e800e20e02391caf38bfa529313905648482083d78068a3c30c8711",
+      "findings": [
+        {
+          "line": 115,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputCompact.lean",
+      "sha256": "3d337565acfbc8690a0254620bbe21888b7f7cb8ad07c3f4c4f1ade2f18bd978",
+      "findings": [
+        {
+          "line": 81,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputCompactBounds.lean",
+      "sha256": "e25a37002c8c891a667edf86f015cdde61685560074229c873992bf2e99fec5f",
+      "findings": [
+        {
+          "line": 60,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputCompactExecution.lean",
+      "sha256": "0da9991f8915b942af147993ec3e040f1afec5fcab45771828370f1f354e47f2",
+      "findings": [
+        {
+          "line": 128,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputCopies.lean",
+      "sha256": "36df3f590ec5a6b406e64000b03ee89d579e7b065dedce48b4eafd383729bacc",
+      "findings": [
+        {
+          "line": 71,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputCost.lean",
+      "sha256": "ca5f36800b5f37a268d68f75ac4394bcc37a8b2fa62cf4c3f383c1fc54ca36b7",
+      "findings": [
+        {
+          "line": 143,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputEncoding.lean",
+      "sha256": "780ebfd62b8857b1656bf7b89c85ca0436fa3b4fb3e584cf999a9b3bedc5286b",
+      "findings": [
+        {
+          "line": 258,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputExecution.lean",
+      "sha256": "1dd4b7152cf703269dc7e43dabe766e5d230eae3af265db8fee1ede3c41c9c2c",
+      "findings": [
+        {
+          "line": 46,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputFinish.lean",
+      "sha256": "8e3730731787a74c1d1851fb214cda5850002f36c15b2f5ea730f32723985f70",
+      "findings": [
+        {
+          "line": 51,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputFirst.lean",
+      "sha256": "0162312852e62d78e6f5942b0725e327a109b93de0a5e077b258eba074835c2c",
+      "findings": [
+        {
+          "line": 73,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputMeaning.lean",
+      "sha256": "eb65cacbfc867e55716296b8972368fefad1f36fac6bf696de7273ccd8713f0a",
+      "findings": [
+        {
+          "line": 97,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputMetadata.lean",
+      "sha256": "d054ac3177c0edf0af5b4555db06d0b936c86bc7cf71fb33ce7d8cd90540e809",
+      "findings": [
+        {
+          "line": 76,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputOriginal.lean",
+      "sha256": "cbfbeed91a4fd2f9d3d31779357b901c1c7f3c3237e8b09d5af4cc8c1c661d19",
+      "findings": [
+        {
+          "line": 77,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputShift.lean",
+      "sha256": "ab81873f3508e379f339e3f823f21ec4fda3c7a4c2d9c27d57c38aaabfc709ff",
+      "findings": [
+        {
+          "line": 53,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputStorage.lean",
+      "sha256": "1650944b8ad555126ca09c896225ff7075553f51975fe72c1abceb30a94878c3",
+      "findings": [
+        {
+          "line": 95,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputTable.lean",
+      "sha256": "24e2c502722e659eae4c43cc682fcc8c206e8f0a891c134be12824ac6b17d582",
+      "findings": [
+        {
+          "line": 86,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputTableBounds.lean",
+      "sha256": "a5307dc39a660e3806d1f5dba02233680bac2accd40f9a98e274ebd5dc17511e",
+      "findings": [
+        {
+          "line": 92,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputTableExecution.lean",
+      "sha256": "1b627fca790da362934a93eb413542b8dcb5c7fac8bce3e389b3fdf71799ccc6",
+      "findings": [
+        {
+          "line": 63,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputTableOriginal.lean",
+      "sha256": "6beea38fd872098005fdf769533bdcaea61f67b18bedca8445953c85d2e26169",
+      "findings": [
+        {
+          "line": 137,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedPublicInputTableTrace.lean",
+      "sha256": "3745e065c20170bd3b34c14aa14af4b301589eb0a7eb1b91a48350171bc93ea6",
+      "findings": [
+        {
+          "line": 68,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackMarkedRootRecords.lean",
+      "sha256": "981ce9c54dc22c7f476274745b792f81694244dd6aff89461b9a0038691ddd71",
+      "findings": [
+        {
+          "line": 314,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireCalls.lean",
+      "sha256": "582bdbfd36901188b561c3fcb5cf6a42fe420f7d299cef0a1796bacfb571a8ed",
+      "findings": [
+        {
+          "line": 100,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireKeyInput.lean",
+      "sha256": "0d4ce96a57a0886d261bc9f7dbde4884b43ed1a348c60fbbcd84ce277516d0aa",
+      "findings": [
+        {
+          "line": 60,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireSelectorInput.lean",
+      "sha256": "a20c32ecc79dcc8eff7c39f82a1a1f64f73883bc271a0137ca6613175ab83c3f",
+      "findings": [
+        {
+          "line": 78,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackSourceSelectionAcquireView.lean",
+      "sha256": "a97fd36de419ba5d1f87cd2e97b95789907538991a6757347c488067c0c26a1c",
+      "findings": [
+        {
+          "line": 67,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackStaticWordTableEmit.lean",
+      "sha256": "77a1899b32f1daa1373110fbd5bf1548f91fc92540a40f54d3777290233273e5",
+      "findings": [
+        {
+          "line": 143,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackStaticWordTableLeaf.lean",
+      "sha256": "bb8974644e793b0898231a12b75f59452f9703a588c2688fbd164c1a5b71d561",
+      "findings": [
+        {
+          "line": 80,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackTransformDescriptorRecordOriginal.lean",
+      "sha256": "cf86babb8046faf1d24f4f48620243bbd0e4045be90334736e631aa30d637e01",
+      "findings": [
+        {
+          "line": 81,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 142,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackVectorTableEmit.lean",
+      "sha256": "0a87d43905e60f3e7131df6c55b816b39e956be039e43df759be8c768a678a94",
+      "findings": [
+        {
+          "line": 129,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackVectorTableLeaf.lean",
+      "sha256": "1d74be94eec57b8d24b33f4fc48ff16816ed17314e5db5ec151bb9c509766b0f",
+      "findings": [
+        {
+          "line": 80,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1StackVertexCatalogueBounds.lean",
+      "sha256": "5bb33a9e857c11bd125939efdaf312bfd9b8c3328cbd017cb0a4006cf1c1ff22",
+      "findings": [
+        {
+          "line": 143,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordPacketClockFactor.lean",
+      "sha256": "476d4840eec12cc5a3d6cc26858fe26fb4821000a5a35ded88cc59d5847d79b3",
+      "findings": [
+        {
+          "line": 63,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 69,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 75,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordPacketCoefficientClock.lean",
+      "sha256": "859f96563110ad3c4dd8256236d6fd67293adccfaae8b59304c8972996707a96",
+      "findings": [
+        {
+          "line": 60,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 178,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeD1WordPacketTableClock.lean",
+      "sha256": "89a849a8141617a8cc6726c938cc0000deeaebd78f20623a1b8b2474a27fe511",
+      "findings": [
+        {
+          "line": 40,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 53,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 86,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeHermiteArrayHeight.lean",
+      "sha256": "e93b413e78a12dcfeff5e7c19d090cd0997d727a421a2c8dabdafc61ad5ffbed",
+      "findings": [
+        {
+          "line": 957,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeLocalBitsBounds.lean",
+      "sha256": "7cfd1941e361afb8eef03944d1c7d12b53641700b0cf1fbfd7aead98c42ca09c",
+      "findings": [
+        {
+          "line": 130,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeMaterializedWordFibre.lean",
+      "sha256": "8ee36ee71ab45d4430c64454320d252cdad1f23846176ea82e0309ca2bb6edb4",
+      "findings": [
+        {
+          "line": 333,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeScheduledScalarBudget.lean",
+      "sha256": "f4a17ac1fd1281248e83104f0ebc46c7babedf47efa011c42010980474a5185b",
+      "findings": [
+        {
+          "line": 56,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSourceHeadCountBitsBounds.lean",
+      "sha256": "e279d65a076eeb13a742f1cd752c53acf245b32278c42164d18022f92891e255",
+      "findings": [
+        {
+          "line": 24,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeSourceProgramBits.lean",
+      "sha256": "a72092bea230ff7f5780baf75777de5466facc8f388918f22c8a40bbacd02e98",
+      "findings": [
+        {
+          "line": 173,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeStreamingTensor.lean",
+      "sha256": "e2b8dc86cf1c8d353109cc63bb13d700fcc2c6c52989d772e72674d113528142",
+      "findings": [
+        {
+          "line": 181,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "RiemannGaussian/SemiprimeWordPacketWidthBudget.lean",
+      "sha256": "a69372387215d998e3de659c4dc4ad27bb510aa5de792ec220a1af7ed503fc03",
+      "findings": [
+        {
+          "line": 76,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-bit-counter-20261027/SemiprimeHermiteArrayHeight.lean",
+      "sha256": "e93b413e78a12dcfeff5e7c19d090cd0997d727a421a2c8dabdafc61ad5ffbed",
+      "findings": [
+        {
+          "line": 957,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-bit-counter-20261027/hermite-root-audit.lean",
+      "sha256": "d82f03f8f20be26a4df4650d2e18e9c38330c4c78b2a06661fb1e4ae22b223c5",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-bit-execution-20261027/SemiprimeLocalBitsBounds.lean",
+      "sha256": "7cfd1941e361afb8eef03944d1c7d12b53641700b0cf1fbfd7aead98c42ca09c",
+      "findings": [
+        {
+          "line": 130,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-constraint-count-20261027/SemiprimeSourceHeadCountBitsBounds.lean",
+      "sha256": "e279d65a076eeb13a742f1cd752c53acf245b32278c42164d18022f92891e255",
+      "findings": [
+        {
+          "line": 24,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-constraint-count-20261027/next/HistogramAudit.lean",
+      "sha256": "7ba8f30be889cfe8b2624d6bcb4f986655a52166d1b403b3a6a453e5b224b74d",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-counter-budget-20261027/SemiprimeScheduledScalarBudget.lean",
+      "sha256": "f4a17ac1fd1281248e83104f0ebc46c7babedf47efa011c42010980474a5185b",
+      "findings": [
+        {
+          "line": 56,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-counter-budget-20261027/indexed-design-audit.lean",
+      "sha256": "e8189078cdb723a595605200f2bd9266fb89d80a9818ffcae786d3bcd3f483a2",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-counter-budget-20261027/public-resources-audit.lean",
+      "sha256": "8fb790015920c5458f5c30f78b560363c7350ba490160694355b06f69932294b",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-counter-compose-20261026/SemiprimeCounterCompose.lean",
+      "sha256": "2477bd0cc314e09c27de8308cc32ef87138eaf38dfa115a28e1595981a87f916",
+      "findings": [
+        {
+          "line": 284,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-counter-frontend-20261027/arrayops-root-audit.lean",
+      "sha256": "0b1dae8820bef074d2903cde26aa6b7c92fbd4e656b37c9771e6a70c869c33d9",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-counter-frontend-20261027/group-root-audit.lean",
+      "sha256": "38ff8b403c63750f9cdfb4fcfa59b3f70258b943d7325359a4ac122504028e28",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-counter-frontend-20261027/local-root-audit.lean",
+      "sha256": "e3fe91688591aeca8517fe256ffd15291d783a8be5004aa2b07123023609699a",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-design-clock-20261027/SemiprimePaidRuntimeDesign-audit.lean",
+      "sha256": "e8dd2de45477c350d832a115f4cb2e13dcbe0a77b580a81ac75b3640c720df19",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-design-clock-20261027/SemiprimeRuntimeDesignCache-audit.lean",
+      "sha256": "df0a6df26ae00592248649d1f5686a7c4ecceb9e82f2901a54fa9493065cecee",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-eth-formal-bridge-20261026/SemiprimeStreamingTensor.lean",
+      "sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+      "findings": [
+        {
+          "line": 178,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-executable-counter-20261027/cardinal-root-audit.lean",
+      "sha256": "6de127eba1b098c010fd687b690f0a5d39b7cc8eae4cc887d6ae3db511bd83f7",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-executable-counter-20261027/parameters-root-audit.lean",
+      "sha256": "b8a90f7a8bf99bcabaf9067d56a0055cc65966239342a40a2f783130829db9c1",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-executable-counter-20261027/row-root-audit.lean",
+      "sha256": "b956864fa4ff5124683ea493755fdb7e52ec5c3ed1589a2f7bc071287c46999b",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-executable-counter-20261027/scheduled-root-audit.lean",
+      "sha256": "832ed32bcb355389bb6749ca194e9c0baed917369e8466271a86df0946199b5e",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hermite-report-rate-20261027/SourceScorePrefixHeight-audit.lean",
+      "sha256": "595c1dde86bd3f438b1ffd6317085264d940bc256e50a2b3b8e5a33ce629aba3",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hermite-words-20261027/AcquiredHermiteBits-audit.lean",
+      "sha256": "736e2b0a99a372ffefad6fa6f92e53a50ea84ecda84fbb5be3bbfe2f768e5688",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hermite-words-20261027/HermiteNodeBitsBounds-audit.lean",
+      "sha256": "3d2653a5654853ae22360a43f69f9762dc18f8577ae4f8fe48c3e88a87d04bba",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hermite-words-20261027/SemiprimeNormalizedInverseBits-audit.lean",
+      "sha256": "3f7ea53fde62649e5108256fd6a88e9901dc147fdad4f63ed427e5f2b9ed3025",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-hermite-words-20261027/SemiprimeNormalizedInverseBitsBounds-audit.lean",
+      "sha256": "54847bd0a0b4392e5298b63699367f8268ec9e3b2618e22115f0de3f141d2aa3",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-histogram-acquisition-20261027/SourceHistogramAcquiredSumsAudit.lean",
+      "sha256": "86401f4d2e93884f48211ee233977153d48ec90a63d0114db5ba18b8713c733a",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-histogram-acquisition-20261027/SourceHistogramFeatureBitsAudit.lean",
+      "sha256": "6e18988669dc5990296f35e3f0e1742831822d22c35e4889009ac75ebcc5c785",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-histogram-acquisition-20261027/SourceHistogramFeatureBitsBoundsAudit.lean",
+      "sha256": "7c778ac15a4d4eccd7519e06af84d158af2607adef11416c7b84cc5b713901a9",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-histogram-acquisition-20261027/SourceHistogramHeadAggregateAudit.lean",
+      "sha256": "679445f0bd12e1c78616aa310d03662cd456e48105e9356afddb4cb5fffdd7f7",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-histogram-acquisition-20261027/SourceHistogramOriginalSumsAudit.lean",
+      "sha256": "817be3ab2eb05258ee610df7eba41b3421973983d805b64e58edd60d3d7b35dc",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-histogram-acquisition-20261027/SourceHistogramPortKeysAudit.lean",
+      "sha256": "4ee2c95d09301558cf5c9e9ed7bd7996c1cf03e6c242f8221bb466e700341cfb",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-histogram-acquisition-20261027/SourceHistogramSearchAudit.lean",
+      "sha256": "f5c331cb49b39860e0a0419006e5f8295f673dbd8cbc0b7e84470603ba273d4e",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-bit-join-20261027/SemiprimeCorrectedPortBits-audit.lean",
+      "sha256": "fa3221500d235e2da6ecf2203af84aa965172329da305cdb20bfd7178e393a41",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-bit-join-20261027/SemiprimeCorrectedPortBitsBounds-audit.lean",
+      "sha256": "7d9d2567807103cdbcd2f224d6e8f1f4bf60e09a9c234dd0996c4c9b1daa67e7",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-bit-join-20261027/SemiprimeNativeBitsPublicController-audit.lean",
+      "sha256": "bf54f4601033ed1a9b23b73e304502ef1dde5aea80c1e6af12b36274aee041e1",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-bit-join-20261027/SemiprimeNativeBitsScheduledController-audit.lean",
+      "sha256": "63ba43d9bf5c967e6ffb666199411530e1e11ecd77a4633e1e00a6ba608eca51",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-native-bit-join-20261027/SemiprimeNativeGroupBitsBudget-audit.lean",
+      "sha256": "4c16db3f3f681da309e73aec83063fea11aa6b88f9ababee0e700728e3d0512b",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-publication-20261029/reviews/normalized-inverse--normalized-inverse-independent-review.txt",
+      "sha256": "a9a601443217eb1cb62dc7b720693359db5210cbf29ccf9345e6c54b1bdf7aa8",
+      "findings": [
+        {
+          "line": 251,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-source-acquisition-20261027/acquired-source-root-audit.lean",
+      "sha256": "dee90828f6b15058dacc99409487557ea7ea4867a2b86dd3f5d6d2d3d5ecec78",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-source-acquisition-20261027/bit-root-audit.lean",
+      "sha256": "89c3c0109343e5c325230eac658ac529591a3610c557ad57b510abb97bcf9ab0",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-source-acquisition-20261027/height-root-audit.lean",
+      "sha256": "1623b60d2486db3ca6efe6ac6efcd28ecdd88cf9c596fdd96fd59f97a0eab879",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-source-acquisition-20261027/runtime-root-audit.lean",
+      "sha256": "5451ea4d02ec86e3bcefc2a14ebd2464f1a45c150e80dc62b094f2842992b57d",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-source-acquisition-20261027/source-design-root-audit.lean",
+      "sha256": "a6be56384a1d22dc4e211361186316ba9f4257190c3b0869bb94f28ffecf5ea3",
+      "findings": [
+        {
+          "line": 27,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-source-machine-20261027/SemiprimeSourceProgramBits.lean",
+      "sha256": "a72092bea230ff7f5780baf75777de5466facc8f388918f22c8a40bbacd02e98",
+      "findings": [
+        {
+          "line": 173,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-torus-query-20261026/support-union.csv",
+      "sha256": "6e97c726fde657515d74f236ae8e533067ed4e2c5e38291f4fd249c75dc2f483",
+      "findings": [
+        {
+          "line": 1,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 2,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 3,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 4,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 5,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 6,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 7,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 8,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 9,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 10,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 11,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 12,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 13,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 14,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 15,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 16,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 17,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 18,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 19,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 20,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 21,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 22,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 23,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 24,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 25,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 26,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 27,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 28,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 29,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 30,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 31,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 32,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 33,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 34,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 35,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 36,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 37,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 38,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 39,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 40,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 41,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 42,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 43,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 44,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 45,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 46,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 47,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 48,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 49,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 50,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 51,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 52,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 53,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 54,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 55,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 56,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 57,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 58,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 59,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 60,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 61,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 62,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 63,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 64,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 65,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 66,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 67,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 68,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 69,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 70,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 71,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 72,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 73,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 74,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 75,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 76,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 77,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 78,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 79,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 80,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 81,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 82,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 83,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 84,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 85,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 86,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 87,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 88,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 89,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 90,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 91,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 92,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 93,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 94,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 95,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 96,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 97,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 98,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 99,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 100,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 101,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 102,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 103,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 104,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 105,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 106,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 107,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 108,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 109,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 110,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 111,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 112,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 113,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 114,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 115,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 116,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 117,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-wave-smoothing-20261026/review-determinant.md",
+      "sha256": "68cefa11b699c9314a9e4046bbee018afe531732b2489d7ef88b4c5bc086e32d",
+      "findings": [
+        {
+          "line": 39,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-word-folds-20261027/SemiprimeMaterializedWordFibre.lean",
+      "sha256": "8ee36ee71ab45d4430c64454320d252cdad1f23846176ea82e0309ca2bb6edb4",
+      "findings": [
+        {
+          "line": 333,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-word-folds-20261027/SemiprimeWordFoldArithmetic-audit.lean",
+      "sha256": "cf808467bbeaec812bb7bd20da989765d37acd911311f0441a7e57d2aac37462",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-word-folds-20261027/SemiprimeWordFoldBounds-audit.lean",
+      "sha256": "f81328e27fb1928ce1d9ce7cfff90ea1661b561b81cf5955a12a30cbbee7aeff",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-word-folds-20261027/SemiprimeWordPacketWidthBudget.lean",
+      "sha256": "a69372387215d998e3de659c4dc4ad27bb510aa5de792ec220a1af7ed503fc03",
+      "findings": [
+        {
+          "line": 76,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-word-folds-20261027/materialized-word-bounds-audit.lean",
+      "sha256": "f218804ebe9057195d0cabdea226e6f62f027c047b31603836908a30d1559905",
+      "findings": [
+        {
+          "line": 26,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/semiprime-proof-explorer/data/evidence/a9a601443217eb1c-normalized-inverse--normalized-inverse-independent-review.txt",
+      "sha256": "a9a601443217eb1cb62dc7b720693359db5210cbf29ccf9345e6c54b1bdf7aa8",
+      "findings": [
+        {
+          "line": 251,
+          "kind": "blank-at-eof"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-publication-20261029/fresh-publication/explorer-documentation-update-review/documentation-delta.diff",
+      "sha256": "55c6e59b7bb6f085feeaee91dbae7d6226585fdf5f992f350853da3c168e4577",
+      "findings": [
+        {
+          "line": 6,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 9,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 14,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 19,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-publication-20261029/source-before-documentation/SemiprimeStreamingTensor.lean.txt",
+      "sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+      "findings": [
+        {
+          "line": 178,
+          "kind": "blank-at-eof"
+        }
+      ]
+    }
+  ],
+  "reviewed_initial_publication_documentation_refresh": {
+    "source": "RiemannGaussian/SemiprimeStreamingTensor.lean",
+    "scope": "Explicit reviewed precommit refresh of the initial publication baseline only; not a blanket permit for future edits. Exactly three documentation comments were inserted; removing them recovers the archived original bytes. No whitespace finding was added: the same original blank EOF line moved from 178 to 181. The baseline_log remains the unmodified original observation.",
+    "source_change_manifest": "docs/research-evidence/semiprime-publication-20261029/source-before-documentation/manifest.json",
+    "independent_review": "docs/research-evidence/semiprime-publication-20261029/fresh-publication/explorer-documentation-update-review/review.txt",
+    "before_source_sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+    "after_source_sha256": "e2b8dc86cf1c8d353109cc63bb13d700fcc2c6c52989d772e72674d113528142",
+    "before_finding": {
+      "line": 178,
+      "kind": "blank-at-eof"
+    },
+    "after_finding": {
+      "line": 181,
+      "kind": "blank-at-eof"
+    }
+  },
+  "reviewed_initial_publication_evidence_additions": {
+    "scope": "One-time, explicitly reviewed initial-publication additions for these two exact immutable evidence blobs only. No automatic baseline update, path wildcard, format-wide exception or permit for future edits is introduced. Existing 107 entries are unchanged.",
+    "archived_original": {
+      "path": "docs/research-evidence/semiprime-publication-20261029/source-before-documentation/SemiprimeStreamingTensor.lean.txt",
+      "reason": "Exact pre-documentation StreamingTensor source, retaining the already reviewed original f10add0e... bytes and original blank EOF line 178.",
+      "source_change_manifest": "docs/research-evidence/semiprime-publication-20261029/source-before-documentation/manifest.json"
+    },
+    "reviewed_unified_diff": {
+      "path": "docs/research-evidence/semiprime-publication-20261029/fresh-publication/explorer-documentation-update-review/documentation-delta.diff",
+      "reason": "Exact independently reviewed three-documentation-comment unified diff. Four blank context lines are literally one context-prefix space followed by LF; removing them would alter the diff evidence format.",
+      "independent_review": "docs/research-evidence/semiprime-publication-20261029/fresh-publication/explorer-documentation-update-review/review.txt"
+    },
+    "added_entries": 2,
+    "added_findings": 5,
+    "current_baseline_counts": {
+      "files": 109,
+      "findings": 241
+    },
+    "initial_log_counts_remain_historical": {
+      "files": 107,
+      "findings": 236
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-26",
+  "files": {
+    "README.md": {
+      "bytes": 7709,
+      "sha256": "eb09b748e6a713d0147b5a0f22e74a169ce22740305614869c2c4f9921246f85"
+    },
+    "farey-query-review.md": {
+      "bytes": 7466,
+      "sha256": "67829ac7dab03af618b4ace5331b8699a51dea1def3792af1a2c22e2a01d42b2"
+    },
+    "farey-query.md": {
+      "bytes": 18396,
+      "sha256": "0d70ff85ded98e6f7ef7cd9392267ae85abf2634ab9ed05cb44039ca00db85d4"
+    },
+    "mixed-trace-review.md": {
+      "bytes": 5227,
+      "sha256": "9b45a69cef69aad312e966209f6182712acef1815d59de0d09918235417639c4"
+    },
+    "mixed-trace.md": {
+      "bytes": 10135,
+      "sha256": "078f8f272af4c59704bc4b8049628e6a508486d8f643cc7872b2d56709f74543"
+    },
+    "review.json": {
+      "bytes": 3183,
+      "sha256": "1f3105cbdebf11f0ec8890a4e6878158c9835d8effc1dd7e5669d7c09c65bc46"
+    },
+    "sources.json": {
+      "bytes": 4772,
+      "sha256": "0541a06ac34ba7452dcbd29bad7e03181f3226ac307948cbe6750e17a6f3f853"
+    },
+    "trace-recurrence-review.md": {
+      "bytes": 5864,
+      "sha256": "29caba9cfaf4e2c51ea1dc904918297892db19ebf3c52f1b99ba48b73b77be7a"
+    },
+    "trace-recurrence.md": {
+      "bytes": 14978,
+      "sha256": "5f2e5f20ee433389e6d0cc93a109b2809e40f4b7dbb9bee3af3ed5e80f202343"
+    }
+  }
+}

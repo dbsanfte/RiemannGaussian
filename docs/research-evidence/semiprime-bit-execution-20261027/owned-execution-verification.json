@@ -1,0 +1,25 @@
+{
+  "status": "final frozen",
+  "strict": true,
+  "autoImplicit": false,
+  "warningAsError": true,
+  "root_linters": 15,
+  "all_generated_standard_axioms_only": true,
+  "modules": {
+    "SemiprimeAcquiredPrefixSearch": {
+      "declarations": 18,
+      "theorems": 13
+    },
+    "SemiprimePublicAcquiredExecution": {
+      "declarations": 49,
+      "theorems": 32
+    },
+    "SemiprimeScheduledFactorExecution": {
+      "declarations": 39,
+      "theorems": 28
+    }
+  },
+  "smoke_source": "ScheduledFactorSmoke.lean",
+  "smoke_log": "scheduled-factor-smoke.log",
+  "clock_scope": "public factor algorithm semantics; complete primitive resource composition remains separate"
+}

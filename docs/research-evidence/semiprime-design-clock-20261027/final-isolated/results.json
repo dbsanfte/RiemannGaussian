@@ -1,0 +1,92 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeCachedRawConstraints",
+    "exit_code": 0,
+    "seconds": 7.69523943902459,
+    "source_sha256": "7720357f5afdf45f8f0085b2d2a249bf15b2edce1faf88ed191c2555f0e316f9",
+    "isolated_sha256": "b3f369a11d8eb5bce3aa58f1dc01804d5449ab76c906582b02fde70fefdf66ca",
+    "canonical_sha256": "b3f369a11d8eb5bce3aa58f1dc01804d5449ab76c906582b02fde70fefdf66ca",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidSourceMetadata",
+    "exit_code": 0,
+    "seconds": 9.007130865007639,
+    "source_sha256": "234ff20244bd4307e68d0fdb5292131c5cd4c4a8625a8564dbed3df2ed6b3078",
+    "isolated_sha256": "dfd943770bb29c6783070729ee33e746202b805c4acdc6812bbb55038146123c",
+    "canonical_sha256": "dfd943770bb29c6783070729ee33e746202b805c4acdc6812bbb55038146123c",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeEncodedRowSelection",
+    "exit_code": 0,
+    "seconds": 7.749279740033671,
+    "source_sha256": "c6c2d7654bf4a132fe565f34bbc293bc4c74804d52ffc46c25fb9a5fcd52487f",
+    "isolated_sha256": "7ddd9ed4989c39858b2c44bc31a11c7da7fc8f5e41589474302627273e67537b",
+    "canonical_sha256": "7ddd9ed4989c39858b2c44bc31a11c7da7fc8f5e41589474302627273e67537b",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidRawAcquisition",
+    "exit_code": 0,
+    "seconds": 6.918657185975462,
+    "source_sha256": "0481f6ab14b91469279d260f6b391ea0cd21d34a0f1e12aeff98690093c70828",
+    "isolated_sha256": "93611ad7be1c9012f221bb9cbe678de8961925af0f82bb217e03b7f662600223",
+    "canonical_sha256": "93611ad7be1c9012f221bb9cbe678de8961925af0f82bb217e03b7f662600223",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidMeasurementBound",
+    "exit_code": 0,
+    "seconds": 6.714928172994405,
+    "source_sha256": "bd5fee5b0f167e7f6222f9d58a78d14602c253ea728329f62ddf4f9638284212",
+    "isolated_sha256": "dc47010c0ac721775d1f1ef9ee080f70636b9784e5142b13dd9fe5ddf66baf2f",
+    "canonical_sha256": "dc47010c0ac721775d1f1ef9ee080f70636b9784e5142b13dd9fe5ddf66baf2f",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeRuntimeDesignCache",
+    "exit_code": 0,
+    "seconds": 6.8653777909930795,
+    "source_sha256": "663683217111173251109c043e9f2f7dbaae073b57576078f579f8b66910403f",
+    "isolated_sha256": "eb6036aaa9634d81f84ac45d3c0f70e77a46aedf0a1a77d776c4ff08f93417cb",
+    "canonical_sha256": "eb6036aaa9634d81f84ac45d3c0f70e77a46aedf0a1a77d776c4ff08f93417cb",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidRuntimeDesign",
+    "exit_code": 0,
+    "seconds": 7.775664672022685,
+    "source_sha256": "695ee47cc8663b82e9bdceb1e4e17582ceafcce5601066e89656702786d84957",
+    "isolated_sha256": "4342e97cc12064152f87f06d6ec4ecfc6841142cec837e399383edde8465c969",
+    "canonical_sha256": "4342e97cc12064152f87f06d6ec4ecfc6841142cec837e399383edde8465c969",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeFullSetupCounter",
+    "exit_code": 0,
+    "seconds": 8.05303388601169,
+    "source_sha256": "e653870caa7f54cd7dad0aed5b41fb5e4b2c707500bee44671c589b4240b963f",
+    "isolated_sha256": "6305499c78a16a32892b95857971f9833301261df347be8f2494ab8f3368c7bc",
+    "canonical_sha256": "6305499c78a16a32892b95857971f9833301261df347be8f2494ab8f3368c7bc",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeFullSetupPublicController",
+    "exit_code": 0,
+    "seconds": 7.528884117957205,
+    "source_sha256": "796fe083b2324617070ed158c3c3ee484834d745222c59ccfc44522743ede204",
+    "isolated_sha256": "557cdd6cb1f3d606866caf697a78f0fe91e4be471d38bfc76a22c85ae4d181fe",
+    "canonical_sha256": "557cdd6cb1f3d606866caf697a78f0fe91e4be471d38bfc76a22c85ae4d181fe",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeFullSetupScheduledController",
+    "exit_code": 0,
+    "seconds": 7.404968152986839,
+    "source_sha256": "c2f4d0db572a10bcdb91fd6c4b9389f635717b41d18f6656152442bd8a59c222",
+    "isolated_sha256": "ade90b5636927b19822b2ecaca1c774d388cb5b3035c1d8f62a24364ea3fa51e",
+    "canonical_sha256": "ade90b5636927b19822b2ecaca1c774d388cb5b3035c1d8f62a24364ea3fa51e",
+    "object_matches": true
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "goal": "ACTIVE",
+  "slice": "ACTUAL_PAID_RAW_PHYSICAL_DESIGN_COUNTER_INTEGRATION_PROGRESS",
+  "prior_paper_factoring_bit_time": "N^o(1), permitting subexponential storage",
+  "complete_Lean_whole_program_bit_clock": "OPEN",
+  "new_native_long_query_bound": false,
+  "practical_speedup_claimed": false,
+  "module_count": 10,
+  "generated_declarations": 456,
+  "theorem_constants": 242,
+  "strict_options": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "ordinary_root_import": true,
+  "scoped_linters_per_module": 15,
+  "all_generated_transitive_standard_axioms_only": true,
+  "isolated_objects_identical": true,
+  "dependency_checkpoint_unchanged": true,
+  "actual_compiler_imported_modules": 17591,
+  "dependency_list_provenance": "Lean environment header; no source-text import scanner",
+  "preserved_prior_files": 2443,
+  "preserved_concurrent_files": 24,
+  "preserved_append_only_prefixes": 2,
+  "commit_or_push": false,
+  "modules": {
+    "SemiprimeCachedRawConstraints": {
+      "source": "RiemannGaussian/SemiprimeCachedRawConstraints.lean",
+      "source_sha256": "7720357f5afdf45f8f0085b2d2a249bf15b2edce1faf88ed191c2555f0e316f9",
+      "object_sha256": "b3f369a11d8eb5bce3aa58f1dc01804d5449ab76c906582b02fde70fefdf66ca",
+      "declarations": 15,
+      "theorem_constants": 12
+    },
+    "SemiprimePaidSourceMetadata": {
+      "source": "RiemannGaussian/SemiprimePaidSourceMetadata.lean",
+      "source_sha256": "234ff20244bd4307e68d0fdb5292131c5cd4c4a8625a8564dbed3df2ed6b3078",
+      "object_sha256": "dfd943770bb29c6783070729ee33e746202b805c4acdc6812bbb55038146123c",
+      "declarations": 54,
+      "theorem_constants": 31
+    },
+    "SemiprimeEncodedRowSelection": {
+      "source": "RiemannGaussian/SemiprimeEncodedRowSelection.lean",
+      "source_sha256": "c6c2d7654bf4a132fe565f34bbc293bc4c74804d52ffc46c25fb9a5fcd52487f",
+      "object_sha256": "7ddd9ed4989c39858b2c44bc31a11c7da7fc8f5e41589474302627273e67537b",
+      "declarations": 170,
+      "theorem_constants": 59
+    },
+    "SemiprimePaidRawAcquisition": {
+      "source": "RiemannGaussian/SemiprimePaidRawAcquisition.lean",
+      "source_sha256": "0481f6ab14b91469279d260f6b391ea0cd21d34a0f1e12aeff98690093c70828",
+      "object_sha256": "93611ad7be1c9012f221bb9cbe678de8961925af0f82bb217e03b7f662600223",
+      "declarations": 30,
+      "theorem_constants": 10
+    },
+    "SemiprimePaidMeasurementBound": {
+      "source": "RiemannGaussian/SemiprimePaidMeasurementBound.lean",
+      "source_sha256": "bd5fee5b0f167e7f6222f9d58a78d14602c253ea728329f62ddf4f9638284212",
+      "object_sha256": "dc47010c0ac721775d1f1ef9ee080f70636b9784e5142b13dd9fe5ddf66baf2f",
+      "declarations": 4,
+      "theorem_constants": 3
+    },
+    "SemiprimeRuntimeDesignCache": {
+      "source": "RiemannGaussian/SemiprimeRuntimeDesignCache.lean",
+      "source_sha256": "663683217111173251109c043e9f2f7dbaae073b57576078f579f8b66910403f",
+      "object_sha256": "eb6036aaa9634d81f84ac45d3c0f70e77a46aedf0a1a77d776c4ff08f93417cb",
+      "declarations": 20,
+      "theorem_constants": 17
+    },
+    "SemiprimePaidRuntimeDesign": {
+      "source": "RiemannGaussian/SemiprimePaidRuntimeDesign.lean",
+      "source_sha256": "695ee47cc8663b82e9bdceb1e4e17582ceafcce5601066e89656702786d84957",
+      "object_sha256": "4342e97cc12064152f87f06d6ec4ecfc6841142cec837e399383edde8465c969",
+      "declarations": 62,
+      "theorem_constants": 46
+    },
+    "SemiprimeFullSetupCounter": {
+      "source": "RiemannGaussian/SemiprimeFullSetupCounter.lean",
+      "source_sha256": "e653870caa7f54cd7dad0aed5b41fb5e4b2c707500bee44671c589b4240b963f",
+      "object_sha256": "6305499c78a16a32892b95857971f9833301261df347be8f2494ab8f3368c7bc",
+      "declarations": 8,
+      "theorem_constants": 7
+    },
+    "SemiprimeFullSetupPublicController": {
+      "source": "RiemannGaussian/SemiprimeFullSetupPublicController.lean",
+      "source_sha256": "796fe083b2324617070ed158c3c3ee484834d745222c59ccfc44522743ede204",
+      "object_sha256": "557cdd6cb1f3d606866caf697a78f0fe91e4be471d38bfc76a22c85ae4d181fe",
+      "declarations": 45,
+      "theorem_constants": 24
+    },
+    "SemiprimeFullSetupScheduledController": {
+      "source": "RiemannGaussian/SemiprimeFullSetupScheduledController.lean",
+      "source_sha256": "c2f4d0db572a10bcdb91fd6c4b9389f635717b41d18f6656152442bd8a59c222",
+      "object_sha256": "ade90b5636927b19822b2ecaca1c774d388cb5b3035c1d8f62a24364ea3fa51e",
+      "declarations": 48,
+      "theorem_constants": 33
+    }
+  }
+}

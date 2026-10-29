@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "implementation": "standard-library naive polynomial diagnostic; not a soft-J implementation",
+  "checks": 33,
+  "fixtures": [
+    {
+      "modulus": 1009,
+      "q": 11,
+      "h": 9,
+      "roots": [
+        322,
+        2,
+        7
+      ],
+      "interior_hit_indices": [
+        3
+      ],
+      "all_required_gates_unit": true,
+      "zero_adjacency_pairs": [],
+      "checks": [
+        "balanced versus dense determinant",
+        "balanced versus independent principal minors",
+        "constant coefficient",
+        "chi(1)",
+        "subset response 0",
+        "subset response 1",
+        "subset response 2",
+        "subset response 3"
+      ],
+      "chi": [
+        1,
+        421,
+        802,
+        339
+      ]
+    },
+    {
+      "modulus": 10403,
+      "q": 2,
+      "h": 8,
+      "roots": [
+        8,
+        3,
+        7
+      ],
+      "interior_hit_indices": [
+        3
+      ],
+      "all_required_gates_unit": true,
+      "zero_adjacency_pairs": [],
+      "checks": [
+        "balanced versus dense determinant",
+        "balanced versus independent principal minors",
+        "constant coefficient",
+        "chi(1)",
+        "subset response 0",
+        "subset response 1",
+        "subset response 2",
+        "subset response 3"
+      ],
+      "chi": [
+        1,
+        2849,
+        3281,
+        2334
+      ]
+    },
+    {
+      "modulus": 1009,
+      "q": 11,
+      "h": 8,
+      "roots": [
+        515,
+        2,
+        7,
+        19
+      ],
+      "interior_hit_indices": [
+        4
+      ],
+      "all_required_gates_unit": true,
+      "zero_adjacency_pairs": [],
+      "checks": [
+        "balanced versus dense determinant",
+        "balanced versus independent principal minors",
+        "constant coefficient",
+        "chi(1)",
+        "subset response 0",
+        "subset response 1",
+        "subset response 2",
+        "subset response 3",
+        "subset response 4"
+      ],
+      "chi": [
+        1,
+        193,
+        211,
+        505,
+        427
+      ]
+    },
+    {
+      "modulus": 1009,
+      "q": 11,
+      "h": 8,
+      "roots": [
+        2,
+        22,
+        7
+      ],
+      "interior_hit_indices": [],
+      "all_required_gates_unit": true,
+      "zero_adjacency_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "checks": [
+        "balanced versus dense determinant",
+        "balanced versus independent principal minors",
+        "constant coefficient",
+        "chi(1)",
+        "subset response 0",
+        "subset response 1",
+        "subset response 2",
+        "subset response 3"
+      ],
+      "chi": [
+        1,
+        351,
+        327,
+        310
+      ]
+    }
+  ]
+}

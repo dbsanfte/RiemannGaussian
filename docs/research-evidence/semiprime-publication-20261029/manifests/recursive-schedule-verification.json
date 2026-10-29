@@ -1,0 +1,88 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 4,
+    "declarations": 113,
+    "theorems": 62
+  },
+  "modules": {
+    "SemiprimeD1StackRecursiveSchedule": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecursiveSchedule.lean",
+        "sha256": "b222e5be6b418a039fe9688c27cf9cb0d18e2ba6d918a9be2b2354f1aa4e810d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecursiveSchedule.olean",
+        "sha256": "0cf49e8a21c52b4fe9e431dbd7276b7bd067cdd91d1f04990b4d55aa2ae3bf88"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recursive-schedule-frozen/SemiprimeD1StackRecursiveSchedule.olean",
+        "sha256": "0cf49e8a21c52b4fe9e431dbd7276b7bd067cdd91d1f04990b4d55aa2ae3bf88"
+      }
+    },
+    "SemiprimeD1StackRecursiveScheduleExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecursiveScheduleExecution.lean",
+        "sha256": "aabd5064be172c980d1b05bd2a41b1f18f24f739e4c98b40afea321b1cf9f8fd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecursiveScheduleExecution.olean",
+        "sha256": "72ff733df267e035f50eb26a1b2e040bd1a5082f6b3aeff6a4bf9a5daaf6dbed"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recursive-schedule-frozen/SemiprimeD1StackRecursiveScheduleExecution.olean",
+        "sha256": "72ff733df267e035f50eb26a1b2e040bd1a5082f6b3aeff6a4bf9a5daaf6dbed"
+      }
+    },
+    "SemiprimeD1StackRecursiveScheduleBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecursiveScheduleBounds.lean",
+        "sha256": "60f23c348f362ef772e3a3aeb9ad47dcf2adbb1d0880317c35b59d2664d7f666"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecursiveScheduleBounds.olean",
+        "sha256": "9260c9092cde6e863d1f2abd1250d367c3b5c912adf50994ee1c344266cade64"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recursive-schedule-frozen/SemiprimeD1StackRecursiveScheduleBounds.olean",
+        "sha256": "9260c9092cde6e863d1f2abd1250d367c3b5c912adf50994ee1c344266cade64"
+      }
+    },
+    "SemiprimeD1StackRecursiveScheduleOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecursiveScheduleOriginal.lean",
+        "sha256": "7cd8f84ad197807fd21d773fd35b47d2c72d717bb7163e922603d045364d05f3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRecursiveScheduleOriginal.olean",
+        "sha256": "dc279191391dae168b056dbf505f267bf630baca3a8bb68d03648eb0ee25c229"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/recursive-schedule-frozen/SemiprimeD1StackRecursiveScheduleOriginal.olean",
+        "sha256": "dc279191391dae168b056dbf505f267bf630baca3a8bb68d03648eb0ee25c229"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": "/tmp/semiprime-explicit-rate-20261027/RecursiveScheduleControls.lean",
+      "source_sha256": "f76c6af006bc8a72b9840b8dd9c7f4762989d190b01ab1076830255c0efabc08",
+      "log": "/tmp/semiprime-explicit-rate-20261027/recursive-schedule-controls.log",
+      "log_sha256": "de2b0f97f52842dd02b57c270e21771d9b6ce41219c023c5c714bc32a0629e0a",
+      "stdout": "RECURSIVE_SCHEDULE cases=14 active=5 actual_transitions=26529 one_actual_program=true all16roles=true shared_levels=true unused_shadow_empty=true own_clock=true inactive_child_empty=true active_exact_child=true retained_parent=true real_outer_returns=true halt_flags_clear=true\nOBSERVER standard_axioms_only=true declarations=20\n",
+      "cases": 14,
+      "active": 5,
+      "actual_transitions": 26529,
+      "observer_generated_standard3": 20
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_source_object_pairs_unchanged": 17867,
+  "scope": "ONE fixed16role prepared-metadata recursive schedule frontend: realguard call\u2192physicalverdictpeek\u2192optionalrealSuccessor call. ALLoriginals/lam/depth/M matchnativeactiveTest; activechildlevels/exponent exact, inactivechildEMPTY. SAME ownclock\u2264300*(physicalGuardBytes+parentExponentBytes+1), original\u226410000*(s+lam+M+1), ALL16+realreturns\u22641000000*(s+lam+M+1). OriginalN acquisition and downstreamrecursivecounter are not claimed.",
+  "source_object_writers_stopped": true
+}

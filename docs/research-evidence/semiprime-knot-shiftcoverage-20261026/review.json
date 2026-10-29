@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "previous_turn_classification": "progress on supplied-shift certification; no complete-query gain",
+  "current_turn_classification": "progress through new uniform auxiliary-family coverage, a public literal-cell filter and executed candidate tests; no whole-family acquisition gain",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "current_query_bound": "soft O(J+sqrt(Jm))",
+  "target_query_bound": "soft O(k), including acquisition and recovery",
+  "principal_result": "Uniform weighted-rectangle same-field coverage at shifts 0..6k; public gcd filter removes all literal within-cell edges and transposition forces the same shift at both primes.",
+  "coverage_versus_acquisition": {
+    "descriptors": "soft O(k)",
+    "explicit_point_incidences": "soft O(k^2)",
+    "guaranteed_shift_range": "0..6k",
+    "literal_filter": "A<=H/gcd(j-1,k)",
+    "collective_scalar_acquired": false,
+    "localization_requirement": "Cell and shift prefixes with scalar gcd/nonunit status; global-zero bit alone is insufficient.",
+    "selected_cell_recovery": "Materialize O(k) nodes only after localization; supplied-shift/separation consumer plus at most one T_ext."
+  },
+  "extractor_accounting": {
+    "T_ext": "soft O(N^(31/192))",
+    "terminating_calls_at_most": 1
+  },
+  "additional_results": [
+    "Original opposition guarantees same-field odd-shift overlaps; its matched product is unit-equivalent to the old query.",
+    "Congruence shear forces factor-quotient shifts; complete fallback soft O(N^(1/4)), not an improvement.",
+    "Cancelling both row coordinates yields only literal global exponent relations; supplied noncancelling index gives a directly testable integer quadratic.",
+    "Christoffel first-quotient product completed with inherited backend at soft O(tau+sqrt(k)); materialized starts remain quadratic across colours.",
+    "Exact regularized q-discriminant coefficient preserves the predicate without zero division, but is unacquired; literature identification is old credit."
+  ],
+  "reviews": [
+    "joint-shifts-review.md",
+    "lattice-shifts-review.md",
+    "normalization-mutation-review.md",
+    "christoffel-review.md",
+    "dense-box-review.md"
+  ],
+  "root_review": "Checked formulas, refined joint-GP accounting and operational reflection, proved the uniform rectangle extension and checked the independently derived cell filter/transposition. Added scalar-gcd prefix localization contract.",
+  "scope": [
+    "The enlarged rectangles are auxiliary rows, not the old low-product catalogue.",
+    "The aggregate pairs points only within each retained cell or its transpose; self-pairs are excluded.",
+    "All retained leaves have nonzero short integer gaps; canonical phase carries remain required.",
+    "Materialized-constructor counts are not general lower bounds.",
+    "No small shift set for the original row family or cheap evaluator for the enlarged family is claimed.",
+    "The full factoring bit-complexity proof and eventual Lean integration remain open."
+  ],
+  "preservation": {
+    "protected_files_verified": 832,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1527736,
+        "sha256": "4f35751b8139cc8f06d1115959f9cfbf43fcb0cefd665db12b26f4bbd0bbc6fd"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2392705,
+        "sha256": "f7ecc693f2086510cf64d853051c3985fbe754021838264ee90bb9797a265fc5"
+      }
+    },
+    "concurrent_files_unchanged": 22,
+    "scratch_baseline_sha256": "6658afdd1deaaa6338fa72fe65bf0084940c9ac7d63170bd7f33e712c0beb894"
+  },
+  "validation": {
+    "mathematical_validation": "Independent symbolic paper reviews, not kernel-checked proof.",
+    "primary_sources": 4,
+    "internal_input_pins": 5,
+    "local_links": 14,
+    "json_and_whitespace": true,
+    "git_diff_check": true
+  },
+  "numerical_campaign": false,
+  "new_executable_research_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

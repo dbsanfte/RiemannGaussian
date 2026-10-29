@@ -1,0 +1,65 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 3,
+    "declarations": 56,
+    "theorems": 44
+  },
+  "modules": {
+    "SemiprimeD1StackBooleanFactorCatalogueHistory": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueHistory.lean",
+        "sha256": "ff306c8b2b4fa96d4fbd809e596d84a6add942ce1c8eff1d605af68c6a802272"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueHistory.olean",
+        "sha256": "4ccd19c32197ba0c61b964dab129d7ee10a7cb56f556196f28163d998d0e624b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-frozen/SemiprimeD1StackBooleanFactorCatalogueHistory.olean",
+        "sha256": "4ccd19c32197ba0c61b964dab129d7ee10a7cb56f556196f28163d998d0e624b"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueBounds.lean",
+        "sha256": "76d55339fcde62d48d55522a8575738ed220c049f9dd088ba343c91af6fe6397"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueBounds.olean",
+        "sha256": "08dda191ed37835636a787a80b6cb39f02de741ac0c0ed15e41369abf06a0730"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-frozen/SemiprimeD1StackBooleanFactorCatalogueBounds.olean",
+        "sha256": "08dda191ed37835636a787a80b6cb39f02de741ac0c0ed15e41369abf06a0730"
+      }
+    },
+    "SemiprimeD1StackBooleanFactorCatalogueClosed": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueClosed.lean",
+        "sha256": "d737183db1593efce9dbfb161819353a9afbd5df668deb674eb30b6776c78b69"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanFactorCatalogueClosed.olean",
+        "sha256": "d0dc4356eed1061e8b0c945406c739021d92b5fec7179aff3b010cc9d2d93dd0"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-frozen/SemiprimeD1StackBooleanFactorCatalogueClosed.olean",
+        "sha256": "d0dc4356eed1061e8b0c945406c739021d92b5fec7179aff3b010cc9d2d93dd0"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "actual_imported_source_object_pins": {
+    "pairs": 18276,
+    "unchanged": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/boolean-factor-clock-dependencies/imported-pins-after.json"
+  }
+}

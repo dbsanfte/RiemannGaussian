@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-26",
+  "primary_literature": [
+    {
+      "title": "Discrete matrix Riccati equations with superposition formulas",
+      "authors": "Penskoi, Winternitz",
+      "version_date": "2004-03-25",
+      "url": "https://arxiv.org/html/math-ph/0305053",
+      "scope": "Theorems 2-4; supplied invertible homogeneous transfer, independent solutions and analytic/integer-time hypotheses. Not a finite-ring fast-advancement theorem."
+    },
+    {
+      "title": "q-Hypergeometric Solutions of q-Difference Equations",
+      "authors": "Abramov, Paule, Petkovsek",
+      "url": "https://www3.risc.jku.at/publications/download/risc_2062/Abramov_PP_Petkovsek.pdf",
+      "scope": "Characteristic-zero, non-root-of-unity q and q-suitable-field degree oracle. Finite native pole/resonance statements in this packet are proved directly."
+    }
+  ],
+  "repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/hybrid-handoff.md",
+      "sha256": "cba1559069b42b1a6d12351eb5603298b6d485e1eaff14addf3d16a0458dddda"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-coefficient-forms-20261026/README.md",
+      "sha256": "2537154926cd99b7a879afa0744b5618ed9059ce973d849c63186d09f082c007"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-coefficient-forms-20261026/structured-expressions.md",
+      "sha256": "bf2ca79bcc8360d016ebddd8f7650761e1caa5f96857ffef8c52493c9d4bce60"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-scalar-20261026/character-norm.md",
+      "sha256": "9793584cd6ad930e5b86e8ca6b8ed639524707ce24661acda97f2202d9f8dbf8"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/README.md",
+      "sha256": "618da9b9b4ef668611419dd4dc5a1b0e84ae5981cf77f4c68768ad9a4f126f7f"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/initial-chart.md",
+      "sha256": "acfdbf8fb13c619097a00addd0810b6ae759263ae505725367ce2abd7ebef980"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/modular-algorithm.md",
+      "sha256": "468c242a09ad89f79d903e6e0c1a9a204d0801afad2a90faee3f3e9b212449f9"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/paired-monic.md",
+      "sha256": "e7ef3438d577f048bab486e071c6068c9af00b018a1a26a49f0cb29606404673"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/projective-closure.md",
+      "sha256": "ea2343ef8dccb1a67837799761e77ab8c97b6f7f55f4d6154450291975ad4f6f"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/pure-modulus-preparation.md",
+      "sha256": "6c47cbd393eb3288db7e5f6cdf5342f23a90663339ab993ad80cce05eca04eaa"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-norm-sharing-20261024/implicit-evaluation.md",
+      "sha256": "5600980cbd17a37e09c79ed9503766cd081df9753bf8593443cc66bc0d4c0646"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quotient-gradient-20261024/weak-readout.md",
+      "sha256": "6d324cd99fa32427de877666e82fb67cc60c857c49e2eecbaa9ad2526e1d9bd1"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-unique-acquisition-20261024/unique-gcd.md",
+      "sha256": "8eba0f3676ef0de414f4b48fa463a54058aed4fed97db3a0557be0189ec8c862"
+    }
+  ],
+  "proof_scope": "Finite algebra, pole propagation and native degree counting; paper-reviewed, not Lean. No general factoring/circuit lower bound.",
+  "prior_credit": "Block recurrence, derivative/interpolation screens, norm and exponent extractors, rough preparation, projective prefix and previous composition algorithms retain prior credit."
+}

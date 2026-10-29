@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-26",
+  "task": "User-requested techniques and implications study",
+  "verdict": "Conditional positive factoring reduction; independent reduction/interface reviews pass, source theorem not fully certified.",
+  "goal_status": "paused",
+  "goal_resumed": false,
+  "conditional_result": {
+    "dependency": "Supplied Theorem D.1, Appendix D.1, proved in D.4",
+    "bit_length": "L=ceil(log2(N+1))",
+    "network_edges": "O(L)",
+    "max_degree": "O(L^(3/4))",
+    "entries": "Polynomial-time implicit 0/1 predicates",
+    "counting_precision": "2L+1",
+    "local_word_width": "n+1=Theta(sqrt L)",
+    "factoring_time": "poly(L)*2^O(L/sqrt(log L))=N^o(1)",
+    "space": "poly(L)",
+    "scope": "All composite inputs, including square and distinct-prime semiprimes",
+    "recovery": "O(L) exact bit-prefix counts, verified divisor"
+  },
+  "reviews": [
+    {
+      "path": "review-factor-network.md",
+      "verdict": "PASS, conditional on source theorem"
+    },
+    {
+      "path": "tensor-counting.md",
+      "section": 7,
+      "verdict": "PASS for stated implicit-entry interface"
+    },
+    {
+      "path": "implications.md",
+      "verdict": "Independent positive construction and all size/recovery costs"
+    },
+    {
+      "path": "README.md",
+      "verdict": "Independent integration review PASS after distinguishing carry words from flag bits."
+    }
+  ],
+  "diagnostics": {
+    "result": "PASS",
+    "scope": "Finite FFT/carry/parameter identities only",
+    "paper_tensor_algorithm_implemented": false,
+    "factoring_algorithm_implemented": false,
+    "source_theorem_certified": false,
+    "checks": {
+      "principal_root_sums": 116,
+      "basis_transform_equalities": 120,
+      "inverse_equalities": 120,
+      "exact_convolutions": 24,
+      "integer_carry_equations": 720,
+      "graph_parameter_checks": 8
+    }
+  },
+  "source_errata": {
+    "scope": "Appendix B.2 and equation (D.1) in D.3, not Theorem D.1",
+    "corrected_cap": "k*(a+2*(ell-1))",
+    "asymptotic_order_changed": false
+  },
+  "native_query": {
+    "retained_bound": "soft O(K^(5/4))",
+    "improved": false,
+    "note": "Conditional factoring algorithm bypasses the native query."
+  },
+  "implementation": {
+    "paper_contraction": false,
+    "factoring": false,
+    "finite_identity_checker": true,
+    "Lean_changes": 0
+  },
+  "certification": {
+    "full_source_proof": false,
+    "conditional_reduction_audited": true
+  },
+  "preservation": {
+    "protected_files": 1200,
+    "concurrent_files": 24,
+    "append_only_prefixes": 2,
+    "result": "PASS"
+  },
+  "integration": {
+    "local_links": 10,
+    "git_diff_check": "PASS"
+  },
+  "commit_or_push": false
+}

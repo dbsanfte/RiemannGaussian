@@ -1,0 +1,19 @@
+{
+  "module": "RiemannGaussian.SemiprimePaidMeasurementBound",
+  "paths": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidMeasurementBound.lean",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimePaidMeasurementBound.olean",
+    "isolated": "/tmp/semiprime-design-clock-20261027/SemiprimePaidMeasurementBound.olean"
+  },
+  "sha256": {
+    "source": "bd5fee5b0f167e7f6222f9d58a78d14602c253ea728329f62ddf4f9638284212",
+    "canonical": "dc47010c0ac721775d1f1ef9ee080f70636b9784e5142b13dd9fe5ddf66baf2f",
+    "isolated": "dc47010c0ac721775d1f1ef9ee080f70636b9784e5142b13dd9fe5ddf66baf2f"
+  },
+  "strict": true,
+  "isolated_equal": true,
+  "root_linters": 15,
+  "declarations": 4,
+  "theorem_constants": 3,
+  "standard_axioms_only": true
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "all_semiprime_sixth_exponent_established": false,
+  "positive_result": "Complete soft-O(k) factor-or-order-coprimality prepass under existing native order contract.",
+  "exact_branch": "gcd(Z,N)=Q iff smaller P divides ord_Q(q), else 1; never N.",
+  "continuing_certificate": "N is coprime to both local q, beta and eta orders; multiplicative subgroup automorphism only, no inverse exponent acquired.",
+  "whole_query_bound_improved": false,
+  "mathematical_reviews": [
+    "frobenius-screen-review.md",
+    "frobenius-periodicity-review.md"
+  ],
+  "other_reviews": [
+    "fractional-review.md",
+    "powered-tangle-review.md",
+    "skein-recovery-review.md",
+    "integration-review.md"
+  ],
+  "implementation": {
+    "library": "python-flint 0.9.0",
+    "environment": "isolated scratch venv",
+    "tests": "6 unittest methods, all pass",
+    "command": "/tmp/semiprime-frobenius-screen-20261026/venv/bin/python -m unittest discover -s /tmp/semiprime-frobenius-screen-20261026 -v",
+    "output": "kernel-validation.txt",
+    "archived_code_matches_tested_code": true,
+    "syntax_check": true,
+    "native_order_contract_verified_by_script": false,
+    "installed_binary_asymptotic_guarantee_proved": false
+  },
+  "corrections": [
+    "Known row/orientation lift targets do not require prior index acquisition.",
+    "N-th powering is not an additive Frobenius substitution.",
+    "Unsupported extra-divisor normalization/degree comparison removed."
+  ],
+  "preservation": {
+    "protected_files_verified": 739,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1512287,
+        "sha256": "f00a459b9095fc9336f55d30d395ff32a80b6d0ea1e2ea33a814f97af3e1a54d"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2361362,
+        "sha256": "56a83d2badeb4c68c1621eb19a4d80a4930315aef4dd689fcc362b016f2bd6ff"
+      }
+    },
+    "scratch_baseline_sha256": "ec54aec3b82837fd4d91ac7d1836e31ba2e764bf1d882d62f7c0cf4959d070c3"
+  },
+  "local_links_checked_before_manifest": 19,
+  "json_and_whitespace_checks": true,
+  "git_diff_check": true,
+  "numerical_native_coverage_campaign": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

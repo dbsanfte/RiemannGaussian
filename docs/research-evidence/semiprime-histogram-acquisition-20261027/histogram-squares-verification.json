@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramSquares",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramSquares.lean",
+      "source_sha256": "e7971ba2e8efa42e44c5e2aee1933d1db38b52e11775416020e18e41525aa1f5",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramSquares.olean",
+      "object_sha256": "4055051e3ade8624d614f97ebd0a31eff764213f081a5699903a13a3515f3501",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceHistogramSquares.olean",
+      "isolated_sha256": "4055051e3ade8624d614f97ebd0a31eff764213f081a5699903a13a3515f3501",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 54,
+      "theorems": 28
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceHistogramSquaresBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramSquaresBounds.lean",
+      "source_sha256": "04d707d0d4def4e9d7920dc624039577bb7263690ea1e9390c8381a597a33f91",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramSquaresBounds.olean",
+      "object_sha256": "1bb62572ad76130e0eb307a75f376565213f121919c6efdb61be1795df41b75e",
+      "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceHistogramSquaresBounds.olean",
+      "isolated_sha256": "1bb62572ad76130e0eb307a75f376565213f121919c6efdb61be1795df41b75e",
+      "byte_identical": true,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "declarations": 29,
+      "theorems": 26
+    }
+  ],
+  "notes_sha256": "830d71f03815e3b6db754d75533e77dc1ae63a7def8b540e57d908f2dba122b0",
+  "smoke_source_sha256": "d9cd412fcbc464ce2b722738deb93b3adcac2afd7f6d84480eb2b9a7e7c78a2f",
+  "smoke_log_sha256": "9e1b8e62fa04ca950234380db84f95f4fd6920296583a58d58eba98114c9b3fd",
+  "scope": "Actual Boolean trie/counter streaming square-count with complete bit-arithmetic and finite/native metadata ledger; caller key acquisition/full address/TM composition separate."
+}

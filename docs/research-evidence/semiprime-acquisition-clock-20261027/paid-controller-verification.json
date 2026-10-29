@@ -1,0 +1,41 @@
+{
+  "modules": {
+    "SemiprimePaidPrefixController": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidPrefixController.lean",
+      "source_sha256": "273af8bed8e409aa12ec396f312d5a936d4860f1e9e5238e1d8bb241c079657f",
+      "object_sha256": "2ec359229ed590b96f1b6b0c7f412d89d006fe1eb80fa0373145ed975c3fa9fa",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimePaidFactorDecoder": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidFactorDecoder.lean",
+      "source_sha256": "befba1a27c091b337c1b8920cead05c76808743c85f56dd1f184f249f095aab8",
+      "object_sha256": "0eafd84a9e0fac5a88ed530130ef2a0a2dee707b951bc394c679fcdcceb62b61",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimePaidPublicController": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidPublicController.lean",
+      "source_sha256": "a75b96d1776d1e48371a58105e3b7daba68c740388e146e344ac171e6387acd2",
+      "object_sha256": "bf7b0456a7135d38339735d59bcc632196fbce860de24876afa714b464cafb11",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimePaidScheduledController": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePaidScheduledController.lean",
+      "source_sha256": "5d39ff3428dc7aa86cd651af4a77dd572edc2b12447e60cfa264d56d906d8061",
+      "object_sha256": "500141dc0366d17de30fc60e5303a9c069e0583b7c3d7ceea50635bdf1359ee7",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    }
+  },
+  "declarations": 266,
+  "theorems": 143,
+  "scope": "all-input exact N-only output semantics and full retained lower reports; setup/physical bit refinements remain explicitly separate",
+  "smoke": "PaidControllerSmoke.lean",
+  "smoke_log": "paid-controller-smoke.log"
+}

@@ -1,0 +1,150 @@
+ALL19_CURRENT_SOURCE_INDEPENDENT_READ_ONLY_REVIEW_PASS
+REVIEWER port: /tmp/semiprime-explicit-rate-20261027/child-lift-table-port-review.txt
+Independent READ-ONLY review: PASS; no blocker found.
+Scope: all 429 current source lines in the five port-assigned modules VectorTable Core, Spec, Primitives, Emit and Leaf. Every body was read. No imports, compilers, builds, source/canonical writes or compiled controls were performed for the reviewed group.
+
+Checked fixed Static code/entry/role inventory before all runtime inputs; the three finite overrides include the nine-copy-label injection exactly and preserve the remaining static topology. The inactive scalar-frame labels have literal halt but are not called by the proved complete-vector emitter. The acquired vector payload is copied byte-for-byte by REAL preserving Copy, then its FALSE tree-leaf tag is pushed into physical history before REAL payload reversal. The resulting history is exactly reverse(FALSE::vectorPayload)++oldHistory, including empty coefficients/empty vectors; no extra WordFrame is applied to an already framed vector. Both copy and reverse injections are physically distinct and their source execution/caller returns are paid.
+
+CheckerTrace is a proof argument over the actual fixed source run and exact physical vector output, not a runtime answer, function, clock or evaluator. This generic review does not discharge the concrete child Input contract; that is a separately assigned concrete adapter obligation. The complete leaf copies every template field, pays actual assignment copy/reversal and real checker call, emits the actual vector BEFORE complete source cleanup, then clears EVERY checker role and really returns. The cleanup/post-word caps use the SAME executed checker trace/run_data_bound, not an old native report clock. Exact first-port-outermost false-first tree entry and whole raw-bit orientation match the codec.
+
+All five source SHA256 pins equal assignment, before-read, after-read and live hashes. Full pins (both BEFORE and AFTER):
+
+BEFORE
+0a1a142bc6e3754bb153f7447702f81b21d8d576333d6ff6a2657ce23fed213b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTable.lean
+3ee088ad5eef215ff7c581d3cee7cca39b1e2799df90dcdc8765002b86732de9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableSpec.lean
+266eefcc0107e6acc7b33c3ef756e08c33ea7d984aeeea0afa5528c40ca43b53  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTablePrimitives.lean
+0a87d43905e60f3e7131df6c55b816b39e956be039e43df759be8c768a678a94  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableEmit.lean
+1d74be94eec57b8d24b33f4fc48ff16816ed17314e5db5ec151bb9c509766b0f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLeaf.lean
+
+AFTER
+0a1a142bc6e3754bb153f7447702f81b21d8d576333d6ff6a2657ce23fed213b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTable.lean
+3ee088ad5eef215ff7c581d3cee7cca39b1e2799df90dcdc8765002b86732de9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableSpec.lean
+266eefcc0107e6acc7b33c3ef756e08c33ea7d984aeeea0afa5528c40ca43b53  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTablePrimitives.lean
+0a87d43905e60f3e7131df6c55b816b39e956be039e43df759be8c768a678a94  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableEmit.lean
+1d74be94eec57b8d24b33f4fc48ff16816ed17314e5db5ec151bb9c509766b0f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLeaf.lean
+
+
+REVIEWER owner: /tmp/semiprime-explicit-rate-20261027/child-lift-table-owner-review.txt
+{
+  "verdict": "PASS",
+  "scope": "Read-only all6 assigned complete current bodies,610 lines. No imports/builds/edits/canonical writes/control reruns. Actual scope-bank acquisition/full generic loop/clock/storage belong to separately assigned group review.",
+  "all_lines_read": 610,
+  "modules_read": [
+    "SemiprimeD1StackVectorTableCleanup",
+    "SemiprimeD1StackVectorTableLoad",
+    "SemiprimeD1StackVectorTableDFSParts",
+    "SemiprimeD1StackVectorTableLeafCalls",
+    "SemiprimeD1StackChildLiftTable",
+    "SemiprimeD1StackChildLiftTableInput"
+  ],
+  "source_sha256_before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableCleanup.lean": "d4591b561327760aef325aa9c219785c241ac4d4436a33bf629ef2ae0c5ec851",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLoad.lean": "dc11a76d4d043bd921e46fbdd4835454cd0e90ed20ea046b5dba10b4eb3ff095",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableDFSParts.lean": "a03c1fa2727ead3b629b082823091a89d97a14e874c0b4c9de25683b0f5af1db",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLeafCalls.lean": "e329cb3cffee074527e6759d5682b8396213a63b46f7f6795262e04aa47b2cd0",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTable.lean": "6b59cc9a6e49bd2f8439c9482d592882a29c2fa9d85cb50fbfe85664847c03c3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableInput.lean": "1e7ee97db5b05592d49191080500132222c2f7ad734d713b24b6de51e82da6ae"
+  },
+  "source_sha256_after": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableCleanup.lean": "d4591b561327760aef325aa9c219785c241ac4d4436a33bf629ef2ae0c5ec851",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLoad.lean": "dc11a76d4d043bd921e46fbdd4835454cd0e90ed20ea046b5dba10b4eb3ff095",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableDFSParts.lean": "a03c1fa2727ead3b629b082823091a89d97a14e874c0b4c9de25683b0f5af1db",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLeafCalls.lean": "e329cb3cffee074527e6759d5682b8396213a63b46f7f6795262e04aa47b2cd0",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTable.lean": "6b59cc9a6e49bd2f8439c9482d592882a29c2fa9d85cb50fbfe85664847c03c3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableInput.lean": "1e7ee97db5b05592d49191080500132222c2f7ad734d713b24b6de51e82da6ae"
+  },
+  "flat_source_sha256": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableCleanup.lean": "d4591b561327760aef325aa9c219785c241ac4d4436a33bf629ef2ae0c5ec851",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLoad.lean": "dc11a76d4d043bd921e46fbdd4835454cd0e90ed20ea046b5dba10b4eb3ff095",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableDFSParts.lean": "a03c1fa2727ead3b629b082823091a89d97a14e874c0b4c9de25683b0f5af1db",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLeafCalls.lean": "e329cb3cffee074527e6759d5682b8396213a63b46f7f6795262e04aa47b2cd0",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTable.lean": "6b59cc9a6e49bd2f8439c9482d592882a29c2fa9d85cb50fbfe85664847c03c3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableInput.lean": "1e7ee97db5b05592d49191080500132222c2f7ad734d713b24b6de51e82da6ae"
+  },
+  "findings": [
+    "Literal exhaustive nondduplicate Entry61 role inventory includes both15-role old/new contexts,6gather,5tree,8reducer,12aux; whole source allocation61live+61template+7scanner+5DFS=134, including all source/private/shadow roles. Static roles/code are fixed before runtime input, not an evaluator/getter.",
+    "Full template load physically drains EACH live role then preserving-copies its actual readonly template field, including EMPTY private/shadow fields. Scratch is separately proved empty and retained; all actual load/clear returns paid.",
+    "Actual DFS consumes/restores acquired unary depth marker, logs original fork tag, visits FALSE before TRUE, pops actual prefix bits after real child returns. Every leaf actually copies/reverses current assignment into initiallyEMPTY raw gather operand; no host assignment is installed.",
+    "Generic CheckerTrace is a proof contract only. Concrete ChildLiftInput.source_trace internally proves EVERY assignment contract from SAME whole real Entry61 source_run_original_bounded, exact initial7-tape equality and actual stopped vectors; no supplied entry answer/rank/cost/runtime callback.",
+    "Prepared inputs honestly retain actual parent table, actual order tape, old/new axes and separately binary oldp/newp plus actual scopeIDs. oldp binds old context precision; new working precision is independently bitValue(newp). No old/new precision equality inferred. Numeric table coefficients remain binary, emitted per-leafvector exact native individual-lift order.",
+    "Cleanup physically drains every listed live checker field; templates/count/private roles retained. Destination tails are preserved without repeatedly copying accumulated output; actual call/return bookkeeping is explicit. Parent record extraction/activation/righttables/fullcounter caller remain outside this prepared table group. No blocker found."
+  ]
+}
+
+
+REVIEWER vertex: /tmp/semiprime-explicit-rate-20261027/child-lift-table-vertex-review.txt
+{
+  "verdict": "PASS",
+  "utc": "2026-10-29T04:20:56.475928+00:00",
+  "reviewer": "/root/vertex_record_logger",
+  "scope": "Read EVERY body/ALL750 assigned lines of VectorTableDFS/Execution/Bounds and ChildLiftTableMeaning/Resources/Original/Bounds/Storage. Additionally read concrete ChildLiftTable Core/Input for fixed Entry61 wiring and honest initialization. No import/build/source edit/canonical write/control. Complementary primitive/load/emit/cleanup/individual Entry61 reviews are separate.",
+  "all_assigned_lines_read": 750,
+  "modules": [
+    "SemiprimeD1StackVectorTableDFS",
+    "SemiprimeD1StackVectorTableExecution",
+    "SemiprimeD1StackVectorTableBounds",
+    "SemiprimeD1StackChildLiftTableMeaning",
+    "SemiprimeD1StackChildLiftTableResources",
+    "SemiprimeD1StackChildLiftTableOriginal",
+    "SemiprimeD1StackChildLiftTableBounds",
+    "SemiprimeD1StackChildLiftTableStorage"
+  ],
+  "source_sha256_before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableDFS.lean": "efce361fe1b8805e7799c9215dd6f45d551b0b652d0fff66748367b26fdde78b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableExecution.lean": "53b3dd0b5c4e96bd347a4a41e7328567bbf783edd488fbaba04390c0fe66203a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableBounds.lean": "8d659a3f171453fe8704975429fe4fdd13cc5085c8a335e6bf222853ce7dffb9",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableMeaning.lean": "1fe06a4fe5656db58249436ffbea5b325ca7d67d9a5aa29677fee6f72d64224a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableResources.lean": "3e6ec12fa06e6f9d35eff8a3fcae262f93c4ea4ba22d2c33a1e10b1f237aeeeb",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableOriginal.lean": "614e8c8409ce9dca0203e9047962bcdc2b05ea1292e1f380c97c55a6643d8beb",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableBounds.lean": "c1add3eb52f72e020c836cf91d6a05c1ee2f16b8a6802bcbd16f2d44a84d040e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableStorage.lean": "9c9395b73e02388ac46ec1c4ffad88e4d7acb6e5b9d871c6cf2bf7d1d0b80ef2"
+  },
+  "source_sha256_after_current": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableDFS.lean": "efce361fe1b8805e7799c9215dd6f45d551b0b652d0fff66748367b26fdde78b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableExecution.lean": "53b3dd0b5c4e96bd347a4a41e7328567bbf783edd488fbaba04390c0fe66203a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableBounds.lean": "8d659a3f171453fe8704975429fe4fdd13cc5085c8a335e6bf222853ce7dffb9",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableMeaning.lean": "1fe06a4fe5656db58249436ffbea5b325ca7d67d9a5aa29677fee6f72d64224a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableResources.lean": "3e6ec12fa06e6f9d35eff8a3fcae262f93c4ea4ba22d2c33a1e10b1f237aeeeb",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableOriginal.lean": "614e8c8409ce9dca0203e9047962bcdc2b05ea1292e1f380c97c55a6643d8beb",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableBounds.lean": "c1add3eb52f72e020c836cf91d6a05c1ee2f16b8a6802bcbd16f2d44a84d040e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableStorage.lean": "9c9395b73e02388ac46ec1c4ffad88e4d7acb6e5b9d871c6cf2bf7d1d0b80ef2"
+  },
+  "assignment_before_after_current_match": true,
+  "findings": [
+    "VectorTableDFS executes the actual low/FALSE subtree first, then high/TRUE, with real recursive calls/returns, physical prefix pops and depth restoration. Its history invariant is EXACT tape(tree answer front.reverse n).reverse++hist, including fork tags. All leaves have the SAME original-template and assignment width D; recursion only multiplies the actual per-leaf bound by2^D.",
+    "Execution acquires scope arity from actual DigitCount record tags, including empty zero-ID fields, retains the scope tape, runs the real static source at every generated assignment, and pays one consuming final reversal plus halt. The done bank specifies readonly template+scope+count retained, every live checker/private/prefix/reversal word EMPTY, actual output tree and empty flags/frames.",
+    "Generic CheckerTrace answer/budget functions occur ONLY in proof specifications. Concrete ChildLiftTableInput.source_trace discharges EVERY leaf internally from the frozen real Entry61 source, with exact assignment update and source initialization. No evaluator, entry vector, count, result, table builder or clock enters runtime control. The concrete source/program has no original-input parameter.",
+    "Meaning.tree_build and tree_original prove exact original eager table bytes/assignment positions using the same appended FALSE/TRUE order. Original.output_original and source_run bind that exact native whole table to the SAME actual134-role trace; source source_run never stops at an advised per-entry contract.",
+    "Resources includes actual serialized parent-table/order/unary-axis-header bytes, both physical precision words, acquired rank and precision VALUES, and actual scope bytes. Entry budget is from the SAME real Entry61 source wholePolynomial; only assignment LENGTH is mathematically substituted, with raw length D paid by actual scope scanning. No old native report clock is transported.",
+    "Generic output-size bounds use a proved actual fixed checker run to pay output/reversal/cleanup I/O. They do not feed elapsed runtime back into later scalar operands: each leaf recopies the SAME readonly original template and uses an assignment of the SAME D bytes. Thus whole cost remains fixed per-entry polynomial times2^D, rather than a runtime-power recurrence.",
+    "Bounds.timeBound_le closes the SAME concrete whole source at10^20 R^2 2^D, with constants before all contexts/tables/inputs. Every repeated parent read, actual integer lift, source/template copy, full61-role cleanup, tag, scope scan, nested return and output reversal is paid. The output Good theorem uses actual old Good and positive appended-axis product; no numerical or shape verdict is supplied.",
+    "Storage counts both complete61-role live/template banks plus7 physical scanner and5 traversal words (134 total), all old/new context shadows and actual recursive return cells. Actual source-prefix and genuine compiled-prefix bounds follow the same program halt and close at10^24 R^2 2^D. The front door is explicitly a PREPARED multiword configuration, not an N-only initList claim."
+  ],
+  "limitations": [
+    "Physical parent-record extraction, correct NEW table operand selection/activation, right-packet acquisition and child-vertex assembly remain caller work. The reviewed table source does not claim to execute the full recursive counter or an N-only factorer.",
+    "The concrete byte/run theorem honestly assumes old.Positive, extra.prod>0, oldp represents old.precision, and Good old parent. These are original-family proof scope conditions; semantic Nat/List/table objects are specifications of the actual physical inputs, never runtime advice."
+  ],
+  "blockers": []
+}
+
+
+CURRENT VERIFIED SOURCE PINS
+0a1a142bc6e3754bb153f7447702f81b21d8d576333d6ff6a2657ce23fed213b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTable.lean
+3ee088ad5eef215ff7c581d3cee7cca39b1e2799df90dcdc8765002b86732de9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableSpec.lean
+266eefcc0107e6acc7b33c3ef756e08c33ea7d984aeeea0afa5528c40ca43b53  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTablePrimitives.lean
+0a87d43905e60f3e7131df6c55b816b39e956be039e43df759be8c768a678a94  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableEmit.lean
+1d74be94eec57b8d24b33f4fc48ff16816ed17314e5db5ec151bb9c509766b0f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLeaf.lean
+d4591b561327760aef325aa9c219785c241ac4d4436a33bf629ef2ae0c5ec851  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableCleanup.lean
+dc11a76d4d043bd921e46fbdd4835454cd0e90ed20ea046b5dba10b4eb3ff095  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLoad.lean
+a03c1fa2727ead3b629b082823091a89d97a14e874c0b4c9de25683b0f5af1db  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableDFSParts.lean
+e329cb3cffee074527e6759d5682b8396213a63b46f7f6795262e04aa47b2cd0  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableLeafCalls.lean
+6b59cc9a6e49bd2f8439c9482d592882a29c2fa9d85cb50fbfe85664847c03c3  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTable.lean
+1e7ee97db5b05592d49191080500132222c2f7ad734d713b24b6de51e82da6ae  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableInput.lean
+efce361fe1b8805e7799c9215dd6f45d551b0b652d0fff66748367b26fdde78b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableDFS.lean
+53b3dd0b5c4e96bd347a4a41e7328567bbf783edd488fbaba04390c0fe66203a  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableExecution.lean
+8d659a3f171453fe8704975429fe4fdd13cc5085c8a335e6bf222853ce7dffb9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVectorTableBounds.lean
+1fe06a4fe5656db58249436ffbea5b325ca7d67d9a5aa29677fee6f72d64224a  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableMeaning.lean
+3e6ec12fa06e6f9d35eff8a3fcae262f93c4ea4ba22d2c33a1e10b1f237aeeeb  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableResources.lean
+614e8c8409ce9dca0203e9047962bcdc2b05ea1292e1f380c97c55a6643d8beb  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableOriginal.lean
+c1add3eb52f72e020c836cf91d6a05c1ee2f16b8a6802bcbd16f2d44a84d040e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableBounds.lean
+9c9395b73e02388ac46ec1c4ffad88e4d7acb6e5b9d871c6cf2bf7d1d0b80ef2  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftTableStorage.lean

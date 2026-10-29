@@ -1,0 +1,18 @@
+Independent parent source/interface review: PASS for the prepared two-tape component.
+The finite runtime program accepts only a canonical five-field row tape and a nested child-word vector. Numeric addresses remain binary; the indexed reader scans actual vector fields with physical equality and increment, stopping at actual EOF. Its cap depends on actual query/cache bytes, not query value. Both full lookup inclusions are injective; unused allocated shadows remain in the25-role bank.
+Per-row source parses five fields, executes both actual indexed calls, normalizes missing outer rows with a literal false sentinel, logs four framed fields, clears seven roles, and preserves every occurrence. Final reversal recovers original row order; the real final halt clears flags and return frames. One output sentinel belongs to the output.
+The quartic whole-program clock and all25-role/actual-return prefix bounds are for this same program. Original semantic byte caps use row addresses/counts, width, child count/rank/precision only; they do not recurse through child-runtime polynomials.
+Scope remains OPEN upstream: canonical Hermite row production, actual phase-block coordinate-column extraction and construction of the two input tapes. This source does not claim an original-N-only recovery algorithm. No blocking issues found in the files reviewed below. Remaining ordinary-root/Std3/header/byte-identity gates are checked by the owner separately.
+
+Current reviewed source SHA256 pins:
+a98407df1735ed57aa8b1040f657c729d9ced29f923677d1e4ef35ba1c208f93  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntries.lean
+5327d995e06735faff16a600adaa447f56ed4dcf2dca45f72350e39324891057  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesIndexed.lean
+b7d47c4606af8d57ef96ae542ddda729445f09aff368eaee06a229d22b46c61c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesIndexedBounds.lean
+8de99dc91fcd7a8894dee01fa89b1e2a53a18487313dc1d9ac539acc1ab9fbbc  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesCalls.lean
+8f3dfdf86399ee544dbad4beeeb05c8e2e7e3f4c23852021ccee96d9ea3ee86f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesRead.lean
+8f76b639d9de4043ee03cb3c53bb73e54077385954e5e9f04fe84b9dd51c11b4  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesLoop.lean
+ff614ca03bf0332754cf8ab82bbc223f1a909367411d6ea952922e0cff29e9ba  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesExecution.lean
+7f64df6a692cd35fb79b90fc14cabe508ffd6cf1bceebe75e96b7d01a9495e7f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesBounds.lean
+235d0e8aa134f134357e37118344b788ef82912d664a43415b8b4dc77373873b  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesResources.lean
+94cdda2ac71bfbe74b48772de5a592f9cb13b1add9fd35973a5a2aa151dcf986  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesOriginalCaps.lean
+51e7e222bbad60c30364f27c80d718b2f5c6e7f11d7c3155f09e382044fcb427  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryEntriesOriginal.lean

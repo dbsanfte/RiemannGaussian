@@ -1,0 +1,504 @@
+{
+  "checked_utc": "2026-10-29T05:59:58.486678+00:00",
+  "protected_paths": 17054,
+  "protected_changes": [],
+  "historical_journals": {
+    "AGENTS.md": {
+      "prefix_preserved": true,
+      "original_bytes": 1722773,
+      "current_bytes": 1722773,
+      "appended_bytes": 0,
+      "whole_file_sha256": "0498f00cff9ba0db11b661e7811e3c6710d0f26be67cd6ce64aa9f8f89148a69"
+    },
+    "docs/semiprime-factorisation-investigation.md": {
+      "prefix_preserved": true,
+      "original_bytes": 2621263,
+      "current_bytes": 2621263,
+      "appended_bytes": 0,
+      "whole_file_sha256": "474cba9141c0f94251c98530de8b0a3dc68f698e7a551a4742231547c827006a"
+    }
+  },
+  "new_closed_groups": [
+    {
+      "report": "full-factor-catalogue-source-verification.json",
+      "modules": 11,
+      "live_hashes_checked": 33,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "full-factor-catalogue-final-verification.json",
+      "modules": 15,
+      "live_hashes_checked": 45,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-record-coordinates-verification.json",
+      "modules": 1,
+      "live_hashes_checked": 3,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-recursive-control-verification.json",
+      "modules": 5,
+      "live_hashes_checked": 15,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "all-descriptor-root-envelope-verification.json",
+      "modules": 2,
+      "live_hashes_checked": 6,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-phase-grid-verification.json",
+      "modules": 6,
+      "live_hashes_checked": 18,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "phase-working-metadata-verification.json",
+      "modules": 9,
+      "live_hashes_checked": 27,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "phase-working-precision-verification.json",
+      "modules": 10,
+      "live_hashes_checked": 30,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "phase-child-context-verification.json",
+      "modules": 8,
+      "live_hashes_checked": 24,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "phase-child-fresh-verification.json",
+      "modules": 8,
+      "live_hashes_checked": 24,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-network-records-verification.json",
+      "modules": 8,
+      "live_hashes_checked": 24,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-phase-parameters-inventory-verification.json",
+      "modules": 1,
+      "live_hashes_checked": 3,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "phase-bank-restore-verification.json",
+      "modules": 5,
+      "live_hashes_checked": 15,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-phase-parameters-verification.json",
+      "modules": 18,
+      "live_hashes_checked": 54,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "phase-cache-fresh-verification.json",
+      "modules": 5,
+      "live_hashes_checked": 15,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "network-owner-index-verification.json",
+      "modules": 12,
+      "live_hashes_checked": 36,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "weighted-mode-core-verification.json",
+      "modules": 15,
+      "live_hashes_checked": 45,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "weighted-mode-catalogue-verification.json",
+      "modules": 10,
+      "live_hashes_checked": 30,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-phase-fresh-records-verification.json",
+      "modules": 23,
+      "live_hashes_checked": 69,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-owner-index-verification.json",
+      "modules": 7,
+      "live_hashes_checked": 21,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "network-rows-verification.json",
+      "modules": 15,
+      "live_hashes_checked": 45,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-network-rows-verification.json",
+      "modules": 6,
+      "live_hashes_checked": 18,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-alphabet64-verification.json",
+      "modules": 19,
+      "live_hashes_checked": 57,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-occurrences-verification.json",
+      "modules": 13,
+      "live_hashes_checked": 39,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-environment-verification.json",
+      "modules": 13,
+      "live_hashes_checked": 39,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-source-occurrences-verification.json",
+      "modules": 6,
+      "live_hashes_checked": 18,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "jet-fold-verification.json",
+      "modules": 20,
+      "live_hashes_checked": 60,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-incidence-verification.json",
+      "modules": 25,
+      "live_hashes_checked": 75,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "fresh-bank-restore-verification.json",
+      "modules": 7,
+      "live_hashes_checked": 21,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "jet-blocks-verification.json",
+      "modules": 14,
+      "live_hashes_checked": 42,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-selected-keys-verification.json",
+      "modules": 16,
+      "live_hashes_checked": 48,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-incidence-select-verification.json",
+      "modules": 28,
+      "live_hashes_checked": 84,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "cache-phase-verification.json",
+      "modules": 19,
+      "live_hashes_checked": 57,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-key-frequency-verification.json",
+      "modules": 15,
+      "live_hashes_checked": 45,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-packet-padding-verification.json",
+      "modules": 13,
+      "live_hashes_checked": 39,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packet-rows-verification.json",
+      "modules": 17,
+      "live_hashes_checked": 51,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "source-selection-acquire-verification.json",
+      "modules": 12,
+      "live_hashes_checked": 36,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-finish-verification.json",
+      "modules": 29,
+      "live_hashes_checked": 87,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packet-orientation-verification.json",
+      "modules": 17,
+      "live_hashes_checked": 51,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-denominator-verification.json",
+      "modules": 14,
+      "live_hashes_checked": 42,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "euclid-gcd-verification.json",
+      "modules": 11,
+      "live_hashes_checked": 33,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-selection-acquire-verification.json",
+      "modules": 13,
+      "live_hashes_checked": 39,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "rational-normalize-verification.json",
+      "modules": 10,
+      "live_hashes_checked": 30,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-packet-padding-verification.json",
+      "modules": 12,
+      "live_hashes_checked": 36,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-entries-verification.json",
+      "modules": 28,
+      "live_hashes_checked": 84,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-width-verification.json",
+      "modules": 13,
+      "live_hashes_checked": 39,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packet-mode-acquire-verification.json",
+      "modules": 11,
+      "live_hashes_checked": 33,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-coordinate-verification.json",
+      "modules": 20,
+      "live_hashes_checked": 60,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "rational-operation-verification.json",
+      "modules": 13,
+      "live_hashes_checked": 39,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-recovery-width-verification.json",
+      "modules": 11,
+      "live_hashes_checked": 33,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packet-inventory-verification.json",
+      "modules": 30,
+      "live_hashes_checked": 90,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "root-packet-inventory-verification.json",
+      "modules": 14,
+      "live_hashes_checked": 42,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "child-table-entry-verification.json",
+      "modules": 22,
+      "live_hashes_checked": 66,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-moment-verification.json",
+      "modules": 6,
+      "live_hashes_checked": 18,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "cache-phase-bank-verification.json",
+      "modules": 27,
+      "live_hashes_checked": 81,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "marked-public-input-verification.json",
+      "modules": 16,
+      "live_hashes_checked": 48,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-root-metadata-verification.json",
+      "modules": 8,
+      "live_hashes_checked": 24,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "marked-public-input-table-verification.json",
+      "modules": 20,
+      "live_hashes_checked": 60,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-root-context-verification.json",
+      "modules": 7,
+      "live_hashes_checked": 21,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "binary-square-root-verification.json",
+      "modules": 13,
+      "live_hashes_checked": 39,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-moment-readout-verification.json",
+      "modules": 8,
+      "live_hashes_checked": 24,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-grid-verification.json",
+      "modules": 67,
+      "live_hashes_checked": 201,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-network-semantics-verification.json",
+      "modules": 3,
+      "live_hashes_checked": 9,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "marked-root-records-verification.json",
+      "modules": 32,
+      "live_hashes_checked": 96,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-root-input-verification.json",
+      "modules": 11,
+      "live_hashes_checked": 33,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-network-original-verification.json",
+      "modules": 3,
+      "live_hashes_checked": 9,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-factor-recovery-verification.json",
+      "modules": 21,
+      "live_hashes_checked": 63,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "packed-root-cache-reuse-verification.json",
+      "modules": 4,
+      "live_hashes_checked": 12,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-affine-verification.json",
+      "modules": 77,
+      "live_hashes_checked": 231,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "child-lift-table-verification.json",
+      "modules": 19,
+      "live_hashes_checked": 57,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-powers-verification.json",
+      "modules": 19,
+      "live_hashes_checked": 57,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "normalized-inverse-verification.json",
+      "modules": 56,
+      "live_hashes_checked": 168,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "child-lift-vertex-verification.json",
+      "modules": 8,
+      "live_hashes_checked": 24,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "child-unit-vertex-verification.json",
+      "modules": 8,
+      "live_hashes_checked": 24,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "vertex-record-splice-verification.json",
+      "modules": 4,
+      "live_hashes_checked": 12,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-node-inputs-verification.json",
+      "modules": 14,
+      "live_hashes_checked": 42,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-weights-verification.json",
+      "modules": 36,
+      "live_hashes_checked": 108,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "child-vertex-choice-verification.json",
+      "modules": 8,
+      "live_hashes_checked": 24,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "recovery-node-verification.json",
+      "modules": 10,
+      "live_hashes_checked": 30,
+      "canonical_independent_byte_equal": true
+    },
+    {
+      "report": "child-vertex-endpoint-verification.json",
+      "modules": 3,
+      "live_hashes_checked": 9,
+      "canonical_independent_byte_equal": true
+    }
+  ],
+  "full_goal_complete": false
+}

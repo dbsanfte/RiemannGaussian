@@ -1,0 +1,13 @@
+{
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeHermiteWordWidth.lean",
+  "source_sha256": "5c319a6ea888a9c683514bebf2582c5a9301c8d738db17695e0ad1611a7ce2b6",
+  "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeHermiteWordWidth.olean",
+  "object_sha256": "59398433c0e79c10a789b7922c8bcdfec1693c0052a19a52bb41391f3267f924",
+  "isolated": "/tmp/semiprime-hermite-words-20261027/SemiprimeHermiteWordWidth.olean",
+  "isolated_sha256": "59398433c0e79c10a789b7922c8bcdfec1693c0052a19a52bb41391f3267f924",
+  "byte_identical": true,
+  "strict": "PASS EXIT0",
+  "root15_allgenerated": "PASS EXIT0 standard3 only",
+  "declarations": 41,
+  "theorems": 37
+}

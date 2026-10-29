@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "mode": "read-only semantic and scope review; no rebuild",
+  "modules": [
+    {
+      "module": "SemiprimeSourceScorePredicateBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePredicateBits.lean",
+      "source_sha256": "f937dfbbef80e0cda78a45e9ca3e8baa1562005a0219589f3e72bf98519b4ea1",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScorePredicateBits.olean",
+      "object_sha256": "a6f2d2dfbfc5f775d1dd57ea54f2079b8b1fd3bfeddb1ab6bbc2217e85cdfabe"
+    },
+    {
+      "module": "SemiprimeSourceScorePredicateBitsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePredicateBitsBounds.lean",
+      "source_sha256": "ce05b2f9f9077a188388a67ee06113fa9d516230249725d1aeec728719ffea86",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScorePredicateBitsBounds.olean",
+      "object_sha256": "64bc39280a27a29414c845ee846b8dfa48a6dfe8db4b50fa7299a920a61f9719"
+    }
+  ]
+}

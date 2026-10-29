@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-26",
+  "classification": "Paid projective initialization and pure-modulus paired structure; no whole-query speedup",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft K^(5/4) weighted native query; simpler monic fallback soft K^(3/2)",
+  "positive_results": [
+    "First 5J steps acquire adjacent projective ratios with certified global-unit increment in one of three fixed charts, or return a factor; soft J continuation/soft K terminating branch.",
+    "Actual scalar/torus preparation permits pure K=2*3^e for the two monic families, retaining discriminant size guard and old finite exceptions; all screens rerun in soft K.",
+    "Both monic coefficient images become one step-6 AP with two tags per value; a dividing 3-power HH modulus near K^(1/3) is available.",
+    "Paired phases, twist and quadratic exchange are exact; regular twist gate and correction starts are acquired.",
+    "Exact hypergeometric tail and initialized finite rational-recurrence contraction specified without truncating original support."
+  ],
+  "remaining": [
+    "Fast long advancement or direct finite-window projective coefficient extraction.",
+    "Future chart/pivot certificates if using the eliminated nonlinear law.",
+    "Paired correction contraction with required coverage and first-jet amplitudes retained.",
+    "Whole-family soft-K query and full all-semiprime bit-complexity proof."
+  ],
+  "reviews": [
+    "review-projective.md",
+    "review-pure-pairing.md",
+    "review-initial-chart.md"
+  ],
+  "validation": {
+    "mathematical": "Independent paper reviews and primary-agent audit; final HH modulus wording corrected. Not Lean.",
+    "status": "pass",
+    "local_links_checked": 28,
+    "git_diff_check": true,
+    "json_and_whitespace": true,
+    "preservation_hashes": true,
+    "source_pins_checked": 13
+  },
+  "preservation": {
+    "protected_files_verified": 949,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1550370,
+        "sha256": "8feb05667decdf5c2b39d161f7809459183510a531099a917bd054efb4ed0bb5"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2438576,
+        "sha256": "bdeb994ac4e49a2164ca241a904a5733f95b2af00baf67b25aacd9e6891f9072"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "62f87849836bdb2f2dd2e0237b3615306a662cb0e1a4bea556ca0fc419fc30b2"
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

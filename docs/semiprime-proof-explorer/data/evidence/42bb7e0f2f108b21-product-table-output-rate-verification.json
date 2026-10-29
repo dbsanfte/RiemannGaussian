@@ -1,0 +1,34 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 1,
+    "declarations": 13,
+    "theorems": 11
+  },
+  "modules": {
+    "SemiprimeD1ProductTableOutputRate": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1ProductTableOutputRate.lean",
+        "sha256": "dcf11e5955f0bb89cf8340a60785b7a4d92879c0084df965bc1000ae6b6ad27d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1ProductTableOutputRate.olean",
+        "sha256": "16275c6ddb81f76222b50f5c8d73bbb4f507dfb9c534538a3030c93bda57e021"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/product-table-output-rate-frozen/SemiprimeD1ProductTableOutputRate.olean",
+        "sha256": "16275c6ddb81f76222b50f5c8d73bbb4f507dfb9c534538a3030c93bda57e021"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "live_source_object_pin_bracket_shared": "boolean-descriptor-dependencies/imported-pins-{before,after}.json",
+  "pin_bracket_includes_this_module_and_all_imports": true,
+  "actual_imported_pairs_shared": 18224
+}

@@ -1,0 +1,51 @@
+{
+  "status": "independent read-only semantic/report/scope review PASS; canonical strict status confirmed by owning parent",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScoreCancellation",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCancellation.lean",
+      "source_sha256": "ddfe3ce83558c0e85e23967aa47af08ae5e7398a0c686d3f5ab85bbab2522fc7",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreCancellation.olean",
+      "object_sha256": "399188e028c3da6f596823e71253f75a1b6affc37510a83a9c9c04e6b3514cd0"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceChoiceOrder",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceChoiceOrder.lean",
+      "source_sha256": "ce650a3c1f9e9fdd454aa8873b97bdf1414386586cf755b70717c4a8223b439e",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceChoiceOrder.olean",
+      "object_sha256": "a6a396fdecd11cf4221f2003b1cf52ffd43393f596b91de073f516f06d791645"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScoreChoice",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreChoice.lean",
+      "source_sha256": "11ca32b5625583c939c14b50239e762fff4bdde09043f8b9f06b28c032f5ea8a",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreChoice.olean",
+      "object_sha256": "006176af59621aaf1afcb546787bcfc70fa6dd015cc5bef915d720625aae4f45"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScoreCountOrder",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountOrder.lean",
+      "source_sha256": "164a564f8fad899c43cad64e5814c6c514d1902872a0fd3c7f54d5d45340d788",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreCountOrder.olean",
+      "object_sha256": "926d6024569d8bda562c26df54dfcb1e3c2997169d7e7399a594fdfc535f56ef"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScorePhysicalSearch",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePhysicalSearch.lean",
+      "source_sha256": "86686122e36f780bf396d4c8cbf28c05574cf774de682dc6db5370841e8f0669",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScorePhysicalSearch.olean",
+      "object_sha256": "fbaac4a332bf7cf883d64ee6100cab731498edfd5dd971e420f49e9c47f0b333"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceScorePhysicalCaller",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePhysicalCaller.lean",
+      "source_sha256": "2c54e4cc5fbcadc8ec2a82030c71f4dca2fa0fc14ce8f707acb5f46781d4a630",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScorePhysicalCaller.olean",
+      "object_sha256": "4d71c3e1c9b0fbb77803cbc1ec35a5ff4c6b1a921e1dd0e4bddbc4afff303b34"
+    }
+  ],
+  "review": {
+    "path": "/tmp/semiprime-score-count-20261027/review-physical-score-search.md",
+    "sha256": "fc33561de866e70b2ef8e56c5e2b62e68aa2edc95beb001332ae3adf48429665"
+  }
+}

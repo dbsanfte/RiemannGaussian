@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-26",
+  "classification": "Weaker sufficient symmetric readouts and a one-prime order-divisor consumer; no acquisition exponent gain",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft K^(5/4) for the weighted whole-family query; this is not the best known general factoring bound",
+  "new_evidence": [
+    "Universal canonical squared-tag pair has a two-root public Hensel decoder and soft-K recovery, so an odd orientation jet is unnecessary.",
+    "Primitive canonical sign/swap invariant has a ramification-safe O(sqrt K) quartic palette, acquired and consumed within soft K conditional on its pole pair.",
+    "Executed finite AW short-index connection retains a common long bulk; the residual sum evaluates exactly the paid fringes.",
+    "Any acquired nontrivial divisor of either good local scalar/norm-one order yields four smaller-factor AP classes and a soft-K consumer; that divisor remains unacquired.",
+    "Every native exact hit has discriminant -H*u^2, so the standard Igusa seed deletes it. Appell algebra has the appropriate polar support with Laurent chambers kept distinct.",
+    "Alternative Appell windings and complementary target reduce to the existing axis Frobenius controller; no new cheap supplier results."
+  ],
+  "remaining": "Acquire sufficient whole-family additive pole pairs or other adequate arithmetic information in total soft K, preserving coverage and native guards; complete the all-semiprime bit-complexity proof.",
+  "reviews": [
+    "review-primitive-asymmetry.md",
+    "review-axis-two-orders.md",
+    "review-lattice.md"
+  ],
+  "validation": {
+    "mathematical": "Three independent paper reviews plus root audit and direct primary-source formula checks. Axis carry convention, all-content conic provenance, Laurent chambers, canonical weights, ramified root counts and HH constants corrected before archive. Not Lean.",
+    "status": "pass",
+    "local_links_checked": 13,
+    "source_pins_checked": 10,
+    "git_diff_check": true,
+    "json_and_whitespace": true,
+    "preservation_hashes": true
+  },
+  "preservation": {
+    "protected_files_verified": 1000,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1564545,
+        "sha256": "948d7c20cd79afa58b85532c142b99cef04c4471dd35829e6d1c5bf61f892092"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2463016,
+        "sha256": "020925e4f360fd51e8bc92d852505c58ae7ada4f00744c2f63f581e292c49f5f"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "78b13370fc5d0dec06f71df5175976bb6e97a5629d47ac5466ca117a5361d6bb"
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

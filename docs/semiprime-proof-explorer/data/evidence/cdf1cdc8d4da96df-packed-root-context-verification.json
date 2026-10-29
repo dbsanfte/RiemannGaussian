@@ -1,0 +1,169 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 7,
+    "declarations": 152,
+    "theorems": 86
+  },
+  "modules": {
+    "SemiprimeD1StackPackedRootContext": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootContext.lean",
+        "sha256": "8ae176a75a58fe75e9ad0d1e66f93e35ca85f8e9a4cbdc7bba6ac8b9b12de402"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootContext.olean",
+        "sha256": "de1e1d4fad5d388910065df675757e7dba09c38ef26f89b9c2defac5e16ef5dd"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-frozen/SemiprimeD1StackPackedRootContext.olean",
+        "sha256": "de1e1d4fad5d388910065df675757e7dba09c38ef26f89b9c2defac5e16ef5dd"
+      }
+    },
+    "SemiprimeD1StackPackedRootContextEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootContextEncoding.lean",
+        "sha256": "805ebf93fda207901175d28abc1d2dc5e217334715e4e5ec3de027272a2f15d6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootContextEncoding.olean",
+        "sha256": "a3e2b970db9a2fe1b853b5b7c531edecdf4e997dcbdea546b53e03bbead59d61"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-frozen/SemiprimeD1StackPackedRootContextEncoding.olean",
+        "sha256": "a3e2b970db9a2fe1b853b5b7c531edecdf4e997dcbdea546b53e03bbead59d61"
+      }
+    },
+    "SemiprimeD1StackPackedRootContextPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootContextPrimitives.lean",
+        "sha256": "a527f7836fc7b98340f15556e87087285a30c1918a3827ecd8f3178fb9f3c3c6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootContextPrimitives.olean",
+        "sha256": "7d0ac6078532c761589deccbb2124468cf79028e7696c7cfa191cc58f3d640a0"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-frozen/SemiprimeD1StackPackedRootContextPrimitives.olean",
+        "sha256": "7d0ac6078532c761589deccbb2124468cf79028e7696c7cfa191cc58f3d640a0"
+      }
+    },
+    "SemiprimeD1StackPackedRootContextCalls": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootContextCalls.lean",
+        "sha256": "4c877306156e89112f5d753163492c32bdd6127f0372c8cc76ce7d9764d9177c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootContextCalls.olean",
+        "sha256": "b746ec8f08e1a93a4ad12586adfd5732d7d779b2e4d986ba296790abd47b3426"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-frozen/SemiprimeD1StackPackedRootContextCalls.olean",
+        "sha256": "b746ec8f08e1a93a4ad12586adfd5732d7d779b2e4d986ba296790abd47b3426"
+      }
+    },
+    "SemiprimeD1StackPackedRootContextExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootContextExecution.lean",
+        "sha256": "b153fdae77bfcebe6758b06c8abf9e1120737398c79ea29d9ad45a0ebf31376b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootContextExecution.olean",
+        "sha256": "fdb80193a38843a71355eaf998cf234bad4e389d433a796d5d673ecbcef9a556"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-frozen/SemiprimeD1StackPackedRootContextExecution.olean",
+        "sha256": "fdb80193a38843a71355eaf998cf234bad4e389d433a796d5d673ecbcef9a556"
+      }
+    },
+    "SemiprimeD1StackPackedRootContextStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootContextStorage.lean",
+        "sha256": "73bcd6883e71d0791bcee25758f31f6a5a40993477d375b567b09d2c3f2d4584"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootContextStorage.olean",
+        "sha256": "7f89f691071bac5cc9ae2ff5fbafec0cd5ba25829bb3da1fe1a20f1681dc1b8f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-frozen/SemiprimeD1StackPackedRootContextStorage.olean",
+        "sha256": "7f89f691071bac5cc9ae2ff5fbafec0cd5ba25829bb3da1fe1a20f1681dc1b8f"
+      }
+    },
+    "SemiprimeD1StackPackedRootContextOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootContextOriginal.lean",
+        "sha256": "9489a8d0d566e72963a1047f7d7d5b73817d96d3520cea7130d032704a2c945e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootContextOriginal.olean",
+        "sha256": "114127252d3c84f5f2ddca6566a8334523698f0011f3f143063d14b81150e1e0"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-frozen/SemiprimeD1StackPackedRootContextOriginal.olean",
+        "sha256": "114127252d3c84f5f2ddca6566a8334523698f0011f3f143063d14b81150e1e0"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PackedRootContextControls.lean",
+        "sha256": "aeac74a130e3a4877ecbaaadaa659e1a3379fdd551bfa619cd85d788bb51ec8c"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-frozen/control-0.log",
+        "sha256": "fc2b8dbdb919a5271bc5095fb88f4eb62bdfb12c31e93b430c37342ecd9bf089"
+      },
+      "expected": "PACKED_ROOT_CTX_CASE bytes=0 actual_cached_entry=false actual_transitions=46 all28=true metadata_calls=1 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=0 actual_cached_entry=true actual_transitions=33 all28=true metadata_calls=0 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=1 actual_cached_entry=false actual_transitions=134 all28=true metadata_calls=1 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=1 actual_cached_entry=true actual_transitions=72 all28=true metadata_calls=0 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=2 actual_cached_entry=false actual_transitions=221 all28=true metadata_calls=1 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=2 actual_cached_entry=true actual_transitions=102 all28=true metadata_calls=0 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=3 actual_cached_entry=false actual_transitions=288 all28=true metadata_calls=1 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=3 actual_cached_entry=true actual_transitions=109 all28=true metadata_calls=0 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=3 actual_cached_entry=false actual_transitions=288 all28=true metadata_calls=1 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=3 actual_cached_entry=true actual_transitions=109 all28=true metadata_calls=0 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=5 actual_cached_entry=false actual_transitions=471 all28=true metadata_calls=1 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CASE bytes=5 actual_cached_entry=true actual_transitions=153 all28=true metadata_calls=0 actual_precision_copy=1 axes_FALSE_write=1 context_source=1 rank1=true TRUEwidth2ell=true within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_CTX_CONTROLS cases=12 actual_transitions=2026 all28=true whole_cases=6 same_cache_ready_cases=6 no_supplied_precision_rank_width=true all_metadata_retained=true flags_clear=true two_real_outer_returns=true\nPACKED_ROOT_CTX_OBSERVER declarations=30 standard3_only=true"
+    }
+  ],
+  "full_goal_complete": false,
+  "source_canonical_writers_stopped": true,
+  "immutable_read_only": true,
+  "heartbeat": 200000,
+  "raised_heartbeats": false,
+  "proof_maxRecDepth": 32768,
+  "strict_final_gate_actual_terminal0": 97062,
+  "actual_imported_pins": {
+    "pairs": 17607,
+    "before": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-live-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-live-after.json",
+    "before_after_live_unchanged": true
+  },
+  "independent_review": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-independent-review.txt",
+    "sha256": "30cddeaee3585cc80db58a201895d7d538ebdc7cfd13f5b4c17d0d1ea40ea2a1",
+    "current_source_pins": 7,
+    "status": "PASS"
+  },
+  "scope": "N-only actual13Metadata once\u2192paidbinaryPcopy\u2192literalFALSEemptyaxesheader\u2192actual15Context\u2192truehalt. ALL13metadata retained, actualrankTRUE1/TRUEwidth2ell, all28+realreturns counted. SAMEactualMetadatareadyentryproved, no standalonecontextanswerinput.",
+  "whole_own_time": "2000*(physicalinputbytes+1)^2",
+  "ready_own_time": "1000*(physicalinputbytes+1)",
+  "whole_all28_and_actual_returns_every_prefix": "1000000*(physicalinputbytes+1)^2",
+  "ready_all28_and_actual_returns_every_prefix": "1000000*(physicalinputbytes+1)",
+  "original_binding": "CompactN internally yieldsactualContext([],PackedMomentPrecision.precisionN=2ell), exactTRUEwidth/rank/header/retainedN andactualrootpathCap guard; FALSEtemplate separate",
+  "actual_controls": {
+    "whole_cases": 6,
+    "prepared_actualMetadata_ready_cases": 6,
+    "whole_steps": 1448,
+    "ready_steps": 578,
+    "total_steps": 2026,
+    "observer_Std3": 30,
+    "all28_flags_2outerreturns_actualcalls": true
+  },
+  "public_APIs": [
+    "Execution.source_run_bounded/ready_run_bounded",
+    "Original.source_original/context_original/actual_precision_guard/machineOriginal",
+    "Storage.machine_prefix_cells/machine_ready_prefix_cells"
+  ],
+  "remaining": "Actualweightednetwork/phase/currentnode/countercallerjoin, canonicalrows andphysicalbinaryfactorrecovery/fullbitbound OPEN",
+  "failed_attempts_archived": "/tmp/semiprime-explicit-rate-20261027/packed-root-context-failed-attempts",
+  "utc": "2026-10-29T01:22:14.363126+00:00",
+  "no_journal_registration_commit_push": true
+}

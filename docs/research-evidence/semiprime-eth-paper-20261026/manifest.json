@@ -1,0 +1,16 @@
+{
+  "algorithm": "sha256",
+  "excludes_self": true,
+  "files": {
+    "README.md": "ea2739c4f1562c0878676106fd9696e12ef66344d9f61fbf512915359f0a013c",
+    "archive-provenance.json": "1b79dc616596d614f57efd0d2fa8840ffe10bd7a311fec596befe94f0da52458",
+    "check_fft_bridge.py": "a9d8c7789558429d8a2b9ebde073b7fdab25ba4c1a8a6633fd502828854c8b27",
+    "identity-checks.json": "1d8611edc22540c58e736ffccf34f2f242e0d5e1ed972c26383ec0b1de778e7a",
+    "implications.md": "de1920f2a5ad252033e165483990e93b403b0b1c8b8f0afe995245a4297359e4",
+    "review-factor-network.md": "9508c71ef14692ae7230508dfcf156a1bfe76e9d171e7ea0e69127b45c14e0a9",
+    "review.json": "1c08da46c4da96d428eb35c37f403309093323659074eae736ef406c3eb0b193",
+    "shared-summaries.md": "13aec7b9e596f6b61fb32953d089930cb85d363d9eb619a45d2619aa261ed61f",
+    "sources.json": "262c27cf75656d1f2e922a77bbc991418d794c940c75416d7b7bb92f99ef9e65",
+    "tensor-counting.md": "02663401281340b865b800fee40e77d86a99c69ae24991ae7d64365967664245"
+  }
+}

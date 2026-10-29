@@ -1,0 +1,9 @@
+# Actual integer score-weight acquisition
+
+The two frozen modules execute seven unsigned mulBits circuits once to cache A=n²lambda²U² and B=4M², then two multipliers and an adder per candidate for A I+B H. All unsigned outputs retain their actual bit arrays; no rational normalization, GCD, supplied encoded result or Fits assumption controls execution. scoreWord is the literal positive denominator-one wrapper, proved valid and exact.
+
+The original acquire M n r Q lambda constructs U through unaryPower replication and obtains four original integer words with actual Boolean-increment natBits. All producer/circuit reports are retained. acquire_value/length/clock derive exact weights, physical size and the explicit acquisitionBudget solely from original dimensions, with positive r for the resource theorem. Its uniform diagonal has fixed monomial growth in actual materialized dimensions including U, not in log U. Per-candidate combine length/clock bounds require only original operand lengths. The optional evaluate acquires host Nat counts by actual natBits and retains that cost; it is a transitional explicit interface, not the planned final physical count path.
+
+Native natural parameter/control arithmetic remains a stated host boundary. No whole source/public-machine switch or full bit-time theorem is asserted. Physical count recursion and original terminal binding are now achieved in SourceScoreCountBits; its actual produced words feed combine directly, avoiding the transitional Nat-count encoder. The new original-label search/caller joins this physical score path at the stated typed-label/native-metadata boundary. Full primitive-machine and public-counter composition remain separate.
+
+Strict builds, ordinary-root15 and all-generated transitive standard3 audit PASS95 declarations/69 theorem constants; both independent isolated objects are byte-identical. Exact hashes are in score-weight-verification.json. Sources frozen after these gates.

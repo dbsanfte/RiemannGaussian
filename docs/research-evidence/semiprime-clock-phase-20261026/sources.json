@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-six-domain-acquisition-20261026/README.md",
+      "sha256": "7f02576b9f1da50468198ba620001c547361d486ffd9e00ebc0944c2d7d482ad"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-weighted-20261026/unique-cover.md",
+      "sha256": "bc428cc2b5e91b3c0b2b848a70f49f6669f590fec851b679364db441bdfe9276"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-weighted-20261026/check_unique_cover.py",
+      "sha256": "71377a44b5ee8d51bcb0aee8c39fa67da41bb738c5c2c8b4830dc51fd8c046c5"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-pole-20261026/selected-subresultant.md",
+      "sha256": "923bc7bfc5f35ed1d72d2a15896331e48711f6435e2d6eb8656568ba59b0e096"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-scalar-acceleration-20261026/coupled-section.md",
+      "sha256": "53d18199858b1494b4ae68116971f5115a711f7ae9e60967859ec5000407f0dc"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-scalar-acceleration-20261026/pole-kernel-handoff.md",
+      "sha256": "8953772424a18b1b55cce7577ab2dd05cfa5ad5774a0dcbf274689db1c247924"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-collective-20261026/quantum-torus.md",
+      "sha256": "f202a37096723d41c5a9d65fac163643d5672c9ed79f134519b3050b127d3c45"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-weighted-recurrence-20261024/variable-windows.md",
+      "sha256": "ec0dd0acc8af6d60c71aeaa1098865f2d86ecc4ed63c5f7e8da51c0e81dc8d4b"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "Wenchang Chu, Terminating Almost Poised q-Dixon Sums",
+      "url": "https://www.jstage.jst.go.jp/article/kyushujm/77/1/77_131/_pdf/-char/en",
+      "location": "Printed page 132, equation (1)",
+      "check": "Root downloaded the primary PDF and checked extracted text and the rendered page after web-tool timeouts.",
+      "pdf_sha256": "fe60b1f9c35e83028704391b05118d9dcc193a1626f2e027a55cd66b74686643",
+      "scope": "Finite terminating identity only; specialization retains the long paired product."
+    },
+    {
+      "title": "Soichi Okada, Pfaffian Formulas and Schur Q-Function Identities",
+      "url": "https://arxiv.org/html/1706.01029",
+      "location": "Theorems 4.1 and 5.1; equations (4.1) and (1.6)",
+      "check": "Primary source reopened by root.",
+      "scope": "Finite generating and Cauchy identities; tested opposite-variable cancellation erases the desired divisor."
+    },
+    {
+      "title": "Tsukasa Ishibashi, Cyclic Quantum Teichmuller Theory",
+      "url": "https://link.springer.com/article/10.1007/s00220-026-05604-6",
+      "location": "Section 2, Lemmas 2.1 and 2.5",
+      "check": "Primary source reopened by root; read with the correction below.",
+      "scope": "Finite cyclic parameter hypotheses are not satisfied by the native high-order arithmetic q."
+    },
+    {
+      "title": "Phases in the cyclic quantum dilogarithm: correction to Cyclic quantum Teichmuller theory",
+      "url": "https://arxiv.org/html/2610.23572v1",
+      "check": "Primary correction checked; prior audit credited to the frozen collective packet.",
+      "scope": "No phase-free pentagon or branch identification is imported."
+    },
+    {
+      "title": "Garoufalidis, Morton and Vuong, The SL3 colored Jones polynomial of the trefoil",
+      "url": "https://people.mpim-bonn.mpg.de/stavros/publications/sl3trefoil.pdf",
+      "location": "Section 3, equations (9)-(10)",
+      "check": "Primary source checked by root.",
+      "scope": "Adams character and torus-knot sums retain dimensions and twist weights; no native long-response algorithm supplied."
+    }
+  ]
+}

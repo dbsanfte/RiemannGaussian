@@ -1,0 +1,60 @@
+Independent current full source review PASS: all8 modules/all601 lines read by3 independent reviewers. All assignment=before=after=currentSHA. Noimports/builds/edits/controls by reviewers.
+
+OWNER
+ChildUnitVertex32 independent read-only owner review: PASS
+All171 current assigned source lines read, Spec/Bounds/Meaning FULL bodies. Assignment=before=after=current SHA256 pins below. No imports/builds/edits/control reruns.
+Spec proves literal dense unit words and complete FALSE-tagged table tape including zero-width precision; actual inactive child ports EMPTY follows internally from inactive_child_empty plus exact child_length. Native inactive whole vertex equals unit via full canonical_recopy identity, without parent-table operand. Bounds charge both original physical headers plus rank/precision VALUES and semantic Good table bytes; no elapsed-producer-time or subtree-runtime powering. Actual context/unit calls, fullframe/record bits paid by SAME timeBound, fixed coefficient1e8/degree2 before all inputs. Genuine compiled prepared source certificate starts before acquisition. Meaning uses actual inactive predicate only as erased native interpretation, derives same whole native record from2actualheaders; positivity actual extra++old.axes required, new precision remains independent. Activity branch/fullzip/N-only caller explicitly OPEN. No blocker.
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexSpec.lean 6199c00e872842f0c2186e5f7452115a7d99786a969034221c3ba461340eada6
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexBounds.lean 3316f83b64dedf50c941eec1a97370cae973cf7e0279d930b5873b1b8aa73584
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexMeaning.lean f62b653b7045dcd68d1cf4296fcb4b0c08d03632244b5c72e61cc7ea9a11db88
+
+PORT
+Independent READ-ONLY port review: PASS; no blocker found.
+EVERY body/all186 current lines read: Calls120 +Original66. No imports/builds/edits/canonical writes/control reruns. All2 source pins assignment=before=after=live.
+
+Calls.bank_unit projects the real unit width/rank directly from ACTUAL J15 cache words. bank_initial is a proof identity that does NOT fill either allocated displaced U15 shadow: those two physical words remain EMPTY/masked while the unit reads the shared context cache. context_call executes the real J15 from ONLY axes-header plus original binaryprecision, and derives both actual unary width/rank; their VALUE lengths follow actualfinalData. unit_call executes the whole real Unit15 using exactly these acquired words, including precisionzero. The physical contexts/foreign record/scratch words are retained through both real calls and real outer-return preservation, with no supplied rank/width/unit/record/Fits/clock operands.
+
+Original composes SAME actual context call, unit call, literal assembler and true halt into exact whole inactive canonical vertex record bytes. Original positivity is a semantic property of the actual axes, not a runtime answer. Full32-role stopped state has flags/returns empty; exact table/record identities preserve current context/precision and the single vertex/terminator convention. timeBound correctly pays each actual call/return and actual tableWord Frame input INCLUDING its tree-leaf tag: Frame cost6*tableWordBytes+5 plus6literal assemblerbits, two call-overheads and halt give the declared +14 total. No elapsed child runtime or generic rank getter is substituted for output width. Activation selection, parent stream zip, literal N-only caller/fullcounter remain explicit separate obligations.
+
+BEFORE
+7bc02c16b6818475f17c57b0f2804bfda4aa02caddf095bab4175a2fe4224614  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexCalls.lean
+d27c58e1f8c8f161caf440ccb6920009d2a84006a0e149f7c34ac137dfe32f55  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexOriginal.lean
+
+AFTER
+7bc02c16b6818475f17c57b0f2804bfda4aa02caddf095bab4175a2fe4224614  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexCalls.lean
+d27c58e1f8c8f161caf440ccb6920009d2a84006a0e149f7c34ac137dfe32f55  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexOriginal.lean
+
+VERTEX
+{
+  "verdict": "PASS",
+  "utc": "2026-10-29T05:07:13.203183+00:00",
+  "reviewer": "/root/vertex_record_logger",
+  "all_assigned_lines_read": 244,
+  "modules": [
+    "SemiprimeD1StackChildUnitVertex",
+    "SemiprimeD1StackChildUnitVertexFrames",
+    "SemiprimeD1StackChildUnitVertexStorage"
+  ],
+  "scope": "Read all244 assigned lines/every body of Core/Frames/Storage, plus Original/Bounds as context for actual source/input/value resource and constants. Read-only: no imports/builds/edits/control reruns. Other5 group modules separately assigned.",
+  "source_sha256_before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertex.lean": "56b29e69eb52825b79a4916eda047a8fdf8488dd452223114f5f65ece45a221a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexFrames.lean": "4bf9e5cf8b6c4d430abd3ca8aaa12aa56096d8410dabd9234cead74057705761",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexStorage.lean": "95487aaec1008524fe458ae0690999f925f41f4d3933a0f3659b558bed8a5fbd"
+  },
+  "source_sha256_after_current": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertex.lean": "56b29e69eb52825b79a4916eda047a8fdf8488dd452223114f5f65ece45a221a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexFrames.lean": "4bf9e5cf8b6c4d430abd3ca8aaa12aa56096d8410dabd9234cead74057705761",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildUnitVertexStorage.lean": "95487aaec1008524fe458ae0690999f925f41f4d3933a0f3659b558bed8a5fbd"
+  },
+  "assignment_before_after_current_match": true,
+  "findings": [
+    "Actual fixed source calls wholeJ15 context acquisition on ONLY two physical headers, then wholeU15 unit source with width/rank DIRECTLY aliased to the SAME acquired J caches. No rank/precision/unit/table answer is a runtime operand. Actual source initialization contains only vectorBits(axes.map unary) and binary precision, with all other words EMPTY.",
+    "The complete allocation counts J15+U15+2record/scratch=32, including both displaced dedicated U width/rank shadows. The unit injection is physically injective; its unused shadows are explicit EMPTY words, included in all32 sums. Both included producers retain the physical caller bank at the intended stopped boundary; full Calls details are complementary reviewer scope.",
+    "Frames assemble the actual U output via one paid leafFALSE push, actual recordFALSE sentinel, one restoring full-table Frame, and four literal empty-scope/vertex pushes. The resulting TRUE::TRUE::FALSE::FALSE prefix is exactly vertexTRUE followed by frame(portTape[]=[FALSE]); no supplied empty scope/table record is read or native table opcode invoked.",
+    "Actual frame call has distinct physical source/output/restoration scratch and real caller return; all table bytes are physically copied/restored. Frames.assemble_run charges6*tableBytes+11 for leaf/record tags/frame/four literal scope+vertex bits, before finalhalt. Existing Original/Bounds separately charge both producer calls and actual finalhalt with +14 complete overhead. The actual table is preserved after its necessary leaf tag; scratch is restored EMPTY.",
+    "Storage bounds SAME real whole-source prefixes by its actual proved halt; no run survives past halt. It charges all32 physical tapes, including retained original headers/acquired caches/unit data/record and both shadows, plus the actual none-label return stack. FinTM2 configuration/run_correct joins the same entry/program and finite labels. Own1e8*(R+1)^2 clock and1e11*(R+1)^2 cells use actual header bytes, unary axisVALUES, product/rankVALUE and binary precisionVALUE. This is not a polynomial-in-log(rank/precision) claim.",
+    "Semantic table byte cap uses original Good/unit context dimensions, independently of earlier producer elapsed clocks. Positive original axes are the honest family domain; empty axis list (rank1), precision0/raw padding are not silently excluded. No native/report-clock transport, free rank/width initialization, omitted shadow or uncharged frame/tags found.",
+    "The two-header prepared boundary is explicit. Original-N branch/controller acquisition, choosing inactive mode and full zip/child/network/counter pipeline remain OPEN; this review makes no N-only/fullfactorer assertion."
+  ],
+  "blockers": []
+}

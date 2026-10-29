@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "archived": "README.md",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/README.md",
+      "source_sha256": "736f06a3a2fb18141cb2f6c8c976c15aaa0a2acfaeca79d265bda058bd9a9831",
+      "archive_sha256": "736f06a3a2fb18141cb2f6c8c976c15aaa0a2acfaeca79d265bda058bd9a9831",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "collective-character.md",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/collective-character.md",
+      "source_sha256": "618b871d6b719e2839db9f422551b8209f3751bb1aa80619a6c354049ab00876",
+      "archive_sha256": "618b871d6b719e2839db9f422551b8209f3751bb1aa80619a6c354049ab00876",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-collective-character.md",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/review-collective-character.md",
+      "source_sha256": "19b3401fb60da83b4e0d8e60ca600e42cf3a376162f5dd7a2821d91d1726a925",
+      "archive_sha256": "19b3401fb60da83b4e0d8e60ca600e42cf3a376162f5dd7a2821d91d1726a925",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "deformed-telescoping.md",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/deformed-telescoping.md",
+      "source_sha256": "24cf2740474ececd7d5b9fbf4179f3507f08dfd10c7d0e4b2348b9a05677b520",
+      "archive_sha256": "94513d37a5d7b3390db018c1534dcb6dd5e2f8a065a488a73fa007029adf1292",
+      "copy": "Standalone formula indentation normalized as Markdown code; no algebra changed."
+    },
+    {
+      "archived": "review-deformed-telescoping.md",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/review-deformed-telescoping.md",
+      "source_sha256": "39d97ea3b6c0eb41c8d60baa1491072fec9310874c7641840df02329b141414f",
+      "archive_sha256": "39d97ea3b6c0eb41c8d60baa1491072fec9310874c7641840df02329b141414f",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "content-cover.md",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/content-cover.md",
+      "source_sha256": "312967a999516dcafa4006b3b36db3e5958c661de971b86d8ebe18ee7527acb9",
+      "archive_sha256": "312967a999516dcafa4006b3b36db3e5958c661de971b86d8ebe18ee7527acb9",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-content-cover.md",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/review-content-cover.md",
+      "source_sha256": "3ea1488cacf40598d86022512c012ed2ea06124b6e7e26e6d57b0e398756ddf7",
+      "archive_sha256": "3ea1488cacf40598d86022512c012ed2ea06124b6e7e26e6d57b0e398756ddf7",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "check_content_structure.py",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/check_content_structure.py",
+      "source_sha256": "811171bd729807786381043ddb999d16197b10c9b1c5d6589b491fa444e8a280",
+      "archive_sha256": "811171bd729807786381043ddb999d16197b10c9b1c5d6589b491fa444e8a280",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "content-structure-results.json",
+      "scratch_source": "/tmp/semiprime-residue-shortcuts-20261026/content-structure-results.json",
+      "source_sha256": "cf99ce968d038292c503112d4f69468c410baf591831d3ed3656c26efe5bfc38",
+      "archive_sha256": "cf99ce968d038292c503112d4f69468c410baf591831d3ed3656c26efe5bfc38",
+      "copy": "verbatim"
+    }
+  ],
+  "note": "Scratch reports and independent reviews archived after root integration. Root authored README and metadata. Earlier packets preserved; downloaded primary PDFs remain scratch-only.",
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

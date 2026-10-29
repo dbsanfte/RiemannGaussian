@@ -1,0 +1,5 @@
+import RiemannGaussian
+import RiemannGaussian.SemiprimeStreamingTensorHeight
+#lint- in RiemannGaussian.SemiprimeStreamingTensorHeight
+#print axioms RiemannGaussian.SemiprimeStreamingTensorHeight.abs_coeff_sum_product_polynomialNumerator_le
+#print axioms RiemannGaussian.SemiprimeStreamingTensorHeight.sum_product_polynomialNumerator_map

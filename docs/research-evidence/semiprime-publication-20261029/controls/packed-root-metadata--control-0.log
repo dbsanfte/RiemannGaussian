@@ -1,0 +1,8 @@
+PACKED_ROOT_META_INPUT bytes=0 actual_transitions=12 all13=true bootstrap_calls=1 real_adds=0 copies=1 false_width_writes=0 within_own_clock=true flags_clear=true two_outer_returns=true
+PACKED_ROOT_META_INPUT bytes=1 actual_transitions=61 all13=true bootstrap_calls=1 real_adds=1 copies=2 false_width_writes=2 within_own_clock=true flags_clear=true two_outer_returns=true
+PACKED_ROOT_META_INPUT bytes=2 actual_transitions=118 all13=true bootstrap_calls=1 real_adds=2 copies=3 false_width_writes=4 within_own_clock=true flags_clear=true two_outer_returns=true
+PACKED_ROOT_META_INPUT bytes=3 actual_transitions=178 all13=true bootstrap_calls=1 real_adds=3 copies=4 false_width_writes=6 within_own_clock=true flags_clear=true two_outer_returns=true
+PACKED_ROOT_META_INPUT bytes=3 actual_transitions=178 all13=true bootstrap_calls=1 real_adds=3 copies=4 false_width_writes=6 within_own_clock=true flags_clear=true two_outer_returns=true
+PACKED_ROOT_META_INPUT bytes=5 actual_transitions=317 all13=true bootstrap_calls=1 real_adds=5 copies=6 false_width_writes=10 within_own_clock=true flags_clear=true two_outer_returns=true
+PACKED_ROOT_META_CONTROLS cases=6 actual_transitions=864 all13=true whole_input_words_only=true no_supplied_length_precision_base=true original_and_full_boot_retained=true private_shadow_clear=true flags_clear=true two_real_outer_returns=true
+PACKED_ROOT_META_OBSERVER declarations=31 standard3_only=true

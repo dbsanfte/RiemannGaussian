@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-26",
+  "primary_literature": [
+    {
+      "title": "Faster modular composition using two relation matrices",
+      "authors": "Neiger, Salvy, Schost, Villard",
+      "version_date": "2026-01-24",
+      "url": "https://arxiv.org/html/2601.17422v1",
+      "scope": "Theorems 1.1-1.3 and projected powers; supplied polynomial inputs and field/genericity conditions; not an implicit q-product supplier."
+    },
+    {
+      "title": "Power Series Composition in Near-Linear Time",
+      "authors": "Kinoshita, Li",
+      "version_date": "2024-09-22",
+      "url": "https://arxiv.org/html/2404.05177v2",
+      "scope": "Theorem 1 over arbitrary commutative rings; supplied outer polynomial and nilpotent-series modulus, with M(m) input cost."
+    },
+    {
+      "title": "Residues and Telescopers for Rational Functions",
+      "authors": "Chen, Singer",
+      "url": "https://arxiv.org/html/1203.4200",
+      "scope": "Residue/telescoping motivation only. Source hypotheses are characteristic zero and non-root-of-unity q; native finite-orbit necessary condition is proved directly."
+    }
+  ],
+  "repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/hybrid-handoff.md",
+      "sha256": "cba1559069b42b1a6d12351eb5603298b6d485e1eaff14addf3d16a0458dddda"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-coefficient-forms-20261026/README.md",
+      "sha256": "2537154926cd99b7a879afa0744b5618ed9059ce973d849c63186d09f082c007"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-coefficient-forms-20261026/combinatorial-expressions.md",
+      "sha256": "7b764935b5e1a874fa10eea2160eefface047735bef523bd69a5ea28b2517503"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-coefficient-forms-20261026/residue-expressions.md",
+      "sha256": "32516600ec513888e205a20d0c966f55906df1eca927ac64bf6ced9ddc8a825c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-coefficient-forms-20261026/structured-expressions.md",
+      "sha256": "bf2ca79bcc8360d016ebddd8f7650761e1caa5f96857ffef8c52493c9d4bce60"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/symmetric-supplier-audit.md",
+      "sha256": "e31daf2b017109cd844bda3b5814cac84bd000ac223a7571efe13c615ff1ac62"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-large-order-recurrence-20261024/rough-torus-working.md",
+      "sha256": "6333f318c8bc1c1e88a398aaeff94efb83b0d2e6ead3d64d455317b41036dcda"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quadratic-ideal-20261024/torus-order-supplier.md",
+      "sha256": "1f3033cc85c1b6798a188daa7b7c32d702b87d2cb3401e3e1f1afe6cb3a4e9bc"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quotient-gradient-20261024/weak-readout.md",
+      "sha256": "6d324cd99fa32427de877666e82fb67cc60c857c49e2eecbaa9ad2526e1d9bd1"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-rough-block-composition-20261024/rough-index-cancellation.md",
+      "sha256": "283cb2dd6b39f1c84aa62e488703bc2f68a89e3fda2d6620aa14a59dc5236da0"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-unique-acquisition-20261024/orientation-palette.md",
+      "sha256": "97db9cf0004dac3ec2c6c9cc341b27531fb90c51d5f6739e6b121c6bc4e20fbf"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-unique-acquisition-20261024/unique-gcd.md",
+      "sha256": "8eba0f3676ef0de414f4b48fa463a54058aed4fed97db3a0557be0189ec8c862"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unbalanced-annihilator-20261016/reports/uniform-setup-and-query-interface.md",
+      "sha256": "4c4efaba5c3a09dd4ca1a87801e44212d5fcd2570ff26ec5f193f71589ec0d46"
+    }
+  ],
+  "journal_prefix": {
+    "bytes": 2438576,
+    "sha256": "bdeb994ac4e49a2164ca241a904a5733f95b2af00baf67b25aacd9e6891f9072"
+  },
+  "new_proofs": "Finite algebra and degree counting in this packet; independently reviewed, not Lean-certified."
+}

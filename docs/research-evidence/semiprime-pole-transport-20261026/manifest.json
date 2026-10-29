@@ -1,0 +1,18 @@
+{
+  "algorithm": "sha256",
+  "excludes_self": true,
+  "files": {
+    "README.md": "eb810f072d96a5024b6c14ad3bdc84959593c04a78bdcfc67e676b9cfa73bae6",
+    "archive-provenance.json": "156bb931518a850c76b91c7db753ef652a5aacbb6cb7b8b12f285c79c4b79261",
+    "arithmetic-transport.md": "99263907f72060a727c8483334a58f990ad0751125a385f456e4c10b0586cd83",
+    "divisor-cover.md": "31ea8b4caf13851004b48568791d4eff9f8ab57dcdb44e1235c81034cdfb9724",
+    "pole-transfer.md": "b4830d161ff6ec467e81748ea5b56c75a268f076b4db90d313836a87b452e4d9",
+    "retuned-composition.md": "3bbfc8c9a725842296e2803095104532d45918acd9d737b04e061f08b164a60a",
+    "review-arithmetic-transport.md": "e0d9797f96bc68b4de840bb90dedee6b07a71299866474cafcd85f74b0809bd5",
+    "review-divisor-cover.md": "7516669404ca232ce9505f6626a0b5e399d7bfb403e2cd3a15b311e6ec8f27d8",
+    "review-pole-transfer.md": "581b6c25f3547c8f6a7a9637d446187d468d4bfab59639466b98ccdce2dadab4",
+    "review-retuned-composition.md": "cf24166501a03d061671e83c807b15a2e8299c31a0b86ef923a5717172829a0a",
+    "review.json": "9401380782c25713105b16cb801124a4b371bf6d3d66ce10fafece71b4e7d5ae",
+    "sources.json": "88b639d0a02fbc286a076abd6d61b8077d95ea3701b2af83a649aba046919818"
+  }
+}

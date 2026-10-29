@@ -1,0 +1,31 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 1,
+    "declarations": 32,
+    "theorems": 29
+  },
+  "modules": {
+    "SemiprimeD1StackBooleanDescriptorRecordReject": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordReject.lean",
+        "sha256": "8d9aa8abded5b1272c8e88ee680e09b9dead364932b3ed5442769c85e6a3a761"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackBooleanDescriptorRecordReject.olean",
+        "sha256": "c3af0d28d5efcb93557683bc3ce4f79d75c3d38afeff0f356df2216bc902ed72"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/boolean-descriptor-reject-frozen/SemiprimeD1StackBooleanDescriptorRecordReject.olean",
+        "sha256": "c3af0d28d5efcb93557683bc3ce4f79d75c3d38afeff0f356df2216bc902ed72"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false
+}

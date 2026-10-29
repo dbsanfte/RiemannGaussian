@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-26",
+  "disposition": "reviewed paper-level results; no acquisition exponent improvement",
+  "goal_status": "active; unachieved",
+  "checks": {
+    "source_and_independent_mathematical_reviews": {
+      "axis": "pass with conditional smooth-order scope",
+      "character": "pass after n>0 unit-range correction",
+      "supergroup": "pass; latest colored-LG v3 checked",
+      "independent_weights": "corrected pass; generic Hecke naturality claim withdrawn",
+      "diagonal_Nichols_pair": "pass for finite free span/action/coaction only",
+      "two_mode_operator": "exact Yang-Baxter defect proves proposed generic extension invalid"
+    },
+    "symbolic": {
+      "command": "python3 docs/research-evidence/semiprime-knot-power-20261026/verify_symbolic.py",
+      "result": "pass",
+      "method": "identities in Z[p,a,b], no numerical parameter instances",
+      "input_basis_words": 64,
+      "p_equals_1_YB": true,
+      "a_equals_b_YB": true,
+      "target_defect": "p*b^2*(p-1)*(a-b)",
+      "determinant": "p^4*(a*b)^8"
+    },
+    "preservation": {
+      "protected_old_files": 704,
+      "old_file_hashes_match": true,
+      "existing_note_prefixes": 2,
+      "prefix_hashes_match": true
+    },
+    "local_links_checked_before_manifest": 13,
+    "whitespace_and_JSON": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "limitations": [
+    "No soft-k whole-family acquisition theorem",
+    "No collision-preserving scalar theorem for the resonant diagonal Nichols pair",
+    "No all-orders sub-square-root axis oracle",
+    "No theorem for power-level CRT carry/cutoff contraction",
+    "The GK equation/table status discrepancy and deferred proof are retained explicitly"
+  ],
+  "not_run": [
+    "numerical coverage campaign",
+    "Lean builds",
+    "public asset generation",
+    "commit",
+    "push"
+  ]
+}

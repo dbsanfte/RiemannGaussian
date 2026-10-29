@@ -1,0 +1,63 @@
+Independent full current source review: PASS. All8 modules/all660 lines independently read. No imports/builds/edits/control replays by reviewers. All assigned source pins BEFORE=AFTER=assignment=current.
+
+OWNER
+ChildLiftVertex136 owner independent read-only review: PASS
+All150 current source lines read, both Direct and Meaning complete bodies; current assignment=before=after SHA256s below. No imports/builds/edits/control reruns.
+Direct proves full Table equality, not only a residue/pointwise numeric equality: exact build/lookup reconstruction copies actual leaf bytes; canonical copyTable identity requires exact matching port degree. aligned_read covers every actual full assignment including default FALSE semantics; gather_length supplies alignment degree for ALL raw assignments. Full lifted-table fusion follows exact entry words, and copy_lift_aligned removes both whole intermediates with order/port length identities. No runtime native clock substitution.
+Meaning generic active_vertex carries its explicit degree condition; original_active_vertex discharges it internally using actual child_length plus actual order_length. source_run_actual invokes SAME real bounded136 source on actual parentVertex table/order/ports, derives parent Good from net Good, retains distinct oldp/newp and positive old/extra context. Result is ENTIRE actual native active record. Prepared seven-word boundary stays explicit; no N-only, inactive/rightpacket or fullcaller completion claim. No blocker found.
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1ChildTableDirect.lean 7583f3588f2e21ecac463686d7c4ca74c95bee9d7072484e1308517f7ada89d5
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexMeaning.lean 367186cf6f974bd671a8522081d7296c4899784bbd7ec9ed591a57d2f5198f72
+
+VERTEX
+{
+  "verdict": "PASS",
+  "utc": "2026-10-29T04:54:38.101918+00:00",
+  "reviewer": "/root/vertex_record_logger",
+  "all_assigned_lines_read": 192,
+  "modules": [
+    "SemiprimeD1StackChildLiftVertex",
+    "SemiprimeD1StackChildLiftVertexPrimitives",
+    "SemiprimeD1StackChildLiftVertexFrames"
+  ],
+  "scope": "Read every body/all192 assigned lines of Core/Primitives/Frames, plus Original and Bounds as context for the real source binding and exact constants. Read-only: no import/build/edit/canonical write/control. Complementary modules separately assigned.",
+  "source_sha256_before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertex.lean": "e6a0c2a152656851b8691430fc0bcb0ce198acf747f5cfe636f14764bba9fd61",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexPrimitives.lean": "d438bf1c6bbe410a5e770f05f6f3f5d3b4d103f4bf5027b5bc721658dba302f8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexFrames.lean": "b8d1637f4e4a595eeebd9009b81910f1b96763ed3255b16ec919d03bf4f6e137"
+  },
+  "source_sha256_after_current": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertex.lean": "e6a0c2a152656851b8691430fc0bcb0ce198acf747f5cfe636f14764bba9fd61",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexPrimitives.lean": "d438bf1c6bbe410a5e770f05f6f3f5d3b4d103f4bf5027b5bc721658dba302f8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexFrames.lean": "b8d1637f4e4a595eeebd9009b81910f1b96763ed3255b16ec919d03bf4f6e137"
+  },
+  "assignment_before_after_current_match": true,
+  "findings": [
+    "The fixed parameterless program actually calls the sealed whole134-role table source once before record construction. Literal FALSE record terminal is physically pushed; Frame(table) then Frame(actual retained scope) restore both sources and actual scratch, followed by literal TRUE vertex tag and truehalt. No record/table answer is a runtime input.",
+    "All134 actual source words, including checker template/live/DFS/counter and all shadows, are retained by the injective Sum.inl inclusion. Only two new real record/scratch words are allocated and counted, giving136. Each frame uses three distinct physical operands; generic DataRel lifts preserve all foreign source words and actual outer returns.",
+    "Actual source frontdoor has seven physical table operands only and both new words EMPTY. The original input is explicit prepared parent table/order/old axes+precision/new axes+precision/canonical scope; not N-only. Scope is the ACTUAL retained counter.bank, whose count was acquired by the frozen134 source. Scope bytes are exact portTape on original unary ordinal IDs; no native arity/getter is an instruction.",
+    "frames_run exact charge is6*tableBytes+6*scopeBytes+12 for FALSE push, TWO restoring realFrames with realreturns, and TRUE tag. Included134 call adds1; before-final-halt total overhead is+13, and the actual finalhalt adds1, so Original.timeBound correctly has +14. Both constants are explicitly charged; no off-by-one concern.",
+    "record_original is exact existing StackVertexProduct.records[v] ABI: TRUE::frame ports(frame table[FALSE]), including the actual complete acquired table and scope, all padding/order. Original closes generic actual table_call with frozen134 source_run_bounded; no unknown answer supplier, second alignment pass or canonical recopy. Bounds pays frame bytes through original semantic Good/dimension output cap, not a child elapsed-clock power.",
+    "The full counter/N-only operand extraction/activation/rightpacket caller bindings remain separate and explicit. Source semantics and all-prefix storage proofs in other modules are outside this three-file assigned review; extra context was read solely to validate real binding/constants."
+  ],
+  "blockers": []
+}
+
+PORT
+Independent READ-ONLY port review: PASS; no blocker found.
+Scope: EVERY body/all318 current lines of ChildLiftVertex Original97, Bounds107 and Storage114. No imports/builds/edits/canonical rebuilds/controls were performed. All3 assignment=before=after=live SHA256 pins matched.
+
+Original starts from EXACT seven physical words: parent table tape, actual cached-order tape, old unary-axes header, binaryoldp, actual extra++old unary-axes header, binarynewp and canonical unary-port scope vector. The source theorem composes the ACTUAL whole134 table source with REAL record framing and actual halt. Ports are retained unary IDs, fieldcount drives DFS arity, and exact table bytes are the individually lifted all-assignment table in original order. No coefficient/record/arity/rank/clock answer is an extra input. The result retains EVERY134 source word, exact canonical vertex record bytes and empty framing scratch. Semantic Positive/Good/oldp and extra-product premises describe actual original contexts, not runtime advice. Upstream parent-record extraction/activation/scope-order acquisition and full N-only caller/counter remain explicit OPEN obligations.
+
+Bounds pays the NEW complete table bytes using the semantic Good table_storage bound in the actual new context, including every compact coefficient and actual new-rank/precision VALUES. It does NOT raise an elapsed child runtime to bound an operand. Both rank and binarynewp VALUE appear in the resource, as required for materialized rank/width work. Actual scope bytes are charged. The whole source/real returns +twoFrames/tag/halt cap is own10^24*R²*2^D, with fixed coefficients/degree before all operands; no old native clock transfer occurs. Exact ordered metadata/port/table output bindings are unchanged.
+
+Storage includes the entire134 source/template/scanner/DFS bank plus two real framing roles =136. Initial62R bound comes from actual complete-template byte cap and scope tape. Prefix fuel is bounded from the SAME real terminating source trace, then SAME one-step data/return growth counts all136 physical words AND actual none-label saved-return cells. The compiled run_correct bridge is exact, giving10^27*R²*2^D for every actual prefix. No recursive elapsed-clock width substitution or omitted alias shadow is present in these assigned proofs.
+
+BEFORE
+df8a6b47893504b942763eb4d4d56da8b8ddb81d16bdcfed71a2b2104477aabd  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexOriginal.lean
+5b24934aa722810124bee06d57edd17244325a0444fb4bec989dc19c6f9e2fce  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexBounds.lean
+e3bd4df0e5054c22b4c84817bf7ca28c53d9465e0013fc21416059e9774bbf54  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexStorage.lean
+
+AFTER
+df8a6b47893504b942763eb4d4d56da8b8ddb81d16bdcfed71a2b2104477aabd  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexOriginal.lean
+5b24934aa722810124bee06d57edd17244325a0444fb4bec989dc19c6f9e2fce  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexBounds.lean
+e3bd4df0e5054c22b4c84817bf7ca28c53d9465e0013fc21416059e9774bbf54  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildLiftVertexStorage.lean

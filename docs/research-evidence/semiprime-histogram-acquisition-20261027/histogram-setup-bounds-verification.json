@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "module": "RiemannGaussian.SemiprimeSourceHistogramSetupBounds",
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramSetupBounds.lean",
+  "source_sha256": "f2580063ce31a4627e1ac01179dcafc5188257965e6b175afaa82a4d51251b64",
+  "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramSetupBounds.olean",
+  "object_sha256": "c9050004dd0acc69e1d950dc59932766e9a10d23d0b758a701029a37ddebe3de",
+  "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceHistogramSetupBounds.olean",
+  "isolated_sha256": "c9050004dd0acc69e1d950dc59932766e9a10d23d0b758a701029a37ddebe3de",
+  "byte_identical": true,
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "declarations": 19,
+  "theorems": 12,
+  "notes_sha256": "9de2d33a088d93344c56d80f3dfa5ce9eccbc154295155354c159cee6d8f2328",
+  "scope": "Actual complete original Setup.acquire retained report bound and fixed-family polynomial; native graph metadata/encoder interfaces and full address/TM composition remain explicit."
+}

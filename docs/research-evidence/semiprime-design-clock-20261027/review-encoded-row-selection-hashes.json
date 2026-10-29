@@ -1,0 +1,18 @@
+{
+  "SemiprimeEncodedRowSelection": {
+    "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeEncodedRowSelection.lean",
+    "sha256": "c6c2d7654bf4a132fe565f34bbc293bc4c74804d52ffc46c25fb9a5fcd52487f"
+  },
+  "SemiprimeRowSelectionBits": {
+    "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeRowSelectionBits.lean",
+    "sha256": "a14df61200083aef10a7e6c83d3a4db89a8044c332f466fac00bd5cc589d887d"
+  },
+  "SemiprimeRowSelectionBitArithmetic": {
+    "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeRowSelectionBitArithmetic.lean",
+    "sha256": "b2b5da24bb4584863ce1f33804c94e3eacdc75704442958e5dfb29071673df9f"
+  },
+  "SemiprimeMaterializedSelectionTemporaries": {
+    "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedSelectionTemporaries.lean",
+    "sha256": "dd7ed713faade689d75850e9b708eb13cdec91382596c9f3d9c4c895a7f10522"
+  }
+}

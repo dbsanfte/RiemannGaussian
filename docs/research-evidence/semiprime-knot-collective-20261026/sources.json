@@ -1,0 +1,94 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "Kashaev1994",
+      "title": "Quantum Dilogarithm as a 6j-Symbol",
+      "author": "R. M. Kashaev",
+      "url": "https://arxiv.org/pdf/hep-th/9411147",
+      "checked": [
+        "v2; Section 1 Eqs. (1.1)–(1.8), (1.16)–(1.18)"
+      ],
+      "use": "Odd root-of-unity cyclic modules and finite product normalization; arithmetic q cannot replace the auxiliary rotation."
+    },
+    {
+      "id": "Ishibashi2026",
+      "title": "Cyclic quantum Teichmüller theory",
+      "author": "Tsukasa Ishibashi",
+      "url": "https://arxiv.org/abs/2501.02316",
+      "doi": "10.1007/s00220-026-05604-6",
+      "checked": [
+        "Standard cyclic Weyl representation",
+        "Coefficient/regularity hypotheses",
+        "Read together with October phase correction"
+      ],
+      "use": "Cyclic quantum-dilogarithm framework; no native sparse-mask or block-normalizer algorithm is imported."
+    },
+    {
+      "id": "IshibashiCorrection2026",
+      "title": "Phases in the cyclic quantum dilogarithm: correction to Cyclic quantum Teichmüller theory",
+      "author": "Tsukasa Ishibashi",
+      "url": "https://arxiv.org/abs/2610.23572",
+      "version": "v1, 16 October 2026",
+      "checked": [
+        "Additional mu_N-cover lifting data",
+        "Pentagon phase and strict lifts on regular locus"
+      ],
+      "use": "Retain corrected phase/lift hypotheses; valid phase units do not remove collision-bearing block normalizers."
+    },
+    {
+      "id": "CimasoniSplice",
+      "title": "The Conway function of a splice",
+      "author": "David Cimasoni",
+      "url": "https://www.unige.ch/math/folks/cimasoni/splice.pdf",
+      "checked": [
+        "Theorem 3.1, printed page 5",
+        "Lemma 4.2"
+      ],
+      "use": "Exact linking-number substitutions and exceptional case; not an auxiliary-congruence-to-torsion shortcut."
+    },
+    {
+      "id": "CimasoniGeometric",
+      "title": "A geometric construction of the Conway potential function",
+      "author": "David Cimasoni",
+      "url": "https://ems.press/content/serial-article-files/43000",
+      "checked": [
+        "Printed page 128, generalized Seifert determinant normalization"
+      ],
+      "use": "Retain normalization factors and variable-square conversion; no acyclicity premise is imposed on the independently derived finite-ring determinant."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-direct-20261026/README.md",
+      "bytes": 6793,
+      "sha256": "7305089b368bb11034014defa2850137501e2e805391352057cc6d1550efb97d"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-joint-20261026/recurrence.md",
+      "bytes": 13526,
+      "sha256": "d99200de59c2d77d6616db741fd36bf2e679e520122b07aed4529d141664358a"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-adams-20261026/shared-label-roots.md",
+      "bytes": 11935,
+      "sha256": "91d94b6aa69200c9b9b0c611c98110fdea01e31710b9b156f0d332328f2e311d"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-prefix-20261025/README.md",
+      "bytes": 6429,
+      "sha256": "18f7fb131a7b1e93d28267f9076cf00d34dccb1b988d383879d6a00b55b86484"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-advancement-20261025/quiver-contraction.md",
+      "bytes": 18402,
+      "sha256": "82d7d745651621ebe4fe073f8d62a13cd3f257c073ac0e4562faa8cafa327077"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue.md",
+      "bytes": 10140,
+      "sha256": "9ded79850c2f200069a7da67502d0de579d1df0457cb06c865fb3d39c9654058"
+    }
+  ]
+}

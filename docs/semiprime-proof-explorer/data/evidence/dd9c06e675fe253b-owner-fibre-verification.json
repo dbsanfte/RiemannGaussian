@@ -1,0 +1,113 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 6,
+    "declarations": 285,
+    "theorems": 148
+  },
+  "modules": {
+    "SemiprimeD1StackOwnerFibre": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibre.lean",
+        "sha256": "ed65a2aaf7aa0de3ecf628f6c7587e9a8b3af55ed958bdd1857ebd8e4077acf0"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibre.olean",
+        "sha256": "21ac0e69193af17f67d46925cbcaf19cdb32e6f368bdbcc40dc1a48cf4a604cc"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-frozen/SemiprimeD1StackOwnerFibre.olean",
+        "sha256": "21ac0e69193af17f67d46925cbcaf19cdb32e6f368bdbcc40dc1a48cf4a604cc"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreComponents.lean",
+        "sha256": "886de4b8a4506d7f02124373462ed5b9427fcfd81f61edf6b3a4e05c4a33e2d7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreComponents.olean",
+        "sha256": "ce097c2d4cebecae66e5f523a6b597c576a8729bdcd3f9eccd49f432538cf15f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-frozen/SemiprimeD1StackOwnerFibreComponents.olean",
+        "sha256": "ce097c2d4cebecae66e5f523a6b597c576a8729bdcd3f9eccd49f432538cf15f"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreEmit": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreEmit.lean",
+        "sha256": "18e3ca99581770ba30fcebbd136c3d099ad72b57e23e2b552278c495c797c041"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreEmit.olean",
+        "sha256": "ac581663ef9fe0dab20ed08aaa2ec0d4def1eb140ab561733a17c5656098a559"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-frozen/SemiprimeD1StackOwnerFibreEmit.olean",
+        "sha256": "ac581663ef9fe0dab20ed08aaa2ec0d4def1eb140ab561733a17c5656098a559"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreExecution.lean",
+        "sha256": "85a595303446fac3bc64a9d121832bc2ef4494d94517a64308b2fdf7e03451b8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreExecution.olean",
+        "sha256": "d0daff8ad608f26159b4e7bd3e1b2aeba5068198f6f103b931b2235364e9e925"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-frozen/SemiprimeD1StackOwnerFibreExecution.olean",
+        "sha256": "d0daff8ad608f26159b4e7bd3e1b2aeba5068198f6f103b931b2235364e9e925"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreBounds.lean",
+        "sha256": "4adfe118d8f52d12f34136ea10dba903a04ceebd2ececf7d37436374f43e89a8"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreBounds.olean",
+        "sha256": "0d866641b2fa13b2c71732ad82f9fed8d263c5d6013c2498b5c6bca06ac2d30d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-frozen/SemiprimeD1StackOwnerFibreBounds.olean",
+        "sha256": "0d866641b2fa13b2c71732ad82f9fed8d263c5d6013c2498b5c6bca06ac2d30d"
+      }
+    },
+    "SemiprimeD1StackOwnerFibreOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerFibreOriginal.lean",
+        "sha256": "e899b5eb4b607a125102cd21ffde19e2de4499e12c9ad807d4469b6be821ca89"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerFibreOriginal.olean",
+        "sha256": "db642cae85e8feb91e737fc2c9cf027453f33e93182a3ea888a1438e5505ee55"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-frozen/SemiprimeD1StackOwnerFibreOriginal.olean",
+        "sha256": "db642cae85e8feb91e737fc2c9cf027453f33e93182a3ea888a1438e5505ee55"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/OwnerFibreControls.lean",
+        "sha256": "31e5876a9ec3fc5d726c4471fbf642873a23800338c15abf1a0d2023eec51bba"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-fibre-frozen/control-0.log",
+        "sha256": "03b2a7d4cf6be18fa3e0faff3865d2cb72823a4e039658bb9b0ddc09a041eb78"
+      },
+      "expected": "some true\nsome true\nsome true"
+    }
+  ],
+  "full_goal_complete": false
+}

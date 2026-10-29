@@ -1,0 +1,274 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 10,
+    "declarations": 319,
+    "theorems": 179
+  },
+  "modules": {
+    "SemiprimeD1StackPhaseGeometry": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometry.lean",
+        "sha256": "1c280e7ab10282928efa28a18d18083cc0b8bb42073587605663b269a0d9b61d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometry.olean",
+        "sha256": "69f3c609e7d91149d41d5a07492710d2bd60383012d4b8426cf7f544c0579202"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometry.olean",
+        "sha256": "69f3c609e7d91149d41d5a07492710d2bd60383012d4b8426cf7f544c0579202"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryArithmetic": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryArithmetic.lean",
+        "sha256": "f005c1ec3a8e4b4460a75280c680c972583cfdb20f0525b457143245bda28340"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryArithmetic.olean",
+        "sha256": "0b882e67fde598a9836b8788c743fdc17b08549c0b86e4a9a515477718f895dc"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometryArithmetic.olean",
+        "sha256": "0b882e67fde598a9836b8788c743fdc17b08549c0b86e4a9a515477718f895dc"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryPrimitives.lean",
+        "sha256": "e736687bfa9a53e25fa5c1d11aecdf45a008f1b0bfb2cd6d7bf23bbf9edd4e48"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryPrimitives.olean",
+        "sha256": "bf1e84b01fe4fe441616aea4589ae39e0ca30d2f965c2162f5371b91ec59332a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometryPrimitives.olean",
+        "sha256": "bf1e84b01fe4fe441616aea4589ae39e0ca30d2f965c2162f5371b91ec59332a"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryPower": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryPower.lean",
+        "sha256": "10e5c9f2840e7baf1b4c59c78b6d44656d624de2198cf2480c5f4dc7a1ff244c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryPower.olean",
+        "sha256": "8ec9edc777a778deedb85350b7585733d5cab2c0cba7b2630591c6ce29ee8586"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometryPower.olean",
+        "sha256": "8ec9edc777a778deedb85350b7585733d5cab2c0cba7b2630591c6ce29ee8586"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometrySubtract": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometrySubtract.lean",
+        "sha256": "b0298c2455d24e2dadd76b05b741d5b55a8226f20d615cbaaf8f79b5be518aa3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometrySubtract.olean",
+        "sha256": "fe3dd5eafff754d6a0da49e518c88ea6ad7b01d7a6e7cb2269d34a697c3a997e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometrySubtract.olean",
+        "sha256": "fe3dd5eafff754d6a0da49e518c88ea6ad7b01d7a6e7cb2269d34a697c3a997e"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryValuation": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryValuation.lean",
+        "sha256": "5f97cfc25d70f7c3ada977182b85829c08a4a76ca91ca0049770481511395916"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryValuation.olean",
+        "sha256": "340854c14d74089a98f4954e3343fab72c8ade964bcf5adeb550504dc545557f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometryValuation.olean",
+        "sha256": "340854c14d74089a98f4954e3343fab72c8ade964bcf5adeb550504dc545557f"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryComponents.lean",
+        "sha256": "a271f94ab4a12b98150c8d290eb2366d56345433d17779f5649e3384e1ccb46b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryComponents.olean",
+        "sha256": "9a0811ab321dba6fd2be33ba15554c44ede7aaa3c422d2c35b58014d1ee1dcfd"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometryComponents.olean",
+        "sha256": "9a0811ab321dba6fd2be33ba15554c44ede7aaa3c422d2c35b58014d1ee1dcfd"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryExecution.lean",
+        "sha256": "0399908d03845a909004dfe3333fa11d1293b01ae93f1855e68e62d9da087d51"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryExecution.olean",
+        "sha256": "e180e873d577cac4168838603afca6f84acc12bd7e41f9f7d3c85d3f82eccd79"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometryExecution.olean",
+        "sha256": "e180e873d577cac4168838603afca6f84acc12bd7e41f9f7d3c85d3f82eccd79"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryBounds.lean",
+        "sha256": "02163973b46321b18dc3404330d3f51bfe061303dc66836200e92caf8031a9cc"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryBounds.olean",
+        "sha256": "ac0d7147bbe75d984cdcb9947be5e136a7bba7fe036e3170bb8690313fec5ab4"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometryBounds.olean",
+        "sha256": "ac0d7147bbe75d984cdcb9947be5e136a7bba7fe036e3170bb8690313fec5ab4"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryOriginal.lean",
+        "sha256": "e8db7a6af253e33ed4ffe71ec135827c82fb7cadbbe13d757294c092be63b499"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryOriginal.olean",
+        "sha256": "b0ae4dac4ae4089c2fb417be5e74df9d163b4d287369f65a3833a5bd08fd6cd9"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-frozen/SemiprimeD1StackPhaseGeometryOriginal.olean",
+        "sha256": "b0ae4dac4ae4089c2fb417be5e74df9d163b4d287369f65a3833a5bd08fd6cd9"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PhaseGeometryControls.lean",
+        "sha256": "dd8855fd75958648efd29252b789a5d22a30e587aa2572d76b73a7e45866f311"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-controls.log",
+        "sha256": "0054721368adebc351703410b6d3e7436f1873f94f1b8ab9bb9a5667af5a5ccb"
+      },
+      "status": "PASS",
+      "full_original_only_cases": 52,
+      "actual_transitions": [
+        84,
+        64,
+        77,
+        78,
+        93,
+        93,
+        109,
+        109,
+        110,
+        229,
+        124,
+        133,
+        99,
+        94,
+        111,
+        112,
+        127,
+        127,
+        126,
+        252,
+        164,
+        172,
+        183,
+        182,
+        134,
+        128,
+        145,
+        146,
+        143,
+        275,
+        204,
+        211,
+        222,
+        221,
+        233,
+        232,
+        169,
+        162,
+        160,
+        298,
+        244,
+        250,
+        261,
+        260,
+        272,
+        271,
+        283,
+        282,
+        280,
+        321,
+        274,
+        4239
+      ],
+      "total_actual_transitions": 13372,
+      "largest": "a64/t100zeroPadding:4239instructions,binaryabs2^64,unaryorder64",
+      "all14fields": true,
+      "originals_retained": true,
+      "no_prepared_answers": true,
+      "padding_charged": true,
+      "actual_flags_and_exact_outer_returns": true,
+      "observer_generated_constants_standard3": 20,
+      "snapshot_identity_kernel_checked": true
+    }
+  ],
+  "full_goal_complete": false,
+  "runtime_scope": {
+    "stack_roles": 14,
+    "initial_inputs": "original physical exponent metadata aWord and binary grid-index tWord ONLY",
+    "exponent_meaning": "aWord.length; unary original metadata is a special case",
+    "program_parameters": "none; one fixed finite literal source",
+    "acquired": "binary center2^a, binary alpha/size2^(a+1), padded binary absolute point, singleton sign/zero, physically counted unary v2 withzero\u21920",
+    "actual_arithmetic": "paid preservingCopies; lowfalse shifts; frozen actual rippleBorrow subtraction; conditional paid swapped subtraction; physical padding scan/count/reset/cleanup",
+    "native_semantic_bridge": "exact original RecoveryWeightRun.geometry all a/allphysicalt; original RecoveryScalarRun.orderFuel ALLoriginalgridt",
+    "frontier": "geometry+valuation complete; no full C.program/factoring completion"
+  },
+  "clocks": {
+    "whole_actual_time": "1000*(aBytes+tBytes+1)",
+    "all14_roles_plus_actual_returns": "20000*(aBytes+tBytes+1)"
+  },
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 17542,
+    "files": 35084,
+    "before": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-dependencies/imported-pins-after.json"
+  },
+  "prior_owned_frozen_files": {
+    "status": "PASS",
+    "groups": {
+      "static-input-table": 34,
+      "port-ordinal": 10,
+      "boundary-record": 10,
+      "product-table-original": 2,
+      "product-record": 10,
+      "carry-table": 10,
+      "scale-table": 10,
+      "transform-table": 10,
+      "carry-record": 10,
+      "scale-record": 10,
+      "transform-record": 10,
+      "root-schedule": 20,
+      "root-scale-leaf": 22
+    },
+    "total_source_object_files": 168
+  },
+  "source_and_canonical_writers_stopped": true
+}

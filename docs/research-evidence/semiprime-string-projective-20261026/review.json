@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-26",
+  "previous_turn_classification": "progress: finite collision-divisor weighting, paid consumer and native stationary coverage obligations",
+  "current_turn_classification": "mathematical progress: exact projective/parameter closure executed, full-mask precision overhead improved, and arbitrary-axis-hit kernel/residue transport proved; no complete-query rate improvement",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft O(J+sqrt(Jh))=soft O(k^(5/4)); not a general factoring record",
+  "projective_result": {
+    "action": "T_c=[[c,0],[kappa(1-c),1]], exact commuting colour/carry action",
+    "covariance": "f(cy,x;Y/c)=f(y,x/c;Y), carries move clock and marker oppositely",
+    "readout": "Cheap loop/cocycle endpoints; entire interior marked collision factor cancels",
+    "missing": "Product of comparison sections or first nonzero slice"
+  },
+  "full_divisor_algorithms": {
+    "indicator": "e_j=-y_j A^-1 partial_(y_j) a_(d-1), exact local 0/1",
+    "linear_precision": "soft O((d+1)(J+sqrt(Jh))+T_ext)",
+    "output_sensitive": "soft O(J+sqrt(max(1,t)Jh)+T_ext), t union hit-row count",
+    "credit": "Improved full-output overhead only; old one-path factorer already costs soft O(J+sqrt(Jh)+T_ext)"
+  },
+  "axis_transport": {
+    "input": "Any useful nonliteral odd-phase axis alias rho^e=1, e=t+1-kI",
+    "output": "b=0, h=e/2, |h|<=(B+3k)/2; h=(t+1)/2 mod odd m|k",
+    "predicate_scope": "One-way transport; inverse kernel leaf is unit-equivalent; original inclusion requires stated W bound",
+    "consumer": "soft O(S+sqrt(S(B+k)/m)+T_ext) for supplied S-residue palette",
+    "missing": "Residue supplier with acquisition cost",
+    "public_controller": "Old +/-1 AP machinery covers P<=c k² max(gcd(P-1,k/2),gcd(P+1,k/2))",
+    "residual_scope": "Actual 23mod36 gamma family misses this coverage certificate; accidental AP success or stronger controllers not excluded"
+  },
+  "reviews": [
+    "review-projective.md",
+    "review-singular.md",
+    "review-axis-integration.md"
+  ],
+  "corrections_integrated": [
+    "Precision-zero naive cost uses (s+1)^2",
+    "Normalized commutator coefficient includes c*d denominator",
+    "Univariate/full-mask alternatives explicitly replace naive quadratic overhead",
+    "Axis kernel leaf inverse sign and odd-gcd threshold made exact",
+    "Open prime intervals use increment >log(2x)"
+  ],
+  "preservation": {
+    "protected_files_verified": 914,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1542562,
+        "sha256": "cf9d3ad92f22abf0c852673f48ed1a6c1b6b3a069c9c8a763ce2e4e5b63d675e"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2424003,
+        "sha256": "3847e42591164fff03b4d096ed4c979dc7a7104861a9ba0e91fdd471e2f7addf"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "d6f9d17778197d35a5c7482a477d2579c1c8ff0aa5feb7bdf747ce57fbc740cc"
+  },
+  "validation": {
+    "mathematical": "Two cross-reviews plus primary-agent arithmetic/integration derivations; paper proofs, not Lean",
+    "local_links_checked": 9,
+    "local_source_pins": 11,
+    "primary_sources_reread": 2,
+    "prior_primary_modulus_specialization": 1,
+    "json_and_whitespace": true,
+    "git_diff_check": true
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

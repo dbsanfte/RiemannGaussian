@@ -1,0 +1,209 @@
+{
+  "verdict": "PASS_READ_ONLY_NO_BLOCKER",
+  "reviewer": "/root",
+  "sources_read": 16,
+  "source_lines": 1640,
+  "scope": "Core/actualsupplier+alignment/table144/ownerrejoin/fullsource+ready/exactintegercoefficients/newNetworktopology/wholefixedrate/genuineinitList/all2011+returnspace. Other16 reviewedseparately. No source/object edits/imports/builds/controls.",
+  "pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecords.lean": "981ce9c54dc22c7f476274745b792f81694244dd6aff89461b9a0038691ddd71",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsIntegral.lean": "c656ace43f667e7f9235be7b49e2767a3af7739feab6c15a66c1ee5105bd9cb1",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsRelay.lean": "242697dbeacf217900f028a929c1ab1be76d0f8e79a05361d64fc6fa28cbea1c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsTables.lean": "f162ad6c38f56bc19b3c257955223ca12c25b435f19e75844468b2c35b66f6ab",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsNetwork.lean": "2487f6fe0ffc8a67f2f386443bd80944dde807a3c25227f3128e6b18bb443d94",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsTopology.lean": "af10beec384ff991b04bde8c40ddb17c8cc8127a4ba59c6147bd4ed33f316347",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsTableCall.lean": "6c4f9cf4db8559b1e11863439d8b41cfd714f5523491e7d3a801a05c68435a37",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsAlignment.lean": "18449b8155325481a65d3f208371fec3f7538b39d2e404b898f1bce6b19b5cb2",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsAcquisition.lean": "beb0af0e7ac4df0215cdfcf62552253688ea09a1be3c6b1e826921ef3a413105",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsFinish.lean": "af8e55a371b17bdbaf90ca660af07dca626f832a8e17990b789ad32b8bfca74a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsExecution.lean": "36a20326419de1eecf0d088e0ac0d25bcce9329335131aa79001d4c0de3c8de8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsBounds.lean": "8ba9212eb3c824ce8dc792bd7c80e94b9a4d93484b7a04bd6722019fc7b216f7",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsStorage.lean": "248d849937faf36f9e6dc92fa4f3a4caae20213f1bdf72685a51eb8143f3cc50",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsResources.lean": "342413042de3bbdef3814d290aba1675ed681f2218257f44805957f733aa9075",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsReady.lean": "b97a77f72e66f9a490c8f1b03b91772f037f8b9b1e01af16f83960bed24e4429",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsOriginal.lean": "b5ac431c34b08bcfde48e8af76c39ada661d4775fedace349f48332c8083455a"
+  },
+  "findings": [
+    [
+      "ActualR1804once plusfreshV53 andactualT144, 4realcopies/7actualFields/logger/2Reverse; 2011includesallT144shared-Nshadow andborrowed3rootjoinhelpers; no runtimeNat/graph/getter/clocksuppliers.",
+      "Actual5consecutiveunarydescriptorfields alignedwith2oldrecordfields, rawtag0EMPTY inputbranch; coord1ALREADYUNARY, coord0actual[]/[TRUE]\u2192singletonFALSE/TRUE. SourceallcoefficientsactualNonly.",
+      "Inputscope actualUNARYportfieldsusedasR144arbitrarypayloadvectorbyfieldCOUNT, no binaryIDconversion; realdrainoldtable, realR144, consumingLoggerallports/table then5fields/side/countcleanup.",
+      "IntegralownerNat0/1/2 derivedbyremovingmod4underbound<4, 17relayfactorNat0/1+localMark0 givesENTIREtableequality; Goodprecisionmonotonicity2\u21922ell, noZMod4equalitytransport.",
+      "Owner-first join copy+reverse+physicalFALSEterminatorstrip+reverseontoactualpatchedfactors, exactlyoneFALSEEOF, all1804retainedincludingoldcombinedout; privateNshadowEMPTYandallrolescounted."
+    ],
+    [
+      "ActualR1804once plusfreshV53 andactualT144, 4realcopies/7actualFields/logger/2Reverse; 2011includesallT144shared-Nshadow andborrowed3rootjoinhelpers; no runtimeNat/graph/getter/clocksuppliers.",
+      "Actual5consecutiveunarydescriptorfields alignedwith2oldrecordfields, rawtag0EMPTY inputbranch; coord1ALREADYUNARY, coord0actual[]/[TRUE]\u2192singletonFALSE/TRUE. SourceallcoefficientsactualNonly.",
+      "Inputscope actualUNARYportfieldsusedasR144arbitrarypayloadvectorbyfieldCOUNT, no binaryIDconversion; realdrainoldtable, realR144, consumingLoggerallports/table then5fields/side/countcleanup.",
+      "IntegralownerNat0/1/2 derivedbyremovingmod4underbound<4, 17relayfactorNat0/1+localMark0 givesENTIREtableequality; Goodprecisionmonotonicity2\u21922ell, noZMod4equalitytransport.",
+      "Owner-first join copy+reverse+physicalFALSEterminatorstrip+reverseontoactualpatchedfactors, exactlyoneFALSEEOF, all1804retainedincludingoldcombinedout; privateNshadowEMPTYandallrolescounted."
+    ],
+    [
+      "ActualR1804once plusfreshV53 andactualT144, 4realcopies/7actualFields/logger/2Reverse; 2011includesallT144shared-Nshadow andborrowed3rootjoinhelpers; no runtimeNat/graph/getter/clocksuppliers.",
+      "Actual5consecutiveunarydescriptorfields alignedwith2oldrecordfields, rawtag0EMPTY inputbranch; coord1ALREADYUNARY, coord0actual[]/[TRUE]\u2192singletonFALSE/TRUE. SourceallcoefficientsactualNonly.",
+      "Inputscope actualUNARYportfieldsusedasR144arbitrarypayloadvectorbyfieldCOUNT, no binaryIDconversion; realdrainoldtable, realR144, consumingLoggerallports/table then5fields/side/countcleanup.",
+      "IntegralownerNat0/1/2 derivedbyremovingmod4underbound<4, 17relayfactorNat0/1+localMark0 givesENTIREtableequality; Goodprecisionmonotonicity2\u21922ell, noZMod4equalitytransport.",
+      "Owner-first join copy+reverse+physicalFALSEterminatorstrip+reverseontoactualpatchedfactors, exactlyoneFALSEEOF, all1804retainedincludingoldcombinedout; privateNshadowEMPTYandallrolescounted."
+    ],
+    [
+      "ActualR1804once plusfreshV53 andactualT144, 4realcopies/7actualFields/logger/2Reverse; 2011includesallT144shared-Nshadow andborrowed3rootjoinhelpers; no runtimeNat/graph/getter/clocksuppliers.",
+      "Actual5consecutiveunarydescriptorfields alignedwith2oldrecordfields, rawtag0EMPTY inputbranch; coord1ALREADYUNARY, coord0actual[]/[TRUE]\u2192singletonFALSE/TRUE. SourceallcoefficientsactualNonly.",
+      "Inputscope actualUNARYportfieldsusedasR144arbitrarypayloadvectorbyfieldCOUNT, no binaryIDconversion; realdrainoldtable, realR144, consumingLoggerallports/table then5fields/side/countcleanup.",
+      "IntegralownerNat0/1/2 derivedbyremovingmod4underbound<4, 17relayfactorNat0/1+localMark0 givesENTIREtableequality; Goodprecisionmonotonicity2\u21922ell, noZMod4equalitytransport.",
+      "Owner-first join copy+reverse+physicalFALSEterminatorstrip+reverseontoactualpatchedfactors, exactlyoneFALSEEOF, all1804retainedincludingoldcombinedout; privateNshadowEMPTYandallrolescounted."
+    ],
+    [
+      "NamedweightedNetworkchangesONLYrighttensorTables; oldleftCount/rows/leftbankdefinitionallysame, completeowner-firstorderedports identical, WellFormed+Good2ell closed; actualExec.output exactentirevertices byte records.",
+      "TwoACTUALsupplierstreams provenagainstSAMEcompleteoriginalfactorIndices: retained1454factorcache +freshreal53flatfive-fielddescriptorcache; no alignment/descriptor/graphadvice.",
+      "Table144instantiatedwitharbitraryscopepayloadwords, actualunaryportTape acceptedONLYbycount; readonlyNaliasfullforeignDataRel+privateNshadow covered; actualtablecache includesretainedscope/count/index/side aftercall.",
+      "Readysetupactual3copies+fresh53source+loggerseed thenwholepairedrows; ownerrejoin realcopy+reverse+actualFALSEstrip+reverse/prepend restoresall3roothelpers andall1804oldsourcebank.",
+      "Topologyonlysemanticreuse permitsold2270occurrence/selector/packetcache later; notoldclocktransport. Nativeweightedcontraction/countercaller remainsseparatejoin."
+    ],
+    [
+      "NamedweightedNetworkchangesONLYrighttensorTables; oldleftCount/rows/leftbankdefinitionallysame, completeowner-firstorderedports identical, WellFormed+Good2ell closed; actualExec.output exactentirevertices byte records.",
+      "TwoACTUALsupplierstreams provenagainstSAMEcompleteoriginalfactorIndices: retained1454factorcache +freshreal53flatfive-fielddescriptorcache; no alignment/descriptor/graphadvice.",
+      "Table144instantiatedwitharbitraryscopepayloadwords, actualunaryportTape acceptedONLYbycount; readonlyNaliasfullforeignDataRel+privateNshadow covered; actualtablecache includesretainedscope/count/index/side aftercall.",
+      "Readysetupactual3copies+fresh53source+loggerseed thenwholepairedrows; ownerrejoin realcopy+reverse+actualFALSEstrip+reverse/prepend restoresall3roothelpers andall1804oldsourcebank.",
+      "Topologyonlysemanticreuse permitsold2270occurrence/selector/packetcache later; notoldclocktransport. Nativeweightedcontraction/countercaller remainsseparatejoin."
+    ],
+    [
+      "NamedweightedNetworkchangesONLYrighttensorTables; oldleftCount/rows/leftbankdefinitionallysame, completeowner-firstorderedports identical, WellFormed+Good2ell closed; actualExec.output exactentirevertices byte records.",
+      "TwoACTUALsupplierstreams provenagainstSAMEcompleteoriginalfactorIndices: retained1454factorcache +freshreal53flatfive-fielddescriptorcache; no alignment/descriptor/graphadvice.",
+      "Table144instantiatedwitharbitraryscopepayloadwords, actualunaryportTape acceptedONLYbycount; readonlyNaliasfullforeignDataRel+privateNshadow covered; actualtablecache includesretainedscope/count/index/side aftercall.",
+      "Readysetupactual3copies+fresh53source+loggerseed thenwholepairedrows; ownerrejoin realcopy+reverse+actualFALSEstrip+reverse/prepend restoresall3roothelpers andall1804oldsourcebank.",
+      "Topologyonlysemanticreuse permitsold2270occurrence/selector/packetcache later; notoldclocktransport. Nativeweightedcontraction/countercaller remainsseparatejoin."
+    ],
+    [
+      "NamedweightedNetworkchangesONLYrighttensorTables; oldleftCount/rows/leftbankdefinitionallysame, completeowner-firstorderedports identical, WellFormed+Good2ell closed; actualExec.output exactentirevertices byte records.",
+      "TwoACTUALsupplierstreams provenagainstSAMEcompleteoriginalfactorIndices: retained1454factorcache +freshreal53flatfive-fielddescriptorcache; no alignment/descriptor/graphadvice.",
+      "Table144instantiatedwitharbitraryscopepayloadwords, actualunaryportTape acceptedONLYbycount; readonlyNaliasfullforeignDataRel+privateNshadow covered; actualtablecache includesretainedscope/count/index/side aftercall.",
+      "Readysetupactual3copies+fresh53source+loggerseed thenwholepairedrows; ownerrejoin realcopy+reverse+actualFALSEstrip+reverse/prepend restoresall3roothelpers andall1804oldsourcebank.",
+      "Topologyonlysemanticreuse permitsold2270occurrence/selector/packetcache later; notoldclocktransport. Nativeweightedcontraction/countercaller remainsseparatejoin."
+    ],
+    [
+      "NamedweightedNetworkchangesONLYrighttensorTables; oldleftCount/rows/leftbankdefinitionallysame, completeowner-firstorderedports identical, WellFormed+Good2ell closed; actualExec.output exactentirevertices byte records.",
+      "TwoACTUALsupplierstreams provenagainstSAMEcompleteoriginalfactorIndices: retained1454factorcache +freshreal53flatfive-fielddescriptorcache; no alignment/descriptor/graphadvice.",
+      "Table144instantiatedwitharbitraryscopepayloadwords, actualunaryportTape acceptedONLYbycount; readonlyNaliasfullforeignDataRel+privateNshadow covered; actualtablecache includesretainedscope/count/index/side aftercall.",
+      "Readysetupactual3copies+fresh53source+loggerseed thenwholepairedrows; ownerrejoin realcopy+reverse+actualFALSEstrip+reverse/prepend restoresall3roothelpers andall1804oldsourcebank.",
+      "Topologyonlysemanticreuse permitsold2270occurrence/selector/packetcache later; notoldclocktransport. Nativeweightedcontraction/countercaller remainsseparatejoin."
+    ],
+    [
+      "NamedweightedNetworkchangesONLYrighttensorTables; oldleftCount/rows/leftbankdefinitionallysame, completeowner-firstorderedports identical, WellFormed+Good2ell closed; actualExec.output exactentirevertices byte records.",
+      "TwoACTUALsupplierstreams provenagainstSAMEcompleteoriginalfactorIndices: retained1454factorcache +freshreal53flatfive-fielddescriptorcache; no alignment/descriptor/graphadvice.",
+      "Table144instantiatedwitharbitraryscopepayloadwords, actualunaryportTape acceptedONLYbycount; readonlyNaliasfullforeignDataRel+privateNshadow covered; actualtablecache includesretainedscope/count/index/side aftercall.",
+      "Readysetupactual3copies+fresh53source+loggerseed thenwholepairedrows; ownerrejoin realcopy+reverse+actualFALSEstrip+reverse/prepend restoresall3roothelpers andall1804oldsourcebank.",
+      "Topologyonlysemanticreuse permitsold2270occurrence/selector/packetcache later; notoldclocktransport. Nativeweightedcontraction/countercaller remainsseparatejoin."
+    ],
+    [
+      "ActualsingleNonlyRoot1804call feedsSAMEreadycache; allpairedrows+actual144calls+fourcopies+loggerreverse+ownerrejoin+truehalt, everyactualrealreturn charged; originalN/source/table/descriptoranswers notinput.",
+      "OwnbytecapacityfromACTUALretainedoldsource/fresh53length bounds; actualrowcount/unarycoordinates/scopefieldcountsboundedbyinputbytes; maxarityScope fromoriginalfactorarity, fixedcubiccapacity*2^scope givesexp58scope.",
+      "No Nativeclocktransport; fixedmonomialA,d precedeALLbinaryN. Cubeofrootfrontendresource isconstantpipelinebound, no repeatedraisingofchildruntimewithdepth.",
+      "GenuineTuring.initListNonlyinit andall2011+none-return EVERYprefix fromSAMEactualhalt/run_correct. Shared-Nshadowincluded; readyspace paysactualretainedold1804bytes withoutoldsource replay.",
+      "NativeNetworkWellFormed/Good2ell/exactcoefficientNat andcompleteportsequenceclosed; source_originalactualwholeweightedrecords. Weightedcontraction/current-nodecounter/globalactualtree/factorcaller stillOPEN.",
+      "Storage was re-read separately in full after first combined tool output truncated its middle; no unread body is covered by thisPASS."
+    ],
+    [
+      "ActualsingleNonlyRoot1804call feedsSAMEreadycache; allpairedrows+actual144calls+fourcopies+loggerreverse+ownerrejoin+truehalt, everyactualrealreturn charged; originalN/source/table/descriptoranswers notinput.",
+      "OwnbytecapacityfromACTUALretainedoldsource/fresh53length bounds; actualrowcount/unarycoordinates/scopefieldcountsboundedbyinputbytes; maxarityScope fromoriginalfactorarity, fixedcubiccapacity*2^scope givesexp58scope.",
+      "No Nativeclocktransport; fixedmonomialA,d precedeALLbinaryN. Cubeofrootfrontendresource isconstantpipelinebound, no repeatedraisingofchildruntimewithdepth.",
+      "GenuineTuring.initListNonlyinit andall2011+none-return EVERYprefix fromSAMEactualhalt/run_correct. Shared-Nshadowincluded; readyspace paysactualretainedold1804bytes withoutoldsource replay.",
+      "NativeNetworkWellFormed/Good2ell/exactcoefficientNat andcompleteportsequenceclosed; source_originalactualwholeweightedrecords. Weightedcontraction/current-nodecounter/globalactualtree/factorcaller stillOPEN.",
+      "Storage was re-read separately in full after first combined tool output truncated its middle; no unread body is covered by thisPASS."
+    ],
+    [
+      "ActualsingleNonlyRoot1804call feedsSAMEreadycache; allpairedrows+actual144calls+fourcopies+loggerreverse+ownerrejoin+truehalt, everyactualrealreturn charged; originalN/source/table/descriptoranswers notinput.",
+      "OwnbytecapacityfromACTUALretainedoldsource/fresh53length bounds; actualrowcount/unarycoordinates/scopefieldcountsboundedbyinputbytes; maxarityScope fromoriginalfactorarity, fixedcubiccapacity*2^scope givesexp58scope.",
+      "No Nativeclocktransport; fixedmonomialA,d precedeALLbinaryN. Cubeofrootfrontendresource isconstantpipelinebound, no repeatedraisingofchildruntimewithdepth.",
+      "GenuineTuring.initListNonlyinit andall2011+none-return EVERYprefix fromSAMEactualhalt/run_correct. Shared-Nshadowincluded; readyspace paysactualretainedold1804bytes withoutoldsource replay.",
+      "NativeNetworkWellFormed/Good2ell/exactcoefficientNat andcompleteportsequenceclosed; source_originalactualwholeweightedrecords. Weightedcontraction/current-nodecounter/globalactualtree/factorcaller stillOPEN.",
+      "Storage was re-read separately in full after first combined tool output truncated its middle; no unread body is covered by thisPASS."
+    ],
+    [
+      "ActualsingleNonlyRoot1804call feedsSAMEreadycache; allpairedrows+actual144calls+fourcopies+loggerreverse+ownerrejoin+truehalt, everyactualrealreturn charged; originalN/source/table/descriptoranswers notinput.",
+      "OwnbytecapacityfromACTUALretainedoldsource/fresh53length bounds; actualrowcount/unarycoordinates/scopefieldcountsboundedbyinputbytes; maxarityScope fromoriginalfactorarity, fixedcubiccapacity*2^scope givesexp58scope.",
+      "No Nativeclocktransport; fixedmonomialA,d precedeALLbinaryN. Cubeofrootfrontendresource isconstantpipelinebound, no repeatedraisingofchildruntimewithdepth.",
+      "GenuineTuring.initListNonlyinit andall2011+none-return EVERYprefix fromSAMEactualhalt/run_correct. Shared-Nshadowincluded; readyspace paysactualretainedold1804bytes withoutoldsource replay.",
+      "NativeNetworkWellFormed/Good2ell/exactcoefficientNat andcompleteportsequenceclosed; source_originalactualwholeweightedrecords. Weightedcontraction/current-nodecounter/globalactualtree/factorcaller stillOPEN.",
+      "Storage was re-read separately in full after first combined tool output truncated its middle; no unread body is covered by thisPASS."
+    ],
+    [
+      "ActualsingleNonlyRoot1804call feedsSAMEreadycache; allpairedrows+actual144calls+fourcopies+loggerreverse+ownerrejoin+truehalt, everyactualrealreturn charged; originalN/source/table/descriptoranswers notinput.",
+      "OwnbytecapacityfromACTUALretainedoldsource/fresh53length bounds; actualrowcount/unarycoordinates/scopefieldcountsboundedbyinputbytes; maxarityScope fromoriginalfactorarity, fixedcubiccapacity*2^scope givesexp58scope.",
+      "No Nativeclocktransport; fixedmonomialA,d precedeALLbinaryN. Cubeofrootfrontendresource isconstantpipelinebound, no repeatedraisingofchildruntimewithdepth.",
+      "GenuineTuring.initListNonlyinit andall2011+none-return EVERYprefix fromSAMEactualhalt/run_correct. Shared-Nshadowincluded; readyspace paysactualretainedold1804bytes withoutoldsource replay.",
+      "NativeNetworkWellFormed/Good2ell/exactcoefficientNat andcompleteportsequenceclosed; source_originalactualwholeweightedrecords. Weightedcontraction/current-nodecounter/globalactualtree/factorcaller stillOPEN.",
+      "Storage was re-read separately in full after first combined tool output truncated its middle; no unread body is covered by thisPASS."
+    ],
+    [
+      "ActualsingleNonlyRoot1804call feedsSAMEreadycache; allpairedrows+actual144calls+fourcopies+loggerreverse+ownerrejoin+truehalt, everyactualrealreturn charged; originalN/source/table/descriptoranswers notinput.",
+      "OwnbytecapacityfromACTUALretainedoldsource/fresh53length bounds; actualrowcount/unarycoordinates/scopefieldcountsboundedbyinputbytes; maxarityScope fromoriginalfactorarity, fixedcubiccapacity*2^scope givesexp58scope.",
+      "No Nativeclocktransport; fixedmonomialA,d precedeALLbinaryN. Cubeofrootfrontendresource isconstantpipelinebound, no repeatedraisingofchildruntimewithdepth.",
+      "GenuineTuring.initListNonlyinit andall2011+none-return EVERYprefix fromSAMEactualhalt/run_correct. Shared-Nshadowincluded; readyspace paysactualretainedold1804bytes withoutoldsource replay.",
+      "NativeNetworkWellFormed/Good2ell/exactcoefficientNat andcompleteportsequenceclosed; source_originalactualwholeweightedrecords. Weightedcontraction/current-nodecounter/globalactualtree/factorcaller stillOPEN.",
+      "Storage was re-read separately in full after first combined tool output truncated its middle; no unread body is covered by thisPASS."
+    ]
+  ],
+  "remaining_global_obligations": [
+    "Physicalcaller combiningactualweightedrecordstream +actualRootContext28 andactualold2270topologycache",
+    "MarkedNativeNetworkcontraction equality toPackedMoment publicgraph+actualrecursivecounter",
+    "Actualchildfactories/rowweights/fullrecursiveframeandheap/globalactualtreecost/factorrecovery"
+  ],
+  "reviewed_utc": "2026-10-29T02:45:18.905943+00:00",
+  "combined_all32_current_source_pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecords.lean": "981ce9c54dc22c7f476274745b792f81694244dd6aff89461b9a0038691ddd71",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsIntegral.lean": "c656ace43f667e7f9235be7b49e2767a3af7739feab6c15a66c1ee5105bd9cb1",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsRelay.lean": "242697dbeacf217900f028a929c1ab1be76d0f8e79a05361d64fc6fa28cbea1c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsTables.lean": "f162ad6c38f56bc19b3c257955223ca12c25b435f19e75844468b2c35b66f6ab",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsNetwork.lean": "2487f6fe0ffc8a67f2f386443bd80944dde807a3c25227f3128e6b18bb443d94",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsTopology.lean": "af10beec384ff991b04bde8c40ddb17c8cc8127a4ba59c6147bd4ed33f316347",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsTableCall.lean": "6c4f9cf4db8559b1e11863439d8b41cfd714f5523491e7d3a801a05c68435a37",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsAlignment.lean": "18449b8155325481a65d3f208371fec3f7538b39d2e404b898f1bce6b19b5cb2",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsAcquisition.lean": "beb0af0e7ac4df0215cdfcf62552253688ea09a1be3c6b1e826921ef3a413105",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsFinish.lean": "af8e55a371b17bdbaf90ca660af07dca626f832a8e17990b789ad32b8bfca74a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsExecution.lean": "36a20326419de1eecf0d088e0ac0d25bcce9329335131aa79001d4c0de3c8de8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsBounds.lean": "8ba9212eb3c824ce8dc792bd7c80e94b9a4d93484b7a04bd6722019fc7b216f7",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsStorage.lean": "248d849937faf36f9e6dc92fa4f3a4caae20213f1bdf72685a51eb8143f3cc50",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsResources.lean": "342413042de3bbdef3814d290aba1675ed681f2218257f44805957f733aa9075",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsReady.lean": "b97a77f72e66f9a490c8f1b03b91772f037f8b9b1e01af16f83960bed24e4429",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsOriginal.lean": "b5ac431c34b08bcfde48e8af76c39ada661d4775fedace349f48332c8083455a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsPrimitives.lean": "9c714c7d686325bf5d838b43618ed740d49d5690c70746570ff9408bce3ffffd",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsCalls.lean": "12d0c82e96e64144f9d8bde68d0fcec6df4297769da40ea344490e2625752094",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsView.lean": "e4c0c803e7a602f3fe6e7b5ed0d5f8ca7e8b77fcd57eba9238efe82309396626",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsTableView.lean": "35139a498cbd86aaeb244d460738da074a217676a126c4eb6a7a7e0b3c23a1d8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsRowView.lean": "f6b89828202c03fa04948e543d612a890fe2e11f8aec7c63efc916fabf2e48af",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsLogger.lean": "60972d9bcab7c887ea7e71f8400c2926bf2412918a8ff775ad302f16269f1bdc",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsEncoding.lean": "a4549820cf40986be3d6e03b4c9ae89f3a81fef7dbd630a2e48f63ed0be89af6",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsFields.lean": "875aa79c6c287075f10857be661a99ef2ac688516fc8cb2777c8956a5dbcf7d8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsParse.lean": "677e74d09d9b95779dfc108a011ae48392f60090b34a5e3f345facd3d8399181",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsSide.lean": "31f9a0ae9a5e3f03bfa51eeab6122a873069d1e3441ccd35f4e126eaecf5b7ec",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsBody.lean": "7c2f372b23c32a6b5c2addfbcb81b39449cdeef3b483ec2747cec3f1c550c28d",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsCleanup.lean": "2651b4585d87c9b321b6ae290bde4c59b0e9064e04011f4ca9c4dfc66d34904b",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsRows.lean": "e2cdd68a2ff1f1164c007db48f7f7c2873fa08cfaa19ea5ad0cf96eb993afec5",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsLoop.lean": "0764ecee4cad413108f211e85b9efaa54ef2f410a165bfe406beadd0599aaf80",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsRowCost.lean": "1795173854d41b2aefa0724b686d5c26086ca7ea751356fe55c44f97eee1b9a0",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsByteCost.lean": "ba488aa965938da6371f25a9f8f1a3cee66cfa1b56ad1b0d8f85f67d23d01bd2"
+  },
+  "other_review_artifacts": {
+    "marked-root-records-owner-independent-review.txt": "19ffaf621df0a6b6b77b61cfe7cd796b107d1127173ceac74014561ddf0268eb",
+    "marked-root-records-vertex-independent-review.txt": "8bfb47f3ee3431090b4d204bcb69598efc2c11eb90aa94d6be9c292fda7461da"
+  },
+  "topology_refactor_supplement": {
+    "verdict": "PASS_FULL_CURRENT73_LINES_READ_ONLY",
+    "old_source_sha256": "9a47ad08c0fcccaef0d6b054c12b1964a5e0a91ff989519168a53e8d01b5bf2d",
+    "current_source_sha256": "af10beec384ff991b04bde8c40ddb17c8cc8127a4ba59c6147bd4ed33f316347",
+    "findings": "rightAt is generic finite-index vector projection. rightIndex is proof-only equality transport from exact unchanged rows. right_ports now states both projections with explicit bounded indices, preserving exact ordered numeric occurrence names. WellFormed/Good derive actual old ports/compact natural coefficients; no source/clock/precision change or weakening. Every73lines reread; other31 current reviewed pins checked unchanged. Source/canonical objects not edited/imported/built by reviewer. Re-read full73lines after required noncomputable qualifier on proof-side rightIndex: no statement, proof, runtime program or operands changed. New qualifier correctly prevents evaluation of the mathematical network specification as an acquired runtime object.",
+    "previous_source_sha256": "3d4d277ddfbe85d347bd994ab5ee257403525ea7a9050613f80a34aade785761"
+  },
+  "dependent_projection_supplement": {
+    "verdict": "PASS_FULL_CURRENT_NETWORK117_AND_TOPOLOGY73_LINES_READ_ONLY",
+    "pins": {
+      "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsNetwork.lean": "2487f6fe0ffc8a67f2f386443bd80944dde807a3c25227f3128e6b18bb443d94",
+      "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackMarkedRootRecordsTopology.lean": "af10beec384ff991b04bde8c40ddb17c8cc8127a4ba59c6147bd4ed33f316347"
+    },
+    "findings": [
+      "rowsAt/leftAt explicitly transport only the dependent count type using the separately proved literal leftCount_eq. rows_eq/left_eq remain whole exact original row/owner-vector identities, with all words/order/multiplicity retained; no new semantic antecedent.",
+      "rows_length_eq is a scalar cardinality identity derived by rfl from the unchanged network topology. Topology.rightIndex uses this exact length equality to retain the same finite right index.",
+      "Actual network constructor, actual source program/operands/output and packed precision unchanged. Whole actualsource output_original and Good/WF endpoints retain full marked table/ports guarantees.",
+      "Full current117+73 lines reread. Other30 current previously-reviewed source pins unchanged. Reviewer performed no import/build/canonical/source/control writes."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+    "build",
+    "RiemannGaussian.SemiprimeStreamingTensor",
+    "--wfail"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 10.30314564704895,
+  "changedArtifacts": [
+    ".lake/build/lib/lean/RiemannGaussian/SemiprimeStreamingTensor.ilean.hash",
+    ".lake/build/lib/lean/RiemannGaussian/SemiprimeStreamingTensor.trace",
+    ".lake/build/lib/lean/RiemannGaussian/SemiprimeStreamingTensor.olean",
+    ".lake/build/lib/lean/RiemannGaussian/SemiprimeStreamingTensor.olean.hash",
+    ".lake/build/lib/lean/RiemannGaussian/SemiprimeStreamingTensor.ilean"
+  ]
+}

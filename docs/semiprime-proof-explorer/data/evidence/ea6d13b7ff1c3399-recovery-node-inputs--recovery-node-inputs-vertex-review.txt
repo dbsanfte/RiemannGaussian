@@ -1,0 +1,68 @@
+{
+  "verdict": "PASS",
+  "utc": "2026-10-29T05:19:38.165857+00:00",
+  "scope": "READ ONLY all6 assigned bodies/472lines. No imports, builds, edits or controls.",
+  "sources": [
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsCodec",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsCodec.lean",
+      "sha256": "bf044d89c18b48f93f6e5ed18602bda4c731b496884fdc9dc7fca9a0021516b4",
+      "lines": 39,
+      "before": "bf044d89c18b48f93f6e5ed18602bda4c731b496884fdc9dc7fca9a0021516b4",
+      "after": "bf044d89c18b48f93f6e5ed18602bda4c731b496884fdc9dc7fca9a0021516b4",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsAffineReady",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsAffineReady.lean",
+      "sha256": "a0ffefcab70946a8775958f77fb8133a2da6ff97db9371fe9fa56368ce7a4ad5",
+      "lines": 68,
+      "before": "a0ffefcab70946a8775958f77fb8133a2da6ff97db9371fe9fa56368ce7a4ad5",
+      "after": "a0ffefcab70946a8775958f77fb8133a2da6ff97db9371fe9fa56368ce7a4ad5",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsResource",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsResource.lean",
+      "sha256": "f046fec5dd7f21d763573ede2e4f14529ae753412ad09569bb78eb6401c98192",
+      "lines": 79,
+      "before": "f046fec5dd7f21d763573ede2e4f14529ae753412ad09569bb78eb6401c98192",
+      "after": "f046fec5dd7f21d763573ede2e4f14529ae753412ad09569bb78eb6401c98192",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsBounds.lean",
+      "sha256": "4980db938e88e5d8e263314281a6e31704cdce15279fad86a5950f312a5c9952",
+      "lines": 85,
+      "before": "4980db938e88e5d8e263314281a6e31704cdce15279fad86a5950f312a5c9952",
+      "after": "4980db938e88e5d8e263314281a6e31704cdce15279fad86a5950f312a5c9952",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsStorage",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsStorage.lean",
+      "sha256": "383c19b181f226012e52e6a294093f8a091f8fa8b9a6a375c1d11097b5616b88",
+      "lines": 122,
+      "before": "383c19b181f226012e52e6a294093f8a091f8fa8b9a6a375c1d11097b5616b88",
+      "after": "383c19b181f226012e52e6a294093f8a091f8fa8b9a6a375c1d11097b5616b88",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsOriginalResources",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginalResources.lean",
+      "sha256": "6fb507d675277ef11bba49842aec9c13b1cc4a6ccc97ffeb87f4a73f197ab20e",
+      "lines": 79,
+      "before": "6fb507d675277ef11bba49842aec9c13b1cc4a6ccc97ffeb87f4a73f197ab20e",
+      "after": "6fb507d675277ef11bba49842aec9c13b1cc4a6ccc97ffeb87f4a73f197ab20e",
+      "all_lines_read": true
+    }
+  ],
+  "findings": [
+    "Codec preserves every literal signed/high-zero byte: affine tape definitionally identical, powers framing append theorem proves exact same I58 tape.",
+    "Affine-ready uses SAME immutable program, actual q acquisition and physical slopes/loop; full Grid source omitted only at explicitly already-acquired cache boundary.",
+    "Resource derives actual array/argument bytes from fitted per-register widths, literal ONE and true q/grid/W VALUES; never elapsed execution or a native report clock.",
+    "Bounds sums actual whole A112/I58/P47 calls+returns+halt, fixed1e150R30. Prefix storage counts ALL140 roles including allocated shadows plus genuine return cells via SAME program halt.",
+    "OriginalResources pays actual W/true2^a enumeration and proves universal dimension150/root1500 caps; upstream N-only composition and complete weight source remain explicitly separate. No blocker."
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "review": "review-query-original.md",
+  "review_sha256": "4b8a67c26d04792ea049628ed73bbe5973385acc7dd7a3e900bc74b98c5b364c",
+  "modules": [
+    {
+      "role": "ROOT8",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramGrouping",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramGrouping.lean",
+      "source_sha256": "0893cf0cc57dc7d3bfcdd6bc8e4f34fd45cbf59688d70f3f7539b247d8f7ff60",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramGrouping.olean",
+      "object_sha256": "1966277b6bd78e75d7441a9417703604e0966fe9dd7b4f6a64b9c4eb394d5179"
+    },
+    {
+      "role": "ROOT8",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramDifferences",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramDifferences.lean",
+      "source_sha256": "2881b2ad6732122dc3520acae6bad2b1f6fe93b939074b74cf127d09e95df82a",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramDifferences.olean",
+      "object_sha256": "c365dd9be651268ea864bbafc05cb94213f0d65584b85550b3b3ba0b6abd4791"
+    },
+    {
+      "role": "ROOT8",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramMetadata",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramMetadata.lean",
+      "source_sha256": "6685c6e1437727b66cff2f63e9e8ff7b9847f32dcac6fb54ceccffe582d3cdc8",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramMetadata.olean",
+      "object_sha256": "efe19dab72ddf9723bd2a38cb62f5ebb24f075f196b3a3a067fab38008d1f32f"
+    },
+    {
+      "role": "ROOT8",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramKeyBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramKeyBits.lean",
+      "source_sha256": "74547196939247a7bc567ceeb58f73090fc3004a3f5271cc987e117d6377eda0",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramKeyBits.olean",
+      "object_sha256": "948a652ed3bed3c95ec7c820c9cb03b9659289ca0546e77e1f6d92d1cfa95cfa"
+    },
+    {
+      "role": "ROOT8",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramDictRefinement",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramDictRefinement.lean",
+      "source_sha256": "8b89144ac1c25583952bc9c62451073ab7121a305c6129b4c5bab6c81d4f9f8b",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramDictRefinement.olean",
+      "object_sha256": "6e476ec2d58e582548006f38948887da8d94abb634b3a13b216be92cf6d3ca2f"
+    },
+    {
+      "role": "ROOT8",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramSetup",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramSetup.lean",
+      "source_sha256": "37d4623f713e61c046ef0e6a374210a9983e969f8b5458336471d13cecfb476b",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramSetup.olean",
+      "object_sha256": "aa55f0cf749c20b0ba44b1bbbbf7200e635e8f18ff2a15a6d4318bbdb582f899"
+    },
+    {
+      "role": "ROOT8",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramQuery",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramQuery.lean",
+      "source_sha256": "d68e70b83541acf300c120ea8d7379653561fa720ea5abbf5b2f53f41731f2f4",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramQuery.olean",
+      "object_sha256": "1ea21ea41feff9fdfceeccabb773d2b6fc186fd97b5003b307acb165c99b340f"
+    },
+    {
+      "role": "ROOT8",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramQueryCorrectness",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramQueryCorrectness.lean",
+      "source_sha256": "c78440e4e376b66436c099ffd64324dc9d905934d19480c3fd4a30b2b1965450",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramQueryCorrectness.olean",
+      "object_sha256": "cafd16cb65e243b70af515bca3ad23e6274d684c21b2e6a2b5dbb1c6dfbbe790"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramPortKeys",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramPortKeys.lean",
+      "source_sha256": "a67c512ef76830b90c0c54ee35a2114e06fb2590cf858eb78415d3386263439f",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramPortKeys.olean",
+      "object_sha256": "835be0b1ef28a9badd0b971296b9cf93fcf72c84858fa02c8dc4d055ebb09ae1"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramOriginalSums",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramOriginalSums.lean",
+      "source_sha256": "077cc16ed39d4612cdeea6bc6ceca1ffb3042776bdd15355e58b9af7364295d3",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramOriginalSums.olean",
+      "object_sha256": "a9f1fe6c099bb9215251596017342af0c4a5d720aa04e85d0a4480933adba777"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramAcquiredSums",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramAcquiredSums.lean",
+      "source_sha256": "cb765288162d73f18bab1385cfc596b96d679c393a2fa19c2a475297143fc426",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramAcquiredSums.olean",
+      "object_sha256": "34f717b5648e67612673f176a6093c032f0867a5cf19308994c8fb2aecfc9f22"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramHeadAggregate",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadAggregate.lean",
+      "source_sha256": "b8f1168be808bfb4a3f062cb5dafb36913fc50345f84fa74fcd0796670dea8b2",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadAggregate.olean",
+      "object_sha256": "db18c3a2c98d91509ca64ed36e22eec3da33c9a7d3bbeded4630afb6e7dc136f"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramHeadOriginal",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadOriginal.lean",
+      "source_sha256": "ba7f5452e401b47b945e89a93f99fb8a5790bcc625c188adc09d0527e74ba19e",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadOriginal.olean",
+      "object_sha256": "7365330fe172eb4255de2f6a573cd186276cff0a889ea6db306cfa0733b27e04"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramFeatureBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramFeatureBits.lean",
+      "source_sha256": "43a60aa1f7823d64d4c2646526afa6c893a17df88c81be4b2af69bcd36b348b3",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramFeatureBits.olean",
+      "object_sha256": "c7d198fb8de2b2ef778cd842b36101efeb6f27b73d48211215c12276024b9d00"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramFeatureBitsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramFeatureBitsBounds.lean",
+      "source_sha256": "c9221f4b4249cf3f774a2fcc883a4a2308b406e01dec3c05ef93da49cf50395f",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramFeatureBitsBounds.olean",
+      "object_sha256": "ad0365366e0e7d6517fffc3f084f1a154536f4c56c3c25e1dc64ea70e5c6d684"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramHeadBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadBits.lean",
+      "source_sha256": "81a56f53a3dc3d659597c8c55503c3caf9b34c11cac4c2670d14ca0a1f75b287",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadBits.olean",
+      "object_sha256": "82f96b771e294b81b6207d4ac9b6ccc48519919e29e7d587704e4a85797efe53"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramHeadBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadBounds.lean",
+      "source_sha256": "e93489bbfaa105f38f8e4221d0d4f8d900f8e9446a10132dd5396ce7aa02a447",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadBounds.olean",
+      "object_sha256": "7f4e098e14f29993a8439a0ae699e292da8126e0daab8d3fb4b6950731d5a63e"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramHeadQueryBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadQueryBounds.lean",
+      "source_sha256": "4112efd3ac3e0eff9491a386297f933b9b4fa0f094a4ed2becd0a89cecc5289f",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadQueryBounds.olean",
+      "object_sha256": "3d4bb390b78c53c3f797884d45b90eaf0785c6726d9d6366d910b221c2650c8c"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramHeadRefinement",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadRefinement.lean",
+      "source_sha256": "453cc50ce0d56ab7c4f9dea96eb2ae53568e9c7674fddc89f112ad809f090b4e",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadRefinement.olean",
+      "object_sha256": "a7aac1582191a3875126d1b7c856a47acbeb2f087f9728757f7c4a2c8fd31e04"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramRowKeys",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramRowKeys.lean",
+      "source_sha256": "a019520042e48be1f8a13911b05943593211ee51fdcaa1f073769418f6a132c2",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramRowKeys.olean",
+      "object_sha256": "7aea333755929390691275526d20983b7aca86a4a6d146f67bc4ff4bedf52c23"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramRows",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramRows.lean",
+      "source_sha256": "7b280f8f279a2259114c95b3dc1efd5e7732d6364d5e9c8ce2236f2c3f240a04",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramRows.olean",
+      "object_sha256": "2fec217f83cb048bcc506b951ff02f747eb55d184892aeeb74465757f48700fc"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramRowsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramRowsBounds.lean",
+      "source_sha256": "fab1014bd8bf3f3f3d518637f71a15445fc7377c7a3c67a6162bef980af7a7f1",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramRowsBounds.olean",
+      "object_sha256": "aca2a255424f7ccf8267a101eb1c1265a2a1ab1dddbbea6cc3267cae59ff4406"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramTrieStore",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramTrieStore.lean",
+      "source_sha256": "0a3e501c1d96d9861a43bf7986748cf43a8b1532fe8f45b69fd78b8dadac04c3",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramTrieStore.olean",
+      "object_sha256": "03aec8a496aa9c351934206f6f940e3d28a0c4d2048ba17b5796b96d86eb53b1"
+    },
+    {
+      "role": "reviewed_connector_or_engine",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramPrefix",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramPrefix.lean",
+      "source_sha256": "80a9258f509959f089733be444f844e398bc780c75583c02c7534c6e08a7bf6c",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramPrefix.olean",
+      "object_sha256": "fd09b2215de2750798523b47c59306ffa15ab6603e6f856a13c492fa41af7d66"
+    },
+    {
+      "role": "finalized_selector_resource_interface_read",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramQueryBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramQueryBounds.lean",
+      "source_sha256": "d0ae9cf972a5ff6aadf8e0dcc1275d4e20365916d397401d5040e23313f1c5c9",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramQueryBounds.olean",
+      "object_sha256": "ade47703155feb66efb4d133861a61eb1269edd2feb034146e10d270ade5235f"
+    },
+    {
+      "role": "finalized_selector_resource_interface_read",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramSearch",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramSearch.lean",
+      "source_sha256": "dc0b011fe1f95ccccfa4ebd7bd919086d79df8029e07ebfda0aa6197ede032fb",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramSearch.olean",
+      "object_sha256": "3da6affce89f57f27d8bdf75ec35bfc120935391fc6cbce254755df6f66117d4"
+    },
+    {
+      "role": "finalized_selector_resource_interface_read",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramSearchBudget",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramSearchBudget.lean",
+      "source_sha256": "1c4a9991b2dccd5e25084208b6ce878b7555b8fc5283a0558b2b5843be48e174",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramSearchBudget.olean",
+      "object_sha256": "4fb3ce4362e65ecce98fd1b64c56a05fdb8a41242ca226d71954bc7e239bf6fc"
+    },
+    {
+      "role": "finalized_selector_resource_interface_read",
+      "module": "RiemannGaussian.SemiprimeSourceHistogramResources",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramResources.lean",
+      "source_sha256": "94d983e8fe2d24b8f20d1b8ffbcc5045f08caa919498303cebd8c7cb7c5b14bb",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramResources.olean",
+      "object_sha256": "09c4140b26994a84b370678a23e9eb1e91b81871c669b0e22f2839e93338f151"
+    }
+  ],
+  "query_note_sha256": "2d83f3c5a113ae3a1e2ebab9ab6fa55dbb141e8a911e8aa1011e01acb396cb48",
+  "root8_audit_log_sha256": "f16be2382549989a81d114025f7b7536c4e181580cafcfa623f411e557207e48",
+  "scope": "Read-only original-query and selector equality/callpath/report-scope review. No source builds/edits; author-owned SetupBounds not independently reviewed here.",
+  "handoff_note_sha256": "3b3ed2bf4e6f6507646bc0ff62bdbff70607d773a8e41a0c68eda98436ef7b53",
+  "ordered_refresh_provenance": {
+    "source_verification": "All 28 reviewed current canonical source SHA256 values verified unchanged, including previously reviewed FeatureBitsBounds whitespace-only cleanup.",
+    "object_refresh": "All 28 object SHA256 pins refreshed from current canonical objects after final topological refresh.",
+    "parent_verification": "Parent reports final42 strict/root15/standard3 audit PASS; all42 isolated rebuilds byte-identical to current canonical objects; actual17682 compiler-import dependencies unchanged.",
+    "scope": "Import metadata refresh only; no additional source/runtime change or change to PASS conclusion. Parent verification evidence is reported provenance, not an independently rerun build."
+  }
+}

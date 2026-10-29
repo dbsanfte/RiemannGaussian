@@ -1,0 +1,55 @@
+ROCm selected-attention softmax audit
+Pinned read-only checkout: /tmp/llaminar-qwen-flash-next-audit-20261025
+Commit: f609b409b599ebdfbc48d60e6a77a782127ab3cd
+No code changes, GPU builds, performance measurements, or hardware claims.
+Read full root AGENTS.md and .agents/rocm-tuning/SKILL.md.
+
+PROGRAMS / PHASES
+- QwenSparseAttentionArithmetic.h:20-27: FixedFP32 default everywhere. Explicit ROCm fp16_tile8 and resolved33 are different arithmetic programs.
+- ROCmQwenSparseAttention.hip:71-96: default 256-thread row/head/8-part CTAs; optional rotateQueries then partitions then reducer. Native FP16-only explicit branch :98-130 uses 4*64 threads (8 parts), 6*64 (33 parts); validates aligned FP16 K/V,64-wide preRoPE.
+- Qwen4ExpSparseAttentionBuilder.cpp:165-185: phase selected before capture from actual ForwardExecutionPhase; Uniform returns base. prefill8_decode33 requires explicit fp16_tile and canonical single-request family, Prefill8, Decode33. Decode includes ordinary1 and retained verifier rows; it is not M>1=>prefill.
+- QwenSparseAttentionArithmetic.h:132-140: decode row capacity max(1,retainedMtpCandidateRows).
+- QwenSparseGPU.cuh:41-48: default logical32 shuffles map to CUDA warp32 and HIP half-wave64. FP16 explicit producer hardcodes64-lane wave at ROCmQwenSparseFP16Attention.cuh:871-872,999,1005,1069; not evidence of wave32 portability. Current CMakeLists.txt:356-359 targets gfx906 only.
+
+DEFAULT ARITHMETIC
+QwenSparseGPU.cuh:745-870:
+8 fixed partitions each257 selected indices (QwenSparseAttention.h:26-36 max2051), independent of M. Per token,32 lanes each8 ascending FP32 FMA coordinates :803-817, shuffle down16,8,4,2,1 :819, FP32*1/16 :820. BF16/FP16 native KV does not make resulting FP32 scores a BF16/FP16 alphabet.
+Maximum tree width128..1 :823-832. expf(actual FP32 shifted argument) :834-837. Each lane local sum (d0 may own257th) then fixed256-leaf tree :840-845. Every output dimension uses ascending token PV FMA :849-854. Metadata maxima/denom plus256 weighted values. Ordered part scale/denom fold :1044-1056; numerator FMA :1063-1068. Final FP32 division :1143; optional sigmoid gate exp/multiply :1152; FP32 output :1153. No probability array with a BF16-output rounding target.
+
+EXACT DUPLICATE REUSE
+- Preserve actual shifted-FP32 argument bits and the same compiled expf, then scatter exact exp results into unchanged ordered sums and PV FMA. Score equality before subtraction suffices if same maximum, but argument-bit grouping catches more repetitions. Keep head/row/partition maxima distinct. Global logit/multiplicity regrouping changes the reference tree.
+- N<=2051 per row/head, U unknown from source; U must be observed on actual traces. Within257 partitions tiny tables, ballot/hash work, LDS barriers and VGPRs may dominate exp savings. There is no basis for importing vocabulary248320/U3020 counts into attention.
+- Default partitions already materialize each exponential only once in shared logits; there is no per-dimension exp duplication in PV.
+
+STRONGER SCALE ZERO OPPORTUNITY, EXPLICIT FP16
+ROCmQwenSparseFP16Attention.cuh:1046-1056 computes next=max(old,tile), previousScale=(denom==0 ?0:expf(old-next)), tileScale=expf(tile-next), then original value*scale and fmaf recurrences.
+For finite maxima, one exponent argument is exactly+/-0. With pinned evaluator expf(+/-0)==1 established, first tile gives previous0,tile1; later tiles evaluate at most one nonzero difference, set the winning scale1; equal maxima both1. This can remove an entire wave-uniform exp call, unlike electing one lane. Keep every original product/FMA, including first-tile neutral FMAs, and numerator/denom publication. Exceptional/nonfinite inputs need explicit original behavior; do not silently reinterpret them. Proof of finite accepted score regime and exp0 on compiled backend/flags still outstanding.
+Source counts per row/head, T=ceil(N/64), K=min(T,8):
+fp16_tile8 old N+64*(2*T-K); zero-elision at most N+64*(T-K); at N2051,T33:5763=>3651 scalar lane evals (25 wave-uniform nonzero scale calls remain).
+fp16_tile33 each nonempty stream has exactly one tile (:929-930): old N+64*T=>N; cap4163=>2051. Reducer separate.
+These are source scalar evaluation counts, not instructions/time. Compiler may already recognize some constants; no local SDK/codeobject available to inspect. Compare exact loaded ISA for exp instructions/calls, execution masks, VGPR/SGPR/LDS, occupancy, spills before claiming speed.
+
+OTHER DUPLICATES AND WAVE CAVEAT
+- :1047-1048 old/tile scales repeated across64 lanes with identical operands on finite valid data (XOR64 denominator symmetric addition tree of nonnegative finite values). Evaluating one lane+broadcast gives source eval64=>1 but can keep same AMD VALU exp instruction, add shuffle/exec-mask cost. Do not call this64x throughput gain. Scheduling/repacking distinct work needed to exploit lane savings.
+- QwenSparseGPU.cuh:1022-1030 FoldParts33 computes same part32 scale across32 lanes. On HIP PerOutputDenominator=true (:973-976), only d0 result used in scales[32], others dead at source; electd0 source32=>1 might compile identically. For CUDA all32 lanes also use scale in denominator chain, must broadcast and keep chain. F33 only when selected>2048 (:1120-1139). Other F8/12/16/32 branches have no part32 replication.
+- Default partition-merge scale has8 or fewer nonempty exp evaluations, already d0-only. exp0 elision may avoid at least the largest nonempty partition eval, but small scalar workload.
+
+EXISTING FP16 PROGRAM IS NOT AN EXACT FP32 REPLACEMENT
+ROCmQwenSparseFP16Attention.cuh:918 rounds scaled FP32 Q tohalf; :971-993 uses ordered packed-half fdot2 with FP32 score accumulation; :1000 FP32 exp; :1001 stores half RN(exp*2^-7); :1002-1006 uses unrounded FP32 exp in XOR64 denominator, scaled2^-7. :796-800 (PV helper) uses half2 HFMA over parity token streams. FP32 totals :1053-56 and parity merge :1069-75.8/33 change token partition/order. Their contract is grouped==serial within the same program, not bits of defaultFixedFP32. Existing half rounding and1/128 prevent persistent half overflow; retain boundaries.
+
+CERTIFIED LOWER PRECISION
+A real-softmax BF16 rounding certificate is not sufficient for final FP32 attention bytes. Required target must be named: (A) current compiled FixedFP32 bits, (B) current compiled fp16_tile8/33 bits, or (C) separately selected correctly rounded real attention output.
+For A/B enclose actual QK rounding, backend exp approximation+FTZ/subnormal behavior, denominator tree, weighted sums (signed V cancellation), part merge, divide, rotations/gate and casts. Probability-only interval l_i/U<=p_i<=u_i/L applies real weights; needs extension for this actual implementation and weighted final outputs.
+Certifying only half probability cast at:1001 cannot skip FP32 exp because same exponential is used unrounded in denominator. Either reproduce that denominator exactly or certify whole finalFP32 result. FP16 exp storage alone is not bit preserving. Common multiplicative cancellation in real algebra does not cancel implementation rounding. Preserve NaNs/infinities/signedzero policy and literal neutral FMAs.
+No current source exp-bound/certifier/LUT kernel or proof of cheap global hitrate established.
+
+CAPTURE / BUDGET / IMMUTABLE APIs
+- Native launches require exact nondefault stream and immediate launch check (ROCmQwenSparseAttention.hip:19-30). No hot allocation, H2D/D2H, sync, host-count lookup, eager recapture.
+- QwenSparseAttentionStage.cpp:489-539 hashes pointers/geometry and arithmetic/phase/retainedcapacity; new tables require exact pointer/device/generation, table/evaluator policy, workspace and kernelmode identity.
+- Qwen4ExpBufferLayout.cpp:283-293 current partial reservation uses max(8*PrefillRows,33*DecodeRows) perhead for explicit schedule (shared mutually-exclusive phase/layer storage). QwenSparseAttentionPartial1040B (8B maxima/denom +1024 weighted+8 counters); default24head row199680B;33row823680B. New tables must enter PMA typed BOM, no anonymous reserve or parallel ledger. Per-row/head cache multiply across actual concurrency; a BF16dense65536float LUT256KiB would not encode these FP32 args.
+- ImmutableResidentLookupKernels.h:23-60,76-79 proves existing immutable pointer/device/format/geometry/generation identity pattern, source owner retains PMA allocation; :94-103 gather operands assume INT64 ids[capacity,16] source-native embedding rows. This is not an existing exp LUT interface; reuse ownership principles, not representation semantics. RAM/mmap/adaptive service not an automatic route for exp misses.
+- Bounded refinement must be a complete preselected captured arithmetic program with admitted persistent buffers and fixed bounded passes/device mask. No automatic fallback to old kernel/eager/host/refinementalloc if certificate fails. Refine within declared program, otherwise fail fatally with precise diagnostic; an ordinary FP32 softmax also is not a correct-rounding-real oracle by definition.
+
+VALIDATION GATES (not run)
+Existing integration source tests QwenSparseFP16ROCmTest.h and QwenSparseFP16Parts33ROCmTest.h capture production entrypoint, compare grouped/serial output+partial bytes, poison dirty/inactive/empty records, compact head shards and pre/postRoPE, extreme finite and signedzero. Examples latter file:88,154,247,331,382,473. CMake registers V2_Integration_ROCm_QwenSparseAttention:974 and preflightfocused tests later. Add candidate-vs-frozen-reference byte oracle too: optimizing serial and grouped identically can pass mutual check despite drift from old program. Sweep all accepted codecs forFixedFP32, FP16 encodings for explicit programs, N64/257/512/768/1024/2048/2051 boundaries, M1..supported grouped, phase and retained graphs, tails/subnormals/cancellation/signedzero, optional gate/rotations and dirty replay.
+Measure Release unprofiled captured-native events and whole-model PerfStats, exact isolated onecandidate rocprof run and loaded ISA (no profiler timing in canonical samples), canonical all-format/backend and registered preflight/model gates. Current skill requires zero spills and exact streams. No speed estimate certified here.

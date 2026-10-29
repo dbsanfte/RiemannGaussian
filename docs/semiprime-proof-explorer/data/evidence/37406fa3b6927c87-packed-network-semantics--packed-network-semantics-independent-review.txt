@@ -1,0 +1,13 @@
+{
+  "verdict": "PASS_ALL3_CURRENT_INDEPENDENT_READ_ONLY_REVIEWS",
+  "pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkReindex.lean": "fa63f8bfda692f3ebf33fe4e9b9ecd61cf55d47934724950c98199974b984724",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkEntries.lean": "eb1865fffc0dcbe8a39ff6fa9cbbea5dcad1154fb63d34711baa649cac16b1c4",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkSemantics.lean": "e068f587e155980a5e7e604b306b47cb86d763391b5d92381f9805651016f8ef"
+  },
+  "review_artifacts": [
+    "packed-network-semantics-owner-review.txt",
+    "packed-network-semantics-vertex-review.txt"
+  ],
+  "scope": "Natural and public indexed semantic helpers only; actual original weighted network instantiation and actual runtime remain separate obligations."
+}

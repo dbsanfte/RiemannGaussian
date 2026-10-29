@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "reviewer": "vertex_record_logger",
+  "scope": "Supplemental full current bodies of all FIVE assigned changed sources, all617 lines: CatalogueCodecs104+ForwardBucketsSource130 first nontruncated batch, ReadyResources134+VerticesSource147+FinalFrames102 second nontruncated batch. No imports/builds/edits/controls/replays.",
+  "all_current_assignment_before_after_flat_sha_match": true,
+  "modules": [
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryCatalogueCodecs",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryCatalogueCodecs.lean",
+      "sha256": "04040a02c52dcb3ab39c04b7d7c8d092aa9e37522c4a74e954e5734be9a79cbf",
+      "lines": 104,
+      "previous_sha256": "bc8d7474964d1ef074a8069f3b60659186c03aee83e810efca8c6fd0fd426763",
+      "previous_source": "/tmp/semiprime-explicit-rate-20261027/child-group-factory-failed-attempt1/sources/SemiprimeD1StackChildGroupFactoryCatalogueCodecs.lean",
+      "reviewer": "additional-vertex",
+      "exact_change": "Added documentation strings only",
+      "full_body_review_required": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryForwardBucketsSource",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryForwardBucketsSource.lean",
+      "sha256": "588f8c49819a0ef89e4a0aa0f771482d0e2bf767f1ebb53ecb1ef6f4a0ed93ad",
+      "lines": 130,
+      "previous_sha256": "5e6af86eff64233112a6f6502fbce64731c2f691908f0a2354d516d50ed8320a",
+      "previous_source": "/tmp/semiprime-explicit-rate-20261027/child-group-factory-failed-attempt1/sources/SemiprimeD1StackChildGroupFactoryForwardBucketsSource.lean",
+      "reviewer": "additional-vertex",
+      "exact_change": "Added documentation strings only",
+      "full_body_review_required": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryReadyResources",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryReadyResources.lean",
+      "sha256": "58dec69eb21fca0d50ddd9c2a0e5cb3e830d574605b324825a93c4d6ed41e157",
+      "lines": 134,
+      "previous_sha256": "2cf3f7ea54929f233e59464cc3f5a2a62d09f4e891e004114e57a5c66db5bc30",
+      "previous_source": "/tmp/semiprime-explicit-rate-20261027/child-group-factory-failed-attempt1/sources/SemiprimeD1StackChildGroupFactoryReadyResources.lean",
+      "reviewer": "additional-vertex",
+      "exact_change": "Removed unused proof typeclass only",
+      "full_body_review_required": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryVerticesSource",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryVerticesSource.lean",
+      "sha256": "0a0c42ffa780c114ad8c95a947d0b2b6dc770c2b961d4dd982d04b03e491c65f",
+      "lines": 147,
+      "previous_sha256": "8c3b9e79765dce52d319bc1c765de1e23070dc4f838688b223bd1af9b07c924a",
+      "previous_source": "/tmp/semiprime-explicit-rate-20261027/child-group-factory-failed-attempt1/sources/SemiprimeD1StackChildGroupFactoryVerticesSource.lean",
+      "reviewer": "vertex",
+      "exact_change": "Added documentation strings only",
+      "full_body_review_required": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryFinalFrames",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryFinalFrames.lean",
+      "sha256": "dea00208a126736a02fcb9e9e64cec008894669de6b4a472af5f5dee44483063",
+      "lines": 102,
+      "previous_sha256": "2b664cd5b61b852ce122d8324bd000c4b4d3263cce77a0f32d20d906c5ff78d2",
+      "previous_source": "/tmp/semiprime-explicit-rate-20261027/child-group-factory-failed-attempt1/sources/SemiprimeD1StackChildGroupFactoryFinalFrames.lean",
+      "reviewer": "vertex",
+      "exact_change": "Added documentation strings only",
+      "full_body_review_required": true
+    }
+  ],
+  "before": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryCatalogueCodecs.lean": "04040a02c52dcb3ab39c04b7d7c8d092aa9e37522c4a74e954e5734be9a79cbf",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryForwardBucketsSource.lean": "588f8c49819a0ef89e4a0aa0f771482d0e2bf767f1ebb53ecb1ef6f4a0ed93ad",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryReadyResources.lean": "58dec69eb21fca0d50ddd9c2a0e5cb3e830d574605b324825a93c4d6ed41e157",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryVerticesSource.lean": "0a0c42ffa780c114ad8c95a947d0b2b6dc770c2b961d4dd982d04b03e491c65f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryFinalFrames.lean": "dea00208a126736a02fcb9e9e64cec008894669de6b4a472af5f5dee44483063"
+  },
+  "after": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryCatalogueCodecs.lean": "04040a02c52dcb3ab39c04b7d7c8d092aa9e37522c4a74e954e5734be9a79cbf",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryForwardBucketsSource.lean": "588f8c49819a0ef89e4a0aa0f771482d0e2bf767f1ebb53ecb1ef6f4a0ed93ad",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryReadyResources.lean": "58dec69eb21fca0d50ddd9c2a0e5cb3e830d574605b324825a93c4d6ed41e157",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryVerticesSource.lean": "0a0c42ffa780c114ad8c95a947d0b2b6dc770c2b961d4dd982d04b03e491c65f",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryFinalFrames.lean": "dea00208a126736a02fcb9e9e64cec008894669de6b4a472af5f5dee44483063"
+  },
+  "full_body_lines_read": 617,
+  "original_assignments_and_reports_preserved": true,
+  "actual_changes_reviewed": [
+    "One CatalogueCodecs documentation string only.",
+    "Two ForwardBucketsSource documentation strings only.",
+    "Four VerticesSource documentation strings only.",
+    "One FinalFrames documentation string only.",
+    "ReadyResources private word_le_sum removed unused DecidableEq K only; proof remains exactly the same nonnegative finite-sum bound."
+  ],
+  "findings": [
+    "No blocker found. Owner-before-factor occurrence endpoint order and literal raw keys, duplicates, selected flags and packet observed order are preserved by the codec joins; semantic lists remain proof interpretations of actual generated words.",
+    "ForwardBucketsSource joins actual forward source and actual bucket source with complete fresh parser/work operands and retained actual packet tape; its source_trace premises describe actual acquired cache boundaries, not new runtime operands.",
+    "VerticesSource executes both restoring marker copies, the full actual loop and exactly two paid chronological reversals. All input old endpoints/buckets/key and protected caller fields survive; source/body cleanup is explicit.",
+    "FinalFrames executes six literal restoring Frame calls, preserving all source and nonoutput words and charging each source byte. Final nested frame order is activation/endpoints/buckets/leftPorts/orders/oldEndpoints.",
+    "ReadyResources charges all258 retained/private/shadow words plus the13actual input words; core and ready run are SAME actual source traces. Prefix fuel comes from SAME true halt, and all data/real return cells have fixed S12 cap. It remains honest READY input, with enclosing N-only caller separate.",
+    "No runtime program, physical role alias, clock definition or original semantic statement changed. The proof-only typeclass removal and documentation fixes introduce no new premise or advice."
+  ],
+  "source_canonical_writes": false,
+  "timestamp_utc": "2026-10-29T05:57:55.899021+00:00"
+}

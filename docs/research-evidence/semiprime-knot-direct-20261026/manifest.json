@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6793,
+      "sha256": "7305089b368bb11034014defa2850137501e2e805391352057cc6d1550efb97d"
+    },
+    {
+      "path": "core-query.md",
+      "bytes": 11927,
+      "sha256": "21a62471f1d91d55f8095c7d0f09348f46167fc44248af13c6fbaed545850275"
+    },
+    {
+      "path": "core-review.md",
+      "bytes": 3968,
+      "sha256": "c4fdc20a30b0091daaef1d2827d0cc19a41404d7561ab3413caf08e9a32aab88"
+    },
+    {
+      "path": "fast-query-review.md",
+      "bytes": 4541,
+      "sha256": "baa9255c56db72a41ebc19516289fbd11db5e0c4b38e149b43bc5a46a3e1dff1"
+    },
+    {
+      "path": "fast-query.md",
+      "bytes": 7592,
+      "sha256": "0a58861751c076616c845ea9af219fb0bde13cfc53dbc2879708f33b3f867ee1"
+    },
+    {
+      "path": "native-cover-review.md",
+      "bytes": 3243,
+      "sha256": "1dee755a36fdf52d20b4351ec02885efd9e58c895dca92fa1edd68ba98c73104"
+    },
+    {
+      "path": "native-cover.md",
+      "bytes": 7057,
+      "sha256": "55ed2750e136d802f542e9ff68c0c44df86575c313d64c30e492c37bd05c507d"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2496,
+      "sha256": "1557dc451a0d412abf17846168f9b2030d37d634add10c2c748362d260afe1cc"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 3453,
+      "sha256": "d707a673bd9c71d9b4ffa4b04ff873161017cf9507304207aa6c198554acbc0f"
+    }
+  ]
+}

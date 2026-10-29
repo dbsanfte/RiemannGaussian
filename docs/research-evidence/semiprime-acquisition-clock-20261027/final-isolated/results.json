@@ -1,0 +1,137 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimePaidConstraintCache",
+    "exit_code": 0,
+    "seconds": 7.069245559978299,
+    "source_sha256": "9052c0d76f8ef20f0b02ef824cef192f222f4a656460d35ec94802b71e597522",
+    "isolated_sha256": "aa3022f67f2bb912d36cf6d8bd86c3606a94042b05a9687f674b21c16ef98c9a",
+    "canonical_sha256": "aa3022f67f2bb912d36cf6d8bd86c3606a94042b05a9687f674b21c16ef98c9a",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidConstraintRows",
+    "exit_code": 0,
+    "seconds": 7.042264589981642,
+    "source_sha256": "7900d3fa97ce73f172a39826f0251f97b07e08e73ce9d0bf9a7a385fca2a9b0f",
+    "isolated_sha256": "f65169991c9fa2d0fe6e199e597b1db8c173f6277a06bf7d4648ffff50e7c026",
+    "canonical_sha256": "f65169991c9fa2d0fe6e199e597b1db8c173f6277a06bf7d4648ffff50e7c026",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidPackingSnapshot",
+    "exit_code": 0,
+    "seconds": 6.532428461010568,
+    "source_sha256": "d172447a02e6631a5321d2e6ea53020a7630998b28826f158d76404dad709594",
+    "isolated_sha256": "eb7b698d0ec08b69b0470696fd56a589a3650de063cbcaf81a7826eaa05d43ce",
+    "canonical_sha256": "eb7b698d0ec08b69b0470696fd56a589a3650de063cbcaf81a7826eaa05d43ce",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidConstraintAcquisition",
+    "exit_code": 0,
+    "seconds": 7.702984554984141,
+    "source_sha256": "331bf3038c800c1a58c0c09b02bebd5158234523b0efef8cd71a8c0261b1f67a",
+    "isolated_sha256": "dc8e5270d8da0cfd5a5552afa93e3b4959605e3ec362a439d72e2c2c16a5d6f8",
+    "canonical_sha256": "dc8e5270d8da0cfd5a5552afa93e3b4959605e3ec362a439d72e2c2c16a5d6f8",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidOriginalConstraints",
+    "exit_code": 0,
+    "seconds": 7.070713252993301,
+    "source_sha256": "b8f079643b350082e255c15ad838a9ad50ba4e2d7a081f5d4371653353587c31",
+    "isolated_sha256": "d5bf3ff24a51840661899358cc5a441e4361afc6ddcd20706556f362bdb5babd",
+    "canonical_sha256": "d5bf3ff24a51840661899358cc5a441e4361afc6ddcd20706556f362bdb5babd",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidFiniteEnumerationLists",
+    "exit_code": 0,
+    "seconds": 10.166195894009434,
+    "source_sha256": "ee5b4e98119df644f5a7d067288af1a3f268149567ac235456e090d98a1e86b2",
+    "isolated_sha256": "bfb53dd36eab720b2348d0751e9f47ffc309c33c27f08581b0e95293a2281ae1",
+    "canonical_sha256": "bfb53dd36eab720b2348d0751e9f47ffc309c33c27f08581b0e95293a2281ae1",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidFiniteEnumerations",
+    "exit_code": 0,
+    "seconds": 8.803641331964172,
+    "source_sha256": "7c51d789be4c238a0352377e627f95e7848edd11886bd77e5753ff722abbddce",
+    "isolated_sha256": "9f643a582e031788a04b9ce67b506c0e939ed7495f06ba81606876f29abd01d3",
+    "canonical_sha256": "9f643a582e031788a04b9ce67b506c0e939ed7495f06ba81606876f29abd01d3",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidEnumeratedSource",
+    "exit_code": 0,
+    "seconds": 6.634902290010359,
+    "source_sha256": "6a68af5c4dc511ca1d7b2b8b570f90c448fef27110d560958b6adfcdcfc8ef4d",
+    "isolated_sha256": "27ca09211de86ea4136bccb8d0da1801e83de00853726e684812d7481bef60f6",
+    "canonical_sha256": "27ca09211de86ea4136bccb8d0da1801e83de00853726e684812d7481bef60f6",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidEnumeratedConstraints",
+    "exit_code": 0,
+    "seconds": 6.690502909012139,
+    "source_sha256": "158ff2d790e6b00718b35e89bc461d54c4450fedf3662684accf7f0d42341dac",
+    "isolated_sha256": "4608b80238b1fd53a98f93055742712f12d3d3ea0518d29b7dcc15d588137f8c",
+    "canonical_sha256": "4608b80238b1fd53a98f93055742712f12d3d3ea0518d29b7dcc15d588137f8c",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeRowSelectionBitArithmetic",
+    "exit_code": 0,
+    "seconds": 7.6445828799624,
+    "source_sha256": "b2b5da24bb4584863ce1f33804c94e3eacdc75704442958e5dfb29071673df9f",
+    "isolated_sha256": "235299ae93ff20814df6ed01e5ab57eb2fd2a493c7d9424442707a409454a630",
+    "canonical_sha256": "235299ae93ff20814df6ed01e5ab57eb2fd2a493c7d9424442707a409454a630",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeRowSelectionBits",
+    "exit_code": 0,
+    "seconds": 8.030290594964754,
+    "source_sha256": "a14df61200083aef10a7e6c83d3a4db89a8044c332f466fac00bd5cc589d887d",
+    "isolated_sha256": "e2843b41d51b5952b1a6cf191b760a29167e91ea5171885a47902a3ea8c1f231",
+    "canonical_sha256": "e2843b41d51b5952b1a6cf191b760a29167e91ea5171885a47902a3ea8c1f231",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidPrefixController",
+    "exit_code": 0,
+    "seconds": 7.661080249992665,
+    "source_sha256": "273af8bed8e409aa12ec396f312d5a936d4860f1e9e5238e1d8bb241c079657f",
+    "isolated_sha256": "2ec359229ed590b96f1b6b0c7f412d89d006fe1eb80fa0373145ed975c3fa9fa",
+    "canonical_sha256": "2ec359229ed590b96f1b6b0c7f412d89d006fe1eb80fa0373145ed975c3fa9fa",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidFactorDecoder",
+    "exit_code": 0,
+    "seconds": 8.501803966995794,
+    "source_sha256": "befba1a27c091b337c1b8920cead05c76808743c85f56dd1f184f249f095aab8",
+    "isolated_sha256": "0eafd84a9e0fac5a88ed530130ef2a0a2dee707b951bc394c679fcdcceb62b61",
+    "canonical_sha256": "0eafd84a9e0fac5a88ed530130ef2a0a2dee707b951bc394c679fcdcceb62b61",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidPublicController",
+    "exit_code": 0,
+    "seconds": 7.2997222149861045,
+    "source_sha256": "a75b96d1776d1e48371a58105e3b7daba68c740388e146e344ac171e6387acd2",
+    "isolated_sha256": "bf7b0456a7135d38339735d59bcc632196fbce860de24876afa714b464cafb11",
+    "canonical_sha256": "bf7b0456a7135d38339735d59bcc632196fbce860de24876afa714b464cafb11",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePaidScheduledController",
+    "exit_code": 0,
+    "seconds": 7.00984002900077,
+    "source_sha256": "5d39ff3428dc7aa86cd651af4a77dd572edc2b12447e60cfa264d56d906d8061",
+    "isolated_sha256": "500141dc0366d17de30fc60e5303a9c069e0583b7c3d7ceea50635bdf1359ee7",
+    "canonical_sha256": "500141dc0366d17de30fc60e5303a9c069e0583b7c3d7ceea50635bdf1359ee7",
+    "object_matches": true
+  }
+]

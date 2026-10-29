@@ -1,0 +1,19 @@
+{
+  "module": "RiemannGaussian.SemiprimeReportPolynomialGrowth",
+  "paths": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeReportPolynomialGrowth.lean",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeReportPolynomialGrowth.olean",
+    "isolated": "/tmp/semiprime-counter-budget-20261027/SemiprimeReportPolynomialGrowth.olean"
+  },
+  "sha256": {
+    "source": "e45831cf88ee74f5be36bb0e4d7b7d99c4f73982c1c49d10da20e691ca4194b6",
+    "canonical": "39e9d4a30ed499b9bf49d468c548ba453ac8413131aa13520fd6addb7aa757ab",
+    "isolated": "39e9d4a30ed499b9bf49d468c548ba453ac8413131aa13520fd6addb7aa757ab"
+  },
+  "strict": true,
+  "isolated_equal": true,
+  "ordinary_root_linters": 15,
+  "generated_declarations": 20,
+  "theorem_constants": 15,
+  "standard_axioms_only": true
+}

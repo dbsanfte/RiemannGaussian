@@ -1,0 +1,372 @@
+{
+  "verdict": "PASS",
+  "utc": "2026-10-29T05:33:53.417110+00:00",
+  "reviewer": "vertex_record_logger",
+  "assignment": "original parent indices6..44 inclusive from child-group-factory-review-assignments.json",
+  "scope": "READ ONLY EVERY39 full source body/ALL4378 currentlines, in nontruncated small batches. No imports/builds/source or canonical edits/controls/replays. All assignment=before=after=CURRENT flat SHA256 pins.",
+  "findings": [
+    "Fields executes literal real Field calls/returns and consumes actual TRUE parser flags. CatalogueCodecs proves exact framing and owner-before-factor/native ordered endpoint and bucket bytes; no decoded field/permutation supplier.",
+    "ForwardBucketsSource and complete Execution join real activation/occurrence/bucket/marker/query/ordinal/frame/drain traces through actual success and true halt. Cleanup visits all115 allocations/shadows, preserving only fixed real inputs/outputs; all actual saved returns and stale flags are treated honestly.",
+    "Quantitative closure is SAME-source S12 (fixed constants before inputs), including duplicate/EMPTY observed packets and true generated unary ordinal VALUES. Per-body stopped-prefix bounds are used locally; persistent cross-vertex growth is separately additive in actual emitted rows and binary carry, preventing iterated elapsed-time operand bounds. All115+realreturns prefix cells accounted for.",
+    "CatalogueNumbers derives actual fresh child-global binary ordinals by physical successor and packet-major zipIdx; it does not identify old occurrence IDs with generated child IDs. InputRetention proves all13 actual source/header words survive the whole source.",
+    "NativeActivation/Fields/Pairs derive all flags, exact paired source order/count, valid placement bytes and combined n+factor key domain from the actual original selector and placement producers. No supplied mask/classifier/owner getter remains at this prepared boundary.",
+    "NativeEndpoints/Buckets preserve exact owner-before-factor order, raw packet/slot/edge bytes, every original repeat, observed empty buckets and native factor incidence order. NativeScopes derives canonical child leftPorts via actual generated IDs and real unary converter.",
+    "NativeTags/TagResolution/TagOrder/Orders prove injective physical edge+side code against the SAME original ID bank, native resolved tags in exact positions and FIRST idxOf including missing tags. Original old-port order and multiplicities are preserved, without supplied tag inverse or permutation.",
+    "Ready258 injective aliases retain ALL143 producer words plus115 fresh allocations/seven EMPTY displaced input shadows. ReadyTrace proves direct SAME-count execution; translated halt\u2192realret is justified by actual empty frames, not an assumed return. ReadyResources charges complete retained bank mass and all258+realreturn cells by its own fixed S12 bound.",
+    "NativeInputs/PackedRootInputs internally close byte/domain/validity obligations from actual Root2505 stopped selector/occurrence/inventory projections for the marked NEW network topology. Actual NEW table operand remains separate from structural metadata; OLD precision/axes and NEW jet axis/precision remain distinct retained header words.",
+    "Original proves actual ready source to exact full native activation plus ALL-original-owner-first scope/order streams, including isolated/inactive vertices, with all producer/shadow retention. The literal enclosing N-only call/context install, recursive child tables/full zip, scalar acquisition and public factoring counter remain explicitly separate. No blocker found."
+  ],
+  "sources": [
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryFields",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryFields.lean",
+      "sha256": "ca8fd4800e580c09b2cc68ebe4b7142b42ef4f4b553cb187d78a00236540f421",
+      "lines": 77,
+      "before": "ca8fd4800e580c09b2cc68ebe4b7142b42ef4f4b553cb187d78a00236540f421",
+      "after": "ca8fd4800e580c09b2cc68ebe4b7142b42ef4f4b553cb187d78a00236540f421",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryCatalogueCodecs",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryCatalogueCodecs.lean",
+      "sha256": "bc8d7474964d1ef074a8069f3b60659186c03aee83e810efca8c6fd0fd426763",
+      "lines": 103,
+      "before": "bc8d7474964d1ef074a8069f3b60659186c03aee83e810efca8c6fd0fd426763",
+      "after": "bc8d7474964d1ef074a8069f3b60659186c03aee83e810efca8c6fd0fd426763",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryForwardBucketsSource",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryForwardBucketsSource.lean",
+      "sha256": "5e6af86eff64233112a6f6502fbce64731c2f691908f0a2354d516d50ed8320a",
+      "lines": 128,
+      "before": "5e6af86eff64233112a6f6502fbce64731c2f691908f0a2354d516d50ed8320a",
+      "after": "5e6af86eff64233112a6f6502fbce64731c2f691908f0a2354d516d50ed8320a",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryCleanup",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryCleanup.lean",
+      "sha256": "f5e98b314fd9c79d092b2d71051913c8d3f4ac985816ff1d65e6016e0b65ee74",
+      "lines": 122,
+      "before": "f5e98b314fd9c79d092b2d71051913c8d3f4ac985816ff1d65e6016e0b65ee74",
+      "after": "f5e98b314fd9c79d092b2d71051913c8d3f4ac985816ff1d65e6016e0b65ee74",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryFinish",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryFinish.lean",
+      "sha256": "14cfb6b79ee2b3aa8f8fe8d8892a036e1c43b0bd3e75ce2ad0e01744be59db15",
+      "lines": 55,
+      "before": "14cfb6b79ee2b3aa8f8fe8d8892a036e1c43b0bd3e75ce2ad0e01744be59db15",
+      "after": "14cfb6b79ee2b3aa8f8fe8d8892a036e1c43b0bd3e75ce2ad0e01744be59db15",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryExecution",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryExecution.lean",
+      "sha256": "9d4635e655a9db8fe18cf1ba829faaf1ff099e68f638052de2ccae7fa7d0ae36",
+      "lines": 147,
+      "before": "9d4635e655a9db8fe18cf1ba829faaf1ff099e68f638052de2ccae7fa7d0ae36",
+      "after": "9d4635e655a9db8fe18cf1ba829faaf1ff099e68f638052de2ccae7fa7d0ae36",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryTraceBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryTraceBounds.lean",
+      "sha256": "b9c805a848805a203461ba9000fba845249adcb653fd58969005c8405f9b88cc",
+      "lines": 104,
+      "before": "b9c805a848805a203461ba9000fba845249adcb653fd58969005c8405f9b88cc",
+      "after": "b9c805a848805a203461ba9000fba845249adcb653fd58969005c8405f9b88cc",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryInputCapacities",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryInputCapacities.lean",
+      "sha256": "67110495c3774bb1fb2e4dc1085bd6ba9be5cf84ca173e6e52e1c1472f3a3089",
+      "lines": 105,
+      "before": "67110495c3774bb1fb2e4dc1085bd6ba9be5cf84ca173e6e52e1c1472f3a3089",
+      "after": "67110495c3774bb1fb2e4dc1085bd6ba9be5cf84ca173e6e52e1c1472f3a3089",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryForwardBucketsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryForwardBucketsBounds.lean",
+      "sha256": "7692fd72d988f2186e759156df3bb1bd83b6fee0a2eb4d3b28b1259e44af3362",
+      "lines": 84,
+      "before": "7692fd72d988f2186e759156df3bb1bd83b6fee0a2eb4d3b28b1259e44af3362",
+      "after": "7692fd72d988f2186e759156df3bb1bd83b6fee0a2eb4d3b28b1259e44af3362",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryFrontierView",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryFrontierView.lean",
+      "sha256": "2c0f5a956c6edf6f6a7510cebdea20c34ab81695c55afbc3753d5b717f217798",
+      "lines": 78,
+      "before": "2c0f5a956c6edf6f6a7510cebdea20c34ab81695c55afbc3753d5b717f217798",
+      "after": "2c0f5a956c6edf6f6a7510cebdea20c34ab81695c55afbc3753d5b717f217798",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryRowByteBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryRowByteBounds.lean",
+      "sha256": "592375e315e5fad03b8abf514d728377427ab7da3327c70611743e60e645f919",
+      "lines": 122,
+      "before": "592375e315e5fad03b8abf514d728377427ab7da3327c70611743e60e645f919",
+      "after": "592375e315e5fad03b8abf514d728377427ab7da3327c70611743e60e645f919",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryVertexBodyBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryVertexBodyBounds.lean",
+      "sha256": "61605492cc8f9e1507637ba7f6eb1a4ec01d50389333314299b6df3e239e5119",
+      "lines": 120,
+      "before": "61605492cc8f9e1507637ba7f6eb1a4ec01d50389333314299b6df3e239e5119",
+      "after": "61605492cc8f9e1507637ba7f6eb1a4ec01d50389333314299b6df3e239e5119",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryRates",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryRates.lean",
+      "sha256": "9c08e659349216dba6bb88e86273be6b83e6dafedd83e81fcde8840e8cf5ca1e",
+      "lines": 36,
+      "before": "9c08e659349216dba6bb88e86273be6b83e6dafedd83e81fcde8840e8cf5ca1e",
+      "after": "9c08e659349216dba6bb88e86273be6b83e6dafedd83e81fcde8840e8cf5ca1e",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryVertexByteBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryVertexByteBounds.lean",
+      "sha256": "b9ce25b3414f7af4f1c8394c06a92d9eac8419993ec7858f6b500b7b95a1094f",
+      "lines": 433,
+      "before": "b9ce25b3414f7af4f1c8394c06a92d9eac8419993ec7858f6b500b7b95a1094f",
+      "after": "b9ce25b3414f7af4f1c8394c06a92d9eac8419993ec7858f6b500b7b95a1094f",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryVerticesByteBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryVerticesByteBounds.lean",
+      "sha256": "4d42795d0d7bf44e6b340a8aacfd9a09037ca15516013c3db090202583446a92",
+      "lines": 84,
+      "before": "4d42795d0d7bf44e6b340a8aacfd9a09037ca15516013c3db090202583446a92",
+      "after": "4d42795d0d7bf44e6b340a8aacfd9a09037ca15516013c3db090202583446a92",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryVerticesLoopBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryVerticesLoopBounds.lean",
+      "sha256": "9bf01a76cd2f4ab9d744a38bc254077443fca53679fb86ffac5472273e93a595",
+      "lines": 115,
+      "before": "9bf01a76cd2f4ab9d744a38bc254077443fca53679fb86ffac5472273e93a595",
+      "after": "9bf01a76cd2f4ab9d744a38bc254077443fca53679fb86ffac5472273e93a595",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryVerticesSourceBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryVerticesSourceBounds.lean",
+      "sha256": "f70831151dee639836ad93ca2e69d5f4e610ed8eddcac07cde81c37da5b0a54f",
+      "lines": 110,
+      "before": "f70831151dee639836ad93ca2e69d5f4e610ed8eddcac07cde81c37da5b0a54f",
+      "after": "f70831151dee639836ad93ca2e69d5f4e610ed8eddcac07cde81c37da5b0a54f",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryBounds.lean",
+      "sha256": "04dfefdfc9de91ada27f56290aab0b24424199f09f03955fbc6b0a6dba773da7",
+      "lines": 121,
+      "before": "04dfefdfc9de91ada27f56290aab0b24424199f09f03955fbc6b0a6dba773da7",
+      "after": "04dfefdfc9de91ada27f56290aab0b24424199f09f03955fbc6b0a6dba773da7",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryCatalogueNumbers",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryCatalogueNumbers.lean",
+      "sha256": "ad69989af09f792a82cc2007aefec1a4dd2a4a0f7551c4dd94ee3cc3831a3751",
+      "lines": 83,
+      "before": "ad69989af09f792a82cc2007aefec1a4dd2a4a0f7551c4dd94ee3cc3831a3751",
+      "after": "ad69989af09f792a82cc2007aefec1a4dd2a4a0f7551c4dd94ee3cc3831a3751",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryInputRetention",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryInputRetention.lean",
+      "sha256": "915a64ed95e331ef048fffce9a101b9e0bd8a5d0b9f3e9107a23dc97d3f6ec30",
+      "lines": 91,
+      "before": "915a64ed95e331ef048fffce9a101b9e0bd8a5d0b9f3e9107a23dc97d3f6ec30",
+      "after": "915a64ed95e331ef048fffce9a101b9e0bd8a5d0b9f3e9107a23dc97d3f6ec30",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeActivation",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeActivation.lean",
+      "sha256": "fcd55da00a44945ef81453e7b0cd7d22d5db09b8b5962821a53bdab1f430a71f",
+      "lines": 112,
+      "before": "fcd55da00a44945ef81453e7b0cd7d22d5db09b8b5962821a53bdab1f430a71f",
+      "after": "fcd55da00a44945ef81453e7b0cd7d22d5db09b8b5962821a53bdab1f430a71f",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeFields",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeFields.lean",
+      "sha256": "161a945d2140e439c983908e9319665be5c9f29a63a2b6fdf79f4783986639a5",
+      "lines": 107,
+      "before": "161a945d2140e439c983908e9319665be5c9f29a63a2b6fdf79f4783986639a5",
+      "after": "161a945d2140e439c983908e9319665be5c9f29a63a2b6fdf79f4783986639a5",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativePairs",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativePairs.lean",
+      "sha256": "ff8ea03e1db81d6a4a65905f95391b3812709e763661ee2db0e6ecc5a8f99910",
+      "lines": 97,
+      "before": "ff8ea03e1db81d6a4a65905f95391b3812709e763661ee2db0e6ecc5a8f99910",
+      "after": "ff8ea03e1db81d6a4a65905f95391b3812709e763661ee2db0e6ecc5a8f99910",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeEndpoints",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeEndpoints.lean",
+      "sha256": "a18e48a9e123384acaf016269a5534241b6df44acde880078e9aa14606842f01",
+      "lines": 92,
+      "before": "a18e48a9e123384acaf016269a5534241b6df44acde880078e9aa14606842f01",
+      "after": "a18e48a9e123384acaf016269a5534241b6df44acde880078e9aa14606842f01",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeBuckets",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeBuckets.lean",
+      "sha256": "d20fc4ee57782439f3e0e4c23206efa806c364122cfb55f3182e3341922efb3d",
+      "lines": 95,
+      "before": "d20fc4ee57782439f3e0e4c23206efa806c364122cfb55f3182e3341922efb3d",
+      "after": "d20fc4ee57782439f3e0e4c23206efa806c364122cfb55f3182e3341922efb3d",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryReady",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryReady.lean",
+      "sha256": "341313f4c02d38f0b00d322d6e5d961bc731b447c88ad398de25faa25c652f6c",
+      "lines": 167,
+      "before": "341313f4c02d38f0b00d322d6e5d961bc731b447c88ad398de25faa25c652f6c",
+      "after": "341313f4c02d38f0b00d322d6e5d961bc731b447c88ad398de25faa25c652f6c",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryReadyTrace",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryReadyTrace.lean",
+      "sha256": "70395eecaf6377b4e605d07ff46ab20a2336da45aa5efb84fa222a2f7c809f12",
+      "lines": 101,
+      "before": "70395eecaf6377b4e605d07ff46ab20a2336da45aa5efb84fa222a2f7c809f12",
+      "after": "70395eecaf6377b4e605d07ff46ab20a2336da45aa5efb84fa222a2f7c809f12",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryReadyExecution",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryReadyExecution.lean",
+      "sha256": "7ef27daeff81fff226c84ef9741bef1a83b2dc5d1b8e9a949822ef5837dbbb62",
+      "lines": 73,
+      "before": "7ef27daeff81fff226c84ef9741bef1a83b2dc5d1b8e9a949822ef5837dbbb62",
+      "after": "7ef27daeff81fff226c84ef9741bef1a83b2dc5d1b8e9a949822ef5837dbbb62",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryReadyRetention",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryReadyRetention.lean",
+      "sha256": "ca61db88737e9e193bd7dc7899b51414249ebb3a3ea0c44e580ee2e3e7bc8e3f",
+      "lines": 101,
+      "before": "ca61db88737e9e193bd7dc7899b51414249ebb3a3ea0c44e580ee2e3e7bc8e3f",
+      "after": "ca61db88737e9e193bd7dc7899b51414249ebb3a3ea0c44e580ee2e3e7bc8e3f",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryReadyResources",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryReadyResources.lean",
+      "sha256": "2cf3f7ea54929f233e59464cc3f5a2a62d09f4e891e004114e57a5c66db5bc30",
+      "lines": 134,
+      "before": "2cf3f7ea54929f233e59464cc3f5a2a62d09f4e891e004114e57a5c66db5bc30",
+      "after": "2cf3f7ea54929f233e59464cc3f5a2a62d09f4e891e004114e57a5c66db5bc30",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeInputs",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeInputs.lean",
+      "sha256": "3a3591bf4d41464843ea7f3742d0d48c4155bcfc8fd853b1f5e1505f67d660f5",
+      "lines": 98,
+      "before": "3a3591bf4d41464843ea7f3742d0d48c4155bcfc8fd853b1f5e1505f67d660f5",
+      "after": "3a3591bf4d41464843ea7f3742d0d48c4155bcfc8fd853b1f5e1505f67d660f5",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeScopes",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeScopes.lean",
+      "sha256": "c89e4ed33526404cd7eb18ad442d4e4183089366683b73d500730b1502cd4c0f",
+      "lines": 96,
+      "before": "c89e4ed33526404cd7eb18ad442d4e4183089366683b73d500730b1502cd4c0f",
+      "after": "c89e4ed33526404cd7eb18ad442d4e4183089366683b73d500730b1502cd4c0f",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeTags",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeTags.lean",
+      "sha256": "38230e0b35f2d618f215933878154f8ea098928c1b2dd261cf471e2830ec7b1d",
+      "lines": 107,
+      "before": "38230e0b35f2d618f215933878154f8ea098928c1b2dd261cf471e2830ec7b1d",
+      "after": "38230e0b35f2d618f215933878154f8ea098928c1b2dd261cf471e2830ec7b1d",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeTagResolution",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeTagResolution.lean",
+      "sha256": "5f87b0d0722e41e8611617d202d6bb020324898f5a2780931e4b169bd268a4fc",
+      "lines": 85,
+      "before": "5f87b0d0722e41e8611617d202d6bb020324898f5a2780931e4b169bd268a4fc",
+      "after": "5f87b0d0722e41e8611617d202d6bb020324898f5a2780931e4b169bd268a4fc",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeTagOrder",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeTagOrder.lean",
+      "sha256": "3bef3f16f70b34068e566f5d4a671c01321dee2fe92b6f44a5389961c13304bd",
+      "lines": 110,
+      "before": "3bef3f16f70b34068e566f5d4a671c01321dee2fe92b6f44a5389961c13304bd",
+      "after": "3bef3f16f70b34068e566f5d4a671c01321dee2fe92b6f44a5389961c13304bd",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeOrders",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeOrders.lean",
+      "sha256": "6c18de770317062327dcc130ce288796e80e5dbeb5c11e2b12977f717e316d35",
+      "lines": 139,
+      "before": "6c18de770317062327dcc130ce288796e80e5dbeb5c11e2b12977f717e316d35",
+      "after": "6c18de770317062327dcc130ce288796e80e5dbeb5c11e2b12977f717e316d35",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryNativeStreams",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryNativeStreams.lean",
+      "sha256": "dbb4cd14e5bafbee174a9767bc30b66e1eb56134fb358bdb0657f0035de89775",
+      "lines": 153,
+      "before": "dbb4cd14e5bafbee174a9767bc30b66e1eb56134fb358bdb0657f0035de89775",
+      "after": "dbb4cd14e5bafbee174a9767bc30b66e1eb56134fb358bdb0657f0035de89775",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryPackedRootInputs",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryPackedRootInputs.lean",
+      "sha256": "782c67e74ab091b28f851f95269c53949b8fce817aa2bf22dc9786182e70a57a",
+      "lines": 81,
+      "before": "782c67e74ab091b28f851f95269c53949b8fce817aa2bf22dc9786182e70a57a",
+      "after": "782c67e74ab091b28f851f95269c53949b8fce817aa2bf22dc9786182e70a57a",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackChildGroupFactoryOriginal",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryOriginal.lean",
+      "sha256": "abb97bcdd119ee16ed5e8314220f8c5e2cadfda92ea24e0ba46fc90af53fded5",
+      "lines": 112,
+      "before": "abb97bcdd119ee16ed5e8314220f8c5e2cadfda92ea24e0ba46fc90af53fded5",
+      "after": "abb97bcdd119ee16ed5e8314220f8c5e2cadfda92ea24e0ba46fc90af53fded5",
+      "all_lines_read": true
+    }
+  ]
+}

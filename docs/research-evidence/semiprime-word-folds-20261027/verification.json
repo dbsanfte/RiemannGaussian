@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "goal": "ACTIVE",
+  "slice": "EXECUTED_WORD_OUTER_PACKET_AND_ORIGINAL_SOURCE_COST_JOIN",
+  "prior_paper_factoring_bit_time": "N^o(1), permitting subexponential storage",
+  "complete_Lean_whole_program_bit_clock": "OPEN",
+  "prior_controller_mixed_report_subpower": "FROZEN_PROVED",
+  "new_controller_public_report_subpower": "OPEN",
+  "new_controller_all_input_correctness": true,
+  "physical_corrected_port_local_group_on_actual_path": true,
+  "source_and_encoding_work_retained": true,
+  "arbitrary_group_work_assumption_discharged": true,
+  "original_source_width_guards_derived": true,
+  "outer_arithmetic": "PHYSICAL_WORDS_ON_ACTUAL_CALLER_PATH",
+  "Hermite": "SCALAR_REFINEMENT_OPEN",
+  "per_group_decode": false,
+  "completed_node_decode_only": true,
+  "actual_source_derived_packet_width": true,
+  "source_production_and_encoding": "SCALAR_BOUNDARIES_OPEN",
+  "finite_address_control_clock": "OPEN",
+  "new_native_long_query_bound": false,
+  "practical_speedup_claimed": false,
+  "module_count": 13,
+  "generated_declarations": 385,
+  "theorem_constants": 281,
+  "strict_options": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "ordinary_root_import": true,
+  "scoped_linters_per_module": 15,
+  "all_generated_transitive_standard_axioms_only": true,
+  "isolated_objects_identical": true,
+  "dependency_checkpoint_unchanged": true,
+  "actual_compiler_imported_modules": 17627,
+  "dependency_list_provenance": "Lean environment header; no source-text import scanner",
+  "preserved_prior_files": 2753,
+  "preserved_concurrent_files": 24,
+  "preserved_append_only_prefixes": 2,
+  "commit_or_push": false,
+  "modules": {
+    "SemiprimeNativeGroupBitsHeight": {
+      "source": "RiemannGaussian/SemiprimeNativeGroupBitsHeight.lean",
+      "source_sha256": "a685ac01105c338011e07540ce8b77479a0a9d9fe38b880211becada5283bc39",
+      "object_sha256": "94601931f52af432fbcde26d25ea36803a3fde3c89c5ca5b3bdb8c4833bd97a6",
+      "declarations": 22,
+      "theorem_constants": 18
+    },
+    "SemiprimeWordPacketWidth": {
+      "source": "RiemannGaussian/SemiprimeWordPacketWidth.lean",
+      "source_sha256": "9a3fc7384fde5694765b49e7e5ba34c275a495ca832df905b548e8e5fa7a75ab",
+      "object_sha256": "3256807990c69e00866dab99cbf3a86303024a740c252875b90fe11610895595",
+      "declarations": 34,
+      "theorem_constants": 31
+    },
+    "SemiprimeWordPacketWidthBudget": {
+      "source": "RiemannGaussian/SemiprimeWordPacketWidthBudget.lean",
+      "source_sha256": "a69372387215d998e3de659c4dc4ad27bb510aa5de792ec220a1af7ed503fc03",
+      "object_sha256": "c9748516d2e8ac51ff06d3ab0342e44c17441b7b64f242f08386298b7dd87405",
+      "declarations": 10,
+      "theorem_constants": 8
+    },
+    "SemiprimeWordFoldArithmetic": {
+      "source": "RiemannGaussian/SemiprimeWordFoldArithmetic.lean",
+      "source_sha256": "fcf47fcdc595fc8b046b31adced75ed1ec35c8d0abf457c231686cce4d20fed3",
+      "object_sha256": "65327ba476c16d7258f18aba107bb38c6446c6636fc0258ba915a80291e54ba9",
+      "declarations": 56,
+      "theorem_constants": 40
+    },
+    "SemiprimeWordFoldBounds": {
+      "source": "RiemannGaussian/SemiprimeWordFoldBounds.lean",
+      "source_sha256": "4b4749a2e62564fe160cec6d041267a530f1342514e7c9311243e731d8b7abc8",
+      "object_sha256": "fb8cdbd796541694b18c358e9b5247d7a85191fbee5014b3c1587b5da3220893",
+      "declarations": 30,
+      "theorem_constants": 27
+    },
+    "SemiprimeMaterializedWordFibre": {
+      "source": "RiemannGaussian/SemiprimeMaterializedWordFibre.lean",
+      "source_sha256": "8ee36ee71ab45d4430c64454320d252cdad1f23846176ea82e0309ca2bb6edb4",
+      "object_sha256": "8b110ac932a6ef9f3493bc95b0f0ac0786f65ed157450a5737e76d53e0863792",
+      "declarations": 52,
+      "theorem_constants": 31
+    },
+    "SemiprimeMaterializedWordFibreBounds": {
+      "source": "RiemannGaussian/SemiprimeMaterializedWordFibreBounds.lean",
+      "source_sha256": "9d8adfd2766166678857055008504ca1e0989f9968c2b742f96404305c886e5c",
+      "object_sha256": "2aa55b555477b40b18c8fcd948221e3e7c7733171973caf0d2c49e5dc2520888",
+      "declarations": 36,
+      "theorem_constants": 31
+    },
+    "SemiprimeWordPacketCounter": {
+      "source": "RiemannGaussian/SemiprimeWordPacketCounter.lean",
+      "source_sha256": "89d731ca5994fd6623959ac310f31afe01dcbe15b079f3b08b70bb5b1814113f",
+      "object_sha256": "f4fa427def75648345681056ce87ad3e689b4f5c8fe9be258375f4fc45303125",
+      "declarations": 23,
+      "theorem_constants": 17
+    },
+    "SemiprimeWordPacketCounterBudget": {
+      "source": "RiemannGaussian/SemiprimeWordPacketCounterBudget.lean",
+      "source_sha256": "977a1efe4f30fb770e46091f47abb119a0d0df8a6068181e489d7fcd3a386fb1",
+      "object_sha256": "69476153c543164e9d16669c0b42b64f1eea9daeaada1eb7cae429913cb678e0",
+      "declarations": 8,
+      "theorem_constants": 5
+    },
+    "SemiprimeWordPacketSetupCounter": {
+      "source": "RiemannGaussian/SemiprimeWordPacketSetupCounter.lean",
+      "source_sha256": "2ae5a3a20101ff1e1e99dad08d0a72fae1c7cc8446de0164f89037ca7b8be267",
+      "object_sha256": "62d45455e005a7709808cfe363eb25db678a5be64d9f7ae6d0f6f30285ef9168",
+      "declarations": 7,
+      "theorem_constants": 6
+    },
+    "SemiprimeWordPacketSetupBudget": {
+      "source": "RiemannGaussian/SemiprimeWordPacketSetupBudget.lean",
+      "source_sha256": "bbce3239a04727f5c471121c68887f20a17e25491e07984162940d5c82697e5f",
+      "object_sha256": "6c33254dafc0fdcf3b05864afe628bb6a15db39a71b4fef37134fb8dbefd4a14",
+      "declarations": 13,
+      "theorem_constants": 9
+    },
+    "SemiprimeWordPacketPublicController": {
+      "source": "RiemannGaussian/SemiprimeWordPacketPublicController.lean",
+      "source_sha256": "236afead34df3a91c50456bd86b7037972a150afbecb86163ccff6ef4c99bab1",
+      "object_sha256": "f3bf943964ff91b1b75e55fa2b0096d8196fdeb2cb30ee3d81377214f4ac632d",
+      "declarations": 46,
+      "theorem_constants": 25
+    },
+    "SemiprimeWordPacketScheduledController": {
+      "source": "RiemannGaussian/SemiprimeWordPacketScheduledController.lean",
+      "source_sha256": "fb51c21640ac46b54c4ba0ce3eaea62813d85d2fea77b33f1bfa7896ec63e4a7",
+      "object_sha256": "c05c4c9b8c861ea11258b1cbc4f6e3f6193d7511c14b662c173aa373484e0c95",
+      "declarations": 48,
+      "theorem_constants": 33
+    }
+  }
+}

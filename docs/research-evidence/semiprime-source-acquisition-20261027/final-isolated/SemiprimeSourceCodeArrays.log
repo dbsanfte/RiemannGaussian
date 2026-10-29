@@ -1,0 +1,3 @@
+'RiemannGaussian.SemiprimeSourceCodeArrays.compile_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

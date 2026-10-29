@@ -1,0 +1,18 @@
+[
+  "SemiprimeRationalWordAcquisition",
+  "SemiprimeSourceWordAcquisition",
+  "SemiprimeNativeInputBits",
+  "SemiprimeCorrectedPortBits",
+  "SemiprimeCorrectedPortBitsBounds",
+  "SemiprimeNativeLocalBits",
+  "SemiprimeNativeGroupBits",
+  "SemiprimeNativeGroupBitsBudget",
+  "SemiprimeMaterializedGroupAdapter",
+  "SemiprimePrefixEntryWords",
+  "SemiprimeNativeBitsCounter",
+  "SemiprimeNativeBitsCounterBudget",
+  "SemiprimeNativeBitsSetupCounter",
+  "SemiprimeNativeBitsSetupBudget",
+  "SemiprimeNativeBitsPublicController",
+  "SemiprimeNativeBitsScheduledController"
+]

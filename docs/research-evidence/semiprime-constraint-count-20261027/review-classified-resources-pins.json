@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "module": "SemiprimeSourceClassifiedResources",
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceClassifiedResources.lean",
+  "source_sha256": "a576b4f6cd4be10833203ba2799f6b2481ca77c6427b8090fdca689f882216a6",
+  "review": "read-only semantic/scope review; object pin after parent ordered17 terminalPASS, no canonical writers",
+  "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceClassifiedResources.olean",
+  "object_sha256": "fcd5d4e1213b2dd6cda4d2f155cd5c66b5ecc3b3e34b827777c9be88aa40bb91"
+}

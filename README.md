@@ -99,11 +99,41 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Local Suzuki cancellation and semiprime recurrence checkpoint.** Publishes the checked local Suzuki cancellation identities, conditional RH transfer, and explicit three-eighths arithmetic bound, together with the accumulated semiprime coverage and recurrence audits. The research evidence preserves corrections and distinguishes proved components from open acquisition claims.
-The subpolynomial prime estimate and guaranteed sixth-exponent factorization remain open. The proved zero-free endpoint is unchanged.
+**Semiprime algorithm and formal verification checkpoint.** Publishes the deterministic subexponential factoring construction, recursive acquisition specification, checked machine components and accumulated research evidence. A dedicated algorithm explorer separates proved identities, verified components and unfinished integration.
+The complete semiprime bit-complexity theorem remains open. The RH direction and proved zero-free endpoint are unchanged.
 [Current checked endpoint](RiemannGaussian/SuzukiLaplaceCompensator.lean#L246)
-· [Proof details](docs/suzuki-local-cancellation.md).
+· [Proof details](docs/research-evidence/semiprime-histogram-acquisition-20261027/next-explicit-rate-target.md).
 <!-- RH_DIRECTION:END -->
+
+## Deterministic Semiprime Factoring
+
+### [▶ Explore the factoring algorithm and proof progress](https://dbsanfte.github.io/RiemannGaussian/semiprime-proof/)
+
+[![Semiprime algorithm proof explorer: established identities, verified machine components and remaining runtime obligations](docs/semiprime-proof-explorer/assets/preview.png)](https://dbsanfte.github.io/RiemannGaussian/semiprime-proof/)
+
+The factoring investigation has identified the acquisition algorithm and
+formalised its recursive contraction semantics and factor-recovery identity.
+Verified machine components implement parts of that construction. The
+remaining work is to finish their integration and prove the complete cost
+from the original binary input. **The full runtime theorem is not yet proved.**
+
+For every semiprime, the target is
+
+```math
+T(N)\le 2^{C\ell/\sqrt{\log(\ell+2)}}(\ell+1)^d,
+\qquad \ell=\lceil\log_2(N+1)\rceil,
+```
+
+with fixed constants independent of the input. The explorer distinguishes
+proved mathematical identities, verified machine components, work in progress
+and the open whole-algorithm bound. Its algorithm-stage connections are a
+reading guide; source links and verification records provide the proof evidence.
+
+[Recursive acquisition](RiemannGaussian/SemiprimeD1WordTapeRecursiveCounter.lean)
+· [Exact useful scalar](RiemannGaussian/SemiprimeD1PackedNetworkOriginal.lean)
+· [Publication evidence](docs/research-evidence/semiprime-publication-20261029/)
+· [Research history](docs/semiprime-factorisation-investigation.md)
+· [Recent paper and literature review](docs/research-evidence/semiprime-ecdl-review-20261029/).
 
 ## Notable Formalisations
 
@@ -246,6 +276,11 @@ The project is pinned to Lean 4.34.1 and Mathlib revision
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. With
 [elan](https://github.com/leanprover/elan) installed, run from the repository
 root:
+
+On Linux, the expanded root needs more than the common 65,530 memory-mapping
+limit. Before building, raise a lower limit with
+`sudo sysctl -w vm.max_map_count=262144`. CI sets this explicitly; the setting
+controls mapping count rather than allocating that amount of memory.
 
 ```bash
 lake exe cache get

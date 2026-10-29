@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Exact short pole transport and scoped correlated reductions; no whole-family acquisition speedup.",
+  "reviews": [
+    {
+      "path": "review-pole-transfer.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-retuned-composition.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-arithmetic-transport.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-divisor-cover.md",
+      "verdict": "PASS"
+    }
+  ],
+  "corrections_resolved": [
+    "Moving-modulus substitution distinguished from fixed-quotient carry.",
+    "Retuned growing-g and endpoint margins made explicit.",
+    "Canonical arithmetic phase wraps and uniform bin coefficient bound supplied.",
+    "NSSV source pinned to actual v2 rather than v1.",
+    "Prime-loss consumer uses the first nonunit index, not an arbitrary common multiple."
+  ],
+  "acquisition": {
+    "uniform_bound": "soft O(K^(5/4))",
+    "uniform_exponent_improved": false,
+    "target": "soft O(K) whole-family useful residue or weak pair",
+    "missing": "Shared prefix acquisition or a boundary-residue contraction retaining coverage."
+  },
+  "validation": {
+    "type": "Independent paper derivations and primary-source checks",
+    "numerical_tests": 0,
+    "native_examples": 0,
+    "implementations": 0,
+    "Lean_lemmas": 0,
+    "full_bit_complexity_proof": false
+  },
+  "preservation": {
+    "protected_prior_files": 1176,
+    "concurrent_files": 24,
+    "append_only_prefixes": 2,
+    "result": "PASS"
+  },
+  "integration": {
+    "local_links": 15,
+    "git_diff_check": "PASS"
+  },
+  "commit_or_push": false
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-26",
+  "files": {
+    "README.md": {
+      "bytes": 8168,
+      "sha256": "97179318d288343c9bf4b52e9f66b2decd58483f106a160f6a7c97a4484275f2"
+    },
+    "boundary-coverage.md": {
+      "bytes": 13831,
+      "sha256": "56c5c19935cfb79154ca705fd337e3a290bb036598cf99ed46128d3f8c51cc89"
+    },
+    "boundary-self-audit.md": {
+      "bytes": 5224,
+      "sha256": "bd45fca28305e2948b27ce886e24440daa46959bdfc6bdaae9ea0eaf8bc4e967"
+    },
+    "finite-weighting.md": {
+      "bytes": 11212,
+      "sha256": "eb116c4e14d2d0e0c98fe3c5e70b1e6566bb19c318df3d63a8b478eaf459d782"
+    },
+    "native-boundary.md": {
+      "bytes": 8876,
+      "sha256": "b4053cc7dd1883ffc02b5b6dce82518b507f164b70688a350d01d3727785a663"
+    },
+    "review-boundary-coverage.md": {
+      "bytes": 3382,
+      "sha256": "9fe8b11a97245eaebdd10981e0fd0548514770dc93f1d1a608d07b5e9215337a"
+    },
+    "review-finite-weighting.md": {
+      "bytes": 3832,
+      "sha256": "7b960ac9c1dffad07be85f18ccbd3905b3dabb49dc459e9bc6a427f358093d9f"
+    },
+    "review-integration.md": {
+      "bytes": 2173,
+      "sha256": "0cd39e92e37f57d1a4bccba9801afbd39ec9b237366caff442c93cd2aa7acf00"
+    },
+    "review-native-boundary.md": {
+      "bytes": 4327,
+      "sha256": "56e1e20ce563ba2a17a89cc62bcd412915945d583f536d977df42550caf9ec50"
+    },
+    "review.json": {
+      "bytes": 3468,
+      "sha256": "d33bf3afc374b3ad6dd1c8fa12a44768aacfff6f814c36c18f300c5672fbe38f"
+    },
+    "sources.json": {
+      "bytes": 2895,
+      "sha256": "80abe93a4ccc3e5977023da1f96d23939000ccc9bbbdd71f1705bea98617e50f"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "previous_turn_classification": "Uniform short-shift coverage with a public literal-cell filter; collective acquisition unpaid.",
+  "current_turn_classification": "Carry-free Cartesian coverage query, completed candidate costs and exact literal-periodicization obstruction; no whole-query rate gain.",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "current_query_bound": "soft O(J+sqrt(Jm)) = soft O(k^(5/4)) for the retained original route",
+  "new_completed_query_bounds": "soft O(k) per cell, soft O(k^2) for the whole family",
+  "target_query_bound": "soft O(k), including acquisition and recovery",
+  "principal_result": "Uniformly covered Cartesian difference product built from two generator values per cell; canonical per-point carries are absent from the target query.",
+  "cartesian_query": {
+    "descriptors": "soft O(k)",
+    "explicit_difference_incidences": "soft O(k^2)",
+    "cell_size": "2*sqrt(3)*k <= A*B < 7*k+1",
+    "shift_range": "0..4k",
+    "public_filter": "a_span<=H and a_span<H/gcd(j-1,k)",
+    "coverage": "Guaranteed P-local nonunit; transposes omitted and no Q-side/global-zero claim.",
+    "origin_line": "Omitted before specialization; never removed by numerical division.",
+    "collective_scalar_acquired_at_target_cost": false,
+    "localization": "Cell and shift prefixes with gcd/nonunit status; then materialize only the selected O(k)-point cell."
+  },
+  "canonical_difference_overset": {
+    "shift_range": "0..6k+1",
+    "axes": "Excluded with proved preservation of the short-edge witness.",
+    "filter": "Old literal-cell filter unnecessary for this nonaxis overset.",
+    "transposes": "Safe, preserving the same shift at Q; aggregate global-zero coverage.",
+    "semantics": "Coverage-preserving factorization overset, not scalar equality or reverse original-edge equivalence."
+  },
+  "phase_index": {
+    "exact_image": "g^2 Z/H, g=gcd(j-1,k)",
+    "image_size": "(k/g)^2",
+    "literal_wrap_condition": "Image size divides C*D, for any lattice basis.",
+    "large_image_colours": "Exactly k/6 colours have g=2 and image H/4.",
+    "scope": "Excludes the proposed small literal q-periodic closure for sufficiently large k; not a lower bound on arbitrary implicit, shared, modular or factoring algorithms."
+  },
+  "corner_identity": {
+    "naive_endpoint": "Universally 0=0 on the actual Cartesian query.",
+    "regularization": "Two displayed 1-z factors per side cancel formally; three other bulk values remain unacquired.",
+    "boundary_screen": "soft O(k), with literal indices omitted before evaluation and intervals grouped.",
+    "boundary_screen_coverage_proved": false,
+    "scope": "Removing screen factors does not numerically regularize the original identity without matching bulk zero accounting."
+  },
+  "extractor_accounting": {
+    "T_ext": "soft O(N^(31/192))",
+    "terminating_calls_at_most": 1,
+    "qualification": "Included on terminating general prefix/subset calls even when algebraic continuing cost is smaller."
+  },
+  "reviews": [
+    "difference-query-review.md",
+    "sparse-projection-review.md",
+    "recursive-products-review.md",
+    "phase-index-review.md",
+    "corner-query-review.md"
+  ],
+  "integration_audit": "Independent final README review passed. The explicit sufficiently-large-k qualification was retained in its wrap comparison.",
+  "root_review": "Checked all integrated identities, true-cell preservation, nonliteral leaves, query semantics, initialized scalar costs and scope; derived exact phase-index and finite punctured-corner reports.",
+  "preservation": {
+    "protected_files_verified": 847,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1530233,
+        "sha256": "b9afd52db580e7b7082b8fbba7953afba9f83bfbc862e3e22d1c4382d9e78453"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2397331,
+        "sha256": "d1727ca92506191e9d1709892ed00bf6f6078233980370a6f2c0f74a83e20643"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "scratch_baseline_sha256": "2f4a905bc85a03cf0e925b0e498e5e54e5a2c2392e5202cc3f05fcf58ba337ac"
+  },
+  "validation": {
+    "mathematical_validation": "Independent symbolic paper reviews, not kernel-checked proof.",
+    "primary_sources": 2,
+    "internal_input_pins": 6,
+    "local_links": 13,
+    "json_and_whitespace": true,
+    "git_diff_check": true
+  },
+  "numerical_campaign": false,
+  "new_executable_research_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

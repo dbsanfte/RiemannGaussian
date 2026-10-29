@@ -1,0 +1,17 @@
+# Independent review of induction and safe completion
+
+2026-10-26. **PASS, scoped to the derived algebra, native unit hypotheses, and stated costs in `induced-norm.md`.** No new tests or repo edits; no exponent improvement established.
+
+The index-two module identification is valid over R: the diagonal character line and its b-coset image form a basis with determinant -1, and b²=-I retains the central sign. The cellwise induction/cover map is a based free-chain isomorphism and does not divide by a companion factor. This correctly preserves singularity without claiming a new raw infection Fox reduction. The base scalar 2^m and reciprocal normalization cancellation agree with the independently checked pattern calculation.
+
+The positive cyclic-block test is correct. Any block fitting the native interval has size at most m<p, hence is separable in the local field. Its root coset ratios force a subgroup of <q>; a complete subgroup coset has shortest containing arc diameter D-D/r>=D/2, while the native index interval has diameter m-1<D/2. The one-block trace is a unit, so it also cannot equal a cyclic shift's trace zero. These conclusions concern the specified positive cyclic induced-character mechanism, not virtual or nonmonomial constructions. The extension-field xi^p=q xi test correctly forces q^d=1 and excludes d<=m.
+
+The added 2-primary completion is safe and genuinely outside that positive-native-subset premise. Since roots and native arguments have odd order, x_j^d=u^d for d=2^s iff x_j=u in either residue field. Equivalently every nontrivial 2-primary phase mirror is a unit. The universal product sign (-1)^(J(d-1)) is correct, as is the division-free Graeffe formula F_2(Y)=(-1)^J(E(Y)^2-Y O(Y)^2). Repeated acquisition costs soft O(Js) ring operations and O(J log N) working storage; no splitting algebra needs to be constructed. The proof of a unit mirror complement is not a claim that its expanded product has been cheaply acquired.
+
+Powering by 2^s is bijective on each native odd-order subgroup, so it preserves the m distinct clock projections and does not create a shorter local order. The projection from odd-order times 2-primary factors is well defined. Thus that particular phase completion/induction does not itself merge clock positions, while more general identities coupling different projections remain open.
+
+The exact clock-halving B(X)=F(X)F(qX) identity is correct. B has degree 2J and a unit leading coefficient q^J, so it is cheaply normalized if a monic input is desired. At level s the degree-length product remains (2^s J)(m/2^s)=Jm; writing its coefficients also costs their growing degree. Graeffe couples X with -X, whereas the second required block is qX, so no cancellation or degree reduction follows from combining the identities. Odd m needs its one residual endpoint, as usual, and does not change the cost conclusion.
+
+The report correctly keeps field-only torsion statements, the unconditional finite determinant identity, and the missing singular raw-Fox certificate separate. No genuine algebraic or cost gap found in this scoped review.
+
+Separately, `character-norm.md` was tightened as requested: both the shift-zero D'(x_j) separation screen and the shift-one deflated screen are now mandatory before claiming Omega(k) distinct local points partitioned into q-strings of length at most two. The combined cost remains soft O(J); shift one alone is explicitly stated insufficient for that strongest conclusion.

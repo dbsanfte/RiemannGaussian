@@ -1,0 +1,17 @@
+READ-ONLY independent source review by parent /root
+Scope: Core, Execution, Clock, Bounds, Storage, Original, Prepare, Scalar, Backend. No Lean compiler invocation, source edit, import or canonical rebuild performed by this review.
+PASS: fixed finite instructions; only seven actual input tapes, TWO real context acquisitions, actual unary-index gather and serialized lookup, actual parentEntry acquired and retained, no supplied rank/coefficient count/q/product. Direct gathered path is the actual lookup path; the allocated Tree.path shadow remains empty and counted. Every old coefficient and rank-driven appended zero executes the same real scalar precision reducer, frame/log/reverse and cleanup. Original Good table discharges selected rank; literal appended positive axes discharge rank monotonicity. Old and new p remain independent, every working coefficient is retained individually through integer lift.
+Own same-program resource explicitly includes all seven physical input word lengths AND old/new ranks AND precision VALUES, with no claim polynomial in binary P header alone. Whole/ready quadratic bounds join actual acquisition/backend/loops; storage counts all 61 actual allocations plus real return frames, with generic compiler projection to the same machine. Real halt/no flag advice follows actual source trace.
+Prepared-entry scope remains honest: actual unary port-order acquisition, activation/unit, table-wide DFS/routing/alignment/canonical recopy and N-only recursive caller remain OPEN. This review does not establish those caller premises or full factorization.
+Final audit/independent object/import pin gates remain the owner's responsibility; no FINAL import authorized until owner's explicit release.
+
+CURRENT SOURCE SHA256 PINS
+f0c8e373a0f073e4d068ac6aa8e9b85ff63f2e022bc450fc736b361843ff418e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntry.lean
+5d347d9185cfeb74b40c430491c8de17a562c646db0f2c2942bae55befb616ad  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntryExecution.lean
+593904f03ab85ebf7e3c1218256def82668dbc8120e70d745d971eecddaf500c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntryClock.lean
+67ca8739986aaf5f42dbd8c61cc08aea21a1b6b25c916ee32b43674620488980  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntryBounds.lean
+59a4f5fd42a28ce7d7946fd7a2f696c48ab063d2e567a4c6645242587d3cf523  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntryStorage.lean
+92b4721d95ebfd3e74b59edfd53b6d278b9e374e2eba66da2b638aef526da777  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntryOriginal.lean
+2ad40be990fca297a381e674e2213d08b8f7ae672ed6f4b2086bc7e0aa58a812  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntryPrepare.lean
+871d29290206e422ed805aecc22713f2877841f8d5f87716c873469e7d881ed9  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntryScalar.lean
+f1792781f06624eec7541af7a8578d4fdb23f4859e9011cc151ea731ff0d83e7  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildTableEntryBackend.lean

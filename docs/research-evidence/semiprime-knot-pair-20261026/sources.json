@@ -1,0 +1,136 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "Kohli2018",
+      "title": "The Links–Gould invariant as a classical generalization of the Alexander polynomial?",
+      "author": "Ben-Michael Kohli",
+      "publication": "Experimental Mathematics 27 (2018), 251–264",
+      "url": "https://doi.org/10.1080/10586458.2016.1255860",
+      "fulltext": "https://arxiv.org/pdf/2505.08296",
+      "checked": [
+        "Proposition 2.5",
+        "Definition 2.16",
+        "Proposition 2.18",
+        "Corollary 2.12",
+        "Alexander specialization following Proposition 2.18"
+      ],
+      "caution": "The 2025 arXiv upload is not the original publication date."
+    },
+    {
+      "id": "GK2026",
+      "title": "Multivariable Knot Polynomials from Braided Hopf Algebras with Automorphisms",
+      "authors": [
+        "Stavros Garoufalidis",
+        "Rinat Kashaev"
+      ],
+      "publication": "Publ. RIMS Kyoto Univ. 62 (2026), 75–114",
+      "url": "https://doi.org/10.4171/PRIMS/62-1-3",
+      "fulltext": "https://ems.press/content/serial-article-files/52259?nt=1",
+      "checked": [
+        "Theorems 3.6–3.7",
+        "Equations 7, 19, 21, 96, 110–116",
+        "Proposition 7.4"
+      ],
+      "caution": "Explicit specialized map is checked independently. Its same-parameter raw-matrix identification with Kohli is not claimed."
+    },
+    {
+      "id": "coloredLGv3",
+      "title": "On the colored Links–Gould polynomial",
+      "url": "https://arxiv.org/html/2509.10911v3",
+      "version_date": "2025-12-17",
+      "checked": [
+        "Introduction after Conjecture 1.4",
+        "Equations 10 and 13"
+      ],
+      "use": "Published-polynomial dictionary and proved n=1 identification; quantum parameter is eta, Nichols parameter eta squared."
+    },
+    {
+      "id": "skeinLG",
+      "title": "Skein theory for the Links–Gould polynomial",
+      "url": "https://arxiv.org/html/2505.19251",
+      "doi": "https://doi.org/10.1112/jlms.70522",
+      "checked": [
+        "Theorem 1.1",
+        "Lemma 3.2",
+        "Appendix A"
+      ]
+    },
+    {
+      "id": "DeWit2000",
+      "title": "An Infinite Suite of Links–Gould Invariants",
+      "author": "David De Wit",
+      "url": "https://arxiv.org/pdf/math/0004170",
+      "version": "v3, 9 July 2000",
+      "checked": [
+        "Sections 4.1 and 4.3, PDF pages 11–13"
+      ],
+      "caution": "PDF front page also has compilation date 24 October 2018; this is not a new theorem version."
+    },
+    {
+      "id": "Grant2016",
+      "title": "A generators and relations description of a representation category of U_q(gl(1|1))",
+      "url": "https://doi.org/10.2140/agt.2016.16.509",
+      "fulltext": "https://msp.org/agt/2016/16-1/agt-v16-n1-p12-p.pdf",
+      "use": "Skew-Howe diagrams and exterior powers; no free independent-color product contraction."
+    },
+    {
+      "id": "CimasoniSplice",
+      "title": "The Conway function of a splice",
+      "url": "https://www.unige.ch/~cimasoni/splice.pdf",
+      "checked": [
+        "Theorem 3.1",
+        "Corollary 3.5"
+      ],
+      "use": "Previously audited splice and connected-sum formula; leaves retain independent colors.",
+      "correction": "The inspected author PDF has connected-sum Corollary 3.5, not 3.8."
+    },
+    {
+      "id": "HarperCabling",
+      "url": "https://arxiv.org/abs/1911.00646",
+      "use": "Previously audited parallel-cabling formula; fused companion argument differs from independent product.",
+      "title": "Seifert-Torres Type Formulas for the Alexander Polynomial from Quantum sl_2",
+      "author": "Matthew Harper",
+      "publication": "Topology and its Applications 320 (2022), 108238",
+      "version": "v3, 7 September 2022"
+    }
+  ],
+  "scratch_fingerprints": [
+    {
+      "scratch_path": "/tmp/semiprime-knot-pair-20261026/source/dewit.pdf",
+      "url": "https://arxiv.org/pdf/math/0004170",
+      "bytes": 290303,
+      "sha256": "279686c76e74aa49b1c58a6faa25b592f47ad55a371f4b6eb1c782daec93224b",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-pair-20261026/source/dewit.txt",
+      "url": null,
+      "bytes": 108534,
+      "sha256": "232c5e6fa28bf159dcd22395769f7cb9d45fd475f2f4fbee12188b77568ebd12",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-pair-20261026/source/kohli-twist.pdf",
+      "url": "https://arxiv.org/pdf/2505.08296",
+      "bytes": 454858,
+      "sha256": "5731a1b9d0f3076e9f5a432ed517f41fe120b6b9ac7e5bb81e278ae593ab7afc",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-pair-20261026/source/kohli-twist.txt",
+      "url": null,
+      "bytes": 69666,
+      "sha256": "405435f20f881961d0db23b0591a458cea5612217dca870a282fac241740fd87",
+      "archived": false
+    },
+    {
+      "scratch_path": "/tmp/semiprime-knot-power-20261026/source/gk-published.pdf",
+      "url": "https://ems.press/content/serial-article-files/52259?nt=1",
+      "bytes": 644713,
+      "sha256": "934f681006c3d23cd7613ea6f7b06863fdaaf001c3547e7facf0b989bcf76626",
+      "archived": false
+    }
+  ]
+}

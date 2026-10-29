@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Reviewed pole-only two-coefficient reduction, one-dimensional good-field kernel, conditional phase shortcut and optimal laminar support selection. No uniform acquisition exponent gain.",
+  "independent_reviews": [
+    {
+      "path": "native-thinning-review.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "algebra-review.md",
+      "verdict": "PASS",
+      "covers": [
+        "sectioned-newton.md",
+        "integrable-closure.md",
+        "pole-kernel-handoff.md",
+        "coupled-section.md"
+      ]
+    }
+  ],
+  "paper_results": [
+    "Two simple-pole q-Newton coefficients recover the unique good collision without a long tau normalization.",
+    "Euler conjugation identifies a one-dimensional good-field pole kernel and a final projective-pair target.",
+    "Dyadic section generators remain cyclic bidiagonal; an acquired phase I modulo the least dyadic b>=max(1,h/K), or a polylogarithmic covering palette, gives soft-K shortened acquisition and recovery.",
+    "Native support laminarity gives a soft-K minimum-full-window partition algorithm.",
+    "All-colour partitions from this catalogue with full-bin windows have Omega(K^(5/2)) window mass in balanced bins; this is not a general query lower bound.",
+    "Initialized Christoffel/Toda forms retain a paid frontier; adjacent-q row cancellation either factors or is certified absent."
+  ],
+  "acquisition": {
+    "target": "soft O(K)",
+    "retained_complete_bound": "soft O(J+sqrt(Jh))=soft O(K^(5/4))",
+    "improved": false,
+    "missing": "Acquire the final pole/kernel pair or a covering short palette of actual clock phases in soft K."
+  },
+  "diagnostics": {
+    "command": "python3 docs/research-evidence/semiprime-scalar-acceleration-20261026/check_scalar_reductions.py --output /tmp/scalar-reduction-replay.json",
+    "checks": 231,
+    "verdict": "PASS",
+    "root_scratch_replay": "Exact JSON equality PASS",
+    "scope": "Independent finite algebra checks, not native coverage, scaling or factoring-success tests.",
+    "root_archived_replay": "Exact JSON equality PASS"
+  },
+  "preservation": {
+    "protected_prior_files": 1101,
+    "append_only_prefixes": 2,
+    "concurrent_files": 24,
+    "prearchive_check": "PASS",
+    "postarchive_check": "PASS"
+  },
+  "not_claimed": [
+    "Unconditional whole-family soft-K acquisition",
+    "General lower bound",
+    "Complete all-semiprime sixth-rate bit proof",
+    "Lean formalization",
+    "Literature-wide novelty"
+  ],
+  "commit_or_push": false,
+  "local_markdown_links": {
+    "checked": 11,
+    "verdict": "PASS"
+  }
+}

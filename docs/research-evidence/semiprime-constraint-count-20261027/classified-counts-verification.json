@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "SemiprimeSourceClassifiedCounts",
+      "declarations": 31,
+      "theorem_constants": 20,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceClassifiedCounts.lean",
+      "source_sha256": "11dc33869b36161d803e761482571d9f177b9b5a6babb15e9930ca83056c7382",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceClassifiedCounts.olean",
+      "object_sha256": "2475be6d69d2125d6f36509df3fffd567fcc2832d8d223e8dd4e023ca7665287",
+      "isolated": "/tmp/semiprime-constraint-count-20261027/classified-isolated/SemiprimeSourceClassifiedCounts.olean",
+      "isolated_sha256": "2475be6d69d2125d6f36509df3fffd567fcc2832d8d223e8dd4e023ca7665287",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "isolated_byteequal": true
+    },
+    {
+      "module": "SemiprimeSourceClassifiedCountsClock",
+      "declarations": 38,
+      "theorem_constants": 32,
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceClassifiedCountsClock.lean",
+      "source_sha256": "c23015375de1966bf1b76534efde6eb6c152660d0b6b4c70cb376320f1055e10",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceClassifiedCountsClock.olean",
+      "object_sha256": "1fe5f7028d73538e562c50df7a6203db8525cf4f77c88f2cc3ce2c45519bff4e",
+      "isolated": "/tmp/semiprime-constraint-count-20261027/classified-isolated/SemiprimeSourceClassifiedCountsClock.olean",
+      "isolated_sha256": "1fe5f7028d73538e562c50df7a6203db8525cf4f77c88f2cc3ce2c45519bff4e",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard3": true,
+      "isolated_byteequal": true
+    }
+  ],
+  "declarations": 69,
+  "theorem_constants": 52
+}

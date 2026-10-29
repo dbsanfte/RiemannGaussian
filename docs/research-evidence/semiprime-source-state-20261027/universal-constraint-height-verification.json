@@ -1,0 +1,52 @@
+{
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceUniversalHeight",
+      "declarations": 41,
+      "theorem_constants": 38,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms_only": true,
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceUniversalHeight.lean",
+          "sha256": "8bc509b4404e901cb32f4cf0c69654ed6e7b236751ee2f5ace377e49762456dd"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceUniversalHeight.olean",
+          "sha256": "44765cf73aef4d4a5b40cf94f107baf90bfbebd14ce31ce70f1ed053b5d678bd"
+        },
+        {
+          "path": "/tmp/semiprime-source-state-20261027/SourceUniversalHeight.isolated.olean",
+          "sha256": "44765cf73aef4d4a5b40cf94f107baf90bfbebd14ce31ce70f1ed053b5d678bd"
+        }
+      ]
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceConstraintHeight",
+      "declarations": 14,
+      "theorem_constants": 12,
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms_only": true,
+      "isolated_byte_equal": true,
+      "files": [
+        {
+          "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceConstraintHeight.lean",
+          "sha256": "e3cd8153d0180ff687c632addc55b05a349e7f4e0c7c3b8bccb197c01d12ac1b"
+        },
+        {
+          "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceConstraintHeight.olean",
+          "sha256": "6aacc5fd0cd3edd2ba81f399f04948ade313ac34de2e403481cfda3a26601976"
+        },
+        {
+          "path": "/tmp/semiprime-source-state-20261027/SourceConstraintHeight.isolated.olean",
+          "sha256": "6aacc5fd0cd3edd2ba81f399f04948ade313ac34de2e403481cfda3a26601976"
+        }
+      ]
+    }
+  ],
+  "declarations": 55,
+  "theorem_constants": 50
+}

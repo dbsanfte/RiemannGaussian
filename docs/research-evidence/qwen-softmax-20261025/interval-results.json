@@ -1,0 +1,72 @@
+{
+  "contract": "round-to-nearest-even exact real softmax, exact finite rational logits, independent output rounding; not a named GPU kernel",
+  "stats": {
+    "bf16": {
+      "rows": 58,
+      "entries": 922780,
+      "distinct": 32855,
+      "initial16_certified": 28,
+      "refined32": 28,
+      "max_bits": 256,
+      "f32_serial_output_disagreements": 32,
+      "f32_serial_rows_differing": 6
+    },
+    "fp16": {
+      "rows": 58,
+      "entries": 922780,
+      "distinct": 97115,
+      "initial16_certified": 27,
+      "refined32": 31,
+      "max_bits": 32,
+      "f32_serial_output_disagreements": 42,
+      "f32_serial_rows_differing": 10
+    }
+  },
+  "large_rows": [
+    {
+      "format": "bf16",
+      "N": 248320,
+      "K": 1,
+      "bits": 0,
+      "exp_calls_all_passes": 0
+    },
+    {
+      "format": "bf16",
+      "N": 248320,
+      "K": 2,
+      "bits": 256,
+      "exp_calls_all_passes": 0
+    },
+    {
+      "format": "bf16",
+      "N": 248320,
+      "K": 3040,
+      "bits": 32,
+      "exp_calls_all_passes": 5783
+    },
+    {
+      "format": "fp16",
+      "N": 248320,
+      "K": 1,
+      "bits": 0,
+      "exp_calls_all_passes": 0
+    },
+    {
+      "format": "fp16",
+      "N": 248320,
+      "K": 2,
+      "bits": 32,
+      "exp_calls_all_passes": 0
+    },
+    {
+      "format": "fp16",
+      "N": 248320,
+      "K": 17739,
+      "bits": 32,
+      "exp_calls_all_passes": 33392
+    }
+  ],
+  "reference": "same certified interval algorithm, initial certificate budget 256 (80 decimal digits); not an independent implementation",
+  "not_proved_by_tests": "global fixed precision bound, GPU equivalence, speedup",
+  "precision_semantics": "bits is a certificate/tail budget; Decimal exp uses ceil(bits*log10(2))+2 decimal digits. Exact Fraction sums and quotients may use many integer words. No hardware lower-precision cost claim."
+}

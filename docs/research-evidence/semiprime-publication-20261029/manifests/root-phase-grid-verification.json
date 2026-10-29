@@ -1,0 +1,190 @@
+{
+  "status": "FINAL_ALL_SIX_SOURCES_AND_CANONICAL_WRITERS_STOPPED",
+  "strict": true,
+  "ordinary_root_all15_default200k": true,
+  "every_generated_standard3_only": true,
+  "counts": {
+    "modules": 6,
+    "generated_declarations": 174,
+    "theorem_constants": 100
+  },
+  "independent_objects_byte_equal": true,
+  "actual_import_pairs": 18211,
+  "actual_import_files": 36422,
+  "missing_imports": 0,
+  "changed_import_files": [],
+  "protected17054_unchanged": true,
+  "frozen_Root119_and_all_other_imported_sources_objects_unchanged": true,
+  "frozen_AllDescriptor13_unchanged": true,
+  "modules": {
+    "SemiprimeD1StackRootPhaseGrid": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPhaseGrid.lean",
+        "sha256": "e35ad8fb9c7bb825bbb4998fa88db1b9f84f9af5cfa027b402bba3923173c074"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPhaseGrid.olean",
+        "sha256": "27a77323016d2dfea800520bb18b9dbe34a6b221d5328b3fc3cc326f439a7d90"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackRootPhaseGrid.independent.olean",
+        "sha256": "27a77323016d2dfea800520bb18b9dbe34a6b221d5328b3fc3cc326f439a7d90"
+      }
+    },
+    "SemiprimeD1StackRootPhaseGridEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPhaseGridEncoding.lean",
+        "sha256": "d7d31fd9d2fec07886239b2ee41b651bb0a924dfa7d530d045e9464aa53e56f5"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPhaseGridEncoding.olean",
+        "sha256": "e5c33bb29f1234f5d317aa0e426a2934fe07424c5251ebd7faadb1e1de87dbe0"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackRootPhaseGridEncoding.independent.olean",
+        "sha256": "e5c33bb29f1234f5d317aa0e426a2934fe07424c5251ebd7faadb1e1de87dbe0"
+      }
+    },
+    "SemiprimeD1StackRootPhaseGridPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPhaseGridPrimitives.lean",
+        "sha256": "f5ca2539568110a775b4b1f9f021336ca8407c19aea474cea1d5c2d98e8fb8a4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPhaseGridPrimitives.olean",
+        "sha256": "72252134b3d1a67b19a74ed9a1b477e448580bd8077c49c14193afd92c2738e3"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackRootPhaseGridPrimitives.independent.olean",
+        "sha256": "72252134b3d1a67b19a74ed9a1b477e448580bd8077c49c14193afd92c2738e3"
+      }
+    },
+    "SemiprimeD1StackRootPhaseGridExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPhaseGridExecution.lean",
+        "sha256": "709b164e38710a1ae1733935674d717cd8b91a570145e53acb3ed91813e4a61a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPhaseGridExecution.olean",
+        "sha256": "30a76f9896baccc6f544a50fad48dde4aa73b58698be0cdf678e9f1cadfaec58"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackRootPhaseGridExecution.independent.olean",
+        "sha256": "30a76f9896baccc6f544a50fad48dde4aa73b58698be0cdf678e9f1cadfaec58"
+      }
+    },
+    "SemiprimeD1StackRootPhaseGridBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPhaseGridBounds.lean",
+        "sha256": "df930093fb6ead7c1855a3c5b5b92fb0da0658828dfcde6aaf3c75b5399fbbd5"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPhaseGridBounds.olean",
+        "sha256": "b18d952b85fed4bd8073efbb42bd42cf1c282715aa279bb972442a38b61d4dd5"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackRootPhaseGridBounds.independent.olean",
+        "sha256": "b18d952b85fed4bd8073efbb42bd42cf1c282715aa279bb972442a38b61d4dd5"
+      }
+    },
+    "SemiprimeD1StackRootPhaseGridOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPhaseGridOriginal.lean",
+        "sha256": "5c6d457572a7dd9172405949adab8b38038a4a17344586e5d1d3b17ec79c0154"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPhaseGridOriginal.olean",
+        "sha256": "e5fd1f91ddaaf1089ff66bd79c30d9b55bf01a40911f3e4d76ca1d6bfd5794b1"
+      },
+      "independent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackRootPhaseGridOriginal.independent.olean",
+        "sha256": "e5fd1f91ddaaf1089ff66bd79c30d9b55bf01a40911f3e4d76ca1d6bfd5794b1"
+      }
+    }
+  },
+  "physical_roles": {
+    "retained_actual_root": 119,
+    "actual_assignment_enumerator": 5,
+    "actual_count_copy_scratch": 2,
+    "total_boolean": 126,
+    "additional_real_return_stack": true
+  },
+  "actual_inputs": "ONLY original canonical positive binary N. Actual119 source supplies guard and parent exponent; actual branch gates realCopy/seed/fill/AssignmentLoop enumeration. No a/width/activity/count/body/clock evaluator is a runtime parameter.",
+  "algorithm": "ActualRoot119 call once; actualguard peek; inactive/empty skips all new construction and outputphysicallyEMPTY; active paidpreservingcopy of parenta\u2192count, literalfalse seed, actualonefalsepushperconsumedcountbyte givesbinaryzero widtha+1, actualwrappedbinaryincrement/overflow logs all2^(a+1) words chronologically; realcalls/returns/halt.",
+  "own_clock": {
+    "exact_bound": "R119.runBound(bits)+100*(a+2)*2^(a+1)+7*a+20, a=Schedule.exponent(lambdaValue(bits),0)",
+    "original_bit_clock": "10^60*(ell+1)^10",
+    "all126_data_and_real_returns_prefix_cells": "10^63*(ell+1)^10",
+    "fundamental_command_depth": 4,
+    "not_old_report_clock_transport": true
+  },
+  "original_semantics": "Exactactivephasevalues List.range(2^(a+1)); count=WireKernelOriginal.sizea; allwordwidtha+1/nodup; parentexponent(logarithmscale)0 exact; actualguard agrees everyoriginalfixedprefix withM=2E; all119 actualroot cells andbinaryN retained.",
+  "scope": "This conditionalN-only catalogue acquires actualbinaryt words. Actualphasebodies, recursivechildnetworks, coefficientrecovery andfullcounter remainOPEN.",
+  "controls": {
+    "kind": "PREPARED acquired-root boundaries only, NOT represented as fullN-only observations",
+    "all126_roles_all119_retained_flags_two_real_outer_returns": true,
+    "inactive": [
+      {
+        "case": "false",
+        "exponent_bytes": 1000,
+        "actual_steps": 2
+      },
+      {
+        "case": "empty",
+        "exponent_bytes": 1000,
+        "actual_steps": 2
+      }
+    ],
+    "active": [
+      {
+        "exponent": 0,
+        "binary_width": 1,
+        "zero_steps": 7,
+        "actual_steps": 117,
+        "phase_count": 2,
+        "output_bytes": 9
+      },
+      {
+        "exponent": 1,
+        "binary_width": 2,
+        "zero_steps": 14,
+        "actual_steps": 333,
+        "phase_count": 4,
+        "output_bytes": 25
+      },
+      {
+        "exponent": 2,
+        "binary_width": 3,
+        "zero_steps": 21,
+        "actual_steps": 865,
+        "phase_count": 8,
+        "output_bytes": 65
+      },
+      {
+        "exponent": 3,
+        "binary_width": 4,
+        "zero_steps": 28,
+        "actual_steps": 2133,
+        "phase_count": 16,
+        "output_bytes": 161
+      }
+    ],
+    "observer_constants_standard3_only": 20,
+    "total_actual_transitions": 3452
+  },
+  "artifacts": {
+    "audit": "/tmp/semiprime-explicit-rate-20261027/RootPhaseGridAudit.lean",
+    "audit_log": "/tmp/semiprime-explicit-rate-20261027/root-phase-grid-audit-final.log",
+    "controls": "/tmp/semiprime-explicit-rate-20261027/RootPhaseGridControls.lean",
+    "controls_log": "/tmp/semiprime-explicit-rate-20261027/root-phase-grid-controls.log",
+    "preservation": "/tmp/semiprime-explicit-rate-20261027/root-phase-grid-preservation.json",
+    "actual_import_pins": "/tmp/semiprime-explicit-rate-20261027/root-phase-grid-live-before.json",
+    "isolates": "/tmp/semiprime-explicit-rate-20261027/root-phase-grid-independent-results.json"
+  },
+  "separate_existing_full_row_observer": {
+    "session": 15335,
+    "pid": 178262,
+    "status": "LIVE_PENDING_DISTINCT_NO_RESTART",
+    "manifest": "/tmp/semiprime-explicit-rate-20261027/all-descriptor-record-verification.json"
+  }
+}

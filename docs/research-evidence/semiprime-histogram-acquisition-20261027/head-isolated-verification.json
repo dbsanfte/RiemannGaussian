@@ -1,0 +1,62 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeSourceHistogramHeadBits",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadBits.lean",
+    "source_sha256": "81a56f53a3dc3d659597c8c55503c3caf9b34c11cac4c2670d14ca0a1f75b287",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadBits.olean",
+    "canonical_sha256": "82f96b771e294b81b6207d4ac9b6ccc48519919e29e7d587704e4a85797efe53",
+    "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadBits.olean",
+    "isolated_sha256": "82f96b771e294b81b6207d4ac9b6ccc48519919e29e7d587704e4a85797efe53",
+    "returncode": 0,
+    "byte_equal": true,
+    "log": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadBits.log"
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceHistogramHeadRefinement",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadRefinement.lean",
+    "source_sha256": "453cc50ce0d56ab7c4f9dea96eb2ae53568e9c7674fddc89f112ad809f090b4e",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadRefinement.olean",
+    "canonical_sha256": "a7aac1582191a3875126d1b7c856a47acbeb2f087f9728757f7c4a2c8fd31e04",
+    "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadRefinement.olean",
+    "isolated_sha256": "a7aac1582191a3875126d1b7c856a47acbeb2f087f9728757f7c4a2c8fd31e04",
+    "returncode": 0,
+    "byte_equal": true,
+    "log": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadRefinement.log"
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceHistogramHeadQueryBounds",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadQueryBounds.lean",
+    "source_sha256": "4112efd3ac3e0eff9491a386297f933b9b4fa0f094a4ed2becd0a89cecc5289f",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadQueryBounds.olean",
+    "canonical_sha256": "3d4bb390b78c53c3f797884d45b90eaf0785c6726d9d6366d910b221c2650c8c",
+    "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadQueryBounds.olean",
+    "isolated_sha256": "3d4bb390b78c53c3f797884d45b90eaf0785c6726d9d6366d910b221c2650c8c",
+    "returncode": 0,
+    "byte_equal": true,
+    "log": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadQueryBounds.log"
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceHistogramHeadBounds",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadBounds.lean",
+    "source_sha256": "e93489bbfaa105f38f8e4221d0d4f8d900f8e9446a10132dd5396ce7aa02a447",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadBounds.olean",
+    "canonical_sha256": "7f4e098e14f29993a8439a0ae699e292da8126e0daab8d3fb4b6950731d5a63e",
+    "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadBounds.olean",
+    "isolated_sha256": "7f4e098e14f29993a8439a0ae699e292da8126e0daab8d3fb4b6950731d5a63e",
+    "returncode": 0,
+    "byte_equal": true,
+    "log": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadBounds.log"
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceHistogramHeadOriginal",
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadOriginal.lean",
+    "source_sha256": "ba7f5452e401b47b945e89a93f99fb8a5790bcc625c188adc09d0527e74ba19e",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadOriginal.olean",
+    "canonical_sha256": "7365330fe172eb4255de2f6a573cd186276cff0a889ea6db306cfa0733b27e04",
+    "isolated": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadOriginal.olean",
+    "isolated_sha256": "7365330fe172eb4255de2f6a573cd186276cff0a889ea6db306cfa0733b27e04",
+    "returncode": 0,
+    "byte_equal": true,
+    "log": "/tmp/semiprime-histogram-acquisition-20261027/own-head-isolated/SemiprimeSourceHistogramHeadOriginal.log"
+  }
+]

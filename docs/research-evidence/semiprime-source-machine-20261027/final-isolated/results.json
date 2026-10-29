@@ -1,0 +1,74 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeSourcePackingState",
+    "exit_code": 0,
+    "seconds": 7.1919342909241095,
+    "source_sha256": "38a5529f3487a63541d37db5b82ed459f651afabefd02193c3c182831ef47c63",
+    "isolated_sha256": "6cdabbe27d8774e98486b66acb7e2fe27d6717c293f8169a1f5aa628b4367fc6",
+    "canonical_sha256": "6cdabbe27d8774e98486b66acb7e2fe27d6717c293f8169a1f5aa628b4367fc6",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceParityState",
+    "exit_code": 0,
+    "seconds": 8.051919403951615,
+    "source_sha256": "fec349b9d819d6c815f0c0d9db7f5183af2e64417061c1f4ecbf2845a9e7e1c6",
+    "isolated_sha256": "2bf53418bad5e30f12a472ccf02f86f65e88ccbf8cb3643d74c73c476cca09dd",
+    "canonical_sha256": "2bf53418bad5e30f12a472ccf02f86f65e88ccbf8cb3643d74c73c476cca09dd",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceEnumerationState",
+    "exit_code": 0,
+    "seconds": 16.92033592099324,
+    "source_sha256": "ccde30c233be31eb3fc350af046b5464e8eec947dd607b64a77209c9e6be9f19",
+    "isolated_sha256": "ba6e05bed4a6eec70b26a282caafff570f4b857415cd2c0328502fc9c79444e5",
+    "canonical_sha256": "ba6e05bed4a6eec70b26a282caafff570f4b857415cd2c0328502fc9c79444e5",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceMemoryBits",
+    "exit_code": 0,
+    "seconds": 8.467651656013913,
+    "source_sha256": "be32d7fbf8d7afd260b51b5369c901c7559ad6cc9674d911fdb116ec385ce207",
+    "isolated_sha256": "c13503155a91509906635f71d4b778488945904e84a393d562b285b99cc8933c",
+    "canonical_sha256": "c13503155a91509906635f71d4b778488945904e84a393d562b285b99cc8933c",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceProgramBits",
+    "exit_code": 0,
+    "seconds": 7.704337754053995,
+    "source_sha256": "a72092bea230ff7f5780baf75777de5466facc8f388918f22c8a40bbacd02e98",
+    "isolated_sha256": "46c48deca1d74d00ac83bd27066a370e47c9d25cf2c4fbc7ff301d09b9089b4a",
+    "canonical_sha256": "46c48deca1d74d00ac83bd27066a370e47c9d25cf2c4fbc7ff301d09b9089b4a",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceProgramStorage",
+    "exit_code": 0,
+    "seconds": 7.071355625987053,
+    "source_sha256": "0611a794b965cb91777c5319b3f2aa2c6dbc2bc38a4b3afd17902c92809dd38b",
+    "isolated_sha256": "08c4ab07a820b587d8aa2390ff9496bd4acfe9e580c29a68c8c99580238b864e",
+    "canonical_sha256": "08c4ab07a820b587d8aa2390ff9496bd4acfe9e580c29a68c8c99580238b864e",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceOffsetProgramBits",
+    "exit_code": 0,
+    "seconds": 9.482611935934983,
+    "source_sha256": "30c46ca89aced3d22da38904e9e2e9d0ff53266f654b60c0ab8b33a967b6ea1b",
+    "isolated_sha256": "0172f40adc61893dc6225df5b1fe4725411b8d7a136384544d51e2ce345f931f",
+    "canonical_sha256": "0172f40adc61893dc6225df5b1fe4725411b8d7a136384544d51e2ce345f931f",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceOffsetProgramBudget",
+    "exit_code": 0,
+    "seconds": 8.448915307060815,
+    "source_sha256": "ff40d75999000b66e226a6aa63358b645e41f2298c99b916566fdcff11ea4f76",
+    "isolated_sha256": "a7d3deca1898dca7b09befd8da109b7f80bac82c9437e5f6608235b15e73dd8a",
+    "canonical_sha256": "a7d3deca1898dca7b09befd8da109b7f80bac82c9437e5f6608235b15e73dd8a",
+    "object_matches": true
+  }
+]

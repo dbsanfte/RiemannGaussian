@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "archived": "README.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/README.md",
+      "source_sha256": "4a82fdd83e30de80d9b98f0527d913dcbf6c17642a6f79f0b6977ac3e5718add",
+      "archive_sha256": "4a82fdd83e30de80d9b98f0527d913dcbf6c17642a6f79f0b6977ac3e5718add",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "native-phase.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/native-phase.md",
+      "source_sha256": "5fe932e349414cc792fb4471a188b89741ca80c32a2feda768ed173b1ad4c7e7",
+      "archive_sha256": "5fe932e349414cc792fb4471a188b89741ca80c32a2feda768ed173b1ad4c7e7",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "parity-cover-audit.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/parity-cover-audit.md",
+      "source_sha256": "9b25bc33f7576b78c22e327b97db2634238d350a100e6162b92f8f0f741ee921",
+      "archive_sha256": "9b25bc33f7576b78c22e327b97db2634238d350a100e6162b92f8f0f741ee921",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "phase-recurrence.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/phase-recurrence.md",
+      "source_sha256": "24646a1f716a48939081a2e4a5db84a91f1b55fe1cec02d55212e730a0fc2a22",
+      "archive_sha256": "8ca131869aaf32ade449099e8181a7540d39e77146c22b2bd4344c0da6f0aebc",
+      "copy": "Standalone formula indentation normalized as Markdown code; no algebra changed."
+    },
+    {
+      "archived": "review-phase-recurrence.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/review-phase-recurrence.md",
+      "source_sha256": "e9df5a80ea35c43cba6967a40aec2d30f255bd67ab73d9a21364749a76da6238",
+      "archive_sha256": "e9df5a80ea35c43cba6967a40aec2d30f255bd67ab73d9a21364749a76da6238",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "knot-phase.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/knot-phase.md",
+      "source_sha256": "83ae5cdef6a4b72c1ab0988251be7f7098393b47a4250bbaf0e64e964771caac",
+      "archive_sha256": "83ae5cdef6a4b72c1ab0988251be7f7098393b47a4250bbaf0e64e964771caac",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-knot-phase.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/review-knot-phase.md",
+      "source_sha256": "2b6ba6571a9b9dc099befe602a2fe7f7d52c0b307a1fa0c8b720f45a355e5175",
+      "archive_sha256": "2b6ba6571a9b9dc099befe602a2fe7f7d52c0b307a1fa0c8b720f45a355e5175",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "symmetric-character.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/symmetric-character.md",
+      "source_sha256": "1526e493ca9880cabdcadb5da49461be11f3b843d972c6c8c484dc39b7b3a08c",
+      "archive_sha256": "613211663e8bcc7bbddbd1455505483401a44801a553696db9ec2f87c3a8c6b8",
+      "copy": "Standalone formula paragraphs indented as Markdown code; no algebra changed."
+    },
+    {
+      "archived": "review-symmetric-character.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/review-symmetric-character.md",
+      "source_sha256": "cad6a3e4c4cf02eb8780a1d2e2d26590b2af889d465e386c39c488249120b302",
+      "archive_sha256": "cad6a3e4c4cf02eb8780a1d2e2d26590b2af889d465e386c39c488249120b302",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "check_parity_cover.py",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/check_parity_cover.py",
+      "source_sha256": "7b6460de5e7d3a4e28ea63c6299383109fe72375af4165a63bf3cd3e5c9acfe6",
+      "archive_sha256": "7b6460de5e7d3a4e28ea63c6299383109fe72375af4165a63bf3cd3e5c9acfe6",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "parity-cover-check.json",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/parity-cover-check.json",
+      "source_sha256": "86c7185ec8a3e227af062e111fa11db62d3434dd79d0adb0d9559af61d24f39d",
+      "archive_sha256": "86c7185ec8a3e227af062e111fa11db62d3434dd79d0adb0d9559af61d24f39d",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "validation.md",
+      "scratch_source": "/tmp/semiprime-clock-phase-20261026/validation.md",
+      "source_sha256": "21a4f5df7bf1f56401fe96102c047eb17892ee82e559250f842351f8ae79b007",
+      "archive_sha256": "21a4f5df7bf1f56401fe96102c047eb17892ee82e559250f842351f8ae79b007",
+      "copy": "verbatim"
+    }
+  ],
+  "note": "Reports and reviews were authored in scratch and then archived. Root authored README, validation and integration metadata. Earlier evidence packets were not edited; primary PDFs remain scratch-only.",
+  "append_only_integration": [
+    "AGENTS.md",
+    "docs/semiprime-factorisation-investigation.md"
+  ]
+}

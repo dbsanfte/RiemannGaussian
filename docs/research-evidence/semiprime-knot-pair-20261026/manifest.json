@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4115,
+      "sha256": "6980b5136fbe703003b165ca8b218f2cd9fa9d5a1b3b8acea68437dc7c02f4eb"
+    },
+    {
+      "path": "block-contraction.md",
+      "bytes": 8451,
+      "sha256": "be075f6488504af59c33089c2c84813f356cf3ffb2cc9c5d15448f3b444068dc"
+    },
+    {
+      "path": "block-review.md",
+      "bytes": 3238,
+      "sha256": "fbccb6a1e40d80a6987f0268d6b479f2a02feed3e3a9412bc80035b149e3f014"
+    },
+    {
+      "path": "check_nichols_review.py",
+      "bytes": 2458,
+      "sha256": "a2b5c815e1ba7d497dde41ca88270c85764b3b857f2280f95c2dd4648d3c7768"
+    },
+    {
+      "path": "check_nichols_symbolic.py",
+      "bytes": 4489,
+      "sha256": "e2a97dd9baf6e9290bae6e4f6733af1cda857f91a51f3fb9551991965762b4fb"
+    },
+    {
+      "path": "check_pair_symbolic.py",
+      "bytes": 1034,
+      "sha256": "dec7d57b1edda48963f9f7f1238de1ab3a3b87b8e31e501c4cb92e2cdc5f5d91"
+    },
+    {
+      "path": "integration-review.md",
+      "bytes": 4283,
+      "sha256": "88d759f98279fa6c81cb5114f7bfbcd262aefe2453420ba85527a12b8232ad44"
+    },
+    {
+      "path": "nichols-rank-four.md",
+      "bytes": 12194,
+      "sha256": "1f54be0fed9dc2b983cd2aae77d09626e23c5acbfb89635aeb4b110707df4864"
+    },
+    {
+      "path": "nichols-review-validation.txt",
+      "bytes": 254,
+      "sha256": "cb9e9866f939eb3339f9df4c8dd67dc86dd3f15bf5171318ae10bea9beb3d4f8"
+    },
+    {
+      "path": "nichols-review.md",
+      "bytes": 5704,
+      "sha256": "1abf581c3891851ed4e51eb24686a6bad45788192cb1f7707d22375056b3d42a"
+    },
+    {
+      "path": "nichols-symbolic-validation.json",
+      "bytes": 293,
+      "sha256": "c64ec9608ed78322a94c1db6378f5160988132b165d18ec2f9456cfe560f334a"
+    },
+    {
+      "path": "pair-symbolic-validation.txt",
+      "bytes": 51,
+      "sha256": "99d796f8dc4f1e3cd461c8d4c874e2ef333af11da09c76a3c4c262e486f77f24"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2469,
+      "sha256": "f02ccee937c1b2baefde6708e9506498d3f1230a3cc959c6ec7405a74f307c7a"
+    },
+    {
+      "path": "scalar-audit.md",
+      "bytes": 7371,
+      "sha256": "8160ab27db1bdeffcb99577bc9c91f6ae723002e2e8e1ab5c49448d301f0b233"
+    },
+    {
+      "path": "scalar-review.md",
+      "bytes": 5242,
+      "sha256": "9ced3bb22b954a190efbabcdb225dda26811228892c79b4a1f30e438f342843f"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 5153,
+      "sha256": "5da6bd90e0f7d505bb05822a583e9f7e6555d060f53e8e28ecbaeb9a76cfd64d"
+    },
+    {
+      "path": "twist-lift.md",
+      "bytes": 8353,
+      "sha256": "2d7d0f699bbdd7f7f24a6d58558a3e5a1f436b00319f86f1d5699c60a394a4a1"
+    },
+    {
+      "path": "twist-review.md",
+      "bytes": 9294,
+      "sha256": "fdb08d45996bc6b98602d36379a7387cf397a3c44732814e6bd2cfea0ad370fd"
+    }
+  ]
+}

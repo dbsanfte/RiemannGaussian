@@ -1,0 +1,298 @@
+{
+  "exitCode": 0,
+  "checks": [
+    {
+      "name": "whole-project-lint",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/LintProject.lean"
+      ],
+      "startedAt": "2026-10-29T19:17:08.140567+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 71.21833777427673
+    },
+    {
+      "name": "project-dashboard",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/GenerateProjectStatus.lean"
+      ],
+      "startedAt": "2026-10-29T19:18:19.359604+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 14.094587802886963
+    },
+    {
+      "name": "theorem-graph-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportTheoremGraph.lean"
+      ],
+      "startedAt": "2026-10-29T19:18:33.455632+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 570.4695961475372
+    },
+    {
+      "name": "theorem-explorer",
+      "command": [
+        "python3",
+        "scripts/build_theorem_explorer.py",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:28:03.939919+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 7.621002435684204
+    },
+    {
+      "name": "theorem-graph-check",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node",
+        "scripts/check_theorem_graph.cjs"
+      ],
+      "startedAt": "2026-10-29T19:28:11.561659+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 5.090153932571411
+    },
+    {
+      "name": "cached-certificate-explorer",
+      "command": [
+        "python3",
+        "scripts/build_numerical_certificate_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:29:17.443225+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 1.4204254150390625
+    },
+    {
+      "name": "rh-graph-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportTheoremGraph.lean"
+      ],
+      "startedAt": "2026-10-29T19:29:18.864278+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 745.5029191970825
+    },
+    {
+      "name": "rh-explorer",
+      "command": [
+        "python3",
+        "scripts/build_rh_proof_explorer.py",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:41:44.381476+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 18.049922227859497
+    },
+    {
+      "name": "zero-free-plot-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportZeroFreePlot.lean"
+      ],
+      "startedAt": "2026-10-29T19:42:02.432317+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 9.011686325073242
+    },
+    {
+      "name": "zero-free-plot-check",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/plot-venv/bin/python",
+        "scripts/build_zero_free_plot.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T19:43:11.158836+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 1.5980384349822998
+    },
+    {
+      "name": "certificate-plot-export",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/ExportNumericalCertificatePlot.lean"
+      ],
+      "startedAt": "2026-10-29T19:43:12.757610+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 5.318810701370239
+    },
+    {
+      "name": "certificate-plot-check",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/plot-venv/bin/python",
+        "scripts/build_numerical_certificate_plot.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T19:43:29.985822+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 0.7765729427337646
+    },
+    {
+      "name": "quasi-rh-pin",
+      "command": [
+        "python3",
+        "scripts/verify_openai_quasi_rh.py"
+      ],
+      "startedAt": "2026-10-29T19:43:30.762990+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 0.28986406326293945
+    },
+    {
+      "name": "quasi-rh-build",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "build",
+        "OAI.NumberTheory.DirichletL.RowCompletion.ZeroFreeRegion",
+        "--wfail"
+      ],
+      "startedAt": "2026-10-29T19:43:31.067295+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 3.235551118850708
+    },
+    {
+      "name": "quasi-rh-integration",
+      "command": [
+        "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "scripts/CheckQuasiRHIntegration.lean"
+      ],
+      "startedAt": "2026-10-29T19:43:34.304518+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 17.736687183380127
+    },
+    {
+      "name": "optional-build-config",
+      "command": [
+        "python3",
+        "scripts/test_numerical_certificate_build_config.py"
+      ],
+      "startedAt": "2026-10-29T19:43:52.056013+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 3.579634189605713
+    },
+    {
+      "name": "theorem-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/bin/python",
+        "scripts/test_theorem_explorer.py"
+      ],
+      "startedAt": "2026-10-29T19:43:55.650532+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 9.607450723648071
+    },
+    {
+      "name": "certificate-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/bin/python",
+        "scripts/test_numerical_certificate_explorer.py"
+      ],
+      "startedAt": "2026-10-29T19:44:05.272818+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 3.078636407852173
+    },
+    {
+      "name": "rh-explorer-browser",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/bin/python",
+        "scripts/test_rh_proof_explorer.py",
+        "--refresh-preview"
+      ],
+      "startedAt": "2026-10-29T19:44:08.352910+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 218.48395109176636
+    },
+    {
+      "name": "github-readme",
+      "command": [
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/bin/python",
+        "scripts/test_github_readme.py"
+      ],
+      "startedAt": "2026-10-29T19:47:46.838230+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 8.915969610214233
+    },
+    {
+      "name": "theorem-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_theorem_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:47:55.755704+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 7.693412780761719
+    },
+    {
+      "name": "rh-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_rh_proof_explorer.py",
+        "--check",
+        "--node",
+        "/home/dbsanfte/riemann/formal/.lake/browser-venv/lib/python3.10/site-packages/playwright/driver/node"
+      ],
+      "startedAt": "2026-10-29T19:48:03.450514+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 19.330220937728882
+    },
+    {
+      "name": "semiprime-explorer-freshness",
+      "command": [
+        "python3",
+        "scripts/build_semiprime_proof_explorer.py",
+        "--check"
+      ],
+      "startedAt": "2026-10-29T19:48:22.796444+00:00",
+      "status": "passed",
+      "exitCode": 0,
+      "elapsedSeconds": 9.971674680709839
+    }
+  ]
+}

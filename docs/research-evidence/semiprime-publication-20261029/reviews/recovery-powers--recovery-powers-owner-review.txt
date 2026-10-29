@@ -1,0 +1,11 @@
+RecoveryPowers47 independent read-only owner review: PASS
+All five assigned full current source bodies read: 520 lines total (117+55+98+143+107).
+Scope: Primitives, View, OperationInput, Cleanup, Cost only; other group bodies are assigned to other reviewers. No imports, builds, edits, or control reruns.
+Primitives execute genuine included Copy/Frame/ReverseWord calls and actual local pops/peeks/drains, with caller returns preserved and transitions charged. Full Words view covers all36 arithmetic plus11 caller roles. Four actual operand copies precede destination mutation; template W retained and private operands initially empty. Fixed35-role physical cleanup is an actual finite label sweep, covers all rational roles except W, and preserves all caller words. Proof-only rank/list/cleared functions are not runtime operands. Cost uses actual fitted scalar widths and row/history semantic lengths; no elapsed-prefix or subtree-runtime feedback and no native-clock transport. Own R36 sixth-degree call budget, complete drain costs, sign/tag/frame bytes, W0 and literal ONE cases are included.
+Minor documentation-only finding: Cleanup rational_cleared comment says every68 other physical word/full slope tail, copied wording inconsistent with this47-role inventory; theorem itself correctly preserves all11 caller words plus W. No mathematical/runtime blocker.
+All five current SHA256 before=after=assignment:
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersPrimitives.lean 962cef010bcac4805e4b98b471a5c81a40669919f454ba5dfbf078aead6a6094
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersView.lean eab1798d257e92cb1ce08b4553d0f2d4fb896c3fef5c6482c64aa778cbd01f68
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersOperationInput.lean 89cc86a3054368c6a15f9b6ca36da8e9d224ac6ed1ab8a3cecbf8cee78a8ca07
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersCleanup.lean 3330db2daeddccc37e87f7132f6df6622a81f27a927e8355d7fb638c8f352e8e
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryPowersCost.lean d155063beaa971a018b9fe70453078594de2fca81f513937a619c737059b9797

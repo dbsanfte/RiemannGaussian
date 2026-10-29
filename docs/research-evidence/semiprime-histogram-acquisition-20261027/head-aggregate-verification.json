@@ -1,0 +1,22 @@
+{
+  "strict": true,
+  "root15": true,
+  "standard_axioms_only": true,
+  "declarations": 33,
+  "theorems": 25,
+  "isolated_byte_identical": true,
+  "files": {
+    "source": {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramHeadAggregate.lean",
+      "sha256": "b8f1168be808bfb4a3f062cb5dafb36913fc50345f84fa74fcd0796670dea8b2"
+    },
+    "canonical": {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramHeadAggregate.olean",
+      "sha256": "db18c3a2c98d91509ca64ed36e22eec3da33c9a7d3bbeded4630afb6e7dc136f"
+    },
+    "isolated": {
+      "path": "/tmp/semiprime-histogram-acquisition-20261027/isolated/SemiprimeSourceHistogramHeadAggregate.olean",
+      "sha256": "db18c3a2c98d91509ca64ed36e22eec3da33c9a7d3bbeded4630afb6e7dc136f"
+    }
+  }
+}

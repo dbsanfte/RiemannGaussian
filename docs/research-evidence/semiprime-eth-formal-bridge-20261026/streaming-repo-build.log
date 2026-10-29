@@ -1,0 +1,15 @@
+'RiemannGaussian.SemiprimeStreamingTensor.natDegree_evaluate_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensor.natDegree_sum_product_evaluate_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensor.evaluateTracked_eq_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensor.evaluateTracked_at_boolean' depends on axioms: [propext, Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensor.evaluateTracked_eq' depends on axioms: [propext]
+'RiemannGaussian.SemiprimeStreamingTensor.boolean_recovery' depends on axioms: [propext, Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensor.evaluate_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeStreamingTensor.leafCount_eq' depends on axioms: [propext]
+'RiemannGaussian.SemiprimeStreamingTensor.recursionDepth_eq' depends on axioms: [propext]

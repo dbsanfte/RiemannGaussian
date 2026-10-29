@@ -1,0 +1,3 @@
+'RiemannGaussian.SemiprimeUniversalSourceExecution.source_universal_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

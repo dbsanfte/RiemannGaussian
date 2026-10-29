@@ -1,0 +1,25 @@
+{
+  "reviews": [
+    "boolean-jet-review.md",
+    "macro-search-review.md"
+  ],
+  "disposition": "PASS stated finite algebra, bit relation and actual-counter search semantics; complete graph/compiler/machine resources remain",
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeBooleanNetwork.lean": {
+      "sha256": "83885b2713252947c6113dd7917a2153f15e32a4a9f6bf4ff2e452b19ce9e9ca",
+      "bytes": 22096
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeJetRecurrence.lean": {
+      "sha256": "51722c42900b4070247dd0f23c47210c4c9a235c9e65c08ff0fa0e36ee2fad32",
+      "bytes": 6344
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMacroBitNetwork.lean": {
+      "sha256": "8d451c169141e7178288509d789f66fd0fb9ed1603b8da6d668503fb936f2f4e",
+      "bytes": 20083
+    },
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterSearch.lean": {
+      "sha256": "596fe86a9739d7ae684643299432c805dc144763b8fb92608fd3b1cb29c89fb3",
+      "bytes": 8643
+    }
+  }
+}

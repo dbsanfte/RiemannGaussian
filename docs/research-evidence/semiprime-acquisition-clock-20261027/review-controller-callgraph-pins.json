@@ -1,0 +1,30 @@
+[
+  {
+    "module": "SemiprimePaidPublicController",
+    "sha256": "a75b96d1776d1e48371a58105e3b7daba68c740388e146e344ac171e6387acd2"
+  },
+  {
+    "module": "SemiprimePaidScheduledController",
+    "sha256": "5d39ff3428dc7aa86cd651af4a77dd572edc2b12447e60cfa264d56d906d8061"
+  },
+  {
+    "module": "SemiprimePaidPrefixController",
+    "sha256": "273af8bed8e409aa12ec396f312d5a936d4860f1e9e5238e1d8bb241c079657f"
+  },
+  {
+    "module": "SemiprimePaidFactorDecoder",
+    "sha256": "befba1a27c091b337c1b8920cead05c76808743c85f56dd1f184f249f095aab8"
+  },
+  {
+    "module": "SemiprimeCachedSourceCounter",
+    "sha256": "19bba8b56baf99d770700123f736219053a0a2670525706aeaff015be00c3ff5"
+  },
+  {
+    "module": "SemiprimePaidEnumeratedSource",
+    "sha256": "6a68af5c4dc511ca1d7b2b8b570f90c448fef27110d560958b6adfcdcfc8ef4d"
+  },
+  {
+    "module": "SemiprimePaidEnumeratedConstraints",
+    "sha256": "158ff2d790e6b00718b35e89bc461d54c4450fedf3662684accf7f0d42341dac"
+  }
+]

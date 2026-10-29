@@ -1,0 +1,10 @@
+{
+  "module": "RiemannGaussian.SemiprimeBooleanRingFactor",
+  "source_sha256": "fd4c4b4e398f033d7ba07619d35a5adc93a3820a3bdd65a8781d7911ba7c6494",
+  "root_object_sha256": "b8b7d313a798d4f883366db6ad8bdae091984d1fb5bdf3d8528c6d6e176af20f",
+  "isolated_object_sha256": "b8b7d313a798d4f883366db6ad8bdae091984d1fb5bdf3d8528c6d6e176af20f",
+  "identical_objects": true,
+  "upstream_pin": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "runner": "run_with_upstream.py",
+  "imports_original_only": true
+}

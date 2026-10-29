@@ -1,0 +1,7 @@
+# Actual native counter budget
+
+`SemiprimeNativeCounterBudget.count_work` specializes the existing executed `MaterializedFibreNative.count_work` to a common group count and actual summary-cardinality bound. It retains every support-weight callback, finite summary box, one-time head acquisition and Hermite node report. The hypotheses concern the actual designs and original `EntryReport` values, never an old count-work answer, fibre oracle or substitute evaluator. Root/quantum discharge head/rank/summary/public-entry hypotheses independently.
+
+The exact envelope is `nativeBudget n F Q J R A w H M r Y`. `nativeBudget_eq_polynomial` exhibits it as the fixed explicit natural polynomial `polynomialBudget` evaluated at actual weighted support count, `2^w` and `2^H`. `nativeBudget_le_envelope` compares it with a common single-variable fixed polynomial when all those actual resources are bounded by S. No unproved numerical exponent or machine-bit running-time claim is attached. In particular, this does not replace balanced heads by n inside an exponential or selected total rank by the padded row count.
+
+Final strict canonical compilation, fifteen root linters and every-generated-declaration transitive axiom audit pass: 9 declarations, 6 theorem constants, standard three axioms only. No old source was edited. The joined source/setup and public-prefix budget are separate new-module integrations.

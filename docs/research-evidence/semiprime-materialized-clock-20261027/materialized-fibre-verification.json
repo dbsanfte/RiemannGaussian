@@ -1,0 +1,37 @@
+{
+  "modules": {
+    "SemiprimeMaterializedFibre": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedFibre.lean",
+      "source_sha256": "e398221db4f88eb072683dd259b599e4cd87f44862fa497d8a93878300e3a65c",
+      "object_sha256": "43fbbb954a32e6b05d4af315b74fbed43d5a23cb703a278e2feb80a95084c81a",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimeMaterializedFibrePacket": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedFibrePacket.lean",
+      "source_sha256": "adf4c7fbf9db7eed6255e39d5856611eeeef001ef08791328ea88a97de7ecff2",
+      "object_sha256": "e871748ca66d33b4f17834c3e52f3af633c07314d3f44f1707395310a984328e",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    },
+    "SemiprimeMaterializedFibreNative": {
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeMaterializedFibreNative.lean",
+      "source_sha256": "3d697dbc02ab8d54d6b9184c1ceeeb585b04031ccc9953a4d612184c196aceac",
+      "object_sha256": "bf5746f627fa2d0519fb24208831cba5b22afd5cc7801842b450e515966f4614",
+      "strict": true,
+      "root15": true,
+      "all_generated_standard_axioms": true
+    }
+  },
+  "scope": "selected scalar/array/control ledger; separate primitive bit simulation remains explicit",
+  "smoke_outputs": [
+    "(1, 2532)",
+    "2",
+    "0",
+    "(4, false, true)",
+    "1",
+    "4"
+  ]
+}

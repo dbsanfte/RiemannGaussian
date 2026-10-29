@@ -1,0 +1,163 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "sealed_utc": "2026-10-29T05:59:04.773524+00:00",
+  "counts": {
+    "modules": 3,
+    "declarations": 53,
+    "theorems": 49
+  },
+  "modules": {
+    "SemiprimeD1StackChildVertexEndpointBanks": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexEndpointBanks.lean",
+        "sha256": "3706e9680b8bd066120f1bb777624adb788fe8947f92fac1121d204aeee9d214"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildVertexEndpointBanks.olean",
+        "sha256": "d4a43c7c485332e3ed9fe265e7404a82260cde04b5bced4c6f40a55feb07f36e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackChildVertexEndpointBanks.independent.olean",
+        "sha256": "d4a43c7c485332e3ed9fe265e7404a82260cde04b5bced4c6f40a55feb07f36e"
+      }
+    },
+    "SemiprimeD1StackChildVertexEndpoint": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexEndpoint.lean",
+        "sha256": "26855a6cb47853a136794c8fdcddf7764e6a8f2cca1f788aa3d3f18761a7cb06"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildVertexEndpoint.olean",
+        "sha256": "5625f4eb1a3f973d604eb2ce33a20361d0328e751adace8f351fc420b04a5a44"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackChildVertexEndpoint.independent.olean",
+        "sha256": "5625f4eb1a3f973d604eb2ce33a20361d0328e751adace8f351fc420b04a5a44"
+      }
+    },
+    "SemiprimeD1StackChildVertexEndpointOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildVertexEndpointOriginal.lean",
+        "sha256": "b8370cf7da066bfaefbf04eca1bd0ee461eb3b078686f04df26a136ba556a9e1"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackChildVertexEndpointOriginal.olean",
+        "sha256": "ad3da4cdb0b3995191c7198ce78c4f8050953989011541495978ec987f313740"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/SemiprimeD1StackChildVertexEndpointOriginal.independent.olean",
+        "sha256": "ad3da4cdb0b3995191c7198ce78c4f8050953989011541495978ec987f313740"
+      }
+    }
+  },
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "default_200000_heartbeats": true,
+  "source_and_canonical_writers_stopped": true,
+  "source_and_canonical_mode": "0444; permanently immutable",
+  "gates": {
+    "strict": {
+      "exit_code": 0,
+      "modules": 3,
+      "results": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-strict-final-results.json"
+    },
+    "header": {
+      "exit_code": 0,
+      "elapsed_seconds": 6.441,
+      "log": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-header-after.log"
+    },
+    "pins": {
+      "exit_code": 0,
+      "elapsed_seconds": 8.961,
+      "log": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-pins-after.log"
+    },
+    "preservation": {
+      "exit_code": 0,
+      "elapsed_seconds": 1.924,
+      "log": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-preserve.log"
+    },
+    "independent": {
+      "exit_code": 0,
+      "elapsed_seconds": 12.316,
+      "log": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-independent.log"
+    },
+    "audit": {
+      "exit_code": 0,
+      "elapsed_seconds": 15.585,
+      "log": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-audit.log"
+    }
+  },
+  "actual_gates_terminal0_session": 77412,
+  "actual_live_header_terminal0_session": 66523,
+  "actual_imported_pins": {
+    "liveHeader": {
+      "exit_code": 0,
+      "elapsed_seconds": 6.873,
+      "log": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-liveHeader.log"
+    },
+    "livePins": {
+      "exit_code": 0,
+      "elapsed_seconds": 8.99,
+      "log": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-livePins.log"
+    },
+    "before_pairs": 18118,
+    "after_pairs": 18121,
+    "live_pairs": 18121,
+    "all_before_unchanged": true,
+    "after_equals_live": true
+  },
+  "preservation": {
+    "utc": "2026-10-29T05:57:38.911386+00:00",
+    "baseline": 17054,
+    "journals": 2,
+    "all_prior_groups": 79,
+    "group_source_canonical_independent_files": 3594,
+    "unchanged": true
+  },
+  "independent_read_only_review": {
+    "status": "PASS",
+    "all3_current_sources_fully_read": true,
+    "lines": 376,
+    "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-independent-review.txt",
+    "sha256": "c242d266e1639022e037b43efe6ad594cd8a64e6165ad97b1bb54529553dec6a",
+    "reviews": {
+      "owner": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-owner-review.txt",
+        "sha256": "f4ae1bf320cacd85ec4e038d755936bb834903dc3ffbd2a6714b399cbb929e2a",
+        "modules": 1,
+        "lines": 154,
+        "all_current_source_sha_pins_verified": true
+      },
+      "port": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-port-review.txt",
+        "sha256": "75c66c1cb92711cb4b141eec7599b21d645110bcff45b91a7a9313f73bef955f",
+        "modules": 1,
+        "lines": 140,
+        "all_current_source_sha_pins_verified": true
+      },
+      "parent": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-parent-review.txt",
+        "sha256": "20bc388a1f12300b4f6725f0fc3a47ed35b48506746d4ac100bd4182462d0c9c",
+        "modules": 1,
+        "lines": 82,
+        "all_current_source_sha_pins_verified": true
+      }
+    }
+  },
+  "scope": {
+    "kind": "Proof-only semantic endpoint helper for FINAL actualChoice169 source; no new runtime program or control",
+    "semantic_cap": "Every stoppedword\u2264100*R\u00b22^D; ALL169 stoppedwords\u226410^6*R\u00b22^D. Any literalcleanupsubset bytes +oneEOF/role\u2264capacity+169.",
+    "actual_source_join": "SAME original acquiredSource/acquiredDone/nativeleftOne realwholeChoice.run plus independent semantic endpoint cap; actualfamilyparentGood/scope/order used internally.",
+    "no_elapsed_width": "All width bounds derive only from retained source words, actualacquired rank/precisionVALUES, exactnativeGoodtablebytes and literalrecordframes. No elapsed source/subtree runtime appears as an operand width.",
+    "controls": "No new runtime code, so no new finite observer or frozenChoice control replay. Universal endpoint and same-source composition kernel checked.",
+    "honest_frontier": "Parent190 physicaloldvertexzip/cleanup remains separatecaller; fullcounter/scalar acquisition/publicfactorer remainOPEN."
+  },
+  "api": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/child-vertex-endpoint-api.txt",
+    "sha256": "72430fe42869d39f8bc4c22ba2fece281c648cee83b2caee4efce91fea2a89c4"
+  },
+  "full_goal_complete": false,
+  "no_journal_registration_commit_push": true
+}

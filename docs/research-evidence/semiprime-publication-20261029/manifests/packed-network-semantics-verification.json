@@ -1,0 +1,69 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 3,
+    "declarations": 24,
+    "theorems": 19
+  },
+  "modules": {
+    "SemiprimeD1PackedNetworkSemantics": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkSemantics.lean",
+        "sha256": "e068f587e155980a5e7e604b306b47cb86d763391b5d92381f9805651016f8ef"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedNetworkSemantics.olean",
+        "sha256": "83e72ec16780b7b70f1e4e842fbe3ecb850b2a0478c1a0684ef4ffa400bef390"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-network-semantics-frozen/SemiprimeD1PackedNetworkSemantics.olean",
+        "sha256": "83e72ec16780b7b70f1e4e842fbe3ecb850b2a0478c1a0684ef4ffa400bef390"
+      }
+    },
+    "SemiprimeD1PackedNetworkReindex": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkReindex.lean",
+        "sha256": "fa63f8bfda692f3ebf33fe4e9b9ecd61cf55d47934724950c98199974b984724"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedNetworkReindex.olean",
+        "sha256": "7233b6ebb1e8b93820aa85cc4ac65cb61eb606fc6eda5f7a87b563e17e8867c8"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-network-semantics-frozen/SemiprimeD1PackedNetworkReindex.olean",
+        "sha256": "7233b6ebb1e8b93820aa85cc4ac65cb61eb606fc6eda5f7a87b563e17e8867c8"
+      }
+    },
+    "SemiprimeD1PackedNetworkEntries": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkEntries.lean",
+        "sha256": "eb1865fffc0dcbe8a39ff6fa9cbbea5dcad1154fb63d34711baa649cac16b1c4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1PackedNetworkEntries.olean",
+        "sha256": "750bead333e009d6b3b77bc33f72c08133bce7c8254c03d972449eb2f05bbdd8"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-network-semantics-frozen/SemiprimeD1PackedNetworkEntries.olean",
+        "sha256": "750bead333e009d6b3b77bc33f72c08133bce7c8254c03d972449eb2f05bbdd8"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "actual_import_header_pairs": 18154,
+  "before_after_live_source_object_files": 36308,
+  "before_after_live_unchanged": true,
+  "current_all_source_independent_review_pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkReindex.lean": "fa63f8bfda692f3ebf33fe4e9b9ecd61cf55d47934724950c98199974b984724",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkEntries.lean": "eb1865fffc0dcbe8a39ff6fa9cbbea5dcad1154fb63d34711baa649cac16b1c4",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1PackedNetworkSemantics.lean": "e068f587e155980a5e7e604b306b47cb86d763391b5d92381f9805651016f8ef"
+  },
+  "independent_review_artifact": "/tmp/semiprime-explicit-rate-20261027/packed-network-semantics-independent-review.txt",
+  "scope": "Exact semantic helpers only: literal natural coefficients, owner-copy elimination, arbitrary-weight indexed public reindexing, exact marked entry lookup, and final scalar reduction. Concrete original2011 network instantiation and all physical acquisition/runtime remain separate."
+}

@@ -1,0 +1,15 @@
+test_actual_constructed_layout_interface (__main__.CounterControls) ... ok
+test_diagnostic_output_is_explicitly_separate (__main__.CounterControls) ... ok
+test_empty_groups_unused_variables_and_constant_factors (__main__.CounterControls) ... ok
+test_exact_hermite_higher_jets (__main__.CounterControls) ... ok
+test_general_rational_entries_are_algebraic_not_automatic_space_claim (__main__.CounterControls) ... ok
+test_invalid_kernel_rejected (__main__.CounterControls) ... ok
+test_invalid_restoration_degree_partition_and_measurement (__main__.CounterControls) ... ok
+test_measurement_representatives_need_not_satisfy_forced_bits (__main__.CounterControls) ... ok
+test_nontrivial_rational_taylor_mobius (__main__.CounterControls) ... ok
+test_second_order_taylor_and_size_two_mobius_sets (__main__.CounterControls) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.206s
+
+OK

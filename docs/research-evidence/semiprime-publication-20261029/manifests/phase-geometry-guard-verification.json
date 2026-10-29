@@ -1,0 +1,212 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 6,
+    "declarations": 219,
+    "theorems": 111
+  },
+  "modules": {
+    "SemiprimeD1StackPhaseGeometryGuard": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuard.lean",
+        "sha256": "6e79a56ec5893b76f387a8cbf35dc89372f5877e2c166d1300986a41d3a8454b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuard.olean",
+        "sha256": "1108684eee903103f85a29288a43aa83ec753d98576d5e3d0b239e6dda21d097"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-frozen/SemiprimeD1StackPhaseGeometryGuard.olean",
+        "sha256": "1108684eee903103f85a29288a43aa83ec753d98576d5e3d0b239e6dda21d097"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryGuardPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardPrimitives.lean",
+        "sha256": "fc2dc79b6f5e48cfe929fb6c460e8e480cc6ffe9c3d2355d846a2cbea7017a27"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardPrimitives.olean",
+        "sha256": "583e534807de7170dc460ba88ac63f37157a21926817e4d03afc42f71d4189b4"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-frozen/SemiprimeD1StackPhaseGeometryGuardPrimitives.olean",
+        "sha256": "583e534807de7170dc460ba88ac63f37157a21926817e4d03afc42f71d4189b4"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryGuardComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardComponents.lean",
+        "sha256": "776baae2b4a61699f8afa4e9f3a7d318a35125a331df6e8fc53f70c387fea987"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardComponents.olean",
+        "sha256": "b45125df347fe7aa0bb8b4734f3777491f5663823504da6b7cd5eeb2052cd17d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-frozen/SemiprimeD1StackPhaseGeometryGuardComponents.olean",
+        "sha256": "b45125df347fe7aa0bb8b4734f3777491f5663823504da6b7cd5eeb2052cd17d"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryGuardExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardExecution.lean",
+        "sha256": "f730e910abb6968f4da1096d82848b477275bfb36964129def89bd7959644b45"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardExecution.olean",
+        "sha256": "ae6b3e8d96a867a7b4aed9465d37b3580569316a71f0b2fa86a81d9166a0ea32"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-frozen/SemiprimeD1StackPhaseGeometryGuardExecution.olean",
+        "sha256": "ae6b3e8d96a867a7b4aed9465d37b3580569316a71f0b2fa86a81d9166a0ea32"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryGuardBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardBounds.lean",
+        "sha256": "c6c5b24cec9328dc2b789c1773292a16cb7008858081b18673ea85fbde31c825"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardBounds.olean",
+        "sha256": "df85064d55a46a8db4eb630aa4c1325cb62509c49c8b60c03a58a1b3e2baca04"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-frozen/SemiprimeD1StackPhaseGeometryGuardBounds.olean",
+        "sha256": "df85064d55a46a8db4eb630aa4c1325cb62509c49c8b60c03a58a1b3e2baca04"
+      }
+    },
+    "SemiprimeD1StackPhaseGeometryGuardOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardOriginal.lean",
+        "sha256": "d4a0dd9693004194b83f30ed02b8b13812f7596ecc06f5ad41ef988286b05b82"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseGeometryGuardOriginal.olean",
+        "sha256": "ee64172733bb5de9c90f640525a9919b6192fdfc578ce79b4cda08e1d16b046b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-frozen/SemiprimeD1StackPhaseGeometryGuardOriginal.olean",
+        "sha256": "ee64172733bb5de9c90f640525a9919b6192fdfc578ce79b4cda08e1d16b046b"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PhaseGeometryGuardControls.lean",
+        "sha256": "dff3e0b8b3e9fcbf888a5894de10fe4e8b7f8f89f0e3f34023efc541d45930ca"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-controls.log",
+        "sha256": "afac4df27cd6a65c08f7ee3a8b3a28e8ab9df663000e13cb4547819bfd0a23e3"
+      },
+      "status": "PASS",
+      "full_original_only_cases": 39,
+      "actual_transitions": [
+        68,
+        102,
+        118,
+        68,
+        102,
+        118,
+        68,
+        102,
+        118,
+        190,
+        103,
+        152,
+        201,
+        103,
+        152,
+        217,
+        103,
+        152,
+        237,
+        264,
+        138,
+        248,
+        272,
+        138,
+        264,
+        291,
+        138,
+        284,
+        311,
+        338,
+        295,
+        319,
+        346,
+        311,
+        338,
+        365,
+        5288,
+        3162,
+        227
+      ],
+      "total_actual_transitions": 15811,
+      "large_cases": [
+        "a64,u65,t100zeroPadding:5288instructions,acquiredorder64,verdictfalse",
+        "a64,u1,t1:3162instructions,acquiredorder0,verdicttrue"
+      ],
+      "all21fields": true,
+      "all14geometrycache_retained": true,
+      "caller_u_retained": true,
+      "no_supplied_order_or_geometry": true,
+      "padding_charged": true,
+      "actual_flags_and_exact_outer_returns": true,
+      "observer_generated_constants_standard3": 20,
+      "snapshot_identity_kernel_checked": true
+    }
+  ],
+  "full_goal_complete": false,
+  "runtime_scope": {
+    "stack_roles": 21,
+    "preserved_geometry_cache_roles": 14,
+    "fresh_guard_roles": 7,
+    "initial_inputs": "original physical unary a, unary u, binary grid-index t ONLY",
+    "program_parameters": "none; one fixed finite literal source",
+    "whole_pipeline": "actual frozen geometry14 call; physical retainedzero peek; paid preservingcopies of ACQUIREDorder/a/u; two real consuming UnarySumLess comparisons; physical verdict singleton; cleanup and halt",
+    "native_semantic_bridge": "EXACT original WordTapeRecursivePhase.phase conjunction i<a and i<u and geometry.point!=0, with i=actual acquired original orderFuel, ALL a/u/physicalgridt",
+    "prepared_ready_trace": "Components.guard_run supports already ACTUALLY acquired geometry cache at entry.zero; no geometry repeat",
+    "frontier": "geometry/valuation/original phase guard complete; entire C.program/factoring theorem remains open"
+  },
+  "clocks": {
+    "whole_actual_time": "10000*(a+u+tBytes+1)",
+    "acquired_cache_guard_trace": "400*(a+u+tBytes+1)",
+    "all21_roles_plus_actual_returns": "300000*(a+u+tBytes+1)"
+  },
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 17554,
+    "files": 35108,
+    "before": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/phase-geometry-guard-dependencies/imported-pins-after.json"
+  },
+  "prior_owned_frozen_files": {
+    "status": "PASS",
+    "groups": {
+      "static-input-table": 34,
+      "port-ordinal": 10,
+      "boundary-record": 10,
+      "product-table-original": 2,
+      "product-record": 10,
+      "carry-table": 10,
+      "scale-table": 10,
+      "transform-table": 10,
+      "carry-record": 10,
+      "scale-record": 10,
+      "transform-record": 10,
+      "root-schedule": 20,
+      "root-scale-leaf": 22,
+      "phase-geometry": 20
+    },
+    "total_source_object_files": 188
+  },
+  "source_and_canonical_writers_stopped": true
+}

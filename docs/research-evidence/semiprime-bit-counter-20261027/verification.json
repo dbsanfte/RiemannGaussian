@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-10-27 02:10:03 UTC",
+  "goal_status": "active",
+  "slice_status": "PROGRESS",
+  "totals": {
+    "modules": 11,
+    "declarations": 1081,
+    "theorem_constants": 739
+  },
+  "modules": {
+    "SemiprimeRationalBits": {
+      "source": "RiemannGaussian/SemiprimeRationalBits.lean",
+      "source_sha256": "97829056ebf11d5557c10b461cf88f9796009d067c752b673ac392d928cacb8c",
+      "olean_sha256": "8ea16583c608d4c25db85243b6a377035025fae0b4cb7d8d8b84296d4986d202",
+      "declarations": 129,
+      "theorems": 67
+    },
+    "SemiprimeDotBits": {
+      "source": "RiemannGaussian/SemiprimeDotBits.lean",
+      "source_sha256": "9a7d548e7b09e7f82cbd0677f4b639fad3a24030ce6ecbf2cf9769f06d51ede3",
+      "olean_sha256": "3cb92c2b0ac310b7a6ba30704964aa60cb6df43a3c1fb716c262654321516ff8",
+      "declarations": 20,
+      "theorems": 13
+    },
+    "SemiprimeCounterPacketHeight": {
+      "source": "RiemannGaussian/SemiprimeCounterPacketHeight.lean",
+      "source_sha256": "a4fcf9a37bfdf7b817ff88f32eb986e0c634494e55966b3569d3c315d282eca0",
+      "olean_sha256": "e37ad8679d44bd735da64078bf7ddf9d4d9a3cf41d0ada65eb85c936a8025983",
+      "declarations": 54,
+      "theorems": 43
+    },
+    "SemiprimeFibreAccumulatorHeight": {
+      "source": "RiemannGaussian/SemiprimeFibreAccumulatorHeight.lean",
+      "source_sha256": "da6e2a075bacdfff022b4c5a99ef009dca876c8285a2252f9c82aa2b4647af17",
+      "olean_sha256": "3e17e75361da6822d4fa4ee324c64eb041bb2948aa8d386c2db310b50918c4df",
+      "declarations": 34,
+      "theorems": 25
+    },
+    "SemiprimeLocalPrefixHeight": {
+      "source": "RiemannGaussian/SemiprimeLocalPrefixHeight.lean",
+      "source_sha256": "58037b8320fe8869056c5bbcc251318d18e28c702c21d2acb3af2866841186b0",
+      "olean_sha256": "12daa878aa53c67a81992807b0c7d23badcbf0804d8519977a32ad9f10068b32",
+      "declarations": 16,
+      "theorems": 14
+    },
+    "SemiprimeHermiteArrayHeight": {
+      "source": "RiemannGaussian/SemiprimeHermiteArrayHeight.lean",
+      "source_sha256": "e93b413e78a12dcfeff5e7c19d090cd0997d727a421a2c8dabdafc61ad5ffbed",
+      "olean_sha256": "2d6ef91a29058d74101c346674d106832de41ff0aaf3951112ec821e3adf8ebc",
+      "declarations": 205,
+      "theorems": 150
+    },
+    "SemiprimeMacroEntryExecution": {
+      "source": "RiemannGaussian/SemiprimeMacroEntryExecution.lean",
+      "source_sha256": "d583bbdc513423bbe6285893e8587e5746b70d199b7df71bc546eb1c5f71d034",
+      "olean_sha256": "0a90cff2f251683cdc93a224aeacff8f5b2ddfda4391cdaede379e6e417d0159",
+      "declarations": 117,
+      "theorems": 87
+    },
+    "SemiprimeMacroEntryBitPrimitives": {
+      "source": "RiemannGaussian/SemiprimeMacroEntryBitPrimitives.lean",
+      "source_sha256": "61550b50c95965b44477b7556eee0c9ee6cf2b3c74195daf28b11bc46f7f845b",
+      "olean_sha256": "80d48913898309a118622ceff4f18b9d2c36e0a9ac16a59e7a32050ef5e00bd4",
+      "declarations": 180,
+      "theorems": 89
+    },
+    "SemiprimeMacroEntryBitCheck": {
+      "source": "RiemannGaussian/SemiprimeMacroEntryBitCheck.lean",
+      "source_sha256": "df0bc33f2fd018320196f112264e69da51f63ff8186951e086c334ce6b37707e",
+      "olean_sha256": "592099f63f43d4d1687f1f37c36e322c05b99fecdec13f2562d973b71471a9b1",
+      "declarations": 301,
+      "theorems": 231
+    },
+    "SemiprimeSubdividedEntry": {
+      "source": "RiemannGaussian/SemiprimeSubdividedEntry.lean",
+      "source_sha256": "8a1a971402e32ef26514c5c5c1915f56245fa4c51f59943287e703ee3667cce1",
+      "olean_sha256": "e91603e2fcb373cbad04446afa8720dbebf6ce82d64d6476c6cac4eb6a9a4d72",
+      "declarations": 10,
+      "theorems": 7
+    },
+    "SemiprimePublicConstructedCount": {
+      "source": "RiemannGaussian/SemiprimePublicConstructedCount.lean",
+      "source_sha256": "f96481d6ac2be87dbb800cf2a9f3701d052e672454d570dc126f5af93a5d9a7a",
+      "olean_sha256": "859867cd50cb8fd0e49c665ac8b26278498912a9a81294e53a9125de21512a75",
+      "declarations": 15,
+      "theorems": 13
+    }
+  },
+  "strict_flags": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "all_generated_declarations": true,
+  "ordinary_root_import": true,
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "stable_local_dependencies": 141,
+  "preserved": {
+    "protected": 1683,
+    "concurrent": 24,
+    "prefixes": 2
+  },
+  "local_markdown_links": 7,
+  "primitive_factoring_bit_time_proved": false,
+  "native_softK_acquisition_proved": false,
+  "independent_full_bit_review": "Repaired candidate supported; formal execution joins open",
+  "commit_or_push": false
+}

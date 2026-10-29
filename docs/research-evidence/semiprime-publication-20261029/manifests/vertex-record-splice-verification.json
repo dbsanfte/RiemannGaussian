@@ -1,0 +1,120 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 4,
+    "declarations": 102,
+    "theorems": 47
+  },
+  "modules": {
+    "SemiprimeD1StackVertexRecordSplice": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVertexRecordSplice.lean",
+        "sha256": "c70ebaca198ebc6f1f49cd82276f3ea2bd7abc1a904eff766548b63edc5097ec"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackVertexRecordSplice.olean",
+        "sha256": "01824772a792f94b8005cfeb9b655e096981f033db20e6cdefb69c4a9b76250a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-frozen/SemiprimeD1StackVertexRecordSplice.olean",
+        "sha256": "01824772a792f94b8005cfeb9b655e096981f033db20e6cdefb69c4a9b76250a"
+      }
+    },
+    "SemiprimeD1StackVertexRecordSpliceExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceExecution.lean",
+        "sha256": "1eed47777960bf8e8aee7de78843348ff287577af18d8b0cfe29a4c87f37102b"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceExecution.olean",
+        "sha256": "1145122ae524a01fa79a31b614ce777d2297a4a7cb7ac07598a7ef025e886a15"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-frozen/SemiprimeD1StackVertexRecordSpliceExecution.olean",
+        "sha256": "1145122ae524a01fa79a31b614ce777d2297a4a7cb7ac07598a7ef025e886a15"
+      }
+    },
+    "SemiprimeD1StackVertexRecordSpliceMeaning": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceMeaning.lean",
+        "sha256": "87b4500059f5aa1e1bed34ab2f92a674e4afc53d536c2987894d9bedadfff9d3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceMeaning.olean",
+        "sha256": "6e3f0744f003f3b7275be19d3a6a4f07955fc2ba44130c389dc4387aaa27c306"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-frozen/SemiprimeD1StackVertexRecordSpliceMeaning.olean",
+        "sha256": "6e3f0744f003f3b7275be19d3a6a4f07955fc2ba44130c389dc4387aaa27c306"
+      }
+    },
+    "SemiprimeD1StackVertexRecordSpliceStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceStorage.lean",
+        "sha256": "187a0059fee5d87aa553dce3c4cb7edfbd32faa2afb22b23688c90b070e6984c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackVertexRecordSpliceStorage.olean",
+        "sha256": "da2127986018cd6bdcdccb28a7373b46975270ce9b81adaa3009fbf277b73608"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-frozen/SemiprimeD1StackVertexRecordSpliceStorage.olean",
+        "sha256": "da2127986018cd6bdcdccb28a7373b46975270ce9b81adaa3009fbf277b73608"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "sealed_utc": "2026-10-29T05:20:32.296565+00:00",
+  "source_and_canonical_writers_stopped": true,
+  "source_and_canonical_mode": "0444; permanently immutable",
+  "default_200000_heartbeats": true,
+  "strict_root15_every_generated_std3_independent_byte_actual_terminal0_session": 81534,
+  "actual_after_live_header_terminal0_session": 90326,
+  "actual_imported_pins": {
+    "before_pairs": 18095,
+    "after_pairs": 18099,
+    "live_pairs": 18099,
+    "all_external_before_pairs_unchanged": true,
+    "all_current_actual_header_source_object_hashes_match": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-live-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-live-after.json",
+    "live": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-live.json"
+  },
+  "independent_read_only_review": {
+    "status": "PASS",
+    "all4_current_sources_fully_read": true,
+    "lines": 237,
+    "all_before_after_assignment_current_source_pins_match": true,
+    "path": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-independent-review.txt",
+    "sha256": "149c6a75eb92b0cf4098ad00c37050c9399ff7d79828f3dcdc468d626ba75833",
+    "source_canonical_writes": false
+  },
+  "actual_controls": {
+    "status": "NOT_NEEDED",
+    "reason": "Universalactualsource_run/machineSplice/allprefixproofcoversALLrow/history inputs; simpletwo-rolehelper, nonewarithmetic/aliasfamily. No finitecampaign/oldobserverreplays."
+  },
+  "scope": {
+    "physical_roles": 2,
+    "runtime_inputs": "ONLYalreadyacquiredwhole singletonrecord andexistinghistory; norowprefix/coefficient/clock/getter/advice input",
+    "runtime_program": "actualconsumingreverseNEWrecordONTOhistory; actualfrontFALSEEOFpop; truehalt/clearedflags. Exactsource_tracepreservesarbitraryrealouterreturns.",
+    "semantic": "WHOLE existingnative records[v]=row(v)++FALSE, includingALLcoefficientbytes. Samewholephysicalsplicer workswithbothFINALactive136/inactive32. Exactnativechronologicalstream decomposition/EOFcancellation.",
+    "clocks": "EXACT2*NEWrowbytes+7 independentexistinghistorylength. Sumofactualprovedperrecordclocks=2*TOTALrowbytes+7*vertices. All2datawords+actualreturnprefixcells<=30*(rowbytes+historybytes+1). No oldhistoryrecopy/newcoefficientparse/nativeclocktransport.",
+    "honest_frontier": "PREPAREDsingle-record helper, NOTfullsupplieryziploop/originalN-only/fullrecursivecounter/sourceV/recoveryhandoff/globalbitbound. Summedclockidentity isnotanimplementedwholeloop."
+  },
+  "baseline_protected_files": {
+    "status": "PASS",
+    "files": 17054,
+    "historical_journals_whole_exact_append0": true
+  },
+  "api": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/vertex-record-splice-api.txt",
+    "sha256": "a502199dbc39264fb2429578241618fbf73efa674eaa44889f534271aaeb8fed"
+  },
+  "no_journal_registration_commit_push": true
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteWidthPolynomial",
+    "exit_code": 0,
+    "seconds": 7.529578763991594,
+    "source_sha256": "0f6f525acf6fee2a25d1be7801e557cd6c7b29ab329b75157a107b65c8c5ae58",
+    "isolated_sha256": "a1d7c20f475de04fb05c924edef4eaf85b092988a29806cac6de3dd329b7e5ce",
+    "canonical_sha256": "a1d7c20f475de04fb05c924edef4eaf85b092988a29806cac6de3dd329b7e5ce",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteReportStagePolynomial",
+    "exit_code": 0,
+    "seconds": 25.296023890026845,
+    "source_sha256": "4425acfb49c65886800e6a90258a848657d935ac6615fd44c148e408830cc523",
+    "isolated_sha256": "af6e6fee1c46386352d825abae2095edd332d93ca78e078fa40baf08446751a5",
+    "canonical_sha256": "af6e6fee1c46386352d825abae2095edd332d93ca78e078fa40baf08446751a5",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteReportEnvelope",
+    "exit_code": 0,
+    "seconds": 64.38691170408856,
+    "source_sha256": "20241533d9b8b30b75b8eb89f65753727675aef06e372d2d8c9f5f31e706e4b5",
+    "isolated_sha256": "abb00a0448a1ca46ad3f19260a9ee601b10a026777b8cc96b9bb5a77040a1cd2",
+    "canonical_sha256": "abb00a0448a1ca46ad3f19260a9ee601b10a026777b8cc96b9bb5a77040a1cd2",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePublicHermiteCounterBudget",
+    "exit_code": 0,
+    "seconds": 6.854772165068425,
+    "source_sha256": "e5ac1d8a8d546a244d3c6ee632b36beaa3d05b78dfef1fa54beb454dfdd002a4",
+    "isolated_sha256": "31cf3c84c2d9b7d5220d367b3ba076d81f3dc9ba0218bdf4e870b1ad7f5dba8c",
+    "canonical_sha256": "31cf3c84c2d9b7d5220d367b3ba076d81f3dc9ba0218bdf4e870b1ad7f5dba8c",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePublicHermiteReportPolynomial",
+    "exit_code": 0,
+    "seconds": 12.796602191054262,
+    "source_sha256": "9cd2f416d48018641f36cdfee49ab2d71145608e070719e02cb98d441776260e",
+    "isolated_sha256": "70d747aceb8d5f00864eb4a3152c4e25cf2cbab74073d5d2b5b7b950661cdc0a",
+    "canonical_sha256": "70d747aceb8d5f00864eb4a3152c4e25cf2cbab74073d5d2b5b7b950661cdc0a",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePublicResourceRate",
+    "exit_code": 0,
+    "seconds": 77.75010457600001,
+    "source_sha256": "f53eb4b6396b63e2e221c6dfaab3188c678703c47e5f431f3a9067c48ab4b72b",
+    "isolated_sha256": "f37e3fb652ada439bb15c69ed6222f1d9f974bce03ceea056d8b078df2f41989",
+    "canonical_sha256": "f37e3fb652ada439bb15c69ed6222f1d9f974bce03ceea056d8b078df2f41989",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeHermiteFullReportRate",
+    "exit_code": 0,
+    "seconds": 6.645670092082582,
+    "source_sha256": "042b859eb7f3b773d4f40a7782f7ac70a20ad3f4ba60ec0ad2969b683d34a33a",
+    "isolated_sha256": "a5e56aaf7ec39309b52d71dec5e0ebdb273e152cc50930d01b9fa8088f109f07",
+    "canonical_sha256": "a5e56aaf7ec39309b52d71dec5e0ebdb273e152cc50930d01b9fa8088f109f07",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSourceScorePrefixHeight",
+    "exit_code": 0,
+    "seconds": 7.559946856927127,
+    "source_sha256": "987bf0258442f66761b92eb479bfae4a3ad4eca20535c343955672df0fa54eb6",
+    "isolated_sha256": "75d5c09691009523fbcee250ec6c81eedabefdca19822422f75b2760dd3bbcb7",
+    "canonical_sha256": "75d5c09691009523fbcee250ec6c81eedabefdca19822422f75b2760dd3bbcb7",
+    "object_matches": true
+  }
+]

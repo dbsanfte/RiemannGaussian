@@ -1,0 +1,31 @@
+{
+  "status": "FINAL_12_SCHEDULE_MODULES_FROZEN",
+  "counts": {
+    "modules": 12,
+    "declarations": 684,
+    "theorems": 348
+  },
+  "reports": [
+    {
+      "path": "/tmp/semiprime-explicit-rate-20261027/schedule-successor-verification.json",
+      "sha256": "bdc126f0bd801c3bbc333d486b0a491e5169cc65477e26086b602aa1773285ec"
+    },
+    {
+      "path": "/tmp/semiprime-explicit-rate-20261027/schedule-active-verification.json",
+      "sha256": "cade91a934c206e0f17f7bcf56071ffa710168a42076058e307d398efdac9e2d"
+    },
+    {
+      "path": "/tmp/semiprime-explicit-rate-20261027/recursive-schedule-verification.json",
+      "sha256": "dde4bea4bed852d2a81933446d7df16afde5806aabf2583f666f0e40af333f55"
+    }
+  ],
+  "all_strict_root15_default200k_standard3_independent_byteidentical": true,
+  "all_imported_source_object_pairs_unchanged": [
+    17428,
+    17436,
+    17867
+  ],
+  "frozen_sources_objects_live_hashes_match": true,
+  "scope": "ONE fixed16role prepared-metadata recursive schedule frontend: realguard call\u2192physicalverdictpeek\u2192optionalrealSuccessor call. ALLoriginals/lam/depth/M matchnativeactiveTest; activechildlevels/exponent exact, inactivechildEMPTY. SAME ownclock\u2264300*(physicalGuardBytes+parentExponentBytes+1), original\u226410000*(s+lam+M+1), ALL16+realreturns\u22641000000*(s+lam+M+1). OriginalN acquisition and downstreamrecursivecounter are not claimed.",
+  "full_goal_complete": false
+}

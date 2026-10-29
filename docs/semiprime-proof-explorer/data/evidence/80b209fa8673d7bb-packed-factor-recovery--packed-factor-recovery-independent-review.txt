@@ -1,0 +1,39 @@
+{
+  "verdict": "PASS_ALL21_INDEPENDENT_FULL_BODY_READ_ONLY_CURRENT_SOURCE_PINS",
+  "reviewers": {
+    "parent": 8,
+    "owner": 7,
+    "vertex": 6
+  },
+  "full_current_lines": 2230,
+  "pins": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecovery.lean": "f6d825f1458a60105b56818731951a11a87e6aca667b5573a51ecaf94078e486",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryDiscriminant.lean": "973e653bad854cd234cfb7e4b6c6d830e51bc364521d42f52b16cbabcff8a98e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryHalves.lean": "0d332468b50473b52a24c3089eaa27fe2e99964dd89e7fbba1e436054c06df07",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryValidation.lean": "30a3c05b199d907111051b01007e073b3b18380c452f9c6acdf55db87b1552d3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryMeaning.lean": "2b5a25c92245ab5945aad03eca16c9d531b7f9d927ebbdb9753c249877e27607",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryClock.lean": "8c1af5c1db29a4dd42a01929d0b1c8905319a3992d70aa23c94d1f162fe5957c",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryStorage.lean": "c2a70f6e2947190ea16c61546f9dd0c90bd899ebb34db0ec864fca04e36bb139",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryOriginal.lean": "39d331627ae6040ceea6db69a058597fc375430e35ec6328fc9dfefe7618c4f3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryEncoding.lean": "478a16b92faee397e54ac49582464ee3e3fe18ee1bb02ee2f325dbda7572f974",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryPrimitives.lean": "8d7617da9e70b3f328a06dd8399a2cb1dc58979436be442384a6336480e6249a",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryCopies.lean": "141a99aab0b1430b9eaf1f45fbac591a650187273bd3c79679c0d87622c3078e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryCount.lean": "29cb209939eb67c01c933a205a91920efd1685e746f75d5563d7f86c9df001b4",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoverySources.lean": "c3a25fbe526fe81dcef444f63196ac056ddcc4fba6a358e0df44ff99376dff3e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryViews.lean": "7f1289ab30551ae0859b68f45df8876456e24d228d03bce08600843c4350099e",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryExecution.lean": "e8bbc371702958e56239161d350046e9355c8a9554bf67af7b4d7831fe6c81a8",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryArithmetic.lean": "758e7b013f3c482ccf7a44bf9d45c38f6edb6091982a62aaf9a7c6d30f98e8c1",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryCompaction.lean": "a45977296bfb443829696656056fc180d9178d56179c39a9e9ff306bc20cfdbe",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryFactorChecks.lean": "949aca98136a4e3d565ad0d30016f30bd3e190528390bc7265165740e7f6a2c3",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryStageCosts.lean": "70a994c873bf08e97892aeb34ea33b1a3ae952f649dadf894929d521c4346154",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryWidths.lean": "f3f0933bc9604ae3e51c25acfc117c18a276c1f95707be3c3e56ecabc2e94888",
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedFactorRecoveryFamily.lean": "564d01cad6aa5e4f7f52ef3a6b7ee07a2b2818f2d095439c919bc13d20cd631d"
+  },
+  "artifacts": [
+    "packed-factor-recovery-parent-review.txt",
+    "packed-factor-recovery-owner-review.txt",
+    "packed-factor-recovery-vertex-review.txt"
+  ],
+  "scope": "Complete literal59-word TWO-input N+ACTUALscalar factorrecovery, universal semiprimecorrectness and ownquartic/source+all59returns. SourceV acquisition/wholecounter and fulloriginalN-onlyfactorer/globalrate remainOPEN.",
+  "updated_utc": "2026-10-29T03:33:12.416306+00:00"
+}

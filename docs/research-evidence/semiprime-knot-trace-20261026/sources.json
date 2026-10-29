@@ -1,0 +1,114 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "FrohmanGelca2000",
+      "title": "Skein Modules and the Noncommutative Torus",
+      "authors": "Charles Frohman and Razvan Gelca",
+      "url": "https://arxiv.org/abs/math/9806107",
+      "author_pdf": "https://www.math.ttu.edu/~rgelca/torus6.pdf",
+      "checked": [
+        "Theorem 1, Chebyshev product-to-sum"
+      ],
+      "use": "Exact skein identity; no finite arithmetic union predicate supplied."
+    },
+    {
+      "id": "Chesebro2020",
+      "title": "Farey recursion and the character varieties for 2-bridge knots",
+      "authors": "Eric Chesebro",
+      "url": "https://arxiv.org/abs/1902.01968",
+      "checked": [
+        "Character-variety and Farey-polynomial construction"
+      ],
+      "use": "Specified-node recursion; does not locate the hidden stationary arithmetic colour."
+    },
+    {
+      "id": "ElzenaarMartinSchillewaert2026",
+      "title": "The combinatorics of Farey words and their traces",
+      "authors": "Alex Elzenaar, Gaven J. Martin, Jeroen Schillewaert",
+      "url": "https://ems.press/content/serial-article-files/52234",
+      "author_repository": "https://mro.massey.ac.nz/items/b8d8816c-e56f-488e-b21f-95818cf5a293",
+      "doi": "10.4171/GGD/832",
+      "checked": [
+        "Theorem 4.4",
+        "Corollary 4.5, with equal-parameter coefficient qualification",
+        "Section 6, Eq. (7), Theorem 6.4"
+      ],
+      "use": "Fan transfer for initialized trace coordinates. Equal alpha=beta gives 2*(alpha+alpha^-1)^2 from Theorem 4.4; constant8 only in parabolic specialization."
+    },
+    {
+      "id": "Goldman2009",
+      "title": "Trace Coordinates on Fricke spaces of some simple hyperbolic surfaces",
+      "authors": "William M. Goldman",
+      "url": "https://arxiv.org/abs/0901.1404",
+      "checked": [
+        "Two-generator relative trace and commutator identity"
+      ],
+      "use": "Exact integral identity used for explicit framed candidate; no acquisition of unknown relative coordinate."
+    },
+    {
+      "id": "Benard2020",
+      "title": "Reidemeister torsion form on character varieties",
+      "authors": "Leo Benard",
+      "url": "https://arxiv.org/abs/1612.06237",
+      "publisher_pdf": "https://msp.org/agt/2020/20-6/agt-v20-n6-p03-p.pdf",
+      "checked": [
+        "Published Theorem 4.16, Burde-de Rham statement, p.2862"
+      ],
+      "use": "Reducible nonabelian representation existence in the stated field setting; not a finite-ring mixed-eigenline algorithm."
+    },
+    {
+      "id": "WangWong",
+      "title": "Fast Algorithm for Multiplication on the Skein Algebra of One-hole Torus",
+      "authors": "Sike Wang and Helen Wong",
+      "url": "https://arxiv.org/abs/2405.20159",
+      "doi": "10.1080/10586458.2025.2483946",
+      "checked": [
+        "Definition 2.5 and Eq. (1)",
+        "Current Proposition 5.5",
+        "Already covered in prior skein-transfer.md"
+      ],
+      "use": "Duplicate background: skein-valued puncture discrepancy and polynomial intersection-dependent multiplication, no new scalar query input."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-collective-20261026/README.md",
+      "bytes": 7995,
+      "sha256": "d60ac8254622d35a4d341136056a0304725be27ced213ac51e2defd4ed28a988"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-advancement-20261025/skein-selector.md",
+      "bytes": 14118,
+      "sha256": "f263f20c0d633e3042395ff1920e7d32dfaf327d5b3d2cbf17a6e7fad092a366"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-fastprefix-20261026/native-contraction.md",
+      "bytes": 14762,
+      "sha256": "2c15f756f83a9ea67209c7ee3f26b3eb8fa87e6bdb2039b1623333bee75d2ed8"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-prefix-20261025/README.md",
+      "bytes": 6429,
+      "sha256": "18f7fb131a7b1e93d28267f9076cf00d34dccb1b988d383879d6a00b55b86484"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-paired-weighted-query-20261024/scalar-catalogue.md",
+      "bytes": 10140,
+      "sha256": "9ded79850c2f200069a7da67502d0de579d1df0457cb06c865fb3d39c9654058"
+    }
+  ],
+  "scratch_source_pins": [
+    {
+      "local_path": "/tmp/semiprime-knot-trace-20261026/sources/farey-words.pdf",
+      "bytes": 5506402,
+      "sha256": "152665848a342ec0d0c7e09624f2bb9e9c482341c34ba3e42711eac22d9aec4a"
+    },
+    {
+      "local_path": "/tmp/semiprime-arithmetic-locator-20261024/sources/farey_cover.py",
+      "bytes": 12342,
+      "sha256": "1a44eefa5d114ef464f9ace0557a7711e37f4c5445d8761b43436bb9047c66bd"
+    }
+  ]
+}

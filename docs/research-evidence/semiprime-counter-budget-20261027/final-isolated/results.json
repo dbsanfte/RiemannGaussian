@@ -1,0 +1,119 @@
+[
+  {
+    "module": "RiemannGaussian.SemiprimeFullSetupBudget",
+    "exit_code": 0,
+    "seconds": 9.898217232024763,
+    "source_sha256": "cb233935d5dbca3fd73ee09336ff4195aafb46eb1df072c195b0a44d1a072c94",
+    "isolated_sha256": "3c05bcf59fb951f5ee417813fd8c331cdb9145746836f0f894afdf8eec58c631",
+    "canonical_sha256": "3c05bcf59fb951f5ee417813fd8c331cdb9145746836f0f894afdf8eec58c631",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeNativeCounterBudget",
+    "exit_code": 0,
+    "seconds": 9.60886409401428,
+    "source_sha256": "b6af4a3c79a362dc9234bc9d8000515aac0047bad7ecef6fc524d6a2bb815ac2",
+    "isolated_sha256": "550ddec456bc44c54b8af6777972c2c4f0d89b8899154739b6f46e5b1960c3af",
+    "canonical_sha256": "550ddec456bc44c54b8af6777972c2c4f0d89b8899154739b6f46e5b1960c3af",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeIndexedDesignResources",
+    "exit_code": 0,
+    "seconds": 7.334056143008638,
+    "source_sha256": "7f254e967f835c21efc3999f46200177fa0b18ff3386fa94a6bf265db9993c26",
+    "isolated_sha256": "3a1f1475766f2cfb896df251e2df07708f38a48f96cd1260ccc7c47d689eba46",
+    "canonical_sha256": "3a1f1475766f2cfb896df251e2df07708f38a48f96cd1260ccc7c47d689eba46",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePublicBudgetDimensions",
+    "exit_code": 0,
+    "seconds": 7.597934285993688,
+    "source_sha256": "f7ed2cc3b9c9a10858c0fcaba05a22813556223f2b271cc58cee55181b599e31",
+    "isolated_sha256": "43237e3c8e329f5731fdc8048643973e10dae57a904ef91210596bbe169723ff",
+    "canonical_sha256": "43237e3c8e329f5731fdc8048643973e10dae57a904ef91210596bbe169723ff",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeFullCounterBudget",
+    "exit_code": 0,
+    "seconds": 7.122391916986089,
+    "source_sha256": "4874859da22e6787153ad8b6858998b4a6b635e4ffa7a9db8db75e8ff6c9c87b",
+    "isolated_sha256": "c69917cbb05507765e304ea6cf19dfe1e5d73c04000b847e29bdb2efa32c915f",
+    "canonical_sha256": "c69917cbb05507765e304ea6cf19dfe1e5d73c04000b847e29bdb2efa32c915f",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePublicCounterBudget",
+    "exit_code": 0,
+    "seconds": 6.7852699349750765,
+    "source_sha256": "da1f0e9db7c57073e3963bd6396086130ade7ad601c6d6c8a375436ab448ed7f",
+    "isolated_sha256": "72f6928c21df59b2c96ceccb9419ab2ba6e5afb32cb493c12fd5c4ef036c861b",
+    "canonical_sha256": "72f6928c21df59b2c96ceccb9419ab2ba6e5afb32cb493c12fd5c4ef036c861b",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeSetupPolynomialEnvelope",
+    "exit_code": 0,
+    "seconds": 26.3711365640047,
+    "source_sha256": "a60f2d6f16476d5b0d8f0c4d0287dc91626697b3ed0d6ccc6068f6270a247b87",
+    "isolated_sha256": "de1902baa0d95b7c432f6dbd1ff54f68346e3488b1ce7d315708c8eea27413cc",
+    "canonical_sha256": "de1902baa0d95b7c432f6dbd1ff54f68346e3488b1ce7d315708c8eea27413cc",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePublicReportPolynomial",
+    "exit_code": 0,
+    "seconds": 8.54284233902581,
+    "source_sha256": "3d1c0e5147c57a66c1e3a7cccc8b78afc6a67d20562b2bec57e4a990547a1018",
+    "isolated_sha256": "61bf8dad40ea0e036bb0c771f62e07ab86c32e89211e8ea8e860813d98f7f0bd",
+    "canonical_sha256": "61bf8dad40ea0e036bb0c771f62e07ab86c32e89211e8ea8e860813d98f7f0bd",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePublicCounterResources",
+    "exit_code": 0,
+    "seconds": 7.5211662169895135,
+    "source_sha256": "0338657aed49809acde7c3e0d3b3af81e91c9edb711cb18999726d54ca93cdfb",
+    "isolated_sha256": "8409fdcaeca2dd24d2a5aad41451e9b543a4e3536c4f55c423e16559817f488f",
+    "canonical_sha256": "8409fdcaeca2dd24d2a5aad41451e9b543a4e3536c4f55c423e16559817f488f",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeReportPolynomialGrowth",
+    "exit_code": 0,
+    "seconds": 8.549704512988683,
+    "source_sha256": "e45831cf88ee74f5be36bb0e4d7b7d99c4f73982c1c49d10da20e691ca4194b6",
+    "isolated_sha256": "39e9d4a30ed499b9bf49d468c548ba453ac8413131aa13520fd6addb7aa757ab",
+    "canonical_sha256": "39e9d4a30ed499b9bf49d468c548ba453ac8413131aa13520fd6addb7aa757ab",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeScheduledScalarBudget",
+    "exit_code": 0,
+    "seconds": 12.076108831039164,
+    "source_sha256": "f4a17ac1fd1281248e83104f0ebc46c7babedf47efa011c42010980474a5185b",
+    "isolated_sha256": "f7679e1eb58da11afc64a364987c9d3fdfa11ee88e1d265664961aae44d42dab",
+    "canonical_sha256": "f7679e1eb58da11afc64a364987c9d3fdfa11ee88e1d265664961aae44d42dab",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimePublicReportGrowth",
+    "exit_code": 0,
+    "seconds": 6.8036269749864005,
+    "source_sha256": "c112750e3137d50d0a2c5bf72e939e60deddcd6a373e0bb83bfedc9cbcb4ae25",
+    "isolated_sha256": "c7708ee631b5802e2feb807c1f283ccd870aa35d47086e14b62969c31d8f7817",
+    "canonical_sha256": "c7708ee631b5802e2feb807c1f283ccd870aa35d47086e14b62969c31d8f7817",
+    "object_matches": true
+  },
+  {
+    "module": "RiemannGaussian.SemiprimeFullReportRate",
+    "exit_code": 0,
+    "seconds": 76.73427428799914,
+    "source_sha256": "50cda342904cacf965fe9d5da9e8369575c6cd3d75bc4404fb773beaf19e76eb",
+    "isolated_sha256": "2a691fc8aa4b10b660d889057449a4a54a9c8b5fa11bbfd8321ecc68e0a1666a",
+    "canonical_sha256": "2a691fc8aa4b10b660d889057449a4a54a9c8b5fa11bbfd8321ecc68e0a1666a",
+    "object_matches": true
+  }
+]

@@ -1,0 +1,10 @@
+CHILD_GROUP_FACTORY case=empty steps=254 all115=true oldVertices=0 originalOccurrences=0 packets=0 success=true
+CHILD_GROUP_FACTORY case=isolated steps=2742 all115=true oldVertices=2 originalOccurrences=0 packets=0 success=true
+CHILD_GROUP_FACTORY case=both steps=26179 all115=true oldVertices=2 originalOccurrences=1 packets=1 success=true
+CHILD_GROUP_FACTORY case=owner-only steps=15045 all115=true oldVertices=2 originalOccurrences=1 packets=1 success=true
+CHILD_GROUP_FACTORY case=none-empty-packet steps=6369 all115=true oldVertices=2 originalOccurrences=1 packets=1 success=true
+CHILD_GROUP_FACTORY case=literal-packet-order steps=76490 all115=true oldVertices=2 originalOccurrences=2 packets=2 success=true
+CHILD_GROUP_FACTORY case=duplicate-packets steps=47821 all115=true oldVertices=2 originalOccurrences=1 packets=2 success=true
+CHILD_GROUP_FACTORY case=paired-eof-reject steps=1849 all115=true oldVertices=2 originalOccurrences=1 packets=1 success=false
+CHILD_GROUP_FACTORY cases=8 actual_steps=176749 all115=true isolated=true owner_before_factor=true empty_buckets=true literal_rawpacket=true real_unary_ports=true derived_nonidentity_order=true duplicate_packets=true headers_generic=true flags_and_two_outer_returns=true
+CHILD_GROUP_FACTORY_OBSERVER_STD3 71

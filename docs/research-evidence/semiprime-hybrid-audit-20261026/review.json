@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26",
+  "task": "Inventory reformulations; distinguish shared acquisition bottlenecks from complementary gains; test candidate hybrids.",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft O(k^(5/4)), k of order N^(1/6); not a general factoring record",
+  "inventory_groups": 34,
+  "groups_are_independent_algorithms": false,
+  "tested_hybrids": [
+    "q-binomial moments / TQ core with old unique-hit projective locator",
+    "cyclic resolvent / Cauchy correction with knot prefix consumer",
+    "common scalar kernel seeds with coarse collision selection"
+  ],
+  "results": {
+    "moment": "Full-Hankel gradient bridge exact; aligned cheap moments both zero; cheap TQ derivative lacks D_g P_ret.",
+    "cyclic": "Predicate-equivalent quotient core has unit denominator but retains Q_m(v_a).",
+    "kernel": "Uniform colour-free two-GP cover at soft N^(1/4); supplied h mod k hit residue enables fully paid soft-k consumer.",
+    "residue_supplier_acquired": false,
+    "projective_gradient_acquired_at_target_cost": false,
+    "literal_union_scope": "Omega(k^3) distinct INTEGER labels on actual fixed-scale subfamily; no runtime, factoring or smaller-cover lower bound."
+  },
+  "reviews": [
+    "review-moment-locator.md",
+    "review-topology-prefix.md",
+    "review-coverage-selector.md",
+    "review-shared-slices.md",
+    "review-integration.md"
+  ],
+  "corrections_integrated": [
+    "weaker output specification, no computational separation",
+    "TQ retained factor includes final endpoint",
+    "kernel divisibility proved directly without roughening premise"
+  ],
+  "root_review": "See integration-notes.md; independent symbolic checks, not Lean.",
+  "preservation": {
+    "protected_files_verified": 873,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1535967,
+        "sha256": "ad58680655069d0dbaac9a6c82e786407d375c520ac66aa455af3ee3ac747b60"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2409797,
+        "sha256": "5da7cbf1397057cc1ea0eddd7b27daf020ef5778898e1b117bcb5e3084d0eaac"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "scratch_baseline_sha256": "c29e7a5b2101723ff8c0b3dfe520d7f8e9500f98a8814ddbb6bf2578ddb4dc7e"
+  },
+  "validation": {
+    "mathematical_validation": "Five paper cross/integration reviews and primary-agent symbolic checks; not kernel checking.",
+    "local_links_checked": 106,
+    "source_pins": 12,
+    "json_and_whitespace": true,
+    "git_diff_check": true
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

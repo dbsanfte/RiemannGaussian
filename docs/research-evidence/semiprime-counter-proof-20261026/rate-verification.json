@@ -1,0 +1,37 @@
+{
+  "strict_compile": "PASS",
+  "ordinary_root_scoped_lint": "PASS",
+  "public_theorem_axiom_reports": 23,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "only_standard_axioms": true,
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "imports": "Mathlib only",
+  "full_tail_acceptance_proved": false,
+  "full_factoring_runtime_theorem_proved": false,
+  "files": {
+    "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeCounterRate.lean": {
+      "bytes": 21082,
+      "sha256": "fd9c6ee9dc18089748e85cb2eeba06b8181a230a855aec05d30b5939ac273054"
+    },
+    "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeCounterRate.olean": {
+      "bytes": 1351672,
+      "sha256": "818f45ad6deb879ffe447706ec01655945b9b721bdd869f96b10bddc0f7d93e5"
+    },
+    "/tmp/semiprime-counter-proof-20261026/rate-root-audit.lean": {
+      "bytes": 2047,
+      "sha256": "b33239c16d022507555720cb218d48eb8ece245b3d8508580deeae0cfedca6d3"
+    },
+    "/tmp/semiprime-counter-proof-20261026/rate-root-audit.log": {
+      "bytes": 3034,
+      "sha256": "62777e706191afe8714a7fb46091623bf0fe43dad43f9b15e9ce73a435a44fbd"
+    },
+    "/tmp/semiprime-counter-proof-20261026/rate-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-26",
+  "primary_literature": [
+    {
+      "title": "Expansions in the Askey-Wilson Polynomials",
+      "authors": "Mourad E. H. Ismail; Dennis Stanton",
+      "version_date": "2014-03-21",
+      "url": "https://www-users.cse.umn.edu/~stant001/PAPERS/AndrewsFormFinal.pdf",
+      "access_scope": "Primary PDF equation (2.4), printed page 5, read by author and root; surrounding Proposition 2.1 and Theorem 2.9 inspected.",
+      "mathematical_scope": "Finite connection identity cleared before specialization. The short-index bulk/fringe factorization and native guards are proved in this packet; no analytic normalization is inverted at a collision."
+    },
+    {
+      "title": "The Igusa modular forms and the simplest Lorentzian Kac-Moody algebras",
+      "authors": "Valeri A. Gritsenko; Viacheslav V. Nikulin",
+      "version": "arXiv:alg-geom/9603010v1",
+      "url": "https://arxiv.org/pdf/alg-geom/9603010",
+      "access_scope": "Primary PDF equations (0.2), (1.8)-(1.10), Theorem 1.7 and Appendix (A.11); coefficient cutoff checked independently and by root.",
+      "mathematical_scope": "The standard seed has f(D)=0 for D<-1. Failure is for its finite native exponent assignment, not all automorphic denominators or arithmetic evaluators."
+    },
+    {
+      "title": "Automorphic forms with singularities on Grassmannians",
+      "authors": "Richard E. Borcherds",
+      "version_date": "1997-05-29 correction",
+      "url": "https://math.berkeley.edu/~reb/papers/aut/aut.pdf",
+      "access_scope": "Primary PDF Theorem 13.3, printed pages 47-48, read including root check.",
+      "mathematical_scope": "Requires supplied modular seed, principal-part integrality and a chamber. No arbitrary finite weights or fast native-ring evaluator are supplied by the theorem."
+    },
+    {
+      "title": "Quantum Black Holes, Wall Crossing, and Mock Modular Forms",
+      "authors": "Atish Dabholkar; Sameer Murthy; Don Zagier",
+      "version": "arXiv:1208.4074v1",
+      "version_date": "2012-08-20",
+      "url": "https://people.mpim-bonn.mpg.de/zagier/files/arxiv/1208.4074/1208.4074v1.pdf",
+      "access_scope": "Primary PDF section 8.2 equations (8.9), (8.13)-(8.17), printed pages 54-55, read independently and by root.",
+      "mathematical_scope": "Explicit elliptic averaging and distinct Laurent chambers. Finite polar parametrization/filter and winding controller are derived here; no full Appell sum, analytic convergence or modular completion over the native ring is claimed."
+    }
+  ],
+  "repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/README.md",
+      "sha256": "ab575b0ef9731bdb097915575a1bd6c08d9a83aa053914360d86a9c81de79a99"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/pure-weighted-common-tag.md",
+      "sha256": "71c13ae4cf1d6cbb6d661bbbc6a3d3c2465d9f5618aa7e4e20fd7ddbef84b9d3"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/quadratic-lifts.md",
+      "sha256": "87891fa454bbc7f03b5d363931c93649ed6ac197199fb8bd643eff2544b946c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/review-pure-weighted.md",
+      "sha256": "0e074802ba8c851163125cfb90a49622e36dfc0f19048e8a10d5cf0a8ff22a83"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-projective-readout-20261026/pure-modulus-preparation.md",
+      "sha256": "6c47cbd393eb3288db7e5f6cdf5342f23a90663339ab993ad80cce05eca04eaa"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/parameterized-controller.md",
+      "sha256": "40dfd5a4f5e2081ddd79669bf2ce6199174258384293db97c1dd1f123dc4973c"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-axis-supplier-20261026/hybrid-handoff.md",
+      "sha256": "cba1559069b42b1a6d12351eb5603298b6d485e1eaff14addf3d16a0458dddda"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-arithmetic-query-reuse-20261024/signed-two-weight-query.md",
+      "sha256": "b36e44e9d5e2c897caac87d6ad6339548fd9d438bd21352bd50971ff236efc93"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-quadratic-ideal-20261024/torus-order-supplier.md",
+      "sha256": "1f3033cc85c1b6798a188daa7b7c32d702b87d2cb3401e3e1f1afe6cb3a4e9bc"
+    },
+    {
+      "path": "docs/semiprime-string-theory-research-proposal.md",
+      "sha256": "7ef81200148f3774e3ef03d0510202cc9efe42cf044f760bbbda257ea855de93"
+    }
+  ],
+  "proof_scope": "Paper proofs of sufficient symmetric outputs, a conditional partial-order consumer, finite AW factorization and polar support/winding checks. No general lower bound or improved acquisition exponent.",
+  "prior_credit": "The pure weighted family, acquired bases and rough orders, shared geometric-product engine, restricted HH recovery and axis Frobenius controllers retain their prior credit."
+}

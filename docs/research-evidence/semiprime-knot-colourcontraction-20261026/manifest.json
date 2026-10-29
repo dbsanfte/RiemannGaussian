@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "excludes": [
+    "manifest.json"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6046,
+      "sha256": "b2c103ea9209f369428614a0327902ae970f790ca507f9483d3626981e5b4872"
+    },
+    {
+      "path": "boundary-cover-review.md",
+      "bytes": 4401,
+      "sha256": "d0a66d2d614bafd5897108123878752f798abe06a50d4bdc3aa8af74043b0288"
+    },
+    {
+      "path": "boundary-cover.md",
+      "bytes": 8248,
+      "sha256": "fa5a5c259097196a37d91e0d754ea6545afc07ea5fe44dd3fc1bde55f5b53453"
+    },
+    {
+      "path": "colour-recurrence-review.md",
+      "bytes": 4251,
+      "sha256": "fd3ef67f4779c5445b322548960b364d457662d21e1934014521ee619150264f"
+    },
+    {
+      "path": "colour-recurrence.md",
+      "bytes": 9554,
+      "sha256": "0f36a83f5d885c44611288e6c281258adb44122b9611bc74898c6b5de6c41e34"
+    },
+    {
+      "path": "colour-symmetry-review.md",
+      "bytes": 4370,
+      "sha256": "8054b59fbb82120a87bd367555c1d57488e62e608189e5645e3376b8ec6b0e81"
+    },
+    {
+      "path": "colour-symmetry.md",
+      "bytes": 10280,
+      "sha256": "e1c08feb7e54270cd8e77c8cf5e7be0bbd9b5ed86d9e987fc6481fcfd7c212c4"
+    },
+    {
+      "path": "common-character-review.md",
+      "bytes": 5353,
+      "sha256": "e7eb15c67ac1fd9038568e6e085e7420394a51e40ff16435c0ddae04a0947837"
+    },
+    {
+      "path": "common-character.md",
+      "bytes": 7938,
+      "sha256": "391a2b54f146b03f9f448cd8d3a715762d4a0af0af73e8084e95856d6b09ffd2"
+    },
+    {
+      "path": "review.json",
+      "bytes": 5334,
+      "sha256": "1de7d1998bb988c2bca67a922e9fc6a715dd5179042e992cf7437e7002ec7eb7"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 3838,
+      "sha256": "32e76805b3b60615fb98120e36ac06eb0c9afd86dee54a224ea4a5a3ba5da911"
+    }
+  ]
+}

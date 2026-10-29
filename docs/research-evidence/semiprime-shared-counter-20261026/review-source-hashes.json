@@ -1,0 +1,44 @@
+{
+  "description": "Final independently reviewed source checkpoint after counter author declared stable; hashes identify reviewed bytes, not formal proof certification.",
+  "wrapper_tests_replayed": 9,
+  "counter_tests_replayed": 10,
+  "layout_tests_previously_replayed": 11,
+  "files": {
+    "factor_network.py": {
+      "sha256": "c107f5ec43b54bee0fcc008f0ffcde4af51de026a7140af4455e5a4ebaca6a92",
+      "bytes": 12343
+    },
+    "shared_parameters.py": {
+      "sha256": "530f800d84a4c1188c0716d8016bdcb21bdc28669434510d0ecb527907568fb4",
+      "bytes": 5079
+    },
+    "shared_layout.py": {
+      "sha256": "9416354a1b17bbe7a3e4ce9f7d701cb11f116cae0e0c11871acc8ecf4ad5e300",
+      "bytes": 11159
+    },
+    "shared_counter.py": {
+      "sha256": "bcbd83396912173e5f597306565ed5a6faf675287bd5f32d6c22407954c5d417",
+      "bytes": 16514
+    },
+    "factor_solver.py": {
+      "sha256": "4c35d5087409c9c5e685391355da521cb913155941fda7d320e30b149e2a72d7",
+      "bytes": 3609
+    },
+    "test_parameters_solver.py": {
+      "sha256": "663263ec305cb1aeb66b18675ac28771d29bcae438fa71a36bf3d166b1b3f3af",
+      "bytes": 5437
+    },
+    "test_shared_counter.py": {
+      "sha256": "dc4c4eb9dcfa7f3790c849475a1dd17f458718f53c59162843cc0b0e897b7ee1",
+      "bytes": 6494
+    },
+    "tests/test_shared_layout.py": {
+      "sha256": "b598fa603c17ac0223350dd8ea5c18a085e98d91849017221b31bfbbac9f5da7",
+      "bytes": 6657
+    },
+    "resource-derivation.md": {
+      "sha256": "922726f030629dcc57ab87a4bc7a716cd7d74381f1b120d5fac9939474755ea7",
+      "bytes": 9605
+    }
+  }
+}

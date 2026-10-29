@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+    "build",
+    "--wfail"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 3995.751361846924,
+  "leanNumThreads": 6,
+  "maxMapCount": 262144,
+  "log": "/tmp/semiprime-publication-20261029/lake-build-final.log",
+  "precedingSuccessfulBuild": "lake-build-after-mapping-fix.json",
+  "change": "Three documentation comments in legacy StreamingTensor; definitions, theorem statements and proof bodies unchanged. Source-before-documentation manifest preserves original bytes."
+}

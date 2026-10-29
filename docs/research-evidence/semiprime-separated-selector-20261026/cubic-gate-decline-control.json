@@ -1,0 +1,37 @@
+{
+  "N": 55,
+  "K": 54,
+  "ring_rank": 12,
+  "basis": "z^i*t^j indexed 2*i+j; 0<=i<6,0<=j<2",
+  "source": "https://arxiv.org/pdf/0801.3840 Proposition 3.3(i)",
+  "not_checked": [
+    "native semiprime/order preparation",
+    "HH execution or complete runtime"
+  ],
+  "gamma": [
+    18,
+    25,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "checks": [
+    {
+      "primitive_exponent": 1,
+      "coefficient_gcd": 1
+    },
+    {
+      "primitive_exponent": 2,
+      "coefficient_gcd": 1
+    }
+  ],
+  "status": "DECLINE",
+  "reason": "no certified global primitive cubic congruence"
+}

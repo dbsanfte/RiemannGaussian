@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-25",
+  "repository_head": "350a43f2f5d0205b9734a33bc39fb73049a55100",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "dependencies": {
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "LeanCert": "7f91b6eb3567437f6cfac03ed279706603ee22f4"
+  },
+  "commands": [
+    "lake env lean -DwarningAsError=true docs/research-evidence/qwen-softmax-20261025/Algebra.lean",
+    "lake env lean -DwarningAsError=true docs/research-evidence/qwen-softmax-20261025/SoftmaxCertificates.lean",
+    "lake env lean -DwarningAsError=true docs/research-evidence/qwen-softmax-20261025/Histogram.lean"
+  ],
+  "scope": "Standalone Lean evidence compiled individually. Terminal audits use only propext, Classical.choice (printed as choice with open Classical), Quot.sound. Synthetic Python experiments; no GPU timing, full library build, or model trace. Interval Python uses Decimal plus exact Fraction arithmetic and is not Lean-verified.",
+  "artifacts": {
+    "Algebra.lean": "9b9094eb759ff7a137ad12fb2f676cd7705640398fb8bdb9b80fff3048422ef4",
+    "Algebra.log": "6bea4d1ad12f228b0dbf0c63549f1db9719a823b5532305811120155c01b2f49",
+    "Histogram.lean": "d394e124c85957a6da83b7ca71300c433518e60cd2aa4fb269bb9b4e612d8bcd",
+    "Histogram.log": "dc176c1b84c25c31198f791eadec75011967731f7c375f97c10638fdb0db2196",
+    "SoftmaxCertificates.lean": "7a916ce1c7abd397d6251b76fc69e13d65bbe2fc66a94a84a75eb37e8ff6f3fa",
+    "SoftmaxCertificates.log": "ddbff9bfaca1b18c9a5449910d1a8bd8ce3e5489ee3d44300353d18caf6c54fd",
+    "check_lut.py": "edc884a10b324e64d3ec8ec5c25b748e2fbf7d05bd37f2349f9bc66df10ee056",
+    "check_reference.py": "ed92626128ca1629bdee42852f8f823c8f50ae276e2eb957570de463e7be2a02",
+    "interval-results.json": "95ad86a6000e110ec338f6108bd1f7fe245064c6470e087b27bf4f7912fd39b3",
+    "reference-results.json": "96fcf4018ada73883a851ad9da5f2aa36531e0dbb1c779fe085a09c650043ce5"
+  }
+}

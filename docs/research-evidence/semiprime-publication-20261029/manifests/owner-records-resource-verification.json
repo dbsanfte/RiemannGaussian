@@ -1,0 +1,59 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": false,
+  "counts": {
+    "modules": 3,
+    "declarations": 66,
+    "theorems": 59
+  },
+  "modules": {
+    "SemiprimeD1StackOwnerRecordsBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsBounds.lean",
+        "sha256": "ad3969208719320784056826de84ecbeef2b88091484ff33d5dbbc04700ad5b0"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsBounds.olean",
+        "sha256": "040d5ba24063c02196fa0eaa07722f5ea9609feaaa178eb8c28c69c621191433"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-resource-frozen/SemiprimeD1StackOwnerRecordsBounds.olean",
+        "sha256": "040d5ba24063c02196fa0eaa07722f5ea9609feaaa178eb8c28c69c621191433"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsResources.lean",
+        "sha256": "a90d731ddd07f3457b0875c76a3586ee1936d0a882ed93202917f78e5f6f219f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsResources.olean",
+        "sha256": "c327495de190eb6fe3a921c90773bcae39be43abad2bb29fc02091efe45f01bb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-resource-frozen/SemiprimeD1StackOwnerRecordsResources.olean",
+        "sha256": "c327495de190eb6fe3a921c90773bcae39be43abad2bb29fc02091efe45f01bb"
+      }
+    },
+    "SemiprimeD1StackOwnerRecordsPrefixResources": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackOwnerRecordsPrefixResources.lean",
+        "sha256": "74ffa3509412da3e54f685e4a8ceeb062cdfa746126fc02909f5cbfda4109c05"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackOwnerRecordsPrefixResources.olean",
+        "sha256": "c63e4d7f5ecc10c51f949cc10c018e1bcc7ed3b8701935c696eae5fdff4cc74a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/owner-records-resource-frozen/SemiprimeD1StackOwnerRecordsPrefixResources.olean",
+        "sha256": "c63e4d7f5ecc10c51f949cc10c018e1bcc7ed3b8701935c696eae5fdff4cc74a"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false
+}

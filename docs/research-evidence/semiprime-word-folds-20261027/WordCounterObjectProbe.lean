@@ -1,0 +1,2 @@
+import RiemannGaussian.SemiprimeWordPacketCounter
+#check RiemannGaussian.SemiprimeWordPacketCounter.count_correct

@@ -1,0 +1,38 @@
+{
+  "description": "Independent tiny algebra control, no factoring or rate claim",
+  "counter_value": "3",
+  "direct_value": "3",
+  "counter_stats": {
+    "interpolation_nodes": 3,
+    "mobius_pairs": 57,
+    "measurement_tuples": 1539,
+    "representative_boolean_scans": 6270,
+    "fibre_boolean_scans": 2736,
+    "separated_group_evaluations": 576,
+    "jet_additions": 5337,
+    "factor_jet_evaluations": 576,
+    "jet_scalings": 1209,
+    "local_boolean_entry_evaluations": 2304,
+    "jet_multiplications": 5145,
+    "jet_unit_inversions": 3,
+    "maximum_recorded_numerator_bits": 17,
+    "maximum_recorded_denominator_bits": 3,
+    "algebraic_design_valid": true,
+    "balanced_groups": true,
+    "summary_count_bound": true,
+    "quantitative_promises_valid": true,
+    "n": 3,
+    "factors": 2,
+    "scope_degree_bound": 4,
+    "Taylor_order_q": 2,
+    "jet_precision": 3,
+    "diagnostics_invoked": false,
+    "truth_tables_materialized": false,
+    "fibre_lists_materialized": false
+  },
+  "Hermite_direct_polynomial_constants": [
+    "3",
+    "1/3"
+  ],
+  "success": true
+}

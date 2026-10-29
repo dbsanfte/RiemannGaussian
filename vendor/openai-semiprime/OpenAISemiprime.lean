@@ -1,0 +1,10 @@
+import OpenAISemiprime.Algorithms.SubexponentialSAT.SqrtLog.PackingConcrete
+import OpenAISemiprime.Algorithms.SubexponentialSAT.SqrtLog.LayoutUniversal
+import OpenAISemiprime.Algorithms.SubexponentialSAT.SqrtLog.LayoutBlocks
+import OpenAISemiprime.Algorithms.SubexponentialSAT.SqrtLog.LayoutHeadPullback
+import OpenAISemiprime.Algorithms.SubexponentialSAT.SqrtLog.LayoutRankUniversal
+import OpenAISemiprime.Algorithms.SubexponentialSAT.SqrtLog.LayoutRowSelection
+import OpenAISemiprime.Algorithms.SubexponentialSAT.SqrtLog.LayoutSignatureBound
+import OpenAISemiprime.Algorithms.SubexponentialSAT.SubexpRowInterpolation
+
+/-! Pinned generic layout closure with import paths isolated from the existing OAI vendor. -/

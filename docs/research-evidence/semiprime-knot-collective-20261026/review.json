@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "previous_turn_classification": "progress",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "current_bound": "soft O(J+sqrt(Jm))",
+  "target_bound": "soft O(J+sqrt(m))",
+  "principal_result": "For the current complete catalogue, literal integer-orbit interval merging has mass at least J_distinct*m/2 = Omega(k*m).",
+  "scope": [
+    "Original integer-label grouping after specified pruning; no universal query lower bound.",
+    "Modular-only aliases, general folded representations, and new coverage families require separate arguments.",
+    "The cyclic norm is paid but one auxiliary orbit covers at most one physical clock point per local component after the paid screen.",
+    "Actual-q cyclic normalizers contain the desired zeros and retain the old complete cost.",
+    "Auxiliary rank-one congruence is not native coefficient-ring singularity."
+  ],
+  "reviews": [
+    "exchange-review.md",
+    "quantum-torus-review.md",
+    "torsion-conic-review.md"
+  ],
+  "incorporated_qualifications": [
+    "Use positive 1<a<k in the b=1 lower-bound subset to avoid both diagonals; at most two descriptions per integer E.",
+    "m=0 is the separate empty prefix.",
+    "Only the eliminated Schur pivot is certified unit; remaining collision factor may vanish.",
+    "Define original signed deletion horizon M.",
+    "Cyclic scalar complexity assumes acquired base-ring central inputs.",
+    "Optimizing block length can exceed rank O(k).",
+    "Retain October 2026 phase correction and do not assume a finite-ring lift algorithm."
+  ],
+  "preservation": {
+    "protected_files_verified": 801,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1521580,
+        "sha256": "4b649f470dd102f0b799f82ec2ca94a3340dea9f5c3a1ade99eca647365d10d6"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2380977,
+        "sha256": "faff4765c9636a28a7a6931ce5436a0761c843f1d24b38b518d0c09368a027ca"
+      }
+    },
+    "concurrent_files_unchanged": 22,
+    "scratch_baseline_sha256": "b728c82b2ccf8170c1c795f1a4c60f82b17fa5a684130014c2945495d307d945"
+  },
+  "validation": {
+    "primary_sources": 5,
+    "source_pins": 6,
+    "local_links": 9,
+    "json_and_whitespace": true,
+    "git_diff_check": true
+  },
+  "numerical_campaign": false,
+  "new_executable_research_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

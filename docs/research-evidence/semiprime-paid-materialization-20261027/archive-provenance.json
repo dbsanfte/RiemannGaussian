@@ -1,0 +1,222 @@
+{
+  "CombinedMaterializationAudit.lean": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/CombinedMaterializationAudit.lean",
+    "sha256": "188eceadc30041054f8113269b4f9ebf9811026e76d288a30b8d10a273836725"
+  },
+  "CombinedMaterializationAudit.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/CombinedMaterializationAudit.log",
+    "sha256": "01b3b653298ef8b02003dcdf0f1ec136d6c09741ba42bd152c55f1eb399152ff"
+  },
+  "ImportBranchAudit.lean": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/ImportBranchAudit.lean",
+    "sha256": "7ab01469de7dfe1a9156d5f06d873e809fafc4a09a7ac9d2f7415f10c43b6e5e"
+  },
+  "LocalInterpreterSmoke.lean": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/LocalInterpreterSmoke.lean",
+    "sha256": "4f7be3a20ccb55545ae36804ed37c07481285d7ffd1ca93be6d9aa8b6d7e08b2"
+  },
+  "OriginalBranchAudit.lean": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/OriginalBranchAudit.lean",
+    "sha256": "5f55acef367e9754518c6c500e9e5ea4b155b28cd8c2476b894145eec25a1be8"
+  },
+  "README.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/README.md",
+    "sha256": "360996db72f718611fe222b8d88fb767f07866607c765c10d8146247bebbcf5d"
+  },
+  "SemiprimeBooleanRingFactor.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeBooleanRingFactor.lean",
+    "sha256": "fd4c4b4e398f033d7ba07619d35a5adc93a3820a3bdd65a8781d7911ba7c6494"
+  },
+  "SemiprimeParametricFactorFrame.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeParametricFactorFrame.lean",
+    "sha256": "e1f8fbafee75bfc109a523f1dc6db94fee35f461970a879b3b2cd12d2c066871"
+  },
+  "SemiprimeParametricFactorLoop.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeParametricFactorLoop.lean",
+    "sha256": "98951fc9ec417886656f9260f3ddff7ec1bd79eaef8911f6ef43956e69c806f8"
+  },
+  "SemiprimeTernaryFactor.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeTernaryFactor.lean",
+    "sha256": "10ec3618679852c52d3b94fac9e4c15d8d36a5f72198855c1cdf30565bd835cf"
+  },
+  "SemiprimeTernaryLocal.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeTernaryLocal.lean",
+    "sha256": "223fe42526e2d63ee548e4d03ae7fae478148b4646247d0fd869e681c2a315e0"
+  },
+  "SemiprimeTernaryLocalPaid.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeTernaryLocalPaid.lean",
+    "sha256": "c0b21e303980fdefec71f716df9073b3324185ca0fc7eded9e3061feded863c7"
+  },
+  "SemiprimeTernaryPublicFactor.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeTernaryPublicFactor.lean",
+    "sha256": "bf3c2d7f583c5581be7ad23df7a24b572d411851799ff08122e17c4caa03529d"
+  },
+  "all-modules.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/all-modules.json",
+    "sha256": "896fcc1c071e896130202c5504d2dc4b9d6964f97deca3a4d97616fbbb1abcf8"
+  },
+  "archive_materialization.py": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/archive_materialization.py",
+    "sha256": "0c190cc84b834e23487fd5075faed3ba703af2449ec7ba8524506e709b0eb48c"
+  },
+  "boolean-ring-pins.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/boolean-ring-pins.json",
+    "sha256": "4ab26bbdc28e36f44d4a6286ef841f08cfcfe656b371b5011d25388dffdc2db8"
+  },
+  "boolean-ring-proof.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/boolean-ring-proof.md",
+    "sha256": "a3f76f45fe017616d591f20c753ff288b6872ad61f5a78246bb611a3648ff2fd"
+  },
+  "controller-reuse-hashes.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/controller-reuse-hashes.json",
+    "sha256": "08a8097a8f29853c8547cd4ee7c3ff9e667f14d1601d2433dc28c22a338d5285"
+  },
+  "controller-reuse.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/controller-reuse.md",
+    "sha256": "d6f07e71d29cd373eb7e249a8cca265a474c0162a5c05f35174fac2efe3c937f"
+  },
+  "final-isolated/SemiprimeBooleanRingFactor.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/SemiprimeBooleanRingFactor.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeParametricFactorFrame.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/SemiprimeParametricFactorFrame.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeParametricFactorLoop.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/SemiprimeParametricFactorLoop.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeTernaryFactor.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/SemiprimeTernaryFactor.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeTernaryLocal.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/SemiprimeTernaryLocal.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeTernaryLocalPaid.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/SemiprimeTernaryLocalPaid.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeTernaryPublicFactor.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/SemiprimeTernaryPublicFactor.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/dependencies-after.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/dependencies-after.json",
+    "sha256": "e24cb5b3db11dbb143873063175d3d31ff9454ad86994ea7a0b4d6a19871a377"
+  },
+  "final-isolated/dependencies-before.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/dependencies-before.json",
+    "sha256": "e24cb5b3db11dbb143873063175d3d31ff9454ad86994ea7a0b4d6a19871a377"
+  },
+  "final-isolated/original-closure-check.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/original-closure-check.json",
+    "sha256": "b5c9c408e60b31f5c3aa393208550cec1714b001395396dfaa5813ae94fe1d7c"
+  },
+  "final-isolated/results.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/results.json",
+    "sha256": "122d3539a757bb6f04c5cd1a31115d926476e8cd21600eca0bcf8163c789fe30"
+  },
+  "final-isolated/summary.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final-isolated/summary.json",
+    "sha256": "aa0f4addf80a160424ae5d9b2c2875c83d34f68f9d33ed016f80d49311a153e3"
+  },
+  "final_strict_recheck.py": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/final_strict_recheck.py",
+    "sha256": "2defdf57f5798466ce55e4dcce7b3a5af3ec209e23a451bb841717da75ec410e"
+  },
+  "import-branch-audit.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/import-branch-audit.log",
+    "sha256": "8dd2e0888cc5c28b331b33f87a34171c236f4c02c181c35938c7fa4031e372e1"
+  },
+  "local-interpreter-notes.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/local-interpreter-notes.md",
+    "sha256": "d2006e9cc762746c9d446d7f64d64ab9846c9e78e8bade9d5048f9ca01f16e3e"
+  },
+  "local-interpreter-smoke.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/local-interpreter-smoke.log",
+    "sha256": "0116e62a0b472e338d84c3fea005f7a8da6d0e76c3bb5c9a8c0cc3d96cafa126"
+  },
+  "local-interpreter-verification.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/local-interpreter-verification.json",
+    "sha256": "1f0c4e0139a88e59e1c329befc765be81d10d167b5b256ea602ff7608db5d44b"
+  },
+  "macro-pure-imports.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/macro-pure-imports.json",
+    "sha256": "cc95d593f587c4aab187ac36c5127a293c4cf3263d5060daca183e0f28059b39"
+  },
+  "original-branch-audit.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/original-branch-audit.log",
+    "sha256": "1b84595c7f0e43991613cbe6a9d2e84010de13a7dc382fd68daf40d0ed9c8213"
+  },
+  "paid-integer-tests.log": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/paid-integer-tests.log",
+    "sha256": "b0d7cde6a5170c87c72a7b9f38244e09d6813f09d8f378ba12d5ade95059fcd9"
+  },
+  "paid-materialization-route.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/paid-materialization-route.md",
+    "sha256": "e02b3964e4b66db789ca0d6d20d6442d791767d554c31da4bd995c1397575b3b"
+  },
+  "paid_integer_counter.py": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/paid_integer_counter.py",
+    "sha256": "8148945fada025f05a58bfd3e7b7d08a6f149a09045b5e4803e8c4be08f3cd42"
+  },
+  "parametric-frame-pins.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/parametric-frame-pins.json",
+    "sha256": "fd2db2e4ffe06ae8680a4813fc312dd87504b7bc7809a80f99245fd15dc71a96"
+  },
+  "parametric-frame-review.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/parametric-frame-review.md",
+    "sha256": "2b6967f5cce140ae3de3a7ef83319d92b94597989cee2cffb918299d12b9bec3"
+  },
+  "preservation-before.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/preservation-before.json",
+    "sha256": "325f932188d17292ced381b98cdd08cf3a35f40d2ccb0a5dfe2a283b79fb1e62"
+  },
+  "review-paid-integer-counter-hashes.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/review-paid-integer-counter-hashes.json",
+    "sha256": "72c18d6579595ba8223dc59f2fdfbffb8cd95ee858a3b39068221a361eecc8f7"
+  },
+  "review-paid-integer-counter.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/review-paid-integer-counter.md",
+    "sha256": "b1f9e8950f96bd15c12e8f055b0e28e852fb4c74095366789173c1c73d6165ce"
+  },
+  "review-paid-materialization-hashes.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/review-paid-materialization-hashes.json",
+    "sha256": "e1d29268363884514287e862990ecaeba1f3ff8ff586075baac14fb2610d15ea"
+  },
+  "review-paid-materialization.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/review-paid-materialization.md",
+    "sha256": "a4aab3aa9aab26a7c0d1345d3d82a3433d635880a2be04e9fa8ee028125368f2"
+  },
+  "run_with_upstream.py": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/run_with_upstream.py",
+    "sha256": "f3096271b45bf88a6b614adda77c116536d3c91f12f5968fd3842a00dd219c72"
+  },
+  "runtime-dependencies.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/runtime-dependencies.json",
+    "sha256": "e82cb4d55236f9d1943e19755e5af6e42e0579d8b2623e93ef48192fe6012c3b"
+  },
+  "strict-recheck.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/strict-recheck.json",
+    "sha256": "510c328877e33052ee45ab92b2957154f83eab61b18505e712763412d5d41391"
+  },
+  "ternary-factor-proof.md": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/ternary-factor-proof.md",
+    "sha256": "37a73e1d4149dfdbc6f94f2f112622044e226bc3a98ca9238ef606990591085f"
+  },
+  "ternary-modules.json": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/ternary-modules.json",
+    "sha256": "64da46da8054ffa40c282b4a237aed16f0a4c0402f9b47118d4cc55d7aa23d15"
+  },
+  "test_paid_integer_counter.py": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/test_paid_integer_counter.py",
+    "sha256": "4a3960031397c3c718b482b7c5a4e8937696d1a836c52a7d3ba54584e0fdeea4"
+  },
+  "seal_archive.py": {
+    "source": "/tmp/semiprime-ternary-machine-20261027/seal_archive.py",
+    "sha256": "8fcfaca9113b867065bcbf59f20314aa0ac7692b4ddede76c1a3a14264e4ed6d"
+  }
+}

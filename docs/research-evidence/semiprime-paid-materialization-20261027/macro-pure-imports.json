@@ -1,0 +1,465 @@
+{
+  "roots": [
+    "RiemannGaussian.SemiprimePublicFactorCount",
+    "RiemannGaussian.SemiprimeSubdividedEntry"
+  ],
+  "project_imports": {
+    "RiemannGaussian.SemiprimePublicFactorCount": [
+      "RiemannGaussian.SemiprimeMacroGraphExtension",
+      "RiemannGaussian.SemiprimeMacroParameters"
+    ],
+    "RiemannGaussian.SemiprimeMacroGraphExtension": [
+      "RiemannGaussian.SemiprimeMacroGraphSemantics",
+      "RiemannGaussian.SemiprimeMacroFlagExtension",
+      "RiemannGaussian.SemiprimeMacroGraphUnique"
+    ],
+    "RiemannGaussian.SemiprimeMacroGraphSemantics": [
+      "RiemannGaussian.SemiprimeMacroGraph"
+    ],
+    "RiemannGaussian.SemiprimeMacroGraph": [
+      "RiemannGaussian.SemiprimeMacroBitNetwork"
+    ],
+    "RiemannGaussian.SemiprimeMacroBitNetwork": [
+      "RiemannGaussian.SemiprimeBooleanNetwork"
+    ],
+    "RiemannGaussian.SemiprimeBooleanNetwork": [
+      "RiemannGaussian.SemiprimeMacroFermatNetwork",
+      "Mathlib.Data.BitVec"
+    ],
+    "RiemannGaussian.SemiprimeMacroFermatNetwork": [
+      "RiemannGaussian.SemiprimeBitFermatInterpolation",
+      "Mathlib.Data.Nat.Digits.Lemmas"
+    ],
+    "RiemannGaussian.SemiprimeBitFermatInterpolation": [
+      "RiemannGaussian.SemiprimeBitFermatTransform"
+    ],
+    "RiemannGaussian.SemiprimeBitFermatTransform": [
+      "RiemannGaussian.SemiprimeBitFermatArithmetic"
+    ],
+    "RiemannGaussian.SemiprimeBitFermatArithmetic": [
+      "RiemannGaussian.SemiprimeBitGeometricEvaluation"
+    ],
+    "RiemannGaussian.SemiprimeBitGeometricEvaluation": [
+      "RiemannGaussian.SemiprimeBitGeometricMarks"
+    ],
+    "RiemannGaussian.SemiprimeBitGeometricMarks": [
+      "RiemannGaussian.SemiprimeBitGeometricCoefficients",
+      "Mathlib.Algebra.DualNumber"
+    ],
+    "RiemannGaussian.SemiprimeBitGeometricCoefficients": [
+      "RiemannGaussian.SemiprimeBitIndexTraversal"
+    ],
+    "RiemannGaussian.SemiprimeBitIndexTraversal": [
+      "RiemannGaussian.SemiprimeBitIndexGeometry"
+    ],
+    "RiemannGaussian.SemiprimeBitIndexGeometry": [
+      "RiemannGaussian.SemiprimeBitIndexClipping"
+    ],
+    "RiemannGaussian.SemiprimeBitIndexClipping": [
+      "RiemannGaussian.SemiprimeBitIndexBasis"
+    ],
+    "RiemannGaussian.SemiprimeBitIndexBasis": [
+      "RiemannGaussian.SemiprimeBitIndexFactors"
+    ],
+    "RiemannGaussian.SemiprimeBitIndexFactors": [
+      "RiemannGaussian.SemiprimeBitIndexRoots"
+    ],
+    "RiemannGaussian.SemiprimeBitIndexRoots": [
+      "RiemannGaussian.SemiprimeSeedLazyJets",
+      "RiemannGaussian.SemiprimeBitPrimeScan"
+    ],
+    "RiemannGaussian.SemiprimeSeedLazyJets": [
+      "RiemannGaussian.SemiprimeIndexReader",
+      "Mathlib.LinearAlgebra.Matrix.Notation"
+    ],
+    "RiemannGaussian.SemiprimeIndexReader": [
+      "RiemannGaussian.SemiprimeIndexEnumeration",
+      "RiemannGaussian.SemiprimeWindowSqrt"
+    ],
+    "RiemannGaussian.SemiprimeIndexEnumeration": [
+      "RiemannGaussian.SemiprimeIndexLattice"
+    ],
+    "RiemannGaussian.SemiprimeIndexLattice": [
+      "RiemannGaussian.SemiprimeBitInverse",
+      "Mathlib.Data.Int.Interval"
+    ],
+    "RiemannGaussian.SemiprimeBitInverse": [
+      "RiemannGaussian.SemiprimeSeedFiniteTransfer",
+      "RiemannGaussian.SemiprimeBitGcd",
+      "RiemannGaussian.SemiprimeWindowInverse"
+    ],
+    "RiemannGaussian.SemiprimeSeedFiniteTransfer": [
+      "RiemannGaussian.SemiprimeSeedGeometricRecurrence"
+    ],
+    "RiemannGaussian.SemiprimeSeedGeometricRecurrence": [
+      "RiemannGaussian.SemiprimeSeedHermiteQuotient",
+      "RiemannGaussian.SemiprimeGeometricRows"
+    ],
+    "RiemannGaussian.SemiprimeSeedHermiteQuotient": [
+      "RiemannGaussian.SemiprimeSeedPointRigidity",
+      "Mathlib.Algebra.Polynomial.Div",
+      "Mathlib.Algebra.Polynomial.Eval.Degree"
+    ],
+    "RiemannGaussian.SemiprimeSeedPointRigidity": [
+      "RiemannGaussian.SemiprimeSeedSumAcquisition"
+    ],
+    "RiemannGaussian.SemiprimeSeedSumAcquisition": [
+      "RiemannGaussian.SemiprimePhaseSumRecovery"
+    ],
+    "RiemannGaussian.SemiprimePhaseSumRecovery": [
+      "RiemannGaussian.SemiprimeGlobalPhaseCancellation"
+    ],
+    "RiemannGaussian.SemiprimeGlobalPhaseCancellation": [
+      "RiemannGaussian.SemiprimeForcedRowSeparation"
+    ],
+    "RiemannGaussian.SemiprimeForcedRowSeparation": [
+      "RiemannGaussian.SemiprimeBitGcd"
+    ],
+    "RiemannGaussian.SemiprimeBitGcd": [
+      "RiemannGaussian.SemiprimeMergedIndexAcquisition",
+      "RiemannGaussian.SemiprimeBitDivision"
+    ],
+    "RiemannGaussian.SemiprimeMergedIndexAcquisition": [
+      "RiemannGaussian.SemiprimeHyperbolicWrapCoverage"
+    ],
+    "RiemannGaussian.SemiprimeHyperbolicWrapCoverage": [
+      "RiemannGaussian.SemiprimeWrapIndexRecovery"
+    ],
+    "RiemannGaussian.SemiprimeWrapIndexRecovery": [
+      "RiemannGaussian.SemiprimeWideWrapCoverage",
+      "RiemannGaussian.SemiprimeSharedIntervalJet"
+    ],
+    "RiemannGaussian.SemiprimeWideWrapCoverage": [
+      "RiemannGaussian.SemiprimeDensePeriodForcing",
+      "RiemannGaussian.SemiprimeStrassenPrefix"
+    ],
+    "RiemannGaussian.SemiprimeDensePeriodForcing": [
+      "RiemannGaussian.SemiprimeDenseRatioObstruction",
+      "RiemannGaussian.SemiprimeDenseLoopObstruction",
+      "RiemannGaussian.SemiprimeLocalOrderRouting"
+    ],
+    "RiemannGaussian.SemiprimeDenseRatioObstruction": [
+      "RiemannGaussian.SemiprimeDenseEuclidDescent",
+      "RiemannGaussian.SemiprimeEuclidRowBudget",
+      "Mathlib.Analysis.SpecialFunctions.Sqrt",
+      "Mathlib.Data.Nat.Prime.Factorial"
+    ],
+    "RiemannGaussian.SemiprimeDenseEuclidDescent": [
+      "RiemannGaussian.SemiprimeDenseCarryBoundary",
+      "Mathlib.Algebra.Polynomial.Monic"
+    ],
+    "RiemannGaussian.SemiprimeDenseCarryBoundary": [
+      "RiemannGaussian.SemiprimeDenseRowCarries",
+      "Mathlib.Algebra.Polynomial.BigOperators",
+      "Mathlib.Data.Finset.Card",
+      "Mathlib.NumberTheory.Harmonic.Bounds"
+    ],
+    "RiemannGaussian.SemiprimeDenseRowCarries": [
+      "RiemannGaussian.SemiprimeDenseRowCoverage",
+      "RiemannGaussian.SemiprimeQuotientCentering"
+    ],
+    "RiemannGaussian.SemiprimeDenseRowCoverage": [
+      "RiemannGaussian.SemiprimeQuotientRows",
+      "Mathlib.Data.Finset.Card"
+    ],
+    "RiemannGaussian.SemiprimeQuotientRows": [
+      "RiemannGaussian.SemiprimeKnownBitsBudget",
+      "Mathlib.Data.Int.ModEq",
+      "Mathlib.Data.Int.Sqrt",
+      "Mathlib.Tactic.NormNum.NatSqrt"
+    ],
+    "RiemannGaussian.SemiprimeKnownBitsBudget": [
+      "RiemannGaussian.SemiprimeQAggregate",
+      "Mathlib.Algebra.MvPolynomial.Nilpotent",
+      "Mathlib.Data.Int.Order.Units"
+    ],
+    "RiemannGaussian.SemiprimeQAggregate": [
+      "RiemannGaussian.SemiprimeBulkNorm",
+      "Mathlib.Algebra.Polynomial.BigOperators"
+    ],
+    "RiemannGaussian.SemiprimeBulkNorm": [
+      "RiemannGaussian.SemiprimeFirstNorm",
+      "RiemannGaussian.SemiprimeRHCancellation"
+    ],
+    "RiemannGaussian.SemiprimeFirstNorm": [
+      "RiemannGaussian.SemiprimeMultiplierNorm"
+    ],
+    "RiemannGaussian.SemiprimeMultiplierNorm": [
+      "RiemannGaussian.SemiprimeTotientMultipliers",
+      "RiemannGaussian.SemiprimeSharedIntervalJet"
+    ],
+    "RiemannGaussian.SemiprimeTotientMultipliers": [
+      "RiemannGaussian.SemiprimeBitPowerWalk",
+      "Mathlib.Data.Finset.Card"
+    ],
+    "RiemannGaussian.SemiprimeBitPowerWalk": [
+      "RiemannGaussian.SemiprimeBitDivision"
+    ],
+    "RiemannGaussian.SemiprimeBitDivision": [
+      "RiemannGaussian.SemiprimeBitArithmetic"
+    ],
+    "RiemannGaussian.SemiprimeBitArithmetic": [
+      "RiemannGaussian.SemiprimeWindowSqrt",
+      "Mathlib.Data.Bool.Basic"
+    ],
+    "RiemannGaussian.SemiprimeWindowSqrt": [
+      "RiemannGaussian.SemiprimeWindowInverse"
+    ],
+    "RiemannGaussian.SemiprimeWindowInverse": [
+      "RiemannGaussian.SemiprimeWindowConstruction"
+    ],
+    "RiemannGaussian.SemiprimeWindowConstruction": [
+      "RiemannGaussian.SemiprimeTotientResidues"
+    ],
+    "RiemannGaussian.SemiprimeTotientResidues": [
+      "RiemannGaussian.SemiprimeTotientWindow"
+    ],
+    "RiemannGaussian.SemiprimeTotientWindow": [
+      "RiemannGaussian.SemiprimeLongPowerRouting"
+    ],
+    "RiemannGaussian.SemiprimeLongPowerRouting": [
+      "RiemannGaussian.SemiprimeKernelDescent",
+      "RiemannGaussian.SemiprimeLongPeriodExtraction"
+    ],
+    "RiemannGaussian.SemiprimeKernelDescent": [
+      "RiemannGaussian.SemiprimeKernelResidual"
+    ],
+    "RiemannGaussian.SemiprimeKernelResidual": [
+      "RiemannGaussian.SemiprimeLocalOrderRouting"
+    ],
+    "RiemannGaussian.SemiprimeLocalOrderRouting": [
+      "RiemannGaussian.SemiprimeSeedLcm"
+    ],
+    "RiemannGaussian.SemiprimeSeedLcm": [
+      "RiemannGaussian.SemiprimeCollisionPeeling"
+    ],
+    "RiemannGaussian.SemiprimeCollisionPeeling": [
+      "RiemannGaussian.SemiprimeProgressionPrefix"
+    ],
+    "RiemannGaussian.SemiprimeProgressionPrefix": [
+      "RiemannGaussian.SemiprimeCommonOrder",
+      "Mathlib.Data.List.Sort"
+    ],
+    "RiemannGaussian.SemiprimeCommonOrder": [
+      "RiemannGaussian.SemiprimeGeometricRows",
+      "Mathlib.Data.Nat.Factors"
+    ],
+    "RiemannGaussian.SemiprimeGeometricRows": [
+      "RiemannGaussian.SemiprimeStagedSeed"
+    ],
+    "RiemannGaussian.SemiprimeStagedSeed": [
+      "RiemannGaussian.SemiprimeSourceHead"
+    ],
+    "RiemannGaussian.SemiprimeSourceHead": [
+      "RiemannGaussian.SemiprimeTaggedPooling"
+    ],
+    "RiemannGaussian.SemiprimeTaggedPooling": [
+      "RiemannGaussian.SemiprimeSharedIntervalJet",
+      "Mathlib.Algebra.Polynomial.HasseDeriv"
+    ],
+    "RiemannGaussian.SemiprimeSharedIntervalJet": [
+      "RiemannGaussian.SemiprimeIntervalJet"
+    ],
+    "RiemannGaussian.SemiprimeIntervalJet": [
+      "RiemannGaussian.SemiprimeCentreFreeCover",
+      "Mathlib.Algebra.Polynomial.Derivative"
+    ],
+    "RiemannGaussian.SemiprimeCentreFreeCover": [
+      "RiemannGaussian.SemiprimeStrassenPrefix",
+      "RiemannGaussian.SemiprimeRHCancellation"
+    ],
+    "RiemannGaussian.SemiprimeStrassenPrefix": [
+      "RiemannGaussian.SemiprimeLehmanCoverage",
+      "Mathlib.Data.Nat.Factorial.BigOperators"
+    ],
+    "RiemannGaussian.SemiprimeLehmanCoverage": [
+      "RiemannGaussian.SemiprimeCartesianCompletion",
+      "RiemannGaussian.SemiprimeGroupCoverage",
+      "Mathlib.NumberTheory.DiophantineApproximation.Basic"
+    ],
+    "RiemannGaussian.SemiprimeCartesianCompletion": [
+      "RiemannGaussian.SemiprimeRowStructure",
+      "RiemannGaussian.SemiprimeGroupSelection",
+      "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Sqrt",
+      "Mathlib.Algebra.Order.Floor.Ring"
+    ],
+    "RiemannGaussian.SemiprimeRowStructure": [
+      "RiemannGaussian.SemiprimeOrderSeparation",
+      "Mathlib.Tactic.Group"
+    ],
+    "RiemannGaussian.SemiprimeOrderSeparation": [
+      "Mathlib.FieldTheory.Finite.Basic",
+      "Mathlib.Algebra.QuadraticAlgebra.Basic",
+      "Mathlib.Algebra.Star.BigOperators",
+      "Mathlib.Data.Nat.Choose.Basic",
+      "Mathlib.Data.Nat.Prime.Basic",
+      "Mathlib.Tactic"
+    ],
+    "RiemannGaussian.SemiprimeGroupSelection": [
+      "RiemannGaussian.SemiprimeRoughProjection"
+    ],
+    "RiemannGaussian.SemiprimeRoughProjection": [
+      "RiemannGaussian.SemiprimeOrderSeparation",
+      "RiemannGaussian.SemiprimeLongPeriodExtraction",
+      "Mathlib.Algebra.Polynomial.Derivative",
+      "Mathlib.Data.Nat.GCD.BigOperators"
+    ],
+    "RiemannGaussian.SemiprimeLongPeriodExtraction": [
+      "Mathlib.Algebra.QuadraticAlgebra.Basic",
+      "Mathlib.Algebra.Polynomial.Div",
+      "Mathlib.Algebra.BigOperators.GroupWithZero.Finset",
+      "Mathlib.RingTheory.Polynomial.Dickson",
+      "Mathlib.Tactic"
+    ],
+    "RiemannGaussian.SemiprimeGroupCoverage": [
+      "RiemannGaussian.SemiprimeGroupSelection",
+      "Mathlib.Data.Nat.Log",
+      "Mathlib.Data.Nat.Sqrt"
+    ],
+    "RiemannGaussian.SemiprimeRHCancellation": [
+      "RiemannGaussian.SemiprimeSquareProductCover",
+      "Mathlib.Algebra.BigOperators.Ring.Finset"
+    ],
+    "RiemannGaussian.SemiprimeSquareProductCover": [
+      "RiemannGaussian.SemiprimeLehmanCoverage",
+      "Mathlib.Algebra.GCDMonoid.Nat"
+    ],
+    "RiemannGaussian.SemiprimeQuotientCentering": [
+      "RiemannGaussian.SemiprimeQuotientRows"
+    ],
+    "RiemannGaussian.SemiprimeEuclidRowBudget": [
+      "RiemannGaussian.SemiprimeCompanionCoverage",
+      "Mathlib.Data.Nat.Log",
+      "Mathlib.NumberTheory.Bertrand"
+    ],
+    "RiemannGaussian.SemiprimeCompanionCoverage": [
+      "RiemannGaussian.SemiprimeCompanionRows"
+    ],
+    "RiemannGaussian.SemiprimeCompanionRows": [
+      "RiemannGaussian.SemiprimeRowPeriods"
+    ],
+    "RiemannGaussian.SemiprimeRowPeriods": [
+      "RiemannGaussian.SemiprimeWeightedRows",
+      "RiemannGaussian.SemiprimeCommonOrder",
+      "Mathlib.Data.List.Sort"
+    ],
+    "RiemannGaussian.SemiprimeWeightedRows": [
+      "RiemannGaussian.SemiprimeGuardedTrace"
+    ],
+    "RiemannGaussian.SemiprimeGuardedTrace": [
+      "RiemannGaussian.SemiprimeTraceRows"
+    ],
+    "RiemannGaussian.SemiprimeTraceRows": [
+      "RiemannGaussian.SemiprimeReciprocalRows"
+    ],
+    "RiemannGaussian.SemiprimeReciprocalRows": [
+      "RiemannGaussian.SemiprimeRowDerivative",
+      "Mathlib.Algebra.Polynomial.Reverse"
+    ],
+    "RiemannGaussian.SemiprimeRowDerivative": [
+      "RiemannGaussian.SemiprimeEuclidRowFamily"
+    ],
+    "RiemannGaussian.SemiprimeEuclidRowFamily": [
+      "RiemannGaussian.SemiprimeQuotientCentering"
+    ],
+    "RiemannGaussian.SemiprimeDenseLoopObstruction": [
+      "RiemannGaussian.SemiprimeDenseRowCarries",
+      "RiemannGaussian.SemiprimeLocalOrderRouting",
+      "Mathlib.GroupTheory.OrderOfElement"
+    ],
+    "RiemannGaussian.SemiprimeBitPrimeScan": [
+      "RiemannGaussian.SemiprimeBitProductSort"
+    ],
+    "RiemannGaussian.SemiprimeBitProductSort": [
+      "RiemannGaussian.SemiprimePrimeSieve",
+      "Mathlib.Data.List.Induction",
+      "Mathlib.Data.Nat.Size"
+    ],
+    "RiemannGaussian.SemiprimePrimeSieve": [
+      "RiemannGaussian.SemiprimeReflectedCompanions",
+      "Mathlib.Data.List.Find",
+      "RiemannGaussian.SemiprimeBitDivision"
+    ],
+    "RiemannGaussian.SemiprimeReflectedCompanions": [
+      "RiemannGaussian.SemiprimeEuclidRowBudget"
+    ],
+    "RiemannGaussian.SemiprimeMacroFlagExtension": [
+      "RiemannGaussian.SemiprimeMacroGraph",
+      "RiemannGaussian.SemiprimeMacroBitNetwork"
+    ],
+    "RiemannGaussian.SemiprimeMacroGraphUnique": [
+      "RiemannGaussian.SemiprimeMacroGraphSemantics",
+      "RiemannGaussian.SemiprimeMacroFlagExtension"
+    ],
+    "RiemannGaussian.SemiprimeMacroParameters": [
+      "RiemannGaussian.SemiprimeMacroGraph",
+      "Mathlib"
+    ],
+    "RiemannGaussian.SemiprimeSubdividedEntry": [
+      "RiemannGaussian.SemiprimeMacroEntryBitCheck"
+    ],
+    "RiemannGaussian.SemiprimeMacroEntryBitCheck": [
+      "RiemannGaussian.SemiprimeMacroEntryBitPrimitives"
+    ],
+    "RiemannGaussian.SemiprimeMacroEntryBitPrimitives": [
+      "RiemannGaussian.SemiprimeMacroEntryExecution",
+      "RiemannGaussian.SemiprimeBitFermatArithmetic"
+    ],
+    "RiemannGaussian.SemiprimeMacroEntryExecution": [
+      "RiemannGaussian.SemiprimePublicFactorCount",
+      "Batteries.Data.BitVec.Lemmas"
+    ]
+  },
+  "external_direct_roots": [
+    "Batteries.Data.BitVec.Lemmas",
+    "Mathlib",
+    "Mathlib.Algebra.BigOperators.GroupWithZero.Finset",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.DualNumber",
+    "Mathlib.Algebra.GCDMonoid.Nat",
+    "Mathlib.Algebra.MvPolynomial.Nilpotent",
+    "Mathlib.Algebra.Order.Floor.Ring",
+    "Mathlib.Algebra.Polynomial.BigOperators",
+    "Mathlib.Algebra.Polynomial.Derivative",
+    "Mathlib.Algebra.Polynomial.Div",
+    "Mathlib.Algebra.Polynomial.Eval.Degree",
+    "Mathlib.Algebra.Polynomial.HasseDeriv",
+    "Mathlib.Algebra.Polynomial.Monic",
+    "Mathlib.Algebra.Polynomial.Reverse",
+    "Mathlib.Algebra.QuadraticAlgebra.Basic",
+    "Mathlib.Algebra.Star.BigOperators",
+    "Mathlib.Analysis.SpecialFunctions.Sqrt",
+    "Mathlib.Data.BitVec",
+    "Mathlib.Data.Bool.Basic",
+    "Mathlib.Data.Finset.Card",
+    "Mathlib.Data.Int.Interval",
+    "Mathlib.Data.Int.ModEq",
+    "Mathlib.Data.Int.Order.Units",
+    "Mathlib.Data.Int.Sqrt",
+    "Mathlib.Data.List.Find",
+    "Mathlib.Data.List.Induction",
+    "Mathlib.Data.List.Sort",
+    "Mathlib.Data.Nat.Choose.Basic",
+    "Mathlib.Data.Nat.Digits.Lemmas",
+    "Mathlib.Data.Nat.Factorial.BigOperators",
+    "Mathlib.Data.Nat.Factors",
+    "Mathlib.Data.Nat.GCD.BigOperators",
+    "Mathlib.Data.Nat.Log",
+    "Mathlib.Data.Nat.Prime.Basic",
+    "Mathlib.Data.Nat.Prime.Factorial",
+    "Mathlib.Data.Nat.Size",
+    "Mathlib.Data.Nat.Sqrt",
+    "Mathlib.FieldTheory.Finite.Basic",
+    "Mathlib.GroupTheory.OrderOfElement",
+    "Mathlib.LinearAlgebra.Matrix.Notation",
+    "Mathlib.NumberTheory.Bertrand",
+    "Mathlib.NumberTheory.DiophantineApproximation.Basic",
+    "Mathlib.NumberTheory.Harmonic.Bounds",
+    "Mathlib.RingTheory.Polynomial.Dickson",
+    "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+    "Mathlib.Tactic",
+    "Mathlib.Tactic.Group",
+    "Mathlib.Tactic.NormNum.NatSqrt"
+  ]
+}

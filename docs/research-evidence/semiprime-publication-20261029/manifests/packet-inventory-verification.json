@@ -1,0 +1,636 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 30,
+    "declarations": 1004,
+    "theorems": 463
+  },
+  "modules": {
+    "SemiprimeD1StackPacketInventoryRoles": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryRoles.lean",
+        "sha256": "46fb7655530ecb947b6214330a79864a0f120f292606ca4059710515f639abb3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryRoles.olean",
+        "sha256": "af80a6e2742e264203baeba426be55e1fd5943ce5df4edbbb89c2b140988d7de"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryRoles.olean",
+        "sha256": "af80a6e2742e264203baeba426be55e1fd5943ce5df4edbbb89c2b140988d7de"
+      }
+    },
+    "SemiprimeD1StackPacketInventory": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventory.lean",
+        "sha256": "147e95cd8bc24acfb19d3556dcd5003d5506c3df0a96e40e20095f52affe2764"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventory.olean",
+        "sha256": "d5f41d1d9929a3c7cf9b7923e7be937a3e7cab6a7eb7a4f70287c054556f2f0e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventory.olean",
+        "sha256": "d5f41d1d9929a3c7cf9b7923e7be937a3e7cab6a7eb7a4f70287c054556f2f0e"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryPrimitives.lean",
+        "sha256": "5d9d533c6de04aa6010e708e0495fcab312004f0b3fe33909493c73ed8e167e4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryPrimitives.olean",
+        "sha256": "85b1b09f23f4451d2e723396dcf876667a942b8f51df72b1fe9a2b8b7711faef"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryPrimitives.olean",
+        "sha256": "85b1b09f23f4451d2e723396dcf876667a942b8f51df72b1fe9a2b8b7711faef"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryEncoding.lean",
+        "sha256": "787a7c80f7cebb54256be23d4fd20987858ab77e30e221c86dbf6b8e437d3706"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryEncoding.olean",
+        "sha256": "d52ef9417e1166d07f0e571975d78728ec5658c29be78437644bb9a0d2f693bc"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryEncoding.olean",
+        "sha256": "d52ef9417e1166d07f0e571975d78728ec5658c29be78437644bb9a0d2f693bc"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryView.lean",
+        "sha256": "5f23aa8dc90599c47d7db3a393689edcfdce7a25d71eff10e503e40e292d71b4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryView.olean",
+        "sha256": "f6ff86790bebad892a5d24435aabe81211eef752ce9feb9f0298a22e4aa9c210"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryView.olean",
+        "sha256": "f6ff86790bebad892a5d24435aabe81211eef752ce9feb9f0298a22e4aa9c210"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryRead": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryRead.lean",
+        "sha256": "d51d98581407e8c9a316c1cb4e8679d1b793e2f7b343660acf5bbcd518ca23c2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryRead.olean",
+        "sha256": "6fde611079c9d27e5b20a185a3eae5e3ea197b43db021cb55a1e9f96fd1eb264"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryRead.olean",
+        "sha256": "6fde611079c9d27e5b20a185a3eae5e3ea197b43db021cb55a1e9f96fd1eb264"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryClass": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryClass.lean",
+        "sha256": "9fc465e83b370c79e41a2de750f3c696d418178b72f3988838296e5347245a1f"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryClass.olean",
+        "sha256": "a07e8a2e9cd23481f08bd923ccb0fb50380388987484ae25e63a09a41a7ee529"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryClass.olean",
+        "sha256": "a07e8a2e9cd23481f08bd923ccb0fb50380388987484ae25e63a09a41a7ee529"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryComponents.lean",
+        "sha256": "83a655ac0096e64d17e106a551c7a60925f8abb42538c6f4e53f72b364e71ba0"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryComponents.olean",
+        "sha256": "e1e1dc900c6c4072a80655aae4a2d5d6616fb05573faa658276de2cfb91e6e11"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryComponents.olean",
+        "sha256": "e1e1dc900c6c4072a80655aae4a2d5d6616fb05573faa658276de2cfb91e6e11"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryBanks": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryBanks.lean",
+        "sha256": "0dc84a62c09037912b45abf5a7a24d926dfd803671efa91a1dfab51207e2dfa6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryBanks.olean",
+        "sha256": "6c3d185f5b2ad7d0d9b4b842511b1dff701dcd26e821efebea54f7e73ac37b97"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryBanks.olean",
+        "sha256": "6c3d185f5b2ad7d0d9b4b842511b1dff701dcd26e821efebea54f7e73ac37b97"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryRows": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryRows.lean",
+        "sha256": "48dcafe23f72396e85a1f1fe311bbf631dc61f54a84cec1fecbf08e1b87925bd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryRows.olean",
+        "sha256": "8264248e2678cc4ea5503af528f8a0d4937e4d05108f38936b249eb07fceeb7f"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryRows.olean",
+        "sha256": "8264248e2678cc4ea5503af528f8a0d4937e4d05108f38936b249eb07fceeb7f"
+      }
+    },
+    "SemiprimeD1StackPacketInventorySeen": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventorySeen.lean",
+        "sha256": "fd41b3425f679a804375d916827cda4c25d034e09a367c0604b374df4e64da64"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventorySeen.olean",
+        "sha256": "c68271f20745b0e3d4f6ebfeb98a5743bb65e49465f06851606f1b759e98d9f6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventorySeen.olean",
+        "sha256": "c68271f20745b0e3d4f6ebfeb98a5743bb65e49465f06851606f1b759e98d9f6"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryStepEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryStepEncoding.lean",
+        "sha256": "01cfd0af50137b61a8913ecd1c1a0d27be6a7847042950119c69ea0d4fa5521c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryStepEncoding.olean",
+        "sha256": "89d5dc46cd350f80ec2dffbd6abca7ef48839932471af7b2e7b8e86b9472df2b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryStepEncoding.olean",
+        "sha256": "89d5dc46cd350f80ec2dffbd6abca7ef48839932471af7b2e7b8e86b9472df2b"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryDiscovery": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryDiscovery.lean",
+        "sha256": "4ff2c3fde86b553f2681d76be6ae6112d69ba80e63a0503550e7155d412cd300"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryDiscovery.olean",
+        "sha256": "4b65ca5766a2ad285fbf8ea306f6b3475bbe44f72aede2ed8b3fd4b9e2c09b57"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryDiscovery.olean",
+        "sha256": "4b65ca5766a2ad285fbf8ea306f6b3475bbe44f72aede2ed8b3fd4b9e2c09b57"
+      }
+    },
+    "SemiprimeD1StackPacketInventorySlots": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventorySlots.lean",
+        "sha256": "8e9b159792483038829ca6526e2a7900c32ed1127f197e4b4fa49df05acb4afd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventorySlots.olean",
+        "sha256": "70c45f4dc379f6e857a4816038e4848ba0e1d01074bff3cd1e4a029a737c9522"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventorySlots.olean",
+        "sha256": "70c45f4dc379f6e857a4816038e4848ba0e1d01074bff3cd1e4a029a737c9522"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryEdge": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryEdge.lean",
+        "sha256": "3f5af089d76e00cd3769d7937cb1d996cc1da049c32570af75a56029eb61821c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryEdge.olean",
+        "sha256": "f150bbb5dd6ff296c841896edc7876be30f028d65811ba8d4d7482b1f04f4a5b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryEdge.olean",
+        "sha256": "f150bbb5dd6ff296c841896edc7876be30f028d65811ba8d4d7482b1f04f4a5b"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryLog": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryLog.lean",
+        "sha256": "a29085954b5c3bf33a77dc8e1a153f56906b61b25cccaa91ea1df21e56793a7a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryLog.olean",
+        "sha256": "2191f16bdbfa4cda0189866632c7a8729276db80a0c7db601a0aed2003a19d67"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryLog.olean",
+        "sha256": "2191f16bdbfa4cda0189866632c7a8729276db80a0c7db601a0aed2003a19d67"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryCleanup": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryCleanup.lean",
+        "sha256": "857a59f9663843bb3bc937662daf4c19e5cbe983c6ac8547f05d227487408c49"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryCleanup.olean",
+        "sha256": "c08e6e4bd30a6cc9757530d1a1469b0ba237283caee1cc8481fce35d659a7767"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryCleanup.olean",
+        "sha256": "c08e6e4bd30a6cc9757530d1a1469b0ba237283caee1cc8481fce35d659a7767"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryStream": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryStream.lean",
+        "sha256": "3d551f35bdd28303a5e6e53da38aadb881a97a7b204a5b103acbcc80684f49e1"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryStream.olean",
+        "sha256": "07b04019766110189ee35963833fbcc86e7ef5564a31ad70fad3ea2f159911e6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryStream.olean",
+        "sha256": "07b04019766110189ee35963833fbcc86e7ef5564a31ad70fad3ea2f159911e6"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryStep": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryStep.lean",
+        "sha256": "4facc3e3c4767f88c649ecddbb0f39c03baf3c003b3f5b52fb5412334702afd3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryStep.olean",
+        "sha256": "ed1f885d782d814d7b37cba90a1fd636c9afe89aefb2395eab81c00a52888130"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryStep.olean",
+        "sha256": "ed1f885d782d814d7b37cba90a1fd636c9afe89aefb2395eab81c00a52888130"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryLoop": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryLoop.lean",
+        "sha256": "da659026057d230405d992e5de307f5992675b13800a1ec6b1dcd711276c5a14"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryLoop.olean",
+        "sha256": "8d45388cb628b28015becefa13ac73fb1eb306b6e07412aced4e164a53cd352a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryLoop.olean",
+        "sha256": "8d45388cb628b28015becefa13ac73fb1eb306b6e07412aced4e164a53cd352a"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryPrepare": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryPrepare.lean",
+        "sha256": "b0d2148d983d4b68301122da49265e8e8e14d1d91e171c72e6cb37691840acab"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryPrepare.olean",
+        "sha256": "6f0707f09ef62d2001e3efdf80ecb7d055f1db6c815144f1b3a27232ef0f8ac7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryPrepare.olean",
+        "sha256": "6f0707f09ef62d2001e3efdf80ecb7d055f1db6c815144f1b3a27232ef0f8ac7"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryFinish": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryFinish.lean",
+        "sha256": "e21584395fd86d4c6928936a9f6c2362a9e7a0f4fb5e95893379e0351d0f8348"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryFinish.olean",
+        "sha256": "28c325bbc0d4f91adf29733aac19014bb0fdd3f4c79c78a8acba5a726263fd56"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryFinish.olean",
+        "sha256": "28c325bbc0d4f91adf29733aac19014bb0fdd3f4c79c78a8acba5a726263fd56"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryExecution.lean",
+        "sha256": "66fa0f5f9f72ddf3580aa46b3ecab5d2e53ec0ebca0b24f361438e39b6a81bc2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryExecution.olean",
+        "sha256": "1da2ddfda003df97923336220e463702f4e51f0a3060338ae00f0c0a7ee48f7d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryExecution.olean",
+        "sha256": "1da2ddfda003df97923336220e463702f4e51f0a3060338ae00f0c0a7ee48f7d"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryWidths": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryWidths.lean",
+        "sha256": "8e4e90decea9330d1c7f6bd0b5104b8497ae3f02ca143894eb1d0a048cea3638"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryWidths.olean",
+        "sha256": "825f87eb47a905b70a8fa3c53d7a2bc47bbc09563a54c4b3c1a1d3d1a8bba407"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryWidths.olean",
+        "sha256": "825f87eb47a905b70a8fa3c53d7a2bc47bbc09563a54c4b3c1a1d3d1a8bba407"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryRowCost": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryRowCost.lean",
+        "sha256": "e5d83f3551d24020a22342110d78d77a19e88dd2b43fe7029daf88ec3e58577e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryRowCost.olean",
+        "sha256": "fd9f39d348b9ec6f330446303ed2691fd74ad25bba77925b65686eded0b0c478"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryRowCost.olean",
+        "sha256": "fd9f39d348b9ec6f330446303ed2691fd74ad25bba77925b65686eded0b0c478"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryClock": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryClock.lean",
+        "sha256": "1c4cb5d359b89feb825b442d4ac486f596942391e70765bc9b8fefa8c5ac7026"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryClock.olean",
+        "sha256": "073eaf6b2a40956bc4bd8aba6800b8e8ce95e7ad6519c6052036386f712d4d17"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryClock.olean",
+        "sha256": "073eaf6b2a40956bc4bd8aba6800b8e8ce95e7ad6519c6052036386f712d4d17"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryBounds.lean",
+        "sha256": "f0f49235713ca1c4b5c2ad41b2444f641306c54f836f3908e8d4e21c5ae4b704"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryBounds.olean",
+        "sha256": "b4cb88b94f8f6361e0fc2cd76a118225855f3c31d08ede026771cb9cbd62b204"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryBounds.olean",
+        "sha256": "b4cb88b94f8f6361e0fc2cd76a118225855f3c31d08ede026771cb9cbd62b204"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryMeaning": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryMeaning.lean",
+        "sha256": "ba91f884c4bbcbad55ec23db97f9a7c761e1cdc1f538144d6d2d065243548532"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryMeaning.olean",
+        "sha256": "dec85f73f16703afab3e0472ea4873728c3bb35308f23c30d69ab05f92b5d202"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryMeaning.olean",
+        "sha256": "dec85f73f16703afab3e0472ea4873728c3bb35308f23c30d69ab05f92b5d202"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryOriginal.lean",
+        "sha256": "c3e969d32e10929a8d93ea64bb92efca7a5e5fd3d5e969d619b2ff2ea8dd8071"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryOriginal.olean",
+        "sha256": "b5c5dc108c7f82118276cb5fa87b62d87b5d357ac1e88c0701fdfbc93de32c05"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryOriginal.olean",
+        "sha256": "b5c5dc108c7f82118276cb5fa87b62d87b5d357ac1e88c0701fdfbc93de32c05"
+      }
+    },
+    "SemiprimeD1StackPacketInventoryStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPacketInventoryStorage.lean",
+        "sha256": "40334b31b8e35899b266dd3536d79111c2d27e1a5f0884f973320cf03df8ced0"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPacketInventoryStorage.olean",
+        "sha256": "aaea34c8d012a7f12874840b268e328789a2a37ca2739cffd10b54c32c6bd409"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/SemiprimeD1StackPacketInventoryStorage.olean",
+        "sha256": "aaea34c8d012a7f12874840b268e328789a2a37ca2739cffd10b54c32c6bd409"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PacketInventoryControls.lean",
+        "sha256": "f35b65ba77c28ca0e1e5d629387a36cbb8bc7ff993ec0adff603ed7c363c21fd"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/control-0.log",
+        "sha256": "11f619981b1b2307414f7d692d875ca3dab38fb43ab19dc576533bbe2097bd42"
+      },
+      "expected": "PACKET_INVENTORY_PASS case=empty_real_occurrence_stream actual_steps=21 all59=true two_inputs_only=true OLDj_preserved=true sentinel_byte_keys=true all_overrides_retained=true discovery_order_exact=true sixfield_placements_chronological=true positive_edge_order_exact=true work_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_INVENTORY_PASS case=a0_one_empty_row_index_zero actual_steps=774 all59=true two_inputs_only=true OLDj_preserved=true sentinel_byte_keys=true all_overrides_retained=true discovery_order_exact=true sixfield_placements_chronological=true positive_edge_order_exact=true work_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_INVENTORY_PASS case=a0_three_OLDj_and_edges actual_steps=3519 all59=true two_inputs_only=true OLDj_preserved=true sentinel_byte_keys=true all_overrides_retained=true discovery_order_exact=true sixfield_placements_chronological=true positive_edge_order_exact=true work_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_INVENTORY_PASS case=a1_five_repeats_samepacket_ties actual_steps=144654 all59=true two_inputs_only=true OLDj_preserved=true sentinel_byte_keys=true all_overrides_retained=true discovery_order_exact=true sixfield_placements_chronological=true positive_edge_order_exact=true work_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_INVENTORY_PASS case=a1_opposite_classes_shared_packet actual_steps=146673 all59=true two_inputs_only=true OLDj_preserved=true sentinel_byte_keys=true all_overrides_retained=true discovery_order_exact=true sixfield_placements_chronological=true positive_edge_order_exact=true work_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_INVENTORY_PASS case=a0_raw_highzero_classkeys_distinct actual_steps=1994 all59=true two_inputs_only=true OLDj_preserved=true sentinel_byte_keys=true all_overrides_retained=true discovery_order_exact=true sixfield_placements_chronological=true positive_edge_order_exact=true work_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_INVENTORY_PASS case=a1_endpoints63andzero actual_steps=83794 all59=true two_inputs_only=true OLDj_preserved=true sentinel_byte_keys=true all_overrides_retained=true discovery_order_exact=true sixfield_placements_chronological=true positive_edge_order_exact=true work_clear=true flags_clear=true exact_two_outer_returns=true\nPACKET_INVENTORY_REJECT case=malformed_vector_no_terminator actual_steps=75 all59=true two_inputs_retained=true all57_noninputs_clear_except_falseflag=true exact_two_outer_returns=true\nPACKET_INVENTORY_REJECT case=missing_owner_a0_presence actual_steps=403 all59=true two_inputs_retained=true all57_noninputs_clear_except_falseflag=true exact_two_outer_returns=true\nPACKET_INVENTORY_OBSERVER_STD3 constants=28"
+    }
+  ],
+  "full_goal_complete": false,
+  "sealed_utc": "2026-10-28T23:38:08.826087+00:00",
+  "source_and_canonical_writers_stopped": true,
+  "source_proofs_default_200000_heartbeats": true,
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 18322,
+    "files": 36644,
+    "before": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-dependencies/imported-pins-after.json"
+  },
+  "baseline_protected_files": {
+    "status": "PASS",
+    "protected_files": 17054,
+    "baseline": "/tmp/semiprime-explicit-rate-20261027/resumed-preservation-before.json",
+    "all_current_bytes_match": true
+  },
+  "prior_frozen_files": {
+    "status": "PASS",
+    "groups": {
+      "static-input-table": 34,
+      "port-ordinal": 10,
+      "boundary-record": 10,
+      "product-table-original": 2,
+      "product-record": 10,
+      "carry-table": 10,
+      "scale-table": 10,
+      "transform-table": 10,
+      "carry-record": 10,
+      "scale-record": 10,
+      "transform-record": 10,
+      "root-schedule": 20,
+      "root-scale-leaf": 22,
+      "phase-geometry": 20,
+      "phase-geometry-guard": 12,
+      "phase-working-metadata": 18,
+      "phase-working-precision": 20,
+      "phase-child-context": 16,
+      "phase-child-fresh": 16,
+      "phase-bank-restore": 10,
+      "phase-cache-fresh": 10,
+      "network-owner-index": 24,
+      "network-rows": 30,
+      "source-alphabet64": 38,
+      "root-owner-index": 14,
+      "root-network-rows": 12,
+      "source-occurrences": 26,
+      "packet-orientation": 34,
+      "root-selection-acquire": 26,
+      "root-packet-padding": 24,
+      "source-environment": 26,
+      "source-incidence": 50,
+      "root-source-occurrences": 12,
+      "source-selected-keys": 32,
+      "source-incidence-select": 56,
+      "source-key-frequency": 30,
+      "source-packet-padding": 26,
+      "cache-phase": 38,
+      "packet-rows": 34,
+      "source-selection-acquire": 24,
+      "owner-recipe": 28,
+      "owner-records-final": 40,
+      "boolean-factor-clock": 6,
+      "root-controller-metadata": 8,
+      "all-descriptor-record": 26,
+      "recovery-coordinate": 40,
+      "factor-scope": 24,
+      "recovery-width": 26,
+      "boolean-descriptor": 14,
+      "full-factor-catalogue-resource": 8,
+      "stack-product-table": 32,
+      "root-phase-parameters-inventory": 0,
+      "root-phase-parameters": 36,
+      "boolean-factor-correctness": 18,
+      "fresh-bank-restore": 14,
+      "packet-mode-acquire": 22,
+      "owner-arithmetic": 2,
+      "boolean-factor-acquisition": 24,
+      "descriptor-record": 20,
+      "weighted-mode-core": 30,
+      "full-factor-catalogue-final": 30,
+      "owner-lookup": 10,
+      "static-record": 20,
+      "root-recovery-width": 22,
+      "port-owner-routing": 34,
+      "recursive-controller-schedule": 0,
+      "root-recursive-control": 10,
+      "selectors-carry": 16,
+      "source-selection-acquire-projection": 0,
+      "owner-fibre-catalogue-final": 32,
+      "selected-arithmetic": 22,
+      "owner-recipe-final": 28,
+      "all-descriptor-root-envelope": 4,
+      "weighted-mode-catalogue": 20,
+      "recovery-denominator": 28,
+      "owner-records-resource": 6,
+      "factor-scope-fibre": 6,
+      "recovery-finish": 58,
+      "owner-catalogue-final": 42,
+      "owner-fibre": 12,
+      "schedule-active": 8,
+      "zero-boundary-readonly": 8,
+      "recursive-schedule": 8,
+      "boolean-record": 10,
+      "owner-catalogue": 42,
+      "root-record-coordinates": 2,
+      "euclid-gcd": 22,
+      "product-table-control": 0,
+      "root-parameters": 8,
+      "owner-madd-bounds": 2,
+      "root-phase-grid": 12,
+      "jet-fold": 40,
+      "root-network-records": 16,
+      "owner-records-source": 34,
+      "port-owner-routing-final": 34,
+      "schedule-successor": 8,
+      "product-table-output-rate": 2,
+      "owner-routing-final": 0,
+      "jet-blocks": 28,
+      "root-phase-fresh-records": 46,
+      "source-selection-acquire-bounds-storage": 4,
+      "boolean-descriptor-reject": 2,
+      "full-factor-catalogue-source": 22,
+      "rational-normalize": 20,
+      "boolean-factor-indices": 6,
+      "rational-operation": 26,
+      "recovery-entries": 56,
+      "owner-fibre-catalogue": 32
+    },
+    "total_source_object_files": 1732
+  },
+  "independent_read_only_review": {
+    "status": "PASS",
+    "reviewer": "independent RecoveryCoordinate owner plus parent cross-review",
+    "path": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-independent-review.txt",
+    "sha256": "43c3648c69c5164b8cdfe718454c267568aaeaa711bca21acc22b1acc0cbadf8",
+    "eight_critical_current_source_pins_match": true,
+    "all18_reported_current_source_pins_match": true,
+    "source_and_canonical_writes": false
+  },
+  "actual_controls": {
+    "status": "PASS",
+    "whole_positive_cases": 7,
+    "whole_abort_cases": 2,
+    "actual_steps": 381907,
+    "case_steps": [
+      21,
+      774,
+      3519,
+      144654,
+      146673,
+      1994,
+      83794,
+      75,
+      403
+    ],
+    "all_roles": 59,
+    "alias_shadows": 0,
+    "observer_generated_constants_standard3": 28,
+    "snapshot_identity_kernel_checked": true,
+    "all59_and_two_inputs_and_work_and_flags_and_two_real_outer_returns": true,
+    "OLDj_and_all_overrides_and_firstdiscovery_and_sixfields_and_positive_edge_order": true,
+    "raw_highzero_class_byte_equality": "a0 trap verified; no original equivalence claim for padded noncanonical numeric alphabet IDs",
+    "source": "/tmp/semiprime-explicit-rate-20261027/PacketInventoryControls.lean",
+    "source_sha256": "f35b65ba77c28ca0e1e5d629387a36cbb8bc7ff993ec0adff603ed7c363c21fd",
+    "log": "/tmp/semiprime-explicit-rate-20261027/packet-inventory-frozen/control-0.log",
+    "log_sha256": "11f619981b1b2307414f7d692d875ca3dab38fb43ab19dc576533bbe2097bd42"
+  },
+  "scope": {
+    "physical_roles": 59,
+    "allocated_banks": "Frequency21 plus Reader19 plus Orientation19; five genuinely repurposed allocations counted",
+    "alias_shadows": 0,
+    "program": "one parameterless fixed finite literal program before every source vector and acquired catalogue",
+    "runtime_inputs": "ONLY actual selected raw-key vector and acquired Alpha catalogue; ALL57 noninput words initially EMPTY",
+    "real_pipeline": "four false pushes; paid source copy; real vector tag/Field; raw class sentinel/copy/lookup/unread drain; real OLD count copy/increment/two override Frames; actual Reader19 and Orientation19 via direct aliases; actual positive-edge increment; raw slot-address Frame/sentinel/override; real seen lookup/first-discovery branch/override; actual six-field placement Frame/reverse logger; all helper drains; actual EOF; final paid reverse/true/halt",
+    "lifetime": "OLDj physically retained through NEW Frame calls on separate copyScratch until actual Orientation; catalogue/seen/slots outside mapped Orientation writes; packet/history globals outside mapped Reader writes",
+    "original": "EXACT entire PacketInventory.acquire placements, packet order, every class/seen/slot raw-byte read and positive edge word for ALL original selected streams; original menu memberships discharged internally by actual selected-key lineage",
+    "output": "chronological vector of six-field placements(source,OLDpadding,packet,slot,positiveedge,valid); newestfirst first-discovery packet vector; all physical historical class/seen/slot overrides retained; lastpositiveedge; successTRUE; both actual inputs retained; every other work word EMPTY; flagsnone/framesempty",
+    "negative_scope": "two compiled malformed/missing abort controls clear57 noninputs except falseflag; no universal malformed-input clock asserted",
+    "frontier": "complete prepared actual inventory source; parent N-only literal RootRecoveryWidth2211 to Inventory59 join (RootPacketInventory2270) remains next; packet modes/recovery and entire factoring theorem OPEN"
+  },
+  "clocks": {
+    "resource": "S=actualSelectedRawKeyVectorBytes+actualAcquiredAlphaCatalogueBytes+1",
+    "whole_time": "1000000000000*S^4",
+    "all59_plus_realreturns": "1000000000000000*S^4",
+    "one_actual_occurrence": "1000000000*S^3",
+    "provenance": "own SAME actual primitive/callee/counter/map/log/drain/halt traces; actual history reversal paid by SAME actual prefix run_data_bound; no native report clock transport"
+  }
+}

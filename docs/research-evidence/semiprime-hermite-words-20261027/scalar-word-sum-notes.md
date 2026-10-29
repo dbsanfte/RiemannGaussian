@@ -1,0 +1,9 @@
+# Actual chronological scalar-word sum
+
+FINAL FROZEN: new SemiprimeScalarWordSum only. Runtime `sumFrom template f fuel start acc` calls f(start) once, caches its report, executes actual Boolean rational addition, retains acc.clock+next.clock+operation.clock+8W+8, then continues at start+1. No interpreted rational arithmetic appears in the executed loop.
+
+`sumFrom_correct` proves exact acc+range-sum value, Valid and Representation with ONE original denominator d and numerator Bacc+fuel*B. Inputs are the original accumulator/callback Valid/common representations, d>0 and original total caps d<2^W, Bacc+fuel*B<2^W. Every addition Fits and recursive cap are derived from them. `sumFrom_prefix` derives every p<=fuel prefix's Valid/common representation from the SAME original total bounds; no intermediate Fits oracle. `sumFrom_width` is structural. `sumFrom_clock` retains the sum of all actual callback clocks and bounds real additions/copies/control by fuel*(20000*(W+1)^3+8W+8), with legitimate original input physical Width assumptions. Callback acquisition is executed inside the loop; whatever cost the callback reports is retained, not substituted with a unit-cost oracle.
+
+Canonical strict compile EXIT0; ordinary-root 15-linter and every-generated transitive-axiom audit EXIT0,21 declarations/15 theorem constants, standard3 only. Independent strict rebuild EXIT0 byte-identical to canonical object. Physical controls cover nonzero start with nonzero accumulator (1/3), its one-step prefix (1/6), zero fuel retaining exact input value/clock (1/2,5), and three-term exact cancellation to zero. All tests EXIT0 and clock-retention Boolean controls true. Pins in scalar-word-sum-verification.json; audit and smoke files/logs share scalar-sum names.
+
+This closes the physical scalar addition loop, not the callback's independent source construction, literal address/tape implementation, final integer-floor recovery or complete public primitive clock.

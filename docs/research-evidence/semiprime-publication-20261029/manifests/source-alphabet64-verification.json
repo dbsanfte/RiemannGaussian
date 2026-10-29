@@ -1,0 +1,122 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "modules": [
+    "SemiprimeD1StackSourceAlphabet64",
+    "SemiprimeD1StackSourceAlphabet64Encoding",
+    "SemiprimeD1StackSourceAlphabet64Primitives",
+    "SemiprimeD1StackSourceAlphabet64Setup",
+    "SemiprimeD1StackSourceAlphabet64Calls",
+    "SemiprimeD1StackSourceAlphabet64Acquisition",
+    "SemiprimeD1StackSourceAlphabet64Digits",
+    "SemiprimeD1StackSourceAlphabet64Colours",
+    "SemiprimeD1StackSourceAlphabet64Source",
+    "SemiprimeD1StackSourceAlphabet64ColourLoop",
+    "SemiprimeD1StackSourceAlphabet64Rows",
+    "SemiprimeD1StackSourceAlphabet64Loop",
+    "SemiprimeD1StackSourceAlphabet64Finish",
+    "SemiprimeD1StackSourceAlphabet64Execution",
+    "SemiprimeD1StackSourceAlphabet64Bounds",
+    "SemiprimeD1StackSourceAlphabet64Storage",
+    "SemiprimeD1StackSourceAlphabet64Arithmetic",
+    "SemiprimeD1StackSourceAlphabet64NativeRows",
+    "SemiprimeD1StackSourceAlphabet64Original"
+  ],
+  "source_and_canonical_writers": "STOPPED; all19 source/object pairs immutable after pin creation",
+  "physical_roles": 30,
+  "source_input": "ONLY one actual acquired unary true-marker a word on aux.source; every other role initially empty",
+  "entry": "SemiprimeD1StackSourceAlphabet64.Label.start",
+  "whole_program": "fixed parameterless program/machine; no a/L/rows/powers/count/mode/answer/clock evaluator operand",
+  "actual_acquisition": [
+    "preserving Copy of unary a and physical 6a-bit zero counter setup",
+    "literal binary powers: square12a zeros, cube18a, fourth24a, head6*(4a\u22121), followed ONE",
+    "real frozen AssignmentLoop5 whole enumeration at bodyCall exactly once",
+    "paid raw enumeration copy and physical Field row parser",
+    "real Reverse+Reduce.trim normalization for IDs and every actual six-bit colour",
+    "real Frame colour/row/ID construction and reverse logs, one final chronological catalogue reversal"
+  ],
+  "retained": [
+    "actual unary a",
+    "actual raw fixed-width counter vector",
+    "four binary cached powers",
+    "complete chronological candidate catalogue"
+  ],
+  "output_ABI": {
+    "catalogue": "StackOwnerLookup.records (NativeCompactWordBank.ids.zip (NativeRows.rows.map SourceHistogramRows.layout)) []",
+    "pair": "true :: frame compactID (frame rowLayout rest), one finalfalse",
+    "row": "a consecutive frame compactColour fields, NO inner vector tags",
+    "order": "ascending compact candidate IDs0..64^a\u22121; coordinate0 most significant base64 digit, EXACT literal old order",
+    "zero": "compact IDzero=[] and colourzero=[]; a0 sole pair([],[]) and catalogue[true,false,false,false]"
+  },
+  "clock": {
+    "whole_own": "10000*(a+1)*(64^a+1)",
+    "includes": "actual initialization, complete binary increments/overflow, all copies/normalizations/frames/drains/reversals/calls/halt",
+    "source_run": "Bounds.source_run_bounded / Original.source_original",
+    "old_clock_transport": false,
+    "near_linear_original_query_claim": false
+  },
+  "storage": {
+    "all30_and_real_returns": "Storage.machine_prefix_cells; \u226431*(a+runBound a+1) \u22641000000*(a+1)*(64^a+1)",
+    "genuine_input": "Storage.initial_eq/sourceInTime from Turing.initList machine unary(a)",
+    "unused_roles": "both reducer inputs retained in fixed30 and cleared; all enum/work/frame scratch counted"
+  },
+  "original_binding": {
+    "exact_byte_ABI": "NativeRows.entries_original / Original.output_original",
+    "actual_candidate_order": "Arithmetic.packed_words and NativeRows.ids_actual",
+    "all_power_values": "Original.square_value/cube_value/fourth_value/head_value",
+    "power_physical_width": "Original.power_widths, all\u226424a+1",
+    "a0": "Original.zero_case; saturated4a\u22121=0 yields ONE"
+  },
+  "strict": {
+    "modules": 19,
+    "actual_terminal_exit_code": 0,
+    "autoImplicit": false,
+    "warningAsError": true,
+    "heartbeats": 200000,
+    "per_module_heartbeat_overrides": false,
+    "logs": "source-alphabet64-strict-results.json"
+  },
+  "ordinary_import_audit": {
+    "import": "RiemannGaussian +all19",
+    "Elab.async": false,
+    "heartbeats": 200000,
+    "linters_per_module": 15,
+    "modules": 19,
+    "declarations_including_generated": 908,
+    "theorems": 530,
+    "all_generated_standard3_axioms_only": true,
+    "terminal_exit_code": 0,
+    "log": "source-alphabet64-final-audit.log",
+    "bracketed_read_only_repeat": {
+      "terminal_exit_code": 0,
+      "log": "source-alphabet64-bracketed-audit.log",
+      "all15_per_module": true,
+      "all_generated_standard3_axioms_only": true
+    }
+  },
+  "independent_objects": {
+    "count": 19,
+    "terminal_exit_code": 0,
+    "all_byte_equal": true,
+    "canonical_objects_unchanged": true,
+    "results": "source-alphabet64-independent-results.json"
+  },
+  "actual_controls": "source-alphabet64-controls-result.json",
+  "source_canonical_pins": "source-alphabet64-final-source-object-pins.json",
+  "preservation": "source-alphabet64-preservation.json",
+  "investigation": "source-selector-design.json / SourceSelectorInvestigation.lean",
+  "remaining_open": [
+    "N-only acquisition and joining actual a/rows/n/F/M/lambda",
+    "actual prefix/classifier/weighted score/choice loop",
+    "packing replay and packet constructor",
+    "whole binary-N factorization target"
+  ],
+  "live_import_preservation": {
+    "pairs": 17720,
+    "files": 35440,
+    "changed": [],
+    "missing": [],
+    "before": "source-alphabet64-live-before.json",
+    "bracketed_audit": "source-alphabet64-bracketed-audit.log",
+    "terminal_exit_code": 0
+  }
+}

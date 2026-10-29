@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "goal": "ACTIVE",
+  "slice": "ORIGINAL_SOURCE_COMPILER_OFFSET_INPUTS_DYNAMIC_CONTROL",
+  "complete_Lean_whole_program_bit_clock": "OPEN",
+  "new_controller_public_report_subpower": "PREVIOUSLY_PROVED_ACTUAL_RETAINED_REPORT",
+  "actual_original_source_coefficient": "PROVED_GENERATED_CODE_BANK_SAFE_AND_READOUT",
+  "actual_source_codegen_report": "PROVED_FIXED_POLYNOMIAL_NATIVE_SCALAR_METADATA",
+  "actual_source_coefficient_joined_report": "PROVED_FIXED_POLYNOMIAL_ORIGINAL_A_Q_R",
+  "actual_offset_initial_word_acquisition": "PROVED_ORIGINAL_NAT_PARAMETERS_NO_WORD_ADVICE",
+  "actual_offset_initializer_and_run": "PROVED_ORIGINAL_DERIVED_SAFE_FIXED_POLYNOMIAL",
+  "physical_rational_comparison": "PROVED_DIRECT_CROSS_PRODUCTS_WITH_SIGNED_ZERO_AND_TIES",
+  "physical_dynamic_choice_assignment": "PROVED_WITH_EXPLICIT_SCORE_PRODUCER_INTERFACE",
+  "original_score_producer_compiler": "OPEN",
+  "original_parity_prescription_AST_construction_bit_refinement": "OPEN",
+  "source_Nat_Rat_metadata_bit_refinement": "OPEN",
+  "source_type_label_original_input_encoding": "OPEN_COMPLETE_CALLER_COMPOSITION",
+  "selected_scan_copy_program_auxiliary_fields": "PROVED_FIXED_POLYNOMIAL_EXPLICIT_INVENTORY",
+  "outer_report_clock_erasure": "PROVED_SAME_PHYSICAL_OUTPUT_ALL_INPUTS",
+  "primitive_internal_report_erasure": "OPEN",
+  "complete_auxiliary_heap_and_pointer_encoding": "OPEN",
+  "source_all_reachable_machine_state": "OPEN",
+  "full_bit_simulation_join": "OPEN",
+  "new_simulator_functions": true,
+  "existing_public_caller_changed": false,
+  "whole_program_machine_rate_claimed": false,
+  "new_native_long_query_bound": false,
+  "subexponential_storage_allowed": true,
+  "practical_speedup_claimed": false,
+  "commit_or_push": false,
+  "module_count": 24,
+  "generated_declarations": 1183,
+  "theorem_constants": 697,
+  "strict_options": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "ordinary_root_import": true,
+  "scoped_linters_per_module": 15,
+  "all_generated_transitive_standard_axioms_only": true,
+  "isolated_objects_identical": true,
+  "dependency_checkpoint_unchanged": true,
+  "actual_compiler_imported_modules": 17634,
+  "dependency_list_provenance": "Lean environment header; no source-text import scanner",
+  "preserved_prior_files": 3245,
+  "preserved_concurrent_files": 24,
+  "preserved_append_only_prefixes": 2,
+  "modules": {
+    "SemiprimeSourceMemoryTrace": {
+      "source": "RiemannGaussian/SemiprimeSourceMemoryTrace.lean",
+      "source_sha256": "eea6b8a4a11cfe127ffe8bde0ebb86c138ea1b6d308bf5b0678ca0fe273545b9",
+      "object_sha256": "a96541390160881db449c4a33b0ca79c502d74ac3234694146b0e8e899586345",
+      "declarations": 65,
+      "theorem_constants": 30
+    },
+    "SemiprimeSourceProgramErasure": {
+      "source": "RiemannGaussian/SemiprimeSourceProgramErasure.lean",
+      "source_sha256": "aae2f357aead0906d08a2e354ca5bfc46f9cd925aeed2d1a3381a131a96815be",
+      "object_sha256": "7bb2e5ddf20639a6559208f8c6d0268f51dc3375443a7d5067217a4ecefff077",
+      "declarations": 56,
+      "theorem_constants": 30
+    },
+    "SemiprimeSourceComparisonBits": {
+      "source": "RiemannGaussian/SemiprimeSourceComparisonBits.lean",
+      "source_sha256": "ff7ec5bbcfe540ce605adc40934bf49bddf5c7ea603db23cb8ee5afa7d766cc7",
+      "object_sha256": "4e37d8a344dec3ff09222b679125f3d738a8c5f624a1d4ed1ba8cb87e3f817a1",
+      "declarations": 26,
+      "theorem_constants": 9
+    },
+    "SemiprimeSourceChoiceBits": {
+      "source": "RiemannGaussian/SemiprimeSourceChoiceBits.lean",
+      "source_sha256": "0a474f6f23af0e5db7d05e4f4c96fa69764a3f7e36526a47db853fe4ab17da37",
+      "object_sha256": "4aec165f82f9e499ec92ecc3ba9933733e14ec2ae36612843c79f2bc9a0f6f6e",
+      "declarations": 67,
+      "theorem_constants": 43
+    },
+    "SemiprimeSourceChoiceRefinement": {
+      "source": "RiemannGaussian/SemiprimeSourceChoiceRefinement.lean",
+      "source_sha256": "37ab429230c7b653d4d27ebb363c6444e3e6ec3c08177b815861f058764311d2",
+      "object_sha256": "e19ce780ffb165c9b123ece8b3c5a2848ae38b3998800e990d5dcfe187b18528",
+      "declarations": 4,
+      "theorem_constants": 4
+    },
+    "SemiprimeSourceArrayProgramIR": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayProgramIR.lean",
+      "source_sha256": "ccbf2d701a54e21eccce26d3390a199f46b183bb9376d79f47ff7f74d431b6b6",
+      "object_sha256": "7cb0506286e69805fd44275dc7d834b9f66b17dcb70245c4ed1f02c092046699",
+      "declarations": 91,
+      "theorem_constants": 55
+    },
+    "SemiprimeSourceArrayProgramBlocks": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayProgramBlocks.lean",
+      "source_sha256": "f7cc60b34b4316968467cc590f6706e031cca894fc0b6a649fe7c31675102931",
+      "object_sha256": "b91145c11b0b5a5db6d93ebdf54671690d02010066773cf9933cdd0ca9f048d4",
+      "declarations": 49,
+      "theorem_constants": 41
+    },
+    "SemiprimeSourceArrayProgramCompiler": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayProgramCompiler.lean",
+      "source_sha256": "a074225270d9cdd3d9981ef9f494f7c3c39b4564fa9bd307e421edf8fae7f475",
+      "object_sha256": "cd1800ef6d4717e2a053a203e05d8be7c98abca94783e4228b6ed050502719f8",
+      "declarations": 76,
+      "theorem_constants": 47
+    },
+    "SemiprimeSourceArrayProgramLowering": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayProgramLowering.lean",
+      "source_sha256": "0eb183c9163d9c5d51ec30186cb76aba9c30a8670254724ab009e21915b942ab",
+      "object_sha256": "fc93127a23e8a3e64edcd71dba04f70bd491ec64338622518de0cb22c254edfc",
+      "declarations": 100,
+      "theorem_constants": 56
+    },
+    "SemiprimeSourceArrayProgramSafe": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayProgramSafe.lean",
+      "source_sha256": "70c722e201edfb36d480c974cd7f7eca1c89f26ac66351d6e26bbe24d060dbcf",
+      "object_sha256": "4dd106ab8889d358fc846ae6e3fb7a4fed9d688ee2a38ddcfd471527406448fd",
+      "declarations": 32,
+      "theorem_constants": 32
+    },
+    "SemiprimeSourceArrayCompilerSafe": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayCompilerSafe.lean",
+      "source_sha256": "f05fd8d54fe8f2da2165cb4f7b50f949284f8da3f007ca3ac3f6bfecaacc7996",
+      "object_sha256": "f6b21e11200235d5a814d813a5a36cb5cd30a75e9e8888d8b1b440778b7530e4",
+      "declarations": 29,
+      "theorem_constants": 29
+    },
+    "SemiprimeSourceArrayProgramGeneration": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayProgramGeneration.lean",
+      "source_sha256": "4da28d229258653ccf71ae3900d28e3ff98367cfad73388b19cf8a8c6eb9e9f3",
+      "object_sha256": "b8adf9cf32ddc9f24d3d64fb2ea969ff60e2733a6b670f433b64e5c6c7cb3035",
+      "declarations": 224,
+      "theorem_constants": 112
+    },
+    "SemiprimeSourceArrayProgramAcquisition": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayProgramAcquisition.lean",
+      "source_sha256": "7ed3d3d807505ff2fe6de862e236ab7fa3415ec2087ce327d1003cd6bde2b5f5",
+      "object_sha256": "25b244d29f0df16909053f9659318fdf65b5dffb9bb1e71c694a569119bfaa16",
+      "declarations": 58,
+      "theorem_constants": 22
+    },
+    "SemiprimeSourceArrayProgramBits": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayProgramBits.lean",
+      "source_sha256": "8622a367d3825a693bc8a92ac29f9ac5428ffbc968e3054a6e56b8f951386dcd",
+      "object_sha256": "a6c9fad1b4e50a743365762e069049df6ec252d24de5a638dcb043f197251d3e",
+      "declarations": 55,
+      "theorem_constants": 22
+    },
+    "SemiprimeSourceInterpolationProgramBits": {
+      "source": "RiemannGaussian/SemiprimeSourceInterpolationProgramBits.lean",
+      "source_sha256": "0c7ed518c9089683c67694630ccf5428d9381ca80caa093bbc44c6cec7ff75dc",
+      "object_sha256": "c237d059d73e5fd390bbba8a1ef6d28c2e647d5f268f9b6209dabea53a71eef2",
+      "declarations": 10,
+      "theorem_constants": 8
+    },
+    "SemiprimeSourceArrayBackendBudget": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayBackendBudget.lean",
+      "source_sha256": "6613c9701c7ed6280c799a4b3a9706746ed6ce3d7345338d0a5d1221bc57b815",
+      "object_sha256": "9cb2dc528d3c68d3a1fff83d3898329f1ed45d8f2ae753c05979c2fc1a194882",
+      "declarations": 5,
+      "theorem_constants": 4
+    },
+    "SemiprimeSourceInterpolationProgramBudget": {
+      "source": "RiemannGaussian/SemiprimeSourceInterpolationProgramBudget.lean",
+      "source_sha256": "853b4e3fa965320dbeac1b307028c2fac9dfbe02a4f5993ba46e127dab75dc96",
+      "object_sha256": "6dd4fe70f2ccec708aed03dd11cf1f933bd18bb244edf5925eda36a1ee98b866",
+      "declarations": 15,
+      "theorem_constants": 10
+    },
+    "SemiprimeSourceArrayGeneratedBits": {
+      "source": "RiemannGaussian/SemiprimeSourceArrayGeneratedBits.lean",
+      "source_sha256": "17fbb429376db9ff206db82234ca8a39b67da33b314d2c0f265702936172f30b",
+      "object_sha256": "ace1be44819b5c96704cff785710e5d1c07734be609cf1d280fba5d644322e05",
+      "declarations": 12,
+      "theorem_constants": 11
+    },
+    "SemiprimeSourceInterpolationGeneratedBits": {
+      "source": "RiemannGaussian/SemiprimeSourceInterpolationGeneratedBits.lean",
+      "source_sha256": "3af7823c791fe3288a4b639426afaec31bbdea2c55d7044eba41f9112e514497",
+      "object_sha256": "3de239e59bb317b781698b4b00fe953eaaf66076297f107f0a8eef4dac34cd5d",
+      "declarations": 3,
+      "theorem_constants": 2
+    },
+    "SemiprimeSourceInterpolationGeneratedBudget": {
+      "source": "RiemannGaussian/SemiprimeSourceInterpolationGeneratedBudget.lean",
+      "source_sha256": "d6443f56e140f113a2226f289be61e5df4ddefe0319f510354d766661c2cb206",
+      "object_sha256": "3f92e33984d67151a72bedb24da92d6a0d3f2a09bf93616533bfa1ba71422e8e",
+      "declarations": 8,
+      "theorem_constants": 7
+    },
+    "SemiprimeSourceOffsetInputsCore": {
+      "source": "RiemannGaussian/SemiprimeSourceOffsetInputsCore.lean",
+      "source_sha256": "294a3220822e3f25966183a7aa997495f37cac8ce051d9e2cf6e078a92e03cc6",
+      "object_sha256": "07b696abfc6ff051a9d927b75b01cf0ece23f46e77f6c0a5a264d0f1cc06f4fd",
+      "declarations": 73,
+      "theorem_constants": 30
+    },
+    "SemiprimeSourceOffsetInputsScales": {
+      "source": "RiemannGaussian/SemiprimeSourceOffsetInputsScales.lean",
+      "source_sha256": "1ac6fac38e8fb5cd1b26081cb7ab22f556df6c3bb2e774ed3da50a7446983169",
+      "object_sha256": "c0024ce83cf9dd3f414fbb2d1cb26aedaae0f2cb17c033cbf6cdcfeacbfb9818",
+      "declarations": 45,
+      "theorem_constants": 37
+    },
+    "SemiprimeSourceOffsetInputs": {
+      "source": "RiemannGaussian/SemiprimeSourceOffsetInputs.lean",
+      "source_sha256": "5ed5d0a26881309880dfc9f434af0f3b0b60c7bd7b304400758d245243c27788",
+      "object_sha256": "b0f56539084fd4ff6516bc9283ee17a6796e9427241838ac37b35e92ada0d576",
+      "declarations": 35,
+      "theorem_constants": 16
+    },
+    "SemiprimeSourceOffsetInputsBounds": {
+      "source": "RiemannGaussian/SemiprimeSourceOffsetInputsBounds.lean",
+      "source_sha256": "2c3fb2d80625dc1dd354116903ae4ed4449484d9ae1f67f384f323f82e6accd5",
+      "object_sha256": "b663375291602e70b889c07bc66083f9dae45fa42c9126e7a2ca88b687251d6e",
+      "declarations": 45,
+      "theorem_constants": 40
+    }
+  }
+}

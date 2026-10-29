@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-six-domain-acquisition-20261026/README.md",
+      "sha256": "7f02576b9f1da50468198ba620001c547361d486ffd9e00ebc0944c2d7d482ad"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-weighted-20261026/unique-cover.md",
+      "sha256": "bc428cc2b5e91b3c0b2b848a70f49f6669f590fec851b679364db441bdfe9276"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-pole-20261026/selected-subresultant.md",
+      "sha256": "923bc7bfc5f35ed1d72d2a15896331e48711f6435e2d6eb8656568ba59b0e096"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-unique-pole-20261026/weighted-contraction.md",
+      "sha256": "75005fb73c58a97775749fd6a625848bfd90c9c9374a0d47936c83c8b90ed7a9"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/quadratic-lifts.md",
+      "sha256": "87891fa454bbc7f03b5d363931c93649ed6ac197199fb8bd643eff2544b946c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/partial-order-supplier.md",
+      "sha256": "3f4af9ad6b28a215473fca9964d51cfa32cd41bb0ace1145a4ba576f162b94ff"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-recurrence-checkpoint-20261025/evidence/semiprime-weighted-recurrence-20261024/variable-windows.md",
+      "sha256": "ec0dd0acc8af6d60c71aeaa1098865f2d86ecc4ed63c5f7e8da51c0e81dc8d4b"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "Bostan and Mori, A Simple and Fast Algorithm for Computing the N-th Term of a Linearly Recurrent Sequence",
+      "url": "https://mathexp.eu/bostan/publications/BoMo21.pdf",
+      "scope": "Constant-coefficient rational-series halving; does not establish a q-Ore extension."
+    },
+    {
+      "title": "Bostan and Schost, Polynomial evaluation and interpolation on special sets of points",
+      "url": "https://cs.uwaterloo.ca/~eschost/publications/BostanSchost.pdf",
+      "scope": "Fast conversion for supplied finite geometric data; native unit conditions remain explicit."
+    },
+    {
+      "title": "Manas, Pearson equations for discrete orthogonal polynomials III",
+      "url": "https://link.springer.com/article/10.1007/s13398-022-01296-4",
+      "scope": "Christoffel transformation context; native calculations use cleared identities and do not import nonsingular pivots."
+    },
+    {
+      "title": "Nagao and Yamada, Study of q-Garnier system by Pade method",
+      "url": "https://arxiv.org/html/1601.01099",
+      "scope": "Scalar Lax representation and special reductions; no initialized native finite-ring closure follows."
+    }
+  ],
+  "source_check": "Root reopened these four primary sources on 2026-10-26; new finite identities are derived in the reports."
+}

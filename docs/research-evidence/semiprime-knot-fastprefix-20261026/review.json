@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-26",
+  "status": "PASS (scoped derived mathematics and explicit limitations)",
+  "goal_status": "OPEN; no sixth-exponent algorithm or exponent improvement",
+  "independent_reviews": [
+    "native-review.md",
+    "unit-pattern-review.md"
+  ],
+  "proved_scope": [
+    "Actual shortest virtual witness has content dividing public k; coverage-preserving subcatalogue",
+    "Exact finite content descent and paid old whole-family query cost",
+    "Initialized symmetric Bezout transfer; full-rank divided-difference boundary excludes only the stated shortcut",
+    "Exact symmetric-power Seifert determinant for the odd-stride prefix",
+    "T(2,4) base acyclicity with unit torsion 2^m and explicit commutator-axis spectrum",
+    "Finite normalized matrix det Z_m=2^m P_m^2, including collision zeros",
+    "Generic based-field infection interpretation, distinguished from singular raw-minor identification"
+  ],
+  "validation": [
+    {
+      "script": "check_boundary.py",
+      "result": "boundary-validation.txt",
+      "checks": "700 exact transfer steps and 70 determinant/adjoint checks",
+      "scope": "Composite-ring convention check; not coverage or complexity evidence"
+    },
+    {
+      "script": "check_unit_pattern.py",
+      "result": "unit-pattern-validation.txt",
+      "checks": "Exact Laurent-polynomial Fox algebra and three genus-one Seifert examples",
+      "scope": "Block algebra; no raw infection diagram or singular chain reduction"
+    }
+  ],
+  "preservation": {
+    "protected_prior_files": 655,
+    "journal_and_guide_prefixes": 2,
+    "result": "unchanged; checked before and after archive"
+  },
+  "limitations": [
+    "No additive soft O(J+sqrt(m)) prefix evaluator; full query remains soft O(k^(5/4))",
+    "No acquired raw infection Fox minor and full unit-pivot reduction at singular composite-ring inputs",
+    "No general algorithmic lower bound",
+    "External fulltexts excluded; source theorem scopes recorded in reports",
+    "No Lean/public assets, commit or push; concurrent engineering files untouched"
+  ]
+}

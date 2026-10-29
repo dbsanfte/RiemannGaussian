@@ -1,0 +1,141 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 5,
+    "declarations": 74,
+    "theorems": 51
+  },
+  "modules": {
+    "SemiprimeD1StackPublicScaleTable": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicScaleTable.lean",
+        "sha256": "1ade26d282877574a7331d32d96514941b0d096fb491c1899dd2ce6e413b56d2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicScaleTable.olean",
+        "sha256": "04ce42e2b67e92dd983db3d417ff8d7c604b20ba50ee88632da4f11016b029b9"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/scale-table-frozen/SemiprimeD1StackPublicScaleTable.olean",
+        "sha256": "04ce42e2b67e92dd983db3d417ff8d7c604b20ba50ee88632da4f11016b029b9"
+      }
+    },
+    "SemiprimeD1StackPublicScaleTableTrace": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicScaleTableTrace.lean",
+        "sha256": "ffb494fb9d1795c137a7717eae97162445417c97e1594cb600903b24829d0353"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicScaleTableTrace.olean",
+        "sha256": "5350ea5d6d189346afd39aa9ec28d7d46ad0f3d31c327b8a3d2a213d9834f451"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/scale-table-frozen/SemiprimeD1StackPublicScaleTableTrace.olean",
+        "sha256": "5350ea5d6d189346afd39aa9ec28d7d46ad0f3d31c327b8a3d2a213d9834f451"
+      }
+    },
+    "SemiprimeD1StackPublicScaleTableExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicScaleTableExecution.lean",
+        "sha256": "74f61682be3977f93c93281499efaea546eb4a8a5cab8570fb7bf29f120c3e18"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicScaleTableExecution.olean",
+        "sha256": "77e6ab7867016b1de88eb5ba4b7ebc2c1f59207a211a38ad5c7c8140a868bd65"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/scale-table-frozen/SemiprimeD1StackPublicScaleTableExecution.olean",
+        "sha256": "77e6ab7867016b1de88eb5ba4b7ebc2c1f59207a211a38ad5c7c8140a868bd65"
+      }
+    },
+    "SemiprimeD1StackPublicScaleTableBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicScaleTableBounds.lean",
+        "sha256": "fc73e457b8d0eb2f6b94bce4d4261c2f509bc0e0915f03e7afd74035f73db1bd"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicScaleTableBounds.olean",
+        "sha256": "b01a7a6809b61c777a0ea2a44ba4017b0f4f0043eebb2016a6784fa630f19c0b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/scale-table-frozen/SemiprimeD1StackPublicScaleTableBounds.olean",
+        "sha256": "b01a7a6809b61c777a0ea2a44ba4017b0f4f0043eebb2016a6784fa630f19c0b"
+      }
+    },
+    "SemiprimeD1StackPublicScaleTableOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPublicScaleTableOriginal.lean",
+        "sha256": "a4091dc5f56ef2c1b7850967ef05904552d46e679ada073ad4d73e11e8211eeb"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPublicScaleTableOriginal.olean",
+        "sha256": "1f368b24c0925467f2edeb396489a2fa8568586eaa89f5fbba170c8207743cfe"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/scale-table-frozen/SemiprimeD1StackPublicScaleTableOriginal.olean",
+        "sha256": "1f368b24c0925467f2edeb396489a2fa8568586eaa89f5fbba170c8207743cfe"
+      }
+    }
+  },
+  "controls": [
+    {
+      "scope": "PREPARED_INNER_COMPILER_LEAF_NOT_N_ONLY_SOURCE",
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/ScaleTablePreparedControls.lean",
+        "sha256": "90a510404931a3f601076f4c07434a0319e2c73c6cdecc8674935ac08ba47cda"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/scale-table-prepared-controls.log",
+        "sha256": "062e0770354f5ec11972a05f20f01d98d577041713f7a60d90531cbbc254f665"
+      },
+      "expected": "PREPARED_LEAF_PASS inverse=false actual_transitions=3599 table_bytes=4 all332roles=true checker160clear=true original_N_j_k_selector_bank_prefix_retained=true flags_clear=true exact_outer_return_retained=true\nPREPARED_LEAF_PASS inverse=true actual_transitions=3773 table_bytes=4 all332roles=true checker160clear=true original_N_j_k_selector_bank_prefix_retained=true flags_clear=true exact_outer_return_retained=true\nSNAPSHOT_CONTROL_AXIOMS constants=25 standard3_only=true snapshot_identity_kernel_checked=true all332physicalroles_and_actualreturns=true",
+      "all_roles_and_exact_actual_outer_return_checked": true,
+      "observer_all_generated_standard3_constants": 25,
+      "kernel_snapshot_identity": true
+    },
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/ScaleTableControls.lean",
+        "sha256": "572458aeaa77130f20d3516502b1e998cbbe6e32c9d1143d42e22b8e984ebe85"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/scale-table-controls.log",
+        "sha256": "4cce91881331bfa0e19cd8f717ec3494a693654a6d004c171c1698c7794ab122"
+      },
+      "scope": "FULL_SOURCE_ORIGINAL_N1_PHYSICAL_J0_K0_FLAGS_SCOPE0",
+      "expected": "FULL_SOURCE_PASS case=forward_j0_k0_empty_scope actual_transitions=9165 physically_counted_scope=0 table_bytes=6 all332roles=true checker160clear=true original_N_j_k_selector_scope_retained=true count_restored=true flags_clear=true outer_return_retained=true\nFULL_SOURCE_PASS case=inverse_j0_k0_empty_scope actual_transitions=9339 physically_counted_scope=0 table_bytes=6 all332roles=true checker160clear=true original_N_j_k_selector_scope_retained=true count_restored=true flags_clear=true outer_return_retained=true\nSNAPSHOT_CONTROL_AXIOMS constants=20 standard3_only=true full_source_only_N_index_scope=true snapshot_identity_kernel_checked=true",
+      "all_generated_observer_standard3_constants": 20,
+      "kernel_snapshot_identity": true
+    }
+  ],
+  "full_goal_complete": false,
+  "actual_imported_pins": {
+    "count": 18204,
+    "file_count": 36408,
+    "unchanged": true,
+    "before": "/tmp/semiprime-explicit-rate-20261027/scale-table-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/scale-table-dependencies/imported-pins-after.json"
+  },
+  "writers_stopped": true,
+  "prior_owned_frozen_preserved": "/tmp/semiprime-explicit-rate-20261027/carry-scale-transform-prior-owned-preserved.json",
+  "completed_full_observation": {
+    "source": "/tmp/semiprime-explicit-rate-20261027/ScaleTableControls.lean",
+    "source_sha256": "572458aeaa77130f20d3516502b1e998cbbe6e32c9d1143d42e22b8e984ebe85",
+    "status": "COMPLETED_EXIT0",
+    "pid": 111569,
+    "session": 75067,
+    "log": "/tmp/semiprime-explicit-rate-20261027/scale-table-controls.log",
+    "actual_transitions": [
+      9165,
+      9339
+    ],
+    "all332_data_roles": true,
+    "outer_return_check": "length_one_in_full_source_controls; exact_label_checked_in_both_prepared_controls",
+    "log_sha256": "4cce91881331bfa0e19cd8f717ec3494a693654a6d004c171c1698c7794ab122"
+  }
+}

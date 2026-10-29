@@ -1,0 +1,184 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 8,
+    "declarations": 343,
+    "theorems": 168
+  },
+  "modules": {
+    "SemiprimeD1StackPackedRootMetadata": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadata.lean",
+        "sha256": "ade47f673e5daefaf1ccab000036ef67839a8ae3b737a78581bec1e57efd1f47"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootMetadata.olean",
+        "sha256": "219ac10d277190cb4bc3dcba9d258dccc393103f462a2d7559b7a66d5e0dbc49"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/SemiprimeD1StackPackedRootMetadata.olean",
+        "sha256": "219ac10d277190cb4bc3dcba9d258dccc393103f462a2d7559b7a66d5e0dbc49"
+      }
+    },
+    "SemiprimeD1StackPackedRootMetadataEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataEncoding.lean",
+        "sha256": "ea33835d0d4910f623e2dddd7a95bf32ecb24e32d05154b336f06d479bfc6367"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootMetadataEncoding.olean",
+        "sha256": "cfc3efe9b7b8c3ce5b80d598731bef69c61ffd218ef0dddaa254b58ddff95877"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/SemiprimeD1StackPackedRootMetadataEncoding.olean",
+        "sha256": "cfc3efe9b7b8c3ce5b80d598731bef69c61ffd218ef0dddaa254b58ddff95877"
+      }
+    },
+    "SemiprimeD1StackPackedRootMetadataPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataPrimitives.lean",
+        "sha256": "2760477777c63e2886eecd8be755256ce5af3f0f2f301423731b4b4dee7dd848"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootMetadataPrimitives.olean",
+        "sha256": "5fb4b2faeedd8ce000964cba2879d112bd4b0e1437803c806d6b460799cdae25"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/SemiprimeD1StackPackedRootMetadataPrimitives.olean",
+        "sha256": "5fb4b2faeedd8ce000964cba2879d112bd4b0e1437803c806d6b460799cdae25"
+      }
+    },
+    "SemiprimeD1StackPackedRootMetadataCalls": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataCalls.lean",
+        "sha256": "e4ff163c8faca3e7083b58b28efae2275d6595fed8bbc59ec23ebf7bd7c287d2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootMetadataCalls.olean",
+        "sha256": "25bbfd3d26373344effb95d25e78984653d2e7badf4ac308248c7fa7816a5c38"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/SemiprimeD1StackPackedRootMetadataCalls.olean",
+        "sha256": "25bbfd3d26373344effb95d25e78984653d2e7badf4ac308248c7fa7816a5c38"
+      }
+    },
+    "SemiprimeD1StackPackedRootMetadataLoop": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataLoop.lean",
+        "sha256": "1fa8522f6fb579e1e43c47d0045157cdc31cdbb1a2406dc3f492c25bca1ebb1a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootMetadataLoop.olean",
+        "sha256": "05c35007ced0b7c01ba1bdcaa307c4479cd7824b49b1fb4d1b9ce1696b88bdf1"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/SemiprimeD1StackPackedRootMetadataLoop.olean",
+        "sha256": "05c35007ced0b7c01ba1bdcaa307c4479cd7824b49b1fb4d1b9ce1696b88bdf1"
+      }
+    },
+    "SemiprimeD1StackPackedRootMetadataExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataExecution.lean",
+        "sha256": "4825933a3a0b8585d5bbc4aa5b5e0b30039fc5207660dc077bca5b16833ab142"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootMetadataExecution.olean",
+        "sha256": "e1d8918b38320762fe60030addf45b51874056a0bfe9f1e0aff07687a22caccb"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/SemiprimeD1StackPackedRootMetadataExecution.olean",
+        "sha256": "e1d8918b38320762fe60030addf45b51874056a0bfe9f1e0aff07687a22caccb"
+      }
+    },
+    "SemiprimeD1StackPackedRootMetadataStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataStorage.lean",
+        "sha256": "f56ba642e316e7d77242f9d6c164238ff074a67c37716342742bf2a057964f06"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootMetadataStorage.olean",
+        "sha256": "58c69e45c638137a3a536395d7ddf84d6c4784388b041c7749e06935d0b92f93"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/SemiprimeD1StackPackedRootMetadataStorage.olean",
+        "sha256": "58c69e45c638137a3a536395d7ddf84d6c4784388b041c7749e06935d0b92f93"
+      }
+    },
+    "SemiprimeD1StackPackedRootMetadataOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPackedRootMetadataOriginal.lean",
+        "sha256": "de4a869cc74fda2cdc8f0436479a07a807d9cb2b149eaeda18f43fe959a86476"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPackedRootMetadataOriginal.olean",
+        "sha256": "29db7edd44d85f01d2e41cf123cd0dd417f465104a0c9227c9b67b0aea0f7cfd"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/SemiprimeD1StackPackedRootMetadataOriginal.olean",
+        "sha256": "29db7edd44d85f01d2e41cf123cd0dd417f465104a0c9227c9b67b0aea0f7cfd"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/PackedRootMetadataControls.lean",
+        "sha256": "cddcd3e08e4f8334c68b0d8a07c3e3d1aae9c7e9db8cb40de2cda6f66badf271"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-frozen/control-0.log",
+        "sha256": "f83531cc2c988974c378f6b4e56ef912d592a59faaf8739b671bbf152fb6bc99"
+      },
+      "expected": "PACKED_ROOT_META_INPUT bytes=0 actual_transitions=12 all13=true bootstrap_calls=1 real_adds=0 copies=1 false_width_writes=0 within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_META_INPUT bytes=1 actual_transitions=61 all13=true bootstrap_calls=1 real_adds=1 copies=2 false_width_writes=2 within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_META_INPUT bytes=2 actual_transitions=118 all13=true bootstrap_calls=1 real_adds=2 copies=3 false_width_writes=4 within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_META_INPUT bytes=3 actual_transitions=178 all13=true bootstrap_calls=1 real_adds=3 copies=4 false_width_writes=6 within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_META_INPUT bytes=3 actual_transitions=178 all13=true bootstrap_calls=1 real_adds=3 copies=4 false_width_writes=6 within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_META_INPUT bytes=5 actual_transitions=317 all13=true bootstrap_calls=1 real_adds=5 copies=6 false_width_writes=10 within_own_clock=true flags_clear=true two_outer_returns=true\nPACKED_ROOT_META_CONTROLS cases=6 actual_transitions=864 all13=true whole_input_words_only=true no_supplied_length_precision_base=true original_and_full_boot_retained=true private_shadow_clear=true flags_clear=true two_real_outer_returns=true\nPACKED_ROOT_META_OBSERVER declarations=31 standard3_only=true"
+    }
+  ],
+  "full_goal_complete": false,
+  "source_canonical_writers_stopped": true,
+  "immutable_read_only": true,
+  "heartbeat": 200000,
+  "raised_heartbeats": false,
+  "strict_final_gate_actual_terminal0": 78309,
+  "actual_imported_pins": {
+    "pairs": 17459,
+    "before": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-live-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-live-after.json",
+    "before_after_live_unchanged": true
+  },
+  "independent_review": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-independent-review.txt",
+    "sha256": "17e0df1e9c5cd7b30311999049bf88adb8d3dc0acb7622ae09ee0803477b7915",
+    "current_source_pins": 8,
+    "status": "PASS"
+  },
+  "source_scope": "Original physical binaryN ONLY; whole realBootstrap4+readylink+actualwidthcopy+permarkerrealAdder2/copy/drain/literalbase+templatewrites+halt. SAME acquiredBootstrapreadyentry separatelyproved. All13 actualwords+shadow+realreturns counted",
+  "outputs": "originalN+ENTIREactualBootstrap4 retained; exactbinaryprecision2ell, binarybase2^ell, FALSEtemplate2ell; allprivate/shadowwordsEMPTY. Compact originalinput provesgoalbitLengthlineage.",
+  "whole_own_clock": "1000*(physicalinputbytes+1)^2",
+  "all13_and_actual_returns_every_prefix": "100000*(physicalinputbytes+1)^2",
+  "actual_whole_controls": {
+    "cases": 6,
+    "steps": 864,
+    "observer_Std3": 31,
+    "stale_flags_and_two_real_outer_returns": true,
+    "actual_calls_and_two_widthwrites_per_bit": true,
+    "only_original_input_words": true,
+    "ready_controls_not_claimed": true
+  },
+  "public_APIs": [
+    "Execution.source_run/source_run_bounded/ready_run_bounded",
+    "Original.source_original/metadata_original/machineOriginal/original_prefix_cells",
+    "Storage.initial_eq/machine_prefix_cells"
+  ],
+  "not_claimed": [
+    "FALSEwidthtemplate is NOT a TRUE contextwidthcache",
+    "No replacement of old literalrootp2 cache",
+    "No generic actualrootctx/counterinstall or fullfactorer/fullbitbound"
+  ],
+  "failed_attempts_archived": "/tmp/semiprime-explicit-rate-20261027/packed-root-metadata-failed-attempts",
+  "utc": "2026-10-29T00:53:55.210172+00:00",
+  "no_journal_registration_commit_push": true
+}

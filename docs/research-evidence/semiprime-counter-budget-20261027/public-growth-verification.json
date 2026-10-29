@@ -1,0 +1,19 @@
+{
+  "module": "RiemannGaussian.SemiprimePublicReportGrowth",
+  "paths": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimePublicReportGrowth.lean",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimePublicReportGrowth.olean",
+    "isolated": "/tmp/semiprime-counter-budget-20261027/SemiprimePublicReportGrowth.olean"
+  },
+  "sha256": {
+    "source": "c112750e3137d50d0a2c5bf72e939e60deddcd6a373e0bb83bfedc9cbcb4ae25",
+    "canonical": "c7708ee631b5802e2feb807c1f283ccd870aa35d47086e14b62969c31d8f7817",
+    "isolated": "c7708ee631b5802e2feb807c1f283ccd870aa35d47086e14b62969c31d8f7817"
+  },
+  "strict": true,
+  "isolated_equal": true,
+  "ordinary_root_linters": 15,
+  "generated_declarations": 2,
+  "theorem_constants": 2,
+  "standard_axioms_only": true
+}

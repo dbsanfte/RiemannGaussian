@@ -1,0 +1,49 @@
+{
+  "scope": "FP32-rounded math.exp simulator, CUDA source fixed256-thread tree and division order; NOT actual CUDA fast-math evaluator/ISA result",
+  "logits": "FP32(-i/100), i=0..511",
+  "selected_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "full_sum": 99.90023803710938,
+  "selected_full_probability_sum": 0.09573470056056976,
+  "selected_exp_sum": 9.563919067382812,
+  "different_positions": [
+    2,
+    3,
+    4,
+    7
+  ],
+  "full_softmax_then_renorm": [
+    "5e23d63d",
+    "e801d43d",
+    "dee5d13d",
+    "35cfcf3d",
+    "debdcd3d",
+    "ccb1cb3d",
+    "f0aac93d",
+    "3da9c73d",
+    "a7acc53d",
+    "21b5c33d"
+  ],
+  "selected_only_softmax": [
+    "5e23d63d",
+    "e801d43d",
+    "dfe5d13d",
+    "36cfcf3d",
+    "dfbdcd3d",
+    "ccb1cb3d",
+    "f0aac93d",
+    "3ea9c73d",
+    "a7acc53d",
+    "21b5c33d"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26",
+  "algorithm": "sha256",
+  "excludes": [
+    "manifest.json"
+  ],
+  "files": {
+    "README.md": "629fcfae90306b2280a5a967f01090b1a21cbde90901569061d0697773f1d448",
+    "archive-provenance.json": "4f4e0b5b75ab8e83411ee0fbf0ad6e03224849ad98b6e764544ac2dd5bf983b3",
+    "qdifference-contraction.md": "26a367baae272401223bc0a44589689deaeac74267c5b8dfe871a85f31dd60e8",
+    "review-full-clock-certificate.md": "068982cc436587b02d6d2afa3a9e407135c3e845129758a7d30cd41ceae9c49f",
+    "review-qdifference-contraction.md": "6a1b7f8803f774a7a539680f90e51d4b3b8d4117e393cc31537268414c3cc6db",
+    "review-selected-condensation.md": "772f87e9345a351d2c9e60a7556cb516c411515bb239c26277c34287aee675d7",
+    "review-singular-pairing.md": "040119e3da6b94be9df13c2bbb4ac8e63b14c614bf52570a50c3e507854b1071",
+    "review.json": "fbaa516865fa0106b1bef5070fb3c7439c87c557ab1be6c0fcf8f7d6e430c169",
+    "selected-condensation.md": "194f97928daa9fa5eb11e57d9ef96b1837466f3651f169611983a308953239d8",
+    "singular-pairing.md": "0b6f877ec7a82a58ac5686ac27d213cf95db4f2e2ba5ccfeaf474dd960e1b9cd",
+    "sources.json": "ee82b8661d666bcab22cc662c2f43725f40adf810c3f68c23427c4d89585d621"
+  }
+}

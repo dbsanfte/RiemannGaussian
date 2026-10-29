@@ -1,0 +1,53 @@
+{
+  "checked_date": "2026-10-26",
+  "external_fulltexts_archived": false,
+  "sources": [
+    {
+      "id": "Nekrasov2015",
+      "title": "BPS/CFT correspondence: non-perturbative Dyson-Schwinger equations and qq-characters",
+      "url": "https://arxiv.org/html/1512.05388",
+      "checked": "Finite boundary observables in equations (127), (128), and (198); bibliographic version v2 checked on arXiv.",
+      "scope": "Motivation for a finite rectangle identity, derived directly in corner-query.md. No gauge-theory expectation or general factoring algorithm is imported."
+    },
+    {
+      "id": "BeckHaaseMatthews2008",
+      "title": "Dedekind-Carlitz Polynomials as Lattice-Point Enumerators in Rational Polyhedra",
+      "url": "https://arxiv.org/abs/0710.1323",
+      "checked": "Primary paper revisited for Carlitz reciprocity and rational-cone generating functions; prior journal audit retained.",
+      "scope": "Prior credit for additive lattice-point generating functions. No multiplicative-product scalar acquisition theorem is claimed."
+    }
+  ],
+  "internal_inputs": [
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-shiftcoverage-20261026/README.md",
+      "bytes": 6359,
+      "sha256": "11d64b61039307bc0c88551e888626baa86839e9ec211b08d0ef0d987a8bc295"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-shiftcoverage-20261026/dense-box-coverage.md",
+      "bytes": 10495,
+      "sha256": "f04a215ab40e21ed38c4291e971fa3b65312b3867154da4faf6ed04bf41d08c5"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-shiftcoverage-20261026/christoffel-products.md",
+      "bytes": 11196,
+      "sha256": "932844da7d1f7608fd5d46798036ba4dd32ab196a5404430b7b9c7a39c9d449d"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-trace-20261026/trace-recurrence.md",
+      "bytes": 14978,
+      "sha256": "5f2e5f20ee433389e6d0cc93a109b2809e40f4b7dbb9bee3af3ed5e80f202343"
+    },
+    {
+      "path_from_formal": "docs/research-evidence/semiprime-knot-trace-20261026/farey-query.md",
+      "bytes": 18396,
+      "sha256": "0d70ff85ded98e6f7ef7cd9392267ae85abf2634ab9ed05cb44039ca00db85d4"
+    },
+    {
+      "path_from_formal": "docs/semiprime-string-theory-research-proposal.md",
+      "bytes": 18615,
+      "sha256": "7ef81200148f3774e3ef03d0510202cc9efe42cf044f760bbbda257ea855de93"
+    }
+  ],
+  "prior_credit": "Weighted rectangle coverage, stationary colour phases, exact Gauss reduction, monic geometric-product evaluation and the short-annihilator extractor are inherited. The concurrent string-theory proposal was read without modification."
+}

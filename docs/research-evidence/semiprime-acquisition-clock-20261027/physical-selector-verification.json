@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "SemiprimeRowSelectionBitArithmetic",
+      "strict": true,
+      "isolated_object_identical": true,
+      "source_sha256": "b2b5da24bb4584863ce1f33804c94e3eacdc75704442958e5dfb29071673df9f",
+      "object_sha256": "235299ae93ff20814df6ed01e5ab57eb2fd2a493c7d9424442707a409454a630"
+    },
+    {
+      "module": "SemiprimeRowSelectionBits",
+      "strict": true,
+      "isolated_object_identical": true,
+      "source_sha256": "a14df61200083aef10a7e6c83d3a4db89a8044c332f466fac00bd5cc589d887d",
+      "object_sha256": "e2843b41d51b5952b1a6cf191b760a29167e91ea5171885a47902a3ea8c1f231"
+    }
+  ],
+  "generated_declarations": 266,
+  "theorem_constants": 145,
+  "root_scoped_linters": 15,
+  "standard_axioms_only": true,
+  "whole_word_loop_executes": true,
+  "smoke_outputs": [
+    "([1], 35391231, [1])",
+    "some 1",
+    "([], 32, 0)"
+  ],
+  "smokes_are_scaling_evidence": false,
+  "literal_tape_address_clock": "OPEN",
+  "input_and_template_acquisition": "SEPARATE",
+  "full_counter_design_join": "OPEN"
+}

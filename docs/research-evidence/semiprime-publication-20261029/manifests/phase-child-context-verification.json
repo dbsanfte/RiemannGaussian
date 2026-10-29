@@ -1,0 +1,194 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 8,
+    "declarations": 260,
+    "theorems": 137
+  },
+  "modules": {
+    "SemiprimeD1StackPhaseChildContext": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseChildContext.lean",
+        "sha256": "8ee7841ac2a5e95d5a7fc8fc7f406bb4b8a6cb0744a8aee917b226e34057c2c4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseChildContext.olean",
+        "sha256": "b09131e2230d439eadb7eb7faa9491e1c49127c962e417581defc8a7fc4810d1"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-frozen/SemiprimeD1StackPhaseChildContext.olean",
+        "sha256": "b09131e2230d439eadb7eb7faa9491e1c49127c962e417581defc8a7fc4810d1"
+      }
+    },
+    "SemiprimeD1StackPhaseChildContextPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseChildContextPrimitives.lean",
+        "sha256": "996c88ea378c5ea6e20a448425cc79fa388067da3bc05dd4b944015d8d0f2447"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseChildContextPrimitives.olean",
+        "sha256": "497eb2f4b91771db0308f525ff6a69ab33a8c31ddb886f90ca7fdbfa25b2751b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-frozen/SemiprimeD1StackPhaseChildContextPrimitives.olean",
+        "sha256": "497eb2f4b91771db0308f525ff6a69ab33a8c31ddb886f90ca7fdbfa25b2751b"
+      }
+    },
+    "SemiprimeD1StackPhaseChildContextArithmetic": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseChildContextArithmetic.lean",
+        "sha256": "6989969544ecadee030e1bce0ebc71d1e108af13d3b103f1ab72ec228ca0484c"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseChildContextArithmetic.olean",
+        "sha256": "683db9e046cae412f36dcd26e8828e431bb7402df5bcfba54d782c40e9a4be1e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-frozen/SemiprimeD1StackPhaseChildContextArithmetic.olean",
+        "sha256": "683db9e046cae412f36dcd26e8828e431bb7402df5bcfba54d782c40e9a4be1e"
+      }
+    },
+    "SemiprimeD1StackPhaseChildContextSteps": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseChildContextSteps.lean",
+        "sha256": "be863c8ec91b492b36088537b8ec319cbffcaf7983165be86c783cae9cccce66"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseChildContextSteps.olean",
+        "sha256": "8d6acf3f04756f7a8569ab7eadb9f50908308d8f19ce8ad8c9cf717708534b9b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-frozen/SemiprimeD1StackPhaseChildContextSteps.olean",
+        "sha256": "8d6acf3f04756f7a8569ab7eadb9f50908308d8f19ce8ad8c9cf717708534b9b"
+      }
+    },
+    "SemiprimeD1StackPhaseChildContextComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseChildContextComponents.lean",
+        "sha256": "6a39cf671904f57dc815f0718999ee527af7834185ddeeafd5f18abaeedbdb97"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseChildContextComponents.olean",
+        "sha256": "2b0a206a6611f12be34058ebf7cebfef920d0048654b534de2a5e60604cf11c5"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-frozen/SemiprimeD1StackPhaseChildContextComponents.olean",
+        "sha256": "2b0a206a6611f12be34058ebf7cebfef920d0048654b534de2a5e60604cf11c5"
+      }
+    },
+    "SemiprimeD1StackPhaseChildContextExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseChildContextExecution.lean",
+        "sha256": "8a455a6c6e2b8bf463a02870dc0bb1c4ba24488e53fa0f9eafc2ed2f75913543"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseChildContextExecution.olean",
+        "sha256": "9bb85fec08238d08d27e349a6b8a450ad7f298e9e7ec5552041a248ec5f65466"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-frozen/SemiprimeD1StackPhaseChildContextExecution.olean",
+        "sha256": "9bb85fec08238d08d27e349a6b8a450ad7f298e9e7ec5552041a248ec5f65466"
+      }
+    },
+    "SemiprimeD1StackPhaseChildContextBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseChildContextBounds.lean",
+        "sha256": "5a620d6786bc800260e9d1867cf65040f8dadb2597877b74ecee673836b40c3a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseChildContextBounds.olean",
+        "sha256": "07a4323f440d0ee1f8b347f429fe7ae1b7402d06a7ab500c9286bfa00edf84c6"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-frozen/SemiprimeD1StackPhaseChildContextBounds.olean",
+        "sha256": "07a4323f440d0ee1f8b347f429fe7ae1b7402d06a7ab500c9286bfa00edf84c6"
+      }
+    },
+    "SemiprimeD1StackPhaseChildContextOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackPhaseChildContextOriginal.lean",
+        "sha256": "0c5d18eb34de822971156bdfb408d353ede15175250431e5c6013e0bdaf9a4ff"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackPhaseChildContextOriginal.olean",
+        "sha256": "20677b96b5b136720df9d1b6517d126d6213a67fda8239c2a9c32971685116be"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-frozen/SemiprimeD1StackPhaseChildContextOriginal.olean",
+        "sha256": "20677b96b5b136720df9d1b6517d126d6213a67fda8239c2a9c32971685116be"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "source_and_canonical_writers_stopped": true,
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 17687,
+    "files": 35374,
+    "before": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-dependencies/imported-pins-after.json"
+  },
+  "prior_owned_frozen_files": {
+    "status": "PASS",
+    "groups": {
+      "static-input-table": 34,
+      "port-ordinal": 10,
+      "boundary-record": 10,
+      "product-table-original": 2,
+      "product-record": 10,
+      "carry-table": 10,
+      "scale-table": 10,
+      "transform-table": 10,
+      "carry-record": 10,
+      "scale-record": 10,
+      "transform-record": 10,
+      "root-schedule": 20,
+      "root-scale-leaf": 22,
+      "phase-geometry": 20,
+      "phase-geometry-guard": 12,
+      "phase-working-metadata": 18,
+      "phase-working-precision": 20
+    },
+    "total_source_object_files": 239
+  },
+  "actual_controls": {
+    "status": "PASS",
+    "cases": 8,
+    "actual_primitive_steps": 13869,
+    "all_roles": 80,
+    "observer_constants": 21,
+    "source": "/tmp/semiprime-explicit-rate-20261027/PhaseChildContextControls.lean",
+    "source_sha256": "817d53e9959705ce60d16c4bdcbe2c72ce380f2c3e063d2f1aa424613ec1cbed",
+    "log": "/tmp/semiprime-explicit-rate-20261027/phase-child-context-controls.log",
+    "log_sha256": "dd46f3fc5a67139776196f8a5047bbe1262b18a5b9d3d4db349d2b428331435d"
+  },
+  "scope": {
+    "runtime_roles": 80,
+    "program": "parameterless fixed finite source",
+    "inputs": "actual unary a/u/M, original BINARY t/p and original UNARY-axes header ONLY",
+    "whole": "real frozenP48; physicalguard/qpeeks; paidoldprecisioncopy; REALoldJetContext; paidheadercopy+REALFrameactualunaryq+cons; paidBINARYPcopy; REALnewJetContext; explicittrueflag",
+    "ready": "sameprogram guard entry on ACTUALLY acquired P48 cache; no phase/geometry/P rerun; old/new contexts still selfacquired",
+    "outputs": "all48phasecache retained; oldcontext actualrank/width; newaxes q::oldaxes, BINARYP, actualunaryrank q*oldrank and unarywidth P VALUE; allhelpersclear",
+    "reject": "explicitfalseflag; all15newcontextfieldsEMPTY; oldoriginalheader retained, no oldrank/width/precisionacquisition",
+    "exact_original": "FreshJetBits.context +originalModeRateworkingPrecision/orderFuel/q, ALLoriginalgrid phases u<=M and positiveoldaxes",
+    "frontier": "header/contextcache stage ONLY; physical FreshJetBits.acquireFresh coefficient-vector stage remains in progress; full factoring open"
+  },
+  "clocks": {
+    "resource": "inputbytes+oldJetContext.resource(axes,p)+newJetContext.resource(q::axes,Pword)+q+10; explicitly includes both rank VALUES and precision VALUES",
+    "ready": "1000000*(resource+1)^2",
+    "whole": "1000000000000000*(resource+1)^4",
+    "all80_plus_actual_returns": "1000000000000000000*(resource+1)^4"
+  },
+  "baseline_protected_files": {
+    "status": "PASS",
+    "protected_files": 17054,
+    "baseline": "/tmp/semiprime-explicit-rate-20261027/resumed-preservation-before.json",
+    "all_current_bytes_match": true
+  }
+}

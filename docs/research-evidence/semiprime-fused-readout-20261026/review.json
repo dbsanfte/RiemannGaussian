@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-26",
+  "classification": "Uniform whole-bin common-tag residue target and executed finite quadratic-phase contraction; no query exponent gain",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft K^(5/4) weighted query; monic alternative remains soft K^(3/2)",
+  "new_evidence": [
+    "Original-source audit licenses the full signed weighted bank with pure K=2*3^e, with rebuilt preparation and actual short clocks.",
+    "Every good-bin hit, including all contents and axes, has one common tag modulo 3^ceil(e/2); one additive simple-pole pair per bin suffices for soft-K validation/recovery.",
+    "Completed pure-bank baseline acquires actual pairs from all row values and norm/coordinate flags without separated roots, Hasse-depth search, saturated-leaf localization or T_ext.",
+    "Exact true-child finite difference cancels the higher quotient digit, reducing matched phase classes from g^2 to g; the stronger prerequisite is withdrawn.",
+    "Parity-correct quadratic lift phases can be completed to all valid colours in total soft K; paid endpoint gates permit canonical carries to be removed for predicates/residues.",
+    "Complete quadratic square strata concatenate each phase-by-clock rectangle into one actual GP string with known multiplicity, boundaries and tag; batched execution retains soft K^(5/4). Primitive nonaxis and separate axes still require faster acquisition.",
+    "Explicit soft-B Toeplitz eigenbasis gives actual Cauchy coefficient representation. Executed dual Sylvester and linked-generator trace methods retain matched RHS and cost J(B+M)."
+  ],
+  "remaining": "Acquire the short whole-bin common-tag residue pairs, or another sufficient correctly marked statistic, in total soft K; full all-semiprime recovery and bit-complexity proof remain required.",
+  "reviews": [
+    "review-residue.md",
+    "review-hierarchy.md",
+    "review-pure-weighted.md",
+    "review-quadratic.md",
+    "review-trace.md"
+  ],
+  "validation": {
+    "mathematical": "Five independent paper reviews and root audit; canonical carries, physical endpoint normalization, fixed-J linear extension, supplied-weight scope and separate-axis costs integrated. Original weighted/supplier sources read. Not Lean.",
+    "status": "pass",
+    "local_links_checked": 23,
+    "source_pins_checked": 15,
+    "git_diff_check": true,
+    "json_and_whitespace": true,
+    "preservation_hashes": true
+  },
+  "preservation": {
+    "protected_files_verified": 986,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1560289,
+        "sha256": "ea4377cab589411caa5e0707692e0540d5e0907125b3cad06f739fd7bfd5c1c3"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2456005,
+        "sha256": "500244c85a2591a11b1ae7b076c81c7e6530c9c5619a48674888c09e3aac4463"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "5ba5f3806d9d982cdb3c6cfbb259da96b722d16ae4d850463cb925d43c9e2a13"
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

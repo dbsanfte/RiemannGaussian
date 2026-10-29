@@ -1,0 +1,30 @@
+READ_ONLY_REVIEW_PASS_NOT_FINAL
+Independent reviewer: /root/owner_routing_resume
+No source edits, canonical rebuilds, or final-release claim. Parent final14 gates remain authoritative.
+
+Reviewed requested Core/Ready/Execution/Bounds/Storage/Original, with Encoding/Inner/Finish read to check edge-case mechanics. No correctness or scope defect found.
+
+Runtime advice: program/machine are parameterless finite tables. Core consumes actual physical axis header, binary OLDprecision, unary q, coefficient vector; ready consumes existing physical context plus q/vector. The proof-side Nat rank/q and chunks/native extract/getters occur only in state/result/clock notation. Actual outer/inner branches pop q/rank words, with a real rank copy per block. All31 roles are explicit X15+Aux16, no omitted shadows.
+
+Same own clock: ready_trace composes actual setup copies, blocks_run, final reverse and whole trailing-reader drain, then real halt. readyBound includes5q+5inputBytes+8, actual loopBudget,2historyBytes,actual unused-vectorBytes+6. readyBound_linear <=1000*(inputVectorBytes+q*(rank+1)+1) follows actual consumed/output masses, not an old native report. Whole source adds actual context source+real call. Storage charges every31data word and real frames, includes full retained15cache byte sum at ready, and proves ready/source prefix caps from actual halted source.
+
+q=0: still paid whole input copies, no rank/field loop, output false terminal, entire unread reader drained. Generic rank=0 also emits q empty block vectors and drains all coefficients; actual positive-axis source has its derived positive rank. OLDprecision=0 does not truncate or discard raw coefficients because extraction reads only the rank cache. Context acquisition itself pays the original binary precision VALUE.
+
+Raw coefficient fields retain every padded Boolean byte. No scalar reduction/normalization occurs in extraction. On reader false terminal or EOF, peek enters frame with an empty word and retains EOF; each remaining rank marker writes one tagged empty field. Previous word is physically drained. Short vectors therefore default exactly to empty words across remaining slots/blocks. Long vectors leave a suffix that Finish drains physically. Native chunks_range/padded_native establishes ascending j offset order and literal raw-word equality, not only value equality.
+
+Cache bridges: fresh_old_cache names ENTIRE acquired OLD15 from Fresh85 under actual good phase; fresh_q names same retained actual P48 q. fold_input keeps old p and newP as independent word parameters and only copies Fold's actual output bytes. No old/new precision equality is assumed. Rejected phase ready-cache availability is not inferred: caller still uses actual good/presence guard, as explicit bridge premise states.
+
+All31 +real returns: direct ready_prefix_cells uses every full context word, source compiled prefixes use run_correct, and the ready source is the same program. Prepared multiword configurations are stated honestly; no N-only initList acquisition is claimed here.
+
+Reviewed source SHA256 pins:
+{
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocks.lean": "a1b180ee32e6e9526f44c4ed58d4bfffe5142cf09bc79bbc93a60c44c9777d25",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocksReady.lean": "0238a297a6a55a5027e4d173520803071ec175fa4e9df1991ee6fc7196dbf136",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocksExecution.lean": "0b161c8c2cf64515a32c1d0cd3e5f9f09b5d759d978c22a3483b57e0048b3116",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocksBounds.lean": "26279cac5da0989cf7e650bb85ade8ad56a4b3f7011dc6ff0ffc17c6d898bdf7",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocksStorage.lean": "d9445b87a9126eca40f4ef95822d122f17e2ff4305efe1da4bb3e8a867566b92",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocksOriginal.lean": "aa5d69a16355dd5f1828778e2f54df885da3377141f75699b47b36a6a009758d",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocksEncoding.lean": "b5ed32974064ee5781f1c7d477ece4fe52e2bd0e465a0056f29fa6657e685a84",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocksInner.lean": "8d24026bfbf594628cb8a23cf93ad867c29d800564a2a7ca93045239fdde9829",
+  "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackJetBlocksFinish.lean": "75f879f1bfc9d0666971e0ab31480af48f4d36b57b4e8cc19ef7cf62575e0c07"
+}

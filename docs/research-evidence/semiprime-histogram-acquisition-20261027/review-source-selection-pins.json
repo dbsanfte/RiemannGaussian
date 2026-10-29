@@ -1,0 +1,50 @@
+{
+  "reviewer": "Root; independent of selector implementation author",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceHistogramSearch.lean",
+      "sha256": "dc0b011fe1f95ccccfa4ebd7bd919086d79df8029e07ebfda0aa6197ede032fb"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceHistogramSearch.olean",
+      "sha256": "3da6affce89f57f27d8bdf75ec35bfc120935391fc6cbce254755df6f66117d4"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceCompactWordBank.lean",
+      "sha256": "1a9effc213be2194cca8624113ace8d31c5f09cacc572abbf076191ecc296537"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceCompactWordBank.olean",
+      "sha256": "b82ef6982c4a86bcd1758a6a4fd6bd98cf9bd080d76f575b0cce9d0db0cfadfe"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceWordIdControl.lean",
+      "sha256": "199886f7c92633f7de4270ef90beaab1f313e1caf2bd2b44b96dd6174014ed10"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceWordIdControl.olean",
+      "sha256": "cd63d7cfc4e197ba0141d5239971f1a11ec837e82b1466e7839c0a92f111d4df"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountOrder.lean",
+      "sha256": "164a564f8fad899c43cad64e5814c6c514d1902872a0fd3c7f54d5d45340d788"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreCountOrder.olean",
+      "sha256": "926d6024569d8bda562c26df54dfcb1e3c2997169d7e7399a594fdfc535f56ef"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCancellation.lean",
+      "sha256": "ddfe3ce83558c0e85e23967aa47af08ae5e7398a0c686d3f5ab85bbab2522fc7"
+    },
+    {
+      "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceScoreCancellation.olean",
+      "sha256": "399188e028c3da6f596823e71253f75a1b6affc37510a83a9c9c04e6b3514cd0"
+    }
+  ],
+  "final_canonical_refresh": {
+    "source_review_unchanged": true,
+    "object_pins_refreshed_after": "42 ordered canonical strict rebuilds and 42 byte-identical isolated replay objects; ordinary root15/allgenerated standard3 passed; actual compiler dependency snapshot unchanged"
+  }
+}

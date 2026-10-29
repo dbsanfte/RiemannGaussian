@@ -1,0 +1,9 @@
+# Whole original-input Hermite width
+
+FINAL FROZEN. New SemiprimeHermiteWordWidth only, no old edits or CardinalInput import. Definitions are exactly the requested inputExponent,cardinalExponent,quotientExponent and sum-of-component width. The width is explicit in b,Q,J with +,multiplication,fixed powers and natural clog; no whole-runtime rate claim is added.
+
+input_guards covers Q!,Q,J. cardinal_guards covers intrinsic dC and dC*2^(QJ). quotient_guards derives both the actual cached quotient denominator DH*dC^J and convolution numerator J*BH*inverseBase^J from ORIGINAL DH,BH<=2^b; quotient_caps strengthens these to strict physical fits. Component inequalities cover affine construction, normalized inverse, scalar affine evaluation, quotient evaluation and original argument-word width Q+2. inputExponent_le/cardinalExponent_le and quotientExponent_lt make the component exponents reusable directly.
+
+final_caps uses the existing intrinsic hermiteDenominator_dyadic/hermiteNodeBound_dyadic to prove strict common denominator and Q*nodeBound caps at the physical width. final_node_cap derives a single-node numerator cap when Q>0; no division by Q or nonexistent Q=0 node is assumed. The Q=0 definitions remain total. These are constructor arithmetic inequalities, not intermediate Fits advice or supplied inverse data.
+
+Validation: canonical strict build EXIT0; ordinary-root15/all-generated transitive axiom audit EXIT0,41 declarations/37 theorem constants, standard3 only; isolated strict rebuild EXIT0 byte-identical. See HermiteWordWidthAudit.lean,hermite-width-{build,audit,isolated}.log and hermite-word-width-verification.json. No finite diagnostic is substituted for these all-input kernel proofs. This module provides width guards, not a completed bit runtime until the actual Hermite stages consume them.

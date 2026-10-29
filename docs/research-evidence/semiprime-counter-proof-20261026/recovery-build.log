@@ -1,0 +1,9 @@
+'RiemannGaussian.SemiprimeCountRecovery.acceptedCount_pos_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeCountRecovery.select_queries' depends on axioms: [propext]
+'RiemannGaussian.SemiprimeCountRecovery.select_indices' depends on axioms: [propext]
+'RiemannGaussian.SemiprimeCountRecovery.select_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeCountRecovery.search_queries_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeCountRecovery.search_none_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeCountRecovery.search_some_sound' depends on axioms: [propext, Classical.choice, Quot.sound]

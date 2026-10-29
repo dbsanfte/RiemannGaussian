@@ -1,0 +1,229 @@
+{
+  "status": "FINAL_ALL_WRITERS_STOPPED",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 12,
+    "declarations": 245,
+    "theorems": 121
+  },
+  "modules": {
+    "SemiprimeD1StackRootPacketPadding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPadding.lean",
+        "sha256": "955321f33e8040880c0366fad359c362324e25e1e4081a12fab9f0c7bfe26175"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPadding.olean",
+        "sha256": "7300ebeba329b87a507a96b028b2dede7e1b2b3c66188ff7176c75624e4d2806"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPadding.olean",
+        "sha256": "7300ebeba329b87a507a96b028b2dede7e1b2b3c66188ff7176c75624e4d2806"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingView": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingView.lean",
+        "sha256": "c483d058e843333428bdd7d2b8d3b3b2fc5b5ce5872e3585cc743017c5a31e8e"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingView.olean",
+        "sha256": "f9c144fa9f31998c47d365ca589abe145a6e976976a440446f0fb5e6a5375e4a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingView.olean",
+        "sha256": "f9c144fa9f31998c47d365ca589abe145a6e976976a440446f0fb5e6a5375e4a"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingPrimitives.lean",
+        "sha256": "b9657a0bf331dfa047c8caf93dbb76f8e11bdfc063c9c62a41226621b0f281ba"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingPrimitives.olean",
+        "sha256": "ed2a1f01256a5e8437824acd701dfcefb08a7b192105e1d26b5e48803d404e8e"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingPrimitives.olean",
+        "sha256": "ed2a1f01256a5e8437824acd701dfcefb08a7b192105e1d26b5e48803d404e8e"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingCalls": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingCalls.lean",
+        "sha256": "5724c60f5d444187960da07d8ea55713ef8bb388e7f65f919bc23d0874b5bd10"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingCalls.olean",
+        "sha256": "0f401fa10852a1b288ed2c207770ca16267337276576b83b4b93dc03442f3df7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingCalls.olean",
+        "sha256": "0f401fa10852a1b288ed2c207770ca16267337276576b83b4b93dc03442f3df7"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingInput": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingInput.lean",
+        "sha256": "524ac7bc4a4202abbdf51a4ba7b624b8c476a600ed987419a24db78304d495af"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingInput.olean",
+        "sha256": "b2cda2c11ecbe120d7e6c5a6746a07a5c9282e9a93dd33701ee9c4b9c7960c3a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingInput.olean",
+        "sha256": "b2cda2c11ecbe120d7e6c5a6746a07a5c9282e9a93dd33701ee9c4b9c7960c3a"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingEncoding": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingEncoding.lean",
+        "sha256": "95205beec7c059f140939df12766e1ac8fb96bb84370b7028d670e2441ef900d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingEncoding.olean",
+        "sha256": "7dcd194e3000145c9fbd0df48e2053f00ef28fbe3d6bee205069b42477ac035c"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingEncoding.olean",
+        "sha256": "7dcd194e3000145c9fbd0df48e2053f00ef28fbe3d6bee205069b42477ac035c"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingExecution.lean",
+        "sha256": "1f313d59cb0353024782f5687b69cdb325e05a41b4146573dd2284090a0926f6"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingExecution.olean",
+        "sha256": "b26a774b17c801eec89c07d5794c236ad5d8629eff3239f675d0bca3851ae730"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingExecution.olean",
+        "sha256": "b26a774b17c801eec89c07d5794c236ad5d8629eff3239f675d0bca3851ae730"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingInputBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingInputBounds.lean",
+        "sha256": "54093cff1e2ce1472dda21b57816f84e2378e30e5f7a45c3174d300dd06103f7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingInputBounds.olean",
+        "sha256": "c0eb72bd7038b3e9d74ef929c30b32c9457f2024f9555f1f29fabb9b2833ec8b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingInputBounds.olean",
+        "sha256": "c0eb72bd7038b3e9d74ef929c30b32c9457f2024f9555f1f29fabb9b2833ec8b"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingBounds.lean",
+        "sha256": "d1e8438b8a2613f1c60b72279316d1705b94c3c132e9fa450f521f5708072583"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingBounds.olean",
+        "sha256": "c5b54583736325b57118bcb2ca6b63249ac959ba1c7d6fa8a67c52103d788074"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingBounds.olean",
+        "sha256": "c5b54583736325b57118bcb2ca6b63249ac959ba1c7d6fa8a67c52103d788074"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingStorage": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingStorage.lean",
+        "sha256": "24c6a6b0f3ee7b90f9f8e86d26f24141959b3cc1a917f1736a251e34e3bf534a"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingStorage.olean",
+        "sha256": "15d3319fc60809646c321f70c0fda1196776ad62785379b9ba737537b089aaa0"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingStorage.olean",
+        "sha256": "15d3319fc60809646c321f70c0fda1196776ad62785379b9ba737537b089aaa0"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingMonomial": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingMonomial.lean",
+        "sha256": "63e2131c32eaf8e4794a8d43c7ecfb7cb3cbf7b9876a5430b7ff183ef43bd6c7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingMonomial.olean",
+        "sha256": "76ef2cb0f0cb0a5a067d35aef50b7942619266b23071e6c9d35e78adfee3ffca"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingMonomial.olean",
+        "sha256": "76ef2cb0f0cb0a5a067d35aef50b7942619266b23071e6c9d35e78adfee3ffca"
+      }
+    },
+    "SemiprimeD1StackRootPacketPaddingOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootPacketPaddingOriginal.lean",
+        "sha256": "f4de4f380fd2ee109fea898b4073e502b332e7e26748f0cbc08f8a6ceacee4d7"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootPacketPaddingOriginal.olean",
+        "sha256": "bffcc4ae699360af20332ce983a7fe7d45e26668f93e5a392de98c8762014ae9"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-frozen/SemiprimeD1StackRootPacketPaddingOriginal.olean",
+        "sha256": "bffcc4ae699360af20332ce983a7fe7d45e26668f93e5a392de98c8762014ae9"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false,
+  "sealed_utc": "2026-10-28T22:47:48.266903+00:00",
+  "source_and_canonical_writers_stopped": true,
+  "source_default_heartbeats": 200000,
+  "raised_heartbeat_options": false,
+  "source_option_exceptions": false,
+  "physical_roles": 2139,
+  "actual_imported_pins": {
+    "pairs": 18965,
+    "source_object_files": 37930,
+    "before_after_live_equal": true
+  },
+  "independent_read_only_review": {
+    "path": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-independent-review.txt",
+    "sha256": "635f9ce2a84a01f20a99949cd85ae6721b20f1e9f643911d753b0575f1446f6b",
+    "reviewed_sources": 12
+  },
+  "actual_controls": {
+    "status": "PASS_ACTUAL_TERMINAL0",
+    "cases": 5,
+    "actual_compiled_transitions": 7662,
+    "all2139": true,
+    "all_foreign_words_nonempty_and_retained": true,
+    "two_actual_copies": true,
+    "actual_padding25_and_frequency21_calls_once": true,
+    "two_actual_outer_returns": true,
+    "flags_clear_at_halt": true,
+    "within_own_clock": true,
+    "exact_transition_equality_claim": false,
+    "observer_all_generated_std3": 34,
+    "snapshot_kernel_identity": true,
+    "scope": "Supplementary prepared continuation tests from actual-style retained key/dimension bank; no N-only test fixture claim. Universal original-N source proof is separate.",
+    "source": "/tmp/semiprime-explicit-rate-20261027/RootPacketPaddingControls.lean",
+    "source_sha256": "49a9377c47f1a0143d2e7c81ca8622aa50d9104da0941ae95c8adce9d6767875",
+    "log": "/tmp/semiprime-explicit-rate-20261027/root-packet-padding-controls.log",
+    "log_sha256": "35e363e1e1e47ddf24675b784e8d9402c17f92e2fc53dfe9cb14eaf5a2645c4b",
+    "failed_attempt1": "Archived observer only: treated frozen25 upper clock as exact; actual program/proofs unchanged"
+  },
+  "only_runtime_input": "original canonical binaryN; no keys/dimension/count/frequency/maximum/padding/clock advice",
+  "actual_source": "realRoot2114 once ->two paid restoring copies of actualkeys/actualdimension using actualemptyretainedRoot scratch ->realFrequency+Padding25 once ->genuinehalt; all2139 old/new banks physicallyretained",
+  "own_clock": "(100000000000*3^5+100)*(originalInputBytes+actualRoot2114runBound+1)^5",
+  "uniform_original_rate": "Fixedcoefdegree beforeALLpositivecanonicalN; ownsource time and ALL2139+actualreturnprefixcells <=coef*(ell+1)^degree*2^(28500*scopeBoundell)",
+  "output": "EXACToriginalPacketPadding compactbinaryword (ceiling actualmaximum classfrequency to multiple of2^a, preservingzero); entireRoot2114/Frequency21/rounding25banks retained",
+  "scope": "N-only unprescribed-root acquisition through complete keys/dimension/frequency/padding; inventory/recursivechild/coefficients/counter/publicfactorsearch/globalbitproof stillOPEN. Prepared controls supplementary only.",
+  "native_clock_transport": false
+}

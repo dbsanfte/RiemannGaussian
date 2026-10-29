@@ -1,0 +1,35 @@
+{
+  "status": "FINAL_HELPER_GATES_PASS",
+  "modules": 3,
+  "declarations": 47,
+  "theorems": 39,
+  "strict": true,
+  "ordinary_root_15linters_default200k": true,
+  "all_generated_standard3": true,
+  "live_import_pairs": 18268,
+  "live_files": 36536,
+  "missing": [],
+  "changed": [],
+  "objects": {
+    "SemiprimeD1BooleanFactorCatalogueIndices": {
+      "source_sha256": "cc46b0cbbeae98ee264ba54eb361b836ae78e52b11415a26f6f874e7d1cd420d",
+      "canonical_sha256": "b1746660c2da5bb673abd4e0180f7a7408b1faaf16e9081ec14cdf84ce6be1f1",
+      "independent_sha256": "b1746660c2da5bb673abd4e0180f7a7408b1faaf16e9081ec14cdf84ce6be1f1",
+      "byte_equal": true
+    },
+    "SemiprimeD1BooleanFactorCatalogueIndicesBounds": {
+      "source_sha256": "2555fa9b9ec0d6997ec23fd0d3c2c143e3ea3193cec5c7d9427998d429821d38",
+      "canonical_sha256": "0de001d115861efc56ced5e8ab66af7f3af685a4db09c4ea32a616f7cb0de6b9",
+      "independent_sha256": "0de001d115861efc56ced5e8ab66af7f3af685a4db09c4ea32a616f7cb0de6b9",
+      "byte_equal": true
+    },
+    "SemiprimeD1BooleanFactorCatalogueIndicesOriginal": {
+      "source_sha256": "13d28fbed6533af1d9b96c74a283ba2e7c20c9c62cf4b5d339898d0b534ca24c",
+      "canonical_sha256": "e91a27a7a27414ba827b586ebc8f5ec56e356d8bf62be5e98d22bcfebc9ad727",
+      "independent_sha256": "e91a27a7a27414ba827b586ebc8f5ec56e356d8bf62be5e98d22bcfebc9ad727",
+      "byte_equal": true
+    }
+  },
+  "scope": "Concrete original scopes, unary factor keys, exact old indexed descriptor queue, alloriginal word/count/byte bounds from actualsource traces, exact numericPorts/idAt/unary-portTape bridge. Proof helper only; no runtime source modifications.",
+  "writers_stopped": true
+}

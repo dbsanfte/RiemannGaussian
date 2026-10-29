@@ -1,0 +1,233 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 11,
+    "declarations": 384,
+    "theorems": 239
+  },
+  "modules": {
+    "SemiprimeD1StackRootScaleLeaf": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeaf.lean",
+        "sha256": "ac00ee4570afa58229a251c067ce039f5d4e22348631a8a890f647320aa1f787"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeaf.olean",
+        "sha256": "a5adb384c67ac8aad92ed8b04955ea63dadb1cc6111d1d53e756c974e9c8a105"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeaf.olean",
+        "sha256": "a5adb384c67ac8aad92ed8b04955ea63dadb1cc6111d1d53e756c974e9c8a105"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafArithmetic": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafArithmetic.lean",
+        "sha256": "c60cc04df1fe6bfd515a868655c4d42637587b8a790f18c50acc74b4276dde2d"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafArithmetic.olean",
+        "sha256": "de60db48ee36e3a0cb9af5ac5e2c4e7ecadb983e82acc9a90f4c28bae866eaf2"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafArithmetic.olean",
+        "sha256": "de60db48ee36e3a0cb9af5ac5e2c4e7ecadb983e82acc9a90f4c28bae866eaf2"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafPrimitives": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafPrimitives.lean",
+        "sha256": "593df57ee70444bfa5e1b9848f3806b9419693312bb1015db4a579838d5ea591"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafPrimitives.olean",
+        "sha256": "ac2ff1cca6ee7b8632cd2dff69d217af84ada2220791864bc25bdf785684e42a"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafPrimitives.olean",
+        "sha256": "ac2ff1cca6ee7b8632cd2dff69d217af84ada2220791864bc25bdf785684e42a"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafDoubling": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafDoubling.lean",
+        "sha256": "45f4321f6637e6ff70e273341d3b676f605208129ee9c20fe2466380dac3cb63"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafDoubling.olean",
+        "sha256": "c5ab75be62b4ec5f0b6f1d206afa75724fc8a4912a9d29417fc37eca5722bd10"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafDoubling.olean",
+        "sha256": "c5ab75be62b4ec5f0b6f1d206afa75724fc8a4912a9d29417fc37eca5722bd10"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafSubtract": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafSubtract.lean",
+        "sha256": "c8533bca255428c2e6535d327ef28d0935b865eec2cd6baf97ebb49ee2306a84"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafSubtract.olean",
+        "sha256": "bc5af4ed00b8a0db20a90d7e600dbd37dd2cfde3a9227be78fd7410765a3db5b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafSubtract.olean",
+        "sha256": "bc5af4ed00b8a0db20a90d7e600dbd37dd2cfde3a9227be78fd7410765a3db5b"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafSqrt": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafSqrt.lean",
+        "sha256": "34fa93dc5ff86509a98b3930910f0b4c06804a88e31706c7dc64672957d36342"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafSqrt.olean",
+        "sha256": "896ecbb615de728c890ca613b0faf69f2bd373a9a3840e22cfccff1e7edbe9ba"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafSqrt.olean",
+        "sha256": "896ecbb615de728c890ca613b0faf69f2bd373a9a3840e22cfccff1e7edbe9ba"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafDivision": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafDivision.lean",
+        "sha256": "4c11440802f59240a647c9c7d5ca769aecf9092fe98283622972b5fabfaffba3"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafDivision.olean",
+        "sha256": "d08a984ed5e5d8ddc61adf781ebad97559f4958dbc20b1394d52d7247c7afe16"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafDivision.olean",
+        "sha256": "d08a984ed5e5d8ddc61adf781ebad97559f4958dbc20b1394d52d7247c7afe16"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafComponents": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafComponents.lean",
+        "sha256": "f51f7a1f64a2ba1d2d07fbd0692ef98aad75ac41058f09f9eccfea5afa63d226"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafComponents.olean",
+        "sha256": "38cfd02d6f6ea7e990cb718b8865e099cc8d9caa0868835bb6d4f45ecc3f3155"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafComponents.olean",
+        "sha256": "38cfd02d6f6ea7e990cb718b8865e099cc8d9caa0868835bb6d4f45ecc3f3155"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafExecution.lean",
+        "sha256": "f7849849232982e9a85f736a73a566d6ebfefc9ed8ea3a39e2738ce3d63f8bd2"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafExecution.olean",
+        "sha256": "a251a6ec4833a81225f6574af379400fdb22db4a022a7c95c82f573b88897064"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafExecution.olean",
+        "sha256": "a251a6ec4833a81225f6574af379400fdb22db4a022a7c95c82f573b88897064"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafBounds.lean",
+        "sha256": "4b09b5ad85330fc658ef4e6952c5945999cc61cd53efa782692144e9156f2488"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafBounds.olean",
+        "sha256": "b881a4fd2d01f5518de67490dcc67eed1e5adb8ca8cf9865db8a5a2759e3a093"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafBounds.olean",
+        "sha256": "b881a4fd2d01f5518de67490dcc67eed1e5adb8ca8cf9865db8a5a2759e3a093"
+      }
+    },
+    "SemiprimeD1StackRootScaleLeafOriginal": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRootScaleLeafOriginal.lean",
+        "sha256": "329b2087f9002cbbb4dfadffcddc7805aec95fa974764993fc9d3f47c7585eb4"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackRootScaleLeafOriginal.olean",
+        "sha256": "3e9954334831b7b3e4264a11c6d53ace713d4d08ec260c0f16012b22c54b18c7"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-frozen/SemiprimeD1StackRootScaleLeafOriginal.olean",
+        "sha256": "3e9954334831b7b3e4264a11c6d53ace713d4d08ec260c0f16012b22c54b18c7"
+      }
+    }
+  },
+  "controls": [
+    {
+      "source": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/RootScaleLeafControls.lean",
+        "sha256": "db23f7d93cf78ed3930d9af8295855214ac3a9151fe6ea547aa48bb15e813b6a"
+      },
+      "log": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-controls.log",
+        "sha256": "6b1ce9318ee45751b4b2402f12b7f20f10e126466361b54a0b8f43170f815a48"
+      },
+      "status": "PASS",
+      "full_N_only_cases": 1,
+      "full_N_only_case_detail": "empty word width0, 980 actual instructions, all20 doublings executed",
+      "prepared_exact_sqrt_leaf_cases": 16,
+      "prepared_last_nonzero_doubling_case": 1,
+      "observer_generated_constants_standard3": 23,
+      "all25fields": true,
+      "all15cache_retained": true,
+      "actual_flags_and_return_frames": true,
+      "snapshot_identity_kernel_checked": true
+    }
+  ],
+  "full_goal_complete": false,
+  "runtime_scope": {
+    "stack_roles": 25,
+    "retained_old_schedule_roles": 15,
+    "fresh_roles": 10,
+    "whole_initial_input": "binary N only",
+    "ready_initial_data": "actual frozen RootSchedule.done cache, all fresh fields empty",
+    "program_parameters": "none; fixed finite literal source",
+    "actual_arithmetic": "20 physical doublings; odd-subtraction exact square-root loop; frozen actual UnaryDivmod call; paid +1",
+    "frontier": "complete root s/lambda/levels/exponent/minimum/root/leaf metadata; full semiprime pipeline remains open"
+  },
+  "clocks": {
+    "whole": "10000000000000*(ell+1)^3",
+    "ready": "1000000000000*(ell+1)^3",
+    "all25_roles_plus_real_returns": "1000000000000000*(ell+1)^3"
+  },
+  "actual_imported_pins": {
+    "status": "UNCHANGED",
+    "pairs": 17469,
+    "files": 34938,
+    "before": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-dependencies/imported-pins-before.json",
+    "after": "/tmp/semiprime-explicit-rate-20261027/root-scale-leaf-dependencies/imported-pins-after.json"
+  },
+  "prior_owned_frozen_files": {
+    "status": "PASS",
+    "groups": {
+      "static-input-table": 34,
+      "port-ordinal": 10,
+      "boundary-record": 10,
+      "product-table-original": 2,
+      "product-record": 10,
+      "carry-table": 10,
+      "scale-table": 10,
+      "transform-table": 10,
+      "carry-record": 10,
+      "scale-record": 10,
+      "transform-record": 10,
+      "root-schedule": 20
+    },
+    "total_source_object_files": 146
+  },
+  "source_and_canonical_writers_stopped": true
+}

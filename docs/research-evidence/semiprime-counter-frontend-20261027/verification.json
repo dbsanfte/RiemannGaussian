@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-10-27 03:06:51 UTC",
+  "goal_status": "active",
+  "slice_status": "PROGRESS",
+  "totals": {
+    "modules": 17,
+    "declarations": 1073,
+    "theorem_constants": 572
+  },
+  "modules": {
+    "SemiprimeFiniteEnumerations": {
+      "source": "RiemannGaussian/SemiprimeFiniteEnumerations.lean",
+      "source_sha256": "ab62de89927c949d802f8190705351a977677d381676a88514157b6a178b298e",
+      "olean_sha256": "38203d21a7133c0021c911b16abb2c34a43938c4ccf700402168af40c9d6531b",
+      "declarations": 60,
+      "theorem_constants": 38
+    },
+    "SemiprimeEnumeratedCounter": {
+      "source": "RiemannGaussian/SemiprimeEnumeratedCounter.lean",
+      "source_sha256": "af981ede9a139f8763521339101dd3738bb3fb9d1b5acd790e1aae11046de0fd",
+      "olean_sha256": "06ef41540f235270fbd7080de9b80a9e68e005679998e2885903923d16759b9c",
+      "declarations": 30,
+      "theorem_constants": 22
+    },
+    "SemiprimeMacroFiniteEnumerations": {
+      "source": "RiemannGaussian/SemiprimeMacroFiniteEnumerations.lean",
+      "source_sha256": "dad5ae7843ea872b58251480d58db5ce4613865ab8b0867ea342e6d075563a61",
+      "olean_sha256": "216296f85ceb1685e001a28d6102aae186c53fd8c0b1144108701de273c7c881",
+      "declarations": 34,
+      "theorem_constants": 11
+    },
+    "SemiprimeMixedRadix": {
+      "source": "RiemannGaussian/SemiprimeMixedRadix.lean",
+      "source_sha256": "9255d135b757f105c4550f915efed9dd6bc0d5ddb67d41aea9e9a07a3c9845dd",
+      "olean_sha256": "67ea6a9f8f27c7308e46f13ec525081d2b579a044bd9b3aeff97f36d20f28c68",
+      "declarations": 15,
+      "theorem_constants": 8
+    },
+    "SemiprimeArrayOps": {
+      "source": "RiemannGaussian/SemiprimeArrayOps.lean",
+      "source_sha256": "8869e717acad41be9112e0baf9e78aa73b4dff684d5b88f036aaba90f2e4bbbb",
+      "olean_sha256": "e70d1abc6f0d0d4788bb988ed18be53bf84546d932b74cc013fe3fe7310c86cf",
+      "declarations": 32,
+      "theorem_constants": 28
+    },
+    "SemiprimeLocalArrayFrontend": {
+      "source": "RiemannGaussian/SemiprimeLocalArrayFrontend.lean",
+      "source_sha256": "ec4cb8d4b7eca70201b8c098e4824ff678f5839f70c1091e7d18dd0cfecb1b61",
+      "olean_sha256": "88252490bce047bb8f99c71a72182baac43e11c06d0153a60c9e9a34dfbc04f5",
+      "declarations": 101,
+      "theorem_constants": 61
+    },
+    "SemiprimeRepresentativeExecution": {
+      "source": "RiemannGaussian/SemiprimeRepresentativeExecution.lean",
+      "source_sha256": "ea956810ddf59358d3ecfd822ea13a257fabda1a876655d87d7836972e86cc20",
+      "olean_sha256": "c85b8447796974e82c68fe98f3eb46c876be2886f936c4a6e0f875f56194c135",
+      "declarations": 170,
+      "theorem_constants": 73
+    },
+    "SemiprimeFibreArrayExecution": {
+      "source": "RiemannGaussian/SemiprimeFibreArrayExecution.lean",
+      "source_sha256": "a333f48ac8656540f5d653ad9ebaef79939766ce74297724ae5304ab7a17c67d",
+      "olean_sha256": "b8e379badb30c37ffb1e72dc4d710b08a1d98ab782e155853970d24c30d65684",
+      "declarations": 115,
+      "theorem_constants": 72
+    },
+    "SemiprimeNativeGroupExecution": {
+      "source": "RiemannGaussian/SemiprimeNativeGroupExecution.lean",
+      "source_sha256": "5c17653d773c3ad9aa773d4a4176763162a393d3b7491f6ad87404eab9f11a2d",
+      "olean_sha256": "9d5a4f2085121f3304fc482fba3c562af462908a0829097e763e049ae03fded3",
+      "declarations": 20,
+      "theorem_constants": 14
+    },
+    "SemiprimePacketArrayExecution": {
+      "source": "RiemannGaussian/SemiprimePacketArrayExecution.lean",
+      "source_sha256": "fa3dc0a881bd1d9740fe824a3e1f5ec83f7b49be34d3fd2a8e8b4391242a50bf",
+      "olean_sha256": "4cb3957a9a6c179044221027be333f5fb82184231e03a771738eab9818c1ef46",
+      "declarations": 56,
+      "theorem_constants": 37
+    },
+    "SemiprimeRowSelectionExecution": {
+      "source": "RiemannGaussian/SemiprimeRowSelectionExecution.lean",
+      "source_sha256": "c135e2f8b0e5c79f7de1eece0145167d9b36097af549af783dcdd176573c36cc",
+      "olean_sha256": "d4c6884273c1ccf629dc53233241fbd8eb4e508cb6ff9bfda72d15e250d8a904",
+      "declarations": 143,
+      "theorem_constants": 87
+    },
+    "SemiprimeRowSelectionTracked": {
+      "source": "RiemannGaussian/SemiprimeRowSelectionTracked.lean",
+      "source_sha256": "f90224c3a79c59371dee1590a20f7e7177d41757e801178d9ccc230137df96a1",
+      "olean_sha256": "bee3e92e3a5661785f7e8d00ad6245aec3a186f5e2e019fda903e0df02339006",
+      "declarations": 165,
+      "theorem_constants": 65
+    },
+    "SemiprimeIndexedNodeCertificate": {
+      "source": "RiemannGaussian/SemiprimeIndexedNodeCertificate.lean",
+      "source_sha256": "52d1a63510d295d6bd1e4926446de9b4833783c21999aafa3e952cee3c574c6b",
+      "olean_sha256": "99b603b534fd36160fbccee9746474e19b59bd9dd94857a43a9b353858acbfd9",
+      "declarations": 41,
+      "theorem_constants": 18
+    },
+    "SemiprimeIndexedFibrePacket": {
+      "source": "RiemannGaussian/SemiprimeIndexedFibrePacket.lean",
+      "source_sha256": "b1de3a34c141f1c1d19181995402ce743a6f7f57e861e58a62b72bac52b41378",
+      "olean_sha256": "77211c4a666660ce161d6ee66508e1f5ac33d31bc9768c3ef5e094971232b395",
+      "declarations": 2,
+      "theorem_constants": 2
+    },
+    "SemiprimeExecutedNodeDesign": {
+      "source": "RiemannGaussian/SemiprimeExecutedNodeDesign.lean",
+      "source_sha256": "60036091a5014b1096e90c91324bcd4481627be535f0eeb51274a6c4d16c1e46",
+      "olean_sha256": "02357d98038872521ee7d1d636c7a529994df00f03d85e576527664d045358ec",
+      "declarations": 8,
+      "theorem_constants": 3
+    },
+    "SemiprimeAcquiredHermite": {
+      "source": "RiemannGaussian/SemiprimeAcquiredHermite.lean",
+      "source_sha256": "41fba0fff11ab77e92808bebdd57a3350ccc4d979049de50d3d9eb2074f64687",
+      "olean_sha256": "5b73a166d881ec8da40bcc485b94768d576c8fcc5b07532b46de8cd84d9fb887",
+      "declarations": 45,
+      "theorem_constants": 22
+    },
+    "SemiprimeNodeArrayExecution": {
+      "source": "RiemannGaussian/SemiprimeNodeArrayExecution.lean",
+      "source_sha256": "fc92c69ec09a4ad2c013af317783010a40950f981e8c51d600e8ea00af33a0f3",
+      "olean_sha256": "7148dbd5af9f3e26424d07daa3f7ab9ccb0cd75f3c575433f5ad41f30836b757",
+      "declarations": 36,
+      "theorem_constants": 11
+    }
+  },
+  "strict_flags": [
+    "autoImplicit=false",
+    "warningAsError=true"
+  ],
+  "all_generated_declarations": true,
+  "ordinary_root_import": true,
+  "linters_per_namespace": 15,
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "root_facade_source_sha256": "27e776b8804ad77806c145c84f35f7a206d9a50bf57d820cb759b59db855f63a",
+  "root_facade_olean_sha256": "1eb63aa2a2b0c4aa33b5212f68f75c1ef4c31163b3821d255596db5cf8d7d548",
+  "auditor_sha256": "7fca820dda4433b6760fc83d773b55cf8ef7772ff787308e0dee64f3f0fdcb9e",
+  "audit_log_sha256": "0200acfc5612485ebc62113cb8d46e03044af717e4a84bb1255ce1e938c69098",
+  "stable_local_dependencies": 140,
+  "preserved": {
+    "protected": 1797,
+    "concurrent": 24,
+    "prefixes": 2
+  },
+  "local_markdown_links": 5,
+  "runtime_polynomial_index_removed": true,
+  "coefficient_to_count_execution_proved": true,
+  "primitive_factoring_bit_time_proved": false,
+  "native_softK_acquisition_proved": false,
+  "commit_or_push": false
+}

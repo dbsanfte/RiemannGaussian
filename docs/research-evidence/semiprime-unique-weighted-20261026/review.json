@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-26",
+  "verdict": "Constructive whole-bin unique-hit short weighted cover; acquisition exponent unchanged.",
+  "uniform_paper_results": [
+    "Full weighted ellipse has fewer than 23K actual rows and soft-K public setup.",
+    "Eligible-domain selection partitions all unit colours with at most phi(K) actual rows.",
+    "Exactly one good-field leaf in the entire correct bin, with original h=O(K^(3/2)).",
+    "Whole-bin two first jets or two first-subresultant coefficients suffice, with actual unit guards and bounded wrong-bin failure."
+  ],
+  "independent_reviews": [
+    {
+      "path": "review-ellipse.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-incidence.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-unique-cover.md",
+      "verdict": "PASS"
+    },
+    {
+      "path": "review-unique-readout.md",
+      "verdict": "PASS"
+    }
+  ],
+  "acquisition": {
+    "completed_upper_bound": "soft O(K^(5/4))",
+    "target": "soft O(K)",
+    "improved": false,
+    "scoped_failed_attempt": "Short modified-moment recurrence and rank-one pole do not impose finite-clock support; current enforcement still uses the implicit factorial remainder."
+  },
+  "implementation_validation": {
+    "fixtures": 18,
+    "catalogue_support_checks": 442080,
+    "selected_support_checks": 167544,
+    "root_replay": "PASS: all saved metadata, partitions, exponents and counters match after omitting *_seconds timing fields.",
+    "constructor_scope": "Public integer row selection and exponent ledger. No field/order acquisition or factor search.",
+    "validator_scope": "Exhaustive O(K^2) diagnostic separate from soft-K constructor.",
+    "uniform_coverage_basis": "Reviewed arithmetic proof, not finite fixtures."
+  },
+  "preservation": {
+    "protected_prior_files": 1065,
+    "append_only_prefixes": 2,
+    "concurrent_files": 24,
+    "all_baseline_checks": "PASS"
+  },
+  "not_claimed": [
+    "Soft-K acquisition",
+    "Uniform power reduction in selected row count",
+    "Complete all-semiprime sixth-rate bit proof",
+    "Lean formalization",
+    "Historical or literature-wide novelty",
+    "General algorithmic lower bound"
+  ],
+  "commit_or_push": false,
+  "final_archive_review": {
+    "agent": "/root/knot_qholonomic",
+    "verdict": "PASS",
+    "scope": "README versus proved cover and unique-Lambert wrong-bin guards. Correct-bin scope clarification applied to README."
+  }
+}

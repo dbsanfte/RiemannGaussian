@@ -1,0 +1,17 @@
+PASS: independent read-only review of RationalNormalize22.
+UTC: 2026-10-28T22:31:30.417393+00:00
+
+Reviewed Core, Spec, Setup, Execution, Bounds and Storage. No source edit, canonical/scratch build or repeated control was performed.
+The whole source has only TWO original words: retained sign::magnitude numerator and retained binary denominator. The actual magnitude/sign are obtained by real preserving copy, pop and push. All22 roles (GCD18+Aux4) and actual return labels are fixed finite; no supplied sign, GCD, quotient, template, width or answer is accepted.
+A real copy and complete OR scan guard zero denominators. The zero branch actually clears parsed sign/magnitude and emits exact legacy zeroWord. The positive branch executes the entire real GCD18, then twice reuses its physically cleared Divider11 bank with paid operand/GCD copies, quotient copies and quotient/remainder drains, followed by actual GCD/magnitude drains and halt.
+Spec proves exact reduceBits bytes by positive divisor value and equal original-dividend quotient width. It correctly preserves legacy negative zero and raw quotient padding; it never equates differently padded numeric words without a width proof. Canonical rational numerator/positive denominator and value follow from exact legacy equality.
+Execution uses actual same-program setup, guard, GCD/division and cleanup clocks, with the genuine final halt. Bounds counts the original sign head and both binary lengths in S, yielding OWN10^10*S^4 source time. Storage pays all22 tapes and actual return cells at every genuine compiled prefix by10^12*S^4.
+The upstream byte obligation is explicit: exact reduceBits retains raw input padding. A long Hermite/grid arithmetic composition needs a physically acquired width template and real fits on BOTH outputs after each operation (as the legacy executeOperation does), or paid compact trims with the required bridges. Numeric weight height alone does not pay that byte growth. No original-family weight acquisition or complete factorization claim is made.
+
+Current six-source SHA256 pins (recheck before final release):
+365a5167fd68e8d28b734652386f299539b2b376ac28ac5f6ffb7d7d02fe22cc  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalNormalize.lean
+bf343e1a089c5deabf2c34d845a9bf310a087b9bfc36a7b7296fb2d8b5919e27  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalNormalizeSpec.lean
+75d11076637d8c173b7837961ad5a41f66e5459d3b6a806e23653932984a5617  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalNormalizeSetup.lean
+83eef95d6079a04494d6e9c9894bb9863d9380c2f801ad4af391241079dd1521  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalNormalizeExecution.lean
+9e75999d3a85e038da9fcd8fd321e8c28d218639cc292ba83a9032ce20967cd3  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalNormalizeBounds.lean
+1e42f132699fe35dbc476cd124c6b9e2fe3d7dd2ec2cec20f3443caf8256c4fb  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRationalNormalizeStorage.lean

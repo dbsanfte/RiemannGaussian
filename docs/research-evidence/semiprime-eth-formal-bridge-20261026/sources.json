@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-26",
+  "repository": "https://github.com/openai/math",
+  "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "source_files": {
+    "lean/docs/378.md": "a2f7b390d6308997350b903be02c40a1227ebd2b9376982da528574500531f79",
+    "lean/ComparatorChallenges/SubexponentialSAT.lean": "4183b2057cff350d66848215ff7167196dfc20e1891b598fdddea59077a76685",
+    "lean/ComparatorChallenges/SubexponentialSAT.json": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+    "lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean": "040360a8465957622d934e5f1bb4f2cce8dab950e78f52033fbf70da493184f5",
+    "lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/StatementScale.lean": "672250e3c8e1b424b97aa28028dee2ee4ad5a82772c39114dbcc62ee04bb7c41",
+    "lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lean/lakefile.lean": "fc590a5d14923f79e71ea80e29efd42950bb3ec051481b5209157f0a01f63de1"
+  },
+  "formalization_scope_url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/docs/378.md",
+  "source_theorem": "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat",
+  "declared_rate": "poly(input bits)*2^O(n*(log log n)^2/sqrt(log n)), fixed CNF width",
+  "source_subtree_git_sha": "959444ea69d08eecc94480ece6621be36947dd09",
+  "source_lean_files": 3977,
+  "target_closure_modules": 2569,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/LICENSE",
+    "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "paper": {
+    "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+    "git_blob": "0503566e95bc587a4076573a45132d97531b8ba6",
+    "sha256": "5b1612dc2eebb2cad5b4cbe62d1fed2982f01ab1908c26f70010a651487e8123",
+    "matches_pinned_repository_blob": true
+  },
+  "acquisition": "GitHub connector catalogue/file/tree reads, followed by pinned sparse checkout for local strict compilation.",
+  "remote_workflow_runs_for_commit": 0,
+  "full_source_theorem_locally_verified": false
+}

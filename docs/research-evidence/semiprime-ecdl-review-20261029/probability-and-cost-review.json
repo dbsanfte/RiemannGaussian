@@ -1,0 +1,22 @@
+{
+  "status": "PASS_CONDITIONAL_REDUCTION_NO_FATAL_PROBABILITY_GAP_FOUND",
+  "commit": "252d44eb1c3ec92a2ce6a7dc5dc17ce49a5a22ee",
+  "all_paper_txt_lines_read": 1076,
+  "pins_before_after": {
+    "/tmp/ecdl-paper-review-20261029/paper.txt": "a3b7d5b57f89bde87887925a68fd95dbb2ee7d4200e7ccfd2ee905c278c7ee64",
+    "/tmp/ecdl-paper-review-20261029/subexponential-ecdl-252d44e.pdf": "cd251dc0ed83bd283663aaaeb135bf6aed5bd2b015bdfa52591d9d6667754d27"
+  },
+  "scope": "independent randomized-hash/coverage/extraction/expected-cost/exponent/derandomization audit; not proof of assumed tensor theorem",
+  "report": "/tmp/ecdl-paper-review-20261029/probability-and-cost-review.txt",
+  "report_sha256": "ad8160e2282dd1ff112cd38c379375b8d95fb79d90a6e8d4a17735f7fe31264a",
+  "no_paused_goal_sources_modified_or_built": true,
+  "no_browsing": true,
+  "main_result": "conditional Las Vegas ECDLP expected2^{O(b/log(b)^(1/4))}, not deterministic worst-case semiprime improvement",
+  "nonfatal_clarifications": [
+    "m range is explicit in Lemmas11/13",
+    "fixedcofactor enumeration/subgroup bookkeeping",
+    "sparse row collection or charge dense writes inside elimination",
+    "exact integer rounding for algebraic threshold"
+  ],
+  "full_factoring_goal_complete": false
+}

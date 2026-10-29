@@ -1,0 +1,13 @@
+# Independent review: SourceIncidenceCountBits
+
+PASS on the frozen source. The new physical implementation matches the proved original incidence formula without a truth/count/menu oracle.
+
+`edge` first checks the actual typed key equality. A loop returns possible=true/drop=false. For distinct endpoints both literal membership reports are retained; a free endpoint returns possible=true/drop=true without inspecting its current cache value. Only the fixed/fixed branch acquires both physical keys, executes both environment-ID reads and executes the physical ID equality. Its `.clock` contains both memberships, both key acquisitions, both reads, the actual equality report and branch control. This ordering is essential: treating current free-key defaults as anchors would be incorrect, and the source does not do that.
+
+`read_equal_original` uses acquired-menu validity and the already proved acquired-bank decoding injectivity; it then transports the concrete read through the actual environment relation. The decoder and original cached Word functions occur only in semantic theorems. Runtime `edge` carries only physical ID lists plus typed original key metadata. No word-bank row lookup is made for incidence.
+
+`count` executes two edges, retains both `.clock` fields, chooses square/cube/fourth using their possible/drop flags, and executes the literal selected payload copy. Impossible constraints return the zero payload []. There is no assignment loop. `count_bits` and `count_length` inspect the actual output branches. `acquired_length` derives their widths from the physical power cache, not from integer count magnitude. `count_original` uses the exact all-prefix `paddedLocal_formula`; its four cross inequalities are guaranteed for actual compiled source descriptors by SourceIncidenceNamespaces. Whole words and repeated keys within a pair are handled by the original formula. Q=0 and r=1 are covered; positive r is explicit through NeZero r.
+
+`CountPowers.acquire` is an actual separately paid physical constructor; neither its clock nor bank setup is included implicitly in `count.clock`. The aggregate caller must cache it once and retain its report. This is a scope requirement, not a flaw in the count theorem. The bound module explicitly retains this distinction.
+
+The source honestly calls descriptor key equality and membership native metadata/report stages. Its ledger is physical key/ID arithmetic plus literal finite/native control. A literal unbounded-natural/address/tape simulation and the full public caller composition remain separate. No equality of values has been used to substitute an older runtime clock. No correction requested.

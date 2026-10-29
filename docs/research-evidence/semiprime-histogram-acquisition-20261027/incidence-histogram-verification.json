@@ -1,0 +1,18 @@
+{
+  "module": "RiemannGaussian.SemiprimeSourceIncidenceHistogram",
+  "status": "PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "declarations": 36,
+  "theorems": 25,
+  "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceIncidenceHistogram.lean",
+  "source_sha256": "0d48db87d64e8f53e680fd1ecabd51509af04d2dfc190f02b1655e2b200cf70e",
+  "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceIncidenceHistogram.olean",
+  "object_sha256": "da35f9b0d1b473f94f9273ae6206623af726b2d2b802e6d8d097e599313fa9d9",
+  "isolated_object": "/tmp/semiprime-histogram-acquisition-20261027/SemiprimeSourceIncidenceHistogram.olean",
+  "isolated_sha256": "da35f9b0d1b473f94f9273ae6206623af726b2d2b802e6d8d097e599313fa9d9",
+  "byte_identical": true,
+  "notes_sha256": "bcb8c391c525cb0589242aafdd5ad184624606fd90c28b55019f9c490a7af663",
+  "scope": "Exact original all-prefix padded incidence sum equals sixteen derived filtered-port multiplicity-square histograms; physical trie acquisition and complete primitive public clock remain separate."
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "module": "SemiprimeTernaryFactor",
+    "source_sha256": "10ec3618679852c52d3b94fac9e4c15d8d36a5f72198855c1cdf30565bd835cf",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "isolated_sha256": "b6e111edb94d1904806b63e0d24f15e5110efe87af52b606883dcbe6fcb317f4",
+    "dependency_sha256": "b6e111edb94d1904806b63e0d24f15e5110efe87af52b606883dcbe6fcb317f4",
+    "seconds": 7.333306766988244,
+    "identical_object": true
+  },
+  {
+    "module": "SemiprimeTernaryPublicFactor",
+    "source_sha256": "bf3c2d7f583c5581be7ad23df7a24b572d411851799ff08122e17c4caa03529d",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "isolated_sha256": "8aeb98e4e1cd3e9be4c30d48e80c875064f54c6bfa3fde2fd214362a83275afa",
+    "dependency_sha256": "8aeb98e4e1cd3e9be4c30d48e80c875064f54c6bfa3fde2fd214362a83275afa",
+    "seconds": 9.835073925030883,
+    "identical_object": true
+  }
+]

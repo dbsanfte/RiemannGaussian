@@ -1,0 +1,19 @@
+{
+  "module": "RiemannGaussian.SemiprimeNativeBitsSetupCounter",
+  "paths": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeNativeBitsSetupCounter.lean",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeNativeBitsSetupCounter.olean",
+    "isolated": "/tmp/semiprime-native-bit-join-20261027/SemiprimeNativeBitsSetupCounter.olean"
+  },
+  "sha256": {
+    "source": "6cc418bbcb60a5ccc98d247706b09672f428db3773f23fe3a216457be46f1c38",
+    "canonical": "7cec381a63f718146c0ddee762de43959ff8c00eee45ee92db60f7fee78ef112",
+    "isolated": "7cec381a63f718146c0ddee762de43959ff8c00eee45ee92db60f7fee78ef112"
+  },
+  "strict": true,
+  "isolated_equal": true,
+  "ordinary_root_linters": 15,
+  "generated_declarations": 7,
+  "theorem_constants": 6,
+  "standard_axioms_only": true
+}

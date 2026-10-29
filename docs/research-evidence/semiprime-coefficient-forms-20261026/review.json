@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-26",
+  "classification": "Alternative projective coefficient targets and acquired short moments; no complete-query speedup",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft K^(5/4); monic target baseline soft K^(3/2)",
+  "positive_results": [
+    "Derivative-free row-cofactor pair has correct one-prime factor tag ratio",
+    "Two directional norm weights fully acquired soft J without separation inverses",
+    "Exact zero-safe regularized solve and cycle-tree interpretation",
+    "Ordinary and tagged leaf moments through 2J and regularized short series acquired soft J"
+  ],
+  "missing": "Two selected scalar readouts or normalized singular solve without full long row-product values",
+  "scoped_failures": [
+    "Concrete displacement generator omits diagonal kernel data",
+    "Full trace minimal recurrence >=h from zero or >=h-1 eventually",
+    "Global rational q-antiderivative excluded by orbit-residue sum"
+  ],
+  "reviews": [
+    "review-expressions.md"
+  ],
+  "validation": {
+    "mathematical": "Independent finite-algebra/source review plus primary-agent audit; paper, not Lean",
+    "status": "pass",
+    "local_links_checked": 12,
+    "git_diff_check": true,
+    "json_and_whitespace": true,
+    "preservation_hashes": true
+  },
+  "preservation": {
+    "protected_files_verified": 941,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1548031,
+        "sha256": "ce5c9e306d09b1b2dc92f9e5b742aac1a15dceed8a4ed377f34eb1b08f22a1e5"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2434336,
+        "sha256": "ff0a3b123652bd6c53d9091bffe0b949dec9bf2b8e84505f6d76dda3fe98d632"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "64d8801db052e4ba2e4c69dc4367b40287b7bd3419b5e4e13f51a835c03d7b3c"
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

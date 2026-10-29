@@ -1,0 +1,73 @@
+{
+  "status": "FINAL_COMPONENT_GATES_PASS",
+  "strict": true,
+  "root15": true,
+  "all_generated_standard3": true,
+  "isolated_byte_identical": true,
+  "read_only_canonical_revalidation": true,
+  "counts": {
+    "modules": 4,
+    "declarations": 116,
+    "theorems": 71
+  },
+  "modules": {
+    "SemiprimeD1ZeroBoundaryTables": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1ZeroBoundaryTables.lean",
+        "sha256": "7eac6304f528096df0e9343e482c4c1984eb7afc8e2e52fd36faf26c737cf697"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1ZeroBoundaryTables.olean",
+        "sha256": "24afa9865c46ef175a545f36da684dc918a4b0b99190870dc7ba08fae28ec66d"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/zero-boundary-readonly-frozen/SemiprimeD1ZeroBoundaryTables.olean",
+        "sha256": "24afa9865c46ef175a545f36da684dc918a4b0b99190870dc7ba08fae28ec66d"
+      }
+    },
+    "SemiprimeD1StackZeroBoundaryTable": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackZeroBoundaryTable.lean",
+        "sha256": "0348f8efec013cf5e2ae70cbe1039002dd01f6e6b1d440461a6ae0a666fe9581"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackZeroBoundaryTable.olean",
+        "sha256": "59ba50683778aadea62898efeb232d9eee118a5294a54e621a311827c6823d83"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/zero-boundary-readonly-frozen/SemiprimeD1StackZeroBoundaryTable.olean",
+        "sha256": "59ba50683778aadea62898efeb232d9eee118a5294a54e621a311827c6823d83"
+      }
+    },
+    "SemiprimeD1StackZeroBoundaryTableExecution": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackZeroBoundaryTableExecution.lean",
+        "sha256": "8e8a2659947806b513197319910ec06ab92787571f55023a6312ba5cb07a9151"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackZeroBoundaryTableExecution.olean",
+        "sha256": "6bdbec16fff4be27a7298e050b075fc8f3f42f75d4dcb44af7fcab236bde222b"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/zero-boundary-readonly-frozen/SemiprimeD1StackZeroBoundaryTableExecution.olean",
+        "sha256": "6bdbec16fff4be27a7298e050b075fc8f3f42f75d4dcb44af7fcab236bde222b"
+      }
+    },
+    "SemiprimeD1StackZeroBoundaryTableBounds": {
+      "source": {
+        "path": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackZeroBoundaryTableBounds.lean",
+        "sha256": "632713a4e43c74c418cd222f33de3e68249bc3598b95ec331a9a02456838ac57"
+      },
+      "canonical": {
+        "path": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeD1StackZeroBoundaryTableBounds.olean",
+        "sha256": "d427e59904cd995b3f40eda92815b7ece1b08a233e84f17ebef3c415c7078db2"
+      },
+      "isolated": {
+        "path": "/tmp/semiprime-explicit-rate-20261027/zero-boundary-readonly-frozen/SemiprimeD1StackZeroBoundaryTableBounds.olean",
+        "sha256": "d427e59904cd995b3f40eda92815b7ece1b08a233e84f17ebef3c415c7078db2"
+      }
+    }
+  },
+  "controls": [],
+  "full_goal_complete": false
+}

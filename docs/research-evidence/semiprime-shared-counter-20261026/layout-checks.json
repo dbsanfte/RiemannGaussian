@@ -1,0 +1,8 @@
+{
+  "description": "Tiny exact algebra controls; no asymptotic-speed evidence",
+  "tests": 11,
+  "success": true,
+  "failures": [],
+  "errors": [],
+  "stdout": "test_M0_polynomial_swap_independent (__main__.LayoutTests) ... ok\ntest_Q3_R2_and_R1 (__main__.LayoutTests) ... ok\ntest_actual_kernel_restoration_integral (__main__.LayoutTests) ... ok\ntest_conditional_history_against_independent_exhaustive_average (__main__.LayoutTests) ... ok\ntest_duplicate_variable_embeddings_and_empty_factor (__main__.LayoutTests) ... ok\ntest_orthogonal_basis_and_swap_eigenvalues (__main__.LayoutTests) ... ok\ntest_remark_44 (__main__.LayoutTests) ... ok\ntest_repeat_deterministic_and_history (__main__.LayoutTests) ... ok\ntest_scheduled_small_fallback (__main__.LayoutTests) ... ok\ntest_supplied_labels_checked (__main__.LayoutTests) ... ok\ntest_tail_exact_enumeration_and_strict_guard (__main__.LayoutTests) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.515s\n\nOK\n"
+}

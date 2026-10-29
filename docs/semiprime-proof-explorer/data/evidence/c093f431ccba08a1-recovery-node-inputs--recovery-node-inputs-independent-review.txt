@@ -1,0 +1,95 @@
+PASS — all14 current sources /1115 lines independently read in full. No source/canonical builds or edits by reviewers.
+
+Independent READONLY parent Node140 review PASS. Every body/all396 lines of Core/Encoding/Execution/Original read. No imports/builds/source/canonical edits/controls. All4 assignment=before=after=current flatSHA.
+Core is fixed140 = entire112 affine/Grid +20 inverseprivate +8 powersprivate; inverse shares ONLY R36/actual affine-array/acquiredq and powers sharesR36/actualGridargument/acquiredq. Every other role is explicit. Finite labels and original five physical words only, no supplied q/inverse/power/scalar/clock/getter/advice. Whole affine source calls actualGrid once then actualI58whole andP47whole; readyGrid SAMEprogram enters actualA.ready and does not replayGrid. Actual tensor precision is not confused with the retained rationalW template.
+Encoding is proof-side word lineage: real affine array codec equals exact two-field inverse tape, q exact unary output, argument exact acquired Grid sign/den, every35 R36private empty except exactW. Complete inverse/power outputs retain raw order/defaults/literalONE includingq0/W0; no value-only rewrite. Execution physically composes real included calls/returns and true halt, including arbitrary outer source traces and SAMEGrid-ready execution, with additive actual source clocks. No native report clock used as machine runtime.
+Original proves ALL112 retained and exact six acquired Weight-ready operands from SAME whole actual run. Original inverse/power validity/width derive from actual Grid argument/affine lineage, u<=M and paid Node width, not supplied Fit sequences. Scalar legality remains inherited from frozen Grid; no N-only or complete subsequentweight/counter/sourceV claim is made. All aliases/byte equality and input boundaries consistent; no blocker found.
+
+BEFORE
+16050535d9b00a6e10630bfad6b829c2eb5b11be8f546219d0a846d0eebdca5e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputs.lean
+de755bb2d0e4090cff6ea2d42e6653abe783dc9dbe8575ef6f42ca2822c9a263  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsEncoding.lean
+ac20c99cc30af583bf600776a87f92e3de43d7226cae85b4658acee1b572744c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsExecution.lean
+20315f50b142eb2f5f30889c1e2f04360e62aaa4fdf05bce4762433e32fa2623  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginal.lean
+
+AFTER
+16050535d9b00a6e10630bfad6b829c2eb5b11be8f546219d0a846d0eebdca5e  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputs.lean
+de755bb2d0e4090cff6ea2d42e6653abe783dc9dbe8575ef6f42ca2822c9a263  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsEncoding.lean
+ac20c99cc30af583bf600776a87f92e3de43d7226cae85b4658acee1b572744c  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsExecution.lean
+20315f50b142eb2f5f30889c1e2f04360e62aaa4fdf05bce4762433e32fa2623  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginal.lean
+
+RecoveryNodeInputs140 owner independent read-only review: PASS
+All247 assigned current lines/full Inventory, View, Calls, ReadyCall bodies read. Assignment=before=after=current flat SHA256 below. No imports/builds/edits/control reruns.
+Static inverse58/powers47 inclusions are injective despite rational36 sharing; actual q/template input aliases are literal old112 addresses. Full140 store view preserves ALL112 old words and only actual two new array outputs; fresh28 empty before real calls. Powers image excludes earlier inverse output. DataRel initial projections consume only actual retained affine-array/q/Grid argument/W words with rational-private emptiness required and later derived in companion encoding. Three actual whole-source included calls pay caller transition/real returns and preserve full foreign bank; data_update output contracts account for actual complete retained cleanup. ReadyCall uses genuine affine ready entry on ACTUAL acquired Grid cache with exact old112 projection, pays q/affine/return and does not rerun Grid or supply q/array answers. No hidden native getter, mode/clock transport or alias-clobber concern. Prepared a/M/u,t,W boundaries and full N-only caller obligations stay explicit. No blocker found.
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsInventory.lean d054f11ae4f23b118f42570da2c042ff1e291cf95aa0ecd4f8c3e8146d15ab76
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsView.lean c267b6970b1d46ec906456ec6b0d9ca669bdbf7c30f775aab914be802a83621a
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsCalls.lean faeea97ee80739c24e5d66f8794164ceda32487a80d5daa36318decbd72af214
+/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsReadyCall.lean af0c227cbdc361777c32d8a8355227c726c4a571efa8e991428fb66a888bacd6
+
+{
+  "verdict": "PASS",
+  "utc": "2026-10-29T05:19:38.165857+00:00",
+  "scope": "READ ONLY all6 assigned bodies/472lines. No imports, builds, edits or controls.",
+  "sources": [
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsCodec",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsCodec.lean",
+      "sha256": "bf044d89c18b48f93f6e5ed18602bda4c731b496884fdc9dc7fca9a0021516b4",
+      "lines": 39,
+      "before": "bf044d89c18b48f93f6e5ed18602bda4c731b496884fdc9dc7fca9a0021516b4",
+      "after": "bf044d89c18b48f93f6e5ed18602bda4c731b496884fdc9dc7fca9a0021516b4",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsAffineReady",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsAffineReady.lean",
+      "sha256": "a0ffefcab70946a8775958f77fb8133a2da6ff97db9371fe9fa56368ce7a4ad5",
+      "lines": 68,
+      "before": "a0ffefcab70946a8775958f77fb8133a2da6ff97db9371fe9fa56368ce7a4ad5",
+      "after": "a0ffefcab70946a8775958f77fb8133a2da6ff97db9371fe9fa56368ce7a4ad5",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsResource",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsResource.lean",
+      "sha256": "f046fec5dd7f21d763573ede2e4f14529ae753412ad09569bb78eb6401c98192",
+      "lines": 79,
+      "before": "f046fec5dd7f21d763573ede2e4f14529ae753412ad09569bb78eb6401c98192",
+      "after": "f046fec5dd7f21d763573ede2e4f14529ae753412ad09569bb78eb6401c98192",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsBounds",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsBounds.lean",
+      "sha256": "4980db938e88e5d8e263314281a6e31704cdce15279fad86a5950f312a5c9952",
+      "lines": 85,
+      "before": "4980db938e88e5d8e263314281a6e31704cdce15279fad86a5950f312a5c9952",
+      "after": "4980db938e88e5d8e263314281a6e31704cdce15279fad86a5950f312a5c9952",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsStorage",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsStorage.lean",
+      "sha256": "383c19b181f226012e52e6a294093f8a091f8fa8b9a6a375c1d11097b5616b88",
+      "lines": 122,
+      "before": "383c19b181f226012e52e6a294093f8a091f8fa8b9a6a375c1d11097b5616b88",
+      "after": "383c19b181f226012e52e6a294093f8a091f8fa8b9a6a375c1d11097b5616b88",
+      "all_lines_read": true
+    },
+    {
+      "module": "SemiprimeD1StackRecoveryNodeInputsOriginalResources",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackRecoveryNodeInputsOriginalResources.lean",
+      "sha256": "6fb507d675277ef11bba49842aec9c13b1cc4a6ccc97ffeb87f4a73f197ab20e",
+      "lines": 79,
+      "before": "6fb507d675277ef11bba49842aec9c13b1cc4a6ccc97ffeb87f4a73f197ab20e",
+      "after": "6fb507d675277ef11bba49842aec9c13b1cc4a6ccc97ffeb87f4a73f197ab20e",
+      "all_lines_read": true
+    }
+  ],
+  "findings": [
+    "Codec preserves every literal signed/high-zero byte: affine tape definitionally identical, powers framing append theorem proves exact same I58 tape.",
+    "Affine-ready uses SAME immutable program, actual q acquisition and physical slopes/loop; full Grid source omitted only at explicitly already-acquired cache boundary.",
+    "Resource derives actual array/argument bytes from fitted per-register widths, literal ONE and true q/grid/W VALUES; never elapsed execution or a native report clock.",
+    "Bounds sums actual whole A112/I58/P47 calls+returns+halt, fixed1e150R30. Prefix storage counts ALL140 roles including allocated shadows plus genuine return cells via SAME program halt.",
+    "OriginalResources pays actual W/true2^a enumeration and proves universal dimension150/root1500 caps; upstream N-only composition and complete weight source remain explicitly separate. No blocker."
+  ]
+}

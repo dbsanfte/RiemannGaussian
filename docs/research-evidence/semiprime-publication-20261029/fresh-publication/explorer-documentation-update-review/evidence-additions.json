@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "PASS_EXACT_REVIEWED_EVIDENCE_ADDITIONS_AND_EXPLICIT_STAGED_GATE",
+  "scope": "Explicit reviewed one-time initial-publication evidence additions; not future baseline relaxation.",
+  "manifest": "docs/research-evidence/semiprime-publication-20261029/preserved-whitespace.json",
+  "manifest_before_sha256": "75e5b4a3f2a7a2572dbf78c2eb5dff9dc39be7afd6e996abf24673f462e772da",
+  "manifest_after_sha256": "2388c23b960f91372647b9befc31c1131b72ed67b38d51a30107259b6e925753",
+  "existing_107_entries_unchanged": true,
+  "existing_107_entries_sha256": "fbe241a205116467500b60bcd1ee9c2c70e85e1dab1d879cbf8056be3e94b01c",
+  "preexisting_top_level_fields_unchanged": true,
+  "added_entries": [
+    {
+      "path": "docs/research-evidence/semiprime-publication-20261029/fresh-publication/explorer-documentation-update-review/documentation-delta.diff",
+      "sha256": "55c6e59b7bb6f085feeaee91dbae7d6226585fdf5f992f350853da3c168e4577",
+      "findings": [
+        {
+          "line": 6,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 9,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 14,
+          "kind": "trailing-whitespace"
+        },
+        {
+          "line": 19,
+          "kind": "trailing-whitespace"
+        }
+      ]
+    },
+    {
+      "path": "docs/research-evidence/semiprime-publication-20261029/source-before-documentation/SemiprimeStreamingTensor.lean.txt",
+      "sha256": "f10add0e23c2de3c563263d830261f25328921357e005211b3fe8d0f51571ed0",
+      "findings": [
+        {
+          "line": 178,
+          "kind": "blank-at-eof"
+        }
+      ]
+    }
+  ],
+  "current_counts": {
+    "files": 109,
+    "findings": 241,
+    "kinds": {
+      "blank-at-eof": 87,
+      "trailing-whitespace": 154
+    }
+  },
+  "original_log_retained_historical": {
+    "origin": "/tmp/semiprime-publication-20261029/staged-whitespace.log",
+    "sha256": "892823245cc5d58a8305a14c0b3d38834f76298e1e019f6d57c59e2ec795b664",
+    "findings": 236,
+    "files": 107,
+    "kinds": {
+      "blank-at-eof": 86,
+      "trailing-whitespace": 150
+    }
+  },
+  "source_archive_staged_bytes_equal_reviewed_original": true,
+  "unified_diff_staged_bytes_equal_recomputed_exact_three_comment_delta": true,
+  "diff_blank_context_lines": [
+    6,
+    9,
+    14,
+    19
+  ],
+  "pure_check_findings": "PASS",
+  "checker_and_tests_unchanged_sha256": {
+    "scripts/check_staged_whitespace.py": "3468f58714520bbf2740e2c55bdbf308671e53c6cc6afe3bdfb23b0317e55ce0",
+    "scripts/test_staged_whitespace.py": "577d6cae1ab51e6011a01a72ed9d8a5b1660807a5f6ae9b60f5c7c3c6760a1b2"
+  },
+  "git_mutations": false,
+  "source_or_lean_build_changes": false,
+  "next_gate_command": [
+    "python3",
+    "scripts/check_staged_whitespace.py",
+    "--staged",
+    "--manifest",
+    "docs/research-evidence/semiprime-publication-20261029/preserved-whitespace.json"
+  ],
+  "staged_gate": {
+    "command": [
+      "python3",
+      "scripts/check_staged_whitespace.py",
+      "--staged",
+      "--manifest",
+      "docs/research-evidence/semiprime-publication-20261029/preserved-whitespace.json"
+    ],
+    "actual_terminal_exit_code": 0,
+    "stdout": "Whitespace check passed (241 exact preserved findings; staged index).\n",
+    "stderr": ""
+  }
+}

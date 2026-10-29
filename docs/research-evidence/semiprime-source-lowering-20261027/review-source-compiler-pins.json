@@ -1,0 +1,65 @@
+{
+  "status": "independent read-only semantic/caching/scope review PASS; eight final frozen sources and canonical objects",
+  "modules": [
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramIR",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramIR.lean",
+      "source_sha256": "ccbf2d701a54e21eccce26d3390a199f46b183bb9376d79f47ff7f74d431b6b6",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramIR.olean",
+      "object_sha256": "7cb0506286e69805fd44275dc7d834b9f66b17dcb70245c4ed1f02c092046699"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramBlocks",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramBlocks.lean",
+      "source_sha256": "f7cc60b34b4316968467cc590f6706e031cca894fc0b6a649fe7c31675102931",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramBlocks.olean",
+      "object_sha256": "b91145c11b0b5a5db6d93ebdf54671690d02010066773cf9933cdd0ca9f048d4"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramCompiler",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramCompiler.lean",
+      "source_sha256": "a074225270d9cdd3d9981ef9f494f7c3c39b4564fa9bd307e421edf8fae7f475",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramCompiler.olean",
+      "object_sha256": "cd1800ef6d4717e2a053a203e05d8be7c98abca94783e4228b6ed050502719f8"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramGeneration",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramGeneration.lean",
+      "source_sha256": "4da28d229258653ccf71ae3900d28e3ff98367cfad73388b19cf8a8c6eb9e9f3",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramGeneration.olean",
+      "object_sha256": "b8adf9cf32ddc9f24d3d64fb2ea969ff60e2733a6b670f433b64e5c6c7cb3035"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayProgramSafe",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayProgramSafe.lean",
+      "source_sha256": "70c722e201edfb36d480c974cd7f7eca1c89f26ac66351d6e26bbe24d060dbcf",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayProgramSafe.olean",
+      "object_sha256": "4dd106ab8889d358fc846ae6e3fb7a4fed9d688ee2a38ddcfd471527406448fd"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayCompilerSafe",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayCompilerSafe.lean",
+      "source_sha256": "f05fd8d54fe8f2da2165cb4f7b50f949284f8da3f007ca3ac3f6bfecaacc7996",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayCompilerSafe.olean",
+      "object_sha256": "f6b21e11200235d5a814d813a5a36cb5cd30a75e9e8888d8b1b440778b7530e4"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceArrayGeneratedBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceArrayGeneratedBits.lean",
+      "source_sha256": "17fbb429376db9ff206db82234ca8a39b67da33b314d2c0f265702936172f30b",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceArrayGeneratedBits.olean",
+      "object_sha256": "ace1be44819b5c96704cff785710e5d1c07734be609cf1d280fba5d644322e05"
+    },
+    {
+      "module": "RiemannGaussian.SemiprimeSourceInterpolationGeneratedBits",
+      "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceInterpolationGeneratedBits.lean",
+      "source_sha256": "3af7823c791fe3288a4b639426afaec31bbdea2c55d7044eba41f9112e514497",
+      "object": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeSourceInterpolationGeneratedBits.olean",
+      "object_sha256": "3de239e59bb317b781698b4b00fe953eaaf66076297f107f0a8eef4dac34cd5d"
+    }
+  ],
+  "review": {
+    "path": "/tmp/semiprime-source-lowering-20261027/review-source-compiler.md",
+    "sha256": "fa7b777c37382d05a1303367c3f7461933bda32a8a7d1a7a54b40936c5379aa1"
+  }
+}

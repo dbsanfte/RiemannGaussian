@@ -1,0 +1,23 @@
+--- docs/research-evidence/semiprime-publication-20261029/source-before-documentation/SemiprimeStreamingTensor.lean.txt
++++ RiemannGaussian/SemiprimeStreamingTensor.lean
+@@ -28,6 +28,7 @@
+       (1 - x 0) * evaluate w (fun a => T (Fin.cons false a)) (fun i => x i.succ) +
+       x 0 * evaluate w (fun a => T (Fin.cons true a)) (fun i => x i.succ)
+ 
++/-- Embed a Boolean input as zero or one in the coefficient ring. -/
+ def bit (b : Bool) : R := if b then 1 else 0
+ 
+ theorem boolean_recovery (w : ℕ) (T : (Fin w → Bool) → R) (a : Fin w → Bool) :
+@@ -49,10 +50,12 @@
+     · exact congrArg T (by simpa only [h] using ha)
+     · exact congrArg T (by simpa only [h] using ha)
+ 
++/-- Number of leaf evaluations in the complete binary recursion on the arity. -/
+ def leafCount : ℕ → ℕ
+   | 0 => 1
+   | w + 1 => leafCount w + leafCount w
+ 
++/-- Recursion depth of the streaming evaluator on the given arity. -/
+ def recursionDepth : ℕ → ℕ
+   | 0 => 0
+   | w + 1 => recursionDepth w + 1

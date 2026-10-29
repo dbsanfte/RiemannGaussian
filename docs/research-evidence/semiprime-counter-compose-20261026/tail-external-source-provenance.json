@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "source": {
+    "path": "lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/SpectralBinomial.lean",
+    "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/SpectralBinomial.lean",
+    "git_blob": "4a5fbb95d38a8d525c442adc5ef2d2cd8fe78cd3",
+    "sha256": "59aba107edac67258f442374d612c63d5686560503006ba5c88f80ef26952c8f",
+    "bytes": 7641,
+    "working_copy_matches_pinned_blob": true
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/LICENSE",
+    "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357,
+    "local_copy": "LICENSE.OpenAI-Math.Apache-2.0.txt"
+  },
+  "adaptation": "Finite binomialMean/MGF/Chernoff derivation adapted with attribution in SemiprimeCounterTail module documentation. Exact Q-trial interval, schedule budget and integer guard are locally proved; no external theorem imported.",
+  "existing_license_provenance": "/home/dbsanfte/riemann/formal/docs/research-evidence/semiprime-eth-formal-bridge-20261026/sources.json"
+}

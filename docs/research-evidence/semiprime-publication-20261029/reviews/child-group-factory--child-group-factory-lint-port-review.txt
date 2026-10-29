@@ -1,0 +1,8 @@
+PASS — independent read-only supplemental review.
+Full bodies/all355 current lines read: LeftPortsLoop154, BucketParse109, OldPortParse92. Every old code/proof byte unchanged after removing ONLY11 added complete documentation lines, verified against archived attempt1.
+Rechecked nested bucket/child EOF and cleanup, actual six-field/four-field parser calls with validity pops, retained foreign fields, raw packet padding, original ordered port fields, actual source time and returns. No blocker.
+No imports/builds/source or canonical edits/controls/replays. Before=assignment=after=current SHA256. Original64-file review remains preserved.
+
+5c6b4d940f12700e8ef503cbb39bb56b89e330b8e3194fa6eda6c70884757645  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryLeftPortsLoop.lean
+415a96b5dc2e6be0bd8e8fa122fe6735c0f37e478c0358357312cf2697050b9f  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryBucketParse.lean
+91f552e1759c60e4ba361375337b267b12d28f02302448c25aec0cbd3fcf4d0d  /home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeD1StackChildGroupFactoryOldPortParse.lean

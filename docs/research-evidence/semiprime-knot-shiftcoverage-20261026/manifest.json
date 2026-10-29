@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "excludes": [
+    "manifest.json"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6359,
+      "sha256": "11d64b61039307bc0c88551e888626baa86839e9ec211b08d0ef0d987a8bc295"
+    },
+    {
+      "path": "christoffel-products.md",
+      "bytes": 11196,
+      "sha256": "932844da7d1f7608fd5d46798036ba4dd32ab196a5404430b7b9c7a39c9d449d"
+    },
+    {
+      "path": "christoffel-review.md",
+      "bytes": 5957,
+      "sha256": "cf2c98882f05f7a3375b8a674baf6c4645d4d712a7acb640773e361e6d16f42b"
+    },
+    {
+      "path": "dense-box-coverage.md",
+      "bytes": 10495,
+      "sha256": "f04a215ab40e21ed38c4291e971fa3b65312b3867154da4faf6ed04bf41d08c5"
+    },
+    {
+      "path": "dense-box-review.md",
+      "bytes": 7508,
+      "sha256": "325033690901cabe3800170b1be97e1dbdc0b3beeeb311ee56ad3842e0b7d8ce"
+    },
+    {
+      "path": "joint-shifts-review.md",
+      "bytes": 4422,
+      "sha256": "8d6734239e57508dd18e6de6e4144802dfb4bb9e24c883b314226a0315ec6f03"
+    },
+    {
+      "path": "joint-shifts.md",
+      "bytes": 9019,
+      "sha256": "2e5186d2a896f876c63f62b0fa5a841751a2db8ba1a71c63bf8cc4b99630b859"
+    },
+    {
+      "path": "lattice-shifts-review.md",
+      "bytes": 2825,
+      "sha256": "77b746125cf438ddc4615740a0881dd4635022d4500b6122a53b0c7a28e5442e"
+    },
+    {
+      "path": "lattice-shifts.md",
+      "bytes": 11872,
+      "sha256": "65473aa794ff8b9b072d4d1a6ad6adb131cb6024bfaaa630313d38bd69664764"
+    },
+    {
+      "path": "mutation-coverage.md",
+      "bytes": 8208,
+      "sha256": "078dac4c485a8778ecd8099cbccc9ea1a36b475e012eda3c29ebd3718fdb98ba"
+    },
+    {
+      "path": "normalization-mutation-review.md",
+      "bytes": 4008,
+      "sha256": "13b20ca848f5cbc667a3e2d7a90dccce6ca64606972313a864326340c56134f7"
+    },
+    {
+      "path": "q-discriminant-literature.md",
+      "bytes": 5370,
+      "sha256": "637fc13aba6f87718dbb92bf79495d4e0e21e6e55fd230450aee4925c46fd450"
+    },
+    {
+      "path": "review.json",
+      "bytes": 4063,
+      "sha256": "a8cb7ef38d82cb16dbf3c956935f1c2860f70befeb9a14461a41d6f4766dbcd9"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 3185,
+      "sha256": "82c1229894482a4ff32bdbccd0cf38bf3201aeaa71ea44f178095235417ee77b"
+    }
+  ]
+}

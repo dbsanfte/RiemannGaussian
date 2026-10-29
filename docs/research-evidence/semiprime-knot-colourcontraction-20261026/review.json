@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "previous_turn_classification": "Progress: carry-free uniform Cartesian query and exact phase index; no acquisition-rate improvement.",
+  "current_turn_classification": "Progress: explicit common-character lattice isomorphism and exact finite-domain readout, with completed symmetry and boundary candidate tests; no whole-query gain.",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "current_query_bound": "soft O(J+sqrt(Jm)) = soft O(k^(5/4)) for the retained original route",
+  "new_completed_query_bound": "soft O(k^2) across the Cartesian family",
+  "target_query_bound": "soft O(k), including acquisition and recovery",
+  "principal_result": "Explicit integral unimodular character normalization and rational ambient lattice-to-lattice isomorphism for equal phase-index classes, with all actual finite-domain and clock lifts retained.",
+  "common_character": {
+    "G": "gcd(j-1,k)^2",
+    "L": "H/G",
+    "normalized_basis_labels": "(G+H*f,H*c)",
+    "normalization": "C=C0*D with both explicit integer determinant-one Bezout matrices; L=1 handled separately.",
+    "forward_map": "B_jprime C_jprime C_j^-1 B_j^-1",
+    "map_scope": "Rational ambient determinant-one map, integral and bijective on the supplied source lattice; not claimed as an ambient SL2(Z) or DAHA operator.",
+    "acquired_descriptors": "soft O(k), with O(log k) common beta^G directions",
+    "actual_query": "q^(h-F_j*n1-Cclock_j*n2)-(beta^G)^n1 on the transported finite parallelogram, n!=0 and h=0..4k.",
+    "canonical_lift_accounting": "F_j,Cclock_j obtained from the actual canonical Gauss label row times P_j^-1, not reused from the elementary basis.",
+    "interval_union": "Merge actual overlapping/touching intervals; single-cell adjacent intervals merge at |Cclock_j|<=4k+1. Do not fill gaps.",
+    "completed_readout": "Enumerate O(k) actual points per cell, soft O(k^2) globally; no huge transformed bounding-box scan.",
+    "collective_scalar_acquired_at_target_cost": false
+  },
+  "symmetry": {
+    "swap": "One j->N/j orbit representative with symmetric scale range [8H,N/(8H)] preserves either-factor NONUNIT coverage.",
+    "count": "k/6+O(1) colour families; no net factor-two cell/runtime saving because the logarithmic scale range approximately doubles.",
+    "enlarged_labels": "O(HN+kH), with O(log N) bits and the inherited general extractor interface.",
+    "sign": "Correct signed baseline yields -chi_j and preserves phase index; ordinary -j baseline is different."
+  },
+  "literature_specializations": {
+    "ambient_slope": "Whole-lattice kernel congruences modulo k and character congruences modulo H are necessary and sufficient for the specified pointwise covariance; input height charged.",
+    "Dehn_shear": "Literal-q covariance forces jprime=j and shear coefficient divisible by H/gcd(j-1,k), including specified half/quarter framings.",
+    "DAHA_A1": "Q^(m+n+2*kappa)=1 at kappa=-k/2 pairs source weights j,k-j, but an actual B=2 nonaxis native row has unit-separated node values.",
+    "scope": "No general DAHA, matrix, recurrence, or implicit-query lower bound."
+  },
+  "boundary_cover": {
+    "cheap_corner_condition": "After literal omissions, true-cell corner hits satisfy an exact integer equation because the index gap has absolute value<16H.",
+    "generator_completion": "Old O(k^(3/2)) horizon, soft O(k^(5/4)) query; prior Gauss coverage.",
+    "exhaustive_short_completion": "O(k) starts per cell with clock 0..4k; soft O(k^2) whole-family query.",
+    "homothetic_push": "Requires ray alignment and scaled clock; not a proved small-corner cover.",
+    "new_short_corner_coverage_proved": false
+  },
+  "extractor_accounting": {
+    "T_ext": "soft O(N^(31/192))",
+    "terminating_calls_at_most": 1,
+    "qualification": "Also charged on general short prefix/subset factor-or-value calls."
+  },
+  "reviews": [
+    "common-character-review.md",
+    "colour-symmetry-review.md",
+    "colour-recurrence-review.md",
+    "boundary-cover-review.md"
+  ],
+  "root_review": "Derived the constructive common-character normal form, integrated its actual canonical-Gauss lifts, checked boundary constants and exact quadratics, inspected primary DAHA equations and retained all review qualifications.",
+  "preservation": {
+    "protected_files_verified": 861,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1533112,
+        "sha256": "8fb51f97a5392d5cbc8b99b39c46ff01c84ec7304c502665d12dc722b6cb7bdd"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2403876,
+        "sha256": "d339e9da7349ffbb3db56c271fc06447e98f2161ece1b5d00e4eb733c8fddadb"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "scratch_baseline_sha256": "fce25f75c30359013e7a5f8213cb401b016a0accc7ebe779b87bf76832727312"
+  },
+  "validation": {
+    "mathematical_validation": "Four independent symbolic paper reviews, not kernel-checked proof.",
+    "new_primary_sources_checked": 2,
+    "inherited_source_references": 2,
+    "internal_input_pins": 7,
+    "local_links": 11,
+    "json_and_whitespace": true,
+    "git_diff_check": true
+  },
+  "numerical_campaign": false,
+  "new_executable_research_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-26",
+  "note": "Agents wrote scratch reports; root archived them and added integration. Statements about no repository edits refer to agent derivation, not this archival operation. No frozen prior report was rewritten.",
+  "files": [
+    {
+      "archived": "cancellation-identities.json",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/cancellation-identities.json",
+      "source_sha256": "a7b1f42737b6315bdf690c9c7fe03fd67689390658dc950d57c898133cf861e7",
+      "archive_sha256": "a7b1f42737b6315bdf690c9c7fe03fd67689390658dc950d57c898133cf861e7",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "chebyshev-decimation.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/chebyshev-decimation.md",
+      "source_sha256": "9cef9be2d81732c592e13f98f80307457daffb42a44389cf7b2f7f82e191c7ad",
+      "archive_sha256": "9cef9be2d81732c592e13f98f80307457daffb42a44389cf7b2f7f82e191c7ad",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "check_cancellation_identities.py",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/check_cancellation_identities.py",
+      "source_sha256": "76e66a6cbf5a12430f2f9ced2bb0286538ac02d8c131a7d0fc872460112a1315",
+      "archive_sha256": "76e66a6cbf5a12430f2f9ced2bb0286538ac02d8c131a7d0fc872460112a1315",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "cone-reciprocity.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/cone-reciprocity.md",
+      "source_sha256": "1f73432074e6d19c01a9f86db2af5f8c0e5608e69e4343f09476972bc13826e6",
+      "archive_sha256": "342dd5a49a83ba4460c7040178cd6a8e1688435914bce420b064c37223b5d0bf",
+      "copy": "source links, replay path or explicit short-index guard normalized by root"
+    },
+    {
+      "archived": "correlated-wronskian.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/correlated-wronskian.md",
+      "source_sha256": "7acf6762ac8e2324e8ffa33a3cd5613b3585722cf4a7ab80bc8c8228050a8b3d",
+      "archive_sha256": "7acf6762ac8e2324e8ffa33a3cd5613b3585722cf4a7ab80bc8c8228050a8b3d",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "deformation-cancellation.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/deformation-cancellation.md",
+      "source_sha256": "03b8f5c2fcb0697cdcedb6746dca943fd81e99a95548101d0fb690f22e1e2e6e",
+      "archive_sha256": "03b8f5c2fcb0697cdcedb6746dca943fd81e99a95548101d0fb690f22e1e2e6e",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "independent-moment-review.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/independent-moment-review.md",
+      "source_sha256": "0251426f3f83ffce21b57fadee813b5e9a2f36f8721f819974ebb094e5f1aea4",
+      "archive_sha256": "0251426f3f83ffce21b57fadee813b5e9a2f36f8721f819974ebb094e5f1aea4",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "moment-consumer-review.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/moment-consumer-review.md",
+      "source_sha256": "b95dd10c4f8401698645ffb58d709be75fba5f77f7e5b7ec07a395676f915bd8",
+      "archive_sha256": "3257b433fe5f590a19b3caadc525439bddc44a5d53150324465f9f7321ed62aa",
+      "copy": "source links, replay path or explicit short-index guard normalized by root"
+    },
+    {
+      "archived": "packed-finite-part.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/packed-finite-part.md",
+      "source_sha256": "ffb2c5069b945517638a77ff6745d8f4667d6e13b738be52f9491832071271d3",
+      "archive_sha256": "4763350a61d6b3be9cc9bc7aaaa6aa4c81a646d25d1c96f5708c40901d9348cc",
+      "copy": "source links, replay path or explicit short-index guard normalized by root"
+    },
+    {
+      "archived": "packed-qdifference.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/packed-qdifference.md",
+      "source_sha256": "10bd8ab6ac24de96b74cffef30263dd3f3b93995876f57e6871a7b70e810c828",
+      "archive_sha256": "ccc607d73d935e897d861c0e8e92c143ce02c7d59473d94e2130e88070824342",
+      "copy": "source links, replay path or explicit short-index guard normalized by root"
+    },
+    {
+      "archived": "packed-source.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/packed-source.md",
+      "source_sha256": "b02ef4d5f1b03214c8be2876a590b4513251f056e2021c677d548389ade7865d",
+      "archive_sha256": "9122787f26aff82c4eb1188bd57ae477af7b5d943603d47ddc9a72a1c6894fdf",
+      "copy": "source links, replay path or explicit short-index guard normalized by root"
+    },
+    {
+      "archived": "replica-reset.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/replica-reset.md",
+      "source_sha256": "cf386a62ab89529f27a44acb25a6d989a0c4e90f61b9485225580387c39b4938",
+      "archive_sha256": "cf386a62ab89529f27a44acb25a6d989a0c4e90f61b9485225580387c39b4938",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-deformation-cancellation.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/review-deformation-cancellation.md",
+      "source_sha256": "58a343701b6e4acaf6520c3abaf048c01b70e868c6f85c7431e7c4b08da5c774",
+      "archive_sha256": "58a343701b6e4acaf6520c3abaf048c01b70e868c6f85c7431e7c4b08da5c774",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "review-integration.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/review-integration.md",
+      "source_sha256": "aa21dfb4556d03ec272b7e4144d9fd5694a6113627441a46e5d515e301e7e8c7",
+      "archive_sha256": "aa21dfb4556d03ec272b7e4144d9fd5694a6113627441a46e5d515e301e7e8c7",
+      "copy": "verbatim"
+    },
+    {
+      "archived": "validation-cancellation.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/validation-cancellation.md",
+      "source_sha256": "aa96bc0ef7f16a39a1bd23434e5c685d0bd82f7df472efdac5a05bc7f94e8626",
+      "archive_sha256": "a091937b9523739dcefd1b4fda8ab697ff410d78b7b7262bc35247cc08c2782c",
+      "copy": "source links, replay path or explicit short-index guard normalized by root"
+    },
+    {
+      "archived": "ward-cavity-contraction.md",
+      "scratch_source": "/tmp/semiprime-packed-residue-20261026/ward-cavity-contraction.md",
+      "source_sha256": "dcabf6fb3d52bd28a8ff6ad8580e946d0212ec4596c626dc9cad6ae2ad3fa073",
+      "archive_sha256": "dcabf6fb3d52bd28a8ff6ad8580e946d0212ec4596c626dc9cad6ae2ad3fa073",
+      "copy": "verbatim"
+    }
+  ]
+}

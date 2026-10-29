@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-26",
+  "classification": "Complete native torus-annihilator transfer/N+1 projection and full symmetric singleton-block interface; no acquisition exponent gain",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "whole_query_bound_improved": false,
+  "all_semiprime_sixth_exponent_established": false,
+  "retained_route_bound": "soft K^(5/4) for the weighted whole-family query; independent block calls cost soft K^(3/2)",
+  "new_evidence": [
+    "An actual nonzero short norm-one annihilator makes one local scalar beta power order small; the exact short screen and licensed scalar extractor factor in soft K without factoring the exponent.",
+    "The N+1 torus projection is now a complete paid factor-or-preparation algorithm returning large odd rough cross-prime coprime orders; changed coupled seeds are actually screened and roots reacquired.",
+    "Every nontrivial short global two-coordinate multiplicative relation is decodable, including zero scalar label with nonzero torus label.",
+    "The original one-row-per-colour bank has an explicit sign-invariant O(sqrt K) block partition with at most one good hit per block, including axes and nonprimitive rows.",
+    "Finite Lambert reciprocal residues have certified unit amplitudes and need no cofactor normalization on these blocks. Norm selection and one factor-consumer call per bin are fully paid.",
+    "Short block rational inputs and common moments are acquired softly linearly, but simultaneous singular evaluation remains unpaid. Executed AW lowering retains its long common product.",
+    "The exact new residue pairs have a constant-depth jet completion at the inherited soft K^(5/4) cost."
+  ],
+  "remaining": "Acquire the symmetric block pole pairs or other sufficient actual collision/annihilator data in total soft K; preserve all-family coverage and finish the complete bit-complexity and formalization objective.",
+  "reviews": [
+    "review-even-recurrence.md",
+    "review-polar-reciprocity.md",
+    "review-torus-transfer.md"
+  ],
+  "validation": {
+    "mathematical": "Three independent paper reviews plus root audit. Original scalar detector/extractor source contracts read directly. All-content parity partition, exact regulators, implicit coefficient arrays, min(J,h) moment cap, per-bin continuation and actual changed-base screens checked. Not Lean.",
+    "status": "pass",
+    "local_links_checked": 18,
+    "source_pins_checked": 12,
+    "git_diff_check": true,
+    "json_and_whitespace": true,
+    "preservation_hashes": true
+  },
+  "preservation": {
+    "protected_files_verified": 1010,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1568198,
+        "sha256": "6f7e07c4065b58e43fa7db6c41f685c7b5ccef38dbdefe435683dc69fb74e0ed"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2469094,
+        "sha256": "48b799f860a509ffd9c0c28bd370ebac74f9efcb7e3ff9800d42e10d5bc94908"
+      }
+    },
+    "concurrent_files_unchanged": 23,
+    "baseline_sha256": "51ff86ae09cf44a36165eb198f5c7bf8a2ff7837c22711b32c16db4dc2a30678"
+  },
+  "numerical_campaign": false,
+  "new_factoring_implementation": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

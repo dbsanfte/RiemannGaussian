@@ -1,0 +1,5 @@
+import RiemannGaussian
+import RiemannGaussian.SemiprimeCounterFiltration
+#lint- in RiemannGaussian.SemiprimeCounterFiltration
+#print axioms RiemannGaussian.SemiprimeCounterFiltration.correctedProduct_taylor_diagonal
+#print axioms RiemannGaussian.SemiprimeCounterFiltration.filtered_correctedProduct

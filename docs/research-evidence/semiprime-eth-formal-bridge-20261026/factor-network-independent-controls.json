@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "scope": "fixed structural controls, not factor search or performance evidence",
+  "fixtures": [
+    {
+      "N": 4,
+      "n": 8,
+      "d": 2,
+      "pre_subdivision_edges": 951,
+      "subdivided_edges": 1902,
+      "original_vertices": 80,
+      "valid_pair": [
+        2,
+        2
+      ],
+      "noncanonical_and_conflicting_restrictions_rejected": true,
+      "auxiliary_modulus": 257
+    },
+    {
+      "N": 15,
+      "n": 8,
+      "d": 2,
+      "pre_subdivision_edges": 951,
+      "subdivided_edges": 1902,
+      "original_vertices": 80,
+      "valid_pair": [
+        3,
+        5
+      ],
+      "noncanonical_and_conflicting_restrictions_rejected": true,
+      "auxiliary_modulus": 257
+    },
+    {
+      "N": 21,
+      "n": 16,
+      "d": 2,
+      "pre_subdivision_edges": 3559,
+      "subdivided_edges": 7118,
+      "original_vertices": 142,
+      "valid_pair": [
+        3,
+        7
+      ],
+      "noncanonical_and_conflicting_restrictions_rejected": true,
+      "auxiliary_modulus": 65537
+    },
+    {
+      "N": 1052675,
+      "n": 32,
+      "d": 3,
+      "pre_subdivision_edges": 13771,
+      "subdivided_edges": 27542,
+      "original_vertices": 268,
+      "valid_pair": [
+        1025,
+        1027
+      ],
+      "noncanonical_and_conflicting_restrictions_rejected": true,
+      "auxiliary_modulus": 4294967297
+    }
+  ]
+}

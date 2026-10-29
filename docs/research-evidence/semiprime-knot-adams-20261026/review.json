@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-26",
+  "goal_status": "active",
+  "all_semiprime_sixth_exponent_established": false,
+  "whole_query_bound_improved": false,
+  "current_whole_query_bound": "soft O(L+sqrt(L*m))",
+  "target_whole_query_bound": "soft O(L+sqrt(m))",
+  "positive_results": [
+    "Factor or acquire exact common roots for arbitrary acquired nonzero short signed labels, including first-drop recovery, in soft O(L+k).",
+    "Factor or certify unit-separated acquired root and row-clock nodes in soft O(L+k).",
+    "Explicit finite-alphabet inverse to N-powering after the existing scalar screen; no off-alphabet inverse.",
+    "Target-scale norm-one torus order-coprimality screen with unknown split orientation.",
+    "Complete-family common-unit skein correction acquired in soft O(L+sqrt(m)), with no extra physical zeros."
+  ],
+  "fallback": "Shared-root collision predicates rebase exactly to common clock b^H and targets b^E_j, retaining the existing full-query bound and decoder.",
+  "mathematical_reviews": [
+    "adams-review.md",
+    "torus-review.md",
+    "extra-divisor-review.md",
+    "shared-roots-review.md",
+    "integration-review.md"
+  ],
+  "clarifications": [
+    "Finite-alphabet separation costs include the possible extractor as soft O(L+k).",
+    "First-drop extraction uses the previous projected clock q_D.",
+    "q_j^E_j=b^H, while the collision target is b.",
+    "Frobenius-deflated numerical unit acquisition is optional for zero/nonunit queries.",
+    "Actual opposite-row transport maps the apparent positive m+1 endpoint to legal negative -m.",
+    "Morton–Manchon Theorem 13 and Corollary 14 are in Section 7.",
+    "Rank-one algebraic recurrence is not a supplied initialized unique-step prefix algorithm."
+  ],
+  "preservation": {
+    "protected_files_verified": 761,
+    "prefixes_preserved": {
+      "AGENTS.md": {
+        "bytes": 1514682,
+        "sha256": "33fec8bda32975f5d67504af9953c10506d946c6ac1d3d93953c7ee160afa385"
+      },
+      "docs/semiprime-factorisation-investigation.md": {
+        "bytes": 2366536,
+        "sha256": "b18a943bb23732e3d341321943f0160b3769d92702c478ef6ba4bdd47dd712aa"
+      }
+    },
+    "concurrent_files_unchanged": 22,
+    "scratch_baseline_sha256": "3e393f4ff1c771077290525d3d877c862867795376b49f2c0883d6e89c098806"
+  },
+  "validation": {
+    "source_pins": 6,
+    "primary_sources": 6,
+    "local_links_checked": 14,
+    "json_and_whitespace_checks": true,
+    "git_diff_check": true
+  },
+  "numerical_native_coverage_campaign": false,
+  "new_implementation_or_tests": false,
+  "lean_or_public_asset_changes": false,
+  "commit_or_push": false
+}

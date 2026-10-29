@@ -1,0 +1,12 @@
+{
+  "status": "PASS for scratch ring/order identities; finite original histogram/compiler/runtime joins explicitly remaining",
+  "strict": true,
+  "standard_axioms_printed": true,
+  "files": {
+    "HistogramDifference.lean": "16bd59c77aab1bff6cb33692761ee40add58d104bfaf38fff5c118a32d0fa98f",
+    "HistogramDifferenceAudit.lean": "d8131b45f47e0cdfff17291739257a547e421690120a08f59225763ffcc682d7",
+    "histogram-difference-build.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "histogram-difference-axioms.log": "c26d2b4a63ff113da8f7e5eeaa012a2a838154c29381f797f152dac9db1e6a3c",
+    "histogram-shortcut.md": "fcebb0fa309cbe55c10b2746a692d2a481f22f52b9fb7aabb5137a9e7564c80a"
+  }
+}

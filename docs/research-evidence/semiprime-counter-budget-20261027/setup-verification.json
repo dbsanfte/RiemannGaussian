@@ -1,0 +1,19 @@
+{
+  "module": "RiemannGaussian.SemiprimeFullSetupBudget",
+  "paths": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeFullSetupBudget.lean",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeFullSetupBudget.olean",
+    "isolated": "/tmp/semiprime-counter-budget-20261027/SemiprimeFullSetupBudget.olean"
+  },
+  "sha256": {
+    "source": "cb233935d5dbca3fd73ee09336ff4195aafb46eb1df072c195b0a44d1a072c94",
+    "canonical": "3c05bcf59fb951f5ee417813fd8c331cdb9145746836f0f894afdf8eec58c631",
+    "isolated": "3c05bcf59fb951f5ee417813fd8c331cdb9145746836f0f894afdf8eec58c631"
+  },
+  "strict": true,
+  "isolated_equal": true,
+  "ordinary_root_linters": 15,
+  "generated_declarations": 18,
+  "theorem_constants": 12,
+  "standard_axioms_only": true
+}

@@ -1,0 +1,13 @@
+'RiemannGaussian.SemiprimeLayoutCertificates.ofIntegerConstraints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeLayoutCertificates.grouped_summary_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeLayoutCertificates.summary_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiemannGaussian.SemiprimeLayoutCertificates.firstRepresentative_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RiemannGaussian.SemiprimeLayoutCertificates.row_span_of_integer_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

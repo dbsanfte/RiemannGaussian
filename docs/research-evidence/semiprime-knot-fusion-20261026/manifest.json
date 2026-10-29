@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "date": "2026-10-26",
+  "scope": "Executed finite knot fusion and factor-correlated Euclidean interval/filter audit",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4492,
+      "sha256": "34af53e75db18460411ecbb84b21610169d38b886e8c3b6a6dd5dd661b291704"
+    },
+    {
+      "path": "bispectral-fusion.md",
+      "bytes": 11415,
+      "sha256": "39b4400d5a0818388617b136383930bec307bfb4fb0f1c396ad41aa85be9d55e"
+    },
+    {
+      "path": "bispectral-review.md",
+      "bytes": 4772,
+      "sha256": "860c9a60e6642a91de027664b446de2ae9ed2ca743064ba5418c0cf53680d1c1"
+    },
+    {
+      "path": "factor-correlated-cover.md",
+      "bytes": 14510,
+      "sha256": "51009a2ff29aba853ed75b832407dddb3a5920d75adccc96db59888d6a13b8f5"
+    },
+    {
+      "path": "factor-cover-review.md",
+      "bytes": 5505,
+      "sha256": "ab340f68c032de8304563a12c38c48435b21d6b3c8b7f69e639d2a5bcda1d21f"
+    },
+    {
+      "path": "fermionic-fusion.md",
+      "bytes": 14733,
+      "sha256": "3d75d58d1bec2831aae75dd3c03e0ff2c914609947a9edf38b99da33e7460762"
+    },
+    {
+      "path": "fermionic-review.md",
+      "bytes": 6087,
+      "sha256": "834432ebb32d2f0d94fa6770ec84d7c536482e161808466337ca1863aff9800c"
+    },
+    {
+      "path": "first-odd-filter-addendum.md",
+      "bytes": 4614,
+      "sha256": "c2e58665a592850bbd7becfebbf8391d92fc41bec3a70f2f341bd8ac4f5a7b3e"
+    },
+    {
+      "path": "literature-triage.md",
+      "bytes": 3390,
+      "sha256": "668ffacfcefa10d86fa826f2f176a7c7a5924a10a6bd02035fcb4300693e1b99"
+    },
+    {
+      "path": "review.json",
+      "bytes": 2693,
+      "sha256": "abcb55e75c037b01bf31d4ef467723b336891c6d1e7914ebb244bcf751be7acc"
+    }
+  ]
+}

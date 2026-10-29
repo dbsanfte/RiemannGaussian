@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/home/dbsanfte/riemann/.lean/elan/bin/lake",
+    "build",
+    "--wfail"
+  ],
+  "exitCode": 1,
+  "elapsedSeconds": 4721.8226816654205,
+  "leanNumThreads": 6,
+  "log": "/tmp/semiprime-publication-20261029/lake-build-final.log"
+}

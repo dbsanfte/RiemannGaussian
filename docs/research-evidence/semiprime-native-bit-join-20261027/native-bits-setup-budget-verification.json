@@ -1,0 +1,19 @@
+{
+  "module": "RiemannGaussian.SemiprimeNativeBitsSetupBudget",
+  "paths": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeNativeBitsSetupBudget.lean",
+    "canonical": "/home/dbsanfte/riemann/formal/.lake/build/lib/lean/RiemannGaussian/SemiprimeNativeBitsSetupBudget.olean",
+    "isolated": "/tmp/semiprime-native-bit-join-20261027/SemiprimeNativeBitsSetupBudget.olean"
+  },
+  "sha256": {
+    "source": "b04b4c1f3bc612c8c2eced0ca6952a6d3811c59064e7527a6086099384dde1d7",
+    "canonical": "7f569e104451a010fad03c0141410c4f87eef04dddd50223badacbe6139cf8d1",
+    "isolated": "7f569e104451a010fad03c0141410c4f87eef04dddd50223badacbe6139cf8d1"
+  },
+  "strict": true,
+  "isolated_equal": true,
+  "ordinary_root_linters": 15,
+  "generated_declarations": 13,
+  "theorem_constants": 9,
+  "standard_axioms_only": true
+}

@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-26",
+  "prior_repository_sources": [
+    {
+      "path": "docs/research-evidence/semiprime-six-domain-acquisition-20261026/README.md",
+      "sha256": "7f02576b9f1da50468198ba620001c547361d486ffd9e00ebc0944c2d7d482ad"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-separated-selector-20261026/packed-to-norm.md",
+      "sha256": "1907a1d0a3b4d5b4f0d5de21dc1486b677d2fb8ec0d000a7dc3fbd67df3d2a16"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-separated-selector-20261026/README.md",
+      "sha256": "7b8f62435905f325cf9f7581adc12c39d8592417af2205b43d35c49625703167"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-geometric-contraction-20261026/selected-condensation.md",
+      "sha256": "194f97928daa9fa5eb11e57d9ef96b1837466f3651f169611983a308953239d8"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/qbinomial-joint.md",
+      "sha256": "d288cb8f697e94e605a2d77e0b027f4010817a45a5df6590bde9ffd106689070"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-direct-contraction-20261026/composition-hybrid.md",
+      "sha256": "8081fbbfb7e0a22d22faafb6fac67a9c9fbd0d2d072414af7d6b88dafe8f5a76"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-fused-readout-20261026/quadratic-lifts.md",
+      "sha256": "87891fa454bbc7f03b5d363931c93649ed6ac197199fb8bd643eff2544b946c2"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-residue-shortcuts-20261026/content-cover.md",
+      "sha256": "312967a999516dcafa4006b3b36db3e5958c661de971b86d8ebe18ee7527acb9"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/paid-cover-transfer.md",
+      "sha256": "782c39a8e1eaa5a32b03cfcf2f6f61561aa3595d20c2dbd9cc7deb0ee856f644"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-acquisition-checkpoint-20261016/reports/group-gap-criterion.md",
+      "sha256": "6fb196a7d87a81a53e1169810044fa5a946f85f683f79b25f2498e648929a5c9"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-knot-direct-20261026/native-cover-review.md",
+      "sha256": "1dee755a36fdf52d20b4351ec02885efd9e58c895dca92fa1edd68ba98c73104"
+    },
+    {
+      "path": "docs/research-evidence/semiprime-even-acquisition-20261026/review-torus-transfer.md",
+      "sha256": "9d3cdbb257f0212a8f3f6d6b50a7f27f7b5b222dd3379a63ced1760b7564561f"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "Du, Huang and Li, A q-Analogue of the Modified Abramov-Petkovsek Reduction",
+      "url": "https://cs.uwaterloo.ca/~h2huang/Papers/DHL2018.pdf",
+      "location": "Section 2, Lemma 1 and Corollary 1",
+      "root_check": "Primary PDF directly inspected.",
+      "scope": "Shift-congruence context only; native finite sum and unit guards proved separately."
+    },
+    {
+      "title": "Neiger, Salvy, Schost and Villard, Faster modular composition using two relation matrices",
+      "url": "https://arxiv.org/abs/2601.17422v2",
+      "version": "v2, 4 September 2026",
+      "location": "Proposition 3.1 and Lemma 2.7",
+      "pdf_sha256": "65c955c35d82b77ef013a03537f782a3b515e1625ce19a1aa8c96557c8cd7095",
+      "root_check": "Primary cached PDF text and actual parameter restrictions inspected.",
+      "scope": "Explicit-input generic field bound compared only; prior general-ring affordability retained."
+    },
+    {
+      "title": "Chris Umans and Siki Wang, A number-theoretic conjecture implying faster algorithms for polynomial factorization and integer factorization",
+      "url": "https://arxiv.org/html/2511.10851v1",
+      "version": "v1, 13 November 2025",
+      "location": "Conjectures 3.3 and 5.1, Theorems 5.2 and 5.5, Section 6",
+      "root_check": "Primary author heading and exact conditional theorem/conjectures inspected.",
+      "scope": "Conditional cover channel and prior credit only; no native supplier imported."
+    }
+  ]
+}

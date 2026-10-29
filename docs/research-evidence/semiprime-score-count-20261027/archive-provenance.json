@@ -1,0 +1,294 @@
+{
+  "CombinedScoreCountAudit.lean": {
+    "source": "/tmp/semiprime-score-count-20261027/CombinedScoreCountAudit.lean",
+    "sha256": "5c2f04a0812478f551922f54a85d5b05317e3956ee59a217ecc96b8a238a74ea"
+  },
+  "CombinedScoreCountAudit.log": {
+    "source": "/tmp/semiprime-score-count-20261027/CombinedScoreCountAudit.log",
+    "sha256": "c788366dc51337f06c0ea4662319da3d0d7c459b68987463c8c4ef4a5ce56ede"
+  },
+  "README.md": {
+    "source": "/tmp/semiprime-score-count-20261027/README.md",
+    "sha256": "bae53f8c71bde213d3f267d0b3280637857c2bdb0e3dec067e713a12b87ecf80"
+  },
+  "SemiprimeSourceChoiceOrder.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceChoiceOrder.lean",
+    "sha256": "ce650a3c1f9e9fdd454aa8873b97bdf1414386586cf755b70717c4a8223b439e"
+  },
+  "SemiprimeSourceScoreCancellation.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCancellation.lean",
+    "sha256": "ddfe3ce83558c0e85e23967aa47af08ae5e7398a0c686d3f5ab85bbab2522fc7"
+  },
+  "SemiprimeSourceScoreChoice.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreChoice.lean",
+    "sha256": "11ca32b5625583c939c14b50239e762fff4bdde09043f8b9f06b28c032f5ea8a"
+  },
+  "SemiprimeSourceScoreCountBits.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountBits.lean",
+    "sha256": "d88dd0c6f2c739911287920d32dd5a455e04bd4990a8c5b4701473672294aba3"
+  },
+  "SemiprimeSourceScoreCountBitsBounds.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountBitsBounds.lean",
+    "sha256": "806faae650379157dd6c4e958538475f22adf7fd30321abe6960fb346efd89c1"
+  },
+  "SemiprimeSourceScoreCountBitsBudget.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountBitsBudget.lean",
+    "sha256": "7c357f0c561707f1e272647ac6df884be542e2c6aa8023913a0fedcab84b1662"
+  },
+  "SemiprimeSourceScoreCountBitsCore.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountBitsCore.lean",
+    "sha256": "5465dc594fee0a1d13ffdf44609284efe2e8e1afee027bc31186ded08765337e"
+  },
+  "SemiprimeSourceScoreCountOrder.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountOrder.lean",
+    "sha256": "164a564f8fad899c43cad64e5814c6c514d1902872a0fd3c7f54d5d45340d788"
+  },
+  "SemiprimeSourceScoreCounts.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCounts.lean",
+    "sha256": "f32288b044bc95aac07a67ac5e052d6b20f75250186426c94fc05487ce3ed002"
+  },
+  "SemiprimeSourceScoreCountsBounds.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountsBounds.lean",
+    "sha256": "cfe9327d36171a4c9057fb73657cd79c054921edccb90f6074db107d783d236c"
+  },
+  "SemiprimeSourceScoreCountsObjective.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountsObjective.lean",
+    "sha256": "fd28593dfa1a3de5d2669748b8ae4178f57619fe1b3b953d398c2fc26f8840c8"
+  },
+  "SemiprimeSourceScoreCountsPadding.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreCountsPadding.lean",
+    "sha256": "6a4d298ff39ce64ce56344ca99d6568711d45824e26d9d7b19c60c71a010b461"
+  },
+  "SemiprimeSourceScorePhysicalBudget.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePhysicalBudget.lean",
+    "sha256": "56d8b77eca88ddf2b49ed34e3b8ad30288fd3a2cedc005e419210293ceb32b85"
+  },
+  "SemiprimeSourceScorePhysicalCaller.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePhysicalCaller.lean",
+    "sha256": "2c54e4cc5fbcadc8ec2a82030c71f4dca2fa0fc14ce8f707acb5f46781d4a630"
+  },
+  "SemiprimeSourceScorePhysicalResources.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePhysicalResources.lean",
+    "sha256": "bc8feacb04b70be5a47216ed5160ca374d382ec69755d7d7ce0d9a0a0943bb80"
+  },
+  "SemiprimeSourceScorePhysicalSearch.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePhysicalSearch.lean",
+    "sha256": "86686122e36f780bf396d4c8cbf28c05574cf774de682dc6db5370841e8f0669"
+  },
+  "SemiprimeSourceScorePredicateBits.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePredicateBits.lean",
+    "sha256": "f937dfbbef80e0cda78a45e9ca3e8baa1562005a0219589f3e72bf98519b4ea1"
+  },
+  "SemiprimeSourceScorePredicateBitsBounds.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScorePredicateBitsBounds.lean",
+    "sha256": "ce05b2f9f9077a188388a67ee06113fa9d516230249725d1aeec728719ffea86"
+  },
+  "SemiprimeSourceScoreWeightAcquisition.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreWeightAcquisition.lean",
+    "sha256": "0caae3a13d9ab89ecf1641aa239f27fc8b65adef6964b4210a468f388e679c02"
+  },
+  "SemiprimeSourceScoreWeightBits.lean": {
+    "source": "/home/dbsanfte/riemann/formal/RiemannGaussian/SemiprimeSourceScoreWeightBits.lean",
+    "sha256": "e73d991eb36e6ec67a1ba75f2b16ca570002803127cd9d969c8e6f3d6f96a125"
+  },
+  "all-modules.json": {
+    "source": "/tmp/semiprime-score-count-20261027/all-modules.json",
+    "sha256": "fe0dd994371c45b983b28ddfc0894bc4eea2d09fe787798f872546b7cb91954f"
+  },
+  "archive_score_count.py": {
+    "source": "/tmp/semiprime-score-count-20261027/archive_score_count.py",
+    "sha256": "ee71ecab37d7e136ecb1661727a1b757b7ba3876c1283fe2b144a0d3aa8e7a14"
+  },
+  "compiler-imports.json": {
+    "source": "/tmp/semiprime-score-count-20261027/compiler-imports.json",
+    "sha256": "17480f5bd33b1676a9953607e6a0a6e57ad4623e8f5837261ecbf8f99b0680d2"
+  },
+  "count-bits-budget-notes.md": {
+    "source": "/tmp/semiprime-score-count-20261027/count-bits-budget-notes.md",
+    "sha256": "4f2da0d3b83414f353380eeadee847f065bac9aebfffd4e57ad9e912f6c189a0"
+  },
+  "count-bits-notes.md": {
+    "source": "/tmp/semiprime-score-count-20261027/count-bits-notes.md",
+    "sha256": "c7a5563b15471091dd98f675ec250906e3250d1ccedf08562e3e9a9014279a3e"
+  },
+  "count-bits-verification.json": {
+    "source": "/tmp/semiprime-score-count-20261027/count-bits-verification.json",
+    "sha256": "2213bfe148d0fdd4d5096244c49f3992550bc6a812b4c6e2076a494c11f09ccb"
+  },
+  "counts-notes.md": {
+    "source": "/tmp/semiprime-score-count-20261027/counts-notes.md",
+    "sha256": "9f4b645a5980d62d80c16f2795302a1181e9be371efac7b43e91912585a68eee"
+  },
+  "counts-verification.json": {
+    "source": "/tmp/semiprime-score-count-20261027/counts-verification.json",
+    "sha256": "178a66aec069a77dbcbef828c6472e8e83dfbc17fe70bd2b1118a07a8079d6c2"
+  },
+  "final-isolated/SemiprimeSourceChoiceOrder.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceChoiceOrder.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCancellation.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCancellation.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreChoice.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreChoice.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCountBits.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCountBits.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCountBitsBounds.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCountBitsBounds.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCountBitsBudget.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCountBitsBudget.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCountBitsCore.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCountBitsCore.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCountOrder.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCountOrder.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCounts.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCounts.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCountsBounds.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCountsBounds.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCountsObjective.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCountsObjective.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreCountsPadding.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreCountsPadding.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScorePhysicalBudget.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScorePhysicalBudget.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScorePhysicalCaller.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScorePhysicalCaller.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScorePhysicalResources.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScorePhysicalResources.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScorePhysicalSearch.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScorePhysicalSearch.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScorePredicateBits.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScorePredicateBits.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScorePredicateBitsBounds.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScorePredicateBitsBounds.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreWeightAcquisition.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreWeightAcquisition.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/SemiprimeSourceScoreWeightBits.log": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/SemiprimeSourceScoreWeightBits.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final-isolated/dependencies-after.json": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/dependencies-after.json",
+    "sha256": "3baa6ea37c779874c27afcafe1b6447f7d901522abdaf402f1719d67e96b9342"
+  },
+  "final-isolated/dependencies-before.json": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/dependencies-before.json",
+    "sha256": "3baa6ea37c779874c27afcafe1b6447f7d901522abdaf402f1719d67e96b9342"
+  },
+  "final-isolated/results.json": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/results.json",
+    "sha256": "7f0937325e24ea8c46cd352fcc9a5be9aa5f1d7afdd26aa6692aa6d21fa0a194"
+  },
+  "final-isolated/summary.json": {
+    "source": "/tmp/semiprime-score-count-20261027/final-isolated/summary.json",
+    "sha256": "0f8ed3a821dcd3c12c619a0297d3d826ccad68f9aa77deac36019e6262c529bf"
+  },
+  "journal-append.md": {
+    "source": "/tmp/semiprime-score-count-20261027/journal-append.md",
+    "sha256": "b9967eeea9d05b19a4c5be3d90ddc389893b625630a3d6674ec5f26ad4641261"
+  },
+  "next-whole-bit-join.md": {
+    "source": "/tmp/semiprime-score-count-20261027/next-whole-bit-join.md",
+    "sha256": "675ce9226d3248371acba11a7e46f615a87380c45aa011427c18813f9b95a8b9"
+  },
+  "physical-score-selection-notes.md": {
+    "source": "/tmp/semiprime-score-count-20261027/physical-score-selection-notes.md",
+    "sha256": "efb8917ff28973aa53e661136e9625689f5eb8c40629677a4b8fe9351f7cc689"
+  },
+  "predicate-bits-notes.md": {
+    "source": "/tmp/semiprime-score-count-20261027/predicate-bits-notes.md",
+    "sha256": "0b433f498d9955b8daeb052089d1797e7c0f28c869f9b6fe5893d247111c45e3"
+  },
+  "predicate-bits-verification.json": {
+    "source": "/tmp/semiprime-score-count-20261027/predicate-bits-verification.json",
+    "sha256": "ba9ede6afd3631b7ef51962ecd66102813866a0bbff0dec0425fd955987a0ccb"
+  },
+  "preservation-before.json": {
+    "source": "/tmp/semiprime-score-count-20261027/preservation-before.json",
+    "sha256": "75c73e6b41f292d73ea7a18bb23181ece689c4407b09d9f81e5df994b3c5bbd5"
+  },
+  "review-count-identity-sources.json": {
+    "source": "/tmp/semiprime-score-count-20261027/review-count-identity-sources.json",
+    "sha256": "30021c971bdef0a8aa20b10ec6c6f692c008f91f05dd75d04cd4b69183286ebf"
+  },
+  "review-count-identity.md": {
+    "source": "/tmp/semiprime-score-count-20261027/review-count-identity.md",
+    "sha256": "30566dcc4159f95d242759c80b75be54038b12626ecf2dc3b522129b02ba149a"
+  },
+  "review-physical-count-score-pins.json": {
+    "source": "/tmp/semiprime-score-count-20261027/review-physical-count-score-pins.json",
+    "sha256": "7e02027b0beab57c1b4e8fdbeddd36bb77cb291a2e77532f2975fa80e017fca7"
+  },
+  "review-physical-count-score.md": {
+    "source": "/tmp/semiprime-score-count-20261027/review-physical-count-score.md",
+    "sha256": "5385ae16d086bde6cc76b25aa3542b4c3990c9667fd10f606c5a0c49f959a156"
+  },
+  "review-physical-predicate-pins.json": {
+    "source": "/tmp/semiprime-score-count-20261027/review-physical-predicate-pins.json",
+    "sha256": "8b82e357dcd56728264df55685cb5b11e0306aa7306f1a8e44d49d30ae6307de"
+  },
+  "review-physical-predicate.md": {
+    "source": "/tmp/semiprime-score-count-20261027/review-physical-predicate.md",
+    "sha256": "f12232493a3a4155a01261487f09b9cbe1f459f3d742780c88fb9100d4daa47a"
+  },
+  "review-physical-score-search-pins.json": {
+    "source": "/tmp/semiprime-score-count-20261027/review-physical-score-search-pins.json",
+    "sha256": "80e6ac487b348a6c3ad28ffdb3912e4bb1ef9a5ecf7d5622074b1c823feb20e8"
+  },
+  "review-physical-score-search.md": {
+    "source": "/tmp/semiprime-score-count-20261027/review-physical-score-search.md",
+    "sha256": "fc33561de866e70b2ef8e56c5e2b62e68aa2edc95beb001332ae3adf48429665"
+  },
+  "score-physical-six-verification.json": {
+    "source": "/tmp/semiprime-score-count-20261027/score-physical-six-verification.json",
+    "sha256": "fb49a65083a42c1174470e61feac9f77aff98ae61bc449b86779df4e8e6c1bc7"
+  },
+  "score-weight-notes.md": {
+    "source": "/tmp/semiprime-score-count-20261027/score-weight-notes.md",
+    "sha256": "d4abc562f44f00771d337928cd185df2a487424eb6da6684c44b451a3fbe4711"
+  },
+  "score-weight-verification.json": {
+    "source": "/tmp/semiprime-score-count-20261027/score-weight-verification.json",
+    "sha256": "559c2c6f14a37cfc6019e81abc5694a4d791c49de0f7b57b6372d660ad8c6b4d"
+  },
+  "verify_score_count.py": {
+    "source": "/tmp/semiprime-score-count-20261027/verify_score_count.py",
+    "sha256": "221b37cc33396aa3a334e3e6cba8c470c53bae775dab13243ea1e9bf1667e3f5"
+  }
+}
