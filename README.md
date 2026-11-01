@@ -324,6 +324,12 @@ and mathematical physics. Numerical or symbolic experiments may suggest a
 lemma, but only a kernel-checked theorem grounded in the existing chain counts
 as progress. See [AGENTS.md](AGENTS.md) for the full methodology.
 
+## Related resources
+
+The [QRH Catalogue discovery guide](docs/qrh-catalogue.md) links a public
+cross-project index of mathematical and Lean components, with source revisions,
+assumptions, attribution and separately labelled verification evidence.
+
 ## License
 
 Copyright 2026 David Sanftenberg.
