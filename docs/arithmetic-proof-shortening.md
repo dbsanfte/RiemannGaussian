@@ -6,6 +6,8 @@ The published principal-character proof uses 165,070 archive modules. The indepe
 
 For each integer $n\ge2$, set $N=n^4$ and give each ordinary prime in $(N/4,N)$ a weight that rises from zero at $N/4$ to one at $N/2$ and falls to zero at $N$. Let $D(N)$ be $N\log(2)/2$ minus the sum of those weights times $\log p$. A positive value means a shortage of primes. The window test sums the positive parts with weights $1/n^3$, so a surplus at one sample cannot erase a shortage at another. [Prime weights and window criterion](../scripts/CheckAlpogeFixedPrimeBand.lean).
 
+Crossley gives a related RH criterion for every fixed positive integer power. At fourth powers it uses the same ordinary-prime deficit $D$ and requires $D(n^4)\ge 0$ at every integer $m\le n\le m^2$ on arbitrarily late blocks. [A prime-window criterion for RH on perfect powers](https://doi.org/10.5281/zenodo.24411621).
+
 Put $U=n^2$. Two applications of Möbius inversion give a signed quadratic sum
 ```math
 Q_N(V)=\sum_{1\le a,b\le V}\mu(a)\mu(b)
