@@ -764,6 +764,22 @@ private theorem shortRoot_geometry (n : ℕ) :
     _ ≤ (2*n*k)^3 := Nat.pow_le_pow_left hL' 3
     _ ≤ _ := by nlinarith only [Nat.mul_le_mul_left (n^3) hk₃]
 
+/-- The trimmed divisor cutoff stays between the half-product threshold and
+the square root. -/
+theorem fixedBandShortRoot_square_bounds (n : ℕ) :
+    ((fixedBandShortRoot n)^2)^2 ≤ n^4 ∧ n^4 ≤ 2*((fixedBandShortRoot n)^2)^2 := by
+  let V := (fixedBandShortRoot n)^2
+  have h := shortRoot_geometry n
+  change V+(n^2-V)=n^2 ∧ 3*(n^2-V) ≤ V ∧ _ at h
+  have hV : V ≤ n^2 := by omega
+  have h₃ : 3*n^2 ≤ 4*V := by omega
+  constructor
+  · rw [show n^4=(n^2)^2 by ring]
+    exact Nat.pow_le_pow_left hV 2
+  · have hr : 3*((n:ℝ)^2) ≤ 4*(V:ℝ) := by exact_mod_cast h₃
+    have hpow := pow_le_pow_left₀ (by positivity) hr 2
+    exact_mod_cast (show (n:ℝ)^4 ≤ 2*(V:ℝ)^2 by nlinarith only [hpow,pow_nonneg (Nat.cast_nonneg n : 0 ≤ (n:ℝ)) 4])
+
 theorem fixedBand_prime_shortRoot_error :
     ∃ C : ℝ, 0 ≤ C ∧ ∀ {n : ℕ}, 2 ≤ n →
       |dyadicPrimeDeficit ((n:ℝ)^4)+fixedBandQuadratic (n^4) ((fixedBandShortRoot n)^2)| ≤ C*(n:ℝ)^2 := by
@@ -954,14 +970,18 @@ theorem fixedBandOuter_near_energy {V L : ℕ} (hL : 0 < L) (hsize : 3*L ≤ V) 
   rw [abs_mul]
   exact (add_le_add (mul_le_mul hC hk (abs_nonneg _) (by norm_num)) hl).trans_eq (by dsimp only [e,T]; ring)
 
+/-- Prefix energy allowed for the outer corner at the chosen divisor cutoff. -/
+def fixedBandCutEnergy (n L : ℕ) : ℝ :=
+  let V := n^2-L
+  27*fixedBandPrefixEnergy V (V+3*L)/V
+
 /-- The energy pays for both large-divisor indices at a chosen truncation. -/
 def fixedBandCutScore (n L : ℕ) : ℝ :=
-  let V := n^2-L
-  27*fixedBandPrefixEnergy V (V+3*L)/V-fixedBandQuadratic (n^4) V
+  fixedBandCutEnergy n L-fixedBandQuadratic (n^4) (n^2-L)
 
 private theorem cutScore_zero (n : ℕ) :
     fixedBandCutScore n 0 = -fixedBandQuadratic (n^4) (n^2) := by
-  simp [fixedBandCutScore,fixedBandPrefixEnergy]
+  simp [fixedBandCutScore,fixedBandCutEnergy,fixedBandPrefixEnergy]
 
 theorem fixedBand_prime_cut_upper :
     ∃ C : ℝ, 0 ≤ C ∧ ∀ {n L : ℕ}, 2 ≤ n → 4*L ≤ n^2 →
@@ -1041,19 +1061,68 @@ theorem fixedBandMinMass_error :
   exact abs_le.mpr ⟨by linarith only [hhi,(abs_le.mp (hq hn)).1,mul_le_mul_of_nonneg_right (le_max_right C K) (sq_nonneg (n:ℝ))],
     by linarith only [hlo,mul_le_mul_of_nonneg_right (le_max_left C K) (sq_nonneg (n:ℝ))]⟩
 
-private theorem rh_of_fixedBand_upper_log_squareWindows (mass : ℕ → ℕ → ℝ)
-    (hupper : ∃ K : ℝ, 0 ≤ K ∧ ∀ {m b : ℕ}, 2 ≤ m →
-      fixedBandMass m b-mass m b ≤ K*(1+log b))
-    (h : ∃ C : ℝ, 0 ≤ C ∧ ∀ A : ℕ, ∃ m ≥ A, mass m (m^2) ≤ C*(1+2*log m)) :
-    RiemannHypothesis := by
-  apply rh_of_fixedBandMass_log_squareWindows
-  obtain ⟨C,hC,hw⟩ := h
-  obtain ⟨K,hK,he⟩ := hupper
-  refine ⟨C+K,by positivity,fun A => ?_⟩
-  obtain ⟨m,hm,hM⟩ := hw (max 2 A)
-  have hh := he (b := m^2) ((le_max_left _ _).trans hm)
-  rw [Nat.cast_pow,log_pow,Nat.cast_ofNat] at hh
-  exact ⟨m,(le_max_right _ _).trans hm,by linarith only [hh,hM]⟩
+/-- The energy-corrected score formed using only the late multiples. -/
+def fixedBandLateCutScore (n L : ℕ) : ℝ :=
+  fixedBandCutEnergy n L-fixedBandQuadraticAfter (n^4) (n^2-L) (fixedBandMultipleCutoff n)
+
+/-- The cutoff can still be chosen separately at every sample. -/
+def fixedBandLateMinScore (n : ℕ) : ℝ :=
+  (Icc 0 (n^2/4)).inf' (nonempty_Icc.mpr (Nat.zero_le _)) (fixedBandLateCutScore n)
+
+def fixedBandLateMinMass (m b : ℕ) : ℝ :=
+  ∑ n ∈ Icc m b, max (fixedBandLateMinScore n) 0/(n:ℝ)^3
+
+/-- For every allowed cut the late score is the single Möbius tail plus the
+energy reserve left after paying the exact outer corner. -/
+theorem fixedBandLateCutScore_eq {n L : ℕ} (hn : 2 ≤ n) (hL : L ≤ n^2/4) :
+    fixedBandLateCutScore n L =
+      fixedBandCenteredTail (n^4) (fixedBandMultipleCutoff n) +
+        (fixedBandCutEnergy n L-fixedBandOuter (n^4) (n^2-L)) := by
+  obtain ⟨h₁,h₂,h₃⟩ := fixedBandMultipleCutoff_bounds (V := n^2-L) hn
+    (Nat.sub_le _ _) (by omega)
+  have hN : 4 ≤ n^4 := (by decide : 4 ≤ 2^4).trans (Nat.pow_le_pow_left hn 4)
+  rw [fixedBandLateCutScore,fixedBandQuadraticAfter_eq hN h₁ h₂ (by omega)]
+  ring
+
+private theorem fixedBandCutEnergy_pays_outer {n L : ℕ} (hL : L ≤ n^2/4) :
+    fixedBandOuter (n^4) (n^2-L) ≤ fixedBandCutEnergy n L := by
+  obtain rfl | hpos := Nat.eq_zero_or_pos L
+  · rw [Nat.sub_zero,fixedBandOuter_zero (le_of_eq (by ring))]
+    simp [fixedBandCutEnergy,fixedBandPrefixEnergy]
+  · let V := n^2-L
+    have hsize : 3*L ≤ V := by dsimp [V]; omega
+    have hsum : V+L=n^2 := by dsimp [V]; omega
+    have he := fixedBandOuter_near_energy hpos hsize
+    rw [show (V+L)^2=n^4 by rw [hsum]; ring] at he
+    exact (abs_le.mp he).2
+
+/-- For late multiples the uncut square already attains the minimum. -/
+theorem fixedBandLateMinScore_eq_tail {n : ℕ} (hn : 2 ≤ n) :
+    fixedBandLateMinScore n = fixedBandCenteredTail (n^4) (fixedBandMultipleCutoff n) := by
+  refine le_antisymm ?_ ?_
+  · apply (inf'_le _ (mem_Icc.mpr ⟨le_rfl,Nat.zero_le (n^2/4)⟩)).trans_eq
+    rw [fixedBandLateCutScore_eq hn (Nat.zero_le _),Nat.sub_zero,fixedBandOuter_zero (le_of_eq (by ring))]
+    simp [fixedBandCutEnergy,fixedBandPrefixEnergy]
+  · apply (le_inf'_iff (nonempty_Icc.mpr (Nat.zero_le _)) _).mpr
+    intro L hL
+    have h := (mem_Icc.mp hL).2
+    rw [fixedBandLateCutScore_eq hn h]
+    linarith only [fixedBandCutEnergy_pays_outer h]
+
+/-- Evaluating the adaptive late-multiple mass only needs the single tail. -/
+theorem fixedBandLateMinMass_eq_tail {m b : ℕ} (hm : 2 ≤ m) :
+    fixedBandLateMinMass m b = fixedBandCriticalTailMass m b := by
+  apply sum_congr rfl
+  intro n hn
+  rw [fixedBandLateMinScore_eq_tail (hm.trans (mem_Icc.mp hn).1)]
+
+theorem fixedBandLateMinMass_error :
+    ∃ C : ℝ, 0 ≤ C ∧ ∀ {m b : ℕ}, 2 ≤ m →
+      |fixedBandMass m b-fixedBandLateMinMass m b| ≤ C*(1+log b) := by
+  obtain ⟨C,hC,h⟩ := fixedBandCriticalTailMass_error
+  refine ⟨C,hC,fun {m b} hm => ?_⟩
+  rw [fixedBandLateMinMass_eq_tail hm]
+  exact h hm
 
 /-- The trimmed square-window estimate alone suffices for RH. -/
 theorem rh_of_fixedBandTrimmed_log_squareWindows
@@ -1077,6 +1146,14 @@ theorem rh_of_fixedBandQuarter_log_squareWindows
       fixedBandQuarterMass m (m^2) ≤ C*(1+2*log m)) : RiemannHypothesis :=
   rh_of_fixedBand_upper_log_squareWindows _ fixedBandQuarterMass_upper h
 
+/-- A logarithmic bound on the late-multiple scores suffices for RH. -/
+theorem rh_of_fixedBandLateMin_log_squareWindows
+    (h : ∃ C : ℝ, 0 ≤ C ∧ ∀ A : ℕ, ∃ m ≥ A,
+      fixedBandLateMinMass m (m^2) ≤ C*(1+2*log m)) : RiemannHypothesis := by
+  apply rh_of_fixedBand_upper_log_squareWindows _ _ h
+  obtain ⟨K,hK,he⟩ := fixedBandLateMinMass_error
+  exact ⟨K,hK,fun {_ _} hm => (abs_le.mp (he hm)).2⟩
+
 end RiemannGaussian.AlpogeMined
 end
 
@@ -1091,6 +1168,8 @@ run_cmd do
       ``RiemannGaussian.AlpogeMined.fixedBandMinMass_error,
       ``RiemannGaussian.AlpogeMined.rh_of_fixedBandTrimmed_log_squareWindows,
       ``RiemannGaussian.AlpogeMined.rh_of_fixedBandMin_log_squareWindows,
+      ``RiemannGaussian.AlpogeMined.fixedBandLateMinScore_eq_tail,
+      ``RiemannGaussian.AlpogeMined.rh_of_fixedBandLateMin_log_squareWindows,
       ``RiemannGaussian.AlpogeMined.rh_of_fixedBandQuarter_log_squareWindows] do
     for ax in ← Lean.collectAxioms decl do
       unless [``propext, ``Classical.choice, ``Quot.sound].contains ax do

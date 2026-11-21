@@ -55,17 +55,26 @@ a sum of weighted products of Möbius values. At the sample $n^4$, the
 trimmed criterion needs Möbius values only through
 $n-\lfloor(n/8)^{1/3}\rfloor$, down from $n$. A second version lets the cutoff
 vary at each sample and bounds the discarded terms using short sums of
-Möbius values.
+Möbius values. Discarding early multiples inside the quadratic sum costs
+only a logarithm on each window. After this truncation the minimum over
+cutoffs is exactly one weighted Möbius tail. The window criterion also has
+an exact rational form. A quartic expression evaluates each sample using
+only integer and rational arithmetic and Möbius values through the same
+shortened cutoff.
 [Arithmetic construction and checked estimates](docs/arithmetic-proof-shortening.md).
 
 What remains is to prove that **one constant bounds the accumulated positive
 shortfall by a logarithm on arbitrarily late square windows**. Lean proves
-that this estimate is equivalent to RH. Importing just the implication from
-arithmetic to RH saves 4,785 modules compared with importing both
-directions. It uses 27 selected Alpöge modules and six repository modules
-alongside the pinned libraries. Proving the estimate from arithmetic would
-complete this route.
+that this estimate is equivalent to RH. An exact Möbius cancellation now
+removes the entire upper half of the linear tail. With the weights adjusted
+on the retained indices, the two window masses differ by at most
+$1500(1+2\log m)$. The signed sum over the retained half is still open.
+The direct tail implication loads 5,337 modules in total, including 27 selected Alpöge modules.
 [Forward implication](scripts/CheckAlpogeFixedPrimeBandCorner.lean)
+· [Direct tail implication](scripts/CheckAlpogeFixedPrimeBandCentered.lean)
+· [Half-length tail and cancellation](scripts/CheckAlpogeFixedPrimeBandFirstQuotient.lean)
+· [Rational window test](scripts/CheckAlpogeFixedPrimeBandMoments.lean)
+· [Short-input rational test](scripts/CheckAlpogeFixedPrimeBandShortInverse.lean)
 · [Exact window criterion](scripts/CheckAlpogeFixedPrimeBandCenteredBounds.lean).
 
 ## Related Research

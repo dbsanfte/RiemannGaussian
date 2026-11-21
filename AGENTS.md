@@ -15,9 +15,20 @@ The objective is to shorten the checked proof further. The active independent
 arithmetic route reduces RH to a one-sided bound on finite Möbius sums over
 arbitrarily late square windows. Work on the open estimate from arithmetic.
 Using an RH theorem to supply that estimate would bring its proof closure
-back into the route. Import `CheckAlpogeFixedPrimeBandCorner` for the sufficient
-logarithmic condition. Its four proof scripts and two native library modules
-use the 27-module Alpöge selection. Run
+back into the route. Import `CheckAlpogeFixedPrimeBandCentered` for the
+sufficient condition on the direct Möbius tail. Use
+`CheckAlpogeFixedPrimeBandFirstQuotient` for the equivalent window test with
+a linear tail ending at half the sample, and `CheckAlpogeFixedPrimeBandCorner`
+for the adaptive divisor cutoff.
+Use `CheckAlpogeFixedPrimeBandMoments` for the exact rational window test.
+Use `CheckAlpogeFixedPrimeBandShortInverse` for the equivalent rational
+quartic using only Möbius values through the shortened root and add
+`--fixed-prime-short-inverse` to verify it. For the off-diagonal
+estimate, `CheckAlpogeFixedPrimeBandRatios` bounds the pairs with
+reduced coordinates `a < b` and `a^3 ≤ b`, and sparse sets of earlier
+partners including the nearby indices. Its verifier flag is
+`--fixed-prime-block`. These checks use the 27-module
+Alpöge selection. Run
 `python3 scripts/verify_alpoge_mined_bounds.py --fixed-prime-sieve` for this
 forward path. The equivalence, allowable cutoffs and best available power
 bound are recorded in [the arithmetic note](docs/arithmetic-proof-shortening.md).

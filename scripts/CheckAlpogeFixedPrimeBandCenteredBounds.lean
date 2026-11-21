@@ -1,5 +1,6 @@
 import CheckAlpogeFixedPrimeBandCorner
 import CheckAlpogeFixedPrimeBandBounds
+import CheckAlpogeFixedPrimeBandMoments
 
 /-! # Size of the negative part of the square-root Möbius quadratic form -/
 
@@ -33,6 +34,22 @@ directions of the logarithmic window test. -/
 theorem rh_iff_fixedBandMin_log_squareWindows : RiemannHypothesis ↔
     ∃ C : ℝ, 0 ≤ C ∧ ∀ A : ℕ, ∃ m ≥ A, fixedBandMinMass m (m^2) ≤ C*(1+2*log m) :=
   log_squareWindows_of_error _ fixedBandMinMass_error
+
+/-- The adaptive criterion can discard all multiples below the new cutoff. -/
+theorem rh_iff_fixedBandLateMin_log_squareWindows : RiemannHypothesis ↔
+    ∃ C : ℝ, 0 ≤ C ∧ ∀ A : ℕ, ∃ m ≥ A, fixedBandLateMinMass m (m^2) ≤ C*(1+2*log m) :=
+  log_squareWindows_of_error _ fixedBandLateMinMass_error
+
+/-- The single Möbius tail checks the same logarithmic window criterion. -/
+theorem rh_iff_fixedBandCriticalTail_log_squareWindows : RiemannHypothesis ↔
+    ∃ C : ℝ, 0 ≤ C ∧ ∀ A : ℕ, ∃ m ≥ A, fixedBandCriticalTailMass m (m^2) ≤ C*(1+2*log m) :=
+  log_squareWindows_of_error _ fixedBandCriticalTailMass_error
+
+/-- The cofinal test with exact rational masses and integer budgets is equivalent to RH. -/
+theorem rh_iff_fixedBandRationalWindowBound :
+    RiemannHypothesis ↔ fixedBandRationalWindowBound :=
+  (log_squareWindows_of_error (fun m b => (fixedBandRationalMass m b:ℝ))
+    fixedBandRationalMass_error).trans fixedBandRationalWindowBound_iff_log.symm
 
 /-- A uniform lower bound linear in the number of Möbius inputs is equivalent
 to RH. The matrix is evaluated on the specified arithmetic vector. -/
@@ -83,6 +100,9 @@ run_cmd do
   for decl in [``RiemannGaussian.AlpogeMined.rh_iff_fixedBandQuadratic_log_squareWindows,
       ``RiemannGaussian.AlpogeMined.rh_iff_fixedBandTrimmed_log_squareWindows,
       ``RiemannGaussian.AlpogeMined.rh_iff_fixedBandMin_log_squareWindows,
+      ``RiemannGaussian.AlpogeMined.rh_iff_fixedBandLateMin_log_squareWindows,
+      ``RiemannGaussian.AlpogeMined.rh_iff_fixedBandCriticalTail_log_squareWindows,
+      ``RiemannGaussian.AlpogeMined.rh_iff_fixedBandRationalWindowBound,
       ``RiemannGaussian.AlpogeMined.rh_of_fixedBandQuarter_log_squareWindows,
       ``RiemannGaussian.AlpogeMined.rh_iff_fixedBandQuadratic_lower] do
     for ax in ← Lean.collectAxioms decl do

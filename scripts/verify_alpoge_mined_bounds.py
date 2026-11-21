@@ -35,6 +35,39 @@ FIXED_BAND_ROOTS = [
     "Formalism.GammaFactorNonvanishing.RhOfRight",
 ]
 FIXED_BAND_DIGEST = "7430a8ef8f18ee8cb30fe17653c2cc72b554c2680ab7763bbc8787c81adf9652"
+# These two headers are the only imports of the Mathlib umbrella in the
+# fixed-band closure. The headers below also cover its local proof scripts.
+FIXED_BAND_MATHLIB_IMPORTS = {
+    "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily": (
+        "Mathlib.Analysis.Analytic.Order",
+        "Mathlib.Data.Fintype.Option",
+        "Mathlib.MeasureTheory.Function.Floor",
+        "Mathlib.MeasureTheory.Order.Group.Lattice",
+        "Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt",
+        "Mathlib.NumberTheory.DirichletCharacter.Orthogonality",
+        "Mathlib.NumberTheory.Harmonic.Bounds",
+        "Mathlib.NumberTheory.Harmonic.EulerMascheroni",
+        "Mathlib.NumberTheory.LSeries.Nonvanishing",
+        "Mathlib.Tactic.Abel",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.FunProp",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.LinearCombination",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Push",
+        "Mathlib.Tactic.Ring",
+    ),
+    "Formalism.GammaFactorNonvanishing.RhOfRight": (
+        "Mathlib.NumberTheory.LSeries.RiemannZeta",
+        "Mathlib.Tactic.LinearCombination",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Push",
+        "Mathlib.Tactic.Ring",
+    ),
+}
 PRINCIPAL_ROOTS = WINDOW_ROOTS[:2] + ["Formalism.StatementOC"]
 PRINCIPAL_DIGEST = "baf84fb6b388a2ad87b46a884fb7b818dc872e8bc789282bbb3745df0303e1af"
 PRINCIPAL_WINDOW = "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Window"
@@ -117,7 +150,7 @@ def main() -> None:
     parser.add_argument("--fixed-prime-short-inverse", action="store_true",
                         help="Check the exact quartic expression in Möbius values through the fourth root.")
     parser.add_argument("--fixed-prime-block", action="store_true",
-                        help="Check Möbius cancellation for the quadratic form on pairs with just one multiple.")
+                        help="Check single-multiple block cancellation and the off-diagonal bound by reduced ratio.")
     parser.add_argument("--fixed-prime-liu", action="store_true",
                         help="Apply the previously replayed Liu half-plane to the fixed-band mass bound.")
     parser.add_argument("--reuse-native", action="store_true",
@@ -177,8 +210,6 @@ def main() -> None:
                            "+RiemannGaussian.ZetaCenteredEulerZeroFree:olean",
                            "+RiemannGaussian.ZetaFirstZeroCompleteness:olean",
                            "+RiemannGaussian.AlpogeZetaPowerWindows:olean"])
-        if args.fixed_prime_short_inverse and not args.window_mass:
-            native.append("+RiemannGaussian.ZetaVaughanIdentity:olean")
         if args.fixed_prime_block:
             native.append("+RiemannGaussian.MoebiusHarmonicCancellation:olean")
         if args.fixed_prime_bounds and not (args.window_mass or args.local_prime_window):
@@ -205,19 +236,32 @@ def main() -> None:
     if args.principal_level:
         archive = pinned_sources(src, PRINCIPAL_ROOTS, PRINCIPAL_DIGEST)
         archive[PRINCIPAL_WINDOW] = PRINCIPAL_WINDOW_DIGEST
-    for module, digest in archive.items():
-        rel = Path(*module.split("."))
-        source = (ROOT / "vendor/alpoge-principal" / rel.with_suffix(".lean")
-                  if module == PRINCIPAL_WINDOW else source_path(src, module))
-        source_root = source.parents[len(rel.parts) - 1]
-        if hashlib.sha256(source.read_bytes()).hexdigest() != digest:
-            raise ValueError(f"Archive source hash mismatch in {source}")
-        obj = out / rel.with_suffix(".olean")
-        obj.parent.mkdir(parents=True, exist_ok=True)
-        print(f"Checking {module}", flush=True)
-        subprocess.run([lean, "--trust=0", f"--root={source_root}", "-DautoImplicit=false",
-                        "-DrelaxedAutoImplicit=false", "-DmaxHeartbeats=4000000",
-                        "-o", obj, source], env=env, cwd=ROOT, check=True)
+    with TemporaryDirectory(prefix="source-headers-", dir=out) as headers:
+        header_root = Path(headers)
+        for module, digest in archive.items():
+            rel = Path(*module.split(".")).with_suffix(".lean")
+            source = (ROOT / "vendor/alpoge-principal" / rel if module == PRINCIPAL_WINDOW
+                      else source_path(src, module))
+            source_root = source.parents[len(rel.parts) - 1]
+            contents = source.read_bytes()
+            if hashlib.sha256(contents).hexdigest() != digest:
+                raise ValueError(f"Archive source hash mismatch in {source}")
+            if fixed_only and module in FIXED_BAND_MATHLIB_IMPORTS:
+                umbrella = b"import Mathlib\n"
+                if not contents.startswith(umbrella):
+                    raise ValueError(f"Missing pinned Mathlib import header in {source}")
+                imports = FIXED_BAND_MATHLIB_IMPORTS[module]
+                header = "".join(f"import {name}\n" for name in imports).encode()
+                source_root = header_root
+                source = source_root / rel
+                source.parent.mkdir(parents=True, exist_ok=True)
+                source.write_bytes(header + contents[len(umbrella):])
+            obj = out / rel.with_suffix(".olean")
+            obj.parent.mkdir(parents=True, exist_ok=True)
+            print(f"Checking {module}", flush=True)
+            subprocess.run([lean, "--trust=0", f"--root={source_root}", "-DautoImplicit=false",
+                            "-DrelaxedAutoImplicit=false", "-DmaxHeartbeats=4000000",
+                            "-o", obj, source], env=env, cwd=ROOT, check=True)
     local = ["AlpogePrimeWindows", "CheckAlpogePrincipalLevel"] if args.principal_level else ["CheckAlpogeMinedBounds"]
     if args.global_landau or args.window_mass:
         local.extend(["AlpogeIntegerPrimeBand", "AlpogeQuadraticPatterns",
@@ -261,13 +305,14 @@ def main() -> None:
         local.append("CheckAlpogeFixedPrimeBand")
     if args.fixed_prime_sieve:
         local.extend(["CheckAlpogeFixedPrimeBandMobius", "CheckAlpogeFixedPrimeBandCentered",
-                      "CheckAlpogeFixedPrimeBandCorner"])
+                      "CheckAlpogeFixedPrimeBandCorner", "CheckAlpogeFixedPrimeBandMoments",
+                      "CheckAlpogeFixedPrimeBandFirstQuotient"])
     if args.fixed_prime_bounds:
         local.append("CheckAlpogeFixedPrimeBandBounds")
     if args.fixed_prime_short_inverse:
         local.append("CheckAlpogeFixedPrimeBandShortInverse")
     if args.fixed_prime_block:
-        local.append("CheckAlpogeFixedPrimeBandBlock")
+        local.extend(["CheckAlpogeFixedPrimeBandBlock", "CheckAlpogeFixedPrimeBandRatios"])
     if args.fixed_prime_sieve and args.fixed_prime_bounds:
         local.append("CheckAlpogeFixedPrimeBandCenteredBounds")
     if args.fixed_prime_liu:
@@ -288,8 +333,6 @@ def main() -> None:
         targets.append("RiemannGaussian.AlpogeZetaSampleBounds")
     if args.window_mass or args.local_prime_window or args.fixed_prime_band:
         targets.append("RiemannGaussian.AlpogeZetaShortIntervals")
-    if args.fixed_prime_short_inverse and not args.window_mass:
-        targets.append("RiemannGaussian.ZetaVaughanIdentity")
     if args.fixed_prime_block:
         targets.append("RiemannGaussian.MoebiusHarmonicCancellation")
     if args.fixed_prime_bounds and not args.local_prime_window:

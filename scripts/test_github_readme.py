@@ -112,9 +112,14 @@ def run(output, published):
                 assert all(term in content for term in ("165,070", "10,104 modules (5.8%)", "175,174-module"))
                 forward = article.get_by_role("link", name="Forward implication", exact=True)
                 assert forward.get_attribute("href").endswith("scripts/CheckAlpogeFixedPrimeBandCorner.lean")
+                tail = article.get_by_role("link", name="Direct tail implication", exact=True)
+                assert tail.get_attribute("href").endswith("scripts/CheckAlpogeFixedPrimeBandCentered.lean")
+                rational = article.get_by_role("link", name="Rational window test", exact=True)
+                assert rational.get_attribute("href").endswith("scripts/CheckAlpogeFixedPrimeBandMoments.lean")
                 criterion = article.get_by_role("link", name="Exact window criterion", exact=True)
                 assert criterion.get_attribute("href").endswith("scripts/CheckAlpogeFixedPrimeBandCenteredBounds.lean")
-                assert "arbitrarily late square windows" in content and "saves 4,785 modules" in content
+                assert "arbitrarily late square windows" in content
+                assert "5,337 modules in total, including 27 selected Alpöge modules" in content
                 assert "Standalone kernel replay" in content
                 assert "propext" in content and "Classical.choice" in content and "Quot.sound" in content
 
