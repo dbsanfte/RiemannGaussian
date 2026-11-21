@@ -3,11 +3,12 @@
 [![Lean Action CI](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/lean_action_ci.yml/badge.svg)](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/lean_action_ci.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-RiemannGaussian is an open research project building toward a complete,
-kernel-checked Lean proof of the Riemann hypothesis. The repository contains
-the evolving Lean 4 proof development and supporting analytic and finite-model
-theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations are provided to the wider community. Only declarations accepted by Lean and the
-repository's verification gates count as established results.
+RiemannGaussian formalizes results about the Riemann hypothesis in Lean.
+Its shorter geometric route proves Mathlib’s `RiemannHypothesis` on Alpöge’s
+Lean 4.33.1 pin using 165,070 public archive modules. The repository’s native
+Gaussian–Suzuki campaign continues on Lean 4.34.1.
+[Archive proof and verification](docs/research-evidence/alpoge-archive-rh/README.md) ·
+[Archive CI](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/alpoge_archive_ci.yml).
 
 > **Research agents:** GPT-5.6 Sol, GPT-6.1 Sol, and GPT-6 Astra with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
@@ -99,10 +100,10 @@ Study the global Suzuki signal and complete Gaussian/Weil correlation using actu
 
 ### Latest Update
 
-**Boundary contraction halves the leading leaf exponent.** Installs an acquired deterministic boundary partition and full-jet sorted-record contraction in the original-binary factoring algorithm. Lean proves exact factor bytes, a uniform half-exponent native leaf report, and the tighter actual call-count estimate.
-The complete original-input primitive-machine bit-complexity theorem remains open. The RH direction and proved zero-free endpoint are unchanged.
+**The shorter geometric archive route closes RH.** Lean 4.33.1 checks Mathlib’s RiemannHypothesis from the principal family using 165,070 pinned archive modules. The archive CI job downloads compiled objects and checks the local assembly.
+The native Gaussian–Suzuki campaign continues on the repository toolchain.
 [Current checked endpoint](RiemannGaussian/SuzukiLaplaceCompensator.lean#L246)
-· [Proof details](docs/research-evidence/semiprime-boundary-hybrid-20261029/README.md).
+· [Proof details](docs/research-evidence/alpoge-archive-rh/README.md).
 <!-- RH_DIRECTION:END -->
 
 ## Deterministic Semiprime Factoring

@@ -1,0 +1,144 @@
+name: Alpöge Archive RH
+
+on:
+  push:
+    branches: [main]
+    paths: &proof_paths
+      - '.github/workflows/alpoge_archive_ci.yml'
+      - 'docs/research-evidence/alpoge-archive-rh/*.sha256'
+      - 'scripts/Alpoge*.lean'
+      - 'scripts/CheckAlpoge*.lean'
+      - 'scripts/alpoge_lean_heap_loader.py'
+      - 'scripts/verify_alpoge_archive_rh.py'
+      - 'scripts/RiemannGaussian/AlpogeLatticeImage.lean'
+  pull_request:
+    paths: *proof_paths
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  principal-rh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    env:
+      ARCHIVE_WORK: .lake/alpoge-ci
+      ARCHIVE_CACHE_URL: https://huggingface.co/datasets/JackMcCarthy/riemann-hypothesis-build/resolve/9036e64326acf4acfae159b96664e9708445c1d1
+      LEAN_NUM_THREADS: "1"
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Prepare storage and package tools
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+          sudo apt-get update -qq
+          sudo apt-get install -y bubblewrap libseccomp2 squashfs-tools zstd
+          mkdir -p "$ARCHIVE_WORK/objects"
+          df -h .
+
+      - name: Fetch and verify the pinned archive sources
+        run: |
+          pins="$GITHUB_WORKSPACE/docs/research-evidence/alpoge-archive-rh/source.sha256"
+          cd "$ARCHIVE_WORK"
+          while read -r _ part; do
+            curl --fail --location --silent --show-error --retry 4 \
+              "https://alpo.ge/$part" --output "$part"
+          done < "$pins"
+          sha256sum --check "$pins"
+          cat lean.tar.gz.part* | tar -xzf -
+          rm lean.tar.gz.part*
+
+      - name: Install archive toolchain and Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: .lake/alpoge-ci/lean
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: true
+
+      - name: Restore the packed public archive
+        id: archive-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            .lake/alpoge-ci/archive.sqfs
+            .lake/alpoge-ci/archive.sqfs.sha256
+          key: alpoge-archive-squashfs-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('docs/research-evidence/alpoge-archive-rh/compiled.sha256') }}
+
+      - name: Download and pack the verified public archive on a cache miss
+        if: steps.archive-cache.outputs.cache-hit != 'true'
+        run: |
+          pins="$GITHUB_WORKSPACE/docs/research-evidence/alpoge-archive-rh/compiled.sha256"
+          cd "$ARCHIVE_WORK"
+          curl --fail --location --silent --show-error --retry 4 \
+            "$ARCHIVE_CACHE_URL/oleans.tar.zst" --output oleans.tar.zst
+          sha256sum --check "$pins"
+          # The unpacked .olean tree is about 89 GiB. Drop editor indexes and
+          # mount a compressed image to make room for Lean's swap.
+          zstd -dc oleans.tar.zst \
+            | tar --wildcards --wildcards-match-slash --delete -f - -- '*.ilean' \
+            | mksquashfs - archive.sqfs -tar -no-strip -no-progress -noappend -no-xattrs \
+                -comp zstd -Xcompression-level 8 -processors 4
+          rm oleans.tar.zst
+          sha256sum archive.sqfs > archive.sqfs.sha256
+
+      - name: Verify and mount the read-only object cache
+        run: |
+          cd "$ARCHIVE_WORK"
+          sha256sum --check archive.sqfs.sha256
+          sudo mount -t squashfs -o loop,ro,nosuid,nodev,noexec archive.sqfs objects
+          test -d objects/.lake/build/lib/lean/Formalism
+          df -h .
+
+      - name: Save the packed archive for subsequent runs on main
+        if: github.ref == 'refs/heads/main' && steps.archive-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            .lake/alpoge-ci/archive.sqfs
+            .lake/alpoge-ci/archive.sqfs.sha256
+          key: ${{ steps.archive-cache.outputs.cache-primary-key }}
+
+      - name: Give the archive import closure enough address maps and swap
+        run: |
+          sudo sysctl -w vm.max_map_count=1048576
+          sudo fallocate -l 40G "$ARCHIVE_WORK/archive.swap"
+          sudo chmod 600 "$ARCHIVE_WORK/archive.swap"
+          sudo mkswap "$ARCHIVE_WORK/archive.swap"
+          sudo swapon "$ARCHIVE_WORK/archive.swap"
+          # Ubuntu's AppArmor policy can restrict the user namespace bwrap needs.
+          if ! bwrap --unshare-all --ro-bind / / -- /bin/true; then
+            sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+            bwrap --unshare-all --ro-bind / / -- /bin/true
+          fi
+          free -h
+          df -h .
+
+      - name: Check the short RH proof and replay the final kernel declaration offline
+        run: |
+          python3 scripts/verify_alpoge_archive_rh.py "$ARCHIVE_WORK/lean" \
+            "$ARCHIVE_WORK/objects/.lake/build/lib/lean" --sandbox
+
+      - name: Release runner mount and swap
+        if: always()
+        run: |
+          if mountpoint -q "$ARCHIVE_WORK/objects"; then
+            sudo umount "$ARCHIVE_WORK/objects"
+          fi
+          if test -f "$ARCHIVE_WORK/archive.swap"; then
+            if swapon --show=NAME --noheadings | grep -Fxq "$(realpath "$ARCHIVE_WORK/archive.swap")"; then
+              sudo swapoff "$ARCHIVE_WORK/archive.swap"
+            fi
+            sudo rm "$ARCHIVE_WORK/archive.swap"
+          fi
