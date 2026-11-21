@@ -7,7 +7,7 @@
 
 RiemannGaussian’s principal-character optimisation proves Mathlib’s
 `RiemannHypothesis` using **165,070 archive modules**, a reduction of
-**10,104 modules (5.8%)** from our earlier 175,174-module route.
+**10,104 modules (5.8%)** from the earlier 175,174-module route.
 [Explore the shorter proof](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 · [Checked Lean theorem](scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L710).
 
