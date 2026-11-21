@@ -13827,100 +13827,47 @@ enclosures and drawing audit together. Display both full-scale context and
 a labelled magnification; do not infer new bounds from plotted pixels. The
 chart and explorer metadata live in their respective documentation directories.
 Ordinary CI checks their freshness without importing `NumericalCertificate`.
-The live GitHub README renderer check must verify this section's placement,
-badge workflow link, chart load and desktop/mobile fit, and prominent explorer
-link. Run the dedicated explorer browser check for metadata, source lines,
+Run the dedicated explorer browser check for metadata, source lines,
 family zones, navigation and audit links before publishing, then check the
 actual published site after exact-commit CI succeeds.
 
-The README's `Proved Zero-Free Region` is the first section after the introduction.
-Keep its mathematics in compact, readable display-math boxes using
-`\boxed{\begin{gathered} ... \end{gathered}}` inside GitHub-supported math
-blocks. Prefer fenced `math` blocks: they preserve TeX line breaks and
-subscripts without Markdown escape processing. Write strict inequalities
-with `\lt` instead of a bare `<`: GitHub's math renderer reparses formula
-text as HTML, so `<L` or `<A` can swallow part of a formula and produce a
-misleading "Missing close brace" error. Include assumptions and
-endpoint conventions in the presentation;
-do not leave formulas or coefficient ranges scattered in inline code.
-Wrap each display box in a single-cell HTML table, with blank lines around
-the fenced math block, so the frame remains visible when a browser's native
-MathML renderer omits the `\boxed` border.
-Show only the current proved union, with a direct Lean proof link. An
-eventual component must state that its coefficient-dependent threshold is
-unevaluated unless an actual numerical threshold has been proved.
+The README leads with the shorter Lean proof of the Riemann hypothesis.
+Credit the underlying proof and original Lean archive to Levent Alpöge,
+working with Claude. Describe the local principal-character optimisation,
+its measured import-closure reduction, and the pinned archive verification.
+Keep independent native estimates, the simplicity certificate, and factoring
+in a compact related-research section. Their charts and full explorers live
+in the dedicated documentation and Pages views.
 
-Keep the colour comparison graph prominent at the start of `Proved Zero-Free
-Region`. Its source annotations, colours and plotting ranges live in
-`docs/zero-free-regions/metadata.json`. `scripts/ExportZeroFreePlot.lean`
-checks the numerical expression trees against the actual imported width
-definitions, the starting height and exact comparison endpoints. Run it after
-the ordinary Lean build, then use the pinned environment in
-`scripts/requirements-plots.txt` with `scripts/build_zero_free_plot.py`.
-Commit the generated SVG, formula export and audit together. Do not edit
-either plot audit before its corresponding theorem explorer is generated:
-the zero-free plot hashes the main explorer audit, and the numerical plot
-hashes the certificate explorer audit. Generate the explorers first, then
-the plot artifacts, to avoid stale audit hashes at the commit gate. Do not edit
-generated curves or copy their constants into a second plotting formula.
-Update the checked formula interface when the proved region changes; its
-endpoint must match the default proof-status theorem. Preserve `log(abs(t)+2)`
-in the Gaussian curve, the exact crossover and ceiling, open/closed edges,
-and the distinction between inspected and merely reported external results.
-Never draw an eventual region from an invented finite starting height. The
-overview must show heights where the external benchmark is stronger as well
-as the magnified comparison interval; the graph does not establish a world
-record or import an external analytic proof. Ordinary CI and pre-commit run
-the exporter and `--check` to reject stale artifacts, without invoking the
-optional numerical certificate. The GitHub README renderer check must also
-verify the section title, graph placement, image load, enlargement link and
-desktop/mobile fit. See `docs/zero-free-regions/README.md` for reproduction.
+The zero-free plot source annotations, colours and plotting ranges live in
+`docs/zero-free-regions/metadata.json`. Run
+`scripts/ExportZeroFreePlot.lean` and `scripts/build_zero_free_plot.py`
+after the ordinary Lean build. The exporter checks the numerical
+expression trees against the actual imported width definitions, starting
+height and comparison endpoints. Generate theorem and certificate explorers
+before their plots so the audit hashes correspond. Preserve the exact
+crossover and ceiling, open and closed edges, and unevaluated eventual
+thresholds. Keep literature comparisons and source versions in
+`docs/zero-free-literature-frontier.md`.
 
-Keep benchmark details in `docs/zero-free-literature-frontier.md`, linked
-from the compact zero-free section. Record source version, theorem/equation,
-height range, open/closed edge, proof or retrieval status, and the relevant
-compiled comparison theorem. Distinguish inequalities between explicit
-width functions from importing external zero-free proofs. Preserve the
-exact crossover and ceiling, including the enlarged height's `+2`; strict
-improvement excludes the crossover where widths tie. No exhaustive record
-claim follows from checking only headline constants or from an eventual
-bound with an unevaluated threshold.
+Use `log(abs(t)+2)` in the Gaussian curve and retain the distinction between
+checked comparisons of explicit width functions and imported analytic proofs.
+The comparison plot should also show the heights where an external benchmark
+is stronger. Keep the numerical certificate's checked formula export,
+rational enclosures and drawing audit together.
 
-The interactive explorer belongs inside that same README section as a
-linked preview and compact links, with the full interface on GitHub Pages.
-Place a prominent, descriptive link immediately above or alongside the
-clickable preview so readers know to open the interactive explorer.
-It must support zooming, theorem selection and hover metadata, coloured
-logical-family zones, and links to the exact Lean file and declaration line.
-Expose the evergreen repository metadata and proof audits alongside it.
-Do not hand-maintain theorem statements, source lines, dependency edges or
-audit verdicts in the README or generated site. For a new comparison or
-terminal endpoint, update its status references and reading labels in the
-metadata; retain the actual zero-free conclusion as the default endpoint.
-After changing an endpoint or its dependencies, run
-`scripts/ExportTheoremGraph.lean` and `scripts/build_theorem_explorer.py`, then
-check the generated assets and run `scripts/check_theorem_graph.cjs` and the
-browser interaction checks. Every compressed edge must have an exported
-dependency-path witness. Keep the README presentation to the linked preview
-and its compact explorer/metadata/audit links. Publish only a verified source
-snapshot, with GitHub links pinned to its commit; respect the user's current
-commit and push instructions.
-Check the rendered README math and the explorer at desktop and narrow
-viewport widths after presentation changes. Confirm navigation, source-line
-links and audit links in the published artifact after exact-commit CI passes.
-For every README presentation change, run `scripts/test_github_readme.py`
-with the pinned Playwright browser before committing. It sends the working
-README through GitHub's Markdown API and its live `math-renderer` component;
-a standalone MathJax render is not a substitute. Require every math block to
-render without an error, retain its box and fit its available width at
-desktop and mobile sizes. Wait for a loaded graph and positive visible
-layout together before measuring it; GitHub hydration can temporarily
-replace an article. Keep all fit, placement and math assertions enforced.
-This check is also a mandatory CI step before
-Pages publication. After pushing, run it again with `--published` to check
-the actual README page at the exact current commit. A network or renderer
-failure is a failed check, not a reason to claim rendering success. The
-script writes screenshots and a JSON report under `.lake/github-readme/`.
+The dedicated Pages explorers retain their verified dependency paths,
+theorem metadata, source links and audit results. Generate them from
+the compiled Lean environments. Every compressed theorem edge must have an
+exported dependency-path witness. The RH explorer opens on the shorter
+archive proof and lists its direct local imports. The native Gaussian–Suzuki
+theorem graph has its own page for the independent analytic results.
+
+Run `scripts/test_github_readme.py` after README presentation changes.
+It checks the headline, attribution, proof and CI links, and GitHub's
+actual rendered mathematics at desktop and mobile widths. After pushing,
+run it with `--published` against the exact commit. The script writes
+screenshots and a JSON report under `.lake/github-readme/`.
 
 The repository history is the durable record of verified progress. Enforce
 this regime yourself; do not rely on the user to request individual commits,

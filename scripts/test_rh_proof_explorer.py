@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the real RH campaign explorer and capture its evergreen README screenshot."""
+"""Exercise the shorter RH overview and native theorem explorer in Chromium."""
 import argparse
 from functools import partial
 from http.server import ThreadingHTTPServer
@@ -16,6 +16,29 @@ from test_theorem_explorer import QuietHandler
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def check_shorter_proof(page, url, revision):
+    response = page.goto(url, wait_until='domcontentloaded')
+    assert response.status == 200
+    assert page.locator('h1').inner_text() == 'A Shorter Lean Proof of the Riemann Hypothesis'
+    assert page.locator('[aria-label="Proof assembly"] h2').all_inner_texts() == [
+        'Pinned archive inputs', 'Principal geometric family', 'Principal arithmetic window', 'RiemannHypothesis',
+    ]
+    conclusion = page.get_by_role('link', name='Final Lean declaration')
+    source = conclusion.get_attribute('href')
+    assert source.endswith('scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L710')
+    if revision:
+        assert f'/blob/{revision}/' in source
+    assert page.get_by_role('link', name='Levent Alpöge, working with Claude').get_attribute('href') == 'https://alpo.ge/remark.pdf'
+    page.locator('#local-imports > summary').click()
+    modules = page.locator('[data-module]')
+    assert modules.count() == 31
+    endpoint = page.locator('[data-module="CheckAlpogePrincipalArchivedGeometryRH"]')
+    endpoint.locator('summary').click()
+    assert endpoint.get_by_role('link', name='CheckAlpogePrincipalArchivedRowSelection').is_visible()
+    assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
+    assert page.get_by_role('link', name='Native Gaussian–Suzuki theory').get_attribute('href') == 'native.html'
+
+
 def run(output, url=None, refresh_preview=False):
     assert not (url and refresh_preview), 'Refresh the preview from checked local files, not a remote page'
     output.mkdir(parents=True, exist_ok=True)
@@ -24,6 +47,7 @@ def run(output, url=None, refresh_preview=False):
         server = ThreadingHTTPServer(('127.0.0.1', 0), partial(QuietHandler, directory=str(ROOT)))
         threading.Thread(target=server.serve_forever, daemon=True).start()
         url = f'http://127.0.0.1:{server.server_port}/docs/rh-proof-explorer/'
+    url = url.rstrip('/') + '/'
     published = server is None
     revision = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     meta = campaign.metadata()
@@ -36,11 +60,12 @@ def run(output, url=None, refresh_preview=False):
             for width in (1440, 390):
                 page = browser.new_page(viewport={'width': width, 'height': 850}, device_scale_factor=1, reduced_motion='reduce')
                 page.on('pageerror', lambda error: errors.append(str(error)))
-                response = page.goto(url, wait_until='domcontentloaded')
+                check_shorter_proof(page, url, revision if published else None)
+                response = page.goto(url + 'native.html', wait_until='domcontentloaded')
                 assert response.status == 200
                 page.wait_for_function('window.PROOF_VIEW && PROOF_VIEW.visible.size >= 4')
                 page.evaluate('document.fonts.ready')
-                assert page.locator('h1').inner_text() == 'Current RH Proof Direction'
+                assert page.locator('h1').inner_text() == 'Native Gaussian–Suzuki Theory'
                 assert page.evaluate('PROOF_VIEW.endpoint.id') == meta['defaultEndpoint']
                 assert 'subexponential lower bound remains OPEN' in page.locator('#scope-text').inner_text()
                 assert page.locator('.zone-label').count() >= 2
@@ -53,7 +78,7 @@ def run(output, url=None, refresh_preview=False):
                 if width == 1440 and refresh_preview:
                     (campaign.SITE / 'preview.png').write_bytes(preview)
                     capture = {'schemaVersion': 1,
-                        'capture': 'Playwright Chromium screenshot of the actual default explorer overview',
+                        'capture': 'Playwright Chromium screenshot of the native theorem explorer overview',
                         'endpoint': meta['defaultEndpoint'], 'terminalTheorems': roots,
                         'viewport': {'width': width, 'height': 850},
                         'browserVersion': browser.version,
@@ -105,7 +130,7 @@ def run(output, url=None, refresh_preview=False):
                 assert page.locator('#zoom-value').inner_text() != zoom
                 page.locator('#fit').click()
                 page.locator('#scope-more').click()
-                assert 'what remains to prove' in page.locator('#details').inner_text().lower()
+                assert 'native scope and remaining estimates' in page.locator('#details').inner_text().lower()
                 assert 'Riesz reduction is frozen' in page.locator('#details').inner_text()
                 assert 'subexponential lower bound remains OPEN' in page.locator('#details').inner_text()
                 assert 'finite-height coverage is separate' in page.locator('#details').inner_text()
@@ -1292,7 +1317,7 @@ def run(output, url=None, refresh_preview=False):
                         assert 'actual prime above N^2' in scope
                         assert 'scalar contact with its polynomial fallback' in scope
                         assert 'Semiprimes and larger surviving composite cofactors remain coupled' in scope
-                        assert 'RH remains open' in scope
+                        assert 'the independent native signed-signal estimate remains open' in scope.lower()
                         roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         deletion = next(n for n in roots if n['id'].endswith('.tendsto_actual_band_sub_optimizedRoughResponse'))
                         statement = ' '.join(deletion['statement'].split())
@@ -1338,7 +1363,8 @@ def run(output, url=None, refresh_preview=False):
                         assert all(t in scope for t in (
                             '1/2<u<exp(-1/2)', 'Every order-dependent subband mask',
                             'no separate cofactor size cap', 'p>(D_N+2)^2',
-                            'previous remainder is retained as a fallback', 'RH remains open'))
+                            'previous remainder is retained as a fallback'))
+                        assert 'the independent native signed-signal estimate remains open' in scope.lower()
                         roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         deletion = next(n for n in roots if n['id'].endswith('.tendsto_actual_band_sub_prefixResidual'))
                         statement = ' '.join(deletion['statement'].split())
@@ -2303,6 +2329,12 @@ def run(output, url=None, refresh_preview=False):
                                'boundedPrefixComponentsAndActualCentralWindow': True,
                                'centralThreePrimeSignBoundsAndNegativePhaseCost': True})
                 page.close()
+            legacy = browser.new_page()
+            legacy.on('pageerror', lambda error: errors.append(str(error)))
+            legacy.goto(url + '#endpoint=source-limit', wait_until='commit')
+            legacy.wait_for_url(url + 'native.html#endpoint=source-limit')
+            legacy.wait_for_function('window.PROOF_VIEW?.endpoint.id === "source-limit"')
+            legacy.close()
             browser.close()
     finally:
         if server:

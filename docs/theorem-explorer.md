@@ -254,17 +254,14 @@ deployment. Publish the Lean sources together with their generated explorer,
 so every source link resolves to the same checked commit.
 
 The graph reports the proved finite band, eventual component and exact
-comparison interval with their hypotheses. The comparison endpoint contains
-inequalities between explicit functions; it does not import external
-zero-free proofs or establish an exhaustive world-record claim. RH remains open.
+comparison interval with their hypotheses. The comparison endpoint compares
+explicit width functions. The [shorter Lean proof of RH](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
+has its own explorer.
 
-## Current RH campaign explorer
+## Native Gaussian–Suzuki explorer
 
-The [third explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
-opens at the furthest checked bound in the active signed Riesz campaign.
-Its source-limit view preserves the hypothetical-zero assumption, while
-the missing independent arithmetic estimate is explicitly left open.
-It uses the same compiled dependency exporter, family taxonomy and viewer.
-[Campaign metadata, screenshot capture and per-commit workflow](rh-proof-direction.md)
-keep its compact README section current without changing the stable strategy
-for routine updates. The numerical certificate remains separately verified.
+The [native explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/native.html)
+opens on the Landau criterion for the signed Suzuki signal. Its source-limit
+view states the hypothetical-zero assumption and the separate arithmetic
+estimate remains open. It uses the same compiled dependency exporter,
+family taxonomy and viewer. [Native analysis and verification notes](rh-proof-direction.md).

@@ -1,6 +1,7 @@
-# Current RH proof direction
+# Native Gaussian–Suzuki theory
 
-The active branch is now **global Gaussian/Weil and Suzuki arithmetic**.
+This page covers independent analytic results in the native Lean root. The
+[shorter archive proof](research-evidence/alpoge-archive-rh/README.md) establishes RH.
 The next genuine target is a one-sided subexponential bound for the actual
 Suzuki signal, with all prime-power and Archimedean terms retained. The
 existing Landau implication handles all zero multiplicities, but the
@@ -32,8 +33,7 @@ and absence of the persistent factorial transform of the actual Chebyshev
 error. The [pinned OpenAI baseline](zeta-riesz-quasi-rh-discharge.md) now
 discharges this restricted endpoint in the ordinary Lean 4.34.1 root. It
 excludes `Re(s)>7/8` at every height and supplies the coupled geometric
-bound. Full RH still needs `1/2<Re(rho)<=7/8`; the independent native
-carrier floor/ceiling remain open. Native finite-height coverage is
+bound. The independent native carrier floor and ceiling remain open. Native finite-height coverage is
 maintained separately.
 
 ## Archived Riesz direction and checked results
@@ -384,14 +384,13 @@ and all unsuccessful transfer audits below remain valid; they are not the
 minimal current joint target.
 
 
-[Open the current proof explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/).
-Its default follows the **harmonic-cost route** and ends at
+[Open the native Gaussian–Suzuki explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/native.html).
+Its default shows the signed Suzuki criterion. The supporting **harmonic-cost route** ends at
 [`tendsto_nondominant_exact_source`](../RiemannGaussian/ZetaRieszNondominantCarrier.lean).
 The complete wing/companion comparison, all off-mask corrections, the full
 positive reserve and the allocated dominant-prime sector are now paid or
 evaluated. The smaller signed carrier retains the exact source. Its
-independent floor remains open; no first restricted zero exclusion or RH
-proof is claimed.
+independent floor remains open.
 
 The supporting **Marked-prime completion · geometric integrated error bounds**
 endpoint now pays the exponential prime head, full nonlinear Euler
@@ -630,7 +629,7 @@ python3 scripts/build_rh_proof_explorer.py --check
 .lake/browser-venv/bin/python scripts/test_github_readme.py
 ```
 
-The preview is an actual Chromium screenshot of the default explorer,
+The preview is an actual Chromium screenshot of the native explorer,
 including its current endpoint and mathematical-family zones.
 [Capture metadata](rh-proof-explorer/preview.json) binds the PNG to the graph,
 UI, campaign metadata, browser requirements and capture script. CI checks
@@ -640,6 +639,6 @@ inspection without requiring platform-identical font rasterization.
 
 The tracked hook checks the staged update against HEAD; CI checks each
 committed update against its parent. The Pages artifact publishes this view
-at `/rh-proof/` beside the zero-free and numerical-certificate explorers,
+at `/rh-proof/native.html` beside the zero-free and numerical-certificate explorers,
 with source links pinned to the exact verified presentation commit. Ordinary
 builds never rerun the exhaustive numerical certificate for this view.

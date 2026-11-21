@@ -301,7 +301,7 @@ def build(*, raw_path=None, metadata=None, status_data=None, source_overrides=No
         "families": meta["families"], "endpoints": endpoints, "nodes": nodes,
         "leanVersion": raw["leanVersion"], "audit": {k: v for k, v in audit.items() if k != "sourceSha256"},
         "benchmarkScope": meta.get("contextScope", status["gaussianPhaseBandToolkit"]["comparisonScope"]),
-        "limitNote": meta.get("limitNote", "RH remains open. The three checked benchmark functions are not an exhaustive world-record audit."),
+        "limitNote": meta.get("limitNote", "The shorter archive proof establishes RH independently of this comparison of three explicit zero-free estimates."),
         "toolkits": {k: v for k, v in status.items() if isinstance(v, dict)}
     }
     document_paths = {p for n in nodes for p in n["documentation"]}

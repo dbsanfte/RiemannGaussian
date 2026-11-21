@@ -103,7 +103,7 @@ jobs:
         run: python3 scripts/build_numerical_certificate_explorer.py --check
       - name: Check semiprime algorithm progress and evidence freshness
         run: python3 scripts/build_semiprime_proof_explorer.py --check
-      - name: Verify the current RH campaign and this commit's latest update
+      - name: Verify the shorter RH explorer and native theorem graph
         run: |
           THEOREM_GRAPH_METADATA=docs/rh-proof-explorer/metadata.json \
           THEOREM_GRAPH_OUTPUT=.lake/rh-proof-explorer/lean-graph.json \

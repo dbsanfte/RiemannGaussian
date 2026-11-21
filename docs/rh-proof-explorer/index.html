@@ -2,55 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Explore the actual Lean dependency chain behind RiemannGaussian's current RH proof campaign, grouped by mathematical family, with statements, source lines and proof audits.">
-  <meta name="color-scheme" content="dark">
-  <title>Current RH Proof Direction · RiemannGaussian</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23101923'/%3E%3Ctext x='10' y='29' fill='%2377dac3' font-size='30'%3Eζ%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the shorter Lean proof of RH and its local imports.">
+  <title>A Shorter Lean Proof of the Riemann Hypothesis · RiemannGaussian</title>
+  <script>
+    function openNativeEndpoint() {
+      const fragment = new URLSearchParams(window.location.hash.slice(1));
+      if (fragment.has("endpoint")) {
+        window.location.replace("native.html" + window.location.search + window.location.hash);
+      }
+    }
+    openNativeEndpoint();
+    window.addEventListener("hashchange", openNativeEndpoint);
+  </script>
   <script src="release.js" defer></script>
-  <script src="data.js" defer></script>
-  <script src="graph-core.js" defer></script>
-  <script src="app.js" defer></script>
+  <style>
+    :root { color-scheme: light dark; font: 1rem/1.55 system-ui, sans-serif; }
+    body { margin: 0; }
+    main { width: min(70rem, calc(100% - 2rem)); margin: 2.5rem auto; }
+    header { max-width: 54rem; }
+    h1 { font-family: Georgia, serif; font-size: clamp(2rem, 6vw, 3.75rem); line-height: 1.12; }
+    h2 { margin-block: 0 .45rem; }
+    h3 { margin: 0; }
+    p { margin: .55rem 0; }
+    a { text-underline-offset: .2em; }
+    .steps { margin: 2.5rem 0; }
+    .step { border: 1px solid GrayText; border-radius: .65rem; padding: 1rem 1.15rem; }
+    .result { border-width: 2px; }
+    .branches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .arrow { text-align: center; margin-block: .35rem; font-size: 1.45rem; }
+    summary { cursor: pointer; font-weight: 600; overflow-wrap: anywhere; }
+    ul { padding-left: 1.35rem; }
+    li { margin-block: .35rem; overflow-wrap: anywhere; }
+    footer { margin-top: 2rem; }
+    @media (max-width: 42rem) { .branches { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
-  <header class="masthead">
-    <div><a class="eyebrow" href="https://github.com/dbsanfte/RiemannGaussian">RIEMANNGAUSSIAN <span>/ PROOF EXPLORER</span></a>
-      <h1>Current RH Proof Direction</h1></div>
-    <div class="verification"><span id="lean-badge" class="badge">Loading Lean export…</span><a id="revision-link" href="audit.json">Local proof snapshot</a></div>
+<main>
+  <header>
+    <a href="https://github.com/dbsanfte/RiemannGaussian">RiemannGaussian</a>
+    <h1>A Shorter Lean Proof of the Riemann Hypothesis</h1>
+    <p>The principal-character optimisation uses <strong>165,070 archive modules</strong>.
+      It saves <strong>10,104 modules (5.8%)</strong> from our earlier route.</p>
+    <p>Underlying proof and Lean archive by <a href="https://alpo.ge/remark.pdf">Levent Alpöge, working with Claude</a>.</p>
   </header>
-  <section class="scope-bar" aria-label="Scope of the selected theorem"><p id="scope-text">Loading the exact theorem scope…</p><button id="scope-more" class="quiet">Scope &amp; audits ↗</button></section>
-  <nav class="toolbar" aria-label="Proof navigation">
-    <label class="endpoint-label">Endpoint <select id="endpoint" aria-label="Terminal theorem"></select></label>
-    <div class="search-box"><label class="sr-only" for="search">Search declarations in this proof</label><input id="search" type="search" autocomplete="off" placeholder="Search a theorem, family or module…" aria-controls="search-results" aria-expanded="false"><kbd>/</kbd><div id="search-results" hidden></div></div>
-    <button id="overview" title="Reset to the annotated overview">Overview</button>
-    <button id="all-steps" title="Show every authored project theorem in this proof">All theorem steps</button>
-    <button id="terminal" title="Center the terminal theorem">Find endpoint</button>
-    <button id="help-button" aria-label="How to use the explorer">?</button>
-  </nav>
-  <nav id="families" class="families" aria-label="Logical theorem families"></nav>
-  <main id="canvas" aria-label="Interactive theorem chain">
-    <svg id="graph" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Theorem dependency graph. Drag to pan, scroll or pinch to zoom. Select a theorem for details." tabindex="0">
-      <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#304050"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#7f93aa"/></marker></defs>
-      <rect width="100%" height="100%" fill="url(#dots)"/><g id="world"></g>
-    </svg>
-    <div class="canvas-hint">Earlier ingredients <span>→</span> terminal theorem <i>·</i> dashed arrows contain collapsed steps</div>
-    <div class="zoom-controls" aria-label="Zoom controls"><button id="zoom-out" aria-label="Zoom out">−</button><output id="zoom-value">100%</output><button id="zoom-in" aria-label="Zoom in">+</button><button id="fit">Fit all</button></div>
-    <svg id="minimap" viewBox="0 0 260 112" role="img" aria-label="Overview map; click to move around the proof"></svg>
-    <aside id="details" class="details" hidden aria-label="Theorem details"><button id="close-details" class="close" aria-label="Close theorem details">×</button><div id="detail-content"></div></aside>
-    <div id="tooltip" role="tooltip" hidden></div>
-    <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
-  </main>
-  <footer><span id="counts">Loading proof dependencies…</span><span><a href="audit.json" target="_blank" rel="noopener">Axiom audit</a> · <a href="lean-graph.json.gz" download>Raw Lean graph</a> · <a href="families.json" target="_blank" rel="noopener">Family metadata</a> · <a href="https://dbsanfte.github.io/RiemannGaussian/semiprime-proof/">Factoring algorithm</a></span></footer>
-  <dialog id="help"><button id="close-help" class="close" aria-label="Close help">×</button><p class="eyebrow">READING THE PROOF</p><h2>A chain you can inspect</h2>
-    <p>Drag the background to pan. Scroll, pinch or use + / − to zoom. <strong>Fit all</strong> shows the whole current view; the small map moves you around it.</p>
-    <p>Hover or focus a box for metadata. Select it for the complete Lean statement, exact source line, dependencies and audits. The ↗ on each box opens its source directly. Double-click a box, or use <strong>Expand dependencies</strong>, to reveal earlier steps.</p>
-    <p>Coloured zones group mathematical families. Select a family chip to reveal its authored theorem steps. Search also finds definitions and generated helpers in the full selected proof.</p>
-    <p>An arrow means the later declaration references the earlier one. A dashed arrow follows an actual path through collapsed declarations; select it to inspect or expand that path. This is a dependency graph, not a claim that a single theorem implies the next without its other hypotheses.</p>
-    <p>Project dependencies are followed to external Lean/mathlib declarations, which are boundary leaves. Their complete transitive axiom dependencies are still audited. The overview hides detail; the raw export preserves it.</p>
-    <p>Keyboard: <kbd>/</kbd> search, <kbd>F</kbd> fit, <kbd>+</kbd> / <kbd>−</kbd> zoom, arrow keys pan on the canvas, <kbd>Enter</kbd> inspect a focused box, <kbd>Esc</kbd> close panels.</p>
-    <p id="scope-note"></p><p><a id="metadata-guide" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/docs/theorem-explorer.md">Metadata and reproduction guide ↗</a></p>
-  </dialog>
-  <noscript><div class="noscript">JavaScript is needed for interactive navigation. <a href="preview.png">View the static preview</a> or <a href="audit.json">read the proof audit</a>.</div></noscript>
+  <section class="steps" aria-label="Proof assembly">
+    <article class="step">
+      <h2>Pinned archive inputs</h2>
+      <p>Alpöge’s archive supplies the representation theory, theta identities,
+        Hodge estimates and Galois results. The archive imports are grouped here.</p>
+      <p><a href="https://huggingface.co/datasets/JackMcCarthy/riemann-hypothesis-build/tree/9036e64326acf4acfae159b96664e9708445c1d1">Pinned public objects</a></p>
+    </article>
+    <div class="branches">
+      <div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <article class="step">
+          <h2>Principal geometric family</h2>
+          <p>One selected family supports the lift-rank bound and the weighted,
+            irreducibility, divisibility and spectral comparisons. A common
+            theta period grid supplies the period estimates.</p>
+          <ul><li><a data-proof-source="scripts/CheckAlpogePrincipalArchivedBundleRank.lean#L17" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedBundleRank.lean#L17">Lift-rank bound</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalArchivedBundleRows.lean#L26" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedBundleRows.lean#L26">Comparisons on the selected family</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L567" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L567">Hodge covolume bound</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L631" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L631">Common period grid</a></li></ul>
+        </article>
+      </div>
+      <div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <article class="step">
+          <h2>Principal arithmetic window</h2>
+          <p>The representation, cohomology and CM inputs give the
+            height-401 window for the principal character. The window
+            supplies the host used by the geometric family.</p>
+          <p><a data-proof-source="scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L669" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L669">Principal height-401 window</a></p>
+        </article>
+      </div>
+    </div>
+    <div class="arrow" aria-hidden="true">↓</div>
+    <article class="step result">
+      <h2><code>RiemannHypothesis</code></h2>
+      <p>The final theorem uses the principal window to supply the host
+        required by the geometric construction. Lean 4.33.1 checked the closed
+        statement and standalone kernel replay passed locally.</p>
+      <p><a data-proof-source="scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L710" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedGeometryRH.lean#L710">Final Lean declaration</a> · <a href="https://github.com/dbsanfte/RiemannGaussian/actions/workflows/alpoge_archive_ci.yml">Archive CI</a></p>
+    </article>
+  </section>
+  <details id="local-imports">
+    <summary>Direct imports among the 31 local Lean modules</summary>
+    <p>Each module lists its direct repository imports. Archive and Mathlib
+      imports are grouped outside this local graph.</p>
+    <ul><li data-module="CheckAlpogePrincipalArchivedGeometryRH"><details><summary>CheckAlpogePrincipalArchivedGeometryRH</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalArchivedGeometryRH.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedGeometryRH.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalArchivedRowSelection.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedRowSelection.lean">CheckAlpogePrincipalArchivedRowSelection</a></li><li><a data-proof-source="scripts/CheckAlpogeLocalThetaSupplier.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogeLocalThetaSupplier.lean">CheckAlpogeLocalThetaSupplier</a></li></ul></details></li><li data-module="CheckAlpogePrincipalArchivedRowSelection"><details><summary>CheckAlpogePrincipalArchivedRowSelection</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalArchivedRowSelection.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedRowSelection.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalArchivedBundleRows.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedBundleRows.lean">CheckAlpogePrincipalArchivedBundleRows</a></li></ul></details></li><li data-module="CheckAlpogePrincipalArchivedBundleRows"><details><summary>CheckAlpogePrincipalArchivedBundleRows</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalArchivedBundleRows.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedBundleRows.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalArchivedBundleChoice.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedBundleChoice.lean">CheckAlpogePrincipalArchivedBundleChoice</a></li></ul></details></li><li data-module="CheckAlpogePrincipalArchivedBundleChoice"><details><summary>CheckAlpogePrincipalArchivedBundleChoice</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalArchivedBundleChoice.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedBundleChoice.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalArchivedBundleRank.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedBundleRank.lean">CheckAlpogePrincipalArchivedBundleRank</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalConstructedClass.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalConstructedClass.lean">CheckAlpogePrincipalConstructedClass</a></li></ul></details></li><li data-module="CheckAlpogePrincipalArchivedBundleRank"><details><summary>CheckAlpogePrincipalArchivedBundleRank</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalArchivedBundleRank.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalArchivedBundleRank.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalRankBound.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalRankBound.lean">CheckAlpogePrincipalRankBound</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalDesignLinks.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalDesignLinks.lean">CheckAlpogePrincipalDesignLinks</a></li></ul></details></li><li data-module="CheckAlpogePrincipalRankBound"><details><summary>CheckAlpogePrincipalRankBound</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalRankBound.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalRankBound.lean">Open module source</a></p><p>This module imports archive or library code.</p></details></li><li data-module="CheckAlpogePrincipalDesignLinks"><details><summary>CheckAlpogePrincipalDesignLinks</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalDesignLinks.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalDesignLinks.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalAdelicDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalAdelicDesigns.lean">CheckAlpogePrincipalAdelicDesigns</a></li></ul></details></li><li data-module="CheckAlpogePrincipalAdelicDesigns"><details><summary>CheckAlpogePrincipalAdelicDesigns</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalAdelicDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalAdelicDesigns.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalDesigns.lean">CheckAlpogePrincipalDesigns</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalAdelicForms.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalAdelicForms.lean">CheckAlpogePrincipalAdelicForms</a></li></ul></details></li><li data-module="CheckAlpogePrincipalDesigns"><details><summary>CheckAlpogePrincipalDesigns</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalDesigns.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalFamily.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalFamily.lean">CheckAlpogePrincipalFamily</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalRounding.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalRounding.lean">CheckAlpogePrincipalRounding</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalRankBound.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalRankBound.lean">CheckAlpogePrincipalRankBound</a></li></ul></details></li><li data-module="CheckAlpogePrincipalFamily"><details><summary>CheckAlpogePrincipalFamily</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalFamily.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalFamily.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogeTiedPrincipal.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogeTiedPrincipal.lean">CheckAlpogeTiedPrincipal</a></li></ul></details></li><li data-module="CheckAlpogeTiedPrincipal"><details><summary>CheckAlpogeTiedPrincipal</summary><p><a data-proof-source="scripts/CheckAlpogeTiedPrincipal.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogeTiedPrincipal.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalLevel.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLevel.lean">CheckAlpogePrincipalLevel</a></li></ul></details></li><li data-module="CheckAlpogePrincipalLevel"><details><summary>CheckAlpogePrincipalLevel</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalLevel.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLevel.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/AlpogePrimeWindows.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/AlpogePrimeWindows.lean">AlpogePrimeWindows</a></li></ul></details></li><li data-module="AlpogePrimeWindows"><details><summary>AlpogePrimeWindows</summary><p><a data-proof-source="scripts/AlpogePrimeWindows.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/AlpogePrimeWindows.lean">Open module source</a></p><p>This module imports archive or library code.</p></details></li><li data-module="CheckAlpogePrincipalRounding"><details><summary>CheckAlpogePrincipalRounding</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalRounding.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalRounding.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalLattice.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLattice.lean">CheckAlpogePrincipalLattice</a></li></ul></details></li><li data-module="CheckAlpogePrincipalLattice"><details><summary>CheckAlpogePrincipalLattice</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalLattice.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLattice.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/RiemannGaussian/AlpogeLatticeImage.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/RiemannGaussian/AlpogeLatticeImage.lean">RiemannGaussian.AlpogeLatticeImage</a></li><li><a data-proof-source="scripts/CheckAlpogeLatticeLocalization.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogeLatticeLocalization.lean">CheckAlpogeLatticeLocalization</a></li></ul></details></li><li data-module="RiemannGaussian.AlpogeLatticeImage"><details><summary>RiemannGaussian.AlpogeLatticeImage</summary><p><a data-proof-source="scripts/RiemannGaussian/AlpogeLatticeImage.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/RiemannGaussian/AlpogeLatticeImage.lean">Open module source</a></p><p>This module imports archive or library code.</p></details></li><li data-module="CheckAlpogeLatticeLocalization"><details><summary>CheckAlpogeLatticeLocalization</summary><p><a data-proof-source="scripts/CheckAlpogeLatticeLocalization.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogeLatticeLocalization.lean">Open module source</a></p><p>This module imports archive or library code.</p></details></li><li data-module="CheckAlpogePrincipalAdelicForms"><details><summary>CheckAlpogePrincipalAdelicForms</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalAdelicForms.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalAdelicForms.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogeAdelicClassProjection.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogeAdelicClassProjection.lean">CheckAlpogeAdelicClassProjection</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalLevelCharacters.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLevelCharacters.lean">CheckAlpogePrincipalLevelCharacters</a></li></ul></details></li><li data-module="CheckAlpogeAdelicClassProjection"><details><summary>CheckAlpogeAdelicClassProjection</summary><p><a data-proof-source="scripts/CheckAlpogeAdelicClassProjection.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogeAdelicClassProjection.lean">Open module source</a></p><p>This module imports archive or library code.</p></details></li><li data-module="CheckAlpogePrincipalLevelCharacters"><details><summary>CheckAlpogePrincipalLevelCharacters</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalLevelCharacters.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLevelCharacters.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalLattice.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLattice.lean">CheckAlpogePrincipalLattice</a></li></ul></details></li><li data-module="CheckAlpogePrincipalConstructedClass"><details><summary>CheckAlpogePrincipalConstructedClass</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalConstructedClass.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalConstructedClass.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalTrueGeometry.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalTrueGeometry.lean">CheckAlpogePrincipalTrueGeometry</a></li></ul></details></li><li data-module="CheckAlpogePrincipalTrueGeometry"><details><summary>CheckAlpogePrincipalTrueGeometry</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalTrueGeometry.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalTrueGeometry.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalSymmetricGeometry.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalSymmetricGeometry.lean">CheckAlpogePrincipalSymmetricGeometry</a></li></ul></details></li><li data-module="CheckAlpogePrincipalSymmetricGeometry"><details><summary>CheckAlpogePrincipalSymmetricGeometry</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalSymmetricGeometry.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalSymmetricGeometry.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalSymmetricDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalSymmetricDesigns.lean">CheckAlpogePrincipalSymmetricDesigns</a></li><li><a data-proof-source="scripts/CheckAlpogePrincipalDimensionCounts.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalDimensionCounts.lean">CheckAlpogePrincipalDimensionCounts</a></li></ul></details></li><li data-module="CheckAlpogePrincipalSymmetricDesigns"><details><summary>CheckAlpogePrincipalSymmetricDesigns</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalSymmetricDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalSymmetricDesigns.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalColumnSlopes.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalColumnSlopes.lean">CheckAlpogePrincipalColumnSlopes</a></li></ul></details></li><li data-module="CheckAlpogePrincipalColumnSlopes"><details><summary>CheckAlpogePrincipalColumnSlopes</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalColumnSlopes.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalColumnSlopes.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalCharacterSlopes.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalCharacterSlopes.lean">CheckAlpogePrincipalCharacterSlopes</a></li></ul></details></li><li data-module="CheckAlpogePrincipalCharacterSlopes"><details><summary>CheckAlpogePrincipalCharacterSlopes</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalCharacterSlopes.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalCharacterSlopes.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalLevelSlopes.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLevelSlopes.lean">CheckAlpogePrincipalLevelSlopes</a></li></ul></details></li><li data-module="CheckAlpogePrincipalLevelSlopes"><details><summary>CheckAlpogePrincipalLevelSlopes</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalLevelSlopes.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalLevelSlopes.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalCountingDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalCountingDesigns.lean">CheckAlpogePrincipalCountingDesigns</a></li></ul></details></li><li data-module="CheckAlpogePrincipalCountingDesigns"><details><summary>CheckAlpogePrincipalCountingDesigns</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalCountingDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalCountingDesigns.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalFrame.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalFrame.lean">CheckAlpogePrincipalFrame</a></li></ul></details></li><li data-module="CheckAlpogePrincipalFrame"><details><summary>CheckAlpogePrincipalFrame</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalFrame.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalFrame.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalAdelicDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalAdelicDesigns.lean">CheckAlpogePrincipalAdelicDesigns</a></li></ul></details></li><li data-module="CheckAlpogePrincipalDimensionCounts"><details><summary>CheckAlpogePrincipalDimensionCounts</summary><p><a data-proof-source="scripts/CheckAlpogePrincipalDimensionCounts.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalDimensionCounts.lean">Open module source</a></p><ul><li><a data-proof-source="scripts/CheckAlpogePrincipalCountingDesigns.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogePrincipalCountingDesigns.lean">CheckAlpogePrincipalCountingDesigns</a></li></ul></details></li><li data-module="CheckAlpogeLocalThetaSupplier"><details><summary>CheckAlpogeLocalThetaSupplier</summary><p><a data-proof-source="scripts/CheckAlpogeLocalThetaSupplier.lean" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/scripts/CheckAlpogeLocalThetaSupplier.lean">Open module source</a></p><p>This module imports archive or library code.</p></details></li></ul>
+  </details>
+  <footer>
+    <a data-proof-source="docs/research-evidence/alpoge-archive-rh/README.md" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/docs/research-evidence/alpoge-archive-rh/README.md">Verification and source pins</a>
+    · <a href="native.html">Native Gaussian–Suzuki theory</a>
+  </footer>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const revision = window.PROOF_RELEASE?.revision;
+  if (!revision) return;
+  for (const link of document.querySelectorAll("[data-proof-source]")) {
+    link.href = "https://github.com/dbsanfte/RiemannGaussian/blob/" + revision + "/" + link.dataset.proofSource;
+  }
+});
+</script>
 </body>
 </html>
