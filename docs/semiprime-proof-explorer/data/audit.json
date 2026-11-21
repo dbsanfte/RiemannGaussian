@@ -9,7 +9,7 @@
   },
   "declaration_locations": "Parsed authored source commands, not elaborated Lean names or references",
   "evidence_sha256": {
-    "RiemannGaussian.lean": "8d97bd6b40a4edda60438541bcc0e43855aa8b3e2a1e035fe646ab6facc30829",
+    "docs/research-evidence/semiprime-boundary-hybrid-20261029/root-registration/RiemannGaussian.lean": "8d97bd6b40a4edda60438541bcc0e43855aa8b3e2a1e035fe646ab6facc30829",
     "docs/research-evidence/semiprime-publication-20261029/audits/all-descriptor-root-envelope--audit.log": "012f6ac01a1a59b3104757a9828452678bdd094e21508dd5d5ff0b5cc305492e",
     "docs/research-evidence/semiprime-publication-20261029/audits/binary-square-root--audit.log": "f62d593067c7c2be2d4471d3e28bfae6294f5527351489f627b868a2c2a5e73c",
     "docs/research-evidence/semiprime-publication-20261029/audits/cache-phase--audit.log": "28622d78758be653642afcbc73d1aeedd522b5d9cb65a887c2734f68384491a0",
@@ -383,7 +383,7 @@
   "full_goal_complete": false,
   "generator_sha256": "930244e260aa2be6abd40623b0123bf656b07eadaf1f765be4183dbe9d5a9b14",
   "input_sha256": {
-    "docs/research-evidence/semiprime-boundary-hybrid-20261029/inventory.json": "4fc726a28a062dc7605d1f3220f275ab90cdca27500c6cdb282e5cd99e67bc9a",
+    "docs/research-evidence/semiprime-boundary-hybrid-20261029/inventory.json": "0141a340a981261ac5439149b42058b96f131b4f8242c987932afff2b369ec54",
     "docs/research-evidence/semiprime-boundary-hybrid-20261029/progress.json": "7297fdeaaa64ed35737527dd347ede246b218626a200ba0d941502ff42fb11fb",
     "docs/semiprime-proof-explorer/metadata.json": "3bbf9e9b3fcc11e855ed886ad1aec0596f5afe441d7282bf061e6770b324eb94"
   },

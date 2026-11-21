@@ -21,17 +21,15 @@
       "changeReason": "The locally replayed shorter archive proof establishes RH. The native explorer now describes the independent analytic theory and its exact estimates."
     },
     "latestUpdate": {
-      "sequence": 159,
-      "id": "alpoge-shorter-rh-readme-audit",
-      "kind": "presentation",
-      "title": "The shorter Lean proof leads the README.",
-      "body": "The headline describes the principal-character optimisation and credits the underlying proof to Levent Alpöge, working with Claude.",
-      "next": "The native explorer covers the independent Gaussian–Suzuki estimates.",
-      "theoremStatusPath": [
-        "gaussianPhaseBandToolkit",
-        "globalSuzukiCriterionTheorem"
-      ],
-      "documentation": "docs/research-evidence/alpoge-archive-rh/README.md"
+      "sequence": 160,
+      "id": "arithmetic-trimmed-square-windows",
+      "kind": "theorem",
+      "title": "A shorter Möbius cutoff preserves the arithmetic window criterion.",
+      "body": "Lean bounds the omitted divisor corner. The logarithmic estimate for either trimmed or adaptive Möbius sums now implies RH through a module with 4,785 fewer imports than the equivalence module.",
+      "next": "Prove the cofinal logarithmic bound from arithmetic.",
+      "theorem": "RiemannGaussian.AlpogeMined.rh_of_fixedBandMin_log_squareWindows",
+      "source": "scripts/CheckAlpogeFixedPrimeBandCorner.lean",
+      "documentation": "docs/arithmetic-proof-shortening.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",

@@ -20,63 +20,82 @@ exponent lower bound required by the local Suzuki RH criterion.
 namespace RiemannGaussian
 noncomputable section
 
-private theorem local_primitive_envelope_on_window {t s : ℝ} (ht : 0 ≤ t)
+private theorem local_primitive_envelope_on_window {B : ℝ} (hB : 0 ≤ B)
+    (hβ : ∀ rho : NontrivialZetaZero, rho.1.re ≤ B) {t s : ℝ} (ht : 0 ≤ t)
     (hs : s ∈ Set.Icc t (t + 3 * Real.log 2)) :
     |RosserSchoenfeldPrimePrimitive.value s -
       (Real.exp s - 1 - Real.log (2 * Real.pi) * s)| ≤
       ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24) *
-        Real.exp ((7 / 8 : ℝ) * (t + 3 * Real.log 2)) := by
-  apply (suzukiLocalPrimePrimitive_error_le_seven_eighths (ht.trans hs.1)).trans
+        Real.exp (B * (t + 3 * Real.log 2)) := by
+  apply (suzukiLocalPrimePrimitive_error_le_of_re_le hB hβ (ht.trans hs.1)).trans
   apply mul_le_mul_of_nonneg_left _ (by positivity)
-  exact Real.exp_le_exp.mpr (mul_le_mul_of_nonneg_left hs.2 (by norm_num))
+  exact Real.exp_le_exp.mpr (mul_le_mul_of_nonneg_left hs.2 hB)
 
-private theorem local_scaled_primitive_envelope_le (t : ℝ) :
+private theorem local_scaled_primitive_envelope_le {B : ℝ} (hB : B ≤ 1) (t : ℝ) :
     24 * (((463 / 5000 : ℝ) + Real.pi ^ 2 / 24) *
-      Real.exp ((7 / 8 : ℝ) * (t + 3 * Real.log 2))) * Real.exp (-t / 2) ≤
-      (192 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * Real.exp ((3 / 8 : ℝ) * t) := by
-  have he : Real.exp ((7 / 8 : ℝ) * (3 * Real.log 2)) ≤ 8 := by
+      Real.exp (B * (t + 3 * Real.log 2))) * Real.exp (-t / 2) ≤
+      (192 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * Real.exp ((B - 1 / 2) * t) := by
+  have he : Real.exp (B * (3 * Real.log 2)) ≤ 8 := by
     calc
       _ ≤ Real.exp (3 * Real.log 2) := Real.exp_le_exp.mpr (by
-        nlinarith [Real.log_nonneg (by norm_num : (1 : ℝ) ≤ 2)])
+        exact mul_le_of_le_one_left (by positivity) hB)
       _ = 8 := by
         rw [show 3 * Real.log 2 = Real.log 2 + Real.log 2 + Real.log 2 by ring,
           Real.exp_add, Real.exp_add, Real.exp_log (by norm_num : (0 : ℝ) < 2)]
         norm_num
   calc
     _ = (24 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24) *
-      Real.exp ((3 / 8 : ℝ) * t)) * Real.exp ((7 / 8 : ℝ) * (3 * Real.log 2)) := by
-      have hex : Real.exp ((7 / 8 : ℝ) * (t + 3 * Real.log 2)) *
-          Real.exp (-t / 2) = Real.exp ((3 / 8 : ℝ) * t) *
-          Real.exp ((7 / 8 : ℝ) * (3 * Real.log 2)) := by
+      Real.exp ((B - 1 / 2) * t)) * Real.exp (B * (3 * Real.log 2)) := by
+      have hex : Real.exp (B * (t + 3 * Real.log 2)) *
+          Real.exp (-t / 2) = Real.exp ((B - 1 / 2) * t) *
+          Real.exp (B * (3 * Real.log 2)) := by
         rw [← Real.exp_add, ← Real.exp_add]
         congr 1
         ring
       linear_combination (24 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * hex
     _ ≤ (24 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24) *
-      Real.exp ((3 / 8 : ℝ) * t)) * 8 :=
+      Real.exp ((B - 1 / 2) * t)) * 8 :=
         mul_le_mul_of_nonneg_left he (by positivity)
     _ = _ := by ring
 
 /-- Applying the proved twice-Abel estimate to the existing primitive
-envelope gives an explicit global three-eighths bound in logarithmic time. -/
-theorem abs_suzukiLocalPrimeComparison_le_three_eighths {t : ℝ} (ht : 0 ≤ t) :
+envelope gives an explicit global exponential bound in logarithmic time. -/
+theorem abs_suzukiLocalPrimeComparison_le_of_re_le {B : ℝ} (hB : B ∈ Set.Icc 0 1)
+    (hβ : ∀ rho : NontrivialZetaZero, rho.1.re ≤ B) {t : ℝ} (ht : 0 ≤ t) :
     |suzukiLocalPrimeComparison t| ≤
-      (192 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * Real.exp ((3 / 8 : ℝ) * t) := by
+      (192 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * Real.exp ((B - 1 / 2) * t) := by
   exact (abs_suzukiLocalPrimeComparison_le_of_primitive_envelope
-    (by positivity) (fun s hs => local_primitive_envelope_on_window ht hs)).trans
-      (local_scaled_primitive_envelope_le t)
+    (by positivity) (fun s hs => local_primitive_envelope_on_window hB.1 hβ ht hs)).trans
+      (local_scaled_primitive_envelope_le hB.2 t)
 
 /-- The complete real-cutoff comparison, with its inherited exponent and
 an explicit constant. Every real base at least one is covered. -/
-theorem abs_suzukiLocalArithmeticComparison_le_three_eighths {X : ℝ} (hX : 1 ≤ X) :
+theorem abs_suzukiLocalArithmeticComparison_le_of_re_le {B : ℝ} (hB : B ∈ Set.Icc 0 1)
+    (hβ : ∀ rho : NontrivialZetaZero, rho.1.re ≤ B) {X : ℝ} (hX : 1 ≤ X) :
     |suzukiLocalArithmeticComparison X| ≤
-      (192 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * X ^ (3 / 8 : ℝ) := by
+      (192 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * X ^ (B - 1 / 2) := by
   have hpos : 0 < X := zero_lt_one.trans_le hX
   have he := suzukiLocalArithmeticComparison_exp (Real.log X)
   rw [Real.exp_log hpos] at he
   rw [he, Real.rpow_def_of_pos hpos]
-  simpa only [mul_comm] using abs_suzukiLocalPrimeComparison_le_three_eighths
+  simpa only [mul_comm] using abs_suzukiLocalPrimeComparison_le_of_re_le hB hβ
     (Real.log_nonneg hX)
+
+/-- The logarithmic-time comparison at the seven-eighths baseline. -/
+theorem abs_suzukiLocalPrimeComparison_le_three_eighths {t : ℝ} (ht : 0 ≤ t) :
+    |suzukiLocalPrimeComparison t| ≤
+      (192 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * Real.exp ((3 / 8 : ℝ) * t) := by
+  convert abs_suzukiLocalPrimeComparison_le_of_re_le
+    (by constructor <;> norm_num) suzukiLocalZero_re_le_seven_eighths ht using 1
+  norm_num
+
+/-- The real-cutoff comparison at the seven-eighths baseline. -/
+theorem abs_suzukiLocalArithmeticComparison_le_three_eighths {X : ℝ} (hX : 1 ≤ X) :
+    |suzukiLocalArithmeticComparison X| ≤
+      (192 * ((463 / 5000 : ℝ) + Real.pi ^ 2 / 24)) * X ^ (3 / 8 : ℝ) := by
+  convert abs_suzukiLocalArithmeticComparison_le_of_re_le
+    (by constructor <;> norm_num) suzukiLocalZero_re_le_seven_eighths hX using 1
+  norm_num
 
 /-- The same explicit exponent for the signed ordinary-prime sum, paying
 the full proper-prime-power deletion cost in the constant. -/

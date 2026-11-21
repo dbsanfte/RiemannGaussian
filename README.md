@@ -46,6 +46,28 @@ kernel declaration. [Pinned compiled archive](https://huggingface.co/datasets/Ja
 python3 scripts/verify_alpoge_archive_rh.py /path/to/extracted/lean /path/to/public/objects --sandbox
 ```
 
+## Current Proof Shortening Direction
+
+A second route asks how much of the analytic archive can be replaced by finite
+arithmetic. At each fourth power, we measure the shortfall in a weighted
+count of primes. Lean rewrites that shortfall, up to a controlled error, as
+a sum of weighted products of Möbius values. At the sample $n^4$, the
+trimmed criterion needs Möbius values only through
+$n-\lfloor(n/8)^{1/3}\rfloor$, down from $n$. A second version lets the cutoff
+vary at each sample and bounds the discarded terms using short sums of
+Möbius values.
+[Arithmetic construction and checked estimates](docs/arithmetic-proof-shortening.md).
+
+What remains is to prove that **one constant bounds the accumulated positive
+shortfall by a logarithm on arbitrarily late square windows**. Lean proves
+that this estimate is equivalent to RH. Importing just the implication from
+arithmetic to RH saves 4,785 modules compared with importing both
+directions. It uses 27 selected Alpöge modules and six repository modules
+alongside the pinned libraries. Proving the estimate from arithmetic would
+complete this route.
+[Forward implication](scripts/CheckAlpogeFixedPrimeBandCorner.lean)
+· [Exact window criterion](scripts/CheckAlpogeFixedPrimeBandCenteredBounds.lean).
+
 ## Related Research
 
 - At least 67.31% of nontrivial zeros in sufficiently large cumulative and

@@ -92,7 +92,8 @@ def run(output, published):
                 headings = [text.strip() for text in article.locator("h2").all_inner_texts()]
                 assert headings == [
                     "A Shorter Lean Proof of the Riemann Hypothesis",
-                    "Verify the Shorter Proof", "Related Research", "Native Library", "License",
+                    "Verify the Shorter Proof", "Current Proof Shortening Direction",
+                    "Related Research", "Native Library", "License",
                 ], headings
                 assert "Current RH Proof Direction" not in article.inner_text()
                 assert "RH remains open" not in article.inner_text()
@@ -109,6 +110,11 @@ def run(output, published):
                 content = ' '.join(article.inner_text().split())
                 assert "Levent Alpöge, working with Claude" in content
                 assert all(term in content for term in ("165,070", "10,104 modules (5.8%)", "175,174-module"))
+                forward = article.get_by_role("link", name="Forward implication", exact=True)
+                assert forward.get_attribute("href").endswith("scripts/CheckAlpogeFixedPrimeBandCorner.lean")
+                criterion = article.get_by_role("link", name="Exact window criterion", exact=True)
+                assert criterion.get_attribute("href").endswith("scripts/CheckAlpogeFixedPrimeBandCenteredBounds.lean")
+                assert "arbitrarily late square windows" in content and "saves 4,785 modules" in content
                 assert "Standalone kernel replay" in content
                 assert "propext" in content and "Classical.choice" in content and "Quot.sound" in content
 

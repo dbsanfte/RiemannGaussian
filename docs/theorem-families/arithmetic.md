@@ -6,8 +6,11 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**965 modules.** Source links open the definitions, hypotheses and proofs.
+**977 modules.** Source links open the definitions, hypotheses and proofs.
 
+- [AlpogeZetaPowerWindows](../../RiemannGaussian/AlpogeZetaPowerWindows.lean)
+- [AlpogeZetaSampleBounds](../../RiemannGaussian/AlpogeZetaSampleBounds.lean)
+- [AlpogeZetaShortIntervals](../../RiemannGaussian/AlpogeZetaShortIntervals.lean)
 - [ArithmeticOperatorBinaryDensityAudit](../../RiemannGaussian/ArithmeticOperatorBinaryDensityAudit.lean)
 - [ArithmeticOperatorBinaryEulerControl](../../RiemannGaussian/ArithmeticOperatorBinaryEulerControl.lean)
 - [ArithmeticOperatorBinaryPrimeControl](../../RiemannGaussian/ArithmeticOperatorBinaryPrimeControl.lean)
@@ -97,6 +100,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
 - [DirichletFamilyMoments](../../RiemannGaussian/DirichletFamilyMoments.lean)
+- [DyadicPrimeDeficit](../../RiemannGaussian/DyadicPrimeDeficit.lean)
+- [DyadicPrimeSquareSamples](../../RiemannGaussian/DyadicPrimeSquareSamples.lean)
+- [DyadicPrimeSquareVariation](../../RiemannGaussian/DyadicPrimeSquareVariation.lean)
+- [DyadicPrimeZeroBound](../../RiemannGaussian/DyadicPrimeZeroBound.lean)
 - [FiniteDivisibilitySieve](../../RiemannGaussian/FiniteDivisibilitySieve.lean)
 - [FinitePrimeCountOne](../../RiemannGaussian/FinitePrimeCountOne.lean)
 - [FinitePrimePatternSieve](../../RiemannGaussian/FinitePrimePatternSieve.lean)
@@ -134,8 +141,13 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [PrimeCountEuler](../../RiemannGaussian/PrimeCountEuler.lean)
 - [PrimeCountEulerExponential](../../RiemannGaussian/PrimeCountEulerExponential.lean)
 - [PrimeCountEulerMoments](../../RiemannGaussian/PrimeCountEulerMoments.lean)
+- [PrimeMassFromZeroBound](../../RiemannGaussian/PrimeMassFromZeroBound.lean)
 - [PrimeNewtonMoments](../../RiemannGaussian/PrimeNewtonMoments.lean)
 - [PrimeNewtonThree](../../RiemannGaussian/PrimeNewtonThree.lean)
+- [QuasiRHIntegerPowerCheckpoints](../../RiemannGaussian/QuasiRHIntegerPowerCheckpoints.lean)
+- [QuasiRHPrimePrimitiveHeat](../../RiemannGaussian/QuasiRHPrimePrimitiveHeat.lean)
+- [QuasiRHPrimeSampleValues](../../RiemannGaussian/QuasiRHPrimeSampleValues.lean)
+- [QuasiRHPrimeWindowBounds](../../RiemannGaussian/QuasiRHPrimeWindowBounds.lean)
 - [RieszHarmonicCostBounds](../../RiemannGaussian/RieszHarmonicCostBounds.lean)
 - [RosserSchoenfeldAnchor](../../RiemannGaussian/RosserSchoenfeldAnchor.lean)
 - [RosserSchoenfeldBounds](../../RiemannGaussian/RosserSchoenfeldBounds.lean)

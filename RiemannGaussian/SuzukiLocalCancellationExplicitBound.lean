@@ -99,7 +99,9 @@ private theorem local_hinge_right_deriv (r s : ℝ) :
       exact max_eq_right (by linarith)
     · exact max_eq_right (by linarith)
 
-private theorem local_twice_abel_hinge {k k' k'' : ℝ → ℝ} {a b : ℝ}
+/-- Twice integrating by parts against one positive-part hinge retains the
+weighted atom with the exact half-open interval convention. -/
+theorem suzukiLocal_twice_abel_hinge {k k' k'' : ℝ → ℝ} {a b : ℝ}
     (hab : a ≤ b) (hk : ∀ s, HasDerivAt k (k' s) s)
     (hk' : ∀ s, HasDerivAt k' (k'' s) s) (hkc : Continuous k')
     (hkcc : Continuous k'') (r : ℝ) :
@@ -148,7 +150,7 @@ private theorem local_twice_abel_band {a b : ℝ} (hab : a ≤ b) (t A B r : ℝ
         localBandD t A B b * max (b - r) 0 +
         localBandD t A B a * max (a - r) 0 +
           ∫ s in a..b, localBandDD t A B s * max (s - r) 0 := by
-  exact local_twice_abel_hinge hab (localBand_deriv t A B)
+  exact suzukiLocal_twice_abel_hinge hab (localBand_deriv t A B)
     (localBandD_deriv t A B) (by unfold localBandD; fun_prop)
     (by unfold localBandDD; fun_prop) r
 
@@ -507,6 +509,53 @@ theorem abs_suzukiLocalAbelFunctional_le {t B : ℝ} (hB : 0 ≤ B) {f : ℝ →
   unfold suzukiLocalAbelFunctional
   rw [abs_le] at h0 h1 h2 h3 hi1 hi2 hi3 ⊢
   constructor <;> nlinarith
+
+/-- A signed finite atomic source can be measured through the error of its
+hinge primitive after removing an exponential and an affine function. -/
+theorem abs_suzukiLocal_weighted_atomic_sum_le {ι : Type*} (I : Finset ι) (w r : ι → ℝ)
+    {t B c a b : ℝ} (hB : 0 ≤ B)
+    (hb : ∀ s ∈ Icc t (t + 3 * Real.log 2),
+      |(∑ i ∈ I, w i * max (s - r i) 0) - (c * Real.exp s + a + b * s)| ≤ B) :
+    |∑ i ∈ I, w i * (Real.exp (-r i / 2) * suzukiLocalSignedKernel (r i - t))| ≤
+      24 * B * Real.exp (-t / 2) := by
+  let F (s : ℝ) := ∑ i ∈ I, w i * max (s-r i) 0
+  let g (s : ℝ) := c * (Real.exp s - 1 - 0*s)
+  let q (s : ℝ) := (a+c) + b*s
+  have hF : Continuous F := continuous_finsetSum _ (fun i _ => by fun_prop)
+  have hg : Continuous g := by dsimp [g]; fun_prop
+  have hq : Continuous q := by dsimp [q]; fun_prop
+  have hz : suzukiLocalAbelFunctional t q = 0 := by
+    have hd (s : ℝ) : HasDerivAt q b s := by
+      simpa [q] using ((hasDerivAt_id s).const_mul b).const_add (a+c)
+    rw [localAbel_eq_bands t hd (fun s => hasDerivAt_const s b) continuous_const continuous_const]
+    simp
+  have he : suzukiLocalAbelFunctional t (g + q) = 0 := by
+    rw [localAbel_add t hg hq, hz, add_zero]
+    unfold g
+    rw [localAbel_const_mul, suzukiLocalAbelFunctional_main, mul_zero]
+  let R := F - (g+q)
+  have hR : Continuous R := hF.sub (hg.add hq)
+  have hsplit : F = R + (g+q) := (sub_add_cancel F (g+q)).symm
+  have hsum := localAbel_sum t I (fun i s => w i * max (s-r i) 0) (fun i _ => by fun_prop)
+  simp only [localAbel_const_mul, suzukiLocalAbelFunctional_hinge] at hsum
+  change suzukiLocalAbelFunctional t F = _ at hsum
+  rw [← hsum, hsplit, localAbel_add t hR (hg.add hq), he, add_zero]
+  apply abs_suzukiLocalAbelFunctional_le hB
+  intro s hs
+  convert hb s hs using 2
+  dsimp [R,F,g,q]
+  ring
+
+/-- A finite set of unit atoms can be tested by its hinge primitive. The
+constant and linear parts of the primitive's normalization are arbitrary. -/
+theorem abs_suzukiLocal_atomic_sum_le {ι : Type*} (I : Finset ι) (r : ι → ℝ)
+    {t B a b : ℝ} (hB : 0 ≤ B)
+    (hb : ∀ s ∈ Icc t (t + 3 * Real.log 2),
+      |(∑ i ∈ I, max (s - r i) 0) - (Real.exp s + a + b * s)| ≤ B) :
+    |∑ i ∈ I, Real.exp (-r i / 2) * suzukiLocalSignedKernel (r i - t)| ≤
+      24 * B * Real.exp (-t / 2) := by
+  simpa only [one_mul] using abs_suzukiLocal_weighted_atomic_sum_le I (fun _ => 1) r
+    (c := 1) (a := a) (b := b) hB (by simpa only [one_mul] using hb)
 
 /-- The full original signed comparison inherits a bound from the actual
 smoothed PNT remainder on exactly its compact logarithmic support. -/

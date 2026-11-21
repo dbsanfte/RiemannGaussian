@@ -6,7 +6,50 @@ on:
   workflow_dispatch:
 
 jobs:
+  # On a cold runner, building the vendored proofs and the native root in one
+  # job exceeded the six-hour limit before either build cache could be saved.
+  prepare-vendors:
+    runs-on: ubuntu-latest
+    env:
+      LEAN_NUM_THREADS: "2"
+    outputs:
+      cache-key: ${{ steps.lookup.outputs.cache-primary-key }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check for the pinned native proof dependencies
+        id: lookup
+        uses: actions/cache/restore@v5
+        with:
+          lookup-only: true
+          path: &vendor_build_paths |
+            vendor/zeta23/.lake/build
+            vendor/openai-quasi-rh/.lake/build
+          key: native-proof-deps-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'vendor/zeta23/lake*', 'vendor/openai-quasi-rh/lake*', 'vendor/zeta23/**/*.lean', 'vendor/openai-quasi-rh/**/*.lean') }}
+      - name: Make room for a cold dependency build
+        if: steps.lookup.outputs.cache-hit != 'true'
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup
+          df -h /
+      - name: Build the pinned native proof dependencies
+        if: steps.lookup.outputs.cache-hit != 'true'
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: true
+          build-args: >-
+            +Zeta23 +OAI.NumberTheory.DirichletL.Nonvanishing
+            +OAI.NumberTheory.DirichletL.RowCompletion.ZeroFreeRegion --wfail
+          use-mathlib-cache: true
+          use-github-cache: false
+      - name: Save the checked native dependency builds
+        if: steps.lookup.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: *vendor_build_paths
+          key: ${{ steps.lookup.outputs.cache-primary-key }}
+
   build:
+    needs: prepare-vendors
     runs-on: ubuntu-latest
     # Cold semiprime proofs share large imported environments. Bound concurrent
     # elaboration so their private heaps fit alongside the common proof closure.
@@ -48,20 +91,11 @@ jobs:
         run: |
           sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup
           df -h /
-      # Path dependencies keep their artifacts outside the root `.lake`, which
-      # is the only directory cached by lean-action.  Key this external proof
-      # closure by every compiler, dependency, configuration, and source input;
-      # Lake still runs below and validates the restored build traces.
-      - name: Cache pinned Zeta23 proof artifacts
-        uses: actions/cache@v5
+      - name: Restore the pinned native proof dependencies
+        uses: actions/cache/restore@v5
         with:
-          path: vendor/zeta23/.lake/build
-          key: zeta23-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'vendor/zeta23/lakefile.toml', 'vendor/zeta23/lake-manifest.json', 'vendor/zeta23/Zeta23.lean', 'vendor/zeta23/Zeta23/**/*.lean') }}
-      - name: Cache the pinned OpenAI proof closure
-        uses: actions/cache@v5
-        with:
-          path: vendor/openai-quasi-rh/.lake/build
-          key: openai-quasi-rh-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'vendor/openai-quasi-rh/lakefile.toml', 'vendor/openai-quasi-rh/upstream-pin.json') }}
+          path: *vendor_build_paths
+          key: ${{ needs.prepare-vendors.outputs.cache-key }}
       # The cold carry-cell proof used about 5.4 GiB resident memory locally.
       # Leave headroom for concurrent dependencies on the hosted runner.
       - name: Provide memory headroom for cold proof builds
@@ -77,6 +111,11 @@ jobs:
         with:
           build: true
           build-args: "--wfail"
+      - name: Check the arithmetic proof-shortening criterion
+        run: >-
+          python3 scripts/verify_alpoge_mined_bounds.py
+          --fixed-prime-bounds --fixed-prime-block --fixed-prime-short-inverse
+          --reuse-native
       - name: Run whole-project declaration linters
         shell: bash
         run: lake env lean -DwarningAsError=true scripts/LintProject.lean

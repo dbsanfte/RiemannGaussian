@@ -6,8 +6,13 @@ on:
     paths: &proof_paths
       - '.github/workflows/alpoge_archive_ci.yml'
       - 'docs/research-evidence/alpoge-archive-rh/*.sha256'
-      - 'scripts/Alpoge*.lean'
-      - 'scripts/CheckAlpoge*.lean'
+      # Local imports of the principal-character endpoint on the archive toolchain.
+      - 'scripts/AlpogePrimeWindows.lean'
+      - 'scripts/CheckAlpogePrincipal*.lean'
+      - 'scripts/CheckAlpogeAdelicClassProjection.lean'
+      - 'scripts/CheckAlpogeLatticeLocalization.lean'
+      - 'scripts/CheckAlpogeLocalThetaSupplier.lean'
+      - 'scripts/CheckAlpogeTiedPrincipal.lean'
       - 'scripts/alpoge_lean_heap_loader.py'
       - 'scripts/verify_alpoge_archive_rh.py'
       - 'scripts/RiemannGaussian/AlpogeLatticeImage.lean'
@@ -25,7 +30,7 @@ defaults:
 jobs:
   principal-rh:
     runs-on: ubuntu-24.04
-    timeout-minutes: 300
+    timeout-minutes: 360
     env:
       ARCHIVE_WORK: .lake/alpoge-ci
       ARCHIVE_CACHE_URL: https://huggingface.co/datasets/JackMcCarthy/riemann-hypothesis-build/resolve/9036e64326acf4acfae159b96664e9708445c1d1

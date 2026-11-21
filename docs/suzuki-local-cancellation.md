@@ -1,6 +1,8 @@
 # Local Suzuki cancellation: formalization and arithmetic frontier
 
-23 October 2026. Local research slice; RH remains open.
+The current fixed-band Möbius criterion and its open logarithmic bound are described in [the arithmetic proof-shortening note](arithmetic-proof-shortening.md).
+
+This historical research slice dates from 23 October 2026. Its independent local cancellation estimate remains open.
 
 The subsequent repository search is recorded in
 [suzuki-local-cancellation-paths.md](suzuki-local-cancellation-paths.md).

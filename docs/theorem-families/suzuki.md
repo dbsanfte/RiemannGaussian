@@ -6,7 +6,7 @@
 
 Suzuki screw functions, Landau compensation, transport, signed currents and contour identities.
 
-**408 modules.** Source links open the definitions, hypotheses and proofs.
+**414 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [PositiveDelayAveraging](../../RiemannGaussian/PositiveDelayAveraging.lean)
 - [PositiveLaplaceLandau](../../RiemannGaussian/PositiveLaplaceLandau.lean)
@@ -370,15 +370,21 @@ Suzuki screw functions, Landau compensation, transport, signed currents and cont
 - [SuzukiLocalCancellation](../../RiemannGaussian/SuzukiLocalCancellation.lean)
 - [SuzukiLocalCancellationArithmeticBound](../../RiemannGaussian/SuzukiLocalCancellationArithmeticBound.lean)
 - [SuzukiLocalCancellationBoundary](../../RiemannGaussian/SuzukiLocalCancellationBoundary.lean)
+- [SuzukiLocalCancellationCofactorMellin](../../RiemannGaussian/SuzukiLocalCancellationCofactorMellin.lean)
+- [SuzukiLocalCancellationCofactorTail](../../RiemannGaussian/SuzukiLocalCancellationCofactorTail.lean)
 - [SuzukiLocalCancellationCriterion](../../RiemannGaussian/SuzukiLocalCancellationCriterion.lean)
 - [SuzukiLocalCancellationExplicitBound](../../RiemannGaussian/SuzukiLocalCancellationExplicitBound.lean)
 - [SuzukiLocalCancellationKernel](../../RiemannGaussian/SuzukiLocalCancellationKernel.lean)
+- [SuzukiLocalCancellationLatticeRemainder](../../RiemannGaussian/SuzukiLocalCancellationLatticeRemainder.lean)
 - [SuzukiLocalCancellationLogSampling](../../RiemannGaussian/SuzukiLocalCancellationLogSampling.lean)
 - [SuzukiLocalCancellationMoment](../../RiemannGaussian/SuzukiLocalCancellationMoment.lean)
 - [SuzukiLocalCancellationPhysical](../../RiemannGaussian/SuzukiLocalCancellationPhysical.lean)
+- [SuzukiLocalCancellationPrimeBand](../../RiemannGaussian/SuzukiLocalCancellationPrimeBand.lean)
 - [SuzukiLocalCancellationPrimePowers](../../RiemannGaussian/SuzukiLocalCancellationPrimePowers.lean)
 - [SuzukiLocalCancellationPrimitiveBound](../../RiemannGaussian/SuzukiLocalCancellationPrimitiveBound.lean)
+- [SuzukiLocalCancellationReciprocal](../../RiemannGaussian/SuzukiLocalCancellationReciprocal.lean)
 - [SuzukiLocalCancellationSampling](../../RiemannGaussian/SuzukiLocalCancellationSampling.lean)
+- [SuzukiLocalCancellationScaleAverage](../../RiemannGaussian/SuzukiLocalCancellationScaleAverage.lean)
 - [SuzukiLocalCancellationSharedPrime](../../RiemannGaussian/SuzukiLocalCancellationSharedPrime.lean)
 - [SuzukiLocalCancellationTransfer](../../RiemannGaussian/SuzukiLocalCancellationTransfer.lean)
 - [SuzukiLogarithmicConvolution](../../RiemannGaussian/SuzukiLogarithmicConvolution.lean)

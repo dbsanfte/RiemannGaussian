@@ -4209,6 +4209,7 @@
         "OscillatoryPower",
         "ZetaEuler",
         "ZetaLogPrime",
+        "ZetaVaughan",
         "ZetaReciprocalDirichlet"
       ]
     },
@@ -4349,6 +4350,10 @@
         "ZetaSieved",
         "ZetaSquarefree",
         "ZetaRiesz",
+        "AlpogeZeta",
+        "DyadicPrime",
+        "PrimeMassFromZeroBound",
+        "QuasiRH",
         "ArithmeticOperator"
       ]
     },

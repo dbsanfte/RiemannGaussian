@@ -2,16 +2,48 @@
 
 ## Project mission
 
-RiemannGaussian is a research project seeking a complete, kernel-checked Lean
-proof of the Riemann hypothesis. The target is Mathlib's
-`RiemannHypothesis`; finite models, numerical certificates, asymptotic
-experiments, and reformulations are useful only when they strengthen a
-rigorous chain to that target.
+The headline result is the principal-character shortening of Levent Alpöge’s
+proof of RH, originally developed with Claude. The checked theorem proves
+Mathlib’s `RiemannHypothesis` with a closure of 165,070 archive modules,
+10,104 fewer than the earlier 175,174-module route. Its Lean 4.33.1 source
+pins, kernel receipt and axiom audit are recorded in
+[the archive proof record](docs/research-evidence/alpoge-archive-rh/README.md).
 
-The proof is not complete. The generated dashboard in
-`docs/proof-status.svg` is the canonical compact status summary. At present,
-the Gaussian/Weil and Suzuki/contour branches prove that the complete
-safe-axis logarithmic defect is asymptotic, with `o(1)` error, to its positive
+## Current proof-shortening work
+
+The objective is to shorten the checked proof further. The active independent
+arithmetic route reduces RH to a one-sided bound on finite Möbius sums over
+arbitrarily late square windows. Work on the open estimate from arithmetic.
+Using an RH theorem to supply that estimate would bring its proof closure
+back into the route. Import `CheckAlpogeFixedPrimeBandCorner` for the sufficient
+logarithmic condition. Its four proof scripts and two native library modules
+use the 27-module Alpöge selection. Run
+`python3 scripts/verify_alpoge_mined_bounds.py --fixed-prime-sieve` for this
+forward path. The equivalence, allowable cutoffs and best available power
+bound are recorded in [the arithmetic note](docs/arithmetic-proof-shortening.md).
+
+Keep the proven shortening first in the README and its explorer. Record new
+arithmetic results under **Current Proof Shortening Direction**. Say which
+direction of each implication Lean checks, which hypotheses remain, and
+which inputs a module count includes. Report a new end-to-end saving when
+an unconditional endpoint and its import closure have both been checked.
+
+Use the native Lean 4.34.1 toolchain for the small source selections. Use the
+pinned compiled archive and its dedicated verifier for the 4.33.1 proof.
+When that proof gains a local import, include the source in the archive CI
+path filters. Native CI checks the arithmetic window criterion.
+Reuse verified artifacts, keep disk use bounded, and advance independent
+arithmetic work while remote downloads or replays run. Record verification
+results against the exact source revision.
+
+## Historical native proof branches
+
+The dated entries below record the objectives and publication decisions of
+earlier campaigns. Current proof work follows the mission above.
+
+The generated dashboard in `docs/proof-status.svg` tracks the native
+library. In the Gaussian/Weil and Suzuki/contour branches, Lean proves
+that the complete safe-axis logarithmic defect is asymptotic, with `o(1)` error, to its positive
 Poisson linearization, which is exactly height-scaled Blaschke derivative
 variation. A checked dyadic Tauberian theorem now identifies decay of those
 quantities with `H(T) / T → 0`, where `H` is cumulative upper spectral height.
@@ -1600,7 +1632,7 @@ Keep `LocalizedTypeIIBound`, the main RH/default zero-free/certificate
 frontiers and both top-ten lists unchanged. Expose the new estimate as a
 supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
-## Current theorem-push commit gate
+## Theorem-push publication of 2 October 2026
 
 The user authorized committing and pushing ALL accumulated local work on
 2026-10-02, explicitly including the semiprime side investigation. This
@@ -13341,9 +13373,10 @@ Do not describe an unevaluated tail allowance as a numerical zero bound.
    data, and any newly supplied research dispatch before editing.
 2. State the exact mathematical obstruction and the theorem that removes a
    concrete part of it. Check that its assumptions are available upstream.
-3. Put new mathematics in a focused module with a module docstring and
-   theorem-level documentation. Import it from `RiemannGaussian.lean` so the
-   root environment and full build contain it.
+3. Put new mathematics in a focused module and document the terminal
+   theorems. Register ordinary library modules through `RiemannGaussian.lean`.
+   Check optional archive consumers with the verifier for their toolchain
+   and source selection.
 4. Compile the changed module directly with warnings treated as errors.
 5. Run the whole-package declaration linter, which includes every new public
    declaration. Use its verbose form during an audit when the individual
@@ -13354,57 +13387,15 @@ Do not describe an unevaluated tail allowance as a numerical zero bound.
 7. Run the source placeholder scan, whole-project declaration lint, focused
    build, full build, generated-status check, and whitespace check described
    below.
-8. Keep one `Current RH Proof Direction` section immediately below the proved
-   zero-free and numerical-certificate sections. It replaces the separate
-   `Current Direction` and top-level `Latest Update` sections. Its prominent
-   explorer link and actual browser screenshot precede one direction paragraph
-   of at most 500 characters. Keep `Latest Update` as a nested subsection.
-   The stable direction changes only when the active branch or strategy has a
-   material update; record why. Latest Update changes with every commit and
-   describes that commit, including documentation or maintenance work without
-   inventing mathematical progress. Replace entries rather than append history.
-   Both are generated from `docs/rh-proof-explorer/metadata.json`; update the
-   milestone list in `scripts/GenerateProjectStatus.lean` when and only when a
-   new theorem genuinely advances the displayed frontier, then regenerate the
-   artifacts.
-   The generated panel is a theorem inventory, not a proximity meter: never
-   draw a causal edge between milestones unless a checked theorem proves that
-   implication, and label RH equivalences as reformulations rather than
-   progress on their open direction.
-   In the README, display only the latest proved zero-free region in its own
-   `Proved Zero-Free Region` section immediately after the introduction. Display the
-   bound prominently and link directly to the compiled Lean proof. Include
-   a brief linked entry in `Accomplishments` too. State its exact bound and
-   height-threshold scope, including whether the threshold is existential or
-   numerically evaluated.
-   When a stronger region is proved, replace the previous README presentation
-   and remove references to superseded smaller regions, including historical
-   comparison constants, duplicate table rows, and old accomplishment entries.
-   Retain proof history and older bounds in the Lean sources and detailed
-   documentation; the README is not a history of zero-free-region improvements.
-   Keep `Accomplishments` to exactly ten major accomplishments. Select by
-   mathematical significance, breadth and relevance to the project's goals,
-   rather than recency or the number of new lemmas. A new entry may replace
-   an existing one only if it is materially more significant; otherwise keep
-   the result in its detailed documentation and the generated inventory.
-   Limit `Notable Formalisations` to exactly ten significant results or
-   frameworks as well, consolidating related theorem steps and selecting by
-   mathematical significance rather than recency. New entries must displace
-   less significant ones; the complete catalogue belongs in the family index.
-   Keep `Mathematical Program` out of the README: the active program is already
-   described by `Current RH Proof Direction`. The live GitHub renderer check
-   must verify the ten-entry Notable table and the absence of that section.
-   Consolidate related theorem steps into one result
-   rather than spending multiple slots on the same advance. Preserve source
-   attribution, scope and any unevaluated thresholds when shortening text.
-   Place `Repository Structure` immediately after `Accomplishments`. Keep it
-   compact: link the complete generated theorem-family index and give a short
-   directory map; do not copy module inventories into the README. Preserve
-   existing Lean source paths and imports, as requested by the user.
-9. Apply the current theorem-push commit gate. Commit and push the complete
-   slice only after its actual mathematical target and all verification
-   gates pass. Track GitHub Actions on that exact commit SHA. Per the user's
-   2026-09-13 instruction, continue local theorem work while CI runs.
+8. Keep the proven shortening, source attribution and measured module count
+   at the head of the README. **Current Proof Shortening Direction** records
+   the independent arithmetic route, its checked gains and its remaining
+   estimate. Use Related Research for earlier zero-free and simplicity
+   results. Their detailed hypotheses and charts belong in the linked
+   documentation. Derive explorer edges from checked dependencies and label
+   each conditional theorem with its actual premise.
+9. When publication is requested, commit and push the verified slice. Track
+   CI for that exact SHA and continue independent theorem work during CI.
 
 Lake builds independent modules in parallel. Direct elaboration of one Lean
 module is normally one process; do not mistake that focused check for the
@@ -13687,18 +13678,17 @@ Keep earlier estimates, default endpoints and both top-ten lists.
 
 ## Commit and check-in invariant
 
-The introductory research-agent/model statement belongs directly below the
-repository summary and before `Proved Zero-Free Region`.
+The README opens with the checked principal-character proof, its source credit
+and its measured module saving. The public `/rh-proof/` overview follows the
+actual local imports of that proof. The independent arithmetic route belongs
+in **Current Proof Shortening Direction**, after the archive verification
+instructions. Link its precise Lean criterion and identify the open estimate.
 
-The third README section, `Current RH Proof Direction`, and its dedicated
-`/rh-proof/` Pages explorer track the active RH campaign, independently of the
-zero-free and numerical-certificate views. Its default endpoint is exactly
-`campaign.frontierStatusPath` from `docs/rh-proof-explorer/metadata.json`,
-resolved through compiled project status. End at the furthest **checked**
-active theorem; show the remaining obstruction in prose, never as a proved
-edge to RH. Keep the conditional source limit and all theorem hypotheses
-visible. Reuse the shared family taxonomy, viewer, exact Lean source links,
-compiled dependency exporter and full transitive axiom checks.
+The native Gaussian–Suzuki explorer at `/rh-proof/native.html` resolves
+`campaign.frontierStatusPath` through compiled native project status.
+Keep its checked hypotheses, source links, dependency witnesses and axiom
+audits visible. The separate arithmetic verifier checks the window criteria
+against the selected archive sources on the native toolchain.
 
 For every commit, increment `campaign.latestUpdate.sequence`, give it a new
 `id`, and replace its title/body/next step with this commit's actual work.
@@ -13706,8 +13696,8 @@ Presentation and maintenance updates must be labelled as such and must not
 claim new bounds. Change `campaign.direction` only for a branch change or
 material strategy update, with a new `changeReason`. The tracked hook checks
 the staged update against HEAD; CI checks the commit against its parent.
-Keep the README's generated marker block intact and regenerate it with
-`scripts/build_rh_proof_explorer.py`; never maintain duplicate status prose.
+The README is edited directly. The RH explorer builder generates the archive
+overview and native explorer assets.
 
 After ordinary Lean/status validation, export the dedicated graph using
 `THEOREM_GRAPH_METADATA=docs/rh-proof-explorer/metadata.json` and
@@ -13719,15 +13709,13 @@ input/capture audit. The screenshot must show the actual current default
 explorer, not a hand-drawn graph. CI verifies its input and image hashes and
 exercises desktop/mobile interaction, exact terminal/source lines, zoom,
 conditional-source selection and the visible open obstruction. Do not demand
-byte-identical rasterization across platforms. Run the live GitHub README
-renderer check for the section placement, nested Latest Update, loaded linked
-preview, mobile fit and introductory model statement. Stage all metadata,
-README, viewer, source/audit and screenshot outputs together. After exact-SHA
-CI and Pages deployment pass, verify the published third explorer and README.
-See `docs/rh-proof-direction.md` for reproduction. These steps use the ordinary
-root and must never trigger exhaustive numerical certificate verification.
+byte-identical rasterization across platforms. Run the live GitHub README renderer check for the headline, attribution,
+section order, links and mobile fit. Stage the corresponding generated
+assets. After exact-SHA CI and Pages deployment, verify the published
+explorers and README. The native graph procedure is documented in
+`docs/rh-proof-direction.md`.
 
-The zero-free section's interactive theorem explorer is derived from the
+The zero-free theorem explorer is derived from the
 compiled Lean dependency graph and the existing proof-status metadata.
 Maintain logical families and optional theorem reading labels in
 `docs/theorem-explorer/metadata.json`; theorem statements, docstrings, source
@@ -13797,16 +13785,12 @@ Inspect that process before restarting; preserve completed artifacts. Keep
 proof inputs stable while a verification run is active. Documentation outside
 the input digest may be updated without interrupting it.
 
-The README's `Proved Numerical Certificate: 67.31%` section belongs directly
-after the zero-free section. Keep it compact: a live GitHub status badge for
-`numerical_certificate.yml`, the literal eventual bound and unevaluated
-height threshold, a comparison chart linked to its dedicated theorem explorer,
-and exact-source, full-audit and successful-run links. The badge must link to
-the actual optional workflow. Record a successful exhaustive run separately
-from ordinary presentation CI; never substitute the latter as evidence of a
-complete certificate. Compare with the attributed Anthropic/Zeta23 coefficient,
-as well as its two-thirds headline. Distinguish the limiting coefficient
-from the smaller closed rational endpoint and preserve epsilon conventions.
+The README links the 67.31% simplicity result under Related Research and
+states its unevaluated height threshold. Put the certificate workflow, exact
+sources, comparison chart and full audit in the dedicated certificate
+documentation. Record an exhaustive run against its input digest.
+Distinguish the limiting coefficient from the closed rational endpoint and
+give the epsilon convention in comparisons with Anthropic/Zeta23.
 
 The certificate explorer is exported explicitly with
 `scripts/build_numerical_certificate_explorer.py --refresh` after the optional
