@@ -75,6 +75,12 @@ lake build --wfail
 Contributor checks cover linting, generated proof assets and the commit hook.
 [Development and verification rules](AGENTS.md#mandatory-local-gates).
 
+## Related resources
+
+The [QRH Catalogue discovery guide](docs/qrh-catalogue.md) links a public
+cross-project index of mathematical and Lean components, with source revisions,
+assumptions, attribution and separately labelled verification evidence.
+
 ## License
 
 Copyright 2026 David Sanftenberg. RiemannGaussian is licensed under the
